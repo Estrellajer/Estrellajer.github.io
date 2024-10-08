@@ -1,0 +1,754 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN" data-default-color-scheme=auto>
+
+
+
+<head>
+  <meta charset="UTF-8">
+
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/fluid.png">
+  <link rel="icon" href="/img/fluid.png">
+  
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="author" content="Mq Liu">
+  <meta name="keywords" content="">
+  
+    <meta name="description" content="这是我的个人博客，主要记录平日所学，偶有生活杂记">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Carpediem">
+<meta property="og:url" content="http://example.com/index.html">
+<meta property="og:site_name" content="Carpediem">
+<meta property="og:description" content="这是我的个人博客，主要记录平日所学，偶有生活杂记">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:author" content="Mq Liu">
+<meta name="twitter:card" content="summary_large_image">
+  
+  
+  
+  <title>Carpediem</title>
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
+
+
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+<!-- Do not modify the link that theme dependent icons -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/c/font_1749284_5i9bdhy70f8.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/c/font_1736178_k526ubmyhba.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+
+  <link id="highlight-css" rel="stylesheet" href="/css/highlight.css" />
+  
+    <link id="highlight-css-dark" rel="stylesheet" href="/css/highlight-dark.css" />
+  
+
+
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    Fluid.ctx = Object.assign({}, Fluid.ctx)
+    var CONFIG = {"hostname":"example.com","root":"/","version":"1.9.8","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":{"measurement_id":null},"tencent":{"sid":null,"cid":null},"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false},"umami":{"src":null,"website_id":null,"domains":null,"start_time":"2024-01-01T00:00:00.000Z","token":null,"api_server":null}},"search_path":"/local-search.xml","include_content_in_search":true};
+
+    if (CONFIG.web_analytics.follow_dnt) {
+      var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
+      Fluid.ctx.dnt = dntVal && (dntVal.startsWith('1') || dntVal.startsWith('yes') || dntVal.startsWith('on'));
+    }
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+  
+
+
+  
+<meta name="generator" content="Hexo 7.3.0"></head>
+
+
+<body>
+  
+
+  <header>
+    
+
+<div class="header-inner" style="height: 100vh;">
+  <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand" href="/">
+      <strong>Carpediem</strong>
+    </a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/" target="_self">
+                <i class="iconfont icon-home-fill"></i>
+                <span>首页</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/" target="_self">
+                <i class="iconfont icon-archive-fill"></i>
+                <span>归档</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/" target="_self">
+                <i class="iconfont icon-category-fill"></i>
+                <span>分类</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/" target="_self">
+                <i class="iconfont icon-tags-fill"></i>
+                <span>标签</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/" target="_self">
+                <i class="iconfont icon-user-fill"></i>
+                <span>关于</span>
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" target="_self" href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
+              <i class="iconfont icon-search"></i>
+            </a>
+          </li>
+          
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" target="_self" href="javascript:;" aria-label="Color Toggle">
+              <i class="iconfont icon-dark" id="color-toggle-icon"></i>
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  
+
+<div id="banner" class="banner" parallax=true
+     style="background: url('/img/default.png') no-repeat center center; background-size: cover;">
+  <div class="full-bg-img">
+    <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+      <div class="banner-text text-center fade-in-up">
+        <div class="h2">
+          
+            <span id="subtitle" data-typed-text="追风赶月莫停留，平芜尽处是春山"></span>
+          
+        </div>
+
+        
+      </div>
+
+      
+        <div class="scroll-down-bar">
+          <i class="iconfont icon-arrowdown"></i>
+        </div>
+      
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </header>
+
+  <main>
+    
+      <div class="container nopadding-x-md">
+        <div id="board"
+          style="margin-top: 0">
+          
+          <div class="container">
+            <div class="row">
+              <div class="col-12 col-md-10 m-auto">
+                
+
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h2 class="index-header">
+        
+          <i class="index-pin iconfont icon-top" title="Pin on top"></i>
+        
+        <a href="/2024/08/14/Lab/Team/%E6%8B%9B%E7%94%9F%E5%B9%BF%E5%91%8A(%E5%8C%97%E9%82%AE%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E5%AD%A6%E9%99%A2%E6%96%B9%E5%85%A8%E6%95%99%E6%8E%88)/" target="_self">
+          招生广告(北邮人工智能学院方全教授)
+        </a>
+      </h2>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/2024/08/14/Lab/Team/%E6%8B%9B%E7%94%9F%E5%B9%BF%E5%91%8A(%E5%8C%97%E9%82%AE%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E5%AD%A6%E9%99%A2%E6%96%B9%E5%85%A8%E6%95%99%E6%8E%88)/" target="_self">
+        <div>
+          【直博生/日常实习生招生】人工智能学院方全教授招收2025年直博生/日常实习生 招生信息 方全教授课题组现招收2025年9月入学直博生1名,日常实习生若干名。我们欢迎对大型语言模型、图机器学习、多媒体知识计算、知识图谱和社会媒体数据挖掘等方向感兴趣的优秀学生加入。  【导师简介】 方全，北京邮电大学特聘研究员，博士生导师，北京市杰青，多媒体计算组负责人。曾任中国科学院自动化研究所副研究员。CCF-
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2024-08-14 10:21" pubdate>
+              2024-08-14
+            </time>
+          </div>
+        
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/%E6%8B%9B%E7%94%9F/">#招生</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h2 class="index-header">
+        
+        <a href="/2024/10/08/Paper/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E6%8E%A8%E7%90%86/Cot-Decoding/" target="_self">
+          
+        </a>
+      </h2>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/2024/10/08/Paper/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E6%8E%A8%E7%90%86/Cot-Decoding/" target="_self">
+        <div>
+          🟢 大语言模型的推理能力：无需提示的思维链解码 在🤖人工智能领域，大语言模型（LLMs），例如GPT-4和PaLM-2，展现出了强大的🧠推理能力。通常，我们通过提示（prompting）技术来激发这些推理能力，但这一过程需要复杂的🛠️手动设计，例如少样本提示和零样本提示。然而，最近的一项研究提出了一个全新的问题：大语言模型能否在没有提示的情况下进行有效推理？这种方法被称为“思维链解码”（C
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2024-10-08 10:03" pubdate>
+              2024-10-08
+            </time>
+          </div>
+        
+        
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h2 class="index-header">
+        
+        <a href="/2024/10/06/Paper/%E5%8F%AF%E8%A7%A3%E9%87%8A%E6%80%A7/Inspiration-Zoom%20In/" target="_self">
+          Inspiration-Zoom In
+        </a>
+      </h2>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/2024/10/06/Paper/%E5%8F%AF%E8%A7%A3%E9%87%8A%E6%80%A7/Inspiration-Zoom%20In/" target="_self">
+        <div>
+          Many important transition points in the history of science have been moments when science “zoomed in.”，所以作者团队也试图去更微观的角度探究神经网络。
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2024-10-06 09:34" pubdate>
+              2024-10-06
+            </time>
+          </div>
+        
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/%E8%AE%BA%E6%96%87%E9%98%85%E8%AF%BB/">#论文阅读</a>
+            
+              <a href="/tags/%E5%8F%AF%E8%A7%A3%E9%87%8A%E6%80%A7/">#可解释性</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h2 class="index-header">
+        
+        <a href="/2024/08/20/Paper/%E4%BF%A1%E6%81%AF%E6%8A%BD%E5%8F%96%E8%AE%BA%E6%96%87%E9%98%85%E8%AF%BB/" target="_self">
+          信息抽取论文阅读
+        </a>
+      </h2>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/2024/08/20/Paper/%E4%BF%A1%E6%81%AF%E6%8A%BD%E5%8F%96%E8%AE%BA%E6%96%87%E9%98%85%E8%AF%BB/" target="_self">
+        <div>
+          KnowCoder 1. 论文试图解决什么问题？ 论文试图解决通用信息抽取(Universal Information Extraction, UIE)中的两个主要挑战：  缺乏一种统一的、大语言模型(LLMs)易于理解的模式表示方法； 缺乏一个有效的学习框架，能够鼓励LLMs准确地遵循特定模式来抽取结构化知识。  2. 这是否是一个新的问题？ 这不是一个全新的问题。通用信息抽取(UIE)是一个已
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2024-08-20 15:37" pubdate>
+              2024-08-20
+            </time>
+          </div>
+        
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/%E4%BF%A1%E6%81%AF%E6%8A%BD%E5%8F%96/">#信息抽取</a>
+            
+              <a href="/tags/%E8%AE%BA%E6%96%87%E9%98%85%E8%AF%BB/">#论文阅读</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h2 class="index-header">
+        
+        <a href="/2024/07/15/Skill/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E4%BF%A1%E6%81%AF%E6%8A%BD%E5%8F%96%E5%AD%A6%E4%B9%A0/" target="_self">
+          大模型信息抽取学习
+        </a>
+      </h2>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/2024/07/15/Skill/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E4%BF%A1%E6%81%AF%E6%8A%BD%E5%8F%96%E5%AD%A6%E4%B9%A0/" target="_self">
+        <div>
+          大模型相关知识 什么是大模型 大小模型的区别 涌现能力（大模型由于scaling law才具有的能力） 涌现能力是否存在——用户的体验本身就是离散的（选择已经能用的，而不是不能用的里面错误少的） ##### 大模型和预训练语言模型任务的区别 语言建模（PLM）——复杂任务求解（LLM）  #### 大模型训练相关 ##### 数据的准备 ##### 如何进行数据的清洗： - 质量过滤：先启发式规则
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2024-07-15 16:59" pubdate>
+              2024-07-15
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3 d-flex align-items-center">
+            <i class="iconfont icon-category"></i>
+            
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/Skill/" class="category-chain-item">Skill</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/%E4%BF%A1%E6%81%AF%E6%8A%BD%E5%8F%96/">#信息抽取</a>
+            
+              <a href="/tags/%E5%A4%A7%E6%A8%A1%E5%9E%8B/">#大模型</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h2 class="index-header">
+        
+        <a href="/2024/07/15/Paper/%E5%A4%9A%E6%A8%A1%E6%80%81%E8%9E%8D%E5%90%88%E8%AE%BA%E6%96%87%E9%98%85%E8%AF%BB/" target="_self">
+          多模态融合论文阅读
+        </a>
+      </h2>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/2024/07/15/Paper/%E5%A4%9A%E6%A8%A1%E6%80%81%E8%9E%8D%E5%90%88%E8%AE%BA%E6%96%87%E9%98%85%E8%AF%BB/" target="_self">
+        <div>
+          在前向传播中，图像和文本输入首先被嵌入为连续的令牌序列，并送入单模态变换器层进行基础特征提取。两种模态的基础特征随后通过多个基于提示的多模态融合层进行处理，以获取两个CLS令牌的特征，用于最终的分类。在反向传播中，只有多模态融合层参与梯度的计算，这在训练期间大大节省了内存使用量。训练期间，两个变换器中的所有预训练参数都被冻结。 根据之前的讨论，数据在多模态融合模型中的流动和变换可以按以下步骤详细描
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2024-07-15 09:37" pubdate>
+              2024-07-15
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3 d-flex align-items-center">
+            <i class="iconfont icon-category"></i>
+            
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/Paper/" class="category-chain-item">Paper</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/%E8%AE%BA%E6%96%87%E9%98%85%E8%AF%BB/">#论文阅读</a>
+            
+              <a href="/tags/%E5%A4%9A%E6%A8%A1%E6%80%81/">#多模态</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h2 class="index-header">
+        
+        <a href="/2024/07/05/Paper/%E6%8C%81%E7%BB%AD%E5%AD%A6%E4%B9%A0%E8%AE%BA%E6%96%87%E9%98%85%E8%AF%BB/" target="_self">
+          持续学习论文阅读
+        </a>
+      </h2>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/2024/07/05/Paper/%E6%8C%81%E7%BB%AD%E5%AD%A6%E4%B9%A0%E8%AE%BA%E6%96%87%E9%98%85%E8%AF%BB/" target="_self">
+        <div>
+          综述 Continual Learning Scenarios Instance-Incremental Learning (IIL)  定义: 所有训练样本属于相同任务，以批次到达。   Domain-Incremental Learning (DIL)  定义: 任务具有相同的数据标签空间但不同的输入分布。任务标识不是必须的。   Task-Incremental Learning (TIL)
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2024-07-05 14:53" pubdate>
+              2024-07-05
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3 d-flex align-items-center">
+            <i class="iconfont icon-category"></i>
+            
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/Paper/" class="category-chain-item">Paper</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/%E8%AE%BA%E6%96%87%E9%98%85%E8%AF%BB/">#论文阅读</a>
+            
+              <a href="/tags/%E6%8C%81%E7%BB%AD%E5%AD%A6%E4%B9%A0/">#持续学习</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h2 class="index-header">
+        
+        <a href="/2024/07/04/Talk/BUPT%20AI%E5%A4%A7%E4%B8%89%E4%B8%8B%E7%94%9F%E5%AD%98%E6%8C%87%E5%8D%97/" target="_self">
+          BUPT AI大三下生存指南
+        </a>
+      </h2>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/2024/07/04/Talk/BUPT%20AI%E5%A4%A7%E4%B8%89%E4%B8%8B%E7%94%9F%E5%AD%98%E6%8C%87%E5%8D%97/" target="_self">
+        <div>
+          主要内容是AI大三下各个选修课和必修课的主观感受，so仅供参考。 从必修课开始讲起 NLP 教师：王小捷老师 考核方式： 教材阅读 (4x6=24分)  阅读JMBook的其中4章: chap6\7\9\10，在教学云平台上规定的时间点。 阅读报告内容:  章节内容综述 提出至少1个问题 全文至少1页 (A4纸，5号单倍行距编码作业)   编码作业（2 x 16分）  SGNS词向量实现与评估、T
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2024-07-04 11:29" pubdate>
+              2024-07-04
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3 d-flex align-items-center">
+            <i class="iconfont icon-category"></i>
+            
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/Talk/" class="category-chain-item">Talk</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/%E8%AF%BE%E7%A8%8B/">#课程</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+
+
+
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+
+    
+      <a id="scroll-top-button" aria-label="TOP" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v" for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+
+    
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+  
+    <div class="footer-content">
+      Carpediem
+    </div>
+  
+  
+  
+</div>
+
+  </footer>
+
+  <!-- Scripts -->
+  
+  <script  src="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://lib.baomitu.com/jquery/3.6.4/jquery.min.js" ></script>
+<script  src="https://lib.baomitu.com/twitter-bootstrap/4.6.1/js/bootstrap.min.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+
+  <script  src="https://lib.baomitu.com/typed.js/2.0.12/typed.min.js" ></script>
+  <script>
+    (function (window, document) {
+      var typing = Fluid.plugins.typing;
+      var subtitle = document.getElementById('subtitle');
+      if (!subtitle || !typing) {
+        return;
+      }
+      var text = subtitle.getAttribute('data-typed-text');
+      
+        typing(text);
+      
+    })(window, document);
+  </script>
+
+
+
+
+  
+    <script  src="/js/img-lazyload.js" ></script>
+  
+
+
+
+
+  <script  src="/js/local-search.js" ></script>
+
+
+
+
+
+<!-- 主题的启动项，将它保持在最底部 -->
+<!-- the boot of the theme, keep it at the bottom -->
+<script  src="/js/boot.js" ></script>
+
+
+  
+
+  <noscript>
+    <div class="noscript-warning">博客在允许 JavaScript 运行的环境下浏览效果更佳</div>
+  </noscript>
+</body>
+</html>

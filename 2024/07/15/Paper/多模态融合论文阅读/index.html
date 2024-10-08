@@ -1,0 +1,756 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN" data-default-color-scheme=auto>
+
+
+
+<head>
+  <meta charset="UTF-8">
+
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/fluid.png">
+  <link rel="icon" href="/img/fluid.png">
+  
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="author" content="Mq Liu">
+  <meta name="keywords" content="">
+  
+    <meta name="description" content="在前向传播中，图像和文本输入首先被嵌入为连续的令牌序列，并送入单模态变换器层进行基础特征提取。两种模态的基础特征随后通过多个基于提示的多模态融合层进行处理，以获取两个CLS令牌的特征，用于最终的分类。在反向传播中，只有多模态融合层参与梯度的计算，这在训练期间大大节省了内存使用量。训练期间，两个变换器中的所有预训练参数都被冻结。 根据之前的讨论，数据在多模态融合模型中的流动和变换可以按以下步骤详细描">
+<meta property="og:type" content="article">
+<meta property="og:title" content="多模态融合论文阅读">
+<meta property="og:url" content="http://example.com/2024/07/15/Paper/%E5%A4%9A%E6%A8%A1%E6%80%81%E8%9E%8D%E5%90%88%E8%AE%BA%E6%96%87%E9%98%85%E8%AF%BB/index.html">
+<meta property="og:site_name" content="Carpediem">
+<meta property="og:description" content="在前向传播中，图像和文本输入首先被嵌入为连续的令牌序列，并送入单模态变换器层进行基础特征提取。两种模态的基础特征随后通过多个基于提示的多模态融合层进行处理，以获取两个CLS令牌的特征，用于最终的分类。在反向传播中，只有多模态融合层参与梯度的计算，这在训练期间大大节省了内存使用量。训练期间，两个变换器中的所有预训练参数都被冻结。 根据之前的讨论，数据在多模态融合模型中的流动和变换可以按以下步骤详细描">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2024-07-15T09:37:40.000Z">
+<meta property="article:modified_time" content="2024-10-08T10:03:12.517Z">
+<meta property="article:author" content="Mq Liu">
+<meta property="article:tag" content="论文阅读">
+<meta property="article:tag" content="多模态">
+<meta name="twitter:card" content="summary_large_image">
+  
+  
+  
+  <title>多模态融合论文阅读 - Carpediem</title>
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
+
+
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/github-markdown-css/4.0.0/github-markdown.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/hint.css/2.7.0/hint.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.css" />
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+<!-- Do not modify the link that theme dependent icons -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/c/font_1749284_5i9bdhy70f8.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/c/font_1736178_k526ubmyhba.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+
+  <link id="highlight-css" rel="stylesheet" href="/css/highlight.css" />
+  
+    <link id="highlight-css-dark" rel="stylesheet" href="/css/highlight-dark.css" />
+  
+
+
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    Fluid.ctx = Object.assign({}, Fluid.ctx)
+    var CONFIG = {"hostname":"example.com","root":"/","version":"1.9.8","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":{"measurement_id":null},"tencent":{"sid":null,"cid":null},"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false},"umami":{"src":null,"website_id":null,"domains":null,"start_time":"2024-01-01T00:00:00.000Z","token":null,"api_server":null}},"search_path":"/local-search.xml","include_content_in_search":true};
+
+    if (CONFIG.web_analytics.follow_dnt) {
+      var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
+      Fluid.ctx.dnt = dntVal && (dntVal.startsWith('1') || dntVal.startsWith('yes') || dntVal.startsWith('on'));
+    }
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+  
+
+
+  
+<meta name="generator" content="Hexo 7.3.0"></head>
+
+
+<body>
+  
+
+  <header>
+    
+
+<div class="header-inner" style="height: 70vh;">
+  <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand" href="/">
+      <strong>Carpediem</strong>
+    </a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/" target="_self">
+                <i class="iconfont icon-home-fill"></i>
+                <span>首页</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/" target="_self">
+                <i class="iconfont icon-archive-fill"></i>
+                <span>归档</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/" target="_self">
+                <i class="iconfont icon-category-fill"></i>
+                <span>分类</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/" target="_self">
+                <i class="iconfont icon-tags-fill"></i>
+                <span>标签</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/" target="_self">
+                <i class="iconfont icon-user-fill"></i>
+                <span>关于</span>
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" target="_self" href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
+              <i class="iconfont icon-search"></i>
+            </a>
+          </li>
+          
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" target="_self" href="javascript:;" aria-label="Color Toggle">
+              <i class="iconfont icon-dark" id="color-toggle-icon"></i>
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  
+
+<div id="banner" class="banner" parallax=true
+     style="background: url('/img/default.png') no-repeat center center; background-size: cover;">
+  <div class="full-bg-img">
+    <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+      <div class="banner-text text-center fade-in-up">
+        <div class="h2">
+          
+            <span id="subtitle" data-typed-text="多模态融合论文阅读"></span>
+          
+        </div>
+
+        
+          
+  <div class="mt-3">
+    
+    
+      <span class="post-meta">
+        <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+        <time datetime="2024-07-15 09:37" pubdate>
+          2024年7月15日 上午
+        </time>
+      </span>
+    
+  </div>
+
+  <div class="mt-1">
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-chart"></i>
+        
+          2.1k 字
+        
+      </span>
+    
+
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-clock-fill"></i>
+        
+        
+        
+          18 分钟
+        
+      </span>
+    
+
+    
+    
+  </div>
+
+
+        
+      </div>
+
+      
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+
+    </div>
+
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div id="board">
+          <article class="post-content mx-auto">
+            <h1 id="seo-header">多模态融合论文阅读</h1>
+            
+            
+              <div class="markdown-body">
+                
+                <p>在前向传播中，图像和文本输入首先被嵌入为连续的令牌序列，并送入单模态变换器层进行基础特征提取。两种模态的基础特征随后通过多个基于提示的多模态融合层进行处理，以获取两个CLS令牌的特征，用于最终的分类。在反向传播中，只有多模态融合层参与梯度的计算，这在训练期间大大节省了内存使用量。训练期间，两个变换器中的所有预训练参数都被冻结。
+根据之前的讨论，数据在多模态融合模型中的流动和变换可以按以下步骤详细描述：</p>
+<h3 id="数据流动与变换的步骤">数据流动与变换的步骤：</h3>
+<ol type="1">
+<li><strong>输入处理</strong>：
+<ul>
+<li><strong>图像和文本输入</strong>：首先，图像和文本输入被预处理并嵌入为连续的令牌序列。</li>
+<li><strong>单模态变换器层</strong>：这些嵌入序列接着被送入相应的单模态变换器层（例如，一个专门处理文本的变换器和一个处理图像的变换器），在这里它们被转换为基础特征向量。</li>
+</ul></li>
+<li><strong>查询阶段</strong>：
+<ul>
+<li><strong>连接查询提示和上下文提示</strong>：特定的查询提示（QP）和查询上下文提示（QCP）与基础特征向量连接，形成一个扩展的特征序列。</li>
+<li><strong>单模态处理</strong>：这个扩展的序列通过相应的单模态变换器层进一步处理，以提取和强化模态内的关键信息。</li>
+<li><strong>非线性映射</strong>：从查询阶段得到的特征（主要是来自QP的输出）通过非线性映射转换到另一模态的表示空间，为跨模态融合做准备。</li>
+</ul></li>
+<li><strong>融合阶段</strong>：
+<ul>
+<li><strong>融合上下文提示</strong>：在融合阶段，融合上下文提示（FCP）与映射后的交叉模态中间体（来自查询阶段的输出）以及另一模态的原始输入连接。</li>
+<li><strong>跨模态单模态处理</strong>：这个连接后的序列被送入另一模态的单模态变换器层，进行最终的融合处理。</li>
+<li><strong>输出合并</strong>：两个模态的变换器层的输出合并，形成融合后的特征向量，这将被送入更高层或用于最终分类。</li>
+</ul></li>
+</ol>
+<h3 id="各变换的实际意义">各变换的实际意义：</h3>
+<ul>
+<li><strong>查询提示（QP）</strong>：主要用于从一个模态中提取对另一模态有用的信息，起到“提问”或“索引关键信息”的作用。</li>
+<li><strong>查询上下文提示（QCP）</strong>：为查询过程提供上下文支持，帮助改善和指导查询操作的准确性和效率。</li>
+<li><strong>融合上下文提示（FCP）</strong>：在融合阶段使用，提供必要的上下文以促进两种模态信息的有效融合。</li>
+<li><strong>非线性映射</strong>：允许将一个模态的输出转换成另一模态能够理解和进一步处理的形式，是实现模态间翻译和理解的关键步骤。</li>
+<li><strong>跨模态融合</strong>：最终目的是合成一个综合的、跨越语言和视觉界限的表示，用于提高决策或分类的性能。</li>
+</ul>
+<p>这种基于提示的多模态融合策略（PMF）利用了深层学习的强大能力，通过精心设计的提示和变换器层来处理和融合不同种类的数据，旨在提高多模态学习任务中的效率和效果。</p>
+<p>特定的查询提示（QP）和查询上下文提示（QCP）通常是在模型训练过程中学习得到的。它们作为模型参数的一部分，通过训练数据和反向传播算法进行优化，以达到最佳效果。以下是详细的来源和学习过程：</p>
+<ol type="1">
+<li><strong>设计和初始化</strong>：
+<ul>
+<li>在模型设计阶段，研究人员或工程师会定义QP（查询提示）和QCP（查询上下文提示）的结构和初始形式。这些提示可以被初始化为随机向量，或者可能使用某种预训练嵌入（如词嵌入）作为起点。</li>
+</ul></li>
+<li><strong>模型训练</strong>：
+<ul>
+<li><strong>数据输入</strong>：在训练期间，大量的标注数据（如图像-文本对）被用于教导模型如何处理和理解不同模态的信息。</li>
+<li><strong>前向传播</strong>：输入数据通过模型的各层前向传播，其中包括将QP和QCP插入到相应的序列中。</li>
+<li><strong>损失计算</strong>：模型输出与真实标签比较，计算损失函数，这通常涉及到分类准确性、信息检索效率等多模态交互指标。</li>
+<li><strong>反向传播</strong>：损失函数关于各参数（包括QP和QCP）的梯度被计算并用于更新这些参数。这个过程反复执行，逐渐优化QP和QCP，使其能够更有效地在模态之间查询和传递信息。</li>
+</ul></li>
+<li><strong>优化和调整</strong>：
+<ul>
+<li>随着训练的进行，QP和QCP会被优化为能够捕捉关键信息和上下文的表示形式，这对于改进跨模态理解和交互至关重要。</li>
+<li>这些提示的优化直接关系到模型在多模态任务中的表现，如图像标注、视频理解或其他需要细致理解和处理多种信息类型的任务。</li>
+</ul></li>
+</ol>
+<p>总之，特定的查询提示（QP）和查询上下文提示（QCP）是通过模型的学习过程自动学到的，它们不是预设的固定参数，而是随着模型训练逐渐调整和优化的动态元素。这使得它们能够在具体的应用场景中表现出高度的适应性和效率。</p>
+<p>根据提供的额外内容，下面是对前述回答的完善和补充，重点放在消融研究、模块化、灵活性和使用神经架构搜索（NAS）优化模型结构上：</p>
+<h3 id="消融研究">消融研究</h3>
+<ul>
+<li><p><strong>组件消融</strong>：研究验证了三种提示和非线性映射功能的有效性。结果表明，仅在两个变换器的顶层使用提示并不能实现多模态融合，反而会扰乱特征空间，从而降低性能。尽管映射函数显著提升了性能，但映射函数不能单独工作，必须与查询提示（QP）配合使用来查询融合中间体。</p></li>
+<li><p><strong>提示解耦</strong>：将提示解耦为具有不同学习目标的三个独立模块显示出性能提升。此外，扩展的查询提示（QP）不能替代查询上下文提示（QCP），替换后不仅增加了计算量，还导致性能下降。</p></li>
+<li><p><strong>融合层影响</strong>：不同的融合层 ( L_f )
+对性能和内存效率的影响显示，随着融合开始的层次越晚，训练内存使用量持续减少。然而，当
+( L_f ) 时，融合模型的性能相对一致，因此在深层（( 10 &lt; l &lt; L
+)）添加提示对性能与内存效率之间的折衷更为有利。</p></li>
+<li><p><strong>提示长度</strong>：提示长度的消融研究表明，当提示长度 ( M
+) 时，性能随提示长度增加而提升，而过长的提示（( M = 32
+)）则导致性能下降。训练内存使用量的增加主要由融合层 ( L_f )
+而非提示长度引起。</p></li>
+</ul>
+<h3 id="模块化与灵活性">模块化与灵活性</h3>
+<ul>
+<li><strong>模块化设计</strong>：PMF高度模块化，可以轻松替换单模态变换器，以适应更好的模型。这一灵活性允许在使用更大的预训练模型进行实验时，以非常有限的训练内存使用增量来增强PMF。</li>
+</ul>
+<h3 id="神经架构搜索nas">神经架构搜索（NAS）</h3>
+<ul>
+<li><strong>PMF结构搜索</strong>：尽管PMF在未经过深入超参数调优的情况下表现良好，但对于不同的任务和数据分布，最优的融合结构和提示长度设置可能有所不同。通过AutoFormer自动搜索融合结构，减轻了寻找最佳融合结构的工作量，NAS应用的PMF在三个数据集上的性能优于常规PMF，同时增加了训练内存使用量。</li>
+</ul>
+<h3 id="总结">总结</h3>
+<p>这些补充内容展示了PMF在多模态学习任务中的高效性、灵活性和可调整性。通过详细的消融研究和模块化设计，PMF能够在保持高性能的同时，有效管理资源消耗。此外，通过利用NAS，PMF能够进一步优化其结构，以适应各种复杂的实际应用场景。</p>
+
+                
+              </div>
+            
+            <hr/>
+            <div>
+              <div class="post-metas my-3">
+  
+    <div class="post-meta mr-3 d-flex align-items-center">
+      <i class="iconfont icon-category"></i>
+      
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/Paper/" class="category-chain-item">Paper</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
+    </div>
+  
+  
+    <div class="post-meta">
+      <i class="iconfont icon-tags"></i>
+      
+        <a href="/tags/%E8%AE%BA%E6%96%87%E9%98%85%E8%AF%BB/" class="print-no-link">#论文阅读</a>
+      
+        <a href="/tags/%E5%A4%9A%E6%A8%A1%E6%80%81/" class="print-no-link">#多模态</a>
+      
+    </div>
+  
+</div>
+
+
+              
+  
+
+  <div class="license-box my-3">
+    <div class="license-title">
+      <div>多模态融合论文阅读</div>
+      <div>http://example.com/2024/07/15/Paper/多模态融合论文阅读/</div>
+    </div>
+    <div class="license-meta">
+      
+        <div class="license-meta-item">
+          <div>作者</div>
+          <div>Mq Liu</div>
+        </div>
+      
+      
+        <div class="license-meta-item license-meta-date">
+          <div>发布于</div>
+          <div>2024年7月15日</div>
+        </div>
+      
+      
+      
+        <div class="license-meta-item">
+          <div>许可协议</div>
+          <div>
+            
+              
+              
+                <a class="print-no-link" target="_blank" href="https://creativecommons.org/licenses/by/4.0/">
+                  <span class="hint--top hint--rounded" aria-label="BY - 署名">
+                    <i class="iconfont icon-cc-by"></i>
+                  </span>
+                </a>
+              
+            
+          </div>
+        </div>
+      
+    </div>
+    <div class="license-icon iconfont"></div>
+  </div>
+
+
+
+              
+                <div class="post-prevnext my-3">
+                  <article class="post-prev col-6">
+                    
+                    
+                      <a href="/2024/07/15/Skill/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E4%BF%A1%E6%81%AF%E6%8A%BD%E5%8F%96%E5%AD%A6%E4%B9%A0/" title="大模型信息抽取学习">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">大模型信息抽取学习</span>
+                        <span class="visible-mobile">上一篇</span>
+                      </a>
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/2024/07/05/Paper/%E6%8C%81%E7%BB%AD%E5%AD%A6%E4%B9%A0%E8%AE%BA%E6%96%87%E9%98%85%E8%AF%BB/" title="持续学习论文阅读">
+                        <span class="hidden-mobile">持续学习论文阅读</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+  
+  
+    <article id="comments" lazyload>
+      
+  <div id="valine"></div>
+  <script type="text/javascript">
+    Fluid.utils.loadComments('#valine', function() {
+      Fluid.utils.createScript('https://lib.baomitu.com/valine/1.5.1/Valine.min.js', function() {
+        var options = Object.assign(
+          {"appId":"oBIhtS4ds900qgKxHu6YKUjY-gzGzoHsz","appKey":"tsgO3EhtRkD5Mdt4uu3Nw1N6","path":"window.location.pathname","placeholder":null,"avatar":"retro","meta":["nick","mail","link"],"requiredFields":[],"pageSize":10,"lang":"zh-CN","highlight":false,"recordIP":false,"serverURLs":"","emojiCDN":null,"emojiMaps":null,"enableQQ":false},
+          {
+            el: "#valine",
+            path: window.location.pathname
+          }
+        )
+        new Valine(options);
+        Fluid.utils.waitElementVisible('#valine .vcontent', () => {
+          var imgSelector = '#valine .vcontent img:not(.vemoji)';
+          Fluid.plugins.imageCaption(imgSelector);
+          Fluid.plugins.fancyBox(imgSelector);
+        })
+      });
+    });
+  </script>
+  <noscript>Please enable JavaScript to view the comments</noscript>
+
+
+    </article>
+  
+
+
+          </article>
+        </div>
+      </div>
+    </div>
+
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+  <aside class="sidebar" style="margin-left: -1rem">
+    <div id="toc">
+  <p class="toc-header">
+    <i class="iconfont icon-list"></i>
+    <span>目录</span>
+  </p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+
+
+  </aside>
+
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+
+
+
+
+    
+
+    
+      <a id="scroll-top-button" aria-label="TOP" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v" for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+
+    
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+  
+    <div class="footer-content">
+      Carpediem
+    </div>
+  
+  
+  
+</div>
+
+  </footer>
+
+  <!-- Scripts -->
+  
+  <script  src="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://lib.baomitu.com/jquery/3.6.4/jquery.min.js" ></script>
+<script  src="https://lib.baomitu.com/twitter-bootstrap/4.6.1/js/bootstrap.min.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+
+  <script  src="https://lib.baomitu.com/typed.js/2.0.12/typed.min.js" ></script>
+  <script>
+    (function (window, document) {
+      var typing = Fluid.plugins.typing;
+      var subtitle = document.getElementById('subtitle');
+      if (!subtitle || !typing) {
+        return;
+      }
+      var text = subtitle.getAttribute('data-typed-text');
+      
+        typing(text);
+      
+    })(window, document);
+  </script>
+
+
+
+
+  
+    <script  src="/js/img-lazyload.js" ></script>
+  
+
+
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/tocbot/4.20.1/tocbot.min.js', function() {
+    var toc = jQuery('#toc');
+    if (toc.length === 0 || !window.tocbot) { return; }
+    var boardCtn = jQuery('#board-ctn');
+    var boardTop = boardCtn.offset().top;
+
+    window.tocbot.init(Object.assign({
+      tocSelector     : '#toc-body',
+      contentSelector : '.markdown-body',
+      linkClass       : 'tocbot-link',
+      activeLinkClass : 'tocbot-active-link',
+      listClass       : 'tocbot-list',
+      isCollapsedClass: 'tocbot-is-collapsed',
+      collapsibleClass: 'tocbot-is-collapsible',
+      scrollSmooth    : true,
+      includeTitleTags: true,
+      headingsOffset  : -boardTop,
+    }, CONFIG.toc));
+    if (toc.find('.toc-list-item').length > 0) {
+      toc.css('visibility', 'visible');
+    }
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('tocbot' in window) {
+        tocbot.refresh();
+        var toc = jQuery('#toc');
+        if (toc.length === 0 || !tocbot) {
+          return;
+        }
+        if (toc.find('.toc-list-item').length > 0) {
+          toc.css('visibility', 'visible');
+        }
+      }
+    });
+  });
+</script>
+
+
+  <script src=https://lib.baomitu.com/clipboard.js/2.0.11/clipboard.min.js></script>
+
+  <script>Fluid.plugins.codeWidget();</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/anchor-js/5.0.0/anchor.min.js', function() {
+    window.anchors.options = {
+      placement: CONFIG.anchorjs.placement,
+      visible  : CONFIG.anchorjs.visible
+    };
+    if (CONFIG.anchorjs.icon) {
+      window.anchors.options.icon = CONFIG.anchorjs.icon;
+    }
+    var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+    var res = [];
+    for (var item of el) {
+      res.push('.markdown-body > ' + item.trim());
+    }
+    if (CONFIG.anchorjs.placement === 'left') {
+      window.anchors.options.class = 'anchorjs-link-left';
+    }
+    window.anchors.add(res.join(', '));
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('anchors' in window) {
+        anchors.removeAll();
+        var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+        var res = [];
+        for (var item of el) {
+          res.push('.markdown-body > ' + item.trim());
+        }
+        if (CONFIG.anchorjs.placement === 'left') {
+          anchors.options.class = 'anchorjs-link-left';
+        }
+        anchors.add(res.join(', '));
+      }
+    });
+  });
+</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.js', function() {
+    Fluid.plugins.fancyBox();
+  });
+</script>
+
+
+  <script>Fluid.plugins.imageCaption();</script>
+
+  <script  src="/js/local-search.js" ></script>
+
+
+
+
+
+<!-- 主题的启动项，将它保持在最底部 -->
+<!-- the boot of the theme, keep it at the bottom -->
+<script  src="/js/boot.js" ></script>
+
+
+  
+
+  <noscript>
+    <div class="noscript-warning">博客在允许 JavaScript 运行的环境下浏览效果更佳</div>
+  </noscript>
+</body>
+</html>

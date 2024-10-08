@@ -1,0 +1,910 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN" data-default-color-scheme=auto>
+
+
+
+<head>
+  <meta charset="UTF-8">
+
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/fluid.png">
+  <link rel="icon" href="/img/fluid.png">
+  
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="author" content="Mq Liu">
+  <meta name="keywords" content="">
+  
+    <meta name="description" content="大模型相关知识 什么是大模型 大小模型的区别 涌现能力（大模型由于scaling law才具有的能力） 涌现能力是否存在——用户的体验本身就是离散的（选择已经能用的，而不是不能用的里面错误少的） ##### 大模型和预训练语言模型任务的区别 语言建模（PLM）——复杂任务求解（LLM）  #### 大模型训练相关 ##### 数据的准备 ##### 如何进行数据的清洗： - 质量过滤：先启发式规则">
+<meta property="og:type" content="article">
+<meta property="og:title" content="大模型信息抽取学习">
+<meta property="og:url" content="http://example.com/2024/07/15/Skill/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E4%BF%A1%E6%81%AF%E6%8A%BD%E5%8F%96%E5%AD%A6%E4%B9%A0/index.html">
+<meta property="og:site_name" content="Carpediem">
+<meta property="og:description" content="大模型相关知识 什么是大模型 大小模型的区别 涌现能力（大模型由于scaling law才具有的能力） 涌现能力是否存在——用户的体验本身就是离散的（选择已经能用的，而不是不能用的里面错误少的） ##### 大模型和预训练语言模型任务的区别 语言建模（PLM）——复杂任务求解（LLM）  #### 大模型训练相关 ##### 数据的准备 ##### 如何进行数据的清洗： - 质量过滤：先启发式规则">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2024-07-15T16:59:17.000Z">
+<meta property="article:modified_time" content="2024-10-08T10:03:12.518Z">
+<meta property="article:author" content="Mq Liu">
+<meta property="article:tag" content="信息抽取">
+<meta property="article:tag" content="大模型">
+<meta name="twitter:card" content="summary_large_image">
+  
+  
+  
+  <title>大模型信息抽取学习 - Carpediem</title>
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
+
+
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/github-markdown-css/4.0.0/github-markdown.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/hint.css/2.7.0/hint.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.css" />
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+<!-- Do not modify the link that theme dependent icons -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/c/font_1749284_5i9bdhy70f8.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/c/font_1736178_k526ubmyhba.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+
+  <link id="highlight-css" rel="stylesheet" href="/css/highlight.css" />
+  
+    <link id="highlight-css-dark" rel="stylesheet" href="/css/highlight-dark.css" />
+  
+
+
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    Fluid.ctx = Object.assign({}, Fluid.ctx)
+    var CONFIG = {"hostname":"example.com","root":"/","version":"1.9.8","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":{"measurement_id":null},"tencent":{"sid":null,"cid":null},"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false},"umami":{"src":null,"website_id":null,"domains":null,"start_time":"2024-01-01T00:00:00.000Z","token":null,"api_server":null}},"search_path":"/local-search.xml","include_content_in_search":true};
+
+    if (CONFIG.web_analytics.follow_dnt) {
+      var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
+      Fluid.ctx.dnt = dntVal && (dntVal.startsWith('1') || dntVal.startsWith('yes') || dntVal.startsWith('on'));
+    }
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+  
+
+
+  
+<meta name="generator" content="Hexo 7.3.0"></head>
+
+
+<body>
+  
+
+  <header>
+    
+
+<div class="header-inner" style="height: 70vh;">
+  <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand" href="/">
+      <strong>Carpediem</strong>
+    </a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/" target="_self">
+                <i class="iconfont icon-home-fill"></i>
+                <span>首页</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/" target="_self">
+                <i class="iconfont icon-archive-fill"></i>
+                <span>归档</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/" target="_self">
+                <i class="iconfont icon-category-fill"></i>
+                <span>分类</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/" target="_self">
+                <i class="iconfont icon-tags-fill"></i>
+                <span>标签</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/" target="_self">
+                <i class="iconfont icon-user-fill"></i>
+                <span>关于</span>
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" target="_self" href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
+              <i class="iconfont icon-search"></i>
+            </a>
+          </li>
+          
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" target="_self" href="javascript:;" aria-label="Color Toggle">
+              <i class="iconfont icon-dark" id="color-toggle-icon"></i>
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  
+
+<div id="banner" class="banner" parallax=true
+     style="background: url('/img/default.png') no-repeat center center; background-size: cover;">
+  <div class="full-bg-img">
+    <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+      <div class="banner-text text-center fade-in-up">
+        <div class="h2">
+          
+            <span id="subtitle" data-typed-text="大模型信息抽取学习"></span>
+          
+        </div>
+
+        
+          
+  <div class="mt-3">
+    
+    
+      <span class="post-meta">
+        <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+        <time datetime="2024-07-15 16:59" pubdate>
+          2024年7月15日 下午
+        </time>
+      </span>
+    
+  </div>
+
+  <div class="mt-1">
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-chart"></i>
+        
+          3.5k 字
+        
+      </span>
+    
+
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-clock-fill"></i>
+        
+        
+        
+          30 分钟
+        
+      </span>
+    
+
+    
+    
+  </div>
+
+
+        
+      </div>
+
+      
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+
+    </div>
+
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div id="board">
+          <article class="post-content mx-auto">
+            <h1 id="seo-header">大模型信息抽取学习</h1>
+            
+            
+              <div class="markdown-body">
+                
+                <h3 id="大模型相关知识">大模型相关知识</h3>
+<h4 id="什么是大模型">什么是大模型</h4>
+<h6 id="大小模型的区别">大小模型的区别</h6>
+<p>涌现能力（大模型由于scaling law才具有的能力）
+涌现能力是否存在——用户的体验本身就是离散的（选择已经能用的，而不是不能用的里面错误少的）
+##### 大模型和预训练语言模型任务的区别
+语言建模（PLM）——复杂任务求解（LLM）</p>
+<p><img
+src="https://picoflmq.oss-cn-beijing.aliyuncs.com/typora/202407231044145.png" srcset="/img/loading.gif" lazyload
+alt="image-20240723104401035" /> #### 大模型训练相关 ##### 数据的准备
+##### 如何进行数据的清洗： - 质量过滤：先启发式规则过滤，然后分类器级联
+- 敏感内容过滤：基于规则 - 数据去重：计算粒度；匹配去重</p>
+<p>高质量数据对模型训练至关重要。Phi-1模型在高质量数据上训练，达到了HumanEval测试50.6%的pass@1准确率，而低质量数据会导致训练不稳定。GLaM模型的对比研究表明，高质量数据显著提升了自然语言处理任务的表现。预训练数据的准确性和多样性对于减少模型输出错误至关重要。例如，“灯泡是爱迪生发明的”是常见误解，训练模型需避免这种错误数据，以提升模型的准确性和基础能力。如果模型在包含事实性错误或过时的数据上进行训练，会在处理相关主题时产生不准确或虚假的信息，这种现象被称为“幻象”。</p>
+<h5 id="如何对语料进行分词">如何对语料进行分词</h5>
+<h5 id="bpe算法详解与示例">BPE算法详解与示例</h5>
+<p><strong>背景</strong>：BPE（Byte Pair
+Encoding）算法最早在1994年被提出用于通用数据压缩，后来被引入自然语言处理领域用于文本分词。BPE算法从一组基本符号（例如字母和边界字符）开始，迭代地寻找语料库中两个相邻词元，将它们合并为新的词元，过程一直持续到预定义的词表大小为止。
+##### BPE算法实现步骤 1. <strong>初始化词汇表</strong>：
+开始时，词汇表由所有单独的字母和一个边界字符组成。 2.
+<strong>计算词频</strong>： 统计每个单词在语料库中的频率。 3.
+<strong>计算字符对频率</strong>：
+计算所有相邻字符对在词频字典中的共现频率。 4.
+<strong>合并字符对</strong>：
+每次迭代选择频率最高的字符对进行合并，并更新词汇表和词频字典。 #####
+BPE算法示例 假设语料库包含以下五个单词及其频率： <figure class="highlight ada"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs ada">“<span class="hljs-keyword">loop</span>”：<span class="hljs-number">15</span>次  <br>“pool”：<span class="hljs-number">10</span>次  <br>“loot”：<span class="hljs-number">10</span>次  <br>“tool”：<span class="hljs-number">5</span>次  <br>“loots”：<span class="hljs-number">8</span>次<br></code></pre></td></tr></table></figure>
+初始词汇表为： <figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs css"><span class="hljs-selector-attr">[<span class="hljs-string">&quot;l&quot;</span>, <span class="hljs-string">&quot;o&quot;</span>, <span class="hljs-string">&quot;p&quot;</span>, <span class="hljs-string">&quot;t&quot;</span>, <span class="hljs-string">&quot;s&quot;</span>]</span><br></code></pre></td></tr></table></figure> ###### 初始状态 1.
+<strong>词频统计</strong>： "loop"：15次<br />
+"pool"：10次<br />
+"loot"：10次<br />
+"tool"：5次<br />
+"loots"：8次 2. <strong>初始词频字典</strong>： {"l o o p </w>": 15, "p
+o o l </w>": 10, "l o o t </w>": 10, "t o o l </w>": 5, "l o o t s
+</w>": 8} ###### 第一次迭代 1. <strong>计算字符对频率</strong>： ("l",
+"o")：33次<br />
+("o", "o")：48次<br />
+("o", "p")：15次<br />
+("p", "l")：10次<br />
+("o", "t")：18次<br />
+("t", "s")：8次 2. <strong>合并频率最高的字符对</strong>： 合并 ("o",
+"o")，新词汇表和词频字典为： 词汇表：["l", "o", "p", "t", "s",
+"oo"]<br />
+词频字典：{"l oo p </w>": 15, "p oo l </w>": 10, "l oo t </w>": 10, "t
+oo l </w>": 5, "l oo t s </w>": 8} ###### 第二次迭代 1.
+<strong>计算新字符对频率</strong>： ("l", "oo")：33次<br />
+("oo", "p")：15次<br />
+("p", "oo")：10次<br />
+("oo", "l")：10次<br />
+("oo", "t")：18次<br />
+("t", "s")：8次 2. <strong>合并频率最高的字符对</strong>： 合并 ("l",
+"oo")，新词汇表和词频字典为： 词汇表：["l", "o", "p", "t", "s", "oo",
+"loo"]<br />
+词频字典：{"loo p </w>": 15, "p oo l </w>": 10, "loo t </w>": 10, "t oo
+l </w>": 5, "loo t s </w>": 8} ##### Tips
+为了训练出高效的分词器，需重点关注以下因素： 1.
+<strong>无损重构</strong>：确保分词结果能准确重构为原始输入文本。 2.
+<strong>高压缩率</strong>：在分词后生成的词元数量尽可能少，提高编码和存储效率。</p>
+<p>此外，针对特定需求设计分词器，如处理多语言数据或提升特定能力（如数学能力），可以显著提高大语言模型在实际应用中的效果。综上所述，在设计和训练分词器时，需综合考虑这些因素，以确保其在实际应用中发挥最佳效果。
+#### 预训练数据准备流程概述：以YuLan模型为例
+在大语言模型预训练过程中，数据的准备是至关重要的一步。以下是YuLan模型在预训练阶段的一般流程和关键要点：
+##### 1. 数据收集
+<strong>目标</strong>：确保预训练数据来源的多样化，以增强模型的广泛适应能力和特定任务能力。
+<strong>步骤</strong>： -
+<strong>多样化数据来源</strong>：收集大规模网页数据（如Common
+Crawl）、书籍数据（如Books3和Gutenberg）、高质量知识密集型语料（如知乎和维基百科）。
+-
+<strong>特定任务数据</strong>：根据需求引入特定任务的数据，如数学数据（Proof-Pile）和代码数（GitHub），以优化模型的特定能力。
+<strong>YuLan模型的实践</strong>： -
+首先收集了大量通用预训练语料，包括网页数据和书籍数据。 -
+为增加数据多样性，收集了知乎、维基百科等高质量语料。 -
+在训练后期，引入了数学和代码等专用文本数据，以增强特定任务能力。 #### 2.
+数据清洗
+<strong>目标</strong>：提高数据质量，确保模型在预训练过程中能够学到有用的信息。
+<strong>步骤</strong>： -
+<strong>通用数据清洗</strong>：进行质量过滤、去重、隐私数据去除和词元化。
+-
+<strong>针对性清洗</strong>：根据具体数据特点和应用场景设计清洗规则，例如过滤掉网页数据中的HTML标签。
+<strong>YuLan模型的实践</strong>： -
+采用启发式方法进行文档级别和句子级别的低质量及有害数据过滤。 -
+使用MinHash算法在多个数据源之间识别并去除重复数据。 -
+基于LLaMA的词表，并加入在中文预训练数据上得到的BPE词元，构成YuLan模型的词表（词表大小为51,200），用于对预训练数据进行词元化。
+#### 3. 数据调度
+<strong>目标</strong>：确定训练大语言模型的数据混合配比及数据训练顺序，以优化模型能力。
+<strong>步骤</strong>： -
+<strong>代理方法</strong>：使用多个候选策略训练多个小型语言模型，从中选择最优的训练策略。
+-
+<strong>确定混合比例</strong>：首先确定语言配比，再确定不同数据类型配比，通过下游任务测试效果来调整比例。
+-
+<strong>动态调整</strong>：根据模型各项能力的测试结果，动态调整数据混合比例。
+<strong>YuLan模型的实践</strong>： -
+预训练了一个1.3B的小模型，测试不同类型数据和中英文数据的混合配比。 -
+根据下游任务测试效果确定中英文语料比例为1:8。 -
+维持该比例不变，并使用控制变量法，每次仅调整某一类型数据的比例进行实验。
+-
+根据各项能力的测试结果手动调整数据混合比例，最终使用了1,680B词元，包括1,380B英文数据、280B中文数据以及20B多语数据。
+#### 数据课程
+<strong>目标</strong>：通过特定顺序安排预训练数据，优化模型的学习效果。
+<strong>步骤</strong>： -
+从简单/通用数据开始，逐渐引入更具挑战性/专业化的数据。 -
+在训练期间动态调整数据混合比例。 <strong>YuLan模型的实践</strong>： -
+例如，为提升代码生成能力，首先使用2T通用词元进行训练，然后用500B代码数据词元进行训练。
+-
+为提升数学能力，选择CodeLLaMA作为基座模型，在包含科学论文、数学和代码的混合数据集合上进行继续预训练。
+#### 总结
+YuLan模型的预训练数据准备流程包括数据收集、数据清洗和数据调度三个主要步骤。在数据收集中注重多样化和特定任务数据的引入；在数据清洗中进行全面细致的质量过滤、去重和词元化；在数据调度中，通过小模型测试和动态调整确定最优的数据混合配比和训练顺序。通过这些步骤，确保了YuLan模型在预训练阶段能够获得高质量的数据支持，从而提升模型的各项能力。</p>
+<h3 id="位置编码">位置编码</h3>
+<h4 id="旋转矩阵计算">旋转矩阵计算</h4>
+<p>假设我们有一个简单的输入序列：“Hello”, “world”,
+“AI”。假设词向量的维度为 (H = 4)。 ##### 步骤 1: 生成词向量</p>
+<p><strong>词嵌入（Word Embedding）</strong>: - ( ) - ( ) - ( ) #####
+步骤 2: 旋转矩阵的计算 <strong>旋转矩阵 ( R_{, t} )</strong>: - 基数 ( b
+= 10000 ) - 旋转角度 ( _1 = 0.01 ) 弧度 对每个位置 ( t ):</p>
+<p><span class="math display">\[  
+R_{\theta, 0} = \begin{bmatrix} 1 &amp; 0 \\ 0 &amp; 1 \end{bmatrix}  
+\]</span></p>
+<p><span class="math display">\[  
+R_{\theta, 1} = \begin{bmatrix} \cos(0.01) &amp; -\sin(0.01) \\
+\sin(0.01) &amp; \cos(0.01) \end{bmatrix} \approx \begin{bmatrix}
+0.99995 &amp; -0.00999983 \\ 0.00999983 &amp; 0.99995 \end{bmatrix}  
+\]</span> <span class="math display">\[  
+R_{\theta, 2} = \begin{bmatrix} \cos(0.02) &amp; -\sin(0.02) \\
+\sin(0.02) &amp; \cos(0.02) \end{bmatrix} \approx \begin{bmatrix} 0.9998
+&amp; -0.0199987 \\ 0.0199987 &amp; 0.9998 \end{bmatrix}  
+\]</span> ##### 步骤 3: 应用旋转矩阵到词向量
+<strong>应用旋转矩阵</strong>: <span class="math display">\[  
+\text{Hello\_rot} = [1.0, 2.0, 3.0, 4.0]  
+\]</span></p>
+<p><span class="math display">\[  
+\text{world\_rot} = [1.9998, 2.98002, 3.9994, 4.9801]  
+\]</span></p>
+<p><span class="math display">\[  
+\text{AI\_rot} = [2.9994, 3.95998, 4.9988, 5.9596]  
+\]</span> ##### 总结
+旋转位置编码（RoPE）通过应用位置特定的旋转矩阵到每个词向量的维度上，有效地融合了词的语义息和它在句子中的</p>
+<p>位置信息。这种方法不仅保留了原始词向量的语义特征，还增加了位置敏感性，从而使模型能够更好地理解和处理序列数据。
+### SFT和RLHF对比 <img
+src="https://picoflmq.oss-cn-beijing.aliyuncs.com/typora/202407250945768.png" srcset="/img/loading.gif" lazyload
+alt="image-20240725094521712" /> ### ICL和CoT对比 <img
+src="https://picoflmq.oss-cn-beijing.aliyuncs.com/typora/202407251014182.png" srcset="/img/loading.gif" lazyload
+alt="image-20240725101414135" /> ####
+上下文学习（ICL）和思维链提示（CoT）的关键区别：</p>
+<h5 id="上下文学习in-context-learning-icl">上下文学习（In-context
+Learning, ICL）</h5>
+<ul>
+<li><strong>示例内容</strong>：示例里仅包含问题和最终答案。</li>
+<li><strong>主要特点</strong>：模型基于任务描述和示例问题-答案对进行学习，并直接生成答案。</li>
+<li><strong>适用场景</strong>：适用于简单的、示例明确的任务。 #####
+思维链提示（Chain-of-Thought, CoT）</li>
+<li><strong>示例内容</strong>：示例里不仅包含问题和答案，还包括详细的推理过程。</li>
+<li><strong>主要特点</strong>：通过展示每一步的推理过程，帮助模型理解和解决复杂任务。</li>
+<li><strong>适用场景</strong>：适用于需要多步骤推理的复杂任务，增强模型的推理能力。
+##### 具体例子对比： ###### 上下文学习（ICL）示例： 任务描述: Answer the
+following mathematical reasoning questions:</li>
+</ul>
+<p>示例1:<br />
+Q: If you have 12 candies and you give 4 candies to your friend, how
+many candies do you have left?<br />
+A: The answer is 8.<br />
+​示例2:<br />
+Q: If a rectangle has a length of 6 cm and a width of 3 cm, what is the
+perimeter of the rectangle?<br />
+A: The answer is 18cm.<br />
+​<br />
+测试样本:<br />
+Q: Sam has 12 marbles. He gives 1/4 of them to his sister. How many
+marbles does Sam have left?</p>
+<p>模型基于示例直接生成答案：</p>
+<p>A: The answer is 9. ###### 思维链提示（CoT）示例： 任务描述: Answer
+the following mathematical reasoning questions:<br />
+​示例1:<br />
+Q: If a rectangle has a length of 6 cm and a width of 3 cm, what is the
+perimeter of the rectangle?<br />
+A: For a rectangle, you add up the length and width and double it. So,
+the perimeter of this rectangle is (6 + 3) x 2 = 18 cm. The answer is
+18cm.<br />
+​<br />
+测试样本:<br />
+Q: Sam has 12 marbles. He gives 1/4 of them to his sister. How many
+marbles does Sam have left?</p>
+<p>模型基于示例中的推理步骤进行详细推理并生成答案：</p>
+<p>A: He gives (1/4) x 12 = 3 marbles. So Sam is left with 12 - 3 = 9
+marbles. The answer is 9. #### 总结： -
+<strong>ICL</strong>：示例中仅有问题和答案，适用于简单任务。 -
+<strong>CoT</strong>：示例中包含详细推理过程，适用于复杂任务，需要多个推理步骤。</p>
+<h3 id="retrieval-aug">retrieval aug</h3>
+<h3 id="prompt-ie">Prompt IE</h3>
+<h4 id="问答question-answerqa">1. 问答（Question Answer，QA）</h4>
+<p>LLMs通常通过对话方法进行指令微调，这与IE任务的结构化预测要求存在差距。因此，最近的一些研究尝试使用QA提示方法来增强LLMs，并促进生成所需的结果。例如：
+- <strong>QA4RE</strong>
+发现LLMs在RE任务上表现不佳，因为用于训练它们的指令微调数据集中RE任务的出现频率较低。因此，它提出将RE重新表述为多选QA，以利用指令微调数据集中QA任务的高出现率。
+- <strong>Li等人</strong>
+分析了现有RE提示的局限性，提出了一种新的方法，称为“总结和提问”（summarize-and-ask）提示，通过递归地使用LLMs将零样本RE输入转换为有效的QA格式。
+- <strong>ChatIE</strong>
+提出了一种两阶段框架，将零样本IE任务转换为多轮QA问题。该框架首先识别不同类型的元素，然后针对每种元素类型执行顺序IE过程。</p>
+<h4 id="思维链提示chain-of-thoughtcot">2.
+思维链提示（Chain-of-Thought，CoT）</h4>
+<p>思维链（CoT）是一种通过提供逐步和连贯的推理链作为提示来指导模型生成响应的策略。这种提示在近年来受到了关注，并且有研究正在探索其在IE任务中的有效性。例如：
+- <strong>PromptNER</strong>
+结合LLMs和基于提示的启发式方法及实体定义，促使LLMs根据提供的实体类型定义生成潜在实体及其解释的列表。
+- <strong>Bian等人</strong>
+提出了一种两步法，通过使用CoT逐步解决生物医学NER任务，首先进行实体范围提取，然后确定实体类型。
+- <strong>Yuan等人</strong>
+提出了CoT提示作为一种两阶段方法，指导ChatGPT执行时间关系推理任务。</p>
+<h3 id="prompt设计">Prompt设计</h3>
+<p>请根据以下示例和格式要求，从给定的航空通告（NOTAM）文本中提取相关信息：</p>
+<p>示例1： 输入： D) MAR 16 17 20-31 APR 01-15 0030-1030 E)DUE TO
+UNMANNED ACFT, ONLY USE ATS RTE Q14 FOR FLT OPERATIONS EQUAL TO, OR
+ABOVE FL100 (SEE NOTAM VVVV A0355/24) RMK: PILOTS ARE REQ TO FLW ATC
+INSTRUCTIONS STRICTLY.</p>
+<p>输出： { "type": "禁航", "atc": null, "fpl": null, "height_detail": {
+"upper": "UNL", "lower": "FL100" }, "area_id": null, "change_info":
+null, "directional": null, "route": "Q14", "start": null, "end": null,
+"exclude_info": null }</p>
+<p>示例2： 输入： D) E)ATS RTE SEGMENTS CLSD: A100 KRASNYY SULIN
+NDB(KL)- ARNAD A102 BABUR-NALEM A225 GUKOL-TIKNA</p>
+<p>输出： { "type": "禁航", "atc": null, "fpl": null, "height_detail":
+null, "area_id": null, "change_info": null, "directional": null,
+"route": ["A100", "A102", "A225"], "start": ["KL", "BABUR", "GUKOL"],
+"end": ["ARNAD", "NALEM", "TIKNA"], "exclude_info": null }</p>
+<p>请注意：</p>
+<ol type="1">
+<li><p>输出应为JSON格式。</p></li>
+<li><p>如果某个字段在给定文本中没有相关信息，请将其值设为null。</p></li>
+<li><p>对于route、start和end字段，如果有多个值，请使用数组格式。</p></li>
+<li><p>请仔细分析文本，提取所有可能的相关信息。</p></li>
+<li><p>如果文本中包含多条信息，请尽可能提取所有相关内容。</p></li>
+</ol>
+<p>现在，请根据以上要求和示例，从下面给出的NOTAM文本中提取相关信息：</p>
+<p>D)19-22 0430-1700 E)ATS RTE SEGMENT CLSD: KR395 LYSKOVO
+NDB(HD)-OSVUP.</p>
+
+                
+              </div>
+            
+            <hr/>
+            <div>
+              <div class="post-metas my-3">
+  
+    <div class="post-meta mr-3 d-flex align-items-center">
+      <i class="iconfont icon-category"></i>
+      
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/Skill/" class="category-chain-item">Skill</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
+    </div>
+  
+  
+    <div class="post-meta">
+      <i class="iconfont icon-tags"></i>
+      
+        <a href="/tags/%E4%BF%A1%E6%81%AF%E6%8A%BD%E5%8F%96/" class="print-no-link">#信息抽取</a>
+      
+        <a href="/tags/%E5%A4%A7%E6%A8%A1%E5%9E%8B/" class="print-no-link">#大模型</a>
+      
+    </div>
+  
+</div>
+
+
+              
+  
+
+  <div class="license-box my-3">
+    <div class="license-title">
+      <div>大模型信息抽取学习</div>
+      <div>http://example.com/2024/07/15/Skill/大模型信息抽取学习/</div>
+    </div>
+    <div class="license-meta">
+      
+        <div class="license-meta-item">
+          <div>作者</div>
+          <div>Mq Liu</div>
+        </div>
+      
+      
+        <div class="license-meta-item license-meta-date">
+          <div>发布于</div>
+          <div>2024年7月15日</div>
+        </div>
+      
+      
+      
+        <div class="license-meta-item">
+          <div>许可协议</div>
+          <div>
+            
+              
+              
+                <a class="print-no-link" target="_blank" href="https://creativecommons.org/licenses/by/4.0/">
+                  <span class="hint--top hint--rounded" aria-label="BY - 署名">
+                    <i class="iconfont icon-cc-by"></i>
+                  </span>
+                </a>
+              
+            
+          </div>
+        </div>
+      
+    </div>
+    <div class="license-icon iconfont"></div>
+  </div>
+
+
+
+              
+                <div class="post-prevnext my-3">
+                  <article class="post-prev col-6">
+                    
+                    
+                      <a href="/2024/08/14/Lab/Team/%E6%8B%9B%E7%94%9F%E5%B9%BF%E5%91%8A(%E5%8C%97%E9%82%AE%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E5%AD%A6%E9%99%A2%E6%96%B9%E5%85%A8%E6%95%99%E6%8E%88)/" title="招生广告(北邮人工智能学院方全教授)">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">招生广告(北邮人工智能学院方全教授)</span>
+                        <span class="visible-mobile">上一篇</span>
+                      </a>
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/2024/07/15/Paper/%E5%A4%9A%E6%A8%A1%E6%80%81%E8%9E%8D%E5%90%88%E8%AE%BA%E6%96%87%E9%98%85%E8%AF%BB/" title="多模态融合论文阅读">
+                        <span class="hidden-mobile">多模态融合论文阅读</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+  
+  
+    <article id="comments" lazyload>
+      
+  <div id="valine"></div>
+  <script type="text/javascript">
+    Fluid.utils.loadComments('#valine', function() {
+      Fluid.utils.createScript('https://lib.baomitu.com/valine/1.5.1/Valine.min.js', function() {
+        var options = Object.assign(
+          {"appId":"oBIhtS4ds900qgKxHu6YKUjY-gzGzoHsz","appKey":"tsgO3EhtRkD5Mdt4uu3Nw1N6","path":"window.location.pathname","placeholder":null,"avatar":"retro","meta":["nick","mail","link"],"requiredFields":[],"pageSize":10,"lang":"zh-CN","highlight":false,"recordIP":false,"serverURLs":"","emojiCDN":null,"emojiMaps":null,"enableQQ":false},
+          {
+            el: "#valine",
+            path: window.location.pathname
+          }
+        )
+        new Valine(options);
+        Fluid.utils.waitElementVisible('#valine .vcontent', () => {
+          var imgSelector = '#valine .vcontent img:not(.vemoji)';
+          Fluid.plugins.imageCaption(imgSelector);
+          Fluid.plugins.fancyBox(imgSelector);
+        })
+      });
+    });
+  </script>
+  <noscript>Please enable JavaScript to view the comments</noscript>
+
+
+    </article>
+  
+
+
+          </article>
+        </div>
+      </div>
+    </div>
+
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+  <aside class="sidebar" style="margin-left: -1rem">
+    <div id="toc">
+  <p class="toc-header">
+    <i class="iconfont icon-list"></i>
+    <span>目录</span>
+  </p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+
+
+  </aside>
+
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+
+
+
+
+    
+
+    
+      <a id="scroll-top-button" aria-label="TOP" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v" for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+
+    
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+  
+    <div class="footer-content">
+      Carpediem
+    </div>
+  
+  
+  
+</div>
+
+  </footer>
+
+  <!-- Scripts -->
+  
+  <script  src="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://lib.baomitu.com/jquery/3.6.4/jquery.min.js" ></script>
+<script  src="https://lib.baomitu.com/twitter-bootstrap/4.6.1/js/bootstrap.min.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+
+  <script  src="https://lib.baomitu.com/typed.js/2.0.12/typed.min.js" ></script>
+  <script>
+    (function (window, document) {
+      var typing = Fluid.plugins.typing;
+      var subtitle = document.getElementById('subtitle');
+      if (!subtitle || !typing) {
+        return;
+      }
+      var text = subtitle.getAttribute('data-typed-text');
+      
+        typing(text);
+      
+    })(window, document);
+  </script>
+
+
+
+
+  
+    <script  src="/js/img-lazyload.js" ></script>
+  
+
+
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/tocbot/4.20.1/tocbot.min.js', function() {
+    var toc = jQuery('#toc');
+    if (toc.length === 0 || !window.tocbot) { return; }
+    var boardCtn = jQuery('#board-ctn');
+    var boardTop = boardCtn.offset().top;
+
+    window.tocbot.init(Object.assign({
+      tocSelector     : '#toc-body',
+      contentSelector : '.markdown-body',
+      linkClass       : 'tocbot-link',
+      activeLinkClass : 'tocbot-active-link',
+      listClass       : 'tocbot-list',
+      isCollapsedClass: 'tocbot-is-collapsed',
+      collapsibleClass: 'tocbot-is-collapsible',
+      scrollSmooth    : true,
+      includeTitleTags: true,
+      headingsOffset  : -boardTop,
+    }, CONFIG.toc));
+    if (toc.find('.toc-list-item').length > 0) {
+      toc.css('visibility', 'visible');
+    }
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('tocbot' in window) {
+        tocbot.refresh();
+        var toc = jQuery('#toc');
+        if (toc.length === 0 || !tocbot) {
+          return;
+        }
+        if (toc.find('.toc-list-item').length > 0) {
+          toc.css('visibility', 'visible');
+        }
+      }
+    });
+  });
+</script>
+
+
+  <script src=https://lib.baomitu.com/clipboard.js/2.0.11/clipboard.min.js></script>
+
+  <script>Fluid.plugins.codeWidget();</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/anchor-js/5.0.0/anchor.min.js', function() {
+    window.anchors.options = {
+      placement: CONFIG.anchorjs.placement,
+      visible  : CONFIG.anchorjs.visible
+    };
+    if (CONFIG.anchorjs.icon) {
+      window.anchors.options.icon = CONFIG.anchorjs.icon;
+    }
+    var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+    var res = [];
+    for (var item of el) {
+      res.push('.markdown-body > ' + item.trim());
+    }
+    if (CONFIG.anchorjs.placement === 'left') {
+      window.anchors.options.class = 'anchorjs-link-left';
+    }
+    window.anchors.add(res.join(', '));
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('anchors' in window) {
+        anchors.removeAll();
+        var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+        var res = [];
+        for (var item of el) {
+          res.push('.markdown-body > ' + item.trim());
+        }
+        if (CONFIG.anchorjs.placement === 'left') {
+          anchors.options.class = 'anchorjs-link-left';
+        }
+        anchors.add(res.join(', '));
+      }
+    });
+  });
+</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.js', function() {
+    Fluid.plugins.fancyBox();
+  });
+</script>
+
+
+  <script>Fluid.plugins.imageCaption();</script>
+
+  <script  src="/js/local-search.js" ></script>
+
+
+
+
+
+<!-- 主题的启动项，将它保持在最底部 -->
+<!-- the boot of the theme, keep it at the bottom -->
+<script  src="/js/boot.js" ></script>
+
+
+  
+
+  <noscript>
+    <div class="noscript-warning">博客在允许 JavaScript 运行的环境下浏览效果更佳</div>
+  </noscript>
+</body>
+</html>

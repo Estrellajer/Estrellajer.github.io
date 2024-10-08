@@ -1,0 +1,859 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN" data-default-color-scheme=auto>
+
+
+
+<head>
+  <meta charset="UTF-8">
+
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/fluid.png">
+  <link rel="icon" href="/img/fluid.png">
+  
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="author" content="Mq Liu">
+  <meta name="keywords" content="">
+  
+    <meta name="description" content="🟢 大语言模型的推理能力：无需提示的思维链解码 在🤖人工智能领域，大语言模型（LLMs），例如GPT-4和PaLM-2，展现出了强大的🧠推理能力。通常，我们通过提示（prompting）技术来激发这些推理能力，但这一过程需要复杂的🛠️手动设计，例如少样本提示和零样本提示。然而，最近的一项研究提出了一个全新的问题：大语言模型能否在没有提示的情况下进行有效推理？这种方法被称为“思维链解码”（C">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Carpediem">
+<meta property="og:url" content="http://example.com/2024/10/08/Paper/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E6%8E%A8%E7%90%86/Cot-Decoding/index.html">
+<meta property="og:site_name" content="Carpediem">
+<meta property="og:description" content="🟢 大语言模型的推理能力：无需提示的思维链解码 在🤖人工智能领域，大语言模型（LLMs），例如GPT-4和PaLM-2，展现出了强大的🧠推理能力。通常，我们通过提示（prompting）技术来激发这些推理能力，但这一过程需要复杂的🛠️手动设计，例如少样本提示和零样本提示。然而，最近的一项研究提出了一个全新的问题：大语言模型能否在没有提示的情况下进行有效推理？这种方法被称为“思维链解码”（C">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2024-10-08T10:03:12.517Z">
+<meta property="article:modified_time" content="2024-10-08T10:03:12.517Z">
+<meta property="article:author" content="Mq Liu">
+<meta name="twitter:card" content="summary_large_image">
+  
+  
+  
+  <title>Carpediem</title>
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
+
+
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/github-markdown-css/4.0.0/github-markdown.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/hint.css/2.7.0/hint.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.css" />
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+<!-- Do not modify the link that theme dependent icons -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/c/font_1749284_5i9bdhy70f8.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/c/font_1736178_k526ubmyhba.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+
+  <link id="highlight-css" rel="stylesheet" href="/css/highlight.css" />
+  
+    <link id="highlight-css-dark" rel="stylesheet" href="/css/highlight-dark.css" />
+  
+
+
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    Fluid.ctx = Object.assign({}, Fluid.ctx)
+    var CONFIG = {"hostname":"example.com","root":"/","version":"1.9.8","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":{"measurement_id":null},"tencent":{"sid":null,"cid":null},"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false},"umami":{"src":null,"website_id":null,"domains":null,"start_time":"2024-01-01T00:00:00.000Z","token":null,"api_server":null}},"search_path":"/local-search.xml","include_content_in_search":true};
+
+    if (CONFIG.web_analytics.follow_dnt) {
+      var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
+      Fluid.ctx.dnt = dntVal && (dntVal.startsWith('1') || dntVal.startsWith('yes') || dntVal.startsWith('on'));
+    }
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+  
+
+
+  
+<meta name="generator" content="Hexo 7.3.0"></head>
+
+
+<body>
+  
+
+  <header>
+    
+
+<div class="header-inner" style="height: 70vh;">
+  <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand" href="/">
+      <strong>Carpediem</strong>
+    </a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/" target="_self">
+                <i class="iconfont icon-home-fill"></i>
+                <span>首页</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/" target="_self">
+                <i class="iconfont icon-archive-fill"></i>
+                <span>归档</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/" target="_self">
+                <i class="iconfont icon-category-fill"></i>
+                <span>分类</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/" target="_self">
+                <i class="iconfont icon-tags-fill"></i>
+                <span>标签</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/" target="_self">
+                <i class="iconfont icon-user-fill"></i>
+                <span>关于</span>
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" target="_self" href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
+              <i class="iconfont icon-search"></i>
+            </a>
+          </li>
+          
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" target="_self" href="javascript:;" aria-label="Color Toggle">
+              <i class="iconfont icon-dark" id="color-toggle-icon"></i>
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  
+
+<div id="banner" class="banner" parallax=true
+     style="background: url('/img/default.png') no-repeat center center; background-size: cover;">
+  <div class="full-bg-img">
+    <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+      <div class="banner-text text-center fade-in-up">
+        <div class="h2">
+          
+            <span id="subtitle" data-typed-text=""></span>
+          
+        </div>
+
+        
+          
+  <div class="mt-3">
+    
+    
+      <span class="post-meta">
+        <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+        <time datetime="2024-10-08 10:03" pubdate>
+          2024年10月8日 上午
+        </time>
+      </span>
+    
+  </div>
+
+  <div class="mt-1">
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-chart"></i>
+        
+          4.3k 字
+        
+      </span>
+    
+
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-clock-fill"></i>
+        
+        
+        
+          36 分钟
+        
+      </span>
+    
+
+    
+    
+  </div>
+
+
+        
+      </div>
+
+      
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+
+    </div>
+
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div id="board">
+          <article class="post-content mx-auto">
+            <h1 id="seo-header"></h1>
+            
+            
+              <div class="markdown-body">
+                
+                <h3 id="大语言模型的推理能力无需提示的思维链解码"><strong>🟢
+大语言模型的推理能力：无需提示的思维链解码</strong></h3>
+<p>在🤖人工智能领域，大语言模型（LLMs），例如GPT-4和PaLM-2，展现出了强大的🧠推理能力。通常，我们通过提示（prompting）技术来激发这些推理能力，但这一过程需要复杂的🛠️手动设计，例如少样本提示和零样本提示。然而，最近的一项研究提出了一个全新的问题：大语言模型能否在没有提示的情况下进行有效推理？这种方法被称为“思维链解码”（CoT-decoding），揭示了LLMs的固有推理能力，而无需依赖人为提示。</p>
+<h4 id="现有推理方法的局限性">现有推理方法的局限性</h4>
+<p>现有的推理方法主要包括两种：</p>
+<ol type="1">
+<li><p><strong>提示技术</strong>：通过少样本提示或零样本提示来激发模型的🧠推理能力。这种方式虽然有效，但通常依赖于人类的先验知识，难以真实评估模型的内在推理能力。</p></li>
+<li><p><strong>模型训练</strong>：通过大量的监督数据对模型进行微调，使其学会推理。这种方法代价高昂，且依赖大量的📊标注数据。</p></li>
+</ol>
+<h4 id="思维链解码的创新">思维链解码的创新</h4>
+<p>这项新研究的核心问题是：<strong>大语言模型是否具备在没有提示的情况下推理的能力？</strong>
+研究者通过改变解码过程，而不是使用传统的贪婪解码（即每次选择概率最高的词），来探索模型的推理路径。通过考虑前几个候选词（top-k
+tokens）的替代路径，他们发现模型能够自然地展现思维链推理能力。</p>
+<p>例如，给定问题：“我有🍎3个苹果，我爸爸比我多🍎2个苹果，我们一共有多少个苹果？”</p>
+<p><strong>贪婪解码示例</strong>： 1.
+使用贪婪解码时，模型直接选择概率最高的词，得到如下推理： -
+第一步，模型解码出“5”，最终生成答案为“🍎5个苹果”。 -
+这种情况下，模型并没有展现出逐步推理的能力，只是简单地给出了一个错误的直接答案。</p>
+<p><strong>思维链解码示例</strong>： 1.
+使用思维链解码时，我们考虑前几个候选词（例如top-3
+tokens）并沿不同路径继续解码。 -
+在某一条路径中，模型首先选择了“我”，然后继续解码：“我有🍎3个苹果，我爸爸比我多🍎2个苹果，所以他有🍎5个苹果，3
++ 5 = 8，我们一共有🍎8个苹果”。 -
+在这条路径中，模型展现出了逐步推理的过程，最终得出正确答案“🍎8个苹果”。</p>
+<p>通过这种方式，研究者发现，模型内在具备推理能力，只是传统的贪婪解码方法没有充分利用这些能力。</p>
+<h4 id="思维链解码的优势">思维链解码的优势</h4>
+<ol type="1">
+<li><p><strong>无需提示</strong>：这种方法完全绕过了提示技术，直接激发了模型的内在🧠推理能力，避免了复杂的提示设计。</p></li>
+<li><p><strong>揭示内在能力</strong>：通过改变解码过程，研究者能够更真实地评估模型的🧠推理能力，而不受人为先验知识的影响。</p></li>
+<li><p><strong>提高推理准确性</strong>：在数学和常识推理任务中，思维链解码相比贪婪解码表现出显著的改进。例如，在数学推理任务中，选择top-10解码路径中的最优路径，88%的情况下模型能够找到包含思维链的正确解码路径。</p></li>
+</ol>
+<h4 id="思维链解码的局限性">思维链解码的局限性</h4>
+<p>尽管思维链解码在激发模型的推理能力方面展示了巨大的潜力，但它也存在一些局限性：</p>
+<ol type="1">
+<li><p><strong>计算开销高</strong>：与传统的贪婪解码相比，思维链解码需要考虑多个候选路径，这显著增加了计算的复杂性和⏳时间成本。特别是在处理较长的文本或复杂的问题时，计算资源的需求会大幅上升。</p></li>
+<li><p><strong>路径选择的复杂性</strong>：在实际应用中，选择合适的top-k值是一个挑战。如果选择的k值过大，可能会导致计算成本过高；如果k值过小，则可能错过有效的思维链路径，导致推理失败。</p></li>
+<li><p><strong>模型的不确定性</strong>：虽然思维链解码能够提高模型的置信度，但并不能保证每次都能找到正确的解码路径。在某些情况下，即使考虑了多个解码路径，模型仍可能得出错误的结论。这种不确定性限制了思维链解码在高精度场景中的应用。</p></li>
+<li><p><strong>对任务类型的依赖</strong>：思维链解码在一些任务中表现优异，例如数学推理和常识推理，但在其他类型的任务（如语言生成或开放式问答）中，其效果可能不如提示技术或其他方法。这表明思维链解码的适用性并不是通用的，还需要针对不同任务类型进行优化。</p></li>
+</ol>
+<h4 id="关键发现">关键发现</h4>
+<p>研究表明，<strong>大语言模型具备内在的🧠推理能力</strong>，这些能力可以通过简单的解码修改来激发，而无需复杂的提示技术。传统的贪婪解码路径往往忽略了这些推理路径，而思维链解码能够有效地找到包含完整推理过程的路径，从而提高模型的推理准确性。</p>
+<p>此外，研究还发现，当模型的解码路径中包含思维链时，模型对最终答案的置信度显著提高。这意味着，思维链不仅能帮助模型推理，还能使模型在生成答案时更加确定。</p>
+<h4 id="研究意义">研究意义</h4>
+<p>这项研究为我们理解和利用大语言模型提供了新的思路。它挑战了“大语言模型无法在没有提示的情况下进行有效推理”的传统观点，揭示了模型潜在的🧠推理能力。这一发现可能推动开发出新的、更高效的🤖AI系统，使得它们能够在更少人为干预的情况下进行复杂推理。</p>
+<h4 id="总结">总结</h4>
+<p>思维链解码为大语言模型的推理能力提供了新的视角。通过简单地改变解码过程，这种方法绕过了提示技术的复杂性，揭示了LLMs的固有🧠推理能力。这不仅有助于我们更好地理解这些模型，也为🤖AI领域的未来研究和应用提供了重要的启示。</p>
+<p>如果您对大语言模型的🧠推理能力或思维链解码方法有更多兴趣，欢迎在💬评论区留言讨论！</p>
+<h3
+id="思维链cot能够让transformer解决固有的串行问题"><strong>思维链（CoT）能够让Transformer解决固有的串行问题</strong></h3>
+<p>Transformer
+模型近年来在自然语言处理领域展现出了强大的能力。然而，对于某些需要逐步推理的复杂任务，Transformer
+的并行计算特点让它难以表现得很好。那么，如何提升 Transformer
+在这些复杂任务上的表现呢？这正是我们今天要讨论的一篇论文所提出的问题。通过引入思维链（Chain
+of Thought，CoT），这篇论文探索了如何显著提升 Transformer
+模型的计算能力，特别是在处理那些需要一步步推理的“串行问题”时。</p>
+<h4 id="什么是思维链chain-of-thought-cot">什么是思维链（Chain of
+Thought, CoT）？</h4>
+<p>思维链（CoT）是一种技术，旨在让 Transformer
+模型在回答问题之前先生成一系列中间推理步骤，类似于人类解题的思维过程。这种逐步生成的方式，帮助模型更好地理解复杂问题的内在逻辑，从而得出更为精确的答案。</p>
+<p>简单来说，如果你让模型回答一个复杂的数学问题，CoT
+会让它先写下所有的中间步骤，而不是直接给出最终答案。这种方式不仅可以帮助模型理解问题，还让它能通过“思维过程”更好地得出正确的结论。</p>
+<h4 id="transformer-在处理串行问题上的限制">Transformer
+在处理串行问题上的限制</h4>
+<p>首先，让我们来看看不带有思维链的 Transformer
+能处理哪些问题。Transformer
+的主要优势是其并行计算能力，因此在处理可并行化的问题时表现非常好。然而，对于那些必须逐步推进的任务（我们称之为<strong>串行问题</strong>），传统
+Transformer 在能力上存在严重的不足。</p>
+<p>论文中，作者通过理论分析指出，常数深度的 Transformer
+在计算能力上受限于 <strong>AC0</strong> 和 <strong>TC0</strong>
+复杂度类。简单来说，AC0 和 TC0 都是描述电路计算能力的术语。AC0
+允许并行地进行基本的“与/或/非”操作，但不能解决像奇偶性检查（parity）这样的复杂问题。这意味着，没有思维链的
+Transformer 很难有效处理一些需要按特定顺序完成的任务。</p>
+<h4 id="cot-如何提升-transformer-的能力">CoT 如何提升 Transformer
+的能力？</h4>
+<p>那么，引入思维链（CoT）后，情况会如何改变呢？</p>
+<p><strong>定理 3.3</strong> 中的一个重要结论是：<strong>带有多项式步骤
+CoT 的 Transformer，可以模拟比传统 Transformer
+更复杂的电路计算</strong>。这意味着，加入 CoT 后，Transformer
+可以通过逐步生成中间推理步骤，逐一处理更复杂的计算逻辑，就像完成一个个“任务关卡”一样。每一步的思维链对应于电路中的一个逻辑门操作，从而帮助模型逐步接近问题的解决方案。</p>
+<h5 id="理论推导过程">理论推导过程</h5>
+<p>论文中的理论推导分为几个关键步骤，以证明带有思维链的 Transformer
+能够显著提升其表达能力。</p>
+<ol type="1">
+<li><p><strong>有限精度建模：保证结果的现实性</strong></p>
+<ul>
+<li>Transformer 的训练和推理通常使用 16 或 32 位浮点数。论文首先引入了
+<strong>有限精度的浮点数计算</strong>
+模型，解决了以往理论研究中假设的无限精度问题。这种有限精度模型确保了论文中的推导结果更加贴近实际计算机硬件中
+Transformer 的工作机制。</li>
+<li>使用 <span class="math inline">\(e\)</span> 位的指数和 <span
+class="math inline">\(s\)</span>
+位的尾数来表示浮点数，并在每次算术运算后立即进行舍入，防止无限精度假设。通过这种舍入模型，作者推导出适用于有限精度的
+Transformer 计算模型。</li>
+</ul></li>
+<li><p><strong>Transformer 的表达能力：没有 CoT 的上界</strong></p>
+<ul>
+<li><p><strong>定理 3.1：AC0 上界</strong></p>
+<ul>
+<li>常数深度、常数精度的 Transformer 只能表达 AC0 复杂度类的函数。AC0
+类问题允许常数深度和多项式大小的与/或电路，但不能解决例如奇偶性（parity）这样的任务。</li>
+</ul>
+<p>公式上表示： <span class="math display">\[
+T[poly(n), 1, 1] \subseteq CoT[\log n, poly(n), 1, 1] \subseteq AC0
+\]</span></p></li>
+<li><p><strong>定理 3.2：TC0 上界</strong></p>
+<ul>
+<li>当 Transformer
+使用定点数（没有指数位）时，即使进行舍入操作，它的表达能力也可以保持在
+TC0 复杂度类内。TC0 电路可以有效并行处理任务，如乘法、模运算等。</li>
+</ul>
+<p>公式上表示： <span class="math display">\[
+T[poly(n), \log(n), 0] \subseteq CoT[\log n, poly(n), \log(n), 0]
+\subseteq TC0
+\]</span></p></li>
+</ul>
+<p>这些定理证明了，在没有 CoT 的情况下，Transformer
+的计算能力受到限制，尤其是在处理复杂的串行任务时。</p></li>
+<li><p><strong>引入思维链（CoT）：提高表达能力</strong></p>
+<ul>
+<li><p><strong>定理 3.3：CoT 提高表达能力</strong></p>
+<ul>
+<li>通过引入多项式步骤的 CoT，Transformer 可以通过每一步 CoT
+来模拟电路中的一个门操作，这使得模型能够处理复杂的串行任务。具体步骤如下：
+<ul>
+<li>每一步 CoT 对应模拟电路中的一个逻辑门，如与、或、非操作。</li>
+<li>模型使用注意力机制提取前两个输入门的值，并通过前馈网络计算当前门的值。</li>
+</ul></li>
+</ul>
+<p>这种模拟过程极大地提升了 Transformer 的表达能力，特别是当嵌入大小为
+<span class="math inline">\(\log n\)</span>
+时，模型能够正确存储并区分不同位置的门信息。</p>
+<p>公式上表示： <span class="math display">\[
+SIZE[T(n)] \subseteq CoT[T(n), \log n, 1]
+\]</span> 这表明，带有多项式 CoT 的 Transformer
+可以模拟所有多项式大小的布尔电路，极大拓展了其表达能力。</p></li>
+<li><p><strong>定理 3.5：置换群 S5 的问题</strong></p>
+<ul>
+<li>在串行任务中，置换群（如 S5）是一个典型的复杂问题。定理 3.5
+证明了带有 CoT 的 Transformer 可以解决 S5 的置换问题，而没有 CoT 的
+Transformer 无法解决这个问题。</li>
+</ul></li>
+</ul></li>
+</ol>
+<h4 id="实验验证cot-的力量">实验验证：CoT 的力量</h4>
+<p>为了验证 CoT 的有效性，作者通过一系列实验对比了不带 CoT 和带有 CoT 的
+Transformer 在不同类型任务上的表现，包括：</p>
+<ul>
+<li><strong>模加法</strong>：这是一个可以并行化的任务，结果表明，带或不带
+CoT 的 Transformer 在处理该任务时表现相似。</li>
+<li><strong>置换组合（S5）和迭代平方</strong>：这两个任务需要一步步推理才能得到正确答案，属于典型的串行问题。实验结果显示，带有
+CoT 的 Transformer 几乎可以达到 100% 的准确率，而没有 CoT 的 Transformer
+在这些任务上的表现非常差，准确率仅在 20%-30% 左右。</li>
+</ul>
+<p>这些实验结果清楚地表明，<strong>引入思维链能够显著提升 Transformer
+在复杂推理任务上的表现，尤其是在深度有限的情况下</strong>。</p>
+<h4 id="具体的例子帮助理解">具体的例子帮助理解</h4>
+<p>为了更好地理解思维链（CoT）对 Transformer
+的提升作用，让我们来看几个具体的例子。</p>
+<h5 id="例子-1模加法任务">例子 1：模加法任务</h5>
+<p>考虑一个简单的模加法问题，例如求一组数字的和，然后对结果取模。假设输入是
+<code>[1, 2, 3, 4, 5]</code>，目标是计算这组数字的和并对 7
+取模。对于不带 CoT 的
+Transformer，模型需要一次性理解并输出最终结果，这对于深度有限的
+Transformer 来说比较困难。而带有 CoT 的 Transformer
+可以逐步生成每个数字的加法过程，比如：</p>
+<ul>
+<li>第一步：<code>1 + 2 = 3</code></li>
+<li>第二步：<code>3 + 3 = 6</code></li>
+<li>第三步：<code>6 + 4 = 10</code></li>
+<li>第四步：<code>10 + 5 = 15</code></li>
+<li>最后一步：<code>15 % 7 = 1</code></li>
+</ul>
+<p>通过逐步计算，带有 CoT
+的模型可以显著提高其在模加法任务上的准确性。</p>
+<h5 id="例子-2置换组合任务s5">例子 2：置换组合任务（S5）</h5>
+<p>在置换组合任务中，输入是一系列元素的置换，例如
+<code>[2, 3, 1, 5, 4]</code> 和
+<code>[1, 4, 3, 5, 2]</code>，目标是求这两个置换的组合。对于这样的任务，模型需要先理解每个置换的含义，然后逐步将它们组合起来，这样的操作必须按特定顺序进行。</p>
+<p>带有 CoT 的 Transformer 可以通过以下步骤来解决：</p>
+<ul>
+<li>第一步：计算第一个置换 <code>[2, 3, 1, 5, 4]</code> 的结果。</li>
+<li>第二步：将结果与第二个置换 <code>[1, 4, 3, 5, 2]</code>
+进行组合。</li>
+<li>最后一步：得到最终组合的结果。</li>
+</ul>
+<p>通过这种逐步推理的方式，带有 CoT
+的模型可以比直接输出最终答案的模型表现更好。</p>
+<h5 id="例子-3迭代平方任务">例子 3：迭代平方任务</h5>
+<p>在迭代平方任务中，输入是一个初始值和一系列平方操作，例如
+<code>2 ^ 2 ^ 2 =</code>，目标是求出最终结果。带有 CoT 的 Transformer
+可以逐步计算：</p>
+<ul>
+<li>第一步：<code>2 ^ 2 = 4</code></li>
+<li>第二步：<code>4 ^ 2 = 16</code></li>
+</ul>
+<p>这样逐步计算的方式帮助模型更好地理解每一步的推理过程，从而得出正确的最终答案。</p>
+<h4 id="为什么思维链这么有效">为什么思维链这么有效？</h4>
+<p>思维链的有效性可以从几个方面理解： 1.
+<strong>逐步推理</strong>：通过分解任务，模型可以逐步理解并解决复杂问题，而不是试图一次性给出最终答案。
+2.
+<strong>减少错误积累</strong>：在没有思维链的情况下，模型容易因为中间推理错误而导致最终答案错误。而通过
+CoT，模型可以一步步检查自己的推理过程，减少错误的积累。 3.
+<strong>增强推理的表达能力</strong>：CoT
+本质上是将模型的计算能力从简单的“并行计算”提升到复杂的“串行推理”，从而能够处理更多样的任务类型。</p>
+<h4 id="总结与未来展望">总结与未来展望</h4>
+<p>这篇论文为我们展示了如何通过引入思维链（Chain of
+Thought）来大幅度提升 Transformer
+的推理能力，特别是在处理那些需要逐步推理的复杂任务时。通过理论分析和实验证明，带有
+CoT 的 Transformer
+能够模拟更复杂的电路计算，并在多个串行问题上表现出了远超没有 CoT
+的模型的能力。</p>
+<p>这种研究为未来的 Transformer
+设计和改进提供了新的思路。或许未来的人工智能系统可以更像人类一样，逐步思考、分解问题，从而解决更复杂的任务。这不仅能提升模型的准确性，还可能让模型在处理复杂任务时更加透明和可解释。</p>
+<p>好的人工智能-&gt;zero shot的推理能力</p>
+<p>数据，领域知识，</p>
+<p>微调</p>
+
+                
+              </div>
+            
+            <hr/>
+            <div>
+              <div class="post-metas my-3">
+  
+  
+</div>
+
+
+              
+  
+
+  <div class="license-box my-3">
+    <div class="license-title">
+      <div></div>
+      <div>http://example.com/2024/10/08/Paper/大模型推理/Cot-Decoding/</div>
+    </div>
+    <div class="license-meta">
+      
+        <div class="license-meta-item">
+          <div>作者</div>
+          <div>Mq Liu</div>
+        </div>
+      
+      
+        <div class="license-meta-item license-meta-date">
+          <div>发布于</div>
+          <div>2024年10月8日</div>
+        </div>
+      
+      
+      
+        <div class="license-meta-item">
+          <div>许可协议</div>
+          <div>
+            
+              
+              
+                <a class="print-no-link" target="_blank" href="https://creativecommons.org/licenses/by/4.0/">
+                  <span class="hint--top hint--rounded" aria-label="BY - 署名">
+                    <i class="iconfont icon-cc-by"></i>
+                  </span>
+                </a>
+              
+            
+          </div>
+        </div>
+      
+    </div>
+    <div class="license-icon iconfont"></div>
+  </div>
+
+
+
+              
+                <div class="post-prevnext my-3">
+                  <article class="post-prev col-6">
+                    
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/2024/10/06/Paper/%E5%8F%AF%E8%A7%A3%E9%87%8A%E6%80%A7/Inspiration-Zoom%20In/" title="Inspiration-Zoom In">
+                        <span class="hidden-mobile">Inspiration-Zoom In</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+  
+  
+    <article id="comments" lazyload>
+      
+  <div id="valine"></div>
+  <script type="text/javascript">
+    Fluid.utils.loadComments('#valine', function() {
+      Fluid.utils.createScript('https://lib.baomitu.com/valine/1.5.1/Valine.min.js', function() {
+        var options = Object.assign(
+          {"appId":"oBIhtS4ds900qgKxHu6YKUjY-gzGzoHsz","appKey":"tsgO3EhtRkD5Mdt4uu3Nw1N6","path":"window.location.pathname","placeholder":null,"avatar":"retro","meta":["nick","mail","link"],"requiredFields":[],"pageSize":10,"lang":"zh-CN","highlight":false,"recordIP":false,"serverURLs":"","emojiCDN":null,"emojiMaps":null,"enableQQ":false},
+          {
+            el: "#valine",
+            path: window.location.pathname
+          }
+        )
+        new Valine(options);
+        Fluid.utils.waitElementVisible('#valine .vcontent', () => {
+          var imgSelector = '#valine .vcontent img:not(.vemoji)';
+          Fluid.plugins.imageCaption(imgSelector);
+          Fluid.plugins.fancyBox(imgSelector);
+        })
+      });
+    });
+  </script>
+  <noscript>Please enable JavaScript to view the comments</noscript>
+
+
+    </article>
+  
+
+
+          </article>
+        </div>
+      </div>
+    </div>
+
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+  <aside class="sidebar" style="margin-left: -1rem">
+    <div id="toc">
+  <p class="toc-header">
+    <i class="iconfont icon-list"></i>
+    <span>目录</span>
+  </p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+
+
+  </aside>
+
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+
+
+
+
+    
+
+    
+      <a id="scroll-top-button" aria-label="TOP" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v" for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+
+    
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+  
+    <div class="footer-content">
+      Carpediem
+    </div>
+  
+  
+  
+</div>
+
+  </footer>
+
+  <!-- Scripts -->
+  
+  <script  src="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://lib.baomitu.com/jquery/3.6.4/jquery.min.js" ></script>
+<script  src="https://lib.baomitu.com/twitter-bootstrap/4.6.1/js/bootstrap.min.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+
+  <script  src="https://lib.baomitu.com/typed.js/2.0.12/typed.min.js" ></script>
+  <script>
+    (function (window, document) {
+      var typing = Fluid.plugins.typing;
+      var subtitle = document.getElementById('subtitle');
+      if (!subtitle || !typing) {
+        return;
+      }
+      var text = subtitle.getAttribute('data-typed-text');
+      
+        typing(text);
+      
+    })(window, document);
+  </script>
+
+
+
+
+  
+    <script  src="/js/img-lazyload.js" ></script>
+  
+
+
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/tocbot/4.20.1/tocbot.min.js', function() {
+    var toc = jQuery('#toc');
+    if (toc.length === 0 || !window.tocbot) { return; }
+    var boardCtn = jQuery('#board-ctn');
+    var boardTop = boardCtn.offset().top;
+
+    window.tocbot.init(Object.assign({
+      tocSelector     : '#toc-body',
+      contentSelector : '.markdown-body',
+      linkClass       : 'tocbot-link',
+      activeLinkClass : 'tocbot-active-link',
+      listClass       : 'tocbot-list',
+      isCollapsedClass: 'tocbot-is-collapsed',
+      collapsibleClass: 'tocbot-is-collapsible',
+      scrollSmooth    : true,
+      includeTitleTags: true,
+      headingsOffset  : -boardTop,
+    }, CONFIG.toc));
+    if (toc.find('.toc-list-item').length > 0) {
+      toc.css('visibility', 'visible');
+    }
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('tocbot' in window) {
+        tocbot.refresh();
+        var toc = jQuery('#toc');
+        if (toc.length === 0 || !tocbot) {
+          return;
+        }
+        if (toc.find('.toc-list-item').length > 0) {
+          toc.css('visibility', 'visible');
+        }
+      }
+    });
+  });
+</script>
+
+
+  <script src=https://lib.baomitu.com/clipboard.js/2.0.11/clipboard.min.js></script>
+
+  <script>Fluid.plugins.codeWidget();</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/anchor-js/5.0.0/anchor.min.js', function() {
+    window.anchors.options = {
+      placement: CONFIG.anchorjs.placement,
+      visible  : CONFIG.anchorjs.visible
+    };
+    if (CONFIG.anchorjs.icon) {
+      window.anchors.options.icon = CONFIG.anchorjs.icon;
+    }
+    var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+    var res = [];
+    for (var item of el) {
+      res.push('.markdown-body > ' + item.trim());
+    }
+    if (CONFIG.anchorjs.placement === 'left') {
+      window.anchors.options.class = 'anchorjs-link-left';
+    }
+    window.anchors.add(res.join(', '));
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('anchors' in window) {
+        anchors.removeAll();
+        var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+        var res = [];
+        for (var item of el) {
+          res.push('.markdown-body > ' + item.trim());
+        }
+        if (CONFIG.anchorjs.placement === 'left') {
+          anchors.options.class = 'anchorjs-link-left';
+        }
+        anchors.add(res.join(', '));
+      }
+    });
+  });
+</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.js', function() {
+    Fluid.plugins.fancyBox();
+  });
+</script>
+
+
+  <script>Fluid.plugins.imageCaption();</script>
+
+  <script  src="/js/local-search.js" ></script>
+
+
+
+
+
+<!-- 主题的启动项，将它保持在最底部 -->
+<!-- the boot of the theme, keep it at the bottom -->
+<script  src="/js/boot.js" ></script>
+
+
+  
+
+  <noscript>
+    <div class="noscript-warning">博客在允许 JavaScript 运行的环境下浏览效果更佳</div>
+  </noscript>
+</body>
+</html>

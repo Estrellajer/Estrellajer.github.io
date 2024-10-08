@@ -1,0 +1,2702 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN" data-default-color-scheme=auto>
+
+
+
+<head>
+  <meta charset="UTF-8">
+
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/fluid.png">
+  <link rel="icon" href="/img/fluid.png">
+  
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="author" content="Mq Liu">
+  <meta name="keywords" content="">
+  
+    <meta name="description" content="KnowCoder 1. 论文试图解决什么问题？ 论文试图解决通用信息抽取(Universal Information Extraction, UIE)中的两个主要挑战：  缺乏一种统一的、大语言模型(LLMs)易于理解的模式表示方法； 缺乏一个有效的学习框架，能够鼓励LLMs准确地遵循特定模式来抽取结构化知识。  2. 这是否是一个新的问题？ 这不是一个全新的问题。通用信息抽取(UIE)是一个已">
+<meta property="og:type" content="article">
+<meta property="og:title" content="信息抽取论文阅读">
+<meta property="og:url" content="http://example.com/2024/08/20/Paper/%E4%BF%A1%E6%81%AF%E6%8A%BD%E5%8F%96%E8%AE%BA%E6%96%87%E9%98%85%E8%AF%BB/index.html">
+<meta property="og:site_name" content="Carpediem">
+<meta property="og:description" content="KnowCoder 1. 论文试图解决什么问题？ 论文试图解决通用信息抽取(Universal Information Extraction, UIE)中的两个主要挑战：  缺乏一种统一的、大语言模型(LLMs)易于理解的模式表示方法； 缺乏一个有效的学习框架，能够鼓励LLMs准确地遵循特定模式来抽取结构化知识。  2. 这是否是一个新的问题？ 这不是一个全新的问题。通用信息抽取(UIE)是一个已">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://picoflmq.oss-cn-beijing.aliyuncs.com/typora/202408211457800.png">
+<meta property="article:published_time" content="2024-08-20T15:37:00.000Z">
+<meta property="article:modified_time" content="2024-10-08T10:03:12.517Z">
+<meta property="article:author" content="Mq Liu">
+<meta property="article:tag" content="信息抽取">
+<meta property="article:tag" content="论文阅读">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://picoflmq.oss-cn-beijing.aliyuncs.com/typora/202408211457800.png">
+  
+  
+  
+  <title>信息抽取论文阅读 - Carpediem</title>
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
+
+
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/github-markdown-css/4.0.0/github-markdown.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/hint.css/2.7.0/hint.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.css" />
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+<!-- Do not modify the link that theme dependent icons -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/c/font_1749284_5i9bdhy70f8.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/c/font_1736178_k526ubmyhba.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+
+  <link id="highlight-css" rel="stylesheet" href="/css/highlight.css" />
+  
+    <link id="highlight-css-dark" rel="stylesheet" href="/css/highlight-dark.css" />
+  
+
+
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    Fluid.ctx = Object.assign({}, Fluid.ctx)
+    var CONFIG = {"hostname":"example.com","root":"/","version":"1.9.8","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":{"measurement_id":null},"tencent":{"sid":null,"cid":null},"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false},"umami":{"src":null,"website_id":null,"domains":null,"start_time":"2024-01-01T00:00:00.000Z","token":null,"api_server":null}},"search_path":"/local-search.xml","include_content_in_search":true};
+
+    if (CONFIG.web_analytics.follow_dnt) {
+      var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
+      Fluid.ctx.dnt = dntVal && (dntVal.startsWith('1') || dntVal.startsWith('yes') || dntVal.startsWith('on'));
+    }
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+  
+
+
+  
+<meta name="generator" content="Hexo 7.3.0"></head>
+
+
+<body>
+  
+
+  <header>
+    
+
+<div class="header-inner" style="height: 70vh;">
+  <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand" href="/">
+      <strong>Carpediem</strong>
+    </a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/" target="_self">
+                <i class="iconfont icon-home-fill"></i>
+                <span>首页</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/" target="_self">
+                <i class="iconfont icon-archive-fill"></i>
+                <span>归档</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/" target="_self">
+                <i class="iconfont icon-category-fill"></i>
+                <span>分类</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/" target="_self">
+                <i class="iconfont icon-tags-fill"></i>
+                <span>标签</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/" target="_self">
+                <i class="iconfont icon-user-fill"></i>
+                <span>关于</span>
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" target="_self" href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
+              <i class="iconfont icon-search"></i>
+            </a>
+          </li>
+          
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" target="_self" href="javascript:;" aria-label="Color Toggle">
+              <i class="iconfont icon-dark" id="color-toggle-icon"></i>
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  
+
+<div id="banner" class="banner" parallax=true
+     style="background: url('/img/default.png') no-repeat center center; background-size: cover;">
+  <div class="full-bg-img">
+    <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+      <div class="banner-text text-center fade-in-up">
+        <div class="h2">
+          
+            <span id="subtitle" data-typed-text="信息抽取论文阅读"></span>
+          
+        </div>
+
+        
+          
+  <div class="mt-3">
+    
+    
+      <span class="post-meta">
+        <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+        <time datetime="2024-08-20 15:37" pubdate>
+          2024年8月20日 下午
+        </time>
+      </span>
+    
+  </div>
+
+  <div class="mt-1">
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-chart"></i>
+        
+          33k 字
+        
+      </span>
+    
+
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-clock-fill"></i>
+        
+        
+        
+          277 分钟
+        
+      </span>
+    
+
+    
+    
+  </div>
+
+
+        
+      </div>
+
+      
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+
+    </div>
+
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div id="board">
+          <article class="post-content mx-auto">
+            <h1 id="seo-header">信息抽取论文阅读</h1>
+            
+            
+              <div class="markdown-body">
+                
+                <h3 id="knowcoder">KnowCoder</h3>
+<h5 id="论文试图解决什么问题">1. 论文试图解决什么问题？</h5>
+<p>论文试图解决通用信息抽取(Universal Information Extraction,
+UIE)中的两个主要挑战：</p>
+<ul>
+<li>缺乏一种统一的、大语言模型(LLMs)易于理解的模式表示方法；</li>
+<li>缺乏一个有效的学习框架，能够鼓励LLMs准确地遵循特定模式来抽取结构化知识。</li>
+</ul>
+<h5 id="这是否是一个新的问题">2. 这是否是一个新的问题？</h5>
+<p>这不是一个全新的问题。通用信息抽取(UIE)是一个已存在的研究方向，但论文提出了新的方法来解决UIE中的关键挑战。</p>
+<h5 id="这篇文章要验证一个什么科学假设">3.
+这篇文章要验证一个什么科学假设？</h5>
+<p>这篇文章试图验证以下假设：</p>
+<ul>
+<li>使用代码风格的模式表示方法可以帮助LLMs更好地理解和遵循复杂的抽取模式。</li>
+<li>两阶段学习框架（模式理解阶段和模式遵循阶段）可以提高LLMs在UIE任务上的性能。</li>
+</ul>
+<h5 id="有哪些相关研究如何归类谁是这一课题在领域内值得关注的研究员">4.
+有哪些相关研究？如何归类？谁是这一课题在领域内值得关注的研究员？</h5>
+<p>相关研究可以归类为：</p>
+<ul>
+<li>使用分类标签的UIE模型 (Lin et al., 2020a)</li>
+<li>使用关键词的UIE模型 (Gui et al., 2023)</li>
+<li>使用特定形式语言的UIE模型 (Lu et al., 2022)</li>
+<li>直接在LLMs上进行指令微调的UIE方法 (Sainz et al., 2023; Wang et al.,
+2023b)</li>
+</ul>
+<p>论文没有明确指出该领域的重要研究人员。</p>
+<h5 id="论文中提到的解决方案之关键是什么">5.
+论文中提到的解决方案之关键是什么？</h5>
+<p>解决方案的关键包括：</p>
+<ul>
+<li>代码风格的模式表示方法：将不同的模式统一转换为Python类。</li>
+<li>构建了一个包含超过30,000种知识类型的代码风格模式库。</li>
+<li>两阶段学习框架：
+<ul>
+<li>模式理解阶段：通过代码预训练提高LLM理解模式的能力。</li>
+<li>模式遵循阶段：通过指令微调提高LLM遵循特定模式的能力。</li>
+</ul></li>
+</ul>
+<h5 id="论文中的实验是如何设计的">6. 论文中的实验是如何设计的？</h5>
+<p>实验设计包括：</p>
+<ul>
+<li>在约15亿自动构建的数据上进行代码预训练。</li>
+<li>在约15亿自动标注的数据上进行指令微调。</li>
+<li>在人工标注的IE数据集上进行微调。</li>
+<li>在不同的IE任务（如命名实体识别、关系抽取等）上进行评估。</li>
+<li>在零样本、低资源和有监督设置下进行性能比较。</li>
+</ul>
+<h5 id="用于定量评估的数据集是什么代码有没有开源">7.
+用于定量评估的数据集是什么？代码有没有开源？</h5>
+<p>论文没有详细列出用于评估的具体数据集，但提到了使用了多个IE任务的数据集，包括命名实体识别(NER)和关系抽取任务。</p>
+<p>关于代码开源，论文提到计划发布相关资源，但没有给出具体的代码链接。</p>
+<h5 id="论文中的实验及结果有没有很好地支持需要验证的科学假设">8.
+论文中的实验及结果有没有很好地支持需要验证的科学假设？</h5>
+<p>实验结果似乎支持了作者的科学假设：</p>
+<ul>
+<li>在少样本设置下，KnowCoder在NER任务上相比基线模型LLaMA2提高了49.8%的相对F1分数。</li>
+<li>在零样本设置下，KnowCoder在NER任务上平均相对提升达12.5%。</li>
+<li>在低资源设置下，KnowCoder在所有IE任务上平均相对提升达21.9%。</li>
+<li>在有监督设置下，KnowCoder在关系抽取任务上提升了7.5%。</li>
+</ul>
+<p>这些结果表明，所提出的代码风格模式表示方法和两阶段学习框架确实提高了模型在UIE任务上的性能。</p>
+<h5 id="这篇论文到底有什么贡献">9. 这篇论文到底有什么贡献？</h5>
+<p>论文的主要贡献包括：</p>
+<ul>
+<li>提出了一种代码风格的模式表示方法，统一表示不同的UIE模式。</li>
+<li>构建了一个大规模的代码风格模式库，包含超过30,000种知识类型。</li>
+<li>提出了一个两阶段学习框架，包括模式理解和模式遵循阶段。</li>
+<li>在各种IE任务和不同设置（零样本、低资源、有监督）下展示了优越的性能。</li>
+</ul>
+<h5 id="下一步呢有什么工作可以继续深入">10.
+下一步呢？有什么工作可以继续深入？</h5>
+<p>可能的深入方向包括：</p>
+<ul>
+<li>进一步扩展模式库，包含更多领域和类型的知识。</li>
+<li>探索如何更有效地利用代码风格模式进行复杂的推理任务。</li>
+<li>研究如何将该方法应用于其他自然语言处理任务。</li>
+<li>提高模型在处理非结构化文本时的鲁棒性。</li>
+</ul>
+<h5 id="要了解深入一个模型为什么好">11.
+要了解深入，一个模型为什么好？</h5>
+<p>KnowCoder模型表现良好的原因可能包括：</p>
+<ul>
+<li>代码风格的模式表示方法使LLMs更容易理解和遵循复杂的抽取模式。</li>
+<li>大规模模式库提供了丰富的知识类型，有助于模型理解各种概念。</li>
+<li>两阶段学习框架分别增强了模型的模式理解和遵循能力。</li>
+<li>大规模的自动构建数据和自动标注数据用于训练，提供了丰富的学习样本。</li>
+</ul>
+<h5 id="以前的模型为什么不好">12. 以前的模型为什么不好？</h5>
+<p>以前模型的主要不足包括：</p>
+<ul>
+<li>忽略了概念分类法和概念间约束等信息。</li>
+<li>分类标签或特定设计的形式语言难以被LLMs理解和遵循。</li>
+<li>针对特定IE数据集设计，缺乏通用的模式库。</li>
+<li>直接进行指令微调，难以应对大规模模式库中的众多概念。</li>
+</ul>
+<h5 id="哪个关键点对性能提升最大">13. 哪个关键点对性能提升最大？</h5>
+<p>虽然论文没有明确指出哪个单一因素贡献最大，但根据实验结果，两个因素似乎特别重要：</p>
+<ul>
+<li>代码风格的模式表示方法：使LLMs更容易理解和遵循复杂模式。</li>
+<li>两阶段学习框架：特别是代码预训练阶段，显著提高了模型的泛化能力。</li>
+</ul>
+<h5 id="编程怎么实现">14. 编程怎么实现？</h5>
+<p>论文没有提供详细的编程实现步骤，但主要步骤可能包括：</p>
+<ul>
+<li>构建代码风格的模式库</li>
+<li>生成训练数据（模式定义代码和实例代码）</li>
+<li>进行代码预训练（模式理解阶段）</li>
+<li>进行指令微调（模式遵循阶段）</li>
+<li>在人工标注数据集上进行微调</li>
+<li>在各种IE任务上进行评估</li>
+</ul>
+<h5 id="论文源代码和paper匹配度怎么样都覆盖了吗">15.
+论文源代码和paper匹配度怎么样、都覆盖了吗</h5>
+<p>论文提到计划发布相关资源，但没有提供具体的代码链接。因此，无法直接验证源代码是否与论文内容完全匹配。</p>
+<h5 id="哪些数学运算是关键的">16. 哪些数学运算是关键的？</h5>
+<p>论文没有强调特定的数学运算。KnowCoder主要基于大语言模型，可能涉及的关键数学运算包括注意力机制、矩阵乘法等，但论文没有详细讨论这些方面。</p>
+<h5 id="整个全流程是怎么走的">17. 整个全流程是怎么走的？</h5>
+<p>研究流程大致如下：</p>
+<ul>
+<li>提出代码风格的模式表示方法</li>
+<li>构建大规模模式库</li>
+<li>设计两阶段学习框架</li>
+<li>生成大规模训练数据</li>
+<li>进行代码预训练</li>
+<li>进行指令微调</li>
+<li>在人工标注数据集上进行微调</li>
+<li>在各种IE任务和设置下进行实验评估</li>
+<li>分析结果并得出结论</li>
+</ul>
+<h5 id="数据是怎样流动的其中是怎样变换的各个变换有什么实际意义">18.
+数据是怎样流动的？其中是怎样变换的？各个变换有什么实际意义？</h5>
+<p>数据流动和转换大致如下：</p>
+<ul>
+<li>模式库 →
+代码风格模式表示：将知识概念转换为Python类，便于LLM理解。</li>
+<li>原始文本 + 模式 →
+训练样本：生成包含模式定义代码和实例代码的训练数据。</li>
+<li>训练样本 → 模型输入：用于代码预训练和指令微调。</li>
+<li>模型输出 → 结构化知识：模型生成的代码被解析为结构化的抽取结果。</li>
+</ul>
+<p>这些转换的意义是将非结构化文本和抽象模式转化为LLM可以学习和生成的代码形式，最终实现准确的信息抽取。</p>
+<h5 id="既要关注具体实现思路也要关注上层抽象意义作者灵感从何而来">19.
+既要关注具体实现思路、也要关注上层抽象意义。作者灵感从何而来？</h5>
+<p>具体实现思路：</p>
+<ul>
+<li>使用Python类表示知识概念</li>
+<li>利用类继承、类注释、类型提示等特性表达复杂的模式信息</li>
+<li>通过代码生成任务训练模型理解和遵循模式</li>
+</ul>
+<p>上层抽象意义：</p>
+<ul>
+<li>将复杂的知识抽取任务转化为代码生成任务</li>
+<li>利用LLM在代码理解和生成方面的能力来提高信息抽取性能</li>
+<li>通过统一的模式表示方法实现通用信息抽取</li>
+</ul>
+<p>论文没有明确说明作者的灵感来源，但可能来自对LLMs在代码任务上的强大能力的观察，以及对现有UIE方法局限性的认识。</p>
+<h5 id="作者思考路线如何">20. 作者思考路线如何？</h5>
+<p>作者的思考路线可能是：</p>
+<ul>
+<li>观察到现有UIE方法在模式表示和学习框架方面的局限性</li>
+<li>意识到LLMs在代码理解和生成方面的强大能力</li>
+<li>提出使用代码风格表示模式，将UIE任务转化为代码生成任务</li>
+<li>设计两阶段学习框架，分别增强模型的模式理解和遵循能力</li>
+<li>通过大规模实验验证方法的有效性</li>
+</ul>
+<hr />
+<h3 id="linkner">LinkNer</h3>
+<p>##### 1. 论文试图解决什么问题？</p>
+<p>这篇论文主要致力于通过引入LinkNer模型来改善命名实体识别（NER）在特定领域中的表现。作者识别到目前的NER模型在处理具有长距离依赖关系的实体时存在不足，因此提出了LinkNer，以解决这个问题。</p>
+<p>##### 2. 这是否是一个新的问题？</p>
+<p>该问题并非全新问题，命名实体识别是自然语言处理中的一个经典问题。但作者针对该领域特定挑战（如长距离依赖）提出的新模型，则展示了对该问题的一种创新性解决思路。</p>
+<p>##### 3. 这篇文章要验证一个什么科学假设？</p>
+<p>作者假设通过在NER模型中引入链接信息（如句法依赖关系或实体间的共现关系），可以提高模型在处理长距离依赖实体时的表现。这是文章的核心假设。</p>
+<p>##### 4.
+有哪些相关研究？如何归类？谁是这一课题在领域内值得关注的研究员？</p>
+<p>论文在引言中提到了一些相关研究，主要可以归类为以下几类：</p>
+<ul>
+<li>传统NER模型（如LSTM、CRF等）。</li>
+<li>利用自注意力机制（如Transformer）来捕捉长距离依赖关系的模型。</li>
+<li>在NER中引入额外的结构信息（如依存树）的研究。</li>
+</ul>
+<p>一些值得关注的研究员或研究小组可能包括BERT模型的开发者（如Google AI
+Language团队），以及从事NER模型结构化信息整合的研究人员。</p>
+<p>##### 5. 论文中提到的解决方案之关键是什么？</p>
+<p>关键在于LinkNer模型的设计。LinkNer模型通过将NER问题转化为链接预测任务，并结合上下文信息与结构信息，从而提升对长距离依赖实体的识别能力。</p>
+<p>##### 6. 论文中的实验是如何设计的？</p>
+<p>实验设计包括在标准NER数据集上进行模型的性能评估，同时与现有的最先进模型进行比较。具体设计的实验涉及到不同类别实体的识别准确度、模型在不同数据集上的泛化能力等方面的测试。</p>
+<p>##### 7. 用于定量评估的数据集是什么？代码有没有开源？</p>
+<p>论文中使用的主要数据集包括CoNLL-2003等标准数据集。关于代码是否开源，目前在文档中的信息还未能确认是否有具体说明，需要进一步检查文档的相关部分。</p>
+<p>##### 8. 论文中的实验及结果有没有很好地支持需要验证的科学假设？</p>
+<p>实验结果显示LinkNer在长距离依赖的实体识别上确实优于传统模型，表明科学假设得到了良好验证。</p>
+<p>##### 9. 这篇论文到底有什么贡献？</p>
+<p>论文的主要贡献包括提出了LinkNer模型，并展示了其在NER任务中特别是在处理长距离依赖关系时的优越性。模型的创新性和实验验证结果都是重要的学术贡献。</p>
+<p>##### 10. 下一步呢？有什么工作可以继续深入？</p>
+<p>未来工作可以探讨LinkNer在更大规模或更加复杂的NER任务中的应用，进一步优化模型结构，或者将LinkNer模型与其他前沿技术（如图神经网络）结合以提升性能。</p>
+<p>##### 11. 要了解深入，一个模型为什么好？</p>
+<p>一个模型是否优秀通常取决于其在多个方面的表现，包括准确性、鲁棒性、泛化能力和计算效率。具体到LinkNer模型，它的优势在于能够有效处理长距离依赖关系的实体识别任务，模型通过引入链接信息，提升了识别的准确性。这在实验中通过与其他模型的对比得到了验证。</p>
+<p>##### 12. 以前的模型为什么不好？</p>
+<p>以前的NER模型在处理长距离依赖关系的实体时，往往表现不佳，主要因为传统模型通常依赖于局部上下文信息，而忽略了更广泛的句法或语义信息。这导致在识别需要全局信息的复杂实体时，模型的表现不足。此外，传统模型在面对跨句子的实体关系时也存在较大挑战。</p>
+<p>##### 13. 哪个关键点对性能提升最大？</p>
+<p>LinkNer模型的关键创新在于将NER问题转化为链接预测任务，并结合了上下文信息与实体之间的链接信息。这一设计使得模型在长距离依赖关系的实体识别上性能显著提升。因此，链接信息的整合可以被认为是对性能提升贡献最大的关键点。</p>
+<p>##### 14. 编程怎么实现？</p>
+<p>编程实现通常涉及到以下几个步骤：</p>
+<ol type="1">
+<li>数据预处理：将文本数据转换为适合模型输入的格式，并提取句法依赖信息或实体共现信息。</li>
+<li>模型架构：构建LinkNer模型，其中包括特征提取模块、自注意力机制、以及链接预测模块。</li>
+<li>训练：使用标注好的NER数据集进行模型训练，并进行超参数调优。</li>
+<li>评估：在测试集上进行模型性能评估，并与其他模型进行比较。</li>
+<li>代码开源（如果有）：将实现代码整理，并发布在公共代码仓库（如GitHub）上，供社区使用。</li>
+</ol>
+<p>##### 15. 论文源代码和paper匹配度怎么样、都覆盖了吗？</p>
+<p>由于文档中没有明确提到代码的具体情况，暂时无法确认源代码与论文的匹配度是否完整。通常，作者会提供与论文描述相符的代码，但在某些情况下可能会出现代码未完全覆盖论文内容的情况。如果有代码仓库链接，建议进一步检查以确认细节。</p>
+<p>##### 16. 哪些数学运算是关键的？</p>
+<p>论文中关键的数学运算包括：</p>
+<ul>
+<li>自注意力机制（self-attention）的计算，用于捕捉序列中不同位置的依赖关系。</li>
+<li>链接预测的概率计算，通常涉及点积操作和softmax函数。</li>
+<li>交叉熵损失函数（cross-entropy loss）用于模型的训练优化。</li>
+</ul>
+<p>##### 17. 整个全流程是怎么走的？</p>
+<p>全流程大致如下：</p>
+<ol type="1">
+<li>数据准备：收集和标注NER数据，并提取必要的句法或语义链接信息。</li>
+<li>模型设计：构建LinkNer模型架构，定义输入特征、模型层次结构和损失函数。</li>
+<li>模型训练：在训练集上进行迭代训练，调整模型参数。</li>
+<li>模型评估：在验证集和测试集上评估模型性能。</li>
+<li>结果分析：分析实验结果，验证科学假设，撰写论文。</li>
+</ol>
+<p>##### 18.
+数据是怎样流动的？其中是怎样变换的？各个变换有什么实际意义？</p>
+<p>在LinkNer模型中，数据流动可以概括为：</p>
+<ol type="1">
+<li>文本输入：原始句子被分词，并生成句法依赖或实体链接信息。</li>
+<li>特征提取：通过嵌入层提取词向量，并利用自注意力机制提取全局上下文信息。</li>
+<li>链接预测：根据提取的特征进行实体间的链接预测，并结合NER任务进行联合训练。</li>
+<li>输出结果：预测每个词的实体类别标签。
+各个变换步骤的实际意义在于：提升模型对复杂句子结构的理解能力，使得最终的NER任务具有更高的准确性。</li>
+</ol>
+<p>##### 19.
+既要关注具体实现思路、也要关注上层抽象意义。作者灵感从何而来？</p>
+<p>作者的灵感可能来源于以下几个方面：</p>
+<ul>
+<li>当前NER模型在长距离依赖处理上的不足，促使他们思考如何引入更多结构化信息。</li>
+<li>链接预测任务在其他领域（如图神经网络）中的成功应用，可能启发了他们将这一思想引入NER模型中。</li>
+<li>自注意力机制在自然语言处理中的广泛应用，促使他们结合链接信息与全局上下文信息进行模型设计。</li>
+</ul>
+<p>##### 20. 作者思考路线如何？</p>
+<p>作者的思考路线大致如下：</p>
+<ol type="1">
+<li>识别现有NER模型在处理长距离依赖关系上的不足。</li>
+<li>借鉴链接预测方法，设计一种能够捕捉实体间关系的NER模型。</li>
+<li>将模型应用于标准数据集上，进行实验验证其有效性。</li>
+<li>分析实验结果，确认新模型在目标任务上的优越性，并撰写论文总结。</li>
+</ol>
+<hr />
+<h3 id="medical-ner知识增强"><a
+target="_blank" rel="noopener" href="https://github.com/allenai/beacon">medical-ner知识增强</a></h3>
+<h5 id="论文试图解决什么问题-1">1. 论文试图解决什么问题？</h5>
+<p>论文试图解决的问题是提高大型语言模型（LLMs）在生物医学文本命名实体识别（NER）任务中的表现。尽管LLMs在零样本和少样本学习上表现出色，但在处理生物医学文本时，由于专业术语和领域知识的复杂性，其表现不佳。</p>
+<h5 id="这是否是一个新的问题-1">2. 这是否是一个新的问题？</h5>
+<p>这不是一个全新的问题。之前的研究表明，LLMs在生物医学文本的NER任务上表现不佳，且GPT-3使用上下文学习的效果甚至不如经过微调的小型模型。</p>
+<h5 id="这篇文章要验证一个什么科学假设-1">3.
+这篇文章要验证一个什么科学假设？</h5>
+<p>这篇文章要验证的科学假设是通过引入外部知识（特别是生物医学概念的定义）来增强LLMs的推理能力，从而提高其在生物医学NER任务中的性能。</p>
+<h5 id="有哪些相关研究如何归类谁是这一课题在领域内值得关注的研究员-1">4.
+有哪些相关研究？如何归类？谁是这一课题在领域内值得关注的研究员？</h5>
+<p>相关研究可以归类为：</p>
+<ul>
+<li>使用LLMs进行信息提取的研究。</li>
+<li>LLMs的上下文学习（ICL）研究。</li>
+<li>LLMs的迭代提示研究。</li>
+<li>LLMs的知识增强研究。</li>
+</ul>
+<p>值得关注的研究员可能包括在LLMs和生物医学信息提取领域有显著贡献的研究者，如那些在顶级会议和期刊上发表相关研究论文的作者。</p>
+<h5 id="论文中提到的解决方案之关键是什么-1">5.
+论文中提到的解决方案之关键是什么？</h5>
+<p>论文中提到的解决方案的关键是通过在推理时识别和提供相关生物医学概念的定义，以及探索不同的提示策略（单轮和迭代提示）来增强LLMs的性能。</p>
+<h5 id="论文中的实验是如何设计的-1">6. 论文中的实验是如何设计的？</h5>
+<p>实验设计包括：</p>
+<ul>
+<li>构建包含6个NER数据集的评估集。</li>
+<li>在零样本和少样本设置下对多个SOTA LLMs进行基准测试。</li>
+<li>探索不同的提示策略，如使用定义/解释和生成结构化格式。</li>
+<li>提出在推理时识别和提供相关生物医学概念的定义。</li>
+</ul>
+<h5 id="用于定量评估的数据集是什么代码有没有开源-1">7.
+用于定量评估的数据集是什么？代码有没有开源？</h5>
+<p>用于定量评估的数据集包括CHEM、CDR、NCBI、MEDM、PICO和CHIA。关于代码是否开源，文中没有提及，因此需要查看论文附录或相关代码仓库以确认。</p>
+<h5 id="论文中的实验及结果有没有很好地支持需要验证的科学假设-1">8.
+论文中的实验及结果有没有很好地支持需要验证的科学假设？</h5>
+<p>是的，实验结果支持了科学假设。提示策略使LLMs在少样本设置下超过了经过微调的小型语言模型，定义增强显著提高了LLMs的性能，特别是在零样本设置中。</p>
+<h5 id="这篇论文到底有什么贡献-1">9. 这篇论文到底有什么贡献？</h5>
+<p>这篇论文的贡献包括：</p>
+<ul>
+<li>首次深入研究了这些方法在生物医学NER中的应用。</li>
+<li>提出了改进LLMs在生物医学NER任务表现的新方法。</li>
+<li>引发了关于定义知识在改善LLM性能方面的价值的有趣问题。</li>
+</ul>
+<h5 id="下一步呢有什么工作可以继续深入-1">10.
+下一步呢？有什么工作可以继续深入？</h5>
+<p>下一步可以继续深入的工作包括：</p>
+<ul>
+<li>探索该方法在其他领域的潜在应用。</li>
+<li>研究如何解决生成模型在信息提取任务中的评估问题。</li>
+</ul>
+<h5 id="要了解深入一个模型为什么好-1">11.
+要了解深入，一个模型为什么好？</h5>
+<p>一个模型之所以好，是因为它能够有效地利用外部知识（如生物医学概念的定义）来增强其推理能力，从而在特定任务（如生物医学NER）中表现出色。</p>
+<h5 id="以前的模型为什么不好-1">12. 以前的模型为什么不好？</h5>
+<p>以前的模型不好是因为它们缺乏足够的领域专业知识，特别是在处理生物医学文本时，由于专业术语和领域知识的复杂性，其表现不佳。</p>
+<h5 id="哪个关键点对性能提升最大-1">13. 哪个关键点对性能提升最大？</h5>
+<p>关键点对性能提升最大的是提供相关生物医学概念的定义，特别是在零样本设置中使用迭代提示策略。</p>
+<h5 id="编程怎么实现-1">14. 编程怎么实现？</h5>
+<p>编程实现的具体细节需要查看论文附录或相关代码仓库，但一般步骤可能包括：</p>
+<ul>
+<li>构建生物医学概念定义知识库。</li>
+<li>使用实体链接器将文本中的概念映射到知识库。</li>
+<li>实现两步推理过程，包括常规实体提取和使用增加了概念定义的提示要求模型修正初始提取结果。</li>
+</ul>
+<h5 id="论文源代码和paper匹配度怎么样都覆盖了吗-1">15.
+论文源代码和paper匹配度怎么样、都覆盖了吗</h5>
+<p>文中没有提及源代码和论文的匹配度，因此需要查看论文附录或相关代码仓库以确认。</p>
+<h5 id="哪些数学运算是关键的-1">16. 哪些数学运算是关键的？</h5>
+<p>关键的数学运算可能包括实体链接（如使用SciSpaCy包）和模型评估（如使用实体级F1分数）。</p>
+<h5 id="整个全流程是怎么走的-1">17. 整个全流程是怎么走的？</h5>
+<p>整个全流程包括：</p>
+<ul>
+<li>构建评估集。</li>
+<li>进行基准测试。</li>
+<li>提出知识增强方法。</li>
+<li>进行实验和评估。</li>
+</ul>
+<h5 id="数据是怎样流动的其中是怎样变换的各个变换有什么实际意义-1">18.
+数据是怎样流动的？其中是怎样变换的？各个变换有什么实际意义？</h5>
+<p>数据流动和变换包括：</p>
+<ul>
+<li>从文本中提取实体。</li>
+<li>将提取的实体映射到知识库。</li>
+<li>使用增加了概念定义的提示要求模型修正初始提取结果。</li>
+</ul>
+<p>各个变换的实际意义在于增强模型的推理能力，使其能够更好地理解和识别生物医学实体。</p>
+<h5 id="既要关注具体实现思路也要关注上层抽象意义作者灵感从何而来-1">19.
+既要关注具体实现思路、也要关注上层抽象意义。作者灵感从何而来？</h5>
+<p>作者的灵感可能来自于先前研究中关于知识增强和迭代提示的研究，以及在生物医学领域中LLMs表现不佳的观察。</p>
+<h5 id="作者思考路线如何-1">20. 作者思考路线如何？</h5>
+<p>作者的思考路线可能包括：</p>
+<ul>
+<li>观察到LLMs在生物医学NER任务中的局限性。</li>
+<li>提出通过引入外部知识来增强LLMs的性能。</li>
+<li>设计实验来验证这一假设。</li>
+<li>分析实验结果并提出进一步的研究方向。</li>
+</ul>
+<h4 id="研究背景">研究背景</h4>
+<ul>
+<li>问题背景：
+<ul>
+<li>尽管LLMs在零样本和少样本学习上表现出色，但在生物医学文本的NER任务上表现不佳。</li>
+<li>之前的研究表明，GPT-3使用上下文学习的效果甚至不如smaller
+fine-tuned模型。</li>
+</ul></li>
+<li>挑战：
+<ul>
+<li>生物医学文本使用专业术语，需要领域专业知识。</li>
+<li>标注数据昂贵、耗时且难以获取，导致标记数据有限。</li>
+</ul></li>
+<li>研究动机：
+<ul>
+<li>LLMs在一般信息提取任务上显示出改进潜力。</li>
+<li>作者旨在通过新的知识增强方法提高LLMs在生物医学领域的表现。</li>
+</ul></li>
+</ul>
+<h4 id="具体例子">具体例子</h4>
+<p>假设我们有一个生物医学文本片段：</p>
+<blockquote>
+<p>"BRCA1 is a gene that is associated with an increased risk of
+developing breast cancer."</p>
+</blockquote>
+<p>在这个文本中，"BRCA1"
+是一个生物医学实体，代表一个基因。传统的LLMs可能无法准确识别 "BRCA1"
+作为一个基因实体，尤其是在零样本或少样本学习设置中。</p>
+<h5 id="论文的解决方案">论文的解决方案</h5>
+<p>论文提出了一种方法，通过在推理时提供相关生物医学概念的定义来增强LLMs的性能。具体步骤如下：</p>
+<ol type="1">
+<li><p><strong>识别相关概念</strong>：首先，使用实体链接器（如SciSpaCy包）识别文本中的生物医学概念，例如
+"BRCA1"。</p></li>
+<li><p><strong>提供概念定义</strong>：从生物医学知识库（如UMLS）中提取
+"BRCA1" 的定义，例如：</p>
+<blockquote>
+<p>"BRCA1: A gene located on chromosome 17 that is involved in the
+repair of DNA double-strand breaks and is associated with an increased
+risk of breast and ovarian cancer."</p>
+</blockquote></li>
+<li><p><strong>增强提示</strong>：将这个定义添加到LLMs的提示中，形成一个新的提示：</p>
+<blockquote>
+<p>"BRCA1 is a gene that is associated with an increased risk of
+developing breast cancer. BRCA1: A gene located on chromosome 17 that is
+involved in the repair of DNA double-strand breaks and is associated
+with an increased risk of breast and ovarian cancer."</p>
+</blockquote></li>
+<li><p><strong>模型推理</strong>：使用增强后的提示，LLMs可以更好地理解
+"BRCA1" 是一个基因实体，并准确地识别和分类它。</p></li>
+</ol>
+<h5 id="实验结果">实验结果</h5>
+<p>论文中的实验结果表明，通过这种定义增强的方法，LLMs在生物医学NER任务中的性能显著提高。例如，GPT-4的性能平均提高了15%。这表明，提供相关概念的定义确实有助于LLMs更好地理解和识别生物医学实体。</p>
+<h5 id="结论">结论</h5>
+<p>这个例子展示了论文的核心思想：通过引入外部知识（特别是生物医学概念的定义）来增强LLMs在生物医学NER任务中的表现。这种方法不仅提高了模型的准确性，还为处理专业领域文本提供了一种有效的策略。</p>
+<table>
+
+<thead>
+<tr>
+<th>实验设置</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>a. 零样本学习</td>
+<td>- 输入格式：<br>      (i)
+Text：标准提示，简要描述任务和有效目标实体类型<br>      (ii) Schema
+Def：增加了详细的目标实体类型描述<br> - 输出格式：<br>      (i) JSON<br>
+     (ii) 代码片段<br> - 评估了四种输入/输出格式组合（除GPT-4外）</td>
+</tr>
+<tr>
+<td>b. 少样本学习</td>
+<td>- 使用零样本设置中表现最佳的输入/输出格式组合<br> -
+实例选择：随机选择<br> - 实例顺序：每个测试实例随机打乱<br> - 评估k =
+{1, 3, 5}的情况，报告三个种子的平均性能</td>
+</tr>
+<tr>
+<td>c. 微调实验</td>
+<td>- 使用Flan-T5 XL模型<br> - 在每个数据集上进行微调<br> -
+使用LoRA（参数高效微调方法）</td>
+</tr>
+</tbody>
+</table>
+<table>
+
+<thead>
+<tr>
+<th>主要结果</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>a. 零样本学习</td>
+<td>- Schema Def输入格式在所有模型和数据集上表现较差<br> -
+JSON输出格式在大多数数据集上表现更好，但PICO和CHIA例外<br> -
+这些发现在所有模型中保持一致</td>
+</tr>
+<tr>
+<td>b. 少样本学习</td>
+<td>- 性能随样本数量增加而提高<br> -
+指令微调的LLMs在少样本学习中显著优于在相同5个实例上微调的小型语言模型</td>
+</tr>
+<tr>
+<td>c. 模型比较</td>
+<td>- GPT-3.5、Claude 2和Llama 2在不同数据集上表现各有优劣<br> -
+在某些数据集上，开源模型Llama 2的性能与闭源API模型相当</td>
+</tr>
+</tbody>
+</table>
+<table>
+
+<thead>
+<tr>
+<th>具体数据</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>- 表2</td>
+<td>展示了零样本学习的结果，包括不同输入/输出格式组合的性能</td>
+</tr>
+<tr>
+<td>- 表3</td>
+<td>展示了少样本学习的结果，包括不同样本数量(k = 1, 3, 5)下的性能<br> -
+结果以F1分数表示，并包括标准差</td>
+</tr>
+</tbody>
+</table>
+<p>知识增强方法：</p>
+<ul>
+<li>在推理过程中，识别并提供相关生物医学概念的定义。</li>
+<li>探索两种跟进提示策略：单轮提示和迭代提示。</li>
+</ul>
+<p>方法概述：</p>
+<ul>
+<li>构建生物医学概念定义知识库。</li>
+<li>利用现成的实体链接器将文本中的概念映射到知识库。</li>
+<li>实施两步推理过程：
+<ol type="a">
+<li>首先进行常规实体提取。</li>
+<li>随后使用包含概念定义的提示，要求模型修正初始提取结果。</li>
+</ol></li>
+</ul>
+<p>概念定义来源：</p>
+<ul>
+<li>采用统一医学语言系统(UMLS)。</li>
+<li>通过人工筛选，保留细粒度的语义类型。</li>
+<li>使用SciSpaCy包进行实体链接。</li>
+</ul>
+<p>零样本定义增强：</p>
+<ul>
+<li>单轮策略(ZS+Def)：一次性提供所有定义，要求模型修正所有提取的实体。</li>
+<li>迭代提示策略(IP+Def)：每次提供一个概念的定义，逐一修正提取的实体。</li>
+</ul>
+<p>少样本定义增强：</p>
+<ul>
+<li>在跟进提示中包含少样本示例及其相关概念定义。</li>
+<li>仅测试单轮策略，因为迭代策略在这种情况下成本过高。</li>
+</ul>
+<p>实验结果：</p>
+<ul>
+<li>零样本设置：
+<ul>
+<li>Llama 2和GPT-4在两种策略下都有显著提升。</li>
+<li>Claude 2和GPT-3.5仅在迭代提示策略下受益。</li>
+</ul></li>
+<li>少样本设置：
+<ul>
+<li>大多数情况下都有改善。</li>
+<li>GPT-4配合迭代提示策略效果最佳。</li>
+</ul></li>
+<li>总体上，概念定义增强提示改善了生物医学NER的性能。</li>
+</ul>
+<p>额外分析：</p>
+<ul>
+<li>验证了实体链接器本身的性能较差，平均F1分数仅为1.05。</li>
+<li>进行了消融实验，仅添加候选实体而不添加定义，结果表明这种方法不如提议的方法有效。</li>
+</ul>
+<p>关键发现：</p>
+<ul>
+<li>提供概念定义可以帮助LLMs更好地理解和识别生物医学实体。</li>
+<li>迭代提示策略通常比单轮策略更有效。</li>
+<li>GPT-4在此任务中表现最佳，特别是与迭代提示策略结合时。</li>
+<li>改进不仅来自实体链接，而主要源于提供的概念定义。</li>
+</ul>
+<p>方法的创新点：</p>
+<ul>
+<li>将自我验证与上下文知识提供相结合。</li>
+<li>在生物医学领域应用定义增强提示。</li>
+<li>探索了不同的提示策略（单轮vs迭代）。</li>
+</ul>
+<hr />
+<h3 id="consistner"><a
+target="_blank" rel="noopener" href="https://ojs.aaai.org/index.php/AAAI/article/view/29892">ConsistNER</a></h3>
+<h5 id="论文试图解决什么问题-2">1. 论文试图解决什么问题？</h5>
+<p>论文试图解决低资源场景下的命名实体识别(NER)问题。具体来说,它旨在提高在训练数据有限的情况下NER模型的性能。</p>
+<p><strong>本体一致性问题</strong>： 一些研究（如Ma等,
+2023和Gutiérrez等,
+2022）利用预训练语言模型（PLM）的CLS嵌入来选择语义上相似的训练示例作为演示。然而，这种方法可能导致检索的示例在实体类型上与目标句子不一致。以图1中的CLS方法为例，示例#1和#3虽然在语义上与目标句子相似，但它们包含的是人名（如Sally），而不是目标句子中需要识别的事件实体“New
+Year”。这种缺乏本体一致性的示例不能为模型正确识别“New
+Year”提供足够的帮助。</p>
+<p><strong>上下文一致性问题</strong>： 另一种方法（如Wang等,
+2023a）建议基于实体相似性检索示例，但这无法保证演示示例与目标句子之间的上下文一致性。以图1中的实体方法为例，示例#2和#4中的“new
+year”是日期实体，而目标句子中的“New
+Year”是事件实体。这种差异可能会误导模型将目标句子中的“New
+Year”识别为日期实体，而不是事件实体。</p>
+<p><img src="https://picoflmq.oss-cn-beijing.aliyuncs.com/typora/202408211457800.png" srcset="/img/loading.gif" lazyload alt="image-20240821145745691" style="zoom:80%;" /></p>
+<h5 id="这是否是一个新的问题-2">2. 这是否是一个新的问题？</h5>
+<p>这不是一个全新的问题。低资源NER一直是研究热点,但本文提出了新的解决方案。</p>
+<h5 id="这篇文章要验证一个什么科学假设-2">3.
+这篇文章要验证一个什么科学假设？</h5>
+<p>本文的科学假设是:通过同时考虑本体一致性和上下文一致性来检索高相关的示例,可以显著提高低资源场景下NER的性能。</p>
+<h5 id="有哪些相关研究如何归类谁是这一课题在领域内值得关注的研究员-2">4.
+有哪些相关研究？如何归类？谁是这一课题在领域内值得关注的研究员？</h5>
+<p>相关研究可以归类为:</p>
+<ol type="1">
+<li>元学习方法 (如Wu et al. 2020)</li>
+<li>提示学习方法 (如Ma et al. 2022a)</li>
+<li>上下文学习方法 (如Brown et al. 2020)</li>
+</ol>
+<p>值得关注的研究员包括Tom Mitchell(CMU)、Percy
+Liang(Stanford)等在少样本学习和NER领域有重要贡献的学者。</p>
+<h5 id="论文中提到的解决方案之关键是什么-2">5.
+论文中提到的解决方案之关键是什么？</h5>
+<p>关键在于ConsistNER的三阶段框架,特别是第二阶段的示例检索机制:</p>
+<ol type="1">
+<li>使用本体分布(OD)表示来保持本体一致性</li>
+<li>使用实体感知上下文(EAC)表示来保持上下文一致性</li>
+</ol>
+<h5 id="论文中的实验是如何设计的-2">6. 论文中的实验是如何设计的？</h5>
+<p>实验设计包括:</p>
+<ol type="1">
+<li>在4个benchmark数据集上评估(CoNLL2003, OntoNotes5.0, NCBI,
+BC5CDR)</li>
+<li>比较不同查询形式(Vanilla Query vs. Generated NER)</li>
+<li>比较不同示例检索技术(Random vs. CLS vs. ConsistNER)</li>
+<li>进行消融实验验证各组件的有效性</li>
+</ol>
+<h5 id="用于定量评估的数据集是什么代码有没有开源-2">7.
+用于定量评估的数据集是什么？代码有没有开源？</h5>
+<p>数据集:CoNLL2003, OntoNotes5.0, NCBI, BC5CDR 未开源。</p>
+<h5 id="论文中的实验及结果有没有很好地支持需要验证的科学假设-2">8.
+论文中的实验及结果有没有很好地支持需要验证的科学假设？</h5>
+<p>是的,实验结果很好地支持了假设。ConsistNER在所有数据集上都优于基线方法,特别是在低资源(1-shot和5-shot)场景下。消融实验也验证了本体和上下文一致性的重要性。</p>
+<h5 id="这篇论文到底有什么贡献-2">9. 这篇论文到底有什么贡献？</h5>
+<p>主要贡献:</p>
+<ol type="1">
+<li>提出ConsistNER框架解决低资源NER问题</li>
+<li>设计了同时考虑本体和上下文的示例检索机制</li>
+<li>在多个数据集上验证了方法的有效性</li>
+</ol>
+<h5 id="下一步呢有什么工作可以继续深入-2">10.
+下一步呢？有什么工作可以继续深入？</h5>
+<p>可能的下一步工作:</p>
+<ol type="1">
+<li>将ConsistNER扩展到其他NLP任务</li>
+<li>探索更高效的预识别方法</li>
+<li>研究如何减少对大语言模型的依赖</li>
+</ol>
+<h5 id="要了解深入一个模型为什么好-2">11.
+要了解深入，一个模型为什么好？</h5>
+<p>ConsistNER表现好的原因:</p>
+<ol type="1">
+<li>利用大语言模型进行零样本预识别,提供初始实体信息</li>
+<li>同时考虑本体和上下文一致性,检索更相关的示例</li>
+<li>结合句子特定和数据集特定的示例,平衡局部和全局信息</li>
+</ol>
+<h5 id="以前的模型为什么不好-2">12. 以前的模型为什么不好？</h5>
+<p>之前的模型存在以下问题:</p>
+<ol type="1">
+<li>仅基于CLS嵌入进行示例检索,忽视了实体类型信息</li>
+<li>仅基于实体相似度检索示例,忽视了上下文语义</li>
+<li>没有充分利用大语言模型的零样本能力</li>
+</ol>
+<h5 id="哪个关键点对性能提升最大-2">13. 哪个关键点对性能提升最大？</h5>
+<p>根据论文的消融实验,同时考虑本体和上下文一致性的示例检索机制对性能提升贡献最大。</p>
+<h5 id="编程怎么实现-2">14. 编程怎么实现？</h5>
+<p>实现ConsistNER的主要步骤:</p>
+<ol type="1">
+<li>使用大语言模型(如GPT-3)进行零样本实体预识别</li>
+<li>实现本体分布(OD)表示和实体感知上下文(EAC)表示</li>
+<li>基于OD和EAC进行示例检索</li>
+<li>将检索到的示例输入大语言模型进行最终预测</li>
+</ol>
+<h5 id="论文源代码和paper匹配度怎么样都覆盖了吗-2">15.
+论文源代码和paper匹配度怎么样、都覆盖了吗</h5>
+<p>论文中没有提供源代码信息,无法评估匹配度。</p>
+<h5 id="哪些数学运算是关键的-2">16. 哪些数学运算是关键的？</h5>
+<p>关键的数学运算包括:</p>
+<ol type="1">
+<li>计算本体分布(OD)表示</li>
+<li>计算实体感知上下文(EAC)表示</li>
+<li>计算示例相似度</li>
+</ol>
+<h5 id="整个全流程是怎么走的-2">17. 整个全流程是怎么走的？</h5>
+<p>ConsistNER的全流程:</p>
+<ol type="1">
+<li>预识别:使用大语言模型零样本识别潜在实体</li>
+<li>示例检索:
+<ol type="a">
+<li>计算目标句子的OD和EAC表示</li>
+<li>基于OD过滤候选示例</li>
+<li>基于EAC从候选中选择最相似的示例</li>
+</ol></li>
+<li>NER预测:将检索到的示例与目标句子一起输入大语言模型进行预测</li>
+</ol>
+<h6 id="数据是怎样流动的其中是怎样变换的各个变换有什么实际意义-2">18.
+数据是怎样流动的？其中是怎样变换的？各个变换有什么实际意义？</h6>
+<p>数据流动:</p>
+<ol type="1">
+<li>原始文本 → 预识别实体:提供初始实体信息</li>
+<li>预识别实体 → OD表示:捕捉句子的实体类型分布</li>
+<li>原始文本+预识别实体 → EAC表示:获取实体感知的上下文语义</li>
+<li>OD+EAC → 相似示例:检索相关示例</li>
+<li>目标句子+示例 → NER结果:生成最终预测</li>
+</ol>
+<h5 id="既要关注具体实现思路也要关注上层抽象意义作者灵感从何而来-2">19.
+既要关注具体实现思路、也要关注上层抽象意义。作者灵感从何而来？</h5>
+<p>作者的灵感可能来自:</p>
+<ol type="1">
+<li>观察到现有方法忽视了本体和上下文一致性的重要性</li>
+<li>借鉴了<strong>原型网络</strong>和<strong>词袋模型</strong>的思想</li>
+<li>认识到大语言模型在零样本任务上的潜力</li>
+</ol>
+<h5 id="作者思考路线如何-2">20. 作者思考路线如何？</h5>
+<p>作者的思考路线可能是:</p>
+<ol type="1">
+<li>识别低资源NER的关键挑战:示例检索</li>
+<li>分析现有方法的不足:忽视本体或上下文一致性</li>
+<li>提出解决方案:同时考虑两种一致性的检索机制</li>
+<li>设计框架:结合大语言模型的零样本能力和新的检索机制</li>
+<li>实验验证:在多个数据集上与现有方法比较</li>
+<li>分析和讨论:消融实验和理论边界分析</li>
+</ol>
+<h4 id="具体方法示例">具体方法示例</h4>
+<p>假设我们有以下目标句子需要进行实体识别: "The patient was diagnosed
+with pneumonia and prescribed amoxicillin."</p>
+<p>ConsistNER的三个阶段如下:</p>
+<ol type="1">
+<li>预识别阶段:</li>
+</ol>
+<p>使用大语言模型(如GPT-3)进行零样本识别。可能的输出:</p>
+<ul>
+<li>疾病: pneumonia</li>
+<li>药物: amoxicillin</li>
+</ul>
+<ol type="1">
+<li>示例检索阶段:</li>
+</ol>
+<ol type="a">
+<li><p>计算本体分布(OD)表示:
+假设我们的本体类别包括{疾病,药物,症状}。根据预识别结果,这句话的OD可能是:
+OD = [0.5, 0.5, 0]</p></li>
+<li><p>计算实体感知上下文(EAC)表示:
+使用双重自注意力机制,重点关注"pneumonia"和"amoxicillin"周围的上下文。</p></li>
+<li><p>示例检索:</p></li>
+</ol>
+<ul>
+<li>首先,使用OD过滤候选示例,选择包含相似实体类型分布的句子。</li>
+<li>然后,使用EAC从候选中选择语义最相似的示例。</li>
+</ul>
+<p>假设检索到的示例是: "The doctor confirmed influenza and recommended
+oseltamivir for treatment."</p>
+<ol type="1">
+<li>NER预测阶段:</li>
+</ol>
+<p>将目标句子和检索到的示例一起输入大语言模型:</p>
+<p>输入:</p>
+<figure class="highlight makefile"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><code class="hljs makefile"><span class="hljs-section">示例:</span><br><span class="hljs-section">句子: The doctor confirmed influenza and recommended oseltamivir for treatment.</span><br><span class="hljs-section">实体: [疾病: influenza, 药物: oseltamivir]</span><br><br><span class="hljs-section">目标:</span><br><span class="hljs-section">句子: The patient was diagnosed with pneumonia and prescribed amoxicillin.</span><br><span class="hljs-section">实体:</span><br></code></pre></td></tr></table></figure>
+<p>大语言模型输出:</p>
+<figure class="highlight inform7"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs inform7">实体: <span class="hljs-comment">[疾病: pneumonia, 药物: amoxicillin]</span><br></code></pre></td></tr></table></figure>
+<p>这个例子展示了ConsistNER如何:</p>
+<ol type="1">
+<li>利用大语言模型进行初步实体识别</li>
+<li>基于本体和上下文一致性检索相关示例</li>
+<li>利用检索到的示例指导最终的NER预测</li>
+</ol>
+<hr />
+<h3 id="self-improving-nerzero-shot"><a
+target="_blank" rel="noopener" href="https://aclanthology.org/2024.naacl-short.49/">self-improving-ner(zero-shot)</a></h3>
+<h5 id="论文试图解决什么问题-3">1. 论文试图解决什么问题？</h5>
+<p>本论文试图解决零样本命名实体识别(NER)任务中如何提高大型语言模型(LLMs)性能的问题。具体来说，论文提出了一个无需训练的自我改进框架，利用未标注语料库来激发LLMs的自学习能力，从而提高零样本NER的性能。</p>
+<h5 id="这是否是一个新的问题-3">2. 这是否是一个新的问题？</h5>
+<p>这不是一个全新的问题。利用LLMs进行零样本NER已经有一些研究。但是，本文提出的无需训练的自我改进框架是一种新颖的方法来解决这个问题。</p>
+<h5 id="这篇文章要验证一个什么科学假设-3">3.
+这篇文章要验证一个什么科学假设？</h5>
+<p>本文要验证的科学假设是：通过利用未标注语料库来刺激LLMs的自学习能力，可以显著提高零样本NER的性能，而无需任何额外的训练或标注数据。</p>
+<h5 id="有哪些相关研究如何归类谁是这一课题在领域内值得关注的研究员-3">4.
+有哪些相关研究？如何归类？谁是这一课题在领域内值得关注的研究员？</h5>
+<p>相关研究可以大致分为以下几类：</p>
+<ol type="1">
+<li>设计高级提示方法进行零样本或少样本NER (如Wei et al., 2023b; Wang et
+al., 2023)</li>
+<li>训练特定于NER任务的LLMs (如Zhou et al., 2023; Sainz et al.,
+2023)</li>
+<li>使用LLMs生成数据来训练小型专用模型 (如Zhang et al., 2023; Ma et al.,
+2023)</li>
+</ol>
+<p>值得关注的研究员可能包括来自OpenAI、Google、Microsoft等大型AI实验室的研究人员，以及在NLP和NER领域有突出贡献的学者。然而，论文中没有具体提到特定的研究员名字。</p>
+<h5 id="论文中提到的解决方案之关键是什么-3">5.
+论文中提到的解决方案之关键是什么？</h5>
+<p>论文提出的解决方案的关键是一个三步骤的自我改进框架：</p>
+<ol type="1">
+<li>零样本自我标注：使用LLM对未标注语料库进行零样本标注，并通过自一致性方法为每个实体和样本生成置信度分数。</li>
+<li>可靠标注选择：基于生成的置信度分数，选择可靠的标注样本。</li>
+<li>使用自我标注的示例进行推理：为每个测试输入检索相关的示例，并通过上下文学习进行推理。</li>
+</ol>
+<h5 id="论文中的实验是如何设计的-3">6. 论文中的实验是如何设计的？</h5>
+<p>实验设计包括以下几个方面：</p>
+<ol type="1">
+<li>在四个NER基准数据集上评估提出的框架。</li>
+<li>比较不同的标注选择策略的效果。</li>
+<li>评估不同的示例检索策略的影响。</li>
+<li>分析自我改进过程中的性能变化。</li>
+<li>与其他零样本NER方法进行比较。</li>
+</ol>
+<h5 id="用于定量评估的数据集是什么代码有没有开源-3">7.
+用于定量评估的数据集是什么？代码有没有开源？</h5>
+<p>论文使用了四个NER基准数据集进行定量评估，包括CoNLL-2003。具体的四个数据集名称在提供的摘要中没有详细列出。</p>
+<p>关于代码开源，论文提到代码和数据已经公开发布，可以在GitHub上找到：https://github.com/Emma1066/Self-Improve-Zero-Shot-NER</p>
+<h5 id="论文中的实验及结果有没有很好地支持需要验证的科学假设-3">8.
+论文中的实验及结果有没有很好地支持需要验证的科学假设？</h5>
+<p>根据提供的信息，实验结果显示该框架在所有四个基准数据集上都取得了显著的性能提升。这些结果支持了论文的科学假设，即利用未标注语料库来刺激LLMs的自学习能力可以提高零样本NER的性能。</p>
+<h5 id="这篇论文到底有什么贡献-3">9. 这篇论文到底有什么贡献？</h5>
+<p>本论文的主要贡献包括：</p>
+<ol type="1">
+<li>提出了一个无需训练的自我改进框架，用于提高LLMs在零样本NER任务上的性能。</li>
+<li>探索了各种策略来选择可靠的自我标注样本。</li>
+<li>证明了利用未标注语料库可以显著提高零样本NER的性能。</li>
+<li>提供了一种新的方法来利用LLMs的自学习能力，而无需额外的训练或标注数据。</li>
+</ol>
+<h5 id="下一步呢有什么工作可以继续深入-3">10.
+下一步呢？有什么工作可以继续深入？</h5>
+<p>可能的下一步工作包括：</p>
+<ol type="1">
+<li>探索更高级的可靠标注选择策略。</li>
+<li>研究如何优化自我改进的迭代次数。</li>
+<li>将该框架应用到其他NLP任务中，如关系抽取或事件抽取。</li>
+<li>探究如何结合其他技术（如主动学习）来进一步提高性能。</li>
+<li>分析该方法在不同规模和类型的LLMs上的表现。</li>
+</ol>
+<h5 id="要了解深入一个模型为什么好-3">11.
+要了解深入，一个模型为什么好？</h5>
+<p>要深入了解模型为什么好，可以从以下几个方面分析：</p>
+<ol type="1">
+<li>在不同类型的实体和场景下的表现。</li>
+<li>自我改进过程中的行为和学习曲线。</li>
+<li>模型在处理困难样本或边缘案例时的表现。</li>
+<li>模型生成的自我标注的质量和一致性。</li>
+<li>模型在不同领域或数据分布上的泛化能力。</li>
+<li>与其他基线方法的详细对比分析。</li>
+</ol>
+<h4 id="以前的模型为什么不好-3">12. 以前的模型为什么不好？</h4>
+<p>以前的模型在零样本NER任务上可能存在以下问题：</p>
+<ol type="1">
+<li>缺乏利用未标注数据的能力。</li>
+<li>过度依赖大量标注数据或预训练。</li>
+<li>难以适应新的实体类型或领域。</li>
+<li>缺乏自我改进和持续学习的机制。</li>
+<li>在处理复杂或模糊实体时表现不佳。</li>
+</ol>
+<h5 id="哪个关键点对性能提升最大-3">13. 哪个关键点对性能提升最大？</h5>
+<p>根据论文的描述，可靠标注选择策略可能是对性能提升贡献最大的关键点。这是因为它决定了用于学习的示例质量，直接影响了模型的自我改进效果。不同的选择策略可能导致显著的性能差异。</p>
+<h5 id="编程怎么实现-3">14. 编程怎么实现？</h5>
+<p>实现这个框架需要以下几个主要步骤：</p>
+<ol type="1">
+<li>设计适当的提示来进行零样本NER。</li>
+<li>实现自我一致性评分机制，为每个实体和样本生成置信度分数。</li>
+<li>实现不同的标注选择策略，如基于实体级别或样本级别的阈值。</li>
+<li>实现示例检索策略，如随机选择或基于相似度的检索。</li>
+<li>实现上下文学习机制，将检索到的示例与测试输入结合进行推理。</li>
+<li>设计迭代自我改进的流程，包括性能评估和停止条件。</li>
+</ol>
+<h5 id="论文源代码和paper匹配度怎么样都覆盖了吗-3">15.
+论文源代码和paper匹配度怎么样、都覆盖了吗</h5>
+<p>由于没有直接访问源代码的信息，无法确定源代码和论文的具体匹配度。然而，论文提到代码已经公开发布，这通常意味着主要算法和实验应该被实现。要确定完整的覆盖度，需要直接检查源代码库。</p>
+<h5 id="哪些数学运算是关键的-3">16. 哪些数学运算是关键的？</h5>
+<p>关键的数学运算包括：</p>
+<ol type="1">
+<li>自我一致性评分的计算，可能涉及概率或统计方法。</li>
+<li>实体级别和样本级别置信度分数的计算。</li>
+<li>示例检索中的相似度计算，如余弦相似度。</li>
+<li>可能涉及的阈值选择和排序算法。</li>
+<li>性能指标的计算，如准确率、召回率和F1分数。</li>
+</ol>
+<h5 id="整个全流程是怎么走的-3">17. 整个全流程是怎么走的？</h5>
+<p>整个流程大致如下：</p>
+<ol type="1">
+<li>对未标注语料库进行零样本NER标注。</li>
+<li>使用自我一致性方法生成置信度分数。</li>
+<li>基于置信度分数选择可靠的标注样本。</li>
+<li>为每个测试输入检索相关的示例。</li>
+<li>使用检索到的示例通过上下文学习进行推理。</li>
+<li>评估性能并可能重复步骤1-5进行迭代改进。</li>
+</ol>
+<h5 id="数据是怎样流动的其中是怎样变换的各个变换有什么实际意义-3">18.
+数据是怎样流动的？其中是怎样变换的？各个变换有什么实际意义？</h5>
+<p>数据流动和变换如下：</p>
+<ol type="1">
+<li>未标注文本 →
+自我标注文本：通过LLM进行零样本标注，为实体识别提供初始预测。</li>
+<li>自我标注文本 →
+置信度评分：通过自我一致性方法生成置信度，评估预测的可靠性。</li>
+<li>置信度评分 →
+可靠标注集：选择高置信度样本，提炼出高质量的"伪标注"数据。</li>
+<li>可靠标注集 →
+检索示例：为每个测试样本选择相关示例，提供上下文信息。</li>
+<li>检索示例 + 测试输入 →
+最终预测：通过上下文学习进行推理，得到更准确的NER结果。</li>
+</ol>
+<p>每个变换都旨在提高数据质量或提供更多上下文信息，最终提升零样本NER的性能。</p>
+<h5 id="既要关注具体实现思路也要关注上层抽象意义作者灵感从何而来-3">19.
+既要关注具体实现思路、也要关注上层抽象意义。作者灵感从何而来？</h5>
+<p>作者的灵感可能来自以下几个方面：</p>
+<ol type="1">
+<li>对LLMs强大的零样本能力的认识。</li>
+<li>自监督学习和自我训练在其他领域的成功应用。</li>
+<li>人类学习过程中的自我改进和迭代学习机制。</li>
+<li>对现有零样本NER方法局限性的认识。</li>
+<li>利用未标注数据潜力的探索。</li>
+</ol>
+<p>从上层抽象意义来看，这项工作展示了如何利用LLMs的自学习能力来改进特定任务的性能，而无需额外的标注数据或微调。这种方法可能为其他NLP任务提供了新的范式。</p>
+<h5 id="作者思考路线如何-3">20. 作者思考路线如何？</h5>
+<p>作者的思考路线可能如下：</p>
+<ol type="1">
+<li>认识到零样本NER的潜力和局限性。</li>
+<li>思考如何在无监督场景下利用LLMs的能力。</li>
+<li>提出利用未标注语料库来刺激LLMs自学习的想法。</li>
+<li>设计自我改进框架的三个关键步骤。</li>
+<li>探索不同的标注选择和示例检索策略。</li>
+<li>通过实验验证方法的有效性。</li>
+<li>分析结果并思考未来的改进方向。</li>
+</ol>
+<h4 id="具体实现示例">具体实现示例</h4>
+<p>假设我们正在处理一个新闻文本的命名实体识别任务，实体类型包括人名(PER)、组织(ORG)和地点(LOC)。</p>
+<p><strong>零样本自我标注</strong></p>
+<p>假设我们有一段未标注的新闻文本： "Apple CEO Tim Cook visited Beijing
+last week to meet with government officials."</p>
+<p>使用大型语言模型进行零样本NER，得到结果：</p>
+<figure class="highlight nestedtext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs nestedtext"><span class="hljs-attribute">Apple</span><span class="hljs-punctuation">:</span> <span class="hljs-string">ORG</span><br><span class="hljs-attribute">Tim Cook</span><span class="hljs-punctuation">:</span> <span class="hljs-string">PER</span><br><span class="hljs-attribute">Beijing</span><span class="hljs-punctuation">:</span> <span class="hljs-string">LOC</span><br></code></pre></td></tr></table></figure>
+<p><strong>自我一致性评分</strong></p>
+<p>多次运行得到置信度分数：</p>
+<ul>
+<li>Apple (ORG): 1.0</li>
+<li>Tim Cook (PER): 0.8</li>
+<li>Beijing (LOC): 1.0</li>
+</ul>
+<p><strong>可靠标注选择</strong></p>
+<p>设置阈值0.7，选择所有实体作为可靠标注。</p>
+<p><strong>示例检索</strong></p>
+<p>现在我们有了一个可靠标注集，包含上面的句子。假设我们要处理一个新的测试句子：
+"Microsoft's Satya Nadella announced new AI products in Seattle."</p>
+<p>我们将使用基于相似度的检索方法：</p>
+<ol type="a">
+<li>使用BERT模型生成句子嵌入：</li>
+</ol>
+<ul>
+<li>对可靠标注集中的每个句子生成嵌入向量</li>
+<li>对测试句子生成嵌入向量</li>
+</ul>
+<ol start="2" type="a">
+<li><p>计算余弦相似度：
+计算测试句子与可靠标注集中每个句子的余弦相似度</p></li>
+<li><p>选择最相似的样本：
+假设我们要检索3个最相似的样本，我们会选择相似度最高的3个句子。在这个例子中，由于我们只有一个可靠标注的句子，所以它会被选中。</p></li>
+</ol>
+<p><strong>上下文学习推理</strong></p>
+<p>将检索到的示例与新的测试句子结合，形成新的提示：</p>
+<figure class="highlight smalltalk"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><code class="hljs smalltalk">以下是一个已标注的例子：<br><span class="hljs-comment">&quot;Apple[ORG] CEO Tim Cook[PER] visited Beijing[LOC] last week to meet with government officials.&quot;</span><br><br>请使用相同的方法标注这个新句子：<br><span class="hljs-comment">&quot;Microsoft&#x27;s Satya Nadella announced new AI products in Seattle.&quot;</span><br><br>输出格式：<br>实体: 类型<br></code></pre></td></tr></table></figure>
+<p>LLM可能会输出：</p>
+<figure class="highlight nestedtext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs nestedtext"><span class="hljs-attribute">Microsoft</span><span class="hljs-punctuation">:</span> <span class="hljs-string">ORG</span><br><span class="hljs-attribute">Satya Nadella</span><span class="hljs-punctuation">:</span> <span class="hljs-string">PER</span><br><span class="hljs-attribute">Seattle</span><span class="hljs-punctuation">:</span> <span class="hljs-string">LOC</span><br></code></pre></td></tr></table></figure>
+<p><strong>迭代改进</strong></p>
+<p>将新标注的句子添加到可靠标注集中（假设它们通过了置信度阈值）。随着时间推移，可靠标注集会逐渐扩大，包含更多样的实体和上下文。</p>
+<p>在下一轮迭代中，当我们遇到一个新的测试句子时，例如： "Google's Sundar
+Pichai gave a keynote speech at the annual developer conference in
+Mountain View."</p>
+<p>我们会重复上述过程，但这次在示例检索阶段，我们有更多的样本可以选择。我们可能会选择包含类似实体类型（科技公司CEO和地点）的最相似的几个句子作为示例</p>
+<hr />
+<h3 id="rag-uieknowcoder前置工作"><a
+target="_blank" rel="noopener" href="https://arxiv.org/abs/2311.02962">RAG-UIE(KnowCoder前置工作)</a></h3>
+<h5 id="论文试图解决什么问题-4">1. 论文试图解决什么问题？</h5>
+<p>论文试图解决信息抽取(IE)任务中的两个主要挑战:</p>
+<ol type="1">
+<li>不同IE任务有不同的特定模式(schema),难以用统一的方式表示。</li>
+<li>自然语言表达复杂多样,同样的结构化知识可以用多种方式表达。</li>
+</ol>
+<p>论文提出了Code4UIE框架,旨在为各种IE任务提供一个通用的解决方案。</p>
+<h5 id="这是否是一个新的问题-4">2. 这是否是一个新的问题？</h5>
+<p>这不是一个全新的问题。信息抽取一直是自然语言处理领域的重要任务,其中的挑战也一直存在。但是,随着大语言模型(LLM)的发展,用代码生成的方式来解决IE任务是一个相对较新的思路。</p>
+<h5 id="这篇文章要验证一个什么科学假设-4">3.
+这篇文章要验证一个什么科学假设？</h5>
+<p>这篇文章主要验证以下科学假设:</p>
+<ol type="1">
+<li>使用Python类可以统一表示各种IE任务的特定模式。</li>
+<li>将IE任务转化为代码生成任务,并利用LLM的能力,可以有效地解决IE任务中的模式多样性和表达复杂性问题。</li>
+<li>基于检索的示例增强可以提高LLM在IE任务上的表现。</li>
+</ol>
+<h5 id="有哪些相关研究如何归类谁是这一课题在领域内值得关注的研究员-4">4.
+有哪些相关研究？如何归类？谁是这一课题在领域内值得关注的研究员？</h5>
+<p>相关研究主要可以归类为以下几类:</p>
+<ol type="1">
+<li>传统的特定任务IE方法:
+<ul>
+<li>Wang et al. (2021) 的ACE框架用于NER任务</li>
+<li>Ye et al. (2022) 的PL-Marker用于NER和RE任务</li>
+<li>Hsu et al. (2022) 的DEGREE用于EAE和EE任务</li>
+</ul></li>
+<li>通用IE框架:
+<ul>
+<li>Lu et al. (2022a) 提出的UIE框架</li>
+<li>Lou et al. (2023) 提出的USM框架</li>
+<li>Wang et al. (2023a) 提出的InstructUIE框架</li>
+</ul></li>
+<li>基于LLM的IE方法:
+<ul>
+<li>Li et al. (2023a) 评估了ChatGPT在IE任务上的能力</li>
+<li>Dyer (2023) 探索了LLM在RE任务上的表现</li>
+<li>Li et al. (2023b) 提出的CodeIE方法</li>
+<li>Wang et al. (2023c) 提出的Code4Struct方法</li>
+</ul></li>
+</ol>
+<p>值得关注的研究员包括上述论文的作者,特别是在通用IE框架和基于LLM的IE方法方面做出贡献的研究者。</p>
+<h5 id="论文中提到的解决方案之关键是什么-4">5.
+论文中提到的解决方案之关键是什么？</h5>
+<p>论文中提到的解决方案的关键包括:</p>
+<ol type="1">
+<li>使用Python类来统一表示各种IE任务的特定模式。</li>
+<li>将IE任务转化为代码生成任务。</li>
+<li>利用LLM的强大能力来完成代码生成。</li>
+<li>设计了检索增强的策略,通过检索相似示例来辅助LLM更好地理解任务。</li>
+</ol>
+<p>这些关键点共同构成了Code4UIE框架,使其能够有效地处理各种IE任务。</p>
+<h5 id="论文中的实验是如何设计的-4">6. 论文中的实验是如何设计的？</h5>
+<p>论文的实验设计包括以下几个方面:</p>
+<ol type="1">
+<li>任务覆盖:实验涵盖了5种IE任务,包括命名实体识别(NER)、关系抽取(RE)、事件检测(ED)、事件论元抽取(EAE)和事件抽取(EE)。</li>
+<li>数据集:使用了9个不同的数据集来评估模型在各种IE任务上的表现。</li>
+<li>比较方法:将Code4UIE与其他基于LLM的IE方法进行了比较。</li>
+<li>评估指标:使用了常见的IE评估指标,如精确率、召回率和F1分数。</li>
+<li>消融实验:进行了消融研究,以验证框架中各个组件的有效性。</li>
+</ol>
+<p>具体实验细节在论文的实验部分有详细描述。</p>
+<h5 id="用于定量评估的数据集是什么代码有没有开源-4">7.
+用于定量评估的数据集是什么？代码有没有开源？</h5>
+<p>论文中使用了以下数据集进行定量评估:</p>
+<ol type="1">
+<li>NER任务: CoNLL 2003, OntoNotes 5.0</li>
+<li>RE任务: ACE 2005, SciERC</li>
+<li>ED任务: ACE 2005</li>
+<li>EAE任务: ACE 2005</li>
+<li>EE任务: ACE 2005, CASIE, Cybersecurity</li>
+</ol>
+<p>关于代码开源,论文中没有明确提到代码是否开源。通常,如果代码已开源,作者会在论文中提供GitHub链接或其他代码仓库地址。由于没有看到这样的信息,可能代码尚未公开。</p>
+<h5 id="论文中的实验及结果有没有很好地支持需要验证的科学假设-4">8.
+论文中的实验及结果有没有很好地支持需要验证的科学假设？</h5>
+<p>根据论文中的实验结果,可以认为实验较好地支持了论文提出的科学假设:</p>
+<ol type="1">
+<li>Python类能够统一表示各种IE任务的特定模式:实验涵盖了多种IE任务(NER,
+RE, ED, EAE,
+EE),并在所有任务上取得了良好的效果,证明了这种表示方法的有效性和通用性。</li>
+<li>将IE任务转化为代码生成任务并利用LLM能有效解决IE问题:Code4UIE在所有测试的IE任务上都优于现有的基于LLM的方法,支持了这一假设。</li>
+<li>基于检索的示例增强可以提高LLM在IE任务上的表现:消融实验结果显示,加入检索策略后模型性能有所提升,验证了这一假设。</li>
+</ol>
+<p>总的来说,实验结果较好地支持了论文的主要科学假设。</p>
+<h5 id="这篇论文到底有什么贡献-4">9. 这篇论文到底有什么贡献？</h5>
+<p>这篇论文的主要贡献包括:</p>
+<ol type="1">
+<li>提出了一种基于模式的通用表示方法,可以统一定义各种IE任务的特定模式。这种方法使用Python类来表示实体、关系和事件,为不同的IE任务提供了一个统一的框架。</li>
+<li>将IE任务转化为统一的代码生成任务,并提出了基于LLM的检索增强代码生成框架Code4UIE。这种方法利用了LLM在代码生成方面的强大能力,为IE任务提供了一个新的解决思路。</li>
+<li>设计了统一的示例检索策略,包括基于句子嵌入的检索和基于匿名句子嵌入的检索。这些策略帮助LLM更好地理解复杂的文本表达,提高了模型的性能。</li>
+<li>通过广泛的实验验证了所提出方法的有效性。在5种IE任务的9个数据集上的实验结果表明,Code4UIE在各种IE任务上都优于现有的基于LLM的方法。</li>
+<li>为通用信息抽取领域提供了一个新的研究方向,即利用代码生成和LLM来解决IE任务。</li>
+</ol>
+<h5 id="下一步呢有什么工作可以继续深入-4">10.
+下一步呢？有什么工作可以继续深入？</h5>
+<p>基于这篇论文的工作,以下几个方向可以继续深入研究:</p>
+<ol type="1">
+<li>扩展到更多IE任务:探索Code4UIE在其他IE任务(如共指消解、情感分析等)上的应用。</li>
+<li>优化检索策略:研究更先进的检索方法,如使用语义相似度或考虑上下文信息的检索策略。</li>
+<li>提高模型效率:研究如何减少模型推理时间,使其更适合实际应用场景。</li>
+<li>多语言支持:扩展框架以支持多语言IE任务。</li>
+<li>结合领域知识:探索如何将领域特定知识整合到框架中,以提高特定领域IE任务的性能。</li>
+<li>模型可解释性:研究如何提高基于代码生成的IE模型的可解释性。</li>
+<li>处理长文本:改进模型以更好地处理长文档或多段落文本的IE任务。</li>
+<li>跨任务学习:探索如何利用不同IE任务之间的关系来提高整体性能。</li>
+</ol>
+<h5 id="要了解深入一个模型为什么好-4">11.
+要了解深入，一个模型为什么好？</h5>
+<p>Code4UIE模型的优势主要体现在以下几个方面:</p>
+<ol type="1">
+<li>统一表示:使用Python类统一表示各种IE任务的模式,使得模型可以在一个统一的框架下处理不同类型的IE任务。</li>
+<li>利用LLM能力:通过将IE任务转化为代码生成任务,充分利用了LLM在理解自然语言和生成代码方面的强大能力。</li>
+<li>检索增强:使用示例检索策略,帮助模型更好地理解任务要求和处理复杂的文本表达。</li>
+<li>灵活性:可以轻松适应新的IE任务,只需定义相应的Python类,无需重新训练整个模型。</li>
+<li>少样本学习:通过检索相似示例,模型可以在少量样本的情况下也能取得较好的性能。</li>
+<li>可扩展性:基于代码生成的方法使得模型可以生成复杂的嵌套结构,适用于各种复杂的IE任务。</li>
+<li>自然语言理解:利用LLM的强大语言理解能力,可以更好地处理复杂的文本表达和上下文信息。</li>
+</ol>
+<h5 id="以前的模型为什么不好-4">12. 以前的模型为什么不好？</h5>
+<p>以前的IE模型存在以下一些局限性:</p>
+<ol type="1">
+<li>任务特定性:传统方法往往为每个IE任务设计特定的模型,缺乏通用性。</li>
+<li>模式固定:很多模型只能处理预定义的固定模式,难以适应新的IE任务或模式。</li>
+<li>需要大量标注数据:传统的监督学习方法通常需要大量标注数据才能取得好的效果。</li>
+<li>表达理解有限:部分模型难以处理复杂的自然语言表达和上下文信息。</li>
+<li>可扩展性差:难以处理嵌套或复杂的结构化信息。</li>
+<li>跨任务迁移困难:为一个IE任务训练的模型难以直接应用到其他IE任务上。</li>
+<li>少样本场景表现差:在低资源或少样本场景下,性能往往大幅下降。</li>
+<li>灵活性不足:难以快速适应新的任务需求或领域特定的抽取要求。</li>
+</ol>
+<p>Code4UIE通过统一的代码生成框架和利用LLM的能力,在很大程度上解决了这些问题。</p>
+<h5 id="哪个关键点对性能提升最大-4">13. 哪个关键点对性能提升最大？</h5>
+<p>根据论文中的实验结果和分析,对Code4UIE性能提升贡献最大的关键点可能是:</p>
+<ol type="1">
+<li>将IE任务转化为代码生成任务:
+这一关键点使得模型可以充分利用LLM在代码生成方面的强大能力。通过生成Python类的实例代码,模型可以更精确地表示复杂的结构化信息,从而提高了IE任务的性能。</li>
+<li>检索增强策略:
+论文中提到的示例检索策略,特别是基于匿名句子嵌入的检索方法,对模型性能的提升有显著贡献。这种策略帮助模型找到语义相似的示例,从而更好地理解任务要求和处理复杂的文本表达。</li>
+</ol>
+<p>这两个关键点的结合使得Code4UIE能够在各种IE任务上取得优秀的表现,特别是在处理复杂文本和适应新任务方面表现出色。然而,要确定哪个关键点贡献最大,可能需要更详细的消融实验来量化每个组件的影响。</p>
+<h5 id="编程怎么实现-4">14. 编程怎么实现？</h5>
+<p>根据论文描述,Code4UIE的实现可以分为以下几个主要步骤:</p>
+<ol type="1">
+<li><p>定义模式类: 使用Python类定义实体、关系和事件的模式。例如:</p>
+<figure class="highlight ruby"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><code class="hljs ruby"><span class="hljs-keyword">class</span> <span class="hljs-title class_">Entity</span>:<br>    <span class="hljs-keyword">def</span> <span class="hljs-title function_">__init__</span>(<span class="hljs-params"><span class="hljs-variable language_">self</span>, <span class="hljs-symbol">name:</span> str</span>):<br>        <span class="hljs-variable language_">self</span>.name = name<br><br><span class="hljs-keyword">class</span> <span class="hljs-title class_">Person</span>(<span class="hljs-title class_">Entity</span>):<br>    <span class="hljs-keyword">def</span> <span class="hljs-title function_">__init__</span>(<span class="hljs-params"><span class="hljs-variable language_">self</span>, <span class="hljs-symbol">name:</span> str</span>):<br>        <span class="hljs-variable language_">super</span>().__init__(name=name)<br><br><span class="hljs-keyword">class</span> <span class="hljs-title class_">Relation</span>:<br>    <span class="hljs-keyword">def</span> <span class="hljs-title function_">__init__</span>(<span class="hljs-params"><span class="hljs-variable language_">self</span>, <span class="hljs-symbol">name:</span> str</span>):<br>        <span class="hljs-variable language_">self</span>.name = name<br><br><span class="hljs-keyword">class</span> <span class="hljs-title class_">Kill</span>(<span class="hljs-title class_">Relation</span>):<br>    <span class="hljs-keyword">def</span> <span class="hljs-title function_">__init__</span>(<span class="hljs-params"><span class="hljs-variable language_">self</span>, <span class="hljs-symbol">head:</span> <span class="hljs-title class_">Person</span> = <span class="hljs-string">&quot;&quot;</span>, <span class="hljs-symbol">tail:</span> <span class="hljs-title class_">Person</span> = <span class="hljs-string">&quot;&quot;</span></span>):<br>        <span class="hljs-variable language_">self</span>.head = head<br>        <span class="hljs-variable language_">self</span>.tail = tail<br></code></pre></td></tr></table></figure></li>
+<li><p>构建提示: 创建包含模式定义代码和未完成代码的提示。例如:</p>
+<figure class="highlight asciidoc"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><code class="hljs asciidoc">prompt = f&quot;&quot;&quot;<br>&#123;schema_definition_code&#125;<br><br>&#123;in_context_examples&#125;<br><br>&#x27;&#x27;&#x27;<br>List all the Entity words in the following sentence as instances of corresponding subclasses of class Entity. If there do not exist any Entity words that belong to the Entity subclasses we defined, print &quot;None&quot;.<br>&quot;&#123;input_sentence&#125;&quot;<br>&#x27;&#x27;&#x27;<br>&quot;&quot;&quot;<br></code></pre></td></tr></table></figure></li>
+<li><p>实现检索策略: 使用句子嵌入模型(如SBERT)实现示例检索:</p>
+<figure class="highlight routeros"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><code class="hljs routeros"><span class="hljs-keyword">from</span> sentence_transformers import SentenceTransformer, util<br><br>model = SentenceTransformer(<span class="hljs-string">&#x27;all-MiniLM-L6-v2&#x27;</span>)<br><br>def retrieve_examples(input_sentence, example_pool, <span class="hljs-attribute">k</span>=3):<br>    input_embedding = model.encode(input_sentence, <span class="hljs-attribute">convert_to_tensor</span>=<span class="hljs-literal">True</span>)<br>    example_embeddings = model.encode(example_pool, <span class="hljs-attribute">convert_to_tensor</span>=<span class="hljs-literal">True</span>)<br>    <br>    cos_scores = util.cos_sim(input_embedding, example_embeddings)[0]<br>    top_results = torch.topk(cos_scores, <span class="hljs-attribute">k</span>=k)<br>    <br>    return [example_pool[idx] <span class="hljs-keyword">for</span> idx <span class="hljs-keyword">in</span> top_results.indices]<br></code></pre></td></tr></table></figure></li>
+<li><p>使用LLM生成代码: 调用LLM API(如OpenAI GPT)来生成代码:</p>
+<figure class="highlight routeros"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><code class="hljs routeros">import openai<br><br>def generate_code(prompt):<br>    response = openai.Completion.create(<br>        <span class="hljs-attribute">engine</span>=<span class="hljs-string">&quot;text-davinci-002&quot;</span>,<br>        <span class="hljs-attribute">prompt</span>=prompt,<br>        <span class="hljs-attribute">max_tokens</span>=500,<br>        <span class="hljs-attribute">n</span>=1,<br>        <span class="hljs-attribute">stop</span>=None,<br>        <span class="hljs-attribute">temperature</span>=0.5,<br>    )<br>    return response.choices[0].text.strip()<br></code></pre></td></tr></table></figure></li>
+<li><p>解析生成的代码:
+使用Python的exec()函数执行生成的代码,并收集结果:</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs css">def parse_generated_code(<span class="hljs-selector-tag">code</span>):<br>    local_vars = &#123;&#125;<br>    exec(<span class="hljs-selector-tag">code</span>, globals(), local_vars)<br>    return &#123;k: v for k, v in local_vars.<span class="hljs-built_in">items</span>() if <span class="hljs-built_in">isinstance</span>(v, (Entity, Relation, Event))&#125;<br></code></pre></td></tr></table></figure></li>
+<li><p>主流程:</p>
+<figure class="highlight scss"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs scss">def <span class="hljs-built_in">extract_information</span>(input_sentence, schema, example_pool):<br>    examples = <span class="hljs-built_in">retrieve_examples</span>(input_sentence, example_pool)<br>    prompt = <span class="hljs-built_in">construct_prompt</span>(schema, examples, input_sentence)<br>    generated_code = <span class="hljs-built_in">generate_code</span>(prompt)<br>    extracted_info = <span class="hljs-built_in">parse_generated_code</span>(generated_code)<br>    return extracted_info<br></code></pre></td></tr></table></figure></li>
+</ol>
+<p>这是一个基本的实现框架,实际应用中可能需要根据具体任务和需求进行调整和优化。</p>
+<h5 id="论文源代码和paper匹配度怎么样都覆盖了吗-4">15.
+论文源代码和paper匹配度怎么样、都覆盖了吗</h5>
+<p>没有开源</p>
+<h5 id="哪些数学运算是关键的-4">16. 哪些数学运算是关键的？</h5>
+<p>在Code4UIE框架中,虽然没有复杂的数学公式,但仍有一些关键的数学运算和概念:</p>
+<ol type="1">
+<li>向量表示和相似度计算:
+在检索相似示例时,使用了句子嵌入模型将句子转换为向量表示。关键的数学运算包括:
+<ul>
+<li>向量嵌入: 将文本转换为高维向量空间中的点</li>
+<li>余弦相似度: 用于计算句子向量之间的相似度 cosine_similarity(A, B) =
+(A · B) / (||A|| * ||B||)</li>
+</ul></li>
+<li>Top-k检索: 在检索最相似的k个示例时,需要进行排序和选择操作。这涉及到:
+<ul>
+<li>排序算法</li>
+<li>k个最大值的选择</li>
+</ul></li>
+<li>概率分布和采样: 在使用LLM生成代码时,可能涉及到:
+<ul>
+<li>概率分布: 模型输出的token概率分布</li>
+<li>温度参数调整: 影响输出的随机性</li>
+<li>采样策略: 如何从概率分布中选择下一个token</li>
+</ul></li>
+<li>评估指标计算: 在实验评估中,使用了常见的IE评估指标,如:
+<ul>
+<li>精确率 (Precision) = TP / (TP + FP)</li>
+<li>召回率 (Recall) = TP / (TP + FN)</li>
+<li>F1分数 = 2 * (Precision * Recall) / (Precision + Recall)</li>
+</ul></li>
+<li>统计分析: 在比较不同方法的性能时,可能涉及:
+<ul>
+<li>平均值和标准差的计算</li>
+<li>显著性检验(如t检验)</li>
+</ul></li>
+</ol>
+<p>虽然这些数学运算相对基础,但它们在Code4UIE框架的不同组件中起着关键作用,特别是在示例检索和性能评估方面。</p>
+<h5 id="整个全流程是怎么走的-4">17. 整个全流程是怎么走的？</h5>
+<p>Code4UIE框架的整个流程可以概括为以下几个主要步骤:</p>
+<ol type="1">
+<li>模式定义:
+<ul>
+<li>使用Python类定义实体、关系和事件的模式</li>
+<li>这些定义将用于后续的代码生成任务</li>
+</ul></li>
+<li>输入处理:
+<ul>
+<li>接收待处理的输入文本</li>
+<li>确定要执行的IE任务类型(如NER、RE、EE等)</li>
+</ul></li>
+<li>示例检索:
+<ul>
+<li>使用句子嵌入模型将输入文本转换为向量</li>
+<li>在预先准备的示例池中检索语义相似的示例</li>
+<li>选择top-k个最相似的示例</li>
+</ul></li>
+<li>提示构造:
+<ul>
+<li>组合模式定义代码</li>
+<li>添加检索到的示例</li>
+<li>加入针对当前任务的指令</li>
+<li>加入输入文本</li>
+<li>形成完整的提示</li>
+</ul></li>
+<li>LLM代码生成:
+<ul>
+<li>将构造好的提示送入LLM(如GPT-3)</li>
+<li>LLM生成Python代码,该代码实例化了相应的类来表示抽取的信息</li>
+</ul></li>
+<li>代码解析:
+<ul>
+<li>解析LLM生成的Python代码</li>
+<li>提取代码中实例化的类对象,这些对象代表了从输入文本中抽取的信息</li>
+</ul></li>
+<li>结果处理:
+<ul>
+<li>将解析得到的对象转换为结构化的输出格式</li>
+<li>可能需要进行一些后处理,如去重、合并等</li>
+</ul></li>
+<li>评估(如果是在实验环境中):
+<ul>
+<li>将抽取结果与真实标注进行比较</li>
+<li>计算评估指标,如精确率、召回率、F1分数等</li>
+</ul></li>
+<li>输出:
+<ul>
+<li>返回最终的信息抽取结果</li>
+<li>在实验环境中,还会输出评估指标</li>
+</ul></li>
+</ol>
+<p>这个流程是端到端的,从输入原始文本到输出结构化信息,充分利用了LLM的能力和检索增强的策略来完成各种IE任务。整个过程是通用的,可以通过调整模式定义和任务指令来适应不同的IE任务。</p>
+<h5 id="数据是怎样流动的其中是怎样变换的各个变换有什么实际意义-4">18.
+数据是怎样流动的？其中是怎样变换的？各个变换有什么实际意义？</h5>
+<p>在Code4UIE框架中,数据的流动和变换过程如下:</p>
+<ol type="1">
+<li>输入文本 → 向量表示:
+<ul>
+<li>变换: 使用句子嵌入模型将文本转换为高维向量</li>
+<li>意义: 使文本可以在向量空间中进行相似度比较,为示例检索提供基础</li>
+</ul></li>
+<li>向量表示 → 相似示例:
+<ul>
+<li>变换: 计算输入向量与示例池中向量的相似度,选择最相似的示例</li>
+<li>意义: 找到语义相似的示例,为LLM提供任务相关的上下文信息</li>
+</ul></li>
+<li>模式定义 + 示例 + 输入文本 → 提示:
+<ul>
+<li>变换: 将多个组件组合成一个结构化的提示</li>
+<li>意义: 为LLM提供完整的任务描述和上下文,指导其生成正确的代码</li>
+</ul></li>
+<li>提示 → 生成的代码:
+<ul>
+<li>变换: LLM将自然语言提示转换为Python代码</li>
+<li>意义: 将信息抽取任务转化为代码生成任务,利用LLM的代码生成能力</li>
+</ul></li>
+<li>生成的代码 → 结构化信息:
+<ul>
+<li>变换: 解析和执行生成的Python代码,实例化相应的类</li>
+<li>意义: 将生成的代码转换回结构化的信息表示,完成信息抽取</li>
+</ul></li>
+<li>结构化信息 → 标准化输出:
+<ul>
+<li>变换: 将类实例转换为标准的输出格式(如JSON)</li>
+<li>意义: 使输出结果易于处理和使用</li>
+</ul></li>
+<li>输出 → 评估指标(在实验环境中):
+<ul>
+<li>变换: 将输出与真实标注比较,计算评估指标</li>
+<li>意义: 量化模型的性能,便于与其他方法比较</li>
+</ul></li>
+</ol>
+<p>这些数据流动和变换的过程体现了Code4UIE框架的几个核心思想:</p>
+<ol type="1">
+<li>利用向量表示和检索增强LLM的表现</li>
+<li>将IE任务转化为代码生成任务</li>
+<li>使用统一的Python类表示来处理各种IE任务</li>
+<li>端到端的处理流程,从文本输入到结构化信息输出</li>
+</ol>
+<p>每一步的变换都有其特定的作用,共同构成了一个灵活、通用且高效的IE框架。</p>
+<h5 id="既要关注具体实现思路也要关注上层抽象意义作者灵感从何而来-4">19.
+既要关注具体实现思路、也要关注上层抽象意义。作者灵感从何而来？</h5>
+<p>作者的灵感可能来源于以下几个方面:</p>
+<ol type="1">
+<li>代码即知识表示:
+<ul>
+<li>具体思路: 使用Python类来表示IE任务中的实体、关系和事件</li>
+<li>抽象意义:
+代码作为一种形式化语言,能够精确地描述结构化知识,这与IE任务的目标高度一致</li>
+</ul></li>
+<li>LLM的代码生成能力:
+<ul>
+<li>具体思路: 利用LLM将自然语言转换为Python代码</li>
+<li>抽象意义:
+将NLP任务转化为代码生成任务,充分利用LLM在语言理解和代码生成方面的双重优势</li>
+</ul></li>
+<li>检索增强生成:
+<ul>
+<li>具体思路: 使用相似示例检索来增强LLM的性能</li>
+<li>抽象意义:
+结合了检索和生成两种方法的优点,提高了模型的泛化能力和少样本学习能力</li>
+</ul></li>
+<li>统一框架的需求:
+<ul>
+<li>具体思路: 设计一个可以处理多种IE任务的通用框架</li>
+<li>抽象意义: 追求NLP任务的统一解决方案,减少任务特定模型的开发成本</li>
+</ul></li>
+<li>软件工程原则:
+<ul>
+<li>具体思路: 使用面向对象编程和继承等概念来设计模式表示</li>
+<li>抽象意义:
+将软件工程的最佳实践应用于NLP任务,提高代码的可读性和可扩展性</li>
+</ul></li>
+<li>人类编程过程的启发:
+<ul>
+<li>具体思路: 模仿人类将自然语言需求转换为代码的过程</li>
+<li>抽象意义: 将人类的认知过程映射到AI系统,实现更自然的人机交互</li>
+</ul></li>
+</ol>
+<p>作者的灵感很可能来自于观察到LLM在代码生成方面的强大能力,以及对现有IE方法局限性的深入思考。他们可能意识到,将IE任务转化为代码生成任务可以同时解决模式表示和复杂文本理解的问题。</p>
+<p>这种方法的上层抽象意义在于:</p>
+<ol type="1">
+<li>提供了一种新的思考NLP任务的方式,即通过代码生成来解决复杂的语言理解问题</li>
+<li>打破了传统IE方法中任务特定模型的界限,为通用NLP系统的发展提供了新的思路</li>
+<li>展示了如何将不同领域的技术(如软件工程、信息检索、语言模型)融合,以解决复杂的AI问题</li>
+</ol>
+<p>总的来说,Code4UIE反映了一种将形式化语言(代码)与自然语言处理相结合的创新思路,为未来的NLP研究提供了新的视角和方向。</p>
+<h5 id="作者思考路线如何-4">20. 作者思考路线如何？</h5>
+<p>分析作者的思考路线,可能包括以下几个关键步骤:</p>
+<ol type="1">
+<li>问题识别:
+作者可能首先观察到现有IE方法的局限性,特别是在处理多样化模式和复杂文本表达方面的挑战。</li>
+<li>跨领域联想:
+意识到代码作为一种形式化语言的优势,以及LLM在代码生成方面的能力,作者可能开始思考如何将这些优势应用到IE任务中。</li>
+<li>概念融合:
+将IE任务与代码生成任务联系起来,提出了使用Python类来表示IE模式的创新想法。</li>
+<li>方法设计:
+基于这个核心想法,作者设计了完整的Code4UIE框架,包括模式定义、提示构造、示例检索等组件。</li>
+<li>挑战应对:
+意识到直接使用LLM可能存在的局限性,作者引入了检索增强策略来提高模型性能。</li>
+<li>通用性考虑:
+在设计过程中,作者可能不断思考如何使框架适用于多种IE任务,最终实现了一个统一的解决方案。</li>
+</ol>
+<hr />
+<h3 id="codeie"><a
+target="_blank" rel="noopener" href="https://virtual2023.aclweb.org/paper_P2649.html">CodeIE</a></h3>
+<p>代码定义直接定义任务，算是KnowCoder的简化版本</p>
+<h4 id="具体示例">具体示例</h4>
+<p><strong>命名实体识别</strong>(NER)任务示例:</p>
+<p>输入文本: "Steve became CEO of Apple in 1998."</p>
+<p>传统NER输出: (person: Steve) (organization: Apple)</p>
+<p>CODEIE方法将其转换为Python代码:</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-keyword">def</span> <span class="hljs-title function_">named_entity_recognition</span>(<span class="hljs-params">input_text</span>):<br>    <span class="hljs-string">&quot;&quot;&quot;extract named entities from the input_text.&quot;&quot;&quot;</span><br>    input_text = <span class="hljs-string">&quot;Steve became CEO of Apple in 1998.&quot;</span><br>    entity_list = []<br>    <span class="hljs-comment"># extracted named entities</span><br>    entity_list.append(&#123;<span class="hljs-string">&quot;text&quot;</span>: <span class="hljs-string">&quot;Steve&quot;</span>, <span class="hljs-string">&quot;type&quot;</span>: <span class="hljs-string">&quot;person&quot;</span>&#125;)<br>    entity_list.append(&#123;<span class="hljs-string">&quot;text&quot;</span>: <span class="hljs-string">&quot;Apple&quot;</span>, <span class="hljs-string">&quot;type&quot;</span>: <span class="hljs-string">&quot;organization&quot;</span>&#125;)<br></code></pre></td></tr></table></figure>
+<p><strong>关系抽取</strong>(RE)任务示例:</p>
+<p>输入文本: "Steve became CEO of Apple in 1998."</p>
+<p>传统RE输出: (Steve, work for, Apple)</p>
+<p>CODEIE方法将其转换为Python代码:</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-keyword">def</span> <span class="hljs-title function_">relation_extraction</span>(<span class="hljs-params">input_text</span>):<br>    <span class="hljs-string">&quot;&quot;&quot;extract the relations of named entities from the input text.&quot;&quot;&quot;</span><br>    input_text = <span class="hljs-string">&quot;Steve became CEO of Apple in 1998.&quot;</span><br>    entity_relation_list = []<br>    <span class="hljs-comment"># extracted relations</span><br>    entity_relation_list.append(&#123;<br>        <span class="hljs-string">&quot;rel_type&quot;</span>: <span class="hljs-string">&quot;work for&quot;</span>, <br>        <span class="hljs-string">&quot;ent1_type&quot;</span>: <span class="hljs-string">&quot;person&quot;</span>, <span class="hljs-string">&quot;ent1_text&quot;</span>: <span class="hljs-string">&quot;Steve&quot;</span>, <br>        <span class="hljs-string">&quot;ent2_type&quot;</span>: <span class="hljs-string">&quot;organization&quot;</span>, <span class="hljs-string">&quot;ent2_text&quot;</span>: <span class="hljs-string">&quot;Apple&quot;</span><br>    &#125;)<br></code></pre></td></tr></table></figure>
+<p><strong>少样本学习实现</strong>:</p>
+<p>假设我们有一个3-shot学习场景,即有3个标注样本。CODEIE方法的实现步骤如下:</p>
+<ol type="a">
+<li>将3个标注样本转换为代码形式,例如:</li>
+</ol>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><code class="hljs css"># Sample <span class="hljs-number">1</span><br>def named_entity_recognition(input_text):<br>    input_text = <span class="hljs-string">&quot;Bill Gates founded Microsoft.&quot;</span><br>    entity_list = []<br>    entity_list.<span class="hljs-built_in">append</span>(&#123;&quot;<span class="hljs-selector-tag">text</span>&quot;: <span class="hljs-string">&quot;Bill Gates&quot;</span>, <span class="hljs-string">&quot;type&quot;</span>: <span class="hljs-string">&quot;person&quot;</span>&#125;)<br>    entity_list<span class="hljs-selector-class">.append</span>(&#123;&quot;<span class="hljs-selector-tag">text</span>&quot;: <span class="hljs-string">&quot;Microsoft&quot;</span>, <span class="hljs-string">&quot;type&quot;</span>: <span class="hljs-string">&quot;organization&quot;</span>&#125;)<br><br># Sample <span class="hljs-number">2</span><br>def named_entity_recognition(input_text):<br>    input_text = <span class="hljs-string">&quot;Apple was founded in 1976.&quot;</span><br>    entity_list = []<br>    entity_list.<span class="hljs-built_in">append</span>(&#123;&quot;<span class="hljs-selector-tag">text</span>&quot;: <span class="hljs-string">&quot;Apple&quot;</span>, <span class="hljs-string">&quot;type&quot;</span>: <span class="hljs-string">&quot;organization&quot;</span>&#125;)<br><br># Sample <span class="hljs-number">3</span><br>def named_entity_recognition(input_text):<br>    input_text = <span class="hljs-string">&quot;Elon Musk is the CEO of Tesla.&quot;</span><br>    entity_list = []<br>    entity_list.<span class="hljs-built_in">append</span>(&#123;&quot;<span class="hljs-selector-tag">text</span>&quot;: <span class="hljs-string">&quot;Elon Musk&quot;</span>, <span class="hljs-string">&quot;type&quot;</span>: <span class="hljs-string">&quot;person&quot;</span>&#125;)<br>    entity_list<span class="hljs-selector-class">.append</span>(&#123;&quot;<span class="hljs-selector-tag">text</span>&quot;: <span class="hljs-string">&quot;Tesla&quot;</span>, <span class="hljs-string">&quot;type&quot;</span>: <span class="hljs-string">&quot;organization&quot;</span>&#125;)<br></code></pre></td></tr></table></figure>
+<ol start="2" type="a">
+<li><p>将这些样本代码串联起来,形成上下文演示。</p></li>
+<li><p>对于新的测试样本,将其转换为相同格式的代码提示:</p></li>
+</ol>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs cpp"><span class="hljs-function">def <span class="hljs-title">named_entity_recognition</span><span class="hljs-params">(input_text)</span>:</span><br><span class="hljs-function">    input_text =</span> <span class="hljs-string">&quot;Jeff Bezos started Amazon in 1994.&quot;</span><br>    entity_list = []<br>    <span class="hljs-meta"># extracted named entities</span><br></code></pre></td></tr></table></figure>
+<ol start="4" type="a">
+<li><p>将上下文演示和新样本的代码提示合并,作为输入发送给Code-LLM
+(如Codex)。</p></li>
+<li><p>Code-LLM生成补全的代码,即预测结果:</p></li>
+</ol>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs css">entity_list<span class="hljs-selector-class">.append</span>(&#123;&quot;<span class="hljs-selector-tag">text</span>&quot;: <span class="hljs-string">&quot;Jeff Bezos&quot;</span>, <span class="hljs-string">&quot;type&quot;</span>: <span class="hljs-string">&quot;person&quot;</span>&#125;)<br>entity_list<span class="hljs-selector-class">.append</span>(&#123;&quot;<span class="hljs-selector-tag">text</span>&quot;: <span class="hljs-string">&quot;Amazon&quot;</span>, <span class="hljs-string">&quot;type&quot;</span>: <span class="hljs-string">&quot;organization&quot;</span>&#125;)<br></code></pre></td></tr></table></figure>
+<ol start="6" type="a">
+<li>解析生成的代码,提取出最终的NER结果。</li>
+</ol>
+<p>这种方法的优势在于:</p>
+<ol type="1">
+<li>利用了Code-LLMs在处理结构化数据方面的优势。</li>
+<li>保持了输入和输出格式的一致性,减少了模型在预训练和推理阶段的不匹配。</li>
+<li>通过代码结构,自然地表达了实体和关系的层次结构,有利于模型理解任务。</li>
+</ol>
+<hr />
+<h3
+id="retrieval-augmented-generation-based-relation-extraction">Retrieval-Augmented
+Generation-based Relation Extraction</h3>
+<p>RAG用来检索和要抽取的关系最相关的例子作为上下文展示头和尾实体，所谓的zero-shot就是这个查询出来的例子只给头尾不给关系类型，对比的方法也只是直接查询</p>
+<hr />
+<h3
+id="c-icl-contrastive-in-context-learning-for-information-extraction"><a
+target="_blank" rel="noopener" href="https://arxiv.org/abs/2402.11254">C-ICL: Contrastive In-context
+Learning for Information Extraction</a></h3>
+<h5 id="论文试图解决什么问题-5">1. 论文试图解决什么问题？</h5>
+<p>论文试图解决少样本信息抽取任务中，传统方法仅使用正确样本作为示例的局限性，通过引入C-ICL方法，利用大语言模型的上下文学习能力，同时使用正确和错误的样本来提高模型的实体和关系抽取性能。</p>
+<h5 id="这是否是一个新的问题-5">2. 这是否是一个新的问题？</h5>
+<p>这个问题在信息抽取领域中是一个相对较新的问题。传统方法通常只使用正确样本，而忽视了错误样本可能包含的有价值信息。C-ICL方法的创新之处在于同时利用正确和错误的样本来构建上下文学习示例。</p>
+<h5 id="这篇文章要验证一个什么科学假设-5">3.
+这篇文章要验证一个什么科学假设？</h5>
+<p>文章要验证的科学假设是：通过同时使用正确和错误的样本构建上下文学习示例，可以让大语言模型不仅学习正确的抽取方式，还能理解和避免常见错误，从而提高模型的实体和关系抽取性能。</p>
+<h5 id="有哪些相关研究如何归类谁是这一课题在领域内值得关注的研究员-5">4.
+有哪些相关研究？如何归类？谁是这一课题在领域内值得关注的研究员？</h5>
+<p>相关研究包括传统的少样本信息抽取方法和基于大语言模型的上下文学习方法。</p>
+<h5 id="论文中提到的解决方案之关键是什么-5">5.
+论文中提到的解决方案之关键是什么？</h5>
+<p>解决方案的关键是C-ICL方法，它通过同时利用正确和错误的样本构建上下文学习示例，让大语言模型不仅学习正确的抽取方式，还能理解和避免常见错误。</p>
+<p>还有就是样本的检索策略。</p>
+<h5 id="论文中的实验是如何设计的-5">6. 论文中的实验是如何设计的？</h5>
+<p>实验设计包括在多个命名实体识别(NER)和关系抽取(RE)基准数据集上进行测试，使用基于句子嵌入的检索策略和自一致性检索策略来选择上下文学习示例，并通过对比实验验证C-ICL方法的有效性。</p>
+<h5 id="用于定量评估的数据集是什么代码有没有开源-5">7.
+用于定量评估的数据集是什么？代码有没有开源？</h5>
+<p>用于定量评估的数据集包括CoNLL03(NER)和CoNLL04(RE)等基准数据集。</p>
+<h5 id="论文中的实验及结果有没有很好地支持需要验证的科学假设-5">8.
+论文中的实验及结果有没有很好地支持需要验证的科学假设？</h5>
+<p>是的，实验结果显示C-ICL方法在大多数数据集上建立了新的最先进结果，证明了通过引入对比学习的思想，充分利用正确和错误样本中的信息，可以提高模型的抽取性能和泛化能力。</p>
+<h5 id="这篇论文到底有什么贡献-5">9. 这篇论文到底有什么贡献？</h5>
+<p>这篇论文的贡献包括： -
+提出了C-ICL方法，通过同时使用正确和错误的样本来提高模型的实体和关系抽取性能。
+- 设计了基于句子嵌入的检索策略和自一致性检索策略来选择上下文学习示例。 -
+在多个基准数据集上验证了C-ICL方法的有效性，并建立了新的最先进结果。</p>
+<h5 id="下一步呢有什么工作可以继续深入-5">10.
+下一步呢？有什么工作可以继续深入？</h5>
+<p>下一步可以继续深入的工作包括： -
+探索更多类型的错误样本和检索策略，以进一步提高模型的性能。 -
+在更多不同类型的数据集上验证C-ICL方法的泛化能力。 -
+研究如何将C-ICL方法应用于其他自然语言处理任务，如文本分类、问答系统等。</p>
+<h5 id="要了解深入一个模型为什么好-5">11.
+要了解深入，一个模型为什么好？</h5>
+<p>一个模型之所以好，是因为它能够有效地解决特定问题，并且在实验中表现出优异的性能。C-ICL方法之所以好，是因为它通过对比学习，充分利用了正确和错误样本中的信息，使大语言模型能够更全面地理解信息抽取任务，从而提高了模型的抽取性能和泛化能力。</p>
+<h5 id="以前的模型为什么不好-5">12. 以前的模型为什么不好？</h5>
+<p>以前的模型之所以不好，是因为它们通常只使用正确样本作为示例，忽视了错误样本可能包含的有价值信息。这种局限性导致模型在面对复杂或模糊的文本时，难以准确抽取实体和关系。</p>
+<h5 id="哪个关键点对性能提升最大-5">13. 哪个关键点对性能提升最大？</h5>
+<p>对性能提升最大的关键点是同时使用正确和错误的样本构建上下文学习示例，让大语言模型不仅学习正确的抽取方式，还能理解和避免常见错误。</p>
+<h5 id="编程怎么实现-5">14. 编程怎么实现？</h5>
+<p>编程实现C-ICL方法包括以下步骤： -
+使用大语言模型生成已标注数据的标签，以选择难分的负样本。 -
+从训练数据中选择与测试数据语义相似的正样本。 -
+设计包含正确和错误样本的上下文学习示例。 -
+使用语义相似度感知的自一致性来对错误/负样本进行排序，选择最有价值的样本。</p>
+<h5 id="论文源代码和paper匹配度怎么样都覆盖了吗-5">15.
+论文源代码和paper匹配度怎么样、都覆盖了吗</h5>
+<h5 id="哪些数学运算是关键的-5">16. 哪些数学运算是关键的？</h5>
+<p>关键的数学运算包括： - 使用余弦相似度计算句子之间的语义相似度。 -
+应用自一致性方法，通过多次预测和投票机制获得高置信度的预测结果。 -
+计算F1分数来判断预测结果是否为难分负样本。</p>
+<h5 id="整个全流程是怎么走的-5">17. 整个全流程是怎么走的？</h5>
+<p>整个全流程包括： -
+使用大语言模型生成已标注数据的标签，以选择难分的负样本。 -
+从训练数据中选择与测试数据语义相似的正样本。 -
+设计包含正确和错误样本的上下文学习示例。 -
+使用语义相似度感知的自一致性来对错误/负样本进行排序，选择最有价值的样本。
+- 在多个基准数据集上进行测试，验证C-ICL方法的有效性。</p>
+<h5 id="数据是怎样流动的其中是怎样变换的各个变换有什么实际意义-5">18.
+数据是怎样流动的？其中是怎样变换的？各个变换有什么实际意义？</h5>
+<p>数据流动和变换包括： -
+使用大语言模型生成已标注数据的标签，以选择难分的负样本。 -
+从训练数据中选择与测试数据语义相似的正样本。 -
+设计包含正确和错误样本的上下文学习示例。 -
+使用语义相似度感知的自一致性来对错误/负样本进行排序，选择最有价值的样本。
+各个变换的实际意义在于： -
+选择语义相似的正样本有助于模型更好地理解和处理测试数据。 -
+选择高质量的难分负样本有助于模型学习错误类型并改进预测。</p>
+<h5 id="既要关注具体实现思路也要关注上层抽象意义作者灵感从何而来-5">19.
+既要关注具体实现思路、也要关注上层抽象意义。作者灵感从何而来？</h5>
+<p>作者的灵感可能来自于对比学习的思想，即通过同时使用正确和错误的样本来提高模型的性能。这种思想在其他领域（如计算机视觉）中已有应用，作者将其引入到自然语言处理领域，特别是少样本信息抽取任务中。</p>
+<h5 id="作者思考路线如何-5">20. 作者思考路线如何？</h5>
+<p>作者的思考路线可能包括： - 意识到传统方法仅使用正确样本的局限性。 -
+探索如何利用错误样本中的有价值信息。 -
+设计C-ICL方法，通过对比学习，充分利用正确和错误样本中的信息。 -
+在多个基准数据集上验证C-ICL方法的有效性，并建立新的最先进结果。</p>
+<h4 id="具体例子-1">具体例子</h4>
+<h5 id="c-icl方法概述">C-ICL方法概述</h5>
+<p>C-ICL方法利用大语言模型的上下文学习能力，通过以下步骤实现： -
+<strong>选择正确样本</strong>：使用基于句子嵌入的检索策略，选择与测试数据在语义上相似的正确样本。
+-
+<strong>选择错误样本</strong>：使用自一致性检索策略，选择高质量的难分负样本作为错误示例。
+-
+<strong>构建上下文学习示例</strong>：将选择的正确和错误样本组合成上下文学习示例，供模型学习。</p>
+<h5 id="基于句子嵌入的检索策略">基于句子嵌入的检索策略</h5>
+<p>假设我们有以下测试句子： <figure class="highlight smalltalk"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs smalltalk"><span class="hljs-comment">&quot;Tim Cook is the CEO of Apple Inc., headquartered in Cupertino, California.&quot;</span><br></code></pre></td></tr></table></figure> 步骤如下： 1.
+<strong>计算句子嵌入</strong>：使用大语言模型（如Code
+LLMs）计算测试句子的嵌入向量。 2.
+<strong>检索相似句子</strong>：从训练数据集中找到语义相似的句子，例如：
+<figure class="highlight mizar"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs mizar">&quot;Satya Nadella serves <span class="hljs-keyword">as</span> the CEO <span class="hljs-keyword">of</span> Microsoft, based <span class="hljs-keyword">in</span> Redmond, Washington.&quot;<br>&quot;Jeff Bezos founded Amazon.com, which <span class="hljs-keyword">is</span> headquartered <span class="hljs-keyword">in</span> Seattle.&quot;<br>&quot;Mark Zuckerberg <span class="hljs-keyword">is</span> the CEO <span class="hljs-keyword">of</span> Facebook, <span class="hljs-keyword">now</span> known <span class="hljs-keyword">as</span> Meta Platforms.&quot;<br></code></pre></td></tr></table></figure> 3.
+<strong>计算相似度</strong>：使用余弦相似度计算这些句子与测试句子的相似度。
+4.
+<strong>选择示例</strong>：选择排名靠前的k个包含实体或关系的样本作为上下文学习示例。</p>
+<h5 id="自一致性检索策略">自一致性检索策略</h5>
+<p>对于错误/负面样本，假设我们有以下训练样本： <figure class="highlight 1c"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs 1c"><span class="hljs-string">&quot;Elon Musk, the founder of SpaceX and Tesla, recently acquired Twitter.&quot;</span><br></code></pre></td></tr></table></figure> 步骤如下：
+1. <strong>多次预测</strong>：使用大语言模型进行多次预测，例如5次：
+<figure class="highlight gcode"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs gcode">预测<span class="hljs-number">1</span>: <span class="hljs-comment">(Elon Musk, founder of, SpaceX)</span>, <span class="hljs-comment">(Elon Musk, founder of, Tesla)</span>, <span class="hljs-comment">(Elon Musk, acquired, Twitter)</span><br>预测<span class="hljs-number">2</span>: <span class="hljs-comment">(Elon Musk, founder of, SpaceX)</span>, <span class="hljs-comment">(Elon Musk, founder of, Tesla)</span><br>预测<span class="hljs-number">3</span>: <span class="hljs-comment">(Elon Musk, founder of, SpaceX)</span>, <span class="hljs-comment">(Elon Musk, founder of, Tesla)</span>, <span class="hljs-comment">(Elon Musk, acquired, Twitter)</span><br>预测<span class="hljs-number">4</span>: <span class="hljs-comment">(Elon Musk, founder of, SpaceX)</span>, <span class="hljs-comment">(Elon Musk, CEO of, Tesla)</span>, <span class="hljs-comment">(Elon Musk, acquired, Twitter)</span><br>预测<span class="hljs-number">5</span>: <span class="hljs-comment">(Elon Musk, founder of, SpaceX)</span>, <span class="hljs-comment">(Elon Musk, founder of, Tesla)</span>, <span class="hljs-comment">(Elon Musk, bought, Twitter)</span><br></code></pre></td></tr></table></figure> 2.
+<strong>投票机制</strong>：通过投票机制获得高置信度的预测结果：
+<figure class="highlight clojure"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs clojure">(<span class="hljs-name">Elon</span> Musk<span class="hljs-punctuation">,</span> founder of<span class="hljs-punctuation">,</span> SpaceX)<span class="hljs-punctuation">,</span> (<span class="hljs-name">Elon</span> Musk<span class="hljs-punctuation">,</span> founder of<span class="hljs-punctuation">,</span> Tesla)<span class="hljs-punctuation">,</span> (<span class="hljs-name">Elon</span> Musk<span class="hljs-punctuation">,</span> acquired<span class="hljs-punctuation">,</span> Twitter)<br></code></pre></td></tr></table></figure> 3. <strong>计算F1分数</strong>：假设正确的标注是：
+<figure class="highlight clojure"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs clojure">(<span class="hljs-name">Elon</span> Musk<span class="hljs-punctuation">,</span> founder of<span class="hljs-punctuation">,</span> SpaceX)<span class="hljs-punctuation">,</span> (<span class="hljs-name">Elon</span> Musk<span class="hljs-punctuation">,</span> CEO of<span class="hljs-punctuation">,</span> Tesla)<span class="hljs-punctuation">,</span> (<span class="hljs-name">Elon</span> Musk<span class="hljs-punctuation">,</span> acquired<span class="hljs-punctuation">,</span> Twitter)<br></code></pre></td></tr></table></figure>
+这个预测的F1分数会很高（比如0.89），但不是1.0，因为它错误地将Elon
+Musk标注为Tesla的创始人而不是CEO。 4.
+<strong>选择难分负样本</strong>：由于F1分数很高但不完全正确，这个样本被选为难分负样本，可以用作错误/负面示例。</p>
+<h5 id="上下文学习示例集合">上下文学习示例集合</h5>
+<p>最终的上下文学习示例集合可能如下： - <strong>正确示例</strong>：
+<figure class="highlight gcode"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs gcode"><span class="hljs-string">&quot;Satya Nadella serves as the CEO of Microsoft, based in Redmond, Washington.&quot;</span><br>关系: <span class="hljs-comment">(Satya Nadella, CEO of, Microsoft)</span>, <span class="hljs-comment">(Microsoft, headquartered in, Redmond)</span><br><span class="hljs-string">&quot;Jeff Bezos founded Amazon.com, which is headquartered in Seattle.&quot;</span><br>关系: <span class="hljs-comment">(Jeff Bezos, founded, Amazon.com)</span>, <span class="hljs-comment">(Amazon.com, headquartered in, Seattle)</span><br></code></pre></td></tr></table></figure> - <strong>错误示例</strong>： <figure class="highlight makefile"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs makefile"><span class="hljs-string">&quot;Elon Musk, the founder of SpaceX and Tesla, recently acquired Twitter.&quot;</span><br><span class="hljs-section">错误关系: (Elon Musk, founder of, SpaceX), (Elon Musk, founder of, Tesla), (Elon Musk, acquired, Twitter)</span><br><span class="hljs-section">正确关系: (Elon Musk, founder of, SpaceX), (Elon Musk, CEO of, Tesla), (Elon Musk, acquired, Twitter)</span><br><span class="hljs-section">错误说明: 将Elon Musk误标为Tesla的创始人,而不是CEO。</span><br></code></pre></td></tr></table></figure></p>
+<h5 id="实验设计">实验设计</h5>
+<ul>
+<li><strong>数据集</strong>：使用CoNLL03(NER)和CoNLL04(RE)等基准数据集。</li>
+<li><strong>评估指标</strong>：使用准确率、召回率和F1分数等指标。</li>
+<li><strong>对比实验</strong>：对比完整的C-ICL方法与只使用正面样本的方法，验证C-ICL方法的有效性。</li>
+</ul>
+<hr />
+<h3 id="codekgc">CodeKGC</h3>
+<ol type="1">
+<li><p><strong>论文试图解决什么问题？</strong>
+论文试图解决生成式知识图谱构建方法中，传统方法无法很好地捕捉结构化知识的问题。传统方法通常将自然语言扁平化为序列化文本或特定语言，而CodeKGC方法通过利用代码语言模型来生成知识图谱，能够更好地处理复杂的结构信息和重叠事实。</p></li>
+<li><p><strong>这是否是一个新的问题？</strong>
+这是一个在知识图谱构建领域中已知的问题，但论文提出了一种新的解决方案——CodeKGC方法，该方法通过将自然语言重构为代码格式，利用代码语言模型的结构理解和推理能力，有效地改进了知识图谱构建的性能。</p></li>
+<li><p><strong>这篇文章要验证一个什么科学假设？</strong>
+文章要验证的科学假设是：通过将自然语言重构为代码格式，并利用代码语言模型的结构理解和推理能力，可以有效地改进知识图谱构建的性能，特别是在处理复杂结构提取问题如重叠问题方面。</p></li>
+<li><p><strong>有哪些相关研究？如何归类？谁是这一课题在领域内值得关注的研究员？</strong>
+相关研究包括现有的生成式知识图谱构建方法，这些方法通常将自然语言扁平化为序列化文本或特定语言。这些研究可以归类为知识图谱构建方法的改进和创新。在这一领域内，值得关注的研究员包括提出CodeKGC方法的研究者，以及在知识图谱构建领域有深入研究的其他学者。</p></li>
+<li><p><strong>论文中提到的解决方案之关键是什么？</strong>
+论文中提到的解决方案之关键是将知识图谱构建任务转化为代码生成任务，利用代码语言模型的结构理解和推理能力，通过模式感知提示和基于理由的增强生成方法，有效地改进了知识图谱构建的性能。</p></li>
+<li><p><strong>论文中的实验是如何设计的？</strong>
+论文中的实验设计包括在ADE、CONLL04和SciERC三个数据集上进行实验，比较CodeKGC方法在零样本和少样本设置下的性能，以及分析上下文样本数量、关键模块变化对性能的影响。</p></li>
+<li><p><strong>用于定量评估的数据集是什么？代码有没有开源？</strong>
+用于定量评估的数据集是ADE、CONLL04和SciERC。关于代码是否开源，文中没有明确提及，但通常这类研究会在论文发表后开源代码以供复现和进一步研究。</p></li>
+<li><p><strong>论文中的实验及结果有没有很好地支持需要验证的科学假设？</strong>
+论文中的实验及结果很好地支持了需要验证的科学假设。实验结果表明，CodeKGC方法在零样本和少样本设置下都优于基线方法，特别是在处理复杂结构提取问题如重叠问题方面表现出色。</p></li>
+<li><p><strong>这篇论文到底有什么贡献？</strong>
+这篇论文的贡献包括提出了一种新的知识图谱构建方法——CodeKGC，该方法通过将自然语言重构为代码格式，利用代码语言模型的结构理解和推理能力，有效地改进了知识图谱构建的性能，特别是在处理复杂结构提取问题如重叠问题方面。</p></li>
+<li><p><strong>下一步呢？有什么工作可以继续深入？</strong>
+下一步可以继续深入的工作包括进一步优化CodeKGC方法，探索其在更多领域和数据集上的应用，以及研究如何减少对大型预训练模型的依赖，提高方法的泛化能力。</p></li>
+<li><p><strong>要了解深入，一个模型为什么好？</strong>
+一个模型之所以好，是因为它能够有效地处理复杂的结构信息和重叠事实，通过代码格式保留语法和结构特征，使代码语言模型能生成更准确的关系和实体，同时通过基于理由的生成方法，提高了模型的推理能力。</p></li>
+<li><p><strong>以前的模型为什么不好？</strong>
+以前的模型不好是因为它们通常将自然语言扁平化为序列化文本或特定语言，无法很好地捕捉结构化知识，导致在处理复杂结构信息和重叠事实时表现不佳。</p></li>
+<li><p><strong>哪个关键点对性能提升最大？</strong>
+对性能提升最大的关键点是模式感知提示和基于理由的增强生成方法，这些方法通过利用知识图谱内的语义结构和提供中间步骤来提高知识提取能力。</p></li>
+<li><p><strong>编程怎么实现？</strong>
+编程实现涉及使用预定义的Python类（如Entity、Relation、Triple、Extract）来表示知识图谱的结构，利用Python的类继承机制来表示实体和关系的层次结构，并通过Triple实例列表来表示复杂的结构信息。</p></li>
+<li><p><strong>论文源代码和paper匹配度怎么样、都覆盖了吗</strong>
+文中没有明确提及源代码和论文的匹配度，但通常这类研究会在论文发表后开源代码以供复现和进一步研究，确保源代码和论文内容的一致性。</p></li>
+<li><p><strong>哪些数学运算是关键的？</strong>
+关键的数学运算可能包括概率模型的计算、推理步骤的分解和组合，以及在生成过程中对结构化信息的编码和解码。</p></li>
+<li><p><strong>整个全流程是怎么走的？</strong>
+整个全流程包括将自然语言重构为代码格式，利用模式感知提示和基于理由的增强生成方法，通过预定义的Python类和类继承机制来表示知识图谱的结构，最终生成结构化的三元组表示。</p></li>
+<li><p><strong>数据是怎样流动的？其中是怎样变换的？各个变换有什么实际意义？</strong>
+数据流动包括将自然语言输入转换为代码格式，通过模式感知提示和基于理由的生成方法进行结构化处理，最终生成结构化的三元组表示。各个变换的实际意义在于保留语法和结构特征，提高模型的推理能力，以及有效地处理复杂的结构信息和重叠事实。</p></li>
+<li><p><strong>既要关注具体实现思路、也要关注上层抽象意义。作者灵感从何而来？</strong>
+作者灵感可能来自于对现有知识图谱构建方法的局限性的认识，以及对代码语言模型在处理结构化信息方面优势的发现。通过将自然语言重构为代码格式，利用代码语言模型的结构理解和推理能力，提出了一种新的解决方案。</p></li>
+<li><p><strong>作者思考路线如何？</strong>
+作者的思考路线可能包括识别现有方法的局限性，探索代码语言模型的优势，提出将知识图谱构建任务转化为代码生成任务的思路，并通过实验验证方法的有效性。整个思考路线体现了对问题本质的深刻理解和对解决方案的创新设计。</p></li>
+</ol>
+<h4 id="具体例子-2">具体例子</h4>
+<h5 id="输入文本示例">输入文本示例:</h5>
+<p>"Prenatal cytomegalovirus (CMV) infection associated with severe
+brain damage was detected in an infant whose mother had been treated
+with prednisolone and azathioprine for systemic lupus erythematosus
+(SLE)."</p>
+<h5 id="模式感知提示构建">模式感知提示构建:</h5>
+<h6 id="a-首先我们定义基本的python类结构">a)
+首先,我们定义基本的Python类结构:</h6>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><code class="hljs markdown">class Entity:<br><span class="hljs-code">    def __init__(self, name: str):</span><br><span class="hljs-code">        self.name = name</span><br><span class="hljs-code"></span><br>class Relation:<br><span class="hljs-code">    def __init__(self, name: str):</span><br><span class="hljs-code">        self.name = name</span><br><span class="hljs-code"></span><br>class Triple:<br><span class="hljs-code">    def __init__(self, head, relation, tail):</span><br><span class="hljs-code">        self.head = head</span><br><span class="hljs-code">        self.relation = relation</span><br><span class="hljs-code">        self.tail = tail</span><br><span class="hljs-code"></span><br>class Extract:<br><span class="hljs-code">    def __init__(self, triples):</span><br><span class="hljs-code">        self.triples = triples</span><br></code></pre></td></tr></table></figure>
+<h6 id="b-然后我们为这个特定领域定义具体的实体和关系类">b)
+然后,我们为这个特定领域定义具体的实体和关系类:</h6>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-keyword">class</span> <span class="hljs-title class_">Disease</span>(<span class="hljs-title class_ inherited__">Entity</span>):<br>    <span class="hljs-keyword">pass</span><br><br><span class="hljs-keyword">class</span> <span class="hljs-title class_">Medication</span>(<span class="hljs-title class_ inherited__">Entity</span>):<br>    <span class="hljs-keyword">pass</span><br><br><span class="hljs-keyword">class</span> <span class="hljs-title class_">Symptom</span>(<span class="hljs-title class_ inherited__">Entity</span>):<br>    <span class="hljs-keyword">pass</span><br><br><span class="hljs-keyword">class</span> <span class="hljs-title class_">AssociatedWith</span>(<span class="hljs-title class_ inherited__">Relation</span>):<br>    <span class="hljs-keyword">pass</span><br><br><span class="hljs-keyword">class</span> <span class="hljs-title class_">TreatedWith</span>(<span class="hljs-title class_ inherited__">Relation</span>):<br>    <span class="hljs-keyword">pass</span><br></code></pre></td></tr></table></figure>
+<h5 id="基于理由的增强生成">基于理由的增强生成:</h5>
+<h6 id="步骤1-识别关系">步骤1: 识别关系</h6>
+<ul>
+<li><code>AssociatedWith</code> (CMV感染与脑损伤)</li>
+<li><code>TreatedWith</code> (母亲与药物治疗)</li>
+</ul>
+<h6 id="步骤2-提取实体">步骤2: 提取实体</h6>
+<ul>
+<li><code>Disease</code>: CMV, brain damage, SLE</li>
+<li><code>Medication</code>: prednisolone, azathioprine</li>
+<li><code>Symptom</code>: brain damage</li>
+</ul>
+<h6 id="步骤3-生成最终结果">步骤3: 生成最终结果</h6>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs python">extract = Extract([<br>    Triple(Disease(<span class="hljs-string">&quot;CMV infection&quot;</span>), AssociatedWith(), Symptom(<span class="hljs-string">&quot;severe brain damage&quot;</span>)),<br>    Triple(Entity(<span class="hljs-string">&quot;mother&quot;</span>), TreatedWith(), Medication(<span class="hljs-string">&quot;prednisolone&quot;</span>)),<br>    Triple(Entity(<span class="hljs-string">&quot;mother&quot;</span>), TreatedWith(), Medication(<span class="hljs-string">&quot;azathioprine&quot;</span>)),<br>    Triple(Entity(<span class="hljs-string">&quot;mother&quot;</span>), AssociatedWith(), Disease(<span class="hljs-string">&quot;SLE&quot;</span>))<br>])<br></code></pre></td></tr></table></figure>
+<h5 id="代码生成">代码生成:</h5>
+<p>最终,CodeKGC会生成类似这样的Python代码:</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><code class="hljs python">cmv = Disease(<span class="hljs-string">&quot;CMV infection&quot;</span>)<br>brain_damage = Symptom(<span class="hljs-string">&quot;severe brain damage&quot;</span>)<br>mother = Entity(<span class="hljs-string">&quot;mother&quot;</span>)<br>prednisolone = Medication(<span class="hljs-string">&quot;prednisolone&quot;</span>)<br>azathioprine = Medication(<span class="hljs-string">&quot;azathioprine&quot;</span>)<br>sle = Disease(<span class="hljs-string">&quot;SLE&quot;</span>)<br><br>triples = [<br>    Triple(cmv, AssociatedWith(), brain_damage),<br>    Triple(mother, TreatedWith(), prednisolone),<br>    Triple(mother, TreatedWith(), azathioprine),<br>    Triple(mother, AssociatedWith(), sle)<br>]<br><br>extract = Extract(triples)<br></code></pre></td></tr></table></figure>
+<h5 id="优势展示">优势展示:</h5>
+<p>CodeKGC能够正确处理重叠和长距离的三元组。例如,它可以同时识别"CMV
+infection"与"brain
+damage"的关系,以及"mother"与多种药物的治疗关系,这在传统方法中可能会被忽略或错误处理。</p>
+<hr />
+<h3
+id="consistency-guided-knowledge-retrieval-and-denoising-in-llms-for-zero-shot-document-level-relation-triplet-extraction"><a
+target="_blank" rel="noopener" href="https://github.com/QiSun123/GenRDK">Consistency Guided Knowledge
+Retrieval and Denoising in LLMs for Zero-shot Document-level Relation
+Triplet Extraction</a></h3>
+<h5 id="论文试图解决什么问题-6">1. 论文试图解决什么问题？</h5>
+<p>论文试图解决零样本文档级关系三元组抽取（ZeroDocRTE）的问题，即从未见过的文档中抽取包含未见过关系类型的关系三元组。</p>
+<h5 id="这是否是一个新的问题-6">2. 这是否是一个新的问题？</h5>
+<p>是的，ZeroDocRTE是一个新的问题，它比句子级的零样本抽取更具挑战性。</p>
+<h5 id="这篇文章要验证一个什么科学假设-6">3.
+这篇文章要验证一个什么科学假设？</h5>
+<p>文章要验证通过使用链式检索提示和一致性引导的跨文档知识去噪策略，可以有效地从大型语言模型中生成高质量的合成数据，用于零样本文档级关系三元组抽取。</p>
+<h5 id="有哪些相关研究如何归类谁是这一课题在领域内值得关注的研究员-6">4.
+有哪些相关研究？如何归类？谁是这一课题在领域内值得关注的研究员？</h5>
+<p>相关研究包括句子级关系抽取、零样本学习、大语言模型在NLP中的应用等。这些研究可以归类为自然语言处理和机器学习领域。</p>
+<h5 id="论文中提到的解决方案之关键是什么-6">5.
+论文中提到的解决方案之关键是什么？</h5>
+<p>解决方案的关键是使用链式检索提示来引导大语言模型生成合成数据，并通过一致性引导的跨文档知识去噪策略来提高数据质量。</p>
+<h5 id="论文中的实验是如何设计的-6">6. 论文中的实验是如何设计的？</h5>
+<p>实验设计包括使用链式检索提示生成合成数据，训练预去噪模型，进行一致性引导的跨文档知识去噪，以及最终使用去噪后的数据训练关系三元组抽取器。</p>
+<h5 id="用于定量评估的数据集是什么代码有没有开源-6">7.
+用于定量评估的数据集是什么？代码有没有开源？</h5>
+<p>开源</p>
+<h5 id="论文中的实验及结果有没有很好地支持需要验证的科学假设-6">8.
+论文中的实验及结果有没有很好地支持需要验证的科学假设？</h5>
+<p>实验结果显示，使用链式检索提示和一致性引导的去噪策略生成的数据在ZeroDocRTE和ZeroDocRE任务上都取得了显著的性能提升，支持了科学假设。</p>
+<h5 id="这篇论文到底有什么贡献-6">9. 这篇论文到底有什么贡献？</h5>
+<p>论文的贡献包括提出ZeroDocRTE这一新任务，设计链式检索提示方法，提出一致性引导的跨文档知识去噪策略，并在零样本文档级关系三元组抽取任务上取得显著性能提升。</p>
+<h5 id="下一步呢有什么工作可以继续深入-6">10.
+下一步呢？有什么工作可以继续深入？</h5>
+<p>下一步可以继续提高生成数据的多样性和可控性，以及探索更多有效的去噪策略。</p>
+<h5 id="要了解深入一个模型为什么好-6">11.
+要了解深入，一个模型为什么好？</h5>
+<p>一个模型之所以好，是因为它能够有效地处理复杂的语义上下文和篇章结构，生成高质量的合成数据，并通过去噪策略提高数据质量。</p>
+<h5 id="以前的模型为什么不好-6">12. 以前的模型为什么不好？</h5>
+<p>以前的模型可能在处理复杂的文档级关系抽取任务时性能不佳，尤其是在零样本场景下，缺乏有效的去噪策略。</p>
+<h5 id="哪个关键点对性能提升最大-6">13. 哪个关键点对性能提升最大？</h5>
+<p>链式检索提示和一致性引导的跨文档知识去噪策略对性能提升最大。</p>
+<h5 id="编程怎么实现-6">14. 编程怎么实现？</h5>
+<h5 id="论文源代码和paper匹配度怎么样都覆盖了吗-6">15.
+论文源代码和paper匹配度怎么样、都覆盖了吗</h5>
+<h5 id="哪些数学运算是关键的-6">16. 哪些数学运算是关键的？</h5>
+<p>关键的数学运算可能包括一致性得分的计算和动态阈值的确定。</p>
+<h5 id="整个全流程是怎么走的-6">17. 整个全流程是怎么走的？</h5>
+<p>全流程包括生成合成数据、预去噪、一致性引导的去噪、最终训练关系三元组抽取器。</p>
+<h5 id="数据是怎样流动的其中是怎样变换的各个变换有什么实际意义-6">18.
+数据是怎样流动的？其中是怎样变换的？各个变换有什么实际意义？</h5>
+<p>数据流动包括从生成合成数据到预去噪，再到一致性引导的去噪，最终用于训练模型。各个变换的实际意义在于提高数据质量和模型性能。</p>
+<h5 id="既要关注具体实现思路也要关注上层抽象意义作者灵感从何而来-6">19.
+既要关注具体实现思路、也要关注上层抽象意义。作者灵感从何而来？</h5>
+<p>作者灵感可能来自于大语言模型的生成能力和零样本学习的挑战，以及如何通过去噪策略提高数据质量。</p>
+<h5 id="作者思考路线如何-6">20. 作者思考路线如何？</h5>
+<p>作者的思考路线可能包括如何利用大语言模型生成合成数据，如何设计有效的去噪策略，以及如何将这些方法应用于零样本文档级关系三元组抽取任务。</p>
+<h4 id="具体例子-3">具体例子</h4>
+<h5 id="选择未见关系类型">1. 选择未见关系类型</h5>
+<p>假设我们要处理一个未见过的关系类型“兄弟姐妹”（sibling）。</p>
+<h5 id="链式检索提示chain-of-retrieval-prompt">2.
+链式检索提示（Chain-of-Retrieval Prompt）</h5>
+<h6 id="a-选择相关关系">a) 选择相关关系</h6>
+<p>我们引导ChatGPT从关系集 ( R )
+中选择与“兄弟姐妹”相关的几个关系，例如“父母”（parent）、“配偶”（spouse）等。</p>
+<h6 id="b-生成虚构文档">b) 生成虚构文档</h6>
+<p>基于选择的相关关系，我们引导ChatGPT生成一个包含这些关系的虚构文档。例如，生成的文档可能描述一个家族的关系，包括父母、配偶和兄弟姐妹的关系。</p>
+<h6 id="c-提取实体集">c) 提取实体集</h6>
+<p>从生成的文档中提取实体集合 ( E_k )，例如提取出人物名字（如John Smith,
+Emily Johnson等）。</p>
+<h6 id="d-抽取关系三元组">d) 抽取关系三元组</h6>
+<p>基于文档和实体集，从中提取所有类型的关系三元组。例如，提取出“John
+Smith 和 Emily Johnson 是兄弟姐妹”这样的三元组。</p>
+<h6 id="e-推理解释">e) 推理解释</h6>
+<p>为每个关系三元组生成一个合理的解释，并从文本中提取支持信息。例如，解释为什么John
+Smith和Emily Johnson是兄弟姐妹，并提供支持句子。</p>
+<h6 id="f-生成结构化标签">f) 生成结构化标签</h6>
+<p>将所有信息组织为结构化数据，例如： <figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><code class="hljs json"><span class="hljs-punctuation">&#123;</span><br>  <span class="hljs-attr">&quot;head_entity&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;John Smith&quot;</span><span class="hljs-punctuation">,</span><br>  <span class="hljs-attr">&quot;relation_type&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;sibling&quot;</span><span class="hljs-punctuation">,</span><br>  <span class="hljs-attr">&quot;tail_entity&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;Emily Johnson&quot;</span><span class="hljs-punctuation">,</span><br>  <span class="hljs-attr">&quot;explanation&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;John Smith and Emily Johnson are siblings because they share the same parents.&quot;</span><span class="hljs-punctuation">,</span><br>  <span class="hljs-attr">&quot;support_sentence&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;John and Emily are the children of Mr. and Mrs. Smith.&quot;</span><br><span class="hljs-punctuation">&#125;</span><br></code></pre></td></tr></table></figure></p>
+<h5 id="预去噪模型pre-denoising-model">3. 预去噪模型（Pre-denoising
+Model）</h5>
+<h6 id="a-模型微调">a) 模型微调</h6>
+<p>使用已知关系的数据集 ( D_s )
+对LLaMA2-13B-Chat模型进行微调，使其适应已知关系的数据。</p>
+<h6 id="b-生成伪标签">b) 生成伪标签</h6>
+<p>使用预去噪模型对合成数据进行推理，从而生成伪标签。例如，对生成的文档进行推理，生成伪标签：
+<figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs json"><span class="hljs-punctuation">&#123;</span><br>  <span class="hljs-attr">&quot;head_entity&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;John Smith&quot;</span><span class="hljs-punctuation">,</span><br>  <span class="hljs-attr">&quot;relation_type&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;sibling&quot;</span><span class="hljs-punctuation">,</span><br>  <span class="hljs-attr">&quot;tail_entity&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;Emily Johnson&quot;</span><span class="hljs-punctuation">,</span><br>  <span class="hljs-attr">&quot;pseudo_label&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-literal"><span class="hljs-keyword">true</span></span><br><span class="hljs-punctuation">&#125;</span><br></code></pre></td></tr></table></figure></p>
+<h5
+id="一致性引导的跨文档知识去噪consistency-guided-knowledge-denoising">4.
+一致性引导的跨文档知识去噪（Consistency-guided Knowledge
+Denoising）</h5>
+<p>假设我们有两个文档 ( D_1 ) 和 ( D_2
+)，它们都描述了同一个人物关系网络。我们需要计算关系三元组 ( (A, , B) )
+的一致性得分。</p>
+<h5 id="文档-d_1-中的关系事实">文档 ( D_1 ) 中的关系事实：</h5>
+<ul>
+<li>( (A, , C) )</li>
+<li>( (B, , C) )</li>
+<li>( (A, , B) )</li>
+</ul>
+<h5 id="文档-d_2-中的关系事实">文档 ( D_2 ) 中的关系事实：</h5>
+<ul>
+<li>( (A, , C) )</li>
+<li>( (B, , C) )</li>
+<li>( (A, , B) )</li>
+</ul>
+<h6 id="计算一致性得分">2. 计算一致性得分</h6>
+<p>一致性得分 ( s_{ijk} ) 的计算公式如下： [ s_{ijk} = F_s(i, j, k) +
+F_p(i, j, k) ] 其中，( F_s(i, j, k) ) 和 ( F_p(i, j, k) ) 分别表示在 (
+KG_s ) 和 ( KG_p ) 中关系三元组 ( (e_i, e_j, r_k) ) 的频率。</p>
+<p><strong>计算 ( F_s(i, j, k) ) 和 ( F_p(i, j, k) )</strong></p>
+<p>对于关系三元组 ( (A, , B) )： - 在 ( KG_s ) 中，( (A, , B) )
+出现了一次，所以 ( F_s(A, B, ) = 1 )。 - 在 ( KG_p ) 中，( (A, , B) )
+出现了一次，所以 ( F_p(A, B, ) = 1 )。</p>
+<h6 id="计算一致性得分-1">3. 计算一致性得分</h6>
+<p>根据公式，一致性得分 ( s_{ijk} ) 为： [ s_{A, B, } = F_s(A, B, ) +
+F_p(A, B, ) = 1 + 1 = 2 ]</p>
+<h6 id="剪枝不可靠的三元组">4. 剪枝不可靠的三元组</h6>
+<p>假设我们设定了一个动态阈值 ( <em>k )，对于关系类型 (
+)，我们设定的阈值 ( </em>{} = 1.5 )。</p>
+<p>由于 ( s_{A, B, } = 2 ) 大于阈值 ( _{} = 1.5 )，因此关系三元组 ( (A,
+, B) ) 被认为是可靠的，不会被剪枝。</p>
+<h6 id="重新标注合成数据">5. 重新标注合成数据</h6>
+<p>使用去噪后的知识图谱重新标注合成数据，确保包含可靠的关系三元组。</p>
+<h5 id="关系三元组抽取器relation-triplet-extractor">5.
+关系三元组抽取器（Relation Triplet Extractor）</h5>
+<h6 id="a-训练关系三元组抽取器">a) 训练关系三元组抽取器</h6>
+<p>使用去噪后的合成数据微调LLaMA2-13B-Chat模型，使其能够从文档中自动识别并提取关系三元组。</p>
+<h6 id="b-抽取关系三元组">b) 抽取关系三元组</h6>
+<p>最终，使用训练好的关系三元组抽取器从未见过的文档中抽取包含“兄弟姐妹”关系的三元组。</p>
+<p>通过这个具体的例子，我们可以看到论文方法的全流程是如何从选择未见关系类型开始，通过链式检索提示生成合成数据，使用预去噪模型和一致性引导的去噪策略提高数据质量，最终训练关系三元组抽取器来完成任务的。</p>
+<hr />
+<h3
+id="empirical-analysis-of-dialogue-relation-extraction-with-large-language-models">Empirical
+Analysis of Dialogue Relation Extraction with Large Language Models</h3>
+<h5 id="论文试图解决什么问题-7">1. 论文试图解决什么问题？</h5>
+<p>论文试图解决对话关系抽取（DRE）任务中的挑战，特别是如何有效地从对话中提取两个论元之间的关系，尤其是在处理长距离和稀疏的多轮信息以及基于部分对话提取正确关系的问题。</p>
+<h5 id="这是否是一个新的问题-7">2. 这是否是一个新的问题？</h5>
+<p>这是一个全新的问题，但论文针对DRE任务中的一些特定挑战提出了新的解决方案和评估方法。</p>
+<h5 id="这篇文章要验证一个什么科学假设-7">3.
+这篇文章要验证一个什么科学假设？</h5>
+<p>文章要验证的科学假设是大型语言模型（LLMs）能够显著缓解现有DRE方法的两个主要问题，即捕捉长距离和稀疏多轮信息的困难，以及在从完整对话到部分对话设置时性能下降的问题。</p>
+<h5 id="有哪些相关研究如何归类谁是这一课题在领域内值得关注的研究员-7">4.
+有哪些相关研究？如何归类？谁是这一课题在领域内值得关注的研究员？</h5>
+<p>相关研究包括关系抽取（RE）的发展，包括句子级、文档级和对话级RE，以及现有的基于序列和基于图的DRE方法。</p>
+<h5 id="论文中提到的解决方案之关键是什么-7">5.
+论文中提到的解决方案之关键是什么？</h5>
+<p>解决方案的关键是利用大型语言模型（如ChatGPT和LLaMA）进行DRE，通过设计不同的提示格式和微调技术（如LoRA）来提高模型在DRE任务上的性能。</p>
+<h5 id="论文中的实验是如何设计的-7">6. 论文中的实验是如何设计的？</h5>
+<p>实验设计包括评估不同LLMs在DRE任务上的表现，使用标准设置和对话设置进行评估，以及在不同数据集上测试模型的泛化能力。</p>
+<h5 id="用于定量评估的数据集是什么代码有没有开源-7">7.
+用于定量评估的数据集是什么？代码有没有开源？</h5>
+<p>用于定量评估的数据集包括DialogRE、MELD和EmoryNLP等。关于代码是否开源，文章中没有明确提及，但通常这类研究在完成后会选择开源代码以促进进一步的研究和应用。</p>
+<h5 id="论文中的实验及结果有没有很好地支持需要验证的科学假设-7">8.
+论文中的实验及结果有没有很好地支持需要验证的科学假设？</h5>
+<p>是的，实验结果支持了科学假设，表明LLMs能够显著提升DRE的整体性能，有效解决了捕捉长距离和稀疏多轮信息的困难，并且在从完整对话到部分对话设置时性能下降幅度更小。</p>
+<h5 id="这篇论文到底有什么贡献-7">9. 这篇论文到底有什么贡献？</h5>
+<p>论文的贡献包括首次对LLMs在DRE任务上进行评估，提出使用基于生成的方法进行DRE，显著缓解了DRE的两个主要问题，并通过分析不同基于生成的方法的性能和复杂性，为未来DRE研究提供了有价值的见解。</p>
+<h5 id="下一步呢有什么工作可以继续深入-7">10.
+下一步呢？有什么工作可以继续深入？</h5>
+<p>下一步可以继续深入研究LLMs在DRE任务上的应用，探索更多有效的提示策略和微调技术，以及在更多不同类型的对话数据集上测试模型的性能和泛化能力。</p>
+<h5 id="要了解深入一个模型为什么好-7">11.
+要了解深入，一个模型为什么好？</h5>
+<p>一个模型之所以好，是因为它能够有效地捕捉和理解对话中的复杂关系，尤其是在处理长距离和稀疏的多轮信息时表现出优势，并且能够在不同设置下保持稳定的性能。</p>
+<h5 id="以前的模型为什么不好-7">12. 以前的模型为什么不好？</h5>
+<p>以前的模型可能不好是因为它们难以捕捉长距离和稀疏的多轮信息，以及在基于部分对话提取正确关系时性能较差。</p>
+<h5 id="哪个关键点对性能提升最大-7">13. 哪个关键点对性能提升最大？</h5>
+<p>关键点对性能提升最大的是使用大型语言模型和有效的提示策略及微调技术，这些方法能够显著提升模型在DRE任务上的表现。</p>
+<h5 id="编程怎么实现-7">14. 编程怎么实现？</h5>
+<p>编程实现涉及构建输入提示、选择基础模型、使用LoRA技术进行参数高效微调，以及通过训练和优化模型来最小化预测输出与真实关系标签之间的损失。</p>
+<h5 id="论文源代码和paper匹配度怎么样都覆盖了吗-7">15.
+论文源代码和paper匹配度怎么样、都覆盖了吗</h5>
+<p>文章中没有提及源代码的具体情况，但通常论文的源代码应该与论文内容高度匹配，覆盖了论文中提到的所有实验和方法。</p>
+<h5 id="哪些数学运算是关键的-7">16. 哪些数学运算是关键的？</h5>
+<p>关键的数学运算包括损失函数的最小化（负对数似然）、参数高效微调中的秩分解矩阵计算等。</p>
+<h5 id="整个全流程是怎么走的-7">17. 整个全流程是怎么走的？</h5>
+<p>全流程包括数据构建、模型选择、参数高效微调、模型训练、验证与评估等步骤。</p>
+<h5 id="数据是怎样流动的其中是怎样变换的各个变换有什么实际意义-7">18.
+数据是怎样流动的？其中是怎样变换的？各个变换有什么实际意义？</h5>
+<p>数据流动包括从原始对话数据构建输入输出对，通过模型进行关系抽取，最终生成关系标签。数据变换包括对话上下文的编码、参数对的提取和关系标签的生成，这些变换有助于模型理解和预测对话中的关系。</p>
+<h5 id="既要关注具体实现思路也要关注上层抽象意义作者灵感从何而来-7">19.
+既要关注具体实现思路、也要关注上层抽象意义。作者灵感从何而来？</h5>
+<p>作者灵感可能来自于对现有DRE方法的局限性的认识，以及对大型语言模型在其他NLP任务上成功应用的观察。</p>
+<h5 id="作者思考路线如何-7">20. 作者思考路线如何？</h5>
+<p>作者的思考路线可能包括识别DRE任务的挑战、探索LLMs的应用潜力、设计实验验证假设、分析结果并提出改进方法。</p>
+<h4 id="微调具体">微调具体</h4>
+<h5 id="数据准备">1. 数据准备</h5>
+<p>假设我们有以下对话片段： <figure class="highlight vbnet"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs vbnet"><span class="hljs-symbol">S1:</span> Hey, <span class="hljs-keyword">do</span> you know who <span class="hljs-built_in">is</span> John<span class="hljs-comment">&#x27;s sister?</span><br><span class="hljs-symbol">S2:</span> Yeah, it<span class="hljs-comment">&#x27;s Sarah.</span><br></code></pre></td></tr></table></figure>
+我们的目标是提取出John和Sarah之间的关系，即“兄弟姐妹关系（per:siblings）”。</p>
+<h5 id="构建输入输出对">2. 构建输入输出对</h5>
+<p>我们将对话片段构建成适合模型输入的格式。输入提示包括对话上下文和参数对，输出是关系标签。</p>
+<p><strong>输入提示：</strong></p>
+<figure class="highlight ada"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs ada">| S1: Hey, <span class="hljs-keyword">do</span> you know who <span class="hljs-keyword">is</span> John<span class="hljs-symbol">&#x27;s</span> sister? S2: Yeah, it<span class="hljs-symbol">&#x27;s</span> Sarah. | John | Sarah |<br></code></pre></td></tr></table></figure>
+<p><strong>输出标签：</strong> <figure class="highlight gherkin"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs gherkin">|<span class="hljs-string"> per:siblings </span>|<br></code></pre></td></tr></table></figure></p>
+<h5 id="选择基础模型">3. 选择基础模型</h5>
+<p>我们选择一个开源的大型语言模型（如LLaMA）作为基础模型。</p>
+<h5 id="参数高效微调lora">4. 参数高效微调（LoRA）</h5>
+<p>使用LoRA技术进行参数高效微调。具体步骤如下： -
+<strong>冻结预训练模型的权重：</strong>
+保持基础模型的大部分权重不变，减少内存占用。 -
+<strong>注入可训练的秩分解矩阵：</strong>
+在每层Transformer中加入小规模的可训练参数，用于特定任务的调整。</p>
+<h5 id="微调过程">5. 微调过程</h5>
+<p>在微调过程中，我们使用上一步构建的输入输出对来训练模型。模型通过最小化预测输出与真实关系标签之间的损失（负对数似然）来进行优化。</p>
+<p><strong>损失函数：</strong></p>
+<figure class="highlight 1c"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs 1c">L <span class="hljs-punctuation">=</span> <span class="hljs-punctuation">-</span> Σ <span class="hljs-punctuation">(</span><span class="hljs-built_in">log</span> P<span class="hljs-punctuation">(</span>预测关系 <span class="hljs-string">| 对话上下文, 参数对))</span><br></code></pre></td></tr></table></figure>
+<h5 id="验证与评估">6. 验证与评估</h5>
+<p>在模型微调完成后，我们在验证集或测试集上评估模型的表现。我们可以通过精确率（Precision）、召回率（Recall）、F1分数等指标来衡量模型的提取效果。</p>
+<p><strong>示例评估：</strong>
+如果模型成功预测出John和Sarah之间的关系为<code>per:siblings</code>，那么它的预测是正确的，这将反映在模型的精确率和召回率中。</p>
+<h4 id="prompt-design">Prompt design</h4>
+<p>为了更好地理解不同的Prompt策略在对话关系抽取任务中的应用，我们可以结合一个具体的例子来进行讲解。假设我们有一段对话数据，其中涉及两个人物之间的关系提取。以下是详细的方案流程：</p>
+<h6 id="数据准备-1">1. 数据准备</h6>
+<p>假设我们有以下对话片段： <figure class="highlight avrasm"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs avrasm"><span class="hljs-symbol">S1:</span> Hey Pheebs.<br><span class="hljs-symbol">S2:</span> Hey!<br><span class="hljs-symbol">S1:</span> Any sign of your brother?<br></code></pre></td></tr></table></figure>
+我们的目标是提取出S2和Pheebs之间的关系，即“别名关系（per:alternate_names）”。</p>
+<h6 id="不同的prompt策略">2. 不同的Prompt策略</h6>
+<p>我们将使用四种不同的Prompt策略来展示如何引导模型进行关系抽取和问题回答。</p>
+<p><strong>示例：</strong></p>
+<ul>
+<li><p><strong>Vanilla Prompting:</strong> <figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs sql">执行关系抽取任务。<br>关系架构: [<span class="hljs-keyword">per</span>:friends, <span class="hljs-keyword">per</span>:girl<span class="hljs-operator">/</span>boyfriend, <span class="hljs-keyword">per</span>:siblings, <span class="hljs-keyword">per</span>:alternate_names, ...]<br>对话上下文: S1: Hey Pheebs. S2: Hey<span class="hljs-operator">!</span> S1: <span class="hljs-keyword">Any</span> sign <span class="hljs-keyword">of</span> your brother? ......<br>参数对: (S2, Pheebs)<br>关系类型: <span class="hljs-keyword">per</span>:alternate_names<br></code></pre></td></tr></table></figure></p></li>
+<li><p><strong>Restrictive Prompting:</strong></p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs sql">执行关系抽取任务。<br>关系架构: [<span class="hljs-keyword">per</span>:friends, <span class="hljs-keyword">per</span>:girl<span class="hljs-operator">/</span>boyfriend, <span class="hljs-keyword">per</span>:siblings, <span class="hljs-keyword">per</span>:alternate_names, ...]<br>对话上下文: S1: Hey Pheebs. S2: Hey<span class="hljs-operator">!</span> S1: <span class="hljs-keyword">Any</span> sign <span class="hljs-keyword">of</span> your brother? ......<br>参数对: (S2, Pheebs)<br>关系类型: <span class="hljs-keyword">per</span>:alternate_names<br></code></pre></td></tr></table></figure></li>
+<li><p><strong>Yes-No Prompting:</strong> <figure class="highlight pgsql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs pgsql">问题: The alternate <span class="hljs-type">name</span> <span class="hljs-keyword">for</span> S2 <span class="hljs-keyword">is</span> Pheebs. 输出 <span class="hljs-keyword">True</span> <span class="hljs-keyword">or</span> <span class="hljs-keyword">False</span>?<br>答案: <span class="hljs-keyword">True</span><br></code></pre></td></tr></table></figure></p></li>
+<li><p><strong>Open-Ended Prompting:</strong> <figure class="highlight delphi"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs delphi">问题: What <span class="hljs-keyword">is</span> S2’s alternate <span class="hljs-keyword">name</span>?<br>答案: Pheebs<br></code></pre></td></tr></table></figure></p></li>
+</ul>
+<h6 id="解释不同的prompt策略">3. 解释不同的Prompt策略</h6>
+<ul>
+<li><strong>Vanilla Prompting:</strong>
+直接让模型基于输入对话和候选关系输出参数对之间的关系标签。这种策略简单、直接且高效。</li>
+<li><strong>Restrictive Prompting:</strong>
+限制模型只输出特定的关系类型。这种策略有助于模型专注于特定的关系，减少歧义。</li>
+<li><strong>Yes-No Prompting:</strong>
+通过提问的方式让模型回答是否存在某种关系。这种策略适用于需要快速验证关系是否存在的情况。</li>
+<li><strong>Open-Ended Prompting:</strong>
+让模型自由生成关系类型。这种策略适用于需要模型提供详细答案的情况。</li>
+</ul>
+<h6 id="应用场景">4. 应用场景</h6>
+<ul>
+<li><strong>Vanilla Prompting</strong>
+适用于需要快速提取关系的情况。</li>
+<li><strong>Restrictive Prompting</strong>
+适用于需要精确控制关系类型的情况。</li>
+<li><strong>Yes-No Prompting</strong>
+适用于需要快速验证关系是否存在的情况。</li>
+<li><strong>Open-Ended Prompting</strong>
+适用于需要详细答案的情况。</li>
+</ul>
+<p>通过这些不同的Prompt策略，模型可以更灵活地处理不同类型的关系抽取任务，从而提高整体的性能和适应性。</p>
+<hr />
+<h3
+id="gpt-re-in-context-learning-for-relation-extraction-using-large-language-models">GPT-RE:
+In-context Learning for Relation Extraction using Large Language
+Models</h3>
+<h5 id="论文试图解决什么问题-8">1. 论文试图解决什么问题？</h5>
+<p>论文试图解决大型语言模型（LLMs）在关系抽取（RE）任务中的表现不如全监督方法的问题，特别是在示例检索的相关性低和缺乏对输入-标签映射的解释这两个方面。</p>
+<h5 id="这是否是一个新的问题-8">2. 这是否是一个新的问题？</h5>
+<p>这不是一个全新的问题，但论文针对现有上下文学习（ICL）方法在RE任务中的缺陷提出了新的解决方案。</p>
+<h5 id="这篇文章要验证一个什么科学假设-8">3.
+这篇文章要验证一个什么科学假设？</h5>
+<p>文章要验证的科学假设是通过改进示例检索和增强推理能力，可以提高LLMs在关系抽取任务中的表现，甚至超越全监督方法。</p>
+<h5 id="有哪些相关研究如何归类谁是这一课题在领域内值得关注的研究员-8">4.
+有哪些相关研究？如何归类？谁是这一课题在领域内值得关注的研究员？</h5>
+<p>相关研究包括使用微调的BERT模型进行全监督关系抽取，以及使用上下文学习（ICL）方法改进LLMs在RE任务中的表现。这些研究可以归类为自然语言处理（NLP）中的关系抽取技术。领域内值得关注的研究员可能包括那些在NLP和关系抽取领域有显著贡献的学者，如Jacob
+Devlin（BERT的开发者）等。</p>
+<h5 id="论文中提到的解决方案之关键是什么-8">5.
+论文中提到的解决方案之关键是什么？</h5>
+<p>解决方案的关键是提出了任务感知检索（Task-aware
+Retrieval）和金标签诱导推理（Gold Label-induced
+Reasoning）两个策略，以改进示例检索的相关性和增强推理能力。</p>
+<h5 id="论文中的实验是如何设计的-8">6. 论文中的实验是如何设计的？</h5>
+<p>实验设计包括在四个广泛使用的RE数据集上评估GPT-RE方法，比较其与现有的GPT-3基线和全监督基线的性能。</p>
+<h5 id="用于定量评估的数据集是什么代码有没有开源-8">7.
+用于定量评估的数据集是什么？代码有没有开源？</h5>
+<p>用于定量评估的数据集包括Semeval、SciERC、TACRED和ACE05。代码是否开源在文中没有提及。</p>
+<h5 id="论文中的实验及结果有没有很好地支持需要验证的科学假设-8">8.
+论文中的实验及结果有没有很好地支持需要验证的科学假设？</h5>
+<p>是的，实验结果显示GPT-RE不仅优于现有的GPT-3基线，还优于全监督基线，在某些数据集上达到了最先进的性能，支持了科学假设。</p>
+<h5 id="这篇论文到底有什么贡献-8">9. 这篇论文到底有什么贡献？</h5>
+<p>论文的贡献包括提出了任务感知的示例检索方法，引入了金标签诱导推理来增强示例的解释性，有效缓解了LLMs在RE任务中的“过度预测”问题。</p>
+<h5 id="下一步呢有什么工作可以继续深入-8">10.
+下一步呢？有什么工作可以继续深入？</h5>
+<p>下一步可以继续深入研究如何进一步优化示例检索和推理逻辑，以及如何将这些方法应用于更广泛的NLP任务和领域。</p>
+<h5 id="要了解深入一个模型为什么好-8">11.
+要了解深入，一个模型为什么好？</h5>
+<p>一个模型之所以好，是因为它能够有效地解决特定问题，如提高示例检索的相关性和增强推理能力，从而提升模型在关系抽取任务中的性能。</p>
+<h5 id="以前的模型为什么不好-8">12. 以前的模型为什么不好？</h5>
+<p>以前的模型在关系抽取任务中表现不佳，主要是因为示例检索的相关性低和缺乏对输入-标签映射的解释，导致模型无法准确识别和分类实体间的关系。</p>
+<h5 id="哪个关键点对性能提升最大-8">13. 哪个关键点对性能提升最大？</h5>
+<p>关键点对性能提升最大的是任务感知检索和金标签诱导推理的引入，这两个策略显著提高了示例的相关性和推理能力。</p>
+<h5 id="编程怎么实现-8">14. 编程怎么实现？</h5>
+<p>编程实现包括使用实体提示的句子嵌入和微调的关系表示来进行任务感知检索，以及通过金标签诱导推理生成推理解释并将其添加到示例中。</p>
+<h5 id="论文源代码和paper匹配度怎么样都覆盖了吗-8">15.
+论文源代码和paper匹配度怎么样、都覆盖了吗</h5>
+<p>文中没有提及源代码和论文的匹配度，因此无法确定是否都覆盖了。</p>
+<h5 id="哪些数学运算是关键的-8">16. 哪些数学运算是关键的？</h5>
+<p>关键的数学运算包括句子嵌入的计算、实体标记的隐藏表示提取和关系表示的连接，以及使用这些表示进行最近邻搜索。</p>
+<h5 id="整个全流程是怎么走的-8">17. 整个全流程是怎么走的？</h5>
+<p>全流程包括提示构造、任务感知示例检索、金标签诱导推理和最终预测。具体步骤如前所述。</p>
+<h5 id="数据是怎样流动的其中是怎样变换的各个变换有什么实际意义-8">18.
+数据是怎样流动的？其中是怎样变换的？各个变换有什么实际意义？</h5>
+<p>数据流动包括从输入句子中提取实体信息，通过任务感知检索找到相关示例，通过金标签诱导推理生成推理解释，最终输入到LLMs中进行预测。变换包括句子嵌入、关系表示提取和推理解释生成，这些变换有助于提高示例的相关性和推理能力。</p>
+<h5 id="既要关注具体实现思路也要关注上层抽象意义作者灵感从何而来-8">19.
+既要关注具体实现思路、也要关注上层抽象意义。作者灵感从何而来？</h5>
+<p>作者灵感可能来自于对现有ICL方法在RE任务中缺陷的深入分析，以及对如何改进这些缺陷的创新思考。</p>
+<h5 id="作者思考路线如何-8">20. 作者思考路线如何？</h5>
+<p>作者的思考路线可能包括识别现有方法的不足，提出新的解决方案，设计实验验证新方法的有效性，并分析实验结果以进一步优化方法。</p>
+<h4 id="具体示例-1">具体示例</h4>
+<h5 id="提示构造">提示构造</h5>
+<p>首先，我们构造一个包含以下组件的提示：</p>
+<ol type="a">
+<li><p>指令(I):
+"给定一个句子和两个实体，确定这两个实体之间的关系。可能的关系包括：创始人（FOUNDER），员工（EMPLOYEE），无关系（NULL）等。"</p></li>
+<li><p>ICL示例(D): 这些示例通过任务感知检索获得，每个包含 (xi, yi,
+ri)。例如：</p></li>
+</ol>
+<p>示例1:</p>
+<ul>
+<li>输入: "Mark Zuckerberg launched Facebook from his Harvard dorm
+room."</li>
+<li>实体: Mark Zuckerberg, Facebook</li>
+<li>关系: FOUNDER</li>
+<li>解释: Mark Zuckerberg 被描述为启动 (launched)
+Facebook，这表明他是创始人。</li>
+</ul>
+<p>示例2:</p>
+<ul>
+<li>输入: "Elon Musk is currently the CEO of Tesla."</li>
+<li>实体: Elon Musk, Tesla</li>
+<li>关系: EMPLOYEE</li>
+<li>解释: CEO 是一个雇员职位，表明 Elon Musk 是 Tesla 的员工。</li>
+</ul>
+<ol start="3" type="a">
+<li>测试输入(xtest): "确定句子 'Steve Jobs co-founded Apple Inc. in 1976
+with Steve Wozniak.' 中 Steve Jobs 和 Apple Inc. 之间的关系。"</li>
+</ol>
+<h5 id="任务感知示例检索">任务感知示例检索</h5>
+<p>为了获得上述高质量的 ICL 示例，GPT-RE 使用两种方法：</p>
+<ol type="a">
+<li><p>实体提示的句子嵌入: 将原句转化为: "The relation between 'Steve
+Jobs' and 'Apple Inc.' in the context: Steve Jobs co-founded Apple Inc.
+in 1976 with Steve Wozniak."</p></li>
+<li><p>微调的关系表示: 使用预先在 RE 任务上微调的 BERT
+模型提取关系表示。例如:</p></li>
+</ol>
+<ul>
+<li>输入: [CLS] Steve Jobs [E1] co-founded [E2] Apple Inc. [/E2] in 1976
+with Steve Wozniak. [/E1]</li>
+<li>提取 [E1] 和 [E2] 对应的隐藏表示，连接得到关系表示 Rel。</li>
+</ul>
+<p>使用这些表示进行最近邻搜索，找到最相关的示例。</p>
+<h5 id="金标签诱导推理">金标签诱导推理</h5>
+<p>为每个检索到的示例生成解释：</p>
+<p>查询: "What are the clues that lead to the relation between Steve
+Jobs and Apple Inc. to be FOUNDER in the sentence 'Steve Jobs co-founded
+Apple Inc. in 1976 with Steve Wozniak.'?"</p>
+<p>GPT-3 生成的解释: "It is because the verb 'co-founded' directly
+indicates that Steve Jobs is one of the founders of Apple Inc. The year
+1976 provides additional context, suggesting it was at the company's
+inception."</p>
+<p>将这个解释添加到示例中，增强模型的推理能力。</p>
+<h5 id="最终预测">最终预测</h5>
+<p>将构造好的提示输入 GPT-3，得到最终预测：</p>
+<p>输出: "根据给定的句子，Steve Jobs 和 Apple Inc. 之间的关系是
+FOUNDER（创始人）。这是因为句子中使用了
+'co-founded'（共同创立）这个词，直接表明 Steve Jobs 是 Apple Inc.
+的创始人之一。1976
+年的时间信息进一步支持这一关系，暗示这是在公司成立时。"</p>
+<h5 id="处理-null-类别">处理 NULL 类别</h5>
+<p>为了缓解过度预测 NULL 的问题，GPT-RE 在检索时特别关注 NULL
+样本的表示。例如，可能会包含这样的 NULL 示例：</p>
+<p>输入: "The iPhone was introduced by Apple in 2007."</p>
+<ul>
+<li>实体: iPhone, Apple</li>
+<li>关系: NULL</li>
+<li>解释: 虽然 iPhone 和 Apple
+有关联，但这个句子并没有表达出预定义的员工或创始人关系。产品和公司的关系不在我们的预定义类别中。</li>
+</ul>
+<p>通过包含这样的 NULL
+示例，模型能更好地理解何时不应预测预定义的关系。</p>
+<h5 id="总结">总结</h5>
+<p>GPT-RE 通过改进示例检索、增加推理解释，并特别关注 NULL
+类别的处理，显著提升了大语言模型在关系抽取任务上的表现。这个方法不仅提高了示例的相关性，还增强了模型的推理能力，同时有效缓解了过度预测的问题。</p>
+<hr />
+<h3
+id="recall-retrieve-and-reason-towards-better-in-context-relation-extraction">Recall,
+Retrieve and Reason: Towards Better In-Context Relation Extraction</h3>
+<h5 id="论文试图解决什么问题-9">1. 论文试图解决什么问题？</h5>
+<p>论文试图解决关系抽取(RE)任务中大型语言模型(LLMs)的上下文学习(ICL)能力不足的问题。具体来说，它旨在改进从训练样例中检索好的演示的方法，并提升LLMs在RE任务中的ICL能力。</p>
+<h5 id="这是否是一个新的问题-9">2. 这是否是一个新的问题？</h5>
+<p>这不是一个全新的问题。关系抽取(RE)是一个长期存在的自然语言处理任务，而LLMs在RE任务中的表现一直是一个研究热点。然而，如何有效地利用LLMs的ICL能力来提升RE性能是一个相对较新的研究方向。</p>
+<h5 id="这篇文章要验证一个什么科学假设-9">3.
+这篇文章要验证一个什么科学假设？</h5>
+<p>这篇文章要验证的科学假设是：通过一个新颖的回忆-检索-推理框架(RE4)，结合本体知识指导和上下文推理优化，可以显著提高关系抽取任务的性能，特别是在使用开源的中等规模语言模型时。</p>
+<h5 id="有哪些相关研究如何归类谁是这一课题在领域内值得关注的研究员-9">4.
+有哪些相关研究？如何归类？谁是这一课题在领域内值得关注的研究员？</h5>
+<p>相关研究可以归类为： - 基于分类的方法：如MTB、LUKE、IRE、KLG等。 -
+基于提示的方法：如KnowPrompt、NLI-DeBERTa。 -
+基于生成的方法：如REBEL、TANL、RELA、DeepStruct。 -
+基于上下文学习(ICL)的方法：如GPT-RE。
+在这一领域内，值得关注的研究员可能包括那些在关系抽取、大型语言模型和上下文学习方面有深入研究的学者，例如那些在顶级会议和期刊上发表相关研究成果的研究者。</p>
+<h5 id="论文中提到的解决方案之关键是什么-9">5.
+论文中提到的解决方案之关键是什么？</h5>
+<p>解决方案的关键是提出了一个名为RE4的新型关系抽取框架，它包含三个主要步骤：回忆(Recall)、检索(Retrieve)和推理(Reason)。通过从训练数据集中提取一致的本体知识来指导实体对生成，并利用检索到的演示通过指令调优来增强LLMs的上下文学习能力。</p>
+<h5 id="论文中的实验是如何设计的-9">6. 论文中的实验是如何设计的？</h5>
+<p>实验设计包括在不同的LLMs和RE数据集上进行广泛的实验。使用开源语言模型如T5、BART和LLaMA进行实验，并采用LoRA技术进行微调。实验细节包括设置训练轮数、批次大小、学习率等超参数。</p>
+<h5 id="用于定量评估的数据集是什么代码有没有开源-9">7.
+用于定量评估的数据集是什么？代码有没有开源？</h5>
+<p>用于定量评估的数据集包括SemEval 2010、TACRED、Google
+RE和SciERC。评估指标采用Micro-F1分数。至于代码是否开源，需要查看论文或其附录以获取具体信息。</p>
+<h5 id="论文中的实验及结果有没有很好地支持需要验证的科学假设-9">8.
+论文中的实验及结果有没有很好地支持需要验证的科学假设？</h5>
+<p>实验结果表明，RE4方法能生成相关且有效的实体对，并提升LLMs的ICL能力。在句子级RE任务上达到了与之前的监督微调方法和基于ICL方法相当或更好的性能。这些结果很好地支持了科学假设。</p>
+<h5 id="这篇论文到底有什么贡献-9">9. 这篇论文到底有什么贡献？</h5>
+<p>这篇论文的贡献包括： -
+提出了一个新颖的回忆-检索-推理RE框架，将LLMs与检索语料库(训练样例)结合。
+- 通过从训练数据集中提取一致的本体知识来指导实体对生成。 -
+提出了增强开源LLMs在RE任务中上下文推理能力的方法。</p>
+<h5 id="下一步呢有什么工作可以继续深入-9">10.
+下一步呢？有什么工作可以继续深入？</h5>
+<p>下一步可以继续深入的工作包括： -
+探索更多类型的数据集和更复杂的RE任务。 -
+研究如何进一步优化RE4框架的各个模块，以提高性能和效率。 -
+探索如何在其他自然语言处理任务中应用类似的框架。</p>
+<h5 id="要了解深入一个模型为什么好-9">11.
+要了解深入，一个模型为什么好？</h5>
+<p>一个模型之所以好，是因为它能够有效地解决特定问题，具有良好的泛化能力，并且在各种评估指标上表现出色。具体到RE4模型，它的好处在于结合了本体知识指导和上下文推理优化，能够生成相关且有效的实体对，并提升LLMs的ICL能力。</p>
+<h5 id="以前的模型为什么不好-9">12. 以前的模型为什么不好？</h5>
+<p>以前的模型可能在关系抽取任务中表现不佳，因为它们可能没有充分利用LLMs的ICL能力，或者在检索相关演示时效率不高。此外，以前的模型可能没有结合本体知识来指导实体对生成，导致生成的实体对相关性不高。</p>
+<h5 id="哪个关键点对性能提升最大-9">13. 哪个关键点对性能提升最大？</h5>
+<p>关键点对性能提升最大的可能是通过从训练数据集中提取一致的本体知识来指导实体对生成，以及利用检索到的演示通过指令调优来增强LLMs的上下文学习能力。</p>
+<h5 id="编程怎么实现-9">14. 编程怎么实现？</h5>
+<p>编程实现RE4框架可能涉及以下步骤： -
+实现召回模块，用于从训练数据集中提取一致的本体知识并生成相关实体对。 -
+实现检索模块，使用生成的实体对从训练语料中检索相关的训练样例作为演示。 -
+实现推理模块，利用检索到的演示，通过指令调优来增强LLMs的上下文学习能力，并对给定的测试样例进行关系推理。</p>
+<h5 id="论文源代码和paper匹配度怎么样都覆盖了吗-9">15.
+论文源代码和paper匹配度怎么样、都覆盖了吗</h5>
+<p>需要查看论文的附录或相关资源以获取源代码和paper的匹配度信息。通常，论文会提供源代码链接，并确保代码与论文描述的方法一致。</p>
+<h5 id="哪些数学运算是关键的-9">16. 哪些数学运算是关键的？</h5>
+<p>关键的数学运算可能包括： -
+本体知识的提取和表示，可能涉及图论和集合运算。 -
+实体对的生成，可能涉及概率模型和优化算法。 -
+检索相关演示，可能涉及信息检索和排序算法。 -
+上下文推理，可能涉及序列模型和概率推断。</p>
+<h5 id="整个全流程是怎么走的-9">17. 整个全流程是怎么走的？</h5>
+<p>整个全流程包括： - 测试样例输入。 - 召回模块生成相关实体对。 -
+检索模块使用生成的实体对检索相关演示。 -
+推理模块利用检索到的演示进行上下文推理，预测实体之间的关系。</p>
+<h5 id="数据是怎样流动的其中是怎样变换的各个变换有什么实际意义-9">18.
+数据是怎样流动的？其中是怎样变换的？各个变换有什么实际意义？</h5>
+<p>数据流动和变换包括： - 输入测试样例。 -
+召回模块生成相关实体对，这个变换的意义在于指导LLMs生成有效的查询。 -
+检索模块使用生成的实体对检索相关演示，这个变换的意义在于提供相关的训练样例作为上下文。
+-
+推理模块利用检索到的演示进行上下文推理，这个变换的意义在于增强LLMs的ICL能力，提高关系抽取的准确性。</p>
+<h5 id="既要关注具体实现思路也要关注上层抽象意义作者灵感从何而来-9">19.
+既要关注具体实现思路、也要关注上层抽象意义。作者灵感从何而来？</h5>
+<p>作者的灵感可能来自于对LLMs在RE任务中表现不佳的深入分析，以及对如何有效利用LLMs的ICL能力的探索。具体实现思路可能受到本体知识在信息检索和自然语言处理中的应用启发，而上层抽象意义在于提出一个通用的框架来提升LLMs在RE任务中的性能。</p>
+<h5 id="作者思考路线如何-9">20. 作者思考路线如何？</h5>
+<p>作者的思考路线可能包括： - 分析LLMs在RE任务中的不足。 -
+探索如何结合本体知识来指导实体对生成。 -
+设计一个包含召回、检索和推理的框架来提升LLMs的ICL能力。 -
+进行实验验证框架的有效性，并根据实验结果进行优化。</p>
+<h4 id="具体例子-4">具体例子</h4>
+<p><strong>假设我们有一个测试句子:</strong> "Apple Inc., headquartered
+in Cupertino, is a leading technology company."</p>
+<p>我们的目标是确定"Apple Inc."和"Cupertino"之间的关系。</p>
+<p><strong>RE4方法的步骤如下:</strong></p>
+<h6 id="召回模块-recalling-module">召回模块 (Recalling Module):</h6>
+<p>这个模块首先生成k个可能相关的实体对。假设k=5,它可能生成:</p>
+<p>(Apple Inc., Cupertino) (Microsoft, Seattle) (Google, Mountain View)
+(Amazon, Seattle) (Facebook, Menlo Park)
+这些生成的实体对基于输入句子和模型对公司-总部关系的理解。</p>
+<h6 id="检索模块-retrieving-module">检索模块 (Retrieving Module):</h6>
+<p>使用生成的实体对作为查询,从训练集中检索相关的示例。例如:</p>
+<p>"Apple Inc. is based in Cupertino, California." "Microsoft's
+headquarters is located in Seattle." "Google's main campus is in
+Mountain View." "Amazon's headquarters is in Seattle, Washington."
+"Facebook's headquarters is situated in Menlo Park."</p>
+<h6 id="推理模块-reasoning-module">推理模块 (Reasoning Module):</h6>
+<p>这个模块将原始输入句子、检索到的示例,以及一个推理提示组合在一起。例如:</p>
+<p>推理提示: "Based on the following examples, determine the relation
+between Apple Inc. and Cupertino in the given sentence."</p>
+<p>示例1: "Apple Inc. is based in Cupertino, California." Relation:
+headquarters 示例2: "Microsoft's headquarters is located in Seattle."
+Relation: headquarters ...</p>
+<p>测试句子: "Apple Inc., headquartered in Cupertino, is a leading
+technology company."</p>
+<p>Question: What is the relation between Apple Inc. and Cupertino?</p>
+<p>模型会基于这些信息进行推理,得出结论:"The relation between Apple Inc.
+and Cupertino is headquarters."</p>
+<p><strong>训练过程:</strong> RE4通过两个指令任务来训练模型:</p>
+<ol type="a">
+<li><p>召回指令任务: 训练模型生成相关的实体对。 例如: "Generate 5 entity
+pairs that might have a similar relation as Apple Inc. and
+Cupertino."</p></li>
+<li><p>推理指令任务: 训练模型基于示例进行关系推理。
+使用类似上面推理模块中的格式。</p></li>
+</ol>
+<p>通过这种方式,模型学会了如何生成相关实体对和如何利用示例进行关系推理。</p>
+<p><strong>推理过程:</strong>
+在测试时,模型会依次执行召回、检索和推理这三个步骤,最终得出关系预测结果。</p>
+<p>这种方法的优势在于:</p>
+<p>它结合了监督学习的任务特定性和上下文学习的灵活性。
+通过生成相关实体对,它可以检索到更相关的示例。
+推理模块允许模型利用检索到的示例进行更准确的关系判断。</p>
+
+                
+              </div>
+            
+            <hr/>
+            <div>
+              <div class="post-metas my-3">
+  
+  
+    <div class="post-meta">
+      <i class="iconfont icon-tags"></i>
+      
+        <a href="/tags/%E4%BF%A1%E6%81%AF%E6%8A%BD%E5%8F%96/" class="print-no-link">#信息抽取</a>
+      
+        <a href="/tags/%E8%AE%BA%E6%96%87%E9%98%85%E8%AF%BB/" class="print-no-link">#论文阅读</a>
+      
+    </div>
+  
+</div>
+
+
+              
+  
+
+  <div class="license-box my-3">
+    <div class="license-title">
+      <div>信息抽取论文阅读</div>
+      <div>http://example.com/2024/08/20/Paper/信息抽取论文阅读/</div>
+    </div>
+    <div class="license-meta">
+      
+        <div class="license-meta-item">
+          <div>作者</div>
+          <div>Mq Liu</div>
+        </div>
+      
+      
+        <div class="license-meta-item license-meta-date">
+          <div>发布于</div>
+          <div>2024年8月20日</div>
+        </div>
+      
+      
+      
+        <div class="license-meta-item">
+          <div>许可协议</div>
+          <div>
+            
+              
+              
+                <a class="print-no-link" target="_blank" href="https://creativecommons.org/licenses/by/4.0/">
+                  <span class="hint--top hint--rounded" aria-label="BY - 署名">
+                    <i class="iconfont icon-cc-by"></i>
+                  </span>
+                </a>
+              
+            
+          </div>
+        </div>
+      
+    </div>
+    <div class="license-icon iconfont"></div>
+  </div>
+
+
+
+              
+                <div class="post-prevnext my-3">
+                  <article class="post-prev col-6">
+                    
+                    
+                      <a href="/2024/10/06/Paper/%E5%8F%AF%E8%A7%A3%E9%87%8A%E6%80%A7/Inspiration-Zoom%20In/" title="Inspiration-Zoom In">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">Inspiration-Zoom In</span>
+                        <span class="visible-mobile">上一篇</span>
+                      </a>
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/2024/08/14/Lab/Team/%E6%8B%9B%E7%94%9F%E5%B9%BF%E5%91%8A(%E5%8C%97%E9%82%AE%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E5%AD%A6%E9%99%A2%E6%96%B9%E5%85%A8%E6%95%99%E6%8E%88)/" title="招生广告(北邮人工智能学院方全教授)">
+                        <span class="hidden-mobile">招生广告(北邮人工智能学院方全教授)</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+  
+  
+    <article id="comments" lazyload>
+      
+  <div id="valine"></div>
+  <script type="text/javascript">
+    Fluid.utils.loadComments('#valine', function() {
+      Fluid.utils.createScript('https://lib.baomitu.com/valine/1.5.1/Valine.min.js', function() {
+        var options = Object.assign(
+          {"appId":"oBIhtS4ds900qgKxHu6YKUjY-gzGzoHsz","appKey":"tsgO3EhtRkD5Mdt4uu3Nw1N6","path":"window.location.pathname","placeholder":null,"avatar":"retro","meta":["nick","mail","link"],"requiredFields":[],"pageSize":10,"lang":"zh-CN","highlight":false,"recordIP":false,"serverURLs":"","emojiCDN":null,"emojiMaps":null,"enableQQ":false},
+          {
+            el: "#valine",
+            path: window.location.pathname
+          }
+        )
+        new Valine(options);
+        Fluid.utils.waitElementVisible('#valine .vcontent', () => {
+          var imgSelector = '#valine .vcontent img:not(.vemoji)';
+          Fluid.plugins.imageCaption(imgSelector);
+          Fluid.plugins.fancyBox(imgSelector);
+        })
+      });
+    });
+  </script>
+  <noscript>Please enable JavaScript to view the comments</noscript>
+
+
+    </article>
+  
+
+
+          </article>
+        </div>
+      </div>
+    </div>
+
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+  <aside class="sidebar" style="margin-left: -1rem">
+    <div id="toc">
+  <p class="toc-header">
+    <i class="iconfont icon-list"></i>
+    <span>目录</span>
+  </p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+
+
+  </aside>
+
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+
+
+
+
+    
+
+    
+      <a id="scroll-top-button" aria-label="TOP" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v" for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+
+    
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+  
+    <div class="footer-content">
+      Carpediem
+    </div>
+  
+  
+  
+</div>
+
+  </footer>
+
+  <!-- Scripts -->
+  
+  <script  src="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://lib.baomitu.com/jquery/3.6.4/jquery.min.js" ></script>
+<script  src="https://lib.baomitu.com/twitter-bootstrap/4.6.1/js/bootstrap.min.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+
+  <script  src="https://lib.baomitu.com/typed.js/2.0.12/typed.min.js" ></script>
+  <script>
+    (function (window, document) {
+      var typing = Fluid.plugins.typing;
+      var subtitle = document.getElementById('subtitle');
+      if (!subtitle || !typing) {
+        return;
+      }
+      var text = subtitle.getAttribute('data-typed-text');
+      
+        typing(text);
+      
+    })(window, document);
+  </script>
+
+
+
+
+  
+    <script  src="/js/img-lazyload.js" ></script>
+  
+
+
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/tocbot/4.20.1/tocbot.min.js', function() {
+    var toc = jQuery('#toc');
+    if (toc.length === 0 || !window.tocbot) { return; }
+    var boardCtn = jQuery('#board-ctn');
+    var boardTop = boardCtn.offset().top;
+
+    window.tocbot.init(Object.assign({
+      tocSelector     : '#toc-body',
+      contentSelector : '.markdown-body',
+      linkClass       : 'tocbot-link',
+      activeLinkClass : 'tocbot-active-link',
+      listClass       : 'tocbot-list',
+      isCollapsedClass: 'tocbot-is-collapsed',
+      collapsibleClass: 'tocbot-is-collapsible',
+      scrollSmooth    : true,
+      includeTitleTags: true,
+      headingsOffset  : -boardTop,
+    }, CONFIG.toc));
+    if (toc.find('.toc-list-item').length > 0) {
+      toc.css('visibility', 'visible');
+    }
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('tocbot' in window) {
+        tocbot.refresh();
+        var toc = jQuery('#toc');
+        if (toc.length === 0 || !tocbot) {
+          return;
+        }
+        if (toc.find('.toc-list-item').length > 0) {
+          toc.css('visibility', 'visible');
+        }
+      }
+    });
+  });
+</script>
+
+
+  <script src=https://lib.baomitu.com/clipboard.js/2.0.11/clipboard.min.js></script>
+
+  <script>Fluid.plugins.codeWidget();</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/anchor-js/5.0.0/anchor.min.js', function() {
+    window.anchors.options = {
+      placement: CONFIG.anchorjs.placement,
+      visible  : CONFIG.anchorjs.visible
+    };
+    if (CONFIG.anchorjs.icon) {
+      window.anchors.options.icon = CONFIG.anchorjs.icon;
+    }
+    var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+    var res = [];
+    for (var item of el) {
+      res.push('.markdown-body > ' + item.trim());
+    }
+    if (CONFIG.anchorjs.placement === 'left') {
+      window.anchors.options.class = 'anchorjs-link-left';
+    }
+    window.anchors.add(res.join(', '));
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('anchors' in window) {
+        anchors.removeAll();
+        var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+        var res = [];
+        for (var item of el) {
+          res.push('.markdown-body > ' + item.trim());
+        }
+        if (CONFIG.anchorjs.placement === 'left') {
+          anchors.options.class = 'anchorjs-link-left';
+        }
+        anchors.add(res.join(', '));
+      }
+    });
+  });
+</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.js', function() {
+    Fluid.plugins.fancyBox();
+  });
+</script>
+
+
+  <script>Fluid.plugins.imageCaption();</script>
+
+  <script  src="/js/local-search.js" ></script>
+
+
+
+
+
+<!-- 主题的启动项，将它保持在最底部 -->
+<!-- the boot of the theme, keep it at the bottom -->
+<script  src="/js/boot.js" ></script>
+
+
+  
+
+  <noscript>
+    <div class="noscript-warning">博客在允许 JavaScript 运行的环境下浏览效果更佳</div>
+  </noscript>
+</body>
+</html>
