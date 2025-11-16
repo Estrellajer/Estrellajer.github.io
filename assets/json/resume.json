@@ -1,157 +1,123 @@
 {
   "basics": {
-    "name": "Albert Einstein",
-    "label": "Scientist",
+    "name": "Maoqi Liu",
+    "label": "Graduate Student in Artificial Intelligence",
     "image": "",
-    "email": "albert@einstein.de",
-    "phone": "(912) 123-4567",
-    "url": "https://alshedivat.github.io/al-folio/",
-    "summary": "A German-born theoretical physicist, widely ranked among the greatest and most influential scientists of all time",
+    "email": "liumaoqi@bupt.edu.cn",
+    "phone": "+86 18537205012",
+    "url": "https://Estrellajer.github.io",
+    "summary": "A first-year graduate student at the School of Artificial Intelligence, Beijing University of Posts and Telecommunications. Research interests broadly span artificial intelligence and deep learning, with a current focus on continual learning and large language model (LLM) applications.",
     "location": {
-      "address": "2712 Broadway St",
-      "postalCode": "CA 94115",
-      "city": "San Francisco",
-      "countryCode": "US",
-      "region": "California"
+      "address": "",
+      "postalCode": "",
+      "city": "Beijing",
+      "countryCode": "CN",
+      "region": "Beijing"
     },
     "profiles": [
       {
-        "network": "Twitter",
-        "username": "AlbertEinstein",
-        "url": "https://twitter.com/AlbertEinstein"
+        "network": "GitHub",
+        "username": "Estrellajer",
+        "url": "https://github.com/Estrellajer"
       }
     ]
   },
-  "work": [
-    {
-      "name": "Institute for Advanced Study, Princeton University",
-      "position": "Professor of Theoretical Physics",
-      "url": "https://example.com",
-      "startDate": "1933-01-01",
-      "endDate": "1955-01-01",
-      "summary": "Teaching at Palmer Physical Laboratory (now 302 Frist Campus Center). While not a professor at Princeton, I associated with the physics professors and continued to give lectures on campus.",
-      "highlights": ["Relativity"]
-    }
-  ],
+  "work": [],
   "volunteer": [
     {
-      "organization": "People's Climate March",
-      "location": "Zurich, Switzerland",
-      "position": "Lead Organizer",
-      "url": "https://example.com",
-      "startDate": "2014-04-01",
-      "endDate": "2015-07-01",
-      "summary": "Lead organizer for the New York City branch of the People's Climate March, the largest climate march in history.",
-      "highlights": ["Awarded 'Climate Hero' award by Greenpeace for my efforts organizing the march.", "Men of the year 2014 by Time magazine"]
+      "organization": "Community Service",
+      "location": "Beijing, China",
+      "position": "Volunteer",
+      "url": "",
+      "startDate": "",
+      "endDate": "",
+      "summary": "Over 100 hours of volunteer service, actively supporting community initiatives and providing daily assistance to fellow students.",
+      "highlights": []
     }
   ],
   "education": [
     {
-      "institution": "University of Zurich, Zurich, Switzerland",
-      "location": "Zurich, Switzerland",
-      "url": "https://www.uzh.ch/",
-      "area": "Software Development",
-      "studyType": "PhD",
-      "startDate": "1905-01-01",
-      "endDate": "1905-01-01",
-      "score": "10",
-      "courses": ["Theory of Relativity"]
+      "institution": "Beijing University of Posts and Telecommunications",
+      "location": "Beijing, China",
+      "url": "https://ai.bupt.edu.cn/",
+      "area": "Intelligent Science and Technology",
+      "studyType": "M.S.",
+      "startDate": "2025-09-01",
+      "endDate": "",
+      "score": "",
+      "courses": [],
+      "summary": "Advisor: Quan Fang"
+    },
+    {
+      "institution": "Beijing University of Posts and Telecommunications",
+      "location": "Beijing, China",
+      "url": "https://ai.bupt.edu.cn/",
+      "area": "Artificial Intelligence",
+      "studyType": "B.Sc.",
+      "startDate": "2021-09-01",
+      "endDate": "2025-06-01",
+      "score": "",
+      "courses": []
     }
   ],
   "awards": [
     {
-      "title": "Nobel Prize in Physics",
-      "date": "1921-11-01",
-      "awarder": "Royal Swedish Academy of Sciences",
-      "url": "https://www.nobelprize.org/prizes/physics/1921/einstein/biographical/",
-      "summary": "The Nobel Prizes are five separate prizes that, according to Alfred Nobel's will of 1895, are awarded to 'those who, during the preceding year, have conferred the greatest benefit to humankind.'"
+      "title": "Undergraduate \"QiYan\" Research Grant",
+      "date": "2024-01-01",
+      "awarder": "Beijing Natural Science Foundation",
+      "url": "",
+      "summary": "Awarded to only 30 students across the university. The first truly meaningful research grant received, providing strong support for scientific exploration."
+    },
+    {
+      "title": "Second Prize",
+      "date": "2022-10-01",
+      "awarder": "2022 National English Competition for College Students",
+      "url": "",
+      "summary": ""
     }
   ],
-  "certificates": [
-    {
-      "name": "Machine Learning",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-location-dot"
-    },
-    {
-      "name": "Quantum Computing",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-tag"
-    },
-    {
-      "name": "Quantum Information",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-envelope"
-    },
-    {
-      "name": "Quantum Cryptography",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-hashtag"
-    },
-    {
-      "name": "Quantum Communication",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-calendar"
-    },
-    {
-      "name": "Quantum Teleportation",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-clipboard-check"
-    }
-  ],
+  "certificates": [],
   "publications": [
     {
-      "name": "Zur Elektrody/namik bewegter Körper",
-      "publisher": "Annalen der Physik",
-      "releaseDate": "1905-06-30",
-      "url": "https://en.wikisource.org/wiki/Translation:On_the_Electrodynamics_of_Moving_Bodies",
-      "summary": "It concerned an interpretation of the Michelson–Morley experiment and the properties of light and time. Special relativity incorporates the principle that the speed of light is the same for all inertial observers regardless of the state of motion of the source."
+      "name": "NOTAM-Evolve: A Knowledge-Guided Self-Evolving Optimization Framework with LLMs for NOTAM Interpretation",
+      "publisher": "AAAI 2026 Conference (CCF-A)",
+      "releaseDate": "2026-01-01",
+      "url": "",
+      "summary": "Accurate interpretation of Notices to Airmen (NOTAMs) is vital for aviation safety, yet their condensed and cryptic language challenges both humans and automated systems. We define the task as deep parsing, which requires dynamic knowledge grounding and schema-based inference. To address this, we propose NOTAM-Evolve, a knowledge-guided self-evolving framework that enables large language models to autonomously enhance their reasoning through a closed-loop learning process with knowledge graph–based retrieval. Experiments on 10,000 expert-annotated NOTAMs show a 30.4% accuracy gain over base LLMs, establishing a new state of the art in structured NOTAM interpretation. First Author."
     },
     {
-      "name": "Über einen die Erzeugung und Verwandlung des Lichtes betreffenden heuristischen Gesichtspunkt",
-      "publisher": "Annalen der Physik",
-      "releaseDate": "1905-03-18",
-      "url": "https://de.wikisource.org/wiki/Über_einen_die_Erzeugung_und_Verwandlung_des_Lichtes_betreffenden_heuristischen_Gesichtspunkt",
-      "summary": "In the second paper, he applied the quantum theory to light to explain the photoelectric effect. In particular, he used the idea of light quanta (photons) to explain experimental results, but stressed the importance of the experimental results. The importance of his work on the photoelectric effect earned him the Nobel Prize in Physics in 1921."
+      "name": "Knots: A Large-Scale Multi-Agent Enhanced Expert-Annotated Dataset and LLM Prompt Optimization for NOTAM Semantic Parsing",
+      "publisher": "Advanced Engineering Informatics Journal (CCF-B, SCI-Q1)",
+      "releaseDate": "2025-01-01",
+      "url": "",
+      "summary": "Notices to Air Missions (NOTAMs) convey essential flight safety information but remain difficult to parse due to their complex structure and implicit semantics. We introduce NOTAM semantic parsing, a task focused on deep understanding through semantic inference and aviation knowledge integration. To support it, we build Knots, a dataset of 12,347 expert-annotated NOTAMs across 194 Flight Information Regions, developed via a multi-agent framework for comprehensive field discovery. Extensive experiments on prompt design and model adaptation show notable gains in aviation text comprehension, offering new insights for automated NOTAM analysis. First Author."
     },
     {
-      "name": "Die Grundlage der allgemeinen Relativitätstheorie",
-      "publisher": "Annalen der Physik",
-      "releaseDate": "1916-03-20",
-      "url": "https://de.wikisource.org/wiki/Die_Grundlage_der_allgemeinen_Relativitätstheorie",
-      "summary": "The publication of the theory of general relativity made him internationally famous. He was professor of physics at the universities of Zurich (1909–1911) and Prague (1911–1912), before he returned to ETH Zurich (1912–1914)."
+      "name": "R²A²-MoE: Ridge Regression-based Analytic Adaptation with Mixture of Experts for Continual Learning with Vision-Language Models",
+      "publisher": "PRCV 2025 Conference (CCF-C, Oral)",
+      "releaseDate": "2025-01-01",
+      "url": "",
+      "summary": "Vision-Language Models (VLMs) show strong zero-shot performance but struggle to retain it under continual learning due to dual forgetting. We propose R²A²-MoE—Ridge Regression-based Analytic Adaptation with Mixture of Experts—which enables efficient collaborative specialization through closed-form expert optimization. This approach mitigates both backward and forward forgetting while improving adaptability. Experiments on X-TAIL and MTIL benchmarks demonstrate superior performance and efficiency, reducing parameters, memory, and training time by over 45%, 56%, and 46%, respectively. First Author."
     }
   ],
   "skills": [
     {
-      "name": "Physics",
-      "level": "Master",
-      "icon": "fa-solid fa-hashtag",
+      "name": "Artificial Intelligence",
+      "level": "Advanced",
+      "icon": "fa-solid fa-brain",
       "keywords": [
-        "Quantum Mechanics",
-        "Quantum Computing",
-        "Quantum Information",
-        "Quantum Cryptography",
-        "Quantum Communication",
-        "Quantum Teleportation"
+        "Deep Learning",
+        "Continual Learning",
+        "Large Language Models",
+        "Natural Language Processing",
+        "Computer Vision",
+        "Knowledge Graphs"
       ]
     }
   ],
   "languages": [
     {
-      "language": "German",
+      "language": "Chinese",
       "fluency": "Native speaker",
       "icon": ""
     },
@@ -163,38 +129,41 @@
   ],
   "interests": [
     {
-      "name": "Physics",
-      "icon": "fa-solid fa-tag",
+      "name": "Research",
+      "icon": "fa-solid fa-microscope",
       "keywords": [
-        "Quantum Mechanics",
-        "Quantum Computing",
-        "Quantum Information",
-        "Quantum Cryptography",
-        "Quantum Communication",
-        "Quantum Teleportation"
+        "Continual Learning",
+        "Lifelong Learning",
+        "Incremental Learning",
+        "Large Language Models",
+        "LLM Applications",
+        "Deep Learning"
+      ]
+    },
+    {
+      "name": "Leadership & Activities",
+      "icon": "fa-solid fa-users",
+      "keywords": [
+        "Vice President of BUPT's Long-distance Running Association",
+        "Debate Team Champion",
+        "Class Leader"
       ]
     }
   ],
-  "references": [
-    {
-      "name": "Professor John Doe",
-      "icon": "fa-solid fa-laptop",
-      "reference": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum, diam quis convallis euismod, arcu mi ullamcorper lorem, a vestibulum nunc magna at sem. Sed in risus ac felis varius blandit. D"
-    },
-    {
-      "name": "Professor John Doe",
-      "icon": "fa-solid fa-thumbtack",
-      "reference": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum, diam quis convallis euismod, arcu mi ullamcorper lorem, a vestibulum nunc magna at sem. Sed in risus ac felis varius blandit. D"
-    }
-  ],
+  "references": [],
   "projects": [
     {
-      "name": "Quantum Computing",
-      "summary": "Quantum computing is the use of quantum-mechanical phenomena such as superposition and entanglement to perform computation. Computers that perform quantum computations are known as quantum computers.",
-      "highlights": ["Quantum Teleportation", "Quantum Cryptography"],
-      "startDate": "2018-01-01",
-      "endDate": "2018-01-01",
-      "url": "https://example.com"
+      "name": "Job Recommendation System Based on Knowledge Graphs",
+      "summary": "This project leverages a knowledge graph to help university students quickly identify ideal job opportunities and clarify their career positioning. By fine-tuning the open-source Paddle large language model for skill extraction and quantitative evaluation, the project fills gaps in job-related knowledge graphs and enhances visual analytics for understanding employment trends.",
+      "highlights": [
+        "Knowledge Graph Construction",
+        "LLM Fine-tuning",
+        "Skill Extraction",
+        "Visual Analytics"
+      ],
+      "startDate": "2024-04-01",
+      "endDate": "2024-06-01",
+      "url": ""
     }
   ]
 }

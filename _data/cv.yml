@@ -2,96 +2,65 @@
   type: map
   contents:
     - name: Full Name
-      value: Albert Einstein
-    - name: Date of Birth
-      value: 14th March 1879
-    - name: Languages
-      value: English, German
+      value: Maoqi Liu
+    - name: Telephone
+      value: +86 18537205012
+    - name: Email
+      value: liumaoqi@bupt.edu.cn
+    - name: Home Page
+      value: <a href="https://Estrellajer.github.io">https://Estrellajer.github.io</a>
 
 - title: Education
   type: time_table
   contents:
-    - title: PhD
-      institution: University of Zurich, Zurich, Switzerland
-      year: 1905
+    - title: M.S. in Intelligent Science and Technology
+      institution: Beijing University of Posts and Telecommunications
+      year: 2025.09 - Present
       description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
-          contents:
-            - Sub-description 1.
-            - Sub-description 2.
-    - title: Federal teaching diploma
-      institution: Eidgenössische Technische Hochschule, Zurich, Switzerland
-      year: 1900
-      description:
-        - Description 1.
-        - Description 2.
+        - Advisor: Quan Fang
+    - title: B.Sc. in Artificial Intelligence
+      institution: Beijing University of Posts and Telecommunications
+      year: 2021.09 - 2025.06
 
-- title: Experience
+- title: Publications
   type: time_table
   contents:
-    - title: Professor of Theoretical Physics
-      institution: Institute for Advanced Study, Princeton University
-      year: 1933 - 1955
+    - title: "NOTAM-Evolve: A Knowledge-Guided Self-Evolving Optimization Framework with LLMs for NOTAM Interpretation"
+      year: 2026
       description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
-          contents:
-            - Sub-description 1.
-            - Sub-description 2.
-    - title: Visiting Professor
-      institution: California Institute of Technology, Pasadena, California, US
-      year: 1933
+        - First Author, Accepted by AAAI 2026 Conference (CCF-A)
+        - Overview: Accurate interpretation of Notices to Airmen (NOTAMs) is vital for aviation safety, yet their condensed and cryptic language challenges both humans and automated systems. We define the task as deep parsing, which requires dynamic knowledge grounding and schema-based inference. To address this, we propose NOTAM-Evolve, a knowledge-guided self-evolving framework that enables large language models to autonomously enhance their reasoning through a closed-loop learning process with knowledge graph–based retrieval. Experiments on 10,000 expert-annotated NOTAMs show a 30.4% accuracy gain over base LLMs, establishing a new state of the art in structured NOTAM interpretation.
+    - title: "Knots: A Large-Scale Multi-Agent Enhanced Expert-Annotated Dataset and LLM Prompt Optimization for NOTAM Semantic Parsing"
+      year: 2025
       description:
-        - Description 1.
-        - Description 2.
-
-    - title: Director
-      institution: Kaiser Wilhelm Institute for Physics, Berlin, Germany.
-      year: 1917-1933
-
-    - title: Professor of Theoretical Physics
-      institution: Karl-Ferdinand University, Prague, Czechoslovakia
-      year: 1911 - 1917
+        - First Author, Accepted by Advanced Engineering Informatics Journal (CCF-B, SCI-Q1)
+        - Overview: Notices to Air Missions (NOTAMs) convey essential flight safety information but remain difficult to parse due to their complex structure and implicit semantics. We introduce NOTAM semantic parsing, a task focused on deep understanding through semantic inference and aviation knowledge integration. To support it, we build Knots, a dataset of 12,347 expert-annotated NOTAMs across 194 Flight Information Regions, developed via a multi-agent framework for comprehensive field discovery. Extensive experiments on prompt design and model adaptation show notable gains in aviation text comprehension, offering new insights for automated NOTAM analysis.
+    - title: "R²A²-MoE: Ridge Regression-based Analytic Adaptation with Mixture of Experts for Continual Learning with Vision-Language Models"
+      year: 2025
       description:
+        - First Author, Accepted by PRCV 2025 Conference (CCF-C, Oral)
+        - Overview: Vision-Language Models (VLMs) show strong zero-shot performance but struggle to retain it under continual learning due to dual forgetting. We propose R²A²-MoE—Ridge Regression-based Analytic Adaptation with Mixture of Experts—which enables efficient collaborative specialization through closed-form expert optimization. This approach mitigates both backward and forward forgetting while improving adaptability. Experiments on X-TAIL and MTIL benchmarks demonstrate superior performance and efficiency, reducing parameters, memory, and training time by over 45%, 56%, and 46%, respectively.
 
-    - title: Associate Professor of Theoretical Physics
-      institution: University of Zurich, Zurich, Switzerland
-      year: 1909 - 1911
-
-- title: Open Source Projects
+- title: Projects
   type: time_table
   contents:
-    - title: <a href="https://github.com/alshedivat/al-folio">al-folio</a>
-      year: 2015-now
-      description: A beautiful, simple, clean, and responsive Jekyll theme for academics.
+    - title: Job Recommendation System Based on Knowledge Graphs | Project Leader
+      year: 2024.04 - 2024.06
+      description:
+        - Overview: This project leverages a knowledge graph to help university students quickly identify ideal job opportunities and clarify their career positioning. By fine-tuning the open-source Paddle large language model for skill extraction and quantitative evaluation, the project fills gaps in job-related knowledge graphs and enhances visual analytics for understanding employment trends.
 
 - title: Honors and Awards
   type: time_table
   contents:
-    - year: 1921
+    - year: 2024
       items:
-        - Nobel Prize in Physics
-        - Matteucci Medal
-    - year: 2029
+        - Beijing Natural Science Foundation Undergraduate "QiYan" Research Grant
+    - year: 2022.10
       items:
-        - Max Planck Medal
+        - 2022 National English Competition for College Students Second Prize
 
-- title: Academic Interests
-  type: nested_list
-  contents:
-    - title: Topic 1.
-      items:
-        - Description 1.
-        - Description 2.
-    - title: Topic 2.
-      items:
-        - Description 1.
-        - Description 2.
-
-- title: Other Interests
+- title: Personal Statement
   type: list
   contents:
-    - <u>Hobbies:</u> Hobby 1, Hobby 2, etc.
+    - Demonstrated leadership and teamwork as Vice President of BUPT's Long-distance Running Association, debate team champion, and class leader at both undergraduate and graduate levels.
+    - Over 100 hours of volunteer service, actively supporting community initiatives and providing daily assistance to fellow students.

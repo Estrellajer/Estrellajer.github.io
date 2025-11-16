@@ -1,14 +1,10 @@
 github_users:
-  - torvalds
-  - alshedivat
+  - Estrellajer
 
 repo_description_lines_max: 2
 
 github_repos:
-  - alshedivat/al-folio
-  - jekyll/jekyll
-  - twbs/bootstrap
-  - jquery/jquery
-  - FortAwesome/Font-Awesome
-  - mathjax/MathJax
-  - jpswalsh/academicons
+  - Estrellajer/NOTAM-Evolve
+  - Estrellajer/Knots
+  - Estrellajer/Resume-KN
+  - Estrellajer/Saplings-and-Oaks-A-Dialogue
