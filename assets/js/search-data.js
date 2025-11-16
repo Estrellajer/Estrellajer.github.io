@@ -44,7 +44,18 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/cv/";
           },
-        },{id: "post-bupt-ai大三下生存指南",
+        },{id: "post-编程错误",
+        
+          title: "编程错误",
+        
+        description: "Log of bug in coding",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2024/codeexp/";
+          
+        },
+      },{id: "post-bupt-ai大三下生存指南",
         
           title: "BUPT AI大三下生存指南",
         
