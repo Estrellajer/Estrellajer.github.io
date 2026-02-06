@@ -44,7 +44,29 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/cv/";
           },
-        },{id: "post-编程错误",
+        },{id: "post-claude-code配置",
+        
+          title: "Claude Code配置",
+        
+        description: "How to use Claude Code in restricted area",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/cc-config/";
+          
+        },
+      },{id: "post-aaai2026参会记录",
+        
+          title: "AAAI2026参会记录",
+        
+        description: "Log of experience in AAAI2026",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/aaai-log/";
+          
+        },
+      },{id: "post-编程错误",
         
           title: "编程错误",
         
@@ -92,28 +114,14 @@ ninja.data = [{
         title: 'email',
         section: 'Socials',
         handler: () => {
-          window.open("mailto:%79%6F%75@%65%78%61%6D%70%6C%65.%63%6F%6D", "_blank");
+          window.open("mailto:%6C%69%75%6D%61%6F%71%69@%62%75%70%74.%65%64%75.%63%6E", "_blank");
         },
       },{
-        id: 'social-inspire',
-        title: 'Inspire HEP',
+        id: 'social-github',
+        title: 'GitHub',
         section: 'Socials',
         handler: () => {
-          window.open("https://inspirehep.net/authors/1010907", "_blank");
-        },
-      },{
-        id: 'social-rss',
-        title: 'RSS Feed',
-        section: 'Socials',
-        handler: () => {
-          window.open("/feed.xml", "_blank");
-        },
-      },{
-        id: 'social-scholar',
-        title: 'Google Scholar',
-        section: 'Socials',
-        handler: () => {
-          window.open("https://scholar.google.com/citations?user=qc6CJjYAAAAJ", "_blank");
+          window.open("https://github.com/Estrellajer", "_blank");
         },
       },{
         id: 'social-custom_social',
