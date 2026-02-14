@@ -1,0 +1,164 @@
+<!DOCTYPE html> <html lang="en"> <head> <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> <meta charset="utf-8"> <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> <meta http-equiv="X-UA-Compatible" content="IE=edge"> <title> LLM八股学习与手撕 | Carpediem </title> <meta name="author" content="Maoqi Liu"> <meta name="description" content="Notes on LLM algorithms"> <meta name="keywords" content="jekyll, jekyll-theme, academic-website, portfolio-website"> <link rel="stylesheet" href="/assets/css/bootstrap.min.css?a4b3f509e79c54a512b890d73235ef04"> <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mdbootstrap@4.20.0/css/mdb.min.css" integrity="sha256-jpjYvU3G3N6nrrBwXJoVEYI/0zw8htfFnhT9ljN3JJw=" crossorigin="anonymous"> <link defer rel="stylesheet" href="/assets/css/academicons.min.css?f0b7046b84e425c55f3463ac249818f5"> <link defer rel="stylesheet" href="/assets/css/scholar-icons.css?62b2ac103a88034e6882a5be5f3e2772"> <link defer rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons&amp;display=swap"> <link defer rel="stylesheet" href="/assets/css/jekyll-pygments-themes-github.css?591dab5a4e56573bf4ef7fd332894c99" media="" id="highlight_theme_light"> <link rel="shortcut icon" href="/assets/img/ding.png?b190ac12008d7e4d7f13d59027760f86"> <link rel="stylesheet" href="/assets/css/main.css?d41d8cd98f00b204e9800998ecf8427e"> <link rel="canonical" href="https://estrellajer.github.io/blog/2026/algorithm-notes/"> <script src="/assets/js/theme.js?a81d82887dd692e91686b43de4542f18"></script> <link defer rel="stylesheet" href="/assets/css/jekyll-pygments-themes-native.css?5847e5ed4a4568527aa6cfab446049ca" media="none" id="highlight_theme_dark"> <script>
+    initTheme();
+  </script> </head> <body class="fixed-top-nav "> <header> <nav id="navbar" class="navbar navbar-light navbar-expand-sm fixed-top" role="navigation"> <div class="container"> <a class="navbar-brand title font-weight-lighter" href="/"> Carpediem </a> <button class="navbar-toggler collapsed ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar top-bar"></span> <span class="icon-bar middle-bar"></span> <span class="icon-bar bottom-bar"></span> </button> <div class="collapse navbar-collapse text-right" id="navbarNav"> <ul class="navbar-nav ml-auto flex-nowrap"> <li class="nav-item "> <a class="nav-link" href="/">about </a> </li> <li class="nav-item active"> <a class="nav-link" href="/blog/">blog </a> </li> <li class="nav-item "> <a class="nav-link" href="/publications/">publications </a> </li> <li class="nav-item "> <a class="nav-link" href="/projects/">projects </a> </li> <li class="nav-item "> <a class="nav-link" href="/repositories/">repositories </a> </li> <li class="nav-item "> <a class="nav-link" href="/cv/">cv </a> </li> <li class="nav-item"> <button id="search-toggle" title="Search" onclick="openSearchModal()"> <span class="nav-link">ctrl k <i class="ti ti-search"></i></span> </button> </li> <li class="toggle-container"> <button id="light-toggle" title="Change theme"> <i class="ti ti-sun-moon" id="light-toggle-system"></i> <i class="ti ti-moon-filled" id="light-toggle-dark"></i> <i class="ti ti-sun-filled" id="light-toggle-light"></i> </button> </li> </ul> </div> </div> </nav> <progress id="progress" value="0"> <div class="progress-container"> <span class="progress-bar"></span> </div> </progress> </header> <div class="container mt-5" role="main"> <div class="post"> <header class="post-header"> <h1 class="post-title">LLM八股学习与手撕</h1> <p class="post-meta"> Created on February 03, 2026 </p> <p class="post-tags"> <a href="/blog/2026"> <i class="fa-solid fa-calendar fa-sm"></i> 2026 </a>   ·   <a href="/blog/tag/notes"> <i class="fa-solid fa-hashtag fa-sm"></i> notes</a>   ·   <a href="/blog/category/skill"> <i class="fa-solid fa-tag fa-sm"></i> Skill</a> </p> </header> <article class="post-content"> <div id="markdown-content"> <h2 id="attention">Attention</h2> <h4 id="缩放点积注意力">缩放点积注意力</h4> <p>步骤总结： Q与K转置做矩阵乘法 – 除以√d_k缩放 – (可选)mask – softmax归一化 – 与V做矩阵乘法</p> <p>import torch from torch import nn</p> <p>class SqdtAttention(nn.Module): def <strong>init</strong>(self): super().<strong>init</strong>()</p> <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>def forward(self, q, k, v, mask=None):
+    d_k = q.size(-1)
+    attn_weight = (q @ k.transpose(-2, -1)) / (d_k ** 0.5)  
+    
+    if mask is not None:
+        attn_weight = attn_weight.masked_fill(mask == 0, float('-inf'))
+    
+    attn_weight = torch.softmax(attn_weight, dim=-1)
+    output = attn_weight @ v
+    return output
+</code></pre></div></div> <p>def test_attn(): batch_size = 128 seq_len = 512 hidden_size = 1024</p> <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>query = torch.randn(batch_size, seq_len, hidden_size)  # (batch_size, seq_len, hidden_size)
+key = torch.randn(batch_size, seq_len, hidden_size)    # (batch_size, seq_len, hidden_size)
+value = torch.randn(batch_size, seq_len, hidden_size)  # (batch_size, seq_len, hidden_size)
+
+sdpa = SqdtAttention()
+output = sdpa(query, key, value)
+
+print("Query shape:", query.shape)
+print("Key shape:", key.shape)
+print("Value shape:", value.shape)
+print("Output shape:", output.shape)
+</code></pre></div></div> <p>if <strong>name</strong> == “<strong>main</strong>”: test_attn()</p> <h4 id="多头注意力mha">多头注意力（MHA）</h4> <p>步骤总结： Q/K/V线性投影 – 重塑为(batch,seq,num_heads,head_dim) – 转置为(batch,num_heads,seq,head_dim) – 每头计算QK^T/√d_k – (可选)mask – softmax – 与V相乘 – 拼接多头并输出投影</p> <p>import torch from torch import nn</p> <p>class MultiHeadAttention(nn.Module): def <strong>init</strong>(self, hidden_size, num_heads): super().<strong>init</strong>() self.hidden_size = hidden_size self.num_heads = num_heads self.head_dim = hidden_size // num_heads</p> <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    self.q_linear = nn.Linear(hidden_size, hidden_size)
+    self.k_linear = nn.Linear(hidden_size, hidden_size)
+    self.v_linear = nn.Linear(hidden_size, hidden_size)
+    self.o_linear = nn.Linear(hidden_size, hidden_size)
+
+def forward(self, hidden_state, mask=None):
+    batch_size, seq_len = hidden_state.size(0), hidden_state.size(1)
+
+    query = self.q_linear(hidden_state).view(batch_size, seq_len, self.num_heads, self.head_dim).transpose(1, 2)
+    key = self.k_linear(hidden_state).view(batch_size, seq_len, self.num_heads, self.head_dim).transpose(1, 2)
+    value = self.v_linear(hidden_state).view(batch_size, seq_len, self.num_heads, self.head_dim).transpose(1, 2)
+
+    attn_scores = (query @ key.transpose(-2, -1)) / (self.head_dim ** 0.5)
+
+    if mask is not None:
+        attn_scores = attn_scores.masked_fill(mask == 0, float('-inf'))
+
+    attn_probs = torch.softmax(attn_scores, dim=-1)
+
+    output = (attn_probs @ value).transpose(1, 2).contiguous().view(batch_size, seq_len, self.hidden_size)
+    output = self.o_linear(output)
+
+    return output
+</code></pre></div></div> <p>def test_MHA(): batch_size = 128 seq_len = 512 hidden_size = 1024 num_heads = 8</p> <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code># 随机生成输入数据
+hidden_state = torch.randn(batch_size, seq_len, hidden_size)  # (batch_size, seq_len, hidden_size)
+
+# 因果掩码：0=屏蔽位置（右上三角为未来token）
+causal_mask = 1 - torch.triu(torch.ones(seq_len, seq_len), diagonal=1)
+
+# 创建多头注意力模块
+mha = MultiHeadAttention(hidden_size, num_heads)
+output = mha(hidden_state, mask=causal_mask)
+
+print("Input shape:", hidden_state.shape)
+print("Output shape:", output.shape)
+</code></pre></div></div> <p>if <strong>name</strong> == “<strong>main</strong>”: test_MHA()</p> <h4 id="多查询注意力mqa">多查询注意力（MQA）</h4> <p>步骤总结： Q全头线性投影、K/V共享头线性投影(head_dim) – Q分头、K/V保持单头 – 每头Q与共享K^T做点积/√d_k – (可选)mask – softmax – 与V相乘 – 拼接多头并输出投影</p> <p>import torch from torch import nn</p> <p>class MultiQueryAttention(nn.Module): def <strong>init</strong>(self, hidden_size, num_heads): super().<strong>init</strong>()</p> <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    self.hidden_size = hidden_size
+    self.num_heads = num_heads
+    self.head_dim = hidden_size // num_heads
+
+    self.q_linear = nn.Linear(hidden_size, hidden_size)
+    self.k_linear = nn.Linear(hidden_size, self.head_dim)
+    self.v_linear = nn.Linear(hidden_size, self.head_dim)
+    self.o_linear = nn.Linear(hidden_size, hidden_size)
+
+def forward(self, hidden_state, mask=None):
+    batch_size, seq_len = hidden_state.size(0), hidden_state.size(1)
+
+    query = self.split_head(self.q_linear(hidden_state))
+    key = self.split_head(self.k_linear(hidden_state), 1)
+    value = self.split_head(self.v_linear(hidden_state), 1)
+
+    attn_scores = (query @ key.transpose(-2, -1)) / (self.head_dim ** 0.5)
+
+    if mask is not None:
+        attn_scores = attn_scores.masked_fill(mask == 0, float('-inf'))
+
+    attn_probs = torch.softmax(attn_scores, dim=-1)
+
+    output = (attn_probs @ value).transpose(1, 2).contiguous().view(batch_size, seq_len, self.hidden_size)
+    output = self.o_linear(output)
+
+    return output
+
+def split_head(self, x, head_num=None):
+    batch_size = x.size(0)
+    if head_num is None:
+        head_num = self.num_heads
+    head_dim = x.size(-1) // head_num
+    return x.view(batch_size, -1, head_num, head_dim).transpose(1, 2)
+</code></pre></div></div> <h4 id="维度变换速查split_head-与-repeat_kv">维度变换速查：split_head 与 repeat_kv</h4> <p><strong>split_head(x, head_num)</strong> — 把最后一维拆成 head_num × head_dim</p> <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>输入: (B, seq, feat)  其中 feat = head_num × head_dim
+view: (B, seq, head_num, head_dim)
+transpose(1,2): (B, head_num, seq, head_dim)  ← 把 head 提前，便于逐头计算
+</code></pre></div></div> <p><strong>repeat_kv(x)</strong> — 把 num_kv_heads 扩成 num_heads（GQA 专用）</p> <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>输入: (B, num_kv_heads, seq, head_dim)
+unsqueeze(2): (B, num_kv_heads, 1, seq, head_dim)
+repeat(1,1,n_rep,1,1): (B, num_kv_heads, n_rep, seq, head_dim)  每 kv 头重复 n_rep 次
+reshape: (B, num_heads, seq, head_dim)  其中 num_heads = num_kv_heads × n_rep
+</code></pre></div></div> <p><strong>记忆口诀</strong>：split 是「拆尾维 → view → transpose 把 head 提前」，repeat 是「unsqueeze 插维 → repeat 复制 → reshape 拉平」。</p> <hr> <h4 id="分组查询注意力gqa">分组查询注意力（GQA）</h4> <p>步骤总结： Q全头线性投影、K/V分组头线性投影(num_kv_heads×head_dim) – Q分num_heads头、K/V分num_kv_heads头 – repeat_kv将K/V扩至num_heads – 点积/√d_k – (可选)mask – softmax – 与V相乘 – 拼接多头并输出投影</p> <p>import torch from torch import nn</p> <p>class GroupedQueryAttention(nn.Module): def <strong>init</strong>(self, hidden_size, num_heads, num_kv_heads=None): super().<strong>init</strong>() self.hidden_size = hidden_size self.num_heads = num_heads self.num_kv_heads = num_kv_heads or num_heads self.head_dim = hidden_size // num_heads</p> <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    self.q_linear = nn.Linear(hidden_size, hidden_size)
+    self.k_linear = nn.Linear(hidden_size, self.num_kv_heads * self.head_dim)
+    self.v_linear = nn.Linear(hidden_size, self.num_kv_heads * self.head_dim)
+    self.o_linear = nn.Linear(hidden_size, hidden_size)
+
+def forward(self, hidden_state, mask=None):
+    batch_size, seq_len = hidden_state.size(0), hidden_state.size(1)
+
+    query = self._split_head(self.q_linear(hidden_state), self.num_heads)
+    key = self._split_head(self.k_linear(hidden_state), self.num_kv_heads)
+    value = self._split_head(self.v_linear(hidden_state), self.num_kv_heads)
+
+    key = self._repeat_kv(key)
+    value = self._repeat_kv(value)
+
+    attn_scores = (query @ key.transpose(-2, -1)) / (self.head_dim ** 0.5)
+
+    if mask is not None:
+        attn_scores = attn_scores.masked_fill(mask == 0, float('-inf'))
+
+    attn_probs = torch.softmax(attn_scores, dim=-1)
+
+    output = (attn_probs @ value).transpose(1, 2).contiguous().view(batch_size, seq_len, self.hidden_size)
+    output = self.o_linear(output)
+
+    return output
+
+def _split_head(self, x, head_num):
+    batch_size = x.size(0)
+    head_dim = x.size(-1) // head_num
+    return x.view(batch_size, -1, head_num, head_dim).transpose(1, 2)
+
+def _repeat_kv(self, x):
+    n_rep = self.num_heads // self.num_kv_heads
+    return x.unsqueeze(2).repeat(1, 1, n_rep, 1, 1).reshape(x.size(0), self.num_heads, -1, x.size(-1))
+</code></pre></div></div> <p>def test_GQA(): batch_size, seq_len, hidden_size, num_heads, num_kv_heads = 2, 16, 256, 8, 2 hidden_state = torch.randn(batch_size, seq_len, hidden_size) gqa = GroupedQueryAttention(hidden_size, num_heads, num_kv_heads) output = gqa(hidden_state) print(“GQA output shape:”, output.shape) # (2, 16, 256)</p> <h2 id="dpodirect-preference-optimization">DPO（Direct Preference Optimization）</h2> <h4 id="compute_log_probs-步骤总结">compute_log_probs 步骤总结</h4> <p>log_softmax – gather 取 label 对应概率 – mask 保留 response 位置 – sum 汇总</p> <p><strong>gather 要点</strong>：<code class="language-plaintext highlighter-rouge">log_probs[b,i,labels[b,i]]</code> 等价于 <code class="language-plaintext highlighter-rouge">gather(log_probs, dim=-1, index=labels.unsqueeze(-1))</code>。index 必须与 log_probs 同维，故 labels (B,S) → unsqueeze(-1) → (B,S,1)。</p> <p><strong>gather 具体例子</strong>：</p> <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>log_probs: (1, 3, 5)  即 1 句 3 词，词表大小 5
+  位置0: [-2.1, -0.5, -1.0, -3.0, -2.5]  # 5 个 token 的 log 概率
+  位置1: [-1.2, -2.3, -0.8, -4.0, -1.5]
+  位置2: [-3.0, -1.0, -0.3, -2.0, -2.2]
+
+labels: (1, 3) = [[2, 0, 4]]  # 真实 token id：位置0 是 2，位置1 是 0，位置2 是 4
+
+labels.unsqueeze(-1): (1, 3, 1) = [[[2],[0],[4]]]
+
+gather(dim=-1): 沿 vocab 维，按 index 取值
+  out[0,0,0] = log_probs[0,0,2] = -1.0   ← 位置0 真实 token 2 的 log p
+  out[0,1,0] = log_probs[0,1,0] = -1.2   ← 位置1 真实 token 0 的 log p
+  out[0,2,0] = log_probs[0,2,4] = -2.2   ← 位置2 真实 token 4 的 log p
+
+squeeze(-1) → (1, 3) = [[-1.0, -1.2, -2.2]]
+</code></pre></div></div> <hr> <h4 id="dpo-loss-步骤总结">DPO Loss 步骤总结</h4> <p>chosen/rejected 各算 log_ratio = policy_logp - ref_logp – logits = β×(chosen_ratio - rejected_ratio) – loss = -logsigmoid(logits)</p> <table> <tbody> <tr> <td> <strong>公式</strong>：$\mathcal{L} = -\mathbb{E}\left[\log \sigma\left(\beta \log\frac{\pi_\theta(y_w</td> <td>x)}{\pi_{ref}(y_w</td> <td>x)} - \beta \log\frac{\pi_\theta(y_l</td> <td>x)}{\pi_{ref}(y_l</td> <td>x)}\right)\right]$</td> </tr> </tbody> </table> <p><strong>记忆</strong>：让 chosen 的 log_ratio 比 rejected 大，loss 才小；β 控制偏离参考模型的强度。</p> <p><strong>手撕流程</strong>：</p> <ol> <li>compute_log_probs：log_softmax → gather → mask → sum</li> <li>dpo_loss：log_ratio = policy - ref → logits = β×(chosen - rejected) → -logsigmoid → mean</li> </ol> <hr> <p>import torch import torch.nn.functional as F</p> <p>def compute_log_probs( logits: torch.Tensor, # (batch, seq_len, vocab_size) labels: torch.Tensor, # (batch, seq_len) mask: torch.Tensor # (batch, seq_len)，1=response 需计算，0=prompt 忽略 ) -&gt; torch.Tensor: “”” 计算序列的对数概率，只算 response 部分（RLHF/DPO 常用） “”” # ① log_softmax: (B,S,V) → (B,S,V)，每行和为 log(1)=0 log_probs = F.log_softmax(logits, dim=-1)</p> <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code># ② gather: 沿 dim=-1 按 index 索引取值，见上方「gather 具体例子」
+per_token_log_probs = torch.gather(
+    log_probs, dim=-1, index=labels.unsqueeze(-1)
+).squeeze(-1)
+
+# ③ mask 只保留 response 位置，④ sum 得到标量（每样本一个）
+return (per_token_log_probs * mask).sum(dim=-1)  # → (batch,)
+</code></pre></div></div> <p>def dpo_loss( policy_chosen_logps: torch.Tensor, # (batch,) 当前模型在 chosen 上的 log p policy_rejected_logps: torch.Tensor, # (batch,) 当前模型在 rejected 上的 log p ref_chosen_logps: torch.Tensor, # (batch,) 参考模型在 chosen 上的 log p ref_rejected_logps: torch.Tensor, # (batch,) 参考模型在 rejected 上的 log p beta: float = 0.1, ) -&gt; torch.Tensor: “”” DPO Loss：无 RL 的偏好优化，直接优化 policy 使 chosen 优于 rejected “”” # ① log π/π_ref = log π - log π_ref chosen_log_ratios = policy_chosen_logps - ref_chosen_logps rejected_log_ratios = policy_rejected_logps - ref_rejected_logps</p> <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code># ② logits = β·(chosen_ratio - rejected_ratio)，越大越好
+logits = beta * (chosen_log_ratios - rejected_log_ratios)
+
+# ③ -log σ(x) 等价于 log(1+exp(-x))，数值稳定
+return (-F.logsigmoid(logits)).mean()
+</code></pre></div></div> </div> </article> <br> <hr> <br> <ul class="list-disc pl-8"></ul> <h2 class="text-3xl font-semibold mb-4 mt-12">Enjoy Reading This Article?</h2> <p class="mb-2">Here are some more articles you might like to read next:</p> <li class="my-2"> <a class="text-pink-700 underline font-semibold hover:text-pink-800" href="/blog/2026/leetcode-notes/">Leetcode学习笔记</a> </li> <li class="my-2"> <a class="text-pink-700 underline font-semibold hover:text-pink-800" href="/blog/2026/on-anxiety/">当我们谈论焦虑</a> </li> <li class="my-2"> <a class="text-pink-700 underline font-semibold hover:text-pink-800" href="/blog/2026/self-distillation/">Self-Distillation论文阅读</a> </li> <li class="my-2"> <a class="text-pink-700 underline font-semibold hover:text-pink-800" href="/blog/2026/cc-config/">Claude Code配置</a> </li> <li class="my-2"> <a class="text-pink-700 underline font-semibold hover:text-pink-800" href="/blog/2026/aaai-log/">AAAI2026参会记录</a> </li> </div> </div> <footer class="fixed-bottom" role="contentinfo"> <div class="container mt-0"> © Copyright 2026 Maoqi Liu. Powered by <a href="https://jekyllrb.com/" target="_blank" rel="external nofollow noopener">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio" rel="external nofollow noopener" target="_blank">al-folio</a> theme. Hosted by <a href="https://pages.github.com/" target="_blank" rel="external nofollow noopener">GitHub Pages</a>. </div> </footer> <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script> <script src="/assets/js/bootstrap.bundle.min.js"></script> <script src="https://cdn.jsdelivr.net/npm/mdbootstrap@4.20.0/js/mdb.min.js" integrity="sha256-NdbiivsvWt7VYCt6hYNT3h/th9vSTL4EDWeGs5SN3DA=" crossorigin="anonymous"></script> <script defer src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha256-Nn1q/fx0H7SNLZMQ5Hw5JLaTRZp0yILA/FRexe19VdI=" crossorigin="anonymous"></script> <script defer src="https://cdn.jsdelivr.net/npm/imagesloaded@5.0.0/imagesloaded.pkgd.min.js" integrity="sha256-htrLFfZJ6v5udOG+3kNLINIKh2gvoKqwEhHYfTTMICc=" crossorigin="anonymous"></script> <script defer src="/assets/js/masonry.js?a0db7e5d5c70cc3252b3138b0c91dcaf" type="text/javascript"></script> <script defer src="https://cdn.jsdelivr.net/npm/medium-zoom@1.1.0/dist/medium-zoom.min.js" integrity="sha256-ZgMyDAIYDYGxbcpJcfUnYwNevG/xi9OHKaR/8GK+jWc=" crossorigin="anonymous"></script> <script defer src="/assets/js/zoom.js?85ddb88934d28b74e78031fd54cf8308"></script> <script src="/assets/js/no_defer.js?2781658a0a2b13ed609542042a859126"></script> <script defer src="/assets/js/common.js?c15de51d4bb57887caa2c21988d97279"></script> <script defer src="/assets/js/copy_code.js?c8a01c11a92744d44b093fc3bda915df" type="text/javascript"></script> <script defer src="/assets/js/jupyter_new_tab.js?d9f17b6adc2311cbabd747f4538bb15f"></script> <script defer type="text/javascript" id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-mml-chtml.js" integrity="sha256-MASABpB4tYktI2Oitl4t+78w/lyA+D7b/s9GEP0JOGI=" crossorigin="anonymous"></script> <script src="/assets/js/mathjax-setup.js?a5bb4e6a542c546dd929b24b8b236dfd"></script> <script defer src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6" crossorigin="anonymous"></script> <script defer src="/assets/js/progress-bar.js?2f30e0e6801ea8f5036fa66e1ab0a71a" type="text/javascript"></script> <script src="/assets/js/vanilla-back-to-top.min.js?f40d453793ff4f64e238e420181a1d17"></script> <script>
+    addBackToTop();
+  </script> <script type="module" src="/assets/js/search/ninja-keys.min.js?a3446f084dcaecc5f75aa1757d087dcf"></script> <ninja-keys hidebreadcrumbs noautoloadmdicons placeholder="Type to start searching"></ninja-keys> <script src="/assets/js/search-setup.js?6c304f7b1992d4b60f7a07956e52f04a"></script> <script src="/assets/js/search-data.js"></script> <script src="/assets/js/shortcut-key.js?6f508d74becd347268a7f822bca7309d"></script> </body> </html>

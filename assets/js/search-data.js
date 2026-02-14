@@ -44,7 +44,51 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/cv/";
           },
-        },{id: "post-claude-code配置",
+        },{id: "post-leetcode学习笔记",
+        
+          title: "Leetcode学习笔记",
+        
+        description: "Notes on Leetcode",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/leetcode-notes/";
+          
+        },
+      },{id: "post-当我们谈论焦虑",
+        
+          title: "当我们谈论焦虑",
+        
+        description: "When we talk about anxiety",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/on-anxiety/";
+          
+        },
+      },{id: "post-self-distillation论文阅读",
+        
+          title: "Self-Distillation论文阅读",
+        
+        description: "Notes on Papers about Self Distillation",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/self-distillation/";
+          
+        },
+      },{id: "post-llm八股学习与手撕",
+        
+          title: "LLM八股学习与手撕",
+        
+        description: "Notes on LLM algorithms",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/algorithm-notes/";
+          
+        },
+      },{id: "post-claude-code配置",
         
           title: "Claude Code配置",
         
