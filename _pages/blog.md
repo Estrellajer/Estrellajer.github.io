@@ -109,6 +109,8 @@ pagination:
       {% assign postlist = site.posts %}
     {% endif %}
 
+    {% assign postlist = postlist | where_exp: "post", "post.hidden != true" %}
+
     {% for post in postlist %}
 
     {% if post.external_source == blank %}
