@@ -44,7 +44,18 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/cv/";
           },
-        },{id: "post-leetcode学习笔记",
+        },{id: "post-第一次面试总结复盘",
+        
+          title: "第一次面试总结复盘",
+        
+        description: "第一次面试复盘：技术面与HR面",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/interview-summary/";
+          
+        },
+      },{id: "post-leetcode学习笔记",
         
           title: "Leetcode学习笔记",
         
