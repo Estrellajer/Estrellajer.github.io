@@ -44,7 +44,29 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/cv/";
           },
-        },{id: "post-第一次面试总结复盘",
+        },{id: "post-远程连接服务器时的-ai-编程工具实践与配置指南",
+        
+          title: "远程连接服务器时的 AI 编程工具实践与配置指南",
+        
+        description: "探讨在远程连接服务器时使用 Cursor、Copilot、Claude Code 等 AI 工具的优缺点及网络转发配置方案",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/cli-in-ssh/";
+          
+        },
+      },{id: "post-ai-驱动的未来-焦虑频发下的深度思考",
+        
+          title: "AI 驱动的未来：焦虑频发下的深度思考",
+        
+        description: "在疾病缠绕与工作重压的间隙，关于 AI 冲击下职业前景与人际关系的感悟",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/thoughts-of-future/";
+          
+        },
+      },{id: "post-第一次面试总结复盘",
         
           title: "第一次面试总结复盘",
         
