@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: default
 permalink: /publications/
 title: publications
 nav: true
@@ -86,8 +86,8 @@ nav_order: 2
 
   .publications-landing .publications .row {
     display: grid !important;
-    grid-template-columns: 240px minmax(0, 1fr);
-    gap: 1.35rem;
+    grid-template-columns: 264px minmax(0, 1fr);
+    gap: 1.5rem;
     margin: 0;
     align-items: start;
   }
@@ -109,12 +109,14 @@ nav_order: 2
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    padding: 0.25rem 0.7rem;
-    margin-bottom: 0.7rem;
+    padding: 0.3rem 0.72rem;
+    margin-bottom: 0.8rem;
     border-radius: 999px;
-    background: var(--pub-accent-soft);
-    color: #496885 !important;
+    background: rgba(17, 19, 23, 0.05) !important;
+    color: var(--pub-soft) !important;
     font-weight: 600;
+    font-size: 0.76rem;
+    letter-spacing: 0.08em;
   }
 
   .publications-landing .publications figure {
@@ -125,17 +127,19 @@ nav_order: 2
     width: 100%;
     aspect-ratio: 16 / 9;
     object-fit: contain;
-    padding: 0.7rem;
+    padding: 0.45rem;
     border: 1px solid rgba(17, 19, 23, 0.08);
-    border-radius: 1rem;
-    background: #eef2f6;
-    box-shadow: 0 14px 34px rgba(15, 23, 42, 0.05) !important;
+    border-radius: 0.9rem;
+    background: #f7f8fa;
+    box-shadow: none !important;
   }
 
   .publications-landing .publications .title {
-    font-size: 1.2rem;
-    line-height: 1.45;
-    margin-bottom: 0.45rem;
+    color: var(--pub-text);
+    font-size: 1.38rem;
+    line-height: 1.4;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
   }
 
   .publications-landing .publications .author,

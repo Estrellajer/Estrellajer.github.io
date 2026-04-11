@@ -2,63 +2,176 @@
 layout: default
 ---
 {% assign year = page.date | date: '%Y' %}
-{% assign tags = page.tags | join: '' %}
-{% assign categories = page.categories | join: '' %}
 {% assign url_beginning = page.url | slice: 0, 6 %}
 
 {% if page._styles %}
-  <!-- Page/Post style -->
   <style type="text/css">
     {{ page._styles }}
   </style>
 {% endif %}
 
-<div class="post">
-  <header class="post-header">
-    <h1 class="post-title">{{ page.title }}</h1>
-    <p class="post-meta">
-      Created on {{ page.date | date: '%B %d, %Y' }}
-      {% if page.author %}by {{ page.author }}{% endif %}
-      {% if page.last_updated %}, last updated on {{ page.last_updated | date: '%B %d, %Y' }}{% endif %}
-      {% if page.meta %}• {{ page.meta }}{% endif %}
-    </p>
-    <p class="post-tags">
-      {% if url_beginning == '/blog/' %}
-        <a href="{{ year | prepend: '/blog/' | relative_url }}"> <i class="fa-solid fa-calendar fa-sm"></i> {{ year }} </a>
-      {% else %}
-        <i class="fa-solid fa-calendar fa-sm"></i> {{ year }}
-      {% endif %}
-      {% if tags != '' %}
-        &nbsp; &middot; &nbsp;
-        {% for tag in page.tags %}
-          {% if url_beginning == '/blog/' %}
-            <a href="{{ tag | slugify | prepend: '/blog/tag/' | relative_url }}"> <i class="fa-solid fa-hashtag fa-sm"></i> {{ tag }}</a>
-          {% else %}
-            <i class="fa-solid fa-hashtag fa-sm"></i> {{ tag }}
-          {% endif %}
-          {% unless forloop.last %}
-            &nbsp;
-          {% endunless %}
-        {% endfor %}
-      {% endif %}
+<style>
+  .reading-page {
+    --reading-text: var(--global-text-color);
+    --reading-muted: #69717d;
+    --reading-soft: #8d96a3;
+    --reading-accent: #557a9f;
+    --reading-accent-soft: rgba(85, 122, 159, 0.12);
+    padding-top: 1rem;
+  }
 
-      {% if categories != '' %}
-        &nbsp; &middot; &nbsp;
-        {% for category in page.categories %}
-          {% if url_beginning == '/blog/' %}
-            <a href="{{ category | slugify | prepend: '/blog/category/' | relative_url }}"> <i class="fa-solid fa-tag fa-sm"></i> {{ category -}}</a>
-          {% else %}
-            <i class="fa-solid fa-tag fa-sm"></i> {{ category }}
-          {% endif %}
-          {% unless forloop.last %}
-            &nbsp;
-          {% endunless %}
-        {% endfor %}
+  .reading-hero {
+    margin-bottom: 2rem;
+  }
+
+  .reading-eyebrow {
+    margin-bottom: 0.9rem;
+    color: var(--reading-accent);
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+  }
+
+  .reading-title {
+    margin: 0;
+    font-size: clamp(2.3rem, 4.6vw, 3.8rem);
+    line-height: 1.05;
+    letter-spacing: -0.04em;
+    font-weight: 600;
+  }
+
+  .reading-meta {
+    margin-top: 0.95rem;
+    color: var(--reading-muted);
+    font-size: 0.98rem;
+    line-height: 1.8;
+  }
+
+  .reading-taxonomy {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.65rem;
+    margin-top: 1.15rem;
+  }
+
+  .reading-chip {
+    display: inline-flex;
+    align-items: center;
+    min-height: 2.1rem;
+    padding: 0 0.85rem;
+    border-radius: 999px;
+    background: var(--reading-accent-soft);
+    color: #496885;
+    font-size: 0.9rem;
+    text-decoration: none !important;
+  }
+
+  .reading-article {
+    max-width: 46rem;
+  }
+
+  .reading-article,
+  .reading-article #markdown-content {
+    color: var(--reading-text);
+    font-size: 1.05rem;
+    line-height: 1.9;
+  }
+
+  .reading-article img {
+    border-radius: 1rem;
+  }
+
+  .reading-article h2,
+  .reading-article h3 {
+    margin-top: 2rem;
+    margin-bottom: 0.85rem;
+    letter-spacing: -0.02em;
+  }
+
+  .reading-article a {
+    color: inherit;
+    text-decoration-color: rgba(85, 122, 159, 0.45);
+  }
+
+  .reading-article a:hover {
+    text-decoration-color: rgba(85, 122, 159, 0.9);
+  }
+
+  .reading-related {
+    margin-top: 3rem;
+    padding-top: 1.6rem;
+    border-top: 1px solid rgba(17, 19, 23, 0.08);
+  }
+
+  .reading-related-title {
+    margin: 0 0 1rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    letter-spacing: -0.02em;
+  }
+
+  .reading-related-list {
+    display: grid;
+    gap: 0.9rem;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+
+  .reading-related-item a {
+    display: block;
+    color: inherit;
+    text-decoration: none;
+  }
+
+  .reading-related-item-title {
+    font-weight: 600;
+    line-height: 1.45;
+  }
+
+  .reading-related-item-meta {
+    margin-top: 0.2rem;
+    color: var(--reading-soft);
+    font-size: 0.92rem;
+    line-height: 1.7;
+  }
+</style>
+
+<div class="reading-page">
+  <header class="reading-hero">
+    <div class="reading-eyebrow">{% if url_beginning == '/blog/' %}Blog Post{% else %}Article{% endif %}</div>
+    <h1 class="reading-title">{{ page.title }}</h1>
+    <div class="reading-meta">
+      {{ page.date | date: '%B %d, %Y' }}
+      {% if page.author %} · {{ page.author }}{% endif %}
+      {% if page.last_updated %} · Updated {{ page.last_updated | date: '%B %d, %Y' }}{% endif %}
+      {% if page.meta %} · {{ page.meta }}{% endif %}
+    </div>
+    <div class="reading-taxonomy">
+      {% if url_beginning == '/blog/' %}
+        <a class="reading-chip" href="{{ year | prepend: '/blog/' | relative_url }}">{{ year }}</a>
+      {% else %}
+        <span class="reading-chip">{{ year }}</span>
       {% endif %}
-    </p>
+      {% for tag in page.tags %}
+        {% if url_beginning == '/blog/' %}
+          <a class="reading-chip" href="{{ tag | slugify | prepend: '/blog/tag/' | relative_url }}"># {{ tag }}</a>
+        {% else %}
+          <span class="reading-chip"># {{ tag }}</span>
+        {% endif %}
+      {% endfor %}
+      {% for category in page.categories %}
+        {% if url_beginning == '/blog/' %}
+          <a class="reading-chip" href="{{ category | slugify | prepend: '/blog/category/' | relative_url }}">{{ category }}</a>
+        {% else %}
+          <span class="reading-chip">{{ category }}</span>
+        {% endif %}
+      {% endfor %}
+    </div>
   </header>
 
-  <article class="post-content">
+  <article class="reading-article">
     {% if page.toc and page.toc.beginning %}
       <div id="table-of-contents">
         {% toc %}
@@ -81,10 +194,24 @@ layout: default
     </div>
   {% endif %}
 
-  {% if site.related_blog_posts and site.related_blog_posts.enabled %}
-    {% if page.related_posts == null or page.related_posts %}
-      {% include related_posts.liquid %}
-    {% endif %}
+  {% assign related_items = page.related_posts %}
+  {% if site.related_blog_posts and site.related_blog_posts.enabled and related_items and related_items != false and related_items.size > 0 %}
+    <section class="reading-related">
+      <h2 class="reading-related-title">Further Reading</h2>
+      <ul class="reading-related-list">
+        {% for related in related_items limit: 4 %}
+          <li class="reading-related-item">
+            <a href="{{ related.url | relative_url }}">
+              <div class="reading-related-item-title">{{ related.title }}</div>
+              <div class="reading-related-item-meta">
+                {{ related.date | date: '%b %d, %Y' }}
+                {% if related.description %} · {{ related.description }}{% endif %}
+              </div>
+            </a>
+          </li>
+        {% endfor %}
+      </ul>
+    </section>
   {% endif %}
 
   {% if site.disqus_shortname and page.disqus_comments %}

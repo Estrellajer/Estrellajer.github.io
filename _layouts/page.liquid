@@ -2,19 +2,152 @@
 layout: default
 ---
 {% if page._styles %}
-  <!-- Page/Post style -->
   <style type="text/css">
     {{ page._styles }}
   </style>
 {% endif %}
 
-<div class="post">
-  <header class="post-header">
-    <h1 class="post-title">{{ page.title }}</h1>
-    <p class="post-description">{{ page.description }}</p>
+<style>
+  .content-page {
+    --content-text: var(--global-text-color);
+    --content-muted: #69717d;
+    --content-soft: #8d96a3;
+    --content-accent: #557a9f;
+    padding-top: 1rem;
+  }
+
+  .content-page-hero {
+    margin-bottom: 2.15rem;
+  }
+
+  .content-page-hero-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 300px;
+    gap: 2rem;
+    align-items: start;
+  }
+
+  .content-page-eyebrow {
+    margin-bottom: 0.9rem;
+    color: var(--content-accent);
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+  }
+
+  .content-page-title {
+    margin: 0;
+    font-size: clamp(2.3rem, 4.6vw, 3.8rem);
+    line-height: 1.05;
+    letter-spacing: -0.04em;
+    font-weight: 600;
+  }
+
+  .content-page-description {
+    margin-top: 0.95rem;
+    max-width: 44rem;
+    color: var(--content-muted);
+    font-size: 1.02rem;
+    line-height: 1.85;
+  }
+
+  .content-page-article {
+    color: var(--content-text);
+    font-size: 1.03rem;
+    line-height: 1.9;
+  }
+
+  .content-page-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.65rem;
+    margin-top: 1.15rem;
+  }
+
+  .content-page-chip {
+    display: inline-flex;
+    align-items: center;
+    min-height: 2.15rem;
+    padding: 0 0.88rem;
+    border-radius: 999px;
+    background: rgba(85, 122, 159, 0.12);
+    color: #496885;
+    font-size: 0.9rem;
+    text-decoration: none !important;
+  }
+
+  .content-page-visual {
+    width: 100%;
+    aspect-ratio: 16 / 10;
+    object-fit: contain;
+    padding: 0.55rem;
+    border: 1px solid rgba(17, 19, 23, 0.08);
+    border-radius: 1rem;
+    background: #f7f8fa;
+  }
+
+  .content-page-article p:first-child {
+    margin-top: 0;
+  }
+
+  .content-page-article h2,
+  .content-page-article h3 {
+    margin-top: 2rem;
+    margin-bottom: 0.85rem;
+    letter-spacing: -0.02em;
+  }
+
+  .content-page-article a {
+    color: inherit;
+    text-decoration-color: rgba(85, 122, 159, 0.45);
+  }
+
+  .content-page-article a:hover {
+    text-decoration-color: rgba(85, 122, 159, 0.9);
+  }
+
+  @media (max-width: 860px) {
+    .content-page-hero-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .content-page-visual {
+      max-width: 26rem;
+    }
+  }
+</style>
+
+<div class="content-page">
+  <header class="content-page-hero">
+    <div class="content-page-hero-grid">
+      <div>
+        <div class="content-page-eyebrow">{% if page.collection == 'projects' %}Project{% else %}Page{% endif %}</div>
+        <h1 class="content-page-title">{{ page.title }}</h1>
+        {% if page.description %}
+          <p class="content-page-description">{{ page.description }}</p>
+        {% endif %}
+        {% if page.collection == 'projects' %}
+          <div class="content-page-meta">
+            {% if page.category %}
+              <span class="content-page-chip">{{ page.category }}</span>
+            {% endif %}
+            {% if page.github %}
+              <a class="content-page-chip" href="{{ page.github }}" rel="external nofollow noopener" target="_blank">GitHub</a>
+            {% endif %}
+          </div>
+        {% endif %}
+      </div>
+
+      {% if page.collection == 'projects' and page.img %}
+        <div>
+          <img class="content-page-visual" src="{{ page.img | relative_url }}" alt="{{ page.title }}">
+        </div>
+      {% endif %}
+    </div>
   </header>
 
-  <article>
+  <article class="content-page-article">
     {{ content }}
   </article>
 
