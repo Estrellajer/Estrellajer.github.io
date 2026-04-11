@@ -1,80 +1,319 @@
 ---
 layout: default
 ---
-<div class="post">
-  <header class="post-header">
-    <h1 class="post-title">
-      {% if site.title == 'blank' %}
-        <span class="font-weight-bold">{{ site.first_name }}</span> {{ site.middle_name }}
-        {{ site.last_name }}
-      {% else %}
-        {{ site.title }}
+<style>
+  .home-landing {
+    --home-text: var(--global-text-color);
+    --home-muted: #69717d;
+    --home-soft: #8d96a3;
+    --home-line: rgba(17, 19, 23, 0.1);
+    --home-accent: #557a9f;
+    --home-accent-soft: rgba(85, 122, 159, 0.12);
+    padding-top: 1rem;
+  }
+
+  .home-landing a {
+    color: inherit;
+  }
+
+  .home-hero {
+    display: grid;
+    grid-template-columns: minmax(0, 1.15fr) 360px;
+    gap: 2.25rem;
+    align-items: start;
+    margin-bottom: 2.25rem;
+  }
+
+  .home-eyebrow {
+    margin-bottom: 1rem;
+    color: var(--home-accent);
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+  }
+
+  .home-title {
+    margin: 0;
+    font-size: clamp(2.6rem, 5vw, 4.15rem);
+    line-height: 0.98;
+    letter-spacing: -0.04em;
+    font-weight: 600;
+    color: var(--home-text);
+  }
+
+  .home-subtitle {
+    margin-top: 0.75rem;
+    font-size: 1.125rem;
+    line-height: 1.75;
+    color: var(--home-muted);
+  }
+
+  .home-intro {
+    margin-top: 1.25rem;
+    max-width: 46rem;
+    color: var(--home-muted);
+    font-size: 1.05rem;
+    line-height: 1.9;
+  }
+
+  .home-intro p:last-child {
+    margin-bottom: 0;
+  }
+
+  .home-research {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.65rem;
+    margin-top: 1.5rem;
+  }
+
+  .home-chip {
+    display: inline-flex;
+    align-items: center;
+    min-height: 2.35rem;
+    padding: 0 0.9rem;
+    border-radius: 999px;
+    background: var(--home-accent-soft);
+    color: #496885;
+    font-size: 0.92rem;
+  }
+
+  .home-portrait-wrap {
+    border-left: 1px solid var(--home-line);
+    padding-left: 1.75rem;
+  }
+
+  .home-portrait {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    border-radius: 1.6rem;
+    box-shadow: 0 18px 42px rgba(15, 23, 42, 0.05);
+  }
+
+  .home-section {
+    margin-top: 2.25rem;
+  }
+
+  .home-section-title {
+    margin: 0 0 1.1rem;
+    font-size: 1.45rem;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    color: var(--home-text);
+  }
+
+  .home-news-list,
+  .home-meta-list {
+    display: grid;
+    gap: 1rem;
+  }
+
+  .home-news-item,
+  .home-meta-item {
+    display: grid;
+    grid-template-columns: 120px minmax(0, 1fr);
+    gap: 1rem;
+    align-items: start;
+  }
+
+  .home-news-date,
+  .home-meta-label {
+    color: var(--home-soft);
+    font-size: 0.75rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    padding-top: 0.25rem;
+  }
+
+  .home-news-copy,
+  .home-meta-copy {
+    margin: 0;
+    color: var(--home-muted);
+    line-height: 1.8;
+    font-size: 1rem;
+  }
+
+  .home-publications .publications {
+    margin-top: 0;
+  }
+
+  .home-publications .publications ol.bibliography {
+    margin-bottom: 0;
+  }
+
+  .home-publications .publications ol.bibliography li {
+    margin-bottom: 1.5rem;
+  }
+
+  .home-publications .publications .row {
+    display: grid !important;
+    grid-template-columns: 240px minmax(0, 1fr);
+    gap: 1.35rem;
+    margin: 0;
+    align-items: start;
+  }
+
+  .home-publications .publications .abbr,
+  .home-publications .publications [class*='col-sm-'],
+  .home-publications .publications [class^='col-sm-'] {
+    max-width: none;
+    flex: none;
+    padding: 0;
+  }
+
+  .home-publications .publications .abbr {
+    margin-bottom: 0;
+  }
+
+  .home-publications .publications .abbr abbr {
+    width: auto !important;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.25rem 0.7rem;
+    margin-bottom: 0.7rem;
+    border-radius: 999px;
+    background: var(--home-accent-soft);
+    color: #496885 !important;
+    font-weight: 600;
+  }
+
+  .home-publications .publications figure {
+    margin-bottom: 0;
+  }
+
+  .home-publications .publications .preview {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: contain;
+    padding: 0.7rem;
+    border: 1px solid rgba(17, 19, 23, 0.08);
+    border-radius: 1rem;
+    background: #eef2f6;
+    box-shadow: 0 14px 34px rgba(15, 23, 42, 0.05) !important;
+  }
+
+  .home-publications .publications .title {
+    font-size: 1.2rem;
+    line-height: 1.45;
+    margin-bottom: 0.45rem;
+  }
+
+  .home-publications .publications .author,
+  .home-publications .publications .periodical,
+  .home-publications .publications .links {
+    color: var(--home-muted);
+  }
+
+  .home-publications .publications .links {
+    margin-top: 0.85rem;
+  }
+
+  .home-publications .publications .links a.btn {
+    border-radius: 999px;
+  }
+
+  @media (max-width: 900px) {
+    .home-hero,
+    .home-news-item,
+    .home-meta-item,
+    .home-publications .publications .row {
+      grid-template-columns: 1fr;
+    }
+
+    .home-portrait-wrap {
+      border-left: 0;
+      padding-left: 0;
+      padding-top: 0.5rem;
+    }
+
+    .home-portrait {
+      max-width: 420px;
+    }
+  }
+</style>
+
+<div class="home-landing">
+  <section class="home-hero">
+    <div>
+      <div class="home-eyebrow">{{ page.hero_eyebrow }}</div>
+      <h1 class="home-title">{{ page.hero_name }}</h1>
+      <div class="home-subtitle">{{ page.hero_subtitle }}</div>
+      <div class="home-intro">{{ content }}</div>
+
+      {% if page.research_areas %}
+        <div class="home-research">
+          {% for area in page.research_areas %}
+            <span class="home-chip">{{ area }}</span>
+          {% endfor %}
+        </div>
       {% endif %}
-    </h1>
-    <p class="desc">{{ page.subtitle }}</p>
-  </header>
+    </div>
 
-  <article>
-    {% if page.profile %}
-      <div class="profile float-{% if page.profile.align == 'left' %}left{% else %}right{% endif %}">
-        {% if page.profile.image %}
-          {% assign profile_image_path = page.profile.image | prepend: 'assets/img/' %}
-          {% if page.profile.image_circular %}
-            {% assign profile_image_class = 'img-fluid z-depth-1 rounded-circle' %}
-          {% else %}
-            {% assign profile_image_class = 'img-fluid z-depth-1
-      rounded' %}
-          {% endif %}
-          {% capture sizes %}(min-width: {{ site.max_width }}) {{ site.max_width | minus: 30 | times: 0.3}}px, (min-width: 576px)
-      30vw, 95vw"{% endcapture %}
-          {%
-            include figure.liquid loading="eager" path=profile_image_path class=profile_image_class sizes=sizes alt=page.profile.image
-            cache_bust=true
-          %}
-        {% endif %}
-        {% if page.profile.more_info %}
-          <div class="more-info">{{ page.profile.more_info }}</div>
-        {% endif %}
+    {% if page.profile and page.profile.image %}
+      {% assign profile_image_path = page.profile.image | prepend: 'assets/img/' %}
+      <aside class="home-portrait-wrap">
+        <img class="home-portrait" src="{{ profile_image_path | relative_url | bust_file_cache }}" alt="{{ page.hero_name }}">
+      </aside>
+    {% endif %}
+  </section>
+
+  {% if page.announcements and page.announcements.enabled %}
+    <section class="home-section">
+      <h2 class="home-section-title">News</h2>
+      <div class="home-news-list">
+        {% assign news_items = site.news | reverse %}
+        {% assign news_limit = page.announcements.limit | default: 3 %}
+        {% for item in news_items limit: news_limit %}
+          <article class="home-news-item">
+            <div class="home-news-date">{{ item.date | date: '%b %Y' }}</div>
+            <div class="home-news-copy">
+              {% if item.inline %}
+                {{ item.content | remove: '<p>' | remove: '</p>' | emojify }}
+              {% else %}
+                <a class="news-title" href="{{ item.url | relative_url }}">{{ item.title }}</a>
+              {% endif %}
+            </div>
+          </article>
+        {% endfor %}
       </div>
-    {% endif %}
+    </section>
+  {% endif %}
 
-    <div class="clearfix">{{ content }}</div>
-
-    <!-- News -->
-    {% if page.announcements and page.announcements.enabled %}
-      <h2>
-        <a href="{{ '/news/' | relative_url }}" style="color: inherit">news</a>
-      </h2>
-      {% include news.liquid limit=true %}
-    {% endif %}
-
-    <!-- Latest posts -->
-    {% if page.latest_posts and page.latest_posts.enabled %}
-      <h2>
-        <a href="{{ '/blog/' | relative_url }}" style="color: inherit">latest posts</a>
-      </h2>
-      {% include latest_posts.liquid %}
-    {% endif %}
-
-    <!-- Selected papers -->
-    {% if page.selected_papers %}
-      <h2>
-        <a href="{{ '/publications/' | relative_url }}" style="color: inherit">selected publications</a>
-      </h2>
+  {% if page.selected_papers %}
+    <section class="home-section home-publications">
+      <h2 class="home-section-title">Selected Publications</h2>
       {% include selected_papers.liquid %}
-    {% endif %}
+    </section>
+  {% endif %}
 
-    <!-- Social -->
-    {% if page.social %}
-      <div class="social">
-        <div class="contact-icons">{% include social.liquid %}</div>
-
-        <div class="contact-note">{{ site.contact_note }}</div>
+  {% if page.awards %}
+    <section class="home-section">
+      <h2 class="home-section-title">Awards</h2>
+      <div class="home-meta-list">
+        {% for item in page.awards %}
+          <article class="home-meta-item">
+            <div class="home-meta-label">{{ item.label }}</div>
+            <p class="home-meta-copy">{{ item.text }}</p>
+          </article>
+        {% endfor %}
       </div>
-    {% endif %}
+    </section>
+  {% endif %}
 
-    {% if site.newsletter and site.newsletter.enabled and site.footer_fixed %}
-      {% include newsletter.liquid center=true %}
-    {% endif %}
-  </article>
+  {% if page.service %}
+    <section class="home-section">
+      <h2 class="home-section-title">Service</h2>
+      <div class="home-meta-list">
+        {% for item in page.service %}
+          <article class="home-meta-item">
+            <div class="home-meta-label">{{ item.label }}</div>
+            <p class="home-meta-copy">{{ item.text }}</p>
+          </article>
+        {% endfor %}
+      </div>
+    </section>
+  {% endif %}
 </div>

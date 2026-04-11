@@ -1,11 +1,10 @@
 ---
-layout: cv
+layout: default
 permalink: /cv/
 title: cv
-nav: true
+nav: false
 nav_order: 5
-cv_pdf: academiccv.pdf
-description: Not prepared yet.
-toc:
-  sidebar: left
+redirect: /assets/files/maoqi-liu-cv-v2.docx
 ---
+
+<p>Redirecting to CV download...</p>

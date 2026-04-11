@@ -7,6 +7,7 @@ first_name: Maoqi
 middle_name: 
 last_name: Liu
 email: liumaoqi@bupt.edu.cn
+cv_download_path: /assets/files/maoqi-liu-cv-v2.docx
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
   The academic profile of Maoqi Liu.
 footer_text: >

@@ -2,26 +2,37 @@
 layout: about
 title: about
 permalink: /
-subtitle: 
+subtitle:
+hero_eyebrow: Graduate Student in AI
+hero_name: Maoqi Liu
+hero_subtitle: Graduate student in artificial intelligence at BUPT, working on continual learning and LLM applications.
+research_areas:
+  - Continual Learning
+  - Lifelong Learning
+  - Deep Learning
+  - LLM Applications
+awards:
+  - label: 2024
+    text: Beijing Natural Science Foundation Undergraduate "QiYan" Research Grant.
+  - label: 2022
+    text: National English Competition for College Students, Second Prize.
+service:
+  - label: Leadership
+    text: Vice President of BUPT's Long-distance Running Association, debate team champion, and class leader across undergraduate and graduate study stages.
 
 profile:
   align: right
   image: baoding.jpg
-  image_circular: false # crops the image to make it circular
+  image_circular: false
 
-selected_papers: true # includes a list of papers marked as "selected={true}"
-social: False # includes social icons at the bottom of the page
+selected_papers: true
+social: false
 
 announcements:
-  enabled: true # includes a list of news items
-  scrollable: true # adds a vertical scroll bar if there are more than 3 news items
-  limit: 5 # leave blank to include all the news in the `_news` folder
-
-latest_posts:
   enabled: true
-  scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
-  limit: 3 # leave blank to include all the blog posts
+  limit: 3
 ---
 
-> Hello! I'm **Liu (刘) Maoqi (茂琦)**, a first-year graduate student at the **School of Artificial Intelligence, [Beijing University of Posts and Telecommunications](https://ai.bupt.edu.cn/)**.
-> I am a member of the **MKC Group**, advised by **[Prof. Quan Fang](https://quanfang.github.io/)**. My research interests broadly span **artificial intelligence** and **deep learning**, with a current focus on **continual learning** (*i.e., lifelong/incremental learning*) and **large language model (LLM) applications**.
+A first-year graduate student at the **School of Artificial Intelligence, [Beijing University of Posts and Telecommunications](https://ai.bupt.edu.cn/)** and a member of the **MKC Group**, advised by **[Prof. Quan Fang](https://quanfang.github.io/)**.
+
+My research interests broadly span **artificial intelligence** and **deep learning**, with a current focus on **continual learning** and **large language model (LLM) applications**.
