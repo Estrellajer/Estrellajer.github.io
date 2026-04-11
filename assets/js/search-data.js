@@ -23,6 +23,13 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/publications/";
           },
+        },{id: "nav-projects",
+          title: "projects",
+          description: "A small selection of research systems and side projects.",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/projects/";
+          },
         },{id: "post-远程连接服务器时的-ai-编程工具实践与配置指南",
         
           title: "远程连接服务器时的 AI 编程工具实践与配置指南",
@@ -144,8 +151,8 @@ ninja.data = [{
             window.location.href = "/blog/2024/formatting-and-links/";
           
         },
-      },{id: "news-awarded-funding-from-the-quot-qiyan-program-quot",
-          title: 'Awarded funding from the &amp;quot;Qiyan” Program&amp;quot;',
+      },{id: "news-awarded-funding-from-the-quot-qiyan-quot-program",
+          title: 'Awarded funding from the &amp;quot;Qiyan&amp;quot; Program',
           description: "",
           section: "News",handler: () => {
               window.location.href = "/news/20240905/";
@@ -155,7 +162,17 @@ ninja.data = [{
           section: "News",},{id: "news-one-paper-accepted-by-advanced-engineering-informatics-ccf-b-sci-q1",
           title: 'One Paper accepted by Advanced Engineering Informatics(CCF-B, SCI-Q1)! 🎉🎉🎉',
           description: "",
-          section: "News",},{
+          section: "News",},{id: "projects-knots",
+          title: 'Knots',
+          description: "A large-scale expert-annotated dataset and prompt optimization pipeline for NOTAM semantic parsing.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/knots/";
+            },},{id: "projects-notam-evolve",
+          title: 'NOTAM-Evolve',
+          description: "A knowledge-guided self-evolving framework with LLMs for NOTAM interpretation.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/notam-evolve/";
+            },},{
         id: 'social-email',
         title: 'email',
         section: 'Socials',
