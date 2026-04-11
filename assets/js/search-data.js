@@ -37,13 +37,6 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/repositories/";
           },
-        },{id: "nav-cv",
-          title: "cv",
-          description: "Not prepared yet.",
-          section: "Navigation",
-          handler: () => {
-            window.location.href = "/cv/";
-          },
         },{id: "post-远程连接服务器时的-ai-编程工具实践与配置指南",
         
           title: "远程连接服务器时的 AI 编程工具实践与配置指南",
