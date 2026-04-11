@@ -3,14 +3,18 @@
   <nav id="navbar" class="navbar navbar-light navbar-expand-sm {% if site.navbar_fixed %}fixed-top{% else %}sticky-top{% endif %}" role="navigation">
     <div class="container">
       <a class="navbar-brand title font-weight-lighter" href="{{ site.baseurl }}/">
-        {% if site.first_name %}
-          <span class="font-weight-bold">{{- site.first_name -}}</span>
-        {% endif %}
-        {% if site.middle_name %}
-          {{- site.middle_name -}}
-        {% endif %}
-        {% if site.last_name %}
-          {{- site.last_name -}}
+        {% if site.title %}
+          <span class="font-weight-bold">{{- site.title -}}</span>
+        {% else %}
+          {% if site.first_name %}
+            <span class="font-weight-bold">{{- site.first_name -}}</span>
+          {% endif %}
+          {% if site.middle_name %}
+            {{- site.middle_name -}}
+          {% endif %}
+          {% if site.last_name %}
+            {{- site.last_name -}}
+          {% endif %}
         {% endif %}
       </a>
       <!-- Navbar Toggle -->

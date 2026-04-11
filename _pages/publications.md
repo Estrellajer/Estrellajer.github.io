@@ -17,6 +17,11 @@ nav_order: 2
     padding-top: 1rem;
   }
 
+  .publications-landing a:hover {
+    color: var(--pub-accent);
+    text-decoration: none;
+  }
+
   .publications-hero {
     margin-bottom: 2.2rem;
   }
@@ -101,7 +106,14 @@ nav_order: 2
   }
 
   .publications-landing .publications .abbr {
+    display: flex;
+    flex-direction: column;
+    gap: 0.85rem;
     margin-bottom: 0;
+    padding: 0.9rem;
+    border: 1px solid rgba(85, 122, 159, 0.14);
+    border-radius: 1.15rem;
+    background: linear-gradient(180deg, #f9fbfd, #f3f6f9);
   }
 
   .publications-landing .publications .abbr abbr {
@@ -109,14 +121,22 @@ nav_order: 2
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    padding: 0.3rem 0.72rem;
-    margin-bottom: 0.8rem;
-    border-radius: 999px;
-    background: rgba(17, 19, 23, 0.05) !important;
-    color: var(--pub-soft) !important;
-    font-weight: 600;
-    font-size: 0.76rem;
-    letter-spacing: 0.08em;
+    align-self: flex-start;
+    padding: 0.48rem 1rem;
+    margin-bottom: 0;
+    border-radius: 0.5rem;
+    background: linear-gradient(180deg, #245bb7, #173f89) !important;
+    color: #f8fbff !important;
+    box-shadow: 0 8px 18px rgba(23, 63, 137, 0.2);
+    font-weight: 700;
+    font-size: 0.8rem;
+    letter-spacing: 0.06em;
+  }
+
+  .publications-landing .publications .abbr abbr a,
+  .publications-landing .publications .abbr abbr div {
+    color: inherit !important;
+    text-decoration: none !important;
   }
 
   .publications-landing .publications figure {
@@ -125,12 +145,12 @@ nav_order: 2
 
   .publications-landing .publications .preview {
     width: 100%;
-    aspect-ratio: 16 / 9;
+    aspect-ratio: 16 / 10;
     object-fit: contain;
-    padding: 0.45rem;
-    border: 1px solid rgba(17, 19, 23, 0.08);
-    border-radius: 0.9rem;
-    background: #f7f8fa;
+    padding: 0;
+    border: 0;
+    border-radius: 0.85rem;
+    background: transparent;
     box-shadow: none !important;
   }
 

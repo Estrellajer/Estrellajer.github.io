@@ -16,11 +16,16 @@ layout: default
     color: inherit;
   }
 
+  .home-landing a:hover {
+    color: var(--home-accent);
+    text-decoration: none;
+  }
+
   .home-hero {
     display: grid;
     grid-template-columns: minmax(0, 1.1fr) 380px;
     gap: 2.25rem;
-    align-items: start;
+    align-items: end;
     margin-bottom: 2.25rem;
   }
 
@@ -62,6 +67,10 @@ layout: default
   }
 
   .home-portrait-wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 100%;
     border-left: 1px solid var(--home-line);
     padding-left: 1.75rem;
   }
@@ -85,29 +94,27 @@ layout: default
     margin-top: 1.25rem;
   }
 
-  .home-side-title {
-    margin: 0 0 0.8rem;
-    color: var(--home-text);
-    font-size: 1rem;
-    font-weight: 600;
-    letter-spacing: -0.01em;
-  }
-
   .home-research {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.65rem;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.7rem;
   }
 
   .home-chip {
-    display: inline-flex;
+    display: flex;
     align-items: center;
-    min-height: 2.35rem;
-    padding: 0 0.9rem;
-    border-radius: 999px;
-    background: var(--home-accent-soft);
+    justify-content: center;
+    width: 100%;
+    min-height: 3rem;
+    padding: 0.5rem 0.95rem;
+    border: 1px solid rgba(85, 122, 159, 0.14);
+    border-radius: 1rem;
+    background: linear-gradient(180deg, rgba(85, 122, 159, 0.12), rgba(85, 122, 159, 0.07));
     color: #496885;
     font-size: 0.92rem;
+    font-weight: 500;
+    line-height: 1.45;
+    text-align: center;
   }
 
   .home-section {
@@ -182,7 +189,14 @@ layout: default
   }
 
   .home-publications .publications .abbr {
+    display: flex;
+    flex-direction: column;
+    gap: 0.85rem;
     margin-bottom: 0;
+    padding: 0.9rem;
+    border: 1px solid rgba(85, 122, 159, 0.14);
+    border-radius: 1.15rem;
+    background: linear-gradient(180deg, #f9fbfd, #f3f6f9);
   }
 
   .home-publications .publications .abbr abbr {
@@ -190,14 +204,22 @@ layout: default
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    padding: 0.3rem 0.72rem;
-    margin-bottom: 0.8rem;
-    border-radius: 999px;
-    background: rgba(17, 19, 23, 0.05) !important;
-    color: var(--home-soft) !important;
-    font-weight: 600;
-    font-size: 0.76rem;
-    letter-spacing: 0.08em;
+    align-self: flex-start;
+    padding: 0.48rem 1rem;
+    margin-bottom: 0;
+    border-radius: 0.5rem;
+    background: linear-gradient(180deg, #245bb7, #173f89) !important;
+    color: #f8fbff !important;
+    box-shadow: 0 8px 18px rgba(23, 63, 137, 0.2);
+    font-weight: 700;
+    font-size: 0.8rem;
+    letter-spacing: 0.06em;
+  }
+
+  .home-publications .publications .abbr abbr a,
+  .home-publications .publications .abbr abbr div {
+    color: inherit !important;
+    text-decoration: none !important;
   }
 
   .home-publications .publications figure {
@@ -206,12 +228,12 @@ layout: default
 
   .home-publications .publications .preview {
     width: 100%;
-    aspect-ratio: 16 / 9;
+    aspect-ratio: 16 / 10;
     object-fit: contain;
-    padding: 0.45rem;
-    border: 1px solid rgba(17, 19, 23, 0.08);
-    border-radius: 0.9rem;
-    background: #f7f8fa;
+    padding: 0;
+    border: 0;
+    border-radius: 0.85rem;
+    background: transparent;
     box-shadow: none !important;
   }
 
@@ -255,6 +277,12 @@ layout: default
       max-width: 420px;
     }
   }
+
+  @media (max-width: 520px) {
+    .home-research {
+      grid-template-columns: 1fr;
+    }
+  }
 </style>
 
 <div class="home-landing">
@@ -275,7 +303,6 @@ layout: default
         {% endif %}
         {% if page.research_areas %}
           <div class="home-side-block">
-            <h2 class="home-side-title">Research Areas</h2>
             <div class="home-research">
               {% for area in page.research_areas %}
                 <span class="home-chip">{{ area }}</span>
