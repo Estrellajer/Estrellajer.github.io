@@ -92,6 +92,13 @@ layout: default
     box-shadow: 0 18px 42px rgba(15, 23, 42, 0.05);
   }
 
+  .home-portrait-quote {
+    margin-top: 0.95rem;
+    color: var(--home-soft);
+    font-size: 0.95rem;
+    line-height: 1.8;
+  }
+
   .home-section {
     margin-top: 2.25rem;
   }
@@ -256,6 +263,9 @@ layout: default
       {% assign profile_image_path = page.profile.image | prepend: 'assets/img/' %}
       <aside class="home-portrait-wrap">
         <img class="home-portrait" src="{{ profile_image_path | relative_url | bust_file_cache }}" alt="{{ page.hero_name }}">
+        {% if page.photo_quote %}
+          <div class="home-portrait-quote">{{ page.photo_quote }}</div>
+        {% endif %}
       </aside>
     {% endif %}
   </section>

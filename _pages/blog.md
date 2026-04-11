@@ -12,97 +12,203 @@ pagination:
   sort_field: date
   sort_reverse: true
   trail:
-    before: 1 # The number of links before the current page
-    after: 3 # The number of links after the current page
+    before: 1
+    after: 3
 ---
 
-<div class="post">
+<style>
+  .blog-landing {
+    --blog-text: var(--global-text-color);
+    --blog-muted: #69717d;
+    --blog-soft: #8d96a3;
+    --blog-line: rgba(17, 19, 23, 0.1);
+    --blog-accent: #557a9f;
+    --blog-accent-soft: rgba(85, 122, 159, 0.12);
+    padding-top: 1rem;
+  }
 
-{% assign blog_name_size = site.blog_name | size %}
-{% assign blog_description_size = site.blog_description | size %}
+  .blog-hero {
+    margin-bottom: 2.2rem;
+  }
 
-{% if blog_name_size > 0 or blog_description_size > 0 %}
+  .blog-eyebrow {
+    margin-bottom: 0.9rem;
+    color: var(--blog-accent);
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+  }
 
-  <div class="header-bar">
-    <h1>{{ site.blog_name }}</h1>
-    <h2>我与我周旋久，宁作我</h2>
-  </div>
-  {% endif %}
+  .blog-title {
+    margin: 0;
+    font-size: clamp(2.6rem, 5vw, 4.2rem);
+    line-height: 0.98;
+    letter-spacing: -0.04em;
+    font-weight: 600;
+  }
 
-{% if site.display_tags and site.display_tags.size > 0 or site.display_categories and site.display_categories.size > 0 %}
+  .blog-subtitle {
+    margin-top: 0.9rem;
+    max-width: 42rem;
+    color: var(--blog-muted);
+    font-size: 1.05rem;
+    line-height: 1.85;
+  }
 
-  <div class="tag-category-list">
-    <ul class="p-0 m-0">
-      {% for tag in site.display_tags %}
-        <li>
-          <i class="fa-solid fa-hashtag fa-sm"></i> <a href="{{ tag | slugify | prepend: '/blog/tag/' | relative_url }}">{{ tag }}</a>
-        </li>
-        {% unless forloop.last %}
-          <p>&bull;</p>
-        {% endunless %}
-      {% endfor %}
-      {% if site.display_categories.size > 0 and site.display_tags.size > 0 %}
-        <p>&bull;</p>
-      {% endif %}
-      {% for category in site.display_categories %}
-        <li>
-          <i class="fa-solid fa-tag fa-sm"></i> <a href="{{ category | slugify | prepend: '/blog/category/' | relative_url }}">{{ category }}</a>
-        </li>
-        {% unless forloop.last %}
-          <p>&bull;</p>
-        {% endunless %}
-      {% endfor %}
-    </ul>
-  </div>
-  {% endif %}
+  .blog-filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.7rem;
+    margin-top: 1.4rem;
+  }
 
-{% assign featured_posts = site.posts | where: "featured", "true" %}
-{% if featured_posts.size > 0 %}
-<br>
+  .blog-filter {
+    display: inline-flex;
+    align-items: center;
+    min-height: 2.2rem;
+    padding: 0 0.9rem;
+    border-radius: 999px;
+    background: var(--blog-accent-soft);
+    color: #496885;
+    font-size: 0.92rem;
+    text-decoration: none !important;
+  }
 
-<div class="container featured-posts">
-{% assign is_even = featured_posts.size | modulo: 2 %}
-<div class="row row-cols-{% if featured_posts.size <= 2 or is_even == 0 %}2{% else %}3{% endif %}">
-{% for post in featured_posts %}
-<div class="col mb-4">
-<a href="{{ post.url | relative_url }}">
-<div class="card hoverable">
-<div class="row g-0">
-<div class="col-md-12">
-<div class="card-body">
-<div class="float-right">
-<i class="fa-solid fa-thumbtack fa-xs"></i>
-</div>
-<h3 class="card-title text-lowercase">{{ post.title }}</h3>
-<p class="card-text">{{ post.description }}</p>
+  .blog-list {
+    display: grid;
+    gap: 1.8rem;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
 
-                    {% if post.external_source == blank %}
-                      {% assign read_time = post.content | number_of_words | divided_by: 180 | plus: 1 %}
-                    {% else %}
-                      {% assign read_time = post.feed_content | strip_html | number_of_words | divided_by: 180 | plus: 1 %}
-                    {% endif %}
-                    {% assign year = post.date | date: "%Y" %}
+  .blog-item {
+    padding-top: 1.8rem;
+    border-top: 1px solid var(--blog-line);
+  }
 
-                    <p class="post-meta">
-                      {{ read_time }} min read &nbsp; &middot; &nbsp;
-                      <a href="{{ year | prepend: '/blog/' | relative_url }}">
-                        <i class="fa-solid fa-calendar fa-sm"></i> {{ year }} </a>
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </a>
-        </div>
-      {% endfor %}
-      </div>
+  .blog-item:first-child {
+    padding-top: 0;
+    border-top: 0;
+  }
+
+  .blog-item-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 220px;
+    gap: 1.5rem;
+    align-items: start;
+  }
+
+  .blog-item-date {
+    color: var(--blog-soft);
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+  }
+
+  .blog-item-title {
+    display: inline-block;
+    margin: 0.45rem 0 0.7rem;
+    font-size: 1.45rem;
+    line-height: 1.35;
+    font-weight: 600;
+    letter-spacing: -0.02em;
+    color: var(--blog-text);
+    text-decoration: none;
+  }
+
+  .blog-item-title:hover {
+    text-decoration: none;
+  }
+
+  .blog-item-desc {
+    margin: 0 0 0.8rem;
+    color: var(--blog-muted);
+    line-height: 1.85;
+  }
+
+  .blog-item-meta,
+  .blog-item-taxonomy {
+    color: var(--blog-soft);
+    font-size: 0.95rem;
+    line-height: 1.8;
+  }
+
+  .blog-item-taxonomy a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  .blog-item-taxonomy a:hover {
+    color: var(--blog-accent);
+    text-decoration: none;
+  }
+
+  .blog-item-thumb {
+    width: 100%;
+    aspect-ratio: 16 / 10;
+    object-fit: cover;
+    border-radius: 1rem;
+    border: 1px solid rgba(17, 19, 23, 0.08);
+    background: #eef2f6;
+  }
+
+  .blog-pagination .pagination {
+    margin-top: 2.2rem;
+    gap: 0.35rem;
+  }
+
+  .blog-pagination .page-link {
+    border: 1px solid var(--blog-line);
+    border-radius: 999px !important;
+    color: var(--blog-text);
+    background: transparent;
+    min-width: 2.6rem;
+    text-align: center;
+  }
+
+  .blog-pagination .page-item.active .page-link,
+  .blog-pagination .page-link:hover {
+    background: var(--blog-accent-soft);
+    border-color: transparent;
+    color: #496885;
+  }
+
+  @media (max-width: 800px) {
+    .blog-item-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .blog-item-thumb {
+      max-width: 320px;
+    }
+  }
+</style>
+
+<div class="blog-landing">
+  <section class="blog-hero">
+    <div class="blog-eyebrow">Blog</div>
+    <h1 class="blog-title">Notes on research, coding, and life.</h1>
+    <div class="blog-subtitle">
+      A quieter archive for technical notes, project logs, and occasional reflections.
     </div>
-    <hr>
 
-{% endif %}
+    {% if site.display_tags and site.display_tags.size > 0 or site.display_categories and site.display_categories.size > 0 %}
+      <div class="blog-filters">
+        {% for tag in site.display_tags %}
+          <a class="blog-filter" href="{{ tag | slugify | prepend: '/blog/tag/' | relative_url }}"># {{ tag }}</a>
+        {% endfor %}
+        {% for category in site.display_categories %}
+          <a class="blog-filter" href="{{ category | slugify | prepend: '/blog/category/' | relative_url }}">{{ category }}</a>
+        {% endfor %}
+      </div>
+    {% endif %}
 
-  <ul class="post-list">
+  </section>
 
+  <ul class="blog-list">
     {% if page.pagination.enabled %}
       {% assign postlist = paginator.posts %}
     {% else %}
@@ -112,87 +218,62 @@ pagination:
     {% assign postlist = postlist | where_exp: "post", "post.hidden != true" %}
 
     {% for post in postlist %}
+      {% if post.external_source == blank %}
+        {% assign read_time = post.content | number_of_words | divided_by: 180 | plus: 1 %}
+      {% else %}
+        {% assign read_time = post.feed_content | strip_html | number_of_words | divided_by: 180 | plus: 1 %}
+      {% endif %}
 
-    {% if post.external_source == blank %}
-      {% assign read_time = post.content | number_of_words | divided_by: 180 | plus: 1 %}
-    {% else %}
-      {% assign read_time = post.feed_content | strip_html | number_of_words | divided_by: 180 | plus: 1 %}
-    {% endif %}
-    {% assign year = post.date | date: "%Y" %}
-    {% assign tags = post.tags | join: "" %}
-    {% assign categories = post.categories | join: "" %}
+      <li class="blog-item">
+        <div class="blog-item-grid">
+          <div>
+            <div class="blog-item-date">{{ post.date | date: "%b %d, %Y" }}</div>
 
-    <li>
+            {% if post.redirect == blank %}
+              <a class="blog-item-title" href="{{ post.url | relative_url }}">{{ post.title }}</a>
+            {% elsif post.redirect contains '://' %}
+              <a class="blog-item-title" href="{{ post.redirect }}" target="_blank">{{ post.title }}</a>
+            {% else %}
+              <a class="blog-item-title" href="{{ post.redirect | relative_url }}">{{ post.title }}</a>
+            {% endif %}
 
-{% if post.thumbnail %}
+            {% if post.description %}
+              <p class="blog-item-desc">{{ post.description }}</p>
+            {% endif %}
 
-<div class="row">
-          <div class="col-sm-9">
-{% endif %}
-        <h3>
-        {% if post.redirect == blank %}
-          <a class="post-title" href="{{ post.url | relative_url }}">{{ post.title }}</a>
-        {% elsif post.redirect contains '://' %}
-          <a class="post-title" href="{{ post.redirect }}" target="_blank">{{ post.title }}</a>
-          <svg width="2rem" height="2rem" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
-            <path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path>
-          </svg>
-        {% else %}
-          <a class="post-title" href="{{ post.redirect | relative_url }}">{{ post.title }}</a>
-        {% endif %}
-      </h3>
-      <p>{{ post.description }}</p>
-      <p class="post-meta">
-        {{ read_time }} min read &nbsp; &middot; &nbsp;
-        {{ post.date | date: '%B %d, %Y' }}
-        {% if post.external_source %}
-        &nbsp; &middot; &nbsp; {{ post.external_source }}
-        {% endif %}
-      </p>
-      <p class="post-tags">
-        <a href="{{ year | prepend: '/blog/' | relative_url }}">
-          <i class="fa-solid fa-calendar fa-sm"></i> {{ year }} </a>
+            <div class="blog-item-meta">{{ read_time }} min read</div>
 
-          {% if tags != "" %}
-          &nbsp; &middot; &nbsp;
-            {% for tag in post.tags %}
-            <a href="{{ tag | slugify | prepend: '/blog/tag/' | relative_url }}">
-              <i class="fa-solid fa-hashtag fa-sm"></i> {{ tag }}</a>
-              {% unless forloop.last %}
-                &nbsp;
-              {% endunless %}
-              {% endfor %}
+            {% assign tags = post.tags | join: "" %}
+            {% assign categories = post.categories | join: "" %}
+            {% if tags != "" or categories != "" %}
+              <div class="blog-item-taxonomy">
+                {% for tag in post.tags %}
+                  <a href="{{ tag | slugify | prepend: '/blog/tag/' | relative_url }}"># {{ tag }}</a>{% unless forloop.last %} · {% endunless %}
+                {% endfor %}
+                {% if tags != "" and categories != "" %} · {% endif %}
+                {% for category in post.categories %}
+                  <a href="{{ category | slugify | prepend: '/blog/category/' | relative_url }}">{{ category }}</a>{% unless forloop.last %} · {% endunless %}
+                {% endfor %}
+              </div>
+            {% endif %}
+          </div>
+
+          {% if post.thumbnail %}
+            <div>
+              <img class="blog-item-thumb" src="{{ post.thumbnail | relative_url }}" alt="{{ post.title }}">
+            </div>
           {% endif %}
-
-          {% if categories != "" %}
-          &nbsp; &middot; &nbsp;
-            {% for category in post.categories %}
-            <a href="{{ category | slugify | prepend: '/blog/category/' | relative_url }}">
-              <i class="fa-solid fa-tag fa-sm"></i> {{ category }}</a>
-              {% unless forloop.last %}
-                &nbsp;
-              {% endunless %}
-              {% endfor %}
-          {% endif %}
-    </p>
-
-{% if post.thumbnail %}
-
-</div>
-
-  <div class="col-sm-3">
-    <img class="card-img" src="{{ post.thumbnail | relative_url }}" style="object-fit: cover; height: 90%" alt="image">
-  </div>
-</div>
-{% endif %}
-    </li>
-
+        </div>
+      </li>
     {% endfor %}
 
   </ul>
 
 {% if page.pagination.enabled %}
+
+<div class="blog-pagination">
 {% include pagination.liquid %}
+</div>
 {% endif %}
 
 </div>

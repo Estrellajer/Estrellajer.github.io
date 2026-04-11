@@ -10,17 +10,16 @@ categories: Skill
 ### python语法
 
 #### dict
+
 d = defaultdict(list)等价
 if key not in d:
-    d[key] = []
+d[key] = []
 字典的 values()
 d.values()
-
 
 返回：
 
 dict_values([...])
-
 
 不是 list，而是视图对象。
 
@@ -29,12 +28,13 @@ dict_values([...])
 list(d.values())
 
 #### str
+
 sorted返回的是list而不是str
 sorted("eat")
+
 # ['a','e','t']
 
 '分隔符'.join(可迭代对象)
-
 
 三数之和：好，给你一份**极简、高密度版本**，只保留核心结构和高频错误。
 
@@ -46,9 +46,9 @@ sorted("eat")
 
 为：
 
-* 双指针创造单调性
-* 去重
-* 剪枝
+- 双指针创造单调性
+- 去重
+- 剪枝
 
 ---
 
@@ -79,9 +79,9 @@ while j < k:
     s = nums[i] + nums[j] + nums[k]
 ```
 
-* s > 0 → k--
-* s < 0 → j++
-* s == 0 → 记录 + 双边跳重
+- s > 0 → k--
+- s < 0 → j++
+- s == 0 → 记录 + 双边跳重
 
 ---
 
@@ -138,7 +138,6 @@ O(n²)
 
 需要我再压缩成考试速记卡片吗？
 
-
 range(1, n) 在 n=1 时发生了什么？
 在 Python 中，range(start, stop) 的规则是：从 start 开始，到 stop 之前结束（不包含 stop）。
 
@@ -147,7 +146,6 @@ range(1, n) 在 n=1 时发生了什么？
 此时循环语句变为 for i in range(1, 1):。
 
 因为 start (1) 已经不小于 stop (1) 了，所以这个循环的迭代次数为 0。
-
 
 ### 后记
 

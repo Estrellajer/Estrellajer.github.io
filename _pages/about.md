@@ -6,6 +6,7 @@ subtitle:
 hero_eyebrow: Graduate Student in AI
 hero_name: Maoqi Liu
 hero_subtitle: Graduate student in artificial intelligence at BUPT, working on continual learning and LLM applications.
+photo_quote: 失败会积累，成功会消失。
 research_areas:
   - Continual Learning
   - Lifelong Learning

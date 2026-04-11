@@ -131,23 +131,12 @@
     {
       "name": "Research",
       "icon": "fa-solid fa-microscope",
-      "keywords": [
-        "Continual Learning",
-        "Lifelong Learning",
-        "Incremental Learning",
-        "Large Language Models",
-        "LLM Applications",
-        "Deep Learning"
-      ]
+      "keywords": ["Continual Learning", "Lifelong Learning", "Incremental Learning", "Large Language Models", "LLM Applications", "Deep Learning"]
     },
     {
       "name": "Leadership & Activities",
       "icon": "fa-solid fa-users",
-      "keywords": [
-        "Vice President of BUPT's Long-distance Running Association",
-        "Debate Team Champion",
-        "Class Leader"
-      ]
+      "keywords": ["Vice President of BUPT's Long-distance Running Association", "Debate Team Champion", "Class Leader"]
     }
   ],
   "references": [],
@@ -155,12 +144,7 @@
     {
       "name": "Job Recommendation System Based on Knowledge Graphs",
       "summary": "This project leverages a knowledge graph to help university students quickly identify ideal job opportunities and clarify their career positioning. By fine-tuning the open-source Paddle large language model for skill extraction and quantitative evaluation, the project fills gaps in job-related knowledge graphs and enhances visual analytics for understanding employment trends.",
-      "highlights": [
-        "Knowledge Graph Construction",
-        "LLM Fine-tuning",
-        "Skill Extraction",
-        "Visual Analytics"
-      ],
+      "highlights": ["Knowledge Graph Construction", "LLM Fine-tuning", "Skill Extraction", "Visual Analytics"],
       "startDate": "2024-04-01",
       "endDate": "2024-06-01",
       "url": ""
