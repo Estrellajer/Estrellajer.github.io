@@ -2,21 +2,48 @@
   <!-- Nav Bar -->
   <nav id="navbar" class="navbar navbar-light navbar-expand-sm {% if site.navbar_fixed %}fixed-top{% else %}sticky-top{% endif %}" role="navigation">
     <div class="container">
-      <a class="navbar-brand title font-weight-lighter" href="{{ site.baseurl }}/">
-        {% if site.title %}
-          <span class="font-weight-bold">{{- site.title -}}</span>
-        {% else %}
-          {% if site.first_name %}
-            <span class="font-weight-bold">{{- site.first_name -}}</span>
+      <div class="navbar-brand-group">
+        <a class="navbar-brand title font-weight-lighter" href="{{ site.baseurl }}/">
+          {% if site.title %}
+            <span class="font-weight-bold">{{- site.title -}}</span>
+          {% else %}
+            {% if site.first_name %}
+              <span class="font-weight-bold">{{- site.first_name -}}</span>
+            {% endif %}
+            {% if site.middle_name %}
+              {{- site.middle_name -}}
+            {% endif %}
+            {% if site.last_name %}
+              {{- site.last_name -}}
+            {% endif %}
           {% endif %}
-          {% if site.middle_name %}
-            {{- site.middle_name -}}
-          {% endif %}
-          {% if site.last_name %}
-            {{- site.last_name -}}
-          {% endif %}
-        {% endif %}
-      </a>
+        </a>
+        <div class="brand-socials" aria-label="Quick links">
+          <a
+            class="brand-social-link"
+            href="https://github.com/Estrellajer"
+            rel="external nofollow noopener"
+            target="_blank"
+            aria-label="GitHub"
+            title="GitHub"
+          >
+            <i class="fa-brands fa-github"></i>
+          </a>
+          <a class="brand-social-link" href="mailto:liumaoqi@bupt.edu.cn" aria-label="Email" title="Email">
+            <i class="fa-regular fa-envelope"></i>
+          </a>
+          <a
+            class="brand-social-link"
+            href="https://openreview.net/profile?id=%7EMaoqi_Liu2"
+            rel="external nofollow noopener"
+            target="_blank"
+            aria-label="OpenReview"
+            title="OpenReview"
+          >
+            <i class="ai ai-open-access"></i>
+          </a>
+        </div>
+      </div>
       <!-- Navbar Toggle -->
       <button
         class="navbar-toggler collapsed ml-auto"

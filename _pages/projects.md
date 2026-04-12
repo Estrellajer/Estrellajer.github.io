@@ -55,54 +55,103 @@ description: A small selection of research systems and side projects.
 
   .project-card {
     display: grid;
-    gap: 1rem;
-    padding: 1.15rem;
-    border: 1px solid rgba(17, 19, 23, 0.08);
-    border-radius: 1.05rem;
-    background: rgba(255, 255, 255, 0.76);
+    gap: 0.95rem;
+    padding: 1.2rem;
+    border: 1px solid rgba(85, 122, 159, 0.14);
+    border-radius: 1.15rem;
+    background:
+      linear-gradient(180deg, rgba(255, 255, 255, 0.98), rgba(243, 247, 252, 0.98)),
+      var(--global-card-bg-color);
+    box-shadow: 0 14px 34px rgba(16, 24, 40, 0.06);
     text-decoration: none !important;
+    transition:
+      transform 0.18s ease,
+      box-shadow 0.18s ease,
+      border-color 0.18s ease;
+  }
+
+  .project-card:hover {
+    transform: translateY(-3px);
+    border-color: rgba(85, 122, 159, 0.24);
+    box-shadow: 0 22px 40px rgba(16, 24, 40, 0.1);
+  }
+
+  .project-card-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.75rem;
+  }
+
+  .project-card-badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.55rem;
+    align-items: center;
+  }
+
+  .project-badge,
+  .project-link-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    min-height: 1.9rem;
+    padding: 0 0.74rem;
+    border: 1px solid rgba(85, 122, 159, 0.14);
+    border-radius: 999px;
+    font-size: 0.76rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+
+  .project-badge {
+    background: linear-gradient(180deg, rgba(85, 122, 159, 0.12), rgba(85, 122, 159, 0.08));
+    color: #3b5c7e;
+  }
+
+  .project-link-pill {
+    background: rgba(17, 19, 23, 0.04);
+    color: var(--projects-soft);
+  }
+
+  .project-card-thumb-wrap {
+    padding: 0.72rem;
+    border: 1px solid rgba(85, 122, 159, 0.12);
+    border-radius: 1rem;
+    background:
+      radial-gradient(circle at top left, rgba(85, 122, 159, 0.08), transparent 44%),
+      linear-gradient(180deg, #fafcff 0%, #eef3f8 100%);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.78);
   }
 
   .project-card-thumb {
     width: 100%;
     aspect-ratio: 16 / 9;
     object-fit: contain;
-    padding: 0.45rem;
-    border: 1px solid rgba(17, 19, 23, 0.08);
-    border-radius: 0.9rem;
-    background: #f7f8fa;
+    padding: 0.35rem;
+    border: 1px solid rgba(85, 122, 159, 0.08);
+    border-radius: 0.88rem;
+    background: rgba(255, 255, 255, 0.86);
+  }
+
+  .project-card-copy {
+    display: grid;
+    gap: 0.55rem;
   }
 
   .project-card-title {
     margin: 0;
     color: var(--projects-text);
-    font-size: 1.24rem;
+    font-size: 1.3rem;
     font-weight: 600;
-    line-height: 1.38;
+    line-height: 1.34;
   }
 
   .project-card-desc {
-    margin: 0.48rem 0 0;
-    color: var(--projects-muted);
-    line-height: 1.8;
-  }
-
-  .project-card-meta {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.6rem;
-  }
-
-  .project-pill {
-    display: inline-flex;
-    align-items: center;
-    min-height: 2rem;
-    padding: 0 0.8rem;
-    border-radius: 999px;
-    background: rgba(17, 19, 23, 0.05);
-    color: var(--projects-soft);
-    font-size: 0.84rem;
-    letter-spacing: 0.03em;
+    margin: 0;
+    color: #5f6977;
+    line-height: 1.78;
   }
 
   @media (max-width: 800px) {
@@ -125,20 +174,27 @@ description: A small selection of research systems and side projects.
     {% assign sorted_projects = site.projects | sort: "importance" %}
     {% for project in sorted_projects %}
       <a class="project-card" href="{{ project.url | relative_url }}">
+        <div class="project-card-head">
+          <div class="project-card-badges">
+            {% if project.category %}
+              <span class="project-badge">{{ project.category }}</span>
+            {% endif %}
+          </div>
+          {% if project.github %}
+            <span class="project-link-pill">
+              <i class="fa-brands fa-github"></i>
+              <span>GitHub</span>
+            </span>
+          {% endif %}
+        </div>
         {% if project.img %}
-          <img class="project-card-thumb" src="{{ project.img | relative_url }}" alt="{{ project.title }}">
+          <div class="project-card-thumb-wrap">
+            <img class="project-card-thumb" src="{{ project.img | relative_url }}" alt="{{ project.title }}">
+          </div>
         {% endif %}
-        <div>
+        <div class="project-card-copy">
           <h2 class="project-card-title">{{ project.title }}</h2>
           <p class="project-card-desc">{{ project.description }}</p>
-        </div>
-        <div class="project-card-meta">
-          {% if project.category %}
-            <span class="project-pill">{{ project.category }}</span>
-          {% endif %}
-          {% if project.github %}
-            <span class="project-pill">GitHub</span>
-          {% endif %}
         </div>
       </a>
     {% endfor %}

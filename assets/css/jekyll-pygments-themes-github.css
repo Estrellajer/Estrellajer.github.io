@@ -1,4 +1,5 @@
 /* https://github.com/jwarby/jekyll-pygments-themes */
+/* Site-tuned: blue-gray palette aligned with --global-theme-color #557a9f */
 .highlight .hll {
   background-color: #ffffcc;
 }
@@ -7,8 +8,8 @@
   font-style: italic;
 } /* Comment */
 .highlight .err {
-  color: #a61717;
-  background-color: #e3d2d2;
+  color: #466887;
+  background-color: rgba(85, 122, 159, 0.12);
 } /* Error */
 .highlight .k {
   color: #000000;
@@ -38,14 +39,14 @@
 } /* Comment.Special */
 .highlight .gd {
   color: #000000;
-  background-color: #ffdddd;
+  background-color: #e8eef4;
 } /* Generic.Deleted */
 .highlight .ge {
   color: #000000;
   font-style: italic;
 } /* Generic.Emph */
 .highlight .gr {
-  color: #aa0000;
+  color: #556b8a;
 } /* Generic.Error */
 .highlight .gh {
   color: #999999;
@@ -67,7 +68,7 @@
   color: #aaaaaa;
 } /* Generic.Subheading */
 .highlight .gt {
-  color: #aa0000;
+  color: #556b8a;
 } /* Generic.Traceback */
 .highlight .kc {
   color: #000000;
@@ -97,7 +98,7 @@
   color: #009999;
 } /* Literal.Number */
 .highlight .s {
-  color: #d01040;
+  color: #466887;
 } /* Literal.String */
 .highlight .na {
   color: #008080;
@@ -120,15 +121,15 @@
   color: #800080;
 } /* Name.Entity */
 .highlight .ne {
-  color: #990000;
+  color: #4a5f6f;
   font-weight: bold;
 } /* Name.Exception */
 .highlight .nf {
-  color: #990000;
+  color: #4a5f6f;
   font-weight: bold;
 } /* Name.Function */
 .highlight .nl {
-  color: #990000;
+  color: #4a5f6f;
   font-weight: bold;
 } /* Name.Label */
 .highlight .nn {
@@ -160,37 +161,37 @@
   color: #009999;
 } /* Literal.Number.Oct */
 .highlight .sb {
-  color: #d01040;
+  color: #466887;
 } /* Literal.String.Backtick */
 .highlight .sc {
-  color: #d01040;
+  color: #466887;
 } /* Literal.String.Char */
 .highlight .sd {
-  color: #d01040;
+  color: #466887;
 } /* Literal.String.Doc */
 .highlight .s2 {
-  color: #d01040;
+  color: #466887;
 } /* Literal.String.Double */
 .highlight .se {
-  color: #d01040;
+  color: #466887;
 } /* Literal.String.Escape */
 .highlight .sh {
-  color: #d01040;
+  color: #466887;
 } /* Literal.String.Heredoc */
 .highlight .si {
-  color: #d01040;
+  color: #466887;
 } /* Literal.String.Interpol */
 .highlight .sx {
-  color: #d01040;
+  color: #466887;
 } /* Literal.String.Other */
 .highlight .sr {
   color: #009926;
 } /* Literal.String.Regex */
 .highlight .s1 {
-  color: #d01040;
+  color: #466887;
 } /* Literal.String.Single */
 .highlight .ss {
-  color: #990073;
+  color: #6b5a8a;
 } /* Literal.String.Symbol */
 .highlight .bp {
   color: #999999;

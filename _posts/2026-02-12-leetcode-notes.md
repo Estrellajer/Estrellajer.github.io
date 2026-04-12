@@ -7,128 +7,104 @@ tags: notes
 categories: Skill
 ---
 
-### python语法
+## Python 语法
 
-#### dict
+### dict
 
-d = defaultdict(list)等价
+```python
+d = defaultdict(list)
 if key not in d:
-d[key] = []
-字典的 values()
-d.values()
+    d[key] = []
+```
 
-返回：
+`d.values()` 返回的是 `dict_values([...])`，不是 `list`，而是一个视图对象。需要转成列表时可以写：
 
-dict_values([...])
-
-不是 list，而是视图对象。
-
-转换为列表：
-
+```python
 list(d.values())
+```
 
-#### str
+### str
 
-sorted返回的是list而不是str
-sorted("eat")
-
-# ['a','e','t']
-
-'分隔符'.join(可迭代对象)
-
-三数之和：好，给你一份**极简、高密度版本**，只保留核心结构和高频错误。
-
----
-
-# 一、核心思路（4 步）
-
-### 1️⃣ 排序
-
-为：
-
-- 双指针创造单调性
-- 去重
-- 剪枝
-
----
-
-### 2️⃣ 枚举第一个数 i
+`sorted("eat")` 返回的是 `list`，而不是 `str`：
 
 ```python
-for i in range(n-2):
+['a', 'e', 't']
 ```
 
-跳过重复：
+`'分隔符'.join(可迭代对象)`
+
+## 三数之和：极简版
+
+### 1. 排序
+
+作用：
+
+- 给双指针创造单调性
+- 方便去重
+- 便于剪枝
+
+### 2. 枚举第一个数 i
 
 ```python
-if i > 0 and nums[i] == nums[i-1]:
-    continue
+for i in range(n - 2):
+    if i > 0 and nums[i] == nums[i - 1]:
+        continue
 ```
 
----
+### 3. 双指针找另外两个数
 
-### 3️⃣ 双指针找两数
+```python
+j = i + 1
+k = n - 1
 
-```
-j = i+1
-k = n-1
-```
-
-```
 while j < k:
     s = nums[i] + nums[j] + nums[k]
 ```
 
-- s > 0 → k--
-- s < 0 → j++
-- s == 0 → 记录 + 双边跳重
+- `s > 0`：`k -= 1`
+- `s < 0`：`j += 1`
+- `s == 0`：记录答案，然后两边一起去重
 
----
-
-### 4️⃣ 去重（找到解后）
+### 4. 找到解后去重
 
 ```python
 j += 1
 k -= 1
-while j < k and nums[j] == nums[j-1]: j += 1
-while j < k and nums[k] == nums[k+1]: k -= 1
+
+while j < k and nums[j] == nums[j - 1]:
+    j += 1
+
+while j < k and nums[k] == nums[k + 1]:
+    k -= 1
 ```
 
----
+## 时间复杂度
 
-# 二、时间复杂度
-
-```
+```text
 O(n²)
 ```
 
----
+## 最常见错误
 
-# 三、最常见错误（高频 4 个）
+1. 写成 `if + if + else`。
+   必须是 `if / elif / else`。
 
-1. ❌ 写成 `if + if + else`
-   必须 `if / elif / else`
+2. 忘记排序。
+   双指针会直接失效。
 
-2. ❌ 忘排序
-   → 双指针失效
+3. 去重位置写错。
+   容易得到重复解。
 
-3. ❌ 去重位置错
-   → 重复解
+4. 找到解后只移动一边。
+   容易死循环。
 
-4. ❌ 找到解后只移动一边
-   → 死循环
+## 记忆模板
 
----
+> 排序 → 固定 `i` → 双指针逼近 → 找到解后双向去重
 
-# 四、记忆模板（一句话）
+更短的速记版：
 
-> 排序 → 固定 i → 双指针逼近 → 找到后双向去重
-
----
-
-如果你要更极简记忆版：
-
-```
+```text
 排序
 枚举 i
 两头夹
@@ -136,17 +112,19 @@ O(n²)
 两边跳
 ```
 
-需要我再压缩成考试速记卡片吗？
+## 补充：range(1, n) 在 n = 1 时会发生什么？
 
-range(1, n) 在 n=1 时发生了什么？
-在 Python 中，range(start, stop) 的规则是：从 start 开始，到 stop 之前结束（不包含 stop）。
+在 Python 里，`range(start, stop)` 表示“从 `start` 开始，到 `stop` 之前结束”，不包含 `stop`。
 
-如果 nums = [5]，那么 n = 1。
+如果 `nums = [5]`，那么 `n = 1`，此时：
 
-此时循环语句变为 for i in range(1, 1):。
+```python
+for i in range(1, 1):
+    ...
+```
 
-因为 start (1) 已经不小于 stop (1) 了，所以这个循环的迭代次数为 0。
+因为 `start == stop`，循环次数就是 `0`。
 
-### 后记
+## 后记
 
-只能说刷力扣还是要趁早，不要像笔者一样面对不知道什么时候的coding面，犹如面对达摩克里斯之剑一样。惴惴不安。
+刷力扣还是要趁早，不要像笔者一样，面对不知道什么时候到来的 coding 面，像面对达摩克利斯之剑一样惴惴不安。

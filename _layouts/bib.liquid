@@ -3,50 +3,51 @@
 <div class="row">
   {% if site.enable_publication_thumbnails %}
     <div class="col col-sm-2 abbr">
-      {%- if entry.abbr -%}
-        {%- if site.data.venues[entry.abbr] -%}
-          {% assign venue_style = null %}
-          {% if site.data.venues[entry.abbr].color != blank %}
-            {% assign venue_style = site.data.venues[entry.abbr].color | prepend: 'style="background-color:' | append: '"' %}
-          {%- endif -%}
-          <abbr
-            class="badge rounded w-100"
-            {% if venue_style %}
-              {{ venue_style }}
-            {% endif -%}
-          >
-            {% if site.data.venues[entry.abbr].url %}
-              <a href="{{ site.data.venues[entry.abbr].url }}">{{ entry.abbr }}</a>
-            {% else %}
-              <div>{{- entry.abbr -}}</div>
-            {% endif %}
-          </abbr>
-        {% else %}
-          <abbr class="badge rounded w-100">{{ entry.abbr }}</abbr>
-        {% endif %}
-      {% endif %}
       {% if entry.preview %}
-        {% if entry.preview contains '://' %}
-          <img class="preview z-depth-1 rounded" src="{{ entry.preview }}">
-        {% else %}
-          {% assign entry_path = entry.preview | prepend: '/assets/img/publication_preview/' %}
-          {%
-            include figure.liquid
-            loading="eager"
-            path=entry_path
-            sizes = "200px"
-            class="preview z-depth-1 rounded"
-            zoomable=true
-            avoid_scaling=true
-            alt=entry.preview
-          %}
-        {% endif %}
+        <div class="publication-preview">
+          {% if entry.preview contains '://' %}
+            <img class="preview" src="{{ entry.preview }}">
+          {% else %}
+            {% assign entry_path = entry.preview | prepend: '/assets/img/publication_preview/' %}
+            {%
+              include figure.liquid
+              loading="eager"
+              path=entry_path
+              sizes = "200px"
+              class="preview"
+              zoomable=true
+              avoid_scaling=true
+              alt=entry.preview
+            %}
+          {% endif %}
+        </div>
+      {% elsif entry.abbr %}
+        <div class="publication-media-fallback">
+          <span class="publication-media-fallback-mark">Preview</span>
+        </div>
       {% endif %}
     </div>
   {% endif %}
 
   <!-- Entry bib key -->
-  <div id="{{ entry.key }}" class="{% if site.enable_publication_thumbnails %}col-sm-8{% else %}col-sm-10{% endif %}">
+  <div id="{{ entry.key }}" class="{% if site.enable_publication_thumbnails %}col-sm-8{% else %}col-sm-10{% endif %} publication-copy">
+    {% if entry.abbr or entry.arxiv or entry.code %}
+      <div class="publication-meta-row">
+        {% if entry.abbr %}
+          {% if site.data.venues[entry.abbr] and site.data.venues[entry.abbr].url %}
+            <a class="publication-tag" href="{{ site.data.venues[entry.abbr].url }}">{{ entry.abbr }}</a>
+          {% else %}
+            <span class="publication-tag">{{- entry.abbr -}}</span>
+          {% endif %}
+        {% endif %}
+        {% if entry.arxiv %}
+          <a href="http://arxiv.org/abs/{{ entry.arxiv }}" class="publication-meta-link">arXiv</a>
+        {% endif %}
+        {% if entry.code %}
+          <a href="{{ entry.code }}" class="publication-meta-link">Code</a>
+        {% endif %}
+      </div>
+    {% endif %}
     <!-- Title -->
     <div class="title">{{ entry.title }}</div>
     <!-- Author -->
@@ -178,12 +179,17 @@
     {% endif %}
     {% assign entrytype_text = entrytype | strip_html | strip %}
     {% capture periodical %}{{ entrytype }}{% if entrytype_text != "" and entryyear != "" %}, {% endif %}{{ entrymonth }}{{ entryyear }}{% endcapture %}
-    <div class="periodical">
-      {{ periodical | strip }}
-    </div>
-    <div class="periodical">
-      {{ entry.note | strip }}
-    </div>
+    {% assign periodical_text = periodical | strip_html | strip %}
+    {% if periodical_text != "" %}
+      <div class="periodical">
+        {{ periodical | strip }}
+      </div>
+    {% endif %}
+    {% if entry.note %}
+      <div class="periodical">
+        {{ entry.note | strip }}
+      </div>
+    {% endif %}
 
     <!-- Links/Buttons -->
     <div class="links">
@@ -197,9 +203,6 @@
       {% endif %}
       {% if entry.doi %}
         <a href="https://doi.org/{{ entry.doi }}" class="btn btn-sm z-depth-0" role="button">DOI</a>
-      {% endif %}
-      {% if entry.arxiv %}
-        <a href="http://arxiv.org/abs/{{ entry.arxiv }}" class="btn btn-sm z-depth-0" role="button">arXiv</a>
       {% endif %}
       {% if entry.bibtex_show %}
         <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a>
@@ -232,9 +235,6 @@
       {% endif %}
       {% if entry.blog %}
         <a href="{{ entry.blog }}" class="btn btn-sm z-depth-0" role="button">Blog</a>
-      {% endif %}
-      {% if entry.code %}
-        <a href="{{ entry.code }}" class="btn btn-sm z-depth-0" role="button">Code</a>
       {% endif %}
       {% if entry.poster %}
         {% if entry.poster contains '://' %}

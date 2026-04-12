@@ -6,11 +6,11 @@ subtitle:
 hero_eyebrow: Graduate Student in AI
 hero_name: Maoqi Liu 「刘茂琦」
 hero_subtitle: Graduate student in artificial intelligence at BUPT, working on continual learning and LLM applications.
-photo_quote: 失败会积累，成功会消失。
+photo_quote: Failure will stay, success slips away.
 research_areas:
+  - Activation Steering
   - Continual Learning
-  - Lifelong Learning
-  - Deep Learning
+  - Agentic RL
   - LLM Applications
 awards:
   - label: 2024
@@ -36,4 +36,4 @@ announcements:
 
 A first-year graduate student at the **School of Artificial Intelligence, [Beijing University of Posts and Telecommunications](https://ai.bupt.edu.cn/)** and a member of the **MKC Group**, advised by **[Prof. Quan Fang](https://quanfang.github.io/)**.
 
-My research interests broadly span **artificial intelligence** and **deep learning**, with a current focus on **continual learning** and **large language model (LLM) applications**.
+My interests span **AI** and **deep learning**, with a current focus on **continual learning** and **LLM applications**.

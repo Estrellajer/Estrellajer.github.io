@@ -1,4 +1,5 @@
 /* https://github.com/jwarby/jekyll-pygments-themes */
+/* Site-tuned: no harsh reds; aligns with dark-mode reading palette */
 .highlight pre {
   background-color: #404040;
 }
@@ -10,8 +11,8 @@
   font-style: italic;
 } /* Comment */
 .highlight .err {
-  color: #a61717;
-  background-color: #e3d2d2;
+  color: #a8c0d8;
+  background-color: rgba(85, 122, 159, 0.22);
 } /* Error */
 .highlight .g {
   color: #d0d0d0;
@@ -40,7 +41,7 @@
   font-style: italic;
 } /* Comment.Multiline */
 .highlight .cp {
-  color: #cd2828;
+  color: #8fb1d4;
   font-weight: bold;
 } /* Comment.Preproc */
 .highlight .c1 {
@@ -48,19 +49,19 @@
   font-style: italic;
 } /* Comment.Single */
 .highlight .cs {
-  color: #e50808;
+  color: #c5d4e0;
   font-weight: bold;
-  background-color: #520000;
+  background-color: #2d3d48;
 } /* Comment.Special */
 .highlight .gd {
-  color: #d22323;
+  color: #a8c0d8;
 } /* Generic.Deleted */
 .highlight .ge {
   color: #d0d0d0;
   font-style: italic;
 } /* Generic.Emph */
 .highlight .gr {
-  color: #d22323;
+  color: #a8c0d8;
 } /* Generic.Error */
 .highlight .gh {
   color: #ffffff;
@@ -84,7 +85,7 @@
   text-decoration: underline;
 } /* Generic.Subheading */
 .highlight .gt {
-  color: #d22323;
+  color: #a8c0d8;
 } /* Generic.Traceback */
 .highlight .kc {
   color: #6ab825;
@@ -100,6 +101,7 @@
 } /* Keyword.Namespace */
 .highlight .kp {
   color: #6ab825;
+  font-weight: bold;
 } /* Keyword.Pseudo */
 .highlight .kr {
   color: #6ab825;
