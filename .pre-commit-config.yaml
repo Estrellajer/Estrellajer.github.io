@@ -8,3 +8,10 @@ repos:
       - id: end-of-file-fixer
       - id: check-yaml
       - id: check-added-large-files
+  - repo: local
+    hooks:
+      - id: prettier-local
+        name: prettier
+        entry: npx prettier --write
+        language: system
+        files: \.(css|html|js|json|liquid|md|scss|ya?ml)$
