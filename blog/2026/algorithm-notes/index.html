@@ -1,164 +1,254 @@
-<!DOCTYPE html> <html lang="en"> <head> <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> <meta charset="utf-8"> <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> <meta http-equiv="X-UA-Compatible" content="IE=edge"> <title> LLM八股学习与手撕 | Carpediem </title> <meta name="author" content="Maoqi Liu"> <meta name="description" content="Notes on LLM algorithms"> <meta name="keywords" content="jekyll, jekyll-theme, academic-website, portfolio-website"> <link rel="stylesheet" href="/assets/css/bootstrap.min.css?a4b3f509e79c54a512b890d73235ef04"> <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mdbootstrap@4.20.0/css/mdb.min.css" integrity="sha256-jpjYvU3G3N6nrrBwXJoVEYI/0zw8htfFnhT9ljN3JJw=" crossorigin="anonymous"> <link defer rel="stylesheet" href="/assets/css/academicons.min.css?f0b7046b84e425c55f3463ac249818f5"> <link defer rel="stylesheet" href="/assets/css/scholar-icons.css?62b2ac103a88034e6882a5be5f3e2772"> <link defer rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons&amp;display=swap"> <link defer rel="stylesheet" href="/assets/css/jekyll-pygments-themes-github.css?591dab5a4e56573bf4ef7fd332894c99" media="" id="highlight_theme_light"> <link rel="shortcut icon" href="/assets/img/ding.png?b190ac12008d7e4d7f13d59027760f86"> <link rel="stylesheet" href="/assets/css/main.css?d41d8cd98f00b204e9800998ecf8427e"> <link rel="canonical" href="https://estrellajer.github.io/blog/2026/algorithm-notes/"> <script src="/assets/js/theme.js?a81d82887dd692e91686b43de4542f18"></script> <link defer rel="stylesheet" href="/assets/css/jekyll-pygments-themes-native.css?5847e5ed4a4568527aa6cfab446049ca" media="none" id="highlight_theme_dark"> <script>
+<!DOCTYPE html> <html lang="en"> <head> <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> <meta charset="utf-8"> <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> <meta http-equiv="X-UA-Compatible" content="IE=edge"> <title> LLM八股学习与手撕 | Carpediem </title> <meta name="author" content="Maoqi Liu"> <meta name="description" content="Notes on LLM algorithms"> <meta name="keywords" content="jekyll, jekyll-theme, academic-website, portfolio-website"> <link rel="stylesheet" href="/assets/css/bootstrap.min.css?a4b3f509e79c54a512b890d73235ef04"> <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mdbootstrap@4.20.0/css/mdb.min.css" integrity="sha256-jpjYvU3G3N6nrrBwXJoVEYI/0zw8htfFnhT9ljN3JJw=" crossorigin="anonymous"> <link defer rel="stylesheet" href="/assets/css/academicons.min.css?f0b7046b84e425c55f3463ac249818f5"> <link defer rel="stylesheet" href="/assets/css/scholar-icons.css?62b2ac103a88034e6882a5be5f3e2772"> <link defer rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons&amp;display=swap"> <link defer rel="stylesheet" href="/assets/css/jekyll-pygments-themes-github.css?20e839209b2d40bda44fa0709c6a0d18" media="" id="highlight_theme_light"> <link rel="shortcut icon" href="/assets/img/ding.png?b190ac12008d7e4d7f13d59027760f86"> <link rel="stylesheet" href="/assets/css/main.css?d41d8cd98f00b204e9800998ecf8427e"> <link rel="canonical" href="https://estrellajer.github.io/blog/2026/algorithm-notes/"> <script src="/assets/js/theme.js?a81d82887dd692e91686b43de4542f18"></script> <link defer rel="stylesheet" href="/assets/css/jekyll-pygments-themes-native.css?533076c077f0030844fed02f87ae001b" media="none" id="highlight_theme_dark"> <script>
     initTheme();
-  </script> </head> <body class="fixed-top-nav sticky-bottom-footer layout-post"> <header> <nav id="navbar" class="navbar navbar-light navbar-expand-sm fixed-top" role="navigation"> <div class="container"> <a class="navbar-brand title font-weight-lighter" href="/"> <span class="font-weight-bold">Carpediem</span> </a> <button class="navbar-toggler collapsed ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar top-bar"></span> <span class="icon-bar middle-bar"></span> <span class="icon-bar bottom-bar"></span> </button> <div class="collapse navbar-collapse text-right" id="navbarNav"> <ul class="navbar-nav ml-auto flex-nowrap"> <li class="nav-item "> <a class="nav-link" href="/">about </a> </li> <li class="nav-item active"> <a class="nav-link" href="/blog/">blog </a> </li> <li class="nav-item "> <a class="nav-link" href="/publications/">publications </a> </li> <li class="nav-item "> <a class="nav-link" href="/projects/">projects </a> </li> <li class="nav-item"> <a class="nav-link" href="/assets/files/maoqi-liu-cv-v2.docx" download>CV</a> </li> <li class="toggle-container"> <button id="light-toggle" title="Change theme"> <i class="ti ti-sun-moon" id="light-toggle-system"></i> <i class="ti ti-moon-filled" id="light-toggle-dark"></i> <i class="ti ti-sun-filled" id="light-toggle-light"></i> </button> </li> </ul> </div> </div> </nav> <progress id="progress" value="0"> <div class="progress-container"> <span class="progress-bar"></span> </div> </progress> </header> <div class="container mt-5 page-container" role="main"> <style>.layout-post #navbar>.container{max-width:1320px}.layout-post .page-container{max-width:1320px}.reading-page{--reading-text:var(--global-text-color);--reading-muted:#69717d;--reading-soft:#8d96a3;--reading-accent:#557a9f;--reading-accent-soft:rgba(85,122,159,0.12);width:min(100%,78rem);margin:0 auto;padding-top:1rem}.reading-shell{display:grid;grid-template-columns:minmax(0,1fr) 220px;gap:2.25rem;align-items:start}.reading-shell--single{grid-template-columns:minmax(0,1fr);max-width:62rem}.reading-main{min-width:0}.reading-hero{margin-bottom:2rem}.reading-eyebrow{margin-bottom:.9rem;color:var(--reading-accent);font-size:.75rem;font-weight:600;letter-spacing:.18em;text-transform:uppercase}.reading-title{margin:0;font-size:clamp(2.45rem,4.8vw,4.1rem);line-height:1.03;letter-spacing:-0.045em;font-weight:600;overflow-wrap:anywhere}.reading-meta{display:flex;flex-wrap:wrap;gap:.6rem 1rem;margin-top:1rem;color:var(--reading-muted);font-size:.98rem;line-height:1.8}.reading-taxonomy{display:flex;flex-wrap:wrap;gap:.7rem;margin-top:1.25rem}.reading-chip{display:inline-flex;align-items:center;min-height:2.2rem;padding:0 .92rem;border:1px solid rgba(85,122,159,0.12);border-radius:999px;background:var(--reading-accent-soft);color:#496885;font-size:.9rem;text-decoration:none!important}.reading-sidebar{min-width:0}.reading-sidebar[hidden]{display:none}.reading-sidebar-inner{position:sticky;top:6rem;padding:1rem 0 0 1rem;border-left:1px solid rgba(17,19,23,0.08)}.reading-sidebar-label{margin-bottom:.8rem;color:var(--reading-soft);font-size:.75rem;font-weight:600;letter-spacing:.16em;text-transform:uppercase}.reading-toc,.reading-toc ul{padding:0;margin:0;list-style:none}.reading-toc ul{display:grid;gap:.3rem}.reading-toc>ul>li+li{margin-top:.4rem}.reading-toc a{display:block;color:var(--reading-muted);font-size:.94rem;line-height:1.6;text-decoration:none}.reading-toc ul ul{margin-top:.35rem;padding-left:.95rem}.reading-toc a:hover{color:var(--reading-accent)}.reading-article,.reading-article #markdown-content{color:var(--reading-text);font-size:1.1rem;line-height:1.92}.reading-article #markdown-content>:first-child{margin-top:0}.reading-article #markdown-content>*{max-width:100%}.reading-article img{margin:1.4rem 0;border-radius:1rem}.reading-article h2,.reading-article h3,.reading-article h4{margin-top:2.2rem;margin-bottom:.85rem;letter-spacing:-0.02em}.reading-article h2{font-size:1.65rem}.reading-article h3{font-size:1.3rem}.reading-article blockquote{margin:1.6rem 0;padding:.2rem 0 .2rem 1.2rem;border-left:2px solid rgba(85,122,159,0.34);color:var(--reading-muted)}.reading-article ul,.reading-article ol{padding-left:1.35rem}.reading-article li+li{margin-top:.45rem}.reading-article pre{margin:1.4rem 0;border-radius:1rem}.reading-article a{color:inherit;text-decoration-color:rgba(85,122,159,0.45)}.reading-article a:hover{text-decoration-color:rgba(85,122,159,0.9)}.reading-related{margin-top:3rem;padding-top:1.6rem;border-top:1px solid rgba(17,19,23,0.08)}.reading-related-title{margin:0 0 1rem;font-size:1.2rem;font-weight:600;letter-spacing:-0.02em}.reading-related-list{display:grid;gap:.9rem;padding:0;margin:0;list-style:none}.reading-related-item a{display:block;color:inherit;text-decoration:none}.reading-related-item-title{font-weight:600;line-height:1.45}.reading-related-item-meta{margin-top:.2rem;color:var(--reading-soft);font-size:.92rem;line-height:1.7}@media(max-width:980px){.reading-shell{grid-template-columns:1fr;gap:1.8rem}.reading-sidebar-inner{position:static;padding:1rem 0 0;border-top:1px solid rgba(17,19,23,0.08);border-left:0}}</style> <div class="reading-page"> <div class="reading-shell"> <div class="reading-main"> <header class="reading-hero"> <div class="reading-eyebrow">Blog Post</div> <h1 class="reading-title">LLM八股学习与手撕</h1> <div class="reading-meta"> <span>February 03, 2026</span> </div> <div class="reading-taxonomy"> <a class="reading-chip" href="/blog/2026">2026</a> <a class="reading-chip" href="/blog/tag/notes"># notes</a> <a class="reading-chip" href="/blog/category/skill">Skill</a> </div> </header> <article class="reading-article"> <div id="markdown-content"> <h2 id="attention">Attention</h2> <h4 id="缩放点积注意力">缩放点积注意力</h4> <p>步骤总结： Q与K转置做矩阵乘法 – 除以√d_k缩放 – (可选)mask – softmax归一化 – 与V做矩阵乘法</p> <p>import torch from torch import nn</p> <p>class SqdtAttention(nn.Module): def <strong>init</strong>(self): super().<strong>init</strong>()</p> <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>def forward(self, q, k, v, mask=None):
-    d_k = q.size(-1)
-    attn_weight = (q @ k.transpose(-2, -1)) / (d_k ** 0.5)
+  </script> </head> <body class="fixed-top-nav sticky-bottom-footer layout-post"> <header> <nav id="navbar" class="navbar navbar-light navbar-expand-sm fixed-top" role="navigation"> <div class="container"> <div class="navbar-brand-group"> <a class="navbar-brand title font-weight-lighter" href="/"> <span class="font-weight-bold">Carpediem</span> </a> <div class="brand-socials" aria-label="Quick links"> <a class="brand-social-link" href="https://github.com/Estrellajer" rel="external nofollow noopener" target="_blank" aria-label="GitHub" title="GitHub"> <i class="fa-brands fa-github"></i> </a> <a class="brand-social-link" href="mailto:liumaoqi@bupt.edu.cn" aria-label="Email" title="Email"> <i class="fa-regular fa-envelope"></i> </a> <a class="brand-social-link" href="https://openreview.net/profile?id=%7EMaoqi_Liu2" rel="external nofollow noopener" target="_blank" aria-label="OpenReview" title="OpenReview"> <i class="ai ai-open-access"></i> </a> </div> </div> <button class="navbar-toggler collapsed ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar top-bar"></span> <span class="icon-bar middle-bar"></span> <span class="icon-bar bottom-bar"></span> </button> <div class="collapse navbar-collapse text-right" id="navbarNav"> <ul class="navbar-nav ml-auto flex-nowrap"> <li class="nav-item "> <a class="nav-link" href="/">about </a> </li> <li class="nav-item active"> <a class="nav-link" href="/blog/">blog </a> </li> <li class="nav-item "> <a class="nav-link" href="/publications/">publications </a> </li> <li class="nav-item "> <a class="nav-link" href="/projects/">projects </a> </li> <li class="nav-item"> <a class="nav-link" href="/assets/files/maoqi-liu-cv-v2.docx" download>CV</a> </li> <li class="toggle-container"> <button id="light-toggle" title="Change theme"> <i class="ti ti-sun-moon" id="light-toggle-system"></i> <i class="ti ti-moon-filled" id="light-toggle-dark"></i> <i class="ti ti-sun-filled" id="light-toggle-light"></i> </button> </li> </ul> </div> </div> </nav> <progress id="progress" value="0"> <div class="progress-container"> <span class="progress-bar"></span> </div> </progress> </header> <div class="container mt-5 page-container" role="main"> <style>.layout-post #navbar>.container{max-width:1320px}.layout-post .page-container{max-width:1320px}.reading-page{--reading-text:var(--global-text-color);--reading-muted:#69717d;--reading-soft:#8d96a3;--reading-accent:#557a9f;--reading-accent-soft:rgba(85,122,159,0.12);width:min(100%,82rem);margin:0 auto;padding-top:1.15rem}.reading-shell{display:grid;grid-template-columns:minmax(0,1fr) 240px;gap:2.4rem;align-items:start}.reading-shell--single{grid-template-columns:minmax(0,1fr);max-width:68rem}.reading-main{min-width:0}.reading-hero{margin-bottom:2rem}.reading-eyebrow{margin-bottom:.9rem;color:var(--reading-accent);font-size:.75rem;font-weight:600;letter-spacing:.18em;text-transform:uppercase}.reading-title{margin:0;font-size:clamp(2.45rem,4.8vw,4.1rem);line-height:1.03;letter-spacing:-0.045em;font-weight:600;overflow-wrap:anywhere}.reading-meta{display:flex;flex-wrap:wrap;gap:.6rem 1rem;margin-top:1rem;color:var(--reading-muted);font-size:.98rem;line-height:1.8}.reading-taxonomy{display:flex;flex-wrap:wrap;gap:.7rem;margin-top:1.25rem}.reading-chip{display:inline-flex;align-items:center;min-height:2.2rem;padding:0 .92rem;border:1px solid rgba(85,122,159,0.12);border-radius:999px;background:var(--reading-accent-soft);color:#496885;font-size:.9rem;text-decoration:none!important}.reading-sidebar{min-width:0}.reading-sidebar[hidden]{display:none}.reading-sidebar-inner{position:sticky;top:6rem;padding:.8rem 0 0 1.1rem;border-left:1px solid rgba(17,19,23,0.08)}.reading-sidebar-label{margin-bottom:.8rem;color:var(--reading-soft);font-size:.75rem;font-weight:600;letter-spacing:.16em;text-transform:uppercase}.reading-toc,.reading-toc ul{padding:0;margin:0;list-style:none}.reading-toc ul{display:grid;gap:.3rem}.reading-toc>ul>li+li{margin-top:.4rem}.reading-toc a{display:block;padding-left:.5rem;border-left:2px solid transparent;color:var(--reading-muted);font-size:.94rem;line-height:1.6;text-decoration:none;transition:color .18s ease,border-color .18s ease}.reading-toc ul ul{margin-top:.35rem;padding-left:.95rem}.reading-toc a:hover{color:var(--reading-accent);border-left-color:rgba(85,122,159,0.28)}.reading-toc a.is-active{color:#223243;border-left-color:rgba(85,122,159,0.55)}.reading-toc li[data-level='1']>a{color:#223243;font-weight:600}.reading-toc li[data-level='2']>a{font-size:.91rem}.reading-toc li[data-level='3']>a,.reading-toc li[data-level='4']>a{color:var(--reading-soft);font-size:.86rem}.reading-article,.reading-article #markdown-content{color:var(--reading-text);font-size:1.1rem;line-height:1.95}.reading-article #markdown-content>p,.reading-article #markdown-content>ul,.reading-article #markdown-content>ol,.reading-article #markdown-content>blockquote,.reading-article #markdown-content>pre,.reading-article #markdown-content>figure,.reading-article #markdown-content>table,.reading-article #markdown-content>.table-responsive{margin-top:1.2rem;margin-bottom:1.2rem}.reading-article #markdown-content>:first-child{margin-top:0}.reading-article #markdown-content>*{max-width:100%}.reading-article img{margin:1.4rem 0;border-radius:1rem}.reading-article h1,.reading-article h2,.reading-article h3,.reading-article h4{margin-top:2.5rem;margin-bottom:1rem;color:#1a2632;letter-spacing:-0.028em;line-height:1.34;scroll-margin-top:6.5rem}.reading-article [data-reading-level='1']{margin-top:3rem;padding-top:.2rem;padding-bottom:.68rem;border-bottom:1px solid rgba(17,19,23,0.08);color:#162330;font-size:clamp(1.96rem,2.15vw,2.3rem);font-weight:700;line-height:1.28}.reading-article [data-reading-level='2']{margin-top:2.7rem;color:#203244;font-size:clamp(1.44rem,1.7vw,1.68rem);font-weight:700;line-height:1.4}.reading-article [data-reading-level='3']{margin-top:2.1rem;color:#304558;font-size:1.28rem;font-weight:680;letter-spacing:-0.01em}.reading-article [data-reading-level='4']{margin-top:1.8rem;color:#4f6478;font-size:1.08rem;font-weight:650;letter-spacing:0}.reading-article p{color:#3f4854}.reading-article strong{color:#202833;font-weight:650}.reading-article blockquote{margin:1.6rem 0;padding:.45rem 0 .45rem 1.2rem;border-left:2px solid rgba(85,122,159,0.34);color:var(--reading-muted);background:linear-gradient(90deg,rgba(85,122,159,0.08),rgba(85,122,159,0));border-radius:0 .9rem .9rem 0}.reading-article ul,.reading-article ol{padding-left:1.55rem}.reading-article li+li{margin-top:.45rem}.reading-article li::marker{color:#6d8eaf}.reading-article pre,.reading-article figure.highlight,.reading-article div.highlighter-rouge,.reading-article .highlighter-rouge .highlight{overflow-x:auto;background:#f6f8fb!important;border:1px solid rgba(17,19,23,0.08);box-shadow:none}.reading-article pre{margin:1.4rem 0;border-radius:1rem;padding:1.05rem 1.2rem}.reading-article figure.highlight{margin:1.4rem 0;padding:1.05rem 1.2rem;border-radius:1rem}
+.reading-article div.highlighter-rouge{margin:1.4rem 0;padding:1.05rem 1.2rem;border-radius:1rem}.reading-article .highlighter-rouge .highlight{margin:0;padding:0;border:0;border-radius:0;background:transparent!important}.reading-article figure.highlight pre,.reading-article div.highlighter-rouge pre,.reading-article .highlighter-rouge .highlight pre{margin:0;padding:0;border:0;border-radius:0;background:transparent!important;box-shadow:none}.reading-article figure.highlight code,.reading-article div.highlighter-rouge code,.reading-article .highlighter-rouge .highlight code{display:block;border:0;border-radius:0;background:transparent!important;color:inherit}.reading-article pre code{padding:0;background:transparent!important;border:0;color:inherit}.reading-article code{padding:.16rem .4rem;border:1px solid rgba(85,122,159,0.14);border-radius:.45rem;background:rgba(85,122,159,0.08)!important;color:#35506b;font-size:.92em}.reading-article hr{margin:2.2rem 0;border:0;border-top:1px solid rgba(17,19,23,0.08)}.reading-article table{width:100%;overflow:hidden;border-collapse:separate;border-spacing:0;border:1px solid rgba(17,19,23,0.08);border-radius:.95rem;background:#fbfcfd}.reading-article th,.reading-article td{padding:.85rem 1rem;border-bottom:1px solid rgba(17,19,23,0.06);text-align:left;vertical-align:top}.reading-article th{color:#223243;font-weight:650;background:rgba(85,122,159,0.08)}.reading-article tr:last-child td{border-bottom:0}.reading-article a{color:inherit;text-decoration-color:rgba(85,122,159,0.45)}.reading-article a:hover{text-decoration-color:rgba(85,122,159,0.9)}.reading-related{margin-top:3rem;padding-top:1.6rem;border-top:1px solid rgba(17,19,23,0.08)}.reading-related-title{margin:0 0 1rem;font-size:1.2rem;font-weight:600;letter-spacing:-0.02em}.reading-related-list{display:grid;gap:.9rem;padding:0;margin:0;list-style:none}.reading-related-item a{display:block;color:inherit;text-decoration:none}.reading-related-item-title{font-weight:600;line-height:1.45}.reading-related-item-meta{margin-top:.2rem;color:var(--reading-soft);font-size:.92rem;line-height:1.7}@media(max-width:980px){.reading-shell{grid-template-columns:1fr;gap:1.8rem}.reading-sidebar-inner{position:static;padding:1rem 0 0;border-top:1px solid rgba(17,19,23,0.08);border-left:0}}</style> <div class="reading-page"> <div class="reading-shell"> <div class="reading-main"> <header class="reading-hero"> <div class="reading-eyebrow">Blog Post</div> <h1 class="reading-title">LLM八股学习与手撕</h1> <div class="reading-meta"> <span>February 03, 2026</span> </div> <div class="reading-taxonomy"> <a class="reading-chip" href="/blog/2026">2026</a> <a class="reading-chip" href="/blog/tag/notes"># notes</a> <a class="reading-chip" href="/blog/category/skill">Skill</a> </div> </header> <article class="reading-article"> <div id="markdown-content"> <h2 id="attention">Attention</h2> <h3 id="缩放点积注意力">缩放点积注意力</h3> <p>步骤总结： Q 与 K 转置做矩阵乘法 – 除以 √d_k 缩放 – (可选) mask – softmax 归一化 – 与 V 做矩阵乘法</p> <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="n">torch</span>
+<span class="kn">from</span> <span class="n">torch</span> <span class="kn">import</span> <span class="n">nn</span>
 
-    if mask is not None:
-        attn_weight = attn_weight.masked_fill(mask == 0, float('-inf'))
 
-    attn_weight = torch.softmax(attn_weight, dim=-1)
-    output = attn_weight @ v
-    return output
-</code></pre></div></div> <p>def test_attn(): batch_size = 128 seq_len = 512 hidden_size = 1024</p> <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>query = torch.randn(batch_size, seq_len, hidden_size)  # (batch_size, seq_len, hidden_size)
-key = torch.randn(batch_size, seq_len, hidden_size)    # (batch_size, seq_len, hidden_size)
-value = torch.randn(batch_size, seq_len, hidden_size)  # (batch_size, seq_len, hidden_size)
+<span class="k">class</span> <span class="nc">SqdtAttention</span><span class="p">(</span><span class="n">nn</span><span class="p">.</span><span class="n">Module</span><span class="p">):</span>
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="n">self</span><span class="p">):</span>
+        <span class="nf">super</span><span class="p">().</span><span class="nf">__init__</span><span class="p">()</span>
 
-sdpa = SqdtAttention()
-output = sdpa(query, key, value)
+    <span class="k">def</span> <span class="nf">forward</span><span class="p">(</span><span class="n">self</span><span class="p">,</span> <span class="n">q</span><span class="p">,</span> <span class="n">k</span><span class="p">,</span> <span class="n">v</span><span class="p">,</span> <span class="n">mask</span><span class="o">=</span><span class="bp">None</span><span class="p">):</span>
+        <span class="n">d_k</span> <span class="o">=</span> <span class="n">q</span><span class="p">.</span><span class="nf">size</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span>
+        <span class="n">attn_weight</span> <span class="o">=</span> <span class="p">(</span><span class="n">q</span> <span class="o">@</span> <span class="n">k</span><span class="p">.</span><span class="nf">transpose</span><span class="p">(</span><span class="o">-</span><span class="mi">2</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">))</span> <span class="o">/</span> <span class="p">(</span><span class="n">d_k</span> <span class="o">**</span> <span class="mf">0.5</span><span class="p">)</span>
 
-print("Query shape:", query.shape)
-print("Key shape:", key.shape)
-print("Value shape:", value.shape)
-print("Output shape:", output.shape)
-</code></pre></div></div> <p>if <strong>name</strong> == “<strong>main</strong>”: test_attn()</p> <h4 id="多头注意力mha">多头注意力（MHA）</h4> <p>步骤总结： Q/K/V线性投影 – 重塑为(batch,seq,num_heads,head_dim) – 转置为(batch,num_heads,seq,head_dim) – 每头计算QK^T/√d_k – (可选)mask – softmax – 与V相乘 – 拼接多头并输出投影</p> <p>import torch from torch import nn</p> <p>class MultiHeadAttention(nn.Module): def <strong>init</strong>(self, hidden_size, num_heads): super().<strong>init</strong>() self.hidden_size = hidden_size self.num_heads = num_heads self.head_dim = hidden_size // num_heads</p> <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    self.q_linear = nn.Linear(hidden_size, hidden_size)
-    self.k_linear = nn.Linear(hidden_size, hidden_size)
-    self.v_linear = nn.Linear(hidden_size, hidden_size)
-    self.o_linear = nn.Linear(hidden_size, hidden_size)
+        <span class="k">if</span> <span class="n">mask</span> <span class="ow">is</span> <span class="ow">not</span> <span class="bp">None</span><span class="p">:</span>
+            <span class="n">attn_weight</span> <span class="o">=</span> <span class="n">attn_weight</span><span class="p">.</span><span class="nf">masked_fill</span><span class="p">(</span><span class="n">mask</span> <span class="o">==</span> <span class="mi">0</span><span class="p">,</span> <span class="nf">float</span><span class="p">(</span><span class="sh">"</span><span class="s">-inf</span><span class="sh">"</span><span class="p">))</span>
 
-def forward(self, hidden_state, mask=None):
-    batch_size, seq_len = hidden_state.size(0), hidden_state.size(1)
+        <span class="n">attn_weight</span> <span class="o">=</span> <span class="n">torch</span><span class="p">.</span><span class="nf">softmax</span><span class="p">(</span><span class="n">attn_weight</span><span class="p">,</span> <span class="n">dim</span><span class="o">=-</span><span class="mi">1</span><span class="p">)</span>
+        <span class="n">output</span> <span class="o">=</span> <span class="n">attn_weight</span> <span class="o">@</span> <span class="n">v</span>
+        <span class="k">return</span> <span class="n">output</span>
 
-    query = self.q_linear(hidden_state).view(batch_size, seq_len, self.num_heads, self.head_dim).transpose(1, 2)
-    key = self.k_linear(hidden_state).view(batch_size, seq_len, self.num_heads, self.head_dim).transpose(1, 2)
-    value = self.v_linear(hidden_state).view(batch_size, seq_len, self.num_heads, self.head_dim).transpose(1, 2)
 
-    attn_scores = (query @ key.transpose(-2, -1)) / (self.head_dim ** 0.5)
+<span class="k">def</span> <span class="nf">test_attn</span><span class="p">():</span>
+    <span class="n">batch_size</span> <span class="o">=</span> <span class="mi">128</span>
+    <span class="n">seq_len</span> <span class="o">=</span> <span class="mi">512</span>
+    <span class="n">hidden_size</span> <span class="o">=</span> <span class="mi">1024</span>
 
-    if mask is not None:
-        attn_scores = attn_scores.masked_fill(mask == 0, float('-inf'))
+    <span class="n">query</span> <span class="o">=</span> <span class="n">torch</span><span class="p">.</span><span class="nf">randn</span><span class="p">(</span><span class="n">batch_size</span><span class="p">,</span> <span class="n">seq_len</span><span class="p">,</span> <span class="n">hidden_size</span><span class="p">)</span>
+    <span class="n">key</span> <span class="o">=</span> <span class="n">torch</span><span class="p">.</span><span class="nf">randn</span><span class="p">(</span><span class="n">batch_size</span><span class="p">,</span> <span class="n">seq_len</span><span class="p">,</span> <span class="n">hidden_size</span><span class="p">)</span>
+    <span class="n">value</span> <span class="o">=</span> <span class="n">torch</span><span class="p">.</span><span class="nf">randn</span><span class="p">(</span><span class="n">batch_size</span><span class="p">,</span> <span class="n">seq_len</span><span class="p">,</span> <span class="n">hidden_size</span><span class="p">)</span>
 
-    attn_probs = torch.softmax(attn_scores, dim=-1)
+    <span class="n">sdpa</span> <span class="o">=</span> <span class="nc">SqdtAttention</span><span class="p">()</span>
+    <span class="n">output</span> <span class="o">=</span> <span class="nf">sdpa</span><span class="p">(</span><span class="n">query</span><span class="p">,</span> <span class="n">key</span><span class="p">,</span> <span class="n">value</span><span class="p">)</span>
 
-    output = (attn_probs @ value).transpose(1, 2).contiguous().view(batch_size, seq_len, self.hidden_size)
-    output = self.o_linear(output)
+    <span class="nf">print</span><span class="p">(</span><span class="sh">"</span><span class="s">Query shape:</span><span class="sh">"</span><span class="p">,</span> <span class="n">query</span><span class="p">.</span><span class="n">shape</span><span class="p">)</span>
+    <span class="nf">print</span><span class="p">(</span><span class="sh">"</span><span class="s">Key shape:</span><span class="sh">"</span><span class="p">,</span> <span class="n">key</span><span class="p">.</span><span class="n">shape</span><span class="p">)</span>
+    <span class="nf">print</span><span class="p">(</span><span class="sh">"</span><span class="s">Value shape:</span><span class="sh">"</span><span class="p">,</span> <span class="n">value</span><span class="p">.</span><span class="n">shape</span><span class="p">)</span>
+    <span class="nf">print</span><span class="p">(</span><span class="sh">"</span><span class="s">Output shape:</span><span class="sh">"</span><span class="p">,</span> <span class="n">output</span><span class="p">.</span><span class="n">shape</span><span class="p">)</span>
 
-    return output
-</code></pre></div></div> <p>def test_MHA(): batch_size = 128 seq_len = 512 hidden_size = 1024 num_heads = 8</p> <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code># 随机生成输入数据
-hidden_state = torch.randn(batch_size, seq_len, hidden_size)  # (batch_size, seq_len, hidden_size)
 
-# 因果掩码：0=屏蔽位置（右上三角为未来token）
-causal_mask = 1 - torch.triu(torch.ones(seq_len, seq_len), diagonal=1)
+<span class="k">if</span> <span class="n">__name__</span> <span class="o">==</span> <span class="sh">"</span><span class="s">__main__</span><span class="sh">"</span><span class="p">:</span>
+    <span class="nf">test_attn</span><span class="p">()</span>
+</code></pre></div></div> <h3 id="多头注意力mha">多头注意力（MHA）</h3> <p>步骤总结： Q/K/V 线性投影 – 重塑为 <code class="language-plaintext highlighter-rouge">(batch, seq, num_heads, head_dim)</code> – 转置为 <code class="language-plaintext highlighter-rouge">(batch, num_heads, seq, head_dim)</code> – 每头计算 QK^T / √d_k – (可选) mask – softmax – 与 V 相乘 – 拼接多头并输出投影</p> <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="n">torch</span>
+<span class="kn">from</span> <span class="n">torch</span> <span class="kn">import</span> <span class="n">nn</span>
 
-# 创建多头注意力模块
-mha = MultiHeadAttention(hidden_size, num_heads)
-output = mha(hidden_state, mask=causal_mask)
 
-print("Input shape:", hidden_state.shape)
-print("Output shape:", output.shape)
-</code></pre></div></div> <p>if <strong>name</strong> == “<strong>main</strong>”: test_MHA()</p> <h4 id="多查询注意力mqa">多查询注意力（MQA）</h4> <p>步骤总结： Q全头线性投影、K/V共享头线性投影(head_dim) – Q分头、K/V保持单头 – 每头Q与共享K^T做点积/√d_k – (可选)mask – softmax – 与V相乘 – 拼接多头并输出投影</p> <p>import torch from torch import nn</p> <p>class MultiQueryAttention(nn.Module): def <strong>init</strong>(self, hidden_size, num_heads): super().<strong>init</strong>()</p> <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    self.hidden_size = hidden_size
-    self.num_heads = num_heads
-    self.head_dim = hidden_size // num_heads
+<span class="k">class</span> <span class="nc">MultiHeadAttention</span><span class="p">(</span><span class="n">nn</span><span class="p">.</span><span class="n">Module</span><span class="p">):</span>
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="n">self</span><span class="p">,</span> <span class="n">hidden_size</span><span class="p">,</span> <span class="n">num_heads</span><span class="p">):</span>
+        <span class="nf">super</span><span class="p">().</span><span class="nf">__init__</span><span class="p">()</span>
+        <span class="n">self</span><span class="p">.</span><span class="n">hidden_size</span> <span class="o">=</span> <span class="n">hidden_size</span>
+        <span class="n">self</span><span class="p">.</span><span class="n">num_heads</span> <span class="o">=</span> <span class="n">num_heads</span>
+        <span class="n">self</span><span class="p">.</span><span class="n">head_dim</span> <span class="o">=</span> <span class="n">hidden_size</span> <span class="o">//</span> <span class="n">num_heads</span>
 
-    self.q_linear = nn.Linear(hidden_size, hidden_size)
-    self.k_linear = nn.Linear(hidden_size, self.head_dim)
-    self.v_linear = nn.Linear(hidden_size, self.head_dim)
-    self.o_linear = nn.Linear(hidden_size, hidden_size)
+        <span class="n">self</span><span class="p">.</span><span class="n">q_linear</span> <span class="o">=</span> <span class="n">nn</span><span class="p">.</span><span class="nc">Linear</span><span class="p">(</span><span class="n">hidden_size</span><span class="p">,</span> <span class="n">hidden_size</span><span class="p">)</span>
+        <span class="n">self</span><span class="p">.</span><span class="n">k_linear</span> <span class="o">=</span> <span class="n">nn</span><span class="p">.</span><span class="nc">Linear</span><span class="p">(</span><span class="n">hidden_size</span><span class="p">,</span> <span class="n">hidden_size</span><span class="p">)</span>
+        <span class="n">self</span><span class="p">.</span><span class="n">v_linear</span> <span class="o">=</span> <span class="n">nn</span><span class="p">.</span><span class="nc">Linear</span><span class="p">(</span><span class="n">hidden_size</span><span class="p">,</span> <span class="n">hidden_size</span><span class="p">)</span>
+        <span class="n">self</span><span class="p">.</span><span class="n">o_linear</span> <span class="o">=</span> <span class="n">nn</span><span class="p">.</span><span class="nc">Linear</span><span class="p">(</span><span class="n">hidden_size</span><span class="p">,</span> <span class="n">hidden_size</span><span class="p">)</span>
 
-def forward(self, hidden_state, mask=None):
-    batch_size, seq_len = hidden_state.size(0), hidden_state.size(1)
+    <span class="k">def</span> <span class="nf">forward</span><span class="p">(</span><span class="n">self</span><span class="p">,</span> <span class="n">hidden_state</span><span class="p">,</span> <span class="n">mask</span><span class="o">=</span><span class="bp">None</span><span class="p">):</span>
+        <span class="n">batch_size</span><span class="p">,</span> <span class="n">seq_len</span> <span class="o">=</span> <span class="n">hidden_state</span><span class="p">.</span><span class="nf">size</span><span class="p">(</span><span class="mi">0</span><span class="p">),</span> <span class="n">hidden_state</span><span class="p">.</span><span class="nf">size</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
 
-    query = self.split_head(self.q_linear(hidden_state))
-    key = self.split_head(self.k_linear(hidden_state), 1)
-    value = self.split_head(self.v_linear(hidden_state), 1)
+        <span class="n">query</span> <span class="o">=</span> <span class="n">self</span><span class="p">.</span><span class="nf">q_linear</span><span class="p">(</span><span class="n">hidden_state</span><span class="p">).</span><span class="nf">view</span><span class="p">(</span><span class="n">batch_size</span><span class="p">,</span> <span class="n">seq_len</span><span class="p">,</span> <span class="n">self</span><span class="p">.</span><span class="n">num_heads</span><span class="p">,</span> <span class="n">self</span><span class="p">.</span><span class="n">head_dim</span><span class="p">).</span><span class="nf">transpose</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
+        <span class="n">key</span> <span class="o">=</span> <span class="n">self</span><span class="p">.</span><span class="nf">k_linear</span><span class="p">(</span><span class="n">hidden_state</span><span class="p">).</span><span class="nf">view</span><span class="p">(</span><span class="n">batch_size</span><span class="p">,</span> <span class="n">seq_len</span><span class="p">,</span> <span class="n">self</span><span class="p">.</span><span class="n">num_heads</span><span class="p">,</span> <span class="n">self</span><span class="p">.</span><span class="n">head_dim</span><span class="p">).</span><span class="nf">transpose</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
+        <span class="n">value</span> <span class="o">=</span> <span class="n">self</span><span class="p">.</span><span class="nf">v_linear</span><span class="p">(</span><span class="n">hidden_state</span><span class="p">).</span><span class="nf">view</span><span class="p">(</span><span class="n">batch_size</span><span class="p">,</span> <span class="n">seq_len</span><span class="p">,</span> <span class="n">self</span><span class="p">.</span><span class="n">num_heads</span><span class="p">,</span> <span class="n">self</span><span class="p">.</span><span class="n">head_dim</span><span class="p">).</span><span class="nf">transpose</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
 
-    attn_scores = (query @ key.transpose(-2, -1)) / (self.head_dim ** 0.5)
+        <span class="n">attn_scores</span> <span class="o">=</span> <span class="p">(</span><span class="n">query</span> <span class="o">@</span> <span class="n">key</span><span class="p">.</span><span class="nf">transpose</span><span class="p">(</span><span class="o">-</span><span class="mi">2</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">))</span> <span class="o">/</span> <span class="p">(</span><span class="n">self</span><span class="p">.</span><span class="n">head_dim</span> <span class="o">**</span> <span class="mf">0.5</span><span class="p">)</span>
 
-    if mask is not None:
-        attn_scores = attn_scores.masked_fill(mask == 0, float('-inf'))
+        <span class="k">if</span> <span class="n">mask</span> <span class="ow">is</span> <span class="ow">not</span> <span class="bp">None</span><span class="p">:</span>
+            <span class="n">attn_scores</span> <span class="o">=</span> <span class="n">attn_scores</span><span class="p">.</span><span class="nf">masked_fill</span><span class="p">(</span><span class="n">mask</span> <span class="o">==</span> <span class="mi">0</span><span class="p">,</span> <span class="nf">float</span><span class="p">(</span><span class="sh">"</span><span class="s">-inf</span><span class="sh">"</span><span class="p">))</span>
 
-    attn_probs = torch.softmax(attn_scores, dim=-1)
+        <span class="n">attn_probs</span> <span class="o">=</span> <span class="n">torch</span><span class="p">.</span><span class="nf">softmax</span><span class="p">(</span><span class="n">attn_scores</span><span class="p">,</span> <span class="n">dim</span><span class="o">=-</span><span class="mi">1</span><span class="p">)</span>
+        <span class="n">output</span> <span class="o">=</span> <span class="p">(</span><span class="n">attn_probs</span> <span class="o">@</span> <span class="n">value</span><span class="p">).</span><span class="nf">transpose</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">).</span><span class="nf">contiguous</span><span class="p">().</span><span class="nf">view</span><span class="p">(</span><span class="n">batch_size</span><span class="p">,</span> <span class="n">seq_len</span><span class="p">,</span> <span class="n">self</span><span class="p">.</span><span class="n">hidden_size</span><span class="p">)</span>
+        <span class="n">output</span> <span class="o">=</span> <span class="n">self</span><span class="p">.</span><span class="nf">o_linear</span><span class="p">(</span><span class="n">output</span><span class="p">)</span>
 
-    output = (attn_probs @ value).transpose(1, 2).contiguous().view(batch_size, seq_len, self.hidden_size)
-    output = self.o_linear(output)
+        <span class="k">return</span> <span class="n">output</span>
 
-    return output
 
-def split_head(self, x, head_num=None):
-    batch_size = x.size(0)
-    if head_num is None:
-        head_num = self.num_heads
-    head_dim = x.size(-1) // head_num
-    return x.view(batch_size, -1, head_num, head_dim).transpose(1, 2)
-</code></pre></div></div> <h4 id="维度变换速查split_head-与-repeat_kv">维度变换速查：split_head 与 repeat_kv</h4> <p><strong>split_head(x, head_num)</strong> — 把最后一维拆成 head_num × head_dim</p> <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>输入: (B, seq, feat)  其中 feat = head_num × head_dim
+<span class="k">def</span> <span class="nf">test_mha</span><span class="p">():</span>
+    <span class="n">batch_size</span> <span class="o">=</span> <span class="mi">128</span>
+    <span class="n">seq_len</span> <span class="o">=</span> <span class="mi">512</span>
+    <span class="n">hidden_size</span> <span class="o">=</span> <span class="mi">1024</span>
+    <span class="n">num_heads</span> <span class="o">=</span> <span class="mi">8</span>
+
+    <span class="n">hidden_state</span> <span class="o">=</span> <span class="n">torch</span><span class="p">.</span><span class="nf">randn</span><span class="p">(</span><span class="n">batch_size</span><span class="p">,</span> <span class="n">seq_len</span><span class="p">,</span> <span class="n">hidden_size</span><span class="p">)</span>
+    <span class="n">causal_mask</span> <span class="o">=</span> <span class="mi">1</span> <span class="o">-</span> <span class="n">torch</span><span class="p">.</span><span class="nf">triu</span><span class="p">(</span><span class="n">torch</span><span class="p">.</span><span class="nf">ones</span><span class="p">(</span><span class="n">seq_len</span><span class="p">,</span> <span class="n">seq_len</span><span class="p">),</span> <span class="n">diagonal</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+
+    <span class="n">mha</span> <span class="o">=</span> <span class="nc">MultiHeadAttention</span><span class="p">(</span><span class="n">hidden_size</span><span class="p">,</span> <span class="n">num_heads</span><span class="p">)</span>
+    <span class="n">output</span> <span class="o">=</span> <span class="nf">mha</span><span class="p">(</span><span class="n">hidden_state</span><span class="p">,</span> <span class="n">mask</span><span class="o">=</span><span class="n">causal_mask</span><span class="p">)</span>
+
+    <span class="nf">print</span><span class="p">(</span><span class="sh">"</span><span class="s">Input shape:</span><span class="sh">"</span><span class="p">,</span> <span class="n">hidden_state</span><span class="p">.</span><span class="n">shape</span><span class="p">)</span>
+    <span class="nf">print</span><span class="p">(</span><span class="sh">"</span><span class="s">Output shape:</span><span class="sh">"</span><span class="p">,</span> <span class="n">output</span><span class="p">.</span><span class="n">shape</span><span class="p">)</span>
+
+
+<span class="k">if</span> <span class="n">__name__</span> <span class="o">==</span> <span class="sh">"</span><span class="s">__main__</span><span class="sh">"</span><span class="p">:</span>
+    <span class="nf">test_mha</span><span class="p">()</span>
+</code></pre></div></div> <h3 id="多查询注意力mqa">多查询注意力（MQA）</h3> <p>步骤总结： Q 全头线性投影、K/V 共享头线性投影 <code class="language-plaintext highlighter-rouge">(head_dim)</code> – Q 分头、K/V 保持单头 – 每头 Q 与共享 K^T 做点积 / √d_k – (可选) mask – softmax – 与 V 相乘 – 拼接多头并输出投影</p> <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="n">torch</span>
+<span class="kn">from</span> <span class="n">torch</span> <span class="kn">import</span> <span class="n">nn</span>
+
+
+<span class="k">class</span> <span class="nc">MultiQueryAttention</span><span class="p">(</span><span class="n">nn</span><span class="p">.</span><span class="n">Module</span><span class="p">):</span>
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="n">self</span><span class="p">,</span> <span class="n">hidden_size</span><span class="p">,</span> <span class="n">num_heads</span><span class="p">):</span>
+        <span class="nf">super</span><span class="p">().</span><span class="nf">__init__</span><span class="p">()</span>
+        <span class="n">self</span><span class="p">.</span><span class="n">hidden_size</span> <span class="o">=</span> <span class="n">hidden_size</span>
+        <span class="n">self</span><span class="p">.</span><span class="n">num_heads</span> <span class="o">=</span> <span class="n">num_heads</span>
+        <span class="n">self</span><span class="p">.</span><span class="n">head_dim</span> <span class="o">=</span> <span class="n">hidden_size</span> <span class="o">//</span> <span class="n">num_heads</span>
+
+        <span class="n">self</span><span class="p">.</span><span class="n">q_linear</span> <span class="o">=</span> <span class="n">nn</span><span class="p">.</span><span class="nc">Linear</span><span class="p">(</span><span class="n">hidden_size</span><span class="p">,</span> <span class="n">hidden_size</span><span class="p">)</span>
+        <span class="n">self</span><span class="p">.</span><span class="n">k_linear</span> <span class="o">=</span> <span class="n">nn</span><span class="p">.</span><span class="nc">Linear</span><span class="p">(</span><span class="n">hidden_size</span><span class="p">,</span> <span class="n">self</span><span class="p">.</span><span class="n">head_dim</span><span class="p">)</span>
+        <span class="n">self</span><span class="p">.</span><span class="n">v_linear</span> <span class="o">=</span> <span class="n">nn</span><span class="p">.</span><span class="nc">Linear</span><span class="p">(</span><span class="n">hidden_size</span><span class="p">,</span> <span class="n">self</span><span class="p">.</span><span class="n">head_dim</span><span class="p">)</span>
+        <span class="n">self</span><span class="p">.</span><span class="n">o_linear</span> <span class="o">=</span> <span class="n">nn</span><span class="p">.</span><span class="nc">Linear</span><span class="p">(</span><span class="n">hidden_size</span><span class="p">,</span> <span class="n">hidden_size</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">forward</span><span class="p">(</span><span class="n">self</span><span class="p">,</span> <span class="n">hidden_state</span><span class="p">,</span> <span class="n">mask</span><span class="o">=</span><span class="bp">None</span><span class="p">):</span>
+        <span class="n">query</span> <span class="o">=</span> <span class="n">self</span><span class="p">.</span><span class="nf">split_head</span><span class="p">(</span><span class="n">self</span><span class="p">.</span><span class="nf">q_linear</span><span class="p">(</span><span class="n">hidden_state</span><span class="p">))</span>
+        <span class="n">key</span> <span class="o">=</span> <span class="n">self</span><span class="p">.</span><span class="nf">split_head</span><span class="p">(</span><span class="n">self</span><span class="p">.</span><span class="nf">k_linear</span><span class="p">(</span><span class="n">hidden_state</span><span class="p">),</span> <span class="mi">1</span><span class="p">)</span>
+        <span class="n">value</span> <span class="o">=</span> <span class="n">self</span><span class="p">.</span><span class="nf">split_head</span><span class="p">(</span><span class="n">self</span><span class="p">.</span><span class="nf">v_linear</span><span class="p">(</span><span class="n">hidden_state</span><span class="p">),</span> <span class="mi">1</span><span class="p">)</span>
+
+        <span class="n">attn_scores</span> <span class="o">=</span> <span class="p">(</span><span class="n">query</span> <span class="o">@</span> <span class="n">key</span><span class="p">.</span><span class="nf">transpose</span><span class="p">(</span><span class="o">-</span><span class="mi">2</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">))</span> <span class="o">/</span> <span class="p">(</span><span class="n">self</span><span class="p">.</span><span class="n">head_dim</span> <span class="o">**</span> <span class="mf">0.5</span><span class="p">)</span>
+
+        <span class="k">if</span> <span class="n">mask</span> <span class="ow">is</span> <span class="ow">not</span> <span class="bp">None</span><span class="p">:</span>
+            <span class="n">attn_scores</span> <span class="o">=</span> <span class="n">attn_scores</span><span class="p">.</span><span class="nf">masked_fill</span><span class="p">(</span><span class="n">mask</span> <span class="o">==</span> <span class="mi">0</span><span class="p">,</span> <span class="nf">float</span><span class="p">(</span><span class="sh">"</span><span class="s">-inf</span><span class="sh">"</span><span class="p">))</span>
+
+        <span class="n">attn_probs</span> <span class="o">=</span> <span class="n">torch</span><span class="p">.</span><span class="nf">softmax</span><span class="p">(</span><span class="n">attn_scores</span><span class="p">,</span> <span class="n">dim</span><span class="o">=-</span><span class="mi">1</span><span class="p">)</span>
+        <span class="n">output</span> <span class="o">=</span> <span class="p">(</span><span class="n">attn_probs</span> <span class="o">@</span> <span class="n">value</span><span class="p">).</span><span class="nf">transpose</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">).</span><span class="nf">contiguous</span><span class="p">().</span><span class="nf">view</span><span class="p">(</span><span class="n">hidden_state</span><span class="p">.</span><span class="nf">size</span><span class="p">(</span><span class="mi">0</span><span class="p">),</span> <span class="n">hidden_state</span><span class="p">.</span><span class="nf">size</span><span class="p">(</span><span class="mi">1</span><span class="p">),</span> <span class="n">self</span><span class="p">.</span><span class="n">hidden_size</span><span class="p">)</span>
+        <span class="n">output</span> <span class="o">=</span> <span class="n">self</span><span class="p">.</span><span class="nf">o_linear</span><span class="p">(</span><span class="n">output</span><span class="p">)</span>
+
+        <span class="k">return</span> <span class="n">output</span>
+
+    <span class="k">def</span> <span class="nf">split_head</span><span class="p">(</span><span class="n">self</span><span class="p">,</span> <span class="n">x</span><span class="p">,</span> <span class="n">head_num</span><span class="o">=</span><span class="bp">None</span><span class="p">):</span>
+        <span class="n">batch_size</span> <span class="o">=</span> <span class="n">x</span><span class="p">.</span><span class="nf">size</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">head_num</span> <span class="ow">is</span> <span class="bp">None</span><span class="p">:</span>
+            <span class="n">head_num</span> <span class="o">=</span> <span class="n">self</span><span class="p">.</span><span class="n">num_heads</span>
+        <span class="n">head_dim</span> <span class="o">=</span> <span class="n">x</span><span class="p">.</span><span class="nf">size</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span> <span class="o">//</span> <span class="n">head_num</span>
+        <span class="k">return</span> <span class="n">x</span><span class="p">.</span><span class="nf">view</span><span class="p">(</span><span class="n">batch_size</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="n">head_num</span><span class="p">,</span> <span class="n">head_dim</span><span class="p">).</span><span class="nf">transpose</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
+</code></pre></div></div> <h3 id="维度变换速查split_head-与-repeat_kv">维度变换速查：split_head 与 repeat_kv</h3> <p><strong>split_head(x, head_num)</strong> — 把最后一维拆成 <code class="language-plaintext highlighter-rouge">head_num × head_dim</code></p> <div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>输入: (B, seq, feat)  其中 feat = head_num × head_dim
 view: (B, seq, head_num, head_dim)
 transpose(1,2): (B, head_num, seq, head_dim)  ← 把 head 提前，便于逐头计算
-</code></pre></div></div> <p><strong>repeat_kv(x)</strong> — 把 num_kv_heads 扩成 num_heads（GQA 专用）</p> <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>输入: (B, num_kv_heads, seq, head_dim)
+</code></pre></div></div> <p><strong>repeat_kv(x)</strong> — 把 <code class="language-plaintext highlighter-rouge">num_kv_heads</code> 扩成 <code class="language-plaintext highlighter-rouge">num_heads</code>（GQA 专用）</p> <div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>输入: (B, num_kv_heads, seq, head_dim)
 unsqueeze(2): (B, num_kv_heads, 1, seq, head_dim)
-repeat(1,1,n_rep,1,1): (B, num_kv_heads, n_rep, seq, head_dim)  每 kv 头重复 n_rep 次
+repeat(1,1,n_rep,1,1): (B, num_kv_heads, n_rep, seq, head_dim)  每个 kv 头重复 n_rep 次
 reshape: (B, num_heads, seq, head_dim)  其中 num_heads = num_kv_heads × n_rep
-</code></pre></div></div> <p><strong>记忆口诀</strong>：split 是「拆尾维 → view → transpose 把 head 提前」，repeat 是「unsqueeze 插维 → repeat 复制 → reshape 拉平」。</p> <hr> <h4 id="分组查询注意力gqa">分组查询注意力（GQA）</h4> <p>步骤总结： Q全头线性投影、K/V分组头线性投影(num_kv_heads×head_dim) – Q分num_heads头、K/V分num_kv_heads头 – repeat_kv将K/V扩至num_heads – 点积/√d_k – (可选)mask – softmax – 与V相乘 – 拼接多头并输出投影</p> <p>import torch from torch import nn</p> <p>class GroupedQueryAttention(nn.Module): def <strong>init</strong>(self, hidden_size, num_heads, num_kv_heads=None): super().<strong>init</strong>() self.hidden_size = hidden_size self.num_heads = num_heads self.num_kv_heads = num_kv_heads or num_heads self.head_dim = hidden_size // num_heads</p> <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    self.q_linear = nn.Linear(hidden_size, hidden_size)
-    self.k_linear = nn.Linear(hidden_size, self.num_kv_heads * self.head_dim)
-    self.v_linear = nn.Linear(hidden_size, self.num_kv_heads * self.head_dim)
-    self.o_linear = nn.Linear(hidden_size, hidden_size)
+</code></pre></div></div> <p><strong>记忆口诀</strong>：split 是「拆尾维 → view → transpose 把 head 提前」，repeat 是「unsqueeze 插维 → repeat 复制 → reshape 拉平」。</p> <hr> <h3 id="分组查询注意力gqa">分组查询注意力（GQA）</h3> <p>步骤总结： Q 全头线性投影、K/V 分组头线性投影 <code class="language-plaintext highlighter-rouge">(num_kv_heads × head_dim)</code> – Q 分 <code class="language-plaintext highlighter-rouge">num_heads</code> 头、K/V 分 <code class="language-plaintext highlighter-rouge">num_kv_heads</code> 头 – <code class="language-plaintext highlighter-rouge">repeat_kv</code> 将 K/V 扩至 <code class="language-plaintext highlighter-rouge">num_heads</code> – 点积 / √d_k – (可选) mask – softmax – 与 V 相乘 – 拼接多头并输出投影</p> <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="n">torch</span>
+<span class="kn">from</span> <span class="n">torch</span> <span class="kn">import</span> <span class="n">nn</span>
 
-def forward(self, hidden_state, mask=None):
-    batch_size, seq_len = hidden_state.size(0), hidden_state.size(1)
 
-    query = self._split_head(self.q_linear(hidden_state), self.num_heads)
-    key = self._split_head(self.k_linear(hidden_state), self.num_kv_heads)
-    value = self._split_head(self.v_linear(hidden_state), self.num_kv_heads)
+<span class="k">class</span> <span class="nc">GroupedQueryAttention</span><span class="p">(</span><span class="n">nn</span><span class="p">.</span><span class="n">Module</span><span class="p">):</span>
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="n">self</span><span class="p">,</span> <span class="n">hidden_size</span><span class="p">,</span> <span class="n">num_heads</span><span class="p">,</span> <span class="n">num_kv_heads</span><span class="o">=</span><span class="bp">None</span><span class="p">):</span>
+        <span class="nf">super</span><span class="p">().</span><span class="nf">__init__</span><span class="p">()</span>
+        <span class="n">self</span><span class="p">.</span><span class="n">hidden_size</span> <span class="o">=</span> <span class="n">hidden_size</span>
+        <span class="n">self</span><span class="p">.</span><span class="n">num_heads</span> <span class="o">=</span> <span class="n">num_heads</span>
+        <span class="n">self</span><span class="p">.</span><span class="n">num_kv_heads</span> <span class="o">=</span> <span class="n">num_kv_heads</span> <span class="ow">or</span> <span class="n">num_heads</span>
+        <span class="n">self</span><span class="p">.</span><span class="n">head_dim</span> <span class="o">=</span> <span class="n">hidden_size</span> <span class="o">//</span> <span class="n">num_heads</span>
 
-    key = self._repeat_kv(key)
-    value = self._repeat_kv(value)
+        <span class="n">self</span><span class="p">.</span><span class="n">q_linear</span> <span class="o">=</span> <span class="n">nn</span><span class="p">.</span><span class="nc">Linear</span><span class="p">(</span><span class="n">hidden_size</span><span class="p">,</span> <span class="n">hidden_size</span><span class="p">)</span>
+        <span class="n">self</span><span class="p">.</span><span class="n">k_linear</span> <span class="o">=</span> <span class="n">nn</span><span class="p">.</span><span class="nc">Linear</span><span class="p">(</span><span class="n">hidden_size</span><span class="p">,</span> <span class="n">self</span><span class="p">.</span><span class="n">num_kv_heads</span> <span class="o">*</span> <span class="n">self</span><span class="p">.</span><span class="n">head_dim</span><span class="p">)</span>
+        <span class="n">self</span><span class="p">.</span><span class="n">v_linear</span> <span class="o">=</span> <span class="n">nn</span><span class="p">.</span><span class="nc">Linear</span><span class="p">(</span><span class="n">hidden_size</span><span class="p">,</span> <span class="n">self</span><span class="p">.</span><span class="n">num_kv_heads</span> <span class="o">*</span> <span class="n">self</span><span class="p">.</span><span class="n">head_dim</span><span class="p">)</span>
+        <span class="n">self</span><span class="p">.</span><span class="n">o_linear</span> <span class="o">=</span> <span class="n">nn</span><span class="p">.</span><span class="nc">Linear</span><span class="p">(</span><span class="n">hidden_size</span><span class="p">,</span> <span class="n">hidden_size</span><span class="p">)</span>
 
-    attn_scores = (query @ key.transpose(-2, -1)) / (self.head_dim ** 0.5)
+    <span class="k">def</span> <span class="nf">forward</span><span class="p">(</span><span class="n">self</span><span class="p">,</span> <span class="n">hidden_state</span><span class="p">,</span> <span class="n">mask</span><span class="o">=</span><span class="bp">None</span><span class="p">):</span>
+        <span class="n">batch_size</span><span class="p">,</span> <span class="n">seq_len</span> <span class="o">=</span> <span class="n">hidden_state</span><span class="p">.</span><span class="nf">size</span><span class="p">(</span><span class="mi">0</span><span class="p">),</span> <span class="n">hidden_state</span><span class="p">.</span><span class="nf">size</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
 
-    if mask is not None:
-        attn_scores = attn_scores.masked_fill(mask == 0, float('-inf'))
+        <span class="n">query</span> <span class="o">=</span> <span class="n">self</span><span class="p">.</span><span class="nf">_split_head</span><span class="p">(</span><span class="n">self</span><span class="p">.</span><span class="nf">q_linear</span><span class="p">(</span><span class="n">hidden_state</span><span class="p">),</span> <span class="n">self</span><span class="p">.</span><span class="n">num_heads</span><span class="p">)</span>
+        <span class="n">key</span> <span class="o">=</span> <span class="n">self</span><span class="p">.</span><span class="nf">_split_head</span><span class="p">(</span><span class="n">self</span><span class="p">.</span><span class="nf">k_linear</span><span class="p">(</span><span class="n">hidden_state</span><span class="p">),</span> <span class="n">self</span><span class="p">.</span><span class="n">num_kv_heads</span><span class="p">)</span>
+        <span class="n">value</span> <span class="o">=</span> <span class="n">self</span><span class="p">.</span><span class="nf">_split_head</span><span class="p">(</span><span class="n">self</span><span class="p">.</span><span class="nf">v_linear</span><span class="p">(</span><span class="n">hidden_state</span><span class="p">),</span> <span class="n">self</span><span class="p">.</span><span class="n">num_kv_heads</span><span class="p">)</span>
 
-    attn_probs = torch.softmax(attn_scores, dim=-1)
+        <span class="n">key</span> <span class="o">=</span> <span class="n">self</span><span class="p">.</span><span class="nf">_repeat_kv</span><span class="p">(</span><span class="n">key</span><span class="p">)</span>
+        <span class="n">value</span> <span class="o">=</span> <span class="n">self</span><span class="p">.</span><span class="nf">_repeat_kv</span><span class="p">(</span><span class="n">value</span><span class="p">)</span>
 
-    output = (attn_probs @ value).transpose(1, 2).contiguous().view(batch_size, seq_len, self.hidden_size)
-    output = self.o_linear(output)
+        <span class="n">attn_scores</span> <span class="o">=</span> <span class="p">(</span><span class="n">query</span> <span class="o">@</span> <span class="n">key</span><span class="p">.</span><span class="nf">transpose</span><span class="p">(</span><span class="o">-</span><span class="mi">2</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">))</span> <span class="o">/</span> <span class="p">(</span><span class="n">self</span><span class="p">.</span><span class="n">head_dim</span> <span class="o">**</span> <span class="mf">0.5</span><span class="p">)</span>
 
-    return output
+        <span class="k">if</span> <span class="n">mask</span> <span class="ow">is</span> <span class="ow">not</span> <span class="bp">None</span><span class="p">:</span>
+            <span class="n">attn_scores</span> <span class="o">=</span> <span class="n">attn_scores</span><span class="p">.</span><span class="nf">masked_fill</span><span class="p">(</span><span class="n">mask</span> <span class="o">==</span> <span class="mi">0</span><span class="p">,</span> <span class="nf">float</span><span class="p">(</span><span class="sh">"</span><span class="s">-inf</span><span class="sh">"</span><span class="p">))</span>
 
-def _split_head(self, x, head_num):
-    batch_size = x.size(0)
-    head_dim = x.size(-1) // head_num
-    return x.view(batch_size, -1, head_num, head_dim).transpose(1, 2)
+        <span class="n">attn_probs</span> <span class="o">=</span> <span class="n">torch</span><span class="p">.</span><span class="nf">softmax</span><span class="p">(</span><span class="n">attn_scores</span><span class="p">,</span> <span class="n">dim</span><span class="o">=-</span><span class="mi">1</span><span class="p">)</span>
+        <span class="n">output</span> <span class="o">=</span> <span class="p">(</span><span class="n">attn_probs</span> <span class="o">@</span> <span class="n">value</span><span class="p">).</span><span class="nf">transpose</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">).</span><span class="nf">contiguous</span><span class="p">().</span><span class="nf">view</span><span class="p">(</span><span class="n">batch_size</span><span class="p">,</span> <span class="n">seq_len</span><span class="p">,</span> <span class="n">self</span><span class="p">.</span><span class="n">hidden_size</span><span class="p">)</span>
+        <span class="n">output</span> <span class="o">=</span> <span class="n">self</span><span class="p">.</span><span class="nf">o_linear</span><span class="p">(</span><span class="n">output</span><span class="p">)</span>
 
-def _repeat_kv(self, x):
-    n_rep = self.num_heads // self.num_kv_heads
-    return x.unsqueeze(2).repeat(1, 1, n_rep, 1, 1).reshape(x.size(0), self.num_heads, -1, x.size(-1))
-</code></pre></div></div> <p>def test_GQA(): batch_size, seq_len, hidden_size, num_heads, num_kv_heads = 2, 16, 256, 8, 2 hidden_state = torch.randn(batch_size, seq_len, hidden_size) gqa = GroupedQueryAttention(hidden_size, num_heads, num_kv_heads) output = gqa(hidden_state) print(“GQA output shape:”, output.shape) # (2, 16, 256)</p> <h2 id="dpodirect-preference-optimization">DPO（Direct Preference Optimization）</h2> <h4 id="compute_log_probs-步骤总结">compute_log_probs 步骤总结</h4> <p>log_softmax – gather 取 label 对应概率 – mask 保留 response 位置 – sum 汇总</p> <p><strong>gather 要点</strong>：<code class="language-plaintext highlighter-rouge">log_probs[b,i,labels[b,i]]</code> 等价于 <code class="language-plaintext highlighter-rouge">gather(log_probs, dim=-1, index=labels.unsqueeze(-1))</code>。index 必须与 log_probs 同维，故 labels (B,S) → unsqueeze(-1) → (B,S,1)。</p> <p><strong>gather 具体例子</strong>：</p> <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>log_probs: (1, 3, 5)  即 1 句 3 词，词表大小 5
-  位置0: [-2.1, -0.5, -1.0, -3.0, -2.5]  # 5 个 token 的 log 概率
+        <span class="k">return</span> <span class="n">output</span>
+
+    <span class="k">def</span> <span class="nf">_split_head</span><span class="p">(</span><span class="n">self</span><span class="p">,</span> <span class="n">x</span><span class="p">,</span> <span class="n">head_num</span><span class="p">):</span>
+        <span class="n">batch_size</span> <span class="o">=</span> <span class="n">x</span><span class="p">.</span><span class="nf">size</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+        <span class="n">head_dim</span> <span class="o">=</span> <span class="n">x</span><span class="p">.</span><span class="nf">size</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span> <span class="o">//</span> <span class="n">head_num</span>
+        <span class="k">return</span> <span class="n">x</span><span class="p">.</span><span class="nf">view</span><span class="p">(</span><span class="n">batch_size</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="n">head_num</span><span class="p">,</span> <span class="n">head_dim</span><span class="p">).</span><span class="nf">transpose</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">_repeat_kv</span><span class="p">(</span><span class="n">self</span><span class="p">,</span> <span class="n">x</span><span class="p">):</span>
+        <span class="n">n_rep</span> <span class="o">=</span> <span class="n">self</span><span class="p">.</span><span class="n">num_heads</span> <span class="o">//</span> <span class="n">self</span><span class="p">.</span><span class="n">num_kv_heads</span>
+        <span class="k">return</span> <span class="n">x</span><span class="p">.</span><span class="nf">unsqueeze</span><span class="p">(</span><span class="mi">2</span><span class="p">).</span><span class="nf">repeat</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="n">n_rep</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">).</span><span class="nf">reshape</span><span class="p">(</span><span class="n">x</span><span class="p">.</span><span class="nf">size</span><span class="p">(</span><span class="mi">0</span><span class="p">),</span> <span class="n">self</span><span class="p">.</span><span class="n">num_heads</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="n">x</span><span class="p">.</span><span class="nf">size</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">))</span>
+
+
+<span class="k">def</span> <span class="nf">test_gqa</span><span class="p">():</span>
+    <span class="n">batch_size</span><span class="p">,</span> <span class="n">seq_len</span><span class="p">,</span> <span class="n">hidden_size</span><span class="p">,</span> <span class="n">num_heads</span><span class="p">,</span> <span class="n">num_kv_heads</span> <span class="o">=</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">16</span><span class="p">,</span> <span class="mi">256</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">2</span>
+    <span class="n">hidden_state</span> <span class="o">=</span> <span class="n">torch</span><span class="p">.</span><span class="nf">randn</span><span class="p">(</span><span class="n">batch_size</span><span class="p">,</span> <span class="n">seq_len</span><span class="p">,</span> <span class="n">hidden_size</span><span class="p">)</span>
+    <span class="n">gqa</span> <span class="o">=</span> <span class="nc">GroupedQueryAttention</span><span class="p">(</span><span class="n">hidden_size</span><span class="p">,</span> <span class="n">num_heads</span><span class="p">,</span> <span class="n">num_kv_heads</span><span class="p">)</span>
+    <span class="n">output</span> <span class="o">=</span> <span class="nf">gqa</span><span class="p">(</span><span class="n">hidden_state</span><span class="p">)</span>
+    <span class="nf">print</span><span class="p">(</span><span class="sh">"</span><span class="s">GQA output shape:</span><span class="sh">"</span><span class="p">,</span> <span class="n">output</span><span class="p">.</span><span class="n">shape</span><span class="p">)</span>  <span class="c1"># (2, 16, 256)
+</span>
+
+<span class="k">if</span> <span class="n">__name__</span> <span class="o">==</span> <span class="sh">"</span><span class="s">__main__</span><span class="sh">"</span><span class="p">:</span>
+    <span class="nf">test_gqa</span><span class="p">()</span>
+</code></pre></div></div> <h2 id="dpodirect-preference-optimization">DPO（Direct Preference Optimization）</h2> <h3 id="compute_log_probs-步骤总结">compute_log_probs 步骤总结</h3> <p><code class="language-plaintext highlighter-rouge">log_softmax</code> – <code class="language-plaintext highlighter-rouge">gather</code> 取 label 对应概率 – <code class="language-plaintext highlighter-rouge">mask</code> 保留 response 位置 – <code class="language-plaintext highlighter-rouge">sum</code> 汇总</p> <p><strong>gather 要点</strong>：<code class="language-plaintext highlighter-rouge">log_probs[b, i, labels[b, i]]</code> 等价于 <code class="language-plaintext highlighter-rouge">gather(log_probs, dim=-1, index=labels.unsqueeze(-1))</code>。<code class="language-plaintext highlighter-rouge">index</code> 必须与 <code class="language-plaintext highlighter-rouge">log_probs</code> 同维，所以 <code class="language-plaintext highlighter-rouge">labels (B, S) → unsqueeze(-1) → (B, S, 1)</code>。</p> <p><strong>gather 具体例子</strong>：</p> <div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>log_probs: (1, 3, 5)  即 1 句 3 词，词表大小 5
+  位置0: [-2.1, -0.5, -1.0, -3.0, -2.5]
   位置1: [-1.2, -2.3, -0.8, -4.0, -1.5]
   位置2: [-3.0, -1.0, -0.3, -2.0, -2.2]
 
-labels: (1, 3) = [[2, 0, 4]]  # 真实 token id：位置0 是 2，位置1 是 0，位置2 是 4
+labels: (1, 3) = [[2, 0, 4]]
+labels.unsqueeze(-1): (1, 3, 1) = [[[2], [0], [4]]]
 
-labels.unsqueeze(-1): (1, 3, 1) = [[[2],[0],[4]]]
-
-gather(dim=-1): 沿 vocab 维，按 index 取值
-  out[0,0,0] = log_probs[0,0,2] = -1.0   ← 位置0 真实 token 2 的 log p
-  out[0,1,0] = log_probs[0,1,0] = -1.2   ← 位置1 真实 token 0 的 log p
-  out[0,2,0] = log_probs[0,2,4] = -2.2   ← 位置2 真实 token 4 的 log p
+gather(dim=-1):
+  out[0,0,0] = log_probs[0,0,2] = -1.0
+  out[0,1,0] = log_probs[0,1,0] = -1.2
+  out[0,2,0] = log_probs[0,2,4] = -2.2
 
 squeeze(-1) → (1, 3) = [[-1.0, -1.2, -2.2]]
-</code></pre></div></div> <hr> <h4 id="dpo-loss-步骤总结">DPO Loss 步骤总结</h4> <p>chosen/rejected 各算 log_ratio = policy_logp - ref_logp – logits = β×(chosen_ratio - rejected_ratio) – loss = -logsigmoid(logits)</p> <table> <tbody> <tr> <td> <strong>公式</strong>：$\mathcal{L} = -\mathbb{E}\left[\log \sigma\left(\beta \log\frac{\pi_\theta(y_w</td> <td>x)}{\pi_{ref}(y_w</td> <td>x)} - \beta \log\frac{\pi_\theta(y_l</td> <td>x)}{\pi_{ref}(y_l</td> <td>x)}\right)\right]$</td> </tr> </tbody> </table> <p><strong>记忆</strong>：让 chosen 的 log_ratio 比 rejected 大，loss 才小；β 控制偏离参考模型的强度。</p> <p><strong>手撕流程</strong>：</p> <ol> <li>compute_log_probs：log_softmax → gather → mask → sum</li> <li>dpo_loss：log_ratio = policy - ref → logits = β×(chosen - rejected) → -logsigmoid → mean</li> </ol> <hr> <p>import torch import torch.nn.functional as F</p> <p>def compute_log_probs( logits: torch.Tensor, # (batch, seq_len, vocab_size) labels: torch.Tensor, # (batch, seq_len) mask: torch.Tensor # (batch, seq_len)，1=response 需计算，0=prompt 忽略 ) -&gt; torch.Tensor: “”” 计算序列的对数概率，只算 response 部分（RLHF/DPO 常用） “”” # ① log_softmax: (B,S,V) → (B,S,V)，每行和为 log(1)=0 log_probs = F.log_softmax(logits, dim=-1)</p> <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code># ② gather: 沿 dim=-1 按 index 索引取值，见上方「gather 具体例子」
-per_token_log_probs = torch.gather(
-    log_probs, dim=-1, index=labels.unsqueeze(-1)
-).squeeze(-1)
+</code></pre></div></div> <hr> <h3 id="dpo-loss-步骤总结">DPO Loss 步骤总结</h3> <p><code class="language-plaintext highlighter-rouge">chosen/rejected</code> 各算 <code class="language-plaintext highlighter-rouge">log_ratio = policy_logp - ref_logp</code> – <code class="language-plaintext highlighter-rouge">logits = β × (chosen_ratio - rejected_ratio)</code> – <code class="language-plaintext highlighter-rouge">loss = -logsigmoid(logits)</code></p> <table> <tbody> <tr> <td> <strong>公式</strong>：$\mathcal{L} = -\mathbb{E}\left[\log \sigma\left(\beta \log\frac{\pi_\theta(y_w</td> <td>x)}{\pi_{ref}(y_w</td> <td>x)} - \beta \log\frac{\pi_\theta(y_l</td> <td>x)}{\pi_{ref}(y_l</td> <td>x)}\right)\right]$</td> </tr> </tbody> </table> <p><strong>记忆</strong>：让 <code class="language-plaintext highlighter-rouge">chosen</code> 的 <code class="language-plaintext highlighter-rouge">log_ratio</code> 比 <code class="language-plaintext highlighter-rouge">rejected</code> 大，loss 才小；<code class="language-plaintext highlighter-rouge">β</code> 控制偏离参考模型的强度。</p> <p><strong>手撕流程</strong>：</p> <ol> <li> <code class="language-plaintext highlighter-rouge">compute_log_probs</code>：<code class="language-plaintext highlighter-rouge">log_softmax → gather → mask → sum</code> </li> <li> <code class="language-plaintext highlighter-rouge">dpo_loss</code>：<code class="language-plaintext highlighter-rouge">log_ratio = policy - ref → logits = β × (chosen - rejected) → -logsigmoid → mean</code> </li> </ol> <hr> <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="n">torch</span>
+<span class="kn">import</span> <span class="n">torch.nn.functional</span> <span class="k">as</span> <span class="n">F</span>
 
-# ③ mask 只保留 response 位置，④ sum 得到标量（每样本一个）
-return (per_token_log_probs * mask).sum(dim=-1)  # → (batch,)
-</code></pre></div></div> <p>def dpo_loss( policy_chosen_logps: torch.Tensor, # (batch,) 当前模型在 chosen 上的 log p policy_rejected_logps: torch.Tensor, # (batch,) 当前模型在 rejected 上的 log p ref_chosen_logps: torch.Tensor, # (batch,) 参考模型在 chosen 上的 log p ref_rejected_logps: torch.Tensor, # (batch,) 参考模型在 rejected 上的 log p beta: float = 0.1, ) -&gt; torch.Tensor: “”” DPO Loss：无 RL 的偏好优化，直接优化 policy 使 chosen 优于 rejected “”” # ① log π/π_ref = log π - log π_ref chosen_log_ratios = policy_chosen_logps - ref_chosen_logps rejected_log_ratios = policy_rejected_logps - ref_rejected_logps</p> <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code># ② logits = β·(chosen_ratio - rejected_ratio)，越大越好
-logits = beta * (chosen_log_ratios - rejected_log_ratios)
 
-# ③ -log σ(x) 等价于 log(1+exp(-x))，数值稳定
-return (-F.logsigmoid(logits)).mean()
+<span class="k">def</span> <span class="nf">compute_log_probs</span><span class="p">(</span>
+    <span class="n">logits</span><span class="p">:</span> <span class="n">torch</span><span class="p">.</span><span class="n">Tensor</span><span class="p">,</span>  <span class="c1"># (batch, seq_len, vocab_size)
+</span>    <span class="n">labels</span><span class="p">:</span> <span class="n">torch</span><span class="p">.</span><span class="n">Tensor</span><span class="p">,</span>  <span class="c1"># (batch, seq_len)
+</span>    <span class="n">mask</span><span class="p">:</span> <span class="n">torch</span><span class="p">.</span><span class="n">Tensor</span><span class="p">,</span>  <span class="c1"># (batch, seq_len)，1=response 需计算，0=prompt 忽略
+</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">torch</span><span class="p">.</span><span class="n">Tensor</span><span class="p">:</span>
+    <span class="sh">"""</span><span class="s">
+    计算序列的对数概率，只算 response 部分（RLHF/DPO 常用）
+    </span><span class="sh">"""</span>
+    <span class="n">log_probs</span> <span class="o">=</span> <span class="n">F</span><span class="p">.</span><span class="nf">log_softmax</span><span class="p">(</span><span class="n">logits</span><span class="p">,</span> <span class="n">dim</span><span class="o">=-</span><span class="mi">1</span><span class="p">)</span>
+
+    <span class="n">per_token_log_probs</span> <span class="o">=</span> <span class="n">torch</span><span class="p">.</span><span class="nf">gather</span><span class="p">(</span>
+        <span class="n">log_probs</span><span class="p">,</span>
+        <span class="n">dim</span><span class="o">=-</span><span class="mi">1</span><span class="p">,</span>
+        <span class="n">index</span><span class="o">=</span><span class="n">labels</span><span class="p">.</span><span class="nf">unsqueeze</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">),</span>
+    <span class="p">).</span><span class="nf">squeeze</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span>
+
+    <span class="nf">return </span><span class="p">(</span><span class="n">per_token_log_probs</span> <span class="o">*</span> <span class="n">mask</span><span class="p">).</span><span class="nf">sum</span><span class="p">(</span><span class="n">dim</span><span class="o">=-</span><span class="mi">1</span><span class="p">)</span>  <span class="c1"># → (batch,)
+</span>
+
+<span class="k">def</span> <span class="nf">dpo_loss</span><span class="p">(</span>
+    <span class="n">policy_chosen_logps</span><span class="p">:</span> <span class="n">torch</span><span class="p">.</span><span class="n">Tensor</span><span class="p">,</span>  <span class="c1"># (batch,)
+</span>    <span class="n">policy_rejected_logps</span><span class="p">:</span> <span class="n">torch</span><span class="p">.</span><span class="n">Tensor</span><span class="p">,</span>  <span class="c1"># (batch,)
+</span>    <span class="n">ref_chosen_logps</span><span class="p">:</span> <span class="n">torch</span><span class="p">.</span><span class="n">Tensor</span><span class="p">,</span>  <span class="c1"># (batch,)
+</span>    <span class="n">ref_rejected_logps</span><span class="p">:</span> <span class="n">torch</span><span class="p">.</span><span class="n">Tensor</span><span class="p">,</span>  <span class="c1"># (batch,)
+</span>    <span class="n">beta</span><span class="p">:</span> <span class="nb">float</span> <span class="o">=</span> <span class="mf">0.1</span><span class="p">,</span>
+<span class="p">)</span> <span class="o">-&gt;</span> <span class="n">torch</span><span class="p">.</span><span class="n">Tensor</span><span class="p">:</span>
+    <span class="sh">"""</span><span class="s">
+    DPO Loss：无 RL 的偏好优化，直接优化 policy 使 chosen 优于 rejected
+    </span><span class="sh">"""</span>
+    <span class="n">chosen_log_ratios</span> <span class="o">=</span> <span class="n">policy_chosen_logps</span> <span class="o">-</span> <span class="n">ref_chosen_logps</span>
+    <span class="n">rejected_log_ratios</span> <span class="o">=</span> <span class="n">policy_rejected_logps</span> <span class="o">-</span> <span class="n">ref_rejected_logps</span>
+
+    <span class="n">logits</span> <span class="o">=</span> <span class="n">beta</span> <span class="o">*</span> <span class="p">(</span><span class="n">chosen_log_ratios</span> <span class="o">-</span> <span class="n">rejected_log_ratios</span><span class="p">)</span>
+    <span class="nf">return </span><span class="p">(</span><span class="o">-</span><span class="n">F</span><span class="p">.</span><span class="nf">logsigmoid</span><span class="p">(</span><span class="n">logits</span><span class="p">)).</span><span class="nf">mean</span><span class="p">()</span>
 </code></pre></div></div> </div> </article> </div> <aside class="reading-sidebar" data-reading-sidebar> <div class="reading-sidebar-inner"> <div class="reading-sidebar-label">On This Page</div> <nav class="reading-toc" data-reading-toc></nav> </div> </aside> </div> </div> <script>
     document.addEventListener('DOMContentLoaded', function () {
       const article = document.getElementById('markdown-content');
@@ -169,60 +259,107 @@ return (-F.logsigmoid(logits)).mean()
         return;
       }
 
-      const headings = Array.from(article.querySelectorAll('h2, h3'));
-      if (!headings.length) {
+      const headings = Array.from(article.querySelectorAll('h1, h2, h3, h4')).filter((heading) => {
+        return heading.textContent && heading.textContent.trim().length > 0;
+      });
+      if (headings.length < 2) {
         sidebar.hidden = true;
         return;
       }
 
-      const slugify = (value, index) => {
-        const slug = value
-          .toLowerCase()
-          .trim()
-          .replace(/[^\w\s-]/g, '')
-          .replace(/\s+/g, '-');
-        return slug || `section-${index + 1}`;
+      const rawLevels = [...new Set(headings.map((heading) => Number(heading.tagName.slice(1))))].sort((a, b) => a - b);
+      const levelMap = new Map(rawLevels.map((level, index) => [level, index + 1]));
+      const usedIds = new Map();
+
+      const ensureUniqueId = (value, index) => {
+        const base =
+          String(value || '')
+            .trim()
+            .toLowerCase()
+            .replace(/[^\p{Letter}\p{Number}\s-]/gu, '')
+            .replace(/\s+/g, '-')
+            .replace(/-+/g, '-')
+            .replace(/^-|-$/g, '') || `section-${index + 1}`;
+
+        const count = usedIds.get(base) || 0;
+        usedIds.set(base, count + 1);
+
+        if (count === 0) {
+          return base;
+        }
+
+        return `${base}-${count + 1}`;
       };
 
-      const rootList = document.createElement('ul');
-      let currentSection = null;
-
       headings.forEach((heading, index) => {
-        if (!heading.id) {
-          heading.id = slugify(heading.textContent, index);
+        heading.id = ensureUniqueId(heading.id || heading.textContent, index);
+
+        const normalizedLevel = levelMap.get(Number(heading.tagName.slice(1))) || 1;
+        heading.dataset.readingLevel = String(normalizedLevel);
+      });
+
+      const rootList = document.createElement('ul');
+      const listStack = [rootList];
+      let currentLevel = 1;
+
+      headings.forEach((heading) => {
+        const normalizedLevel = Number(heading.dataset.readingLevel || 1);
+
+        while (currentLevel < normalizedLevel) {
+          const parentList = listStack[listStack.length - 1];
+          const lastItem = parentList.lastElementChild;
+
+          if (!lastItem) {
+            break;
+          }
+
+          const nestedList = document.createElement('ul');
+          lastItem.appendChild(nestedList);
+          listStack.push(nestedList);
+          currentLevel += 1;
         }
 
-        if (heading.tagName === 'H2') {
-          const item = document.createElement('li');
-          const link = document.createElement('a');
-          link.href = `#${heading.id}`;
-          link.textContent = heading.textContent;
-          item.appendChild(link);
-          rootList.appendChild(item);
-          currentSection = item;
-          return;
-        }
-
-        if (!currentSection) {
-          currentSection = document.createElement('li');
-          rootList.appendChild(currentSection);
-        }
-
-        let nested = currentSection.querySelector('ul');
-        if (!nested) {
-          nested = document.createElement('ul');
-          currentSection.appendChild(nested);
+        while (currentLevel > normalizedLevel) {
+          listStack.pop();
+          currentLevel -= 1;
         }
 
         const item = document.createElement('li');
+        item.dataset.level = String(normalizedLevel);
+
         const link = document.createElement('a');
         link.href = `#${heading.id}`;
         link.textContent = heading.textContent;
         item.appendChild(link);
-        nested.appendChild(item);
+        listStack[listStack.length - 1].appendChild(item);
       });
 
+      if (!rootList.children.length) {
+        sidebar.hidden = true;
+        return;
+      }
+
       toc.appendChild(rootList);
+
+      const links = Array.from(toc.querySelectorAll('a'));
+      const setActiveHeading = () => {
+        const offset = 140;
+        let currentHeading = headings[0];
+
+        headings.forEach((heading) => {
+          if (heading.getBoundingClientRect().top <= offset) {
+            currentHeading = heading;
+          }
+        });
+
+        links.forEach((link) => {
+          link.classList.toggle('is-active', link.getAttribute('href') === `#${currentHeading.id}`);
+        });
+      };
+
+      setActiveHeading();
+      document.addEventListener('scroll', setActiveHeading, { passive: true });
+      window.addEventListener('resize', setActiveHeading);
     });
   </script> </div> <style>.site-footer{border-top:1px solid rgba(17,19,23,0.08);background:rgba(255,255,255,0.86);backdrop-filter:blur(14px)}.site-footer__inner{display:flex;flex-wrap:wrap;align-items:center;gap:.55rem;min-height:4.25rem;color:#8d96a3;font-size:.92rem}.site-footer__divider{width:.24rem;height:.24rem;border-radius:999px;background:currentColor;opacity:.45}</style> <footer class="site-footer sticky-bottom mt-5" role="contentinfo"> <div class="container"> <div class="site-footer__inner"> <span>© 2026 Maoqi Liu</span> <span class="site-footer__divider"></span> <span>Research notes, publications, and selected projects.</span> </div> </div> </footer> <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script> <script src="/assets/js/bootstrap.bundle.min.js"></script> <script src="https://cdn.jsdelivr.net/npm/mdbootstrap@4.20.0/js/mdb.min.js" integrity="sha256-NdbiivsvWt7VYCt6hYNT3h/th9vSTL4EDWeGs5SN3DA=" crossorigin="anonymous"></script> <script defer src="https://cdn.jsdelivr.net/npm/medium-zoom@1.1.0/dist/medium-zoom.min.js" integrity="sha256-ZgMyDAIYDYGxbcpJcfUnYwNevG/xi9OHKaR/8GK+jWc=" crossorigin="anonymous"></script> <script defer src="/assets/js/zoom.js?85ddb88934d28b74e78031fd54cf8308"></script> <script src="/assets/js/no_defer.js?2781658a0a2b13ed609542042a859126"></script> <script defer src="/assets/js/common.js?c15de51d4bb57887caa2c21988d97279"></script> <script defer src="/assets/js/copy_code.js?c8a01c11a92744d44b093fc3bda915df" type="text/javascript"></script> <script defer src="/assets/js/jupyter_new_tab.js?d9f17b6adc2311cbabd747f4538bb15f"></script> <script defer type="text/javascript" id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-mml-chtml.js" integrity="sha256-MASABpB4tYktI2Oitl4t+78w/lyA+D7b/s9GEP0JOGI=" crossorigin="anonymous"></script> <script src="/assets/js/mathjax-setup.js?a5bb4e6a542c546dd929b24b8b236dfd"></script> <script defer src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6" crossorigin="anonymous"></script> <script defer src="/assets/js/progress-bar.js?2f30e0e6801ea8f5036fa66e1ab0a71a" type="text/javascript"></script> <script src="/assets/js/vanilla-back-to-top.min.js?f40d453793ff4f64e238e420181a1d17"></script> <script>
     addBackToTop();
