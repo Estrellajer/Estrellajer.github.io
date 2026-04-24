@@ -3,7 +3,7 @@ layout: post
 title: Self-Distillation论文阅读
 date: 2026-02-10 11:30:00
 description: Notes on Papers about Self Distillation
-tags: notes
+tags: paper-reading
 categories: Research
 ---
 

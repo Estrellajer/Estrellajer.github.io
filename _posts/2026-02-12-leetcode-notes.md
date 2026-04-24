@@ -3,8 +3,8 @@ layout: post
 title: Leetcode学习笔记
 date: 2026-02-12 9:30:00
 description: Notes on Leetcode
-tags: notes
-categories: Skill
+tags: coding
+categories: Learning
 ---
 
 ## Python 语法

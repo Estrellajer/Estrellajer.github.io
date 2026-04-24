@@ -4,8 +4,8 @@ title: AI 驱动的未来：焦虑频发下的深度思考
 date: 2026-03-24 12:00:00
 hidden: true
 description: 在疾病缠绕与工作重压的间隙，关于 AI 冲击下职业前景与人际关系的感悟
-tags: notes
-categories: Talk
+tags: reflection
+categories: Life
 ---
 
 写这篇文章的时候笔者刚刚勉强走出疾病的缠绕，仍然陷于MM的繁重工作。观点难免有些悲观，

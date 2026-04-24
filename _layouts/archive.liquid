@@ -1,38 +1,227 @@
 ---
 layout: default
 ---
-<div class="post">
-  <header class="post-header">
+
+{% assign archive_documents = page.documents | where_exp: "document", "document.hidden != true" %}
+{% assign archive_title = page.title %}
+{% assign archive_label = "Archive" %}
+{% assign archive_description = "A collected set of posts." %}
+
+{% if page.type == 'categories' %}
+  {% assign archive_label = "Category" %}
+  {% case page.title %}
+    {% when "Research" %}
+      {% assign archive_description = "Paper reading, research notes, and experiment logs." %}
+    {% when "Engineering" %}
+      {% assign archive_description = "Tooling, server setup, coding practice, and bug notes." %}
+    {% when "Learning" %}
+      {% assign archive_description = "Courses, interviews, algorithms, and deliberate practice." %}
+    {% when "Life" %}
+      {% assign archive_description = "Travel, conferences, reflections, and personal records." %}
+    {% else %}
+      {% assign archive_description = "Posts in this main category." %}
+  {% endcase %}
+{% elsif page.type == 'year' %}
+  {% assign archive_label = "Year" %}
+  {% assign archive_title = page.date | date: '%Y' %}
+  {% assign archive_description = "Posts published in this year." %}
+{% elsif page.type == 'tags' %}
+  {% assign archive_label = "Topic" %}
+  {% assign archive_description = "Posts around this finer topic." %}
+{% endif %}
+
+<style>
+  .archive-page {
+    --archive-text: var(--global-text-color);
+    --archive-muted: var(--global-text-color-light);
+    --archive-line: var(--global-divider-color);
+    --archive-accent: var(--global-theme-color);
+    --archive-accent-strong: var(--global-hover-color);
+    --archive-accent-soft: color-mix(in srgb, var(--global-theme-color) 14%, transparent);
+    padding-top: 1rem;
+  }
+
+  .archive-hero {
+    margin-bottom: 2.2rem;
+  }
+
+  .archive-eyebrow {
+    margin-bottom: 0.9rem;
+    color: var(--archive-accent);
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+  }
+
+  .archive-title {
+    margin: 0;
+    color: var(--archive-text);
+    font-size: clamp(2.4rem, 4.7vw, 4rem);
+    font-weight: 600;
+    letter-spacing: 0;
+    line-height: 1.08;
+  }
+
+  .archive-description {
+    margin-top: 0.9rem;
+    color: var(--archive-muted);
+    font-size: 1.02rem;
+    line-height: 1.8;
+  }
+
+  .archive-topics {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+    margin-top: 1.35rem;
+  }
+
+  .archive-topic {
+    display: inline-flex;
+    align-items: center;
+    min-height: 2.05rem;
+    padding: 0 0.82rem;
+    border: 1px solid var(--archive-line);
+    border-radius: 999px;
+    color: var(--archive-muted);
+    font-size: 0.9rem;
+    text-decoration: none !important;
+  }
+
+  .archive-topic:hover {
+    color: var(--archive-accent);
+    text-decoration: none !important;
+  }
+
+  .archive-list {
+    display: grid;
+    gap: 1.65rem;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+
+  .archive-item {
+    padding-top: 1.65rem;
+    border-top: 1px solid var(--archive-line);
+  }
+
+  .archive-item:first-child {
+    padding-top: 0;
+    border-top: 0;
+  }
+
+  .archive-item-date {
+    color: var(--archive-muted);
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+  }
+
+  .archive-item-title {
+    display: inline-block;
+    margin: 0.45rem 0 0.65rem;
+    color: var(--archive-text);
+    font-size: 1.35rem;
+    font-weight: 600;
+    line-height: 1.38;
+    text-decoration: none;
+  }
+
+  .archive-item-title:hover {
+    color: var(--archive-accent);
+    text-decoration: none;
+  }
+
+  .archive-item-desc {
+    margin: 0 0 0.7rem;
+    color: var(--archive-muted);
+    line-height: 1.8;
+  }
+
+  .archive-item-meta,
+  .archive-item-taxonomy {
+    color: var(--archive-muted);
+    font-size: 0.93rem;
+    line-height: 1.75;
+  }
+
+  .archive-item-taxonomy a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  .archive-item-taxonomy a:hover {
+    color: var(--archive-accent);
+    text-decoration: none;
+  }
+</style>
+
+<div class="archive-page">
+  <header class="archive-hero">
+    <div class="archive-eyebrow">{{ archive_label }}</div>
+    <h1 class="archive-title">{{ archive_title }}</h1>
+    <div class="archive-description">{{ archive_description }} {{ archive_documents.size }} post{% unless archive_documents.size == 1 %}s{% endunless %}.</div>
+
     {% if page.type == 'categories' %}
-      <h1 class="post-title"><i class="fa-solid fa-tag fa-sm"></i> {{ page.title }}</h1>
-      <p class="post-description">an archive of {{ page.collection_name }} in this category</p>
-    {% elsif page.type == 'year' %}
-      <h1 class="post-title"><i class="fa-solid fa-calendar fa-sm"></i> {{ page.date | date: '%Y' }}</h1>
-      <p class="post-description">an archive of {{ page.collection_name }} from this year</p>
-    {% elsif page.type == 'tags' %}
-      <h1 class="post-title"><i class="fa-solid fa-hashtag fa-sm"></i> {{ page.title }}</h1>
-      <p class="post-description">an archive of {{ page.collection_name }} with this tag</p>
+      {% assign shown_tags = "" %}
+      <div class="archive-topics">
+        {% for document in archive_documents %}
+          {% for tag in document.tags %}
+            {% assign tag_key = tag | prepend: "|" | append: "|" %}
+            {% unless shown_tags contains tag_key %}
+              <a class="archive-topic" href="{{ tag | slugify | prepend: '/blog/tag/' | relative_url }}">{{ tag }}</a>
+              {% assign shown_tags = shown_tags | append: tag_key %}
+            {% endunless %}
+          {% endfor %}
+        {% endfor %}
+      </div>
     {% endif %}
   </header>
 
-  <article class="archive">
-    <div class="table-responsive">
-      <table class="table table-sm table-borderless">
-        {% for document in page.documents %}
-          <tr>
-            <th scope="row">{{ document.date | date: '%b %d, %Y' }}</th>
-            <td>
-              {% if document.redirect == blank %}
-                <a class="post-link" href="{{ document.url | relative_url }}">{{ document.title }}</a>
-              {% elsif document.redirect contains '://' %}
-                <a class="post-link" href="{{ document.redirect }}" target="_blank">{{ document.title }}</a>
-              {% else %}
-                <a class="post-link" href="{{ document.redirect | relative_url }}">{{ document.title }}</a>
-              {% endif %}
-            </td>
-          </tr>
-        {% endfor %}
-      </table>
-    </div>
-  </article>
+  <ul class="archive-list">
+    {% for document in archive_documents %}
+      {% if document.external_source == blank %}
+        {% assign read_time = document.content | number_of_words | divided_by: 180 | plus: 1 %}
+      {% else %}
+        {% assign read_time = document.feed_content | strip_html | number_of_words | divided_by: 180 | plus: 1 %}
+      {% endif %}
+
+      <li class="archive-item">
+        <div class="archive-item-date">{{ document.date | date: '%b %d, %Y' }}</div>
+
+        {% if document.redirect == blank %}
+          <a class="archive-item-title" href="{{ document.url | relative_url }}">{{ document.title }}</a>
+        {% elsif document.redirect contains '://' %}
+          <a class="archive-item-title" href="{{ document.redirect }}" target="_blank">{{ document.title }}</a>
+        {% else %}
+          <a class="archive-item-title" href="{{ document.redirect | relative_url }}">{{ document.title }}</a>
+        {% endif %}
+
+        {% if document.description %}
+          <p class="archive-item-desc">{{ document.description }}</p>
+        {% endif %}
+
+        <div class="archive-item-meta">{{ read_time }} min read</div>
+
+        {% assign tags = document.tags | join: "" %}
+        {% assign categories = document.categories | join: "" %}
+        {% if tags != "" or categories != "" %}
+          <div class="archive-item-taxonomy">
+            {% if page.type == 'categories' %}
+              {% for tag in document.tags %}
+                <a href="{{ tag | slugify | prepend: '/blog/tag/' | relative_url }}">{{ tag }}</a>{% unless forloop.last %} · {% endunless %}
+              {% endfor %}
+            {% else %}
+              {% for category in document.categories %}
+                <a href="{{ category | slugify | prepend: '/blog/category/' | relative_url }}">{{ category }}</a>{% unless forloop.last %} · {% endunless %}
+              {% endfor %}
+            {% endif %}
+          </div>
+        {% endif %}
+      </li>
+    {% endfor %}
+  </ul>
 </div>

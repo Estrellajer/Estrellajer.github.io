@@ -4,7 +4,7 @@ title: BUPT AI大三下生存指南
 date: 2024-07-04 11:29:18
 description: Life of the spring semester of junior year in BUPT AI
 tags: course
-categories: Talk
+categories: Learning
 ---
 
 主要内容是AI大三下各个选修课和必修课的主观感受，so仅供参考。

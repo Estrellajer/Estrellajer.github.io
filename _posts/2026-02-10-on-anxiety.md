@@ -4,8 +4,8 @@ title: 当我们谈论焦虑
 date: 2026-02-10 20:00:00
 hidden: true
 description: When we talk about anxiety
-tags: thoughts
-categories: Talk
+tags: reflection
+categories: Life
 ---
 
 本文写于一次面试前夕，一个再次明显感受到“慢性压力”的下午。

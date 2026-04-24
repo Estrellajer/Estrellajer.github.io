@@ -25,10 +25,14 @@ layout: default
 
   .reading-page {
     --reading-text: var(--global-text-color);
-    --reading-muted: #69717d;
-    --reading-soft: #8d96a3;
-    --reading-accent: #557a9f;
-    --reading-accent-soft: rgba(85, 122, 159, 0.12);
+    --reading-muted: var(--global-text-color-light);
+    --reading-soft: var(--global-text-color-light);
+    --reading-line: var(--global-divider-color);
+    --reading-surface: var(--global-card-bg-color);
+    --reading-code-surface: var(--global-code-bg-color);
+    --reading-accent: var(--global-theme-color);
+    --reading-accent-strong: var(--global-hover-color);
+    --reading-accent-soft: color-mix(in srgb, var(--global-theme-color) 14%, transparent);
     width: min(100%, 82rem);
     margin: 0 auto;
     padding-top: 1.15rem;
@@ -94,10 +98,10 @@ layout: default
     align-items: center;
     min-height: 2.2rem;
     padding: 0 0.92rem;
-    border: 1px solid rgba(85, 122, 159, 0.12);
+    border: 1px solid var(--reading-line);
     border-radius: 999px;
     background: var(--reading-accent-soft);
-    color: #496885;
+    color: var(--reading-accent-strong);
     font-size: 0.9rem;
     text-decoration: none !important;
   }
@@ -114,7 +118,7 @@ layout: default
     position: sticky;
     top: 6rem;
     padding: 0.8rem 0 0 1.1rem;
-    border-left: 1px solid rgba(17, 19, 23, 0.08);
+    border-left: 1px solid var(--reading-line);
   }
 
   .reading-sidebar-label {
@@ -162,16 +166,16 @@ layout: default
 
   .reading-toc a:hover {
     color: var(--reading-accent);
-    border-left-color: rgba(85, 122, 159, 0.28);
+    border-left-color: var(--reading-accent);
   }
 
   .reading-toc a.is-active {
-    color: #223243;
-    border-left-color: rgba(85, 122, 159, 0.55);
+    color: var(--reading-text);
+    border-left-color: var(--reading-accent);
   }
 
   .reading-toc li[data-level='1'] > a {
-    color: #223243;
+    color: var(--reading-text);
     font-weight: 600;
   }
 
@@ -223,8 +227,8 @@ layout: default
   .reading-article h4 {
     margin-top: 2.5rem;
     margin-bottom: 1rem;
-    color: #1a2632;
-    letter-spacing: -0.028em;
+    color: var(--reading-text);
+    letter-spacing: 0;
     line-height: 1.34;
     scroll-margin-top: 6.5rem;
   }
@@ -233,8 +237,8 @@ layout: default
     margin-top: 3rem;
     padding-top: 0.2rem;
     padding-bottom: 0.68rem;
-    border-bottom: 1px solid rgba(17, 19, 23, 0.08);
-    color: #162330;
+    border-bottom: 1px solid var(--reading-line);
+    color: var(--reading-text);
     font-size: clamp(1.96rem, 2.15vw, 2.3rem);
     font-weight: 700;
     line-height: 1.28;
@@ -242,7 +246,7 @@ layout: default
 
   .reading-article [data-reading-level='2'] {
     margin-top: 2.7rem;
-    color: #203244;
+    color: var(--reading-text);
     font-size: clamp(1.44rem, 1.7vw, 1.68rem);
     font-weight: 700;
     line-height: 1.4;
@@ -250,7 +254,7 @@ layout: default
 
   .reading-article [data-reading-level='3'] {
     margin-top: 2.1rem;
-    color: #304558;
+    color: var(--reading-text);
     font-size: 1.28rem;
     font-weight: 680;
     letter-spacing: -0.01em;
@@ -258,27 +262,27 @@ layout: default
 
   .reading-article [data-reading-level='4'] {
     margin-top: 1.8rem;
-    color: #4f6478;
+    color: var(--reading-muted);
     font-size: 1.08rem;
     font-weight: 650;
     letter-spacing: 0;
   }
 
   .reading-article p {
-    color: #3f4854;
+    color: var(--reading-text);
   }
 
   .reading-article strong {
-    color: #202833;
+    color: var(--reading-text);
     font-weight: 650;
   }
 
   .reading-article blockquote {
     margin: 1.6rem 0;
     padding: 0.45rem 0 0.45rem 1.2rem;
-    border-left: 2px solid rgba(85, 122, 159, 0.34);
+    border-left: 2px solid var(--reading-accent);
     color: var(--reading-muted);
-    background: linear-gradient(90deg, rgba(85, 122, 159, 0.08), rgba(85, 122, 159, 0));
+    background: linear-gradient(90deg, var(--reading-accent-soft), transparent);
     border-radius: 0 0.9rem 0.9rem 0;
   }
 
@@ -292,7 +296,7 @@ layout: default
   }
 
   .reading-article li::marker {
-    color: #6d8eaf;
+    color: var(--reading-accent);
   }
 
   .reading-article pre,
@@ -300,8 +304,8 @@ layout: default
   .reading-article div.highlighter-rouge,
   .reading-article .highlighter-rouge .highlight {
     overflow-x: auto;
-    background: #f6f8fb !important;
-    border: 1px solid rgba(17, 19, 23, 0.08);
+    background: var(--reading-code-surface) !important;
+    border: 1px solid var(--reading-line);
     box-shadow: none;
   }
 
@@ -361,17 +365,17 @@ layout: default
 
   .reading-article code {
     padding: 0.16rem 0.4rem;
-    border: 1px solid rgba(85, 122, 159, 0.14);
+    border: 1px solid var(--reading-line);
     border-radius: 0.45rem;
-    background: rgba(85, 122, 159, 0.08) !important;
-    color: #35506b;
+    background: var(--reading-code-surface) !important;
+    color: var(--reading-accent);
     font-size: 0.92em;
   }
 
   .reading-article hr {
     margin: 2.2rem 0;
     border: 0;
-    border-top: 1px solid rgba(17, 19, 23, 0.08);
+    border-top: 1px solid var(--reading-line);
   }
 
   .reading-article table {
@@ -379,23 +383,23 @@ layout: default
     overflow: hidden;
     border-collapse: separate;
     border-spacing: 0;
-    border: 1px solid rgba(17, 19, 23, 0.08);
+    border: 1px solid var(--reading-line);
     border-radius: 0.95rem;
-    background: #fbfcfd;
+    background: var(--reading-surface);
   }
 
   .reading-article th,
   .reading-article td {
     padding: 0.85rem 1rem;
-    border-bottom: 1px solid rgba(17, 19, 23, 0.06);
+    border-bottom: 1px solid var(--reading-line);
     text-align: left;
     vertical-align: top;
   }
 
   .reading-article th {
-    color: #223243;
+    color: var(--reading-text);
     font-weight: 650;
-    background: rgba(85, 122, 159, 0.08);
+    background: var(--reading-accent-soft);
   }
 
   .reading-article tr:last-child td {
@@ -404,17 +408,17 @@ layout: default
 
   .reading-article a {
     color: inherit;
-    text-decoration-color: rgba(85, 122, 159, 0.45);
+    text-decoration-color: var(--reading-accent);
   }
 
   .reading-article a:hover {
-    text-decoration-color: rgba(85, 122, 159, 0.9);
+    text-decoration-color: var(--reading-accent-strong);
   }
 
   .reading-related {
     margin-top: 3rem;
     padding-top: 1.6rem;
-    border-top: 1px solid rgba(17, 19, 23, 0.08);
+    border-top: 1px solid var(--reading-line);
   }
 
   .reading-related-title {
@@ -459,7 +463,7 @@ layout: default
     .reading-sidebar-inner {
       position: static;
       padding: 1rem 0 0;
-      border-top: 1px solid rgba(17, 19, 23, 0.08);
+      border-top: 1px solid var(--reading-line);
       border-left: 0;
     }
   }
@@ -485,9 +489,9 @@ layout: default
           {% endif %}
           {% for tag in page.tags %}
             {% if url_beginning == '/blog/' %}
-              <a class="reading-chip" href="{{ tag | slugify | prepend: '/blog/tag/' | relative_url }}"># {{ tag }}</a>
+              <a class="reading-chip" href="{{ tag | slugify | prepend: '/blog/tag/' | relative_url }}">{{ tag }}</a>
             {% else %}
-              <span class="reading-chip"># {{ tag }}</span>
+              <span class="reading-chip">{{ tag }}</span>
             {% endif %}
           {% endfor %}
           {% for category in page.categories %}

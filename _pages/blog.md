@@ -19,11 +19,12 @@ pagination:
 <style>
   .blog-landing {
     --blog-text: var(--global-text-color);
-    --blog-muted: #69717d;
-    --blog-soft: #8d96a3;
-    --blog-line: rgba(17, 19, 23, 0.1);
-    --blog-accent: #557a9f;
-    --blog-accent-soft: rgba(85, 122, 159, 0.12);
+    --blog-muted: var(--global-text-color-light);
+    --blog-soft: var(--global-text-color-light);
+    --blog-line: var(--global-divider-color);
+    --blog-accent: var(--global-theme-color);
+    --blog-accent-strong: var(--global-hover-color);
+    --blog-accent-soft: color-mix(in srgb, var(--global-theme-color) 14%, transparent);
     padding-top: 1rem;
   }
 
@@ -43,8 +44,8 @@ pagination:
   .blog-title {
     margin: 0;
     font-size: clamp(2.6rem, 5vw, 4.2rem);
-    line-height: 0.98;
-    letter-spacing: -0.04em;
+    line-height: 1.08;
+    letter-spacing: 0;
     font-weight: 600;
   }
 
@@ -59,19 +60,47 @@ pagination:
   .blog-filters {
     display: flex;
     flex-wrap: wrap;
-    gap: 0.7rem;
-    margin-top: 1.4rem;
+    gap: 0.65rem;
+    align-items: center;
+    margin-top: 1.5rem;
+  }
+
+  .blog-filter-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.65rem;
+    align-items: center;
   }
 
   .blog-filter {
     display: inline-flex;
     align-items: center;
+    gap: 0.55rem;
     min-height: 2.2rem;
-    padding: 0 0.9rem;
+    padding: 0 0.42rem 0 0.9rem;
     border-radius: 999px;
     background: var(--blog-accent-soft);
-    color: #496885;
+    color: var(--blog-accent-strong);
     font-size: 0.92rem;
+    text-decoration: none !important;
+  }
+
+  .blog-filter-count {
+    display: inline-grid;
+    place-items: center;
+    min-width: 1.45rem;
+    height: 1.45rem;
+    padding: 0 0.42rem;
+    border-radius: 999px;
+    background: var(--global-bg-color);
+    color: var(--blog-muted);
+    font-size: 0.78rem;
+    font-weight: 600;
+    line-height: 1;
+  }
+
+  .blog-filter:hover {
+    color: var(--blog-accent);
     text-decoration: none !important;
   }
 
@@ -95,9 +124,12 @@ pagination:
 
   .blog-item-grid {
     display: grid;
-    grid-template-columns: minmax(0, 1fr) 220px;
     gap: 1.5rem;
     align-items: start;
+  }
+
+  .blog-item-grid--with-thumb {
+    grid-template-columns: minmax(0, 1fr) 220px;
   }
 
   .blog-item-date {
@@ -151,8 +183,8 @@ pagination:
     aspect-ratio: 16 / 10;
     object-fit: cover;
     border-radius: 1rem;
-    border: 1px solid rgba(17, 19, 23, 0.08);
-    background: #eef2f6;
+    border: 1px solid var(--blog-line);
+    background: var(--global-card-bg-color);
   }
 
   .blog-pagination .pagination {
@@ -173,38 +205,62 @@ pagination:
   .blog-pagination .page-link:hover {
     background: var(--blog-accent-soft);
     border-color: transparent;
-    color: #496885;
+    color: var(--blog-accent-strong);
   }
 
   @media (max-width: 800px) {
-    .blog-item-grid {
+    .blog-item-grid,
+    .blog-item-grid--with-thumb {
       grid-template-columns: 1fr;
     }
 
     .blog-item-thumb {
       max-width: 320px;
     }
+
   }
 </style>
 
 <div class="blog-landing">
   <section class="blog-hero">
     <div class="blog-eyebrow">Blog</div>
-    <h1 class="blog-title">Notes on research, coding, and life.</h1>
+    <h1 class="blog-title">{{ site.blog_name }}</h1>
     <div class="blog-subtitle">
-      A quieter archive for technical notes, project logs, and occasional reflections.
+      科研札记、工程实践与一些生活复盘。
     </div>
 
-    {% if site.display_tags and site.display_tags.size > 0 or site.display_categories and site.display_categories.size > 0 %}
-      <div class="blog-filters">
-        {% for tag in site.display_tags %}
-          <a class="blog-filter" href="{{ tag | slugify | prepend: '/blog/tag/' | relative_url }}"># {{ tag }}</a>
+    <div class="blog-filters">
+      <div class="blog-filter-group">
+        {% assign preferred_categories = "Research,Engineering,Learning,Life" | split: "," %}
+        {% assign shown_categories = "" %}
+        {% for preferred_category in preferred_categories %}
+          {% for category in site.categories %}
+            {% if category[0] == preferred_category %}
+              {% assign visible_category_posts = category[1] | where_exp: "post", "post.hidden != true" %}
+              {% if visible_category_posts.size > 0 %}
+                <a class="blog-filter" href="{{ category[0] | slugify | prepend: '/blog/category/' | relative_url }}">
+                  <span>{{ category[0] }}</span>
+                  <span class="blog-filter-count" aria-label="{{ visible_category_posts.size }} posts">{{ visible_category_posts.size }}</span>
+                </a>
+                {% assign shown_categories = shown_categories | append: "|" | append: category[0] | append: "|" %}
+              {% endif %}
+            {% endif %}
+          {% endfor %}
         {% endfor %}
-        {% for category in site.display_categories %}
-          <a class="blog-filter" href="{{ category | slugify | prepend: '/blog/category/' | relative_url }}">{{ category }}</a>
+        {% for category in site.categories %}
+          {% assign category_key = category[0] | prepend: "|" | append: "|" %}
+          {% unless shown_categories contains category_key %}
+            {% assign visible_category_posts = category[1] | where_exp: "post", "post.hidden != true" %}
+            {% if visible_category_posts.size > 0 %}
+              <a class="blog-filter" href="{{ category[0] | slugify | prepend: '/blog/category/' | relative_url }}">
+                <span>{{ category[0] }}</span>
+                <span class="blog-filter-count" aria-label="{{ visible_category_posts.size }} posts">{{ visible_category_posts.size }}</span>
+              </a>
+            {% endif %}
+          {% endunless %}
         {% endfor %}
       </div>
-    {% endif %}
+    </div>
 
   </section>
 
@@ -225,7 +281,7 @@ pagination:
       {% endif %}
 
       <li class="blog-item">
-        <div class="blog-item-grid">
+        <div class="blog-item-grid{% if post.thumbnail %} blog-item-grid--with-thumb{% endif %}">
           <div>
             <div class="blog-item-date">{{ post.date | date: "%b %d, %Y" }}</div>
 
@@ -245,12 +301,8 @@ pagination:
 
             {% assign tags = post.tags | join: "" %}
             {% assign categories = post.categories | join: "" %}
-            {% if tags != "" or categories != "" %}
+            {% if categories != "" %}
               <div class="blog-item-taxonomy">
-                {% for tag in post.tags %}
-                  <a href="{{ tag | slugify | prepend: '/blog/tag/' | relative_url }}"># {{ tag }}</a>{% unless forloop.last %} · {% endunless %}
-                {% endfor %}
-                {% if tags != "" and categories != "" %} · {% endif %}
                 {% for category in post.categories %}
                   <a href="{{ category | slugify | prepend: '/blog/category/' | relative_url }}">{{ category }}</a>{% unless forloop.last %} · {% endunless %}
                 {% endfor %}

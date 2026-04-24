@@ -3,8 +3,8 @@ layout: post
 title: LLM八股学习与手撕
 date: 2026-02-03 11:30:00
 description: Notes on LLM algorithms
-tags: notes
-categories: Skill
+tags: llm
+categories: Learning
 ---
 
 ## Attention
