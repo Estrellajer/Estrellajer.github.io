@@ -41,26 +41,15 @@ ninja.data = [{
             window.location.href = "/blog/2026/cli-in-ssh/";
           
         },
-      },{id: "post-ai-驱动的未来-焦虑频发下的深度思考",
+      },{id: "post-task-vector-in-multimodal-in-context-learning-论文阅读笔记",
         
-          title: "AI 驱动的未来：焦虑频发下的深度思考",
+          title: "Task Vector in Multimodal In-Context Learning 论文阅读笔记",
         
-        description: "在疾病缠绕与工作重压的间隙，关于 AI 冲击下职业前景与人际关系的感悟",
+        description: "Notes on task vectors, function vectors, in-context vectors, and multimodal in-context learning.",
         section: "Posts",
         handler: () => {
           
-            window.location.href = "/blog/2026/thoughts-of-future/";
-          
-        },
-      },{id: "post-第一次面试总结复盘",
-        
-          title: "第一次面试总结复盘",
-        
-        description: "第一次面试复盘：技术面与HR面",
-        section: "Posts",
-        handler: () => {
-          
-            window.location.href = "/blog/2026/interview-summary/";
+            window.location.href = "/blog/2026/task-vector-multimodal-icl/";
           
         },
       },{id: "post-leetcode学习笔记",
@@ -72,17 +61,6 @@ ninja.data = [{
         handler: () => {
           
             window.location.href = "/blog/2026/leetcode-notes/";
-          
-        },
-      },{id: "post-当我们谈论焦虑",
-        
-          title: "当我们谈论焦虑",
-        
-        description: "When we talk about anxiety",
-        section: "Posts",
-        handler: () => {
-          
-            window.location.href = "/blog/2026/on-anxiety/";
           
         },
       },{id: "post-self-distillation论文阅读",
@@ -127,6 +105,17 @@ ninja.data = [{
         handler: () => {
           
             window.location.href = "/blog/2026/aaai-log/";
+          
+        },
+      },{id: "post-lora-for-continual-learning-论文阅读笔记",
+        
+          title: "LoRA for Continual Learning 论文阅读笔记",
+        
+        description: "Notes on LoRA-based continual learning methods, including InfLoRA, BiLoRA, TreeLoRA, CLoRA, and AnySSR.",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2025/lora4cl/";
           
         },
       },{id: "post-编程错误",
