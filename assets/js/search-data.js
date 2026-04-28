@@ -30,7 +30,18 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/projects/";
           },
-        },{id: "post-远程连接服务器时的-ai-编程工具实践与配置指南",
+        },{id: "post-training-free-prompt-optimization-从经验库到问题重构",
+        
+          title: "Training-Free Prompt Optimization：从经验库到问题重构",
+        
+        description: "关于 training-free prompt optimization、GRPO、经验库与 3DrawAgent 的一些思考",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/training-free-prompt-optimization/";
+          
+        },
+      },{id: "post-远程连接服务器时的-ai-编程工具实践与配置指南",
         
           title: "远程连接服务器时的 AI 编程工具实践与配置指南",
         
