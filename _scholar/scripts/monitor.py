@@ -20,8 +20,25 @@ from difflib import unified_diff
 from pathlib import Path
 
 import requests
+from requests.adapters import HTTPAdapter
+from urllib3.util import Retry
 import yaml
 from bs4 import BeautifulSoup
+
+def _get_session():
+    s = requests.Session()
+    retries = Retry(
+        total=3,
+        backoff_factor=1,
+        status_forcelist=[500, 502, 503, 504],
+        raise_on_status=False
+    )
+    adapter = HTTPAdapter(max_retries=retries)
+    s.mount("http://", adapter)
+    s.mount("https://", adapter)
+    return s
+
+SESSION = _get_session()
 
 
 # Paths
@@ -61,10 +78,12 @@ def save_yaml(path: Path, data):
 
 
 def fetch(url: str, timeout: int = 30):
+    if "scholar.google" in url or "google.com" in url:
+        timeout = min(timeout, 10)
     try:
-        return requests.get(url, headers=REQUEST_HEADERS, timeout=timeout, verify=False)
-    except requests.exceptions.SSLError:
-        return requests.get(url, headers=REQUEST_HEADERS, timeout=timeout, verify=False)
+        return SESSION.get(url, headers=REQUEST_HEADERS, timeout=timeout, verify=False)
+    except (requests.exceptions.SSLError, requests.exceptions.ConnectionError, Exception):
+        return SESSION.get(url, headers=REQUEST_HEADERS, timeout=timeout, verify=False)
 
 
 # RSS
@@ -261,13 +280,17 @@ def check_scholar(scholar: dict, rss_cache: dict, since: datetime | None) -> dic
               "labels": scholar.get("labels", []),
               "watch": scholar.get("watch", "general")}
     rss_url = rss_cache.get(name)
-    if rss_url and since:
-        rr = check_rss(name, rss_url, since)
-        if rr.get("new_entries"):
-            result["type"] = "rss"
-            result["entries"] = rr["new_entries"]
-            return result
-        elif not rr.get("error"):
+    if rss_url:
+        if since:
+            rr = check_rss(name, rss_url, since)
+            if rr.get("new_entries"):
+                result["type"] = "rss"
+                result["entries"] = rr["new_entries"]
+                return result
+            elif not rr.get("error"):
+                result["type"] = "rss_no_change"
+                return result
+        else:
             result["type"] = "rss_no_change"
             return result
     if "zhihu.com" in url:
@@ -410,24 +433,24 @@ def generate_html_report(results: list, total: int):
     watch_counts = Counter(r.get("watch", "general") for r in results)
 
     def _watch_icon(w: str) -> str:
-        return {"blog": "[B]", "vlog": "[V]", "news": "[N]",
-                "publications": "[P]", "general": "[G]"}.get(w, "[G]")
+        return {"blog": "📝", "vlog": "📹", "news": "📢",
+                "publications": "🎓", "general": "🌐"}.get(w, "🌐")
 
     def _scholar_header(r, extra_tags="") -> str:
         parts = []
         watch = r.get("watch", "general")
-        parts.append(f'<span class="wb2">{_watch_icon(watch)} {watch}</span>')
+        parts.append(f'<span class="wb2 wb2-{watch}">{_watch_icon(watch)} {watch}</span>')
         if r.get("affiliation"):
             parts.append(f'<span class="t ta">{_esc(r["affiliation"])}</span>')
         if r.get("research_areas"):
             for a in r["research_areas"][:2]:
                 parts.append(f'<span class="t tr">{_esc(a)}</span>')
         tags = " ".join(parts)
-        return f'<a href="{_esc(r["url"])}" class="sn2">{_esc(r["name"])}</a> {tags} {extra_tags}'
+        return f'<a href="{_esc(r["url"])}" target="_blank" class="sn2">{_esc(r["name"])}</a> {tags} {extra_tags}'
 
     def _status_badge(r) -> str:
         labels = {"rss": "NEW", "changed": "CHG", "error": "ERR",
-                  "first_check": "NEW", "unchanged": "OK", "rss_no_change": "OK"}
+                  "first_check": "FIRST", "unchanged": "OK", "rss_no_change": "OK"}
         t = r["type"]
         return f'<span class="st2 st-{t}">{labels.get(t, t)}</span>'
 
@@ -460,12 +483,13 @@ def generate_html_report(results: list, total: int):
         return f'Content changed <span class="ds">(+{added}/-{removed} lines)</span>'
 
     def _build_card(r) -> str:
-        card = f'<div class="sb2" {_data_attrs(r)}>'
+        watch = r.get("watch", "general")
+        card = f'<div class="sb2 sb2-{watch}" {_data_attrs(r)}>'
         card += f'<div class="sh">{_scholar_header(r, _status_badge(r))}</div>'
         if r["type"] == "rss":
             card += '<ul class="el">'
             for e in r["entries"][:10]:
-                card += f'<li><a href="{_esc(e["link"])}">{_esc(e["title"])}</a> <span class="da">- {_esc(e["published"])}</span></li>'
+                card += f'<li><a href="{_esc(e["link"])}" target="_blank">{_esc(e["title"])}</a> <span class="da">- {_esc(e["published"])}</span></li>'
             if len(r["entries"]) > 10:
                 card += f'<li class="mo">... and {len(r["entries"]) - 10} more</li>'
             card += '</ul>'
@@ -494,29 +518,68 @@ def generate_html_report(results: list, total: int):
         html = f'<div class="lg" data-label="{label}">'
         html += f'<h2 class="lt">{label_display}</h2>'
         if rss:
-            html += f'<div class="g gn"><h3>[NEW] ({len(rss)})</h3>'
+            html += f'<div class="g gn"><h3>🎉 New Entries ({len(rss)})</h3>'
             for r in rss: html += _build_card(r)
             html += '</div>'
         if changed:
-            html += f'<div class="g gc"><h3>[CHG] ({len(changed)})</h3>'
+            html += f'<div class="g gc"><h3>⚡ Changes ({len(changed)})</h3>'
             for r in changed: html += _build_card(r)
             html += '</div>'
         if first_local:
-            html += f'<div class="g gf"><h3>[NEW] First check ({len(first_local)})</h3>'
+            html += f'<div class="g gf"><h3>🆕 First Snapshots ({len(first_local)})</h3>'
             for r in first_local: html += _build_card(r)
             html += '</div>'
         if errs_local:
-            html += f'<div class="g ge"><h3>[ERR] ({len(errs_local)})</h3>'
+            html += f'<div class="g ge"><h3>⚠️ Errors ({len(errs_local)})</h3>'
             for r in errs_local: html += _build_card(r)
             html += '</div>'
         if ok_list_local:
-            html += f'<details class="g"><summary><h3>[OK] ({len(ok_list_local)})</h3></summary>'
+            html += f'<details class="g-details"><summary><h3>🟢 Silent & Safe ({len(ok_list_local)})</h3></summary>'
+            html += '<div class="g">'
             for r in ok_list_local: html += _build_card(r)
-            html += '</details>'
+            html += '</div></details>'
         html += '</div>'
         return html
 
     sections = []
+    
+    # 1. Timeline Updates at the Top
+    recent_updates = [r for r in results if r["type"] in ("rss", "changed")]
+    recent_html = '<div class="rd-section"><h2>🔥 Recent Discoveries & Updates</h2>'
+    if recent_updates:
+        recent_html += '<div class="rd-container">'
+        for r in recent_updates:
+            watch = r.get("watch", "general")
+            recent_html += f'<div class="rd-card rd-card-{watch}">'
+            recent_html += f'<div class="rd-card-header">'
+            recent_html += f'<span class="rd-watch">{_watch_icon(watch)} {watch.upper()}</span>'
+            recent_html += f'<a href="{_esc(r["url"])}" target="_blank" class="rd-title">{_esc(r["name"])}</a>'
+            if r.get("affiliation"):
+                recent_html += f'<span class="rd-aff">{_esc(r["affiliation"])}</span>'
+            recent_html += '</div>'
+            
+            if r["type"] == "rss":
+                recent_html += '<ul class="rd-list">'
+                for e in r["entries"][:3]:
+                    recent_html += f'<li><a href="{_esc(e["link"])}" target="_blank">{_esc(e["title"])}</a> <span class="rd-date">{_esc(e["published"])}</span></li>'
+                recent_html += '</ul>'
+            elif r["type"] == "changed":
+                recent_html += f'<div class="rd-change">{_summarize_change(r)}</div>'
+                recent_html += f'<details class="rd-details"><summary>View Changes</summary>'
+                recent_html += f'<div class="rd-diff">{_diff_to_html(r.get("diff", ""))}</div></details>'
+            recent_html += '</div>'
+        recent_html += '</div>'
+    else:
+        recent_html += """
+        <div class="rd-empty">
+            <span class="rd-empty-icon">✨</span>
+            <div class="rd-empty-text">All homepages are currently silent.</div>
+            <div class="rd-empty-sub">No new posts or publications detected in the latest sync. Check back tomorrow!</div>
+        </div>
+        """
+    recent_html += '</div>'
+    sections.append(recent_html)
+
     total_new = len([r for r in results if r["type"] in ("rss", "changed")])
     watch_badges = " ".join(
         f'<span class="s">{_watch_icon(w)} {c} {w}</span>'
@@ -530,24 +593,24 @@ def generate_html_report(results: list, total: int):
 
     # Filter bar
     filter_html = '<div class="fb" id="filterBar"><div class="fr">'
-    filter_html += '<input type="text" id="searchInput" placeholder="Search..." oninput="applyFilters()" class="si">'
-    filter_html += '<span class="flt">L:</span>'
+    filter_html += '<input type="text" id="searchInput" placeholder="Search scholars..." oninput="applyFilters()" class="si">'
+    filter_html += '<span class="flt">Label:</span>'
     for lb in ["blog", "homepage"]:
         filter_html += f'<label class="fc"><input type="checkbox" class="fl-label" value="{lb}" checked onchange="applyFilters()"> {lb}</label>'
-    filter_html += '<span class="flt">W:</span>'
+    filter_html += '<span class="flt">Watch:</span>'
     for w in ["blog", "vlog", "news", "publications", "general"]:
-        filter_html += f'<label class="fc"><input type="checkbox" class="fl-watch" value="{w}" checked onchange="applyFilters()"> {_watch_icon(w)}</label>'
-    filter_html += '<span class="flt">S:</span>'
+        filter_html += f'<label class="fc"><input type="checkbox" class="fl-watch" value="{w}" checked onchange="applyFilters()"> {_watch_icon(w)} {w}</label>'
+    filter_html += '<span class="flt">Status:</span>'
     for st, sl in [("rss", "NEW"), ("changed", "CHG"), ("first_check", "FIRST"), ("error", "ERR")]:
         filter_html += f'<label class="fc"><input type="checkbox" class="fl-status" value="{st}" checked onchange="applyFilters()"> {sl}</label>'
     filter_html += '</div>'
     if all_affiliations:
-        filter_html += '<div class="fr ar"><span class="flt">Aff:</span>'
+        filter_html += '<div class="fr ar"><span class="flt">Affiliation:</span>'
         for aff in all_affiliations:
             if aff:
                 filter_html += f'<label class="fc"><input type="checkbox" class="fl-aff" value="{_esc(aff.lower())}" checked onchange="applyFilters()"> {_esc(aff)}</label>'
         filter_html += '</div>'
-    filter_html += '<div class="fs"><span id="visibleCount">0</span>/<span id="totalCount">0</span></div></div>'
+    filter_html += '<div class="fs">Showing <span id="visibleCount">0</span> of <span id="totalCount">0</span> scholars</div></div>'
     sections.append(filter_html)
 
     # Errors (always visible, at top)
@@ -567,141 +630,28 @@ def generate_html_report(results: list, total: int):
 
     # Blog section
     blog_r = [r for r in results if "blog" in r.get("labels", [])]
-    bh = _render_label_group("blog", "[B] Blog", blog_r)
+    bh = _render_label_group("blog", "📝 Blog Feeds", blog_r)
     if bh: sections.append(bh)
 
     # Homepage section
     hp_r = [r for r in results if "homepage" in r.get("labels", []) and "blog" not in r.get("labels", [])]
-    hh = _render_label_group("homepage", "[H] Homepage", hp_r)
+    hh = _render_label_group("homepage", "🌐 Academic Homepages", hp_r)
     if hh: sections.append(hh)
 
     # Unlabeled
     ul_r = [r for r in results if not r.get("labels")]
-    uh = _render_label_group("other", "[?] Other", ul_r)
+    uh = _render_label_group("other", "❓ Other Channels", ul_r)
     if uh: sections.append(uh)
 
     body = "\n".join(sections)
 
-    html = f"""<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Scholar Monitor - {now}</title>
-<style>
-* {{ box-sizing:border-box; margin:0; padding:0; }}
-body {{ font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif; background:#0d1117; color:#c9d1d9; }}
-.c {{ max-width:1100px; margin:0 auto; padding:16px; }}
-h1 {{ font-size:1.3rem; color:#f0f6fc; margin-bottom:2px; }}
-.st {{ color:#8b949e; font-size:.82rem; margin-bottom:10px; }}
-.sb {{ display:flex; gap:6px; flex-wrap:wrap; margin-bottom:14px; }}
-.s {{ background:#161b22; padding:3px 10px; border-radius:14px; font-size:.8rem; border:1px solid #30363d; }}
-.sn {{ border-color:#3fb950; }}
-.se2 {{ border-color:#f85149; background:#1c1014; }}
-.sf {{ border-color:#58a6ff; }}
-.wb {{ display:flex; gap:4px; flex-wrap:wrap; margin-bottom:10px; }}
-.fb {{ background:#161b22; border-radius:6px; padding:8px 12px; margin-bottom:10px; border:1px solid #30363d; }}
-.fr {{ display:flex; gap:4px; flex-wrap:wrap; align-items:center; }}
-.ar {{ padding-top:4px; margin-top:4px; border-top:1px solid #30363d; }}
-.si {{ background:#0d1117; border:1px solid #30363d; border-radius:4px; padding:4px 8px; color:#c9d1d9; font-size:.8rem; width:140px; }}
-.si:focus {{ border-color:#58a6ff; outline:none; }}
-.flt {{ color:#8b949e; font-size:.72rem; margin-left:2px; }}
-.fc {{ display:inline-flex; align-items:center; gap:2px; background:#0d1117; border:1px solid #30363d; border-radius:8px; padding:1px 6px; font-size:.75rem; cursor:pointer; color:#c9d1d9; }}
-.fc input {{ accent-color:#58a6ff; margin:0; }}
-.fc:has(input:checked) {{ background:#1f2937; border-color:#58a6ff; }}
-.fs {{ color:#8b949e; font-size:.72rem; margin-top:4px; }}
-.lg {{ margin-bottom:14px; }}
-.lt {{ font-size:1.1rem; margin-bottom:6px; padding-bottom:4px; border-bottom:2px solid #30363d; color:#f0f6fc; }}
-.g {{ margin-bottom:10px; }}
-.g h3 {{ font-size:.9rem; margin-bottom:4px; color:#8b949e; }}
-.gn h3 {{ color:#3fb950; }}
-.gc h3 {{ color:#d29922; }}
-.ge h3 {{ color:#f85149; }}
-.gf h3 {{ color:#58a6ff; }}
-.sb2 {{ margin-bottom:4px; padding:6px 10px; background:#0d1117; border-left:3px solid #30363d; border-radius:4px; }}
-.sh2 {{ display:none; }}
-.sh {{ display:flex; align-items:center; flex-wrap:wrap; gap:4px; }}
-.sn2 {{ font-weight:600; color:#58a6ff; font-size:.85rem; }}
-.sn2:hover {{ color:#79c0ff; }}
-.wb2 {{ font-size:.65rem; padding:0 4px; border-radius:2px; background:#1f2937; color:#8b949e; border:1px solid #30363d; }}
-.t {{ font-size:.7rem; padding:0 6px; border-radius:6px; }}
-.ta {{ background:#0c2d6b; color:#79c0ff; border:1px solid #1f6feb; }}
-.tr {{ background:#0e4429; color:#7ee787; border:1px solid #238636; }}
-.st2 {{ font-size:.7rem; padding:0 6px; border-radius:6px; margin-left:auto; white-space:nowrap; }}
-.st-rss {{ background:#0e4429; color:#7ee787; }}
-.st-changed {{ background:#3d2e00; color:#d29922; }}
-.st-error {{ background:#490202; color:#f85149; }}
-.st-first {{ background:#0c2d6b; color:#58a6ff; }}
-.st-unchanged {{ background:#0d1117; color:#8b949e; }}
-.st-rss_no_change {{ background:#0d1117; color:#8b949e; }}
-.el {{ list-style:none; padding-left:0; margin-top:3px; }}
-.el li {{ padding:1px 0; font-size:.8rem; }}
-.el li a {{ color:#c9d1d9; text-decoration:none; }}
-.el li a:hover {{ color:#58a6ff; }}
-.da {{ color:#8b949e; font-size:.75rem; }}
-.mo {{ color:#8b949e; font-style:italic; font-size:.75rem; }}
-.cs {{ margin-top:3px; font-size:.82rem; color:#f0f6fc; padding:3px 6px; background:#161b22; border-radius:3px; }}
-.ds {{ color:#8b949e; font-size:.75rem; }}
-.dd {{ margin-top:3px; }}
-.dd summary {{ font-size:.78rem; color:#58a6ff; cursor:pointer; padding:1px 0; }}
-.dd summary:hover {{ color:#79c0ff; }}
-.db {{ background:#0d1117; border-radius:3px; padding:6px; font-family:"SF Mono",Consolas,monospace; font-size:.72rem; line-height:1.35; max-height:250px; overflow-y:auto; border:1px solid #30363d; white-space:pre-wrap; }}
-.da2 {{ color:#7ee787; background:#0e4429; display:block; }}
-.dd2 {{ color:#f85149; background:#490202; display:block; }}
-.dh {{ color:#8b949e; }}
-.tr2 {{ color:#8b949e; font-style:italic; font-size:.75rem; margin-top:2px; }}
-.se3 {{ border-left:4px solid #f85149; margin-bottom:10px; background:#161b22; border-radius:6px; padding:10px 14px; border:1px solid #30363d; }}
-.se3 h2 {{ font-size:.95rem; color:#f0f6fc; margin-bottom:6px; }}
-.es {{ display:flex; gap:4px; flex-wrap:wrap; margin-bottom:4px; }}
-.ec {{ background:#1c1014; border:1px solid #f85149; border-radius:8px; padding:0 6px; font-size:.75rem; color:#f85149; }}
-.el2 {{ list-style:none; }}
-.ei {{ display:flex; align-items:center; flex-wrap:wrap; gap:4px; padding:3px 6px; margin-bottom:2px; border-radius:3px; font-size:.8rem; }}
-.sh {{ background:#1c1014; border-left:3px solid #f85149; }}
-.sm {{ background:#151b23; border-left:3px solid #d29922; }}
-.sl2 {{ background:#0d1117; border-left:3px solid #30363d; }}
-.eic {{ font-size:.8rem; }}
-.ei code {{ color:#f85149; background:#1c1014; padding:0 4px; border-radius:2px; font-size:.75rem; word-break:break-all; }}
-.esg {{ color:#8b949e; font-size:.72rem; font-style:italic; }}
-.ei2 {{ margin-top:3px; font-size:.8rem; padding:3px 6px; background:#1c1014; border-radius:3px; }}
-.ei2 code {{ color:#f85149; font-size:.75rem; }}
-details.g summary {{ cursor:pointer; }}
-details.g summary h3 {{ display:inline; }}
-@media(max-width:600px) {{ .c {{ padding:10px; }} .si {{ width:100%; }} }}
-</style>
-</head>
-<body>
-<div class="c">
-  <h1>Scholar Monitor</h1>
-  <p class="st">Run: {_esc(now)} | Total: {total}</p>
-  {stats_html}
-  {body}
-  <p style="text-align:center;color:#8b949e;font-size:.72rem;margin:14px 0">Auto-generated</p>
-</div>
-<script>
-function applyFilters() {{
-  const q = (document.getElementById('searchInput')?.value||'').toLowerCase();
-  const ll = [...document.querySelectorAll('.fl-label:checked')].map(c=>c.value);
-  const ww = [...document.querySelectorAll('.fl-watch:checked')].map(c=>c.value);
-  const ss = [...document.querySelectorAll('.fl-status:checked')].map(c=>c.value);
-  const aa = [...document.querySelectorAll('.fl-aff:checked')].map(c=>c.value);
-  let v=0,t=0;
-  document.querySelectorAll('.sb2').forEach(b=>{{
-    t++;
-    const n=(b.dataset.name||'').toLowerCase(), la=(b.dataset.label||'').split(',');
-    const w=b.dataset.watch||'', s=b.dataset.status||'', a=(b.dataset.affiliation||'').toLowerCase();
-    const ns=(s==='rss_no_change')?'unchanged':s;
-    const ms=!q||n.includes(q), ml=la.some(l=>ll.includes(l)), mw=ww.includes(w);
-    const mst=ss.some(x=>ns===x||s===x), ma=aa.length===0||aa.includes(a);
-    if(ms&&ml&&mw&&mst&&ma){{b.classList.remove('sh2');v++;}}else{{b.classList.add('sh2');}}
-  }});
-  document.querySelectorAll('.lg,.g').forEach(e=>{{const hv=e.querySelectorAll('.sb2:not(.sh2)').length>0;e.style.display=hv?'':'none';}});
-  document.getElementById('visibleCount').textContent=v;
-  document.getElementById('totalCount').textContent=t;
-}}
-applyFilters();
-</script>
-</body>
-</html>"""
+    template_path = Path(__file__).parent / "_report_template.html"
+    if template_path.exists():
+        template = template_path.read_text(encoding="utf-8")
+        html = template.replace("{now}", now).replace("{total}", str(total)).replace("{stats_html}", stats_html).replace("{body}", body)
+    else:
+        log("Error: HTML template not found!")
+        return
 
     HTML_PATH.parent.mkdir(parents=True, exist_ok=True)
     HTML_PATH.write_text(html, encoding="utf-8")
