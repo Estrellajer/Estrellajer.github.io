@@ -203,7 +203,11 @@ def snapshot_path(name: str) -> Path:
 
 def load_snapshot(name: str):
     p = snapshot_path(name)
-    return p.read_text(encoding="utf-8") if p.exists() else None
+    if p.exists():
+        content = p.read_text(encoding="utf-8")
+        content = content.replace("\r\n", "\n").replace("\r", "\n")
+        return _clean(content)
+    return None
 
 
 def save_snapshot(name: str, content: str):
@@ -387,6 +391,36 @@ def generate_report(results: list, total: int):
     return "\n".join(lines)
 
 
+def _extract_new_additions(diff_text: str) -> list:
+    if not diff_text:
+        return []
+    lines = diff_text.split("\n")
+    added_raw = [l[1:].strip() for l in lines if l.startswith("+") and not l.startswith("+++")]
+    
+    filtered = []
+    noise_keywords = {
+        "举报不良行为", "google 网站", "many thanks", "great theme", 
+        "template", "jekyll", "designed by", "last updated",
+        "power by", "hosted on", "github pages", "copyright"
+    }
+    
+    for l in added_raw:
+        if not l:
+            continue
+        # Skip pure numbers, dates or punctuation
+        if re.match(r'^[0-9\s\-\.\,\:\/\\\|]+$', l):
+            continue
+        # Skip standard boilerplate noise
+        lower_l = l.lower()
+        if any(noise in lower_l for noise in noise_keywords):
+            continue
+        if len(l) < 4:
+            continue
+        if l not in filtered:
+            filtered.append(l)
+    return filtered
+
+
 # HTML helpers
 def _esc(text: str) -> str:
     return (text.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;").replace('"', "&quot;"))
@@ -495,7 +529,18 @@ def generate_html_report(results: list, total: int):
             card += '</ul>'
         elif r["type"] == "changed":
             card += f'<div class="cs">{_summarize_change(r)}</div>'
-            card += f'<details class="dd"><summary>Show changes</summary><div class="db">{_diff_to_html(r.get("diff", ""))}</div>'
+            additions = _extract_new_additions(r.get("diff", ""))
+            if additions:
+                card += '<div class="new-additions">'
+                card += '<span class="na-title">✨ Detected Additions:</span>'
+                card += '<ul class="na-list">'
+                for add_item in additions[:8]:
+                    card += f'<li>{_esc(add_item)}</li>'
+                if len(additions) > 8:
+                    card += f'<li class="mo">... and {len(additions) - 8} more</li>'
+                card += '</ul>'
+                card += '</div>'
+            card += f'<details class="dd"><summary>Show raw diff</summary><div class="db">{_diff_to_html(r.get("diff", ""))}</div>'
             if r.get("diff_truncated"):
                 card += '<p class="tr2">... diff truncated</p>'
             card += '</details>'
@@ -565,6 +610,16 @@ def generate_html_report(results: list, total: int):
                 recent_html += '</ul>'
             elif r["type"] == "changed":
                 recent_html += f'<div class="rd-change">{_summarize_change(r)}</div>'
+                additions = _extract_new_additions(r.get("diff", ""))
+                if additions:
+                    recent_html += '<div class="rd-additions">'
+                    recent_html += '<ul class="rd-add-list">'
+                    for add_item in additions[:3]:
+                        recent_html += f'<li>✨ {_esc(add_item)}</li>'
+                    if len(additions) > 3:
+                        recent_html += f'<li class="mo">... and {len(additions) - 3} more</li>'
+                    recent_html += '</ul>'
+                    recent_html += '</div>'
                 recent_html += f'<details class="rd-details"><summary>View Changes</summary>'
                 recent_html += f'<div class="rd-diff">{_diff_to_html(r.get("diff", ""))}</div></details>'
             recent_html += '</div>'
