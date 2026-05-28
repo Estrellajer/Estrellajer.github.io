@@ -1,0 +1,313 @@
+👋 About Me
+Hello! This is Enneng Yang. I’m currently a Postdoctoral Researcher at Shenzhen Campus of
+Sun Yat-sen University, China
+, advised by
+Assoc. Prof. Li Shen
+.
+Before that, I received the PhD degree (June 2025) from
+Northeastern University, China
+, advised by
+Prof. Guibing Guo
+.
+From March 2024 to March 2025, I am a visiting Ph.D. student in
+Prof. Jie Zhang
+’s group at
+Nanyang Technological University, Singapore
+.
+My research interests lie in large language models, machine learning, and recommender systems. More specifically, I focus on:
+Large Language Model:
+continual pretraining/finetuning, LLM self-evolution, knowledge editing
+Machine Learning:
+model merging, multi-task learning, continual/incremental learning, data-free learning, dataset/knowledge distillation
+Recommendation System:
+multi-task/multi-scenario recommendation, sequential recommendation, OOD recommendation
+🔥
+Our team is seeking self-motivated students (including remote internships, undergraduates, graduate students, and other candidates) to join research on LLMs, continual learning, and model merging, with the goal of publishing high-quality academic papers. If interested, please email me your resume.
+👏 News
+2026.05: Several of our papers have been accepted by ICML 2026.
+2026.05: Our survey paper on data augmentation has been accepted by TKDE 2026.
+2026.04: Our paper on POI recommendation has been accepted by SIGIR 2026.
+2026.02: Our paper on sequential recommendation has been accepted by TPAMI 2026.
+2026.01: Two of our papers on model merging have been accepted by ICLR 2026.
+2025.12: Our survey on model merging has been accepted by ACM Computing Surveys (CSUR) 2026.
+2025.11: Our paper on model merging benchmark has been accepted by JMLR 2025.
+2025.11: Our paper on long-sequence recommendation has been accepted by AAAI 2026.
+2025.10: Our paper on model merging has been accepted by TPAMI 2025.
+2025.09: Two of our papers on continual model merging have been accepted by NeurIPS 2025.
+2025.05: Our paper on knowledge editing has been accepted by ACL (Main) 2025.
+2025.05: Our paper on model merging has been accepted by ICML 2025.
+2025.04: Our paper on explainable recommendation has been accepted by TOIS 2025.
+2025.04: Two of our papers on sequential recommendation have been accepted by SIGIR 2025.
+2025.02: Our paper on out-of-distribution recommendation has been accepted by TOIS 2025.
+2025.01: Our paper on flatness-aware continual learning has been accepted by TPAMI 2025.
+2025.01: Two of our papers on out-of-distribution recommendation have been accepted by WWW 2025.
+2024.12: Two of our papers on LLM fine-tuning and sequential recommendation have been accepted by AAAI 2025.
+2024.11: Our paper on recommendation unlearning has been accepted by TOIS 2024.
+2024.11: Our survey on forgetting in deep learning has been accepted by TPAMI 2024.
+2024.09: Our paper on continual learning has been accepted by TPAMI 2024.
+2024.05: Our paper on model merging has been accepted by ICML 2024.
+2024.01: Our paper on model merging has been accepted by ICLR 2024.
+2023.10: Our paper on sequential recommendation has been accepted by TKDE 2023.
+2023.09: Our paper on dataset condensation has been accepted by NeurIPS 2023.
+2023.07: Our paper on flatness-aware continual learning has been accepted by ICCV 2023.
+More
+✨ Repositories
+Comments and contributions are welcome.
+Awesome-Model-Merging-Methods-Theories-Applications
+This repository collects the latest research on Model Merging in Machine Learning.
+Awesome-Forgetting-in-Deep-Learning
+This repository collects the latest research on Catastrophic Forgetting in Deep Learning.
+FusionBench
+This repository integrates the latest model merging algorithm.
+📝 Selected Preprints and Publications
+Survey or Benchmark Papers
+Model Merging in LLMs, MLLMs, and Beyond: Methods, Theories, Applications and Opportunities
+ACM Computing Surveys 2026
+|
+Repository
+Enneng Yang
+, Li Shen, Guibing Guo, Xingwei Wang, Xiaochun Cao, Jie Zhang, Dacheng Tao.
+Data Augmentation for Sequential Recommendation: A Survey
+TKDE 2026
+|
+Repository
+Yizhou Dang,
+Enneng Yang
+, Yuting Liu, Guibing Guo, Linying Jiang, Jianzhe Zhao, Xingwei Wang.
+FusionBench: A Unified Library and Comprehensive Benchmark for Deep Model Fusion
+JMLR 2025
+|
+Code
+Anke Tang, Li Shen, Yong Luo,
+Enneng Yang
+, Han Hu, Lefei Zhang, Bo Du, Dacheng Tao.
+A Comprehensive Survey of Forgetting in Deep Learning Beyond Continual Learning
+TPAMI 2024
+|
+Repository
+Zhenyi Wang,
+Enneng Yang
+, Li Shen, Heng Huang.
+Conference Papers
+MergOPT: A Merge-Aware Optimizer for Robust Model Merging
+ICLR 2026
+|
+Code
+Enneng Yang
+, Qun Yang, Peng Wang, Anke Tang, Guibing Guo, Xiaochun Cao, Li Shen.
+OptMerge: Unifying Multimodal LLM Capabilities and Modalities via Model Merging
+ICLR 2026
+|
+Code
+Yongxian Wei, Runxi Cheng, Weike Jin,
+Enneng Yang
+, Li Shen, Lu Hou, Sinan Du, Chun Yuan, Xiaochun Cao, Dacheng Tao.
+Multi-Perspective Driven Expected Location Preferences for Next POI Recommendations
+SIGIR 2026
+|
+Code
+Pengxiang Lan,
+Enneng Yang
+, Yuliang Liang, Jianzhe Zhao, Guibing Guo, Hai Zhao.
+Interest-Shift-Aware Logical Reasoning for Efficient Long-Sequence Recommendation
+AAAI 2026
+|
+Code
+Fei Li, Qingyun Gao,
+Enneng Yang
+, Jianzhe Zhao, Guibing Guo.
+Continual Model Merging without Data: Dual Projections for Balancing Stability and Plasticity
+NeurIPS 2025
+|
+Code
+Enneng Yang
+, Anke Tang, Li Shen, Guibing Guo, Xingwei Wang, Xiaochun Cao, Jie Zhang.
+Merging on the Fly Without Retraining: A Sequential Approach to Scalable Continual Model Merging
+NeurIPS 2025
+|
+Code
+Anke Tang,
+Enneng Yang
+, Li Shen, Yong Luo, Han Hu, Lefei Zhang, Bo Du, Dacheng Tao.
+Knowledge Decoupling via Orthogonal Projection for Lifelong Editing of Large Language Models
+ACL 2025
+Haoyu Xu, Pengxiang Lan,
+Enneng Yang
+, Guibing Guo, Jianzhe Zhao, Linying Jiang, Xingwei Wang.
+Representation Surgery in Model Merging with Probabilistic Modeling
+ICML 2025
+|
+Code
+Qi Wei, Shuo He,
+Enneng Yang
+, Tingcong Liu, Haobo Wang, Lei Feng, Bo An.
+Denoising Multi-Interest-Aware Logical Reasoning for Long-Sequence Recommendation
+SIGIR 2025
+(Oral) |
+Code
+Fei Li, Qingyun Gao, Yizhou Dang,
+Enneng Yang
+, Guibing Guo, Jianzhe Zhao and Xingwei Wang.
+Data Augmentation as Free Lunch: Exploring the Test-Time Augmentation for Sequential Recommendation
+SIGIR 2025
+(Oral) |
+Code
+Yizhou Dang, Yuting Liu,
+Enneng Yang
+, Minhan Huang, Guibing Guo, Jianzhe Zhao and Xingwei Wang.
+Distributionally Robust Graph Out-of-Distribution Recommendation via Diffusion Model
+WWW 2025
+|
+Code
+Chu Zhao,
+Enneng Yang
+, Yuliang Liang, Jianzhe Zhao, Guibing Guo, Xingwei Wang.
+Graph Representation Learning via Causal Diffusion for Out-of-Distribution Recommendation
+WWW 2025
+(Oral) |
+Code
+Chu Zhao,
+Enneng Yang
+, Yuliang Liang, Pengxiang Lan, Yuting Liu, Jianzhe Zhao, Guibing Guo, Xingwei Wang.
+Efficient Prompt Tuning by Multi-Space Projection and Prompt Fusion
+AAAI 2025
+(Oral) |
+Appendix
+Pengxiang Lan,
+Enneng Yang
+, Yuting Liu, Guibing Guo, Linying Jiang, Jianzhe Zhao, Xingwei Wang.
+Augmenting Sequential Recommendation with Balanced Relevance and Diversity
+AAAI 2025
+(Oral) |
+Appendix
+Code
+Yizhou Dang, Jiahui Zhang, Yuting Liu,
+Enneng Yang
+, Yuliang Liang, Guibing Guo, Jianzhe Zhao, Xingwei Wang.
+Representation Surgery for Multi-Task Model Merging
+ICML 2024
+|
+Code
+Enneng Yang
+, Li Shen, Zhenyi Wang, Guibing Guo, Xiaojun Chen, Xingwei Wang, Dacheng Tao.
+AdaMerging: Adaptive Model Merging for Multi-Task Learning
+ICLR 2024
+|
+Code
+Enneng Yang
+, Zhenyi Wang, Li Shen, Shiwei Liu, Guibing Guo, Xingwei Wang, Dacheng Tao.
+An Efficient Dataset Condensation Plugin and Its Application to Continual Learning
+NeurIPS 2023
+|
+Code
+Enneng Yang
+, Li Shen, Zhenyi Wang, Tongliang Liu, Guibing Guo.
+Data Augmented Flatness-aware Gradient Projection for Continual Learning
+ICCV 2023
+|
+Appendix
+Code
+Enneng Yang
+, Li Shen, Zhenyi Wang, Shiwei Liu, Guibing Guo, Xingwei Wang.
+AdaTask: A Task-aware Adaptive Learning Rate Approach to Multi-task Learning
+AAAI 2023
+(Oral) |
+Appendix
+Code
+Enneng Yang
+, Junwei Pan, Ximei Wang, Haibin Yu, Li Shen, Xihua Chen, Lei Xiao, Jie Jiang, Guibing Guo.
+Uniform Sequence Better: Time Interval Aware Data Augmentation for Sequential Recommendation
+AAAI 2023
+(Oral) |
+Code
+Yizhou Dang,
+Enneng Yang
+, Guibing Guo, Linying Jiang, Xingwei Wang, Xiaoxiao Xu, Qinghui Sun, Hong Liu.
+Journal Papers
+Exploring and Tailoring the Test-Time Augmentation for Sequential Recommendation
+TPAMI 2026
+|
+Code
+Yizhou Dang,
+Enneng Yang
+, Yuting Liu, Jianzhe Zhao, Xingwei Wang, and Guibing Guo.
+Efficient and Effective Weight-Ensembling Mixture of Experts for Multi-Task Model Merging
+TPAMI 2025
+|
+Code
+Li Shen, Anke Tang,
+Enneng Yang
+$^{\dagger}$ ($^{\dagger}$
+indicates corresponding authors
+), Guibing Guo, Yong Luo$^{\dagger}$, Lefei Zhang, Xiaochun Cao, Bo Du$^{\dagger}$, and Dacheng Tao.
+Preference Logical Reasoning with Preference Operators for Explainable Recommendations
+TOIS 2025
+|
+Code
+Fei Li,
+Enneng Yang
+, Guibing Guo, Linying Jiang, Jianzhe Zhao, and Xingwei Wang.
+Symmetric Graph Contrastive Learning against Noisy Views for Recommendation
+TOIS 2025
+|
+Code
+Chu Zhao,
+Enneng Yang
+, Yuliang Liang, Jianzhe Zhao, Guibing Guo, and Xingwei Wang.
+Revisiting Flatness-aware Optimization in Continual Learning with Orthogonal Gradient Projection
+TPAMI 2025
+|
+Code
+Enneng Yang
+, Li Shen, Zhenyi Wang, Shiwei Liu, Guibing Guo, Xingwei Wang, and Dacheng Tao.
+Continual Learning From a Stream of APIs
+TPAMI 2024
+Enneng Yang
+, Zhenyi Wang, Li Shen, Nan Yin, Tongliang Liu, Guibing Guo, Xingwei Wang, Dacheng Tao.
+Efficient and Adaptive Recommendation Unlearning: A Guided Filtering Framework to Erase Outdated Preferences
+TOIS 2024
+|
+Code
+Yizhou Dang, Yuting Liu,
+Enneng Yang
+, Guibing Guo, Linying Jiang, Jianzhe Zhao, Xingwei Wang.
+TiCoSeRec: Augmenting Data to Uniform Sequences by Time Intervals for Effective Recommendation
+TKDE 2023
+|
+Code
+Yizhou Dang,
+Enneng Yang
+, Guibing Guo, Linying Jiang, Xingwei Wang, Xiaoxiao Xu, Qinghui Sun, Hong Liu.
+📖 Educations
+2024.03 - 2025.03: Visiting Ph.D. Student at
+Nanyang Technological University, Singapore
+.
+2021.09 - 2025.06: Ph.D. Student at
+Northeastern University, China
+.
+💻 Internships
+2023.05 - 2023.09: Intern at
+Digital China Group Co., Ltd
+.
+2022.01 - 2022.06: Research Intern at
+Tencent Inc
+, mentored by
+Junwei Pan
+.
+2020.05 - 2021.02: Research Intern at
+Tencent Inc
+, mentored by
+Junwei Pan
+and Dr. Xiaoqing Cao.
+🏆 Honors and Awards
+2025.01: Youth Talents Support Project - Doctoral Student Special Program (First Session)
+2024.10: National Scholarship (Top 1%)
+2023.10: National Scholarship (Top 1%)
+2020.05: Tencent Rhino-Bird Elite Talent Training Program (51 People Worldwide)
+2019.10: National Scholarship (Top 1%)
+2017.10: National Scholarship (Top 1%)
+🔖 Services
+Conference Reviewers
+: ICML 2026, ACL 2026, CVPR 2026, ICLR 2026, AAAI 2026, NeurIPS 2025, ICCV 2025, ICML 2025, WWW 2025, ICLR 2025, AAAI 2025, NeurIPS 2024, ICML 2024, KDD 2024, AAAI 2024, WWW 2023, WSDM 2023
+Journal Reviewers
+: TKDE 2026, EAAI 2025, ML 2025, TMLR 2025, TSC 2024, TBD 2024, TCSVT 2024, NCAA 2024, TORS 2022

@@ -1,0 +1,55 @@
+Hello! I’m Wu (吴) Bin (彬), a second-year MS student at
+School of Computer Science
+,
+Wuhan University
+. You can also call me by my online name Luo (罗) Jiaming (家明), which is pronounced similarly to “珞珈民” in Chinese, referring to the residents of Mount Luojia.
+I’m a member of the
+Mars Group
+, advised by
+Prof. Ye Mang
+. My research interests lie broadly in artificial intelligence, especially topics related to deep learning. Currently, I focus on
+continual learning
+(
+i.e., lifelong/incremental learning
+) and
+multimodal learning
+.
+News
+Jun 16, 2025
+I have started my internship at
+Taobao & Tmall Group of Alibaba
+in Beijing!
+Feb 27, 2025
+One paper on
+multimodal continual learning
+accepted by
+CVPR 2025
+! 🎉🎉🎉
+Jun 20, 2024
+I have been admitted to Wuhan University as a graduate student!
+Selected Publications
+CVPR 2025
+Synthetic Data is an Elegant GIFT for Continual Vision-Language Models
+Bin Wu
+, Wuxuan Shi, Jinqiao Wang, and Mang Ye
+*
+Proceedings of the IEEE conference on Computer Vision and Pattern Recognition
+, 2025
+arXiv
+PDF
+Code
+Poster
+Slides
+ArXiv Preprint
+MUSE: A Simple Yet Effective Multimodal Search-Based Framework for Lifelong User Interest Modeling
+Bin Wu
+, Feifan Yang, Zhangming Chan, Yu-Ran Gu, Jiawei Feng, Chao Yi, Xiang-Rong Sheng, Han Zhu, Jian Xu, Mang Ye
+*
+, and Bo Zheng
+*
+arXiv preprint arXiv:2512.07216
+, 2025
+arXiv
+PDF
+Code
+Website

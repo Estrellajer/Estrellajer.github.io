@@ -1,0 +1,283 @@
+Zhen-Yu Zhang @ RIKEN-AIP
+Zhen-Yu Zhang, D.Eng.
+Postdoctoral Researcher,
+Imperfect Information Learning Team
+,
+RIKEN Center for Advanced Intelligence Project
+.
+Email
+: zhen-yu.zhang [at] riken.jp
+(alternative: zhangzhenyu.gm [at] gmail.com)
+About Me
+I am a postdoctoral researcher in the Imperfect Information Learning Team at RIKEN Center for Advanced Intelligence Project, led by Professor
+Masashi Sugiyama
+. I obtained my Ph.D. degree from the Department of Computer Science and Technology at Nanjing University in 2022, where I was very fortunate to receive guidance from both Professor
+Yuan Jiang
+and Professor
+Zhi-Hua Zhou
+.
+Preprint
+Data-dependent Exploration for Online Reinforcement Learning from Human Feedback.
+[arXiv]
+Zhen-Yu Zhang
+, Yuting Tang, Jiandong Zhang, Lanjihong Ma, and Masashi Sugiyama.
+In-context Demonstration Matters: On Prompt Optimization for Pseudo-Supervision Refinement.
+[arXiv]
+Zhen-Yu Zhang
+, Jiandong Zhang, Huaxiu Yao, Gang Niu, and Masashi Sugiyama.
+Publications
+Handling New Class in Online Label Shift.
+[
+paper
+,
+code
+,
+bibtex
+]
+Yu-Yang Qian, Yong Bai,
+Zhen-Yu Zhang
+, Peng Zhao, and Zhi-Hua Zhou.
+IEEE Transactions on Knowledge and Data Engineering (
+TKDE
+), 2025.
+TreeLoRA: Efficient Continual Learning via Layer-Wise LoRAs Guided by a Hierarchical Gradient-Similarity Tree.
+[
+paper
+,
+code
+,
+bibtex
+]
+Yu-Yang Qian, Yuan-Ze Xu,
+Zhen-Yu Zhang
+, Peng Zhao, and Zhi-Hua Zhou.
+In: Proceedings of the 42nd International Conference on Machine Learning (
+ICML 2025
+), Vancouver, Canada, 2025.
+Learning View-invariant World Models for Visual Robotic Manipulation.
+[
+paper
+,
+code
+,
+bibtex
+]
+Jing-Cheng Pang, Nan Tang, Kaiyuan Li, Yuting Tang, Xin-Qiang Cai,
+Zhen-Yu Zhang
+, Gang Niu, Masashi Sugiyama, and Yang Yu.
+In: Proceedings of the 13th International Conference on Learning Representations (
+ICLR 2025
+), Singapore, 2025.
+Adapting to Generalized Online Label Shift by Invariant Representation Learning.
+[
+paper
+,
+code
+,
+bibtex
+]
+Yu-Yang Qian, Yi-Han Wang,
+Zhen-Yu Zhang
+, Yuan Jiang, and Zhi-Hua Zhou.
+In: Proceedings of the 31th ACM SIGKDD Conference on Knowledge Discovery and Data Mining (
+KDD 2025
+), Toronto, Canada, 2025.
+Achieving Nearly-Optimal Regret and Sample Complexity in Dueling Bandits with Applications in Online Recommendations.
+[
+paper
+,
+code
+,
+bibtex
+]
+Lanjihong Ma, Yao-Xiang Ding,
+Zhen-Yu Zhang
+, and Zhi-Hua Zhou.
+In: Proceedings of the 31th ACM SIGKDD Conference on Knowledge Discovery and Data Mining (
+KDD 2025
+), Toronto, Canada, 2025.
+Test-time Adaptation in Non-stationary Environments via Adaptive Representation Alignment.
+[
+paper
+,
+code
+,
+bibtex
+]
+Zhen-Yu Zhang
+, Zhiyu Xie, Huaxiu Yao, and Masashi Sugiyama.
+In: Advances in Neural Information Processing Systems 37 (
+NeurIPS 2024
+), Vancouver, Canada, 2024.
+Handling Varied Objectives by Online Decision Making.
+[
+paper
+,
+code
+,
+bibtex
+]
+Lanjihong Ma,
+Zhen-Yu Zhang
+, Yao-Xiang Ding, and Zhi-Hua Zhou.
+In: Proceedings of the 30th ACM SIGKDD Conference on Knowledge Discovery and Data Mining (
+KDD 2024
+), Barcelona, Spain, 2024.
+Generating Chain-of-Thoughts with a Pairwise-Comparison Approach to Searching for the Most Promising Intermediate Thought.
+[
+paper
+,
+code
+,
+arXiv
+,
+bibtex
+]
+Zhen-Yu Zhang
+, Siwei Han, Huaxiu Yao, Gang Niu, and Masashi Sugiyama.
+In: Proceedings of the 41st International Conference on Machine Learning (
+ICML 2024
+), Vienna, Austria, 2024.
+Learning with Asynchronous Labels.
+[
+paper
+,
+code
+,
+bibtex
+]
+Yu-Yang Qian,
+Zhen-Yu Zhang
+, Peng Zhao, and Zhi-Hua Zhou.
+ACM Transactions on Knowledge Discovery from Data (
+TKDD
+), 2024.
+Adapting to Continuous Covariate Shift via Online Density Ratio Estimation.
+[
+paper
+,
+code
+,
+arXiv
+,
+bibtex
+]
+Yu-Jie Zhang,
+Zhen-Yu Zhang
+, Peng Zhao, and Masashi Sugiyama.
+In: Advances in Neural Information Processing Systems 36 (
+NeurIPS 2023
+), New Orleans, Louisiana, 2023.
+Handling New Class in Online Label Shift.
+[
+paper
+,
+code
+,
+bibtex
+]
+Yu-Yang Qian, Yong Bai,
+Zhen-Yu Zhang
+, Peng Zhao, and Zhi-Hua Zhou.
+In: Proceedings of the 23rd IEEE International Conference on Data Mining (
+ICDM 2023
+), Shanghai, China, 2023.
+Adaptive Learning for Weakly Labeled Streams.
+[
+paper
+,
+code
+,
+bibtex
+]
+Zhen-Yu Zhang
+, Yu-Yang Qian, Yu-Jie Zhang, Yuan Jiang, and Zhi-Hua Zhou.
+In: Proceedings of the 28th ACM SIGKDD Conference on Knowledge Discovery and Data Mining (
+KDD 2022
+), Washington, DC, 2022.
+Learning from Incomplete and Inaccurate Supervision.
+[
+paper
+,
+code
+,
+bibtex
+]
+Zhen-Yu Zhang
+, Peng Zhao, Yuan Jiang, and Zhi-Hua Zhou.
+IEEE Transactions on Knowledge and Data Engineering (
+TKDE
+), 2022.
+Learning with Feature and Distribution Evolvable Streams.
+[
+paper,
+supp
+,
+code
+,
+bibtex
+]
+Zhen-Yu Zhang
+, Peng Zhao, Yuan Jiang, and Zhi-Hua Zhou.
+In: Proceedings of the 37th International Conference on Machine Learning (
+ICML 2020
+), Online, 2020.
+Safe Deep Semi-Supervised Learning for Unseen-Class Unlabeled Data.
+[
+paper
+,
+supp
+,
+code
+,
+bibtex
+]
+Lan-Zhe Guo,
+Zhen-Yu Zhang
+, Yuan Jiang, Yu-Feng Li, and Zhi-Hua Zhou.
+In: Proceedings of the 37th International Conference on Machine Learning (
+ICML 2020
+), Online, 2020.
+Learning from Incomplete and Inaccurate Supervision.
+[
+paper
+,
+code
+,
+bibtex
+]
+Zhen-Yu Zhang
+, Peng Zhao, Yuan Jiang, and Zhi-Hua Zhou.
+In: Proceedings of the 25th ACM SIGKDD Conference on Knowledge Discovery and Data Mining (
+KDD 2019
+), Anchorage, AL, 2019.
+Regularized Content-Aware Tensor Factorization Meets Temporal-Aware Location Recommendation.
+[
+paper
+,
+bibtex
+]
+Defu Lian,
+Zhen-Yu Zhang
+, Yong Ge, Fuzheng Zhang, Nicholas Jing Yuan, and Xing Xie.
+In: Proceedings of the 16th IEEE International Conference on Data Mining (
+ICDM 2016
+), Barcelona, Spain, 2016.
+Academic Service
+Area Chair: ICML (2026–present) and NeurIPS (2025–present).
+Conference Reviewer: ICML (2021–2025), NeurIPS (2021–2024), ICLR (2021–present), KDD (2022–2024), AAAI (2020–2025), and IJCAI (2020–2025).
+Journal Reviewer: IEEE TPAMI, IEEE TNNLS, ACM TKDD, TMLR, and Frontiers of Computer Science (FCS).
+Seminar Organizer:
+TrustML Young Scientist Seminars (TrustML YSS)
+Workshop Organizer:
+RIKEN AIP LLM×ML Workshop
+, 2025.
+Awards
+Ohbu Award, RIKEN, 2024
+Outstanding Doctoral Dissertation, JSCS, 2023
+Outstanding Doctoral Dissertation, NJU, 2022
+Jiangsu Bank Scholarship, 2021
+National Scholarship for Doctoral Students, MOE of PRC, 2020
+Artificial Intelligence Scholarship, 2019
+Outstanding Bachelor's Thesis, UESTC, 2017
+Last updated by Zhen-Yu Zhang in Apr, 2026.

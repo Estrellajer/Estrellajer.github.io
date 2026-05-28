@@ -1,0 +1,22 @@
+Connectionism
+Shared science from the team
+May 11, 2026
+Interaction Models: A Scalable Approach to Human-AI Collaboration
+Thinking Machines
+May 11, 2026
+Oct 27, 2025
+On-Policy Distillation
+Kevin Lu in collaboration with others at Thinking Machines
+Oct 27, 2025
+Sep 29, 2025
+LoRA Without Regret
+John Schulman in collaboration with others at Thinking Machines
+Sep 29, 2025
+Sep 26, 2025
+Modular Manifolds
+Jeremy Bernstein
+Sep 26, 2025
+Sep 10, 2025
+Defeating Nondeterminism in LLM Inference
+Horace He in collaboration with others at Thinking Machines
+Sep 10, 2025

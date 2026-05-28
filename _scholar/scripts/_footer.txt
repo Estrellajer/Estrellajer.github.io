@@ -1,0 +1,52 @@
+def main():
+    config = load_yaml(BASE_DIR / "config.yaml")
+    scholars = config.get("scholars", [])
+    if not scholars:
+        log("Error: No scholars found in config.yaml")
+        sys.exit(1)
+
+    rss_cache = load_yaml(RSS_CACHE_PATH)
+
+    since = None
+    if LAST_CHECKED_PATH.exists():
+        try:
+            since = datetime.fromisoformat(LAST_CHECKED_PATH.read_text().strip())
+        except ValueError:
+            pass
+
+    log(f"Scholar Monitor - {len(scholars)} scholars to check")
+    if since:
+        log(f"Last check: {since}")
+    else:
+        log("First run - taking snapshots; no comparisons yet")
+    log("")
+
+    results = []
+    for i, s in enumerate(scholars, 1):
+        name = s["name"]
+        print(f"  [{i:3d}/{len(scholars)}] {name:<30s}", end=" ", flush=True)
+        r = check_scholar(s, rss_cache, since)
+        results.append(r)
+
+        label = {"rss": "[RSS]", "rss_no_change": "[OK]", "changed": "[CHG]",
+                 "unchanged": "[OK]", "first_check": "[NEW]", "error": "[ERR]"}.get(r["type"], "?")
+        print(f"{label}", flush=True)
+        if r["type"] == "error":
+            print(f"          -> Error: {r.get('error')}", flush=True)
+        elif r["type"] == "rss":
+            for e in r.get("entries", []):
+                print(f"          -> {e['title']}", flush=True)
+
+    report = generate_report(results, len(scholars))
+    generate_html_report(results, len(scholars))
+    LAST_CHECKED_PATH.write_text(datetime.now(timezone.utc).isoformat())
+
+    log(f"\n{'='*50}")
+    log("Report:")
+    log(f"{'='*50}")
+    log(report)
+    log(f"\nSaved to: {REPORT_PATH}")
+
+
+if __name__ == "__main__":
+    main()

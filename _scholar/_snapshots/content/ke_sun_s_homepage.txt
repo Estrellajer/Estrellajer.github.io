@@ -1,0 +1,188 @@
+搜索此网站
+嵌入的文件
+跳至主要内容
+调至导航栏
+I am a Machine Learning researcher.
+My name is Ke Sun (孙科). I am currently a postdoctoral researcher at University of Pennsylvania, working with
+Prof. Qi Long
+and
+Prof. Weijie Su
+, starting from early 2026.
+I was a postdoctoral f
+ellow working with
+Prof. Susan A. Murphy
+at Harvard University in 2025.
+I received my Ph.D. degree in
+Statistical Machine Learning
+from
+University of Alberta in 2024, advised by
+Prof. Linglong Kong
+, also affiliated at
+Alberta Machine Intelligence Institute (
+Amii
+)
+. I was fortunate to visit
+Prof. Chengchun Shi
+at the London School of Economics and Political Science
+in 2023.
+I obtained my
+MPhil in Data Science at Peking University
+in 2020 advised by
+Prof. Zhouchen Lin
+and
+Prof. Zhanxing Zhu
+. I earned my Bachelor's degree in finantial statistics and risk management from SouthWestern University of Finance and Economics in 2017.
+Contact
+:
+kesun6[AT] upenn
+.edu
+/
+ke.sun[AT]
+pennmedicine.upenn.edu
+Links
+:
+Google Scholar
+/
+CV
+/
+Github
+/
+LinkedIn
+Research Interests
+My research interest is
+reinforcement learning
+, especially the
+algorithm
+ic foundations and development
+grounded in
+mathematical and statistical principles.
+My key research goal is to build agents with effective perception, memory,
+reasoning,
+planning, exploration, and adaptation in complex and unknown environments to achieve
+decision intelligence
+, with broad applications in games, robotics, control systems, healthcare, economics, and language.
+[1] Algorithmic and Theoretical Foundations in Pure RL (RL as Problem Formulation):
+Uncertainty & Exploration
+:
+Distributional Learning and Risk Control, Entropy Regularization and Exploration
+Robustness & Adaptation
+:
+Environmental Nonstationarity
+, Safe/Robust RL, Transfer/Multi-task/Meta/
+Continual RL
+Offline &
+Causality
+: Offline and Hy
+brid
+RL, Causality for RL, Adaptive Experiment Design
+[2] Foundations in RL for General Intelligence (RL as Optimization Tool vs Problem Formulation):
+Language & Agentic AI
+: Alignment, Reasoning, Post-training, Agentic RL, Multi-agent interaction
+Robotics & Embodied AI
+:
+Model-based RL and
+World Model, Generative and Self-supervised RL, Imitation learning
+Vision & Multimodal Models
+: Vision-language-action, Multimodal reasoning, Active perception
+Selected
+Preprints
+/ Publications [
+Full Publications
+]
+[7] Ke Sun*,
+Yizhou Zhao*, Jiayi Xin, Qi Long, Weijie Su
+.
+CurveRL: Principled Distribution-Aware Context Reweighting for LLM Reasoning
+(
+submitted
+), 2026. [
+Code
+]
+[6] Ke Sun,
+Linglong Kong, Hongtu Zhu, Chengchun Shi.
+ARMA-Design: Optimal Treatment Allocation Strategies for A/B Testing in Partially Observable Experiments
+.
+(
+Minor
+Revision in Journal of American Statistical Association, 202
+6
+) [
+Code
+]
+[5]
+Ke Sun
+*
+,
+Hongming Zh
+ang*
+,
+Jun Jin, Chao Gao, Xi Chen, Wulong Liu, Linglong Kong.
+Principled Fast and Meta Knowledge Learners for Continual Reinforcement Learning
+.
+International Conference on Learning Representations (
+ICLR
+), 202
+6
+.  [
+Code
+]
+[
+4
+]
+Ke Sun
+, Yingnan Zhao, Enze Shi, Yafei Wang, Xiaodong Yan, Bei Jiang, Linglong Kong.
+Intrinsic Benefits of Being Categorical Distributional: Uncertainty-aware Regularized Exploration in Reinforcement Learning
+.
+Advances in Neural Information Processing Systems (
+NeurIPS
+), 2025
+[
+3
+]
+Ke Sun
+, Yingnan Zhao, Wulong Liu, Bei Jiang, Linglong Kong.
+Distributional Reinforcement Learning with Regularized Wasserstein Loss
+[code]
+.
+Advances in Neural Information Processing Systems (
+NeurIPS
+), 2024
+[2]
+Ke Sun
+*, Yafei Wang*, Yi Liu, Yingnan Zhao, Bo Pan, Shangling Jui, Bei Jiang, Linglong Kong. (
+*
+equal contribution in alphabetical order).
+Damped Anderson Mixing for Deep Reinforcement Learning: Acceleration, Convergence, and Stabilization
+Advances in Neural Information Processing Systems (
+NeurIPS
+), 2021.
+[
+C
+ode
+]
+.
+[1] Ke Sun
+, Zhanxing Zhu, Zhouchen Lin.
+AdaGCN: AdaBoosting Graph Convolutional Networks into Deep Models
+[
+code
+]
+.
+International Conference on Learning Representations (
+ICLR
+), 2021
+.
+* denotes equal contribution
+Favorite Quotes
+Practice without theory is blind, but
+equally,
+theory without practice is mere intellectual play.  ——Immanuel Kant
+The statistical community has been committed to the almost exclusive use of data models. This commitment has led to irrelevant theory, questionable conclusions, and has kept statisticians from working on a large range of interesting current problems.
+…… The danger is that if we define the boundaries of our field in terms of familiar tools and familiar problems, we will fail to grasp the new opportunities.
+—— Leo Breiman
+Talk is cheap, show me the code.
+—— Linus Torvalds
+Google 网站
+举报不良行为
+Google 网站
+举报不良行为

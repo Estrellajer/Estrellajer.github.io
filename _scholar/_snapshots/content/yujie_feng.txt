@@ -1,0 +1,155 @@
+I am a fourth-year Ph.D. candidate at
+Department of Data Science and Artificial Intelligence
+,
+The Hong Kong Polytechnic University (PolyU)
+, under the supervision of
+Prof. Xiao-Ming Wu
+. Currently, I am remotely visiting
+the University of Illinois at Chicago (UIC)
+, where I am honored to work with
+Prof. Philip S. Yu
+.
+Prior to that, I obtained my Master degree from
+Peking University (PKU)
+under the supervision of
+Prof. Yasha Wang
+and Bachelor degree from
+Harbin Institute of Technology, Weihai (HIT)
+.
+Research Interests
+My research focuses on Natural Language Processing (NLP) and Large Language Models (LLMs), with an emphasis on continual adaptation and capability evolution.
+My recent work studies how to efficiently adapt and evolve LLMs in dynamic environments, where new tasks, domains, and knowledge continuously emerge. This includes topics such as continual learning, model editing, and memory-based adaptation.
+More recently, I am interested in advancing the general capabilities of LLM-based agents, including reasoning, grounding, and long-horizon decision-making, as well as their continual improvement over time.
+🔥 News
+2026.04
+: 🎉 One paper has been accepted to ACL 2026!
+2026.01
+: 🎉 Two papers have been accepted to ICLR 2026!
+2025.08
+: 🎉 Two papers have been accepted to EMNLP 2025!
+2025.07
+: 🎉 One paper has been accepted to COLM 2025!
+2025.05
+: 🎉 Two papers have been accepted to ACL 2025!
+2024.12
+: 🎉 One paper has been accepted to AAAI 2025!
+2024.09
+: 🎉 One paper has been accepted to EMNLP 2024!
+2024.08
+: 🥳 One paper about
+continual learning
+is online!
+2024.05
+: 🎉 Two papers have been accepted to ACL 2024 (1 Main + 1 Findings)!
+2024.02
+: 🎉 One paper has been accepted to COLING 2024!
+2023.10
+: 🎉 One paper has been accepted by EMNLP 2023!
+Preprint
+TaSL: Task Skill Localization and Consolidation for Language Model Continual Learning.
+Yujie Feng
+, Xu Chu, Yongxin Xu, Zexin Lu, Bo LIU, Philip S. Yu, Xiao-Ming Wu.
+[
+arXiv
+] (Extension of the ACL 2024 paper)
+Selected Publications
+FOREVER: Forgetting Curve-Inspired Memory Replay for Language Model Continual Learning. [
+PDF
+] [
+Code
+]
+Yujie Feng
+, Hao Wang, Jian Li, Xu Chu, Zhaolu Kang, Yiran Liu, Yasha Wang, Philip S. Yu, Xiao-Ming Wu.
+The 64th Annual Meeting of the Association for Computational Linguistics (
+ACL 2026
+).
+Micro-Macro Retrieval: Reducing Long-Form Hallucination in Large Language Models. [
+PDF
+] [
+Code
+]
+Yujie Feng
+, Jian Li, Zhihan Zhou, Pengfei Xu, Yujia Zhang, Xiaoyu Li, Xiaohui Zhou, Alan Zhao, Xi Chen, Xiao-Ming Wu.
+The Fourteenth International Conference on Learning Representations (
+ICLR 2026
+).
+AIMMerging: Leveraging Training Trajectories for Adaptive Iterative Model Merging in Language Model Continual Learning. [
+PDF
+] [
+Code
+]
+Yujie Feng
+, Jian Li, Xiaoyu Dong, Pengfei Xu, Xiaohui Zhou, Yujia Zhang, Zexin Lu, Yasha Wang, Alan Zhao, Xu Chu, Xiao-Ming Wu.
+Conference on Empirical Methods in Natural Language Processing (
+EMNLP 2025
+).
+GeoEdit: Geometric Knowledge Editing for Large Language Models. [
+PDF
+] [
+Code
+]
+Yujie Feng
+, Liming Zhan, Zexin Lu, Yongxin Xu, Xu Chu, Yasha Wang, Jiannong Cao, Philip S. Yu, Xiao-Ming Wu.
+Conference on Empirical Methods in Natural Language Processing (
+EMNLP 2025
+).
+Recurrent Knowledge Identification and Fusion for Language Model Continual Learning. [
+PDF
+] [
+Code
+]
+Yujie Feng
+, Xujia Wang, Zexin Lu, Shenghong Fu, Guangyuan Shi, Yongxin Xu, Yasha Wang, Philip S. Yu, Xu Chu, Xiao-Ming Wu.
+The 63nd Annual Meeting of the Association for Computational Linguistics (
+ACL 2025
+).
+TaSL: Continual Dialog State Tracking via Task Skill Localization and Consolidation. [
+PDF
+] [
+Code
+]
+Yujie Feng
+, Xu Chu, Yongxin Xu, Guangyuan SHI, Bo LIU, Xiao-Ming Wu.
+The 62nd Annual Meeting of the Association for Computational Linguistics (
+ACL 2024
+).
+Towards LLM-driven Dialogue State Tracking. [
+PDF
+] [
+Code
+]
+Yujie Feng
+, Zexin Lu, Bo Liu, Liming Zhan, Xiao-Ming Wu.
+Conference on Empirical Methods in Natural Language Processing (
+EMNLP 2023
+).
+Completing missing prevalence rates for multiple chronic diseases by jointly leveraging both intra-and inter-disease population health data correlations. [
+PDF
+] [
+Code
+]
+Yujie Feng
+, Jiangtao Wang, Yasha Wang, Sumi Helal.
+Proceedings of the Web Conference 2021 (
+WWW 2021
+).
+Honors and Awards
+PolyU Research Student Attachment Program (RSAP) 2024
+PolyU Research Postgraduate Scholarship 2022
+Excellent Graduation Thesis of Peking University 2022
+Merit student of Peking University 2020
+Outstanding Graduates of Shandong Province 2019
+Excellent Graduation Thesis of Harbin Institute of Technology 2019
+Merit student of Harbin Institute of Technology 2016, 2017, 2018
+Internships
+2025/04 - 2025/10, Tencent (Qingyun Project), Shenzhen.
+2018/11 - 2019/06, Tsinghua University, Beijing.
+Activity and Service
+Teaching Assistant
+COMP 2421: Computer Organization, Spring 2024 | 2023, PolyU
+COMP 6704: Advanced Topics in Optimization, Fall 2024 | 2023, PolyU
+COMP 5523: Computer Vision and Image Processing, Spring 2023 | 2022, PolyU
+COMP 2021: Data Structures, Fall 2023 | 2022, PolyU
+C Language, Fall 2017 | 2016, HITwh
+Reviewer
+of ACL/EMNLP/NAACL/ICLR/NeurIPS/ICML/KDD/TNNLS

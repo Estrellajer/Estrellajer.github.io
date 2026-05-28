@@ -1,0 +1,79 @@
+Sinya Lee   ææ°é
+Welcome to my homepage. I am the founder and CEO of
+Alpha Star Research Company
+, an AI-powered quantitative proprietary trading firm based in New York City.
+Essays
+ä¸­æåå®¢å
+¥å£
+About Me
+Position:
+CEO of Alpha Star Research
+Location:
+New York, London, and Hong Kong
+Hometown:
+Swatow
+Cities Lived:
+Swatow, Shanghai, Beijing, Boston, San Francisco, New York City, Chicago, Miami,
+Shenzhen, Hong Kong, and London
+Human Languages:
+Teochew (native), English, Mandarin, Cantonese, Hokkien, and Japanese
+Computer Languages:
+Python, C/C++, JavaScript/TypeScript, Go, Ruby, C#, Java, Pascal, PHP/Hack, HTML, CSS, LaTeX
+Email:
+sinyaleesf[at]gmail[dot]com
+Work Experience
+2023-
+Alpha Star Research
+, AI and trading
+Founder and CEO
+2022-2023
+Citadel Securities
+, alpha research
+Research Engineer
+2020-2021
+Meta
+, Facebook and Instagram shops
+Senior Software Engineer
+2017-2019
+Amazon
+, Twitch browse and discovery
+Software Engineer
+2015-2016
+TeleVeh
+, automatic driving
+Founder and CEO
+Education
+2014-2016
+Brown University
+, Computer Science
+Master of Science
+2010-2014
+Tsinghua University
+, Yao Class
+Undergraduate
+2013
+Massachusetts Institute of Technology
+, EECS
+Undergraduate
+Academic Research
+My research interests are
+cryptography
+and
+game theory
+, especially in
+mechanism design
+. When I was in college I was mentored by Turing Award laureates
+Andrew Yao
+and
+Silvio Micali
+. I have two published research papers.
+Sinya Lee.
+Maximization of relative
+social welfare on truthful cardinal voting schemes
+. Undergraduate Thesis,
+2014.
+Sinya Lee and Andrew Chi-Chih Yao.
+On
+revenue maximization for selling multiple independently distributed items
+.
+Proceedings of the National Academy of Sciences, 2013.

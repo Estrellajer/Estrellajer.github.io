@@ -1,0 +1,567 @@
+搜索此网站
+嵌入的文件
+跳至主要内容
+调至导航栏
+Li Shen (沈力)
+Associate Professor, Ph.D. Advisor
+School of Cyber Science and Technology,
+Shenzhen Campus of
+Sun Yat-sen University(SYSU)
+Address
+: Room 2-914, Engineering building, SYSU, Guangming, Shenzhen, Guangdong, China
+Email
+:
+shenli6@mail.sysu.edu.cn
+(Preferred)/
+mathshenli@gmail.com
+Google Scholar
+,
+中
+大
+主页
+,
+河套学院主页
+Biography
+C
+urrently
+, Li Shen is the associate professor at the School of Cyber Science and Technology, Shenzhen Campus of Sun Yat-sen University. Previously, he was a research scientist at JD Explore Academy, Beijing, and a senior researcher at Tencent AI Lab, Shenzhen. He received his bachelor's degree and Ph.D. from the School of Mathematics, South China University of Technology
+. His research interests include efficient deep learning, efficient reinforcement learning, optimization and deep learning theory.
+He has published more than 100 papers in peer-reviewed top-tier journal papers (Nature Machine Intelligence, JMLR, IEEE TPAMI, IJCV, etc.) and conference papers (ICML, NeurIPS, ICLR, etc.). He has served as Area Chairs for ICML, NeurIPS, ICLR, CVPR, and ACMMM. He has also served as the associate editor for IEEE Transactions on Pattern Analysis and Machine Intelligence, IEEE Transactions on Knowledge and Data Engineering and IEEE Transactions on Multimedia, and action editor for Neural Networks.
+⭐️⭐️⭐️
+（Recruitment on a rolling basis）
+Our team recruits several postdocs to work on trustworthy artificial intelligence, distributed/federated learning,
+continual
+learning, reinforcement learning,  and efficient training of foundation models. [
+逸仙博士后
+][
+深圳博士后政策
+][
+光明区人才政策
+]
+⭐️⭐️⭐️ (N
+EW
+) Our team recruits several
+PHD students (SYSU,
+SYSU-SLAI, SYSU-PCL
+), working on
+efficient training of foundation models/
+Generative RL Models
+,
+optimization and learning theory. P
+lease contact me as soon
+as possible
+if you are interested in our group.
+⭐️⭐️⭐️
+Our team recruits several self-motivated students (Ph.Ds., masters, undergraduate students, interns, gap year students) to work on continual learning, reinforcement learning, and LLMs/VLMs/MLLMs.  In general, our team recruits Ph.D students mainly from the (remote and onsite) interns and RAs. If you are interested in my group, please contact me as soon
+as possible.
+Selected Conference
+Yingsha Xie, Rui Min, Zeyu Qin, Fei Ma,
+Li Shen
+, Fei Yu, Xiaochun Cao, RoMa: A Robust Model Watermarking Scheme for Protecting IP in Diffusion Models
+, NeurIPS, 2025.
+Haotian Luo, Haiying He, Yibo Wang, Jinluan Yang, Rui Liu, Naiqiang Tan, Xiaochun Cao, Dacheng Tao,
+Li Shen
+, Ada-R1: Hybrid-CoT via Bi-Level Adaptive Reasoning Optimization
+, NeurIPS, 2025.
+Hongling Zheng,
+Li Shen
+, Yong Luo, Deheng Ye, Shuhan Xu, Bo Du, Jialie Shen, Dacheng Tao, Value-Guided Decision Transformer: A Unified Reinforcement Learning Framework for Online and Offline Settings
+, NeurIPS, 2025.
+Di He, Songjun Tu, Ajay Jaiswal,
+Li Shen
+, Ganzhao Yuan, Shiwei Liu, Lu Yin, AlphaDecay: Module-wise Weight Decay for Heavy-Tailed Balancing in LLMs
+, NeurIPS, 2025.
+Chao Huang, Benfeng Wang, Wei Wang, Jie Wen, Chengliang Liu,
+Li Shen
+, Xiaochun Cao, Vad-R1: Towards Video Anomaly Reasoning via Perception-to-Cognition Chain-of-Thought
+, NeurIPS, 2025.
+Fei Wang,
+Li Shen
+, Liang Ding, Chao Xue, Ye Liu, Changxing Ding, Layer as Puzzle Pieces: Compressing Large Language Models through Layer Concatenation
+, NeurIPS, 2025.
+Jinluan Yang, Dingnan Jin, Anke Tang,
+Li Shen
+, Didi Zhu, Zhengyu Chen, Ziyu Zhao, Daixin Wang, Qing Cui, Zhiqiang Zhang, JUN ZHOU, Fei Wu, Kun Kuang, Mix Data or Merge Models? Balancing the Helpfulness, Honesty, and Harmlessness of Large Language Model via Model Merging
+, NeurIPS, 2025.
+Yibo Wang, Tiansheng Huang,
+Li Shen
+, Huanjin Yao, Haotian Luo, Rui Liu, Naiqiang Tan, Jiaxing Huang, Dacheng Tao, Panacea: Mitigating Harmful Fine-tuning for Large Language Models via Post-fine-tuning Perturbation
+, NeurIPS, 2025.
+Ao Zhou, Jiayi Guan,
+Li Shen
+, Fan Lu, Sanqing Qu, Junqiao Zhao, Ziqiao Wang, Ya Wu, Guang Chen, CHPO: Constrained Hybrid-action Policy Optimization for Reinforcement Learning
+, NeurIPS, 2025.
+Shi Fu, Yingjie Wang, Yuzhu Chen,
+Li Shen
+, Dacheng Tao, Self-Verification Provably Prevents Model Collapse in Recursive Synthetic Training
+, NeurIPS, 2025.
+Anke Tang, Enneng Yang,
+Li Shen
+, Yong Luo, Han Hu, Lefei Zhang, Bo Du, Dacheng Tao, Merging on the Fly Without Retraining: A Sequential Approach to Scalable Continual Model Merging
+, NeurIPS, 2025.
+Qinglun Li, Yingqi Liu, Miao Zhang, Xiaochun Cao, Quanjun Yin,
+Li Shen
+, Unveiling the Power of Multiple Gossip Steps: A Stability-Based Generalization Analysis in Decentralized Training
+, NeurIPS, 2025.
+(
+spotlight
+)
+Zhiwei Hao, Zhongyu Xiao, Jianyuan Guo,
+Li Shen
+, Yong Luo, Han Hu, Dan Zeng, MixPrompt: Efficient Mixed Prompting for Multimodal Semantic Segmentation
+, NeurIPS, 2025.
+Shiyuan Zuo, Xingrun Yan, Rongfei Fan,
+Li Shen
+, Puning Zhao, Jie Xu, Han Hu, Efficient Federated Learning against Byzantine Attacks and Data Heterogeneity via Aggregating Normalized Gradients
+, NeurIPS, 2025.
+Enneng Yang, Anke Tang,
+Li Shen
+, Guibing Guo, Xingwei Wang, Xiaochun Cao, Jie Zhang, Continual Model Merging without Data: Dual Projections for Balancing Stability and Plasticity
+, NeurIPS, 2025.
+Qixin Zhang, Yan Sun, Can Jin, Xikun ZHANG, Yao Shu, Puning Zhao,
+Li Shen
+, Dacheng Tao, Effective Policy Learning for Multi-Agent Online Coordination Beyond Submodular Objectives
+, NeurIPS, 2025.
+Jifeng Hu, Sili Huang, Zhejian Yang, Shengchao Hu,
+Li Shen
+, Hechang Chen, Lichao Sun, Yi Chang, Dacheng Tao, Analytic Energy-Guided Policy Optimization for Offline Reinforcement Learning
+, NeurIPS, 2025.
+Jifeng Hu, Sili Huang,
+Li Shen
+, Zhejian Yang, Shengchao Hu, Shisong Tang, Hechang Chen, Lichao Sun, Yi Chang, Dacheng Tao, Tackling Continual Offline RL through Selective Weights Activation on Aligned Spaces
+, NeurIPS, 2025.
+Fanhu Zeng, Haiyang Guo, Fei Zhu,
+Li Shen
+, Hao Tang, RobustMerge: Parameter-Efficient Model Merging for MLLMs with Direction Robustness
+, NeurIPS, 2025.
+(
+spotlight
+)
+Huanjin Yao, Qixiang Yin, Jingyi Zhang, Min Yang, Yibo Wang, Wenhao Wu, Fei Su,
+Li Shen
+, Minghui Qiu, Dacheng Tao, Jiaxing Huang, R1-ShareVL: Incentivizing Reasoning Capabilities of Multimodal Large Language Models via Share-GRPO
+, NeurIPS, 2025.
+Zixuan Hu,
+Li Shen
+, Zhenyi Wang, Yongxian Wei, Dacheng Tao, Adaptive Defense against Harmful Fine-Tuning for Large Language Models via Bayesian Data Scheduler
+, NeurIPS, 2025. (
+spotlight
+)
+Longxiang He, Deheng Ye, Junbo Tan, Xueqian Wang,
+Li Shen
+, Robust Policy Expansion for Offline-to-Online RL under Diverse Data Corruption
+, NeurIPS, 2025.
+Huanjin Yao, Jiaxing Huang, Wenhao Wu, Jingyi Zhang, Yibo Wang, Shunyu Liu, Yingjie Wang, YuXin Song, Haocheng Feng, Li Shen, Dacheng Tao, Mulberry: Empowering MLLM with o1-like Reasoning and Reflection via Collective Monte Carlo Tree Search, NeurIPS, 2025. (
+spotlight
+)
+Puning Zhao, Rongfei Fan, Shaowei Wang,
+Li Shen
+, Qixin Zhang, Zong Ke, Tianhang Zheng, Contextual bandits for unbounded context distributions,
+ICML, 2025.
+Hongling Zheng,
+Li Shen
+, Yong Luo, Deheng Ye, Bo Du, Jialie Shen, Dacheng Tao, Decision Mixer: Integrating Long-term and Local Dependencies via Dynamic Token Selection for Decision-Making
+, ICML, 2025.
+Li Shen
+, Anke Tang, Yong Luo, Tao Sun, Han Hu, Xiaochun Cao, Targeted Low-rank Refinement: Enhancing Sparse Language Models with Precision
+, ICML, 2025.
+Qixin Zhang, Wei Huang, Can Jin, Puning Zhao, Yao Shu,
+Li Shen
+, Dacheng Tao, Multinoulli Extension: A Lossless Yet Effective Probabilistic Framework for Subset Selection over Partition Constraints
+, ICML, 2025.
+Haoyu Wang, Zeyu Qin,
+Li Shen
+, Xueqian Wang, Dacheng Tao, Minhao Cheng, Safety Reasoning with Guidelines
+, ICML, 2025.
+Guozheng Ma, Lu Li, Zilin Wang,
+Li Shen
+, Pierre-Luc Bacon, Dacheng Tao, Network Sparsity Unlocks the Scaling Potential of Deep Reinforcement Learning
+, ICML, 2025. (
+oral
+)
+Liang Chen, Xueting Han,
+Li Shen
+, Jing Bai, Kam-Fai Wong, Vulnerability-Aware Alignment: Mitigating Uneven Forgetting in Harmful Fine-Tuning
+, ICML, 2025.
+Yilun Kong, Guozheng Ma, Qi Zhao, Haoyu Wang,
+Li Shen
+, Xueqian Wang, Dacheng Tao, Mastering Massive Multi-Task Reinforcement Learning via Mixture-of-Expert Decision Transformer,
+ICML, 2025.
+Wenbin Wang, Yongcheng Jing, Liang Ding, Yingjie Wang,
+Li Shen
+, Yong Luo, Bo Du, Dacheng Tao, Retrieval-Augmented Perception: High-Resolution Image Perception Meets Visual RAG
+, ICML, 2025. (
+oral
+)
+Xialie Zhuang, Zhikai Jia, Jianjin Li, Zhenyu Zhang,
+Li Shen
+, Zheng Cao, Shiwei Liu, Mask-Enhanced Autoregressive Prediction: Pay Less Attention to Learn More
+, ICML, 2025.
+Yongxian Wei, Anke Tang,
+Li Shen
+, Chun Yuan, Xiaochun Cao, Modeling Multi-Task Model Merging as Adaptive Projective Gradient Descent
+, ICML, 2025.
+Mengzhu Wang, Houcheng Su, Jiao Li, Chuan Li, Nan Yin,
+Li Shen
+, Jingcai Guo, GraphCL: Graph-based Clustering for Semi-Supervised Medical Image Segmentation,
+IC
+ML
+, 2025.
+Yingqi Liu, Qinglun Li, Jie Tan, Yifan Shi,
+Li Shen
+, Xiaochun Cao, Understanding the Stability-based Generalization of Personalized Federated Learning
+, ICLR, 2025.
+Jinluan Yang, Anke Tang, Didi Zhu, Zhengyu Chen,
+Li Shen
+, Fei Wu, Mitigating the Backdoor Effect for Multi-Task Model Merging via Safety-Aware Subspace
+, ICLR, 2025.
+Puning Zhao, Jiafei Wu, Zhe Liu,
+Li Shen
+, Zhikun Zhang, Rongfei Fan, Le Sun, Qingming Li, Enhancing Learning with Label Differential Privacy by Vector Approximation
+, ICLR, 2025.  (
+s
+potlight
+)
+Liang Chen,
+Li Shen
+, Yang Deng, Xiaoyan Zhao, Bin Liang, Kam-Fai Wong, PEARL: Towards Permutation-Resilient LLMs,
+ICLR, 2025.
+Ziqing Fan, Siyuan Du, Shengchao Hu, Pingjie Wang,
+Li Shen
+, Ya Zhang, Dacheng Tao, Yanfeng Wang, Combatting Dimensional Collapse in LLM Pre-Training Data via Submodular File Selection
+, ICLR, 2025. (
+oral
+)
+Qixin Zhang, Zongqi Wan, Yu Yang,
+Li Shen
+, Dacheng Tao, Near-Optimal Online Learning for Multi-Agent Submodular Coordination: Tight Approximation and Communication Efficiency
+, ICLR, 2025.  (
+s
+potlight
+)
+Siyu Luan, Zhenyi Wang,
+Li Shen
+, Zonghua Gu, Chao Wu, Dacheng Tao, Dynamic Neural Fortresses: An Adaptive Shield for Model Extraction Defense, ICLR, 2025.
+Yongxian Wei, Zixuan Hu,
+Li Shen
+, Zhenyi Wang, Chun Yuan, Dacheng Tao, Open-Vocabulary Customization from CLIP via Data-Free Knowledge Distillation, ICLR, 2025.
+(
+oral
+)
+Yan Sun,
+Li Shen
+, Dacheng Tao, A-FedPD: Aligning Dual-Drift is All Federated Primal-Dual Learning Need, NeurIPS, 2024. (
+spotlight
+)
+Rui Min, Zeyu Qin, Nevin L. Zhang,
+Li Shen
+, Minhao Cheng,
+Uncovering, Explaining, and Mitigating the Superficial Safety of Backdoor Defense
+, NeurIPS, 2024. (
+spotlight
+)
+Hongling Zheng,
+Li Shen
+, Yong Luo, Tongliang Liu, Jialie Shen, Dacheng Tao, Multi-Task Prompt Decision Transformer for Efficient Unseen Task Generalization, NeurIPS, 2024.
+Yang Dai, Oubo Ma, Longfei Zhang, Xingxing Liang, Shengchao Hu, Mengzhu Wang, Shouling Ji, Jincai Huang,
+Li Shen
+, Is Mamba Compatible with Trajectory Optimization in Offline Reinforcement Learning?, NeurIPS, 2024.
+Puning Zhao, Lifeng Lai,
+Li Shen
+, Qingming Li, Jiafei Wu, Zhe Liu, A Huber Loss Minimization Approach to Mean Estimation under User-level Differential Privacy, NeurIPS, 2024.
+Peng Wang,
+Li Shen
+, Zerui Tao, Shuaida He, Dacheng Tao, Generalization Analysis of Stochastic Weight Averaging with General Sampling, ICML, 2024.
+Anke Tang,
+Li Shen
+, Yong Luo, Nan Yin, Lefei Zhang, Dacheng Tao, Merging Multi-Task Models via Weight-Ensembling Mixture of Experts, ICML, 2024.
+Enneng Yang,
+Li Shen
+, Zhenyi Wang, Guibing Guo, Xiaojun Chen, Xingwei Wang, Dacheng Tao, Representation Surgery for Multi-Task Model Merging, ICML, 2024.
+Shengchao Hu, Ziqing Fan, Chaoqin Huang,
+Li Shen
+, Ya Zhang, Yanfeng Wang, Dacheng Tao, Q-learning Transformer for Offline Reinforcement Learning, ICML, 2024.
+Shengchao Hu, Ziqing Fan,
+Li Shen
+, Ya Zhang, Yanfeng Wang, Dacheng Tao, HarmoDT: Harmony Multi-Task Decision Transformer for Offline Reinforcement Learning, ICML, 2024.
+Zixuan Hu, Yongxian Wei,
+Li Shen
+, Zhenyi Wang, Lei Li, Chun Yuan, Dacheng Tao, Sparse Model Inversion: Efficient Inversion of Vision Transformers with Less Hallucination, ICML, 2024.
+Yongxian Wei, Zixuan Hu,
+Li Shen
+, Zhenyi Wang, Yu Li, Chun Yuan, Dacheng Tao, Task Groupings Regularization: Data-Free Meta-Learning with Heterogeneous Pre-trained Models, ICML, 2024.
+Enneng Yang, Zhenyi Wang,
+Li Shen
+, Shiwei Liu, Guibing Guo, Xingwei Wang, Dacheng Tao, AdaMerging: Adaptive Model Merging for Multi-Task Learning, ICLR, 2024.
+Anke Tang,
+Li Shen
+, Yong Luo, Yibing Zhan, Han Hu, Bo Du, Yixin Chen, Dacheng Tao, Parameter-Efficient Multi-Task Model Fusion with Partial Linearization
+, ICLR, 2024.
+Shengchao Hu,
+Li Shen
+, Ya Zhang, Dacheng Tao, Learning Multi-Agent Communication from Graph Modeling Perspective
+, ICLR, 2024.
+Guozheng Ma, Lu Li, Sen Zhang, Zixuan Liu, Zhen Wang, Yixin Chen,
+Li Shen
+, Xueqian Wang, Dacheng Tao, Revisiting Plasticity in Visual Reinforcement Learning: Data, Modules and Training Stages
+, ICLR, 2024.
+Zhenyi Wang, Yan Li,
+Li Shen
+, Heng Huang, A Unified and General Framework for Continual Learning
+, ICLR, 2024.
+Ziming Hong, Zhenyi Wang,
+Li Shen
+, Yu Yao, Zhuo Huang, Shiming Chen, Chuanwu Yang, Mingming Gong, Tongliang Liu, Improving Non-Transferable Representation Learning by Harnessing Content and Style
+, ICLR, 2024.
+(
+spotlight
+)
+Nan Yin, Mengzhu Wang, Zhenghan Chen,
+Li Shen
+, Huan Xiong, Bin Gu, Xiao Luo, DREAM: Dual Structured Exploration with Mixup for Open-set Graph Domain Adaption
+, ICLR, 2024.
+Yan Sun,
+Li Shen
+, Dacheng Tao, Understanding How Consistency Works in Federated Learning via Stage-wise Relaxed Initialization
+, NeurIPS, 2023.
+Miaoxi Zhu,
+Li Shen
+, Bo Du, Dacheng Tao, Stability and Generalization of the Decentralized Stochastic Gradient Descent Ascent Algorithm
+, NeurIPS, 2023.
+Zhenyi Wang,
+Li Shen
+, Tongliang Liu, Tiehang Duan, Yanjun Zhu, Donglin Zhan, David Doermann, Mingchen Gao, Defending against Data-Free Model Extraction by Distributionally Robust Defensive Training, NeurIPS, 2023.
+Enneng Yang,
+Li Shen
+, Zhenyi Wang, Tongliang Liu, Guibing Guo, An Efficient Dataset Condensation Plugin and Its Application to Continual Learning
+, NeurIPS, 2023.
+Zhuo Huang,
+Li Shen
+, Jun Yu, Bo Han, Tongliang Liu, FlatMatch: Bridging Labeled Data and Unlabeled Data with Cross-Sharpness for Semi-Supervised Learning, NeurIPS, 2023.
+Xuming An,
+Li Shen
+, Han Hu, Yong Luo, Federated Learning with Manifold Regularization and Normalized Update Reaggregation
+, NeurIPS, 2023.
+Rui Min, Zeyu Qin,
+Li Shen
+, Minhao Cheng, Stable Backdoor Purification with Feature Shift Tuning
+, NeurIPS, 2023.
+Guozheng Ma, Linrui Zhang, Haoyu Wang, Lu Li, Zilin Wang, Zhen Wang,
+Li Shen
+, Xueqian Wang, Dacheng Tao, Learning Better with Less: Effective Augmentation for Sample-Efficient Visual Reinforcement Learning
+, NeurIPS, 2023.
+Lu Yin, Gen Li, Meng Fang,
+Li Shen
+, Tianjin Huang, Zhangyang Wang, Vlado Menkovski, Xiaolong Ma, Mykola Pechenizkiy, Shiwei Liu, Dynamic Sparsity Is Channel-Level Sparsity Learner,
+NeurIPS, 2023.
+Yan Sun,
+Li Shen
+, Shixiang Chen, Liang Ding, Dacheng Tao, Dynamic Regularized Sharpness Aware Minimization in Federated Learning: Approaching Global Consistency and Smooth Landscape, ICML, 2023. (
+oral
+)
+Zixuan Hu,
+Li Shen
+, Zhenyi Wang, Baoyuan Wu, Chun Yuan, Dacheng Tao, Learning to Learn from APIs: Black-box Data-free Meta-Learning, ICML, 2023.
+Yifan Shi,
+Li Shen
+, Kang Wei, Yan Sun, Bo Yuan, Xueqian Wang, Dacheng Tao, Improving the Model Consistency of Decentralized Federated Learning, ICML, 2023.
+Nan Yin,
+Li Shen
+, Mengzhu Wang, Long Lan, Zeyu Ma, Chong Chen, Xian-Sheng Hua, Xiao Luo, CoCo: A Coupled Contrastive Framework for Unsupervised Domain Adaptive Graph Classification, ICML, 2023.
+Tianjin Huang, Lu Yin, Zhenyu Zhang,
+Li Shen
+, Meng Fang, Mykola Pechenizkiy, Zhangyang Wang, Shiwei Liu, Are Large Kernels Better Teachers than Transformers for ConvNets?, ICML, 2023.
+Yan Sun,
+Li Shen
+, Tiansheng Huang, Liang Ding, Dacheng Tao, FedSpeed: Larger Local Interval, Less Communication Round, and Higher Generalization Accuracy, ICLR, 2023.
+Runzhong Wang,
+Li Shen
+, Yiting Chen, Xiaokang Yang, Dacheng Tao, Junchi Yan, Relaxed Combinatorial Optimization Networks with Self-Supervision: Theoretical and Empirical Notes on the Cardinality-Constrained Case, ICLR, 2023.
+Zhuo Huang, Xiaobo Xia,
+Li Shen
+, Bo Han, Mingming Gong, Chen Gong, Tongliang Liu, Harnessing Out-Of-Distribution Examples via Augmenting Content and Style, ICLR, 2023.
+Peng Mi,
+Li Shen
+, Tianhe Ren, Yiyi Zhou, Xiaoshuai Sun, Rongrong Ji, Dacheng Tao, Make Sharpness-Aware Minimization Stronger: A Sparsified Perturbation Approach, NeurIPS, 2022.
+Erdun Gao, Ignavier Ng, Mingming Gong,
+Li Shen
+, Wei Huang, Tongliang Liu, Kun Zhang, Howard Bondell, MissDAG: Causal Discovery in the Presence of Missing Data with Continuous Additive Noise Models, NeurIPS, 2022.
+Zeyu Qin, Yanbo Fan, Yi Liu,
+Li Shen
+, Yong Zhang, Jue Wang, Baoyuan Wu, Boosting the Transferability of Adversarial Attacks with Reverse Adversarial Perturbation, NeurIPS, 2022.
+Zhenyi Wang,
+Li Shen
+, Le Fang, Qiuling Suo, Tiehang Duan, Mingchen Gao, Improving Task-free Continual Learning by Distributionally Robust Memory Evolution, ICML, 2022.
+Rong Dai,
+Li Shen
+, Fengxiang He, Xinmei Tian, Dacheng Tao, DisPFL: Towards Communication-Efficient Personalized Federated learning via Decentralized Sparse Training, ICML, 2022. [
+code
+]
+Chang Liu, Chenfei Lou, Runzhong Wang, Alan Yuhan Xi,
+Li Shen
+, Junchi Yan, Deep Neural Network Fusion via Graph Matching with Applications to Model Ensemble and Federated Learning, ICML, 2022.
+Chaojian Yu, Bo Han,
+Li Shen
+, Jun Yu, Chen Gong, Mingming Gong, Tongliang liu, Understanding Robust Overfitting of Adversarial Training and Beyond, ICML, 2022.
+Shiwei Liu, Tianlong Chen, Xiaohan Chen,
+Li Shen
+, Decebal Constantin Mocanu, Zhangyang Wang, Mykola Pechenizkiy, The Unreasonable Effectiveness of Random Pruning: Return of the Most Naive Baseline for Sparse Training,
+ICLR
+, 2022.
+Shaopeng Fu, Fengxiang He, Yang Liu,
+Li Shen
+, Dacheng Tao, Robust Unlearnable Examples: Protecting Data Privacy Against Adversarial Learning,
+ICLR
+, 2022.
+Shiwei Liu, Tianlong Chen, Xiaohan Chen, Zahra Atashgahi, Lu Yin, Huanyu Kou,
+Li Shen
+, Mykola Pechenizkiy, Zhangyang Wang, Decebal Constantin Mocanu, Sparse Training via Boosting Pruning Plasticity with Neuroregeneration,
+NeurIPS, 2021.
+Zhishuai Guo, Mingrui Liu, Zhuoning Yuan,
+Li Shen
+, Wei Liu, Tianbao Yang, Communication-Efficient Distributed Stochastic AUC Maximization with Deep Neural Networks, ICML, 2020.
+Li Shen
+, Peng Sun, Yitong Wang, Wei Liu, Tong Zhang, An Algorithmic Framework of Variable Metric Over-Relaxed Hybrid Proximal Extra-Gradient Method, ICML, 2018.
+(
+oral
+)
+Li Shen
+, Wei Liu, Ganzhao Yuan, Shiqian Ma, GSOS: Gauss-Seidel Operator Splitting Algorithm for Multi-Term Nonsmooth Convex Composite Optimization, ICML, 2017.[
+extended version
+]
+(
+oral
+)
+Selected Journal
+Anke Tang,
+Li Shen
+, Yong Luo, Yang Enneng, Han Hu, Zhang Lefei, Bo Du, Dacheng Tao, FusionBench: A Comprehensive Benchmark of Deep Model Fusion, Journal of Machine Learning Research, 2025.
+Li Shen
+, Anke Tang, Enneng Yang, Guibing Guo, Yong Luo, Lefei Zhang, Xiaochun Cao, Bo Du, Dacheng Tao, Efficient and Effective Weight-Ensembling Mixture of Experts for Multi-Task Model Merging, IEEE Transactions on Pattern Analysis and Machine Intelligence, 2025.
+Zhenyi Wang,
+Li Shen
+, Tiehang Duan, Yanjun Zhu, Tongliang Liu, Mingchen Gao, Dacheng Tao, Release the Potential of Memory Buffer in Continual Learning: A Dynamic System Perspective
+, IEEE Transactions on Pattern Analysis and Machine Intelligence, 2025.
+Anke Tang,
+Li Shen
+, Yong Luo, Shuai Xie, Han Hu, Lefei Zhang, Bo Du, Dacheng Tao, Zero-Shot Sparse Mixture of Low-Rank Experts Construction From Pre-Trained Foundation Models
+, IEEE Transactions on Pattern Analysis and Machine Intelligence, 2025.
+Xuming An,
+Li Shen
+, Yong Luo, Han Hu, Dacheng Tao, Adaptive Batch Size Time Evolving Stochastic Gradient Descent for Federated Learning
+, IEEE Transactions on Pattern Analysis and Machine Intelligence, 2025.
+Zixuan Hu,
+Li Shen
+, Zhenyi Wang, Yongxian Wei, Baoyuan Wu, Chun Yuan, Dacheng Tao, Task-Distributionally Robust Data-Free Meta-Learning, IEEE Transactions on Pattern Analysis and Machine Intelligence, 2025.
+Yifan Shi, Kang Wei,
+Li Shen
+, Yingqi Liu, Xueqian Wang, Bo Yuan, Dacheng Tao, Towards the flatter landscape and better generalization in federated learning under client-level differential privacy, IEEE Transactions on Pattern Analysis and Machine Intelligence, 2025
+Nan Yin,
+Li Shen
+, Mengzhu Wang, Xinwang Liu, Chong Chen, Xian-Sheng Hua, DREAM: a Dual Variational Framework for Unsupervised Graph Domain Adaptation, IEEE Transactions on Pattern Analysis and Machine Intelligence, 2025.
+Ziyi Zhang, Sen Zhang,
+Li Shen
+, Yibing Zhan, Yong Luo, Han Hu, Bo Du, Yonggang Wen, Dacheng Tao, Aligning Text-to-Image Diffusion Models with Constrained Reinforcement Learning,
+IEEE Transactions on Pattern Analysis and Machine Intelligence, 2025.
+Peng Mi,
+Li Shen
+, Tianhe Ren, Yiyi Zhou, Tianshuo Xu, Xiaoshuai Sun, Tongliang Liu, Rongrong Ji, Dacheng Tao, Systematic Investigation of Sparse Perturbed Sharpness-Aware Minimization Optimizer, IEEE Transactions on Pattern Analysis and Machine Intelligence, 2025.
+Xiaoge Deng,
+Li Shen
+, Shengwei Li, Tao Sun, Dongsheng Li, Dacheng Tao, Towards Understanding the Generalizability of Delayed Stochastic Gradient Descent, IEEE Transactions on Pattern Analysis and Machine Intelligence, 2025.
+Tao Sun,
+Li Shen
+, Xinwang Liu, On Nonconvex SGD under Unbounded Noise with Weak Gradient Lipschitz and Delayed Stochastic Gradient, IEEE Transactions on Pattern Analysis and Machine Intelligence, 2025.
+Zhiwei Hao, Jianyuan Guo,
+Li Shen
+, Yong Luo, Han Hu, Yonggang Wen, ADEM-VL: Adaptive and Embedded Fusion for Efficient Vision-Language Tuning
+, International Journal of Computer Vision, 2025.
+Shuang Wu, Shixiang Chen,
+Li Shen
+, Lefei Zhang, Dacheng Tao, Constraint Boundary Wandering Framework: Enhancing Constrained Optimization with Deep Neural Networks,
+IEEE Transactions on Pattern Analysis and Machine Intelligence, 2025.
+Anke Tang,
+Li Shen
+, Yong Luo, Shiwei Liu, Han Hu, Bo Do, Dacheng Tao, Data-Adaptive Weight-Ensembling for Multi-Task Model Fusion, International Journal of Computer Vision, 2025.
+Qinglun Li,
+Li Shen
+, Guanghao Li, Quanjun Yin, Dacheng Tao, DFedADMM: Dual Constraint Controlled Model Inconsistency for Decentralize Federated Learning, IEEE Transactions on Pattern Analysis and Machine Intelligence, 2025.
+Enneng Yang,
+Li Shen
+, Zhenyi Wang, Shiwei Liu, Guibing Guo, Xingwei Wang, Dacheng Tao, Revisiting Flatness-aware Optimization in Continual Learning with Orthogonal Gradient Projection,
+IEEE Transactions on Pattern Analysis and Machine Intelligence, 202
+5
+.
+Hongling Zheng,
+Li Shen
+, Anke Tang, Yong Luo, Han Hu, Bo Du, Yonggang Wen, Dacheng Tao, Learning from models beyond fine-tuning, Nature Machine Intelligence, 2025.
+Zhenyi Wang, Enneng Yang,
+Li Shen
+, Heng Huang, A Comprehensive Survey of Forgetting in Deep Learning Beyond Continual Learning, IEEE Transactions on Pattern Analysis and Machine Intelligence, 2024.
+Li Shen
+*
+, Yan Sun
+*
+, Zhiyuan Yu
+*
+, Liang Ding, Xinmei Tian, Dacheng Tao, On Efficient Training of Large-Scale Deep Learning Models, ACM Computing Surveys, 2024. [
+新智元
+]
+Enneng Yang, Zhenyi Wang,
+Li Shen
+, Nan Yin, Tongliang Liu, Guibing Guo, Xingwei Wang, Dacheng Tao, Continual Learning From a Stream of APIs, IEEE Transactions on Pattern Analysis and Machine Intelligence, 2024.
+Shengchao Hu,
+Li Shen
+, Ya Zhang, Yixin Chen, Dacheng Tao, On Transforming Reinforcement Learning by Transformer: The Development Trajectory, IEEE Transactions on Pattern Analysis and Machine Intelligence, 2024.
+Zhuo Huang, Muyang Li,
+Li Shen
+, Jun Yu, Chen Gong, Bo Han, Tongliang Liu, Winning Prize Comes from Losing Tickets: Improve Invariant Learning by Exploring Variant Parameters for Out-of-Distribution Generalization, International Journal of Computer Vision, 2024.
+Nan Yin,
+Li Shen
+, Huan Xiong, Bin Gu, Chong Chen, Xian-Sheng Hua, Siwei Liu, Xiao Luo, Messages Are Never Propagated Alone: Collaborative Hypergraph Neural Network for Time-series Forecasting,
+IEEE Transactions on Pattern Analysis and Machine Intelligence, 2023
+.
+Zhenyi Wang,
+Li Shen
+, Tiehang Duan, Qiuling Suo, Le Fang, Wei Liu, Mingchen Gao, Distributionally Robust Memory Evolution with Generalized Divergence for Continual Learning,
+IEEE Transactions on Pattern Analysis and Machine Intelligence, 2023.
+Congliang Chen,
+Li Shen
+, Wei Liu, Zhi-Quan Luo, Efficient-Adam: Communication-Efficient Distributed Adam, IEEE Transactions on Signal Processing, 2023.
+Yan Sun,
+Li Shen
+, Hao Sun, Liang Ding, Dacheng Tao, Efficient Federated Learning via Local Adaptive Amended Optimizer with Linear Speedup,
+IEEE Transactions on Pattern Analysis and Machine Intelligence, 2023
+.
+Zhihao Cheng,
+Li Shen
+, Miaoxi Zhu, Jiaxian Guo, Meng Fang, Liu Liu, Bo Du, Dacheng Tao, Prescribed Safety Performance Imitation Learning from A Single Expert Dataset, IEEE Transactions on Pattern Analysis and Machine Intelligence, 2023.
+Shiwei Liu, Yuesong Tian, Tianlong Chen,
+Li Shen
+, Don't Be So Dense: Sparse-to-Sparse GAN Training Without Sacrificing Performance, International Journal of Computer Vision, 2023.
+Hanchi Huang, Deheng Ye,
+Li Shen
+, Wei Liu, Curriculum-based Asymmetric Multi-task Reinforcement Learning, IEEE Transactions on Pattern Analysis and Machine Intelligence, 2022.
+Congliang Chen*,
+Li Shen*
+, Fangyu Zou*, Wei Liu, Towards Practical Adam: Non-Convexity, Convergence Theory, and Mini-Batch Acceleration, Journal of Machine Learning Research, 2022.
+Yuesong Tian,
+Li Shen
+, Li Shen, Guinan Su, Zhifeng Li, Wei Liu, AlphaGAN: Fully Differentiable Architecture Search for Generative Adversarial Networks, IEEE Transactions on Pattern Analysis and Machine Intelligence, 2021. [
+code
+]
+Xiaojun Chen, Weijun Hong, Feiping Nie, Joshua Zhexue Huang,
+Li Shen
+, Enhanced Balanced Min Cut, International Journal of Computer Vision, 2020.
+Baoyuan Wu,
+Li Shen
+, Tong Zhang, Bernard Ghanem, MAP Inference via L2-Sphere Linear Program Reformulation, International Journal of Computer Vision, 2020.
+PhD Thesis
+Li Shen
+,  A Class of Variable Metric Over-relaxed Hybrid Proximal Extra-gradient Algorithm (In Chinese),  PhD Thesis, 2017. [
+thesis
+]
+Google 网站
+举报不良行为
+Google 网站
+举报不良行为

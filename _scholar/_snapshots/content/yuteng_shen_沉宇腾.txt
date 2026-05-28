@@ -1,0 +1,30 @@
+I am a final-year undergraduate student in Artificial Intelligence at Nanjing University, interested in building reliable AI systems that connect model capability with real-world deployment.
+I like widening the boundary of my understanding a little at a time, while focusing on work that can create real value in practice. My recent work has focused on agent training, post-training, and evaluation workflows for fast system iteration. I have interned as an algorithm engineer at Tencent and Huawei, where I worked on practical model behavior, training stability, and testing infrastructure.
+Focus
+Agent training and tool-use behavior
+Post-training with reinforcement learning
+Evaluation systems for reliable model iteration
+Practical AI engineering with strong feedback loops
+Selected Experience
+Tencent, Algorithm Engineer Intern
+Worked on a multi-intent financial function-calling component trained with multi-turn SFT and DAPO, and supported online financial traffic in production systems.
+Built the interaction and testing workflow for a financial search agent based on Qwen3 30A3B, helping the system surpass DeepSeek V3.2 on FinSearchComp under the same business tool setting.
+Reduced evaluation instability by standardizing tool environments, lowering judge variance, and iterating the judging prompt until score fluctuation dropped from 10% to 1%.
+Received a return offer and continued working on production-facing model systems.
+Huawei, Algorithm Engineer Intern
+Improved an internal RL training framework by introducing DAPO and designing dynamic sampling for high-variance rewards.
+Increased training stability without extra compute by prioritizing informative samples during optimization.
+Selected Projects
+myTorch
+A NumPy-based neural network framework that mimics parts of the PyTorch experience. It uses operator overloading to enter the computation graph, manages the graph lifecycle during backpropagation, and emphasizes reusable abstractions in the core design.
+Open Source Fixes
+Fixed a checkpoint-saving bug in the DAPO trainer of
+verl
+and contributed the patch upstream.
+Identified and fixed a typing issue in the
+GRPO
+trainer of
+TRL
+.
+Writing
+I use writing to organize newly learned material, capture temporary ideas from work, and reflect on experiences that changed my understanding. Over time, this site will collect the notes that best reflect how I learn, think, and build.
