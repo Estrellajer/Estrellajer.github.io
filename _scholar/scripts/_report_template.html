@@ -876,8 +876,11 @@ function applyFilters() {
     const ra=(b.dataset.areas||'').toLowerCase().split(',').map(x=>x.trim()).filter(x=>x);
     const ns=(s==='rss_no_change')?'unchanged':s;
     
-    const ms=!q||n.includes(q), ml=la.some(l=>ll.includes(l)), mw=ww.includes(w);
-    const mst=ss.some(x=>ns===x||s===x);
+    const ms=!q||n.includes(q);
+    const has_category_label = la.some(l => ['blog', 'homepage'].includes(l));
+    const ml = !has_category_label || la.some(l => ll.includes(l));
+    const mw = ww.includes(w);
+    const mst = (ns === 'unchanged') || ss.some(x => ns === x || s === x);
     const ma=aa.length===0||!a||aa.includes(a);
     const m_area=rr.length===0||ra.length===0||ra.some(x=>rr.includes(x));
     

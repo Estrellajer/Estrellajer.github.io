@@ -554,7 +554,7 @@ def generate_html_report(results: list, total: int):
     watch_counts = Counter(r.get("watch", "general") for r in results)
 
     def _watch_icon(w: str) -> str:
-        return {"blog": "📝", "vlog": "📹", "news": "📢",
+        return {"blog": "📝", "news": "📢",
                 "publications": "🎓", "general": "🌐"}.get(w, "🌐")
 
     def _scholar_header(r, extra_tags="") -> str:
@@ -619,7 +619,7 @@ def generate_html_report(results: list, total: int):
             latest = r.get("latest_entries", [])
             if latest:
                 card += '<div class="scholar-preview">'
-                card += '<span class="sp-title">✨ Latest Posts/Vlogs:</span>'
+                card += '<span class="sp-title">✨ Latest Posts:</span>'
                 card += '<ul class="sp-list">'
                 for e in latest[:3]:
                     card += f'<li><a href="{_esc(e["link"])}" target="_blank">{_esc(e["title"])}</a> <span class="da">- {_esc(e["published"])}</span></li>'
@@ -762,7 +762,7 @@ def generate_html_report(results: list, total: int):
     for lb in ["blog", "homepage"]:
         filter_html += f'<label class="fc"><input type="checkbox" class="fl-label" value="{lb}" checked onchange="applyFilters()"> {lb}</label>'
     filter_html += '<span class="flt">Watch:</span>'
-    for w in ["blog", "vlog", "news", "publications", "general"]:
+    for w in ["blog", "news", "publications", "general"]:
         filter_html += f'<label class="fc"><input type="checkbox" class="fl-watch" value="{w}" checked onchange="applyFilters()"> {_watch_icon(w)} {w}</label>'
     filter_html += '<span class="flt">Status:</span>'
     for st, sl in [("rss", "NEW"), ("changed", "CHG"), ("first_check", "FIRST"), ("error", "ERR")]:
