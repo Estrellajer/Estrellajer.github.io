@@ -150,16 +150,52 @@ def check_rss(name: str, rss_url: str, since: datetime) -> dict:
     try:
         resp = fetch(rss_url)
         entries = parse_rss(resp.text)
-        new = []
+        
+        # Filter placeholders and get timestamps
+        valid_entries = []
         for e in entries:
             if _is_placeholder_entry(e):
                 continue
-            if since and e.get("_parsed") and e["_parsed"] <= since:
-                continue
-            new.append({"title": e["title"], "link": e["link"], "published": e["published"]})
+            parsed = e.get("_parsed")
+            ts = parsed.timestamp() if parsed else 0.0
+            valid_entries.append({
+                "title": e["title"],
+                "link": e["link"],
+                "published": e["published"],
+                "timestamp": ts
+            })
+            
+        # Sort valid_entries descending by timestamp
+        valid_entries.sort(key=lambda x: x["timestamp"], reverse=True)
+        
+        new = []
+        for e in valid_entries:
+            if since:
+                try:
+                    since_ts = since.timestamp()
+                except Exception:
+                    since_ts = 0.0
+                if e["timestamp"] <= since_ts:
+                    continue
+            new.append({
+                "title": e["title"],
+                "link": e["link"],
+                "published": e["published"],
+                "timestamp": e["timestamp"]
+            })
             if len(new) >= 20:
                 break
-        return {"new_entries": new}
+                
+        latest = []
+        for e in valid_entries[:3]:
+            latest.append({
+                "title": e["title"],
+                "link": e["link"],
+                "published": e["published"],
+                "timestamp": e["timestamp"]
+            })
+            
+        return {"new_entries": new, "latest_entries": latest}
     except Exception as e:
         return {"error": str(e)}
 
@@ -284,16 +320,17 @@ def check_scholar(scholar: dict, rss_cache: dict, since: datetime | None) -> dic
               "labels": scholar.get("labels", []),
               "watch": scholar.get("watch", "general")}
     rss_url = rss_cache.get(name)
-    if rss_url:
-        if since:
-            rr = check_rss(name, rss_url, since)
-            if rr.get("new_entries"):
-                result["type"] = "rss"
-                result["entries"] = rr["new_entries"]
-                return result
-            elif not rr.get("error"):
-                result["type"] = "rss_no_change"
-                return result
+    if rss_url and scholar.get("watch") == "blog":
+        rr = check_rss(name, rss_url, since)
+        if "error" in rr:
+            result["type"] = "error"
+            result["error"] = rr["error"]
+            return result
+        result["latest_entries"] = rr.get("latest_entries", [])
+        if since and rr.get("new_entries"):
+            result["type"] = "rss"
+            result["entries"] = rr["new_entries"]
+            return result
         else:
             result["type"] = "rss_no_change"
             return result
@@ -312,6 +349,10 @@ def check_scholar(scholar: dict, rss_cache: dict, since: datetime | None) -> dic
         result["type"] = "error"
         result["error"] = "No content could be extracted"
         return result
+        
+    # Capture latest 3 non-empty lines as preview
+    result["preview"] = [l.strip() for l in content.split("\n") if l.strip()][:3]
+    
     prev = load_snapshot(name)
     if prev is None:
         save_snapshot(name, content)
@@ -453,6 +494,51 @@ def _classify_error(msg: str) -> tuple:
     if "no content" in ml:
         return "Extraction Failed", "low", "[WARN]", "CSS selector mismatch"
     return "Other", "low", "[?]", "Check URL and config"
+def _extract_timestamp_from_text(text: str) -> float:
+    match = re.search(r'\b(202\d)[-\./](\d{1,2})[-\./](\d{1,2})\b', text)
+    if match:
+        try:
+            dt = datetime(int(match.group(1)), int(match.group(2)), int(match.group(3)), tzinfo=timezone.utc)
+            return dt.timestamp()
+        except ValueError:
+            pass
+    match_month = re.search(r'\b(202\d)[-\./](\d{1,2})\b', text)
+    if match_month:
+        try:
+            dt = datetime(int(match_month.group(1)), int(match_month.group(2)), 1, tzinfo=timezone.utc)
+            return dt.timestamp()
+        except ValueError:
+            pass
+    months = ["jan", "feb", "mar", "apr", "may", "jun", "jul", "aug", "sep", "oct", "nov", "dec"]
+    lower_text = text.lower()
+    for i, m in enumerate(months, 1):
+        if m in lower_text:
+            match_year = re.search(r'\b(202\d)\b', text)
+            if match_year:
+                try:
+                    dt = datetime(int(match_year.group(1)), i, 1, tzinfo=timezone.utc)
+                    return dt.timestamp()
+                except ValueError:
+                    pass
+    return datetime.now(timezone.utc).timestamp()
+
+
+def get_update_timestamp(r: dict) -> float:
+    if r["type"] == "rss" and r.get("entries"):
+        ts_list = [e.get("timestamp", 0.0) for e in r["entries"] if e.get("timestamp")]
+        if ts_list:
+            return max(ts_list)
+    elif r["type"] == "changed":
+        additions = _extract_new_additions(r.get("diff", ""))
+        if additions:
+            for add in additions[:3]:
+                ts = _extract_timestamp_from_text(add)
+                if ts < datetime.now(timezone.utc).timestamp() - 10.0:
+                    return ts
+        return datetime.now(timezone.utc).timestamp()
+    return 0.0
+
+
 def generate_html_report(results: list, total: int):
     rss_new = [r for r in results if r["type"] == "rss"]
     updated = [r for r in results if r["type"] == "changed"]
@@ -529,6 +615,16 @@ def generate_html_report(results: list, total: int):
             if len(r["entries"]) > 10:
                 card += f'<li class="mo">... and {len(r["entries"]) - 10} more</li>'
             card += '</ul>'
+        elif r["type"] == "rss_no_change":
+            latest = r.get("latest_entries", [])
+            if latest:
+                card += '<div class="scholar-preview">'
+                card += '<span class="sp-title">✨ Latest Posts/Vlogs:</span>'
+                card += '<ul class="sp-list">'
+                for e in latest[:3]:
+                    card += f'<li><a href="{_esc(e["link"])}" target="_blank">{_esc(e["title"])}</a> <span class="da">- {_esc(e["published"])}</span></li>'
+                card += '</ul>'
+                card += '</div>'
         elif r["type"] == "changed":
             card += f'<div class="cs">{_summarize_change(r)}</div>'
             additions = _extract_new_additions(r.get("diff", ""))
@@ -546,6 +642,16 @@ def generate_html_report(results: list, total: int):
             if r.get("diff_truncated"):
                 card += '<p class="tr2">... diff truncated</p>'
             card += '</details>'
+        elif r["type"] in ("unchanged", "first_check"):
+            preview = r.get("preview", [])
+            if preview:
+                card += '<div class="scholar-preview">'
+                card += '<span class="sp-title">📄 Page Preview (Latest News/Info):</span>'
+                card += '<ul class="sp-list">'
+                for line in preview:
+                    card += f'<li>{_esc(line)}</li>'
+                card += '</ul>'
+                card += '</div>'
         elif r["type"] == "error":
             err_msg = r.get("error", "")
             cat, sev, icon, suggestion = _classify_error(err_msg)
@@ -592,6 +698,7 @@ def generate_html_report(results: list, total: int):
     
     # 1. Timeline Updates at the Top
     recent_updates = [r for r in results if r["type"] in ("rss", "changed")]
+    recent_updates.sort(key=get_update_timestamp, reverse=True)
     recent_html = '<div class="rd-section"><h2>🔥 Recent Discoveries & Updates</h2>'
     if recent_updates:
         recent_html += '<div class="rd-container">'
@@ -701,8 +808,8 @@ def generate_html_report(results: list, total: int):
     hh = _render_label_group("homepage", "🌐 Academic Homepages", hp_r)
     if hh: sections.append(hh)
 
-    # Unlabeled
-    ul_r = [r for r in results if not r.get("labels")]
+    # Unlabeled & Custom Labels (Other Channels)
+    ul_r = [r for r in results if r not in blog_r and r not in hp_r]
     uh = _render_label_group("other", "❓ Other Channels", ul_r)
     if uh: sections.append(uh)
 

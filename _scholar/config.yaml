@@ -29,7 +29,7 @@ scholars:
     research_areas: [Diffusion]
     affiliation: "东北大学"
     watch: blog
-  - name: Junyao Hu Blog
+  - name: 胡君耀
     url: https://junyaohu.github.io/
     category: 
     site_type: github_pages
@@ -38,7 +38,7 @@ scholars:
     labels: [news]
     research_areas: [CV]
     affiliation: ""
-    watch: blog
+    watch: news
   - name: Home - colah's blog
     url: https://colah.github.io/
     category: blog
