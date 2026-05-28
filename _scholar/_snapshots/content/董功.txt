@@ -1,0 +1,224 @@
+My research focuses on building
+self-improving AI
+systems that can learn continuously, adapt reliably, and scale efficiently in open-ended and non-stationary environments. Recent main research topics include:
+Continual & Lifelong Learning
+• Forgetting mitigation
+• Agentic & online learning
+• Continual learning LLMs & MLLMs
+Foundation Model Training
+• Post-training
+• Test-time learning
+• Efficient alignment and fine-tuning
+Generative Models
+• Image & video generation
+• Diffusion models
+• Control & alignment
+Adaptive & Modular Learning
+• Memory model & mechanism
+• (Dynamic) mixture-of-experts
+Vision & Multimodal Learning
+• Semantic and depth perception
+• Image restoration & enhancement
+∞
+I am looking for highly motivated PhD and MPhil students with strong research background and initiative. Please check the
+details
+and drop me an email with your CV and transcripts if you are interested.
+Google Scholar
+GitHub
+Artificer AI Lab
+UNSW
+X
+LinkedIn
+Short Bio
+News
+(May 2026)
+2 papers are accepted to ICML 2026: "
+Little by Little
+" - MoRAM: Continual Learning with Rank-1 Parametric Memory as MoE; Adaptive Contrastive Learning for Graph Structural Disentanglement. Congratulations to Jeff (Haodong), Zidu, and collaborators!
+(Feb 2026)
+3 papers are accepted to CVPR 2026: "
+On Token's Dilemma
+" - Continual learning Dynamic MoE for MLLM w/ token level filtering;
+VideoGen
+w/ multi-obj motion control; Anomaly detection w/ local-feature Codebook. Congratulations to Chongyang, Yuze, and Xueyang!
+(Jan 2026)
+2 papers (causality on LLM and Multimodal model) are accepted to ICLR 2026; 1 paper (identifiable latent causal models) is accepted to JMLR. Congratulations to Yuhang and all collaborators!
+(Nov 2025)
+1 papers (testing LLM's logic reasoning with logic programming oracles, led by Yuekang) accepted to appear at AAAI 2026.
+(Nov 2025)
+I received Early Career Academics (ECA) Academic Excellence Award (Research) from UNSW Engineering ECAN.
+(Nov 2025)
+I will serve as an Area Chair for ICML 2026.
+(Oct 2025)
+We received an
+ARC Discovery Project (DP)
+grant (A$616,712) on enhancing
+Autonomy
+of
+Continual Learning
+, led by myself (Dong) with Anton and Lina.
+Hiring
+Postdoc and PhD!
+(Oct 2025)
+Our workshop
+Visual Generative Models: Past, Present, and Future
+will be held 2nd Dec 2025 in Adelaide.
+(Sep 2025)
+2 papers (continual learning w/ model inversion, efficient and scalable motion generation) accepted to appear at NeurIPS 2025. Congrats to Ruilin and Zeyu!
+(Sep 2025)
+I am awarded
+NVIDIA Academic Grant Program
+award to support our research on dynamic Mixture-of-Expert (MoE) and continual learning.
+(Aug 2025)
+I accept to serve as Area Chair for CVPR 2026 and ICLR 2026.
+(Jun 2025)
+1 paper (on test-time adaptation) is accepted at ICCV; 1 paper has been accepted at IJCAI; I will serve as Area Chair for WACV 2026.
+(Apr 2025)
+I will serve as Area Chair for NeurIPS 2025.
+(Feb 2025)
+I will serve as Area Chair for ACM MM 2025.
+(Feb 2025)
+3 papers (self-expansion of modularized models for continual learning, test-time alignment for T2I-Gen, and continual test-time adaptation) accepted to appear at CVPR 2025. Congrats to Huiyi, Xin, and co-authors!
+(Jan 2025)
+3 papers (coreset selection for continual learning, continual learning for diffusion model personalization, and DAG learning) accepted to appear at ICLR 2025. Congrats to Ruilin, Saurav, and co-authors!
+(Dec 2024)
+I will serve as an Area Chair for ICCV 2025.
+(Nov 2024)
+I will serve as an Area Chair for ICML 2025.
+(Nov 2024)
+Congratulations to my student Haodong Lu for being awarded
+Google PhD Fellowship
+!
+(Oct 2024)
+I am awarded as
+ACM MM 2024 Outstanding Area Chair
+.
+(Sep 2024)
+Our
+CLAP4CLIP
+paper (continual learning with probabilistic fine-tuning of CLIP) is accepted to appear at NeurIPS 2024. Congrats to Saurav.
+(Sep 2024)
+Will be serving as Area Chair for CVPR 2025.
+(Jul 2024)
+1 paper (on image generation) accepted to appear at ACM MM 2024.
+(Jun 2024)
+1 paper (on 360°Camera depth est.) accepted to appear at IROS 2024.
+(Jun 2024)
+Serving as Area Chair for ACM MM 2024.
+(May 2024)
+I am serving as organizing committee member for
+AJCAI 2024
+(
+call for paper
+).
+(Jan 2024)
+2 papers (on OOD detection and causal representation learning) accepted to appear at ICLR 2024. Congrats to Haodong and Yuhang.
+(Sep 2023)
+2 papers (both on Continual Learning) accepted to appear at NeurIPS 2023. Congrats to Saurav and Mark.
+(May 2023)
+I am serving as the Tutorial Chair for
+AJCAI 2023
+.
+(Feb 2023)
+1 paper (about multi-frame depth estimation) accepted to appear at CVPR 2023
+(Feb 2023)
+1 paper (image deblurring with Transformer) accepted to appear in TIP
+(Jan 2023)
+1 paper accepted to appear at ICLR 2023. Congrats to collaborators.
+(Sep 2022)
+I am awarded
+ARC Discovery Early Career Researcher Award (DECRA)
+starting in 2023 to study
+Continual Learning
+.
+(Sep 2022)
+1
+paper
+(about DAG learning) accepted to appear at NeurIPS 2022
+(Mar 2022)
+1
+paper
+(Continual Learning with Sparse Neural Networks) accepted to appear at CVPR 2022
+(Jan 2022)
+Check the
+article
+summarizing part of our works using ML to help agriculture innovation.
+(Sep 2021)
+1
+paper
+(about HDR imaging) accepted to appear in IJCV.
+(Jul 2021)
+1
+paper
+(Memory-augmented Neural Relational Inference) accepted to appear at ICCV 2021
+(Jul 2021)
+I will be a co-lecturer on Introduction to Statistical Machine Learning at UoA this semester, and give guest lectures at Deep Learning Fundamentals.
+(Dec 2020)
+1
+paper
+(unpaired domain-adaptive learning for realistic SR) accepted to appear in TIP
+(Oct 2020)
+1
+paper
+(learning attention model for vehicle retrieval) accepted to appear in TITS
+(Sep 2020)
+I am giving lectures at UoA Deep Learning Fundamentals on RNN, Attention, & Memory Networks.
+(Jul 2020)
+1
+paper
+(
+memory
+network for 3D point cloud with long-tail dist.) accepted to appear at ECCV 2020
+(Jan 2020)
+1
+paper
+(on learning to optimize for image deconv.) accepted to appear in TNNLS
+(Jul 2019)
+1
+paper (MemAE)
+accepted to appear at ICCV 2019
+(Jul 2019)
+1
+paper (about Sparse PCA)
+accepted to appear in TKDE
+(Jun 2019)
+2nd Prize of OZ Minerals Explorer Challenge
+as part of DeepSightX team
+(Mar 2019)
+1
+paper
+accepted to appear in TKDE
+(Feb 2019)
+4
+papers
+accepted to appear at CVPR 2019
+(Nov 2018)
+1
+paper
+(on Blind Image Quality Assessment) accepted to appear in TIP
+(Oct 2018)
+1
+paper
+(about MRF based Compressive Sensing) accepted to appear in TIP
+(Sep 2018)
+1
+paper (MPTV)
+accepted to appear in TIP
+(Jul 2018)
+2 papers accepted to appear at ECCV 2018
+(Oct 2017)
+Participated in ICCV 2017 Doctoral Consortium with a travel award
+(Jul 2017)
+1 paper accepted to appear at ICCV 2017
+1
+paper
+accepted to appear at CVPR 2017
+1 paper accepted to appear at AAAI 2017 as an oral
+1 new
+arXiv
+paper on deep learning for motion estimation and blur removal
+Contact
+Office:
+Level 4, Building K17, UNSW, Sydney 2052, Australia
+Email:
+dong.gong at unsw.edu.au; edgong01 at gmail.com

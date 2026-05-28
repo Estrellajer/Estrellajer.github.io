@@ -16,8 +16,8 @@ scholars:
     selectors: [article, .entry-content, .content]
     remove_selectors: [script, style, nav, footer, header, aside, .sidebar, .comments]
     labels: [blog]
-    research_areas: []
-    affiliation: ""
+    research_areas: [LLM, Theory]
+    affiliation: "Kimi"
     watch: blog
   - name: DaNing Blog
     url: https://adaning.github.io/about/
@@ -26,37 +26,17 @@ scholars:
     selectors: [article, main, .post-content, .entry-content, .content]
     remove_selectors: [script, style, nav, footer, header, aside, .sidebar, .comments]
     labels: [blog]
-    research_areas: []
-    affiliation: ""
-    watch: blog
-  - name: Tintoki_blog
-    url: https://gintoki-jpg.github.io/
-    category: blog
-    site_type: github_pages
-    selectors: [article, main, .post-content, .entry-content, .content]
-    remove_selectors: [script, style, nav, footer, header, aside, .sidebar, .comments]
-    labels: [blog]
-    research_areas: []
-    affiliation: ""
-    watch: blog
-  - name: blog
-    url: https://abinzzz.github.io/
-    category: blog
-    site_type: github_pages
-    selectors: [article, main, .post-content, .entry-content, .content]
-    remove_selectors: [script, style, nav, footer, header, aside, .sidebar, .comments]
-    labels: [blog]
-    research_areas: []
-    affiliation: ""
+    research_areas: [Diffusion]
+    affiliation: "东北大学"
     watch: blog
   - name: Junyao Hu Blog
     url: https://junyaohu.github.io/
-    category: blog
+    category: 
     site_type: github_pages
     selectors: [article, main, .post-content, .entry-content, .content]
     remove_selectors: [script, style, nav, footer, header, aside, .sidebar, .comments]
-    labels: [blog]
-    research_areas: []
+    labels: [news]
+    research_areas: [CV]
     affiliation: ""
     watch: blog
   - name: Home - colah's blog
@@ -66,8 +46,8 @@ scholars:
     selectors: [article, main, .post-content, .entry-content, .content]
     remove_selectors: [script, style, nav, footer, header, aside, .sidebar, .comments]
     labels: [blog]
-    research_areas: []
-    affiliation: ""
+    research_areas: [Interpretability]
+    affiliation: "Anthropic"
     watch: blog
   - name: Breezedeus.com | 善意的AI生产幸福❤
     url: https://www.breezedeus.com/
@@ -76,7 +56,7 @@ scholars:
     selectors: [main, .content, "#content", article]
     remove_selectors: [script, style, nav, footer, header, aside, .sidebar, .comments]
     labels: [blog]
-    research_areas: []
+    research_areas: [Agent, LLM]
     affiliation: ""
     watch: general
   - name: mengrennwpu - 博客园
@@ -86,7 +66,7 @@ scholars:
     selectors: ["#post_detail", article, .post, .main]
     remove_selectors: [script, style, nav, footer, header, aside, .sidebar, .comments]
     labels: [blog]
-    research_areas: []
+    research_areas: [LLM Application]
     affiliation: ""
     watch: blog
   - name: 卡里奇 - 知乎
@@ -96,8 +76,8 @@ scholars:
     selectors: [.RichText, .ContentItem, .Post-content, article]
     remove_selectors: [script, style, nav, footer, header, aside, .sidebar, .comments]
     labels: [blog]
-    research_areas: []
-    affiliation: Zhihu
+    research_areas: [LLM Alignment]
+    affiliation: 武汉大学
     watch: blog
   - name: Nathan Lambert
     url: https://www.interconnects.ai/
@@ -107,7 +87,7 @@ scholars:
     remove_selectors: [script, style, nav, footer, header, aside, .sidebar, .comments]
     labels: [blog]
     research_areas: []
-    affiliation: ""
+    affiliation: "Interconnects"
     watch: general
   - name: Blogs | wh
     url: https://nrehiew.github.io/blog/
@@ -116,7 +96,7 @@ scholars:
     selectors: [article, main, .post-content, .entry-content, .content]
     remove_selectors: [script, style, nav, footer, header, aside, .sidebar, .comments]
     labels: [blog]
-    research_areas: []
+    research_areas: [LLM]
     affiliation: ""
     watch: blog
   - name: Tobias Lee Blog
@@ -126,8 +106,8 @@ scholars:
     selectors: [main, .content, "#content", article]
     remove_selectors: [script, style, nav, footer, header, aside, .sidebar, .comments]
     labels: [blog]
-    research_areas: []
-    affiliation: ""
+    research_areas: [LLM]
+    affiliation: "Xiaomi Mimo"
     watch: general
 
   - name: 🙋🏻‍♂️关于 | Chenxu's Blog
@@ -138,7 +118,7 @@ scholars:
     remove_selectors: [script, style, nav, footer, header, aside, .sidebar, .comments]
     labels: [blog]
     research_areas: []
-    affiliation: ""
+    affiliation: "北京邮电大学"
     watch: general
   - name: YY Blog
     url: https://yqqy.top/nav
@@ -147,7 +127,7 @@ scholars:
     selectors: [main, .content, "#content", article]
     remove_selectors: [script, style, nav, footer, header, aside, .sidebar, .comments]
     labels: [blog]
-    research_areas: []
+    research_areas: [Tool]
     affiliation: ""
     watch: general
   - name: Xiongda Blog
@@ -158,7 +138,7 @@ scholars:
     remove_selectors: [script, style, nav, footer, header, aside, .sidebar, .comments]
     labels: [blog]
     research_areas: []
-    affiliation: ""
+    affiliation: "Software"
     watch: general
   - name: K.I.S.S
     url: https://bigeagle.me/
@@ -167,8 +147,8 @@ scholars:
     selectors: [main, .content, "#content", article]
     remove_selectors: [script, style, nav, footer, header, aside, .sidebar, .comments]
     labels: [blog]
-    research_areas: []
-    affiliation: ""
+    research_areas: [LLM]
+    affiliation: "Kimi"
     watch: general
   - name: jyopari.github.io
     url: https://jyopari.github.io/
@@ -177,8 +157,8 @@ scholars:
     selectors: [article, main, .post-content, .entry-content, .content]
     remove_selectors: [script, style, nav, footer, header, aside, .sidebar, .comments]
     labels: [blog]
-    research_areas: []
-    affiliation: ""
+    research_areas: [LLM, Optimization]
+    affiliation: "MIT"
     watch: blog
   - name: Lil'Log
     url: https://lilianweng.github.io/
@@ -187,18 +167,18 @@ scholars:
     selectors: [article, main, .post-content, .entry-content, .content]
     remove_selectors: [script, style, nav, footer, header, aside, .sidebar, .comments]
     labels: [blog]
-    research_areas: []
-    affiliation: ""
+    research_areas: [LLM]
+    affiliation: "Thinking Machines"
     watch: blog
-  - name: PKU-ML Group Seminar
+  - name: 袁粒组会
     url: https://pku-ml-group.github.io/
     category: blog
     site_type: github_pages
     selectors: [article, main, .post-content, .entry-content, .content]
     remove_selectors: [script, style, nav, footer, header, aside, .sidebar, .comments]
     labels: [blog]
-    research_areas: []
-    affiliation: ""
+    research_areas: [LLM,CV,ML]
+    affiliation: "北京大学"
     watch: blog
   - name: Phimes
     url: https://blog.phimes.top/
@@ -207,7 +187,7 @@ scholars:
     selectors: [main, .content, "#content", article]
     remove_selectors: [script, style, nav, footer, header, aside, .sidebar, .comments]
     labels: [blog]
-    research_areas: []
+    research_areas: [LLM]
     affiliation: ""
     watch: general
   - name: Lcf Blogs
@@ -217,7 +197,7 @@ scholars:
     selectors: [article, main, .post-content, .entry-content, .content]
     remove_selectors: [script, style, nav, footer, header, aside, .sidebar, .comments]
     labels: [blog]
-    research_areas: []
+    research_areas: [LLM]
     affiliation: ""
     watch: blog
   - name: Thinking Machines Lab
@@ -227,18 +207,18 @@ scholars:
     selectors: [main, .content, "#content", article]
     remove_selectors: [script, style, nav, footer, header, aside, .sidebar, .comments]
     labels: [blog]
-    research_areas: []
-    affiliation: ""
+    research_areas: [LLM]
+    affiliation: "Thinking Machines"
     watch: general
   - name: Junjie Su(苏俊杰)
-    url: https://junjie-su.github.io/
+    url: https://momoyeyu.github.io/
     category: blog
     site_type: github_pages
     selectors: [article, main, .post-content, .entry-content, .content]
     remove_selectors: [script, style, nav, footer, header, aside, .sidebar, .comments]
     labels: [blog]
-    research_areas: []
-    affiliation: ""
+    research_areas: [AI Infra]
+    affiliation: "北京邮电大学"
     watch: blog
   - name: Yuteng Shen(沉宇腾)
     url: https://syt-nju.github.io/
@@ -247,8 +227,8 @@ scholars:
     selectors: [article, main, .post-content, .entry-content, .content]
     remove_selectors: [script, style, nav, footer, header, aside, .sidebar, .comments]
     labels: [blog]
-    research_areas: []
-    affiliation: ""
+    research_areas: [LLM Post-training]
+    affiliation: "南京大学"
     watch: blog
   - name: 📚 plmblog
     url: https://plmsmile.github.io/
@@ -257,8 +237,8 @@ scholars:
     selectors: [article, main, .post-content, .entry-content, .content]
     remove_selectors: [script, style, nav, footer, header, aside, .sidebar, .comments]
     labels: [blog]
-    research_areas: []
-    affiliation: ""
+    research_areas: [LLM]
+    affiliation: "Alibaba"
     watch: blog
   - name: A. Weers Blog
     url: https://aweers.de/blog/
@@ -267,97 +247,77 @@ scholars:
     selectors: [main, .content, "#content", article]
     remove_selectors: [script, style, nav, footer, header, aside, .sidebar, .comments]
     labels: [blog]
-    research_areas: []
+    research_areas: [RL]
     affiliation: ""
     watch: general
-  - name: Ziming Liu Blog
+  - name: 刘子铭（KAN）
     url: https://kindxiaoming.github.io/blog/
     category: blog
     site_type: github_pages
     selectors: [article, main, .post-content, .entry-content, .content]
     remove_selectors: [script, style, nav, footer, header, aside, .sidebar, .comments]
     labels: [blog]
-    research_areas: []
-    affiliation: ""
+    research_areas: [LLM]
+    affiliation: "清华大学"
     watch: blog
-  - name: Da-Wei Zhou Homepage
+  - name: 周大蔚
     url: https://www.lamda.nju.edu.cn/zhoudw/
     category: HomePage
     site_type: personal_website
     selectors: [main, .content, "#content", article]
     remove_selectors: [script, style, nav, footer, header, aside, .sidebar, .comments]
     labels: [homepage]
-    research_areas: []
+    research_areas: [Continual Learning]
     affiliation: NJU LAMDA
     watch: general
-  - name: Huiping Zhuang's Homepage
+  - name: 庄辉平
     url: https://zhuanghp.github.io/
     category: HomePage
     site_type: github_pages
     selectors: [article, main, .post-content, .entry-content, .content]
     remove_selectors: [script, style, nav, footer, header, aside, .sidebar, .comments]
     labels: [homepage]
-    research_areas: []
-    affiliation: ""
+    research_areas: [Continual Learning, Embodied AI]
+    affiliation: "华南理工大学"
     watch: general
-  - name: Zifeng Wang's Homepage
+  - name: 王子峰
     url: https://kingspencer.github.io/
     category: HomePage
     site_type: github_pages
     selectors: [article, main, .post-content, .entry-content, .content]
     remove_selectors: [script, style, nav, footer, header, aside, .sidebar, .comments]
     labels: [homepage]
-    research_areas: []
-    affiliation: ""
+    research_areas: [LLM, Agent]
+    affiliation: "Google"
     watch: general
-  - name: Liyuan Wang
+  - name: 王立元
     url: https://lywang3081.github.io/
     category: HomePage
     site_type: github_pages
     selectors: [article, main, .post-content, .entry-content, .content]
     remove_selectors: [script, style, nav, footer, header, aside, .sidebar, .comments]
     labels: [homepage]
-    research_areas: []
-    affiliation: ""
+    research_areas: [Continual Learning]
+    affiliation: "北京大学"
     watch: general
-  - name: 周嘉欢 Homepage
+  - name: 周嘉欢
     url: https://zhoujiahuan1991.github.io/
     category: HomePage
     site_type: github_pages
     selectors: [article, main, .post-content, .entry-content, .content]
     remove_selectors: [script, style, nav, footer, header, aside, .sidebar, .comments]
     labels: [homepage]
-    research_areas: []
-    affiliation: ""
+    research_areas: [Continual Learning]
+    affiliation: "北京大学"
     watch: general
-  - name: Shunyu Yao – 姚顺雨
+  - name: 姚顺雨
     url: https://ysymyth.github.io/
     category: HomePage
     site_type: github_pages
     selectors: [article, main, .post-content, .entry-content, .content]
     remove_selectors: [script, style, nav, footer, header, aside, .sidebar, .comments]
     labels: [homepage]
-    research_areas: []
-    affiliation: ""
-    watch: general
-  - name: Zhen-Yu Zhang Homepage
-    url: https://zhangzy07.github.io/
-    category: HomePage
-    site_type: github_pages
-    selectors: [article, main, .post-content, .entry-content, .content]
-    remove_selectors: [script, style, nav, footer, header, aside, .sidebar, .comments]
-    labels: [homepage]
-    research_areas: []
-    affiliation: ""
-    watch: general
-  - name: Bin Wu
-    url: https://luo-jiaming.github.io/
-    category: HomePage
-    site_type: github_pages
-    selectors: [article, main, .post-content, .entry-content, .content]
-    remove_selectors: [script, style, nav, footer, header, aside, .sidebar, .comments]
-    labels: [homepage]
-    research_areas: []
+    research_areas: [LLM, Agent]
     affiliation: ""
     watch: general
   - name: Jiangjie Chen Homepage
@@ -367,8 +327,8 @@ scholars:
     selectors: [article, main, .post-content, .entry-content, .content]
     remove_selectors: [script, style, nav, footer, header, aside, .sidebar, .comments]
     labels: [homepage]
-    research_areas: []
-    affiliation: ""
+    research_areas: [LLM]
+    affiliation: "Seed"
     watch: general
   - name: Zixuan Li
     url: https://lee-zix.github.io/
@@ -377,8 +337,8 @@ scholars:
     selectors: [article, main, .post-content, .entry-content, .content]
     remove_selectors: [script, style, nav, footer, header, aside, .sidebar, .comments]
     labels: [homepage]
-    research_areas: []
-    affiliation: ""
+    research_areas: [NLP]
+    affiliation: "计算所"
     watch: general
   - name: 堪村无业土博鼠 - 知乎
     url: https://www.zhihu.com/people/allen-zhu-16
@@ -387,18 +347,18 @@ scholars:
     selectors: [.RichText, .ContentItem, .Post-content, article]
     remove_selectors: [script, style, nav, footer, header, aside, .sidebar, .comments]
     labels: [homepage]
-    research_areas: []
-    affiliation: Zhihu
+    research_areas: [Continual Learning]
+    affiliation: 
     watch: blog
-  - name: Yongjin Yang Homepage
+  - name: 杨永进
     url: https://yangyongjin.github.io/
     category: HomePage
     site_type: github_pages
     selectors: [article, main, .post-content, .entry-content, .content]
     remove_selectors: [script, style, nav, footer, header, aside, .sidebar, .comments]
     labels: [homepage]
-    research_areas: []
-    affiliation: ""
+    research_areas: [Agent, LLM Alignment]
+    affiliation: "多伦多大学"
     watch: general
   - name: Yifei Zhang Homepage
     url: https://yifeiacc.github.io/
@@ -407,118 +367,89 @@ scholars:
     selectors: [article, main, .post-content, .entry-content, .content]
     remove_selectors: [script, style, nav, footer, header, aside, .sidebar, .comments]
     labels: [homepage]
-    research_areas: []
-    affiliation: ""
-    watch: general
-  - name: Hui-Peng Du - Google Scholar
-    url: https://scholar.google.com/citations?user=uO28CqcAAAAJ
-    category: HomePage
-    site_type: google_scholar
-    selectors: ["#gsc_a_b", "#gsc_art", "#gsc_prf", table]
-    remove_selectors: [script, style, nav, footer, header, aside, .sidebar, .comments]
-    labels: [homepage]
-    research_areas: []
-    affiliation: Google
-    watch: publications
-  - name: Hai-Long Sun @ LAMDA
+    research_areas: [Continual Learning]
+    affiliation: "港中文"
+    watch: news
+  - name: 孙海龙
     url: https://www.lamda.nju.edu.cn/sunhl/
     category: HomePage
     site_type: personal_website
     selectors: [main, .content, "#content", article]
     remove_selectors: [script, style, nav, footer, header, aside, .sidebar, .comments]
     labels: [homepage]
-    research_areas: []
+    research_areas: [Continual Learning]
     affiliation: NJU LAMDA
-    watch: general
-  - name: Homepage
+    watch: news
+  - name: 吴太强
     url: https://wutaiqiang.github.io/
     category: HomePage
     site_type: github_pages
     selectors: [article, main, .post-content, .entry-content, .content]
     remove_selectors: [script, style, nav, footer, header, aside, .sidebar, .comments]
     labels: [homepage]
-    research_areas: []
-    affiliation: ""
+    research_areas: [Reasoning]
+    affiliation: "香港大学"
     watch: general
-  - name: Li Shen's Homepage
+  - name: 沈立
     url: https://sites.google.com/site/mathshenli/home
     category: HomePage
     site_type: google_sites
     selectors: [.main-content, "#content", .sites-embed]
     remove_selectors: [script, style, nav, footer, header, aside, .sidebar, .comments]
     labels: [homepage]
-    research_areas: []
-    affiliation: Google
+    research_areas: [Model Merging]
+    affiliation: "中山大学"
     watch: general
-  - name: Enneng Yang Homepage
+  - name: 杨恩能
     url: https://ennengyang.github.io/
     category: HomePage
     site_type: github_pages
     selectors: [article, main, .post-content, .entry-content, .content]
     remove_selectors: [script, style, nav, footer, header, aside, .sidebar, .comments]
     labels: [homepage]
-    research_areas: []
-    affiliation: ""
+    research_areas: [Model Merging]
+    affiliation: "中山大学"
     watch: general
-  - name: Anke Tang
+  - name: 唐安可
     url: https://tanganke.github.io/
     category: HomePage
     site_type: github_pages
     selectors: [article, main, .post-content, .entry-content, .content]
     remove_selectors: [script, style, nav, footer, header, aside, .sidebar, .comments]
     labels: [homepage]
-    research_areas: []
-    affiliation: ""
+    research_areas: [Model Merging]
+    affiliation: "清华大学"
     watch: general
-  - name: sinyalee.com
-    url: https://sinyalee.com/
-    category: HomePage
-    site_type: personal_website
-    selectors: [main, .content, "#content", article]
-    remove_selectors: [script, style, nav, footer, header, aside, .sidebar, .comments]
-    labels: [homepage]
-    research_areas: []
-    affiliation: ""
-    watch: general
-  - name: Yujie Feng
+  - name: 冯钰捷
     url: https://woodscene.github.io/
     category: HomePage
     site_type: github_pages
     selectors: [article, main, .post-content, .entry-content, .content]
     remove_selectors: [script, style, nav, footer, header, aside, .sidebar, .comments]
     labels: [homepage]
-    research_areas: []
-    affiliation: ""
+    research_areas: [Continual Learning]
+    affiliation: "香港理工大学"
     watch: general
-  - name: Carpediem
-    url: https://estrellajer.github.io/
-    category: HomePage
-    site_type: github_pages
-    selectors: [article, main, .post-content, .entry-content, .content]
-    remove_selectors: [script, style, nav, footer, header, aside, .sidebar, .comments]
-    labels: [homepage]
-    research_areas: []
-    affiliation: ""
-    watch: general
-  - name: Jia-Bin Huang
+
+  - name: 黄家斌
     url: https://jbhuang0604.github.io/
     category: HomePage
     site_type: github_pages
     selectors: [article, main, .post-content, .entry-content, .content]
     remove_selectors: [script, style, nav, footer, header, aside, .sidebar, .comments]
     labels: [homepage]
-    research_areas: []
+    research_areas: [3DV]
     affiliation: ""
     watch: general
-  - name: Liang Feng Homepage
+  - name: 冯亮
     url: https://fenglang918.github.io/index.html
     category: HomePage
     site_type: github_pages
     selectors: [article, main, .post-content, .entry-content, .content]
     remove_selectors: [script, style, nav, footer, header, aside, .sidebar, .comments]
     labels: [homepage]
-    research_areas: []
-    affiliation: ""
+    research_areas: [Develop tool]
+    affiliation: "复旦大学"
     watch: general
   - name: Shuaichen Chang
     url: https://shuaichenchang.github.io/
@@ -527,87 +458,87 @@ scholars:
     selectors: [article, main, .post-content, .entry-content, .content]
     remove_selectors: [script, style, nav, footer, header, aside, .sidebar, .comments]
     labels: [homepage]
-    research_areas: []
-    affiliation: ""
+    research_areas: [Agent]
+    affiliation: "AWS"
     watch: general
-  - name: Yu Sun
+  - name: 孙宇
     url: https://yueatsprograms.github.io/
     category: HomePage
     site_type: github_pages
     selectors: [article, main, .post-content, .entry-content, .content]
     remove_selectors: [script, style, nav, footer, header, aside, .sidebar, .comments]
     labels: [homepage]
-    research_areas: []
-    affiliation: ""
+    research_areas: [Test time Scaling]
+    affiliation: "英伟达"
     watch: general
-  - name: Ke Sun's Homepage
+  - name: 孙科
     url: https://sites.google.com/view/kesun
     category: HomePage
     site_type: google_sites
     selectors: [.main-content, "#content", .sites-embed]
     remove_selectors: [script, style, nav, footer, header, aside, .sidebar, .comments]
     labels: [homepage]
-    research_areas: []
-    affiliation: Google
+    research_areas: [Continuing RL]
+    affiliation: "宾夕法尼亚大学"
     watch: general
-  - name: Kamichanw Publications
+  - name: 蒋玉初
     url: https://kamichanw.github.io/publications/
     category: HomePage
     site_type: github_pages
     selectors: [article, main, .post-content, .entry-content, .content]
     remove_selectors: [script, style, nav, footer, header, aside, .sidebar, .comments]
     labels: [homepage]
-    research_areas: []
-    affiliation: ""
+    research_areas: [Machine learning, LLM, Post training]
+    affiliation: "东南大学"
     watch: general
-  - name: Zhiqiu Lin's website
+  - name: 林知秋
     url: https://linzhiqiu.github.io/
     category: HomePage
     site_type: github_pages
     selectors: [article, main, .post-content, .entry-content, .content]
     remove_selectors: [script, style, nav, footer, header, aside, .sidebar, .comments]
     labels: [homepage]
-    research_areas: []
-    affiliation: ""
+    research_areas: [CV evaluation]
+    affiliation: "MIT"
     watch: general
-  - name: XingYu Zhu - Google Scholar
+  - name: 朱星宇
     url: https://scholar.google.com/citations?hl=zh-CN&user=PpqUnAwAAAAJ
     category: HomePage
     site_type: google_scholar
     selectors: ["#gsc_a_b", "#gsc_art", "#gsc_prf", table]
     remove_selectors: [script, style, nav, footer, header, aside, .sidebar, .comments]
     labels: [homepage]
-    research_areas: []
-    affiliation: Google
+    research_areas: [Vision language model]
+    affiliation: NUS
     watch: publications
-  - name: Tianyuan Zhang
+  - name: 张天远
     url: https://tianyuanzhang.com/
     category: HomePage
     site_type: personal_website
     selectors: [main, .content, "#content", article]
     remove_selectors: [script, style, nav, footer, header, aside, .sidebar, .comments]
     labels: [homepage]
-    research_areas: []
-    affiliation: ""
+    research_areas: [3DV]
+    affiliation: "MIT"
     watch: general
-  - name: Dong Gong
+  - name: 董功
     url: https://donggong1.github.io/index.html
     category: HomePage
     site_type: github_pages
     selectors: [article, main, .post-content, .entry-content, .content]
     remove_selectors: [script, style, nav, footer, header, aside, .sidebar, .comments]
     labels: [homepage]
-    research_areas: []
+    research_areas: [Continual Learning]
     affiliation: ""
     watch: general
-  - name: Yang Yuan
+  - name: 袁洋
     url: https://people.iiis.tsinghua.edu.cn/~yuanyang/en.html
     category: HomePage
     site_type: personal_website
     selectors: [main, .content, "#content", article]
     remove_selectors: [script, style, nav, footer, header, aside, .sidebar, .comments]
     labels: [homepage]
-    research_areas: []
+    research_areas: [范畴论]
     affiliation: Tsinghua University
     watch: general
   - name: xuhuiz.com
@@ -617,8 +548,8 @@ scholars:
     selectors: [main, .content, "#content", article]
     remove_selectors: [script, style, nav, footer, header, aside, .sidebar, .comments]
     labels: [homepage]
-    research_areas: []
-    affiliation: ""
+    research_areas: [RL, CHI.]
+    affiliation: "CMU"
     watch: general
   - name: Chongjie Si
     url: https://chongjiesi.site/home/
@@ -627,16 +558,16 @@ scholars:
     selectors: [main, .content, "#content", article]
     remove_selectors: [script, style, nav, footer, header, aside, .sidebar, .comments]
     labels: [homepage]
-    research_areas: []
-    affiliation: ""
+    research_areas: [Optimize theory]
+    affiliation: "上海交通大学"
     watch: general
-  - name: storm - 知乎
+  - name: 傅宇千
     url: https://www.zhihu.com/people/zxhy-1999/posts
     category: HomePage
     site_type: zhihu
     selectors: [.RichText, .ContentItem, .Post-content, article]
     remove_selectors: [script, style, nav, footer, header, aside, .sidebar, .comments]
     labels: [homepage]
-    research_areas: []
-    affiliation: Zhihu
+    research_areas: [RL, LLM Alignment]
+    affiliation: 自动化所
     watch: blog

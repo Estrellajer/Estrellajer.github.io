@@ -810,16 +810,22 @@ function applyFilters() {
   const ww = [...document.querySelectorAll('.fl-watch:checked')].map(c=>c.value);
   const ss = [...document.querySelectorAll('.fl-status:checked')].map(c=>c.value);
   const aa = [...document.querySelectorAll('.fl-aff:checked')].map(c=>c.value);
+  const rr = [...document.querySelectorAll('.fl-area:checked')].map(c=>c.value);
   let v=0,t=0;
   
   document.querySelectorAll('.sb2').forEach(b=>{
     t++;
     const n=(b.dataset.name||'').toLowerCase(), la=(b.dataset.label||'').split(',');
     const w=b.dataset.watch||'', s=b.dataset.status||'', a=(b.dataset.affiliation||'').toLowerCase();
+    const ra=(b.dataset.areas||'').toLowerCase().split(',').map(x=>x.trim()).filter(x=>x);
     const ns=(s==='rss_no_change')?'unchanged':s;
+    
     const ms=!q||n.includes(q), ml=la.some(l=>ll.includes(l)), mw=ww.includes(w);
-    const mst=ss.some(x=>ns===x||s===x), ma=aa.length===0||aa.includes(a);
-    if(ms&&ml&&mw&&mst&&ma){b.classList.remove('sh2');v++;}else{b.classList.add('sh2');}
+    const mst=ss.some(x=>ns===x||s===x);
+    const ma=aa.length===0||!a||aa.includes(a);
+    const m_area=rr.length===0||ra.length===0||ra.some(x=>rr.includes(x));
+    
+    if(ms&&ml&&mw&&mst&&ma&&m_area){b.classList.remove('sh2');v++;}else{b.classList.add('sh2');}
   });
   
   document.querySelectorAll('.lg,.g,.g-details').forEach(e=>{

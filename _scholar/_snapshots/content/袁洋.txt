@@ -1,0 +1,47 @@
+Yang Yuan
+Associate Professor, IIIS, Tsinghua University
+yuanyang@tsinghua.edu.cn
+My main research direction is
+AI + Traditional Chinese Medicine (TCM)
+. More specifically, I hope to advance this direction on three levels:
+1.
+Modeling medical process.
+I want to record and describe the interactions, judgments, reasoning, and thoughts of doctors in their daily clinical practice.
+2.
+Assisting clinical practice.
+I aim to combine AI algorithms with medical devices to analyze patient information and assist doctors in pattern differentiation and prescription.
+3.
+Formalizing TCM theory.
+Through practice, I gradually realized that data-driven AI alone is not enough. Medical knowledge needs to be consistent, and clinical assistance needs to be interpretable. To this end, we need to formalize the medical process as an algebraic system, or in other words, to turn TCM into a kind of mathematics.
+My goal is to build a
+new medical system based on TCM and supported by category theory
+. In this system, medical principles, symptoms, pathogenesis, treatment methods, prescriptions, and human body states can be described in a unified way, and connected, composed, and inferred through their structural relations.
+I therefore became deeply interested in category theory. Category theory can help us analyze and understand complex systems. It can also provide a new way to organize artificial intelligence: to characterize the capability boundary of foundation models, design new algorithms, and compose many local capabilities into large-scale systems that are verifiable and scalable.
+More specifically, we are trying to use topos theory to build systems for software generation and automated theorem proving. As models become increasingly capable, I believe the key question will not only be "what can a single model do", but also how to decompose a complex task into many simple tasks, solve them separately, and then organize the solutions into a complete system.
+I did my PhD at Cornell University, advised by
+Professor Robert
+Kleinberg
+. After graduation, I spent one year at MIT as a postdoc. I did my undergraduate at Peking University, and I was born in Changzhou. My
+CV
+and
+Google Scholar page
+.
+Selected publicationsï¼
+On the power of foundation models
+Yang Yuan
+ICML 2023
+ãå­å­Â·åå­ä¸ãï¼æè¯¸å
+ï¼å¿
+å½¢è¯¸å¤ã
+ãé»å¸å
+ç»Â·çµæ¢Â·å¤æ£ãï¼å¸å¤æ£å
+ï¼å¸å
+æ£å¤ã
+Contrastive learning is spectral clustering on similarity graph
+Zhiquan Tan, Yifan Zhang, Jingqin Yang, Yang Yuan
+ICLR 2024
+Category theory for AI in single dimensional case.
+Trade-off between efficiency and consistency for removal-based explanations
+Yifan Zhang, Haowei He, Zhiquan Tan, Yang Yuan
+NeurIPS 2023
+Impossible Trinity of removal-based explanations.

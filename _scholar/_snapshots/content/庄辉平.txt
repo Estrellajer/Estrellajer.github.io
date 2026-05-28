@@ -1,0 +1,33 @@
+Zhuang Huiping
+Associate Professor, PhD Supervisor in South China University of Technology
+He received his PhD from Nanyang Technological University, Singapore in 2022 and was recognized with the Outstanding Overseas Student Award by the National Natural Science Foundation of China. He leads key projects including the National Key R&D Program of China and National Natural Science Foundation projects. His research focuses on efficient AI (including efficient continual learning and embodied intelligence), with around 80 published papers. He pioneered "Analytical Continual Learning," establishing a specialized research direction in evolvable intelligence that has produced more than 10 papers in top conferences like NeurIPS/ICML in the past two years. His works have been recognized with two Best Paper Awards (nomination) at international conferences, the Best Student Paper Achievement Award from Singapore's PREMIA Association, and a First Prize at the CVPR 2025 competition. He has delivered a keynote speech at an international conference and served in academic roles (e.g., Co-Chair) at several international/domestic conferences. He serves as a special issue editor for the Journal of Franklin Institute (JCR Q1) and was recognized as an Outstanding Reviewer for ICML 2022.
+Research Areas
+Learn More  >
+Continual Learning
+Embodied Intelligence
+Large Models
+Latest News
+Learn More  >
+2026 May 08
+We have 2 papers accepted by CVPR 2026, including 1 Oral!
+2026 Jan 28
+We have 3 papers accepted by ICLR 2026!
+2025 Nov 08
+We have 2 papers accepted by AAAI 2026!
+2025 Oct 31
+Our team won the first prize in the 19th Challenge Cup End-Deployable Dual-Arm Operation Algorithm Design Challenge!
+2025 Sep 20
+We have 1 paper accepted by NeurIPS 2025 !
+2025 Aug 14
+Our team wins a first prize and a second prize at the 27th China Robot and Artificial Intelligence Competition!
+2025 Aug 03
+We won Team and Individual Awards at the China International College Students’ Innovation Competition 2025！
+2025 Jul 05
+We have 3 papers accepted by ACMMM 2025!
+2025 Jun 19
+Our team wins a first prize in RoboTwin Dual-Arm Collaboration Challenge of CVPR2025 (Real-world Track)!
+2025 May 08
+Our team wins a silver medal in RoboTwin Dual-Arm Collaboration Challenge of CVPR2025!
+Drag, swipe, or use the arrows
+↑
+↓

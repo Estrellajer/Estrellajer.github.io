@@ -1,0 +1,204 @@
+Biography
+I am now a PH.D. student from the
+NGai Lab
+in HKU.
+Before that, I received my master degree from Tsinghua University in 2023.
+For master, I studied in
+IIGroup
+in Tsinghua University,
+supervised by Prof.
+Yujiu Yang
+.
+In 2020, I received my bachelor degree in Department of Automation from Tsinghua University.
+My major research interests lie in Effcient Model methods for Large Language Models.
+Recently, I focus on the efficient reasoning via RL.
+Recent News
+Show all
+2026.04 - Two papers are accepted by ACL 2026, check
+MI
+and
+Profit
+for details.
+2026.03 - Present a talk about "Occam’s Razor: Lossless CoT Compression for LLMs". [
+TechBeat
+]
+[
+Slide
+]
+2026.02 - Release one report on LLM efficient reasoning via reward shaping. We losslessly compress CoT of Qwen3 models. [
+Project
+]
+2025.11 - Present a talk about "Rethinking LLM Post-train at Weight Level". [
+TechBeat
+]
+[
+Youtube
+]
+[
+Slide
+]
+2025.03 - The paper
+A Survey on the Honesty of Large Language Models
+is accepted by TMLR!
+2025.02 - Release one blog about the KL divergence in RL algorithm. [
+Blog(中)
+]
+2025.01 - Release one report for the unified view of Attention and MoE. [
+Report
+][
+Blog(中)
+]
+2024.11 - Two papers are accepted by COLING 2025.
+2024.11 - Release one report for modeling Binary Quantization via Convex Optimization Methods (Project for HKU COMP9602, 2023). [
+Report
+]
+2024.09 - One paper is accepted by EMNLP 2024.
+2024.06 - One blog about improving LoRA is released. [
+Eng
+|
+中
+]
+2024.04 - One blog about rethinking KL divergence in KD for LLMs is released. [
+Eng
+|
+中
+]
+2024.03 - One paper is accepted by NAACL 2024 findings.
+2023.02 - Two papers are accepted by ICASSP 2023.
+2022.10 - One research long paper is accepted by WSDM 2023.
+Publications & Preprints
+🔥 The Art of Efficient Reasoning: Data, Reward, and Optimization
+Taiqiang Wu
+, Zenan Xu, Bo Zhou, Ngai Wong
+Arxiv
+Preprint
+[
+Paper
+]
+[
+Weights
+]
+[
+Blog
+]
+🔥 Revisiting Model Interpolation for Efficient Reasoning
+Taiqiang Wu
+, Runming Yang, Tao Liu, Jiahao Wang, Ngai Wong
+ACL 2026, Main
+Preprint
+[
+Paper
+]
+[
+Code
+]
+Timber: Training-free Instruct Model Refining with Base via Effective Rank
+Taiqiang Wu
+, Runming Yang, Tao Liu, Jiahao Wang, Zenan Xu, Ngai Wong
+Arxiv
+Preprint
+[
+Paper
+]
+[
+Code
+]
+[
+Weight
+]
+Shadow-FT: Tuning Instruct Model via Training on Paired Base Model
+Taiqiang Wu
+*
+, Runming Yang
+*
+, Jiayi Li, Pengfei Hu, Yik Chung WU, Ngai Wong, Yujiu Yang
+Arxiv
+Preprint
+[
+Paper
+]
+[
+Code
+]
+[
+Weight
+]
+A Survey on the Honesty of Large Language Models
+Siheng Li
+*
+, Cheng Yang
+*
+,
+Taiqiang Wu
+*
+, Chufan Shi, Yuji Zhang, Xinyu Zhu, Zesen Cheng, Deng Cai, Mo Yu, Lemao Liu, Jie Zhou, Yujiu Yang, Ngai Wong, Xixin Wu, Wai Lam
+TMLR 2025
+Journal
+[
+Paper
+]
+[
+Code
+]
+Mixture-of-Subspaces in Low-Rank Adaptation
+Taiqiang Wu
+, Jiahao Wang, Zhe Zhao, Ngai Wong
+EMNLP 2024
+Conference
+[
+Paper
+]
+[
+Code
+]
+Rethinking Kullback-Leibler Divergence in Knowledge Distillation for Large Language Models
+Taiqiang Wu
+, Chaofan Tao, Jiahao Wang, Runming Yang, Zhe Zhao, Ngai Wong
+CoLING 2025
+Conference
+[
+Paper
+]
+[
+Code
+]
+[
+Video
+]
+Weight-Inherited Distillation for Task-Agnostic BERT Compression
+Taiqiang Wu
+*
+,
+Cheng Hou
+*
+,
+Shanshan Lao, Jiayi Li, Ngai Wong, Zhe Zhao, Yujiu Yang.
+NAACL 2024 findings
+Conference
+[
+Paper
+]
+[
+Code
+]
+[
+Poster
+]
+Edge-free but Structure-aware: Prototype-Guided Knowledge Distillation from GNNs to MLPs
+Taiqiang Wu
+, Zhe Zhao, Jiahao Wang, Xingyu Bai, Lei Wang, Ngai Wong, Yujiu Yang
+CoLING 2025
+Conference
+[
+Paper
+]
+Internship
+2021.3~2022.5, Tencent
+2022.5~2023.5, Tencent Rahio Research Plan
+Services
+ARR2022, Reviewer
+ARR2023, Reviewer
+ARR2024, Reviewer
+ARR2025, Reviewer
+ARR2026, Reviewer
+(Last updated on Mar, 2026)

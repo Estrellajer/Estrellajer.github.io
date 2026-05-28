@@ -1,0 +1,437 @@
+Nanyang Technological University
+Singapore
+I am currently a Research Fellow (Postdoctoral Researcher) at Nanyang Technological University (NTU), Singapore. I received my Ph.D. degree from the School of Computer Science, Wuhan University, under the supervision of
+Prof. Yong Luo
+and
+Assoc. Prof. Shen Li
+. I received my Bachelor degree at the School of Physics and Technology, Wuhan University in 2020. My research interests include machine learning, transfer learning, and multi-task learning.
+news
+Sep 20, 2025
+Three of our papers have been accepted to NeurIPS 2025, with two on continual model merging.
+selected publications
+TPAMI
+Zero-Shot Sparse Mixture of Low-Rank Experts Construction From Pre-Trained Foundation Models
+Anke Tang
+,
+Li Shen
+,
+Yong Luo
+, and
+5 more authors
+IEEE Transactions on Pattern Analysis and Machine Intelligence
+, 2025
+Bib
+@article
+{
+tang2025zero
+,
+title
+=
+{Zero-Shot Sparse Mixture of Low-Rank Experts Construction From Pre-Trained Foundation Models}
+,
+author
+=
+{Tang, Anke and Shen, Li and Luo, Yong and Xie, Shuai and Hu, Han and Zhang, Lefei and Du, Bo and Tao, Dacheng}
+,
+journal
+=
+{IEEE Transactions on Pattern Analysis and Machine Intelligence}
+,
+year
+=
+{2025}
+,
+publisher
+=
+{IEEE}
+,
+}
+IJCV
+Data-adaptive weight-ensembling for multi-task model fusion
+Anke Tang
+,
+Li Shen
+,
+Yong Luo
+, and
+4 more authors
+International Journal of Computer Vision
+, 2025
+Bib
+@article
+{
+tang2025data
+,
+title
+=
+{Data-adaptive weight-ensembling for multi-task model fusion}
+,
+author
+=
+{Tang, Anke and Shen, Li and Luo, Yong and Liu, Shiwei and Hu, Han and Du, Bo and Tao, Dacheng}
+,
+journal
+=
+{International Journal of Computer Vision}
+,
+pages
+=
+{1--17}
+,
+year
+=
+{2025}
+,
+publisher
+=
+{Springer US}
+,
+}
+NeurIPS
+Merging models on the fly without retraining: A sequential approach to scalable continual model merging
+Anke Tang
+,
+Enneng Yang
+,
+Li Shen
+, and
+4 more authors
+The Thirty-Ninth Annual Conference on Neural Information Processing Systems
+, 2025
+Bib
+HTML
+@article
+{
+tang2025merging
+,
+title
+=
+{Merging models on the fly without retraining: A sequential approach to scalable continual model merging}
+,
+author
+=
+{Tang, Anke and Yang, Enneng and Shen, Li and Luo, Yong and Hu, Han and Du, Bo and Tao, Dacheng}
+,
+journal
+=
+{The Thirty-Ninth Annual Conference on Neural Information Processing Systems}
+,
+year
+=
+{2025}
+,
+}
+NeurIPS
+Continual Model Merging without Data: Dual Projections for Balancing Stability and Plasticity
+Enneng Yang
+,
+Anke Tang
+,
+Li Shen
+, and
+4 more authors
+The Thirty-Ninth Annual Conference on Neural Information Processing Systems
+, 2025
+Bib
+@article
+{
+yang2025continual
+,
+title
+=
+{Continual Model Merging without Data: Dual Projections for Balancing Stability and Plasticity}
+,
+author
+=
+{Yang, Enneng and Tang, Anke and Shen, Li and Guo, Guibing and Wang, Xingwei and Cao, Xiaochun and Jie, Zhang}
+,
+journal
+=
+{The Thirty-Ninth Annual Conference on Neural Information Processing Systems}
+,
+year
+=
+{2025}
+,
+}
+ICML
+Targeted Low-rank Refinement: Enhancing Sparse Language Models with Precision
+Li Shen
+,
+Anke Tang
+,
+Yong Luo
+, and
+3 more authors
+In Forty-second International Conference on Machine Learning
+, 2025
+Bib
+@inproceedings
+{
+shentargeted
+,
+title
+=
+{Targeted Low-rank Refinement: Enhancing Sparse Language Models with Precision}
+,
+author
+=
+{Shen, Li and Tang, Anke and Luo, Yong and Sun, Tao and Hu, Han and Cao, Xiaochun}
+,
+booktitle
+=
+{Forty-second International Conference on Machine Learning}
+,
+year
+=
+{2025}
+,
+}
+ICML
+Modeling Multi-Task Model Merging as Adaptive Projective Gradient Descent
+Yongxian Wei,
+Anke Tang
+,
+Li Shen
+, and
+3 more authors
+In Forty-second International Conference on Machine Learning
+, 2025
+Bib
+@inproceedings
+{
+weimodeling
+,
+title
+=
+{Modeling Multi-Task Model Merging as Adaptive Projective Gradient Descent}
+,
+author
+=
+{Wei, Yongxian and Tang, Anke and Shen, Li and Hu, Zixuan and Yuan, Chun and Cao, Xiaochun}
+,
+booktitle
+=
+{Forty-second International Conference on Machine Learning}
+,
+year
+=
+{2025}
+,
+}
+ICLR
+Mitigating the Backdoor Effect for Multi-Task Model Merging via Safety-Aware Subspace
+Jinluan Yang,
+Anke Tang
+, Didi Zhu, and
+3 more authors
+In The 13th International Conference on Learning Representations (ICLR)
+, 2025
+Bib
+@inproceedings
+{
+yang2025mitigating
+,
+title
+=
+{Mitigating the Backdoor Effect for Multi-Task Model Merging via Safety-Aware Subspace}
+,
+author
+=
+{Yang, Jinluan and Tang, Anke and Zhu, Didi and Chen, Zhengyu and Shen, Li and Wu, Fei}
+,
+booktitle
+=
+{The 13th International Conference on Learning Representations (ICLR)}
+,
+year
+=
+{2025}
+,
+}
+NMI
+Learning from models beyond fine-tuning
+Hongling Zheng,
+Li Shen
+,
+Anke Tang
+, and
+5 more authors
+Nature Machine Intelligence
+, 2025
+Bib
+@article
+{
+zheng2025learning
+,
+title
+=
+{Learning from models beyond fine-tuning}
+,
+author
+=
+{Zheng, Hongling and Shen, Li and Tang, Anke and Luo, Yong and Hu, Han and Du, Bo and Wen, Yonggang and Tao, Dacheng}
+,
+journal
+=
+{Nature Machine Intelligence}
+,
+volume
+=
+{7}
+,
+number
+=
+{1}
+,
+pages
+=
+{6--17}
+,
+year
+=
+{2025}
+,
+publisher
+=
+{Nature Publishing Group UK London}
+,
+}
+JMLR
+FusionBench: A Unified Library and Comprehensive Benchmark for Deep Model Fusion
+Anke Tang
+,
+Li Shen
+,
+Yong Luo
+, and
+5 more authors
+Journal of Machine Learning Research
+, 2025
+Bib
+@article
+{
+tang2025fusionbench
+,
+title
+=
+{FusionBench: A Unified Library and Comprehensive Benchmark for Deep Model Fusion}
+,
+author
+=
+{Tang, Anke and Shen, Li and Luo, Yong and Yang, Enneng and Hu, Han and Zhang, Lefei and Du, Bo and Tao, Dacheng}
+,
+journal
+=
+{Journal of Machine Learning Research}
+,
+volume
+=
+{26}
+,
+number
+=
+{307}
+,
+year
+=
+{2025}
+,
+}
+ICML
+Merging Multi-Task Models via Weight-Ensembling Mixture of Experts
+Anke Tang
+,
+Li Shen
+,
+Yong Luo
+, and
+3 more authors
+In The 41th International Conference on Machine Learning (ICML)
+, 2024
+Bib
+@inproceedings
+{
+tang2024merging
+,
+title
+=
+{Merging Multi-Task Models via Weight-Ensembling Mixture of Experts}
+,
+author
+=
+{Tang, Anke and Shen, Li and Luo, Yong and Yin, Nan and Zhang, Lefei and Tao, Dacheng}
+,
+booktitle
+=
+{The 41th International Conference on Machine Learning (ICML)}
+,
+year
+=
+{2024}
+,
+}
+ICLR
+Parameter efficient multi-task model fusion with partial linearization
+Anke Tang
+,
+Li Shen
+,
+Yong Luo
+, and
+5 more authors
+In the 12th International Conference on Learning Representations
+, 2024
+Bib
+@inproceedings
+{
+tang2024parameter
+,
+title
+=
+{Parameter efficient multi-task model fusion with partial linearization}
+,
+author
+=
+{Tang, Anke and Shen, Li and Luo, Yong and Zhan, Yibing and Hu, Han and Du, Bo and Chen, Yixin and Tao, Dacheng}
+,
+booktitle
+=
+{the 12th International Conference on Learning Representations}
+,
+year
+=
+{2024}
+,
+}
+IJCAI
+Improving Heterogeneous Model Reuse by Density Estimation
+Anke Tang
+,
+Yong Luo
+, Han Hu, and
+5 more authors
+In Thirty-Second International Joint Conference on Artificial Intelligence
+, 2023
+Bib
+@inproceedings
+{
+tang2023improving
+,
+title
+=
+{Improving Heterogeneous Model Reuse by Density Estimation}
+,
+author
+=
+{Tang, Anke and Luo, Yong and Hu, Han and He, Fengxiang and Su, Kehua and Du, Bo and Chen, Yixin and Tao, Dacheng}
+,
+booktitle
+=
+{Thirty-Second International Joint Conference on Artificial Intelligence}
+,
+year
+=
+{2023}
+,
+}

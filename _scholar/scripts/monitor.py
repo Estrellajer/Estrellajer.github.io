@@ -463,6 +463,7 @@ def generate_html_report(results: list, total: int):
     now = datetime.now().strftime("%Y-%m-%d %H:%M UTC")
 
     all_affiliations = sorted(set(r.get("affiliation", "") for r in results if r.get("affiliation")))
+    all_areas = sorted(set(area for r in results for area in r.get("research_areas", []) if area))
     all_watches = sorted(set(r.get("watch", "general") for r in results))
     watch_counts = Counter(r.get("watch", "general") for r in results)
 
@@ -494,7 +495,8 @@ def generate_html_report(results: list, total: int):
             f'data-label="{_esc(",".join(r.get("labels", [])))}" '
             f'data-watch="{_esc(r.get("watch", "general"))}" '
             f'data-affiliation="{_esc(r.get("affiliation", "").lower())}" '
-            f'data-status="{_esc(r.get("type", ""))}"'
+            f'data-status="{_esc(r.get("type", ""))}" '
+            f'data-areas="{_esc(",".join(r.get("research_areas", [])))}"'
         )
 
     def _summarize_change(r: dict) -> str:
@@ -664,6 +666,12 @@ def generate_html_report(results: list, total: int):
         for aff in all_affiliations:
             if aff:
                 filter_html += f'<label class="fc"><input type="checkbox" class="fl-aff" value="{_esc(aff.lower())}" checked onchange="applyFilters()"> {_esc(aff)}</label>'
+        filter_html += '</div>'
+    if all_areas:
+        filter_html += '<div class="fr ar"><span class="flt">Research Area:</span>'
+        for area in all_areas:
+            if area:
+                filter_html += f'<label class="fc"><input type="checkbox" class="fl-area" value="{_esc(area.lower())}" checked onchange="applyFilters()"> {_esc(area)}</label>'
         filter_html += '</div>'
     filter_html += '<div class="fs">Showing <span id="visibleCount">0</span> of <span id="totalCount">0</span> scholars</div></div>'
     sections.append(filter_html)

@@ -1,0 +1,75 @@
+EN
+|
+中文
+Liang Feng (冯亮)
+Email
+·
+GitHub
+·
+RedNote
+Research
+Education
+Experience
+Publications
+Photography
+Research
+My long-term research interest is:
+how can intelligence grow and scale, while remaining precisely calibrated to the complexity of the real world?
+More specifically, I am currently studying how to use
+Agents
+to synthesize data, improve LLM performance in
+science-related domains
+, and further build the
+benchmarks
+that science needs.
+As human-generated data is rapidly compressed into model intelligence,
+synthetic data
+is destined to become a key approach for LLM self-learning and unbounded growth. At the same time, we need to continuously design high-quality benchmarks to
+calibrate
+model intelligence. These benchmarks are also the ultimate
+reward
+in reinforcement learning: we propose increasingly challenging benchmarks, and then use reinforcement learning and related techniques to design more fine-grained reward signals to train the self-learning of LLMs.
+Education
+Fudan University
+Master of Finance (FinTech) · 2024.09–2026.06
+Entrance Scholarship (2nd Prize): RMB 55,000.
+UESTC
+Dual-degree "Internet+" Elite Program · 2020.09–2024.06
+Finance + Data Science. GPA: 91.08/100. National Scholarship.
+Experience
+Alibaba – Platform Technology × SJTU
+Academic Collaboration · 2025.11–Present
+Agent-based data synthesis and benchmark construction.
+EPIC Lab (SJTU) —
+E
+fficient and
+P
+recise
+I
+ntelligent
+C
+omputing
+Research Assistant · 2025.03–Present
+Advisor: Prof. Linfeng Zhang.
+ByteDance — Data-AML
+Scientific Computing Intern · 2024.06–2024.08
+Back-end Development.
+Publications
+HiCache: A Plug-in Scaled-Hermite Upgrade for Taylor-Style Cache-then-Forecast Diffusion Acceleration
+Liang Feng*
+, et al. (Co-first Author · 1st author)
+Accepted (Poster) at
+ICLR 2026
+.
+Forecast then Calibrate: Feature Caching as ODE for Efficient Diffusion Transformers
+Co-first Author · 2nd author
+Accepted (Poster) at
+AAAI 2026
+.
+Honors & Awards
+Fudan SOE Entrance Scholarship (2nd Prize, RMB 55,000, 2024)
+National Scholarship (2020–2021)
+Outstanding Graduate, UESTC (2024)
+Provincial Second Prize, FLTRP English Challenge (2022)
+Sichuan Provincial High School Physics Competition: Second Prize (2017)
+© 2025 Liang Feng. All Rights Reserved.

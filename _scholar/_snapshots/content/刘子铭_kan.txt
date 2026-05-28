@@ -1,0 +1,37 @@
+AI4AI needs its own "world model"
+6 min read   ·   May 06, 2026
+2026
+·
+Physics-of-AI
+Methodology
+·
+AI
+How does memorization affect l2?
+6 min read   ·   May 05, 2026
+2026
+·
+ComfyResearch
+Workflow
+Grokking in loss doesn't necessarily imply grokking in accuracy
+4 min read   ·   May 03, 2026
+2026
+·
+Research-agent
+·
+AI
+Data efficiency of Bi-gram data
+2 min read   ·   May 03, 2026
+2026
+·
+ComfyResearch
+Workflow
+·
+AI
+Must-read papers by Jürgen Schmidhuber
+1 min read   ·   April 12, 2026
+2026
+·
+Physics-of-AI
+Must-read
+·
+AI
