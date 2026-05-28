@@ -42,3 +42,5 @@ docker-compose-slim.yml
 package.json
 package-lock.json
 purgecss.config.js
+_scholar/**
+scholar/**
