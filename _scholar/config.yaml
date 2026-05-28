@@ -129,16 +129,7 @@ scholars:
     research_areas: []
     affiliation: ""
     watch: general
-  - name: Hwzhao Blog
-    url: https://www.hwzhao.cn/
-    category: blog
-    site_type: personal_website
-    selectors: [main, .content, "#content", article]
-    remove_selectors: [script, style, nav, footer, header, aside, .sidebar, .comments]
-    labels: [blog]
-    research_areas: []
-    affiliation: ""
-    watch: general
+
   - name: 🙋🏻‍♂️关于 | Chenxu's Blog
     url: https://www.chenxutalk.top/about/
     category: blog

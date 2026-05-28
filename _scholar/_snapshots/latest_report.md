@@ -1,6 +1,6 @@
 # Scholar Monitor Report
 
-**Run:** 2026-05-28 19:05 UTC  |  **Total:** 65  |  RSS 1  |  CHG 1  |  FIRST 0  |  OK 63  |  ERR 0
+**Run:** 2026-05-28 19:37 UTC  |  **Total:** 64  |  RSS 1  |  CHG 0  |  FIRST 0  |  OK 63  |  ERR 0
 
 ---
 ## New Publications & Blog Posts (1)
@@ -26,25 +26,3 @@
 - [和鲸社区2022咸鱼打挺夏令营-机器学习原理与实践·闯关-作业答案与部分解析](https://junyaohu.github.io/blog/heywhale-summer-camp-ai/) - ?
 - [和鲸社区2022咸鱼打挺夏令营-数据结构·闯关-作业答案](https://junyaohu.github.io/blog/heywhale-summer-camp-ds/) - ?
 - [和鲸社区2022咸鱼打挺夏令营-【NLP最佳实践】Huggingface Transformers实战教程-笔记、作业答案与部分解析](https://junyaohu.github.io/blog/heywhale-summer-camp-transformer/) - ?
-
----
-## Pages with Changes (1)
-
-**[Hwzhao Blog](https://www.hwzhao.cn/)**
-```diff
---- hwzhao_blog (previous)
-+++ hwzhao_blog (current)
-@@ -119,8 +119,8 @@
- 濡傜煶
- SEO鏍囩
- 友情链接：
-+（bd）世界杯2
-+bd必一运动
-+bd美加墨世界杯
-+（bd）beats365(中国区)-唯一官方网站
- bd美加墨世界杯官方网站
--bd美加墨世界杯
--bd美加墨世界杯官方网站
--bd美加墨世界杯官方网站
--bd必一运动
-```
