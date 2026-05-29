@@ -201,11 +201,40 @@ def check_rss(name: str, rss_url: str, since: datetime) -> dict:
 
 
 # Content extraction
-def extract_content(html: str, selectors: list = None, remove_selectors: list = None) -> str:
+def extract_content(html: str, selectors: list = None, remove_selectors: list = None, watch: str = "general") -> str:
     soup = BeautifulSoup(html, "html.parser")
     for sel in remove_selectors or []:
         for el in soup.select(sel):
             el.decompose()
+            
+    # If watch is news, prioritize news containers
+    if watch == "news":
+        news_selectors = [
+            "#news", ".news", "#recent-news", ".recent-news", 
+            "#updates", ".updates", "#announcements", ".announcements", 
+            "#activities", ".activities", "#recent-activity", ".recent-activity", 
+            "#whats-new", ".whats-new", "#news-section", ".news-section"
+        ]
+        for sel in news_selectors:
+            el = soup.select_one(sel)
+            if el:
+                t = _clean(el.get_text(separator="\n"))
+                if len(t) >= 20:
+                    return t
+                    
+    # If watch is publications, prioritize publications containers
+    if watch == "publications":
+        pub_selectors = [
+            "#publications", ".publications", "#selected-publications", ".selected-publications",
+            "#papers", ".papers", "#research", ".research", "#selected-papers", ".selected-papers"
+        ]
+        for sel in pub_selectors:
+            el = soup.select_one(sel)
+            if el:
+                t = _clean(el.get_text(separator="\n"))
+                if len(t) >= 20:
+                    return t
+
     if selectors:
         for sel in selectors:
             el = soup.select_one(sel)
@@ -340,7 +369,7 @@ def check_scholar(scholar: dict, rss_cache: dict, since: datetime | None) -> dic
             return zr
     try:
         resp = fetch(url)
-        content = extract_content(resp.text, scholar.get("selectors"), scholar.get("remove_selectors"))
+        content = extract_content(resp.text, scholar.get("selectors"), scholar.get("remove_selectors"), watch=scholar.get("watch", "general"))
     except Exception as e:
         result["type"] = "error"
         result["error"] = f"Fetch/extract failed: {e}"
@@ -350,8 +379,21 @@ def check_scholar(scholar: dict, rss_cache: dict, since: datetime | None) -> dic
         result["error"] = "No content could be extracted"
         return result
         
-    # Capture latest 3 non-empty lines as preview
-    result["preview"] = [l.strip() for l in content.split("\n") if l.strip()][:3]
+    # Capture latest 3 non-empty lines as preview, skipping boilerplate navigation headers
+    preview_lines = []
+    for l in content.split("\n"):
+        cleaned_line = l.strip()
+        if not cleaned_line:
+            continue
+        lower_line = cleaned_line.lower()
+        if lower_line in ("home", "about", "contact", "menu", "toggle navigation", "navigation", "skip to content", "search", "cv", "publications", "teaching", "blog", "news", "updates", "projects", "people"):
+            continue
+        if len(cleaned_line) < 3:
+            continue
+        preview_lines.append(cleaned_line)
+        if len(preview_lines) >= 3:
+            break
+    result["preview"] = preview_lines
     
     prev = load_snapshot(name)
     if prev is None:

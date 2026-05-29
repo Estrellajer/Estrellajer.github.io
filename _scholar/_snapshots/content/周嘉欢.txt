@@ -99,6 +99,9 @@ Jiahuan Zhou*
 via Continual Self-Paced Dual-Knowledge Purification for Noisy Lifelong Person
 Re-Identification", in IEEE Transactions on Pattern Analysis and Machine
 Intelligence, 2026
+[
+bib
+]
 OR
 IL
 (
@@ -110,6 +113,9 @@ Jiahuan Zhou*
 Modality-Balanced Routing for Multimodal Continual Instruction Tuning", in
 Proceedings of the International Conference on Machine Learning, Seoul, South
 Korea, Jul.6 - Jul.11, 2026
+[
+bib
+]
 V&L
 IL
 (
@@ -120,6 +126,11 @@ Jiahuan Zhou*
 the Plasticity and Stability for Post-Training Large Language Models", in
 Proceedings of the International Conference on Machine Learning, Seoul, South
 Korea, Jul.6 - Jul.11, 2026
+[
+pdf
+] [
+bib
+]
 V&L
 (
 ICML'26
@@ -131,6 +142,9 @@ and Sheng Zhong, "Breaking the Synthetic-Real Domain Shortcut for Training-Free
 Generative Replay-based Class Incremental Learning", in Proceedings of the
 International Conference on Machine Learning, Seoul, South Korea, Jul.6 -
 Jul.11, 2026
+[
+bib
+]
 IL
 (
 ICML'26
@@ -141,6 +155,9 @@ Jiahuan Zhou*
 "Learnability-Driven Knowledge Assimilation for Class-Incremental Semantic
 Segmentation", in Proceedings of the International Conference on Machine
 Learning, Seoul, South Korea, Jul.6 - Jul.11, 2026
+[
+bib
+]
 IL
 (
 CVPR'26
@@ -156,6 +173,8 @@ pdf
 ]
 [
 code
+] [
+bib
 ]
 OR
 (
@@ -172,6 +191,8 @@ pdf
 ]
 [
 code
+] [
+bib
 ]
 IL
 (
@@ -184,6 +205,9 @@ Zhou*
 Cooperative Deblurring Dynamic Reconstruction via Gaussian Splatting", in
 Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern
 Recognition, Denver, Colorado, USA, Jun.3 - Jun.7, 2026
+[
+bib
+]
 2D to 3D
 (
 CVPR'26
@@ -199,6 +223,8 @@ pdf
 ]
 [
 code
+] [
+bib
 ]
 V&L
 OL
@@ -215,6 +241,8 @@ Colorado, USA, Jun.3 - Jun.7, 2026
 pdf
 ] [
 code
+] [
+bib
 ]
 V&L
 (
@@ -230,6 +258,8 @@ pdf
 ]
 [
 code
+] [
+bib
 ]
 IL
 FL
@@ -243,6 +273,10 @@ Yan, Sheng Zhong, and Xu Zou, "Supervisory Feedback for High-resolution
 Low-textured Large-scale Multi-view Stereo", in Pattern Recognization, 2026
 [
 pdf
+] [
+bib
+] [
+DOI:10.1016/j.patcog.2025.112907
 ]
 2D to 3D
 (
@@ -259,6 +293,8 @@ pdf
 code
 ] [
 bib
+] [
+DOI:10.1109/TPAMI.2025.3649078
 ]
 OR
 IL
@@ -275,6 +311,8 @@ Singapore, Jan.20 - Jan.27, 2026
 pdf
 ] [
 code
+] [
+bib
 ] [
 机器之心报道
 ]
@@ -294,6 +332,8 @@ pdf
 ]
 [
 code
+] [
+bib
 ]
 PL
 V&L
@@ -310,6 +350,8 @@ Nov.30 - Dec.7, 2025
 pdf
 ] [
 code
+] [
+bib
 ]
 PL
 IL
@@ -326,6 +368,8 @@ Diego, USA, Nov.30 - Dec.7, 2025
 pdf
 ] [
 code
+] [
+bib
 ]
 PL
 (
@@ -341,6 +385,8 @@ Dec.7, 2025
 pdf
 ] [
 code
+] [
+bib
 ]
 IL
 (
@@ -1343,7 +1389,7 @@ pdf
 bib
 ]
 [
-DOI:TPAMI.2019.2918208
+DOI:10.1109/TPAMI.2019.2918208
 ]
 OL
 (
@@ -1541,6 +1587,9 @@ Jiahuan Zhou*
 via Continual Self-Paced Dual-Knowledge Purification for Noisy Lifelong Person
 Re-Identification", in IEEE Transactions on Pattern Analysis and Machine
 Intelligence, 2026
+[
+bib
+]
 OR
 IL
 (
@@ -1552,6 +1601,9 @@ Jiahuan Zhou*
 Modality-Balanced Routing for Multimodal Continual Instruction Tuning", in
 Proceedings of the International Conference on Machine Learning, Seoul, South
 Korea, Jul.6 - Jul.11, 2026
+[
+bib
+]
 V&L
 IL
 (
@@ -1562,6 +1614,11 @@ Jiahuan Zhou*
 the Plasticity and Stability for Post-Training Large Language Models", in
 Proceedings of the International Conference on Machine Learning, Seoul, South
 Korea, Jul.6 - Jul.11, 2026
+[
+pdf
+] [
+bib
+]
 V&L
 (
 ICML'26
@@ -1573,6 +1630,9 @@ and Sheng Zhong, "Breaking the Synthetic-Real Domain Shortcut for Training-Free
 Generative Replay-based Class Incremental Learning", in Proceedings of the
 International Conference on Machine Learning, Seoul, South Korea, Jul.6 -
 Jul.11, 2026
+[
+bib
+]
 IL
 (
 ICML'26
@@ -1583,6 +1643,9 @@ Jiahuan Zhou*
 "Learnability-Driven Knowledge Assimilation for Class-Incremental Semantic
 Segmentation", in Proceedings of the International Conference on Machine
 Learning, Seoul, South Korea, Jul.6 - Jul.11, 2026
+[
+bib
+]
 IL
 (
 CVPR'26
@@ -1598,6 +1661,8 @@ pdf
 ]
 [
 code
+] [
+bib
 ]
 OR
 (
@@ -1614,6 +1679,8 @@ pdf
 ]
 [
 code
+] [
+bib
 ]
 IL
 (
@@ -1626,6 +1693,9 @@ Zhou*
 Cooperative Deblurring Dynamic Reconstruction via Gaussian Splatting", in
 Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern
 Recognition, Denver, Colorado, USA, Jun.3 - Jun.7, 2026
+[
+bib
+]
 2D to 3D
 (
 CVPR'26
@@ -1641,6 +1711,8 @@ pdf
 ]
 [
 code
+] [
+bib
 ]
 V&L
 OL
@@ -1657,6 +1729,8 @@ Colorado, USA, Jun.3 - Jun.7, 2026
 pdf
 ] [
 code
+] [
+bib
 ]
 V&L
 (
@@ -1672,6 +1746,8 @@ pdf
 ]
 [
 code
+] [
+bib
 ]
 IL
 FL
@@ -1685,6 +1761,10 @@ Yan, Sheng Zhong, and Xu Zou, "Supervisory Feedback for High-resolution
 Low-textured Large-scale Multi-view Stereo", in Pattern Recognization, 2026
 [
 pdf
+] [
+bib
+] [
+DOI:10.1016/j.patcog.2025.112907
 ]
 2D to 3D
 (
@@ -1701,6 +1781,8 @@ pdf
 code
 ] [
 bib
+] [
+DOI:10.1109/TPAMI.2025.3649078
 ]
 OR
 IL
@@ -1717,6 +1799,8 @@ Singapore, Jan.20 - Jan.27, 2026
 pdf
 ] [
 code
+] [
+bib
 ] [
 机器之心报道
 ]
@@ -1736,6 +1820,8 @@ pdf
 ]
 [
 code
+] [
+bib
 ]
 PL
 V&L
@@ -1752,6 +1838,8 @@ Nov.30 - Dec.7, 2025
 pdf
 ] [
 code
+] [
+bib
 ]
 PL
 IL
@@ -1768,6 +1856,8 @@ Diego, USA, Nov.30 - Dec.7, 2025
 pdf
 ] [
 code
+] [
+bib
 ]
 PL
 (
@@ -1783,6 +1873,8 @@ Dec.7, 2025
 pdf
 ] [
 code
+] [
+bib
 ]
 IL
 (
@@ -2785,7 +2877,7 @@ pdf
 bib
 ]
 [
-DOI:TPAMI.2019.2918208
+DOI:10.1109/TPAMI.2019.2918208
 ]
 OL
 (
