@@ -1,466 +1,152 @@
 About
-I am a Research Scientist in
-Nanyang Technological University (NTU)
-worked with Prof.
-Han Yu
-.
-I am also appointed as an Honorary Postdoctoral Research Fellow at
-Chinese University of Hong Kong
-where I received my Ph.D. degree advised by Prof.
-Irwin King
-.
+I am a Research Scientist in Nanyang Technological University (NTU) worked with Prof. Han Yu .
+I am also appointed as an Honorary Postdoctoral Research Fellow at Chinese University of Hong Kong where I received my Ph.D. degree advised by Prof. Irwin King .
 My research interest is broadly Representation Learning, focusing on extracting meaningful representation from various data types,
 including unlabeled, noisy, adversarial, and graph data. Specifically, I recently focus on theoretical and algorithmic approaches for
 Large Language Models (Self-Supervised Learning, Parameter Efficient Fintuining), Safety of Foundation Models (Federated, Watermarking), and Graph Learning.
 Prior to my Ph.D., I have also worked as Senior Applied Machine Learning Engineer at Alibaba Group and
 JD.com.
 News
-2025 Sep: Three paper accepted in
-NeurIPS'25, One Paper is in Position Track (~8% acceptance rate)
-2025 July: Two paper accepted in
-ICCV'25
-. One work is the first work conducted under my supervision. Congratulations to H.C. Fang
-2025 May: Two paper accepted in
-ICML'25
-. Finally got my papers accepted at all three major machine learning conferences.
-2025 May: I am attending
-TheWebConf'25
-. See you in Sydney
-2025 Mar: Two paper has been accepted to
-CVPR'25
-. My first paper in computer vision conference
-2025 Feb: I am honored to share that I have been invited to serve as an
-Area Chair
-for
-NeurIPS 2025
-, which will be held in San Diego, USA
-2024 Nov: One
-KDD'25
-paper has been accepted. It is honor to have
-first-authorded paper being accepted to KDD in FOUR consecutive years
+2025 Sep: Three paper accepted in NeurIPS'25, One Paper is in Position Track (~8% acceptance rate)
+2025 July: Two paper accepted in ICCV'25 . One work is the first work conducted under my supervision. Congratulations to H.C. Fang
+2025 May: Two paper accepted in ICML'25 . Finally got my papers accepted at all three major machine learning conferences.
+2025 May: I am attending TheWebConf'25 . See you in Sydney
+2025 Mar: Two paper has been accepted to CVPR'25 . My first paper in computer vision conference
+2025 Feb: I am honored to share that I have been invited to serve as an Area Chair for NeurIPS 2025 , which will be held in San Diego, USA
+2024 Nov: One KDD'25 paper has been accepted. It is honor to have first-authorded paper being accepted to KDD in FOUR consecutive years
 2024 Oct: Appointed as a joint researcher at Alibaba-NTU Global e-Sustainability CorpLab (ANGEL)
-2024 Aug: Join the
-Nanyang Technological University
-as the Research Scientist
-2024 May: One
-KDD'24
-paper has been accepted. It is honor to have
-first-authorded paper being accepted to KDD in three consecutive years
-2024 Apirl: It is thrilled to announce that I have
-passed the defense for my Ph.D. degree
-Congratulations!
-Dr. Zhang!
-2024 Apirl: Another Survey on Semi-supervised Federatd Learning has been accepted to
-IJCAI
-survey Track (48/232). Congratulations to Zixing!
-2024 Mar: Our Survey on Trustworthy Federated Learning has been accept to ACM Transactions on Intelligent Systems and Technology
-(TIST)
-2024 Jan: One papers has been accepted as Finding in the
-NAACL'24
-. Congratulations to Zhihan!
+2024 Aug: Join the Nanyang Technological University as the Research Scientist
+2024 May: One KDD'24 paper has been accepted. It is honor to have first-authorded paper being accepted to KDD in three consecutive years
+2024 Apirl: It is thrilled to announce that I have passed the defense for my Ph.D. degree Congratulations! Dr. Zhang!
+2024 Apirl: Another Survey on Semi-supervised Federatd Learning has been accepted to IJCAI survey Track (48/232). Congratulations to Zixing!
+2024 Mar: Our Survey on Trustworthy Federated Learning has been accept to ACM Transactions on Intelligent Systems and Technology (TIST)
+2024 Jan: One papers has been accepted as Finding in the NAACL'24 . Congratulations to Zhihan!
 2023 Nov: I was invited by Prof. Kun Kuang to give a talk on Graph Self-supervised Learning at ZJU
-2023 Sep: Three papers has been accepted in the
-NeurIPS'23
-. Two of them are mark as
-Spotlight
-2023 May: One papers has been accepted in the
-KDD'23
-2023 Mar: One papers has been accepted in the
-SIGIR'23
-2023 Feb: One papers has been accepted in the
-WWW'23
-2022 Nov: Two papers has been accepted in the
-AAAI'23
-2022 July: I was invited to give a talk on graph representation learning at
-CVR Group
-leaded by Prof. Yuchao Dai
-2022 May: Two papers has been accepted in the
-KDD'22
+2023 Sep: Three papers has been accepted in the NeurIPS'23 . Two of them are mark as Spotlight
+2023 May: One papers has been accepted in the KDD'23
+2023 Mar: One papers has been accepted in the SIGIR'23
+2023 Feb: One papers has been accepted in the WWW'23
+2022 Nov: Two papers has been accepted in the AAAI'23
+2022 July: I was invited to give a talk on graph representation learning at CVR Group leaded by Prof. Yuchao Dai
+2022 May: Two papers has been accepted in the KDD'22
 2021 Dec: Our paper "Graph-adpative Rectified Linear Unit for Graph Neural
-Networks" has been accepted in the
-WWW'22
+Networks" has been accepted in the WWW'22
 2021 April: Our paper "Semi-supervised Multi-label Learning for Graph-structured
-Data" has been accepted in the
-CIKM'21
+Data" has been accepted in the CIKM'21
 2020 Aug: Left Alibaba Group and start Ph.D. at The Chinese Univeristy of
 HongKong
 Publication
 Preprints and Workshop
-(
-In reviewing
-)
-Recent Advances of Multimodal Continual Learning: A Comprehensive Survey.
-[PDF]
-Yu, D., Zhang, X., Chen, Y., Liu, A.,
-Zhang, Y.
-, Yu, P.S. and King, I
-IEEE Transactions on Pattern Analysis and Machine Intelligence
-.
-(
-In reviewing
-)
-Low-Rank Adaptation for Foundation Models: A Comprehensive Review
-[PDF]
-Menglin Yang, Jialin Chen,
-Yifei Zhang
-, Jiahong Liu, Jiasheng Zhang, Qiyao Ma, Harshit Verma, Qianru Zhang, Min Zhou, Irwin King, Rex Ying
-The International Conference on Learning Representations
-.
-(
-IJCAI'19
-)
-Additively Homomorphic Encryption-based Deep Neural Network for Asymmetrically Collaborative Machine Learning.
-[PDF]
-Zhang, Y.
-and Zhu, H.
-In IJCAI 2019 Workshop on Federated Learning
-.
-Solutions have been included in
-FATE
-, an industry level open source library for federated learning. See
-this
-for detial.
+( In reviewing ) Recent Advances of Multimodal Continual Learning: A Comprehensive Survey. [PDF]
+Yu, D., Zhang, X., Chen, Y., Liu, A., Zhang, Y. , Yu, P.S. and King, I
+IEEE Transactions on Pattern Analysis and Machine Intelligence .
+( In reviewing ) Low-Rank Adaptation for Foundation Models: A Comprehensive Review [PDF]
+Menglin Yang, Jialin Chen, Yifei Zhang , Jiahong Liu, Jiasheng Zhang, Qiyao Ma, Harshit Verma, Qianru Zhang, Min Zhou, Irwin King, Rex Ying
+The International Conference on Learning Representations .
+( IJCAI'19 ) Additively Homomorphic Encryption-based Deep Neural Network for Asymmetrically Collaborative Machine Learning. [PDF]
+Zhang, Y. and Zhu, H.
+In IJCAI 2019 Workshop on Federated Learning . Solutions have been included in FATE , an industry level open source library for federated learning. See this for detial.
 Journals
-(
-TKDE
-)
-Ten Challenging Problems in Federated Foundation Models
-Tao Fan etal.
-Yifei Zhang
-, Xiaojin Zhang, Zhenzhe Zheng, and
-Qiang Yang
-IEEE Transactions on Knowledge and Data Engineering
-.
-(
-ACM TIST
-)
-A Survey of Trustworthy Federated Learning: Issues, Solutions, and Challenges
-Zhang, Y.
-, Zeng D., Luo J., , Fu X., ,Xu Z., and King, I
-In ACM Transactions on Intelligent Systems and Technology
-.
-(
-TKDE
-)
-Towards Effective Top-N Hamming Search viaBipartite Graph Contrastive Hashing
-Chen, Y., Fang, Y.,
-Zhang, Y.
-, Ma, C., Hong, Y. and King, I.,
-Apart from the first and corresponding authors, authors are listed in alphabetical order by their last names
-.
-IEEE Transactions on Knowledge and Data Engineering
-.
+( TKDE ) Ten Challenging Problems in Federated Foundation Models
+Tao Fan etal. Yifei Zhang , Xiaojin Zhang, Zhenzhe Zheng, and Qiang Yang
+IEEE Transactions on Knowledge and Data Engineering .
+( ACM TIST ) A Survey of Trustworthy Federated Learning: Issues, Solutions, and Challenges
+Zhang, Y. , Zeng D., Luo J., , Fu X., ,Xu Z., and King, I
+In ACM Transactions on Intelligent Systems and Technology .
+( TKDE ) Towards Effective Top-N Hamming Search viaBipartite Graph Contrastive Hashing
+Chen, Y., Fang, Y., Zhang, Y. , Ma, C., Hong, Y. and King, I.,
+Apart from the first and corresponding authors, authors are listed in alphabetical order by their last names . IEEE Transactions on Knowledge and Data Engineering .
 Conference
-(
-NeurIPS'25,Position Track
-)
-Embracing Trustworthy Brain-Agent Collaboration as Paradigm Extension for Intelligent Assistive Technologies
-Yankai Chen, Xinni Zhang,
-Yifei Zhang
-, Yangning Li, Henry Peng Zou, Chunyu Miao, Weizhi Zhang, Xue Liu, and Philip S. Yu
-In Conference on Neural Information Processing Systems
-.
-(
-NeurIPS'25
-)
-CrossSpectra: Exploiting Cross-Layer Smoothness for Parameter-Efficient Fine-Tuning
-Yifei Zhang
-, Hao Zhu Junhao Dong, Haoran Shi, Ziqiao Meng, Piotr Koniusz, Han Yu
-In Conference on Neural Information Processing Systems
-.
-(
-NeurIPS'25
-)
-Boosting Machine Unlearning via Ensembling Infinite Number of Functions on Task Arithmetic Simplex
-Junhao Dong, Hao Zhu,
-Yifei Zhang
-, Xinghua Qu, Yew-Soon Ong, Piotr Koniusz
-In Conference on Neural Information Processing Systems
-.
-(
-EMNLP'25
-)
-From General Reward to Targeted Reward: Improving Open-ended Long-context Generation Models in Conference on Empirical Methods in Natural Language Processing
-Zhihan Guo, Jiele Wu, Wenqian Cui,
-Yifei Zhang#
-, Minda Hu, Yufei Wang, Irwin King (# indicate corresponding author)
-Conference on Empirical Methods in Natural Language Processing
-.
-(
-ICCV'25
-)
-Soft Separation and Distillation: Toward Global Uniformity in Federated Unsupervised Learning
-Hung-Chieh Fang, Hsuan-Tien Lin, Irwin King,
-Yifei Zhang#
-(# indicate corresponding author)
-International Conference on Computer Vision
-.
-(
-ICCV'25
-)
-Robustifying Zero-Shot Vision Language Models by Subspaces Alignment
-Junhao Dong, Piotr Koniusz, Liaoyuan Feng,
-Yifei Zhang
-, Hao Zhu, Weiming Liu, Xinghua Qu, Yew-Soon Ong
-International Conference on Computer Vision
-.
-(
-ICML'25, Spotlight
-)
-Improving Zero-Shot Adversarial Robustness in VLMs by Closed-form Alignment of Adversarial Path Simplices
-Junhao Dong, Piotr Koniusz,
-Yifei Zhang
-, Hao Zhu, Weiming Liu, Xinghua Qu, Yew-Soon Ong
-Internal Conference on Machine Learning
-.
-(
-ICML'25
-)
-Improving Conversational Capabilities of Speech Language Models via Generative Dual-channel Spoken Dialogue Learning
-Qichao Wang, Ziqiao Meng, Wenqian Cui,
-Yifei Zhang
-, Pengcheng Wu, Bingzhe Wu, Irwin King, Liang Chen, Peilin Zhao
-Internal Conference on Machine Learning
-.
-(
-CVPR'25
-)
-pFedMixF: Personalized Federated Class-Incremental Learning with Mixture of Frequency Aggregation
-[PDF]
-[CODE]
-[BLOG]
-Yifei Zhang*
-, Hao Zhu*, Alysa Ziying Tan, Dianzhi Yu, Longtao Huang, Han Yu (* indicate equal contribution)
-Conference on Computer Vision and Pattern Recognition
-.
-(
-CVPR'25
-)
-BiLoRA: Almost-Orthogonal Parameter Spaces for Continual Learning
-[PDF]
-[CODE]
-[BLOG]
-Hao Zhu*,
-Yifei Zhang*
-Junhao Dong, Piotr Koniusz (* indicate equal contribution)
-Conference on Computer Vision and Pattern Recognition
-.
-(
-ICLR'25
-)
-Understanding and Mitigating Hyperbolic Dimensional Collapse in Graph Contrastive Learnin
-[PDF]
-[CODE]
-[BLOG]
-Aiwei Liu, Sheng Guan, Yiming Liu, Leyi Pan,
-Yifei Zhang
-, Liancheng Fang, Lijie Wen, Philip S. Yu, Xuming Hu.
-In International Conference on Learning Representations
-.
-(
-KDD'25
-)
-Understanding and Mitigating Hyperbolic Dimensional Collapse in Graph Contrastive Learning
-[PDF]
-[CODE]
-[BLOG]
-Zhang, Y.
-, Zhu, H., Yang, M., Liu, J., Ying. R, Koniusz, P., and King, I.
-In Proceedings of Sigkdd Conference on Knowledge Discovery and Data Minning
-.
-(
-KDD'24
-)
-Geometric View of Soft Decorrelation in Self-Supervised Learning
-[PDF]
-[CODE]
-[BLOG]
-Zhang, Y.
-, Zhu, H., Chen, Y., Song, Z., Fu. X, Meng, Z., Koniusz, P., and King, I.
-In Proceedings of Sigkdd Conference on Knowledge Discovery and Data Minning
-.
-(
-IJCAI'24, Survey Track
-)
-A Systematic Survey on Federated Semi-supervised Learning
-[PDF]
-[CODE]
-[BLOG]
-Song, Z., Yang, X.,
-Zhang, Y.
-, Fu X., Xu, Z., and King, I.
-In 2024 International Joint Conference on Artificial Intelligence
-.
-(
-NAACL'24, Findings
-)
-Towards Efficient Federated Multilingual Modeling with LoRA-based Language Family Clustering
-[PDF]
-[CODE]
-[BLOG]
-Guo, Z.,
-Zhang, Y.
-, Zhang, Z., Xu, Z., and King, I.
-In 2024 Annual Conference of the North American Chapter of the Association for Computational Linguistics
-.
-(
-NeurIPS'23, Spotlight
-)
-Mitigating the Popularity Bias in Graph-based Collaborative Filtering
-[PDF]
-[CODE]
-[BLOG]
-Zhang, Y.
-, Zhu, H., Chen, Y., Song, Z., Koniusz, P. and King, I.
-In Conference on Neural Information Processing Systems
-.
-(
-NeurIPS'23, Spotlight
-)
-No Change, No Gain: Empowering Graph Neural Networks with Expected Model Change Maximization for Active Learning
-[PDF]
-[CODE]
-[BLOG]
-Song, Z.,
-Zhang, Y.
-, and King, I.
-In Conference on Neural Information Processing Systems
-.
-(
-NeurIPS'23
-)
-Optimal Block-wise Asymmetric Graph Construction for Semi-supervised Learning.
-[PDF]
-[CODE]
-[BLOG]
-Song, Z.,
-Zhang, Y.
-, and King, I.
-In Conference on Neural Information Processing Systems
-.
-(
-KDD'23
-)
-Contrastive Cross-scale Graph Knowledge Synergy.
-[PDF]
-[CODE]
-[BLOG]
-Zhang, Y.
-, Chen, Y., Song, Z. and King, I.
-In Proceedings of Sigkdd Conference on Knowledge Discovery and Data Minning
-.
-(
-SIGIR'23
-)
-BWSFE: Wasserstein Sub-graph Feature Encoder for Effective User Segmentation in Collaborative Filtering.
-[PDF]
-Chen, Y.,
-Zhang, Y
-.,Song. Z., Yang. M., Chen. M., King, I.
-In International ACM SIGIR Conference on Research and Development in Information Retrieval.
-.
-(
-WWW'23
-)
-Bipartite Graph Convolutional Hashing for Effective and Efficient Top-N Search in Hamming Space.
-[PDF]
-Chen, Y., Fang, Y
-Zhang, Y
-., King, I.
-In Proceedings of The Web Conference 2023
-.
-(
-AAAI'23, Oral
-)
-SFA: Spectral Feature Augmentation for Graph Contrastive Learning.
-[PDF]
-[CODE]
-[BLOG]
-Zhang, Y.
-, Zhu, H., Song, Z., Koniusz, P. and King, I.
-In AAAI Conference on Artificial Intelligence
-.
-(
-AAAI'23
-)
-Graph Component Contrastive Learning for Concept Relatedness Estimation
-[PDF]
-Ma, Y., Song, Z., Hu, X., Li, J.
-Zhang, Y.
-and King, I.
-In AAAI Conference on Artificial Intelligence
-.
-(
-KDD'22
-)
-COSTA: Covariance-Preserved Feature Augmentation for Graph Contrastive Learning.
-[PDF]
-[CODE]
-[BLOG]
-Zhang, Y.
-, Zhu, H., Song, Z., Koniusz, P. and King, I.
-In Proceedings of Sigkdd Conference on Knowledge Discovery and Data Minning
-.
-(
-KDD'22
-)
-Towards an Optimal Asymmetric Graph Structure for Robust Semi-supervised Node Classification.
-[PDF]
-Song, Z.,
-Zhang, Y.
-, and King, I.
-In Proceedings of Sigkdd Conference on Knowledge Discovery and Data Minning
-.
-(
-WWW'22
-)
-Graph-adpative Rectified Linear Unit for Graph Neural Networks.
-[PDF]
-[CODE]
-[BLOG]
-Zhang, Y.
-, Zhu, H., Song, Z., Koniusz, P. and King, I.
-In Proceedings of The Web Conference 2022
-.
-(
-CIKM'21
-)
-Semi-supervised Multi-label Learning for Graph-structured Data.
-[PDF]
-Song, Z., Meng, Z.,
-Zhang, Y.
-, & King, I.
-In Proceedings of International Conference on Information & Knowledge Management
-.
-(
-ICASSP'20
-)
-Discrete Wasserstein Autoencoders for Document Retrieval.
-[PDF]
-Zhang, Y.
-, Zhu, H.
-In 2020 IEEE International Conference on Acoustics, Speech and Signal Processing
-.
-(
-NAACL'20
-)
-.
-Doc2hash: Learning Discrete Latent variables for Documents Retrieval.
-[PDF]
-Zhang, Y.
-, Zhu, H.
-In Proceedings of Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies
-.
-(
-ICWSM'20
-)
-#DebateNight: The Role and Influence of Socialbots on Twitter During the 1st 2016 US Presidential Debate.
-[PDF]
-Rizoiu, M. A., Graham, T., Zhang, R.,
-Zhang, Y.
-, Ackland, R., Xie, L.
-In Twelfth International AAAI Conference on Web and Social Media
-.
+( NeurIPS'25,Position Track ) Embracing Trustworthy Brain-Agent Collaboration as Paradigm Extension for Intelligent Assistive Technologies
+Yankai Chen, Xinni Zhang, Yifei Zhang , Yangning Li, Henry Peng Zou, Chunyu Miao, Weizhi Zhang, Xue Liu, and Philip S. Yu
+In Conference on Neural Information Processing Systems .
+( NeurIPS'25 ) CrossSpectra: Exploiting Cross-Layer Smoothness for Parameter-Efficient Fine-Tuning
+Yifei Zhang , Hao Zhu Junhao Dong, Haoran Shi, Ziqiao Meng, Piotr Koniusz, Han Yu
+In Conference on Neural Information Processing Systems .
+( NeurIPS'25 ) Boosting Machine Unlearning via Ensembling Infinite Number of Functions on Task Arithmetic Simplex
+Junhao Dong, Hao Zhu, Yifei Zhang , Xinghua Qu, Yew-Soon Ong, Piotr Koniusz
+In Conference on Neural Information Processing Systems .
+( EMNLP'25 ) From General Reward to Targeted Reward: Improving Open-ended Long-context Generation Models in Conference on Empirical Methods in Natural Language Processing
+Zhihan Guo, Jiele Wu, Wenqian Cui, Yifei Zhang# , Minda Hu, Yufei Wang, Irwin King (# indicate corresponding author)
+Conference on Empirical Methods in Natural Language Processing .
+( ICCV'25 ) Soft Separation and Distillation: Toward Global Uniformity in Federated Unsupervised Learning
+Hung-Chieh Fang, Hsuan-Tien Lin, Irwin King, Yifei Zhang# (# indicate corresponding author)
+International Conference on Computer Vision .
+( ICCV'25 ) Robustifying Zero-Shot Vision Language Models by Subspaces Alignment
+Junhao Dong, Piotr Koniusz, Liaoyuan Feng, Yifei Zhang , Hao Zhu, Weiming Liu, Xinghua Qu, Yew-Soon Ong
+International Conference on Computer Vision .
+( ICML'25, Spotlight ) Improving Zero-Shot Adversarial Robustness in VLMs by Closed-form Alignment of Adversarial Path Simplices
+Junhao Dong, Piotr Koniusz, Yifei Zhang , Hao Zhu, Weiming Liu, Xinghua Qu, Yew-Soon Ong
+Internal Conference on Machine Learning .
+( ICML'25 ) Improving Conversational Capabilities of Speech Language Models via Generative Dual-channel Spoken Dialogue Learning
+Qichao Wang, Ziqiao Meng, Wenqian Cui, Yifei Zhang , Pengcheng Wu, Bingzhe Wu, Irwin King, Liang Chen, Peilin Zhao
+Internal Conference on Machine Learning .
+( CVPR'25 ) pFedMixF: Personalized Federated Class-Incremental Learning with Mixture of Frequency Aggregation [PDF] [CODE] [BLOG]
+Yifei Zhang* , Hao Zhu*, Alysa Ziying Tan, Dianzhi Yu, Longtao Huang, Han Yu (* indicate equal contribution)
+Conference on Computer Vision and Pattern Recognition .
+( CVPR'25 ) BiLoRA: Almost-Orthogonal Parameter Spaces for Continual Learning [PDF] [CODE] [BLOG]
+Hao Zhu*, Yifei Zhang* Junhao Dong, Piotr Koniusz (* indicate equal contribution)
+Conference on Computer Vision and Pattern Recognition .
+( ICLR'25 ) Understanding and Mitigating Hyperbolic Dimensional Collapse in Graph Contrastive Learnin [PDF] [CODE] [BLOG]
+Aiwei Liu, Sheng Guan, Yiming Liu, Leyi Pan, Yifei Zhang , Liancheng Fang, Lijie Wen, Philip S. Yu, Xuming Hu.
+In International Conference on Learning Representations .
+( KDD'25 ) Understanding and Mitigating Hyperbolic Dimensional Collapse in Graph Contrastive Learning [PDF] [CODE] [BLOG]
+Zhang, Y. , Zhu, H., Yang, M., Liu, J., Ying. R, Koniusz, P., and King, I.
+In Proceedings of Sigkdd Conference on Knowledge Discovery and Data Minning .
+( KDD'24 ) Geometric View of Soft Decorrelation in Self-Supervised Learning [PDF] [CODE] [BLOG]
+Zhang, Y. , Zhu, H., Chen, Y., Song, Z., Fu. X, Meng, Z., Koniusz, P., and King, I.
+In Proceedings of Sigkdd Conference on Knowledge Discovery and Data Minning .
+( IJCAI'24, Survey Track ) A Systematic Survey on Federated Semi-supervised Learning [PDF] [CODE] [BLOG]
+Song, Z., Yang, X., Zhang, Y. , Fu X., Xu, Z., and King, I.
+In 2024 International Joint Conference on Artificial Intelligence .
+( NAACL'24, Findings ) Towards Efficient Federated Multilingual Modeling with LoRA-based Language Family Clustering [PDF] [CODE] [BLOG]
+Guo, Z., Zhang, Y. , Zhang, Z., Xu, Z., and King, I.
+In 2024 Annual Conference of the North American Chapter of the Association for Computational Linguistics .
+( NeurIPS'23, Spotlight ) Mitigating the Popularity Bias in Graph-based Collaborative Filtering [PDF] [CODE] [BLOG]
+Zhang, Y. , Zhu, H., Chen, Y., Song, Z., Koniusz, P. and King, I.
+In Conference on Neural Information Processing Systems .
+( NeurIPS'23, Spotlight ) No Change, No Gain: Empowering Graph Neural Networks with Expected Model Change Maximization for Active Learning [PDF] [CODE] [BLOG]
+Song, Z., Zhang, Y. , and King, I.
+In Conference on Neural Information Processing Systems .
+( NeurIPS'23 ) Optimal Block-wise Asymmetric Graph Construction for Semi-supervised Learning. [PDF] [CODE] [BLOG]
+Song, Z., Zhang, Y. , and King, I.
+In Conference on Neural Information Processing Systems .
+( KDD'23 ) Contrastive Cross-scale Graph Knowledge Synergy. [PDF] [CODE] [BLOG]
+Zhang, Y. , Chen, Y., Song, Z. and King, I.
+In Proceedings of Sigkdd Conference on Knowledge Discovery and Data Minning .
+( SIGIR'23 ) BWSFE: Wasserstein Sub-graph Feature Encoder for Effective User Segmentation in Collaborative Filtering. [PDF]
+Chen, Y., Zhang, Y .,Song. Z., Yang. M., Chen. M., King, I.
+In International ACM SIGIR Conference on Research and Development in Information Retrieval. .
+( WWW'23 ) Bipartite Graph Convolutional Hashing for Effective and Efficient Top-N Search in Hamming Space. [PDF]
+Chen, Y., Fang, Y Zhang, Y ., King, I.
+In Proceedings of The Web Conference 2023 .
+( AAAI'23, Oral ) SFA: Spectral Feature Augmentation for Graph Contrastive Learning. [PDF] [CODE] [BLOG]
+Zhang, Y. , Zhu, H., Song, Z., Koniusz, P. and King, I.
+In AAAI Conference on Artificial Intelligence .
+( AAAI'23 ) Graph Component Contrastive Learning for Concept Relatedness Estimation [PDF]
+Ma, Y., Song, Z., Hu, X., Li, J. Zhang, Y. and King, I.
+In AAAI Conference on Artificial Intelligence .
+( KDD'22 ) COSTA: Covariance-Preserved Feature Augmentation for Graph Contrastive Learning. [PDF] [CODE] [BLOG]
+Zhang, Y. , Zhu, H., Song, Z., Koniusz, P. and King, I.
+In Proceedings of Sigkdd Conference on Knowledge Discovery and Data Minning .
+( KDD'22 ) Towards an Optimal Asymmetric Graph Structure for Robust Semi-supervised Node Classification. [PDF]
+Song, Z., Zhang, Y. , and King, I.
+In Proceedings of Sigkdd Conference on Knowledge Discovery and Data Minning .
+( WWW'22 ) Graph-adpative Rectified Linear Unit for Graph Neural Networks. [PDF] [CODE] [BLOG]
+Zhang, Y. , Zhu, H., Song, Z., Koniusz, P. and King, I.
+In Proceedings of The Web Conference 2022 .
+( CIKM'21 ) Semi-supervised Multi-label Learning for Graph-structured Data. [PDF]
+Song, Z., Meng, Z., Zhang, Y. , & King, I.
+In Proceedings of International Conference on Information & Knowledge Management .
+( ICASSP'20 ) Discrete Wasserstein Autoencoders for Document Retrieval. [PDF]
+Zhang, Y. , Zhu, H.
+In 2020 IEEE International Conference on Acoustics, Speech and Signal Processing .
+( NAACL'20 ) . Doc2hash: Learning Discrete Latent variables for Documents Retrieval. [PDF]
+Zhang, Y. , Zhu, H.
+In Proceedings of Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies .
+( ICWSM'20 ) #DebateNight: The Role and Influence of Socialbots on Twitter During the 1st 2016 US Presidential Debate. [PDF]
+Rizoiu, M. A., Graham, T., Zhang, R., Zhang, Y. , Ackland, R., Xie, L.
+In Twelfth International AAAI Conference on Web and Social Media .
 Experience
 2019.05 - 2020.08, Senior Applied Machine Learning Engineer (Full-Time), Alibaba Group, Hangzhou, China.
 2018.07 - 2019.05, Applied Machine Learning Engineer (Full-Time), JD.com, Beijing, China
@@ -475,3 +161,7 @@ CSCI3150: Computer Science and Society, Spring 2022
 CSCI5650: Graph Neural Networks (Graduated-Level Course), Autumn 2021
 CSCI3150: Computer Science and Society, Spring 2021
 CSCI1130: Introduction to Computing Using Java, Autumn 2022
+<a href="https://clustrmaps.com/site/1bd4q"  title="Visit tracker"><img src="//www.clustrmaps.com/map_v2.png?d=0-3oD4-aq796TP9pRMms8CR9sEpvpAEMeY-Ptnodyqg&cl=ffffff" /></a>
+end:colorlib-main
+end:container-wrap <script type="text/javascript" id="clustrmaps" src="//clustrmaps.com/map_v2.js?d=0-3oD4-aq796TP9pRMms8CR9sEpvpAEMeY-Ptnodyqg&cl=ffffff&w=a"></script>
+end:colorlib-page jQuery jQuery Easing Bootstrap Waypoints Flexslider Owl carousel Counters MAIN JS

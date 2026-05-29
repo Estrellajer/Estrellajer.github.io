@@ -81,9 +81,14 @@ def fetch(url: str, timeout: int = 30):
     if "scholar.google" in url or "google.com" in url:
         timeout = min(timeout, 10)
     try:
-        return SESSION.get(url, headers=REQUEST_HEADERS, timeout=timeout, verify=False)
+        resp = SESSION.get(url, headers=REQUEST_HEADERS, timeout=timeout, verify=False)
     except (requests.exceptions.SSLError, requests.exceptions.ConnectionError, Exception):
-        return SESSION.get(url, headers=REQUEST_HEADERS, timeout=timeout, verify=False)
+        resp = SESSION.get(url, headers=REQUEST_HEADERS, timeout=timeout, verify=False)
+
+    if resp:
+        if resp.encoding == 'ISO-8859-1' or not resp.encoding:
+            resp.encoding = resp.apparent_encoding or 'utf-8'
+    return resp
 
 
 # RSS
@@ -150,7 +155,7 @@ def check_rss(name: str, rss_url: str, since: datetime) -> dict:
     try:
         resp = fetch(rss_url)
         entries = parse_rss(resp.text)
-        
+
         # Filter placeholders and get timestamps
         valid_entries = []
         for e in entries:
@@ -164,10 +169,10 @@ def check_rss(name: str, rss_url: str, since: datetime) -> dict:
                 "published": e["published"],
                 "timestamp": ts
             })
-            
+
         # Sort valid_entries descending by timestamp
         valid_entries.sort(key=lambda x: x["timestamp"], reverse=True)
-        
+
         new = []
         for e in valid_entries:
             if since:
@@ -185,7 +190,7 @@ def check_rss(name: str, rss_url: str, since: datetime) -> dict:
             })
             if len(new) >= 20:
                 break
-                
+
         latest = []
         for e in valid_entries[:3]:
             latest.append({
@@ -194,34 +199,79 @@ def check_rss(name: str, rss_url: str, since: datetime) -> dict:
                 "published": e["published"],
                 "timestamp": e["timestamp"]
             })
-            
+
         return {"new_entries": new, "latest_entries": latest}
     except Exception as e:
         return {"error": str(e)}
 
 
 # Content extraction
+def get_clean_text_custom(element) -> str:
+    from bs4 import NavigableString
+    chunks = []
+
+    def walk(node):
+        if isinstance(node, NavigableString):
+            text = node.strip()
+            if text:
+                chunks.append(text)
+            return
+
+        is_block = node.name in {
+            "p", "div", "li", "h1", "h2", "h3", "h4", "h5", "h6",
+            "section", "article", "tr", "table", "ul", "ol", "br",
+            "aside", "header", "footer", "nav"
+        }
+
+        if is_block and chunks and chunks[-1] != "\n":
+            chunks.append("\n")
+
+        for child in node.children:
+            walk(child)
+
+        if is_block and chunks and chunks[-1] != "\n":
+            chunks.append("\n")
+
+    walk(element)
+
+    text_parts = []
+    current_line = []
+    for c in chunks:
+        if c == "\n":
+            if current_line:
+                text_parts.append(" ".join(current_line))
+                current_line = []
+            text_parts.append("\n")
+        else:
+            current_line.append(c)
+    if current_line:
+        text_parts.append(" ".join(current_line))
+
+    raw_text = "".join(text_parts)
+    return "\n".join(l.strip() for l in raw_text.splitlines() if l.strip())
+
+
 def extract_content(html: str, selectors: list = None, remove_selectors: list = None, watch: str = "general") -> str:
     soup = BeautifulSoup(html, "html.parser")
     for sel in remove_selectors or []:
         for el in soup.select(sel):
             el.decompose()
-            
+
     # If watch is news, prioritize news containers
     if watch == "news":
         news_selectors = [
-            "#news", ".news", "#recent-news", ".recent-news", 
-            "#updates", ".updates", "#announcements", ".announcements", 
-            "#activities", ".activities", "#recent-activity", ".recent-activity", 
+            "#news", ".news", "#recent-news", ".recent-news",
+            "#updates", ".updates", "#announcements", ".announcements",
+            "#activities", ".activities", "#recent-activity", ".recent-activity",
             "#whats-new", ".whats-new", "#news-section", ".news-section"
         ]
         for sel in news_selectors:
             el = soup.select_one(sel)
             if el:
-                t = _clean(el.get_text(separator="\n"))
+                t = get_clean_text_custom(el)
                 if len(t) >= 20:
                     return t
-                    
+
     # If watch is publications, prioritize publications containers
     if watch == "publications":
         pub_selectors = [
@@ -231,7 +281,7 @@ def extract_content(html: str, selectors: list = None, remove_selectors: list = 
         for sel in pub_selectors:
             el = soup.select_one(sel)
             if el:
-                t = _clean(el.get_text(separator="\n"))
+                t = get_clean_text_custom(el)
                 if len(t) >= 20:
                     return t
 
@@ -239,17 +289,17 @@ def extract_content(html: str, selectors: list = None, remove_selectors: list = 
         for sel in selectors:
             el = soup.select_one(sel)
             if el:
-                return _clean(el.get_text(separator="\n"))
+                return get_clean_text_custom(el)
     for tag in ["article", "main", ".post", ".content", "#content", ".entry-content"]:
         el = soup.select_one(tag)
         if el:
-            return _clean(el.get_text(separator="\n"))
+            return get_clean_text_custom(el)
     body = soup.find("body")
     if body:
-        t = _clean(body.get_text(separator="\n"))
+        t = get_clean_text_custom(body)
         if len(t) >= 20:
             return t
-        return _clean(soup.get_text(separator="\n"))
+        return get_clean_text_custom(soup)
     return ""
 
 
@@ -337,6 +387,70 @@ def check_zhihu(name: str, url: str, since: datetime | None) -> dict | None:
     if entries:
         return {"type": "rss", "name": name, "url": url, "entries": entries}
     return {"type": "rss_no_change", "name": name, "url": url}
+def extract_smart_preview(content: str) -> list:
+    lines = content.split("\n")
+
+    boilerplate_words = {
+        "搜索此网站", "嵌入的文件", "跳至主要内容", "调至导航栏", "Google 网站", "举报不良行为",
+        "skip to content", "toggle navigation", "navigation", "search this site",
+        "many thanks", "designed by", "theme by", "powered by", "hosted on", "copyright",
+        "all rights reserved", "visitor count", "last updated", "home", "about", "contact",
+        "menu", "links", "cv", "biography", "bio", "google scholar", "github", "linkedin",
+        "å ³å°¾è·³è½¬"
+    }
+
+    clean_lines = []
+    for l in lines:
+        cl = l.strip()
+        if not cl or len(cl) < 5:
+            continue
+        lower_cl = cl.lower()
+        if any(lower_cl == bp or lower_cl.startswith(bp) for bp in boilerplate_words):
+            continue
+        if re.match(r'^[0-9\s\-\.\,\:\/\\\|\[\]\(\)\*#]+$', cl):
+            continue
+        clean_lines.append(cl)
+
+    scored_lines = []
+    academic_keywords = {
+        "cvpr", "neurips", "iclr", "icml", "aaai", "acl", "emnlp", "siggraph", "kdd",
+        "arxiv", "preprint", "journal", "conference", "proceedings", "transactions",
+        "ieee", "acm", "jasa", "scis", "nature", "science", "accepted", "published", "submitted"
+    }
+
+    for cl in clean_lines:
+        score = 0
+        lower_cl = cl.lower()
+
+        has_year = any(yr in lower_cl for yr in ["2024", "2025", "2026", "2027"])
+        has_date_format = bool(re.search(r'\b(202\d)[-\./](\d{1,2})[-\./]?(\d{1,2})?\b', lower_cl))
+        if has_date_format:
+            score += 5
+        elif has_year:
+            score += 3
+
+        has_academic_kw = any(kw in lower_cl for kw in academic_keywords)
+        if has_academic_kw:
+            score += 4
+
+        if re.match(r'^[\*\-\+•⚫📢🎓🔥✨]|\b\d{1,2}\b|\[\d+\]', cl):
+            score += 2
+
+        bio_keywords = {"i am a", "currently i", "my research", "postdoctoral", "ph.d", "supervision of", "advisor", "professor"}
+        if any(bkw in lower_cl for bkw in bio_keywords):
+            score -= 3
+
+        if 15 < len(cl) < 150:
+            score += 1
+
+        scored_lines.append((score, cl))
+
+    for threshold in [3, 1, 0]:
+        selected = [cl for score, cl in scored_lines if score >= threshold]
+        if len(selected) >= 3:
+            return selected[:3]
+
+    return clean_lines[:3]
 
 
 # Scholar check
@@ -378,23 +492,9 @@ def check_scholar(scholar: dict, rss_cache: dict, since: datetime | None) -> dic
         result["type"] = "error"
         result["error"] = "No content could be extracted"
         return result
-        
-    # Capture latest 3 non-empty lines as preview, skipping boilerplate navigation headers
-    preview_lines = []
-    for l in content.split("\n"):
-        cleaned_line = l.strip()
-        if not cleaned_line:
-            continue
-        lower_line = cleaned_line.lower()
-        if lower_line in ("home", "about", "contact", "menu", "toggle navigation", "navigation", "skip to content", "search", "cv", "publications", "teaching", "blog", "news", "updates", "projects", "people"):
-            continue
-        if len(cleaned_line) < 3:
-            continue
-        preview_lines.append(cleaned_line)
-        if len(preview_lines) >= 3:
-            break
-    result["preview"] = preview_lines
-    
+
+    result["preview"] = extract_smart_preview(content)
+
     prev = load_snapshot(name)
     if prev is None:
         save_snapshot(name, content)
@@ -478,19 +578,19 @@ def _extract_new_additions(diff_text: str) -> list:
     if not diff_text:
         return []
     lines = diff_text.split("\n")
-    
+
     # Collect all deleted lines to compare against for typo/edit filtering
     deleted_lines = [l[1:].strip() for l in lines if l.startswith("-") and not l.startswith("---") and len(l[1:].strip()) > 5]
-    
+
     added_raw = [l[1:].strip() for l in lines if l.startswith("+") and not l.startswith("+++")]
-    
+
     filtered = []
     noise_keywords = {
-        "举报不良行为", "google 网站", "many thanks", "great theme", 
+        "举报不良行为", "google 网站", "many thanks", "great theme",
         "template", "jekyll", "designed by", "last updated",
         "power by", "hosted on", "github pages", "copyright"
     }
-    
+
     for l in added_raw:
         if not l:
             continue
@@ -503,7 +603,7 @@ def _extract_new_additions(diff_text: str) -> list:
             continue
         if len(l) < 4:
             continue
-            
+
         # Check similarity against deleted lines in the diff block to filter out minor edits
         is_edit = False
         w_added = set(lower_l.split())
@@ -519,7 +619,7 @@ def _extract_new_additions(diff_text: str) -> list:
                 break
         if is_edit:
             continue
-            
+
         if l not in filtered:
             filtered.append(l)
     return filtered
@@ -758,7 +858,7 @@ def generate_html_report(results: list, total: int):
         return html
 
     sections = []
-    
+
     # 1. Timeline Updates at the Top
     recent_updates = [r for r in results if r["type"] in ("rss", "changed")]
     recent_updates.sort(key=get_update_timestamp, reverse=True)
@@ -774,7 +874,7 @@ def generate_html_report(results: list, total: int):
             if r.get("affiliation"):
                 recent_html += f'<span class="rd-aff">{_esc(r["affiliation"])}</span>'
             recent_html += '</div>'
-            
+
             if r["type"] == "rss":
                 recent_html += '<ul class="rd-list">'
                 for e in r["entries"][:3]:

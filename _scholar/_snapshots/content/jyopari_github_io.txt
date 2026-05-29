@@ -1,1 +1,1 @@
-Jyo Pari
+Floating scene layers: water (background), fish (mid), pads (top under text)

@@ -20,7 +20,7 @@ scholars:
     affiliation: "Kimi"
     watch: blog
   - name: DaNing Blog
-    url: https://adaning.github.io/about/
+    url: https://adaning.github.io/
     category: blog
     site_type: github_pages
     selectors: [article, main, .post-content, .entry-content, .content]
@@ -31,7 +31,7 @@ scholars:
     watch: blog
   - name: 胡君耀
     url: https://junyaohu.github.io/
-    category: 
+    category:
     site_type: github_pages
     selectors: [article, main, .post-content, .entry-content, .content]
     remove_selectors: [script, style, nav, footer, header, aside, .sidebar, .comments]
@@ -88,7 +88,7 @@ scholars:
     labels: [blog]
     research_areas: []
     affiliation: "Interconnects"
-    watch: general
+    watch: blog
   - name: Blogs | wh
     url: https://nrehiew.github.io/blog/
     category: blog
@@ -348,7 +348,7 @@ scholars:
     remove_selectors: [script, style, nav, footer, header, aside, .sidebar, .comments]
     labels: [homepage]
     research_areas: [Continual Learning]
-    affiliation: 
+    affiliation:
     watch: blog
   - name: 杨永进
     url: https://yangyongjin.github.io/
@@ -502,7 +502,7 @@ scholars:
     affiliation: "MIT"
     watch: general
   - name: 朱星宇
-    url: https://scholar.google.com/citations?hl=zh-CN&user=PpqUnAwAAAAJ
+    url: https://scholar.google.com/citations?hl=zh-CN&user=PpqUnAwAAAAJ&view_op=list_works&sortby=pubdate
     category: HomePage
     site_type: google_scholar
     selectors: ["#gsc_a_b", "#gsc_art", "#gsc_prf", table]

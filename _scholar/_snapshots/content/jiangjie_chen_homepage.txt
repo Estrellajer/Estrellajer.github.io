@@ -3,15 +3,9 @@ Researcher
 ByteDance Seed
 Biography
 Jiangjie Chen (陈江捷) is a researcher at ByteDance Seed Team. In 2024, he earned his Ph.D. at Fudan University in the School of Computer Science, Shanghai, China.
-His current interested research topics are mostly around building
-reasoning models
-and
-autonomous agents
-:
-Reasoning Models
-: Advancing research on incentivizing and understanding advanced reasoning and planning capabilities from large models.
-Autonomous Agents
-: Developing advanced methods for autonomous, trustworthy, and personalized agents. This extends towards the exploration of their interactions with multiple agents and real environments.
+His current interested research topics are mostly around building reasoning models and autonomous agents :
+Reasoning Models : Advancing research on incentivizing and understanding advanced reasoning and planning capabilities from large models.
+Autonomous Agents : Developing advanced methods for autonomous, trustworthy, and personalized agents. This extends towards the exploration of their interactions with multiple agents and real environments.
 Interests
 Large Language Models
 Reasoning
@@ -24,567 +18,158 @@ Fudan University
 B.S. in CS (honors), 2014 - 2019
 Fudan University
 News
-Sept.
-2025
-: Thrilled that our NeurIPS 2025 papers
-ARIA
-,
-KORGym
-,
-ORIGAMISPACE
-, and
-Enigmata
-were selected as
-Spotlight
-papers, and
-DAPO
-was selected for poster presentation!
-Sept.
-2025
-: Our papers
-Curse of Knowledge
-and
-LifeChoice
-are accepted to EMNLP 2025 Findings!
-Jul.
-2025
-: Our paper
-Past Meets Present
-won an
-Outstanding Paper Award
-at ACL 2025!
-Jul.
-2025
-: Check out our work on
-spatial cognition
-! Can LLMs Learn to Map the World from Local Descriptions? We demonstrate that LLMs can develop spatial awareness from fragmented local observations, successfully learning spatial perception and navigation in urban environments!
-Jul.
-2025
-: Check out
-ARIA
-! We propose a novel approach for training language agents with intention-driven reward aggregation. By projecting natural language actions into a lower-dimensional intention space, ARIA reduces reward variance and improves policy optimization, achieving 9.95% average performance gains across four downstream tasks.
-Jul.
-2025
-: Check out
-MemAgent
-! We introduce a novel approach to handling extremely long documents in language models through a multi-conv RL-based memory agent. MemAgent extends from 8K context to 3.5M QA tasks with <5% performance loss and achieves 95%+ on 512K RULER test!
-May.
-2025
-: Check out
-KORGym
-! We introduce a dynamic game platform offering over fifty games in textual or visual formats for interactive, multi-turn LLM reasoning evaluation with reinforcement learning scenarios. Our platform reveals consistent reasoning patterns within model families and demonstrates superior performance of closed-source models.
-May.
-2025
-: Check out
-Enigmata
-! We propose a comprehensive suite of puzzles for improving logical reasoning of reasoning models, tailored for RLVR training. We find that not only do such puzzles drastically improve puzzle reasoning of LLMs, but also improve SoTA models such as
-Seed1.5-Thinking
-on challenging reasoning tasks such as AIME and GPQA! This is a free lunch for SoTA models, since Enigmata is synthetic and can be generated at scale!
-May.
-2025
-: I was awarded with Nomination Award for Outstanding Doctoral Dissertation of Shanghai Computer Society!
-May.
-2025
-: Our papers
-DEEPER
-and
-HistoryAnalogy
-are accepted to ACL 2025!
-May.
-2025
-: Our paper
-CoSER
-is accepted to ICML 2025! Check out this comprehensive resource for role-playing agents!
-Apr.
-2025
-: Presenting
-Seed-Thinking-v1.5
-from ByteDance Seed Team, a cutting-edge reasoning model that’s incredible in math, code, science, and logical reasoning!
-Mar.
-2025
-:
-DAPO
-is out! A new critic-free RL algorithm that directly trains a pre-trained base model to SoTA performance on AIME 2024 without any SFT.
-Mar.
-2025
-: Four papers accepted to NAACL 2025:
-SelfGoal
-,
-EvoAgent
-,
-EasyTool
-and
-Barrier in Language Agent Planning
-.
-Oct.
-2024
-: Three papers accepted to NeurIPS 2024 Workshop on Open-World Agents:
-EvoAgent
-,
-SelfGoal
-and
-AucArena
-. See you in Vancouver!
+Sept. 2025 : Thrilled that our NeurIPS 2025 papers ARIA , KORGym , ORIGAMISPACE , and Enigmata were selected as Spotlight papers, and DAPO was selected for poster presentation!
+Sept. 2025 : Our papers Curse of Knowledge and LifeChoice are accepted to EMNLP 2025 Findings!
+Jul. 2025 : Our paper Past Meets Present won an Outstanding Paper Award at ACL 2025!
+Jul. 2025 : Check out our work on spatial cognition ! Can LLMs Learn to Map the World from Local Descriptions? We demonstrate that LLMs can develop spatial awareness from fragmented local observations, successfully learning spatial perception and navigation in urban environments!
+Jul. 2025 : Check out ARIA ! We propose a novel approach for training language agents with intention-driven reward aggregation. By projecting natural language actions into a lower-dimensional intention space, ARIA reduces reward variance and improves policy optimization, achieving 9.95% average performance gains across four downstream tasks.
+Jul. 2025 : Check out MemAgent ! We introduce a novel approach to handling extremely long documents in language models through a multi-conv RL-based memory agent. MemAgent extends from 8K context to 3.5M QA tasks with <5% performance loss and achieves 95%+ on 512K RULER test!
+May. 2025 : Check out KORGym ! We introduce a dynamic game platform offering over fifty games in textual or visual formats for interactive, multi-turn LLM reasoning evaluation with reinforcement learning scenarios. Our platform reveals consistent reasoning patterns within model families and demonstrates superior performance of closed-source models.
+May. 2025 : Check out Enigmata ! We propose a comprehensive suite of puzzles for improving logical reasoning of reasoning models, tailored for RLVR training. We find that not only do such puzzles drastically improve puzzle reasoning of LLMs, but also improve SoTA models such as Seed1.5-Thinking on challenging reasoning tasks such as AIME and GPQA! This is a free lunch for SoTA models, since Enigmata is synthetic and can be generated at scale!
+May. 2025 : I was awarded with Nomination Award for Outstanding Doctoral Dissertation of Shanghai Computer Society!
+May. 2025 : Our papers DEEPER and HistoryAnalogy are accepted to ACL 2025!
+May. 2025 : Our paper CoSER is accepted to ICML 2025! Check out this comprehensive resource for role-playing agents!
+Apr. 2025 : Presenting Seed-Thinking-v1.5 from ByteDance Seed Team, a cutting-edge reasoning model that’s incredible in math, code, science, and logical reasoning!
+Mar. 2025 : DAPO is out! A new critic-free RL algorithm that directly trains a pre-trained base model to SoTA performance on AIME 2024 without any SFT.
+Mar. 2025 : Four papers accepted to NAACL 2025: SelfGoal , EvoAgent , EasyTool and Barrier in Language Agent Planning .
+Oct. 2024 : Three papers accepted to NeurIPS 2024 Workshop on Open-World Agents: EvoAgent , SelfGoal and AucArena . See you in Vancouver!
+- ***Sep.* 2024**: Our [survey paper](/publication/rplasurvey) on role-playing agents is accepted to TMLR!
+- ***Sep.* 2024**: We have three accepted papers in EMNLP 2024! Two main papers are [Segment+](/publication/segmentplus) on long-context processing with short-context models, and [CROSS](/publication/cross) on role-playing evaluation, and one finding paper [DetectBench](/publication/detectbench) on benchmarking detective reasoning.
+- ***Jul.* 2024**: Our work on [Irrelevant Evidence](/publication/irrelevant) got accepted in COLM 2024!
+- ***Jul.* 2024**: I have graduated from Fudan University, and will officially join ByteDance Seed Team as a Full-time researcher. - ***Jun.* 2024**: How to automatically extend the specialized agent to multi-agent systems to improve task-solving capability? We propose [EvoAgent](/publication/evoagent), a generic method to automatically extend expert agents to multi-agent systems via the evolutionary algorithm. EvoAgent can be generalized to any LLM-based agent framework, and significantly enhance the task-solving capabilities of LLM-based agents! - ***Jun.* 2024**: Want your agents to win an auction for you? But does your agent know what it means by such a vague and high-level goal as "winning an auction"? Check out [SelfGoal](/publication/selfgoal)! We propose an automatic approach that enhances language agents' capabilities to achieve high-level goals with limited instructions and delayed feedback by adaptively breaking down goals into practical subgoals. Really excited about automating agents to do high-level task with minimal human instructions!
+- ***Jun.* 2024**: [TravelPlanner](/publication/travelplanner) got a <font color="#FF0000">***Spotlight***</font> recommendation at ICML 2024!
+- ***May* 2024**: Just defended my thesis, officially a Dr. :)
+- ***May* 2024**: Four papers are accepted to the main conference of ACL 2024! They are: [TimeArena](/publication/timearena), [AnalogyKB](/publication/analogykb), [InCharacter](/publication/incharacter) and [GumbelSoft](/publication/gumbelsoft)! See you in Bangkok :)
+- ***May* 2024**: Our [TravelPlanner](/publication/travelplanner) got accepted to ICML 2024! - ***Apr.* 2024**: The first [Survey on Role-Playing Agents](/publication/rplasurvey) is out! Dive into our comprehensive survey of RPLA technologies, their applications, and the exciting potential for human-AI coexistence. Understanding role-playing paves the way for both personalized assistants and multi-agent society. Check our latest survey on role-playing agent! - ***Apr.* 2024**: Checkout [SurveyAgent](/publication/surveyagent)! This system stands out by offering a unified platform that supports researchers through various stages of their literature review process, facilitated by a conversational interface that prioritizes user interaction and personalization! Access via [homepage](https://survey-agent.github.io) and have fun!
+- ***Apr.* 2024**: In [our new work](/publication/irrelevant), we extend our [previous work](/publication/sloth) on knowledge conflict during RAG, and find that LLMs are not robust to various types of irrelevant evidence in the context, which are very much lethal to RAG applications!
+- ***Mar.* 2024**: [Agent Group Chat](/publication/agentgroupchat) is out! In this paper, we build a multi-agent simulation that studies the impact of language on collective human behavior, using diverse scenarios such as inheritance disputes and philosophical debates. The simulation revealed that agents, when given complex language abilities and diverse personalities, can exhibit emergent behaviors that mirror human unpredictability. TLDR: *Let's scale up the number and diversity of agents and their interactions!*
+- ***Mar.* 2024**: [TravelPlanner](/publication/travelplanner) and [EasyTool](/publication/easytool) are accepted to the [LLM Agent Workshop @ICLR 2024](https://llmagents.github.io) :)!
+- ***Feb.* 2024**: Check out [TimeArena](/publication/timearena)! In TimeArena, we built a simulated textual environment for language agents to complete multiple tasks in the *shortest time*, which is a very realistic setting of human world and also a great challenge for SoTA LLMs. Check out [this project page](https://time-arena.github.io) for more details!
+- ***Feb.* 2024**: Check out [GumbelSoft](/publication/gumbelsoft), a watermark for LLMs that allows for diversified text generation while remaining detectability!
+- ***Feb.* 2024**: Check out [InCharacter](/publication/incharacter)! Self-assessments on RPAs are inherently flawed - which heavily depends on LLM’s own understanding of Personality. Instead, our work revolves around interviewing characters in 14 different psychological scales, providing a more objective description of LLM's role play abilities. Check out [this project demo](https://incharacter.theirstory.cn)!
+- ***Feb.* 2024**: [TravelPlanner](/publication/travelplanner) is out! We evaluate the planning ability of LLM agents using a real-world setup: Travel Planning, which is prominent for the challenge of integrating so many types of realistic constraints, like "tickets soldout" or "limited budget" - and GPT-4 is bad at this! Check out our paper for more information.
+- ***Jan.* 2024**: [Our paper](/publication/sloth) got accepted to ICLR 2024 as <font color="#FF0000">***Spotlight***</font>! A huge honor, see you in Vienna, Austria!
+- ***Jan.* 2024**: New pre-print! We proposes [EasyTool](/publication/easytool) that improves your agents' tool-usage with minimal efforts: by streamlining tool documents into tool instructions 🔨. Check out [this tweet](https://x.com/jiangjie_chen/status/1746777527253950957?s=20)!
+- ***Dec.* 2023**: Our paper [IdiomKB](/publication/idiomkb) on Idiomatic Translation got accepted to AAAI 2024! We propose a multilingual idiom KB (IdiomKB) developed using LLMs to facilitate better idiomatic translation by smaller models by retrieving idioms’ figurative meanings.
+- ***Dec.* 2023**: Social@EMNLP 2023, Singapore, open to any chat!
+- ***Nov.* 2023**: Gave a talk at [CMU LTI Li Lab](https://www.cs.cmu.edu/~leili/people.html), titled: "Say, Think, Act: Towards Human-like Autonomous Language Agents".
+- ***Oct.* 2023**: Check out our newest pre-print [Auction Arena](https://auction-arena.github.io)! We explore the intriguing domain of how LLMs navigate the complex and dynamic environment of auctions. We introduce AucArena, a novel simulation environment tailored for assessing LLMs within the unpredictable yet strategic world of auctions. Play with [arena demo](https://huggingface.co/spaces/jiangjiechen/Auction-Arena-Demo) and see if you can beat AI!
+- ***Oct.* 2023**: Our paper [SCAR](/publication/scar) got accepted to EMNLP 2023 Findings! A nice addition to the analogical reasoning domain! See you in Singapore :).
+- ***July* 2023**: Our paper [CoScript](/publication/coscript/) got an <font color="#FF0000">***Outstanding Paper Award***</font> in ACL 2023!
+- ***June* 2023**: Coming to Seattle for a summer internship at [Allen Institute for AI](https://allenai.org), working with the great [Aristo Team](https://allenai.org/aristo)!
+- ***May* 2023**: A [pre-print](/publication/sloth) on the knowledge conflict of large language models! See the [tweet](https://twitter.com/jiangjie_chen/status/1660879048296497153?s=20). Turns out ChatGPT and GPT-4 somehow stick to its own belief, are receptive/gullible to longer, better-formatted, more popular evidence, and follow the herd... All kinds of human-like, dangerous behaviors!
+- ***May* 2023**: Check out two pre-prints on [Analogical Reasoning](/tag/analogical-reasoning/), which extend [E-KAR](https://ekar-leaderboard.github.io/)! [AnalogyKB](/publication/analogykb) is a million-scale analogy KB derived from existing KGs, to enable machines to achieve analogical reasoning skills. [SCAR](/publication/scar) is a new challenge for evaluating LLMs' structure abduction ability for scientific analogies, which is essential for human-like analogical reasoning.
+- ***May* 2023**: Got two papers about LLMs accepted to the main conference of ACL 2023! [The first paper](/publication/uncommongen/) is about analyzing why LLMs fail to generate negative knowledge while being able to recognize them. The other is [CoScript](/publication/coscript/), studying how to generate plans under constraints with LLMs. See you in Toronto (hopefully :/)!
+- ***Feb.* 2023**: Presenting [VENCE](/publication/vence/) on AAAI 2023!
+- ***Nov.* 2022**: Two papers accepted to AAAI 2023! One is [VENCE](/publication/vence/) on correcting factual errors in texts, and the other is [NEON](/publication/neon/) on explaining why a statement is false: both focus on solving the tasks without direct supervision. Welcome to check it out!
+- ***Oct.* 2022**: Gave a talk at MSRA.
+- ***Oct.* 2022**: I was awarded with China National Scholarship for Doctoral Students.
+- ***Sept.* 2022**: Just married💕!
+- ***Sept.* 2022**: We officially release a new version of the E-KAR dataset (v1.0 -> v1.1), with a substantially improved [English dataset](https://huggingface.co/datasets/Jiangjie/ekar_english)! Over 600 problems and 1,000 explanation texts are manually adjusted, and we are as strict as we can! See more information at the [E-KAR project page](https://ekar-leaderboard.github.io). Have fun!
+- ***July* 2022**: [Talk](https://mp.weixin.qq.com/s/7RVdq4vrLO6e63dOYMMR_A) titled "Right for the Right Reasons: Explainable Reasoning on Analogical Recognition and Fact Verification" (in *Chinese*).
+- ***July* 2022**: [ACT for NAT](/publication/act/) will be presented at NAACL-HLT 2022.
+- ***May* 2022**: [E-KAR](https://ekar-leaderboard.github.io) will be presented at the [Commonsense Representation and Reasoning (CSRR) workshop](https://csrr-workshop.github.io) at ACL 2022, discussions welcomed!
+- ***May* 2022**: [E-KAR](https://ekar-leaderboard.github.io) will be presented at ACL 2022 (virtually) in a poster session, welcome to check it out!
+- ***Apr.* 2022**: Our paper ([ACT](/publication/act/)) on non-autoregressive translation got accepted at NAACL-HLT 2022!
+- ***Mar.* 2022**: The [leaderboard](https://eval.ai/web/challenges/challenge-page/1671/overview) of [E-KAR](https://ekar-leaderboard.github.io) has been released at EvalAI! Welcome to participate!
+- ***Mar.* 2022**: Our work [LOREN](/publication/loren/) received the attention of [WikiResearch Team](https://twitter.com/WikiResearch) 🧐, here's [the tweet](https://twitter.com/WikiResearch/status/1504873884776030211).
+- ***Feb.* 2022**: Giving oral & poster presentations about [LOREN](/publication/loren/) and [EDUCAT](/publication/educat/) at AAAI 2022 virtual conference.
+- ***Feb.* 2022**: Our paper ([E-KAR](https://ekar-leaderboard.github.io)) on analogical reasoning got accepted at ACL 2022 (Findings)!
 Experience
 Researcher
 ByteDance Seed
 Jul 2024 –
-Present
-Shanghai, China
+Present Shanghai, China
 Research Intern
 Allen Institute for AI
 Jun 2023 –
-Sep 2023
-Seattle, Washington, U.S.
-Aristo Team
-, mentored by
-Dr. Kyle Richardson
-. Responsibilities: Work on multi-agent reasoning and planning with large language models.
+Sep 2023 Seattle, Washington, U.S.
+Aristo Team , mentored by Dr. Kyle Richardson . Responsibilities: Work on multi-agent reasoning and planning with large language models.
 Visiting Research Intern
 UC Santa Barbara
 Sep 2021 –
-May 2023
-Remote
-Hosted by
-Prof. Lei Li
-. Responsibilities: Work on machine reasoning over language with large language models.
+May 2023 Remote
+Hosted by Prof. Lei Li . Responsibilities: Work on machine reasoning over language with large language models.
 Research Intern
 ByteDance AI Lab
 Nov 2019 –
-May 2023
-Shanghai, China
-Mentored by
-Prof. Lei Li
-,
-Prof. Hao Zhou
-, and
-Dr. Changzhi Sun
-. Work on Knowledge-guided text generation and natural language reasoning.
+May 2023 Shanghai, China
+Mentored by Prof. Lei Li , Prof. Hao Zhou , and Dr. Changzhi Sun . Work on Knowledge-guided text generation and natural language reasoning.
 Awards
 ACL 2025 Outstanding Paper Award
-Association for Computational Linguistics
-Jul 2025
+Association for Computational Linguistics Jul 2025
 Nomination Award for Outstanding Doctoral Dissertation of Shanghai Computer Society
-Shanghai Computer Society
-May 2025
+Shanghai Computer Society May 2025
 Excellent Graduates of Shanghai
-Fudan University
-Apr 2024
+Fudan University Apr 2024
 ACL 2023 Outstanding Paper Award
-Association for Computational Linguistics
-Jul 2023
+Association for Computational Linguistics Jul 2023
 China National Scholarship for Doctoral Students
-Fudan University
-Oct 2022
+Fudan University Oct 2022
 Honor Student Award in Computer Science of Top Talent Undergraduate Training Program
-Fudan University
-Jun 2019
+Fudan University Jun 2019
 Featured Publications
-Hongli Yu
-,
-Tinghong Chen
-,
-Jiangtao Feng
-,
-Jiangjie Chen
-,
-Weinan Dai
-,
-Qiying Yu
-,
-Ya-Qin Zhang
-,
-Wei-Ying Ma
-,
-Jingjing Liu
-,
-Mingxuan Wang
-,
-Hao Zhou
-July, 2025
-Preprint
+Hongli Yu , Tinghong Chen , Jiangtao Feng , Jiangjie Chen , Weinan Dai , Qiying Yu , Ya-Qin Zhang , Wei-Ying Ma , Jingjing Liu , Mingxuan Wang , Hao Zhou
+July, 2025 Preprint
 MemAgent: Reshaping Long-Context LLM with Multi-Conv RL-based Memory Agent
 MemAgent introduces a multi-conv RL-based memory agent that enables language models to handle extremely long documents, extending from 8K to 3.5M tokens with minimal performance degradation.
-PDF
-Cite
-Project
-Project
-Jiangjie Chen
-,
-Qianyu He
-,
-Siyu Yuan
-,
-Aili Chen
-,
-Zhicheng Cai
-,
-Weinan Dai
-,
-Hongli Yu
-,
-Qiying Yu
-,
-Xuefeng Li
-,
-Jiaze Chen
-,
-Hao Zhou
-,
-Mingxuan Wang
-May, 2025
-In
-The Thirty-Ninth Annual Conference on Neural Information Processing Systems (
-NeurIPS 2025
-)
-,
-Spotlight
+PDF Cite Project Project
+Jiangjie Chen , Qianyu He , Siyu Yuan , Aili Chen , Zhicheng Cai , Weinan Dai , Hongli Yu , Qiying Yu , Xuefeng Li , Jiaze Chen , Hao Zhou , Mingxuan Wang
+May, 2025 In The Thirty-Ninth Annual Conference on Neural Information Processing Systems ( NeurIPS 2025 ) , Spotlight
 Enigmata: Scaling Logical Reasoning in Large Language Models with Synthetic Verifiable Puzzles
 We introduce Enigmata, the first comprehensive suite tailored for improving LLMs with puzzle reasoning skills.
-PDF
-Cite
-Dataset
-Project
-Code
-Model
+PDF Cite Dataset Project Code Model
 ByteDance Seed
-April, 2025
-Technical Report
+April, 2025 Technical Report
 Seed-Thinking-v1.5: Advancing Superb Reasoning Models with Reinforcement Learning
 We introduce Seed-Thinking-v1.5, a Mixture-of-Experts (MoE) model with a relatively small size, featuring 20B activated and 200B total parameters, capable of reasoning through thinking before responding, resulting in improved performance on a widerange of benchmarks.
-PDF
-Project
-Qiying Yu
-,
-Zheng Zhang
-,
-Ruofei Zhu
-,
-Yufeng Yuan
-,
-Xiaochen Zuo
-,
-Yu Yue
-,
-Tiantian Fan
-,
-Gaohong Liu
-,
-Lingjun Liu
-,
-Xin Liu
-,
-Haibin Lin
-,
-Zhiqi Lin
-,
-Bole Ma
-,
-Guangming Sheng
-,
-Yuxuan Tong
-,
-Chi Zhang
-,
-Mofan Zhang
-,
-Wang Zhang
-,
-Hang Zhu
-,
-Jinhua Zhu
-,
-Jiaze Chen
-,
-Jiangjie Chen
-,
-Chengyi Wang
-,
-Hongli Yu
-,
-Weinan Dai
-,
-Yuxuan Song
-,
-Xiangpeng Wei
-,
-Hao Zhou
-,
-Jingjing Liu
-,
-Wei-Ying Ma
-,
-Ya-Qin Zhang
-,
-Lin Yan
-,
-Mu Qiao
-,
-Yonghui Wu
-,
-Mingxuan Wang
-March, 2025
-In
-The Thirty-Ninth Annual Conference on Neural Information Processing Systems (
-NeurIPS 2025
-)
+PDF Project
+Qiying Yu , Zheng Zhang , Ruofei Zhu , Yufeng Yuan , Xiaochen Zuo , Yu Yue , Tiantian Fan , Gaohong Liu , Lingjun Liu , Xin Liu , Haibin Lin , Zhiqi Lin , Bole Ma , Guangming Sheng , Yuxuan Tong , Chi Zhang , Mofan Zhang , Wang Zhang , Hang Zhu , Jinhua Zhu , Jiaze Chen , Jiangjie Chen , Chengyi Wang , Hongli Yu , Weinan Dai , Yuxuan Song , Xiangpeng Wei , Hao Zhou , Jingjing Liu , Wei-Ying Ma , Ya-Qin Zhang , Lin Yan , Mu Qiao , Yonghui Wu , Mingxuan Wang
+March, 2025 In The Thirty-Ninth Annual Conference on Neural Information Processing Systems ( NeurIPS 2025 )
 DAPO: An Open-source LLM Reinforcement Learning System At Scale
 We introduce DAPO, a Decoupled Clip and Dynamic sAmpling Policy Optimization algorithm, and fully open-source a state-of-the-art large-scale RL system that achieves 50 points on AIME 2024 using Qwen2.5-32B base model.
-PDF
-Cite
-Dataset
-Project
-Code
-Model
-Nianqi Li
-,
-Siyu Yuan
-,
-Jiangjie Chen
-,
-Jiaqing Liang
-,
-Feng Wei
-,
-Zujie Liang
-,
-Deqing Yang
-,
-Yanghua Xiao
-September, 2024
-The 63nd Annual Meeting of the Association for Computational Linguistics (
-ACL 2025
-),
-Outstanding Paper Award
+PDF Cite Dataset Project Code Model
+Nianqi Li , Siyu Yuan , Jiangjie Chen , Jiaqing Liang , Feng Wei , Zujie Liang , Deqing Yang , Yanghua Xiao
+September, 2024 The 63nd Annual Meeting of the Association for Computational Linguistics ( ACL 2025 ), Outstanding Paper Award
 Past Meets Present: Creating Historical Analogy with Large Language Models
 We focus on acquiring historical analogies using LLMs, proposing a self-reflection method to reduce hallucinations and stereotypes, showing that LLMs have strong potential in this task.
-PDF
-Cite
-Code
-Jian Xie
-,
-Kai Zhang
-,
-Jiangjie Chen
-,
-Tinghui Zhu
-,
-Renze Lou
-,
-Yuandong Tian
-,
-Yanghua Xiao
-,
-Yu Su
-February, 2024
-In
-The Forty-first International Conference on Machine Learning (
-ICML 2024
-)
-,
-Spotlight
+PDF Cite Code
+Jian Xie , Kai Zhang , Jiangjie Chen , Tinghui Zhu , Renze Lou , Yuandong Tian , Yanghua Xiao , Yu Su
+February, 2024 In The Forty-first International Conference on Machine Learning ( ICML 2024 ) , Spotlight
 TravelPlanner: A Benchmark for Real-World Planning with Language Agents
 We introduced TravelPlanner, a benchmark for assessing language agents’ planning abilities, showing that even advanced models like GPT-4 face difficulties with complex tasks.
-PDF
-Cite
-Dataset
-Code
-Demo
-Jian Xie
-,
-Kai Zhang
-,
-Jiangjie Chen
-,
-Renze Lou
-,
-Yu Su
-May, 2023
-In
-The Twelfth International Conference on Learning Representations (
-ICLR 2024
-)
-,
-Spotlight
+PDF Cite Dataset Code Demo
+Jian Xie , Kai Zhang , Jiangjie Chen , Renze Lou , Yu Su
+May, 2023 In The Twelfth International Conference on Learning Representations ( ICLR 2024 ) , Spotlight
 Adaptive Chameleon or Stubborn Sloth: Revealing the Behavior of Large Language Models in Knowledge Conflicts
 We present the first comprehensive and controlled investigation into the behavior of large language models when encountering knowledge conflicts.
-PDF
-Cite
-Code
-Siyu Yuan
-,
-Jiangjie Chen
-,
-Ziquan Fu
-,
-Xuyang Ge
-,
-Soham Shah
-,
-Charles Robert Jankowski
-,
-Yanghua Xiao
-,
-Deqing Yang
-May, 2023
-In
-The 61th Annual Meeting of the Association for Computational Linguistics (
-ACL 2023
-)
-,
-Outstanding Paper Award
+PDF Cite Code
+Siyu Yuan , Jiangjie Chen , Ziquan Fu , Xuyang Ge , Soham Shah , Charles Robert Jankowski , Yanghua Xiao , Deqing Yang
+May, 2023 In The 61th Annual Meeting of the Association for Computational Linguistics ( ACL 2023 ) , Outstanding Paper Award
 Distilling Script Knowledge from Large Language Models for Constrained Language Planning
 We propose an over-generate-then-filter approach to improve large language models (LLMs) on constrained language planning, and use it to distill a novel constrained language planning dataset, CoScript.
-PDF
-Cite
-Poster
-Slides
-Code
+PDF Cite Poster Slides Code
 Recent Publications
-Quickly discover relevant content by
-filtering publications
-.
-Qianyu He
-,
-Siyu Yuan
-,
-Xuefeng Li
-,
-Mingxuan Wang
-,
-Jiangjie Chen
-(2025).
-ThinkDial: An Open Recipe for Controlling Reasoning Effort in Large Language Models
-.
+Quickly discover relevant content by filtering publications .
+Qianyu He , Siyu Yuan , Xuefeng Li , Mingxuan Wang , Jiangjie Chen (2025). ThinkDial: An Open Recipe for Controlling Reasoning Effort in Large Language Models .
 Preprint.
-PDF
-Cite
-Hongli Yu
-,
-Tinghong Chen
-,
-Jiangtao Feng
-,
-Jiangjie Chen
-,
-Weinan Dai
-,
-Qiying Yu
-,
-Ya-Qin Zhang
-,
-Wei-Ying Ma
-,
-Jingjing Liu
-,
-Mingxuan Wang
-,
-Hao Zhou
-(2025).
-MemAgent: Reshaping Long-Context LLM with Multi-Conv RL-based Memory Agent
-.
+PDF Cite
+Hongli Yu , Tinghong Chen , Jiangtao Feng , Jiangjie Chen , Weinan Dai , Qiying Yu , Ya-Qin Zhang , Wei-Ying Ma , Jingjing Liu , Mingxuan Wang , Hao Zhou (2025). MemAgent: Reshaping Long-Context LLM with Multi-Conv RL-based Memory Agent .
 Preprint.
-PDF
-Cite
-Project
-Project
-Ruihan Yang
-,
-Yikai Zhang
-,
-Aili Chen
-,
-Xintao Wang
-,
-Siyu Yuan
-,
-Jiangjie Chen
-,
-Deqing Yang
-,
-Yanghua Xiao
-(2025).
-ARIA: Training Language Agents with Intention-Driven Reward Aggregation
-.
-In
-The Thirty-Ninth Annual Conference on Neural Information Processing Systems (
-NeurIPS 2025
-)
-,
-Spotlight
-.
-PDF
-Cite
-Rui Xu
-,
-Dakuan Lu
-,
-Zicheng Zhao
-,
-Xiaoyu Tan
-,
-Xintao Wang
-,
-Siyu Yuan
-,
-Jiangjie Chen
-,
-Yinghui Xu
-(2025).
-ORIGAMISPACE: Benchmarking Multimodal LLMs in Multi-Step Spatial Reasoning with Mathematical Constraints
-.
-In
-The Thirty-Ninth Annual Conference on Neural Information Processing Systems (
-NeurIPS 2025
-)
-,
-Spotlight
-.
-PDF
-Cite
-Sirui Xia
-,
-Aili Chen
-,
-Xintao Wang
-,
-Tinghui Zhu
-,
-Yikai Zhang
-,
-Jiangjie Chen
-,
-Yanghua Xiao
-(2025).
-Can LLMs Learn to Map the World from Local Descriptions?
-.
+PDF Cite Project Project
+Ruihan Yang , Yikai Zhang , Aili Chen , Xintao Wang , Siyu Yuan , Jiangjie Chen , Deqing Yang , Yanghua Xiao (2025). ARIA: Training Language Agents with Intention-Driven Reward Aggregation .
+In The Thirty-Ninth Annual Conference on Neural Information Processing Systems ( NeurIPS 2025 ) , Spotlight .
+PDF Cite
+Rui Xu , Dakuan Lu , Zicheng Zhao , Xiaoyu Tan , Xintao Wang , Siyu Yuan , Jiangjie Chen , Yinghui Xu (2025). ORIGAMISPACE: Benchmarking Multimodal LLMs in Multi-Step Spatial Reasoning with Mathematical Constraints .
+In The Thirty-Ninth Annual Conference on Neural Information Processing Systems ( NeurIPS 2025 ) , Spotlight .
+PDF Cite
+Sirui Xia , Aili Chen , Xintao Wang , Tinghui Zhu , Yikai Zhang , Jiangjie Chen , Yanghua Xiao (2025). Can LLMs Learn to Map the World from Local Descriptions? .
 Preprint.
-PDF
-Cite
+PDF Cite
 See all publications
 Popular Topics
-Agent
-Analogical Reasoning
-Benchmark
-Constrained Generation
-Dataset
-Diversified Generation
-Evaluation
-Explainable NLP
-Faithfulness and Factuality
-Knowledge Graph
-Large Language Models
-Large Reasoning Models
-LLM Analysis
-Planning
-Reasoning
-Reinforcement Learning
-Retrieval
-Role-Playing Agent
-Simulated Environment
-Text Generation
+Agent Analogical Reasoning Benchmark Constrained Generation Dataset Diversified Generation Evaluation Explainable NLP Faithfulness and Factuality Knowledge Graph Large Language Models Large Reasoning Models LLM Analysis Planning Reasoning Reinforcement Learning Retrieval Role-Playing Agent Simulated Environment Text Generation
 Visitors
 Cite
 ×
-Copy
-Download
+Copy Download

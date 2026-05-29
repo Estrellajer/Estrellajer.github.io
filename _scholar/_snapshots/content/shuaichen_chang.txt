@@ -1,30 +1,14 @@
-I am an AI researcher at the AWS AI Lab in New York and a founding member of the AWS Bedrock RAG and Agentic AI Science team. Before joining AWS, I obtained my Ph.D. in Computer Science Department at The Ohio State University, advised by Prof.
-Eric Fosler-Lussier
-. Prior to OSU, I obtained my B.S. at Fudan University, advised by Prof.
-Xipeng Qiu
-.
+I am an AI researcher at the AWS AI Lab in New York and a founding member of the AWS Bedrock RAG and Agentic AI Science team. Before joining AWS, I obtained my Ph.D. in Computer Science Department at The Ohio State University, advised by Prof. Eric Fosler-Lussier . Prior to OSU, I obtained my B.S. at Fudan University, advised by Prof. Xipeng Qiu .
 Research Interests
 My research focuses on building robust and generalizable AI models and systems that interact with data and environments through natural language. My work spans several interconnected areas:
-Continual Learning and LLM Memory
-: I explore continual adaptation in LLMs and agents, with a specific focus on continual learning through associative memory, and test-time training to enable models to learn in dynamic environments. I am writing a
-blog series
-on this topic.
-Natural Language Interfaces to Data
-: I develop methods for enabling natural language interaction with structured and semi-structured data, including text-to-SQL, table understanding, and database question answering. A significant focus of my work is on improving robustness and cross-domain generalization of these models and systems. I also co-organized the
-TRL workshop
-at ACL 2025 and the
-SURGeLLM workshop
-at ACL 2026.
-Agentic AI and Retrieval-Augmented Systems
-: I build autonomous computer-use agents and advanced RAG solutions. My work includes developing retrieval-augmented world models for agent planning, orchestrating complex workflows, and agentic retrieval across heterogeneous data.
-Robustness and Evaluation
-: A core theme across my research is developing diagnostic benchmarks and evaluation frameworks to systematically assess model capabilities and failure modes, enabling more reliable AI systems.
+Continual Learning and LLM Memory : I explore continual adaptation in LLMs and agents, with a specific focus on continual learning through associative memory, and test-time training to enable models to learn in dynamic environments. I am writing a blog series on this topic.
+Natural Language Interfaces to Data : I develop methods for enabling natural language interaction with structured and semi-structured data, including text-to-SQL, table understanding, and database question answering. A significant focus of my work is on improving robustness and cross-domain generalization of these models and systems. I also co-organized the TRL workshop at ACL 2025 and the SURGeLLM workshop at ACL 2026.
+Agentic AI and Retrieval-Augmented Systems : I build autonomous computer-use agents and advanced RAG solutions. My work includes developing retrieval-augmented world models for agent planning, orchestrating complex workflows, and agentic retrieval across heterogeneous data.
+Robustness and Evaluation : A core theme across my research is developing diagnostic benchmarks and evaluation frameworks to systematically assess model capabilities and failure modes, enabling more reliable AI systems.
 Feel free to reach out if you’re interested in collaborating or just chatting about AI models and applications!
 Professional Service
 Workshop Organization
-Co-organizer,
-Table Representation Learning Workshop
-, ACL 2025
+Co-organizer, Table Representation Learning Workshop , ACL 2025
 Program Committee / Reviewer
 NeurIPS, ICLR, ICML, ACL, EMNLP, NAACL, AAAI, ICASSP
 Awards & Honors
@@ -34,8 +18,4 @@ Fudan Honors Student, 2017
 China National Scholarship, 2016
 China National Scholarship, 2015
 Miscs
-In my spare time I enjoy tennis, painting (
-Summer Lake
-,
-Fall
-), dancing, and traveling. I’ve stayed in Tianjin, Shanghai, Taipei, Columbus, San Jose, New York, and Honolulu for more than one month.
+In my spare time I enjoy tennis, painting ( Summer Lake , Fall ), dancing, and traveling. I’ve stayed in Tianjin, Shanghai, Taipei, Columbus, San Jose, New York, and Honolulu for more than one month.

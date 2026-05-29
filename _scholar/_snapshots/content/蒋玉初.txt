@@ -1,34 +1,20 @@
 Rethinking LLM Ensembling from the Perspective of Mixture Models
-Jiale Fu*,
-Yuchu Jiang
-*, Peijun Wu, Chonghan Liu, Joey Tianyi Zhou, Xu Yang
-Published in
-ICML (Spotlight)
-, 2026
+Jiale Fu*, Yuchu Jiang *, Peijun Wu, Chonghan Liu, Joey Tianyi Zhou, Xu Yang
+Published in ICML (Spotlight) , 2026
 Mixture-model-like Ensemble (ME) is a training-free, plug-and-play ensembling method that reinterprets LLM ensembling as a mixture model and samples from the same ensemble distribution while invoking only one model per step. ME is mathematically equivalent to sampling from the ensemble distribution and only requires evaluating one model per step, making it 1.78x-2.68x faster than conventional ensembling.
 Download Paper
 d2Cache: Accelerating Diffusion-Based LLMs via Dual Adaptive Caching
-Yuchu Jiang
-, Yue Cai, Xiangzhong Luo, Jiale Fu, Jiarui Wang, Chonghan Liu, Xu Yang
-Published in
-ICLR
-, 2026
+Yuchu Jiang , Yue Cai, Xiangzhong Luo, Jiale Fu, Jiarui Wang, Chonghan Liu, Xu Yang
+Published in ICLR , 2026
 Dual aDaptive Cache (d²Cache) is a training-free approximate KV cache framework for accelerating dLLM inference. d²Cache features a two-stage fine-grained selection strategy to identify tokens and adaptively update their KV states at each decoding step, while caching the KV states of the remaining tokens for reuse. Furthermore, d²Cache naturally offers a more reliable decoding alternative, which can enable quasi left-to-right generation and mitigate premature overconfidence in tokens at the end of the sequence. Extensive experimental results on two representative dLLMs (i.e., LLaDA and Dream) demonstrate that d²Cache not only achieves substantial inference speedups, but also yields consistent improvements in generation quality.
 Download Paper
 Mimic In-Context Learning in Multimodal Tasks
-Yuchu Jiang
-, Jiale Fu, Chenduo Hao, Xinting Hu, Yingzhe Peng, Xin Geng, Xu Yang
-Published in
-CVPR
-, 2025
+Yuchu Jiang , Jiale Fu, Chenduo Hao, Xinting Hu, Yingzhe Peng, Xin Geng, Xu Yang
+Published in CVPR , 2025
 MimIC is a novel framework that mimics in-context learning for multimodal tasks by injecting lightweight, query-conditioned shift vectors after each attention head. Applied to Idefics1-9B, MimIC achieves up to +3.46% accuracy improvement on VQAv2, +3.57% on OK-VQA, and +9.00 CIDEr on image captioning, compared to standard 32-shot in-context learning. Moreover, MimIC effectively mitigates hallucination commonly introduced by conventional ICL approaches, while incurring inference overhead comparable to zero-shot inference.
 Download Paper
 Fast Large Language Model Collaborative Decoding via Speculation
-Jiale Fu*,
-Yuchu Jiang
-*, Junkai Chen, Jiaming Fan, Xin Geng, Xu Yang
-Published in
-ICML
-, 2025
+Jiale Fu*, Yuchu Jiang *, Junkai Chen, Jiaming Fan, Xin Geng, Xu Yang
+Published in ICML , 2025
 Collaborative decoding via Speculation (CoS) is a novel framework that accelerates the ensemble of any number of LLMs without sacrificing performance. It could reach 1.11x-2.23x over standard ensemble techniques on two-model or three-model pairs.
 Download Paper

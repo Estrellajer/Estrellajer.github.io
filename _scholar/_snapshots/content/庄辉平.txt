@@ -1,13 +1,17 @@
+<div class="main-container"> Two-column layout for top section
 Zhuang Huiping
 Associate Professor, PhD Supervisor in South China University of Technology
 He received his PhD from Nanyang Technological University, Singapore in 2022 and was recognized with the Outstanding Overseas Student Award by the National Natural Science Foundation of China. He leads key projects including the National Key R&D Program of China and National Natural Science Foundation projects. His research focuses on efficient AI (including efficient continual learning and embodied intelligence), with around 80 published papers. He pioneered "Analytical Continual Learning," establishing a specialized research direction in evolvable intelligence that has produced more than 10 papers in top conferences like NeurIPS/ICML in the past two years. His works have been recognized with two Best Paper Awards (nomination) at international conferences, the Best Student Paper Achievement Award from Singapore's PREMIA Association, and a First Prize at the CVPR 2025 competition. He has delivered a keynote speech at an international conference and served in academic roles (e.g., Co-Chair) at several international/domestic conferences. He serves as a special issue editor for the Journal of Franklin Institute (JCR Q1) and was recognized as an Outstanding Reviewer for ICML 2022.
-Research Areas
-Learn More  >
+Research Areas Section
+Research Areas Learn More  >
 Continual Learning
+<p><a href="/research/continual-learning" class="btn btn--inverse" style="margin: 2px">Learn More</a></p>
 Embodied Intelligence
+<p><a href="/research/embodied-intelligence" class="btn btn--inverse" style="margin: 2px">Learn More</a></p>
 Large Models
-Latest News
-Learn More  >
+<p><a href="/research/large-language-models" class="btn btn--inverse" style="margin: 2px">Learn More</a></p>
+Latest News with Compact Scrolling Design
+Latest News Learn More  >
 2026 May 08
 We have 2 papers accepted by CVPR 2026, including 1 Oral!
 2026 Jan 28
@@ -29,5 +33,10 @@ Our team wins a first prize in RoboTwin Dual-Arm Collaboration Challenge of CVPR
 2025 May 08
 Our team wins a silver medal in RoboTwin Dual-Arm Collaboration Challenge of CVPR2025!
 Drag, swipe, or use the arrows
-↑
-↓
+↑ ↓
+Bottom Sections <div class="bottom-sections"> <div class="feature__wrapper">
+</div>
+<div class="feature__wrapper">
+</div>
+<div class="feature__wrapper">
+</div> </div>

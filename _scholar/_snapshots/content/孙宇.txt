@@ -1,6 +1,13 @@
 Yu Sun
 Email: ys646 [at] stanford.edu
-I'm a postdoc at Stanford University and a researcher at NVIDIA.
+I'm a postdoc at Stanford University, hosted by Carlos Guestrin, Tatsu Hashimoto, and Sanmi Koyejo.
+I'm also a researcher at NVIDIA under Yejin Choi.
+My research focuses on continual learning, specifically a conceptual framework called test-time training, where each test instance defines its own learning problem.
+I completed my PhD in 2023 at UC Berkeley, advised by Alyosha Efros and Moritz Hardt.
+My PhD thesis is
+<a href="https://www2.eecs.berkeley.edu/Pubs/TechRpts/2023/EECS-2023-86.html
+"><i>Test-Time Training</i></a>.
+During my undergrad at Cornell University, I worked with Kilian Weinberger. I'm a postdoc at Stanford University and a researcher at NVIDIA.
 My research focuses on continual learning, specifically a conceptual framework called test-time training, where each test instance defines its own learning problem.
 My Research
 The high-level goal of my research is to enable AI systems to continuously learn like humans.
@@ -17,56 +24,64 @@ In particular, continual learning will be most powerful when it targets the spec
 To focus on these two aspects, I have been developing a conceptual framework called test-time training since 2019.
 The best way to learn more about the technical side of my research is to look at the selected papers below.
 Selected Papers
-For a complete list of papers, please see my
-Google Scholar
-.
+For a complete list of papers, please see my Google Scholar .
 Learning to Discover at Test Time
 Mert Yuksekgonul*, Daniel Koceja*, Xinhao Li*, Federico Bianchi*, Jed McCaleb, Xiaolong Wang, Jan Kautz, Yejin Choi, James Zou†, Carlos Guestrin†, Yu Sun* (*: core contributors)
-[
-paper
-]
-[
-code
-]
+ICML 2025<br> [ paper ]
+[ code ]
 End-to-End Test-Time Training for Long Context
 Arnuv Tandon*, Karan Dalal*, Xinhao Li*, Daniel Koceja*, Marcel Rød*, Sam Buchanan, Xiaolong Wang, Jure Leskovec, Sanmi Koyejo, Tatsunori Hashimoto, Carlos Guestrin, Jed McCaleb, Yejin Choi, Yu Sun* (*: core contributors)
-[
-paper
-]
-[
-code
-]
+ICML 2025<br> [ paper ]
+[ code ]
 Learning to (Learn at Test Time): RNNs with Expressive Hidden States
 Yu Sun*, Xinhao Li*, Karan Dalal*, Jiarui Xu, Arjun Vikram, Genghan Zhang, Yann Dubois,
 Xinlei Chen†, Xiaolong Wang†, Sanmi Koyejo†, Tatsunori Hashimoto†, Carlos Guestrin†  (*: core contributors)
 ICML 2025
-[
-paper
-]
-[
-JAX code
-]
-[
-PyTorch code
-]
+[ paper ]
+[ JAX code ]
+[ PyTorch code ]
+<p><b>Test-Time Training on Nearest Neighbors for Large Language Models</b><br>
+Moritz Hardt, Yu Sun<br>
+ICLR 2024<br>
+[<a href="https://arxiv.org/abs/2305.18466">paper</a>]
+[<a href="https://github.com/socialfoundations/tttlm">code</a>]
+</p> <p><b>Test-Time Training on Video Streams</b><br>
+Renhao Wang*, Yu Sun*, Arnuv Tandon, Yossi Gandelsman, Xinlei Chen, Alexei A. Efros, Xiaolong Wang (*: equal contribution)
+<br>
+JMLR<br>
+[<a href="https://arxiv.org/abs/2307.05014">paper</a>]
+[<a href="https://test-time-training.github.io/video">website</a>]
+</p>
 Test-Time Training with Masked Autoencoders
 Yossi Gandelsman*, Yu Sun*, Xinlei Chen, Alexei A. Efros (*: equal contribution)
 NeurIPS 2022
-[
-paper
-]
-[
-website
-]
+[ paper ]
+[ website ] [<a href="https://youtu.be/NbuWxmMco30">talk</a>]
 Test-Time Training with Self-Supervision for Generalization under Distribution Shifts
 Yu Sun, Xiaolong Wang, Zhuang Liu, John Miller, Alexei A. Efros, Moritz Hardt
 ICML 2020
-[
-paper
-]
-[
-website
-]
-[
-talk
-]
+[ paper ]
+[ website ]
+[ talk ]
+<h3>Older Papers</h3>
+<p>
+* indicates alphabetical order.
+</p>
+<p><b>On Calibration of Modern Neural Networks</b><br>
+Chuan Guo*, Geoff Pleiss*, Yu Sun*, Kilian Q. Weinberger<br>
+ICML 2017<br>
+[<a href="https://arxiv.org/abs/1706.04599">paper</a>]
+[<a href="https://github.com/gpleiss/temperature_scaling">code</a>]
+</p>
+<p><b>Deep Networks with Stochastic Depth</b><br>
+Gao Huang*, Yu Sun*, Zhuang Liu, Daniel Sedra, Kilian Q. Weinberger<br>
+ECCV 2016<br>
+[<a href="https://arxiv.org/abs/1603.09382">paper</a>]
+[<a href="https://github.com/yueatsprograms/Stochastic_Depth">code</a>]
+[<a href="https://videolectures.net/eccv2016_sun_deep_networks/">talk</a>]
+</p>
+<p><b>From Word Embeddings To Document Distances</b><br>
+Matt Kusner, Yu Sun, Nicholas Kolkin, Kilian Q. Weinberger<br>
+ICML 2015<br>
+[<a href="https://proceedings.mlr.press/v37/kusnerb15.pdf">paper</a>]
+</p>

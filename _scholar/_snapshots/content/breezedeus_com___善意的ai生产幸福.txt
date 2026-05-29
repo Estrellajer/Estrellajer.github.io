@@ -177,11 +177,7 @@ LLM
 智能体
 ShowUI
 GUI Agents
-1
-2
-3
-4
-5
+1 2 3 4 5
 Breezedeus
 Breezedeus
 最新发布
@@ -200,7 +196,5 @@ P2T Detailed Infos
 公告
 🎉Pix2Text V1.1.1 新版发布🎉
 -- 新版本特性 ---
-V1.1.1 发布
-，带来全新的数学公式检测（MFD）模型
-详见：
-Pix2Text V1.1.1 新版发布，带来更好的数学公式检测模型
+V1.1.1 发布 ，带来全新的数学公式检测（MFD）模型
+详见： Pix2Text V1.1.1 新版发布，带来更好的数学公式检测模型

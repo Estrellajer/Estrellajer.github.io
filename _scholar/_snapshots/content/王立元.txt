@@ -1,25 +1,6 @@
-I am currently an Assistant Professor at the Department of Psychological and Cognitive Sciences, Tsinghua University. Before that, I received both the BS degree (Aug 2013 - Jul 2017, advised by
-Prof. Yi Zhong
-) and PhD degree (Aug 2019 - Jul 2023, co-advised by
-Prof. Yi Zhong
-and
-Prof. Jun Zhu
-) from Tsinghua University, where I also conducted my postdoc research (Jul 2023 - Jul 2025, working with
-Prof. Jun Zhu
-). I have an interdisciplinary background in neuroscience and machine learning. My primary research interest lies in the development of bio-inspired machine learning methodologies and generic computational models for neuroscience. The current focus includes
-continual / incremental / lifelong learning
-and
-transfer learning
-, by exploring “
-natural algorithms
-” in biological learning and memory. I’m also exploring AI algorithms that serve other scientific domains.
-We are recuiting self-motivated postdocs and research interns!
-Directions include: continual learning, agent memory, AI4Science, AI4Health. Please contact me if you are interested.
-My email address is changed to
-liyuanwang@tsinghua.edu.cn
-and
-wly19@tsinghua.org.cn
-.
+I am currently an Assistant Professor at the Department of Psychological and Cognitive Sciences, Tsinghua University. Before that, I received both the BS degree (Aug 2013 - Jul 2017, advised by Prof. Yi Zhong ) and PhD degree (Aug 2019 - Jul 2023, co-advised by Prof. Yi Zhong and Prof. Jun Zhu ) from Tsinghua University, where I also conducted my postdoc research (Jul 2023 - Jul 2025, working with Prof. Jun Zhu ). I have an interdisciplinary background in neuroscience and machine learning. My primary research interest lies in the development of bio-inspired machine learning methodologies and generic computational models for neuroscience. The current focus includes continual / incremental / lifelong learning and transfer learning , by exploring “ natural algorithms ” in biological learning and memory. I’m also exploring AI algorithms that serve other scientific domains.
+We are recuiting self-motivated postdocs and research interns! Directions include: continual learning, agent memory, AI4Science, AI4Health. Please contact me if you are interested.
+My email address is changed to liyuanwang@tsinghua.edu.cn and wly19@tsinghua.org.cn .
 Recent News
 2026/05 Three papers are accepted to ICML.
 2026/04 One paper is accepted (in principle) to Nature Communications.
@@ -40,230 +21,106 @@ Recent News
 2023/12 One paper is published in Nature Machine Intelligence (as the cover).
 Selected Publications and Preprints
 ProCA: Progressive Contrastive Alignment for Robust EEG Visual Decoding.
-Kanglei Zhou, Chunyan Lan, Dongyang Li, Jun Zhu,
-Liyuan Wang
-$^\dagger$.
+Kanglei Zhou, Chunyan Lan, Dongyang Li, Jun Zhu, Liyuan Wang $^\dagger$.
 Under Review, 2026.
 Continual Action Quality Assessment via Adaptive Manifold-Aligned Graph Regularization.
-Kanglei Zhou, Qingyi Pan, Xingxing Zhang, Hubert PH Shum, Frederick WB Li, Xiaohui Liang,
-Liyuan Wang
-$^\dagger$.
+Kanglei Zhou, Qingyi Pan, Xingxing Zhang, Hubert PH Shum, Frederick WB Li, Xiaohui Liang, Liyuan Wang $^\dagger$.
 arXiv:2510.06842, Under Review, 2026.
 Domain Generalizable Continual Learning.
-Hongwei Yan, Guanglong Sun, Zhiqi Kang, Yi Zhong,
-Liyuan Wang
-$^\dagger$.
+Hongwei Yan, Guanglong Sun, Zhiqi Kang, Yi Zhong, Liyuan Wang $^\dagger$.
 arXiv:2510.16914, Under Review, 2026.
 From Reactive to Cognitive: Brain-Inspired Spatial Intelligence for Embodied Agents.
-Shouwei Ruan$^{\ast}$,
-Liyuan Wang
-$^{\ast}$, Caixin Kang, Qihui Zhu, Songming Liu, Xingxing Wei, Hang Su.
-Accepted in Principle to
-Nature Communications
-, 2026.
+Shouwei Ruan$^{\ast}$, Liyuan Wang $^{\ast}$, Caixin Kang, Qihui Zhu, Songming Liu, Xingxing Wei, Hang Su.
+Accepted in Principle to Nature Communications , 2026.
 Spacing Effect Improves Generalization in Biological and Artificial Systems.
-Guanglong Sun, Ning Huang, Hongwei Yan, Jun Zhou, Qian Li, Bo Lei, Yi Zhong,
-Liyuan Wang
-$^\dagger$.
-Patterns
-,
-Cover Paper
-, 2026.
+Guanglong Sun, Ning Huang, Hongwei Yan, Jun Zhou, Qian Li, Bo Lei, Yi Zhong, Liyuan Wang $^\dagger$.
+Patterns , Cover Paper , 2026.
 CE$^4$L: Continual Ego, Exo, and Ego-Exo Learning.
-Hongwei Yan, Kanglei Zhou, Yuchen Liu, Qingyu Shi, Yi Zhong,
-Liyuan Wang
-$^{\dagger}$.
-International Conference on Machine Learning (
-ICML
-), 2026.
+Hongwei Yan, Kanglei Zhou, Yuchen Liu, Qingyu Shi, Yi Zhong, Liyuan Wang $^{\dagger}$.
+International Conference on Machine Learning ( ICML ), 2026.
 MePo: Meta Post-Refinement for Rehearsal-Free General Continual Learning.
-Guanglong Sun, Hongwei Yan,
-Liyuan Wang
-$^{\dagger}$, Zhiqi Kang, Shuang Cui, Hang Su, Jun Zhu, Yi Zhong$^{\dagger}$.
-International Conference on Machine Learning (
-ICML
-), 2026.
+Guanglong Sun, Hongwei Yan, Liyuan Wang $^{\dagger}$, Zhiqi Kang, Shuang Cui, Hang Su, Jun Zhu, Yi Zhong$^{\dagger}$.
+International Conference on Machine Learning ( ICML ), 2026.
 Position: Modular Memory is the Key to Continual Learning Agents.
-Vaggelis Dorovatas, …,
-Liyuan Wang
-, Joost van de Weijer, Jonghyun Choi, Martin Mundt, Rahaf Aljundi.
-International Conference on Machine Learning (
-ICML
-),
-Spotlight
-, 2026.
+Vaggelis Dorovatas, …, Liyuan Wang , Joost van de Weijer, Jonghyun Choi, Martin Mundt, Rahaf Aljundi.
+International Conference on Machine Learning ( ICML ), Spotlight , 2026.
 BriMA: Bridged Modality Adaptation for Multi-Modal Continual Action Quality Assessment.
-Kanglei Zhou, Chang Li,
-Liyuan Wang
-$^{\dagger}$.
-IEEE/CVF Conference on Computer Vision and Pattern Recognition (
-CVPR
-), 2026.
+Kanglei Zhou, Chang Li, Liyuan Wang $^{\dagger}$.
+IEEE/CVF Conference on Computer Vision and Pattern Recognition ( CVPR ), 2026.
 Geometry-aware Cross-modal Graph Alignment for Referring Segmentation in 3D Gaussian Splatting.
-Yuwen Tao, Kanglei Zhou, Chang Li,
-Liyuan Wang
-.
-IEEE/CVF Conference on Computer Vision and Pattern Recognition (
-CVPR
-), 2026.
+Yuwen Tao, Kanglei Zhou, Chang Li, Liyuan Wang .
+IEEE/CVF Conference on Computer Vision and Pattern Recognition ( CVPR ), 2026.
 PACE: Pretrained Audio Continual Learning.
-Chang Li, Kanglei Zhou,
-Liyuan Wang
-$^{\dagger}$.
-International Conference on Learning Representations (
-ICLR
-), 2026.
+Chang Li, Kanglei Zhou, Liyuan Wang $^{\dagger}$.
+International Conference on Learning Representations ( ICLR ), 2026.
 FlyPrompt: Brain-Inspired Random-Expanded Routing with Temporal-Ensemble Experts for General Continual Learning.
-Hongwei Yan, Guanglong Sun, Kanglei Zhou, Qian Li,
-Liyuan Wang
-$^{\dagger}$, Yi Zhong$^{\dagger}$.
-International Conference on Learning Representations (
-ICLR
-), 2026.
+Hongwei Yan, Guanglong Sun, Kanglei Zhou, Qian Li, Liyuan Wang $^{\dagger}$, Yi Zhong$^{\dagger}$.
+International Conference on Learning Representations ( ICLR ), 2026.
 Versatile Cardiovascular Signal Generation with a Unified Diffusion Transformer.
-Zehua Chen$^{\ast}$, Yuyang Miao$^{\ast}$,
-Liyuan Wang
-$^{\ast\dagger}$, Luyun Fan, Danilo P. Mandic, Jun Zhu$^{\dagger}$.
-Nature Machine Intelligence
-, 2025.
+Zehua Chen$^{\ast}$, Yuyang Miao$^{\ast}$, Liyuan Wang $^{\ast\dagger}$, Luyun Fan, Danilo P. Mandic, Jun Zhu$^{\dagger}$.
+Nature Machine Intelligence , 2025.
 HiDe-PET: Continual Learning via Hierarchical Decomposition of Parameter-Efficient Tuning.
-Liyuan Wang
-, Jingyi Xie, Xingxing Zhang, Hang Su, Jun Zhu.
-IEEE Transactions on Pattern Analysis and Machine Intelligence (
-TPAMI
-), 2025.
+Liyuan Wang , Jingyi Xie, Xingxing Zhang, Hang Su, Jun Zhu.
+IEEE Transactions on Pattern Analysis and Machine Intelligence ( TPAMI ), 2025.
 LUNCH: Adaptive Task Balancing for Online Continual Learning via Hyperparameter Uncertainty.
-Qingyi Pan,
-Liyuan Wang
-$^\dagger$, Jingyi Zhang, Jun Zhu$^\dagger$.
-Science China Information Sciences (
-SCIS
-), 2025.
+Qingyi Pan, Liyuan Wang $^\dagger$, Jingyi Zhang, Jun Zhu$^\dagger$.
+Science China Information Sciences ( SCIS ), 2025.
 Trend Virtual Adversarial Training for Semi-Supervised Time Series Classification.
-Qingyi Pan,
-Liyuan Wang
-$^\dagger$, Jingyi Zhang, Jun Zhu, Ning Chen$^\dagger$.
-Science China Information Sciences (
-SCIS
-), 2025.
+Qingyi Pan, Liyuan Wang $^\dagger$, Jingyi Zhang, Jun Zhu, Ning Chen$^\dagger$.
+Science China Information Sciences ( SCIS ), 2025.
 DualTeacher: Bridging Coexistence of Unlabelled Classes for Semi-supervised Incremental Object Detection.
-Ziqi Yuan$^{\ast}$,
-Liyuan Wang
-$^{\ast}$, Wenbo Ding, Xingxing Zhang, Jiachen Zhong, Jianyong Ai, Jianmin Li, Jun Zhu.
-Science China Information Sciences (
-SCIS
-), 2025.
+Ziqi Yuan$^{\ast}$, Liyuan Wang $^{\ast}$, Wenbo Ding, Xingxing Zhang, Jiachen Zhong, Jianyong Ai, Jianmin Li, Jun Zhu.
+Science China Information Sciences ( SCIS ), 2025.
 Convergent Multi-Modular Architecture for Adaptive Learning in Drosophila and Artificial Intelligence.
-Liyuan Wang
-$^\dagger$, Qian Li$^\dagger$.
-iScience
-, 2025.
+Liyuan Wang $^\dagger$, Qian Li$^\dagger$.
+iScience , 2025.
 Right Time to Learn: Promoting Generalization via Bio-inspired Spacing Effect in Knowledge Distillation.
-Guanglong Sun, Hongwei Yan,
-Liyuan Wang
-$^{\dagger}$, Qian Li, Bo Lei, Yi Zhong.
-International Conference on Machine Learning (
-ICML
-), 2025.
+Guanglong Sun, Hongwei Yan, Liyuan Wang $^{\dagger}$, Qian Li, Bo Lei, Yi Zhong.
+International Conference on Machine Learning ( ICML ), 2025.
 Advancing Prompt-based Methods for Replay-Independent General Continual Learning.
-Zhiqi Kang,
-Liyuan Wang
-$^{\dagger}$, Xingxing Zhang, Karteek Alahari$^{\dagger}$.
-International Conference on Learning Representations (
-ICLR
-), 2025.
+Zhiqi Kang, Liyuan Wang $^{\dagger}$, Xingxing Zhang, Karteek Alahari$^{\dagger}$.
+International Conference on Learning Representations ( ICLR ), 2025.
 A Comprehensive Survey of Continual Learning: Theory, Method and Application.
-Liyuan Wang
-, Xingxing Zhang, Hang Su, Jun Zhu.
-IEEE Transactions on Pattern Analysis and Machine Intelligence (
-TPAMI
-),
-Popular Documents (Top 0.1%)
-, 2024.
+Liyuan Wang , Xingxing Zhang, Hang Su, Jun Zhu.
+IEEE Transactions on Pattern Analysis and Machine Intelligence ( TPAMI ), Popular Documents (Top 0.1%) , 2024.
 MAGR: Manifold-Aligned Graph Regularization for Continual Action Quality Assessment.
-Kanglei Zhou,
-Liyuan Wang
-, Xingxing Zhang, Hubert Shum, Frederick Li, Jianguo Li, Xiaohui Liang.
-European Conference on Computer Vision (
-ECCV
-),
-Oral
-, 2024.
+Kanglei Zhou, Liyuan Wang , Xingxing Zhang, Hubert Shum, Frederick Li, Jianguo Li, Xiaohui Liang.
+European Conference on Computer Vision ( ECCV ), Oral , 2024.
 Orchestrate Latent Expertise: Advancing Online Continual Learning with Multi-Level Supervision and Reverse Self-Distillation.
-Hongwei Yan,
-Liyuan Wang
-$^{\dagger}$, Kaisheng Ma$^{\dagger}$, Yi Zhong$^{\dagger}$.
-IEEE/CVF Conference on Computer Vision and Pattern Recognition (
-CVPR
-), 2024.
+Hongwei Yan, Liyuan Wang $^{\dagger}$, Kaisheng Ma$^{\dagger}$, Yi Zhong$^{\dagger}$.
+IEEE/CVF Conference on Computer Vision and Pattern Recognition ( CVPR ), 2024.
 Incorporating Neuro-Inspired Adaptability for Continual Learning in Artificial Intelligence.
-Liyuan Wang
-$^{\ast}$, Xingxing Zhang$^{\ast}$, Qian Li, Mingtian Zhang, Hang Su, Jun Zhu, Yi Zhong.
-Nature Machine Intelligence
-,
-Cover Paper
-, 2023.
+Liyuan Wang $^{\ast}$, Xingxing Zhang$^{\ast}$, Qian Li, Mingtian Zhang, Hang Su, Jun Zhu, Yi Zhong.
+Nature Machine Intelligence , Cover Paper , 2023.
 Hierarchical Decomposition of Prompt-Based Continual Learning: Rethinking Obscured Sub-optimality.
-Liyuan Wang
-, Jingyi Xie, Xingxing Zhang, Mingyi Huang, Hang Su, Jun Zhu.
-Neural Information Processing Systems (
-NeurIPS
-),
-Spotlight
-, 2023.
+Liyuan Wang , Jingyi Xie, Xingxing Zhang, Mingyi Huang, Hang Su, Jun Zhu.
+Neural Information Processing Systems ( NeurIPS ), Spotlight , 2023.
 Overcoming Recency Bias of Normalization Statistics in Continual Learning: Balance and Adaptation.
-Yilin Lyu$^{\ast}$,
-Liyuan Wang
-$^{\ast}$, Xingxing Zhang, Zicheng Sun, Hang Su, Jun Zhu, Liping Jing.
-Neural Information Processing Systems (
-NeurIPS
-), 2023.
+Yilin Lyu$^{\ast}$, Liyuan Wang $^{\ast}$, Xingxing Zhang, Zicheng Sun, Hang Su, Jun Zhu, Liping Jing.
+Neural Information Processing Systems ( NeurIPS ), 2023.
 SLCA: Slow Learner with Classifier Alignment for Continual Learning on a Pre-trained Model.
-Gengwei Zhang$^{\ast}$,
-Liyuan Wang
-$^{\ast}$, Guoliang Kang, Ling Chen, Yunchao Wei.
-International Conference on Computer Vision (
-ICCV
-), 2023.
+Gengwei Zhang$^{\ast}$, Liyuan Wang $^{\ast}$, Guoliang Kang, Ling Chen, Yunchao Wei.
+International Conference on Computer Vision ( ICCV ), 2023.
 Genetic Dissection of Mutual Interference between Two Consecutive Learning Tasks in Drosophila.
-Jianjian Zhao, Xuchen Zhang, Bohan Zhao, Wantong Hu, Tongxin Diao,
-Liyuan Wang
-, Yi Zhong, Qian Li.
-eLife
-, 2023.
+Jianjian Zhao, Xuchen Zhang, Bohan Zhao, Wantong Hu, Tongxin Diao, Liyuan Wang , Yi Zhong, Qian Li.
+eLife , 2023.
 CoSCL: Cooperation of Small Continual Learners is Stronger than a Big One.
-Liyuan Wang
-$^{\ast}$, Xingxing Zhang$^{\ast}$, Qian Li, Jun Zhu, Yi Zhong.
-European Conference on Computer Vision (
-ECCV
-), 2022.
+Liyuan Wang $^{\ast}$, Xingxing Zhang$^{\ast}$, Qian Li, Jun Zhu, Yi Zhong.
+European Conference on Computer Vision ( ECCV ), 2022.
 Memory Replay with Data Compression for Continual Learning.
-Liyuan Wang
-$^{\ast}$, Xingxing Zhang$^{\ast}$, Kuo Yang, Longhui Yu, Chongxuan Li, Lanqing Hong, Shifeng Zhang, Zhenguo Li, Yi Zhong, Jun Zhu.
-International Conference on Learning Representations (
-ICLR
-), 2022.
+Liyuan Wang $^{\ast}$, Xingxing Zhang$^{\ast}$, Kuo Yang, Longhui Yu, Chongxuan Li, Lanqing Hong, Shifeng Zhang, Zhenguo Li, Yi Zhong, Jun Zhu.
+International Conference on Learning Representations ( ICLR ), 2022.
 AFEC: Active Forgetting of Negative Transfer in Continual Learning.
-Liyuan Wang
-, Mingtian Zhang, Zhongfan Jia, Qian Li, Chenglong Bao, Kaisheng Ma, Jun Zhu, Yi Zhong.
-Neural Information Processing Systems (
-NeurIPS
-), 2021.
+Liyuan Wang , Mingtian Zhang, Zhongfan Jia, Qian Li, Chenglong Bao, Kaisheng Ma, Jun Zhu, Yi Zhong.
+Neural Information Processing Systems ( NeurIPS ), 2021.
 ORDisCo: Effective and Efficient Usage of Incremental Unlabeled Data for Semi-supervised Continual Learning.
-Liyuan Wang
-, Kuo Yang, Chongxuan Li, Lanqing Hong, Zhenguo Li, Jun Zhu.
-IEEE/CVF Conference on Computer Vision and Pattern Recognition (
-CVPR
-), 2021.
+Liyuan Wang , Kuo Yang, Chongxuan Li, Lanqing Hong, Zhenguo Li, Jun Zhu.
+IEEE/CVF Conference on Computer Vision and Pattern Recognition ( CVPR ), 2021.
 Triple-Memory Networks: A Brain-Inspired Method for Continual Learning.
-Liyuan Wang
-, Bo Lei, Qian Li, Hang Su, Jun Zhu, Yi Zhong.
-IEEE Transactions on Neural Networks and Learning Systems (
-TNNLS
-), 2021.
+Liyuan Wang , Bo Lei, Qian Li, Hang Su, Jun Zhu, Yi Zhong.
+IEEE Transactions on Neural Networks and Learning Systems ( TNNLS ), 2021.
 Few-shot Continual Learning: a Brain-inspired Approach.
-Liyuan Wang
-, Qian Li, Yi Zhong, Jun Zhu.
+Liyuan Wang , Qian Li, Yi Zhong, Jun Zhu.
 arXiv:2104.09034, 2021.
 Academic Services
 Journal Editor: TMLR (2026)

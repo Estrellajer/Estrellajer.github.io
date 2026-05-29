@@ -1,36 +1,430 @@
-å
-³äºæ
-ä¸ä¸ªæ°¸è¿å¨å­¦ä¹ çå­¦çï¼ä¸»è¦ä½¿ç¨ Java å Goï¼å¶å°ä¼å ä¸ºçæ´»æè¿«åç¹ Python å Reactã
-GitHub
-https://github.com/Guo-Chenxu
-mail
-guochenxu11@outlook.com
-å
-³äºåå®¢
-ä½¿ç¨
-hugo
-æ¡æ¶, ä¸»é¢æ¯
-papermod
-æ¬åå®¢å°åå¨
-è¿é
-, å¼ç®±å³ç¨, æ¬¢è¿ star(éè¦å
-å®è£
-å¥½ç¯å¢, å¯ä»¥ççä¸é¢è¿ç¯æç« )
-æ¬å°æ­å»ºåå®¢
-æ¥æ: 2023-06-21
-æ ç­¾:
-#åå®¢
-å®è£
-hugo windows ç¨æ·ç´æ¥å»hugo å®ç½ ä¸è½½æ¡æ¶ ä¸è½½å®ä¹åå¨å½ä»¤è¡ä¸­è¾å
-¥ hugo version åºç°ä»¥ä¸å
-å®¹è¯´æå®è£
-æå åå»ºåå®¢ æ¬æç¨ä»
-è®²è§£æçå·²å®æçé¡¹ç®çä½¿ç¨, å
-·ä½ä» 0 å¼å§çæ­å»ºåå®¢è¯·åèè¿äºæç«  é¡¹ç®å°å , å¼ç®±å³ç¨, æ¬¢è¿ star é¦å
- ......
-éç¨ç¢
-2023/07/27 ç½ç«å¤æ¡éè¿ï¼åå®¢æ­£å¼å¼é
-2023/06/25 åå®¢é¨ç½²è³
-è
-¾è®¯äºè½»éçº§æå¡å¨
-2023/06/21 åå®¢å¨æ¬å°æ­å»ºå®æï¼hello hugo
+关于我
+一个永远在学习的学生，主要使用 Java 和 Go，偶尔会因为生活所迫写点 Python 和 React。
+[这里](https://github.com/stars/Guo-Chenxu/lists/%E6%95%9D%E5%B8%9A%E8%87%AA%E7%8F%8D)有一些平时写的乱七八糟的小东西。
+GitHub https://github.com/Guo-Chenxu
+mail guochenxu11@outlook.com
+<img src="../img/weixin.png" alt="微信公众号二维码" style="width: 400px; height: auto; max-width: 100%;">
+关于博客
+使用 hugo 框架, 主题是 papermod 本博客地址在 这里 , 开箱即用, 欢迎 star(需要先安装好环境, 可以看看下面这篇文章)
+本地搭建博客
+日期: 2023-06-21
+标签:
+#博客
+安装 hugo windows 用户直接去hugo 官网 下载框架 下载完之后在命令行中输入 hugo version 出现以下内容说明安装成功 创建博客 本教程仅讲解我的已完成的项目的使用, 具体从 0 开始的搭建博客请参考这些文章 项目地址 , 开箱即用, 欢迎 star 首先 ......
+**<p style="font-size: 35px;">一些小东西</p>**
+| 项目名                                                                    | GitHub 地址                                                                                            |
+| ------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------ |
+| [gWheel 自己实现 go 语言的各种轮子](https://github.com/Guo-Chenxu/gWheel) | https://github.com/Guo-Chenxu/gWheel                                                                   |
+| [ID 生成器](https://github.com/Guo-Chenxu/gid)                            | https://github.com/Guo-Chenxu/gid                                                                      |
+| [备忘录](https://todolist.chenxutalk.top)                                 | 前端: https://github.com/Guo-Chenxu/gtodolist-front <br> 后端: https://github.com/Guo-Chenxu/gtodolist |
+其他更多欢迎访问[敝帚自珍](https://github.com/stars/Guo-Chenxu/lists/%E6%95%9D%E5%B8%9A%E8%87%AA%E7%8F%8D)
+</br>
+里程碑
+2023/07/27 网站备案通过，博客正式开通
+2023/06/25 博客部署至 腾讯云轻量级服务器
+2023/06/21 博客在本地搭建完成，hello hugo
+<div class="timeline__row">
+<div class="timeline__time">
+<div class="timeline__time">2023-07-27</div>
+<div class="timeline__split-line"></div>
+</div>
+<div class="timeline__content">
+<div class="timeline__tags">
+<span class="timeline__tag">博客</span>
+</div>
+<div class="timeline__title">ICP</div>
+<div class="timeline__description">
+网站备案通过，博客正式开通
+</div>
+</div>
+</div>
+<style>
+.timeline {
+display: flex;
+flex-direction: column;
+}
+.timeline__row {
+display: flex;
+padding-left: 4%;
+height: 90px;
+}
+.timeline__time {
+flex: 0 0 110px;
+color: #5d5d5d;
+font-size: 17px;
+text-transform: uppercase;
+position: relative;
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 0.5rem 0;
+}
+.timeline__time-text {
+margin: 0;
+}
+.timeline__split-line {
+position: absolute;
+top: 0.5rem;
+right: -20px;
+height: 100%;
+width: 2px;
+background-color: #84c4e240;
+z-index: 0;
+}
+.timeline__split-line:before {
+content: "";
+position: absolute;
+top: 24%;
+right: -4px;
+transform: translateY(-50%);
+width: 10px;
+height: 10px;
+background-color: #c9e5f2;
+box-shadow: 0 0 0 4px var(--theme);
+border-radius: 50%;
+border: 0px solid #84c4e2;
+z-index: -1;
+}
+.timeline__content {
+flex: 1;
+margin-left: 2.5rem;
+padding: 0.5rem 0 1.2rem 0;
+}
+.timeline__title {
+margin: 0;
+margin-bottom: 2px;
+padding-top: 3px;
+margin-left: 0.5rem;
+color: var(--content);
+font-family: var(--font-family-teshu);
+font-size: 19px;
+font-weight: 600;
+width: fit-content;
+display: inline-block;
+vertical-align: middle;
+}
+.timeline__tags {
+display: inline-block;
+padding: 0;
+margin-left: 0.3rem;
+align-items: center;
+gap: 0.3rem;
+}
+.timeline__tag {
+display: inline-block;
+color: var(--secondary);
+background-color: #84c4e230;
+border: 1.5px solid #84c4e230;
+border-radius: 999px;
+padding: 0rem 0.5rem;
+font-size: 12px;
+white-space: nowrap;
+line-height: 1.4rem;
+opacity: 0.8;
+vertical-align: middle;
+}
+.timeline__description {
+font-size: 15px;
+line-height: 1.6;
+color: #5d5d5d;
+overflow: hidden;
+text-overflow: ellipsis;
+margin: 0.5rem 0 0.4rem 1.5rem;
+}
+.timeline__tag-style {
+background-color: #c581da;
+border-color: #c581da;
+color: #FFFFFF;
+}
+.timeline__tag-article {
+background-color: #92d392;
+border-color: #92d392;
+color: #000000;
+}
+.timeline__tag-page {
+background-color: #707070;
+border-color: #707070;
+color: #FFFFFF;
+}
+@media screen and (max-width: 768px) {
+.timeline__time {
+font-size: 14px;
+}
+.timeline__title {
+font-size: 16px;
+}
+.timeline__description {
+font-size: 14px;
+}
+}
+</style>
+<div class="timeline__row">
+<div class="timeline__time">
+<div class="timeline__time">2023-06-25</div>
+<div class="timeline__split-line"></div>
+</div>
+<div class="timeline__content">
+<div class="timeline__tags">
+<span class="timeline__tag">博客</span>
+</div>
+<div class="timeline__title">Hello Again</div>
+<div class="timeline__description">
+博客部署至<a href="https://curl.qcloud.com/wNpIBPJp" target="_blank" rel="noopener">腾讯云轻量级服务器</a>
+</div>
+</div>
+</div>
+<style>
+.timeline {
+display: flex;
+flex-direction: column;
+}
+.timeline__row {
+display: flex;
+padding-left: 4%;
+height: 90px;
+}
+.timeline__time {
+flex: 0 0 110px;
+color: #5d5d5d;
+font-size: 17px;
+text-transform: uppercase;
+position: relative;
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 0.5rem 0;
+}
+.timeline__time-text {
+margin: 0;
+}
+.timeline__split-line {
+position: absolute;
+top: 0.5rem;
+right: -20px;
+height: 100%;
+width: 2px;
+background-color: #84c4e240;
+z-index: 0;
+}
+.timeline__split-line:before {
+content: "";
+position: absolute;
+top: 24%;
+right: -4px;
+transform: translateY(-50%);
+width: 10px;
+height: 10px;
+background-color: #c9e5f2;
+box-shadow: 0 0 0 4px var(--theme);
+border-radius: 50%;
+border: 0px solid #84c4e2;
+z-index: -1;
+}
+.timeline__content {
+flex: 1;
+margin-left: 2.5rem;
+padding: 0.5rem 0 1.2rem 0;
+}
+.timeline__title {
+margin: 0;
+margin-bottom: 2px;
+padding-top: 3px;
+margin-left: 0.5rem;
+color: var(--content);
+font-family: var(--font-family-teshu);
+font-size: 19px;
+font-weight: 600;
+width: fit-content;
+display: inline-block;
+vertical-align: middle;
+}
+.timeline__tags {
+display: inline-block;
+padding: 0;
+margin-left: 0.3rem;
+align-items: center;
+gap: 0.3rem;
+}
+.timeline__tag {
+display: inline-block;
+color: var(--secondary);
+background-color: #84c4e230;
+border: 1.5px solid #84c4e230;
+border-radius: 999px;
+padding: 0rem 0.5rem;
+font-size: 12px;
+white-space: nowrap;
+line-height: 1.4rem;
+opacity: 0.8;
+vertical-align: middle;
+}
+.timeline__description {
+font-size: 15px;
+line-height: 1.6;
+color: #5d5d5d;
+overflow: hidden;
+text-overflow: ellipsis;
+margin: 0.5rem 0 0.4rem 1.5rem;
+}
+.timeline__tag-style {
+background-color: #c581da;
+border-color: #c581da;
+color: #FFFFFF;
+}
+.timeline__tag-article {
+background-color: #92d392;
+border-color: #92d392;
+color: #000000;
+}
+.timeline__tag-page {
+background-color: #707070;
+border-color: #707070;
+color: #FFFFFF;
+}
+@media screen and (max-width: 768px) {
+.timeline__time {
+font-size: 14px;
+}
+.timeline__title {
+font-size: 16px;
+}
+.timeline__description {
+font-size: 14px;
+}
+}
+</style>
+<div class="timeline__row">
+<div class="timeline__time">
+<div class="timeline__time">2023-06-21</div>
+<div class="timeline__split-line"></div>
+</div>
+<div class="timeline__content">
+<div class="timeline__tags">
+<span class="timeline__tag">博客</span>
+</div>
+<div class="timeline__title">Hello Hugo</div>
+<div class="timeline__description">
+博客在本地搭建完成
+</div>
+</div>
+</div>
+<style>
+.timeline {
+display: flex;
+flex-direction: column;
+}
+.timeline__row {
+display: flex;
+padding-left: 4%;
+height: 90px;
+}
+.timeline__time {
+flex: 0 0 110px;
+color: #5d5d5d;
+font-size: 17px;
+text-transform: uppercase;
+position: relative;
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 0.5rem 0;
+}
+.timeline__time-text {
+margin: 0;
+}
+.timeline__split-line {
+position: absolute;
+top: 0.5rem;
+right: -20px;
+height: 100%;
+width: 2px;
+background-color: #84c4e240;
+z-index: 0;
+}
+.timeline__split-line:before {
+content: "";
+position: absolute;
+top: 24%;
+right: -4px;
+transform: translateY(-50%);
+width: 10px;
+height: 10px;
+background-color: #c9e5f2;
+box-shadow: 0 0 0 4px var(--theme);
+border-radius: 50%;
+border: 0px solid #84c4e2;
+z-index: -1;
+}
+.timeline__content {
+flex: 1;
+margin-left: 2.5rem;
+padding: 0.5rem 0 1.2rem 0;
+}
+.timeline__title {
+margin: 0;
+margin-bottom: 2px;
+padding-top: 3px;
+margin-left: 0.5rem;
+color: var(--content);
+font-family: var(--font-family-teshu);
+font-size: 19px;
+font-weight: 600;
+width: fit-content;
+display: inline-block;
+vertical-align: middle;
+}
+.timeline__tags {
+display: inline-block;
+padding: 0;
+margin-left: 0.3rem;
+align-items: center;
+gap: 0.3rem;
+}
+.timeline__tag {
+display: inline-block;
+color: var(--secondary);
+background-color: #84c4e230;
+border: 1.5px solid #84c4e230;
+border-radius: 999px;
+padding: 0rem 0.5rem;
+font-size: 12px;
+white-space: nowrap;
+line-height: 1.4rem;
+opacity: 0.8;
+vertical-align: middle;
+}
+.timeline__description {
+font-size: 15px;
+line-height: 1.6;
+color: #5d5d5d;
+overflow: hidden;
+text-overflow: ellipsis;
+margin: 0.5rem 0 0.4rem 1.5rem;
+}
+.timeline__tag-style {
+background-color: #c581da;
+border-color: #c581da;
+color: #FFFFFF;
+}
+.timeline__tag-article {
+background-color: #92d392;
+border-color: #92d392;
+color: #000000;
+}
+.timeline__tag-page {
+background-color: #707070;
+border-color: #707070;
+color: #FFFFFF;
+}
+@media screen and (max-width: 768px) {
+.timeline__time {
+font-size: 14px;
+}
+.timeline__title {
+font-size: 16px;
+}
+.timeline__description {
+font-size: 14px;
+}
+}
+</style> html <script src="https://api.vvhan.com/api/script/yinghua"></script>
