@@ -31,14 +31,10 @@ in 2020 advised by
 Prof. Zhouchen Lin
 and
 Prof. Zhanxing Zhu
-. I earned my Bachelor's degree in finantial statistics and risk management from SouthWestern University of Finance and Economics in 2017.
+. I earned my Bachelor's degree in financial statistics and risk management from SouthWestern University of Finance and Economics in 2017.
 Contact
 :
-kesun6[AT] upenn
-.edu
-/
-ke.sun[AT]
-pennmedicine.upenn.edu
+kesun6 [at] upenn [dot] edu, ke.sun [at] pennmedicine [dot] upenn [dot] edu
 Links
 :
 Google Scholar
@@ -58,7 +54,7 @@ grounded in
 mathematical and statistical principles.
 My key research goal is to build agents with effective perception, memory,
 reasoning,
-planning, exploration, and adaptation in complex and unknown environments to achieve
+planning, exploration, and adaptation in complex environments to achieve
 decision intelligence
 , with broad applications in games, robotics, control systems, healthcare, economics, and language.
 [1] Algorithmic and Theoretical Foundations in Pure RL (RL as Problem Formulation):
@@ -97,7 +93,7 @@ CurveRL: Principled Distribution-Aware Context Reweighting for LLM Reasoning
 submitted
 ), 2026. [
 Code
-]
+] 🔥
 [6] Ke Sun,
 Linglong Kong, Hongtu Zhu, Chengchun Shi.
 ARMA-Design: Optimal Treatment Allocation Strategies for A/B Testing in Partially Observable Experiments
