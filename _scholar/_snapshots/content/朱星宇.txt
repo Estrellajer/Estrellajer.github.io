@@ -1,80 +1,12 @@
-Mitigating Hallucinations in Large Vision-Language Models without Performance Degradation
-X Zhu, J Fang, S Wang, B Zhu, Z Wang, Y Yang, X He
-ACL 2026 Oral , 2026
-2026
-LPEdit: Locality-Preserving Knowledge Editing for MultiModal Large Language Models
-T Zhang, J Fang, H Jiang, X Zhu, X Wang, X He
-Proceedings of the ACM Web Conference 2026, 8425-8428 , 2026
-2026
-Principled Steering via Null-space Projection for Jailbreak Defense in Vision-Language Models
-X Zhu, B Zhu, S Wang, J Fang, K Zhao, H Zhang, X He
-CVPR 2026 , 2026
-3 2026
-Adapting Point Cloud Analysis via Multimodal Bayesian Distribution Learning
-X Zhu, L Yi, S Wang, W Zhu, Y Wu, B Zhu, H Zhang
-CVPR 2026 , 2026
-2026
-Thinking with Images as Continuous Actions: Numerical Visual Chain-of-Thought
-K Zhao, B Zhu, J Zhou, X Zhu, Z Yue, H Zhang
-arXiv preprint arXiv:2602.23959 , 2026
-2026
-Hybrid Granularity Distribution Estimation for Few-Shot Learning: Statistics Transfer From Categories and Instances
-S Wang, T Qi, X Zhu, Y Hao, B Zhu, H Zhang, M Wang
-IEEE Transactions on Image Processing , 2026
-2026
-Revisiting Robustness for LLM Safety Alignment via Selective Geometry Control
-Y Yang, W Tao, J Liu, X Zhu, J Fang, W Huang, L Wu, R Hong, TS Chua
-arXiv preprint arXiv:2602.07340 , 2026
-1 2026
-Look Carefully: Adaptive Visual Reinforcements in Multimodal Large Language Models for Hallucination Mitigation
-X Zhu, K Zhao, L Yi, S Wang, Z Wang, B Zhu, H Zhang, X He
-ICLR 2026 , 2026
-3 2026
-GuardAlign: Test-time Safety Alignment in Multimodal Large Language Models
-X Zhu, B Zhu, J Fang, S Wang, Y Zhang, X Wang, X He
-ICLR 2026 , 2026
-1 2026
-Hierarchical Semantic Alignment for Image Clustering
-X Zhu, B Zhu, Y Li, J Fang, S Wang, K Zhao, H Zhang
-AAAI 2026 , 2025
-3 2025
-Enhancing CLIP Robustness via Cross-Modality Alignment
-X Zhu, B Zhu, S Wang, K Zhao, H Zhang
-NeurIPS 2025 Spotlight , 2025
-14 2025
-Res-Bench: Benchmarking the Robustness of Multimodal Large Language Models to Dynamic Resolution Input
-C Li, Z Wang, Y Sheng, X Zhu, Y Hao, X Wang
-AAAI 2026 , 2025
-1 2025
-Dynamic Multimodal Prototype Learning in Vision-Language Models
-X Zhu, S Wang, B Zhu, M Li, Y Li, J Fang, Z Wang, D Wang, H Zhang
-ICCV 2025 , 2025
-17 2025
-Accelerating Diffusion Transformer via Error-Optimized Cache
-J Qiu, S Wang, J Lu, L Liu, H Jiang, X Zhu, Y Hao
-ACM MM 2025 , 2025
-10 2025
-Enhancing Zero-Shot Vision Models by Label-Free Prompt Distribution Learning and Bias Correcting
-X Zhu, B Zhu, Y Tan, S Wang, Y Hao, H Zhang
-NeurIPS 2024 (Spotlight) , 2024
-37 2024
-Selective Vision-Language Subspace Projection for Few-shot CLIP
-X Zhu, B Zhu, Y Tan, S Wang, Y Hao, H Zhang
-ACM MM 24 Oral , 2024
-31 2024
-Boosting Few-Shot Learning via Attentive Feature Regularization
-X Zhu, S Wang, J Lu, Y Hao, H Liu, X He
-AAAI 2024 , 2024
-37 2024
-Robust adaptive beamforming for coprime array based on interference power estimation via subspace
-S Sun, Z Ye, X Zhu
-2020 IEEE 11th Sensor Array and Multichannel Signal Processing Workshop (SAM … , 2020
-4 2020
-Robust adaptive beamforming via subspace for interference covariance matrix reconstruction
-X Zhu, X Xu, Z Ye
-Signal Processing 167, 107289 , 2020
-106 2020
-基于协方差矩阵重构的稳健自适应波束形成算法综述.
-叶中付， 朱星宇
-Journal of Data Acquisition & Processing/Shu Ju Cai Ji Yu Chu Li 34 (6) , 2019
-3 2019
+è¥è¦ç»§ç»­ï¼è¯·å¨ç½ç»æµè§å¨ä¸­å¯ç¨ JavaScriptã
+å
+³äºæ­¤ç½é¡µ
+æä»¬çç³»ç»æ£æµå°æ¨çè®¡ç®æºç½ç»ä¸­å­å¨å¼å¸¸æµéãæ­¤ç½é¡µç¨äºç¡®è®¤è¿äºè¯·æ±æ¯ç±æ¨èä¸æ¯èªå¨ç¨åºååºçã ä¸ºä»ä¹ä¼è¿æ ·ï¼
+å¦æ Google èªå¨æ£æµå°ä»æ¨çè®¡ç®æºç½ç»ååºçè¯·æ±å¯è½è¿å æå¡æ¡æ¬¾ ï¼å°±ä¼æ¾ç¤ºæ­¤ç½é¡µãè¿äºè¯·æ±ä¸æ¦åæ­¢ï¼æ­¤é»æ­å³ä¼å¤±æãå¨æ­¤æé´ï¼å¦ææ¨è½ç ´è§£ä¸è¿°äººæºè¯å«ç³»ç»ï¼å°±å¯ä»¥ç»§ç»­ä½¿ç¨æä»¬çæå¡ã
+è¯¥æµéå¯è½æ¯ç±æ¶æè½¯ä»¶ãæµè§å¨æä»¶æåéèªå¨è¯·æ±çèæ¬ååºçãå¦ææ¨ä¸ä»äººå
+±äº«ç½ç»è¿æ¥ï¼è¯·åç®¡çåå¯»æ±å¸®å© — è¿å¯è½æ¯ç±å¤å°è®¡ç®æºä½¿ç¨åä¸ IP å°åå¯¼è´çã äºè§£è¯¦æ
+ææ¶ï¼å¦ææ¨ä½¿ç¨çæ¯èªå¨ç¨åºæ®éä½¿ç¨çé«çº§æ¡æ¬¾æè
+æ­£å¨å¿«éè¿ç»­å°åéè¯·æ±ï¼åå¯è½éè¦ç ´è§£äººæºè¯å«ç³»ç»ã
+IP å°åï¼40.84.216.91
+æ¶é´ï¼2026-05-29T08:06:30Z
+ç½åï¼https://scholar.google.com/citations?hl=zh-CN&user=PpqUnAwAAAAJ&view_op=list_works&sortby=pubdate
