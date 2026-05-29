@@ -478,6 +478,10 @@ def _extract_new_additions(diff_text: str) -> list:
     if not diff_text:
         return []
     lines = diff_text.split("\n")
+    
+    # Collect all deleted lines to compare against for typo/edit filtering
+    deleted_lines = [l[1:].strip() for l in lines if l.startswith("-") and not l.startswith("---") and len(l[1:].strip()) > 5]
+    
     added_raw = [l[1:].strip() for l in lines if l.startswith("+") and not l.startswith("+++")]
     
     filtered = []
@@ -499,6 +503,23 @@ def _extract_new_additions(diff_text: str) -> list:
             continue
         if len(l) < 4:
             continue
+            
+        # Check similarity against deleted lines in the diff block to filter out minor edits
+        is_edit = False
+        w_added = set(lower_l.split())
+        for dl in deleted_lines:
+            w_deleted = set(dl.lower().split())
+            if not w_added or not w_deleted:
+                continue
+            # Jaccard word similarity
+            similarity = len(w_added.intersection(w_deleted)) / len(w_added.union(w_deleted))
+            # Substring containment
+            if similarity > 0.35 or dl.lower() in lower_l or lower_l in dl.lower():
+                is_edit = True
+                break
+        if is_edit:
+            continue
+            
         if l not in filtered:
             filtered.append(l)
     return filtered

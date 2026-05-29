@@ -371,9 +371,9 @@ scholars:
     affiliation: "港中文"
     watch: news
   - name: 孙海龙
-    url: https://www.lamda.nju.edu.cn/sunhl/
+    url: https://sun-hailong.github.io/
     category: HomePage
-    site_type: personal_website
+    site_type: github_pages
     selectors: [main, .content, "#content", article]
     remove_selectors: [script, style, nav, footer, header, aside, .sidebar, .comments]
     labels: [homepage]

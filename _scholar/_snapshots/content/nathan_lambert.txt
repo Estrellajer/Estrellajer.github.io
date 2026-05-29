@@ -1,24 +1,220 @@
+Subscribe
+Sign in
+Home
+Podcast
+($) Discord
+Read SAIL
+Archive
+About
+Some ideas for what comes next, May 2026
+Gemini Flash 3.5, Mythos, open-closed balance, America's open-source surge, emerging power struggles and more.
+May 26
+•
+Nathan Lambert
+88
+18
+8
+Latest open artifacts (#21): Open model bonanza! Gemma 4, DeepSeek V4, Kimi K2.6, MiMo 2.5, GLM-5.1 & others. On CAISI's V4 assessment.
+An eventful month with one flagship release after another
+May 16
+•
+Florian Brand
+and
+Nathan Lambert
+29
+1
+3
+How open model ecosystems compound
+Further reflections on China's high-participation, open-first AI ecosystem.
+May 12
+•
+Nathan Lambert
+38
+2
+10
+Notes from inside China's AI labs
+Lessons from my trip to talk to most of the leading AI labs in China.
+May 7
+•
+Nathan Lambert
+294
+37
+37
+The distillation panic
+‘Distillation attacks’ is a horrible term for what is happening right now.
+May 4
+•
+Nathan Lambert
+83
+1
+8
 Interconnects AI
 The cutting edge of AI, from inside the frontier AI labs, minus the hype. The border between high-level and technical thinking. Read by leading engineers, researchers, and investors.
-Over 69,000 subscribers
 Subscribe
-By subscribing, you agree Substack's
-Terms of Use
-, and acknowledge its
-Information Collection Notice
-and
-Privacy Policy
-.
-Read before subscribing
-“Nathan understands & explains AI much better than me”...”
-Jasmine Sun,
+Recommendations
+View all 14
+AI as Normal Technology
+Sayash Kapoor
 @jasmine’s substack
-“Insightful and accessible commentary from a guy whose day job is actually training AI models.”...”
-Timothy B. Lee,
-Understanding AI
-“Leading insights on the state of open-source AI.”...”
-Dean W. Ball,
+Jasmine Sun
+Ahead of AI
+Sebastian Raschka, PhD
 Hyperdimensional
+Dean W. Ball
+Latent.Space
+Latent.Space
+Recent posts
+View all
+Reading today's open-closed performance gap
+The complex factors that determine the single evaluation number so many focus on. Plus, how this changes in the future.
+Apr 20
+•
+Nathan Lambert
+43
+3
+5
+My bets on open models, mid-2026
+What I expect to come next and why, focused on the open-closed gap.
+Apr 15
+•
+Nathan Lambert
+117
+30
+10
+What I’ve been building: ATOM Report, post-training course, finishing my book, and ongoing research
+What I've been up to!
+Apr 14
+•
+Nathan Lambert
+53
+5
+4
+The inevitable need for an open model consortium
+And yes, I hate consortia too.
+Apr 11
+•
+Nathan Lambert
+78
+8
+11
+See all
+Topics
+Artifacts
+Roundups of the most cutting edge open models and datasets.
+Interviews
+Hear from leading researchers in AI.
+Reasoning Models
+Discussions of o1, inference time compute, reasoning models, and the likes.
+Housekeeping
+About
+Start here.
+Podcast
+Get the audio version in your podcast player
+Substack AI Library
+Get group subscriptions to the best AI Substacks.
+Order my RLHF Book!
+Social
+YouTube
+X
+LinkedIn
+Author info
+Join for the best insider coverage of AI research.
+Subscribe
+Artifacts Log: Monthly recaps of open models
+View all
+Latest open artifacts (#21): Open model bonanza! Gemma 4, DeepSeek V4, Kimi K2.6, MiMo 2.5, GLM-5.1 & others. On CAISI's V4 assessment.
+An eventful month with one flagship release after another
+May 16
+•
+Florian Brand
+and
+Nathan Lambert
+29
+1
+3
+Latest open artifacts (#20): New orgs! New types of models! With Nemotron Super, Sarvam, Cohere Transcribe, & others
+New orgs! New types of models! With Nemotron Super, Sarvam, Cohere Transcribe, & others
+Mar 30
+•
+Florian Brand
+and
+Nathan Lambert
+36
+3
+Latest open artifacts (#19): Qwen 3.5, GLM 5, MiniMax 2.5 — Chinese labs' latest push of the frontier
+Welcome to the year of the horse!
+Mar 3
+•
+Florian Brand
+and
+Nathan Lambert
+23
+1
+2
+Latest open artifacts (#18): Arcee's 400B MoE, LiquidAI's underrated 1B model, new Kimi, and anticipation of a busy month
+Tons of useful "niche" models and anticipation of big releases coming soon.
+Feb 2
+•
+Florian Brand
+and
+Nathan Lambert
+18
+2
+Interviews: Discussions with leading AI researchers
+View all
+35:35
+Dean Ball on open models and government control
+Subtle precedents on the future of open models set by the unfolding Anthropic v. Department of War case.
+Mar 6
+•
+Nathan Lambert
+and
+Dean W. Ball
+30
+10
+3
+1:07:41
+Why Nvidia builds open models with Bryan Catanzaro
+Interconnects interview #17 on the past, present, and future of the Nemotron project.
+Feb 4
+•
+Nathan Lambert
+19
+3
+1:12:15
+Arcee AI goes all-in on open models built in the U.S.
+Interconnects interview #16 to celebrate the release of Trinity Large.
+Jan 27
+•
+Nathan Lambert
+35
+3
+1:17:48
+Interview: Ant Group's open model ambitions
+Launching a new open model series. Interconnects Interview #15.
+Nov 12, 2025
+•
+Nathan Lambert
+33
+4
+Interconnects AI
+The cutting edge of AI, from inside the frontier AI labs, minus the hype. The border between high-level and technical thinking. Read by leading engineers, researchers, and investors.
+About
+Archive
+Recommendations
+Sitemap
+Subscribe
+© 2026 Interconnects AI, LLC
+·
+Privacy
+∙
+Terms
+∙
+Collection notice
+Start your Substack
+Get the app
+Substack
+is the home for great culture
 This site requires JavaScript to run correctly. Please
 turn on JavaScript
 or unblock scripts

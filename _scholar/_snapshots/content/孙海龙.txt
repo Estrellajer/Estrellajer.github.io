@@ -1,3 +1,285 @@
-å³å°è·³è½¬
-æ­£å¨åå¾
-https://sun-hailong.github.io/
+👀 About Me
+Currently I'm a graduate student of
+School of Artificial
+Intelligence
+in
+Nanjing University
+and
+a member of
+LAMDA Group
+, which is
+led by Prof.
+Zhi-Hua Zhou
+.
+I received my B.Sc. degree from
+College of Computer
+Science & Technology
+,
+Nanjing
+University of Aeronautics and Astronautics
+in June 2023 (GPA ranked 1 / 120). In the same year, I was admitted to
+study for a M.Sc. degree in Nanjing University, under the supervision of Prof.
+Han-Jia Ye
+without entrance examination.
+📣 News
+[2026-04] Recognized as an
+Outstanding Graduate
+of Nanjing University.
+[2025-10] Awarded the
+National Scholarship
+for Graduate Students.
+[2025-09] Two papers are accepted to
+NeurIPS 2025
+.
+[2025-08] We release the multimodal LLM
+Ovis2.5-9B
+.
+[2025-05] Recognized as
+ICLR 2025 Notable Reviewer
+.
+[2025-05] One paper about
+visual forgetting of MLLM
+is accepted to
+ACL 2025
+.
+[2025-05] One paper about
+multilingual MLLM (Parrot)
+is accepted to
+ICML 2025
+.
+[2025-02] One paper about
+MLLM Long-Chain Reasoning
+is accepted to
+CVPR 2025
+.
+[2025-01] Our
+toolbox for class-incremental learning with PTMs (PILOT)
+is accepted to
+SCIS
+.
+[2024-12] One paper about
+class-incremental learning
+is accepted to
+AAAI 2025
+.
+[2024-11] We win the
+Grand Prize
+in the "Challenge Cup" - China Telecom Track.
+[2024-07] We get the
+Champion
+of SCICAP challenge @IJCAI'24.
+[2024-06] One paper about multilingual MLLM is uploaded to
+arXiv
+.
+[2024-04] One survey about
+PTM-based continual learning
+is accepted to
+IJCAI 2024
+.
+[2024-02] One paper about
+class-incremental learning
+is accepted to
+CVPR 2024
+.
+[2023-09] We release a
+toolbox
+about the pre-trained model-based continual learning.
+🌟 Research Interests
+My research interests include Machine Learning and Data Mining. Currently, I focus on
+Multimodal Large Language Models
+and
+Continual Learning
+.
+🚀 Publications
+ACL
+Mitigating Visual Forgetting via Take-along Visual Conditioning for Multi-modal Long CoT Reasoning
+Hai-Long Sun
+, Zhun Sun, Houwen Peng, Han-Jia Ye.
+ACL'25. CCF-A
+[
+Paper
+]
+[
+Project Page
+]
+[
+Huggingface
+]
+ICML
+Parrot: Multilingual Visual Instruction Tuning
+Hai-Long Sun
+, Da-Wei Zhou, Yang Li, Shiyin Lu, Chao Yi, Qing-Guo Chen, Zhao Xu, Weihua Luo, Kaifu Zhang, De-Chuan Zhan, Han-Jia Ye.
+ICML'25. CCF-A
+[
+Paper
+]
+[
+Code
+]
+[
+Project Page
+]
+[
+Huggingface
+]
+SCIS
+PILOT: A Pre-Trained Model-Based Continual Learning Toolbox
+Hai-Long Sun
+, Da-Wei Zhou, De-Chuan Zhan, Han-Jia Ye.
+SCIS 2025. CCF-A
+[
+Paper
+]
+[
+Code
+]
+[
+中文解读
+]
+AAAI
+MOS: Model Surgery for Pre-Trained Model-Based Class-Incremental Learning
+Hai-Long Sun
+, Da-Wei Zhou, Hanbin Zhao, Le Gan, De-Chuan Zhan, Han-Jia Ye.
+AAAI'25. CCF-A
+[
+Paper
+]
+[
+Code
+]
+CVPR
+Expandable Subspace Ensemble for Pre-Trained Model-Based Class-Incremental Learning
+Da-Wei Zhou,
+Hai-Long Sun
+, Han-Jia Ye, De-Chuan Zhan.
+CVPR'24. CCF-A
+[
+Paper
+]
+[
+Code
+]
+IJCAI
+Continual Learning with Pre-Trained Models: A Survey
+Da-Wei Zhou,
+Hai-Long Sun
+, Han-Jia Ye, De-Chuan Zhan.
+IJCAI'24. CCF-A
+Top-4 Most Influential IJCAI Papers
+[
+Paper
+]
+[
+Code
+]
+[
+中文解读
+]
+[
+Media
+]
+CVPR
+Insight-V: Exploring Long-Chain Visual Reasoning with Multimodal Large Language Models
+Yuhao Dong, Zuyan Liu,
+Hai-Long Sun
+, Jingkang Yang, Winston Hu, Yongming Rao, Ziwei Liu.
+CVPR'25 (Highlight). CCF-A
+[
+Paper
+]
+[
+Code
+]
+NeurIPS
+Triplets Better Than Pairs: Towards Stable and Effective Self-Play Fine-Tuning for LLMs
+Yibo Wang,
+Hai-Long Sun
+, Guangda Huzhang, Qing-Guo Chen, Zhao Xu, Weihua Luo, Kaifu Zhang, Lijun Zhang
+NeurIPS'25. CCF-A
+[
+Paper
+]
+NeurIPS
+Multimodal Tabular Reasoning with Privileged Structured Information
+Jun-Peng Jiang, Yu Xia,
+Hai-Long Sun
+, Shiyin Lu, Qing-Guo Chen, Weihua Luo, Kaifu Zhang, De-Chuan Zhan, Han-Jia Ye
+NeurIPS'25. CCF-A
+[
+Paper
+]
+Technical Report
+Ovis2.5: A Technical Report
+Ovis Contributors
+Technical Report
+[
+Paper
+]
+[
+Code
+]
+Technical Report
+VLMEvalKit: A Toolkit for Evaluating Large Vision-Language Models
+VLMEvalKit Contributors
+Technical Report
+[
+Paper
+]
+[
+Code
+]
+🏆 Awards & Honors & Contests
+2025,
+National Scholarship
+for Graduate Students
+2022, CCF Elite Collegiate Student Award
+2020/2022,
+National Scholarship
+for Undergraduates
+2022,
+Grand Prize
+(全国唯一特等奖), China Collegiate Computing Contest - Network Technology Challenge in Track A
+2022,
+Bronze Medal
+, ACM-ICPC Asia East Continent Final Contest
+2020,
+Second Prize
+, The First China AI Guandan Algorithm Competition
+2022,
+Gold Medal
+, Jiangsu Collegiate Programming Contest
+2022,
+Meritorious Winner
+in MCM/ICM
+2023,
+Outstanding Graduate
+of Nanjing University of Aeronautics and Astronautics
+2023, 全国单打亚军、团体季军, 第26届全国大学生网球锦标赛总决赛
+2024, 江苏省单打冠军、团体冠军, 2024年江苏省大学生网球锦标赛
+2024,
+Champion
+, The Second Scientific Figure Captioning Challenge @IJCAI'24
+2024,
+特等奖
+, 挑战杯“揭榜挂帅”专项赛-中国电信赛道
+👨‍💻 Internship Experience
+2024.03~2024.10, Alibaba, AIDC-AI Business, MLLM Research Intern
+2024.10~2025.04, Tecent, TEG Group, Hunyuan Research Intern
+2022.08~2023.03, Bytedance Data
+🎯 Service
+Conference Reviewer: CVPR'24, NeurIPS'24, ICLR'25
+🏆
+, CVPR'25, ICML'25, ICCV'25, NeurIPS'25, ICLR'26, CVPR'26
+Teaching Assistant:
+Introduction to Machine Learning
+. (For undergraduate students; Autumn, 2023)
+📮 Contact
+Email
+: sunhl
+(at)
+lamda.nju.edu.cn
+Address
+: Hai-Long Sun, National Key Laboratory for Novel Software Technology, Nanjing University, Xianlin Campus Mailbox 603, 163 Xianlin Avenue, Qixia District, Nanjing 210023, China.
+(南京市栖霞区仙林大道163号, 南京大学仙林校区603信箱, 软件新技术国家重点实验室, 210023)
+Many thanks to Yaoyao for sharing this
+great theme.
