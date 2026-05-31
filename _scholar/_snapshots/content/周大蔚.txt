@@ -5,7 +5,7 @@ I was fortunate to visit MMLab@NTU (2022-2023), working closely with Prof. Ziwei
 My research interests include machine learning and its applications in computer vision, currently focusing on continual learning, pre-trained model reuse, and multimodal large language models.
 I am seeking highly self-motivated students. If interested, please email me your resume and transcript.
 News
-[2026-05] Invited talk at CCIG 2025 Workshop on Continual Learning.
+[2026-05] Invited talk ( slides ) at CCIG 2026 Workshop on Continual Learning.
 [2026-05] We release a toolbox for multimodal continual instruction tuning ( technical report ).
 [2026-05] Three papers about continual learning are accepted to ICML 2026.
 [2026-05] One paper about continual learning with MLLM is uploaded to arXiv .
