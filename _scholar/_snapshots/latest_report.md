@@ -1,28 +1,9 @@
 # Scholar Monitor Report
 
-**Run:** 2026-06-01 04:59 UTC  |  **Total:** 57  |  RSS 0  |  CHG 1  |  FIRST 0  |  OK 56  |  ERR 0
+**Run:** 2026-06-01 22:58 UTC  |  **Total:** 57  |  RSS 1  |  CHG 0  |  FIRST 0  |  OK 56  |  ERR 0
 
 ---
-## Pages with Changes (1)
+## New Publications & Blog Posts (1)
 
-### Vision language model
-**[朱星宇](https://scholar.google.com/citations?hl=zh-CN&user=PpqUnAwAAAAJ&view_op=list_works&sortby=pubdate)** [NUS]
-```diff
---- 朱星宇 (previous)
-+++ 朱星宇 (current)
-@@ -1,12 +1,2 @@
--正在加载...
--系统目前无法执行此操作，请稍后再试。
--[if lte IE 9]><div class="gs_alrt" style="padding:16px"><div>抱歉，某些功能可能无法在此版本的 Internet Explorer 上使用。</div><div>请使用 <a href="//www.google.com/chrome/">Google Chrome 浏览器</a>或 <a href="//www.mozilla.com/firefox/">Mozilla Firefox</a>，以获得最佳的浏览效果。</div></div><![endif]
--我的个人学术档案 我的图书馆 统计指标 快讯
--设置
--登录
--登录
--请进行人机身份验证
--抱歉，当 JavaScript 停用时，我们无法对您进行人机身份验证。
--请在浏览器中 启用 JavaScript ，然后重新加载此网页。
--隐私权 条款 帮助
--关于学术搜索 Google 搜索帮助
-+G o o g l e
-+Sorry...
-```
+**[Nathan Lambert](https://www.interconnects.ai/)** [Interconnects]
+- [Open and closed models are on different exponentials](https://www.interconnects.ai/p/open-and-closed-models-are-on-different) - Mon, 01 Jun 2026 13:03:48 GMT
