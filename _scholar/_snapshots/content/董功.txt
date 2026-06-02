@@ -21,6 +21,7 @@ Vision & Multimodal Learning
 I am looking for highly motivated PhD and MPhil students with strong research background and initiative. Please check the details and drop me an email with your CV and transcripts if you are interested.
 Google Scholar GitHub Artificer AI Lab UNSW X LinkedIn Short Bio
 News
+(May 2026) I am recognized as a CVPR 2026 Outstanding Area Chair .
 (May 2026) 2 papers are accepted to ICML 2026: " Little by Little " - MoRAM: Continual Learning with Rank-1 Parametric Memory as MoE; Adaptive Contrastive Learning for Graph Structural Disentanglement. Congratulations to Jeff (Haodong), Zidu, and collaborators!
 (Feb 2026) 3 papers are accepted to CVPR 2026: " On Token's Dilemma " - Continual learning Dynamic MoE for MLLM w/ token level filtering; VideoGen w/ multi-obj motion control; Anomaly detection w/ local-feature Codebook. Congratulations to Chongyang, Yuze, and Xueyang!
 (Jan 2026) 2 papers (causality on LLM and Multimodal model) are accepted to ICLR 2026; 1 paper (identifiable latent causal models) is accepted to JMLR. Congratulations to Yuhang and all collaborators!
