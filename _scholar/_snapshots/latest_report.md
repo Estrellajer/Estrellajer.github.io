@@ -1,76 +1,98 @@
 # Scholar Monitor Report
 
-**Run:** 2026-06-02 22:58 UTC  |  **Total:** 57  |  RSS 1  |  CHG 3  |  FIRST 0  |  OK 50  |  ERR 3
+**Run:** 2026-06-03 04:57 UTC  |  **Total:** 57  |  RSS 0  |  CHG 1  |  FIRST 0  |  OK 53  |  ERR 3
 
 ---
-## New Publications & Blog Posts (1)
+## Pages with Changes (1)
 
-**[Nathan Lambert](https://www.interconnects.ai/)** [Interconnects]
-- [Farewell Ai2](https://www.interconnects.ai/p/farewell-ai2) - Tue, 02 Jun 2026 14:15:59 GMT
-
----
-## Pages with Changes (3)
-
-### Continual Learning
-**[王立元](https://lywang3081.github.io/)** [北京大学]
+### Vision language model
+**[朱星宇](https://scholar.google.com/citations?hl=zh-CN&user=PpqUnAwAAAAJ&view_op=list_works&sortby=pubdate)** [NUS]
 ```diff
---- 王立元 (previous)
-+++ 王立元 (current)
-@@ -3,7 +3,7 @@
- My email address is changed to liyuanwang@tsinghua.edu.cn and wly19@tsinghua.org.cn .
- Recent News
- 2026/05 Three papers are accepted to ICML.
--2026/04 One paper is accepted (in principle) to Nature Communications.
-+2026/04 One paper is accepted to Nature Communications.
- 2026/04 One paper is accepted to Patterns (as the cover).
- 2026/03 I will serve as an Action Editor for TMLR.
- 2026/02 Two papers are accepted to CVPR 2026.
-@@ -29,9 +29,9 @@
- Domain Generalizable Continual Learning.
- Hongwei Yan, Guanglong Sun, Zhiqi Kang, Yi Zhong, Liyuan Wang $^\dagger$.
- arXiv:2510.16914, Under Review, 2026.
--From Reactive to Cognitive: Brain-Inspired Spatial Intelligence for Embodied Agents.
-+Brain-Inspired Spatial Intelligence for Embodied Agents.
- Shouwei Ruan$^{\ast}$, Liyuan Wang $^{\ast}$, Caixin Kang, Qihui Zhu, Songming Liu, Xingxing Wei, Hang Su.
--Accepted in Principle to Nature Communications , 2026.
-+Accepted to Nature Communications , 2026.
- Spacing Effect Improves Generalization in Biological and Artificial Systems.
- Guanglong Sun, Ning Huang, Hongwei Yan, Jun Zhou, Qian Li, Bo Lei, Yi Zhong, Liyuan Wang $^\dagger$.
- Patterns , Cover Paper , 2026.
-```
-
-**[董功](https://donggong1.github.io/index.html)**
-```diff
---- 董功 (previous)
-+++ 董功 (current)
-@@ -21,6 +21,7 @@
- I am looking for highly motivated PhD and MPhil students with strong research background and initiative. Please check the details and drop me an email with your CV and transcripts if you are interested.
- Google Scholar GitHub Artificer AI Lab UNSW X LinkedIn Short Bio
- News
-+(May 2026) I am recognized as a CVPR 2026 Outstanding Area Chair .
- (May 2026) 2 papers are accepted to ICML 2026: " Little by Little " - MoRAM: Continual Learning with Rank-1 Parametric Memory as MoE; Adaptive Contrastive Learning for Graph Structural Disentanglement. Congratulations to Jeff (Haodong), Zidu, and collaborators!
- (Feb 2026) 3 papers are accepted to CVPR 2026: " On Token's Dilemma " - Continual learning Dynamic MoE for MLLM w/ token level filtering; VideoGen w/ multi-obj motion control; Anomaly detection w/ local-feature Codebook. Congratulations to Chongyang, Yuze, and Xueyang!
- (Jan 2026) 2 papers (causality on LLM and Multimodal model) are accepted to ICLR 2026; 1 paper (identifiable latent causal models) is accepted to JMLR. Congratulations to Yuhang and all collaborators!
-```
-
-### Model Merging
-**[沈立](https://sites.google.com/site/mathshenli/home)** [中山大学]
-```diff
---- 沈立 (previous)
-+++ 沈立 (current)
-@@ -10,9 +10,9 @@
- Google Scholar , 中 大 主页 , 河套学院主页
- Biography
- C urrently , Li Shen is the associate professor at the School of Cyber Science and Technology, Shenzhen Campus of Sun Yat-sen University. Previously, he was a research scientist at JD Explore Academy, Beijing, and a senior researcher at Tencent AI Lab, Shenzhen. He received his bachelor's degree and Ph.D. from the School of Mathematics, South China University of Technology . His research interests include efficient deep learning, efficient reinforcement learning, optimization and deep learning theory. He has published more than 100 papers in peer-reviewed top-tier journal papers (Nature Machine Intelligence, JMLR, IEEE TPAMI, IJCV, etc.) and conference papers (ICML, NeurIPS, ICLR, etc.). He has served as Area Chairs for ICML, NeurIPS, ICLR, CVPR, and ACMMM. He has also served as the associate editor for IEEE Transactions on Pattern Analysis and Machine Intelligence, IEEE Transactions on Knowledge and Data Engineering and IEEE Transactions on Multimedia, and action editor for Neural Networks.
--⭐️⭐️⭐️ （Recruitment on a rolling basis） Our team recruits several postdocs to work on trustworthy artificial intelligence, distributed/federated learning, continual learning, reinforcement learning,  and efficient training of foundation models. [ 逸仙博士后 ][ 深圳博士后政策 ][ 光明区人才政策 ]
--⭐️⭐️⭐️ (N EW ) Our team recruits several PHD students (SYSU, SYSU-SLAI, SYSU-PCL ), working on efficient training of foundation models/ Generative RL Models , optimization and learning theory. P lease contact me as soon as possible if you are interested in our group.
--⭐️⭐️⭐️ Our team recruits several self-motivated students (Ph.Ds., masters, undergraduate students, interns, gap year students) to work on continual learning, reinforcement learning, and LLMs/VLMs/MLLMs.  In general, our team recruits Ph.D students mainly from the (remote and onsite) interns and RAs. If you are interested in my group, please contact me as soon as possible.
-+⭐️⭐️⭐️ Our team recruits several postdocs to work on trustworthy artificial intelligence, distributed/federated learning, continual learning, reinforcement learning,  and efficient training of foundation models. [ 逸仙博士后 ][ 深圳博士后政策 ][ 光明区人才政策 ]
-+⭐️⭐️⭐️ (N EW ) Our team recruits several PHD students ( 2027 fall, SYSU, SYSU-SLAI, SYSU-PCL ), working on efficient training of foundation models/ Generative RL Models , optimization and learning theory. P lease contact me as soon as possible if you are interested in our group.
-+⭐️⭐️⭐️ (NEW) 2027秋季入学博士生招聘：本科直博、硕博连读、申请考核制博士（可选中大-鹏城实验室联培，中大-河套学院联培计划）
- Selected Conference
- Yingsha Xie, Rui Min, Zeyu Qin, Fei Ma, Li Shen , Fei Yu, Xiaochun Cao, RoMa: A Robust Model Watermarking Scheme for Protecting IP in Diffusion Models , NeurIPS, 2025.
- Haotian Luo, Haiying He, Yibo Wang, Jinluan Yang, Rui Liu, Naiqiang Tan, Xiaochun Cao, Dacheng Tao, Li Shen , Ada-R1: Hybrid-CoT via Bi-Level Adaptive Reasoning Optimization , NeurIPS, 2025.
+--- 朱星宇 (previous)
++++ 朱星宇 (current)
+@@ -1,2 +1,80 @@
+-G o o g l e
+-Sorry...
++Mitigating Hallucinations in Large Vision-Language Models without Performance Degradation
++X Zhu, J Fang, S Wang, B Zhu, Z Wang, Y Yang, X He
++ACL 2026 Oral , 2026
++2026
++LPEdit: Locality-Preserving Knowledge Editing for MultiModal Large Language Models
++T Zhang, J Fang, H Jiang, X Zhu, X Wang, X He
++Proceedings of the ACM Web Conference 2026, 8425-8428 , 2026
++2026
++Principled Steering via Null-space Projection for Jailbreak Defense in Vision-Language Models
++X Zhu, B Zhu, S Wang, J Fang, K Zhao, H Zhang, X He
++CVPR 2026 , 2026
++3 2026
++Adapting Point Cloud Analysis via Multimodal Bayesian Distribution Learning
++X Zhu, L Yi, S Wang, W Zhu, Y Wu, B Zhu, H Zhang
++CVPR 2026 , 2026
++2026
++Thinking with Images as Continuous Actions: Numerical Visual Chain-of-Thought
++K Zhao, B Zhu, J Zhou, X Zhu, Z Yue, H Zhang
++arXiv preprint arXiv:2602.23959 , 2026
++2026
++Hybrid Granularity Distribution Estimation for Few-Shot Learning: Statistics Transfer From Categories and Instances
++S Wang, T Qi, X Zhu, Y Hao, B Zhu, H Zhang, M Wang
++IEEE Transactions on Image Processing , 2026
++2026
++Revisiting Robustness for LLM Safety Alignment via Selective Geometry Control
++Y Yang, W Tao, J Liu, X Zhu, J Fang, W Huang, L Wu, R Hong, TS Chua
++arXiv preprint arXiv:2602.07340 , 2026
++1 2026
++Look Carefully: Adaptive Visual Reinforcements in Multimodal Large Language Models for Hallucination Mitigation
++X Zhu, K Zhao, L Yi, S Wang, Z Wang, B Zhu, H Zhang, X He
++ICLR 2026 , 2026
++4 2026
++GuardAlign: Test-time Safety Alignment in Multimodal Large Language Models
++X Zhu, B Zhu, J Fang, S Wang, Y Zhang, X Wang, X He
++ICLR 2026 , 2026
++1 2026
++Hierarchical Semantic Alignment for Image Clustering
++X Zhu, B Zhu, Y Li, J Fang, S Wang, K Zhao, H Zhang
++AAAI 2026 , 2025
++4 2025
++Enhancing CLIP Robustness via Cross-Modality Alignment
++X Zhu, B Zhu, S Wang, K Zhao, H Zhang
++NeurIPS 2025 Spotlight , 2025
++15 2025
++Res-Bench: Benchmarking the Robustness of Multimodal Large Language Models to Dynamic Resolution Input
++C Li, Z Wang, Y Sheng, X Zhu, Y Hao, X Wang
++AAAI 2026 , 2025
++1 2025
++Dynamic Multimodal Prototype Learning in Vision-Language Models
++X Zhu, S Wang, B Zhu, M Li, Y Li, J Fang, Z Wang, D Wang, H Zhang
++ICCV 2025 , 2025
++19 2025
++Accelerating Diffusion Transformer via Error-Optimized Cache
++J Qiu, S Wang, J Lu, L Liu, H Jiang, X Zhu, Y Hao
++ACM MM 2025 , 2025
++11 2025
++Enhancing Zero-Shot Vision Models by Label-Free Prompt Distribution Learning and Bias Correcting
++X Zhu, B Zhu, Y Tan, S Wang, Y Hao, H Zhang
++NeurIPS 2024 (Spotlight) , 2024
++37 2024
++Selective Vision-Language Subspace Projection for Few-shot CLIP
++X Zhu, B Zhu, Y Tan, S Wang, Y Hao, H Zhang
++ACM MM 24 Oral , 2024
++31 2024
++Boosting Few-Shot Learning via Attentive Feature Regularization
++X Zhu, S Wang, J Lu, Y Hao, H Liu, X He
++AAAI 2024 , 2024
++40 2024
++Robust adaptive beamforming for coprime array based on interference power estimation via subspace
++S Sun, Z Ye, X Zhu
++2020 IEEE 11th Sensor Array and Multichannel Signal Processing Workshop (SAM … , 2020
++4 2020
++Robust adaptive beamforming via subspace for interference covariance matrix reconstruction
++X Zhu, X Xu, Z Ye
++Signal Processing 167, 107289 , 2020
++106 2020
++基于协方差矩阵重构的稳健自适应波束形成算法综述.
++叶中付， 朱星宇
++Journal of Data Acquisition & Processing/Shu Ju Cai Ji Yu Chu Li 34 (6) , 2019
++3 2019
 ```
 
 ---
