@@ -1,96 +1,121 @@
 # Scholar Monitor Report
 
-**Run:** 2026-06-04 04:49 UTC  |  **Total:** 57  |  RSS 0  |  CHG 1  |  FIRST 0  |  OK 56  |  ERR 0
+**Run:** 2026-06-04 22:17 UTC  |  **Total:** 57  |  RSS 0  |  CHG 2  |  FIRST 0  |  OK 55  |  ERR 0
 
 ---
-## Pages with Changes (1)
+## Pages with Changes (2)
+
+### Continual Learning
+**[王立元](https://lywang3081.github.io/)** [北京大学]
+```diff
+--- 王立元 (previous)
++++ 王立元 (current)
+@@ -2,6 +2,7 @@
+ We are recuiting self-motivated postdocs and research interns! Directions include: continual learning, agent memory, AI4Science, AI4Health. Please contact me if you are interested.
+ My email address is changed to liyuanwang@tsinghua.edu.cn and wly19@tsinghua.org.cn .
+ Recent News
++2026/06 One paper is accepted (in principle) to Nature Communications.
+ 2026/05 Three papers are accepted to ICML.
+ 2026/04 One paper is accepted to Nature Communications.
+ 2026/04 One paper is accepted to Patterns (as the cover).
+@@ -29,6 +30,9 @@
+ Domain Generalizable Continual Learning.
+ Hongwei Yan, Guanglong Sun, Zhiqi Kang, Yi Zhong, Liyuan Wang $^\dagger$.
+ arXiv:2510.16914, Under Review, 2026.
++Cephalopod-Inspired Embodied Camouflage System for Simultaneous Evasion of Biological and Artificial Visual Perceptions.
++Xiaopei Zhu$^{\ast}$, Jiongchen Zhang$^{\ast}$, Liyuan Wang $^{\ast}$, Xitong Liang, Jun Zhu, Xiaolin Hu.
++Accepted in Principle to Nature Communications , 2026.
+ Brain-Inspired Spatial Intelligence for Embodied Agents.
+ Shouwei Ruan$^{\ast}$, Liyuan Wang $^{\ast}$, Caixin Kang, Qihui Zhu, Songming Liu, Xingxing Wei, Hang Su.
+ Accepted to Nature Communications , 2026.
+```
 
 ### Vision language model
 **[朱星宇](https://scholar.google.com/citations?hl=zh-CN&user=PpqUnAwAAAAJ&view_op=list_works&sortby=pubdate)** [NUS]
 ```diff
 --- 朱星宇 (previous)
 +++ 朱星宇 (current)
-@@ -1,80 +1,2 @@
--Mitigating Hallucinations in Large Vision-Language Models without Performance Degradation
--X Zhu, J Fang, S Wang, B Zhu, Z Wang, Y Yang, X He
--ACL 2026 Oral , 2026
--2026
--LPEdit: Locality-Preserving Knowledge Editing for MultiModal Large Language Models
--T Zhang, J Fang, H Jiang, X Zhu, X Wang, X He
--Proceedings of the ACM Web Conference 2026, 8425-8428 , 2026
--2026
--Principled Steering via Null-space Projection for Jailbreak Defense in Vision-Language Models
--X Zhu, B Zhu, S Wang, J Fang, K Zhao, H Zhang, X He
--CVPR 2026 , 2026
--3 2026
--Adapting Point Cloud Analysis via Multimodal Bayesian Distribution Learning
--X Zhu, L Yi, S Wang, W Zhu, Y Wu, B Zhu, H Zhang
--CVPR 2026 , 2026
--2026
--Thinking with Images as Continuous Actions: Numerical Visual Chain-of-Thought
--K Zhao, B Zhu, J Zhou, X Zhu, Z Yue, H Zhang
--arXiv preprint arXiv:2602.23959 , 2026
--2026
--Hybrid Granularity Distribution Estimation for Few-Shot Learning: Statistics Transfer From Categories and Instances
--S Wang, T Qi, X Zhu, Y Hao, B Zhu, H Zhang, M Wang
--IEEE Transactions on Image Processing , 2026
--2026
--Revisiting Robustness for LLM Safety Alignment via Selective Geometry Control
--Y Yang, W Tao, J Liu, X Zhu, J Fang, W Huang, L Wu, R Hong, TS Chua
--arXiv preprint arXiv:2602.07340 , 2026
--1 2026
--Look Carefully: Adaptive Visual Reinforcements in Multimodal Large Language Models for Hallucination Mitigation
--X Zhu, K Zhao, L Yi, S Wang, Z Wang, B Zhu, H Zhang, X He
--ICLR 2026 , 2026
--4 2026
--GuardAlign: Test-time Safety Alignment in Multimodal Large Language Models
--X Zhu, B Zhu, J Fang, S Wang, Y Zhang, X Wang, X He
--ICLR 2026 , 2026
--1 2026
--Hierarchical Semantic Alignment for Image Clustering
--X Zhu, B Zhu, Y Li, J Fang, S Wang, K Zhao, H Zhang
--AAAI 2026 , 2025
--4 2025
--Enhancing CLIP Robustness via Cross-Modality Alignment
--X Zhu, B Zhu, S Wang, K Zhao, H Zhang
--NeurIPS 2025 Spotlight , 2025
--15 2025
--Res-Bench: Benchmarking the Robustness of Multimodal Large Language Models to Dynamic Resolution Input
--C Li, Z Wang, Y Sheng, X Zhu, Y Hao, X Wang
--AAAI 2026 , 2025
--1 2025
--Dynamic Multimodal Prototype Learning in Vision-Language Models
--X Zhu, S Wang, B Zhu, M Li, Y Li, J Fang, Z Wang, D Wang, H Zhang
--ICCV 2025 , 2025
--19 2025
--Accelerating Diffusion Transformer via Error-Optimized Cache
--J Qiu, S Wang, J Lu, L Liu, H Jiang, X Zhu, Y Hao
--ACM MM 2025 , 2025
--11 2025
--Enhancing Zero-Shot Vision Models by Label-Free Prompt Distribution Learning and Bias Correcting
--X Zhu, B Zhu, Y Tan, S Wang, Y Hao, H Zhang
--NeurIPS 2024 (Spotlight) , 2024
--37 2024
--Selective Vision-Language Subspace Projection for Few-shot CLIP
--X Zhu, B Zhu, Y Tan, S Wang, Y Hao, H Zhang
--ACM MM 24 Oral , 2024
--31 2024
--Boosting Few-Shot Learning via Attentive Feature Regularization
--X Zhu, S Wang, J Lu, Y Hao, H Liu, X He
--AAAI 2024 , 2024
--40 2024
--Robust adaptive beamforming for coprime array based on interference power estimation via subspace
--S Sun, Z Ye, X Zhu
--2020 IEEE 11th Sensor Array and Multichannel Signal Processing Workshop (SAM … , 2020
--4 2020
--Robust adaptive beamforming via subspace for interference covariance matrix reconstruction
--X Zhu, X Xu, Z Ye
--Signal Processing 167, 107289 , 2020
--106 2020
--基于协方差矩阵重构的稳健自适应波束形成算法综述.
--叶中付， 朱星宇
--Journal of Data Acquisition & Processing/Shu Ju Cai Ji Yu Chu Li 34 (6) , 2019
--3 2019
-+G o o g l e
-+Sorry...
+@@ -1,2 +1,80 @@
+-G o o g l e
+-Sorry...
++Mitigating Hallucinations in Large Vision-Language Models without Performance Degradation
++X Zhu, J Fang, S Wang, B Zhu, Z Wang, Y Yang, X He
++ACL 2026 Oral , 2026
++2026
++LPEdit: Locality-Preserving Knowledge Editing for MultiModal Large Language Models
++T Zhang, J Fang, H Jiang, X Zhu, X Wang, X He
++Proceedings of the ACM Web Conference 2026, 8425-8428 , 2026
++2026
++Principled Steering via Null-space Projection for Jailbreak Defense in Vision-Language Models
++X Zhu, B Zhu, S Wang, J Fang, K Zhao, H Zhang, X He
++CVPR 2026 , 2026
++3 2026
++Adapting Point Cloud Analysis via Multimodal Bayesian Distribution Learning
++X Zhu, L Yi, S Wang, W Zhu, Y Wu, B Zhu, H Zhang
++CVPR 2026 , 2026
++2026
++Thinking with Images as Continuous Actions: Numerical Visual Chain-of-Thought
++K Zhao, B Zhu, J Zhou, X Zhu, Z Yue, H Zhang
++arXiv preprint arXiv:2602.23959 , 2026
++2026
++Hybrid Granularity Distribution Estimation for Few-Shot Learning: Statistics Transfer From Categories and Instances
++S Wang, T Qi, X Zhu, Y Hao, B Zhu, H Zhang, M Wang
++IEEE Transactions on Image Processing , 2026
++2026
++Revisiting Robustness for LLM Safety Alignment via Selective Geometry Control
++Y Yang, W Tao, J Liu, X Zhu, J Fang, W Huang, L Wu, R Hong, TS Chua
++arXiv preprint arXiv:2602.07340 , 2026
++1 2026
++Look Carefully: Adaptive Visual Reinforcements in Multimodal Large Language Models for Hallucination Mitigation
++X Zhu, K Zhao, L Yi, S Wang, Z Wang, B Zhu, H Zhang, X He
++ICLR 2026 , 2026
++4 2026
++GuardAlign: Test-time Safety Alignment in Multimodal Large Language Models
++X Zhu, B Zhu, J Fang, S Wang, Y Zhang, X Wang, X He
++ICLR 2026 , 2026
++1 2026
++Hierarchical Semantic Alignment for Image Clustering
++X Zhu, B Zhu, Y Li, J Fang, S Wang, K Zhao, H Zhang
++AAAI 2026 , 2025
++4 2025
++Enhancing CLIP Robustness via Cross-Modality Alignment
++X Zhu, B Zhu, S Wang, K Zhao, H Zhang
++NeurIPS 2025 Spotlight , 2025
++15 2025
++Res-Bench: Benchmarking the Robustness of Multimodal Large Language Models to Dynamic Resolution Input
++C Li, Z Wang, Y Sheng, X Zhu, Y Hao, X Wang
++AAAI 2026 , 2025
++1 2025
++Dynamic Multimodal Prototype Learning in Vision-Language Models
++X Zhu, S Wang, B Zhu, M Li, Y Li, J Fang, Z Wang, D Wang, H Zhang
++ICCV 2025 , 2025
++19 2025
++Accelerating Diffusion Transformer via Error-Optimized Cache
++J Qiu, S Wang, J Lu, L Liu, H Jiang, X Zhu, Y Hao
++ACM MM 2025 , 2025
++11 2025
++Enhancing Zero-Shot Vision Models by Label-Free Prompt Distribution Learning and Bias Correcting
++X Zhu, B Zhu, Y Tan, S Wang, Y Hao, H Zhang
++NeurIPS 2024 (Spotlight) , 2024
++37 2024
++Selective Vision-Language Subspace Projection for Few-shot CLIP
++X Zhu, B Zhu, Y Tan, S Wang, Y Hao, H Zhang
++ACM MM 24 Oral , 2024
++31 2024
++Boosting Few-Shot Learning via Attentive Feature Regularization
++X Zhu, S Wang, J Lu, Y Hao, H Liu, X He
++AAAI 2024 , 2024
++40 2024
++Robust adaptive beamforming for coprime array based on interference power estimation via subspace
++S Sun, Z Ye, X Zhu
++2020 IEEE 11th Sensor Array and Multichannel Signal Processing Workshop (SAM … , 2020
++4 2020
++Robust adaptive beamforming via subspace for interference covariance matrix reconstruction
++X Zhu, X Xu, Z Ye
++Signal Processing 167, 107289 , 2020
++106 2020
++基于协方差矩阵重构的稳健自适应波束形成算法综述.
++叶中付， 朱星宇
++Journal of Data Acquisition & Processing/Shu Ju Cai Ji Yu Chu Li 34 (6) , 2019
++3 2019
 ```

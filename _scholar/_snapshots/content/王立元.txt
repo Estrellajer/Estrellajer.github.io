@@ -2,6 +2,7 @@ I am currently an Assistant Professor at the Department of Psychological and Cog
 We are recuiting self-motivated postdocs and research interns! Directions include: continual learning, agent memory, AI4Science, AI4Health. Please contact me if you are interested.
 My email address is changed to liyuanwang@tsinghua.edu.cn and wly19@tsinghua.org.cn .
 Recent News
+2026/06 One paper is accepted (in principle) to Nature Communications.
 2026/05 Three papers are accepted to ICML.
 2026/04 One paper is accepted to Nature Communications.
 2026/04 One paper is accepted to Patterns (as the cover).
@@ -29,6 +30,9 @@ arXiv:2510.06842, Under Review, 2026.
 Domain Generalizable Continual Learning.
 Hongwei Yan, Guanglong Sun, Zhiqi Kang, Yi Zhong, Liyuan Wang $^\dagger$.
 arXiv:2510.16914, Under Review, 2026.
+Cephalopod-Inspired Embodied Camouflage System for Simultaneous Evasion of Biological and Artificial Visual Perceptions.
+Xiaopei Zhu$^{\ast}$, Jiongchen Zhang$^{\ast}$, Liyuan Wang $^{\ast}$, Xitong Liang, Jun Zhu, Xiaolin Hu.
+Accepted in Principle to Nature Communications , 2026.
 Brain-Inspired Spatial Intelligence for Embodied Agents.
 Shouwei Ruan$^{\ast}$, Liyuan Wang $^{\ast}$, Caixin Kang, Qihui Zhu, Songming Liu, Xingxing Wei, Hang Su.
 Accepted to Nature Communications , 2026.
