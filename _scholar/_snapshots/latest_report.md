@@ -1,96 +1,38 @@
 # Scholar Monitor Report
 
-**Run:** 2026-06-05 04:24 UTC  |  **Total:** 57  |  RSS 0  |  CHG 1  |  FIRST 0  |  OK 56  |  ERR 0
+**Run:** 2026-06-05 22:17 UTC  |  **Total:** 57  |  RSS 0  |  CHG 1  |  FIRST 0  |  OK 55  |  ERR 1
 
 ---
 ## Pages with Changes (1)
 
-### Vision language model
-**[朱星宇](https://scholar.google.com/citations?hl=zh-CN&user=PpqUnAwAAAAJ&view_op=list_works&sortby=pubdate)** [NUS]
+### Continuing RL
+**[孙科](https://sites.google.com/view/kesun)** [宾夕法尼亚大学]
 ```diff
---- 朱星宇 (previous)
-+++ 朱星宇 (current)
-@@ -1,80 +1,2 @@
--Mitigating Hallucinations in Large Vision-Language Models without Performance Degradation
--X Zhu, J Fang, S Wang, B Zhu, Z Wang, Y Yang, X He
--ACL 2026 Oral , 2026
--2026
--LPEdit: Locality-Preserving Knowledge Editing for MultiModal Large Language Models
--T Zhang, J Fang, H Jiang, X Zhu, X Wang, X He
--Proceedings of the ACM Web Conference 2026, 8425-8428 , 2026
--2026
--Principled Steering via Null-space Projection for Jailbreak Defense in Vision-Language Models
--X Zhu, B Zhu, S Wang, J Fang, K Zhao, H Zhang, X He
--CVPR 2026 , 2026
--3 2026
--Adapting Point Cloud Analysis via Multimodal Bayesian Distribution Learning
--X Zhu, L Yi, S Wang, W Zhu, Y Wu, B Zhu, H Zhang
--CVPR 2026 , 2026
--2026
--Thinking with Images as Continuous Actions: Numerical Visual Chain-of-Thought
--K Zhao, B Zhu, J Zhou, X Zhu, Z Yue, H Zhang
--arXiv preprint arXiv:2602.23959 , 2026
--2026
--Hybrid Granularity Distribution Estimation for Few-Shot Learning: Statistics Transfer From Categories and Instances
--S Wang, T Qi, X Zhu, Y Hao, B Zhu, H Zhang, M Wang
--IEEE Transactions on Image Processing , 2026
--2026
--Revisiting Robustness for LLM Safety Alignment via Selective Geometry Control
--Y Yang, W Tao, J Liu, X Zhu, J Fang, W Huang, L Wu, R Hong, TS Chua
--arXiv preprint arXiv:2602.07340 , 2026
--1 2026
--Look Carefully: Adaptive Visual Reinforcements in Multimodal Large Language Models for Hallucination Mitigation
--X Zhu, K Zhao, L Yi, S Wang, Z Wang, B Zhu, H Zhang, X He
--ICLR 2026 , 2026
--4 2026
--GuardAlign: Test-time Safety Alignment in Multimodal Large Language Models
--X Zhu, B Zhu, J Fang, S Wang, Y Zhang, X Wang, X He
--ICLR 2026 , 2026
--1 2026
--Hierarchical Semantic Alignment for Image Clustering
--X Zhu, B Zhu, Y Li, J Fang, S Wang, K Zhao, H Zhang
--AAAI 2026 , 2025
--4 2025
--Enhancing CLIP Robustness via Cross-Modality Alignment
--X Zhu, B Zhu, S Wang, K Zhao, H Zhang
--NeurIPS 2025 Spotlight , 2025
--15 2025
--Res-Bench: Benchmarking the Robustness of Multimodal Large Language Models to Dynamic Resolution Input
--C Li, Z Wang, Y Sheng, X Zhu, Y Hao, X Wang
--AAAI 2026 , 2025
--1 2025
--Dynamic Multimodal Prototype Learning in Vision-Language Models
--X Zhu, S Wang, B Zhu, M Li, Y Li, J Fang, Z Wang, D Wang, H Zhang
--ICCV 2025 , 2025
--19 2025
--Accelerating Diffusion Transformer via Error-Optimized Cache
--J Qiu, S Wang, J Lu, L Liu, H Jiang, X Zhu, Y Hao
--ACM MM 2025 , 2025
--11 2025
--Enhancing Zero-Shot Vision Models by Label-Free Prompt Distribution Learning and Bias Correcting
--X Zhu, B Zhu, Y Tan, S Wang, Y Hao, H Zhang
--NeurIPS 2024 (Spotlight) , 2024
--37 2024
--Selective Vision-Language Subspace Projection for Few-shot CLIP
--X Zhu, B Zhu, Y Tan, S Wang, Y Hao, H Zhang
--ACM MM 24 Oral , 2024
--31 2024
--Boosting Few-Shot Learning via Attentive Feature Regularization
--X Zhu, S Wang, J Lu, Y Hao, H Liu, X He
--AAAI 2024 , 2024
--40 2024
--Robust adaptive beamforming for coprime array based on interference power estimation via subspace
--S Sun, Z Ye, X Zhu
--2020 IEEE 11th Sensor Array and Multichannel Signal Processing Workshop (SAM … , 2020
--4 2020
--Robust adaptive beamforming via subspace for interference covariance matrix reconstruction
--X Zhu, X Xu, Z Ye
--Signal Processing 167, 107289 , 2020
--106 2020
--基于协方差矩阵重构的稳健自适应波束形成算法综述.
--叶中付， 朱星宇
--Journal of Data Acquisition & Processing/Shu Ju Cai Ji Yu Chu Li 34 (6) , 2019
--3 2019
-+G o o g l e
-+Sorry...
+--- 孙科 (previous)
++++ 孙科 (current)
+@@ -9,14 +9,14 @@
+ Links : Google Scholar / CV / Github / LinkedIn
+ Research Interests
+ My research interest is reinforcement learning , especially the algorithm ic foundations and development grounded in mathematical and statistical principles. My key research goal is to build agents with effective perception, memory, reasoning, planning, exploration, and adaptation in complex environments to achieve decision intelligence , with broad applications in games, robotics, control systems, healthcare, economics, and language.
+-[1] Algorithmic and Theoretical Foundations in Pure RL (RL as Problem Formulation):
++[1] Algorithmic and Theoretical Foundations in Pure/Standard RL (RL as Problem Formulation):
+ Uncertainty & Exploration : Distributional Learning and Risk Control, Entropy Regularization and Exploration
+ Robustness & Adaptation : Environmental Nonstationarity , Safe/Robust RL, Transfer/Multi-task/Meta/ Continual RL
+-Offline & Causality : Offline and Hy brid RL, Causality for RL, Adaptive Experiment Design
++Offline & Causality : Imitation learning, Offline and Hy brid RL, Causal RL
+ [2] Foundations in RL for General Intelligence (RL as Optimization Tool vs Problem Formulation):
+-Language & Agentic AI : Alignment, Reasoning, Post-training, Agentic RL, Multi-agent interaction
+-Robotics & Embodied AI : Model-based RL and World Model, Generative and Self-supervised RL, Imitation learning
+-Vision & Multimodal Models : Vision-language-action, Multimodal reasoning, Active perception
++Language & Agentic AI : Alignment, Reasoning, Post-training, Agentic RL, Multi-agent systems
++Robotics & Embodied AI : Model-based RL and World Model, Generative and Self-supervised RL
++Vision & Multimodal Models : Vision-language-action, Multimodal reasoning
+ Selected Preprints / Publications [ Full Publications ]
+ [7] Ke Sun*, Yizhou Zhao*, Jiayi Xin, Qi Long, Weijie Su . CurveRL: Principled Distribution-Aware Context Reweighting for LLM Reasoning ( submitted ), 2026. [ Code ] 🔥
+ [6] Ke Sun, Linglong Kong, Hongtu Zhu, Chengchun Shi. ARMA-Design: Optimal Treatment Allocation Strategies for A/B Testing in Partially Observable Experiments . ( Minor Revision in Journal of American Statistical Association, 202 6 ) [ Code ]
 ```
+
+---
+## Errors (1)
+
+- [袁洋](https://people.iiis.tsinghua.edu.cn/~yuanyang/en.html): `Fetch/extract failed: HTTPSConnectionPool(host='people.iiis.tsinghua.edu.cn', port=443): Max retries exceeded with url: /~yuanyang/en.html (Caused by ConnectTimeoutError(<HTTPSConnection(host='people.iiis.tsinghua.edu.cn', port=443) at 0x7fdd948552d0>, 'Connection to people.iiis.tsinghua.edu.cn timed out. (connect timeout=30)'))`
