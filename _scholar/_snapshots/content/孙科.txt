@@ -5,6 +5,7 @@
 I am a Machine Learning researcher.
 My name is Ke Sun (孙科). I am currently a postdoctoral researcher at University of Pennsylvania, working with Prof. Qi Long and Prof. Weijie Su , starting from early 2026.
 I was a postdoctoral f ellow working with Prof. Susan A. Murphy at Harvard University in 2025. I received my Ph.D. degree in Statistical Machine Learning from University of Alberta in 2024, advised by Prof. Linglong Kong , also affiliated at Alberta Machine Intelligence Institute ( Amii ) . I was fortunate to visit Prof. Chengchun Shi at the London School of Economics and Political Science in 2023. I obtained my MPhil in Data Science at Peking University in 2020 advised by Prof. Zhouchen Lin and Prof. Zhanxing Zhu . I earned my Bachelor's degree in financial statistics and risk management from SouthWestern University of Finance and Economics in 2017.
+I will be on the 2026–2027 academic job market.
 Contact : kesun6 [at] upenn [dot] edu, ke.sun [at] pennmedicine [dot] upenn [dot] edu
 Links : Google Scholar / CV / Github / LinkedIn
 Research Interests
