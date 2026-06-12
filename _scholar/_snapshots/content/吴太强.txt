@@ -40,6 +40,7 @@ Arxiv Preprint [ Paper ]
 Taiqiang Wu , Runming Yang, Tao Liu, Jiahao Wang, Ngai Wong
 ACL 2026, Main Preprint [ Paper ]
 [ Code ]
+[ Slide ]
 Timber: Training-free Instruct Model Refining with Base via Effective Rank
 <li>
 We propose a novel Timber, which is a training-free method to enhance Instruct model with paired Base model via effective rank.
