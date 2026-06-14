@@ -1,12 +1,2 @@
-正在加载...
-系统目前无法执行此操作，请稍后再试。
-[if lte IE 9]><div class="gs_alrt" style="padding:16px"><div>抱歉，某些功能可能无法在此版本的 Internet Explorer 上使用。</div><div>请使用 <a href="//www.google.com/chrome/">Google Chrome 浏览器</a>或 <a href="//www.mozilla.com/firefox/">Mozilla Firefox</a>，以获得最佳的浏览效果。</div></div><![endif]
-我的个人学术档案 我的图书馆 统计指标 快讯
-设置
-登录
-登录
-请进行人机身份验证
-抱歉，当 JavaScript 停用时，我们无法对您进行人机身份验证。
-请在浏览器中 启用 JavaScript ，然后重新加载此网页。
-隐私权 条款 帮助
-关于学术搜索 Google 搜索帮助
+G o o g l e
+Sorry...
