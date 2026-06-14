@@ -15,7 +15,7 @@ Uncertainty & Exploration : Distributional Learning and Risk Control, Entropy Re
 Robustness & Adaptation : Environmental Nonstationarity , Safe/Robust RL, Transfer/Multi-task/Meta/ Continual RL
 Offline & Causality : Imitation learning, Offline and Hy brid RL, Causal RL, Adaptive Experimental Design
 [2] Foundations in RL for General Intelligence (RL as Optimization Tool vs Problem Formulation):
-Language & Agentic AI : Alignment, Reasoning, Post-training, Agentic RL, Multi-agent systems
+Language & Agentic AI : Alignment, Reasoning RL, Agentic RL, Multi-agent systems
 Robotics & Embodied AI : Model-based RL and World Model, Generative and Self-supervised RL
 Vision & Multimodal Models : Vision-language-action, Multimodal reasoning
 Selected Preprints / Publications [ Full Publications ]
