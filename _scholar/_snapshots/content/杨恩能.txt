@@ -76,7 +76,7 @@ ICML 2026 | Code
 Chu Zhao$^{\ast}$, Enneng Yang $^{\ast}$ ($^{\ast}$ indicates co-first authors ), Yuting Liu, Jianzhe Zhao, Guibing Guo.
 SCNS: Continual Personalization of Diffusion Models via Submodular Concept Neuron Selection
 ICML 2026 | Code
-Zijie Peng$^{\ast}$, Enneng Yang$^{\ast}$ ($^{\ast}$ indicates co-first authors ), Yifei Cheng, Hongliang Yuan, Fei Ma, Xiaochun Cao, Li Shen.
+Zijie Peng$^{\ast}$, Enneng Yang $^{\ast}$ ($^{\ast}$ indicates co-first authors ), Yifei Cheng, Hongliang Yuan, Fei Ma, Xiaochun Cao, Li Shen.
 - [Plasticity Activation via Polar Operator: A Plug-in Method for Balancing Stability and Plasticity](https://openreview.net/forum?id=b7P2WegaBY)\
 `ICML 2026`| [**Code**](https://github.com/Zhenggd943/PAPO)  \
 Guodong Zheng, **Enneng Yang**, Xiaoyan Wang, Yihan Chen, Feihong He, Quan Zheng, Peng Wang, Li Shen.

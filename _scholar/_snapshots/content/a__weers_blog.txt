@@ -1,4 +1,7 @@
 Blog
+Potential reward shaping
+June 15, 2026 · 3 min read
+Shape rewards
 State of RL for reasoning LLMs
 March 15, 2026 · 26 min read
 Evolution of reinforcement learning for reasoning LLMs
