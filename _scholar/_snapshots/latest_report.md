@@ -1,177 +1,212 @@
 # Scholar Monitor Report
 
-**Run:** 2026-06-16 05:11 UTC  |  **Total:** 57  |  RSS 0  |  CHG 2  |  FIRST 0  |  OK 55  |  ERR 0
+**Run:** 2026-06-16 22:56 UTC  |  **Total:** 57  |  RSS 1  |  CHG 3  |  FIRST 0  |  OK 52  |  ERR 1
 
 ---
-## Pages with Changes (2)
+## New Publications & Blog Posts (1)
+
+**[Nathan Lambert](https://www.interconnects.ai/)** [Interconnects]
+- [Frontier post-training recipe review with Finbarr Timbers](https://www.interconnects.ai/p/frontier-post-training-recipe-review) - Tue, 16 Jun 2026 13:29:30 GMT
+
+---
+## Pages with Changes (3)
+
+### 3DV
+**[黄家斌](https://jbhuang0604.github.io/)**
+```diff
+--- 黄家斌 (previous)
++++ 黄家斌 (current)
+@@ -3,13 +3,14 @@
+ Department of Computer Science
+ University of Maryland, College Park
+ My research interests lie at the intersection of computer vision, computer graphics, and machine learning.
+-Research Group | Teaching | Talks | Publications | Open Office Hours
++Research Group | Teaching | Talks | Publications
+ Email : jbhuang@umd.edu
+ More about me: CV | CV of Failures | Awesome Tips | YouTube | Twitter/X | BlueSky
+ Current teaching
+-Spring 2026: CSMSC426 Computer Vision
+-Spring 2026: CSMSC800 How to Conduct Great Research
++Fall 2026: CMSC848K Multimodal Foundation Models
+ Past teaching and evaluations
++Spring 2026: CMSC426 Computer Vision
++Spring 2026: CMSC800 How to Conduct Great Research
+ Fall 2025: CMSC848K Multimodal Foundation Models
+ Spring 2025: CMSC426 Computer Vision | Student evaluation
+ Spring 2025: CMSC800 How to Conduct Great Research | Student evaluation
+@@ -20,7 +21,7 @@
+ If you are already a UMD student, please email me your CV, prior experiences, and how you would like to get involved.
+ Questions? Check out my answers to the Ph.D. Advisor Guide .
+ Prospective short-term students :
+-If you are undergraduate/gradudate students at UMD or at external institute looking to work on research with us,
++If you are undergraduate/graduate students at UMD or at external institutes looking to work on research with us,
+ please fill the form .
+ We will contact you if there is a match.
+ (Please submit the form again if you used the old version before. Sorry!)
+@@ -34,32 +35,36 @@
+ Please feel free to reach out if you have any questions.
+ Research Group
+ PhD students
+-Yao-Chih Lee Vinayak Gupta Yue Feng Yi-Ting Chen
+-Ting-Hsuan Liao Hadi Alzayer Seungjae (Jay)Lee Kevin Zhang
++Vinayak Gupta Yue Feng Yi-Ting Chen Ting-Hsuan Liao
++Seungjae (Jay) Lee Quynh Phung Haowen Liu Yu-Hsiang Huang
+ (with Furong Huang ) (with Christopher Metzler )
+-Quynh Phung Haowen Liu Grace Su
+ Undergraduate students
+ Alumni
+ Former PhD Students
+-Jinwoo Choi , PhD 2020, now an Assistant Professor at Kyung Hee Univeristy
++Yao-Chih Lee , PhD 2026, now a Research Scientist at Adobe Research
++Hadi Alzayer , PhD 2026, now a Research Scientist at Google DeepMind
++Kevin Zhang , PhD 2026, (with Christopher Metzler ), now a Research Scientist at Waabi
++Yiran Xu , PhD 2025, next a Research Scientist at Adobe Research
++Songwei Ge , PhD 2025, (with David Jacobs ), now Research Scientist at Reve
+ Badour AlBahar , PhD 2022, now an Assistant Professor at Kuwait University
+ Chen Gao , PhD 2022, now a Research Scientist at Meta
+ Yuliang Zou , PhD 2022, now a Research Scientist at Waymo
+-Yiran Xu , PhD 2025, next a Research Scientist at Adobe Research
+-Songwei Ge , PhD 2025, (with David Jacobs ), now Research Scientist at Reve
++Jinwoo Choi , PhD 2020, now an Assistant Professor at Kyung Hee University
+ Former MS/BS Students
+ At University of Maryland College Park
+ Sanjali Yadav , next a PhD student at University of Maryland College Park.
+ Vaibhav Sanjay , next a MSR student at Carnegie Mellon University
++Daniel Pitzele, next a PhD student at UPenn
++Minsi Hu
+ Spencer Lutz
+ Elizabeth Qiu
+ At Virginia Tech
+ Esther Robb (MS 2021), next a PhD student at Stanford University.
+ Joseph Messou (MS 2020), next a PhD student at University of Maryland College Park.
+ Shih-Yang Su (MS 2020), next a PhD student at University of British Columbia.
+-Subhashree Radhakrishnan (MS 2018), next a Deep Learning Software Engineeer at NVIDIA.
+-Po-Han Huang (MS 2018), next a Deep Learning Software Engineeer at NVIDIA.
+-Sanket Lokegaonkar (MS 2018), next a Software Engineeer at Amazon AWS.
++Subhashree Radhakrishnan (MS 2018), next a Deep Learning Software Engineer at NVIDIA.
++Po-Han Huang (MS 2018), next a Deep Learning Software Engineer at NVIDIA.
++Sanket Lokegaonkar (MS 2018), next a Software Engineer at Amazon AWS.
+ Adithya Nallabolu (MS 2017), next a Computer Vision R&D Engineer at Qualcomm.
+ At University of Illinois, Urbana-Champaign
+ Le Wang (BS 2014), next MS at Stanford, next ASIC/RTL Designer at Google.
+@@ -73,7 +78,7 @@
+ Kevin Han (BS 2012), next PhD at UC Berkeley, now Senior Engineer at Pinnacle Photonics.
+ Former Interns
+ Yu-Ying Yeh , PhD student at University of California San Diego.
+-Yu-Lun Liu , PhD student at National Taiwan University, now at Assistant Professor at National Yang Ming Chiao Tung University.
++Yu-Lun Liu , PhD student at National Taiwan University, now an Assistant Professor at National Yang Ming Chiao Tung University.
+ Ishit Mehta , PhD student at University of California San Diego.
+ Chris Rockwell , PhD student at University of Michigan Ann Arbor.
+ Benjamin Attal , PhD student at Carnegie Mellon University.
+@@ -81,9 +86,9 @@
+ Xiaoming Zhao , PhD student at UIUC.
+ Badour AlBahar , PhD student at Virginia Tech.
+ Geng Lin , PhD student at University of Maryland College Park.
+-Chen Gao , PhD student at Virginia Tech, now Resarch Scientist at Meta.
++Chen Gao , PhD student at Virginia Tech, now Research Scientist at Meta.
+ Wenqi Xian , PhD student at Cornell Tech.
+-Xuan Luo , PhD student at University of Washington, now Resarch Scientist at Google.
++Xuan Luo , PhD student at University of Washington, now Research Scientist at Google.
+ Former Visiting Students
+ Ting-I Hsieh (Intern 2020)
+ Yun-Chun Chen (Intern 2019), next PhD student at University of Toronto.
+@@ -95,8 +100,29 @@
+ Yen-Chen Lin (Intern 2017), next PhD student at MIT.
+ Hao-Wei Yeh (Intern 2017), next PhD student at University of Tokyo.
+ Publications
++μ₀: A Scalable 3D Interaction-Trace World Model
++Seungjae Lee *, Yoonkyo Jung *, Jusuk Lee , Jonghun Shin , Amir Hossein Shahidzadeh , Yao-Chih Lee , H. Jin Kim , Jia-Bin Huang †, Furong Huang †
++arXiv 2026
++[ Paper (PDF) ]
++[ Project page ] (*Equal contributions; † Equal advising.)
++DynaFLIP: Rethinking Robotics Perception via Tri-Modal-Dynamics Guided Representation
++Jusuk Lee , Seungjae Lee , Jonghun Shin , Hoseong Jung , Sungha Kim , Daesol Cho , H. Jin Kim , Jia-Bin Huang †, Furong Huang †
++arXiv 2026
++[ Paper (PDF) ]
++[ Project page ] († Equal advising.)
++[ Code ]
++[ Model ]
++TRACE: Object Motion Editing in Videos with First-Frame Trajectory Guidance
++Quynh Phung ,
++Long Mai,
++Charles Ham,
++Feng Liu, Jia-Bin Huang ,
++Aniket Mahapatra
++arXiv preprint arXiv:2603.25707
++[ Paper (PDF) ]
++[ Google Scholar ]
+ Generative Refocusing: Flexible Defocus Control from a Single Image
+-Chun-Wei Tuan Mu , Jia-Bin Huang , Yu-Lun Liu
++Chun-Wei Tuan Mu , Cheng-De Fan , Jia-Bin Huang , Yu-Lun Liu
+ arXiv 2025
+ [ Paper (PDF) ]
+ [ Project page ]
+@@ -108,15 +134,15 @@
+ [ Paper (PDF) ]
+ [ Project page ]
+ TraceGen: World Modeling in 3D Trace-Space Enables Learning from Cross-Embodiment Videos
+-Seungjae Lee *, Yoonkyo Jung *, Inkook Chun *, Yao-Chih Lee , Zikui Cai , Hongjia Huang , Aayush Talreja , Tan Dat Dao , Yongyuan Liang , Jia-Bin Huang , Furong Huang
++Seungjae Lee *, Yoonkyo Jung *, Inkook Chun , Yao-Chih Lee , Zikui Cai , Hongjia Huang , Aayush Talreja , Tan Dat Dao , Yongyuan Liang , Jia-Bin Huang , Furong Huang
+ Proceedings of IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR), 2026
+ [ Paper (PDF) ]
+-[ Project page ]
++[ Project page ] (*Equal contributions)
+ SIMPACT: Simulation-Enabled Action Planning using Vision-Language Models
+-Haowen Liu *, Shaoxiong Yao * Haonan Chen , Jiawei Gao , Jiayuan Mao , Jia-Bin Huang , Yilun Du
++Haowen Liu *, Shaoxiong Yao *, Haonan Chen , Jiawei Gao , Jiayuan Mao , Jia-Bin Huang , Yilun Du
+ Proceedings of IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR), 2026
+ [ Paper (PDF) ]
+-[ Project page ]
++[ Project page ] (*Equal contributions)
+ Coupled Diffusion Sampling for Training-Free Multi-View Image Editing
+ Hadi Alzayer , Yunzhi Zhang , Chen Geng , Jia-Bin Huang , Jiajun Wu
+ Proceedings of IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR), 2026
+@@ -127,6 +153,7 @@
+ Proceedings of IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR), 2026
+ [ Paper (PDF) ]
+```
 
 ### Continual Learning
-**[冯钰捷](https://woodscene.github.io/)** [香港理工大学]
+**[王立元](https://lywang3081.github.io/)** [北京大学]
 ```diff
---- 冯钰捷 (previous)
-+++ 冯钰捷 (current)
-@@ -1,69 +1,4 @@
--I am a fourth-year Ph.D. candidate at Department of Data Science and Artificial Intelligence , The Hong Kong Polytechnic University (PolyU) , under the supervision of Prof. Xiao-Ming Wu . Currently, I am remotely visiting the University of Illinois at Chicago (UIC) , where I am honored to work with Prof. Philip S. Yu .
--Prior to that, I obtained my Master degree from Peking University (PKU) under the supervision of Prof. Yasha Wang and Bachelor degree from Harbin Institute of Technology, Weihai (HIT) .
--Research Interests
--My research focuses on Natural Language Processing (NLP) and Large Language Models (LLMs), with an emphasis on continual adaptation and capability evolution.
--My recent work studies how to efficiently adapt and evolve LLMs in dynamic environments, where new tasks, domains, and knowledge continuously emerge. This includes topics such as continual learning, model editing, and memory-based adaptation.
--More recently, I am interested in advancing the general capabilities of LLM-based agents, including reasoning, grounding, and long-horizon decision-making, as well as their continual improvement over time.
--I have broad interests in Natural Language Processing (NLP), including dialogue state tracking, user satisfaction estimation, and out-of-distribution detection. Currently, my focus is on **Large Language Models** and **task skill localization**. This involves detecting or localizing the importance distribution of parameters within Pre-trained Language Models, with the aim of achieving more efficient and effective multi-task learning or continual learning in the field of NLP. Previously, during my master's studies, I did some research on spatial-temporal data imputation using Generative Adversarial Networks. <font color=red>1 paper</font> is accepted by EMNLP 2024! Previously, during my master's studies, I worked on spatial-temporal data imputation and electronic health record analysis. 📢 **<font color=red>I am currently on the job market and expect to graduate in Summer 2026. I am open to opportunities in both academic and industrial positions. Please feel free to contact me if you have suitable openings!</font>** 😊 *I am open to collaborations and discussions. Please feel free to reach out to me if you are interested in my research or any relevant topics.*
--🔥 News
--2026.04 : 🎉 One paper has been accepted to ACL 2026!
--2026.01 : 🎉 Two papers have been accepted to ICLR 2026!
--2025.08 : 🎉 Two papers have been accepted to EMNLP 2025!
--2025.07 : 🎉 One paper has been accepted to COLM 2025!
--2025.05 : 🎉 Two papers have been accepted to ACL 2025!
--2024.12 : 🎉 One paper has been accepted to AAAI 2025!
--2024.09 : 🎉 One paper has been accepted to EMNLP 2024!
--2024.08 : 🥳 One paper about continual learning is online!
--2024.05 : 🎉 Two papers have been accepted to ACL 2024 (1 Main + 1 Findings)!
--2024.02 : 🎉 One paper has been accepted to COLING 2024!
--2023.10 : 🎉 One paper has been accepted by EMNLP 2023!
--- *2025.08*: 🎉 Two first-author papers have been accepted to EMNLP 2025! - *2025.07*: 🎉 One co-author paper has been accepted to COLM 2025! - *2025.05*: 🎉 One first-author paper and one co-author paper have been accepted to ACL 2025! - *2024.12*: 🎉 One co-author paper has been accepted to AAAI 2025! - *2024.09*: 🎉 One co-first-author paper has been accepted to EMNLP 2024! - *2024.08*: 🥳 One paper about [continual learning](https://arxiv.org/abs/2408.05200) is online! - *2024.05*: 🎉 Two first-author papers have been accepted to ACL 2024 (1 Main + 1 Findings)! - *2024.02*: 🎉 One co-author paper has been accepted to COLING 2024! - *2023.10*: 🎉 One first-author paper has been accepted by EMNLP 2023!
--Preprint
--TaSL: Task Skill Localization and Consolidation for Language Model Continual Learning.
--Yujie Feng , Xu Chu, Yongxin Xu, Zexin Lu, Bo LIU, Philip S. Yu, Xiao-Ming Wu.
--[ arXiv ] (Extension of the ACL 2024 paper)
--* Diversity-grounded Channel Prototypical Learning for Out-of-Distribution Intent Detection. Bo Liu, Liming Zhan, **Yujie Feng**, Zexin Lu, Chengqiang Xie, Lei Xue, Albert Y.S. Lam, Xiao-Ming Wu. [[arXiv](https://arxiv.org/abs/2409.11114)]
--Selected Publications
--FOREVER: Forgetting Curve-Inspired Memory Replay for Language Model Continual Learning. [ PDF ] [ Code ]
--Yujie Feng , Hao Wang, Jian Li, Xu Chu, Zhaolu Kang, Yiran Liu, Yasha Wang, Philip S. Yu, Xiao-Ming Wu.
--The 64th Annual Meeting of the Association for Computational Linguistics ( ACL 2026 ).
--Micro-Macro Retrieval: Reducing Long-Form Hallucination in Large Language Models. [ PDF ] [ Code ]
--Yujie Feng , Jian Li, Zhihan Zhou, Pengfei Xu, Yujia Zhang, Xiaoyu Li, Xiaohui Zhou, Alan Zhao, Xi Chen, Xiao-Ming Wu.
--The Fourteenth International Conference on Learning Representations ( ICLR 2026 ).
--AIMMerging: Leveraging Training Trajectories for Adaptive Iterative Model Merging in Language Model Continual Learning. [ PDF ] [ Code ]
--Yujie Feng , Jian Li, Xiaoyu Dong, Pengfei Xu, Xiaohui Zhou, Yujia Zhang, Zexin Lu, Yasha Wang, Alan Zhao, Xu Chu, Xiao-Ming Wu.
--Conference on Empirical Methods in Natural Language Processing ( EMNLP 2025 ).
--GeoEdit: Geometric Knowledge Editing for Large Language Models. [ PDF ] [ Code ]
--Yujie Feng , Liming Zhan, Zexin Lu, Yongxin Xu, Xu Chu, Yasha Wang, Jiannong Cao, Philip S. Yu, Xiao-Ming Wu.
--Conference on Empirical Methods in Natural Language Processing ( EMNLP 2025 ).
--Recurrent Knowledge Identification and Fusion for Language Model Continual Learning. [ PDF ] [ Code ]
--Yujie Feng , Xujia Wang, Zexin Lu, Shenghong Fu, Guangyuan Shi, Yongxin Xu, Yasha Wang, Philip S. Yu, Xu Chu, Xiao-Ming Wu.
--The 63nd Annual Meeting of the Association for Computational Linguistics ( ACL 2025 ).
--TaSL: Continual Dialog State Tracking via Task Skill Localization and Consolidation. [ PDF ] [ Code ]
--Yujie Feng , Xu Chu, Yongxin Xu, Guangyuan SHI, Bo LIU, Xiao-Ming Wu.
--The 62nd Annual Meeting of the Association for Computational Linguistics ( ACL 2024 ).
--Towards LLM-driven Dialogue State Tracking. [ PDF ] [ Code ]
--Yujie Feng , Zexin Lu, Bo Liu, Liming Zhan, Xiao-Ming Wu.
--Conference on Empirical Methods in Natural Language Processing ( EMNLP 2023 ).
--Completing missing prevalence rates for multiple chronic diseases by jointly leveraging both intra-and inter-disease population health data correlations. [ PDF ] [ Code ]
--Yujie Feng , Jiangtao Wang, Yasha Wang, Sumi Helal.
--Proceedings of the Web Conference 2021 ( WWW 2021 ).
--Honors and Awards
--PolyU Research Student Attachment Program (RSAP) 2024
--PolyU Research Postgraduate Scholarship 2022
--Excellent Graduation Thesis of Peking University 2022
--Merit student of Peking University 2020
--Outstanding Graduates of Shandong Province 2019
--Excellent Graduation Thesis of Harbin Institute of Technology 2019
--Merit student of Harbin Institute of Technology 2016, 2017, 2018
--Internships
--2025/04 - 2025/10, Tencent (Qingyun Project), Shenzhen.
--2018/11 - 2019/06, Tsinghua University, Beijing.
--Activity and Service
--Teaching Assistant
--COMP 2421: Computer Organization, Spring 2024 | 2023, PolyU
--COMP 6704: Advanced Topics in Optimization, Fall 2024 | 2023, PolyU
--COMP 5523: Computer Vision and Image Processing, Spring 2023 | 2022, PolyU
--COMP 2021: Data Structures, Fall 2023 | 2022, PolyU
--C Language, Fall 2017 | 2016, HITwh
--Reviewer of ACL/EMNLP/NAACL/ICLR/NeurIPS/ICML/KDD/TNNLS
-+404
-+There isn't a GitHub Pages site here.
-+If you're trying to publish one, read the full documentation to learn how to set up GitHub Pages for your repository, organization, or user account.
-+GitHub Status — @githubstatus
+--- 王立元 (previous)
++++ 王立元 (current)
+@@ -21,6 +21,9 @@
+ 2024/06 I was awarded the WAIC Rising Star.
+ 2023/12 One paper is published in Nature Machine Intelligence (as the cover).
+ Selected Publications and Preprints
++Steering Topology Distributions for Unified Generative Design of Architected Metamaterials.
++Haolin Li, Yuyang Miao, Menglei Li, Jinshuai Bai, Liyuan Wang $^\dagger$, Xin Liu, Bo Gao, Zahra Sharif Khodaei, Jiantao Liu, Danilo Mandic, M. H. Aliabadi, Weiqiu Chen$^\dagger$.
++Under Review, 2026.
+ ProCA: Progressive Contrastive Alignment for Robust EEG Visual Decoding.
+ Kanglei Zhou, Chunyan Lan, Dongyang Li, Jun Zhu, Liyuan Wang $^\dagger$.
+ Under Review, 2026.
+@@ -133,6 +136,7 @@
+ Conference Reviewer: NeurIPS (2021, 2022, 2023, 2024), ICML (2024, 2025), ICLR (2022, 2023, 2024, 2025), CVPR (2022, 2023, 2024, 2025, 2026), ICCV (2023, 2025), ECCV (2022, 2024, 2026), AAAI (2025), IJCAI (2024), ACM MM (2022, 2023), CogSci (2024, 2025), CoLLAs (2023, 2024, 2025)
+ Journal Reviewer: PNAS, TPAMI, IJCV, TAFFC, TIP, TNNLS, TCSVT, TETCI, TAI, SCIS, ACM Computing Surveys, Artificial Intelligence, Neural Networks, Neurocomputing
+ Honors and Awards
++Beijing Outstanding Young Scientist Program, 2026
+ Capital Frontier Academic Achievements (CFAA), 2025.
+ World AI Conference (WAIC) Youth Outstanding Paper Award, 2025.
+ Chinese Association for Artificial Intelligence (CAAI) Rising Scientist, 2025.
 ```
 
-### Vision language model
-**[朱星宇](https://scholar.google.com/citations?hl=zh-CN&user=PpqUnAwAAAAJ&view_op=list_works&sortby=pubdate)** [NUS]
+### RL
+**[A. Weers Blog](https://aweers.de/blog/)**
 ```diff
---- 朱星宇 (previous)
-+++ 朱星宇 (current)
-@@ -1,2 +1,80 @@
--G o o g l e
--Sorry...
-+Mitigating Hallucinations in Large Vision-Language Models without Performance Degradation
-+X Zhu, J Fang, S Wang, B Zhu, Z Wang, Y Yang, X He
-+ACL 2026 Oral , 2026
-+2026
-+LPEdit: Locality-Preserving Knowledge Editing for MultiModal Large Language Models
-+T Zhang, J Fang, H Jiang, X Zhu, X Wang, X He
-+Proceedings of the ACM Web Conference 2026, 8425-8428 , 2026
-+2026
-+Principled Steering via Null-space Projection for Jailbreak Defense in Vision-Language Models
-+X Zhu, B Zhu, S Wang, J Fang, K Zhao, H Zhang, X He
-+CVPR 2026 , 2026
-+3 2026
-+Adapting Point Cloud Analysis via Multimodal Bayesian Distribution Learning
-+X Zhu, L Yi, S Wang, W Zhu, Y Wu, B Zhu, H Zhang
-+CVPR 2026 , 2026
-+2026
-+Thinking with Images as Continuous Actions: Numerical Visual Chain-of-Thought
-+K Zhao, B Zhu, J Zhou, X Zhu, Z Yue, H Zhang
-+arXiv preprint arXiv:2602.23959 , 2026
-+2026
-+Hybrid Granularity Distribution Estimation for Few-Shot Learning: Statistics Transfer From Categories and Instances
-+S Wang, T Qi, X Zhu, Y Hao, B Zhu, H Zhang, M Wang
-+IEEE Transactions on Image Processing , 2026
-+2026
-+Revisiting Robustness for LLM Safety Alignment via Selective Geometry Control
-+Y Yang, W Tao, J Liu, X Zhu, J Fang, W Huang, L Wu, R Hong, TS Chua
-+arXiv preprint arXiv:2602.07340 , 2026
-+2 2026
-+Look Carefully: Adaptive Visual Reinforcements in Multimodal Large Language Models for Hallucination Mitigation
-+X Zhu, K Zhao, L Yi, S Wang, Z Wang, B Zhu, H Zhang, X He
-+ICLR 2026 , 2026
-+4 2026
-+GuardAlign: Test-time Safety Alignment in Multimodal Large Language Models
-+X Zhu, B Zhu, J Fang, S Wang, Y Zhang, X Wang, X He
-+ICLR 2026 , 2026
-+1 2026
-+Hierarchical Semantic Alignment for Image Clustering
-+X Zhu, B Zhu, Y Li, J Fang, S Wang, K Zhao, H Zhang
-+AAAI 2026 , 2025
-+4 2025
-+Enhancing CLIP Robustness via Cross-Modality Alignment
-+X Zhu, B Zhu, S Wang, K Zhao, H Zhang
-+NeurIPS 2025 Spotlight , 2025
-+15 2025
-+Res-Bench: Benchmarking the Robustness of Multimodal Large Language Models to Dynamic Resolution Input
-+C Li, Z Wang, Y Sheng, X Zhu, Y Hao, X Wang
-+AAAI 2026 , 2025
-+1 2025
-+Dynamic Multimodal Prototype Learning in Vision-Language Models
-+X Zhu, S Wang, B Zhu, M Li, Y Li, J Fang, Z Wang, D Wang, H Zhang
-+ICCV 2025 , 2025
-+19 2025
-+Accelerating Diffusion Transformer via Error-Optimized Cache
-+J Qiu, S Wang, J Lu, L Liu, H Jiang, X Zhu, Y Hao
-+ACM MM 2025 , 2025
-+12 2025
-+Enhancing Zero-Shot Vision Models by Label-Free Prompt Distribution Learning and Bias Correcting
-+X Zhu, B Zhu, Y Tan, S Wang, Y Hao, H Zhang
-+NeurIPS 2024 (Spotlight) , 2024
-+37 2024
-+Selective Vision-Language Subspace Projection for Few-shot CLIP
-+X Zhu, B Zhu, Y Tan, S Wang, Y Hao, H Zhang
-+ACM MM 24 Oral , 2024
-+32 2024
-+Boosting Few-Shot Learning via Attentive Feature Regularization
-+X Zhu, S Wang, J Lu, Y Hao, H Liu, X He
-+AAAI 2024 , 2024
-+41 2024
-+Robust adaptive beamforming for coprime array based on interference power estimation via subspace
-+S Sun, Z Ye, X Zhu
-+2020 IEEE 11th Sensor Array and Multichannel Signal Processing Workshop (SAM … , 2020
-+4 2020
-+Robust adaptive beamforming via subspace for interference covariance matrix reconstruction
-+X Zhu, X Xu, Z Ye
-+Signal Processing 167, 107289 , 2020
-+108 2020
-+基于协方差矩阵重构的稳健自适应波束形成算法综述.
-+叶中付， 朱星宇
-+Journal of Data Acquisition & Processing/Shu Ju Cai Ji Yu Chu Li 34 (6) , 2019
-+3 2019
+--- a__weers_blog (previous)
++++ a__weers_blog (current)
+@@ -1,7 +1,4 @@
+ Blog
+-Potential reward shaping
+-June 15, 2026 · 3 min read
+-Shape rewards
+ State of RL for reasoning LLMs
+ March 15, 2026 · 26 min read
+ Evolution of reinforcement learning for reasoning LLMs
 ```
+
+---
+## Errors (1)
+
+- [苏剑林 - 科学空间](https://kexue.fm/): `Fetch/extract failed: HTTPSConnectionPool(host='kexue.fm', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='kexue.fm', port=443) at 0x7f28b494d450>, 'Connection to kexue.fm timed out. (connect timeout=30)'))`

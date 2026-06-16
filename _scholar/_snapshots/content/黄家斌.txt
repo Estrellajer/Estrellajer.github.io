@@ -3,13 +3,14 @@ Capital One endowed Associate Professor
 Department of Computer Science
 University of Maryland, College Park
 My research interests lie at the intersection of computer vision, computer graphics, and machine learning.
-Research Group | Teaching | Talks | Publications | Open Office Hours
+Research Group | Teaching | Talks | Publications
 Email : jbhuang@umd.edu
 More about me: CV | CV of Failures | Awesome Tips | YouTube | Twitter/X | BlueSky
 Current teaching
-Spring 2026: CSMSC426 Computer Vision
-Spring 2026: CSMSC800 How to Conduct Great Research
+Fall 2026: CMSC848K Multimodal Foundation Models
 Past teaching and evaluations
+Spring 2026: CMSC426 Computer Vision
+Spring 2026: CMSC800 How to Conduct Great Research
 Fall 2025: CMSC848K Multimodal Foundation Models
 Spring 2025: CMSC426 Computer Vision | Student evaluation
 Spring 2025: CMSC800 How to Conduct Great Research | Student evaluation
@@ -20,7 +21,7 @@ Please apply through the CS department and include my name as a potential adviso
 If you are already a UMD student, please email me your CV, prior experiences, and how you would like to get involved.
 Questions? Check out my answers to the Ph.D. Advisor Guide .
 Prospective short-term students :
-If you are undergraduate/gradudate students at UMD or at external institute looking to work on research with us,
+If you are undergraduate/graduate students at UMD or at external institutes looking to work on research with us,
 please fill the form .
 We will contact you if there is a match.
 (Please submit the form again if you used the old version before. Sorry!)
@@ -34,32 +35,36 @@ The CS department is hiring multiple faculty! Find out more here .
 Please feel free to reach out if you have any questions.
 Research Group
 PhD students
-Yao-Chih Lee Vinayak Gupta Yue Feng Yi-Ting Chen
-Ting-Hsuan Liao Hadi Alzayer Seungjae (Jay)Lee Kevin Zhang
+Vinayak Gupta Yue Feng Yi-Ting Chen Ting-Hsuan Liao
+Seungjae (Jay) Lee Quynh Phung Haowen Liu Yu-Hsiang Huang
 (with Furong Huang ) (with Christopher Metzler )
-Quynh Phung Haowen Liu Grace Su
 Undergraduate students
 Alumni
 Former PhD Students
-Jinwoo Choi , PhD 2020, now an Assistant Professor at Kyung Hee Univeristy
+Yao-Chih Lee , PhD 2026, now a Research Scientist at Adobe Research
+Hadi Alzayer , PhD 2026, now a Research Scientist at Google DeepMind
+Kevin Zhang , PhD 2026, (with Christopher Metzler ), now a Research Scientist at Waabi
+Yiran Xu , PhD 2025, next a Research Scientist at Adobe Research
+Songwei Ge , PhD 2025, (with David Jacobs ), now Research Scientist at Reve
 Badour AlBahar , PhD 2022, now an Assistant Professor at Kuwait University
 Chen Gao , PhD 2022, now a Research Scientist at Meta
 Yuliang Zou , PhD 2022, now a Research Scientist at Waymo
-Yiran Xu , PhD 2025, next a Research Scientist at Adobe Research
-Songwei Ge , PhD 2025, (with David Jacobs ), now Research Scientist at Reve
+Jinwoo Choi , PhD 2020, now an Assistant Professor at Kyung Hee University
 Former MS/BS Students
 At University of Maryland College Park
 Sanjali Yadav , next a PhD student at University of Maryland College Park.
 Vaibhav Sanjay , next a MSR student at Carnegie Mellon University
+Daniel Pitzele, next a PhD student at UPenn
+Minsi Hu
 Spencer Lutz
 Elizabeth Qiu
 At Virginia Tech
 Esther Robb (MS 2021), next a PhD student at Stanford University.
 Joseph Messou (MS 2020), next a PhD student at University of Maryland College Park.
 Shih-Yang Su (MS 2020), next a PhD student at University of British Columbia.
-Subhashree Radhakrishnan (MS 2018), next a Deep Learning Software Engineeer at NVIDIA.
-Po-Han Huang (MS 2018), next a Deep Learning Software Engineeer at NVIDIA.
-Sanket Lokegaonkar (MS 2018), next a Software Engineeer at Amazon AWS.
+Subhashree Radhakrishnan (MS 2018), next a Deep Learning Software Engineer at NVIDIA.
+Po-Han Huang (MS 2018), next a Deep Learning Software Engineer at NVIDIA.
+Sanket Lokegaonkar (MS 2018), next a Software Engineer at Amazon AWS.
 Adithya Nallabolu (MS 2017), next a Computer Vision R&D Engineer at Qualcomm.
 At University of Illinois, Urbana-Champaign
 Le Wang (BS 2014), next MS at Stanford, next ASIC/RTL Designer at Google.
@@ -73,7 +78,7 @@ Sakshi Srivastava (BS 2012), next PhD student at UIUC.
 Kevin Han (BS 2012), next PhD at UC Berkeley, now Senior Engineer at Pinnacle Photonics.
 Former Interns
 Yu-Ying Yeh , PhD student at University of California San Diego.
-Yu-Lun Liu , PhD student at National Taiwan University, now at Assistant Professor at National Yang Ming Chiao Tung University.
+Yu-Lun Liu , PhD student at National Taiwan University, now an Assistant Professor at National Yang Ming Chiao Tung University.
 Ishit Mehta , PhD student at University of California San Diego.
 Chris Rockwell , PhD student at University of Michigan Ann Arbor.
 Benjamin Attal , PhD student at Carnegie Mellon University.
@@ -81,9 +86,9 @@ Andreas Meuleman , PhD student at KAIST.
 Xiaoming Zhao , PhD student at UIUC.
 Badour AlBahar , PhD student at Virginia Tech.
 Geng Lin , PhD student at University of Maryland College Park.
-Chen Gao , PhD student at Virginia Tech, now Resarch Scientist at Meta.
+Chen Gao , PhD student at Virginia Tech, now Research Scientist at Meta.
 Wenqi Xian , PhD student at Cornell Tech.
-Xuan Luo , PhD student at University of Washington, now Resarch Scientist at Google.
+Xuan Luo , PhD student at University of Washington, now Research Scientist at Google.
 Former Visiting Students
 Ting-I Hsieh (Intern 2020)
 Yun-Chun Chen (Intern 2019), next PhD student at University of Toronto.
@@ -95,8 +100,29 @@ Chen Gao (Intern 2018), next PhD student at Virginia Tech.
 Yen-Chen Lin (Intern 2017), next PhD student at MIT.
 Hao-Wei Yeh (Intern 2017), next PhD student at University of Tokyo.
 Publications
+μ₀: A Scalable 3D Interaction-Trace World Model
+Seungjae Lee *, Yoonkyo Jung *, Jusuk Lee , Jonghun Shin , Amir Hossein Shahidzadeh , Yao-Chih Lee , H. Jin Kim , Jia-Bin Huang †, Furong Huang †
+arXiv 2026
+[ Paper (PDF) ]
+[ Project page ] (*Equal contributions; † Equal advising.)
+DynaFLIP: Rethinking Robotics Perception via Tri-Modal-Dynamics Guided Representation
+Jusuk Lee , Seungjae Lee , Jonghun Shin , Hoseong Jung , Sungha Kim , Daesol Cho , H. Jin Kim , Jia-Bin Huang †, Furong Huang †
+arXiv 2026
+[ Paper (PDF) ]
+[ Project page ] († Equal advising.)
+[ Code ]
+[ Model ]
+TRACE: Object Motion Editing in Videos with First-Frame Trajectory Guidance
+Quynh Phung ,
+Long Mai,
+Charles Ham,
+Feng Liu, Jia-Bin Huang ,
+Aniket Mahapatra
+arXiv preprint arXiv:2603.25707
+[ Paper (PDF) ]
+[ Google Scholar ]
 Generative Refocusing: Flexible Defocus Control from a Single Image
-Chun-Wei Tuan Mu , Jia-Bin Huang , Yu-Lun Liu
+Chun-Wei Tuan Mu , Cheng-De Fan , Jia-Bin Huang , Yu-Lun Liu
 arXiv 2025
 [ Paper (PDF) ]
 [ Project page ]
@@ -108,15 +134,15 @@ Proceedings of IEEE/CVF Conference on Computer Vision and Pattern Recognition (C
 [ Paper (PDF) ]
 [ Project page ]
 TraceGen: World Modeling in 3D Trace-Space Enables Learning from Cross-Embodiment Videos
-Seungjae Lee *, Yoonkyo Jung *, Inkook Chun *, Yao-Chih Lee , Zikui Cai , Hongjia Huang , Aayush Talreja , Tan Dat Dao , Yongyuan Liang , Jia-Bin Huang , Furong Huang
+Seungjae Lee *, Yoonkyo Jung *, Inkook Chun , Yao-Chih Lee , Zikui Cai , Hongjia Huang , Aayush Talreja , Tan Dat Dao , Yongyuan Liang , Jia-Bin Huang , Furong Huang
 Proceedings of IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR), 2026
 [ Paper (PDF) ]
-[ Project page ]
+[ Project page ] (*Equal contributions)
 SIMPACT: Simulation-Enabled Action Planning using Vision-Language Models
-Haowen Liu *, Shaoxiong Yao * Haonan Chen , Jiawei Gao , Jiayuan Mao , Jia-Bin Huang , Yilun Du
+Haowen Liu *, Shaoxiong Yao *, Haonan Chen , Jiawei Gao , Jiayuan Mao , Jia-Bin Huang , Yilun Du
 Proceedings of IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR), 2026
 [ Paper (PDF) ]
-[ Project page ]
+[ Project page ] (*Equal contributions)
 Coupled Diffusion Sampling for Training-Free Multi-View Image Editing
 Hadi Alzayer , Yunzhi Zhang , Chen Geng , Jia-Bin Huang , Jiajun Wu
 Proceedings of IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR), 2026
@@ -127,6 +153,7 @@ Vinayak Gupta , Chih-Hao Lin , Shenlong Wang , Anand Bhattad , Jia-Bin Huang ,
 Proceedings of IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR), 2026
 [ Paper (PDF) ]
 [ Project page ]
+[ Code ]
 UniVerse: A Unified Modulation Framework for Segmentation-Free, Disentangled Multi-Concept Personalization
 Quynh Phung , Sandesh Ghimire , Minsi Hu , Chung-Chi Tsai , Jia-Bin Huang ,
 Proceedings of IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR), 2026
@@ -153,13 +180,13 @@ Ting-Hsuan Liao *, Haowen Liu *, Yiran Xu , Songwei Ge , Gengshan Yang , Jia-Bin
 ACM SIGGRAPH Asia 2025
 [ Paper (PDF) ]
 [ Project page ]
-[ Code ]
-(*Equal contributions)
+[ Code ] (*Equal contributions)
 Generative Omnimatte: Learning to Decompose Video into Layers
 Yao-Chih Lee , Erika Lu , Sarah Rumbley , Michal Geyer , Jia-Bin Huang , Tali Dekel , Forrester Cole
 Proceedings of IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR), 2025
 [ Paper (PDF) ]
 [ Project page ]
+[ Code ]
 Generative Multiview Relighting for 3D Reconstruction under Extreme Illumination Variation
 Hadi Alzayer , Philipp Henzler , Jonathan T. Barron , Jia-Bin Huang , Pratul P. Srinivasan , Dor Verbin
 Proceedings of IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR), 2025
@@ -193,6 +220,13 @@ Zhengqin Li , Dilin Wang , Ka chen , Zhaoyang Lv , Thu Nguyen-Phuoc , Milim Lee 
 Proceedings of IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR), 2025
 [ Paper (PDF) ]
 [ Project page ]
+[ Code ]
+Why Are Web AI Agents More Vulnerable Than Standalone LLMs? A Security Analysis
+Jeffrey Yang Fan Chiang, Seungjae Lee , Jia-Bin Huang , Furong Huang ,
+Yizheng Chen
+arXiv preprint arXiv:2502.20383
+[ Paper (PDF) ]
+[ Google Scholar ]
 MaDCoW: Marginal Distortion Correction for Wide-Angle Photography with Arbitrary Objects
 Kevin Zhang , Jia-Bin Huang , Jose Echevarria , Stephen DiVerdi ,
 and Aaron Hertzmann
@@ -230,10 +264,9 @@ Zhi-Hao Lin , Bohan Liu , Yi-Ting Chen , Kuan-Sheng Chen , David Forsyth , Jia-B
 [ Code ]
 Rethinking Score Distillation as a Bridge Between Image Distributions
 David McAllister *, Songwei Ge *, Jia-Bin Huang , David W. Jacobs , Alexei A. Efros , Aleksander Holynski , Angjoo Kanazawa
-(* Equal contributions)
 Conference on Neural Information Processing Systems (NeurIPS) 2024
 [ Paper (PDF) ]
-[ Project page ]
+[ Project page ] (*Equal contributions)
 [ Code ]
 {}{img_left}{https: ra-nerf.github.io static images main_fig.jpg}{}{400}{}{} Planar Reflection-Aware Neural Radiance Fields
 Chen Gao , Yipeng Wang , Changil Kim , Jia-Bin Huang , Johannes Kopf
@@ -1045,11 +1078,6 @@ IEEE Signal Processing Letters, Vol. No.10, October 2007
 [ Paper (PDF) ]
 [ Project page ]
 CVGIP 2006 Best Paper Honorable Mention
-Open Office Hour
-I set aside some time some weeks to meet with anyone (preferrably students from underrepresented groups).
-Free free to sign up below if you would like to chat with me on any topics.
-Calendly inline widget begin
-Calendly inline widget end
 Recent talks
 02/25/2026 Invited talk at UIUC CS
 02/24/2026 Keynote talk at UIUC CSL Student Conference
@@ -1092,7 +1120,7 @@ Highlights and News
 08 / 2020 Thanks Facebook and Adobe for the gift donation.
 08 / 2020 Thank NSF for the Smart and Connected Health (SCH) grant (1.1M for four years).
 03 / 2020 Thank 3M for supporting our work with the 3M Non-Tenure Faculty Award.
-02 / 2020 Thanks 4-VA for the supporting us with a collaborative research grant (with Vicente Ordonez at University of Virginia).
+02 / 2020 Thanks 4-VA for supporting us with a collaborative research grant (with Vicente Ordonez at University of Virginia).
 09 / 2019 Thanks NSF for supporting us with a medium Cyber-Physical Systems (CPS) grant (with Ryan K. Williams , Haibo Zeng , Changhee Jung ).
 09 / 2019 Thanks Rehabilitation Engineering Research Centers (RERC) for supporting us through the Rehabilitation Strategies, Techniques, and Interventions program (with Shirley Ryan Ability Lab , Thanassis Rikakis , Aisling Kelliher ).
 04 / 2019 Thanks SAMSUNG for continuing to support our research through the GRO award (with Alexander Schwing ).
@@ -1125,10 +1153,10 @@ LatinX in AI Mentoring Program: CVPR 2021, ICCV 2021
 “A Conversation With …”: SIGGRAPH Asia 2021
 Past Teaching
 University of Maryland College Park
-CMSC 426 Computer Vision, Spring 2023, 2024
+CMSC 426 Computer Vision, Spring 2023, 2024, 2026
 CMSC 733 Computer Processing of Pictorial Information, Fall 2022
 CMSC 848K Multimodal Foundation Models, Fall 2024
-CMSC 800 How to Conduct Great Research, Spring 2024
+CMSC 800 How to Conduct Great Research, Spring 2024, 2026
 Virginia Tech
 Advanced Machine Learning: Spring 2021, Spring 2020, Spring 2019
 Advanced Computer Vision: Spring 2017

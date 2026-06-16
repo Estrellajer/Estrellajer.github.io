@@ -21,6 +21,9 @@ Recent News
 2024/06 I was awarded the WAIC Rising Star.
 2023/12 One paper is published in Nature Machine Intelligence (as the cover).
 Selected Publications and Preprints
+Steering Topology Distributions for Unified Generative Design of Architected Metamaterials.
+Haolin Li, Yuyang Miao, Menglei Li, Jinshuai Bai, Liyuan Wang $^\dagger$, Xin Liu, Bo Gao, Zahra Sharif Khodaei, Jiantao Liu, Danilo Mandic, M. H. Aliabadi, Weiqiu Chen$^\dagger$.
+Under Review, 2026.
 ProCA: Progressive Contrastive Alignment for Robust EEG Visual Decoding.
 Kanglei Zhou, Chunyan Lan, Dongyang Li, Jun Zhu, Liyuan Wang $^\dagger$.
 Under Review, 2026.
@@ -133,6 +136,7 @@ Conference Area Chair: NeurIPS (2025), ICLR (2026), ICML (2026), VALSE (2026)
 Conference Reviewer: NeurIPS (2021, 2022, 2023, 2024), ICML (2024, 2025), ICLR (2022, 2023, 2024, 2025), CVPR (2022, 2023, 2024, 2025, 2026), ICCV (2023, 2025), ECCV (2022, 2024, 2026), AAAI (2025), IJCAI (2024), ACM MM (2022, 2023), CogSci (2024, 2025), CoLLAs (2023, 2024, 2025)
 Journal Reviewer: PNAS, TPAMI, IJCV, TAFFC, TIP, TNNLS, TCSVT, TETCI, TAI, SCIS, ACM Computing Surveys, Artificial Intelligence, Neural Networks, Neurocomputing
 Honors and Awards
+Beijing Outstanding Young Scientist Program, 2026
 Capital Frontier Academic Achievements (CFAA), 2025.
 World AI Conference (WAIC) Youth Outstanding Paper Award, 2025.
 Chinese Association for Artificial Intelligence (CAAI) Rising Scientist, 2025.
