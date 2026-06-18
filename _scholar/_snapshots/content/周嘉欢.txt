@@ -10,6 +10,7 @@ Latest News
 We are always actively recruiting Post-doc Fellows,
 Ph.D., Master, and Research Interns! Welcome to contact me with your detailed CV!
 (常年招收博士后、博士、硕士和科研实习生！)
+06.2024, Two papers are accepted by ECCV'2026.
 05.2026, One paper is accepted by IEEE TPAMI.
 05.2026, Four papers are accepted by ICML'2026.
 04.2026, Invited to serve as the Area Chair of BMVC'2026.
@@ -89,6 +90,18 @@ All Papers
 2023
 2022 and before
 The bib of the selected paper has copied!
+( ECCV'26 )-Yao Yong, Zhenyu Cui, Lei Chen, Jiwen Lu, and Jiahuan Zhou* , "DG-Force: Disentangling and Gathering Forensic Cues is Needed for Image Manipulation Localization", in Proceedings of the
+European Conference on Computer Vision, Sep.8 – Sep.12, Malmö, Sweden, 2026
+[ pdf ] AIGC
+( ECCV'26 )-Kunlun Xu, Liangyu Ma, Jiangmeng Li, Xin Tong, Xiaode Liu, Yufei Guo, and Jiahuan Zhou* , "SCORE: SubDistribution-aware Collaborative Knowledge Reinforcing for Cloth-Hybrid Lifelong Person Re-Identification", in Proceedings of the
+European Conference on Computer Vision, Sep.8 – Sep.12, Malmö, Sweden, 2026
+[ pdf ] OR
+( TPAMI'26 )-Kunlun Xu, Jiangmeng Li, Yufei
+Guo, Yuxin Peng, and Jiahuan Zhou* , "Mitigate Catastrophic Remembering
+via Continual Self-Paced Dual-Knowledge Purification for Noisy Lifelong Person
+Re-Identification", in IEEE Transactions on Pattern Analysis and Machine
+Intelligence, 2026
+[ bib ] OR IL
 ( TPAMI'26 )-Kunlun Xu, Jiangmeng Li, Yufei
 Guo, Yuxin Peng, and Jiahuan Zhou* , "Mitigate Catastrophic Remembering
 via Continual Self-Paced Dual-Knowledge Purification for Noisy Lifelong Person
@@ -612,6 +625,12 @@ clustering by nonnegative restriction", in Proceedings of the International
 Conference on Pattern Recognition, pp. 1550-1553, Tsukuba, Japan, Nov.11 -
 Nov.15, 2012
 [ pdf ] [ bib ]
+( ECCV'26 )-Yao Yong, Zhenyu Cui, Lei Chen, Jiwen Lu, and Jiahuan Zhou* , "DG-Force: Disentangling and Gathering Forensic Cues is Needed for Image Manipulation Localization", in Proceedings of the
+European Conference on Computer Vision, Sep.8 – Sep.12, Malmö, Sweden, 2026
+[ pdf ] AIGC
+( ECCV'26 )-Kunlun Xu, Liangyu Ma, Jiangmeng Li, Xin Tong, Xiaode Liu, Yufei Guo, and Jiahuan Zhou* , "SCORE: SubDistribution-aware Collaborative Knowledge Reinforcing for Cloth-Hybrid Lifelong Person Re-Identification", in Proceedings of the
+European Conference on Computer Vision, Sep.8 – Sep.12, Malmö, Sweden, 2026
+[ pdf ] OR
 ( TPAMI'26 )-Kunlun Xu, Jiangmeng Li, Yufei
 Guo, Yuxin Peng, and Jiahuan Zhou* , "Mitigate Catastrophic Remembering
 via Continual Self-Paced Dual-Knowledge Purification for Noisy Lifelong Person
