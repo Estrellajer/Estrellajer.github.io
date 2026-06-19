@@ -1,12 +1,9 @@
 # Scholar Monitor Report
 
-**Run:** 2026-06-19 18:09 UTC  |  **Total:** 57  |  Events 0  |  RSS 0  |  CHG 0  |  FIRST 0  |  OK 52  |  ERR 5
+**Run:** 2026-06-19 12:01 UTC  |  **Total:** 57  |  Events 2  |  RSS 1  |  CHG 1  |  FIRST 1  |  OK 54  |  ERR 0
 
 ---
-## Needs Attention (5)
+## Activity Feed (2)
 
-- [苏剑林 - 科学空间](https://kexue.fm/): `HTTP 403 for https://kexue.fm/`
-- [卡里奇 - 知乎](https://www.zhihu.com/people/lyq2002): `Zhihu auth failed (cookies expired or invalid — refresh ZHIHU_COOKIES_B64); RSSHub fallback failed via https://rsshub.app (403 Client Error: Forbidden for url: https://rsshub.app/zhihu/people/activities/lyq2002)`
-- [堪村无业土博鼠 - 知乎](https://www.zhihu.com/people/allen-zhu-16): `Zhihu auth failed (cookies expired or invalid — refresh ZHIHU_COOKIES_B64); RSSHub fallback failed via https://rsshub.app (403 Client Error: Forbidden for url: https://rsshub.app/zhihu/people/activities/allen-zhu-16)`
-- [冯钰捷](https://woodscene.github.io/): `GitHub Pages site not found (dead URL)`
-- [傅宇千](https://www.zhihu.com/people/zxhy-1999/posts): `Zhihu auth failed (cookies expired or invalid — refresh ZHIHU_COOKIES_B64); RSSHub fallback failed via https://rsshub.app (403 Client Error: Forbidden for url: https://rsshub.app/zhihu/people/activities/zxhy-1999)`
+- **朱星宇** [NUS]: IEEE Access 7, 53262-53272, 2019 2019
+- **苏剑林 - 科学空间** [Kimi]: 强制间隔投影（Margin-Enforcing Projection）
