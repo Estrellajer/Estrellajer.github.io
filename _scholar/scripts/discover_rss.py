@@ -2,6 +2,11 @@
 """Batch RSS discovery - probe all scholars for RSS/Atom feeds.
 
 Uses requests.Session for connection reuse and stops early once RSS is found per site.
+
+The cache (`_snapshots/rss_sources.yaml`) is MERGED, not overwritten: a previously
+discovered feed is preserved when a probe fails transiently, so a single network
+blip can never demote a scholar from clean RSS to lossy content-diff (which would
+cause a one-time false "changed").
 """
 import sys
 from pathlib import Path
@@ -22,6 +27,7 @@ def main():
         config = yaml.safe_load(f)
 
     scholars = config.get("scholars", [])
+    scholar_names = {s["name"] for s in scholars}
     print(f"Probing {len(scholars)} sites for RSS feeds...\n")
 
     session = requests.Session()
@@ -37,7 +43,16 @@ def main():
     import urllib3
     urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
+    # Start from the existing cache so transient failures never drop a feed.
+    rss_path = Path("_snapshots") / "rss_sources.yaml"
     rss_sources = {}
+    if rss_path.exists():
+        try:
+            with open(rss_path, encoding="utf-8") as f:
+                rss_sources = yaml.safe_load(f) or {}
+        except Exception:
+            rss_sources = {}
+
     no_rss = []
     errors = []
 
@@ -53,6 +68,7 @@ def main():
         print(f"  [{i+1}/{len(scholars)}] {name:<30s}", end=" ", flush=True)
 
         found_rss = None
+        last_err = None
 
         # Method 0: For zhihu, try RSSHub
         if "zhihu.com" in url:
@@ -64,8 +80,8 @@ def main():
                     resp = session.get(rsshub_url, timeout=10)
                     if resp.status_code == 200 and ("<rss" in resp.text[:500] or "<feed" in resp.text[:500]):
                         found_rss = rsshub_url
-                except Exception:
-                    pass
+                except Exception as e:
+                    last_err = f"RSSHub probe: {e}"
                 if found_rss:
                     print(f"[RSSHub] {rsshub_url}")
                     rss_sources[name] = found_rss
@@ -81,8 +97,8 @@ def main():
                 if href:
                     found_rss = urljoin(url, href)
                     break
-        except Exception:
-            pass
+        except Exception as e:
+            last_err = f"page fetch: {e}"
 
         # Method 2: Try common RSS paths (stop on first hit)
         if not found_rss:
@@ -96,29 +112,34 @@ def main():
                         if "<?xml" in text[:200] or "<rss" in text[:500] or "<feed" in text[:500]:
                             found_rss = rss_url
                             break
-                except Exception:
+                except Exception as e:
+                    last_err = f"probe {path}: {e}"
                     continue
 
         if found_rss:
             rss_sources[name] = found_rss
             print(f"[RSS] {found_rss}")
+        elif last_err:
+            # Probe failed — keep the previously cached feed (if any) and record the error.
+            cached = rss_sources.get(name)
+            print(f"[ERR] (cached feed preserved: {cached})" if cached else "[ERR]")
+            errors.append({"name": name, "url": url, "error": last_err})
         else:
+            # Requests succeeded but no feed found — genuinely no RSS.
             print("[-]")
             no_rss.append({"name": name, "url": url})
 
-    # Save results
-    output = Path("_snapshots")
-    output.mkdir(parents=True, exist_ok=True)
-
-    rss_path = output / "rss_sources.yaml"
+    # Save merged cache
+    rss_path.parent.mkdir(parents=True, exist_ok=True)
     with open(rss_path, "w", encoding="utf-8") as f:
         yaml.dump(rss_sources, f, allow_unicode=True)
 
     # Summary
+    found_count = sum(1 for n in rss_sources if n in scholar_names)
     print(f"\n{'='*50}")
-    print(f"RSS Discovery Complete")
+    print(f"RSS Discovery Complete (merged with existing cache)")
     print(f"{'='*50}")
-    print(f"  [OK] RSS Found:   {len(rss_sources)}/{len(scholars)}")
+    print(f"  [OK] RSS Found:   {found_count}/{len(scholars)}")
     print(f"  [-] No RSS:       {len(no_rss)}")
     print(f"  [!] Errors:       {len(errors)}")
     print(f"\nResults saved to: {rss_path}")
@@ -127,6 +148,11 @@ def main():
         print(f"\nSites without RSS (will use content-diff monitoring):")
         for item in no_rss:
             print(f"  - {item['name']}: {item['url']}")
+
+    if errors:
+        print(f"\nRequest errors (cached feeds preserved where available):")
+        for item in errors:
+            print(f"  - {item['name']}: {item['error']}")
 
 
 if __name__ == "__main__":

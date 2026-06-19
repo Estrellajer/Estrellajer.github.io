@@ -14,9 +14,12 @@ try:
 except AttributeError:
     pass
 import xml.etree.ElementTree as ET
+import time
+import warnings
 from collections import Counter
 from datetime import datetime, timezone
 from difflib import unified_diff
+from email.utils import parsedate_to_datetime
 from pathlib import Path
 
 import requests
@@ -30,7 +33,7 @@ def _get_session():
     retries = Retry(
         total=3,
         backoff_factor=1,
-        status_forcelist=[500, 502, 503, 504],
+        status_forcelist=[429, 500, 502, 503, 504],
         raise_on_status=False
     )
     adapter = HTTPAdapter(max_retries=retries)
@@ -56,8 +59,6 @@ REQUEST_HEADERS = {
     "Accept-Language": "zh-CN,zh;q=0.9,en;q=0.8",
     "Referer": "https://www.google.com/",
 }
-import urllib3
-urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
 
 def log(msg: str):
@@ -77,18 +78,38 @@ def save_yaml(path: Path, data):
         yaml.dump(data, f, allow_unicode=True)
 
 
-def fetch(url: str, timeout: int = 30):
+def fetch(url: str, timeout: int = 30, retries: int = 2):
+    """Fetch a URL with TLS verification on by default, real retries, and per-error
+    classification. SSL verification is only relaxed as a last-resort fallback for
+    sites with broken certs (with a warning). Non-2xx responses raise HTTPError so
+    403/404/5xx surface as clean `error` results instead of being parsed as content."""
     if "scholar.google" in url or "google.com" in url:
         timeout = min(timeout, 10)
-    try:
-        resp = SESSION.get(url, headers=REQUEST_HEADERS, timeout=timeout, verify=False)
-    except (requests.exceptions.SSLError, requests.exceptions.ConnectionError, Exception):
-        resp = SESSION.get(url, headers=REQUEST_HEADERS, timeout=timeout, verify=False)
-
-    if resp:
-        if resp.encoding == 'ISO-8859-1' or not resp.encoding:
-            resp.encoding = resp.apparent_encoding or 'utf-8'
-    return resp
+    last_exc = None
+    for attempt in range(retries):
+        try:
+            resp = SESSION.get(url, headers=REQUEST_HEADERS, timeout=timeout, verify=True)
+            if resp.encoding == 'ISO-8859-1' or not resp.encoding:
+                resp.encoding = resp.apparent_encoding or 'utf-8'
+            resp.raise_for_status()
+            return resp
+        except requests.exceptions.SSLError as e:
+            # Only SSL errors get the relaxed-verification fallback, on the final attempt.
+            last_exc = e
+            if attempt == retries - 1:
+                warnings.warn(f"SSL verification failed for {url}; retrying with verify=False: {e}")
+                resp = SESSION.get(url, headers=REQUEST_HEADERS, timeout=timeout, verify=False)
+                if resp.encoding == 'ISO-8859-1' or not resp.encoding:
+                    resp.encoding = resp.apparent_encoding or 'utf-8'
+                resp.raise_for_status()
+                return resp
+        except (requests.exceptions.ConnectionError, requests.exceptions.Timeout) as e:
+            last_exc = e  # network — back off and retry
+        except requests.exceptions.HTTPError:
+            raise  # 4xx (non-retryable) / persisted 5xx — surface immediately
+        if attempt < retries - 1:
+            time.sleep(1.5 ** attempt)
+    raise last_exc
 
 
 # RSS
@@ -96,6 +117,14 @@ def _parse_rss_date(date_str: str):
     if not date_str:
         return None
     cleaned = date_str.strip()
+    # 1. RFC-822 <pubDate> via the stdlib parser (handles named timezones: GMT/EST/CET/...)
+    try:
+        dt = parsedate_to_datetime(cleaned)
+        if dt is not None:
+            return dt if dt.tzinfo else dt.replace(tzinfo=timezone.utc)
+    except (TypeError, ValueError, IndexError):
+        pass
+    # 2. Fallbacks for ISO/Atom and other common formats
     if "," in cleaned[:8]:
         cleaned = cleaned.split(",", 1)[1].strip()
     for fmt in [
@@ -180,7 +209,9 @@ def check_rss(name: str, rss_url: str, since: datetime) -> dict:
                     since_ts = since.timestamp()
                 except Exception:
                     since_ts = 0.0
-                if e["timestamp"] <= since_ts:
+                # Keep entries whose date we couldn't parse (timestamp == 0.0) rather
+                # than silently dropping them — treat them as possibly-new.
+                if e["timestamp"] != 0.0 and e["timestamp"] <= since_ts:
                     continue
             new.append({
                 "title": e["title"],
@@ -251,9 +282,38 @@ def get_clean_text_custom(element) -> str:
     return "\n".join(l.strip() for l in raw_text.splitlines() if l.strip())
 
 
+DEFAULT_REMOVE_SELECTORS = [
+    "script", "style", "noscript", "iframe", "svg",
+    "[class*='visit']", "[class*='counter']", "[id*='busuanzi']",
+    "time", ".timeago", "[datetime]",
+    "[data-analytics]", "[data-track]", "[data-pid]",
+    ".giscus", "#disqus_thread",
+]
+
+_NOISE_LINE_DATE = re.compile(r"^\d{4}[-/.]\d{1,2}([-/.]\d{1,2})?\s*$")
+_NOISE_LINE_NUM = re.compile(r"^\d+(\.\d+)?\s*$")
+_NOISE_LINE_HEX = re.compile(r"^[a-f0-9]{16,}\s*$", re.IGNORECASE)
+
+
+def _normalize_for_diff(text: str) -> str:
+    """Drop lines that are pure dates / pure numbers / long hex tokens so dynamic
+    noise (visitor counters, 'last updated' timestamps, CSRF/analytics tokens) does
+    not trigger spurious 'changed'. Lines that contain other text are preserved."""
+    out = []
+    for line in text.split("\n"):
+        s = line.strip()
+        if not s:
+            out.append(line)
+            continue
+        if _NOISE_LINE_DATE.match(s) or _NOISE_LINE_NUM.match(s) or _NOISE_LINE_HEX.match(s):
+            continue
+        out.append(line)
+    return "\n".join(out)
+
+
 def extract_content(html: str, selectors: list = None, remove_selectors: list = None, watch: str = "general") -> str:
     soup = BeautifulSoup(html, "html.parser")
-    for sel in remove_selectors or []:
+    for sel in (DEFAULT_REMOVE_SELECTORS + (remove_selectors or [])):
         for el in soup.select(sel):
             el.decompose()
 
@@ -358,10 +418,14 @@ def check_zhihu(name: str, url: str, since: datetime | None) -> dict | None:
         return None
     zid = m.group(1)
     entries = []
+    auth_failed = False
+    request_err = None
     try:
         r = session.get(f"https://www.zhihu.com/api/v4/members/{zid}/answers",
                         params={"limit": 10, "order_by": "created"}, timeout=15)
-        if r.status_code == 200:
+        if r.status_code in (401, 403):
+            auth_failed = True
+        elif r.status_code == 200:
             for item in r.json().get("data", []):
                 created = datetime.fromtimestamp(item["created_time"], tz=timezone.utc)
                 if since and created <= since:
@@ -369,12 +433,14 @@ def check_zhihu(name: str, url: str, since: datetime | None) -> dict | None:
                 entries.append({"title": f"[Answer] {item['question']['title']}",
                                 "link": f"https://www.zhihu.com/question/{item['question']['id']}/answer/{item['id']}",
                                 "published": created.strftime("%Y-%m-%d")})
-    except Exception:
-        pass
+    except Exception as e:
+        request_err = f"Zhihu answers request failed: {e}"
     try:
         r = session.get(f"https://www.zhihu.com/api/v4/members/{zid}/articles",
                         params={"limit": 10, "order_by": "created"}, timeout=15)
-        if r.status_code == 200:
+        if r.status_code in (401, 403):
+            auth_failed = True
+        elif r.status_code == 200:
             for item in r.json().get("data", []):
                 created = datetime.fromtimestamp(item["created"], tz=timezone.utc)
                 if since and created <= since:
@@ -382,8 +448,13 @@ def check_zhihu(name: str, url: str, since: datetime | None) -> dict | None:
                 entries.append({"title": f"[Article] {item['title']}",
                                 "link": f"https://zhuanlan.zhihu.com/p/{item['id']}",
                                 "published": created.strftime("%Y-%m-%d")})
-    except Exception:
-        pass
+    except Exception as e:
+        request_err = f"Zhihu articles request failed: {e}"
+    if auth_failed:
+        return {"type": "error", "name": name, "url": url,
+                "error": "Zhihu auth failed (cookies expired or invalid)"}
+    if request_err and not entries:
+        return {"type": "error", "name": name, "url": url, "error": request_err}
     if entries:
         return {"type": "rss", "name": name, "url": url, "entries": entries}
     return {"type": "rss_no_change", "name": name, "url": url}
@@ -463,20 +534,22 @@ def check_scholar(scholar: dict, rss_cache: dict, since: datetime | None) -> dic
               "labels": scholar.get("labels", []),
               "watch": scholar.get("watch", "general")}
     rss_url = rss_cache.get(name)
-    if rss_url and scholar.get("watch") == "blog":
+    if rss_url:
         rr = check_rss(name, rss_url, since)
         if "error" in rr:
-            result["type"] = "error"
-            result["error"] = rr["error"]
-            return result
-        result["latest_entries"] = rr.get("latest_entries", [])
-        if since and rr.get("new_entries"):
-            result["type"] = "rss"
-            result["entries"] = rr["new_entries"]
-            return result
+            # Feed broken/unreachable — fall through to content-diff so the page
+            # is still monitored. (A one-time "changed" may surface as the content
+            # snapshot re-baselines, then it self-corrects on subsequent runs.)
+            print(f"      ↳ RSS error, falling back to content-diff: {rr['error']}", flush=True)
         else:
-            result["type"] = "rss_no_change"
-            return result
+            result["latest_entries"] = rr.get("latest_entries", [])
+            if since and rr.get("new_entries"):
+                result["type"] = "rss"
+                result["entries"] = rr["new_entries"]
+                return result
+            else:
+                result["type"] = "rss_no_change"
+                return result
     if "zhihu.com" in url:
         zr = check_zhihu(name, url, since)
         if zr is not None:
@@ -500,10 +573,12 @@ def check_scholar(scholar: dict, rss_cache: dict, since: datetime | None) -> dic
         save_snapshot(name, content)
         result["type"] = "first_check"
         return result
-    if prev == content:
+    prev_norm = _normalize_for_diff(prev)
+    content_norm = _normalize_for_diff(content)
+    if prev_norm == content_norm:
         result["type"] = "unchanged"
         return result
-    diff = list(unified_diff(prev.split("\n"), content.split("\n"),
+    diff = list(unified_diff(prev_norm.split("\n"), content_norm.split("\n"),
                              fromfile=f"{_safe_name(name)} (previous)",
                              tofile=f"{_safe_name(name)} (current)", lineterm=""))
     MAX_DIFF = 150
@@ -989,12 +1064,44 @@ def generate_html_report(results: list, total: int):
     HTML_PATH.parent.mkdir(parents=True, exist_ok=True)
     HTML_PATH.write_text(html, encoding="utf-8")
     log(f"HTML report saved to: {HTML_PATH}")
+def prune_snapshots(scholars, force=False):
+    """Remove orphaned snapshot files for scholars no longer in config.yaml."""
+    valid = {_safe_name(s["name"]) for s in scholars}
+    orphans = [f for f in CONTENT_DIR.glob("*.txt") if f.stem not in valid]
+    if not orphans:
+        log("No orphaned snapshots to prune.")
+        return
+    log(f"Found {len(orphans)} orphaned snapshot(s):")
+    for f in orphans:
+        log(f"  - {f.name}")
+    if not force:
+        log("(dry-run) re-run with --force to actually delete them.")
+        return
+    for f in orphans:
+        f.unlink()
+    log(f"Deleted {len(orphans)} orphaned snapshot(s).")
+
+
 def main():
+    import argparse
+    parser = argparse.ArgumentParser(description="Scholar Monitor - check scholar sites for updates.")
+    parser.add_argument("--prune-snapshots", action="store_true",
+                        help="Remove snapshots for scholars no longer in config.yaml (dry-run unless --force).")
+    parser.add_argument("--force", action="store_true",
+                        help="With --prune-snapshots, actually delete the files.")
+    args = parser.parse_args()
+
     config = load_yaml(BASE_DIR / "config.yaml")
     scholars = config.get("scholars", [])
     if not scholars:
         log("Error: No scholars found in config.yaml")
         sys.exit(1)
+
+    if args.prune_snapshots:
+        prune_snapshots(scholars, force=args.force)
+        return
+
+    run_start = datetime.now(timezone.utc)
 
     rss_cache = load_yaml(RSS_CACHE_PATH)
 
@@ -1030,7 +1137,16 @@ def main():
 
     report = generate_report(results, len(scholars))
     generate_html_report(results, len(scholars))
-    LAST_CHECKED_PATH.write_text(datetime.now(timezone.utc).isoformat())
+
+    # Advance the `since` watermark only when the run was substantially successful,
+    # so a flaky run does not advance the window and cause real updates to be missed.
+    total = len(scholars)
+    errors = sum(1 for r in results if r["type"] == "error")
+    if total and (errors / total) < 0.2:
+        LAST_CHECKED_PATH.write_text(run_start.isoformat())
+    else:
+        log(f"::warning::Run had {errors}/{total} errors — NOT advancing since watermark "
+            f"(the window will be re-checked next run)")
 
     log(f"\n{'='*50}")
     log("Report:")

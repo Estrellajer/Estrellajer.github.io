@@ -2,32 +2,56 @@
 """Convert a document.cookie string to Netscape-format cookies.txt for Zhihu.
 
 Usage:
-    python scripts/convert_cookies.py
-"""
-from pathlib import Path
+    python scripts/convert_cookies.py --input cookies_raw.txt
+    ZHIHU_COOKIES="k=v; k2=v2" python scripts/convert_cookies.py
+    python scripts/convert_cookies.py < cookies_raw.txt
 
-COOKIE_STRING = (
-    "_xsrf=zTYABmUq4Vl4v6wDbu2UaR06OwPFXW6y; "
-    "_zap=509a4f3b-6c6a-4ec4-8b56-8ab1ced5383a; "
-    "d_c0=OKPTBJiKpBqPTr93GEMvKjZFGOiT_Jb9uV8=|1750498784; "
-    "__snaker__id=bLR0TJ2oP2rF5D1X; "
-    "q_c1=68022e1c754a47b981412bc576987432|1750906318000|1750906318000; "
-    "edu_user_uuid=edu-v1|a96a76a9-c6bf-400d-ac26-a0c11f86b8d9; "
-    "HMACCOUNT=19B682D08EFD08B7; "
-    "Hm_lvt_98beee57fd2ef70ccdd5ca52b9740c49=1778315364; "
-    "__zse_ck=005_h6g/4zcCrhU8OCYziPjlg67HTeIl91qz=nirxexDAmn1kbKJAchD8FS2ZE8wh3Df1nRYStjlFdimB/cO9TO5OeDLecxxs=yr=87J1eZsHUjL3N7/k1jYW3y9kD7EPq3I-txn2X8YLM7r13hZI36oddRO4awRDfnFYowu2ytuLLg3SK2kNkvki+4wu01iiOdk4JbeqzE9DCK67RvutUpjwUEreWbTrOmYoRBhcG8qM4v7cx1x3WTB5HrM9nApOaSIN; "
-    "SESSIONID=5q2dLzuGbQdXqfR6M6OaQ9vWYClmhs7YOS3FGvC1B69; "
-    "JOID=Wl8RCkNofJTwJM5VKyPly9KxRf49Ug6rlWi7I2EKIvOlVKgIHpOUjpsrwlsnfdBpCMTFctnaNQGfvk1SbPUY3GE=; "
-    "osd=W1kTA0ppepb5Lc9TKSrsytSzTPc8VAyinGm9IWgDI_WnXaEJGJGdh5otwFIufNZrAc3EdNvTPACZvERbbfMa1Wg=; "
-    "BEC=4589376d83fd47c9203681b16177ae43; "
-    "Hm_lpvt_98beee57fd2ef70ccdd5ca52b9740c49=1779950561"
-)
+The cookie string is read from (in priority order):
+  1. --input <path>   a file containing the document.cookie string
+  2. ZHIHU_COOKIES    environment variable
+  3. stdin
+
+Credentials are NEVER hardcoded in this file. If you previously relied on the
+baked-in string, note that those cookies were committed to git history and must
+be considered leaked — rotate the Zhihu session and update the
+ZHIHU_COOKIES_B64 repo secret.
+"""
+import argparse
+import os
+import sys
+from pathlib import Path
 
 OUTPUT_PATH = Path("_snapshots/zhihu_cookies.txt")
 
 
+def read_cookie_string(args):
+    if args.input:
+        return Path(args.input).read_text(encoding="utf-8").strip()
+    env = os.environ.get("ZHIHU_COOKIES")
+    if env:
+        return env.strip()
+    if not sys.stdin.isatty():
+        data = sys.stdin.read().strip()
+        if data:
+            return data
+    return None
+
+
 def main():
-    OUTPUT_PATH.parent.mkdir(parents=True, exist_ok=True)
+    parser = argparse.ArgumentParser(
+        description="Convert a document.cookie string to Netscape cookies.txt for Zhihu.")
+    parser.add_argument("--input", help="Path to a file containing the document.cookie string")
+    parser.add_argument("--output", default=str(OUTPUT_PATH), help="Output cookies.txt path")
+    args = parser.parse_args()
+
+    cookie_string = read_cookie_string(args)
+    if not cookie_string:
+        print("Error: no cookie string provided. Use --input <path>, set the ZHIHU_COOKIES env "
+              "var, or pipe the string via stdin.", file=sys.stderr)
+        sys.exit(1)
+
+    output = Path(args.output)
+    output.parent.mkdir(parents=True, exist_ok=True)
 
     expiry = 1893456000  # 2030-01-01
     domain = ".zhihu.com"
@@ -40,18 +64,17 @@ def main():
         f"# Generated for zhihu.com at {expiry}",
     ]
 
-    for part in COOKIE_STRING.split(";"):
+    for part in cookie_string.split(";"):
         part = part.strip()
         if not part or "=" not in part:
             continue
         name, _, value = part.partition("=")
         name, value = name.strip(), value.strip()
-
         # Netscape format: domain TAB flag TAB path TAB secure TAB expiry TAB name TAB value
         lines.append(f"{domain}\tTRUE\t{path}\tFALSE\t{expiry}\t{name}\t{value}")
 
-    OUTPUT_PATH.write_text("\n".join(lines) + "\n", encoding="utf-8")
-    print(f"Saved {len(lines) - 4} cookies to {OUTPUT_PATH}")
+    output.write_text("\n".join(lines) + "\n", encoding="utf-8")
+    print(f"Saved {len(lines) - 4} cookies to {output}")
     print("Done! Run 'python scripts/zhihu_cookies.py' to verify.")
 
 
