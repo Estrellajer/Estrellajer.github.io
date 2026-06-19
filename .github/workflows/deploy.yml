@@ -60,12 +60,23 @@ on:
       - "!INSTALL.md"
       - "!README.md"
   workflow_dispatch:
+  # Rebuild & deploy whenever the scheduled scholar monitor finishes, so the
+  # live /scholar/ page picks up the bot's daily commits. (The bot pushes with
+  # GITHUB_TOKEN, which by GitHub's rules does NOT trigger the `push` event
+  # above — workflow_run bridges that gap.)
+  workflow_run:
+    workflows: ["Daily Scholar Monitor"]
+    types: [completed]
 
 permissions:
   contents: write
 
 jobs:
   deploy:
+    # For workflow_run events, only rebuild when the monitor run succeeded
+    # (skip on failure/cancellation). For all other events (push/PR/dispatch)
+    # this condition is true and the job runs as before.
+    if: ${{ github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success' }}
     # available images: https://github.com/actions/runner-images#available-images
     runs-on: ubuntu-latest
     steps:
