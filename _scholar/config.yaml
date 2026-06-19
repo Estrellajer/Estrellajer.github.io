@@ -1,3 +1,4 @@
+# Scholar monitor — config changes trigger CI re-run
 scholars:
   - name: percent4 Blog
     url: https://percent4.github.io/

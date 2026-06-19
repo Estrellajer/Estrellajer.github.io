@@ -162,6 +162,7 @@ def _scholar_base_result(scholar: dict) -> dict:
         "research_areas": scholar.get("research_areas") or [],
         "labels": scholar.get("labels") or [],
         "watch": scholar.get("watch", "general"),
+        "site_type": scholar.get("site_type", ""),
     }
 
 
@@ -583,6 +584,82 @@ def _publications_to_text(pubs: list) -> str:
     return "\n".join(lines)
 
 
+def _publication_title_key(title: str) -> str:
+    return re.sub(r"\s+", " ", (title or "").strip().lower())
+
+
+def _parse_publications_snapshot(text: str) -> list:
+    """Parse snapshot text produced by _publications_to_text into publication dicts."""
+    lines = [l.strip() for l in (text or "").split("\n") if l.strip()]
+    pubs = []
+    i = 0
+    while i < len(lines):
+        title = lines[i]
+        i += 1
+        authors = ""
+        if i < len(lines) and not re.search(r"\b20\d{2}\b", lines[i]):
+            authors = lines[i]
+            i += 1
+        venue, year = "", ""
+        if i < len(lines):
+            m = re.search(r"^(.+?)\s+(20\d{2})\s*$", lines[i])
+            if m:
+                venue, year = m.group(1).strip(" ,"), m.group(2)
+                i += 1
+        pubs.append({"title": title, "authors": authors, "publication": venue, "year": year})
+    return pubs
+
+
+def _normalize_serpapi_article(article: dict) -> dict:
+    raw_authors = article.get("authors", "")
+    if isinstance(raw_authors, list):
+        authors = ", ".join(
+            a.get("name", "") if isinstance(a, dict) else str(a)
+            for a in raw_authors[:6]
+        )
+    else:
+        authors = str(raw_authors or "")
+    year = str(article.get("year") or article.get("article_year") or "")
+    link = article.get("link") or ""
+    if not link and article.get("citation_id"):
+        link = f"https://scholar.google.com/citations?view_op=view_citation&citation_for_view={article['citation_id']}"
+    return {
+        "title": article.get("title", ""),
+        "authors": authors,
+        "publication": article.get("publication", "") or "",
+        "year": year,
+        "link": link,
+    }
+
+
+def _format_publication_event(pub: dict) -> str:
+    title = (pub.get("title") or "").strip()
+    meta = []
+    if pub.get("publication"):
+        meta.append(pub["publication"].strip(" ,"))
+    if pub.get("year"):
+        meta.append(str(pub["year"]))
+    if meta:
+        return f"{title} · {', '.join(meta)}"
+    return title
+
+
+def _year_to_timestamp(year) -> float:
+    try:
+        y = int(str(year).strip())
+        if 1900 <= y <= 2100:
+            return datetime(y, 6, 1, tzinfo=timezone.utc).timestamp()
+    except (ValueError, TypeError):
+        pass
+    return datetime.now(timezone.utc).timestamp()
+
+
+def _is_google_scholar_result(result: dict) -> bool:
+    if result.get("site_type") == "google_scholar":
+        return True
+    return "scholar.google.com/citations" in (result.get("url") or "")
+
+
 def check_google_scholar(scholar: dict, since: datetime | None) -> dict:
     result = _scholar_base_result(scholar)
     url = scholar["url"]
@@ -606,7 +683,7 @@ def check_google_scholar(scholar: dict, since: datetime | None) -> dict:
             )
             resp.raise_for_status()
             data = resp.json()
-            articles = data.get("articles", [])
+            articles = [_normalize_serpapi_article(a) for a in data.get("articles", [])]
             if not articles:
                 result["type"] = "error"
                 result["error"] = "SerpApi returned no articles"
@@ -618,29 +695,39 @@ def check_google_scholar(scholar: dict, since: datetime | None) -> dict:
                 result["error"] = blocked
                 return result
             result["preview"] = [a.get("title", "") for a in articles[:3] if a.get("title")]
+            result["latest_entries"] = [
+                {
+                    "title": _format_publication_event(a),
+                    "link": a.get("link") or url,
+                    "published": str(a.get("year") or "?"),
+                    "timestamp": _year_to_timestamp(a.get("year")),
+                }
+                for a in articles[:3]
+            ]
             prev = load_snapshot(scholar["name"])
             if prev is None:
                 save_snapshot(scholar["name"], content)
                 result["type"] = "first_check"
                 return result
+            prev_titles = {
+                _publication_title_key(p["title"])
+                for p in _parse_publications_snapshot(prev)
+            }
+            new_articles = [
+                a for a in articles
+                if _publication_title_key(a.get("title", "")) not in prev_titles
+            ]
             prev_norm = _normalize_for_diff(prev)
             content_norm = _normalize_for_diff(content)
-            if prev_norm == content_norm:
+            if not new_articles and prev_norm == content_norm:
                 result["type"] = "unchanged"
-                result["latest_entries"] = [
-                    {"title": a.get("title", ""), "link": a.get("link", url),
-                     "published": str(a.get("year", "?")), "timestamp": 0.0}
-                    for a in articles[:3]
-                ]
                 return result
-            diff = list(unified_diff(
-                prev_norm.split("\n"), content_norm.split("\n"),
-                fromfile=f"{_safe_name(scholar['name'])} (previous)",
-                tofile=f"{_safe_name(scholar['name'])} (current)", lineterm=""))
             save_snapshot(scholar["name"], content)
-            result["type"] = "changed"
-            result["diff"] = "\n".join(diff[:150])
-            result["diff_truncated"] = len(diff) > 150
+            if new_articles:
+                result["type"] = "changed"
+                result["new_publications"] = new_articles
+            else:
+                result["type"] = "unchanged"
             return result
         except Exception as e:
             log(f"      ↳ SerpApi failed, falling back to direct fetch: {e}")
@@ -897,6 +984,7 @@ def _kind_from_watch(watch: str, text: str = "") -> str:
 def build_events(results: list) -> list:
     events = []
     now_ts = datetime.now(timezone.utc).timestamp()
+    now_iso = datetime.now(timezone.utc).isoformat()
 
     def _add_event(r, text, link, date_str, ts, kind=None, diff_text=None):
         if not text or len(text.strip()) < 4:
@@ -914,9 +1002,23 @@ def build_events(results: list) -> list:
             "timestamp": ts or now_ts,
             "result_type": r.get("type", ""),
             "diff": diff_text,
+            "first_seen": now_iso,
         })
 
     for r in results:
+        if r.get("new_publications"):
+            for pub in r["new_publications"]:
+                year = pub.get("year") or ""
+                text = _format_publication_event(pub)
+                _add_event(
+                    r,
+                    text,
+                    pub.get("link") or r["url"],
+                    str(year) if year else "",
+                    _year_to_timestamp(year),
+                    kind="paper",
+                )
+            continue
         if r["type"] == "rss":
             for e in r.get("entries", []):
                 _add_event(r, e.get("title", ""), e.get("link", r["url"]),
@@ -926,6 +1028,8 @@ def build_events(results: list) -> list:
                 _add_event(r, e.get("title", ""), e.get("link", r["url"]),
                            e.get("published", ""), e.get("timestamp", 0.0), kind="post")
         if r["type"] == "changed":
+            if _is_google_scholar_result(r):
+                continue
             additions = _extract_new_additions(r.get("diff", ""))
             if additions:
                 for add in additions[:12]:
@@ -1014,13 +1118,69 @@ def merge_events_history(history: list, new_events: list) -> list:
 
 
 def build_last_update_map(events: list) -> dict:
+    """Map scholar name -> timestamp of most recent detected update (first_seen)."""
     last = {}
     for ev in events:
         name = ev.get("scholar", "")
-        ts = ev.get("timestamp") or 0
-        if name and ts >= last.get(name, 0):
+        if not name:
+            continue
+        ts = _first_seen_to_timestamp(ev.get("first_seen", ""))
+        if ts <= 0:
+            ts = ev.get("timestamp") or 0
+        if ts >= last.get(name, 0):
             last[name] = ts
     return last
+
+
+def _first_seen_to_timestamp(first_seen: str) -> float:
+    if not first_seen:
+        return 0.0
+    try:
+        return datetime.fromisoformat(first_seen.replace("Z", "+00:00")).timestamp()
+    except ValueError:
+        return 0.0
+
+
+def backfill_missing_recent_events(merged: list, results: list, days: int = 30) -> list:
+    """Add latest RSS/blog activity for scholars missing from event history."""
+    cutoff = (datetime.now(timezone.utc) - timedelta(days=days)).timestamp()
+    scholars_in_history = {ev.get("scholar") for ev in merged}
+    backfill = []
+
+    for r in results:
+        name = r["name"]
+        if name in scholars_in_history:
+            continue
+        candidates = r.get("entries") or r.get("latest_entries") or []
+        if not candidates:
+            continue
+        e = candidates[0]
+        ts = e.get("timestamp") or 0
+        if ts < cutoff:
+            continue
+        first_seen = (
+            datetime.fromtimestamp(ts, tz=timezone.utc).isoformat()
+            if ts > 0
+            else datetime.now(timezone.utc).isoformat()
+        )
+        backfill.append({
+            "scholar": name,
+            "scholar_url": r["url"],
+            "affiliation": r.get("affiliation", ""),
+            "areas": r.get("research_areas", []),
+            "watch": r.get("watch", "general"),
+            "kind": _kind_from_watch(r.get("watch", "general"), e.get("title", "")),
+            "text": e.get("title", "").strip(),
+            "link": e.get("link") or r["url"],
+            "date_str": e.get("published", "") or "",
+            "timestamp": ts,
+            "result_type": r.get("type", ""),
+            "first_seen": first_seen,
+        })
+
+    if not backfill:
+        return merged
+    return merge_events_history(merged, backfill)
 
 
 def _format_update_date(ts: float) -> str:
@@ -1401,6 +1561,7 @@ def main():
     new_events = build_events(results)
     history = load_events_history()
     merged_events = merge_events_history(history, new_events)
+    merged_events = backfill_missing_recent_events(merged_events, results)
     save_events_history(merged_events)
     last_update_map = build_last_update_map(merged_events)
     display_events = merged_events[:EVENTS_DISPLAY_LIMIT]
