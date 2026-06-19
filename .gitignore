@@ -11,3 +11,9 @@ assets/libs/
 node_modules/
 vendor
 .idea
+_deep_talks/
+_memory_private/
+_talk_inbox/
+_scholar/_snapshots/zhihu_cookies.txt
+_scholar/cookies_raw.txt
+_scholar/zhihu_cookies.b64.txt

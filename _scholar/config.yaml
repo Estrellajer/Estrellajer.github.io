@@ -421,15 +421,15 @@ scholars:
     affiliation: "清华大学"
     watch: general
   - name: 冯钰捷
-    url: https://woodscene.github.io/
+    url: https://scholar.google.com/citations?user=J3zR-48AAAAJ&hl=zh-CN
     category: HomePage
-    site_type: github_pages
-    selectors: [article, main, .post-content, .entry-content, .content]
+    site_type: google_scholar
+    selectors: ["#gsc_a_b", "#gsc_art", "#gsc_prf", table]
     remove_selectors: [script, style, nav, footer, header, aside, .sidebar, .comments]
     labels: [homepage]
     research_areas: [Continual Learning]
     affiliation: "香港理工大学"
-    watch: general
+    watch: publications
 
   - name: 黄家斌
     url: https://jbhuang0604.github.io/

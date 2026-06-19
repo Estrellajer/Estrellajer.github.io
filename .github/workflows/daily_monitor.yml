@@ -39,6 +39,8 @@ jobs:
 
       - name: Discover RSS feeds
         working-directory: _scholar
+        env:
+          RSSHUB_BASE: ${{ vars.RSSHUB_BASE }}
         run: python scripts/discover_rss.py
         continue-on-error: true
 
@@ -50,11 +52,14 @@ jobs:
             echo "${{ secrets.ZHIHU_COOKIES_B64 }}" | base64 -d > _snapshots/zhihu_cookies.txt
             echo "Zhihu cookies restored"
           else
-            echo "No Zhihu cookies configured - Zhihu sites will fall back to content check"
+            echo "No Zhihu cookies configured - Zhihu sites will use RSSHub fallback"
           fi
 
       - name: Monitor scholars
         working-directory: _scholar
+        env:
+          SERPAPI_KEY: ${{ secrets.SERPAPI_KEY }}
+          RSSHUB_BASE: ${{ vars.RSSHUB_BASE }}
         run: python scripts/monitor.py
 
       - name: Commit snapshots & report

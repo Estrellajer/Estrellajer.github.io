@@ -17,7 +17,7 @@ CVPR 2026 , 2026
 Thinking with Images as Continuous Actions: Numerical Visual Chain-of-Thought
 K Zhao, B Zhu, J Zhou, X Zhu, Z Yue, H Zhang
 arXiv preprint arXiv:2602.23959 , 2026
-2026
+1 2026
 Hybrid Granularity Distribution Estimation for Few-Shot Learning: Statistics Transfer From Categories and Instances
 S Wang, T Qi, X Zhu, Y Hao, B Zhu, H Zhang, M Wang
 IEEE Transactions on Image Processing , 2026
@@ -25,7 +25,7 @@ IEEE Transactions on Image Processing , 2026
 Revisiting Robustness for LLM Safety Alignment via Selective Geometry Control
 Y Yang, W Tao, J Liu, X Zhu, J Fang, W Huang, L Wu, R Hong, TS Chua
 arXiv preprint arXiv:2602.07340 , 2026
-2 2026
+1 2026
 Look Carefully: Adaptive Visual Reinforcements in Multimodal Large Language Models for Hallucination Mitigation
 X Zhu, K Zhao, L Yi, S Wang, Z Wang, B Zhu, H Zhang, X He
 ICLR 2026 , 2026

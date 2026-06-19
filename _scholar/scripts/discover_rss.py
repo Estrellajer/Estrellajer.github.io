@@ -1,13 +1,11 @@
 #!/usr/bin/env python3
-"""Batch RSS discovery - probe all scholars for RSS/Atom feeds.
+"""Batch RSS discovery - probe scholars for RSS/Atom feeds.
 
-Uses requests.Session for connection reuse and stops early once RSS is found per site.
-
-The cache (`_snapshots/rss_sources.yaml`) is MERGED, not overwritten: a previously
-discovered feed is preserved when a probe fails transiently, so a single network
-blip can never demote a scholar from clean RSS to lossy content-diff (which would
-cause a one-time false "changed").
+Blog watchers (watch=blog): feeds stored in rss_sources.yaml (primary).
+Other watchers: feeds stored in rss_supplemental.yaml (supplemental only).
 """
+import os
+import re
 import sys
 from pathlib import Path
 from urllib.parse import urljoin
@@ -27,7 +25,7 @@ def main():
         config = yaml.safe_load(f)
 
     scholars = config.get("scholars", [])
-    scholar_names = {s["name"] for s in scholars}
+    scholar_by_name = {s["name"]: s for s in scholars}
     print(f"Probing {len(scholars)} sites for RSS feeds...\n")
 
     session = requests.Session()
@@ -38,44 +36,35 @@ def main():
         "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
         "Accept-Language": "zh-CN,zh;q=0.9,en;q=0.8",
     })
-    # Don't verify SSL for problematic certs
     session.verify = False
     import urllib3
     urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
-    # Start from the existing cache so transient failures never drop a feed.
     rss_path = Path("_snapshots") / "rss_sources.yaml"
-    rss_sources = {}
-    if rss_path.exists():
-        try:
-            with open(rss_path, encoding="utf-8") as f:
-                rss_sources = yaml.safe_load(f) or {}
-        except Exception:
-            rss_sources = {}
+    sup_path = Path("_snapshots") / "rss_supplemental.yaml"
+    rss_sources = load_merged(rss_path)
+    rss_supplemental = load_merged(sup_path)
 
+    rsshub_base = (os.environ.get("RSSHUB_BASE") or "https://rsshub.app").rstrip("/")
     no_rss = []
     errors = []
-
-    # Common RSS paths (ordered by likelihood)
-    common_paths = [
-        "/feed.xml", "/index.xml", "/rss.xml", "/atom.xml",
-        "/feed/",
-    ]
+    common_paths = ["/feed.xml", "/index.xml", "/rss.xml", "/atom.xml", "/feed/"]
 
     for i, s in enumerate(scholars):
         name = s["name"]
         url = s["url"]
+        watch = s.get("watch", "general")
+        is_blog = watch == "blog"
+        target = rss_sources if is_blog else rss_supplemental
         print(f"  [{i+1}/{len(scholars)}] {name:<30s}", end=" ", flush=True)
 
         found_rss = None
         last_err = None
 
-        # Method 0: For zhihu, try RSSHub
         if "zhihu.com" in url:
-            import re
             zhihu_id = re.search(r"people/([^/?]+)", url)
             if zhihu_id:
-                rsshub_url = f"https://rsshub.app/zhihu/people/activities/{zhihu_id.group(1)}"
+                rsshub_url = f"{rsshub_base}/zhihu/people/activities/{zhihu_id.group(1)}"
                 try:
                     resp = session.get(rsshub_url, timeout=10)
                     if resp.status_code == 200 and ("<rss" in resp.text[:500] or "<feed" in resp.text[:500]):
@@ -84,10 +73,12 @@ def main():
                     last_err = f"RSSHub probe: {e}"
                 if found_rss:
                     print(f"[RSSHub] {rsshub_url}")
-                    rss_sources[name] = found_rss
+                    if is_blog:
+                        rss_sources[name] = found_rss
+                    else:
+                        rss_supplemental[name] = found_rss
                     continue
 
-        # Method 1: Check HTML for <link> tags (one request)
         try:
             resp = session.get(url, timeout=10)
             resp.raise_for_status()
@@ -100,7 +91,6 @@ def main():
         except Exception as e:
             last_err = f"page fetch: {e}"
 
-        # Method 2: Try common RSS paths (stop on first hit)
         if not found_rss:
             base = url.rstrip("/")
             for path in common_paths:
@@ -114,45 +104,54 @@ def main():
                             break
                 except Exception as e:
                     last_err = f"probe {path}: {e}"
-                    continue
 
         if found_rss:
-            rss_sources[name] = found_rss
-            print(f"[RSS] {found_rss}")
+            target[name] = found_rss
+            tag = "RSS" if is_blog else "SUP"
+            print(f"[{tag}] {found_rss}")
         elif last_err:
-            # Probe failed — keep the previously cached feed (if any) and record the error.
-            cached = rss_sources.get(name)
-            print(f"[ERR] (cached feed preserved: {cached})" if cached else "[ERR]")
+            cached = target.get(name)
+            print(f"[ERR] (cached: {cached})" if cached else "[ERR]")
             errors.append({"name": name, "url": url, "error": last_err})
         else:
-            # Requests succeeded but no feed found — genuinely no RSS.
             print("[-]")
             no_rss.append({"name": name, "url": url})
+            if name in target and name not in scholar_by_name:
+                pass
 
-    # Save merged cache
+    # Drop feeds for scholars no longer in config and keep primary/supplemental
+    # split authoritative by current watch type.
+    valid = set(scholar_by_name)
+    blog_names = {s["name"] for s in scholars if s.get("watch", "general") == "blog"}
+    supplemental_names = valid - blog_names
+    rss_sources = {k: v for k, v in rss_sources.items() if k in blog_names}
+    rss_supplemental = {k: v for k, v in rss_supplemental.items() if k in supplemental_names}
+
     rss_path.parent.mkdir(parents=True, exist_ok=True)
     with open(rss_path, "w", encoding="utf-8") as f:
         yaml.dump(rss_sources, f, allow_unicode=True)
+    with open(sup_path, "w", encoding="utf-8") as f:
+        yaml.dump(rss_supplemental, f, allow_unicode=True)
 
-    # Summary
-    found_count = sum(1 for n in rss_sources if n in scholar_names)
+    blog_count = sum(1 for n in rss_sources if n in valid)
+    sup_count = sum(1 for n in rss_supplemental if n in valid)
     print(f"\n{'='*50}")
-    print(f"RSS Discovery Complete (merged with existing cache)")
+    print("RSS Discovery Complete")
     print(f"{'='*50}")
-    print(f"  [OK] RSS Found:   {found_count}/{len(scholars)}")
-    print(f"  [-] No RSS:       {len(no_rss)}")
-    print(f"  [!] Errors:       {len(errors)}")
-    print(f"\nResults saved to: {rss_path}")
+    print(f"  [blog primary]  {blog_count}")
+    print(f"  [supplemental]  {sup_count}")
+    print(f"  [-] no RSS      {len(no_rss)}")
+    print(f"  [!] errors      {len(errors)}")
 
-    if no_rss:
-        print(f"\nSites without RSS (will use content-diff monitoring):")
-        for item in no_rss:
-            print(f"  - {item['name']}: {item['url']}")
 
-    if errors:
-        print(f"\nRequest errors (cached feeds preserved where available):")
-        for item in errors:
-            print(f"  - {item['name']}: {item['error']}")
+def load_merged(path: Path) -> dict:
+    if path.exists():
+        try:
+            with open(path, encoding="utf-8") as f:
+                return yaml.safe_load(f) or {}
+        except Exception:
+            return {}
+    return {}
 
 
 if __name__ == "__main__":
