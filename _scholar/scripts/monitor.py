@@ -7,6 +7,7 @@ Strategy per site (by watch type):
   google_scholar   -> SerpApi when SERPAPI_KEY set, else direct fetch + captcha detection
   zhihu            -> cookie API preferred, RSSHub fallback (RSSHUB_BASE)
 """
+import json
 import os
 import re
 import sys
@@ -53,7 +54,11 @@ RSS_CACHE_PATH = SNAPSHOT_DIR / "rss_sources.yaml"
 RSS_SUPPLEMENTAL_PATH = SNAPSHOT_DIR / "rss_supplemental.yaml"
 REPORT_PATH = SNAPSHOT_DIR / "latest_report.md"
 LAST_CHECKED_PATH = SNAPSHOT_DIR / "last_checked.txt"
+EVENTS_HISTORY_PATH = SNAPSHOT_DIR / "events_history.json"
 HTML_PATH = BASE_DIR.parent / "scholar" / "index.html"
+
+EVENTS_HISTORY_LIMIT = 50
+EVENTS_DISPLAY_LIMIT = 10
 
 RSSHUB_BASE = (os.environ.get("RSSHUB_BASE") or "https://rsshub.app").rstrip("/")
 SERPAPI_KEY = os.environ.get("SERPAPI_KEY", "")
@@ -934,6 +939,99 @@ def build_events(results: list) -> list:
     return events
 
 
+def _event_dedup_key(ev: dict) -> str:
+    text = (ev.get("text") or "")[:120]
+    return f"{ev.get('scholar', '')}|{ev.get('kind', 'update')}|{text}"
+
+
+def _strip_event_for_history(ev: dict) -> dict:
+    areas = ev.get("areas") or []
+    if not isinstance(areas, list):
+        areas = list(areas)
+    return {
+        "scholar": ev.get("scholar", ""),
+        "scholar_url": ev.get("scholar_url", ""),
+        "affiliation": ev.get("affiliation", ""),
+        "areas": areas,
+        "watch": ev.get("watch", "general"),
+        "kind": ev.get("kind", "update"),
+        "text": ev.get("text", ""),
+        "link": ev.get("link", ""),
+        "date_str": ev.get("date_str", ""),
+        "timestamp": ev.get("timestamp") or 0.0,
+        "result_type": ev.get("result_type", ""),
+        "first_seen": ev.get("first_seen") or datetime.now(timezone.utc).isoformat(),
+    }
+
+
+def load_events_history() -> list:
+    if not EVENTS_HISTORY_PATH.exists():
+        return []
+    try:
+        data = json.loads(EVENTS_HISTORY_PATH.read_text(encoding="utf-8"))
+        return data if isinstance(data, list) else []
+    except (json.JSONDecodeError, OSError):
+        return []
+
+
+def save_events_history(events: list) -> None:
+    EVENTS_HISTORY_PATH.parent.mkdir(parents=True, exist_ok=True)
+    stripped = [_strip_event_for_history(ev) for ev in events[:EVENTS_HISTORY_LIMIT]]
+    EVENTS_HISTORY_PATH.write_text(
+        json.dumps(stripped, ensure_ascii=False, indent=2),
+        encoding="utf-8",
+    )
+
+
+def merge_events_history(history: list, new_events: list) -> list:
+    """Merge current-run events with persisted history; new events win on dedup."""
+    merged = []
+    seen = set()
+    hist_by_key = {_event_dedup_key(h): h for h in history}
+
+    for ev in new_events:
+        key = _event_dedup_key(ev)
+        if key in seen:
+            continue
+        seen.add(key)
+        out = dict(ev)
+        hist_match = hist_by_key.get(key)
+        if hist_match and hist_match.get("first_seen"):
+            out["first_seen"] = hist_match["first_seen"]
+        else:
+            out["first_seen"] = datetime.now(timezone.utc).isoformat()
+        merged.append(out)
+
+    for h in history:
+        key = _event_dedup_key(h)
+        if key in seen:
+            continue
+        seen.add(key)
+        merged.append(dict(h))
+
+    merged.sort(key=lambda x: x.get("timestamp") or 0, reverse=True)
+    return merged
+
+
+def build_last_update_map(events: list) -> dict:
+    last = {}
+    for ev in events:
+        name = ev.get("scholar", "")
+        ts = ev.get("timestamp") or 0
+        if name and ts >= last.get(name, 0):
+            last[name] = ts
+    return last
+
+
+def _format_update_date(ts: float) -> str:
+    if not ts or ts <= 0:
+        return "—"
+    try:
+        return datetime.fromtimestamp(ts, tz=timezone.utc).strftime("%Y-%m-%d")
+    except (OSError, ValueError):
+        return "—"
+
+
 def generate_report(results: list, total: int, events: list):
     updated = [r for r in results if r["type"] == "changed"]
     rss_new = [r for r in results if r["type"] == "rss"]
@@ -1051,10 +1149,16 @@ def _scholar_status_summary(r: dict) -> str:
     return "No recent activity"
 
 
-def generate_html_report(results: list, total: int, events: list):
+def generate_html_report(
+    results: list,
+    total: int,
+    new_events: list,
+    display_events: list,
+    last_update_map: dict,
+):
     errors = [r for r in results if r["type"] == "error"]
     ok_count = sum(1 for r in results if r["type"] in ("unchanged", "rss_no_change", "first_check"))
-    new_count = len(events)
+    new_count = len(new_events)
     now = datetime.now().strftime("%Y-%m-%d %H:%M UTC")
 
     all_affiliations = sorted({r.get("affiliation", "") for r in results if r.get("affiliation")})
@@ -1097,14 +1201,14 @@ def generate_html_report(results: list, total: int, events: list):
     # Timeline
     buckets = {"week": [], "month": [], "earlier": []}
     bucket_labels = {"week": "本周", "month": "本月", "earlier": "更早"}
-    for ev in events:
+    for ev in display_events:
         buckets[_timeline_bucket(ev["timestamp"])].append(ev)
 
     timeline_html = '<section class="sm-timeline" id="timelineSection"><h2 class="sm-section-title">最近在做什么</h2>'
-    if not events:
+    if not display_events:
         timeline_html += (
-            '<div class="sm-empty"><div class="sm-empty-title">暂无新动态</div>'
-            '<div class="sm-empty-sub">上次同步以来没有检测到新的论文、博客或主页更新。</div></div>'
+            '<div class="sm-empty"><div class="sm-empty-title">暂无动态记录</div>'
+            '<div class="sm-empty-sub">尚未检测到任何论文、博客或主页更新。</div></div>'
         )
     else:
         for key in ("week", "month", "earlier"):
@@ -1183,6 +1287,7 @@ def generate_html_report(results: list, total: int, events: list):
                     "first_check": "INIT", "unchanged": "OK", "rss_no_change": "OK"}.get(st, st)
         areas = ",".join(r.get("research_areas") or [])
         aff = _norm_str(r.get("affiliation"))
+        update_disp = _format_update_date(last_update_map.get(r["name"], 0))
         dir_rows.append(
             f'<tr class="sm-dir-row" data-filterable '
             f'data-name="{_esc(r["name"].lower())}" '
@@ -1193,6 +1298,7 @@ def generate_html_report(results: list, total: int, events: list):
             f'<td>{_esc(aff or "—")}</td>'
             f'<td>{_esc(areas.replace(",", ", ") or "—")}</td>'
             f'<td class="sm-dir-status sm-st-{st}">{st_label}</td>'
+            f'<td class="sm-dir-updated">{_esc(update_disp)}</td>'
             f'<td class="sm-dir-latest">{_esc(status)}</td></tr>'
         )
 
@@ -1200,7 +1306,8 @@ def generate_html_report(results: list, total: int, events: list):
         '<details class="sm-panel" id="directorySection">'
         '<summary class="sm-panel-title">全部学者目录</summary>'
         '<div class="sm-dir-wrap"><table class="sm-dir-table">'
-        '<thead><tr><th>学者</th><th>单位</th><th>方向</th><th>状态</th><th>最近动态</th></tr></thead>'
+        '<thead><tr><th>学者</th><th>单位</th><th>方向</th><th>状态</th>'
+        '<th>更新时间</th><th>最近动态</th></tr></thead>'
         f'<tbody>{"".join(dir_rows)}</tbody></table></div></details>'
     )
 
@@ -1291,9 +1398,19 @@ def main():
             for e in r.get("entries", []):
                 print(f"          -> {e['title']}", flush=True)
 
-    events = build_events(results)
-    report = generate_report(results, len(scholars), events)
-    generate_html_report(results, len(scholars), events)
+    new_events = build_events(results)
+    history = load_events_history()
+    merged_events = merge_events_history(history, new_events)
+    save_events_history(merged_events)
+    last_update_map = build_last_update_map(merged_events)
+    display_events = merged_events[:EVENTS_DISPLAY_LIMIT]
+    log(f"Events: {len(new_events)} new this run, {len(merged_events)} in history, "
+        f"showing {len(display_events)} on timeline")
+
+    report = generate_report(results, len(scholars), new_events)
+    generate_html_report(
+        results, len(scholars), new_events, display_events, last_update_map,
+    )
 
     total = len(scholars)
     errors = sum(1 for r in results if r["type"] == "error")

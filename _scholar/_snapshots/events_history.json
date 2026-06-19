@@ -1,0 +1,50 @@
+[
+  {
+    "scholar": "朱星宇",
+    "scholar_url": "https://scholar.google.com/citations?hl=zh-CN&user=PpqUnAwAAAAJ&view_op=list_works&sortby=pubdate",
+    "affiliation": "NUS",
+    "areas": [
+      "Vision language model"
+    ],
+    "watch": "publications",
+    "kind": "paper",
+    "text": "IEEE Transactions on Image Processing , 2026",
+    "link": "https://scholar.google.com/citations?hl=zh-CN&user=PpqUnAwAAAAJ&view_op=list_works&sortby=pubdate",
+    "date_str": "",
+    "timestamp": 1781872113.940591,
+    "result_type": "changed",
+    "first_seen": "2026-06-19T12:28:33.940730+00:00"
+  },
+  {
+    "scholar": "朱星宇",
+    "scholar_url": "https://scholar.google.com/citations?hl=zh-CN&user=PpqUnAwAAAAJ&view_op=list_works&sortby=pubdate",
+    "affiliation": "NUS",
+    "areas": [
+      "Vision language model"
+    ],
+    "watch": "publications",
+    "kind": "paper",
+    "text": "Hybrid Granularity Distribution Estimation for Few-Shot Learning: Statistics Transfer From Categories and Instances",
+    "link": "https://scholar.google.com/citations?hl=zh-CN&user=PpqUnAwAAAAJ&view_op=list_works&sortby=pubdate",
+    "date_str": "",
+    "timestamp": 1781872113.940577,
+    "result_type": "changed",
+    "first_seen": "2026-06-19T12:28:33.940743+00:00"
+  },
+  {
+    "scholar": "冯钰捷",
+    "scholar_url": "https://scholar.google.com/citations?user=J3zR-48AAAAJ&hl=zh-CN",
+    "affiliation": "香港理工大学",
+    "areas": [
+      "Continual Learning"
+    ],
+    "watch": "publications",
+    "kind": "paper",
+    "text": "13 * 2024",
+    "link": "https://scholar.google.com/citations?user=J3zR-48AAAAJ&hl=zh-CN",
+    "date_str": "",
+    "timestamp": 1781872113.938117,
+    "result_type": "changed",
+    "first_seen": "2026-06-19T12:28:33.940746+00:00"
+  }
+]

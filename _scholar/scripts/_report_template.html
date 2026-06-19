@@ -16,12 +16,16 @@ permalink: /scholar/
 </div>
 
 <style>
+.container:has(.scholar-monitor-page) {
+  max-width: 1200px;
+}
+
 .scholar-monitor-page {
   font-family: inherit;
   color: var(--global-text-color);
   padding: 8px 0 48px;
   line-height: 1.55;
-  max-width: 920px;
+  max-width: 100%;
 }
 
 .sm-header {
@@ -384,7 +388,13 @@ a.sm-tl-text:hover { color: var(--global-theme-color); text-decoration: none; }
 .sm-dir-latest {
   color: var(--global-text-color-light);
   font-size: 0.82rem;
-  max-width: 280px;
+  max-width: 360px;
+}
+
+.sm-dir-updated {
+  font-size: 0.82rem;
+  white-space: nowrap;
+  color: var(--global-text-color-light);
 }
 
 .sm-hidden { display: none !important; }
