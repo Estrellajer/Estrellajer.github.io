@@ -1,5 +1,37 @@
 [
   {
+    "scholar": "刘子铭（KAN）",
+    "scholar_url": "https://kindxiaoming.github.io/blog/",
+    "affiliation": "清华大学",
+    "areas": [
+      "LLM"
+    ],
+    "watch": "blog",
+    "kind": "post",
+    "text": "Discovering 108 tricks to accelerate grokking",
+    "link": "https://kindxiaoming.github.io/blog/2026/grokking-tricks/",
+    "date_str": "2026-06-22T00:00:00+00:00",
+    "timestamp": 1782086400.0,
+    "result_type": "rss",
+    "first_seen": "2026-06-21T22:19:21.290585+00:00"
+  },
+  {
+    "scholar": "王立元",
+    "scholar_url": "https://lywang3081.github.io/",
+    "affiliation": "北京大学",
+    "areas": [
+      "Continual Learning"
+    ],
+    "watch": "general",
+    "kind": "update",
+    "text": "Page content updated",
+    "link": "https://lywang3081.github.io/",
+    "date_str": "",
+    "timestamp": 1782080361.290101,
+    "result_type": "changed",
+    "first_seen": "2026-06-21T22:19:21.290594+00:00"
+  },
+  {
     "scholar": "Nathan Lambert",
     "scholar_url": "https://www.interconnects.ai/",
     "affiliation": "Interconnects",
