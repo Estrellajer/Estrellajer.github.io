@@ -1,8 +1,9 @@
 # Scholar Monitor Report
 
-**Run:** 2026-06-22 05:10 UTC  |  **Total:** 57  |  Events 1  |  RSS 1  |  CHG 0  |  FIRST 0  |  OK 56  |  ERR 0
+**Run:** 2026-06-22 22:43 UTC  |  **Total:** 57  |  Events 2  |  RSS 1  |  CHG 1  |  FIRST 0  |  OK 55  |  ERR 0
 
 ---
-## Activity Feed (1)
+## Activity Feed (2)
 
-- **刘子铭（KAN）** [清华大学]: Discovering 108 tricks to accelerate grokking
+- **吴太强** [香港大学]: Page content updated
+- **Nathan Lambert** [Interconnects]: GLM-5.2 is the step change for open agents

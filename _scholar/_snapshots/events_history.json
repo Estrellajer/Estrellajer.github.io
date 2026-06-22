@@ -1,5 +1,35 @@
 [
   {
+    "scholar": "吴太强",
+    "scholar_url": "https://wutaiqiang.github.io/",
+    "affiliation": "香港大学",
+    "areas": [
+      "Reasoning"
+    ],
+    "watch": "general",
+    "kind": "update",
+    "text": "Page content updated",
+    "link": "https://wutaiqiang.github.io/",
+    "date_str": "",
+    "timestamp": 1782168230.625456,
+    "result_type": "changed",
+    "first_seen": "2026-06-22T22:43:50.625940+00:00"
+  },
+  {
+    "scholar": "Nathan Lambert",
+    "scholar_url": "https://www.interconnects.ai/",
+    "affiliation": "Interconnects",
+    "areas": [],
+    "watch": "blog",
+    "kind": "post",
+    "text": "GLM-5.2 is the step change for open agents",
+    "link": "https://www.interconnects.ai/p/glm-52-is-the-step-change-for-open",
+    "date_str": "Mon, 22 Jun 2026 14:52:45 GMT",
+    "timestamp": 1782139965.0,
+    "result_type": "rss",
+    "first_seen": "2026-06-22T22:43:50.625947+00:00"
+  },
+  {
     "scholar": "刘子铭（KAN）",
     "scholar_url": "https://kindxiaoming.github.io/blog/",
     "affiliation": "清华大学",

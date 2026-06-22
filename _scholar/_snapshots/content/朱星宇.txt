@@ -40,7 +40,7 @@ Journal of Data Acquisition & Processing/Shu Ju Cai Ji Yu Chu Li 34 (6), 2019 20
 Thinking with Images as Continuous Actions: Numerical Visual Chain-of-Thought
 K Zhao, B Zhu, J Zhou, X Zhu, Z Yue, H Zhang
 arXiv preprint arXiv:2602.23959, 2026 2026
-Revisiting Robustness for LLM Safety Alignment via Selective Geometry Control
+Revisiting robustness for llm safety alignment via selective geometry control
 Y Yang, W Tao, J Liu, X Zhu, J Fang, W Huang, L Wu, R Hong, TS Chua
 arXiv preprint arXiv:2602.07340, 2026 2026
 GuardAlign: Test-time Safety Alignment in Multimodal Large Language Models

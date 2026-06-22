@@ -38,7 +38,7 @@ Arxiv Preprint [ Paper ]
 [ Blog ]
 🔥 Revisiting Model Interpolation for Efficient Reasoning
 Taiqiang Wu , Runming Yang, Tao Liu, Jiahao Wang, Ngai Wong
-ACL 2026, Main Preprint [ Paper ]
+ACL 2026, Main Conference [ Paper ]
 [ Code ]
 [ Slide ]
 Timber: Training-free Instruct Model Refining with Base via Effective Rank
