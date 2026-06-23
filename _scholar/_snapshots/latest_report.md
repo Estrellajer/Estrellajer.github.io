@@ -1,9 +1,8 @@
 # Scholar Monitor Report
 
-**Run:** 2026-06-22 22:43 UTC  |  **Total:** 57  |  Events 2  |  RSS 1  |  CHG 1  |  FIRST 0  |  OK 55  |  ERR 0
+**Run:** 2026-06-23 04:17 UTC  |  **Total:** 57  |  Events 0  |  RSS 0  |  CHG 0  |  FIRST 0  |  OK 56  |  ERR 1
 
 ---
-## Activity Feed (2)
+## Needs Attention (1)
 
-- **吴太强** [香港大学]: Page content updated
-- **Nathan Lambert** [Interconnects]: GLM-5.2 is the step change for open agents
+- [苏剑林 - 科学空间](https://kexue.fm/): `Fetch/extract failed: HTTPSConnectionPool(host='kexue.fm', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='kexue.fm', port=443) at 0x7f03427af2d0>, 'Connection to kexue.fm timed out. (connect timeout=30)'))`
