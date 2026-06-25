@@ -1,5 +1,53 @@
 [
   {
+    "scholar": "K.I.S.S",
+    "scholar_url": "https://bigeagle.me/",
+    "affiliation": "Kimi",
+    "areas": [
+      "LLM"
+    ],
+    "watch": "general",
+    "kind": "update",
+    "text": "dnsmasq 的默认上游是静态配置，并不是在所有网络环境中都能直接用 114 了事，尤其是在一些需要认证的环境中 需要改系统的 DNS 配置，同时每次系统更新之后又要重新改一遍 直到昨天我才知道 BSD 系支持一个按域名设置 resolver 的功能 (man 5 resolver)，直接用就好了。 Read more",
+    "link": "https://bigeagle.me/",
+    "date_str": "",
+    "timestamp": 1782361249.887195,
+    "result_type": "changed",
+    "first_seen": "2026-06-25T04:20:49.887402+00:00"
+  },
+  {
+    "scholar": "K.I.S.S",
+    "scholar_url": "https://bigeagle.me/",
+    "affiliation": "Kimi",
+    "areas": [
+      "LLM"
+    ],
+    "watch": "general",
+    "kind": "update",
+    "text": "之前我一直使用 dnsmasq 实现按域名切换解析，这样的话有几个问题：",
+    "link": "https://bigeagle.me/",
+    "date_str": "",
+    "timestamp": 1782361249.887176,
+    "result_type": "changed",
+    "first_seen": "2026-06-25T04:20:49.887411+00:00"
+  },
+  {
+    "scholar": "K.I.S.S",
+    "scholar_url": "https://bigeagle.me/",
+    "affiliation": "Kimi",
+    "areas": [
+      "LLM"
+    ],
+    "watch": "general",
+    "kind": "update",
+    "text": "在工作用的电脑上，为了访问公司内网，需要让内网域名走公司的 DNS 服务器，而其他域名走公共 DNS 服务器。",
+    "link": "https://bigeagle.me/",
+    "date_str": "",
+    "timestamp": 1782361249.887151,
+    "result_type": "changed",
+    "first_seen": "2026-06-25T04:20:49.887416+00:00"
+  },
+  {
     "scholar": "吴太强",
     "scholar_url": "https://wutaiqiang.github.io/",
     "affiliation": "香港大学",
