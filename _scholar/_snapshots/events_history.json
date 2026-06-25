@@ -48,6 +48,22 @@
     "first_seen": "2026-06-25T04:20:49.887416+00:00"
   },
   {
+    "scholar": "Lil'Log",
+    "scholar_url": "https://lilianweng.github.io/",
+    "affiliation": "Thinking Machines",
+    "areas": [
+      "LLM"
+    ],
+    "watch": "blog",
+    "kind": "post",
+    "text": "Scaling Laws, Carefully",
+    "link": "https://lilianweng.github.io/posts/2026-06-24-scaling-laws/",
+    "date_str": "Wed, 24 Jun 2026 00:00:00 +0000",
+    "timestamp": 1782259200.0,
+    "result_type": "rss_no_change",
+    "first_seen": "2026-06-25T22:26:24.903002+00:00"
+  },
+  {
     "scholar": "吴太强",
     "scholar_url": "https://wutaiqiang.github.io/",
     "affiliation": "香港大学",
