@@ -23,6 +23,9 @@ All professional engagements for which I am the primary point of contact are man
 I do not delegate individuals to represent me or act on my behalf with investors, industry partners, or other external parties. Anyone interested in our work is welcome to contact us directly. We are always open to collaborations.
 Google Scholar GitHub Artificer AI Lab UNSW X LinkedIn Short Bio
 News
+(June 2026) 1 paper is accepted at ECCV 2026: " MotionEcho " — test-time distillation that restores motion control in fast (distilled) video generators. Congratulations to Jintao, Xin, and collaborators!
+(June 2026) I accepted to serve as an Action Editor (AE) for the Transactions on Machine Learning Research (TMLR) .
+(June 2026) I serve as Area Chair for NeurIPS 2026, ACM MM 2026, WACV 2026, and BMVC 2026.
 (May 2026) I am recognized as a CVPR 2026 Outstanding Area Chair .
 (May 2026) 2 papers are accepted to ICML 2026: " Little by Little " - MoRAM: Continual Learning with Rank-1 Parametric Memory as MoE; Adaptive Contrastive Learning for Graph Structural Disentanglement. Congratulations to Jeff (Haodong), Zidu, and collaborators!
 (Feb 2026) 3 papers are accepted to CVPR 2026: " On Token's Dilemma " - Continual learning Dynamic MoE for MLLM w/ token level filtering; VideoGen w/ multi-obj motion control; Anomaly detection w/ local-feature Codebook. Congratulations to Chongyang, Yuze, and Xueyang!
