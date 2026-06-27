@@ -24,18 +24,18 @@ layout: default
   }
 
   .reading-page {
-    --reading-text: var(--global-text-color);
-    --reading-muted: var(--global-text-color-light);
-    --reading-soft: var(--global-text-color-light);
-    --reading-line: var(--global-divider-color);
-    --reading-surface: var(--global-card-bg-color);
-    --reading-code-surface: var(--global-code-bg-color);
-    --reading-accent: var(--global-theme-color);
-    --reading-accent-strong: var(--global-hover-color);
-    --reading-accent-soft: color-mix(in srgb, var(--global-theme-color) 14%, transparent);
+    --reading-text: #10141a;
+    --reading-muted: #3a414c;
+    --reading-soft: #5c6678;
+    --reading-line: rgba(17, 19, 23, 0.08);
+    --reading-surface: #ffffff;
+    --reading-code-surface: #f4f6f9;
+    --reading-accent: #3d6c8c;
+    --reading-accent-strong: #2f5470;
+    --reading-accent-soft: rgba(61, 108, 140, 0.08);
     width: min(100%, 82rem);
     margin: 0 auto;
-    padding-top: 1.15rem;
+    padding-top: 1.5rem;
   }
 
   .reading-shell {
@@ -61,24 +61,25 @@ layout: default
   .reading-eyebrow {
     margin-bottom: 0.9rem;
     color: var(--reading-accent);
-    font-size: 0.75rem;
+    font-size: 0.72rem;
     font-weight: 600;
-    letter-spacing: 0.18em;
+    letter-spacing: 0.2em;
     text-transform: uppercase;
   }
 
   .reading-title {
     margin: 0;
-    font-size: clamp(2.45rem, 4.8vw, 4.1rem);
+    font-size: clamp(2.4rem, 4.5vw, 3.8rem);
     line-height: 1.03;
     letter-spacing: -0.045em;
-    font-weight: 600;
+    font-weight: 620;
     overflow-wrap: anywhere;
   }
 
   .reading-meta {
     display: flex;
     flex-wrap: wrap;
+    align-items: baseline;
     gap: 0.6rem 1rem;
     margin-top: 1rem;
     color: var(--reading-muted);
@@ -89,20 +90,22 @@ layout: default
   .reading-taxonomy {
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
     gap: 0.7rem;
-    margin-top: 1.25rem;
+    margin-top: 0.65rem;
   }
 
   .reading-chip {
     display: inline-flex;
     align-items: center;
-    min-height: 2.2rem;
-    padding: 0 0.92rem;
+    min-height: 2.1rem;
+    padding: 0 0.88rem;
     border: 1px solid var(--reading-line);
     border-radius: 999px;
     background: var(--reading-accent-soft);
-    color: var(--reading-accent-strong);
-    font-size: 0.9rem;
+    color: var(--reading-accent);
+    font-size: 0.88rem;
+    font-weight: 520;
     text-decoration: none !important;
   }
 
@@ -192,7 +195,7 @@ layout: default
   .reading-article,
   .reading-article #markdown-content {
     color: var(--reading-text);
-    font-size: 1.1rem;
+    font-size: 1.08rem;
     line-height: 1.95;
   }
 
@@ -217,6 +220,8 @@ layout: default
   }
 
   .reading-article img {
+    max-width: 100%;
+    height: auto;
     margin: 1.4rem 0;
     border-radius: 1rem;
   }
@@ -239,32 +244,32 @@ layout: default
     padding-bottom: 0.68rem;
     border-bottom: 1px solid var(--reading-line);
     color: var(--reading-text);
-    font-size: clamp(1.96rem, 2.15vw, 2.3rem);
-    font-weight: 700;
+    font-size: clamp(1.85rem, 2.15vw, 2.2rem);
+    font-weight: 620;
     line-height: 1.28;
   }
 
   .reading-article [data-reading-level='2'] {
     margin-top: 2.7rem;
     color: var(--reading-text);
-    font-size: clamp(1.44rem, 1.7vw, 1.68rem);
-    font-weight: 700;
+    font-size: clamp(1.35rem, 1.7vw, 1.55rem);
+    font-weight: 620;
     line-height: 1.4;
   }
 
   .reading-article [data-reading-level='3'] {
     margin-top: 2.1rem;
     color: var(--reading-text);
-    font-size: 1.28rem;
-    font-weight: 680;
+    font-size: 1.2rem;
+    font-weight: 600;
     letter-spacing: -0.01em;
   }
 
   .reading-article [data-reading-level='4'] {
     margin-top: 1.8rem;
     color: var(--reading-muted);
-    font-size: 1.08rem;
-    font-weight: 650;
+    font-size: 1.04rem;
+    font-weight: 600;
     letter-spacing: 0;
   }
 
@@ -282,8 +287,8 @@ layout: default
     padding: 0.45rem 0 0.45rem 1.2rem;
     border-left: 2px solid var(--reading-accent);
     color: var(--reading-muted);
-    background: linear-gradient(90deg, var(--reading-accent-soft), transparent);
-    border-radius: 0 0.9rem 0.9rem 0;
+    background: var(--reading-accent-soft);
+    border-radius: 0 0.75rem 0.75rem 0;
   }
 
   .reading-article ul,

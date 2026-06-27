@@ -18,49 +18,50 @@ pagination:
 
 <style>
   .blog-landing {
-    --blog-text: var(--global-text-color);
-    --blog-muted: var(--global-text-color-light);
-    --blog-soft: var(--global-text-color-light);
-    --blog-line: var(--global-divider-color);
-    --blog-accent: var(--global-theme-color);
-    --blog-accent-strong: var(--global-hover-color);
-    --blog-accent-soft: color-mix(in srgb, var(--global-theme-color) 14%, transparent);
-    padding-top: 1rem;
+    --blog-text: #10141a;
+    --blog-muted: #3a414c;
+    --blog-soft: #5c6678;
+    --blog-line: rgba(17, 19, 23, 0.08);
+    --blog-accent: #3d6c8c;
+    --blog-accent-strong: #2f5470;
+    --blog-accent-soft: rgba(61, 108, 140, 0.08);
+    padding-top: 1.5rem;
   }
 
   .blog-hero {
-    margin-bottom: 2.2rem;
+    margin-bottom: 2.5rem;
   }
 
   .blog-eyebrow {
-    margin-bottom: 0.9rem;
+    margin-bottom: 0.85rem;
     color: var(--blog-accent);
-    font-size: 0.75rem;
+    font-size: 0.72rem;
     font-weight: 600;
-    letter-spacing: 0.18em;
+    letter-spacing: 0.2em;
     text-transform: uppercase;
   }
 
   .blog-title {
     margin: 0;
-    font-size: clamp(2.6rem, 5vw, 4.2rem);
-    line-height: 1.08;
-    letter-spacing: 0;
-    font-weight: 600;
+    font-size: clamp(2.6rem, 5vw, 4rem);
+    line-height: 1.05;
+    letter-spacing: -0.035em;
+    font-weight: 620;
+    color: var(--blog-text);
   }
 
   .blog-subtitle {
-    margin-top: 0.9rem;
-    max-width: 42rem;
+    margin-top: 0.85rem;
+    max-width: 38rem;
     color: var(--blog-muted);
     font-size: 1.05rem;
-    line-height: 1.85;
+    line-height: 1.9;
   }
 
   .blog-filters {
     display: flex;
     flex-wrap: wrap;
-    gap: 0.65rem;
+    gap: 0.55rem;
     align-items: center;
     margin-top: 1.5rem;
   }
@@ -106,66 +107,94 @@ pagination:
 
   .blog-list {
     display: grid;
-    gap: 1.8rem;
+    gap: 0;
     padding: 0;
     margin: 0;
     list-style: none;
   }
 
   .blog-item {
-    padding-top: 1.8rem;
-    border-top: 1px solid var(--blog-line);
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid var(--blog-line);
+    transition: background 0.2s ease;
   }
 
   .blog-item:first-child {
-    padding-top: 0;
-    border-top: 0;
+    padding-top: 0.2rem;
+  }
+
+  .blog-item:hover {
+    background: var(--blog-accent-soft);
+    margin: 0 -0.85rem;
+    padding-left: 0.85rem;
+    padding-right: 0.85rem;
+    border-radius: 0.85rem;
+    border-bottom-color: transparent;
+  }
+
+  .blog-item:first-child:hover {
+    padding-top: 0.2rem;
   }
 
   .blog-item-grid {
     display: grid;
-    gap: 1.5rem;
+    gap: 1.2rem;
     align-items: start;
   }
 
   .blog-item-grid--with-thumb {
-    grid-template-columns: minmax(0, 1fr) 220px;
+    grid-template-columns: minmax(0, 1fr) 200px;
   }
 
   .blog-item-date {
     color: var(--blog-soft);
-    font-size: 0.75rem;
-    font-weight: 600;
-    letter-spacing: 0.12em;
-    text-transform: uppercase;
+    font-size: 0.78rem;
+    font-weight: 520;
+    letter-spacing: 0.05em;
+    font-variant-numeric: tabular-nums;
   }
 
   .blog-item-title {
     display: inline-block;
-    margin: 0.45rem 0 0.7rem;
-    font-size: 1.45rem;
+    margin: 0.35rem 0 0.55rem;
+    font-size: 1.38rem;
     line-height: 1.35;
-    font-weight: 600;
+    font-weight: 620;
     letter-spacing: -0.02em;
     color: var(--blog-text);
     text-decoration: none;
   }
 
   .blog-item-title:hover {
+    color: var(--blog-accent);
     text-decoration: none;
   }
 
   .blog-item-desc {
-    margin: 0 0 0.8rem;
+    margin: 0 0 0.55rem;
     color: var(--blog-muted);
     line-height: 1.85;
+    font-size: 0.98rem;
+    max-width: 48rem;
   }
 
-  .blog-item-meta,
-  .blog-item-taxonomy {
+  .blog-item-meta {
+    display: inline;
     color: var(--blog-soft);
-    font-size: 0.95rem;
+    font-size: 0.94rem;
     line-height: 1.8;
+  }
+
+  .blog-item-taxonomy {
+    display: inline;
+    color: var(--blog-soft);
+    font-size: 0.94rem;
+    line-height: 1.8;
+  }
+
+  .blog-item-taxonomy::before {
+    content: " . ";
   }
 
   .blog-item-taxonomy a {
@@ -182,7 +211,7 @@ pagination:
     width: 100%;
     aspect-ratio: 16 / 10;
     object-fit: cover;
-    border-radius: 1rem;
+    border-radius: 0.85rem;
     border: 1px solid var(--blog-line);
     background: var(--global-card-bg-color);
   }

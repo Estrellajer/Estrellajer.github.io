@@ -30,6 +30,16 @@ scholars:
     research_areas: [Diffusion]
     affiliation: "东北大学"
     watch: blog
+  - name: David Noel Ng
+    url: https://dnhkng.github.io/
+    category: blog
+    site_type: github_pages
+    selectors: [article, main, .post-content, .entry-content, .content]
+    remove_selectors: [script, style, nav, footer, header, aside, .sidebar, .comments]
+    labels: [blog]
+    research_areas: [Interpretability, Efficiency, LLM]
+    affiliation: ""
+    watch: blog
   - name: 胡君耀
     url: https://junyaohu.github.io/
     category:

@@ -9,84 +9,84 @@ description: A small selection of research systems and side projects.
 
 <style>
   .projects-landing {
-    --projects-text: var(--global-text-color);
-    --projects-muted: #69717d;
-    --projects-soft: #8d96a3;
-    --projects-line: rgba(17, 19, 23, 0.1);
-    --projects-accent: #557a9f;
-    --projects-accent-soft: rgba(85, 122, 159, 0.12);
-    padding-top: 1rem;
+    --projects-text: #10141a;
+    --projects-muted: #3a414c;
+    --projects-soft: #5c6678;
+    --projects-line: rgba(17, 19, 23, 0.08);
+    --projects-accent: #3d6c8c;
+    --projects-accent-soft: rgba(61, 108, 140, 0.08);
+    --projects-surface: #ffffff;
+    padding-top: 1.5rem;
   }
 
   .projects-hero {
-    margin-bottom: 2.2rem;
+    margin-bottom: 2.5rem;
   }
 
   .projects-eyebrow {
-    margin-bottom: 0.9rem;
+    margin-bottom: 0.85rem;
     color: var(--projects-accent);
-    font-size: 0.75rem;
+    font-size: 0.72rem;
     font-weight: 600;
-    letter-spacing: 0.18em;
+    letter-spacing: 0.2em;
     text-transform: uppercase;
   }
 
   .projects-title {
     margin: 0;
-    font-size: clamp(2.6rem, 5vw, 4.2rem);
-    line-height: 0.98;
-    letter-spacing: -0.04em;
-    font-weight: 600;
+    font-size: clamp(2.6rem, 5vw, 4rem);
+    line-height: 1.05;
+    letter-spacing: -0.035em;
+    font-weight: 620;
+    color: var(--projects-text);
   }
 
   .projects-subtitle {
-    margin-top: 0.9rem;
-    max-width: 44rem;
+    margin-top: 0.85rem;
+    max-width: 38rem;
     color: var(--projects-muted);
     font-size: 1.05rem;
-    line-height: 1.85;
+    line-height: 1.9;
   }
 
   .projects-grid {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 1.35rem;
+    gap: 1.1rem;
   }
 
   .project-card {
     display: grid;
-    gap: 0.95rem;
-    padding: 1.2rem;
-    border: 1px solid rgba(85, 122, 159, 0.14);
-    border-radius: 1.15rem;
-    background:
-      linear-gradient(180deg, rgba(255, 255, 255, 0.98), rgba(243, 247, 252, 0.98)),
-      var(--global-card-bg-color);
-    box-shadow: 0 14px 34px rgba(16, 24, 40, 0.06);
+    gap: 0.9rem;
+    padding: 1.15rem;
+    border: 1px solid var(--projects-line);
+    border-radius: 1rem;
+    background: var(--projects-surface);
+    box-shadow: 0 1px 3px rgba(16, 24, 40, 0.04);
     text-decoration: none !important;
     transition:
-      transform 0.18s ease,
-      box-shadow 0.18s ease,
-      border-color 0.18s ease;
+      transform 0.2s ease,
+      box-shadow 0.2s ease,
+      border-color 0.2s ease;
   }
 
   .project-card:hover {
-    transform: translateY(-3px);
-    border-color: rgba(85, 122, 159, 0.24);
-    box-shadow: 0 22px 40px rgba(16, 24, 40, 0.1);
+    transform: translateY(-2px);
+    border-color: rgba(61, 108, 140, 0.18);
+    box-shadow: 0 6px 24px rgba(16, 24, 40, 0.08);
   }
 
   .project-card-head {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 0.75rem;
+    gap: 0.7rem;
   }
 
   .project-card-badges {
     display: flex;
     flex-wrap: wrap;
-    gap: 0.55rem;
+    gap: 0.5rem;
     align-items: center;
   }
 
@@ -94,64 +94,63 @@ description: A small selection of research systems and side projects.
   .project-link-pill {
     display: inline-flex;
     align-items: center;
-    gap: 0.4rem;
-    min-height: 1.9rem;
-    padding: 0 0.74rem;
-    border: 1px solid rgba(85, 122, 159, 0.14);
+    gap: 0.35rem;
+    min-height: 1.8rem;
+    padding: 0 0.68rem;
+    border: 1px solid var(--projects-line);
     border-radius: 999px;
-    font-size: 0.76rem;
+    font-size: 0.72rem;
     font-weight: 600;
-    letter-spacing: 0.08em;
+    letter-spacing: 0.07em;
     text-transform: uppercase;
   }
 
   .project-badge {
-    background: linear-gradient(180deg, rgba(85, 122, 159, 0.12), rgba(85, 122, 159, 0.08));
-    color: #3b5c7e;
+    background: var(--projects-accent-soft);
+    color: var(--projects-accent);
+    border-color: rgba(61, 108, 140, 0.14);
   }
 
   .project-link-pill {
-    background: rgba(17, 19, 23, 0.04);
+    background: var(--projects-surface);
     color: var(--projects-soft);
   }
 
   .project-card-thumb-wrap {
-    padding: 0.72rem;
-    border: 1px solid rgba(85, 122, 159, 0.12);
-    border-radius: 1rem;
-    background:
-      radial-gradient(circle at top left, rgba(85, 122, 159, 0.08), transparent 44%),
-      linear-gradient(180deg, #fafcff 0%, #eef3f8 100%);
-    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.78);
+    padding: 0.65rem;
+    border: 1px solid var(--projects-line);
+    border-radius: 0.85rem;
+    background: var(--projects-accent-soft);
   }
 
   .project-card-thumb {
     width: 100%;
     aspect-ratio: 16 / 9;
     object-fit: contain;
-    padding: 0.35rem;
-    border: 1px solid rgba(85, 122, 159, 0.08);
-    border-radius: 0.88rem;
-    background: rgba(255, 255, 255, 0.86);
+    padding: 0.3rem;
+    border: 1px solid var(--projects-line);
+    border-radius: 0.7rem;
+    background: var(--projects-surface);
   }
 
   .project-card-copy {
     display: grid;
-    gap: 0.55rem;
+    gap: 0.5rem;
   }
 
   .project-card-title {
     margin: 0;
     color: var(--projects-text);
-    font-size: 1.3rem;
-    font-weight: 600;
+    font-size: 1.22rem;
+    font-weight: 620;
     line-height: 1.34;
   }
 
   .project-card-desc {
     margin: 0;
-    color: #5f6977;
+    color: var(--projects-muted);
     line-height: 1.78;
+    font-size: 0.96rem;
   }
 
   @media (max-width: 800px) {

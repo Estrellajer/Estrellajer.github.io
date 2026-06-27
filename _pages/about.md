@@ -5,7 +5,7 @@ permalink: /
 subtitle:
 hero_eyebrow: Graduate Student in AI
 hero_name: Maoqi Liu 「刘茂琦」
-hero_subtitle: Graduate student in artificial intelligence at BUPT, working on continual learning and LLM applications.
+hero_subtitle: Graduate student in artificial intelligence at BUPT. Currently interning at ByteDance Data, working on continual learning and LLM applications.
 photo_quote: Failure will stay, success slips away.
 research_areas:
   - Activation Steering
@@ -15,11 +15,10 @@ research_areas:
 awards:
   - label: 2024
     text: Beijing Natural Science Foundation Undergraduate "QiYan" Research Grant.
-  - label: 2022
-    text: National English Competition for College Students, Second Prize.
-service:
-  - label: Leadership
-    text: Vice President of BUPT's Long-distance Running Association, debate team champion, and class leader across undergraduate and graduate study stages.
+
+experience:
+  - label: 2026.06 - Present
+    text: Research Intern @ <strong>ByteDance Data</strong>, mentored by <a href="https://jweihe.github.io/">He Junwei</a>.
 
 profile:
   align: right

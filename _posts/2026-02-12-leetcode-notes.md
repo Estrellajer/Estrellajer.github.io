@@ -51,6 +51,51 @@ intervals.sort(key=lambda p: p[0])
 
 要考虑遍历上三角还是下三角，否则不对 j 的范围进行限制的话，交换两次等于没交换。
 
+### 13. 罗马数字转整数
+
+pairwise function 不知道，统一六种规则（比较相邻，前小后大加相反数）。
+
+### 螺旋矩阵
+
+#### 常见错误
+
+1. `x, y = i + DIR[di][0], y + DIR[di][1]` — `y` 未定义，应改为 `j + DIR[di][1]`
+2. `matrix[x][y] = None` 用作判断 — `=` 是赋值，判断应写成 `matrix[x][y] is None`
+
+#### 正确代码
+
+```python
+DIR = (0, 1), (1, 0), (0, -1), (-1, 0)
+
+class Solution:
+    def spiralOrder(self, matrix: List[List[int]]) -> List[int]:
+        m, n = len(matrix), len(matrix[0])
+        ans = []
+        i = j = di = 0
+
+        for _ in range(m * n):
+            ans.append(matrix[i][j])
+            matrix[i][j] = None
+
+            x, y = i + DIR[di][0], j + DIR[di][1]
+
+            if x < 0 or x >= m or y < 0 or y >= n or matrix[x][y] is None:
+                di = (di + 1) % 4
+
+            i += DIR[di][0]
+            j += DIR[di][1]
+
+        return ans
+```
+
+#### 核心理解
+
+代码没有真的走到越界位置。`x, y = ...` 只是**试探坐标**（预判下一步是否合法），`i += ...` / `j += ...` 才是**真正移动坐标**。
+
+流程：当前位置 → 预判下一步 → 不合法则转向 → 按新方向移动。所以无需"减回来"。
+
+---
+
 ## 链表
 
 ### 206. 反转链表
@@ -90,6 +135,8 @@ p.next = x   修改连接  ✅ 改链表
 1. 找中间节点需要把中间节点的前一个节点和中间节点分开，否则前半部分调用还是会调用到后面的节点
 2. 分治：递归对 `head1` 和 `head2` 处理
 
+---
+
 ## 排序
 
 ### 快速排序：`< pivot` vs `<= pivot`
@@ -125,48 +172,7 @@ while i <= j and nums[j] > pivot:
 
 e.g. `[4 | 1, 3, 2 | 5, 6]`，`nums[j] = 2 <= 4`，`nums[i] = 5 >= 4`。和 `j` 交换得 `[2, 1, 3, 4, 5, 6]` ✓；和 `i` 交换得 `[5, 1, 3, 2, 4, 6]` ✗，pivot 左边出现了 `5`。
 
-## 螺旋矩阵
-
-### 常见错误
-
-1. `x, y = i + DIR[di][0], y + DIR[di][1]` — `y` 未定义，应改为 `j + DIR[di][1]`
-2. `matrix[x][y] = None` 用作判断 — `=` 是赋值，判断应写成 `matrix[x][y] is None`
-
-### 正确代码
-
-```python
-DIR = (0, 1), (1, 0), (0, -1), (-1, 0)
-
-class Solution:
-    def spiralOrder(self, matrix: List[List[int]]) -> List[int]:
-        m, n = len(matrix), len(matrix[0])
-        ans = []
-        i = j = di = 0
-
-        for _ in range(m * n):
-            ans.append(matrix[i][j])
-            matrix[i][j] = None
-
-            x, y = i + DIR[di][0], j + DIR[di][1]
-
-            if x < 0 or x >= m or y < 0 or y >= n or matrix[x][y] is None:
-                di = (di + 1) % 4
-
-            i += DIR[di][0]
-            j += DIR[di][1]
-
-        return ans
-```
-
-### 核心理解
-
-代码没有真的走到越界位置。`x, y = ...` 只是**试探坐标**（预判下一步是否合法），`i += ...` / `j += ...` 才是**真正移动坐标**。
-
-流程：当前位置 → 预判下一步 → 不合法则转向 → 按新方向移动。所以无需"减回来"。
-
-13.罗马数字转整数
-
-pairwise function不知道，统一六种规则（比较相邻，前小后大加相反数）
+---
 
 ## PyTorch
 
@@ -199,6 +205,8 @@ K.shape[1]  == K.size(1)
 ### GQA 中的 expand + reshape
 
 `reshape` 只能改形状，不能复制数据；`expand` 负责制造"复制视图"，`reshape` 只是把复制后的 head 维度合并起来。所以在 GQA 里需要 `expand` 再 `reshape`，而不能直接修改维度的值。
+
+---
 
 ## 杂项
 

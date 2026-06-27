@@ -11,9 +11,9 @@
     "text": "dnsmasq 的默认上游是静态配置，并不是在所有网络环境中都能直接用 114 了事，尤其是在一些需要认证的环境中 需要改系统的 DNS 配置，同时每次系统更新之后又要重新改一遍 直到昨天我才知道 BSD 系支持一个按域名设置 resolver 的功能 (man 5 resolver)，直接用就好了。 Read more",
     "link": "https://bigeagle.me/",
     "date_str": "",
-    "timestamp": 1782361249.887195,
+    "timestamp": 1782547561.944584,
     "result_type": "changed",
-    "first_seen": "2026-06-25T04:20:49.887402+00:00"
+    "first_seen": "2026-06-27T08:06:01.951868+00:00"
   },
   {
     "scholar": "K.I.S.S",
@@ -27,9 +27,9 @@
     "text": "之前我一直使用 dnsmasq 实现按域名切换解析，这样的话有几个问题：",
     "link": "https://bigeagle.me/",
     "date_str": "",
-    "timestamp": 1782361249.887176,
+    "timestamp": 1782547561.944574,
     "result_type": "changed",
-    "first_seen": "2026-06-25T04:20:49.887411+00:00"
+    "first_seen": "2026-06-27T08:06:01.951881+00:00"
   },
   {
     "scholar": "K.I.S.S",
@@ -43,9 +43,58 @@
     "text": "在工作用的电脑上，为了访问公司内网，需要让内网域名走公司的 DNS 服务器，而其他域名走公共 DNS 服务器。",
     "link": "https://bigeagle.me/",
     "date_str": "",
-    "timestamp": 1782361249.887151,
+    "timestamp": 1782547561.944565,
     "result_type": "changed",
-    "first_seen": "2026-06-25T04:20:49.887416+00:00"
+    "first_seen": "2026-06-27T08:06:01.951885+00:00"
+  },
+  {
+    "scholar": "王立元",
+    "scholar_url": "https://lywang3081.github.io/",
+    "affiliation": "北京大学",
+    "areas": [
+      "Continual Learning"
+    ],
+    "watch": "general",
+    "kind": "update",
+    "text": "Page content updated",
+    "link": "https://lywang3081.github.io/",
+    "date_str": "",
+    "timestamp": 1782547561.944265,
+    "result_type": "changed",
+    "first_seen": "2026-06-27T08:06:01.951889+00:00"
+  },
+  {
+    "scholar": "吴太强",
+    "scholar_url": "https://wutaiqiang.github.io/",
+    "affiliation": "香港大学",
+    "areas": [
+      "Reasoning"
+    ],
+    "watch": "general",
+    "kind": "update",
+    "text": "Page content updated",
+    "link": "https://wutaiqiang.github.io/",
+    "date_str": "",
+    "timestamp": 1782547561.944265,
+    "result_type": "changed",
+    "first_seen": "2026-06-27T08:06:01.951892+00:00"
+  },
+  {
+    "scholar": "苏剑林 - 科学空间",
+    "scholar_url": "https://kexue.fm/",
+    "affiliation": "Kimi",
+    "areas": [
+      "LLM",
+      "Theory"
+    ],
+    "watch": "blog",
+    "kind": "post",
+    "text": "矩阵函数近似中的暴力美学",
+    "link": "https://kexue.fm/archives/11787",
+    "date_str": "Thu, 25 Jun 2026 21:53:00 +0800",
+    "timestamp": 1782395580.0,
+    "result_type": "rss",
+    "first_seen": "2026-06-27T08:06:01.951895+00:00"
   },
   {
     "scholar": "Lil'Log",
@@ -60,24 +109,8 @@
     "link": "https://lilianweng.github.io/posts/2026-06-24-scaling-laws/",
     "date_str": "Wed, 24 Jun 2026 00:00:00 +0000",
     "timestamp": 1782259200.0,
-    "result_type": "rss_no_change",
-    "first_seen": "2026-06-25T22:26:24.903002+00:00"
-  },
-  {
-    "scholar": "吴太强",
-    "scholar_url": "https://wutaiqiang.github.io/",
-    "affiliation": "香港大学",
-    "areas": [
-      "Reasoning"
-    ],
-    "watch": "general",
-    "kind": "update",
-    "text": "Page content updated",
-    "link": "https://wutaiqiang.github.io/",
-    "date_str": "",
-    "timestamp": 1782168230.625456,
-    "result_type": "changed",
-    "first_seen": "2026-06-22T22:43:50.625940+00:00"
+    "result_type": "rss",
+    "first_seen": "2026-06-27T08:06:01.951897+00:00"
   },
   {
     "scholar": "Nathan Lambert",
@@ -91,7 +124,7 @@
     "date_str": "Mon, 22 Jun 2026 14:52:45 GMT",
     "timestamp": 1782139965.0,
     "result_type": "rss",
-    "first_seen": "2026-06-22T22:43:50.625947+00:00"
+    "first_seen": "2026-06-27T08:06:01.951901+00:00"
   },
   {
     "scholar": "刘子铭（KAN）",
@@ -107,23 +140,7 @@
     "date_str": "2026-06-22T00:00:00+00:00",
     "timestamp": 1782086400.0,
     "result_type": "rss",
-    "first_seen": "2026-06-21T22:19:21.290585+00:00"
-  },
-  {
-    "scholar": "王立元",
-    "scholar_url": "https://lywang3081.github.io/",
-    "affiliation": "北京大学",
-    "areas": [
-      "Continual Learning"
-    ],
-    "watch": "general",
-    "kind": "update",
-    "text": "Page content updated",
-    "link": "https://lywang3081.github.io/",
-    "date_str": "",
-    "timestamp": 1782080361.290101,
-    "result_type": "changed",
-    "first_seen": "2026-06-21T22:19:21.290594+00:00"
+    "first_seen": "2026-06-27T08:06:01.951904+00:00"
   },
   {
     "scholar": "Nathan Lambert",
@@ -137,7 +154,7 @@
     "date_str": "Fri, 19 Jun 2026 13:02:47 GMT",
     "timestamp": 1781874167.0,
     "result_type": "rss",
-    "first_seen": "2026-06-19T21:59:59.348643+00:00"
+    "first_seen": "2026-06-27T08:06:01.951907+00:00"
   },
   {
     "scholar": "苏剑林 - 科学空间",
@@ -184,7 +201,7 @@
     "date_str": "",
     "timestamp": 1780272000.0,
     "result_type": "changed",
-    "first_seen": "2026-06-26T22:14:54.866528+00:00"
+    "first_seen": "2026-06-27T08:06:01.951910+00:00"
   },
   {
     "scholar": "董功",
@@ -200,7 +217,7 @@
     "date_str": "",
     "timestamp": 1780272000.0,
     "result_type": "changed",
-    "first_seen": "2026-06-26T22:14:54.866535+00:00"
+    "first_seen": "2026-06-27T08:06:01.951913+00:00"
   },
   {
     "scholar": "董功",
@@ -216,7 +233,7 @@
     "date_str": "",
     "timestamp": 1780272000.0,
     "result_type": "changed",
-    "first_seen": "2026-06-26T22:14:54.866539+00:00"
+    "first_seen": "2026-06-27T08:06:01.951916+00:00"
   },
   {
     "scholar": "Junjie Su(苏俊杰)",
