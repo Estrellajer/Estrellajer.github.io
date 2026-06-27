@@ -97,6 +97,24 @@
     "first_seen": "2026-06-27T08:06:01.951895+00:00"
   },
   {
+    "scholar": "David Noel Ng",
+    "scholar_url": "https://dnhkng.github.io/",
+    "affiliation": "",
+    "areas": [
+      "Interpretability",
+      "Efficiency",
+      "LLM"
+    ],
+    "watch": "blog",
+    "kind": "post",
+    "text": "Building the",
+    "link": "https://dnhkng.github.io/posts/building-the-beam-universe-splitter/",
+    "date_str": "2026-06-25T00:00:00+02:00",
+    "timestamp": 1782338400.0,
+    "result_type": "rss_no_change",
+    "first_seen": "2026-06-27T10:42:31.243011+00:00"
+  },
+  {
     "scholar": "Lil'Log",
     "scholar_url": "https://lilianweng.github.io/",
     "affiliation": "Thinking Machines",
@@ -188,6 +206,150 @@
     "first_seen": "2026-06-19T12:44:04.494547+00:00"
   },
   {
+    "scholar": "冯钰捷",
+    "scholar_url": "https://scholar.google.com/citations?user=J3zR-48AAAAJ&hl=zh-CN",
+    "affiliation": "香港理工大学",
+    "areas": [
+      "Continual Learning"
+    ],
+    "watch": "publications",
+    "kind": "paper",
+    "text": "FOREVER: Forgetting Curve-Inspired Memory Replay for Language Model Continual Learning · ACL 2026 Long Paper, 2026, 2026",
+    "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=J3zR-48AAAAJ&citation_for_view=J3zR-48AAAAJ:4DMP91E08xMC",
+    "date_str": "2026",
+    "timestamp": 1780272000.0,
+    "result_type": "changed",
+    "first_seen": "2026-06-27T10:42:31.242800+00:00"
+  },
+  {
+    "scholar": "冯钰捷",
+    "scholar_url": "https://scholar.google.com/citations?user=J3zR-48AAAAJ&hl=zh-CN",
+    "affiliation": "香港理工大学",
+    "areas": [
+      "Continual Learning"
+    ],
+    "watch": "publications",
+    "kind": "paper",
+    "text": "How Order-Sensitive Are LLMs? OrderProbe for Deterministic Structural Reconstruction · arXiv preprint arXiv:2601.08626, 2026, 2026",
+    "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=J3zR-48AAAAJ&citation_for_view=J3zR-48AAAAJ:Wp0gIr-vW9MC",
+    "date_str": "2026",
+    "timestamp": 1780272000.0,
+    "result_type": "changed",
+    "first_seen": "2026-06-27T10:42:31.242808+00:00"
+  },
+  {
+    "scholar": "朱星宇",
+    "scholar_url": "https://scholar.google.com/citations?hl=zh-CN&user=PpqUnAwAAAAJ&view_op=list_works&sortby=pubdate",
+    "affiliation": "NUS",
+    "areas": [
+      "Vision language model"
+    ],
+    "watch": "publications",
+    "kind": "paper",
+    "text": "Look Carefully: Adaptive Visual Reinforcements in Multimodal Large Language Models for Hallucination Mitigation · ICLR 2026, 2026, 2026",
+    "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=PpqUnAwAAAAJ&citation_for_view=PpqUnAwAAAAJ:8k81kl-MbHgC",
+    "date_str": "2026",
+    "timestamp": 1780272000.0,
+    "result_type": "changed",
+    "first_seen": "2026-06-27T10:42:31.242812+00:00"
+  },
+  {
+    "scholar": "朱星宇",
+    "scholar_url": "https://scholar.google.com/citations?hl=zh-CN&user=PpqUnAwAAAAJ&view_op=list_works&sortby=pubdate",
+    "affiliation": "NUS",
+    "areas": [
+      "Vision language model"
+    ],
+    "watch": "publications",
+    "kind": "paper",
+    "text": "Principled Steering via Null-space Projection for Jailbreak Defense in Vision-Language Models · CVPR 2026, 2026, 2026",
+    "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=PpqUnAwAAAAJ&citation_for_view=PpqUnAwAAAAJ:KlAtU1dfN6UC",
+    "date_str": "2026",
+    "timestamp": 1780272000.0,
+    "result_type": "changed",
+    "first_seen": "2026-06-27T10:42:31.242815+00:00"
+  },
+  {
+    "scholar": "朱星宇",
+    "scholar_url": "https://scholar.google.com/citations?hl=zh-CN&user=PpqUnAwAAAAJ&view_op=list_works&sortby=pubdate",
+    "affiliation": "NUS",
+    "areas": [
+      "Vision language model"
+    ],
+    "watch": "publications",
+    "kind": "paper",
+    "text": "Revisiting robustness for llm safety alignment via selective geometry control · arXiv preprint arXiv:2602.07340, 2026, 2026",
+    "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=PpqUnAwAAAAJ&citation_for_view=PpqUnAwAAAAJ:0EnyYjriUFMC",
+    "date_str": "2026",
+    "timestamp": 1780272000.0,
+    "result_type": "changed",
+    "first_seen": "2026-06-27T10:42:31.242818+00:00"
+  },
+  {
+    "scholar": "朱星宇",
+    "scholar_url": "https://scholar.google.com/citations?hl=zh-CN&user=PpqUnAwAAAAJ&view_op=list_works&sortby=pubdate",
+    "affiliation": "NUS",
+    "areas": [
+      "Vision language model"
+    ],
+    "watch": "publications",
+    "kind": "paper",
+    "text": "Thinking with Images as Continuous Actions: Numerical Visual Chain-of-Thought · arXiv preprint arXiv:2602.23959, 2026, 2026",
+    "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=PpqUnAwAAAAJ&citation_for_view=PpqUnAwAAAAJ:3fE2CSJIrl8C",
+    "date_str": "2026",
+    "timestamp": 1780272000.0,
+    "result_type": "changed",
+    "first_seen": "2026-06-27T10:42:31.242821+00:00"
+  },
+  {
+    "scholar": "朱星宇",
+    "scholar_url": "https://scholar.google.com/citations?hl=zh-CN&user=PpqUnAwAAAAJ&view_op=list_works&sortby=pubdate",
+    "affiliation": "NUS",
+    "areas": [
+      "Vision language model"
+    ],
+    "watch": "publications",
+    "kind": "paper",
+    "text": "GuardAlign: Test-time Safety Alignment in Multimodal Large Language Models · ICLR 2026, 2026, 2026",
+    "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=PpqUnAwAAAAJ&citation_for_view=PpqUnAwAAAAJ:5nxA0vEk-isC",
+    "date_str": "2026",
+    "timestamp": 1780272000.0,
+    "result_type": "changed",
+    "first_seen": "2026-06-27T10:42:31.242824+00:00"
+  },
+  {
+    "scholar": "朱星宇",
+    "scholar_url": "https://scholar.google.com/citations?hl=zh-CN&user=PpqUnAwAAAAJ&view_op=list_works&sortby=pubdate",
+    "affiliation": "NUS",
+    "areas": [
+      "Vision language model"
+    ],
+    "watch": "publications",
+    "kind": "paper",
+    "text": "LPEdit: Locality-Preserving Knowledge Editing for MultiModal Large Language Models · Proceedings of the ACM Web Conference 2026, 8425-8428, 2026, 2026",
+    "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=PpqUnAwAAAAJ&citation_for_view=PpqUnAwAAAAJ:Zph67rFs4hoC",
+    "date_str": "2026",
+    "timestamp": 1780272000.0,
+    "result_type": "changed",
+    "first_seen": "2026-06-27T10:42:31.242829+00:00"
+  },
+  {
+    "scholar": "朱星宇",
+    "scholar_url": "https://scholar.google.com/citations?hl=zh-CN&user=PpqUnAwAAAAJ&view_op=list_works&sortby=pubdate",
+    "affiliation": "NUS",
+    "areas": [
+      "Vision language model"
+    ],
+    "watch": "publications",
+    "kind": "paper",
+    "text": "Adapting Point Cloud Analysis via Multimodal Bayesian Distribution Learning · CVPR 2026, 2026, 2026",
+    "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=PpqUnAwAAAAJ&citation_for_view=PpqUnAwAAAAJ:kNdYIx-mwKoC",
+    "date_str": "2026",
+    "timestamp": 1780272000.0,
+    "result_type": "changed",
+    "first_seen": "2026-06-27T10:42:31.242832+00:00"
+  },
+  {
     "scholar": "董功",
     "scholar_url": "https://donggong1.github.io/index.html",
     "affiliation": "",
@@ -250,5 +412,389 @@
     "timestamp": 1779753600.0,
     "result_type": "rss_no_change",
     "first_seen": "2026-06-19T12:44:04.494550+00:00"
+  },
+  {
+    "scholar": "冯钰捷",
+    "scholar_url": "https://scholar.google.com/citations?user=J3zR-48AAAAJ&hl=zh-CN",
+    "affiliation": "香港理工大学",
+    "areas": [
+      "Continual Learning"
+    ],
+    "watch": "publications",
+    "kind": "paper",
+    "text": "Recurrent knowledge identification and fusion for language model continual learning · ACL 2025 Long Paper, 2025, 2025",
+    "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=J3zR-48AAAAJ&citation_for_view=J3zR-48AAAAJ:YOwf2qJgpHMC",
+    "date_str": "2025",
+    "timestamp": 1748736000.0,
+    "result_type": "changed",
+    "first_seen": "2026-06-27T10:42:31.242835+00:00"
+  },
+  {
+    "scholar": "冯钰捷",
+    "scholar_url": "https://scholar.google.com/citations?user=J3zR-48AAAAJ&hl=zh-CN",
+    "affiliation": "香港理工大学",
+    "areas": [
+      "Continual Learning"
+    ],
+    "watch": "publications",
+    "kind": "paper",
+    "text": "DEAL: Disentangling Transformer Head Activations for LLM Steering · Knowledgeable Foundation Models at ACL 2025, 2025, 2025",
+    "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=J3zR-48AAAAJ&citation_for_view=J3zR-48AAAAJ:9ZlFYXVOiuMC",
+    "date_str": "2025",
+    "timestamp": 1748736000.0,
+    "result_type": "changed",
+    "first_seen": "2026-06-27T10:42:31.242838+00:00"
+  },
+  {
+    "scholar": "冯钰捷",
+    "scholar_url": "https://scholar.google.com/citations?user=J3zR-48AAAAJ&hl=zh-CN",
+    "affiliation": "香港理工大学",
+    "areas": [
+      "Continual Learning"
+    ],
+    "watch": "publications",
+    "kind": "paper",
+    "text": "DearLLM: Enhancing Personalized Healthcare via Large Language Models-Deduced Feature Correlations · AAAI 2025, 2025, 2025",
+    "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=J3zR-48AAAAJ&citation_for_view=J3zR-48AAAAJ:4TOpqqG69KYC",
+    "date_str": "2025",
+    "timestamp": 1748736000.0,
+    "result_type": "changed",
+    "first_seen": "2026-06-27T10:42:31.242841+00:00"
+  },
+  {
+    "scholar": "冯钰捷",
+    "scholar_url": "https://scholar.google.com/citations?user=J3zR-48AAAAJ&hl=zh-CN",
+    "affiliation": "香港理工大学",
+    "areas": [
+      "Continual Learning"
+    ],
+    "watch": "publications",
+    "kind": "paper",
+    "text": "Geoedit: Geometric knowledge editing for large language models · EMNLP 2025 Long Paper, 2025, 2025",
+    "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=J3zR-48AAAAJ&citation_for_view=J3zR-48AAAAJ:_kc_bZDykSQC",
+    "date_str": "2025",
+    "timestamp": 1748736000.0,
+    "result_type": "changed",
+    "first_seen": "2026-06-27T10:42:31.242843+00:00"
+  },
+  {
+    "scholar": "冯钰捷",
+    "scholar_url": "https://scholar.google.com/citations?user=J3zR-48AAAAJ&hl=zh-CN",
+    "affiliation": "香港理工大学",
+    "areas": [
+      "Continual Learning"
+    ],
+    "watch": "publications",
+    "kind": "paper",
+    "text": "AIMMerging: Adaptive Iterative Model Merging Using Training Trajectories for Language Model Continual Learning · EMNLP 2025 Long Paper, 2025, 2025",
+    "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=J3zR-48AAAAJ&citation_for_view=J3zR-48AAAAJ:aqlVkmm33-oC",
+    "date_str": "2025",
+    "timestamp": 1748736000.0,
+    "result_type": "changed",
+    "first_seen": "2026-06-27T10:42:31.242846+00:00"
+  },
+  {
+    "scholar": "朱星宇",
+    "scholar_url": "https://scholar.google.com/citations?hl=zh-CN&user=PpqUnAwAAAAJ&view_op=list_works&sortby=pubdate",
+    "affiliation": "NUS",
+    "areas": [
+      "Vision language model"
+    ],
+    "watch": "publications",
+    "kind": "paper",
+    "text": "Dynamic Multimodal Prototype Learning in Vision-Language Models · ICCV 2025, 2025, 2025",
+    "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=PpqUnAwAAAAJ&citation_for_view=PpqUnAwAAAAJ:YsMSGLbcyi4C",
+    "date_str": "2025",
+    "timestamp": 1748736000.0,
+    "result_type": "changed",
+    "first_seen": "2026-06-27T10:42:31.242849+00:00"
+  },
+  {
+    "scholar": "朱星宇",
+    "scholar_url": "https://scholar.google.com/citations?hl=zh-CN&user=PpqUnAwAAAAJ&view_op=list_works&sortby=pubdate",
+    "affiliation": "NUS",
+    "areas": [
+      "Vision language model"
+    ],
+    "watch": "publications",
+    "kind": "paper",
+    "text": "Enhancing CLIP Robustness via Cross-Modality Alignment · NeurIPS 2025 Spotlight, 2025, 2025",
+    "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=PpqUnAwAAAAJ&citation_for_view=PpqUnAwAAAAJ:roLk4NBRz8UC",
+    "date_str": "2025",
+    "timestamp": 1748736000.0,
+    "result_type": "changed",
+    "first_seen": "2026-06-27T10:42:31.242851+00:00"
+  },
+  {
+    "scholar": "朱星宇",
+    "scholar_url": "https://scholar.google.com/citations?hl=zh-CN&user=PpqUnAwAAAAJ&view_op=list_works&sortby=pubdate",
+    "affiliation": "NUS",
+    "areas": [
+      "Vision language model"
+    ],
+    "watch": "publications",
+    "kind": "paper",
+    "text": "Accelerating Diffusion Transformer via Error-Optimized Cache · ACM MM 2025, 2025, 2025",
+    "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=PpqUnAwAAAAJ&citation_for_view=PpqUnAwAAAAJ:eQOLeE2rZwMC",
+    "date_str": "2025",
+    "timestamp": 1748736000.0,
+    "result_type": "changed",
+    "first_seen": "2026-06-27T10:42:31.242854+00:00"
+  },
+  {
+    "scholar": "朱星宇",
+    "scholar_url": "https://scholar.google.com/citations?hl=zh-CN&user=PpqUnAwAAAAJ&view_op=list_works&sortby=pubdate",
+    "affiliation": "NUS",
+    "areas": [
+      "Vision language model"
+    ],
+    "watch": "publications",
+    "kind": "paper",
+    "text": "Hierarchical Semantic Alignment for Image Clustering · AAAI 2026, 2025, 2025",
+    "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=PpqUnAwAAAAJ&citation_for_view=PpqUnAwAAAAJ:Se3iqnhoufwC",
+    "date_str": "2025",
+    "timestamp": 1748736000.0,
+    "result_type": "changed",
+    "first_seen": "2026-06-27T10:42:31.242856+00:00"
+  },
+  {
+    "scholar": "朱星宇",
+    "scholar_url": "https://scholar.google.com/citations?hl=zh-CN&user=PpqUnAwAAAAJ&view_op=list_works&sortby=pubdate",
+    "affiliation": "NUS",
+    "areas": [
+      "Vision language model"
+    ],
+    "watch": "publications",
+    "kind": "paper",
+    "text": "Res-Bench: Benchmarking the Robustness of Multimodal Large Language Models to Dynamic Resolution Input · AAAI 2026, 2025, 2025",
+    "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=PpqUnAwAAAAJ&citation_for_view=PpqUnAwAAAAJ:UebtZRa9Y70C",
+    "date_str": "2025",
+    "timestamp": 1748736000.0,
+    "result_type": "changed",
+    "first_seen": "2026-06-27T10:42:31.242860+00:00"
+  },
+  {
+    "scholar": "冯钰捷",
+    "scholar_url": "https://scholar.google.com/citations?user=J3zR-48AAAAJ&hl=zh-CN",
+    "affiliation": "香港理工大学",
+    "areas": [
+      "Continual Learning"
+    ],
+    "watch": "publications",
+    "kind": "paper",
+    "text": "Tasl: Continual dialog state tracking via task skill localization and consolidation · ACL 2024 Long Paper, 2024, 2024",
+    "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=J3zR-48AAAAJ&citation_for_view=J3zR-48AAAAJ:0EnyYjriUFMC",
+    "date_str": "2024",
+    "timestamp": 1717200000.0,
+    "result_type": "changed",
+    "first_seen": "2026-06-27T10:42:31.242862+00:00"
+  },
+  {
+    "scholar": "冯钰捷",
+    "scholar_url": "https://scholar.google.com/citations?user=J3zR-48AAAAJ&hl=zh-CN",
+    "affiliation": "香港理工大学",
+    "areas": [
+      "Continual Learning"
+    ],
+    "watch": "publications",
+    "kind": "paper",
+    "text": "Understanding Layer Significance in LLM Alignment · COLM 2025, 2024, 2024",
+    "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=J3zR-48AAAAJ&citation_for_view=J3zR-48AAAAJ:kNdYIx-mwKoC",
+    "date_str": "2024",
+    "timestamp": 1717200000.0,
+    "result_type": "changed",
+    "first_seen": "2026-06-27T10:42:31.242864+00:00"
+  },
+  {
+    "scholar": "冯钰捷",
+    "scholar_url": "https://scholar.google.com/citations?user=J3zR-48AAAAJ&hl=zh-CN",
+    "affiliation": "香港理工大学",
+    "areas": [
+      "Continual Learning"
+    ],
+    "watch": "publications",
+    "kind": "paper",
+    "text": "Parenting: Optimizing knowledge selection of retrieval-augmented language models with parameter decoupling and tailored tuning · ACL 2025 Long Paper, 2024, 2024",
+    "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=J3zR-48AAAAJ&citation_for_view=J3zR-48AAAAJ:3fE2CSJIrl8C",
+    "date_str": "2024",
+    "timestamp": 1717200000.0,
+    "result_type": "changed",
+    "first_seen": "2026-06-27T10:42:31.242867+00:00"
+  },
+  {
+    "scholar": "冯钰捷",
+    "scholar_url": "https://scholar.google.com/citations?user=J3zR-48AAAAJ&hl=zh-CN",
+    "affiliation": "香港理工大学",
+    "areas": [
+      "Continual Learning"
+    ],
+    "watch": "publications",
+    "kind": "paper",
+    "text": "Kif: Knowledge identification and fusion for language model continual learning · arXiv preprint arXiv:2408.05200, 2024, 2024",
+    "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=J3zR-48AAAAJ&citation_for_view=J3zR-48AAAAJ:ULOm3_A8WrAC",
+    "date_str": "2024",
+    "timestamp": 1717200000.0,
+    "result_type": "changed",
+    "first_seen": "2026-06-27T10:42:31.242869+00:00"
+  },
+  {
+    "scholar": "冯钰捷",
+    "scholar_url": "https://scholar.google.com/citations?user=J3zR-48AAAAJ&hl=zh-CN",
+    "affiliation": "香港理工大学",
+    "areas": [
+      "Continual Learning"
+    ],
+    "watch": "publications",
+    "kind": "paper",
+    "text": "Zero-shot Cross-domain Dialogue State Tracking via Context-aware Auto-prompting and Instruction-following Contrastive Decoding · EMNLP 2024 Long Paper, 2024, 2024",
+    "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=J3zR-48AAAAJ&citation_for_view=J3zR-48AAAAJ:KlAtU1dfN6UC",
+    "date_str": "2024",
+    "timestamp": 1717200000.0,
+    "result_type": "changed",
+    "first_seen": "2026-06-27T10:42:31.242872+00:00"
+  },
+  {
+    "scholar": "冯钰捷",
+    "scholar_url": "https://scholar.google.com/citations?user=J3zR-48AAAAJ&hl=zh-CN",
+    "affiliation": "香港理工大学",
+    "areas": [
+      "Continual Learning"
+    ],
+    "watch": "publications",
+    "kind": "paper",
+    "text": "Continual dialogue state tracking via reason-of-select distillation · Findings of ACL 2024 Long Paper, 2024, 2024",
+    "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=J3zR-48AAAAJ&citation_for_view=J3zR-48AAAAJ:5nxA0vEk-isC",
+    "date_str": "2024",
+    "timestamp": 1717200000.0,
+    "result_type": "changed",
+    "first_seen": "2026-06-27T10:42:31.242874+00:00"
+  },
+  {
+    "scholar": "冯钰捷",
+    "scholar_url": "https://scholar.google.com/citations?user=J3zR-48AAAAJ&hl=zh-CN",
+    "affiliation": "香港理工大学",
+    "areas": [
+      "Continual Learning"
+    ],
+    "watch": "publications",
+    "kind": "paper",
+    "text": "Diversity-grounded Channel Prototypical Learning for Out-of-Distribution Intent Detection · arXiv preprint arXiv:2409.11114, 2024, 2024",
+    "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=J3zR-48AAAAJ&citation_for_view=J3zR-48AAAAJ:qxL8FJ1GzNcC",
+    "date_str": "2024",
+    "timestamp": 1717200000.0,
+    "result_type": "changed",
+    "first_seen": "2026-06-27T10:42:31.242877+00:00"
+  },
+  {
+    "scholar": "朱星宇",
+    "scholar_url": "https://scholar.google.com/citations?hl=zh-CN&user=PpqUnAwAAAAJ&view_op=list_works&sortby=pubdate",
+    "affiliation": "NUS",
+    "areas": [
+      "Vision language model"
+    ],
+    "watch": "publications",
+    "kind": "paper",
+    "text": "Boosting Few-Shot Learning via Attentive Feature Regularization · AAAI 2024, 2024, 2024",
+    "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=PpqUnAwAAAAJ&citation_for_view=PpqUnAwAAAAJ:zYLM7Y9cAGgC",
+    "date_str": "2024",
+    "timestamp": 1717200000.0,
+    "result_type": "changed",
+    "first_seen": "2026-06-27T10:42:31.242879+00:00"
+  },
+  {
+    "scholar": "朱星宇",
+    "scholar_url": "https://scholar.google.com/citations?hl=zh-CN&user=PpqUnAwAAAAJ&view_op=list_works&sortby=pubdate",
+    "affiliation": "NUS",
+    "areas": [
+      "Vision language model"
+    ],
+    "watch": "publications",
+    "kind": "paper",
+    "text": "Enhancing Zero-Shot Vision Models by Label-Free Prompt Distribution Learning and Bias Correcting · NeurIPS 2024 (Spotlight), 2024, 2024",
+    "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=PpqUnAwAAAAJ&citation_for_view=PpqUnAwAAAAJ:W7OEmFMy1HYC",
+    "date_str": "2024",
+    "timestamp": 1717200000.0,
+    "result_type": "changed",
+    "first_seen": "2026-06-27T10:42:31.242882+00:00"
+  },
+  {
+    "scholar": "朱星宇",
+    "scholar_url": "https://scholar.google.com/citations?hl=zh-CN&user=PpqUnAwAAAAJ&view_op=list_works&sortby=pubdate",
+    "affiliation": "NUS",
+    "areas": [
+      "Vision language model"
+    ],
+    "watch": "publications",
+    "kind": "paper",
+    "text": "Selective Vision-Language Subspace Projection for Few-shot CLIP · ACM MM 24 Oral, 2024, 2024",
+    "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=PpqUnAwAAAAJ&citation_for_view=PpqUnAwAAAAJ:Y0pCki6q_DkC",
+    "date_str": "2024",
+    "timestamp": 1717200000.0,
+    "result_type": "changed",
+    "first_seen": "2026-06-27T10:42:31.242884+00:00"
+  },
+  {
+    "scholar": "冯钰捷",
+    "scholar_url": "https://scholar.google.com/citations?user=J3zR-48AAAAJ&hl=zh-CN",
+    "affiliation": "香港理工大学",
+    "areas": [
+      "Continual Learning"
+    ],
+    "watch": "publications",
+    "kind": "paper",
+    "text": "How Good Are LLMs at Out-of-Distribution Detection? · COLING 2024 Long Paper, 2023, 2023",
+    "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=J3zR-48AAAAJ&citation_for_view=J3zR-48AAAAJ:M3ejUd6NZC8C",
+    "date_str": "2023",
+    "timestamp": 1685577600.0,
+    "result_type": "changed",
+    "first_seen": "2026-06-27T10:42:31.242887+00:00"
+  },
+  {
+    "scholar": "冯钰捷",
+    "scholar_url": "https://scholar.google.com/citations?user=J3zR-48AAAAJ&hl=zh-CN",
+    "affiliation": "香港理工大学",
+    "areas": [
+      "Continual Learning"
+    ],
+    "watch": "publications",
+    "kind": "paper",
+    "text": "Towards sustainable compressive population health: A gan-based year-by-year imputation method · ACM Transactions on Computing for Healthcare 4 (1), 1-18, 2023, 2023",
+    "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=J3zR-48AAAAJ&citation_for_view=J3zR-48AAAAJ:2osOgNQ5qMEC",
+    "date_str": "2023",
+    "timestamp": 1685577600.0,
+    "result_type": "changed",
+    "first_seen": "2026-06-27T10:42:31.242889+00:00"
+  },
+  {
+    "scholar": "冯钰捷",
+    "scholar_url": "https://scholar.google.com/citations?user=J3zR-48AAAAJ&hl=zh-CN",
+    "affiliation": "香港理工大学",
+    "areas": [
+      "Continual Learning"
+    ],
+    "watch": "publications",
+    "kind": "paper",
+    "text": "Spatial-attention and demographic-augmented generative adversarial imputation network for population health data reconstruction · IEEE Transactions on Big Data 9 (4), 1057-1070, 2022, 2022",
+    "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=J3zR-48AAAAJ&citation_for_view=J3zR-48AAAAJ:qjMakFHDy7sC",
+    "date_str": "2022",
+    "timestamp": 1654041600.0,
+    "result_type": "changed",
+    "first_seen": "2026-06-27T10:42:31.242891+00:00"
+  },
+  {
+    "scholar": "冯钰捷",
+    "scholar_url": "https://scholar.google.com/citations?user=J3zR-48AAAAJ&hl=zh-CN",
+    "affiliation": "香港理工大学",
+    "areas": [
+      "Continual Learning"
+    ],
+    "watch": "publications",
+    "kind": "paper",
+    "text": "Completing missing prevalence rates for multiple chronic diseases by jointly leveraging both intra-and inter-disease population health data correlations · Proceedings of the Web Conference 2021, 183-193, 2021, 2021",
+    "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=J3zR-48AAAAJ&citation_for_view=J3zR-48AAAAJ:d1gkVwhDpl0C",
+    "date_str": "2021",
+    "timestamp": 1622505600.0,
+    "result_type": "changed",
+    "first_seen": "2026-06-27T10:42:31.242894+00:00"
   }
 ]

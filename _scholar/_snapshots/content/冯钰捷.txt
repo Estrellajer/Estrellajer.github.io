@@ -1,80 +1,60 @@
 Towards LLM-driven dialogue state tracking
 Y Feng, Z Lu, B Liu, L Zhan, XM Wu
-EMNLP 2023 Long Paper , 2023
-100 2023
+EMNLP 2023 Long Paper, 2023 2023
 How Good Are LLMs at Out-of-Distribution Detection?
 B Liu, L Zhan, Z Lu, Y Feng, L Xue, XM Wu
-COLING 2024 Long Paper , 2023
-58 2023
+COLING 2024 Long Paper, 2023 2023
 Tasl: Continual dialog state tracking via task skill localization and consolidation
 Y Feng, X Chu, Y Xu, G Shi, B Liu, XM Wu
-ACL 2024 Long Paper , 2024
-27 2024
+ACL 2024 Long Paper, 2024 2024
 Completing missing prevalence rates for multiple chronic diseases by jointly leveraging both intra-and inter-disease population health data correlations
 Y Feng, J Wang, Y Wang, S Helal
-Proceedings of the Web Conference 2021, 183-193 , 2021
-24 2021
+Proceedings of the Web Conference 2021, 183-193, 2021 2021
 Understanding Layer Significance in LLM Alignment
 G Shi, Z Lu, X Dong, W Zhang, X Zhang, Y Feng, XM Wu
-COLM 2025 , 2024
-19 2024
+COLM 2025, 2024 2024
 Recurrent knowledge identification and fusion for language model continual learning
 Y Feng, X Wang, Z Lu, S Fu, G Shi, Y Xu, Y Wang, PS Yu, X Chu, XM Wu
-ACL 2025 Long Paper , 2025
-16 2025
+ACL 2025 Long Paper, 2025 2025
 Parenting: Optimizing knowledge selection of retrieval-augmented language models with parameter decoupling and tailored tuning
 Y Xu, R Zhang, X Jiang, Y Feng, Y Xiao, X Ma, R Zhu, X Chu, J Zhao, ...
-ACL 2025 Long Paper , 2024
-15 2024
+ACL 2025 Long Paper, 2024 2024
 Kif: Knowledge identification and fusion for language model continual learning
 Y Feng, X Chu, Y Xu, Z Lu, B Liu, PS Yu, XM Wu
-arXiv preprint arXiv:2408.05200 , 2024
-13 * 2024
+arXiv preprint arXiv:2408.05200, 2024 2024
 Zero-shot Cross-domain Dialogue State Tracking via Context-aware Auto-prompting and Instruction-following Contrastive Decoding
 X Dong, Y Feng, Z Lu, G Shi, XM Wu
-EMNLP 2024 Long Paper , 2024
-12 2024
+EMNLP 2024 Long Paper, 2024 2024
 Towards sustainable compressive population health: A gan-based year-by-year imputation method
 Y Feng, J Wang, Y Wang, X Chu
-ACM Transactions on Computing for Healthcare 4 (1), 1-18 , 2023
-11 2023
+ACM Transactions on Computing for Healthcare 4 (1), 1-18, 2023 2023
 Use of spatial autocorrelation and time series Landsat images for long-term monitoring of surface water shrinkage and expansion in Guanting Reservoir, China
 Z Li, Y Feng, H Gurgel, L Xu, N Dessay, P Gong
-Remote Sensing Letters 10 (12), 1192-1200 , 2019
-11 2019
+Remote Sensing Letters 10 (12), 1192-1200, 2019 2019
 Continual dialogue state tracking via reason-of-select distillation
 Y Feng, B Liu, X Dong, Z Lu, LM Zhan, A Lam, XM Wu
-Findings of ACL 2024 Long Paper , 2024
-9 2024
+Findings of ACL 2024 Long Paper, 2024 2024
 Spatial-attention and demographic-augmented generative adversarial imputation network for population health data reconstruction
 Y Feng, J Wang, Y Wang, X Chu
-IEEE Transactions on Big Data 9 (4), 1057-1070 , 2022
-8 2022
+IEEE Transactions on Big Data 9 (4), 1057-1070, 2022 2022
 DEAL: Disentangling Transformer Head Activations for LLM Steering
 LM Zhan, LIU Bo, Z Lu, Y Feng, C Xie, J Cao, XM Wu
-Knowledgeable Foundation Models at ACL 2025 , 2025
-7 2025
+Knowledgeable Foundation Models at ACL 2025, 2025 2025
 DearLLM: Enhancing Personalized Healthcare via Large Language Models-Deduced Feature Correlations
 Y Xu, X Jiang, X Chu, R Qiu, Y Feng, H Ding, J Zhao, Y Wang, B Xie
-AAAI 2025 , 2025
-7 2025
+AAAI 2025, 2025 2025
 Geoedit: Geometric knowledge editing for large language models
 Y Feng, L Zhan, Z Lu, Y Xu, X Chu, Y Wang, J Cao, PS Yu, XM Wu
-EMNLP 2025 Long Paper , 2025
-7 2025
+EMNLP 2025 Long Paper, 2025 2025
 AIMMerging: Adaptive Iterative Model Merging Using Training Trajectories for Language Model Continual Learning
 Y Feng, J Li, X Dong, P Xu, X Zhou, Y Zhang, Z Lu, Y Wang, A Zhao, ...
-EMNLP 2025 Long Paper , 2025
-5 2025
+EMNLP 2025 Long Paper, 2025 2025
 FOREVER: Forgetting Curve-Inspired Memory Replay for Language Model Continual Learning
 Y Feng, H Wang, J Li, X Chu, Z Kang, Y Liu, Y Wang, PS Yu, XM Wu
-ACL 2026 Long Paper , 2026
-3 2026
+ACL 2026 Long Paper, 2026 2026
 How Order-Sensitive Are LLMs? OrderProbe for Deterministic Structural Reconstruction
 Y He, Z Kang, K Jiang, Q Zhang, J Qian, C Meng, Y Feng, Y Wang, J Dou, ...
-arXiv preprint arXiv:2601.08626 , 2026
-2 2026
+arXiv preprint arXiv:2601.08626, 2026 2026
 Diversity-grounded Channel Prototypical Learning for Out-of-Distribution Intent Detection
 B Liu, L Zhan, Y Feng, Z Lu, C Xie, L Xue, A Lam, XM Wu
-arXiv preprint arXiv:2409.11114 , 2024
-2 2024
+arXiv preprint arXiv:2409.11114, 2024 2024
