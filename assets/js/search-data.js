@@ -30,7 +30,18 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/projects/";
           },
-        },{id: "post-training-free-prompt-optimization-从经验库到问题重构",
+        },{id: "post-opd-如何重构后训练的不可能三角",
+        
+          title: "OPD 如何重构后训练的不可能三角",
+        
+        description: "后训练希望学习信号同时准确、稠密、易得，但现实里很难三者兼得。OPD 提供了一种新的组织方式——在学生自己的轨迹上，把教师、验证器、环境反馈组织成密集监督。",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/opd-deep-dive/";
+          
+        },
+      },{id: "post-training-free-prompt-optimization-从经验库到问题重构",
         
           title: "Training-Free Prompt Optimization：从经验库到问题重构",
         
@@ -96,11 +107,11 @@ ninja.data = [{
             window.location.href = "/blog/2026/algorithm-notes/";
           
         },
-      },{id: "post-claude-code配置",
+      },{id: "post-claude-code-配置与-cc-switch-代理接入完全指南",
         
-          title: "Claude Code配置",
+          title: "Claude Code 配置与 CC Switch 代理接入完全指南",
         
-        description: "How to use Claude Code in restricted area",
+        description: "从零配置 Claude Code 走第三方 API，含 CC Switch 本地代理、CLI 与 VS Code 插件统一接入、排查命令和迁移清单",
         section: "Posts",
         handler: () => {
           
@@ -162,7 +173,12 @@ ninja.data = [{
           section: "News",},{id: "news-one-paper-accepted-by-advanced-engineering-informatics-ccf-b-sci-q1",
           title: 'One Paper accepted by Advanced Engineering Informatics(CCF-B, SCI-Q1)! 🎉🎉🎉',
           description: "",
-          section: "News",},{id: "projects-knots",
+          section: "News",},{id: "news-started-internship-at-bytedance-data",
+          title: 'Started internship at ByteDance Data',
+          description: "",
+          section: "News",handler: () => {
+              window.location.href = "/news/20260610/";
+            },},{id: "projects-knots",
           title: 'Knots',
           description: "A large-scale expert-annotated dataset and prompt optimization pipeline for NOTAM semantic parsing.",
           section: "Projects",handler: () => {
