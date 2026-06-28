@@ -1,5 +1,19 @@
 [
   {
+    "scholar": "Nathan Lambert",
+    "scholar_url": "https://www.interconnects.ai/",
+    "affiliation": "Interconnects",
+    "areas": [],
+    "watch": "blog",
+    "kind": "post",
+    "text": "Latest open artifacts (#22): Zyphra, Cohere, and Poolside are expanding the breadth of the ecosystem",
+    "link": "https://www.interconnects.ai/p/artifacts-22-zyphra-cohere-and-poolside",
+    "date_str": "Sun, 28 Jun 2026 17:03:07 GMT",
+    "timestamp": 1782666187.0,
+    "result_type": "rss",
+    "first_seen": "2026-06-28T22:06:24.184557+00:00"
+  },
+  {
     "scholar": "K.I.S.S",
     "scholar_url": "https://bigeagle.me/",
     "affiliation": "Kimi",
@@ -780,21 +794,5 @@
     "timestamp": 1654041600.0,
     "result_type": "changed",
     "first_seen": "2026-06-27T10:42:31.242891+00:00"
-  },
-  {
-    "scholar": "冯钰捷",
-    "scholar_url": "https://scholar.google.com/citations?user=J3zR-48AAAAJ&hl=zh-CN",
-    "affiliation": "香港理工大学",
-    "areas": [
-      "Continual Learning"
-    ],
-    "watch": "publications",
-    "kind": "paper",
-    "text": "Completing missing prevalence rates for multiple chronic diseases by jointly leveraging both intra-and inter-disease population health data correlations · Proceedings of the Web Conference 2021, 183-193, 2021, 2021",
-    "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=J3zR-48AAAAJ&citation_for_view=J3zR-48AAAAJ:d1gkVwhDpl0C",
-    "date_str": "2021",
-    "timestamp": 1622505600.0,
-    "result_type": "changed",
-    "first_seen": "2026-06-27T10:42:31.242894+00:00"
   }
 ]
