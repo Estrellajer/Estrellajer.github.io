@@ -13,12 +13,12 @@ Proceedings of the Web Conference 2021, 183-193, 2021 2021
 Understanding Layer Significance in LLM Alignment
 G Shi, Z Lu, X Dong, W Zhang, X Zhang, Y Feng, XM Wu
 COLM 2025, 2024 2024
-Recurrent knowledge identification and fusion for language model continual learning
-Y Feng, X Wang, Z Lu, S Fu, G Shi, Y Xu, Y Wang, PS Yu, X Chu, XM Wu
-ACL 2025 Long Paper, 2025 2025
 Parenting: Optimizing knowledge selection of retrieval-augmented language models with parameter decoupling and tailored tuning
 Y Xu, R Zhang, X Jiang, Y Feng, Y Xiao, X Ma, R Zhu, X Chu, J Zhao, ...
 ACL 2025 Long Paper, 2024 2024
+Recurrent knowledge identification and fusion for language model continual learning
+Y Feng, X Wang, Z Lu, S Fu, G Shi, Y Xu, Y Wang, PS Yu, X Chu, XM Wu
+ACL 2025 Long Paper, 2025 2025
 Kif: Knowledge identification and fusion for language model continual learning
 Y Feng, X Chu, Y Xu, Z Lu, B Liu, PS Yu, XM Wu
 arXiv preprint arXiv:2408.05200, 2024 2024
@@ -34,6 +34,9 @@ Remote Sensing Letters 10 (12), 1192-1200, 2019 2019
 Continual dialogue state tracking via reason-of-select distillation
 Y Feng, B Liu, X Dong, Z Lu, LM Zhan, A Lam, XM Wu
 Findings of ACL 2024 Long Paper, 2024 2024
+Geoedit: Geometric knowledge editing for large language models
+Y Feng, L Zhan, Z Lu, Y Xu, X Chu, Y Wang, J Cao, PS Yu, XM Wu
+EMNLP 2025 Long Paper, 2025 2025
 Spatial-attention and demographic-augmented generative adversarial imputation network for population health data reconstruction
 Y Feng, J Wang, Y Wang, X Chu
 IEEE Transactions on Big Data 9 (4), 1057-1070, 2022 2022
@@ -43,9 +46,6 @@ Knowledgeable Foundation Models at ACL 2025, 2025 2025
 DearLLM: Enhancing Personalized Healthcare via Large Language Models-Deduced Feature Correlations
 Y Xu, X Jiang, X Chu, R Qiu, Y Feng, H Ding, J Zhao, Y Wang, B Xie
 AAAI 2025, 2025 2025
-Geoedit: Geometric knowledge editing for large language models
-Y Feng, L Zhan, Z Lu, Y Xu, X Chu, Y Wang, J Cao, PS Yu, XM Wu
-EMNLP 2025 Long Paper, 2025 2025
 AIMMerging: Adaptive Iterative Model Merging Using Training Trajectories for Language Model Continual Learning
 Y Feng, J Li, X Dong, P Xu, X Zhou, Y Zhang, Z Lu, Y Wang, A Zhao, ...
 EMNLP 2025 Long Paper, 2025 2025
