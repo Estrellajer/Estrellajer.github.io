@@ -102,17 +102,12 @@ via Continual Self-Paced Dual-Knowledge Purification for Noisy Lifelong Person
 Re-Identification", in IEEE Transactions on Pattern Analysis and Machine
 Intelligence, 2026
 [ bib ] OR IL
-( TPAMI'26 )-Kunlun Xu, Jiangmeng Li, Yufei
-Guo, Yuxin Peng, and Jiahuan Zhou* , "Mitigate Catastrophic Remembering
-via Continual Self-Paced Dual-Knowledge Purification for Noisy Lifelong Person
-Re-Identification", in IEEE Transactions on Pattern Analysis and Machine
-Intelligence, 2026
-[ bib ] OR IL
 ( ICML'26 )-Kunlun Xu, Yanqin Zhang, Wenwen
 Qiang, and Jiahuan Zhou* , "Hyper-LLaVA: Hyperbolic Uncertainty-aware
 Modality-Balanced Routing for Multimodal Continual Instruction Tuning", in
 Proceedings of the International Conference on Machine Learning, Seoul, South
 Korea, Jul.6 - Jul.11, 2026
+[ pdf ]
 [ bib ] V&L IL
 ( ICML'26 )-Wenwen Qiang*, Ziyin Gu, Jiahuan Zhou* , Jie Hu, Jingyao Wang, Changwen Zheng, and Hui Xiong, "On
 the Plasticity and Stability for Post-Training Large Language Models", in
@@ -125,12 +120,14 @@ and Sheng Zhong, "Breaking the Synthetic-Real Domain Shortcut for Training-Free
 Generative Replay-based Class Incremental Learning", in Proceedings of the
 International Conference on Machine Learning, Seoul, South Korea, Jul.6 -
 Jul.11, 2026
+[ pdf ]
 [ bib ] IL
 ( ICML'26 )-Xinyue Zhang, Xu Zou*, Wanjia
 Luo, Yanjie Wang, Jiahuan Zhou* , Sheng Zhong, and Luxin Yan,
 "Learnability-Driven Knowledge Assimilation for Class-Incremental Semantic
 Segmentation", in Proceedings of the International Conference on Machine
 Learning, Seoul, South Korea, Jul.6 - Jul.11, 2026
+[ pdf ]
 [ bib ] IL
 ( CVPR'26 )-Kunlun Xu, Haotong Cheng,
 Jiangmeng Li, Xu Zou, and Jiahuan Zhou* , "Vision-Language Attribute
@@ -287,7 +284,8 @@ Zhou* , Xu Zou, and Ying Wu, "Incremental Object Keypoint Learning", in
 Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern
 Recognition, pp. 25399-25410, Nashville, TN, USA, Jun.11 - Jun.15, 2025
 [ pdf ]
-[ bib ] IL
+[ bib ]
+[ DOI:10.1109/CVPR52734.2025.02365 ] IL
 ( CVPR'25 )-Zhenyu Cui, Jiahuan
 Zhou , and Yuxin Peng, "DKC: Differentiated Knowledge Consolidation for
 Cloth-Hybrid Lifelong Person Re-identification", in Proceedings of the IEEE/CVF
@@ -295,7 +293,7 @@ Conference on Computer Vision and Pattern Recognition, pp. 3573-3582, Nashville,
 TN, USA, Jun.11 - Jun.15, 2025
 [ pdf ]
 [ code ] [ bib ]
-[ 中文解读 ] IL OR
+[ 中文解读 ] [ DOI:10.1109/CVPR52734.2025.00338 ] IL OR
 ( TIFS'25 )-Xinyue Zhang, Jiahuan
 Zhou , Luxin Yan, Sheng Zhong, and Xu Zou, "Hunt Camouflaged Objects via
 Revealing Mutation Regions", in IEEE Transactions on Information Forensics and
@@ -642,6 +640,7 @@ Qiang, and Jiahuan Zhou* , "Hyper-LLaVA: Hyperbolic Uncertainty-aware
 Modality-Balanced Routing for Multimodal Continual Instruction Tuning", in
 Proceedings of the International Conference on Machine Learning, Seoul, South
 Korea, Jul.6 - Jul.11, 2026
+[ pdf ]
 [ bib ] V&L IL
 ( ICML'26 )-Wenwen Qiang*, Ziyin Gu, Jiahuan Zhou* , Jie Hu, Jingyao Wang, Changwen Zheng, and Hui Xiong, "On
 the Plasticity and Stability for Post-Training Large Language Models", in
@@ -654,12 +653,14 @@ and Sheng Zhong, "Breaking the Synthetic-Real Domain Shortcut for Training-Free
 Generative Replay-based Class Incremental Learning", in Proceedings of the
 International Conference on Machine Learning, Seoul, South Korea, Jul.6 -
 Jul.11, 2026
+[ pdf ]
 [ bib ] IL
 ( ICML'26 )-Xinyue Zhang, Xu Zou*, Wanjia
 Luo, Yanjie Wang, Jiahuan Zhou* , Sheng Zhong, and Luxin Yan,
 "Learnability-Driven Knowledge Assimilation for Class-Incremental Semantic
 Segmentation", in Proceedings of the International Conference on Machine
 Learning, Seoul, South Korea, Jul.6 - Jul.11, 2026
+[ pdf ]
 [ bib ] IL
 ( CVPR'26 )-Kunlun Xu, Haotong Cheng,
 Jiangmeng Li, Xu Zou, and Jiahuan Zhou* , "Vision-Language Attribute
@@ -816,7 +817,8 @@ Zhou* , Xu Zou, and Ying Wu, "Incremental Object Keypoint Learning", in
 Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern
 Recognition, pp. 25399-25410, Nashville, TN, USA, Jun.11 - Jun.15, 2025
 [ pdf ]
-[ bib ] IL
+[ bib ]
+[ DOI:10.1109/CVPR52734.2025.02365 ] IL
 ( CVPR'25 )-Zhenyu Cui, Jiahuan
 Zhou , and Yuxin Peng, "DKC: Differentiated Knowledge Consolidation for
 Cloth-Hybrid Lifelong Person Re-identification", in Proceedings of the IEEE/CVF
@@ -824,7 +826,7 @@ Conference on Computer Vision and Pattern Recognition, pp. 3573-3582, Nashville,
 TN, USA, Jun.11 - Jun.15, 2025
 [ pdf ]
 [ code ] [ bib ]
-[ 中文解读 ] IL OR
+[ 中文解读 ] [ DOI:10.1109/CVPR52734.2025.00338 ] IL OR
 ( TIFS'25 )-Xinyue Zhang, Jiahuan
 Zhou , Luxin Yan, Sheng Zhong, and Xu Zou, "Hunt Camouflaged Objects via
 Revealing Mutation Regions", in IEEE Transactions on Information Forensics and
