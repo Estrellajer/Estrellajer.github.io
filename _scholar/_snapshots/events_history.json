@@ -1,5 +1,53 @@
 [
   {
+    "scholar": "杨恩能",
+    "scholar_url": "https://ennengyang.github.io/",
+    "affiliation": "中山大学",
+    "areas": [
+      "Model Merging"
+    ],
+    "watch": "general",
+    "kind": "update",
+    "text": "Hao Jiang$^{\\ast}$, Enneng Yang$^{\\ast}$ ($^{\\ast}$ *indicates co-first authors*), Guojie Zhu$^{\\ast}$, Yibin Chen, Yunkun Xu, Zifu Kou, Jiayi Li, Chong Chen, Zhao Cao, Li Shen",
+    "link": "https://ennengyang.github.io/",
+    "date_str": "",
+    "timestamp": 1782858059.911841,
+    "result_type": "changed",
+    "first_seen": "2026-06-30T22:20:59.912264+00:00"
+  },
+  {
+    "scholar": "杨恩能",
+    "scholar_url": "https://ennengyang.github.io/",
+    "affiliation": "中山大学",
+    "areas": [
+      "Model Merging"
+    ],
+    "watch": "general",
+    "kind": "paper",
+    "text": "`Arxiv 2026` \\",
+    "link": "https://ennengyang.github.io/",
+    "date_str": "",
+    "timestamp": 1782858059.911824,
+    "result_type": "changed",
+    "first_seen": "2026-06-30T22:20:59.912272+00:00"
+  },
+  {
+    "scholar": "杨恩能",
+    "scholar_url": "https://ennengyang.github.io/",
+    "affiliation": "中山大学",
+    "areas": [
+      "Model Merging"
+    ],
+    "watch": "general",
+    "kind": "paper",
+    "text": "- [LLM Evolution as an Industry-Scale Ecosystem: A Lifecycle Perspective on Continual Learning](https://arxiv.org/pdf/2606.24901) \\",
+    "link": "https://ennengyang.github.io/",
+    "date_str": "",
+    "timestamp": 1782858059.911808,
+    "result_type": "changed",
+    "first_seen": "2026-06-30T22:20:59.912276+00:00"
+  },
+  {
     "scholar": "周嘉欢",
     "scholar_url": "https://zhoujiahuan1991.github.io/",
     "affiliation": "北京大学",
@@ -746,53 +794,5 @@
     "timestamp": 1717200000.0,
     "result_type": "changed",
     "first_seen": "2026-06-27T10:42:31.242882+00:00"
-  },
-  {
-    "scholar": "朱星宇",
-    "scholar_url": "https://scholar.google.com/citations?hl=zh-CN&user=PpqUnAwAAAAJ&view_op=list_works&sortby=pubdate",
-    "affiliation": "NUS",
-    "areas": [
-      "Vision language model"
-    ],
-    "watch": "publications",
-    "kind": "paper",
-    "text": "Selective Vision-Language Subspace Projection for Few-shot CLIP · ACM MM 24 Oral, 2024, 2024",
-    "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=PpqUnAwAAAAJ&citation_for_view=PpqUnAwAAAAJ:Y0pCki6q_DkC",
-    "date_str": "2024",
-    "timestamp": 1717200000.0,
-    "result_type": "changed",
-    "first_seen": "2026-06-27T10:42:31.242884+00:00"
-  },
-  {
-    "scholar": "冯钰捷",
-    "scholar_url": "https://scholar.google.com/citations?user=J3zR-48AAAAJ&hl=zh-CN",
-    "affiliation": "香港理工大学",
-    "areas": [
-      "Continual Learning"
-    ],
-    "watch": "publications",
-    "kind": "paper",
-    "text": "How Good Are LLMs at Out-of-Distribution Detection? · COLING 2024 Long Paper, 2023, 2023",
-    "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=J3zR-48AAAAJ&citation_for_view=J3zR-48AAAAJ:M3ejUd6NZC8C",
-    "date_str": "2023",
-    "timestamp": 1685577600.0,
-    "result_type": "changed",
-    "first_seen": "2026-06-27T10:42:31.242887+00:00"
-  },
-  {
-    "scholar": "冯钰捷",
-    "scholar_url": "https://scholar.google.com/citations?user=J3zR-48AAAAJ&hl=zh-CN",
-    "affiliation": "香港理工大学",
-    "areas": [
-      "Continual Learning"
-    ],
-    "watch": "publications",
-    "kind": "paper",
-    "text": "Towards sustainable compressive population health: A gan-based year-by-year imputation method · ACM Transactions on Computing for Healthcare 4 (1), 1-18, 2023, 2023",
-    "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=J3zR-48AAAAJ&citation_for_view=J3zR-48AAAAJ:2osOgNQ5qMEC",
-    "date_str": "2023",
-    "timestamp": 1685577600.0,
-    "result_type": "changed",
-    "first_seen": "2026-06-27T10:42:31.242889+00:00"
   }
 ]

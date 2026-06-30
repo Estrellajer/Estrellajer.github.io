@@ -22,6 +22,9 @@ NeurIPS 2025 Spotlight, 2025 2025
 Accelerating Diffusion Transformer via Error-Optimized Cache
 J Qiu, S Wang, J Lu, L Liu, H Jiang, X Zhu, Y Hao
 ACM MM 2025, 2025 2025
+Principled Steering via Null-space Projection for Jailbreak Defense in Vision-Language Models
+X Zhu, B Zhu, S Wang, J Fang, K Zhao, H Zhang, X He
+CVPR 2026, 2026 2026
 Look Carefully: Adaptive Visual Reinforcements in Multimodal Large Language Models for Hallucination Mitigation
 X Zhu, K Zhao, L Yi, S Wang, Z Wang, B Zhu, H Zhang, X He
 ICLR 2026, 2026 2026
@@ -31,9 +34,6 @@ AAAI 2026, 2025 2025
 Robust adaptive beamforming for coprime array based on interference power estimation via subspace
 S Sun, Z Ye, X Zhu
 2020 IEEE 11th Sensor Array and Multichannel Signal Processing Workshop (SAM …, 2020 2020
-Principled Steering via Null-space Projection for Jailbreak Defense in Vision-Language Models
-X Zhu, B Zhu, S Wang, J Fang, K Zhao, H Zhang, X He
-CVPR 2026, 2026 2026
 基于协方差矩阵重构的稳健自适应波束形成算法综述.
 叶中付， 朱星宇
 Journal of Data Acquisition & Processing/Shu Ju Cai Ji Yu Chu Li 34 (6), 2019 2019

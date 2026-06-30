@@ -57,6 +57,9 @@ This repository integrates the latest model merging algorithm.
 <a href="http://portal.core.edu.au/conf-ranks/" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:14px;">[CORE-Rank (conf)]</a>
 <a href="http://portal.core.edu.au/jnl-ranks/" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:14px;">[CORE-Rank (jnl)]</a> $^{\ast}$ indicates equal contribution, $^{\dagger}$ indicates corresponding author
 Survey or Benchmark Papers
+- [LLM Evolution as an Industry-Scale Ecosystem: A Lifecycle Perspective on Continual Learning](https://arxiv.org/pdf/2606.24901) \
+`Arxiv 2026` \
+Hao Jiang$^{\ast}$, Enneng Yang$^{\ast}$ ($^{\ast}$ *indicates co-first authors*), Guojie Zhu$^{\ast}$, Yibin Chen, Yunkun Xu, Zifu Kou, Jiayi Li, Chong Chen, Zhao Cao, Li Shen
 Model Merging in LLMs, MLLMs, and Beyond: Methods, Theories, Applications and Opportunities
 ACM Computing Surveys 2026 | Repository
 Enneng Yang , Li Shen, Guibing Guo, Xingwei Wang, Xiaochun Cao, Jie Zhang, Dacheng Tao.
