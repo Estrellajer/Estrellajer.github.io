@@ -9,7 +9,7 @@ Y Feng, X Chu, Y Xu, G Shi, B Liu, XM Wu
 ACL 2024 Long Paper, 2024 2024
 Completing missing prevalence rates for multiple chronic diseases by jointly leveraging both intra-and inter-disease population health data correlations
 Y Feng, J Wang, Y Wang, S Helal
-Proceedings of the Web Conference 2021, 183-193, 2021 2021
+WWW 2021, 2021 2021
 Understanding Layer Significance in LLM Alignment
 G Shi, Z Lu, X Dong, W Zhang, X Zhang, Y Feng, XM Wu
 COLM 2025, 2024 2024
@@ -27,7 +27,7 @@ X Dong, Y Feng, Z Lu, G Shi, XM Wu
 EMNLP 2024 Long Paper, 2024 2024
 Towards sustainable compressive population health: A gan-based year-by-year imputation method
 Y Feng, J Wang, Y Wang, X Chu
-ACM Transactions on Computing for Healthcare 4 (1), 1-18, 2023 2023
+ACM Transactions on Computing for Healthcare, 2023 2023
 Use of spatial autocorrelation and time series Landsat images for long-term monitoring of surface water shrinkage and expansion in Guanting Reservoir, China
 Z Li, Y Feng, H Gurgel, L Xu, N Dessay, P Gong
 Remote Sensing Letters 10 (12), 1192-1200, 2019 2019
