@@ -1,5 +1,21 @@
 [
   {
+    "scholar": "孙宇",
+    "scholar_url": "https://yueatsprograms.github.io/",
+    "affiliation": "英伟达",
+    "areas": [
+      "Test time Scaling"
+    ],
+    "watch": "general",
+    "kind": "update",
+    "text": "Page content updated",
+    "link": "https://yueatsprograms.github.io/",
+    "date_str": "",
+    "timestamp": 1783029718.29818,
+    "result_type": "changed",
+    "first_seen": "2026-07-02T22:01:58.299074+00:00"
+  },
+  {
     "scholar": "杨恩能",
     "scholar_url": "https://ennengyang.github.io/",
     "affiliation": "中山大学",
@@ -778,21 +794,5 @@
     "timestamp": 1717200000.0,
     "result_type": "changed",
     "first_seen": "2026-06-27T10:42:31.242879+00:00"
-  },
-  {
-    "scholar": "朱星宇",
-    "scholar_url": "https://scholar.google.com/citations?hl=zh-CN&user=PpqUnAwAAAAJ&view_op=list_works&sortby=pubdate",
-    "affiliation": "NUS",
-    "areas": [
-      "Vision language model"
-    ],
-    "watch": "publications",
-    "kind": "paper",
-    "text": "Enhancing Zero-Shot Vision Models by Label-Free Prompt Distribution Learning and Bias Correcting · NeurIPS 2024 (Spotlight), 2024, 2024",
-    "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=PpqUnAwAAAAJ&citation_for_view=PpqUnAwAAAAJ:W7OEmFMy1HYC",
-    "date_str": "2024",
-    "timestamp": 1717200000.0,
-    "result_type": "changed",
-    "first_seen": "2026-06-27T10:42:31.242882+00:00"
   }
 ]

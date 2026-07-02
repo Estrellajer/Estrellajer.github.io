@@ -33,55 +33,9 @@ End-to-End Test-Time Training for Long Context
 Arnuv Tandon*, Karan Dalal*, Xinhao Li*, Daniel Koceja*, Marcel Rød*, Sam Buchanan, Xiaolong Wang, Jure Leskovec, Sanmi Koyejo, Tatsunori Hashimoto, Carlos Guestrin, Jed McCaleb, Yejin Choi, Yu Sun* (*: core contributors)
 ICML 2025<br> [ paper ]
 [ code ]
-Learning to (Learn at Test Time): RNNs with Expressive Hidden States
-Yu Sun*, Xinhao Li*, Karan Dalal*, Jiarui Xu, Arjun Vikram, Genghan Zhang, Yann Dubois,
-Xinlei Chen†, Xiaolong Wang†, Sanmi Koyejo†, Tatsunori Hashimoto†, Carlos Guestrin†  (*: core contributors)
-ICML 2025
-[ paper ]
-[ JAX code ]
-[ PyTorch code ]
-<p><b>Test-Time Training on Nearest Neighbors for Large Language Models</b><br>
-Moritz Hardt, Yu Sun<br>
-ICLR 2024<br>
-[<a href="https://arxiv.org/abs/2305.18466">paper</a>]
-[<a href="https://github.com/socialfoundations/tttlm">code</a>]
-</p> <p><b>Test-Time Training on Video Streams</b><br>
-Renhao Wang*, Yu Sun*, Arnuv Tandon, Yossi Gandelsman, Xinlei Chen, Alexei A. Efros, Xiaolong Wang (*: equal contribution)
-<br>
-JMLR<br>
-[<a href="https://arxiv.org/abs/2307.05014">paper</a>]
-[<a href="https://test-time-training.github.io/video">website</a>]
-</p>
-Test-Time Training with Masked Autoencoders
-Yossi Gandelsman*, Yu Sun*, Xinlei Chen, Alexei A. Efros (*: equal contribution)
-NeurIPS 2022
-[ paper ]
-[ website ] [<a href="https://youtu.be/NbuWxmMco30">talk</a>]
 Test-Time Training with Self-Supervision for Generalization under Distribution Shifts
 Yu Sun, Xiaolong Wang, Zhuang Liu, John Miller, Alexei A. Efros, Moritz Hardt
 ICML 2020
 [ paper ]
 [ website ]
 [ talk ]
-<h3>Older Papers</h3>
-<p>
-* indicates alphabetical order.
-</p>
-<p><b>On Calibration of Modern Neural Networks</b><br>
-Chuan Guo*, Geoff Pleiss*, Yu Sun*, Kilian Q. Weinberger<br>
-ICML 2017<br>
-[<a href="https://arxiv.org/abs/1706.04599">paper</a>]
-[<a href="https://github.com/gpleiss/temperature_scaling">code</a>]
-</p>
-<p><b>Deep Networks with Stochastic Depth</b><br>
-Gao Huang*, Yu Sun*, Zhuang Liu, Daniel Sedra, Kilian Q. Weinberger<br>
-ECCV 2016<br>
-[<a href="https://arxiv.org/abs/1603.09382">paper</a>]
-[<a href="https://github.com/yueatsprograms/Stochastic_Depth">code</a>]
-[<a href="https://videolectures.net/eccv2016_sun_deep_networks/">talk</a>]
-</p>
-<p><b>From Word Embeddings To Document Distances</b><br>
-Matt Kusner, Yu Sun, Nicholas Kolkin, Kilian Q. Weinberger<br>
-ICML 2015<br>
-[<a href="https://proceedings.mlr.press/v37/kusnerb15.pdf">paper</a>]
-</p>
