@@ -4,12 +4,12 @@ Signal Processing 167, 107289, 2020 2020
 Boosting Few-Shot Learning via Attentive Feature Regularization
 X Zhu, S Wang, J Lu, Y Hao, H Liu, X He
 AAAI 2024, 2024 2024
-Covariance matrix reconstruction via residual noise elimination and interference powers estimation for robust adaptive beamforming
-X Zhu, Z Ye, X Xu, R Zheng
-IEEE Access 7, 53262-53272, 2019 2019
 Enhancing Zero-Shot Vision Models by Label-Free Prompt Distribution Learning and Bias Correcting
 X Zhu, B Zhu, Y Tan, S Wang, Y Hao, H Zhang
 NeurIPS 2024 (Spotlight), 2024 2024
+Covariance matrix reconstruction via residual noise elimination and interference powers estimation for robust adaptive beamforming
+X Zhu, Z Ye, X Xu, R Zheng
+IEEE Access 7, 53262-53272, 2019 2019
 Selective Vision-Language Subspace Projection for Few-shot CLIP
 X Zhu, B Zhu, Y Tan, S Wang, Y Hao, H Zhang
 ACM MM 24 Oral, 2024 2024

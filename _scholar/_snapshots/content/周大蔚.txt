@@ -5,11 +5,12 @@ I was fortunate to visit MMLab@NTU (2022-2023), working closely with Prof. Ziwei
 My research interests include machine learning and its applications in computer vision, currently focusing on continual learning, pre-trained model reuse, and multimodal large language models.
 I am seeking highly self-motivated students. If interested, please email me your resume and transcript.
 News
+[2026-07] One paper about continual learning is accepted to IJCV.
 [2026-05] Invited talk ( slides ) at CCIG 2026 Workshop on Continual Learning.
 [2026-05] We release a toolbox for multimodal continual instruction tuning ( technical report ).
 [2026-05] Three papers about continual learning are accepted to ICML 2026.
 [2026-05] One paper about continual learning with MLLM is uploaded to arXiv .
-[2026-05]  One paper is accepted to TMM.
+[2026-05]  One paper about continual learning and domain generalization  is accepted to TMM.
 [2026-04] Recognized as IJCV Outstanding Reviewer 2025 .
 [2026-03] One paper is accepted to Nature Materials.
 <li>[2026-03] Serving as an Area Chair for NeurIPS 2026.</li>
@@ -82,7 +83,8 @@ SAME: Stabilized Mixture-of-Experts for Multimodal Continual Instruction Tuning
 Zhen-Hao Xie, Jun-Tao Tang, Yu-Cheng Shi, Han-Jia Ye, De-Chuan Zhan, Da-Wei Zhou
 International Conference on Machine Learning. ICML 2026
 [ Paper ]
-[ Code ] [<a href="https://mp.weixin.qq.com/s/4q8x1SaYmT8X1BJeox95hw?scene=1">Media</a>]
+[ Code ]
+[ Media ]
 ICML
 AREA: Attribute Extraction and Aggregation for CLIP-Based Class-Incremental Learning
 Zhen-Hao Xie, Yu-Cheng Shi, Da-Wei Zhou

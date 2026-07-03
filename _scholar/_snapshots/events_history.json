@@ -1,5 +1,21 @@
 [
   {
+    "scholar": "周大蔚",
+    "scholar_url": "https://www.lamda.nju.edu.cn/zhoudw/",
+    "affiliation": "NJU LAMDA",
+    "areas": [
+      "Continual Learning"
+    ],
+    "watch": "general",
+    "kind": "update",
+    "text": "[ Media ]",
+    "link": "https://www.lamda.nju.edu.cn/zhoudw/",
+    "date_str": "",
+    "timestamp": 1783116002.482951,
+    "result_type": "changed",
+    "first_seen": "2026-07-03T22:00:02.483326+00:00"
+  },
+  {
     "scholar": "孙宇",
     "scholar_url": "https://yueatsprograms.github.io/",
     "affiliation": "英伟达",
@@ -298,6 +314,22 @@
     "timestamp": 1781706546.0,
     "result_type": "rss_no_change",
     "first_seen": "2026-06-19T12:44:04.494547+00:00"
+  },
+  {
+    "scholar": "冯钰捷",
+    "scholar_url": "https://scholar.google.com/citations?user=J3zR-48AAAAJ&hl=zh-CN",
+    "affiliation": "香港理工大学",
+    "areas": [
+      "Continual Learning"
+    ],
+    "watch": "publications",
+    "kind": "paper",
+    "text": "Rosd: Reflective on-policy self-distillation for language model reasoning across domains · arXiv preprint arXiv:2605.28014, 2026, 2026",
+    "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=J3zR-48AAAAJ&citation_for_view=J3zR-48AAAAJ:7PzlFSSx8tAC",
+    "date_str": "2026",
+    "timestamp": 1780272000.0,
+    "result_type": "changed",
+    "first_seen": "2026-07-03T22:00:02.483334+00:00"
   },
   {
     "scholar": "冯钰捷",
@@ -762,37 +794,5 @@
     "timestamp": 1717200000.0,
     "result_type": "changed",
     "first_seen": "2026-06-27T10:42:31.242874+00:00"
-  },
-  {
-    "scholar": "冯钰捷",
-    "scholar_url": "https://scholar.google.com/citations?user=J3zR-48AAAAJ&hl=zh-CN",
-    "affiliation": "香港理工大学",
-    "areas": [
-      "Continual Learning"
-    ],
-    "watch": "publications",
-    "kind": "paper",
-    "text": "Diversity-grounded Channel Prototypical Learning for Out-of-Distribution Intent Detection · arXiv preprint arXiv:2409.11114, 2024, 2024",
-    "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=J3zR-48AAAAJ&citation_for_view=J3zR-48AAAAJ:qxL8FJ1GzNcC",
-    "date_str": "2024",
-    "timestamp": 1717200000.0,
-    "result_type": "changed",
-    "first_seen": "2026-06-27T10:42:31.242877+00:00"
-  },
-  {
-    "scholar": "朱星宇",
-    "scholar_url": "https://scholar.google.com/citations?hl=zh-CN&user=PpqUnAwAAAAJ&view_op=list_works&sortby=pubdate",
-    "affiliation": "NUS",
-    "areas": [
-      "Vision language model"
-    ],
-    "watch": "publications",
-    "kind": "paper",
-    "text": "Boosting Few-Shot Learning via Attentive Feature Regularization · AAAI 2024, 2024, 2024",
-    "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=PpqUnAwAAAAJ&citation_for_view=PpqUnAwAAAAJ:zYLM7Y9cAGgC",
-    "date_str": "2024",
-    "timestamp": 1717200000.0,
-    "result_type": "changed",
-    "first_seen": "2026-06-27T10:42:31.242879+00:00"
   }
 ]

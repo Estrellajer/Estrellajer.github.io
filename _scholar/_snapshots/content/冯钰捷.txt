@@ -52,9 +52,9 @@ EMNLP 2025 Long Paper, 2025 2025
 FOREVER: Forgetting Curve-Inspired Memory Replay for Language Model Continual Learning
 Y Feng, H Wang, J Li, X Chu, Z Kang, Y Liu, Y Wang, PS Yu, XM Wu
 ACL 2026 Long Paper, 2026 2026
+Rosd: Reflective on-policy self-distillation for language model reasoning across domains
+Z Zhao, X Ma, L Yang, Y Feng, D Shi, J He, X Xin, Z Ren, XM Wu
+arXiv preprint arXiv:2605.28014, 2026 2026
 How Order-Sensitive Are LLMs? OrderProbe for Deterministic Structural Reconstruction
 Y He, Z Kang, K Jiang, Q Zhang, J Qian, C Meng, Y Feng, Y Wang, J Dou, ...
 arXiv preprint arXiv:2601.08626, 2026 2026
-Diversity-grounded Channel Prototypical Learning for Out-of-Distribution Intent Detection
-B Liu, L Zhan, Y Feng, Z Lu, C Xie, L Xue, A Lam, XM Wu
-arXiv preprint arXiv:2409.11114, 2024 2024
