@@ -22,12 +22,12 @@ NeurIPS 2025 Spotlight, 2025 2025
 Accelerating Diffusion Transformer via Error-Optimized Cache
 J Qiu, S Wang, J Lu, L Liu, H Jiang, X Zhu, Y Hao
 ACM MM 2025, 2025 2025
-Principled Steering via Null-space Projection for Jailbreak Defense in Vision-Language Models
-X Zhu, B Zhu, S Wang, J Fang, K Zhao, H Zhang, X He
-CVPR 2026, 2026 2026
 Look Carefully: Adaptive Visual Reinforcements in Multimodal Large Language Models for Hallucination Mitigation
 X Zhu, K Zhao, L Yi, S Wang, Z Wang, B Zhu, H Zhang, X He
 ICLR 2026, 2026 2026
+Principled Steering via Null-space Projection for Jailbreak Defense in Vision-Language Models
+X Zhu, B Zhu, S Wang, J Fang, K Zhao, H Zhang, X He
+CVPR 2026, 2026 2026
 Hierarchical Semantic Alignment for Image Clustering
 X Zhu, B Zhu, Y Li, J Fang, S Wang, K Zhao, H Zhang
 AAAI 2026, 2025 2025
