@@ -1,5 +1,21 @@
 [
   {
+    "scholar": "孙科",
+    "scholar_url": "https://sites.google.com/view/kesun",
+    "affiliation": "宾夕法尼亚大学",
+    "areas": [
+      "Continuing RL"
+    ],
+    "watch": "general",
+    "kind": "update",
+    "text": "Page content updated",
+    "link": "https://sites.google.com/view/kesun",
+    "date_str": "",
+    "timestamp": 1783462222.701581,
+    "result_type": "changed",
+    "first_seen": "2026-07-07T22:10:22.702433+00:00"
+  },
+  {
     "scholar": "苏剑林 - 科学空间",
     "scholar_url": "https://kexue.fm/",
     "affiliation": "Kimi",
@@ -779,21 +795,5 @@
     "timestamp": 1717200000.0,
     "result_type": "changed",
     "first_seen": "2026-06-27T10:42:31.242869+00:00"
-  },
-  {
-    "scholar": "冯钰捷",
-    "scholar_url": "https://scholar.google.com/citations?user=J3zR-48AAAAJ&hl=zh-CN",
-    "affiliation": "香港理工大学",
-    "areas": [
-      "Continual Learning"
-    ],
-    "watch": "publications",
-    "kind": "paper",
-    "text": "Zero-shot Cross-domain Dialogue State Tracking via Context-aware Auto-prompting and Instruction-following Contrastive Decoding · EMNLP 2024 Long Paper, 2024, 2024",
-    "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=J3zR-48AAAAJ&citation_for_view=J3zR-48AAAAJ:KlAtU1dfN6UC",
-    "date_str": "2024",
-    "timestamp": 1717200000.0,
-    "result_type": "changed",
-    "first_seen": "2026-06-27T10:42:31.242872+00:00"
   }
 ]
