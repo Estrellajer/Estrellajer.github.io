@@ -65,6 +65,23 @@
     "first_seen": "2026-07-02T22:01:58.299074+00:00"
   },
   {
+    "scholar": "xuhuiz.com",
+    "scholar_url": "https://xuhuiz.com/",
+    "affiliation": "CMU",
+    "areas": [
+      "RL",
+      "CHI."
+    ],
+    "watch": "general",
+    "kind": "update",
+    "text": "Jul 8, 2026 Excited that five papers were accepted to COLM 2026 : Mind the Sim2Real Gap in User Simulation for Agentic Tasks , SOTOPIA-TOM , Social World Models , GoodPoint , and Training Proactive and Personalized LLM Agents .",
+    "link": "https://xuhuiz.com/",
+    "date_str": "",
+    "timestamp": 1782864000.0,
+    "result_type": "changed",
+    "first_seen": "2026-07-10T03:57:25.053573+00:00"
+  },
+  {
     "scholar": "杨恩能",
     "scholar_url": "https://ennengyang.github.io/",
     "affiliation": "中山大学",
@@ -779,21 +796,5 @@
     "timestamp": 1717200000.0,
     "result_type": "changed",
     "first_seen": "2026-06-27T10:42:31.242867+00:00"
-  },
-  {
-    "scholar": "冯钰捷",
-    "scholar_url": "https://scholar.google.com/citations?user=J3zR-48AAAAJ&hl=zh-CN",
-    "affiliation": "香港理工大学",
-    "areas": [
-      "Continual Learning"
-    ],
-    "watch": "publications",
-    "kind": "paper",
-    "text": "Kif: Knowledge identification and fusion for language model continual learning · arXiv preprint arXiv:2408.05200, 2024, 2024",
-    "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=J3zR-48AAAAJ&citation_for_view=J3zR-48AAAAJ:ULOm3_A8WrAC",
-    "date_str": "2024",
-    "timestamp": 1717200000.0,
-    "result_type": "changed",
-    "first_seen": "2026-06-27T10:42:31.242869+00:00"
   }
 ]

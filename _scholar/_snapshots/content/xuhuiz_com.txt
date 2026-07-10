@@ -4,11 +4,11 @@ I am interested in socially intelligent AI. More specifically:
 🧱 How do we create AI agents that effectively help humans? e.g., WebArena , TOM-SWE
 🛡️ How do we ensure AI systems behave safely and align with human values? e.g., HAICOSYSTEM , OpenAgentSafety
 News
+Jul 8, 2026 Excited that five papers were accepted to COLM 2026 : Mind the Sim2Real Gap in User Simulation for Agentic Tasks , SOTOPIA-TOM , Social World Models , GoodPoint , and Training Proactive and Personalized LLM Agents .
 Apr 18, 2026 Gave a talk on "User-Effective AI Agents" at Scale AI . [Slides]
 Apr 9, 2026 I am selected as a Microsoft Research Fellow !
 Mar 6, 2025 Excited to give a guest lecture on "Safety, bias, ethics in LLMs" for Data Bias and Fairness Series
 Feb 6, 2025 Excited to share that I'm joining the All Hands AI team for my summer 2025 internship. Here's a post about what I will potentially work on
-Oct 22, 2024 🎉🎉 HAICOSYSTEM is now out! Paper | Website | Tweet
 View all news →
 Connect
 Feel free to contact me at xuhuiz@cs.cmu.edu
