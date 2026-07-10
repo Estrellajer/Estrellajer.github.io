@@ -1,22 +1,33 @@
-Hello, I’m Zixuan Li, an associate professor at the Key Lab of Network Data Science and Technology (directed by Prof. Jiafeng Guo ), Institute of Computing Technology, Chinese Academy of Sciences. Before that, I obtained my Ph.D. degree at the Institute of Computing Technology, Chinese Academy of Sciences, under the supervision of Prof. Xiaolong Jin , and obtained my bachelor’s degree from Shandong University in 2016. I am also working closely with Prof. Xueqi Cheng . My current research interests include Knowledge Graph and Large Language Model . Recently, I focus on enhancing structured knowledge acquisition using Large Language Models and improving the factuality and truthfulness of Large Language Models by integrating structured knowledge.
-Prospective students: I have several intern positions available, as well as one Master’s student position for 2026. Please contact me via the following email.
-Contact Information
+Knowledge Graphs / Large Language Models / Structured Knowledge
+Zixuan Li
+I am an associate professor at the Key Lab of Network Data Science and Technology, Institute of Computing Technology, Chinese Academy of Sciences. My research focuses on knowledge graphs and large language models, with an emphasis on structured knowledge acquisition, factuality, and truthfulness.
+Publications Contact
+Prospective students
+I have several intern positions available, as well as one Master's student position for 2026. Please contact me via email if your interests align with knowledge graphs, LLMs, or trustworthy AI.
 lizixuan@ict.ac.cn
-Research Interest
-Knowledge Graph
-Large Language Model
-Working Experience
-Associate professor at Institute of Computing Technology, Chinese Academy of Sciences, 2025-
-Assistant professor at Institute of Computing Technology, Chinese Academy of Sciences, 2023-2025
-Education
-Ph.D in Computer Science, Institute of Computing Technology, Chinese Academy of Sciences, 2022
-B.S. in Computer Science, Shandong University, 2016
+Research
+Current Focus
+Knowledge Graphs
+Structured knowledge representation, acquisition, reasoning, and their applications in information access and intelligent systems.
+Large Language Models
+Improving factuality and truthfulness of language models by integrating structured knowledge and reliable external evidence.
+Profile
+Background
+I work at the Key Lab of Network Data Science and Technology directed by Prof. Jiafeng Guo . Before joining ICT as faculty, I obtained my Ph.D. degree from the Institute of Computing Technology, Chinese Academy of Sciences, under the supervision of Prof. Xiaolong Jin , and my B.S. degree from Shandong University in 2016. I also work closely with Prof. Xueqi Cheng .
+Timeline
+Experience & Education
+Associate Professor, Institute of Computing Technology, Chinese Academy of Sciences
+Assistant Professor, Institute of Computing Technology, Chinese Academy of Sciences
+Ph.D. in Computer Science, Institute of Computing Technology, Chinese Academy of Sciences
+B.S. in Computer Science, Shandong University
+Service
 Academic Services
 Conference Area Chair: 2024 EMNLP Demo track, 2025 ACL Demo track, 2025 EMNLP Demo track, ACL ARR
-Conference Program Committee member (Reviews): ACL, AAAI, EMNLP, SIGIR COLING, The Web Conference, KDD, NAACL, CCIR, CCKS, Big Data Research
-Reviewer of ACL Rolling Review (ARR): 2021: Nov 2022: Jan, Feb, Apr 2023: Feb, Oct, Dec 2024: Apr, Jun, Aug, Oct 2025: Feb, May, July
-Project
-National Key Research and Development Project of China, 2025.05-2028.04
-The National Youth Fund, 2024.01-2026.12
-Special Research Assistant Program of the Chinese Academy of Sciences, 2023.01-2025.01
+Program committee member and reviewer for ACL, AAAI, EMNLP, SIGIR, COLING, The Web Conference, KDD, NAACL, CCIR, CCKS, and Big Data Research
+Reviewer of ACL Rolling Review: 2021 Nov; 2022 Jan, Feb, Apr; 2023 Feb, Oct, Dec; 2024 Apr, Jun, Aug, Oct; 2025 Feb, May, Jul
+Funding
+Projects
+2025.05-2028.04 National Key Research and Development Project of China
+2024.01-2026.12 The National Youth Fund
+2023.01-2025.01 Special Research Assistant Program of the Chinese Academy of Sciences
 Academic Services ----- - Conference Program Committee member (Reviewer): ACL 2023, AAAI 2023, AAAI 2024 - Reviewer of ACL Rolling Review (ARR): ARR 2021 Nov, ARR 2022 Jan, ARR 2022 Feb, ARR 2022 Apr, ARR 2023 Feb, ARR 2023 Oct

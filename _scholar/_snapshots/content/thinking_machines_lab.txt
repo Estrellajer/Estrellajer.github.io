@@ -1,5 +1,7 @@
 Connectionism
 Shared science from the team
+The Future Worth Building Is Human
+Thinking Machines
 Interaction Models: A Scalable Approach to Human-AI Collaboration
 Thinking Machines
 On-Policy Distillation

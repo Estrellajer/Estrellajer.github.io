@@ -1,5 +1,198 @@
 [
   {
+    "scholar": "Zixuan Li",
+    "scholar_url": "https://lee-zix.github.io/",
+    "affiliation": "计算所",
+    "areas": [
+      "NLP"
+    ],
+    "watch": "general",
+    "kind": "update",
+    "text": "Funding",
+    "link": "https://lee-zix.github.io/",
+    "date_str": "",
+    "timestamp": 1783720471.013265,
+    "result_type": "changed",
+    "first_seen": "2026-07-10T21:54:31.013718+00:00"
+  },
+  {
+    "scholar": "Zixuan Li",
+    "scholar_url": "https://lee-zix.github.io/",
+    "affiliation": "计算所",
+    "areas": [
+      "NLP"
+    ],
+    "watch": "general",
+    "kind": "update",
+    "text": "Service",
+    "link": "https://lee-zix.github.io/",
+    "date_str": "",
+    "timestamp": 1783720471.013187,
+    "result_type": "changed",
+    "first_seen": "2026-07-10T21:54:31.013727+00:00"
+  },
+  {
+    "scholar": "Zixuan Li",
+    "scholar_url": "https://lee-zix.github.io/",
+    "affiliation": "计算所",
+    "areas": [
+      "NLP"
+    ],
+    "watch": "general",
+    "kind": "update",
+    "text": "Timeline",
+    "link": "https://lee-zix.github.io/",
+    "date_str": "",
+    "timestamp": 1783720471.013181,
+    "result_type": "changed",
+    "first_seen": "2026-07-10T21:54:31.013731+00:00"
+  },
+  {
+    "scholar": "Zixuan Li",
+    "scholar_url": "https://lee-zix.github.io/",
+    "affiliation": "计算所",
+    "areas": [
+      "NLP"
+    ],
+    "watch": "general",
+    "kind": "update",
+    "text": "Background",
+    "link": "https://lee-zix.github.io/",
+    "date_str": "",
+    "timestamp": 1783720471.013173,
+    "result_type": "changed",
+    "first_seen": "2026-07-10T21:54:31.013734+00:00"
+  },
+  {
+    "scholar": "Zixuan Li",
+    "scholar_url": "https://lee-zix.github.io/",
+    "affiliation": "计算所",
+    "areas": [
+      "NLP"
+    ],
+    "watch": "general",
+    "kind": "update",
+    "text": "Profile",
+    "link": "https://lee-zix.github.io/",
+    "date_str": "",
+    "timestamp": 1783720471.013167,
+    "result_type": "changed",
+    "first_seen": "2026-07-10T21:54:31.013737+00:00"
+  },
+  {
+    "scholar": "Zixuan Li",
+    "scholar_url": "https://lee-zix.github.io/",
+    "affiliation": "计算所",
+    "areas": [
+      "NLP"
+    ],
+    "watch": "general",
+    "kind": "update",
+    "text": "Improving factuality and truthfulness of language models by integrating structured knowledge and reliable external evidence.",
+    "link": "https://lee-zix.github.io/",
+    "date_str": "",
+    "timestamp": 1783720471.01316,
+    "result_type": "changed",
+    "first_seen": "2026-07-10T21:54:31.013740+00:00"
+  },
+  {
+    "scholar": "Zixuan Li",
+    "scholar_url": "https://lee-zix.github.io/",
+    "affiliation": "计算所",
+    "areas": [
+      "NLP"
+    ],
+    "watch": "general",
+    "kind": "update",
+    "text": "Structured knowledge representation, acquisition, reasoning, and their applications in information access and intelligent systems.",
+    "link": "https://lee-zix.github.io/",
+    "date_str": "",
+    "timestamp": 1783720471.013148,
+    "result_type": "changed",
+    "first_seen": "2026-07-10T21:54:31.013742+00:00"
+  },
+  {
+    "scholar": "Zixuan Li",
+    "scholar_url": "https://lee-zix.github.io/",
+    "affiliation": "计算所",
+    "areas": [
+      "NLP"
+    ],
+    "watch": "general",
+    "kind": "update",
+    "text": "Current Focus",
+    "link": "https://lee-zix.github.io/",
+    "date_str": "",
+    "timestamp": 1783720471.013137,
+    "result_type": "changed",
+    "first_seen": "2026-07-10T21:54:31.013747+00:00"
+  },
+  {
+    "scholar": "Zixuan Li",
+    "scholar_url": "https://lee-zix.github.io/",
+    "affiliation": "计算所",
+    "areas": [
+      "NLP"
+    ],
+    "watch": "general",
+    "kind": "update",
+    "text": "Publications Contact",
+    "link": "https://lee-zix.github.io/",
+    "date_str": "",
+    "timestamp": 1783720471.013126,
+    "result_type": "changed",
+    "first_seen": "2026-07-10T21:54:31.013751+00:00"
+  },
+  {
+    "scholar": "Thinking Machines Lab",
+    "scholar_url": "https://thinkingmachines.ai/blog/",
+    "affiliation": "Thinking Machines",
+    "areas": [
+      "LLM"
+    ],
+    "watch": "general",
+    "kind": "update",
+    "text": "Thinking Machines",
+    "link": "https://thinkingmachines.ai/blog/",
+    "date_str": "",
+    "timestamp": 1783720471.011514,
+    "result_type": "changed",
+    "first_seen": "2026-07-10T21:54:31.013754+00:00"
+  },
+  {
+    "scholar": "Thinking Machines Lab",
+    "scholar_url": "https://thinkingmachines.ai/blog/",
+    "affiliation": "Thinking Machines",
+    "areas": [
+      "LLM"
+    ],
+    "watch": "general",
+    "kind": "update",
+    "text": "The Future Worth Building Is Human",
+    "link": "https://thinkingmachines.ai/blog/",
+    "date_str": "",
+    "timestamp": 1783720471.011495,
+    "result_type": "changed",
+    "first_seen": "2026-07-10T21:54:31.013756+00:00"
+  },
+  {
+    "scholar": "xuhuiz.com",
+    "scholar_url": "https://xuhuiz.com/",
+    "affiliation": "CMU",
+    "areas": [
+      "RL",
+      "CHI."
+    ],
+    "watch": "general",
+    "kind": "update",
+    "text": "Page content updated",
+    "link": "https://xuhuiz.com/",
+    "date_str": "",
+    "timestamp": 1783720471.010902,
+    "result_type": "changed",
+    "first_seen": "2026-07-10T21:54:31.013759+00:00"
+  },
+  {
     "scholar": "孙科",
     "scholar_url": "https://sites.google.com/view/kesun",
     "affiliation": "宾夕法尼亚大学",
@@ -604,197 +797,5 @@
     "timestamp": 1748736000.0,
     "result_type": "changed",
     "first_seen": "2026-06-27T10:42:31.242835+00:00"
-  },
-  {
-    "scholar": "冯钰捷",
-    "scholar_url": "https://scholar.google.com/citations?user=J3zR-48AAAAJ&hl=zh-CN",
-    "affiliation": "香港理工大学",
-    "areas": [
-      "Continual Learning"
-    ],
-    "watch": "publications",
-    "kind": "paper",
-    "text": "DEAL: Disentangling Transformer Head Activations for LLM Steering · Knowledgeable Foundation Models at ACL 2025, 2025, 2025",
-    "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=J3zR-48AAAAJ&citation_for_view=J3zR-48AAAAJ:9ZlFYXVOiuMC",
-    "date_str": "2025",
-    "timestamp": 1748736000.0,
-    "result_type": "changed",
-    "first_seen": "2026-06-27T10:42:31.242838+00:00"
-  },
-  {
-    "scholar": "冯钰捷",
-    "scholar_url": "https://scholar.google.com/citations?user=J3zR-48AAAAJ&hl=zh-CN",
-    "affiliation": "香港理工大学",
-    "areas": [
-      "Continual Learning"
-    ],
-    "watch": "publications",
-    "kind": "paper",
-    "text": "DearLLM: Enhancing Personalized Healthcare via Large Language Models-Deduced Feature Correlations · AAAI 2025, 2025, 2025",
-    "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=J3zR-48AAAAJ&citation_for_view=J3zR-48AAAAJ:4TOpqqG69KYC",
-    "date_str": "2025",
-    "timestamp": 1748736000.0,
-    "result_type": "changed",
-    "first_seen": "2026-06-27T10:42:31.242841+00:00"
-  },
-  {
-    "scholar": "冯钰捷",
-    "scholar_url": "https://scholar.google.com/citations?user=J3zR-48AAAAJ&hl=zh-CN",
-    "affiliation": "香港理工大学",
-    "areas": [
-      "Continual Learning"
-    ],
-    "watch": "publications",
-    "kind": "paper",
-    "text": "Geoedit: Geometric knowledge editing for large language models · EMNLP 2025 Long Paper, 2025, 2025",
-    "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=J3zR-48AAAAJ&citation_for_view=J3zR-48AAAAJ:_kc_bZDykSQC",
-    "date_str": "2025",
-    "timestamp": 1748736000.0,
-    "result_type": "changed",
-    "first_seen": "2026-06-27T10:42:31.242843+00:00"
-  },
-  {
-    "scholar": "冯钰捷",
-    "scholar_url": "https://scholar.google.com/citations?user=J3zR-48AAAAJ&hl=zh-CN",
-    "affiliation": "香港理工大学",
-    "areas": [
-      "Continual Learning"
-    ],
-    "watch": "publications",
-    "kind": "paper",
-    "text": "AIMMerging: Adaptive Iterative Model Merging Using Training Trajectories for Language Model Continual Learning · EMNLP 2025 Long Paper, 2025, 2025",
-    "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=J3zR-48AAAAJ&citation_for_view=J3zR-48AAAAJ:aqlVkmm33-oC",
-    "date_str": "2025",
-    "timestamp": 1748736000.0,
-    "result_type": "changed",
-    "first_seen": "2026-06-27T10:42:31.242846+00:00"
-  },
-  {
-    "scholar": "朱星宇",
-    "scholar_url": "https://scholar.google.com/citations?hl=zh-CN&user=PpqUnAwAAAAJ&view_op=list_works&sortby=pubdate",
-    "affiliation": "NUS",
-    "areas": [
-      "Vision language model"
-    ],
-    "watch": "publications",
-    "kind": "paper",
-    "text": "Dynamic Multimodal Prototype Learning in Vision-Language Models · ICCV 2025, 2025, 2025",
-    "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=PpqUnAwAAAAJ&citation_for_view=PpqUnAwAAAAJ:YsMSGLbcyi4C",
-    "date_str": "2025",
-    "timestamp": 1748736000.0,
-    "result_type": "changed",
-    "first_seen": "2026-06-27T10:42:31.242849+00:00"
-  },
-  {
-    "scholar": "朱星宇",
-    "scholar_url": "https://scholar.google.com/citations?hl=zh-CN&user=PpqUnAwAAAAJ&view_op=list_works&sortby=pubdate",
-    "affiliation": "NUS",
-    "areas": [
-      "Vision language model"
-    ],
-    "watch": "publications",
-    "kind": "paper",
-    "text": "Enhancing CLIP Robustness via Cross-Modality Alignment · NeurIPS 2025 Spotlight, 2025, 2025",
-    "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=PpqUnAwAAAAJ&citation_for_view=PpqUnAwAAAAJ:roLk4NBRz8UC",
-    "date_str": "2025",
-    "timestamp": 1748736000.0,
-    "result_type": "changed",
-    "first_seen": "2026-06-27T10:42:31.242851+00:00"
-  },
-  {
-    "scholar": "朱星宇",
-    "scholar_url": "https://scholar.google.com/citations?hl=zh-CN&user=PpqUnAwAAAAJ&view_op=list_works&sortby=pubdate",
-    "affiliation": "NUS",
-    "areas": [
-      "Vision language model"
-    ],
-    "watch": "publications",
-    "kind": "paper",
-    "text": "Accelerating Diffusion Transformer via Error-Optimized Cache · ACM MM 2025, 2025, 2025",
-    "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=PpqUnAwAAAAJ&citation_for_view=PpqUnAwAAAAJ:eQOLeE2rZwMC",
-    "date_str": "2025",
-    "timestamp": 1748736000.0,
-    "result_type": "changed",
-    "first_seen": "2026-06-27T10:42:31.242854+00:00"
-  },
-  {
-    "scholar": "朱星宇",
-    "scholar_url": "https://scholar.google.com/citations?hl=zh-CN&user=PpqUnAwAAAAJ&view_op=list_works&sortby=pubdate",
-    "affiliation": "NUS",
-    "areas": [
-      "Vision language model"
-    ],
-    "watch": "publications",
-    "kind": "paper",
-    "text": "Hierarchical Semantic Alignment for Image Clustering · AAAI 2026, 2025, 2025",
-    "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=PpqUnAwAAAAJ&citation_for_view=PpqUnAwAAAAJ:Se3iqnhoufwC",
-    "date_str": "2025",
-    "timestamp": 1748736000.0,
-    "result_type": "changed",
-    "first_seen": "2026-06-27T10:42:31.242856+00:00"
-  },
-  {
-    "scholar": "朱星宇",
-    "scholar_url": "https://scholar.google.com/citations?hl=zh-CN&user=PpqUnAwAAAAJ&view_op=list_works&sortby=pubdate",
-    "affiliation": "NUS",
-    "areas": [
-      "Vision language model"
-    ],
-    "watch": "publications",
-    "kind": "paper",
-    "text": "Res-Bench: Benchmarking the Robustness of Multimodal Large Language Models to Dynamic Resolution Input · AAAI 2026, 2025, 2025",
-    "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=PpqUnAwAAAAJ&citation_for_view=PpqUnAwAAAAJ:UebtZRa9Y70C",
-    "date_str": "2025",
-    "timestamp": 1748736000.0,
-    "result_type": "changed",
-    "first_seen": "2026-06-27T10:42:31.242860+00:00"
-  },
-  {
-    "scholar": "冯钰捷",
-    "scholar_url": "https://scholar.google.com/citations?user=J3zR-48AAAAJ&hl=zh-CN",
-    "affiliation": "香港理工大学",
-    "areas": [
-      "Continual Learning"
-    ],
-    "watch": "publications",
-    "kind": "paper",
-    "text": "Tasl: Continual dialog state tracking via task skill localization and consolidation · ACL 2024 Long Paper, 2024, 2024",
-    "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=J3zR-48AAAAJ&citation_for_view=J3zR-48AAAAJ:0EnyYjriUFMC",
-    "date_str": "2024",
-    "timestamp": 1717200000.0,
-    "result_type": "changed",
-    "first_seen": "2026-06-27T10:42:31.242862+00:00"
-  },
-  {
-    "scholar": "冯钰捷",
-    "scholar_url": "https://scholar.google.com/citations?user=J3zR-48AAAAJ&hl=zh-CN",
-    "affiliation": "香港理工大学",
-    "areas": [
-      "Continual Learning"
-    ],
-    "watch": "publications",
-    "kind": "paper",
-    "text": "Understanding Layer Significance in LLM Alignment · COLM 2025, 2024, 2024",
-    "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=J3zR-48AAAAJ&citation_for_view=J3zR-48AAAAJ:kNdYIx-mwKoC",
-    "date_str": "2024",
-    "timestamp": 1717200000.0,
-    "result_type": "changed",
-    "first_seen": "2026-06-27T10:42:31.242864+00:00"
-  },
-  {
-    "scholar": "冯钰捷",
-    "scholar_url": "https://scholar.google.com/citations?user=J3zR-48AAAAJ&hl=zh-CN",
-    "affiliation": "香港理工大学",
-    "areas": [
-      "Continual Learning"
-    ],
-    "watch": "publications",
-    "kind": "paper",
-    "text": "Parenting: Optimizing knowledge selection of retrieval-augmented language models with parameter decoupling and tailored tuning · ACL 2025 Long Paper, 2024, 2024",
-    "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=J3zR-48AAAAJ&citation_for_view=J3zR-48AAAAJ:3fE2CSJIrl8C",
-    "date_str": "2024",
-    "timestamp": 1717200000.0,
-    "result_type": "changed",
-    "first_seen": "2026-06-27T10:42:31.242867+00:00"
   }
 ]

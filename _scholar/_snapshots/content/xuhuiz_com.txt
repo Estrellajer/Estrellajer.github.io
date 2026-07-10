@@ -1,4 +1,4 @@
-I am a PhD student at the Language Technologies Institute at CMU , advised by Maarten Sap .
+I am a PhD student at the Language Technologies Institute at CMU , advised by Maarten Sap , and a 2026 Microsoft Research Fellow .
 I am interested in socially intelligent AI. More specifically:
 📢 How do we build socially intelligent AI systems? e.g., Sotopia , Social World Models
 🧱 How do we create AI agents that effectively help humans? e.g., WebArena , TOM-SWE
