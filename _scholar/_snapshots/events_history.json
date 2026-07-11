@@ -8,6 +8,38 @@
     ],
     "watch": "general",
     "kind": "update",
+    "text": "Working Experience",
+    "link": "https://lee-zix.github.io/",
+    "date_str": "",
+    "timestamp": 1783740229.53152,
+    "result_type": "changed",
+    "first_seen": "2026-07-11T03:23:49.531960+00:00"
+  },
+  {
+    "scholar": "Zixuan Li",
+    "scholar_url": "https://lee-zix.github.io/",
+    "affiliation": "计算所",
+    "areas": [
+      "NLP"
+    ],
+    "watch": "general",
+    "kind": "update",
+    "text": "Contact Information",
+    "link": "https://lee-zix.github.io/",
+    "date_str": "",
+    "timestamp": 1783740229.531501,
+    "result_type": "changed",
+    "first_seen": "2026-07-11T03:23:49.531969+00:00"
+  },
+  {
+    "scholar": "Zixuan Li",
+    "scholar_url": "https://lee-zix.github.io/",
+    "affiliation": "计算所",
+    "areas": [
+      "NLP"
+    ],
+    "watch": "general",
+    "kind": "update",
     "text": "Funding",
     "link": "https://lee-zix.github.io/",
     "date_str": "",
@@ -765,37 +797,5 @@
     "timestamp": 1780272000.0,
     "result_type": "changed",
     "first_seen": "2026-06-27T08:06:01.951916+00:00"
-  },
-  {
-    "scholar": "Junjie Su(苏俊杰)",
-    "scholar_url": "https://momoyeyu.github.io/",
-    "affiliation": "北京邮电大学",
-    "areas": [
-      "AI Infra"
-    ],
-    "watch": "blog",
-    "kind": "post",
-    "text": "再谈 AI Infra",
-    "link": "https://momoyeyu.github.io/posts/ai-infra-revisit/",
-    "date_str": "Tue, 26 May 2026 00:00:00 GMT",
-    "timestamp": 1779753600.0,
-    "result_type": "rss_no_change",
-    "first_seen": "2026-06-19T12:44:04.494550+00:00"
-  },
-  {
-    "scholar": "冯钰捷",
-    "scholar_url": "https://scholar.google.com/citations?user=J3zR-48AAAAJ&hl=zh-CN",
-    "affiliation": "香港理工大学",
-    "areas": [
-      "Continual Learning"
-    ],
-    "watch": "publications",
-    "kind": "paper",
-    "text": "Recurrent knowledge identification and fusion for language model continual learning · ACL 2025 Long Paper, 2025, 2025",
-    "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=J3zR-48AAAAJ&citation_for_view=J3zR-48AAAAJ:YOwf2qJgpHMC",
-    "date_str": "2025",
-    "timestamp": 1748736000.0,
-    "result_type": "changed",
-    "first_seen": "2026-06-27T10:42:31.242835+00:00"
   }
 ]
