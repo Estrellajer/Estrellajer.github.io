@@ -1,10 +1,9 @@
 # Scholar Monitor Report
 
-**Run:** 2026-07-11 03:23 UTC  |  **Total:** 58  |  Events 3  |  RSS 0  |  CHG 1  |  FIRST 0  |  OK 57  |  ERR 0
+**Run:** 2026-07-11 21:42 UTC  |  **Total:** 58  |  Events 2  |  RSS 0  |  CHG 1  |  FIRST 0  |  OK 57  |  ERR 0
 
 ---
-## Activity Feed (3)
+## Activity Feed (2)
 
-- **Zixuan Li** [计算所]: Working Experience
-- **Zixuan Li** [计算所]: Contact Information
-- **Zixuan Li** [计算所]: Reviewer of ACL Rolling Review (ARR): 2021: Nov 2022: Jan, Feb, Apr 2023: Feb, Oct, Dec 2024: Apr, Jun, Aug, Oct 2025: F
+- **胡君耀**: Earlier updates
+- **胡君耀**: 2026-05-08 💼 Activity I attended VALSE 2026 (Wuhan, China).

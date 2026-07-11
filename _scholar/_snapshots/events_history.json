@@ -1,5 +1,21 @@
 [
   {
+    "scholar": "胡君耀",
+    "scholar_url": "https://junyaohu.github.io/",
+    "affiliation": "",
+    "areas": [
+      "CV"
+    ],
+    "watch": "news",
+    "kind": "news",
+    "text": "Earlier updates",
+    "link": "https://junyaohu.github.io/",
+    "date_str": "",
+    "timestamp": 1783806134.241437,
+    "result_type": "changed",
+    "first_seen": "2026-07-11T21:42:14.241899+00:00"
+  },
+  {
     "scholar": "Zixuan Li",
     "scholar_url": "https://lee-zix.github.io/",
     "affiliation": "计算所",
@@ -781,21 +797,5 @@
     "timestamp": 1780272000.0,
     "result_type": "changed",
     "first_seen": "2026-06-27T08:06:01.951913+00:00"
-  },
-  {
-    "scholar": "董功",
-    "scholar_url": "https://donggong1.github.io/index.html",
-    "affiliation": "",
-    "areas": [
-      "Continual Learning"
-    ],
-    "watch": "general",
-    "kind": "paper",
-    "text": "(June 2026) I serve as Area Chair for NeurIPS 2026, ACM MM 2026, WACV 2026, and BMVC 2026.",
-    "link": "https://donggong1.github.io/index.html",
-    "date_str": "",
-    "timestamp": 1780272000.0,
-    "result_type": "changed",
-    "first_seen": "2026-06-27T08:06:01.951916+00:00"
   }
 ]
