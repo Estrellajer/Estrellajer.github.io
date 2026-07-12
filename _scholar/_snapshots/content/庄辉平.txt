@@ -1,7 +1,7 @@
 <div class="main-container"> Two-column layout for top section
 Zhuang Huiping
-Associate Professor, PhD Supervisor in South China University of Technology
-He received his PhD from Nanyang Technological University, Singapore in 2022 and was recognized with the Outstanding Overseas Student Award by the National Natural Science Foundation of China. He leads key projects including the National Key R&D Program of China and National Natural Science Foundation projects. His research focuses on efficient AI (including efficient continual learning and embodied intelligence), with around 80 published papers. He pioneered "Analytical Continual Learning," establishing a specialized research direction in evolvable intelligence that has produced more than 10 papers in top conferences like NeurIPS/ICML in the past two years. His works have been recognized with two Best Paper Awards (nomination) at international conferences, the Best Student Paper Achievement Award from Singapore's PREMIA Association, and a First Prize at the CVPR 2025 competition. He has delivered a keynote speech at an international conference and served in academic roles (e.g., Co-Chair) at several international/domestic conferences. He serves as a special issue editor for the Journal of Franklin Institute (JCR Q1) and was recognized as an Outstanding Reviewer for ICML 2022.
+Associate Professor and PhD Supervisor, Wuxianming School of Intelligent Engineering, South China University of Technology
+He received his PhD from Nanyang Technological University, Singapore in 2021. He has led more than 10 projects, including a sub-project of the National Science and Technology Innovation 2030 Major Project, National Natural Science Foundation of China projects, the Guangdong Provincial General Program, the CCF-Tencent Rhino-Bird Fund, and Xiaomi Foundation projects. He was selected for the National Outstanding Self-financed Students Abroad Award and was invited as a 2025 Overseas Faculty member at Nanyang Technological University to teach EE6430. His research focuses on efficient AI, including efficient continual learning, large models, and embodied intelligence, with nearly 100 published papers. He proposed "Analytic Continual Learning" and opened a specialized branch in continual domain refinement; this direction has produced more than 15 papers in top conferences such as NeurIPS, ICML, and CVPR over the past two years, and has recently expanded to large models and embodied intelligence. His related research received the Second Prize of the Natural Science Award from the Guangdong Society of Image and Graphics as the first contributor, a Best Paper Award at a CCF-C international conference, and the Best Student Paper Achievement Award from Singapore's PREMIA Association. He has led students to win First Prize in a CVPR 2025 competition, the National First Prize in the "Challenge Cup" National College Students' Extracurricular Academic Science and Technology Works Competition, First Prize in the China Robotics and Artificial Intelligence Competition, and the Guangdong Gold Award in the China International College Students' Innovation Competition. He has served multiple times in academic roles at international and domestic conferences, including Co-Chair, and has been selected as a member of the CSIG Youth Working Committee, Deputy Secretary-General of the GDSIG Computer Vision Technical Committee, a Valse EAC member, a JCR Q1 special issue editor, and an ACL Area Chair. He was recognized as an Outstanding Reviewer for ICML 2022.
 Research Areas Section
 Research Areas Learn More  >
 Continual Learning
@@ -12,6 +12,8 @@ Large Models
 <p><a href="/research/large-language-models" class="btn btn--inverse" style="margin: 2px">Learn More</a></p>
 Latest News with Compact Scrolling Design
 Latest News Learn More  >
+2026 Jul 12
+We have 2 papers accepted by ECCV 2026!
 2026 May 08
 We have 2 papers accepted by CVPR 2026, including 1 Oral!
 2026 Jan 28
@@ -30,8 +32,6 @@ We won Team and Individual Awards at the China International College Students’
 We have 3 papers accepted by ACMMM 2025!
 2025 Jun 19
 Our team wins a first prize in RoboTwin Dual-Arm Collaboration Challenge of CVPR2025 (Real-world Track)!
-2025 May 08
-Our team wins a silver medal in RoboTwin Dual-Arm Collaboration Challenge of CVPR2025!
 Drag, swipe, or use the arrows
 ↑ ↓
 Bottom Sections <div class="bottom-sections"> <div class="feature__wrapper">
