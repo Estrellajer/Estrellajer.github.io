@@ -1,5 +1,22 @@
 [
   {
+    "scholar": "苏剑林 - 科学空间",
+    "scholar_url": "https://kexue.fm/",
+    "affiliation": "Kimi",
+    "areas": [
+      "LLM",
+      "Theory"
+    ],
+    "watch": "blog",
+    "kind": "post",
+    "text": "LogSumExp和Softmax的泰勒展开",
+    "link": "https://kexue.fm/archives/11814",
+    "date_str": "Mon, 13 Jul 2026 11:04:00 +0800",
+    "timestamp": 1783911840.0,
+    "result_type": "rss",
+    "first_seen": "2026-07-13T03:38:08.203168+00:00"
+  },
+  {
     "scholar": "庄辉平",
     "scholar_url": "https://zhuanghp.github.io/",
     "affiliation": "华南理工大学",
@@ -781,21 +798,5 @@
     "timestamp": 1780272000.0,
     "result_type": "changed",
     "first_seen": "2026-06-27T10:42:31.242824+00:00"
-  },
-  {
-    "scholar": "朱星宇",
-    "scholar_url": "https://scholar.google.com/citations?hl=zh-CN&user=PpqUnAwAAAAJ&view_op=list_works&sortby=pubdate",
-    "affiliation": "NUS",
-    "areas": [
-      "Vision language model"
-    ],
-    "watch": "publications",
-    "kind": "paper",
-    "text": "LPEdit: Locality-Preserving Knowledge Editing for MultiModal Large Language Models · Proceedings of the ACM Web Conference 2026, 8425-8428, 2026, 2026",
-    "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=PpqUnAwAAAAJ&citation_for_view=PpqUnAwAAAAJ:Zph67rFs4hoC",
-    "date_str": "2026",
-    "timestamp": 1780272000.0,
-    "result_type": "changed",
-    "first_seen": "2026-06-27T10:42:31.242829+00:00"
   }
 ]
