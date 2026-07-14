@@ -1,5 +1,51 @@
 [
   {
+    "scholar": "周大蔚",
+    "scholar_url": "https://www.lamda.nju.edu.cn/zhoudw/",
+    "affiliation": "NJU LAMDA",
+    "areas": [
+      "Continual Learning"
+    ],
+    "watch": "general",
+    "kind": "update",
+    "text": "[ Media ]",
+    "link": "https://www.lamda.nju.edu.cn/zhoudw/",
+    "date_str": "",
+    "timestamp": 1784065882.568388,
+    "result_type": "changed",
+    "first_seen": "2026-07-03T22:00:02.483326+00:00"
+  },
+  {
+    "scholar": "孙科",
+    "scholar_url": "https://sites.google.com/view/kesun",
+    "affiliation": "宾夕法尼亚大学",
+    "areas": [
+      "Continuing RL"
+    ],
+    "watch": "general",
+    "kind": "update",
+    "text": "Page content updated",
+    "link": "https://sites.google.com/view/kesun",
+    "date_str": "",
+    "timestamp": 1784065882.567796,
+    "result_type": "changed",
+    "first_seen": "2026-07-07T22:10:22.702433+00:00"
+  },
+  {
+    "scholar": "Xiongda Blog",
+    "scholar_url": "https://www.xxrbear.cn/",
+    "affiliation": "Software",
+    "areas": [],
+    "watch": "general",
+    "kind": "update",
+    "text": "十倍效率程序员",
+    "link": "https://www.xxrbear.cn/posts/tech/base/ten-times-more-efficient-programmers/",
+    "date_str": "Tue, 14 Jul 2026 17:31:32 +0800",
+    "timestamp": 1784021492.0,
+    "result_type": "rss",
+    "first_seen": "2026-07-14T21:51:22.568873+00:00"
+  },
+  {
     "scholar": "苏剑林 - 科学空间",
     "scholar_url": "https://kexue.fm/",
     "affiliation": "Kimi",
@@ -289,22 +335,6 @@
     "first_seen": "2026-07-10T21:54:31.013759+00:00"
   },
   {
-    "scholar": "孙科",
-    "scholar_url": "https://sites.google.com/view/kesun",
-    "affiliation": "宾夕法尼亚大学",
-    "areas": [
-      "Continuing RL"
-    ],
-    "watch": "general",
-    "kind": "update",
-    "text": "Page content updated",
-    "link": "https://sites.google.com/view/kesun",
-    "date_str": "",
-    "timestamp": 1783635376.010834,
-    "result_type": "changed",
-    "first_seen": "2026-07-07T22:10:22.702433+00:00"
-  },
-  {
     "scholar": "苏剑林 - 科学空间",
     "scholar_url": "https://kexue.fm/",
     "affiliation": "Kimi",
@@ -320,22 +350,6 @@
     "timestamp": 1783303380.0,
     "result_type": "rss",
     "first_seen": "2026-07-06T04:12:22.248814+00:00"
-  },
-  {
-    "scholar": "周大蔚",
-    "scholar_url": "https://www.lamda.nju.edu.cn/zhoudw/",
-    "affiliation": "NJU LAMDA",
-    "areas": [
-      "Continual Learning"
-    ],
-    "watch": "general",
-    "kind": "update",
-    "text": "[ Media ]",
-    "link": "https://www.lamda.nju.edu.cn/zhoudw/",
-    "date_str": "",
-    "timestamp": 1783116002.482951,
-    "result_type": "changed",
-    "first_seen": "2026-07-03T22:00:02.483326+00:00"
   },
   {
     "scholar": "孙宇",
@@ -782,21 +796,5 @@
     "timestamp": 1780272000.0,
     "result_type": "changed",
     "first_seen": "2026-06-27T10:42:31.242821+00:00"
-  },
-  {
-    "scholar": "朱星宇",
-    "scholar_url": "https://scholar.google.com/citations?hl=zh-CN&user=PpqUnAwAAAAJ&view_op=list_works&sortby=pubdate",
-    "affiliation": "NUS",
-    "areas": [
-      "Vision language model"
-    ],
-    "watch": "publications",
-    "kind": "paper",
-    "text": "GuardAlign: Test-time Safety Alignment in Multimodal Large Language Models · ICLR 2026, 2026, 2026",
-    "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=PpqUnAwAAAAJ&citation_for_view=PpqUnAwAAAAJ:5nxA0vEk-isC",
-    "date_str": "2026",
-    "timestamp": 1780272000.0,
-    "result_type": "changed",
-    "first_seen": "2026-06-27T10:42:31.242824+00:00"
   }
 ]

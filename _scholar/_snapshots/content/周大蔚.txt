@@ -90,7 +90,8 @@ AREA: Attribute Extraction and Aggregation for CLIP-Based Class-Incremental Lear
 Zhen-Hao Xie, Yu-Cheng Shi, Da-Wei Zhou
 International Conference on Machine Learning. ICML 2026
 [ Paper ]
-[ Code ] [<a href="https://mp.weixin.qq.com/s/4q8x1SaYmT8X1BJeox95hw?scene=1">Media</a>]
+[ Code ]
+[ Media ]
 ICCV
 External Knowledge Injection for CLIP-Based Class-Incremental Learning
 Da-Wei Zhou , Kai-Wen Li, Jingyi Ning, Han-Jia Ye, Lijun Zhang, De-Chuan Zhan
