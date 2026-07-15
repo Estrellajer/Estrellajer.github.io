@@ -1,5 +1,19 @@
 [
   {
+    "scholar": "Xiongda Blog",
+    "scholar_url": "https://www.xxrbear.cn/",
+    "affiliation": "Software",
+    "areas": [],
+    "watch": "general",
+    "kind": "update",
+    "text": "每个人都应该做的事（第二部分）：编码规范",
+    "link": "https://www.xxrbear.cn/posts/tech/base/stuff-everyone-should-do-part2/",
+    "date_str": "Wed, 15 Jul 2026 11:16:13 +0800",
+    "timestamp": 1784085373.0,
+    "result_type": "rss",
+    "first_seen": "2026-07-15T21:52:29.088148+00:00"
+  },
+  {
     "scholar": "周大蔚",
     "scholar_url": "https://www.lamda.nju.edu.cn/zhoudw/",
     "affiliation": "NJU LAMDA",
@@ -780,21 +794,5 @@
     "timestamp": 1780272000.0,
     "result_type": "changed",
     "first_seen": "2026-06-27T10:42:31.242818+00:00"
-  },
-  {
-    "scholar": "朱星宇",
-    "scholar_url": "https://scholar.google.com/citations?hl=zh-CN&user=PpqUnAwAAAAJ&view_op=list_works&sortby=pubdate",
-    "affiliation": "NUS",
-    "areas": [
-      "Vision language model"
-    ],
-    "watch": "publications",
-    "kind": "paper",
-    "text": "Thinking with Images as Continuous Actions: Numerical Visual Chain-of-Thought · arXiv preprint arXiv:2602.23959, 2026, 2026",
-    "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=PpqUnAwAAAAJ&citation_for_view=PpqUnAwAAAAJ:3fE2CSJIrl8C",
-    "date_str": "2026",
-    "timestamp": 1780272000.0,
-    "result_type": "changed",
-    "first_seen": "2026-06-27T10:42:31.242821+00:00"
   }
 ]
