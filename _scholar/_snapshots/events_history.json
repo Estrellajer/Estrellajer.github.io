@@ -1,5 +1,22 @@
 [
   {
+    "scholar": "苏剑林 - 科学空间",
+    "scholar_url": "https://kexue.fm/",
+    "affiliation": "Kimi",
+    "areas": [
+      "LLM",
+      "Theory"
+    ],
+    "watch": "blog",
+    "kind": "post",
+    "text": "基于排序不等式的相似度指标",
+    "link": "https://kexue.fm/archives/11818",
+    "date_str": "Thu, 16 Jul 2026 16:47:00 +0800",
+    "timestamp": 1784191620.0,
+    "result_type": "rss",
+    "first_seen": "2026-07-16T21:58:30.306002+00:00"
+  },
+  {
     "scholar": "Xiongda Blog",
     "scholar_url": "https://www.xxrbear.cn/",
     "affiliation": "Software",
@@ -778,21 +795,5 @@
     "timestamp": 1780272000.0,
     "result_type": "changed",
     "first_seen": "2026-06-27T10:42:31.242815+00:00"
-  },
-  {
-    "scholar": "朱星宇",
-    "scholar_url": "https://scholar.google.com/citations?hl=zh-CN&user=PpqUnAwAAAAJ&view_op=list_works&sortby=pubdate",
-    "affiliation": "NUS",
-    "areas": [
-      "Vision language model"
-    ],
-    "watch": "publications",
-    "kind": "paper",
-    "text": "Revisiting robustness for llm safety alignment via selective geometry control · arXiv preprint arXiv:2602.07340, 2026, 2026",
-    "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=PpqUnAwAAAAJ&citation_for_view=PpqUnAwAAAAJ:0EnyYjriUFMC",
-    "date_str": "2026",
-    "timestamp": 1780272000.0,
-    "result_type": "changed",
-    "first_seen": "2026-06-27T10:42:31.242818+00:00"
   }
 ]
