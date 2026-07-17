@@ -52,9 +52,9 @@ arXiv preprint arXiv:2602.23959, 2026 2026
 GuardAlign: Test-time Safety Alignment in Multimodal Large Language Models
 X Zhu, B Zhu, J Fang, S Wang, Y Zhang, X Wang, X He
 ICLR 2026, 2026 2026
+Robustifying Vision-Language Models via Test-Time Prompt Adaptation
+X Zhu, H Wu, S Wang, B Zhu, J Ge, J Zhang, L Chen
+arXiv preprint arXiv:2607.09450, 2026 2026
 LPEdit: Locality-Preserving Knowledge Editing for MultiModal Large Language Models
 T Zhang, J Fang, H Jiang, X Zhu, X Wang, X He
 Proceedings of the ACM Web Conference 2026, 8425-8428, 2026 2026
-Adapting Point Cloud Analysis via Multimodal Bayesian Distribution Learning
-X Zhu, L Yi, S Wang, W Zhu, Y Wu, B Zhu, H Zhang
-CVPR 2026, 2026 2026

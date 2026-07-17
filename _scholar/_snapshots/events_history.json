@@ -717,6 +717,22 @@
     "first_seen": "2026-06-19T12:44:04.494547+00:00"
   },
   {
+    "scholar": "朱星宇",
+    "scholar_url": "https://scholar.google.com/citations?hl=zh-CN&user=PpqUnAwAAAAJ&view_op=list_works&sortby=pubdate",
+    "affiliation": "NUS",
+    "areas": [
+      "Vision language model"
+    ],
+    "watch": "publications",
+    "kind": "paper",
+    "text": "Robustifying Vision-Language Models via Test-Time Prompt Adaptation · arXiv preprint arXiv:2607.09450, 2026, 2026",
+    "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=PpqUnAwAAAAJ&citation_for_view=PpqUnAwAAAAJ:YOwf2qJgpHMC",
+    "date_str": "2026",
+    "timestamp": 1780272000.0,
+    "result_type": "changed",
+    "first_seen": "2026-07-17T21:43:57.694444+00:00"
+  },
+  {
     "scholar": "冯钰捷",
     "scholar_url": "https://scholar.google.com/citations?user=J3zR-48AAAAJ&hl=zh-CN",
     "affiliation": "香港理工大学",
@@ -779,21 +795,5 @@
     "timestamp": 1780272000.0,
     "result_type": "changed",
     "first_seen": "2026-06-27T10:42:31.242812+00:00"
-  },
-  {
-    "scholar": "朱星宇",
-    "scholar_url": "https://scholar.google.com/citations?hl=zh-CN&user=PpqUnAwAAAAJ&view_op=list_works&sortby=pubdate",
-    "affiliation": "NUS",
-    "areas": [
-      "Vision language model"
-    ],
-    "watch": "publications",
-    "kind": "paper",
-    "text": "Principled Steering via Null-space Projection for Jailbreak Defense in Vision-Language Models · CVPR 2026, 2026, 2026",
-    "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=PpqUnAwAAAAJ&citation_for_view=PpqUnAwAAAAJ:KlAtU1dfN6UC",
-    "date_str": "2026",
-    "timestamp": 1780272000.0,
-    "result_type": "changed",
-    "first_seen": "2026-06-27T10:42:31.242815+00:00"
   }
 ]
