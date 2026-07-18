@@ -1,11 +1,6 @@
 # Scholar Monitor Report
 
-**Run:** 2026-07-17 21:43 UTC  |  **Total:** 58  |  Events 1  |  RSS 0  |  CHG 1  |  FIRST 0  |  OK 54  |  ERR 3
-
----
-## Activity Feed (1)
-
-- **朱星宇** [NUS]: Robustifying Vision-Language Models via Test-Time Prompt Adaptation · arXiv preprint arXiv:2607.09450, 2026, 2026
+**Run:** 2026-07-18 03:12 UTC  |  **Total:** 58  |  Events 0  |  RSS 0  |  CHG 0  |  FIRST 0  |  OK 55  |  ERR 3
 
 ---
 ## Needs Attention (3)
