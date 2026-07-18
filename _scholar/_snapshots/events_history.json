@@ -1,5 +1,21 @@
 [
   {
+    "scholar": "Chongjie Si",
+    "scholar_url": "https://chongjiesi.site/home/",
+    "affiliation": "上海交通大学",
+    "areas": [
+      "Optimize theory"
+    ],
+    "watch": "general",
+    "kind": "update",
+    "text": "📘 One paper has been accepted to ECCV 2026.",
+    "link": "https://chongjiesi.site/home/",
+    "date_str": "",
+    "timestamp": 1784410991.337039,
+    "result_type": "changed",
+    "first_seen": "2026-07-18T21:43:11.337485+00:00"
+  },
+  {
     "scholar": "苏剑林 - 科学空间",
     "scholar_url": "https://kexue.fm/",
     "affiliation": "Kimi",
@@ -717,6 +733,22 @@
     "first_seen": "2026-06-19T12:44:04.494547+00:00"
   },
   {
+    "scholar": "林知秋",
+    "scholar_url": "https://linzhiqiu.github.io/",
+    "affiliation": "MIT",
+    "areas": [
+      "CV evaluation"
+    ],
+    "watch": "general",
+    "kind": "update",
+    "text": "2026.06-07 , I presented Scalable Oversight Across Generative Visual AI: Toward Visual Storytelling for Everyone at Sooth Labs (thanks Russ Salakhutdinov for inviting me and Yaser Sheikh for hosting!) and Runway (thanks Jimei Yang for inviting me!).",
+    "link": "https://linzhiqiu.github.io/",
+    "date_str": "",
+    "timestamp": 1780790400.0,
+    "result_type": "changed",
+    "first_seen": "2026-07-18T21:43:11.337493+00:00"
+  },
+  {
     "scholar": "朱星宇",
     "scholar_url": "https://scholar.google.com/citations?hl=zh-CN&user=PpqUnAwAAAAJ&view_op=list_works&sortby=pubdate",
     "affiliation": "NUS",
@@ -763,37 +795,5 @@
     "timestamp": 1780272000.0,
     "result_type": "changed",
     "first_seen": "2026-06-27T10:42:31.242800+00:00"
-  },
-  {
-    "scholar": "冯钰捷",
-    "scholar_url": "https://scholar.google.com/citations?user=J3zR-48AAAAJ&hl=zh-CN",
-    "affiliation": "香港理工大学",
-    "areas": [
-      "Continual Learning"
-    ],
-    "watch": "publications",
-    "kind": "paper",
-    "text": "How Order-Sensitive Are LLMs? OrderProbe for Deterministic Structural Reconstruction · arXiv preprint arXiv:2601.08626, 2026, 2026",
-    "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=J3zR-48AAAAJ&citation_for_view=J3zR-48AAAAJ:Wp0gIr-vW9MC",
-    "date_str": "2026",
-    "timestamp": 1780272000.0,
-    "result_type": "changed",
-    "first_seen": "2026-06-27T10:42:31.242808+00:00"
-  },
-  {
-    "scholar": "朱星宇",
-    "scholar_url": "https://scholar.google.com/citations?hl=zh-CN&user=PpqUnAwAAAAJ&view_op=list_works&sortby=pubdate",
-    "affiliation": "NUS",
-    "areas": [
-      "Vision language model"
-    ],
-    "watch": "publications",
-    "kind": "paper",
-    "text": "Look Carefully: Adaptive Visual Reinforcements in Multimodal Large Language Models for Hallucination Mitigation · ICLR 2026, 2026, 2026",
-    "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=PpqUnAwAAAAJ&citation_for_view=PpqUnAwAAAAJ:8k81kl-MbHgC",
-    "date_str": "2026",
-    "timestamp": 1780272000.0,
-    "result_type": "changed",
-    "first_seen": "2026-06-27T10:42:31.242812+00:00"
   }
 ]
