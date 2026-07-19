@@ -1,13 +1,6 @@
 # Scholar Monitor Report
 
-**Run:** 2026-07-18 21:43 UTC  |  **Total:** 58  |  Events 3  |  RSS 0  |  CHG 2  |  FIRST 0  |  OK 53  |  ERR 3
-
----
-## Activity Feed (3)
-
-- **Chongjie Si** [上海交通大学]: 📘 One paper has been accepted to ECCV 2026.
-- **林知秋** [MIT]: 2026.06-07 , I presented Scalable Oversight Across Generative Visual AI: Toward Visual Storytelling for Everyone at Soot
-- **林知秋** [MIT]: 2024.10-11 , I presented Evaluating and Improving Vision-Language Generative Models at the Princeton Visual AI Lab and C
+**Run:** 2026-07-19 03:32 UTC  |  **Total:** 58  |  Events 0  |  RSS 0  |  CHG 0  |  FIRST 0  |  OK 55  |  ERR 3
 
 ---
 ## Needs Attention (3)
