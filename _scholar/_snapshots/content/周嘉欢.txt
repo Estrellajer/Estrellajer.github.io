@@ -10,6 +10,7 @@ Latest News
 We are always actively recruiting Post-doc Fellows,
 Ph.D., Master, and Research Interns! Welcome to contact me with your detailed CV!
 (常年招收博士后、博士、硕士和科研实习生！)
+07.2026, Invited to serve as the Senior Program Committee of AAAI'2027.
 06.2024, Two papers are accepted by ECCV'2026.
 05.2026, One paper is accepted by IEEE TPAMI.
 05.2026, Four papers are accepted by ICML'2026.
@@ -1163,6 +1164,9 @@ Academic Service
 Associate Editor (AE):
 Journal of Machine Vision and Applications (MVA)
 2023-present
+Senior Program Committee:
+The AAAI Conference on Artificial Intelligence (AAAI)
+2027
 Area Chair:
 International Conference on Machine Learning (ICML)
 2025,2026
