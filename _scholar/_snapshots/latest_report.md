@@ -1,6 +1,18 @@
 # Scholar Monitor Report
 
-**Run:** 2026-07-20 03:46 UTC  |  **Total:** 58  |  Events 0  |  RSS 0  |  CHG 0  |  FIRST 0  |  OK 55  |  ERR 3
+**Run:** 2026-07-20 21:57 UTC  |  **Total:** 58  |  Events 8  |  RSS 1  |  CHG 2  |  FIRST 0  |  OK 52  |  ERR 3
+
+---
+## Activity Feed (8)
+
+- **杨恩能** [中山大学]: Yizhou Dang, Enneng Yang , Chuang Zhao, Lianbo Ma, Guibing Guo, Xingwei Wang.
+- **杨恩能** [中山大学]: TKDE 2026 | Code
+- **杨恩能** [中山大学]: [Why is Repeated Padding Effective for Sequential Recommendation]
+- **杨恩能** [中山大学]: ICML 2026 | Code
+- **杨永进** [多伦多大学]: Learning is, at its core, fitting data, so the data often matters most. I am interested in which data should be used for
+- **杨永进** [多伦多大学]: Learning from better data
+- **Nathan Lambert** [Interconnects]: Kimi K3: The open-weights escalation
+- **杨恩能** [中山大学]: 2026.07: Our paper on data augmentation has been accepted by TKDE 2026.
 
 ---
 ## Needs Attention (3)

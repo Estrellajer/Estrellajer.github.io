@@ -1,5 +1,117 @@
 [
   {
+    "scholar": "杨恩能",
+    "scholar_url": "https://ennengyang.github.io/",
+    "affiliation": "中山大学",
+    "areas": [
+      "Model Merging"
+    ],
+    "watch": "general",
+    "kind": "update",
+    "text": "Yizhou Dang, Enneng Yang , Chuang Zhao, Lianbo Ma, Guibing Guo, Xingwei Wang.",
+    "link": "https://ennengyang.github.io/",
+    "date_str": "",
+    "timestamp": 1784584654.595887,
+    "result_type": "changed",
+    "first_seen": "2026-07-20T21:57:34.596278+00:00"
+  },
+  {
+    "scholar": "杨恩能",
+    "scholar_url": "https://ennengyang.github.io/",
+    "affiliation": "中山大学",
+    "areas": [
+      "Model Merging"
+    ],
+    "watch": "general",
+    "kind": "update",
+    "text": "TKDE 2026 | Code",
+    "link": "https://ennengyang.github.io/",
+    "date_str": "",
+    "timestamp": 1784584654.595879,
+    "result_type": "changed",
+    "first_seen": "2026-07-20T21:57:34.596286+00:00"
+  },
+  {
+    "scholar": "杨恩能",
+    "scholar_url": "https://ennengyang.github.io/",
+    "affiliation": "中山大学",
+    "areas": [
+      "Model Merging"
+    ],
+    "watch": "general",
+    "kind": "update",
+    "text": "[Why is Repeated Padding Effective for Sequential Recommendation]",
+    "link": "https://ennengyang.github.io/",
+    "date_str": "",
+    "timestamp": 1784584654.595872,
+    "result_type": "changed",
+    "first_seen": "2026-07-20T21:57:34.596290+00:00"
+  },
+  {
+    "scholar": "杨恩能",
+    "scholar_url": "https://ennengyang.github.io/",
+    "affiliation": "中山大学",
+    "areas": [
+      "Model Merging"
+    ],
+    "watch": "general",
+    "kind": "paper",
+    "text": "ICML 2026 | Code",
+    "link": "https://ennengyang.github.io/",
+    "date_str": "",
+    "timestamp": 1784584654.595862,
+    "result_type": "changed",
+    "first_seen": "2026-07-20T21:57:34.596292+00:00"
+  },
+  {
+    "scholar": "杨永进",
+    "scholar_url": "https://yangyongjin.github.io/",
+    "affiliation": "多伦多大学",
+    "areas": [
+      "Agent",
+      "LLM Alignment"
+    ],
+    "watch": "general",
+    "kind": "update",
+    "text": "Learning is, at its core, fitting data, so the data often matters most. I am interested in which data should be used for which tasks, how to organize it into curricula, and how to construct effective data for knowledge distillation.",
+    "link": "https://yangyongjin.github.io/",
+    "date_str": "",
+    "timestamp": 1784584654.595546,
+    "result_type": "changed",
+    "first_seen": "2026-07-20T21:57:34.596311+00:00"
+  },
+  {
+    "scholar": "杨永进",
+    "scholar_url": "https://yangyongjin.github.io/",
+    "affiliation": "多伦多大学",
+    "areas": [
+      "Agent",
+      "LLM Alignment"
+    ],
+    "watch": "general",
+    "kind": "update",
+    "text": "Learning from better data",
+    "link": "https://yangyongjin.github.io/",
+    "date_str": "",
+    "timestamp": 1784584654.59552,
+    "result_type": "changed",
+    "first_seen": "2026-07-20T21:57:34.596330+00:00"
+  },
+  {
+    "scholar": "Nathan Lambert",
+    "scholar_url": "https://www.interconnects.ai/",
+    "affiliation": "Interconnects",
+    "areas": [],
+    "watch": "blog",
+    "kind": "post",
+    "text": "Kimi K3: The open-weights escalation",
+    "link": "https://www.interconnects.ai/p/kimi-k3-the-open-weights-escalation",
+    "date_str": "Mon, 20 Jul 2026 15:48:28 GMT",
+    "timestamp": 1784562508.0,
+    "result_type": "rss",
+    "first_seen": "2026-07-20T21:57:34.596333+00:00"
+  },
+  {
     "scholar": "周嘉欢",
     "scholar_url": "https://zhoujiahuan1991.github.io/",
     "affiliation": "北京大学",
@@ -463,6 +575,22 @@
     "first_seen": "2026-07-02T22:01:58.299074+00:00"
   },
   {
+    "scholar": "杨恩能",
+    "scholar_url": "https://ennengyang.github.io/",
+    "affiliation": "中山大学",
+    "areas": [
+      "Model Merging"
+    ],
+    "watch": "general",
+    "kind": "update",
+    "text": "2026.07: Our paper on data augmentation has been accepted by TKDE 2026.",
+    "link": "https://ennengyang.github.io/",
+    "date_str": "",
+    "timestamp": 1782864000.0,
+    "result_type": "changed",
+    "first_seen": "2026-07-20T21:57:34.596338+00:00"
+  },
+  {
     "scholar": "庄辉平",
     "scholar_url": "https://zhuanghp.github.io/",
     "affiliation": "华南理工大学",
@@ -670,130 +798,5 @@
     "timestamp": 1782395580.0,
     "result_type": "rss",
     "first_seen": "2026-06-27T08:06:01.951895+00:00"
-  },
-  {
-    "scholar": "David Noel Ng",
-    "scholar_url": "https://dnhkng.github.io/",
-    "affiliation": "",
-    "areas": [
-      "Interpretability",
-      "Efficiency",
-      "LLM"
-    ],
-    "watch": "blog",
-    "kind": "post",
-    "text": "Building the",
-    "link": "https://dnhkng.github.io/posts/building-the-beam-universe-splitter/",
-    "date_str": "2026-06-25T00:00:00+02:00",
-    "timestamp": 1782338400.0,
-    "result_type": "rss_no_change",
-    "first_seen": "2026-06-27T10:42:31.243011+00:00"
-  },
-  {
-    "scholar": "Lil'Log",
-    "scholar_url": "https://lilianweng.github.io/",
-    "affiliation": "Thinking Machines",
-    "areas": [
-      "LLM"
-    ],
-    "watch": "blog",
-    "kind": "post",
-    "text": "Scaling Laws, Carefully",
-    "link": "https://lilianweng.github.io/posts/2026-06-24-scaling-laws/",
-    "date_str": "Wed, 24 Jun 2026 00:00:00 +0000",
-    "timestamp": 1782259200.0,
-    "result_type": "rss",
-    "first_seen": "2026-06-27T08:06:01.951897+00:00"
-  },
-  {
-    "scholar": "Nathan Lambert",
-    "scholar_url": "https://www.interconnects.ai/",
-    "affiliation": "Interconnects",
-    "areas": [],
-    "watch": "blog",
-    "kind": "post",
-    "text": "GLM-5.2 is the step change for open agents",
-    "link": "https://www.interconnects.ai/p/glm-52-is-the-step-change-for-open",
-    "date_str": "Mon, 22 Jun 2026 14:52:45 GMT",
-    "timestamp": 1782139965.0,
-    "result_type": "rss",
-    "first_seen": "2026-06-27T08:06:01.951901+00:00"
-  },
-  {
-    "scholar": "刘子铭（KAN）",
-    "scholar_url": "https://kindxiaoming.github.io/blog/",
-    "affiliation": "清华大学",
-    "areas": [
-      "LLM"
-    ],
-    "watch": "blog",
-    "kind": "post",
-    "text": "Discovering 108 tricks to accelerate grokking",
-    "link": "https://kindxiaoming.github.io/blog/2026/grokking-tricks/",
-    "date_str": "2026-06-22T00:00:00+00:00",
-    "timestamp": 1782086400.0,
-    "result_type": "rss",
-    "first_seen": "2026-06-27T08:06:01.951904+00:00"
-  },
-  {
-    "scholar": "Nathan Lambert",
-    "scholar_url": "https://www.interconnects.ai/",
-    "affiliation": "Interconnects",
-    "areas": [],
-    "watch": "blog",
-    "kind": "post",
-    "text": "Banning Open Source AI Would Be A Mistake",
-    "link": "https://www.interconnects.ai/p/banning-open-source-ai-would-be-a",
-    "date_str": "Fri, 19 Jun 2026 13:02:47 GMT",
-    "timestamp": 1781874167.0,
-    "result_type": "rss",
-    "first_seen": "2026-06-27T08:06:01.951907+00:00"
-  },
-  {
-    "scholar": "苏剑林 - 科学空间",
-    "scholar_url": "https://kexue.fm/",
-    "affiliation": "Kimi",
-    "areas": [
-      "LLM",
-      "Theory"
-    ],
-    "watch": "blog",
-    "kind": "post",
-    "text": "强制间隔投影（Margin-Enforcing Projection）",
-    "link": "https://kexue.fm/archives/11784",
-    "date_str": "Fri, 19 Jun 2026 19:44:00 +0800",
-    "timestamp": 1781869440.0,
-    "result_type": "rss_no_change",
-    "first_seen": "2026-06-19T12:44:04.494544+00:00"
-  },
-  {
-    "scholar": "Nathan Lambert",
-    "scholar_url": "https://www.interconnects.ai/",
-    "affiliation": "Interconnects",
-    "areas": [],
-    "watch": "blog",
-    "kind": "post",
-    "text": "State of the blog, mid-2026",
-    "link": "https://www.interconnects.ai/p/state-of-the-blog-mid-2026",
-    "date_str": "Wed, 17 Jun 2026 14:29:06 GMT",
-    "timestamp": 1781706546.0,
-    "result_type": "rss_no_change",
-    "first_seen": "2026-06-19T12:44:04.494547+00:00"
-  },
-  {
-    "scholar": "林知秋",
-    "scholar_url": "https://linzhiqiu.github.io/",
-    "affiliation": "MIT",
-    "areas": [
-      "CV evaluation"
-    ],
-    "watch": "general",
-    "kind": "update",
-    "text": "2026.06-07 , I presented Scalable Oversight Across Generative Visual AI: Toward Visual Storytelling for Everyone at Sooth Labs (thanks Russ Salakhutdinov for inviting me and Yaser Sheikh for hosting!) and Runway (thanks Jimei Yang for inviting me!).",
-    "link": "https://linzhiqiu.github.io/",
-    "date_str": "",
-    "timestamp": 1780790400.0,
-    "result_type": "changed",
-    "first_seen": "2026-07-18T21:43:11.337493+00:00"
   }
 ]

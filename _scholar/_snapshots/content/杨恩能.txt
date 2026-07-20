@@ -10,6 +10,7 @@ I am honored to work closely with [Assoc. Prof. Li Shen](https://sites.google.co
 and [Dr. Zhenyi Wang](https://sites.google.com/view/zhenyiwang)
 🔥 Our team is seeking self-motivated students (including remote internships, undergraduates, graduate students, and other candidates) to join research on LLMs, continual learning, and model merging, with the goal of publishing high-quality academic papers. If interested, please email me your resume.
 👏 News
+2026.07: Our paper on data augmentation has been accepted by TKDE 2026.
 2026.05: Several of our papers have been accepted by ICML 2026.
 2026.05: Our survey paper on data augmentation has been accepted by TKDE 2026.
 2026.04: Our paper on POI recommendation has been accepted by SIGIR 2026.
@@ -80,15 +81,15 @@ Chu Zhao$^{\ast}$, Enneng Yang $^{\ast}$ ($^{\ast}$ indicates co-first authors )
 SCNS: Continual Personalization of Diffusion Models via Submodular Concept Neuron Selection
 ICML 2026 | Code
 Zijie Peng$^{\ast}$, Enneng Yang $^{\ast}$ ($^{\ast}$ indicates co-first authors ), Yifei Cheng, Hongliang Yuan, Fei Ma, Xiaochun Cao, Li Shen.
-- [Plasticity Activation via Polar Operator: A Plug-in Method for Balancing Stability and Plasticity](https://openreview.net/forum?id=b7P2WegaBY)\
-`ICML 2026`| [**Code**](https://github.com/Zhenggd943/PAPO)  \
-Guodong Zheng, **Enneng Yang**, Xiaoyan Wang, Yihan Chen, Feihong He, Quan Zheng, Peng Wang, Li Shen.
-- [Efficient Bilevel Optimization for CKA-Guided MoE Upcycling](https://openreview.net/forum?id=M5hGwjZCs0)\
-`ICML 2026`| [**Code**](https://github.com/fabfish/bilevel-moe-upcycle)  \
-Zhiyuan Yu, **Enneng Yang**, Hao Jiang, Guojie Zhu, Feihong He, Peng Wang, Li Shen.
-- [Merge to Remember: Sharpness-Aware Isotropic Merging for Continual Learning](https://openreview.net/forum?id=aWfk16EvfM)\
-`ICML 2026`| [**Code**](https://github.com/Yangqun123456/SAIM)  \
-Qun Yang, **Enneng Yang**, Wei Chen, Li Shen, Long Lan.
+Plasticity Activation via Polar Operator: A Plug-in Method for Balancing Stability and Plasticity
+ICML 2026 | Code
+Guodong Zheng, Enneng Yang , Xiaoyan Wang, Yihan Chen, Feihong He, Quan Zheng, Peng Wang, Li Shen.
+Efficient Bilevel Optimization for CKA-Guided MoE Upcycling
+ICML 2026 | Code
+Zhiyuan Yu, Enneng Yang , Hao Jiang, Guojie Zhu, Feihong He, Peng Wang, Li Shen.
+Merge to Remember: Sharpness-Aware Isotropic Merging for Continual Learning
+ICML 2026 | Code
+Qun Yang, Enneng Yang , Wei Chen, Li Shen, Long Lan.
 - [Causal Direct Preference Optimization for Distributionally Robust Generative Recommendation](https://arxiv.org/pdf/2603.22335)\
 `ICML 2026`| [**Code**](https://github.com/user683/CausalDPO)  \
 Chu Zhao, **Enneng Yang**, Jianzhe Zhao, Guibing Guo.
@@ -161,6 +162,9 @@ Yalin Yu$^{\ast}$, **Enneng Yang**$^{\ast}$ ($^{\ast}$ *indicates co-first autho
 `IJCAI 2019` (Oral)| [**Code**](https://github.com/EnnengYang/DTMF)\
 Guibing Guo, **Enneng Yang**$^{\dagger}$ ($^{\dagger}$ *indicates corresponding authors*), Li Shen$^{\dagger}$, Xiaochun Yang, Xiaodong He.
 Journal Papers
+[Why is Repeated Padding Effective for Sequential Recommendation]
+TKDE 2026 | Code
+Yizhou Dang, Enneng Yang , Chuang Zhao, Lianbo Ma, Guibing Guo, Xingwei Wang.
 Exploring and Tailoring the Test-Time Augmentation for Sequential Recommendation
 TPAMI 2026 | Code
 Yizhou Dang, Enneng Yang , Yuting Liu, Jianzhe Zhao, Xingwei Wang, and Guibing Guo.
