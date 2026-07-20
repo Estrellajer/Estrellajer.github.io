@@ -1,13 +1,6 @@
 # Scholar Monitor Report
 
-**Run:** 2026-07-19 21:43 UTC  |  **Total:** 58  |  Events 3  |  RSS 0  |  CHG 1  |  FIRST 0  |  OK 54  |  ERR 3
-
----
-## Activity Feed (3)
-
-- **周嘉欢** [北京大学]: The AAAI Conference on Artificial Intelligence (AAAI)
-- **周嘉欢** [北京大学]: Senior Program Committee:
-- **周嘉欢** [北京大学]: 07.2026, Invited to serve as the Senior Program Committee of AAAI'2027.
+**Run:** 2026-07-20 03:46 UTC  |  **Total:** 58  |  Events 0  |  RSS 0  |  CHG 0  |  FIRST 0  |  OK 55  |  ERR 3
 
 ---
 ## Needs Attention (3)
