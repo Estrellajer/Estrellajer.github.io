@@ -559,6 +559,22 @@
     "first_seen": "2026-07-06T04:12:22.248814+00:00"
   },
   {
+    "scholar": "Lil'Log",
+    "scholar_url": "https://lilianweng.github.io/",
+    "affiliation": "Thinking Machines",
+    "areas": [
+      "LLM"
+    ],
+    "watch": "blog",
+    "kind": "post",
+    "text": "Harness Engineering for Self-Improvement",
+    "link": "https://lilianweng.github.io/posts/2026-07-04-harness/",
+    "date_str": "Sat, 04 Jul 2026 00:00:00 +0000",
+    "timestamp": 1783123200.0,
+    "result_type": "rss_no_change",
+    "first_seen": "2026-07-21T03:25:47.629629+00:00"
+  },
+  {
     "scholar": "孙宇",
     "scholar_url": "https://yueatsprograms.github.io/",
     "affiliation": "英伟达",
@@ -781,22 +797,5 @@
     "timestamp": 1782547561.944265,
     "result_type": "changed",
     "first_seen": "2026-06-27T08:06:01.951892+00:00"
-  },
-  {
-    "scholar": "苏剑林 - 科学空间",
-    "scholar_url": "https://kexue.fm/",
-    "affiliation": "Kimi",
-    "areas": [
-      "LLM",
-      "Theory"
-    ],
-    "watch": "blog",
-    "kind": "post",
-    "text": "矩阵函数近似中的暴力美学",
-    "link": "https://kexue.fm/archives/11787",
-    "date_str": "Thu, 25 Jun 2026 21:53:00 +0800",
-    "timestamp": 1782395580.0,
-    "result_type": "rss",
-    "first_seen": "2026-06-27T08:06:01.951895+00:00"
   }
 ]
