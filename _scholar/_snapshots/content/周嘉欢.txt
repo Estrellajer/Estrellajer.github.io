@@ -102,14 +102,15 @@ Guo, Yuxin Peng, and Jiahuan Zhou* , "Mitigate Catastrophic Remembering
 via Continual Self-Paced Dual-Knowledge Purification for Noisy Lifelong Person
 Re-Identification", in IEEE Transactions on Pattern Analysis and Machine
 Intelligence, 2026
-[ bib ] OR IL
+[ pdf ]
+[ bib ] [ DOI:10.1109/TPAMI.2026.3693671 ] OR IL
 ( ICML'26 )-Kunlun Xu, Yanqin Zhang, Wenwen
 Qiang, and Jiahuan Zhou* , "Hyper-LLaVA: Hyperbolic Uncertainty-aware
 Modality-Balanced Routing for Multimodal Continual Instruction Tuning", in
 Proceedings of the International Conference on Machine Learning, Seoul, South
 Korea, Jul.6 - Jul.11, 2026
 [ pdf ]
-[ bib ] V&L IL
+[ code ] [ bib ] V&L IL
 ( ICML'26 )-Wenwen Qiang*, Ziyin Gu, Jiahuan Zhou* , Jie Hu, Jingyao Wang, Changwen Zheng, and Hui Xiong, "On
 the Plasticity and Stability for Post-Training Large Language Models", in
 Proceedings of the International Conference on Machine Learning, Seoul, South
@@ -150,7 +151,7 @@ Zhou* , Sheng Zhong, and Luxin Yan, "MSCD-GS: Motion-Separated
 Cooperative Deblurring Dynamic Reconstruction via Gaussian Splatting", in
 Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern
 Recognition, Denver, Colorado, USA, Jun.3 - Jun.7, 2026
-[ bib ] 2D to 3D
+[ pdf ] [ bib ] 2D to 3D
 ( CVPR'26 )-Zehua Zang, Xi Wang, Fuchun
 Sun, Xiao Xu, Lixiang Liu, Jiangmeng Li*, and Jiahuan Zhou* , "Test-Time
 Perturbation Tuning with Delayed Feedback for Vision-Language-Action Models", in
@@ -163,7 +164,7 @@ Wenwen Qiang*, Jiahuan Zhou , Changwen Zheng, and Gang Hua, "COPO:
 Causal-Oriented Policy Optimization for Hallucinations of MLLMs", in Proceedings
 of the IEEE/CVF Conference on Computer Vision and Pattern Recognition, Denver,
 Colorado, USA, Jun.3 - Jun.7, 2026
-[ pdf ] [ code ] [ bib ] V&L
+[ pdf ] [ bib ] V&L
 ( ICLR'26 )-Qiwei Li, Xiaochen Yang, and Jiahuan Zhou* , "Naming to Learn: Class Incremental Learning for
 Vision-Language Model with Unlabeled Data", in Proceedings of the 14th
 International Conference on Learning Representations, Rio de Janeiro, Brazil,
@@ -185,14 +186,14 @@ Zhou , and Yuxin Peng, "CKDA: Cross-modality Knowledge Disentanglement
 and Alignment for Visible-Infrared Lifelong Person Re-identification", in
 Proceedings of the 40th Annual AAAI Conference on Artificial Intelligence,
 Singapore, Jan.20 - Jan.27, 2026
-[ pdf ] [ code ] [ bib ] [ 机器之心报道 ] OR VT
+[ pdf ] [ code ] [ doi ] [ bib ] [ 机器之心报道 ] OR VT
 ( AAAI'26, Oral )-Fei Song, Yi Li, Rui
 Wang, Jiahuan Zhou , Changwen Zheng, and Jiangmeng Li, "Doubly Debiased
 Test-Time Prompt Tuning for Vision-Language Models", in Proceedings of the 40th
 Annual AAAI Conference on Artificial Intelligence, Singapore, Jan.20 - Jan.27,
 2026
 [ pdf ]
-[ code ] [ bib ] PL V&L
+[ code ] [ DOI:10.1609/aaai.v40i11.37863 ] [ bib ] PL V&L
 ( NeurIPS'25 )-Kunlun Xu, Yibo Feng,
 Jiangmeng Li, Yongsheng Qi, and Jiahuan Zhou* , "C²Prompt: Class-aware
 Client Knowledge Interaction for Federated Continual Learning", in Proceedings
@@ -635,14 +636,15 @@ Guo, Yuxin Peng, and Jiahuan Zhou* , "Mitigate Catastrophic Remembering
 via Continual Self-Paced Dual-Knowledge Purification for Noisy Lifelong Person
 Re-Identification", in IEEE Transactions on Pattern Analysis and Machine
 Intelligence, 2026
-[ bib ] OR IL
+[ pdf ]
+[ bib ] [ DOI:10.1109/TPAMI.2026.3693671 ] OR IL
 ( ICML'26 )-Kunlun Xu, Yanqin Zhang, Wenwen
 Qiang, and Jiahuan Zhou* , "Hyper-LLaVA: Hyperbolic Uncertainty-aware
 Modality-Balanced Routing for Multimodal Continual Instruction Tuning", in
 Proceedings of the International Conference on Machine Learning, Seoul, South
 Korea, Jul.6 - Jul.11, 2026
 [ pdf ]
-[ bib ] V&L IL
+[ code ] [ bib ] V&L IL
 ( ICML'26 )-Wenwen Qiang*, Ziyin Gu, Jiahuan Zhou* , Jie Hu, Jingyao Wang, Changwen Zheng, and Hui Xiong, "On
 the Plasticity and Stability for Post-Training Large Language Models", in
 Proceedings of the International Conference on Machine Learning, Seoul, South
@@ -683,7 +685,7 @@ Zhou* , Sheng Zhong, and Luxin Yan, "MSCD-GS: Motion-Separated
 Cooperative Deblurring Dynamic Reconstruction via Gaussian Splatting", in
 Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern
 Recognition, Denver, Colorado, USA, Jun.3 - Jun.7, 2026
-[ bib ] 2D to 3D
+[ pdf ] [ bib ] 2D to 3D
 ( CVPR'26 )-Zehua Zang, Xi Wang, Fuchun
 Sun, Xiao Xu, Lixiang Liu, Jiangmeng Li*, and Jiahuan Zhou* , "Test-Time
 Perturbation Tuning with Delayed Feedback for Vision-Language-Action Models", in
@@ -696,7 +698,7 @@ Wenwen Qiang*, Jiahuan Zhou , Changwen Zheng, and Gang Hua, "COPO:
 Causal-Oriented Policy Optimization for Hallucinations of MLLMs", in Proceedings
 of the IEEE/CVF Conference on Computer Vision and Pattern Recognition, Denver,
 Colorado, USA, Jun.3 - Jun.7, 2026
-[ pdf ] [ code ] [ bib ] V&L
+[ pdf ] [ bib ] V&L
 ( ICLR'26 )-Qiwei Li, Xiaochen Yang, and Jiahuan Zhou* , "Naming to Learn: Class Incremental Learning for
 Vision-Language Model with Unlabeled Data", in Proceedings of the 14th
 International Conference on Learning Representations, Rio de Janeiro, Brazil,
@@ -718,14 +720,14 @@ Zhou , and Yuxin Peng, "CKDA: Cross-modality Knowledge Disentanglement
 and Alignment for Visible-Infrared Lifelong Person Re-identification", in
 Proceedings of the 40th Annual AAAI Conference on Artificial Intelligence,
 Singapore, Jan.20 - Jan.27, 2026
-[ pdf ] [ code ] [ bib ] [ 机器之心报道 ] OR VT
+[ pdf ] [ code ] [ doi ] [ bib ] [ 机器之心报道 ] OR VT
 ( AAAI'26, Oral )-Fei Song, Yi Li, Rui
 Wang, Jiahuan Zhou , Changwen Zheng, and Jiangmeng Li, "Doubly Debiased
 Test-Time Prompt Tuning for Vision-Language Models", in Proceedings of the 40th
 Annual AAAI Conference on Artificial Intelligence, Singapore, Jan.20 - Jan.27,
 2026
 [ pdf ]
-[ code ] [ bib ] PL V&L
+[ code ] [ DOI:10.1609/aaai.v40i11.37863 ] [ bib ] PL V&L
 ( NeurIPS'25 )-Kunlun Xu, Yibo Feng,
 Jiangmeng Li, Yongsheng Qi, and Jiahuan Zhou* , "C²Prompt: Class-aware
 Client Knowledge Interaction for Federated Continual Learning", in Proceedings

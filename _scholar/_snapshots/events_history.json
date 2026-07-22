@@ -1,5 +1,53 @@
 [
   {
+    "scholar": "周嘉欢",
+    "scholar_url": "https://zhoujiahuan1991.github.io/",
+    "affiliation": "北京大学",
+    "areas": [
+      "Continual Learning"
+    ],
+    "watch": "general",
+    "kind": "update",
+    "text": "Page content updated",
+    "link": "https://zhoujiahuan1991.github.io/",
+    "date_str": "",
+    "timestamp": 1784757602.268612,
+    "result_type": "changed",
+    "first_seen": "2026-06-29T22:15:19.142393+00:00"
+  },
+  {
+    "scholar": "Nathan Lambert",
+    "scholar_url": "https://www.interconnects.ai/",
+    "affiliation": "Interconnects",
+    "areas": [],
+    "watch": "blog",
+    "kind": "post",
+    "text": "Open models recap: more on Kimi K3, Qwen 3.8, Xi's WAIC speech, distillation, the open-closed gap, and what's next",
+    "link": "https://www.interconnects.ai/p/open-models-recap-more-on-kimi-k3",
+    "date_str": "Wed, 22 Jul 2026 14:09:04 GMT",
+    "timestamp": 1784729344.0,
+    "result_type": "rss",
+    "first_seen": "2026-07-22T22:00:02.269811+00:00"
+  },
+  {
+    "scholar": "David Noel Ng",
+    "scholar_url": "https://dnhkng.github.io/",
+    "affiliation": "",
+    "areas": [
+      "Interpretability",
+      "Efficiency",
+      "LLM"
+    ],
+    "watch": "blog",
+    "kind": "post",
+    "text": "Building the",
+    "link": "https://dnhkng.github.io/posts/building-a-quantum-llm/",
+    "date_str": "2026-07-22T00:00:00+02:00",
+    "timestamp": 1784671200.0,
+    "result_type": "rss_no_change",
+    "first_seen": "2026-07-22T22:00:02.269948+00:00"
+  },
+  {
     "scholar": "杨恩能",
     "scholar_url": "https://ennengyang.github.io/",
     "affiliation": "中山大学",
@@ -689,22 +737,6 @@
     "first_seen": "2026-06-30T22:20:59.912276+00:00"
   },
   {
-    "scholar": "周嘉欢",
-    "scholar_url": "https://zhoujiahuan1991.github.io/",
-    "affiliation": "北京大学",
-    "areas": [
-      "Continual Learning"
-    ],
-    "watch": "general",
-    "kind": "update",
-    "text": "Page content updated",
-    "link": "https://zhoujiahuan1991.github.io/",
-    "date_str": "",
-    "timestamp": 1782771319.141393,
-    "result_type": "changed",
-    "first_seen": "2026-06-29T22:15:19.142393+00:00"
-  },
-  {
     "scholar": "Nathan Lambert",
     "scholar_url": "https://www.interconnects.ai/",
     "affiliation": "Interconnects",
@@ -765,37 +797,5 @@
     "timestamp": 1782547561.944565,
     "result_type": "changed",
     "first_seen": "2026-06-27T08:06:01.951885+00:00"
-  },
-  {
-    "scholar": "王立元",
-    "scholar_url": "https://lywang3081.github.io/",
-    "affiliation": "北京大学",
-    "areas": [
-      "Continual Learning"
-    ],
-    "watch": "general",
-    "kind": "update",
-    "text": "Page content updated",
-    "link": "https://lywang3081.github.io/",
-    "date_str": "",
-    "timestamp": 1782547561.944265,
-    "result_type": "changed",
-    "first_seen": "2026-06-27T08:06:01.951889+00:00"
-  },
-  {
-    "scholar": "吴太强",
-    "scholar_url": "https://wutaiqiang.github.io/",
-    "affiliation": "香港大学",
-    "areas": [
-      "Reasoning"
-    ],
-    "watch": "general",
-    "kind": "update",
-    "text": "Page content updated",
-    "link": "https://wutaiqiang.github.io/",
-    "date_str": "",
-    "timestamp": 1782547561.944265,
-    "result_type": "changed",
-    "first_seen": "2026-06-27T08:06:01.951892+00:00"
   }
 ]
