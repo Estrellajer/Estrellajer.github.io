@@ -1,12 +1,6 @@
 # Scholar Monitor Report
 
-**Run:** 2026-07-22 22:00 UTC  |  **Total:** 58  |  Events 2  |  RSS 1  |  CHG 1  |  FIRST 0  |  OK 53  |  ERR 3
-
----
-## Activity Feed (2)
-
-- **周嘉欢** [北京大学]: Page content updated
-- **Nathan Lambert** [Interconnects]: Open models recap: more on Kimi K3, Qwen 3.8, Xi's WAIC speech, distillation, the open-closed gap, and what's next
+**Run:** 2026-07-23 03:30 UTC  |  **Total:** 58  |  Events 0  |  RSS 0  |  CHG 0  |  FIRST 0  |  OK 55  |  ERR 3
 
 ---
 ## Needs Attention (3)
