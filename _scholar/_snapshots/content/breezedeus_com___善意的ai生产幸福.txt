@@ -1,4 +1,19 @@
 本文聚焦 AI Agents 上下文工程技术，揭秘了从静态提示词工程到动态上下文工程的进化逻辑，还拆解了 Manus 应对上下文腐烂的核心技术与简化至上的实践原则。
+2026-7-25
+LLM
+Generative
+大语言模型
+ChatGPT
+Prompt
+提示词
+OpenAI
+RAG
+Manus
+AI_Agent
+上下文工程
+Context Engineering
+Langchain
+本文聚焦 AI Agents 上下文工程技术，揭秘了从静态提示词工程到动态上下文工程的进化逻辑，还拆解了 Manus 应对上下文腐烂的核心技术与简化至上的实践原则。
 2025-11-28
 LLM
 Generative
@@ -160,27 +175,12 @@ LLM
 Aguvis
 规划推理
 GUI Agents
-Show Lab 和微软推出 ShowUI，这是一个开源的 UI Agent 模型，在中文 APP 识别和导航能力上表现出色。通过创新的视觉 token 选择和独特的训练数据构建方法，该模型在有限的训练数据下实现了非常棒的性能
-2024-12-5
-AI_Agent
-Multi-Agents
-UI Agents
-Web Agents
-Compute Use
-Phone Use
-AutoGLM
-SeeClick
-AppAgents
-Mobile Agents
-VLM
-LLM
-智能体
-ShowUI
-GUI Agents
 1 2 3 4 5
 Breezedeus
 Breezedeus
 最新发布
+企业 AI 转型路线图：从单点试验到可规模化能力
+2026-7-25
 AI Agent 中的上下文工程 (Context Engineering)
 2026-2-12
 GUI Agents（智能体）最新论文
@@ -191,8 +191,6 @@ Mobile-Agent-v3：新的 GUI Agents 开源王者
 2025-9-25
 Pix2Text 新版数学公式检测和识别模型：V1.5
 2025-8-16
-P2T Detailed Infos
-2025-8-6
 公告
 🎉Pix2Text V1.1.1 新版发布🎉
 -- 新版本特性 ---

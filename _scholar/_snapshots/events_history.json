@@ -1,5 +1,224 @@
 [
   {
+    "scholar": "A. Weers Blog",
+    "scholar_url": "https://aweers.de/blog/",
+    "affiliation": "",
+    "areas": [
+      "RL"
+    ],
+    "watch": "general",
+    "kind": "update",
+    "text": "Add contrastive prefix-level credit assignment to outcome-based RL",
+    "link": "https://aweers.de/blog/",
+    "date_str": "",
+    "timestamp": 1785015971.546316,
+    "result_type": "changed",
+    "first_seen": "2026-07-25T21:46:11.546724+00:00"
+  },
+  {
+    "scholar": "A. Weers Blog",
+    "scholar_url": "https://aweers.de/blog/",
+    "affiliation": "",
+    "areas": [
+      "RL"
+    ],
+    "watch": "general",
+    "kind": "update",
+    "text": "Denser rewards, nearly free: contrastive potential shaping",
+    "link": "https://aweers.de/blog/",
+    "date_str": "",
+    "timestamp": 1785015971.546246,
+    "result_type": "changed",
+    "first_seen": "2026-07-25T21:46:11.546732+00:00"
+  },
+  {
+    "scholar": "Breezedeus.com | 善意的AI生产幸福❤",
+    "scholar_url": "https://www.breezedeus.com/",
+    "affiliation": "",
+    "areas": [
+      "Agent",
+      "LLM"
+    ],
+    "watch": "general",
+    "kind": "update",
+    "text": "企业 AI 转型路线图：从单点试验到可规模化能力",
+    "link": "https://www.breezedeus.com/",
+    "date_str": "",
+    "timestamp": 1785015971.546204,
+    "result_type": "changed",
+    "first_seen": "2026-07-25T21:46:11.546736+00:00"
+  },
+  {
+    "scholar": "Breezedeus.com | 善意的AI生产幸福❤",
+    "scholar_url": "https://www.breezedeus.com/",
+    "affiliation": "",
+    "areas": [
+      "Agent",
+      "LLM"
+    ],
+    "watch": "general",
+    "kind": "update",
+    "text": "Langchain",
+    "link": "https://www.breezedeus.com/",
+    "date_str": "",
+    "timestamp": 1785015971.546198,
+    "result_type": "changed",
+    "first_seen": "2026-07-25T21:46:11.546738+00:00"
+  },
+  {
+    "scholar": "Breezedeus.com | 善意的AI生产幸福❤",
+    "scholar_url": "https://www.breezedeus.com/",
+    "affiliation": "",
+    "areas": [
+      "Agent",
+      "LLM"
+    ],
+    "watch": "general",
+    "kind": "update",
+    "text": "Context Engineering",
+    "link": "https://www.breezedeus.com/",
+    "date_str": "",
+    "timestamp": 1785015971.546191,
+    "result_type": "changed",
+    "first_seen": "2026-07-25T21:46:11.546742+00:00"
+  },
+  {
+    "scholar": "Breezedeus.com | 善意的AI生产幸福❤",
+    "scholar_url": "https://www.breezedeus.com/",
+    "affiliation": "",
+    "areas": [
+      "Agent",
+      "LLM"
+    ],
+    "watch": "general",
+    "kind": "update",
+    "text": "上下文工程",
+    "link": "https://www.breezedeus.com/",
+    "date_str": "",
+    "timestamp": 1785015971.546182,
+    "result_type": "changed",
+    "first_seen": "2026-07-25T21:46:11.546744+00:00"
+  },
+  {
+    "scholar": "Breezedeus.com | 善意的AI生产幸福❤",
+    "scholar_url": "https://www.breezedeus.com/",
+    "affiliation": "",
+    "areas": [
+      "Agent",
+      "LLM"
+    ],
+    "watch": "general",
+    "kind": "update",
+    "text": "Manus",
+    "link": "https://www.breezedeus.com/",
+    "date_str": "",
+    "timestamp": 1785015971.546176,
+    "result_type": "changed",
+    "first_seen": "2026-07-25T21:46:11.546747+00:00"
+  },
+  {
+    "scholar": "Breezedeus.com | 善意的AI生产幸福❤",
+    "scholar_url": "https://www.breezedeus.com/",
+    "affiliation": "",
+    "areas": [
+      "Agent",
+      "LLM"
+    ],
+    "watch": "general",
+    "kind": "update",
+    "text": "OpenAI",
+    "link": "https://www.breezedeus.com/",
+    "date_str": "",
+    "timestamp": 1785015971.546171,
+    "result_type": "changed",
+    "first_seen": "2026-07-25T21:46:11.546751+00:00"
+  },
+  {
+    "scholar": "Breezedeus.com | 善意的AI生产幸福❤",
+    "scholar_url": "https://www.breezedeus.com/",
+    "affiliation": "",
+    "areas": [
+      "Agent",
+      "LLM"
+    ],
+    "watch": "general",
+    "kind": "update",
+    "text": "Prompt",
+    "link": "https://www.breezedeus.com/",
+    "date_str": "",
+    "timestamp": 1785015971.546166,
+    "result_type": "changed",
+    "first_seen": "2026-07-25T21:46:11.546754+00:00"
+  },
+  {
+    "scholar": "Breezedeus.com | 善意的AI生产幸福❤",
+    "scholar_url": "https://www.breezedeus.com/",
+    "affiliation": "",
+    "areas": [
+      "Agent",
+      "LLM"
+    ],
+    "watch": "general",
+    "kind": "update",
+    "text": "ChatGPT",
+    "link": "https://www.breezedeus.com/",
+    "date_str": "",
+    "timestamp": 1785015971.54616,
+    "result_type": "changed",
+    "first_seen": "2026-07-25T21:46:11.546757+00:00"
+  },
+  {
+    "scholar": "Breezedeus.com | 善意的AI生产幸福❤",
+    "scholar_url": "https://www.breezedeus.com/",
+    "affiliation": "",
+    "areas": [
+      "Agent",
+      "LLM"
+    ],
+    "watch": "general",
+    "kind": "update",
+    "text": "大语言模型",
+    "link": "https://www.breezedeus.com/",
+    "date_str": "",
+    "timestamp": 1785015971.546153,
+    "result_type": "changed",
+    "first_seen": "2026-07-25T21:46:11.546759+00:00"
+  },
+  {
+    "scholar": "Breezedeus.com | 善意的AI生产幸福❤",
+    "scholar_url": "https://www.breezedeus.com/",
+    "affiliation": "",
+    "areas": [
+      "Agent",
+      "LLM"
+    ],
+    "watch": "general",
+    "kind": "update",
+    "text": "Generative",
+    "link": "https://www.breezedeus.com/",
+    "date_str": "",
+    "timestamp": 1785015971.546145,
+    "result_type": "changed",
+    "first_seen": "2026-07-25T21:46:11.546761+00:00"
+  },
+  {
+    "scholar": "Breezedeus.com | 善意的AI生产幸福❤",
+    "scholar_url": "https://www.breezedeus.com/",
+    "affiliation": "",
+    "areas": [
+      "Agent",
+      "LLM"
+    ],
+    "watch": "general",
+    "kind": "update",
+    "text": "本文聚焦 AI Agents 上下文工程技术，揭秘了从静态提示词工程到动态上下文工程的进化逻辑，还拆解了 Manus 应对上下文腐烂的核心技术与简化至上的实践原则。",
+    "link": "https://www.breezedeus.com/",
+    "date_str": "",
+    "timestamp": 1785015971.546123,
+    "result_type": "changed",
+    "first_seen": "2026-07-25T21:46:11.546764+00:00"
+  },
+  {
     "scholar": "周嘉欢",
     "scholar_url": "https://zhoujiahuan1991.github.io/",
     "affiliation": "北京大学",
@@ -588,214 +807,5 @@
     "timestamp": 1783720471.010902,
     "result_type": "changed",
     "first_seen": "2026-07-10T21:54:31.013759+00:00"
-  },
-  {
-    "scholar": "苏剑林 - 科学空间",
-    "scholar_url": "https://kexue.fm/",
-    "affiliation": "Kimi",
-    "areas": [
-      "LLM",
-      "Theory"
-    ],
-    "watch": "blog",
-    "kind": "post",
-    "text": "让炼丹更科学一些（七）：步长调度与权重平均",
-    "link": "https://kexue.fm/archives/11804",
-    "date_str": "Mon, 06 Jul 2026 10:03:00 +0800",
-    "timestamp": 1783303380.0,
-    "result_type": "rss",
-    "first_seen": "2026-07-06T04:12:22.248814+00:00"
-  },
-  {
-    "scholar": "Lil'Log",
-    "scholar_url": "https://lilianweng.github.io/",
-    "affiliation": "Thinking Machines",
-    "areas": [
-      "LLM"
-    ],
-    "watch": "blog",
-    "kind": "post",
-    "text": "Harness Engineering for Self-Improvement",
-    "link": "https://lilianweng.github.io/posts/2026-07-04-harness/",
-    "date_str": "Sat, 04 Jul 2026 00:00:00 +0000",
-    "timestamp": 1783123200.0,
-    "result_type": "rss_no_change",
-    "first_seen": "2026-07-21T03:25:47.629629+00:00"
-  },
-  {
-    "scholar": "孙宇",
-    "scholar_url": "https://yueatsprograms.github.io/",
-    "affiliation": "英伟达",
-    "areas": [
-      "Test time Scaling"
-    ],
-    "watch": "general",
-    "kind": "update",
-    "text": "Page content updated",
-    "link": "https://yueatsprograms.github.io/",
-    "date_str": "",
-    "timestamp": 1783029718.29818,
-    "result_type": "changed",
-    "first_seen": "2026-07-02T22:01:58.299074+00:00"
-  },
-  {
-    "scholar": "杨恩能",
-    "scholar_url": "https://ennengyang.github.io/",
-    "affiliation": "中山大学",
-    "areas": [
-      "Model Merging"
-    ],
-    "watch": "general",
-    "kind": "update",
-    "text": "2026.07: Our paper on data augmentation has been accepted by TKDE 2026.",
-    "link": "https://ennengyang.github.io/",
-    "date_str": "",
-    "timestamp": 1782864000.0,
-    "result_type": "changed",
-    "first_seen": "2026-07-20T21:57:34.596338+00:00"
-  },
-  {
-    "scholar": "庄辉平",
-    "scholar_url": "https://zhuanghp.github.io/",
-    "affiliation": "华南理工大学",
-    "areas": [
-      "Continual Learning",
-      "Embodied AI"
-    ],
-    "watch": "general",
-    "kind": "update",
-    "text": "2026 Jul 12",
-    "link": "https://zhuanghp.github.io/",
-    "date_str": "",
-    "timestamp": 1782864000.0,
-    "result_type": "changed",
-    "first_seen": "2026-07-12T21:43:09.999294+00:00"
-  },
-  {
-    "scholar": "xuhuiz.com",
-    "scholar_url": "https://xuhuiz.com/",
-    "affiliation": "CMU",
-    "areas": [
-      "RL",
-      "CHI."
-    ],
-    "watch": "general",
-    "kind": "update",
-    "text": "Jul 8, 2026 Excited that five papers were accepted to COLM 2026 : Mind the Sim2Real Gap in User Simulation for Agentic Tasks , SOTOPIA-TOM , Social World Models , GoodPoint , and Training Proactive and Personalized LLM Agents .",
-    "link": "https://xuhuiz.com/",
-    "date_str": "",
-    "timestamp": 1782864000.0,
-    "result_type": "changed",
-    "first_seen": "2026-07-10T03:57:25.053573+00:00"
-  },
-  {
-    "scholar": "杨恩能",
-    "scholar_url": "https://ennengyang.github.io/",
-    "affiliation": "中山大学",
-    "areas": [
-      "Model Merging"
-    ],
-    "watch": "general",
-    "kind": "update",
-    "text": "Hao Jiang$^{\\ast}$, Enneng Yang$^{\\ast}$ ($^{\\ast}$ *indicates co-first authors*), Guojie Zhu$^{\\ast}$, Yibin Chen, Yunkun Xu, Zifu Kou, Jiayi Li, Chong Chen, Zhao Cao, Li Shen",
-    "link": "https://ennengyang.github.io/",
-    "date_str": "",
-    "timestamp": 1782858059.911841,
-    "result_type": "changed",
-    "first_seen": "2026-06-30T22:20:59.912264+00:00"
-  },
-  {
-    "scholar": "杨恩能",
-    "scholar_url": "https://ennengyang.github.io/",
-    "affiliation": "中山大学",
-    "areas": [
-      "Model Merging"
-    ],
-    "watch": "general",
-    "kind": "paper",
-    "text": "`Arxiv 2026` \\",
-    "link": "https://ennengyang.github.io/",
-    "date_str": "",
-    "timestamp": 1782858059.911824,
-    "result_type": "changed",
-    "first_seen": "2026-06-30T22:20:59.912272+00:00"
-  },
-  {
-    "scholar": "杨恩能",
-    "scholar_url": "https://ennengyang.github.io/",
-    "affiliation": "中山大学",
-    "areas": [
-      "Model Merging"
-    ],
-    "watch": "general",
-    "kind": "paper",
-    "text": "- [LLM Evolution as an Industry-Scale Ecosystem: A Lifecycle Perspective on Continual Learning](https://arxiv.org/pdf/2606.24901) \\",
-    "link": "https://ennengyang.github.io/",
-    "date_str": "",
-    "timestamp": 1782858059.911808,
-    "result_type": "changed",
-    "first_seen": "2026-06-30T22:20:59.912276+00:00"
-  },
-  {
-    "scholar": "Nathan Lambert",
-    "scholar_url": "https://www.interconnects.ai/",
-    "affiliation": "Interconnects",
-    "areas": [],
-    "watch": "blog",
-    "kind": "post",
-    "text": "Latest open artifacts (#22): Zyphra, Cohere, and Poolside are expanding the breadth of the ecosystem",
-    "link": "https://www.interconnects.ai/p/artifacts-22-zyphra-cohere-and-poolside",
-    "date_str": "Sun, 28 Jun 2026 17:03:07 GMT",
-    "timestamp": 1782666187.0,
-    "result_type": "rss",
-    "first_seen": "2026-06-28T22:06:24.184557+00:00"
-  },
-  {
-    "scholar": "K.I.S.S",
-    "scholar_url": "https://bigeagle.me/",
-    "affiliation": "Kimi",
-    "areas": [
-      "LLM"
-    ],
-    "watch": "general",
-    "kind": "update",
-    "text": "dnsmasq 的默认上游是静态配置，并不是在所有网络环境中都能直接用 114 了事，尤其是在一些需要认证的环境中 需要改系统的 DNS 配置，同时每次系统更新之后又要重新改一遍 直到昨天我才知道 BSD 系支持一个按域名设置 resolver 的功能 (man 5 resolver)，直接用就好了。 Read more",
-    "link": "https://bigeagle.me/",
-    "date_str": "",
-    "timestamp": 1782547561.944584,
-    "result_type": "changed",
-    "first_seen": "2026-06-27T08:06:01.951868+00:00"
-  },
-  {
-    "scholar": "K.I.S.S",
-    "scholar_url": "https://bigeagle.me/",
-    "affiliation": "Kimi",
-    "areas": [
-      "LLM"
-    ],
-    "watch": "general",
-    "kind": "update",
-    "text": "之前我一直使用 dnsmasq 实现按域名切换解析，这样的话有几个问题：",
-    "link": "https://bigeagle.me/",
-    "date_str": "",
-    "timestamp": 1782547561.944574,
-    "result_type": "changed",
-    "first_seen": "2026-06-27T08:06:01.951881+00:00"
-  },
-  {
-    "scholar": "K.I.S.S",
-    "scholar_url": "https://bigeagle.me/",
-    "affiliation": "Kimi",
-    "areas": [
-      "LLM"
-    ],
-    "watch": "general",
-    "kind": "update",
-    "text": "在工作用的电脑上，为了访问公司内网，需要让内网域名走公司的 DNS 服务器，而其他域名走公共 DNS 服务器。",
-    "link": "https://bigeagle.me/",
-    "date_str": "",
-    "timestamp": 1782547561.944565,
-    "result_type": "changed",
-    "first_seen": "2026-06-27T08:06:01.951885+00:00"
   }
 ]

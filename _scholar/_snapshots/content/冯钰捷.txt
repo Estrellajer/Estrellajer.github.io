@@ -34,6 +34,9 @@ Remote Sensing Letters 10 (12), 1192-1200, 2019 2019
 Continual dialogue state tracking via reason-of-select distillation
 Y Feng, B Liu, X Dong, Z Lu, LM Zhan, A Lam, XM Wu
 Findings of ACL 2024 Long Paper, 2024 2024
+DearLLM: Enhancing Personalized Healthcare via Large Language Models-Deduced Feature Correlations
+Y Xu, X Jiang, X Chu, R Qiu, Y Feng, H Ding, J Zhao, Y Wang, B Xie
+AAAI 2025, 2025 2025
 Geoedit: Geometric knowledge editing for large language models
 Y Feng, L Zhan, Z Lu, Y Xu, X Chu, Y Wang, J Cao, PS Yu, XM Wu
 EMNLP 2025 Long Paper, 2025 2025
@@ -43,9 +46,6 @@ IEEE Transactions on Big Data 9 (4), 1057-1070, 2022 2022
 DEAL: Disentangling Transformer Head Activations for LLM Steering
 LM Zhan, LIU Bo, Z Lu, Y Feng, C Xie, J Cao, XM Wu
 Knowledgeable Foundation Models at ACL 2025, 2025 2025
-DearLLM: Enhancing Personalized Healthcare via Large Language Models-Deduced Feature Correlations
-Y Xu, X Jiang, X Chu, R Qiu, Y Feng, H Ding, J Zhao, Y Wang, B Xie
-AAAI 2025, 2025 2025
 AIMMerging: Adaptive Iterative Model Merging Using Training Trajectories for Language Model Continual Learning
 Y Feng, J Li, X Dong, P Xu, X Zhou, Y Zhang, Z Lu, Y Wang, A Zhao, ...
 EMNLP 2025 Long Paper, 2025 2025
