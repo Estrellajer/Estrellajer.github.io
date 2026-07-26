@@ -15,7 +15,7 @@ Fall 2025: CMSC848K Multimodal Foundation Models
 Spring 2025: CMSC426 Computer Vision | Student evaluation
 Spring 2025: CMSC800 How to Conduct Great Research | Student evaluation
 Fall 2024: CMSC848K Multimodal Foundation Models | Student evaluation (MS) | Student evaluation (PhD)
-Prospective Ph.D. students starting in Fall 2026 :
+Prospective Ph.D. students starting in Fall 2027 :
 If you are not at UMD: We will be recruiting highly motivated Ph.D. students to join our lab.
 Please apply through the CS department and include my name as a potential advisor in your application.
 If you are already a UMD student, please email me your CV, prior experiences, and how you would like to get involved.
@@ -100,6 +100,12 @@ Chen Gao (Intern 2018), next PhD student at Virginia Tech.
 Yen-Chen Lin (Intern 2017), next PhD student at MIT.
 Hao-Wei Yeh (Intern 2017), next PhD student at University of Tokyo.
 Publications
+Masked Visual Actions for Unified World Modeling
+Hadi Alzayer , Wenlong Huang , Haonan Chen , Christopher Luey , Lvmin Zhang , Maneesh Agrawala , Gordon Wetzstein , Li Fei-Fei , Yilun Du , Jiajun Wu , Jia-Bin Huang
+arXiv 2026
+[ Paper (PDF) ]
+[ Project page ]
+[ Code ]
 μ₀: A Scalable 3D Interaction-Trace World Model
 Seungjae Lee *, Yoonkyo Jung *, Jusuk Lee , Jonghun Shin , Amir Hossein Shahidzadeh , Yao-Chih Lee , H. Jin Kim , Jia-Bin Huang †, Furong Huang †
 arXiv 2026

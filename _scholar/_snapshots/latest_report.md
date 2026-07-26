@@ -1,18 +1,18 @@
 # Scholar Monitor Report
 
-**Run:** 2026-07-26 03:36 UTC  |  **Total:** 58  |  Events 8  |  RSS 0  |  CHG 2  |  FIRST 0  |  OK 53  |  ERR 3
+**Run:** 2026-07-26 21:52 UTC  |  **Total:** 58  |  Events 8  |  RSS 0  |  CHG 3  |  FIRST 0  |  OK 52  |  ERR 3
 
 ---
 ## Activity Feed (8)
 
-- **Breezedeus.com | 善意的AI生产幸福❤**: AI 治理
-- **Breezedeus.com | 善意的AI生产幸福❤**: 组织变革
-- **Breezedeus.com | 善意的AI生产幸福❤**: GenAIOps
-- **Breezedeus.com | 善意的AI生产幸福❤**: 企业级 AI
-- **Breezedeus.com | 善意的AI生产幸福❤**: AI 规模化
-- **Breezedeus.com | 善意的AI生产幸福❤**: 企业 AI 转型
-- **Breezedeus.com | 善意的AI生产幸福❤**: AI 战略路线图
-- **王立元** [北京大学]: 2026/07 We are organizing the 1st CL4FMAgents Workshop at NeurIPS 2026.
+- **黄家斌**: [ Code ]
+- **黄家斌**: [ Project page ]
+- **黄家斌**: [ Paper (PDF) ]
+- **黄家斌**: arXiv 2026
+- **黄家斌**: Hadi Alzayer , Wenlong Huang , Haonan Chen , Christopher Luey , Lvmin Zhang , Maneesh Agrawala , Gordon Wetzstein , Li F
+- **黄家斌**: Masked Visual Actions for Unified World Modeling
+- **A. Weers Blog**: Page content updated
+- **董功**: (July 2026) I accepted to serve as an Area Chair for AAAI 2027.
 
 ---
 ## Needs Attention (3)

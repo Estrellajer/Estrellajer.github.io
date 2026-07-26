@@ -1,6 +1,6 @@
 Blog
 Denser rewards, nearly free: contrastive potential shaping
-July 25, 2026 · 34 min read
+July 25, 2026 · 35 min read
 Add contrastive prefix-level credit assignment to outcome-based RL
 State of RL for reasoning LLMs
 March 15, 2026 · 26 min read
