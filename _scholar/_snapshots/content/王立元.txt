@@ -2,6 +2,7 @@ I am currently an Assistant Professor at the Department of Psychological and Cog
 We are recuiting self-motivated postdocs and research interns! Directions include: continual learning, agent memory, AI4Science, AI4Health. Please contact me if you are interested.
 My email address is changed to liyuanwang@tsinghua.edu.cn and wly19@tsinghua.org.cn .
 Recent News
+2026/07 We are organizing the 1st CL4FMAgents Workshop at NeurIPS 2026.
 2026/06 One paper is accepted (in principle) to Nature Communications.
 2026/05 Three papers are accepted to ICML.
 2026/04 One paper is accepted to Nature Communications.
@@ -14,7 +15,7 @@ Recent News
 2025/10 One paper is accepted to Nature Machine Intelligence.
 2025/07 I received the WAIC Youth Outstanding Paper Award.
 2025/06 I was awarded the CAAI Rising Scientist.
-2025/05 We are organizing the 6th CLVision Workshop in ICCV 2025.
+2025/05 We are organizing the 6th CLVision Workshop at ICCV 2025.
 2025/04 One paper is accepted to IEEE TPAMI.
 2025/04 I will serve as an Area Chair at NeurIPS 2025.
 2024/09 I received the Excellent Conference Poster Award in CNS 2024.
@@ -38,7 +39,7 @@ Xiaopei Zhu$^{\ast}$, Jiongchen Zhang$^{\ast}$, Liyuan Wang $^{\ast}$, Xitong Li
 Accepted in Principle to Nature Communications , 2026.
 Brain-Inspired Spatial Intelligence for Embodied Agents.
 Shouwei Ruan$^{\ast}$, Liyuan Wang $^{\ast}$, Caixin Kang, Qihui Zhu, Songming Liu, Xingxing Wei, Hang Su.
-Accepted to Nature Communications , 2026.
+Nature Communications , 2026.
 Spacing Effect Improves Generalization in Biological and Artificial Systems.
 Guanglong Sun, Ning Huang, Hongwei Yan, Jun Zhou, Qian Li, Bo Lei, Yi Zhong, Liyuan Wang $^\dagger$.
 Patterns , Cover Paper , 2026.

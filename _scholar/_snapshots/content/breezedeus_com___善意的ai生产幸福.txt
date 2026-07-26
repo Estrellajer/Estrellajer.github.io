@@ -1,18 +1,13 @@
 本文聚焦 AI Agents 上下文工程技术，揭秘了从静态提示词工程到动态上下文工程的进化逻辑，还拆解了 Manus 应对上下文腐烂的核心技术与简化至上的实践原则。
 2026-7-25
-LLM
-Generative
-大语言模型
-ChatGPT
-Prompt
-提示词
-OpenAI
-RAG
-Manus
+AI 战略路线图
+企业 AI 转型
+AI 规模化
+企业级 AI
 AI_Agent
-上下文工程
-Context Engineering
-Langchain
+GenAIOps
+组织变革
+AI 治理
 本文聚焦 AI Agents 上下文工程技术，揭秘了从静态提示词工程到动态上下文工程的进化逻辑，还拆解了 Manus 应对上下文腐烂的核心技术与简化至上的实践原则。
 2025-11-28
 LLM
@@ -180,7 +175,7 @@ Breezedeus
 Breezedeus
 最新发布
 企业 AI 转型路线图：从单点试验到可规模化能力
-2026-7-25
+2026-7-26
 AI Agent 中的上下文工程 (Context Engineering)
 2026-2-12
 GUI Agents（智能体）最新论文
