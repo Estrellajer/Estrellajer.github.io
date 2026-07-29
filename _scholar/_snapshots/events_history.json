@@ -1,5 +1,22 @@
 [
   {
+    "scholar": "苏剑林 - 科学空间",
+    "scholar_url": "https://kexue.fm/",
+    "affiliation": "Kimi",
+    "areas": [
+      "LLM",
+      "Theory"
+    ],
+    "watch": "blog",
+    "kind": "post",
+    "text": "解构Scaling Law：优化、架构、数据的三重奏",
+    "link": "https://kexue.fm/archives/11833",
+    "date_str": "Wed, 29 Jul 2026 20:47:00 +0800",
+    "timestamp": 1785329220.0,
+    "result_type": "rss",
+    "first_seen": "2026-07-29T21:54:07.372885+00:00"
+  },
+  {
     "scholar": "黄家斌",
     "scholar_url": "https://jbhuang0604.github.io/",
     "affiliation": "",
@@ -797,21 +814,5 @@
     "timestamp": 1783874862.0,
     "result_type": "rss",
     "first_seen": "2026-07-12T21:43:09.999290+00:00"
-  },
-  {
-    "scholar": "胡君耀",
-    "scholar_url": "https://junyaohu.github.io/",
-    "affiliation": "",
-    "areas": [
-      "CV"
-    ],
-    "watch": "news",
-    "kind": "news",
-    "text": "Earlier updates",
-    "link": "https://junyaohu.github.io/",
-    "date_str": "",
-    "timestamp": 1783806134.241437,
-    "result_type": "changed",
-    "first_seen": "2026-07-11T21:42:14.241899+00:00"
   }
 ]

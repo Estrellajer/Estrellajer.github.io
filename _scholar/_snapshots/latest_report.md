@@ -1,6 +1,11 @@
 # Scholar Monitor Report
 
-**Run:** 2026-07-29 03:20 UTC  |  **Total:** 58  |  Events 0  |  RSS 0  |  CHG 0  |  FIRST 0  |  OK 55  |  ERR 3
+**Run:** 2026-07-29 21:54 UTC  |  **Total:** 58  |  Events 1  |  RSS 1  |  CHG 0  |  FIRST 0  |  OK 54  |  ERR 3
+
+---
+## Activity Feed (1)
+
+- **苏剑林 - 科学空间** [Kimi]: 解构Scaling Law：优化、架构、数据的三重奏
 
 ---
 ## Needs Attention (3)
