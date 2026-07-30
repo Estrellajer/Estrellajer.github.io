@@ -1,4 +1,14 @@
-本文聚焦 AI Agents 上下文工程技术，揭秘了从静态提示词工程到动态上下文工程的进化逻辑，还拆解了 Manus 应对上下文腐烂的核心技术与简化至上的实践原则。
+从每秒一帧的客户端采样到原生全双工 AV2AV，系统梳理实时流式音视频多模态的六条技术路线：增量 prefill 与 KV/GDN 状态、共享时间轴、显式说话触发、异步思考、模态专家，以及因果音视频生成；并拆解 Qwen3.5-Omni、MiniCPM-o、ROMA、DuplexOmni、ELLSA 与 Wan-Streamer 的实现边界与选型要点。
+2026-7-30
+多模态学习
+Multimodal Learning
+多模态模型
+视频
+VLM
+LLM
+Transformer
+AI_Agent
+本文基于微软《The AI Strategy Roadmap》，总结企业 AI 从单点试验走向规模化的关键：从边界清晰、结果可测的真实业务问题开始；把数据契约、评测集、权限、监控和人工接管沉淀为可复用资产；再用清晰的组织责任与治理机制，把一次成功复制到下一个用例。真正值得规模化的，不是又上线一个 Agent，而是又验证并积累一套能重复交付业务结果的组织能力。
 2026-7-25
 AI 战略路线图
 企业 AI 转型
@@ -153,29 +163,14 @@ LLM
 UI-TARS
 ByteDance
 GUI Agents
-本文介绍来自 HKU & Salesforce 的 Aguvis。Aguvis 构建了统一的 grounding 和 reasoning 大数据集，采用两阶段训练方式提升模型在 GUI 交互中的规划推理能力。
-2024-12-13
-AI_Agent
-Multi-Agents
-UI Agents
-Web Agents
-Compute Use
-Phone Use
-AutoGLM
-AppAgents
-Mobile Agents
-VLM
-LLM
-智能体
-Aguvis
-规划推理
-GUI Agents
 1 2 3 4 5
 Breezedeus
 Breezedeus
 最新发布
+模型如何一边看、一边听、一边回应：实时流式音视频多模态模型技术路线
+2026-7-30
 企业 AI 转型路线图：从单点试验到可规模化能力
-2026-7-26
+2026-7-30
 AI Agent 中的上下文工程 (Context Engineering)
 2026-2-12
 GUI Agents（智能体）最新论文
@@ -184,8 +179,6 @@ AI Agent 性能优化：核心策略与实战技巧
 2025-10-22
 Mobile-Agent-v3：新的 GUI Agents 开源王者
 2025-9-25
-Pix2Text 新版数学公式检测和识别模型：V1.5
-2025-8-16
 公告
 🎉Pix2Text V1.1.1 新版发布🎉
 -- 新版本特性 ---

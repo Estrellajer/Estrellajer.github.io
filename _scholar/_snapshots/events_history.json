@@ -1,5 +1,124 @@
 [
   {
+    "scholar": "Breezedeus.com | 善意的AI生产幸福❤",
+    "scholar_url": "https://www.breezedeus.com/",
+    "affiliation": "",
+    "areas": [
+      "Agent",
+      "LLM"
+    ],
+    "watch": "general",
+    "kind": "update",
+    "text": "模型如何一边看、一边听、一边回应：实时流式音视频多模态模型技术路线",
+    "link": "https://www.breezedeus.com/",
+    "date_str": "",
+    "timestamp": 1785448882.318388,
+    "result_type": "changed",
+    "first_seen": "2026-07-30T22:01:22.318928+00:00"
+  },
+  {
+    "scholar": "Breezedeus.com | 善意的AI生产幸福❤",
+    "scholar_url": "https://www.breezedeus.com/",
+    "affiliation": "",
+    "areas": [
+      "Agent",
+      "LLM"
+    ],
+    "watch": "general",
+    "kind": "update",
+    "text": "本文基于微软《The AI Strategy Roadmap》，总结企业 AI 从单点试验走向规模化的关键：从边界清晰、结果可测的真实业务问题开始；把数据契约、评测集、权限、监控和人工接管沉淀为可复用资产；再用清晰的组织责任与治理机制，把一次成功复制到下一个用例。真正值得规模化的，不是又上线一个 Agent，而是又验证并积累一套能重复交付业务结果的组织能力。",
+    "link": "https://www.breezedeus.com/",
+    "date_str": "",
+    "timestamp": 1785448882.318378,
+    "result_type": "changed",
+    "first_seen": "2026-07-30T22:01:22.318936+00:00"
+  },
+  {
+    "scholar": "Breezedeus.com | 善意的AI生产幸福❤",
+    "scholar_url": "https://www.breezedeus.com/",
+    "affiliation": "",
+    "areas": [
+      "Agent",
+      "LLM"
+    ],
+    "watch": "general",
+    "kind": "update",
+    "text": "Transformer",
+    "link": "https://www.breezedeus.com/",
+    "date_str": "",
+    "timestamp": 1785448882.318364,
+    "result_type": "changed",
+    "first_seen": "2026-07-30T22:01:22.318940+00:00"
+  },
+  {
+    "scholar": "Breezedeus.com | 善意的AI生产幸福❤",
+    "scholar_url": "https://www.breezedeus.com/",
+    "affiliation": "",
+    "areas": [
+      "Agent",
+      "LLM"
+    ],
+    "watch": "general",
+    "kind": "update",
+    "text": "多模态模型",
+    "link": "https://www.breezedeus.com/",
+    "date_str": "",
+    "timestamp": 1785448882.318358,
+    "result_type": "changed",
+    "first_seen": "2026-07-30T22:01:22.318942+00:00"
+  },
+  {
+    "scholar": "Breezedeus.com | 善意的AI生产幸福❤",
+    "scholar_url": "https://www.breezedeus.com/",
+    "affiliation": "",
+    "areas": [
+      "Agent",
+      "LLM"
+    ],
+    "watch": "general",
+    "kind": "update",
+    "text": "Multimodal Learning",
+    "link": "https://www.breezedeus.com/",
+    "date_str": "",
+    "timestamp": 1785448882.318351,
+    "result_type": "changed",
+    "first_seen": "2026-07-30T22:01:22.318945+00:00"
+  },
+  {
+    "scholar": "Breezedeus.com | 善意的AI生产幸福❤",
+    "scholar_url": "https://www.breezedeus.com/",
+    "affiliation": "",
+    "areas": [
+      "Agent",
+      "LLM"
+    ],
+    "watch": "general",
+    "kind": "update",
+    "text": "多模态学习",
+    "link": "https://www.breezedeus.com/",
+    "date_str": "",
+    "timestamp": 1785448882.318341,
+    "result_type": "changed",
+    "first_seen": "2026-07-30T22:01:22.318948+00:00"
+  },
+  {
+    "scholar": "Breezedeus.com | 善意的AI生产幸福❤",
+    "scholar_url": "https://www.breezedeus.com/",
+    "affiliation": "",
+    "areas": [
+      "Agent",
+      "LLM"
+    ],
+    "watch": "general",
+    "kind": "update",
+    "text": "从每秒一帧的客户端采样到原生全双工 AV2AV，系统梳理实时流式音视频多模态的六条技术路线：增量 prefill 与 KV/GDN 状态、共享时间轴、显式说话触发、异步思考、模态专家，以及因果音视频生成；并拆解 Qwen3.5-Omni、MiniCPM-o、ROMA、DuplexOmni、ELLSA 与 Wan-Streamer 的实现边界与选型要点。",
+    "link": "https://www.breezedeus.com/",
+    "date_str": "",
+    "timestamp": 1785448882.318315,
+    "result_type": "changed",
+    "first_seen": "2026-07-30T22:01:22.318951+00:00"
+  },
+  {
     "scholar": "苏剑林 - 科学空间",
     "scholar_url": "https://kexue.fm/",
     "affiliation": "Kimi",
@@ -706,113 +825,5 @@
     "timestamp": 1784191620.0,
     "result_type": "rss",
     "first_seen": "2026-07-16T21:58:30.306002+00:00"
-  },
-  {
-    "scholar": "Xiongda Blog",
-    "scholar_url": "https://www.xxrbear.cn/",
-    "affiliation": "Software",
-    "areas": [],
-    "watch": "general",
-    "kind": "update",
-    "text": "每个人都应该做的事（第二部分）：编码规范",
-    "link": "https://www.xxrbear.cn/posts/tech/base/stuff-everyone-should-do-part2/",
-    "date_str": "Wed, 15 Jul 2026 11:16:13 +0800",
-    "timestamp": 1784085373.0,
-    "result_type": "rss",
-    "first_seen": "2026-07-15T21:52:29.088148+00:00"
-  },
-  {
-    "scholar": "周大蔚",
-    "scholar_url": "https://www.lamda.nju.edu.cn/zhoudw/",
-    "affiliation": "NJU LAMDA",
-    "areas": [
-      "Continual Learning"
-    ],
-    "watch": "general",
-    "kind": "update",
-    "text": "[ Media ]",
-    "link": "https://www.lamda.nju.edu.cn/zhoudw/",
-    "date_str": "",
-    "timestamp": 1784065882.568388,
-    "result_type": "changed",
-    "first_seen": "2026-07-03T22:00:02.483326+00:00"
-  },
-  {
-    "scholar": "孙科",
-    "scholar_url": "https://sites.google.com/view/kesun",
-    "affiliation": "宾夕法尼亚大学",
-    "areas": [
-      "Continuing RL"
-    ],
-    "watch": "general",
-    "kind": "update",
-    "text": "Page content updated",
-    "link": "https://sites.google.com/view/kesun",
-    "date_str": "",
-    "timestamp": 1784065882.567796,
-    "result_type": "changed",
-    "first_seen": "2026-07-07T22:10:22.702433+00:00"
-  },
-  {
-    "scholar": "Xiongda Blog",
-    "scholar_url": "https://www.xxrbear.cn/",
-    "affiliation": "Software",
-    "areas": [],
-    "watch": "general",
-    "kind": "update",
-    "text": "十倍效率程序员",
-    "link": "https://www.xxrbear.cn/posts/tech/base/ten-times-more-efficient-programmers/",
-    "date_str": "Tue, 14 Jul 2026 17:31:32 +0800",
-    "timestamp": 1784021492.0,
-    "result_type": "rss",
-    "first_seen": "2026-07-14T21:51:22.568873+00:00"
-  },
-  {
-    "scholar": "苏剑林 - 科学空间",
-    "scholar_url": "https://kexue.fm/",
-    "affiliation": "Kimi",
-    "areas": [
-      "LLM",
-      "Theory"
-    ],
-    "watch": "blog",
-    "kind": "post",
-    "text": "LogSumExp和Softmax的泰勒展开",
-    "link": "https://kexue.fm/archives/11814",
-    "date_str": "Mon, 13 Jul 2026 11:04:00 +0800",
-    "timestamp": 1783911840.0,
-    "result_type": "rss",
-    "first_seen": "2026-07-13T03:38:08.203168+00:00"
-  },
-  {
-    "scholar": "庄辉平",
-    "scholar_url": "https://zhuanghp.github.io/",
-    "affiliation": "华南理工大学",
-    "areas": [
-      "Continual Learning",
-      "Embodied AI"
-    ],
-    "watch": "general",
-    "kind": "update",
-    "text": "We have 2 papers accepted by ECCV 2026!",
-    "link": "https://zhuanghp.github.io/",
-    "date_str": "",
-    "timestamp": 1783892589.998868,
-    "result_type": "changed",
-    "first_seen": "2026-07-12T21:43:09.999257+00:00"
-  },
-  {
-    "scholar": "Nathan Lambert",
-    "scholar_url": "https://www.interconnects.ai/",
-    "affiliation": "Interconnects",
-    "areas": [],
-    "watch": "blog",
-    "kind": "post",
-    "text": "6 months to live for open models",
-    "link": "https://www.interconnects.ai/p/6-months-to-live-for-open-models",
-    "date_str": "Sun, 12 Jul 2026 16:47:42 GMT",
-    "timestamp": 1783874862.0,
-    "result_type": "rss",
-    "first_seen": "2026-07-12T21:43:09.999290+00:00"
   }
 ]
