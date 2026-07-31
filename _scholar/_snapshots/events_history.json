@@ -1,5 +1,38 @@
 [
   {
+    "scholar": "Breezedeus.com | 善意的AI生产幸福❤",
+    "scholar_url": "https://www.breezedeus.com/",
+    "affiliation": "",
+    "areas": [
+      "Agent",
+      "LLM"
+    ],
+    "watch": "general",
+    "kind": "update",
+    "text": "模型如何边看边听、边回应：实时流式多模态模型技术路线",
+    "link": "https://www.breezedeus.com/",
+    "date_str": "",
+    "timestamp": 1785535194.456657,
+    "result_type": "changed",
+    "first_seen": "2026-07-31T21:59:54.457115+00:00"
+  },
+  {
+    "scholar": "王立元",
+    "scholar_url": "https://lywang3081.github.io/",
+    "affiliation": "北京大学",
+    "areas": [
+      "Continual Learning"
+    ],
+    "watch": "general",
+    "kind": "update",
+    "text": "Page content updated",
+    "link": "https://lywang3081.github.io/",
+    "date_str": "",
+    "timestamp": 1785535194.455846,
+    "result_type": "changed",
+    "first_seen": "2026-07-31T21:59:54.457155+00:00"
+  },
+  {
     "scholar": "孙科",
     "scholar_url": "https://sites.google.com/view/kesun",
     "affiliation": "宾夕法尼亚大学",
@@ -792,37 +825,5 @@
     "timestamp": 1784497438.900602,
     "result_type": "changed",
     "first_seen": "2026-07-19T21:43:58.901072+00:00"
-  },
-  {
-    "scholar": "周嘉欢",
-    "scholar_url": "https://zhoujiahuan1991.github.io/",
-    "affiliation": "北京大学",
-    "areas": [
-      "Continual Learning"
-    ],
-    "watch": "general",
-    "kind": "paper",
-    "text": "07.2026, Invited to serve as the Senior Program Committee of AAAI'2027.",
-    "link": "https://zhoujiahuan1991.github.io/",
-    "date_str": "",
-    "timestamp": 1784497438.900584,
-    "result_type": "changed",
-    "first_seen": "2026-07-19T21:43:58.901076+00:00"
-  },
-  {
-    "scholar": "Chongjie Si",
-    "scholar_url": "https://chongjiesi.site/home/",
-    "affiliation": "上海交通大学",
-    "areas": [
-      "Optimize theory"
-    ],
-    "watch": "general",
-    "kind": "update",
-    "text": "📘 One paper has been accepted to ECCV 2026.",
-    "link": "https://chongjiesi.site/home/",
-    "date_str": "",
-    "timestamp": 1784410991.337039,
-    "result_type": "changed",
-    "first_seen": "2026-07-18T21:43:11.337485+00:00"
   }
 ]

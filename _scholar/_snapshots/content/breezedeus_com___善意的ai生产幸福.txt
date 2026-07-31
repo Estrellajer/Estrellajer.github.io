@@ -1,5 +1,5 @@
 从每秒一帧的客户端采样到原生全双工 AV2AV，系统梳理实时流式音视频多模态的六条技术路线：增量 prefill 与 KV/GDN 状态、共享时间轴、显式说话触发、异步思考、模态专家，以及因果音视频生成；并拆解 Qwen3.5-Omni、MiniCPM-o、ROMA、DuplexOmni、ELLSA 与 Wan-Streamer 的实现边界与选型要点。
-2026-7-30
+2026-8-1
 多模态学习
 Multimodal Learning
 多模态模型
@@ -167,8 +167,8 @@ GUI Agents
 Breezedeus
 Breezedeus
 最新发布
-模型如何一边看、一边听、一边回应：实时流式音视频多模态模型技术路线
-2026-7-30
+模型如何边看边听、边回应：实时流式多模态模型技术路线
+2026-7-31
 企业 AI 转型路线图：从单点试验到可规模化能力
 2026-7-30
 AI Agent 中的上下文工程 (Context Engineering)

@@ -1,11 +1,12 @@
 # Scholar Monitor Report
 
-**Run:** 2026-07-31 03:35 UTC  |  **Total:** 58  |  Events 1  |  RSS 0  |  CHG 1  |  FIRST 0  |  OK 54  |  ERR 3
+**Run:** 2026-07-31 21:59 UTC  |  **Total:** 58  |  Events 2  |  RSS 0  |  CHG 2  |  FIRST 0  |  OK 53  |  ERR 3
 
 ---
-## Activity Feed (1)
+## Activity Feed (2)
 
-- **孙科** [宾夕法尼亚大学]: Page content updated
+- **Breezedeus.com | 善意的AI生产幸福❤**: 模型如何边看边听、边回应：实时流式多模态模型技术路线
+- **王立元** [北京大学]: Page content updated
 
 ---
 ## Needs Attention (3)
