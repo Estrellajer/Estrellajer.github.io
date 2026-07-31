@@ -14,7 +14,7 @@ My research interest is reinforcement learning , especially the foundation-cente
 Uncertainty & Exploration : Distributional Learning and Risk Control, Entropy Regularization and Exploration
 Robustness & Adaptation : Environmental Nonstationarity , Safe/Robust RL, Transfer/Multi-task/Meta/ Continual RL
 Offline & Causality : Imitation learning, Offline and Hy brid RL, Causal RL, Adaptive Experimental Design
-[2] Foundations in RL for General Intelligence (RL as Optimization Tool vs Problem Formulation):
+[2] Foundations in RL for General Decision Intelligence (RL as Optimization Tool vs Problem Formulation):
 Language & Agentic AI : Alignment, Reasoning RL, Agentic RL
 Robotics & Embodied AI : Model-based RL and World Model, Generative and Self-supervised RL, Multi-agent RL
 Selected Preprints / Publications [ Full Publications ]

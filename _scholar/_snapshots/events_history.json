@@ -1,5 +1,21 @@
 [
   {
+    "scholar": "孙科",
+    "scholar_url": "https://sites.google.com/view/kesun",
+    "affiliation": "宾夕法尼亚大学",
+    "areas": [
+      "Continuing RL"
+    ],
+    "watch": "general",
+    "kind": "update",
+    "text": "Page content updated",
+    "link": "https://sites.google.com/view/kesun",
+    "date_str": "",
+    "timestamp": 1785468924.387635,
+    "result_type": "changed",
+    "first_seen": "2026-07-31T03:35:24.388459+00:00"
+  },
+  {
     "scholar": "Breezedeus.com | 善意的AI生产幸福❤",
     "scholar_url": "https://www.breezedeus.com/",
     "affiliation": "",
@@ -808,22 +824,5 @@
     "timestamp": 1784410991.337039,
     "result_type": "changed",
     "first_seen": "2026-07-18T21:43:11.337485+00:00"
-  },
-  {
-    "scholar": "苏剑林 - 科学空间",
-    "scholar_url": "https://kexue.fm/",
-    "affiliation": "Kimi",
-    "areas": [
-      "LLM",
-      "Theory"
-    ],
-    "watch": "blog",
-    "kind": "post",
-    "text": "基于排序不等式的相似度指标",
-    "link": "https://kexue.fm/archives/11818",
-    "date_str": "Thu, 16 Jul 2026 16:47:00 +0800",
-    "timestamp": 1784191620.0,
-    "result_type": "rss",
-    "first_seen": "2026-07-16T21:58:30.306002+00:00"
   }
 ]
