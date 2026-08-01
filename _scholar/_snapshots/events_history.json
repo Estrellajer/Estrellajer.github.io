@@ -1,5 +1,37 @@
 [
   {
+    "scholar": "Thinking Machines Lab",
+    "scholar_url": "https://thinkingmachines.ai/blog/",
+    "affiliation": "Thinking Machines",
+    "areas": [
+      "LLM"
+    ],
+    "watch": "general",
+    "kind": "update",
+    "text": "Thinking Machines",
+    "link": "https://thinkingmachines.ai/blog/",
+    "date_str": "",
+    "timestamp": 1785555317.912136,
+    "result_type": "changed",
+    "first_seen": "2026-08-01T03:35:17.912507+00:00"
+  },
+  {
+    "scholar": "Thinking Machines Lab",
+    "scholar_url": "https://thinkingmachines.ai/blog/",
+    "affiliation": "Thinking Machines",
+    "areas": [
+      "LLM"
+    ],
+    "watch": "general",
+    "kind": "update",
+    "text": "A Safe Path to Open Weights",
+    "link": "https://thinkingmachines.ai/blog/",
+    "date_str": "",
+    "timestamp": 1785555317.912099,
+    "result_type": "changed",
+    "first_seen": "2026-08-01T03:35:17.912514+00:00"
+  },
+  {
     "scholar": "Breezedeus.com | 善意的AI生产幸福❤",
     "scholar_url": "https://www.breezedeus.com/",
     "affiliation": "",
@@ -793,37 +825,5 @@
     "timestamp": 1784562508.0,
     "result_type": "rss",
     "first_seen": "2026-07-20T21:57:34.596333+00:00"
-  },
-  {
-    "scholar": "周嘉欢",
-    "scholar_url": "https://zhoujiahuan1991.github.io/",
-    "affiliation": "北京大学",
-    "areas": [
-      "Continual Learning"
-    ],
-    "watch": "general",
-    "kind": "paper",
-    "text": "The AAAI Conference on Artificial Intelligence (AAAI)",
-    "link": "https://zhoujiahuan1991.github.io/",
-    "date_str": "",
-    "timestamp": 1784497438.900614,
-    "result_type": "changed",
-    "first_seen": "2026-07-19T21:43:58.901064+00:00"
-  },
-  {
-    "scholar": "周嘉欢",
-    "scholar_url": "https://zhoujiahuan1991.github.io/",
-    "affiliation": "北京大学",
-    "areas": [
-      "Continual Learning"
-    ],
-    "watch": "general",
-    "kind": "update",
-    "text": "Senior Program Committee:",
-    "link": "https://zhoujiahuan1991.github.io/",
-    "date_str": "",
-    "timestamp": 1784497438.900602,
-    "result_type": "changed",
-    "first_seen": "2026-07-19T21:43:58.901072+00:00"
   }
 ]
