@@ -1,12 +1,6 @@
 # Scholar Monitor Report
 
-**Run:** 2026-08-01 03:35 UTC  |  **Total:** 58  |  Events 2  |  RSS 0  |  CHG 1  |  FIRST 0  |  OK 54  |  ERR 3
-
----
-## Activity Feed (2)
-
-- **Thinking Machines Lab** [Thinking Machines]: Thinking Machines
-- **Thinking Machines Lab** [Thinking Machines]: A Safe Path to Open Weights
+**Run:** 2026-08-01 21:47 UTC  |  **Total:** 58  |  Events 0  |  RSS 0  |  CHG 0  |  FIRST 0  |  OK 55  |  ERR 3
 
 ---
 ## Needs Attention (3)
