@@ -1,5 +1,61 @@
 [
   {
+    "scholar": "Nathan Lambert",
+    "scholar_url": "https://www.interconnects.ai/",
+    "affiliation": "Interconnects",
+    "areas": [],
+    "watch": "blog",
+    "kind": "post",
+    "text": "Latest open artifacts (#23): Laguna S2.1, Inkling, & Kimi K3 show the utility of open models on the Pareto frontier",
+    "link": "https://www.interconnects.ai/p/latest-open-artifacts-23-laguna-s21",
+    "date_str": "Sun, 02 Aug 2026 13:01:40 GMT",
+    "timestamp": 1785675700.0,
+    "result_type": "rss",
+    "first_seen": "2026-08-02T21:47:31.815916+00:00"
+  },
+  {
+    "scholar": "🙋🏻‍♂️关于 | Chenxu's Blog",
+    "scholar_url": "https://www.chenxutalk.top/about/",
+    "affiliation": "北京邮电大学",
+    "areas": [],
+    "watch": "general",
+    "kind": "update",
+    "text": "linux 的基本操作",
+    "link": "https://www.chenxutalk.top/posts/study/cs0/linux-basic/",
+    "date_str": "Sun, 02 Aug 2026 17:57:45 +0800",
+    "timestamp": 1785664665.0,
+    "result_type": "rss",
+    "first_seen": "2026-08-02T21:47:31.815924+00:00"
+  },
+  {
+    "scholar": "🙋🏻‍♂️关于 | Chenxu's Blog",
+    "scholar_url": "https://www.chenxutalk.top/about/",
+    "affiliation": "北京邮电大学",
+    "areas": [],
+    "watch": "general",
+    "kind": "update",
+    "text": "启动我的服务",
+    "link": "https://www.chenxutalk.top/posts/study/cs0/start-my-service/",
+    "date_str": "Sun, 02 Aug 2026 17:57:45 +0800",
+    "timestamp": 1785664665.0,
+    "result_type": "rss",
+    "first_seen": "2026-08-02T21:47:31.815929+00:00"
+  },
+  {
+    "scholar": "🙋🏻‍♂️关于 | Chenxu's Blog",
+    "scholar_url": "https://www.chenxutalk.top/about/",
+    "affiliation": "北京邮电大学",
+    "areas": [],
+    "watch": "general",
+    "kind": "update",
+    "text": "更舒适地写代码（含学生白嫖指南）",
+    "link": "https://www.chenxutalk.top/posts/study/cs0/write-code-comfortably/",
+    "date_str": "Sun, 02 Aug 2026 15:02:17 +0800",
+    "timestamp": 1785654137.0,
+    "result_type": "rss",
+    "first_seen": "2026-08-02T21:47:31.815932+00:00"
+  },
+  {
     "scholar": "Thinking Machines Lab",
     "scholar_url": "https://thinkingmachines.ai/blog/",
     "affiliation": "Thinking Machines",
@@ -761,69 +817,5 @@
     "timestamp": 1784584654.595872,
     "result_type": "changed",
     "first_seen": "2026-07-20T21:57:34.596290+00:00"
-  },
-  {
-    "scholar": "杨恩能",
-    "scholar_url": "https://ennengyang.github.io/",
-    "affiliation": "中山大学",
-    "areas": [
-      "Model Merging"
-    ],
-    "watch": "general",
-    "kind": "paper",
-    "text": "ICML 2026 | Code",
-    "link": "https://ennengyang.github.io/",
-    "date_str": "",
-    "timestamp": 1784584654.595862,
-    "result_type": "changed",
-    "first_seen": "2026-07-20T21:57:34.596292+00:00"
-  },
-  {
-    "scholar": "杨永进",
-    "scholar_url": "https://yangyongjin.github.io/",
-    "affiliation": "多伦多大学",
-    "areas": [
-      "Agent",
-      "LLM Alignment"
-    ],
-    "watch": "general",
-    "kind": "update",
-    "text": "Learning is, at its core, fitting data, so the data often matters most. I am interested in which data should be used for which tasks, how to organize it into curricula, and how to construct effective data for knowledge distillation.",
-    "link": "https://yangyongjin.github.io/",
-    "date_str": "",
-    "timestamp": 1784584654.595546,
-    "result_type": "changed",
-    "first_seen": "2026-07-20T21:57:34.596311+00:00"
-  },
-  {
-    "scholar": "杨永进",
-    "scholar_url": "https://yangyongjin.github.io/",
-    "affiliation": "多伦多大学",
-    "areas": [
-      "Agent",
-      "LLM Alignment"
-    ],
-    "watch": "general",
-    "kind": "update",
-    "text": "Learning from better data",
-    "link": "https://yangyongjin.github.io/",
-    "date_str": "",
-    "timestamp": 1784584654.59552,
-    "result_type": "changed",
-    "first_seen": "2026-07-20T21:57:34.596330+00:00"
-  },
-  {
-    "scholar": "Nathan Lambert",
-    "scholar_url": "https://www.interconnects.ai/",
-    "affiliation": "Interconnects",
-    "areas": [],
-    "watch": "blog",
-    "kind": "post",
-    "text": "Kimi K3: The open-weights escalation",
-    "link": "https://www.interconnects.ai/p/kimi-k3-the-open-weights-escalation",
-    "date_str": "Mon, 20 Jul 2026 15:48:28 GMT",
-    "timestamp": 1784562508.0,
-    "result_type": "rss",
-    "first_seen": "2026-07-20T21:57:34.596333+00:00"
   }
 ]
