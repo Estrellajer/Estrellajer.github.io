@@ -6,6 +6,20 @@
     "areas": [],
     "watch": "blog",
     "kind": "post",
+    "text": "Introducing our Artifacts Hub and Adoption Dashboard",
+    "link": "https://www.interconnects.ai/p/introducing-our-artifacts-hub-and",
+    "date_str": "Mon, 03 Aug 2026 14:03:08 GMT",
+    "timestamp": 1785765788.0,
+    "result_type": "rss",
+    "first_seen": "2026-08-03T22:01:07.321884+00:00"
+  },
+  {
+    "scholar": "Nathan Lambert",
+    "scholar_url": "https://www.interconnects.ai/",
+    "affiliation": "Interconnects",
+    "areas": [],
+    "watch": "blog",
+    "kind": "post",
     "text": "Latest open artifacts (#23): Laguna S2.1, Inkling, & Kimi K3 show the utility of open models on the Pareto frontier",
     "link": "https://www.interconnects.ai/p/latest-open-artifacts-23-laguna-s21",
     "date_str": "Sun, 02 Aug 2026 13:01:40 GMT",
@@ -801,21 +815,5 @@
     "timestamp": 1784584654.595879,
     "result_type": "changed",
     "first_seen": "2026-07-20T21:57:34.596286+00:00"
-  },
-  {
-    "scholar": "杨恩能",
-    "scholar_url": "https://ennengyang.github.io/",
-    "affiliation": "中山大学",
-    "areas": [
-      "Model Merging"
-    ],
-    "watch": "general",
-    "kind": "update",
-    "text": "[Why is Repeated Padding Effective for Sequential Recommendation]",
-    "link": "https://ennengyang.github.io/",
-    "date_str": "",
-    "timestamp": 1784584654.595872,
-    "result_type": "changed",
-    "first_seen": "2026-07-20T21:57:34.596290+00:00"
   }
 ]
