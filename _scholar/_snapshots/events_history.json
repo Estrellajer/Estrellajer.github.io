@@ -1,5 +1,53 @@
 [
   {
+    "scholar": "Breezedeus.com | 善意的AI生产幸福❤",
+    "scholar_url": "https://www.breezedeus.com/",
+    "affiliation": "",
+    "areas": [
+      "Agent",
+      "LLM"
+    ],
+    "watch": "general",
+    "kind": "update",
+    "text": "Page content updated",
+    "link": "https://www.breezedeus.com/",
+    "date_str": "",
+    "timestamp": 1785881222.037568,
+    "result_type": "changed",
+    "first_seen": "2026-08-04T22:07:02.038816+00:00"
+  },
+  {
+    "scholar": "🙋🏻‍♂️关于 | Chenxu's Blog",
+    "scholar_url": "https://www.chenxutalk.top/about/",
+    "affiliation": "北京邮电大学",
+    "areas": [],
+    "watch": "general",
+    "kind": "update",
+    "text": "写出一份好的代码",
+    "link": "https://www.chenxutalk.top/posts/study/cs0/good-code/",
+    "date_str": "Tue, 04 Aug 2026 20:00:00 +0800",
+    "timestamp": 1785844800.0,
+    "result_type": "rss",
+    "first_seen": "2026-08-04T22:07:02.038824+00:00"
+  },
+  {
+    "scholar": "苏剑林 - 科学空间",
+    "scholar_url": "https://kexue.fm/",
+    "affiliation": "Kimi",
+    "areas": [
+      "LLM",
+      "Theory"
+    ],
+    "watch": "blog",
+    "kind": "post",
+    "text": "简单谈谈K3的MoE和Attention",
+    "link": "https://kexue.fm/archives/11848",
+    "date_str": "Tue, 04 Aug 2026 13:07:00 +0800",
+    "timestamp": 1785820020.0,
+    "result_type": "rss",
+    "first_seen": "2026-08-04T22:07:02.038828+00:00"
+  },
+  {
     "scholar": "Nathan Lambert",
     "scholar_url": "https://www.interconnects.ai/",
     "affiliation": "Interconnects",
@@ -765,55 +813,5 @@
     "timestamp": 1784729344.0,
     "result_type": "rss",
     "first_seen": "2026-07-22T22:00:02.269811+00:00"
-  },
-  {
-    "scholar": "David Noel Ng",
-    "scholar_url": "https://dnhkng.github.io/",
-    "affiliation": "",
-    "areas": [
-      "Interpretability",
-      "Efficiency",
-      "LLM"
-    ],
-    "watch": "blog",
-    "kind": "post",
-    "text": "Building the",
-    "link": "https://dnhkng.github.io/posts/building-a-quantum-llm/",
-    "date_str": "2026-07-22T00:00:00+02:00",
-    "timestamp": 1784671200.0,
-    "result_type": "rss_no_change",
-    "first_seen": "2026-07-22T22:00:02.269948+00:00"
-  },
-  {
-    "scholar": "杨恩能",
-    "scholar_url": "https://ennengyang.github.io/",
-    "affiliation": "中山大学",
-    "areas": [
-      "Model Merging"
-    ],
-    "watch": "general",
-    "kind": "update",
-    "text": "Yizhou Dang, Enneng Yang , Chuang Zhao, Lianbo Ma, Guibing Guo, Xingwei Wang.",
-    "link": "https://ennengyang.github.io/",
-    "date_str": "",
-    "timestamp": 1784584654.595887,
-    "result_type": "changed",
-    "first_seen": "2026-07-20T21:57:34.596278+00:00"
-  },
-  {
-    "scholar": "杨恩能",
-    "scholar_url": "https://ennengyang.github.io/",
-    "affiliation": "中山大学",
-    "areas": [
-      "Model Merging"
-    ],
-    "watch": "general",
-    "kind": "update",
-    "text": "TKDE 2026 | Code",
-    "link": "https://ennengyang.github.io/",
-    "date_str": "",
-    "timestamp": 1784584654.595879,
-    "result_type": "changed",
-    "first_seen": "2026-07-20T21:57:34.596286+00:00"
   }
 ]

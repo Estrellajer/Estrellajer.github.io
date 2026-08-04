@@ -6,11 +6,12 @@ My research interests include machine learning and its applications in computer 
 I am seeking highly self-motivated students. If interested, please email me your resume and transcript.
 News
 [2026-07] One paper about continual learning is accepted to IJCV.
+[2026-07] Serving as a Senior Program Committee member for AAAI 2027.
 [2026-05] Invited talk ( slides ) at CCIG 2026 Workshop on Continual Learning.
 [2026-05] We release a toolbox for multimodal continual instruction tuning ( technical report ).
 [2026-05] Three papers about continual learning are accepted to ICML 2026.
 [2026-05] One paper about continual learning with MLLM is uploaded to arXiv .
-[2026-05]  One paper about continual learning and domain generalization  is accepted to TMM.
+<li>[2026-05]  One paper about continual learning and domain generalization  is accepted to TMM.</li>
 [2026-04] Recognized as IJCV Outstanding Reviewer 2025 .
 [2026-03] One paper is accepted to Nature Materials.
 <li>[2026-03] Serving as an Area Chair for NeurIPS 2026.</li>
@@ -21,7 +22,6 @@ News
 [2026-01] Serving as a Senior Program Committee member for IJCAI 2026.
 [2025-11] One paper about continual learning with CLIP is uploaded to arXiv .
 [2025-11] One paper about continual learning with CLIP is accepted to AAAI 2026 .
-<li>[2025-09] One paper about continual learning with CLIP is uploaded to <a href="https://arxiv.org/abs/2509.22645" target="_blank">arXiv</a>.</li>
 [2025-09] Recognized among the World’s Top 2% Scientists 2025 .
 [2025-08] Serving as an Area Chair for ICLR 2026 .
 [2025-06] Invited talk ( slides ) at VALSE 2025 Workshop on Deep Continual Learning.
@@ -35,7 +35,7 @@ News
 [2024-12] One paper about class-incremental learning is accepted to AAAI 2025 .
 [2024-11] Recognized as NeurIPS 2024 Top Reviewer .
 [2024-10] We are hosting a tutorial on model reuse at AAAI 2025 .
-[2024-09] One paper about class-incremental learning with PTM is accepted to MLJ .
+<li>[2024-09] One paper about <a href="https://link.springer.com/article/10.1007/s10994-024-06662-4" target="_blank">class-incremental learning with PTM</a> is accepted to <a href="https://link.springer.com/journal/10994" target="_blank">MLJ</a>.</li>
 [2024-08] One paper about class-incremental learning with PTM is accepted to IJCV .
 [2024-07] One survey about class-incremental learning is accepted to TPAMI .
 [2024-05] Successfully defended my Ph.D. dissertation.
@@ -279,7 +279,7 @@ SCIENCE CHINA Information Sciences. SCIS 2023
 Contact
 Office : A202, Yifu Building [How to get here]()
 Email : zhoudw (at) lamda.nju.edu.cn or zhoudw (at) nju.edu.cn
-<script type="text/javascript" id="clustrmaps" src="//cdn.clustrmaps.com/map_v2.js?cl=ffffff&w=200&t=tt&d=W6TBeICRe1MfdyxdWvqd7-X_0iGwVe8gbtslgWpF1H0"></script>
+<script type="text/javascript" id="clustrmaps" src="//cdn.clustrmaps.com/map_v2.js?cl=ffffff&w=200&t=tt&d=W6TBeICRe1MfdyxdWvqd7-X_0iGwVe8gbtslgWpF1H0"></script> <script type='text/javascript' id='clustrmaps' src='//cdn.clustrmaps.com/map_v2.js?cl=d4a373&w=200&t=tt&d=W6TBeICRe1MfdyxdWvqd7-X_0iGwVe8gbtslgWpF1H0&co=ffffff&ct=3d405b&cmo=81b29a&cmn=e07a5f'></script> <script type='text/javascript' id='mapmyvisitors' src='https://mapmyvisitors.com/map.js?cl=d9e2ec&w=200&t=tt&d=lW0HPyXUX9Cz0xUQIXMi8HQAKsdcjUS9i_hcq4ixAJQ&co=f5f7fa&ct=243b53&cmo=6b7c93&cmn=d96c4f'></script>
 <p><small>Powered by Jekyll and <a href="https://github.com/yaoyao-liu/minimal-light" target="_blank" rel="noopener">Minimal Light</a> theme.</small></p>
 Many thanks to Yaoyao for sharing this great theme.
 <footer>
