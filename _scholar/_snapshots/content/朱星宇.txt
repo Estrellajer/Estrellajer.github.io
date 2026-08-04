@@ -43,12 +43,12 @@ arXiv preprint arXiv:2602.07340, 2026 2026
 Res-Bench: Benchmarking the Robustness of Multimodal Large Language Models to Dynamic Resolution Input
 C Li, Z Wang, Y Sheng, X Zhu, Y Hao, X Wang
 AAAI 2026, 2025 2025
-Mitigating Hallucinations in Large Vision-Language Models without Performance Degradation
-X Zhu, J Fang, S Wang, B Zhu, Z Wang, Y Yang, X He
-ACL 2026 Oral, 2026 2026
 Thinking with Images as Continuous Actions: Numerical Visual Chain-of-Thought
 K Zhao, B Zhu, J Zhou, X Zhu, Z Yue, H Zhang
 arXiv preprint arXiv:2602.23959, 2026 2026
+Mitigating Hallucinations in Large Vision-Language Models without Performance Degradation
+X Zhu, J Fang, S Wang, B Zhu, Z Wang, Y Yang, X He
+ACL 2026 Oral, 2026 2026
 GuardAlign: Test-time Safety Alignment in Multimodal Large Language Models
 X Zhu, B Zhu, J Fang, S Wang, Y Zhang, X Wang, X He
 ICLR 2026, 2026 2026

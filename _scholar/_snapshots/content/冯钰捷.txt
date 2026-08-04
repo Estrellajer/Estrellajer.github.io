@@ -49,12 +49,12 @@ EMNLP 2025 Long Paper, 2025 2025
 Deal: Disentangling transformer head activations for llm steering
 LM Zhan, LIU Bo, Z Lu, Y Feng, C Xie, J Cao, XM Wu
 Knowledgeable Foundation Models at ACL 2025, 2025 2025
-FOREVER: Forgetting Curve-Inspired Memory Replay for Language Model Continual Learning
-Y Feng, H Wang, J Li, X Chu, Z Kang, Y Liu, Y Wang, PS Yu, XM Wu
-ACL 2026 Long Paper, 2026 2026
 Rosd: Reflective on-policy self-distillation for language model reasoning across domains
 Z Zhao, X Ma, L Yang, Y Feng, D Shi, J He, X Xin, Z Ren, XM Wu
 arXiv preprint arXiv:2605.28014, 2026 2026
+FOREVER: Forgetting Curve-Inspired Memory Replay for Language Model Continual Learning
+Y Feng, H Wang, J Li, X Chu, Z Kang, Y Liu, Y Wang, PS Yu, XM Wu
+ACL 2026 Long Paper, 2026 2026
 How order-sensitive are llms? orderprobe for deterministic structural reconstruction
 Y He, Z Kang, K Jiang, Q Zhang, J Qian, C Meng, Y Feng, Y Wang, J Dou, ...
 arXiv preprint arXiv:2601.08626, 2026 2026
