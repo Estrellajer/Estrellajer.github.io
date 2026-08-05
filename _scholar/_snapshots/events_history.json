@@ -1,5 +1,19 @@
 [
   {
+    "scholar": "Xiongda Blog",
+    "scholar_url": "https://www.xxrbear.cn/",
+    "affiliation": "Software",
+    "areas": [],
+    "watch": "general",
+    "kind": "update",
+    "text": "Claude Banner",
+    "link": "https://www.xxrbear.cn/posts/tech/essays/claude-banner/",
+    "date_str": "Wed, 05 Aug 2026 10:46:21 +0800",
+    "timestamp": 1785897981.0,
+    "result_type": "rss",
+    "first_seen": "2026-08-05T03:15:44.676179+00:00"
+  },
+  {
     "scholar": "Breezedeus.com | 善意的AI生产幸福❤",
     "scholar_url": "https://www.breezedeus.com/",
     "affiliation": "",
@@ -46,6 +60,24 @@
     "timestamp": 1785820020.0,
     "result_type": "rss",
     "first_seen": "2026-08-04T22:07:02.038828+00:00"
+  },
+  {
+    "scholar": "David Noel Ng",
+    "scholar_url": "https://dnhkng.github.io/",
+    "affiliation": "",
+    "areas": [
+      "Interpretability",
+      "Efficiency",
+      "LLM"
+    ],
+    "watch": "blog",
+    "kind": "post",
+    "text": "2x GH200 for LLM inference, Part 4: DeepSeek V4 Flash - SGLang vs vLLM at 1M context",
+    "link": "https://dnhkng.github.io/posts/gh200-benchmarking-part-4-dsv4-released/",
+    "date_str": "2026-08-04T00:00:00+02:00",
+    "timestamp": 1785794400.0,
+    "result_type": "rss_no_change",
+    "first_seen": "2026-08-05T03:15:44.676333+00:00"
   },
   {
     "scholar": "Nathan Lambert",
@@ -783,35 +815,5 @@
     "timestamp": 1785015971.546123,
     "result_type": "changed",
     "first_seen": "2026-07-25T21:46:11.546764+00:00"
-  },
-  {
-    "scholar": "周嘉欢",
-    "scholar_url": "https://zhoujiahuan1991.github.io/",
-    "affiliation": "北京大学",
-    "areas": [
-      "Continual Learning"
-    ],
-    "watch": "general",
-    "kind": "update",
-    "text": "Page content updated",
-    "link": "https://zhoujiahuan1991.github.io/",
-    "date_str": "",
-    "timestamp": 1784757602.268612,
-    "result_type": "changed",
-    "first_seen": "2026-06-29T22:15:19.142393+00:00"
-  },
-  {
-    "scholar": "Nathan Lambert",
-    "scholar_url": "https://www.interconnects.ai/",
-    "affiliation": "Interconnects",
-    "areas": [],
-    "watch": "blog",
-    "kind": "post",
-    "text": "Open models recap: more on Kimi K3, Qwen 3.8, Xi's WAIC speech, distillation, the open-closed gap, and what's next",
-    "link": "https://www.interconnects.ai/p/open-models-recap-more-on-kimi-k3",
-    "date_str": "Wed, 22 Jul 2026 14:09:04 GMT",
-    "timestamp": 1784729344.0,
-    "result_type": "rss",
-    "first_seen": "2026-07-22T22:00:02.269811+00:00"
   }
 ]

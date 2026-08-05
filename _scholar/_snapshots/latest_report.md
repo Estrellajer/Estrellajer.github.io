@@ -1,14 +1,11 @@
 # Scholar Monitor Report
 
-**Run:** 2026-08-04 22:07 UTC  |  **Total:** 58  |  Events 4  |  RSS 2  |  CHG 2  |  FIRST 0  |  OK 51  |  ERR 3
+**Run:** 2026-08-05 03:15 UTC  |  **Total:** 58  |  Events 1  |  RSS 1  |  CHG 0  |  FIRST 0  |  OK 54  |  ERR 3
 
 ---
-## Activity Feed (4)
+## Activity Feed (1)
 
-- **Breezedeus.com | 善意的AI生产幸福❤**: Page content updated
-- **🙋🏻‍♂️关于 | Chenxu's Blog** [北京邮电大学]: 写出一份好的代码
-- **苏剑林 - 科学空间** [Kimi]: 简单谈谈K3的MoE和Attention
-- **周大蔚** [NJU LAMDA]: [2026-07] Serving as a Senior Program Committee member for AAAI 2027.
+- **Xiongda Blog** [Software]: Claude Banner
 
 ---
 ## Needs Attention (3)
