@@ -1,5 +1,21 @@
 [
   {
+    "scholar": "冯亮",
+    "scholar_url": "https://fenglang918.github.io/index.html",
+    "affiliation": "复旦大学",
+    "areas": [
+      "Develop tool"
+    ],
+    "watch": "general",
+    "kind": "update",
+    "text": "Page content updated",
+    "link": "https://fenglang918.github.io/index.html",
+    "date_str": "",
+    "timestamp": 1786138280.019286,
+    "result_type": "changed",
+    "first_seen": "2026-08-07T21:31:20.020033+00:00"
+  },
+  {
     "scholar": "Xiongda Blog",
     "scholar_url": "https://www.xxrbear.cn/",
     "affiliation": "Software",
@@ -798,22 +814,5 @@
     "timestamp": 1785015971.546145,
     "result_type": "changed",
     "first_seen": "2026-07-25T21:46:11.546761+00:00"
-  },
-  {
-    "scholar": "Breezedeus.com | 善意的AI生产幸福❤",
-    "scholar_url": "https://www.breezedeus.com/",
-    "affiliation": "",
-    "areas": [
-      "Agent",
-      "LLM"
-    ],
-    "watch": "general",
-    "kind": "update",
-    "text": "本文聚焦 AI Agents 上下文工程技术，揭秘了从静态提示词工程到动态上下文工程的进化逻辑，还拆解了 Manus 应对上下文腐烂的核心技术与简化至上的实践原则。",
-    "link": "https://www.breezedeus.com/",
-    "date_str": "",
-    "timestamp": 1785015971.546123,
-    "result_type": "changed",
-    "first_seen": "2026-07-25T21:46:11.546764+00:00"
   }
 ]

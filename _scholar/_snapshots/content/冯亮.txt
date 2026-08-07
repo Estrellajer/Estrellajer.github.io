@@ -1,6 +1,6 @@
 EN | 中文
 Liang Feng (冯亮)
-Email · GitHub · RedNote
+Email · GitHub
 Research Education Experience Publications Photography
 Research
 My long-term research interest is: how can intelligence grow and scale, while remaining precisely calibrated to the complexity of the real world?
