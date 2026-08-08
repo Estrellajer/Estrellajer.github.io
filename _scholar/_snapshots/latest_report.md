@@ -1,6 +1,13 @@
 # Scholar Monitor Report
 
-**Run:** 2026-08-08 02:03 UTC  |  **Total:** 58  |  Events 0  |  RSS 0  |  CHG 0  |  FIRST 0  |  OK 54  |  ERR 4
+**Run:** 2026-08-08 21:23 UTC  |  **Total:** 58  |  Events 3  |  RSS 0  |  CHG 2  |  FIRST 0  |  OK 52  |  ERR 4
+
+---
+## Activity Feed (3)
+
+- **Breezedeus.com | 善意的AI生产幸福❤**: html
+- **孙海龙** [NJU LAMDA]: [2026-07] Our team released the Ling-3.0-flash model.
+- **孙海龙** [NJU LAMDA]: [2026-04] I joined the Bailing Team at Ant Group.
 
 ---
 ## Needs Attention (4)

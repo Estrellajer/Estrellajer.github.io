@@ -40,18 +40,18 @@ AAAI 2025, 2025 2025
 Geoedit: Geometric knowledge editing for large language models
 Y Feng, L Zhan, Z Lu, Y Xu, X Chu, Y Wang, J Cao, PS Yu, XM Wu
 EMNLP 2025 Long Paper, 2025 2025
-Spatial-attention and demographic-augmented generative adversarial imputation network for population health data reconstruction
-Y Feng, J Wang, Y Wang, X Chu
-IEEE Transactions on Big Data 9 (4), 1057-1070, 2022 2022
-AIMMerging: Adaptive Iterative Model Merging Using Training Trajectories for Language Model Continual Learning
-Y Feng, J Li, X Dong, P Xu, X Zhou, Y Zhang, Z Lu, Y Wang, A Zhao, ...
-EMNLP 2025 Long Paper, 2025 2025
 Deal: Disentangling transformer head activations for llm steering
 LM Zhan, LIU Bo, Z Lu, Y Feng, C Xie, J Cao, XM Wu
 Knowledgeable Foundation Models at ACL 2025, 2025 2025
+Spatial-attention and demographic-augmented generative adversarial imputation network for population health data reconstruction
+Y Feng, J Wang, Y Wang, X Chu
+IEEE Transactions on Big Data 9 (4), 1057-1070, 2022 2022
 Rosd: Reflective on-policy self-distillation for language model reasoning across domains
 Z Zhao, X Ma, L Yang, Y Feng, D Shi, J He, X Xin, Z Ren, XM Wu
 arXiv preprint arXiv:2605.28014, 2026 2026
+AIMMerging: Adaptive Iterative Model Merging Using Training Trajectories for Language Model Continual Learning
+Y Feng, J Li, X Dong, P Xu, X Zhou, Y Zhang, Z Lu, Y Wang, A Zhao, ...
+EMNLP 2025 Long Paper, 2025 2025
 FOREVER: Forgetting Curve-Inspired Memory Replay for Language Model Continual Learning
 Y Feng, H Wang, J Li, X Chu, Z Kang, Y Liu, Y Wang, PS Yu, XM Wu
 ACL 2026 Long Paper, 2026 2026
