@@ -199,19 +199,19 @@ Jiangmeng Li, Yongsheng Qi, and Jiahuan Zhou* , "C²Prompt: Class-aware
 Client Knowledge Interaction for Federated Continual Learning", in Proceedings
 of the Conference on Neural Information Processing Systems, San Diego, USA,
 Nov.30 - Dec.7, 2025
-[ pdf ] [ code ] [ bib ] PL IL
+[ pdf ] [ code ] [ bib ] [ DOI:10.52202/085713-1470 ] PL IL
 ( NeurIPS'25 )- Jiahuan Zhou , Kai
 Zhu, Zhenyu Cui, Zichen Liu, Xu Zou, and Gang Hua, "State Space Prompting via
 Gathering and Spreading Spatio-Temporal Information for Video Understanding", in
 Proceedings of the Conference on Neural Information Processing Systems, San
 Diego, USA, Nov.30 - Dec.7, 2025
-[ pdf ] [ code ] [ bib ] PL
+[ pdf ] [ code ] [ bib ] [ DOI:10.52202/085713-4794 ] PL
 ( NeurIPS'25 )- Jiahuan Zhou , Chao
 Zhu, Zhenyu Cui, Zichen Liu, Xu Zou, and Gang Hua, "Class-aware Domain Knowledge
 Fusion and Fission for Continual Test-Time Adaptation", in Proceedings of the
 Conference on Neural Information Processing Systems, San Diego, USA, Nov.30 -
 Dec.7, 2025
-[ pdf ] [ code ] [ bib ] IL
+[ pdf ] [ code ] [ bib ] [ DOI:10.52202/085713-1866 ] IL
 ( TPAMI'25 )- Jiahuan Zhou , Kunlun
 Xu, Fan Zhuo, Xu Zou, and Yuxin Peng, "Distribution-aware Knowledge Aligning and
 Prototyping for Non-exemplar Lifelong Person Re-Identification", in IEEE
@@ -733,19 +733,19 @@ Jiangmeng Li, Yongsheng Qi, and Jiahuan Zhou* , "C²Prompt: Class-aware
 Client Knowledge Interaction for Federated Continual Learning", in Proceedings
 of the Conference on Neural Information Processing Systems, San Diego, USA,
 Nov.30 - Dec.7, 2025
-[ pdf ] [ code ] [ bib ] PL IL
+[ pdf ] [ code ] [ bib ] [ DOI:10.52202/085713-1470 ] PL IL
 ( NeurIPS'25 )- Jiahuan Zhou , Kai
 Zhu, Zhenyu Cui, Zichen Liu, Xu Zou, and Gang Hua, "State Space Prompting via
 Gathering and Spreading Spatio-Temporal Information for Video Understanding", in
 Proceedings of the Conference on Neural Information Processing Systems, San
 Diego, USA, Nov.30 - Dec.7, 2025
-[ pdf ] [ code ] [ bib ] PL
+[ pdf ] [ code ] [ bib ] [ DOI:10.52202/085713-4794 ] PL
 ( NeurIPS'25 )- Jiahuan Zhou , Chao
 Zhu, Zhenyu Cui, Zichen Liu, Xu Zou, and Gang Hua, "Class-aware Domain Knowledge
 Fusion and Fission for Continual Test-Time Adaptation", in Proceedings of the
 Conference on Neural Information Processing Systems, San Diego, USA, Nov.30 -
 Dec.7, 2025
-[ pdf ] [ code ] [ bib ] IL
+[ pdf ] [ code ] [ bib ] [ DOI:10.52202/085713-1866 ] IL
 ( TPAMI'25 )- Jiahuan Zhou , Kunlun
 Xu, Fan Zhuo, Xu Zou, and Yuxin Peng, "Distribution-aware Knowledge Aligning and
 Prototyping for Non-exemplar Lifelong Person Re-Identification", in IEEE

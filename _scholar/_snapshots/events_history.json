@@ -1,5 +1,68 @@
 [
   {
+    "scholar": "周嘉欢",
+    "scholar_url": "https://zhoujiahuan1991.github.io/",
+    "affiliation": "北京大学",
+    "areas": [
+      "Continual Learning"
+    ],
+    "watch": "general",
+    "kind": "update",
+    "text": "Page content updated",
+    "link": "https://zhoujiahuan1991.github.io/",
+    "date_str": "",
+    "timestamp": 1786310648.680901,
+    "result_type": "changed",
+    "first_seen": "2026-08-09T21:24:08.681756+00:00"
+  },
+  {
+    "scholar": "孙海龙",
+    "scholar_url": "https://sun-hailong.github.io/",
+    "affiliation": "NJU LAMDA",
+    "areas": [
+      "Continual Learning"
+    ],
+    "watch": "news",
+    "kind": "news",
+    "text": "Page content updated",
+    "link": "https://sun-hailong.github.io/",
+    "date_str": "",
+    "timestamp": 1786310648.680901,
+    "result_type": "changed",
+    "first_seen": "2026-08-09T21:24:08.681764+00:00"
+  },
+  {
+    "scholar": "Nathan Lambert",
+    "scholar_url": "https://www.interconnects.ai/",
+    "affiliation": "Interconnects",
+    "areas": [],
+    "watch": "blog",
+    "kind": "post",
+    "text": "Lessons from the hacks",
+    "link": "https://www.interconnects.ai/p/lessons-from-the-hacks",
+    "date_str": "Sun, 09 Aug 2026 14:57:11 GMT",
+    "timestamp": 1786287431.0,
+    "result_type": "rss",
+    "first_seen": "2026-08-09T21:24:08.681767+00:00"
+  },
+  {
+    "scholar": "苏剑林 - 科学空间",
+    "scholar_url": "https://kexue.fm/",
+    "affiliation": "Kimi",
+    "areas": [
+      "LLM",
+      "Theory"
+    ],
+    "watch": "blog",
+    "kind": "post",
+    "text": "除了交叉熵，LM Loss还有什么选择？",
+    "link": "https://kexue.fm/archives/11854",
+    "date_str": "Sun, 09 Aug 2026 17:18:00 +0800",
+    "timestamp": 1786267080.0,
+    "result_type": "rss",
+    "first_seen": "2026-08-09T21:24:08.681771+00:00"
+  },
+  {
     "scholar": "Breezedeus.com | 善意的AI生产幸福❤",
     "scholar_url": "https://www.breezedeus.com/",
     "affiliation": "",
@@ -746,73 +809,5 @@
     "timestamp": 1785015971.546176,
     "result_type": "changed",
     "first_seen": "2026-07-25T21:46:11.546747+00:00"
-  },
-  {
-    "scholar": "Breezedeus.com | 善意的AI生产幸福❤",
-    "scholar_url": "https://www.breezedeus.com/",
-    "affiliation": "",
-    "areas": [
-      "Agent",
-      "LLM"
-    ],
-    "watch": "general",
-    "kind": "update",
-    "text": "OpenAI",
-    "link": "https://www.breezedeus.com/",
-    "date_str": "",
-    "timestamp": 1785015971.546171,
-    "result_type": "changed",
-    "first_seen": "2026-07-25T21:46:11.546751+00:00"
-  },
-  {
-    "scholar": "Breezedeus.com | 善意的AI生产幸福❤",
-    "scholar_url": "https://www.breezedeus.com/",
-    "affiliation": "",
-    "areas": [
-      "Agent",
-      "LLM"
-    ],
-    "watch": "general",
-    "kind": "update",
-    "text": "Prompt",
-    "link": "https://www.breezedeus.com/",
-    "date_str": "",
-    "timestamp": 1785015971.546166,
-    "result_type": "changed",
-    "first_seen": "2026-07-25T21:46:11.546754+00:00"
-  },
-  {
-    "scholar": "Breezedeus.com | 善意的AI生产幸福❤",
-    "scholar_url": "https://www.breezedeus.com/",
-    "affiliation": "",
-    "areas": [
-      "Agent",
-      "LLM"
-    ],
-    "watch": "general",
-    "kind": "update",
-    "text": "ChatGPT",
-    "link": "https://www.breezedeus.com/",
-    "date_str": "",
-    "timestamp": 1785015971.54616,
-    "result_type": "changed",
-    "first_seen": "2026-07-25T21:46:11.546757+00:00"
-  },
-  {
-    "scholar": "Breezedeus.com | 善意的AI生产幸福❤",
-    "scholar_url": "https://www.breezedeus.com/",
-    "affiliation": "",
-    "areas": [
-      "Agent",
-      "LLM"
-    ],
-    "watch": "general",
-    "kind": "update",
-    "text": "大语言模型",
-    "link": "https://www.breezedeus.com/",
-    "date_str": "",
-    "timestamp": 1785015971.546153,
-    "result_type": "changed",
-    "first_seen": "2026-07-25T21:46:11.546759+00:00"
   }
 ]

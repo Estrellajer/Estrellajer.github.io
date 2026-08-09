@@ -1,6 +1,14 @@
 # Scholar Monitor Report
 
-**Run:** 2026-08-09 02:11 UTC  |  **Total:** 58  |  Events 0  |  RSS 0  |  CHG 0  |  FIRST 0  |  OK 54  |  ERR 4
+**Run:** 2026-08-09 21:24 UTC  |  **Total:** 58  |  Events 4  |  RSS 2  |  CHG 2  |  FIRST 0  |  OK 50  |  ERR 4
+
+---
+## Activity Feed (4)
+
+- **周嘉欢** [北京大学]: Page content updated
+- **孙海龙** [NJU LAMDA]: Page content updated
+- **Nathan Lambert** [Interconnects]: Lessons from the hacks
+- **苏剑林 - 科学空间** [Kimi]: 除了交叉熵，LM Loss还有什么选择？
 
 ---
 ## Needs Attention (4)
