@@ -9,6 +9,23 @@
     ],
     "watch": "general",
     "kind": "update",
+    "text": "html",
+    "link": "https://www.breezedeus.com/",
+    "date_str": "",
+    "timestamp": 1786414253.320165,
+    "result_type": "changed",
+    "first_seen": "2026-08-08T21:23:16.665183+00:00"
+  },
+  {
+    "scholar": "Breezedeus.com | 善意的AI生产幸福❤",
+    "scholar_url": "https://www.breezedeus.com/",
+    "affiliation": "",
+    "areas": [
+      "Agent",
+      "LLM"
+    ],
+    "watch": "general",
+    "kind": "update",
     "text": "详见： Pix2Text V1.1.1 新版发布，带来更好的数学公式检测模型",
     "link": "https://www.breezedeus.com/",
     "date_str": "",
@@ -279,23 +296,6 @@
     "timestamp": 1786267080.0,
     "result_type": "rss",
     "first_seen": "2026-08-09T21:24:08.681771+00:00"
-  },
-  {
-    "scholar": "Breezedeus.com | 善意的AI生产幸福❤",
-    "scholar_url": "https://www.breezedeus.com/",
-    "affiliation": "",
-    "areas": [
-      "Agent",
-      "LLM"
-    ],
-    "watch": "general",
-    "kind": "update",
-    "text": "html",
-    "link": "https://www.breezedeus.com/",
-    "date_str": "",
-    "timestamp": 1786224196.664047,
-    "result_type": "changed",
-    "first_seen": "2026-08-08T21:23:16.665183+00:00"
   },
   {
     "scholar": "冯亮",
