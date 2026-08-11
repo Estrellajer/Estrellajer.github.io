@@ -9,27 +9,10 @@
     ],
     "watch": "general",
     "kind": "update",
-    "text": "html",
-    "link": "https://www.breezedeus.com/",
-    "date_str": "",
-    "timestamp": 1786414253.320165,
-    "result_type": "changed",
-    "first_seen": "2026-08-08T21:23:16.665183+00:00"
-  },
-  {
-    "scholar": "Breezedeus.com | 善意的AI生产幸福❤",
-    "scholar_url": "https://www.breezedeus.com/",
-    "affiliation": "",
-    "areas": [
-      "Agent",
-      "LLM"
-    ],
-    "watch": "general",
-    "kind": "update",
     "text": "详见： Pix2Text V1.1.1 新版发布，带来更好的数学公式检测模型",
     "link": "https://www.breezedeus.com/",
     "date_str": "",
-    "timestamp": 1786397676.519309,
+    "timestamp": 1786484301.623117,
     "result_type": "changed",
     "first_seen": "2026-08-10T21:34:36.519791+00:00"
   },
@@ -46,7 +29,7 @@
     "text": "V1.1.1 发布 ，带来全新的数学公式检测（MFD）模型",
     "link": "https://www.breezedeus.com/",
     "date_str": "",
-    "timestamp": 1786397676.519301,
+    "timestamp": 1786484301.623109,
     "result_type": "changed",
     "first_seen": "2026-08-10T21:34:36.519799+00:00"
   },
@@ -63,7 +46,7 @@
     "text": "-- 新版本特性 ---",
     "link": "https://www.breezedeus.com/",
     "date_str": "",
-    "timestamp": 1786397676.519293,
+    "timestamp": 1786484301.623101,
     "result_type": "changed",
     "first_seen": "2026-08-10T21:34:36.519803+00:00"
   },
@@ -80,7 +63,7 @@
     "text": "🎉Pix2Text V1.1.1 新版发布🎉",
     "link": "https://www.breezedeus.com/",
     "date_str": "",
-    "timestamp": 1786397676.519285,
+    "timestamp": 1786484301.623093,
     "result_type": "changed",
     "first_seen": "2026-08-10T21:34:36.519806+00:00"
   },
@@ -97,7 +80,7 @@
     "text": "Mobile-Agent-v3：新的 GUI Agents 开源王者",
     "link": "https://www.breezedeus.com/",
     "date_str": "",
-    "timestamp": 1786397676.519272,
+    "timestamp": 1786484301.623081,
     "result_type": "changed",
     "first_seen": "2026-08-10T21:34:36.519809+00:00"
   },
@@ -114,7 +97,7 @@
     "text": "AI Agent 性能优化：核心策略与实战技巧",
     "link": "https://www.breezedeus.com/",
     "date_str": "",
-    "timestamp": 1786397676.519263,
+    "timestamp": 1786484301.623074,
     "result_type": "changed",
     "first_seen": "2026-08-10T21:34:36.519812+00:00"
   },
@@ -131,7 +114,7 @@
     "text": "GUI Agents（智能体）最新论文",
     "link": "https://www.breezedeus.com/",
     "date_str": "",
-    "timestamp": 1786397676.519256,
+    "timestamp": 1786484301.623067,
     "result_type": "changed",
     "first_seen": "2026-08-10T21:34:36.519815+00:00"
   },
@@ -148,7 +131,7 @@
     "text": "AI Agent 中的上下文工程 (Context Engineering)",
     "link": "https://www.breezedeus.com/",
     "date_str": "",
-    "timestamp": 1786397676.519248,
+    "timestamp": 1786484301.62306,
     "result_type": "changed",
     "first_seen": "2026-08-10T21:34:36.519820+00:00"
   },
@@ -165,7 +148,7 @@
     "text": "企业 AI 转型路线图：从单点试验到可规模化能力",
     "link": "https://www.breezedeus.com/",
     "date_str": "",
-    "timestamp": 1786397676.519239,
+    "timestamp": 1786484301.623052,
     "result_type": "changed",
     "first_seen": "2026-07-25T21:46:11.546736+00:00"
   },
@@ -182,7 +165,7 @@
     "text": "为什么 Voice Agent 不能照搬 Coding Agent：实时对话与长任务如何共存",
     "link": "https://www.breezedeus.com/",
     "date_str": "",
-    "timestamp": 1786397676.519229,
+    "timestamp": 1786484301.623043,
     "result_type": "changed",
     "first_seen": "2026-08-10T21:34:36.519825+00:00"
   },
@@ -199,7 +182,7 @@
     "text": "最新发布",
     "link": "https://www.breezedeus.com/",
     "date_str": "",
-    "timestamp": 1786397676.519217,
+    "timestamp": 1786484301.623033,
     "result_type": "changed",
     "first_seen": "2026-08-10T21:34:36.519828+00:00"
   },
@@ -216,9 +199,26 @@
     "text": "Breezedeus",
     "link": "https://www.breezedeus.com/",
     "date_str": "",
-    "timestamp": 1786397676.519194,
+    "timestamp": 1786484301.623012,
     "result_type": "changed",
     "first_seen": "2026-08-10T21:34:36.519831+00:00"
+  },
+  {
+    "scholar": "Breezedeus.com | 善意的AI生产幸福❤",
+    "scholar_url": "https://www.breezedeus.com/",
+    "affiliation": "",
+    "areas": [
+      "Agent",
+      "LLM"
+    ],
+    "watch": "general",
+    "kind": "update",
+    "text": "html",
+    "link": "https://www.breezedeus.com/",
+    "date_str": "",
+    "timestamp": 1786414253.320165,
+    "result_type": "changed",
+    "first_seen": "2026-08-08T21:23:16.665183+00:00"
   },
   {
     "scholar": "Nathan Lambert",
