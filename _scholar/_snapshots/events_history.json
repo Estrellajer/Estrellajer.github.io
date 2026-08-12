@@ -1,5 +1,51 @@
 [
   {
+    "scholar": "杨恩能",
+    "scholar_url": "https://ennengyang.github.io/",
+    "affiliation": "中山大学",
+    "areas": [
+      "Model Merging"
+    ],
+    "watch": "general",
+    "kind": "update",
+    "text": "Page content updated",
+    "link": "https://ennengyang.github.io/",
+    "date_str": "",
+    "timestamp": 1786570659.009946,
+    "result_type": "changed",
+    "first_seen": "2026-08-12T21:37:39.011078+00:00"
+  },
+  {
+    "scholar": "孙科",
+    "scholar_url": "https://sites.google.com/view/kesun",
+    "affiliation": "宾夕法尼亚大学",
+    "areas": [
+      "Continuing RL"
+    ],
+    "watch": "general",
+    "kind": "update",
+    "text": "Page content updated",
+    "link": "https://sites.google.com/view/kesun",
+    "date_str": "",
+    "timestamp": 1786570659.009946,
+    "result_type": "changed",
+    "first_seen": "2026-07-31T03:35:24.388459+00:00"
+  },
+  {
+    "scholar": "Nathan Lambert",
+    "scholar_url": "https://www.interconnects.ai/",
+    "affiliation": "Interconnects",
+    "areas": [],
+    "watch": "blog",
+    "kind": "post",
+    "text": "I wrote an AI textbook — how long until AI can do it better?",
+    "link": "https://www.interconnects.ai/p/i-wrote-an-ai-textbook-how-long-until",
+    "date_str": "Wed, 12 Aug 2026 13:01:16 GMT",
+    "timestamp": 1786539676.0,
+    "result_type": "rss",
+    "first_seen": "2026-08-12T21:37:39.011090+00:00"
+  },
+  {
     "scholar": "Breezedeus.com | 善意的AI生产幸福❤",
     "scholar_url": "https://www.breezedeus.com/",
     "affiliation": "",
@@ -529,22 +575,6 @@
     "first_seen": "2026-07-31T21:59:54.457155+00:00"
   },
   {
-    "scholar": "孙科",
-    "scholar_url": "https://sites.google.com/view/kesun",
-    "affiliation": "宾夕法尼亚大学",
-    "areas": [
-      "Continuing RL"
-    ],
-    "watch": "general",
-    "kind": "update",
-    "text": "Page content updated",
-    "link": "https://sites.google.com/view/kesun",
-    "date_str": "",
-    "timestamp": 1785468924.387635,
-    "result_type": "changed",
-    "first_seen": "2026-07-31T03:35:24.388459+00:00"
-  },
-  {
     "scholar": "Breezedeus.com | 善意的AI生产幸福❤",
     "scholar_url": "https://www.breezedeus.com/",
     "affiliation": "",
@@ -775,38 +805,5 @@
     "timestamp": 1785102770.307234,
     "result_type": "changed",
     "first_seen": "2026-07-26T21:52:50.307830+00:00"
-  },
-  {
-    "scholar": "A. Weers Blog",
-    "scholar_url": "https://aweers.de/blog/",
-    "affiliation": "",
-    "areas": [
-      "RL"
-    ],
-    "watch": "general",
-    "kind": "update",
-    "text": "Page content updated",
-    "link": "https://aweers.de/blog/",
-    "date_str": "",
-    "timestamp": 1785102770.306435,
-    "result_type": "changed",
-    "first_seen": "2026-07-26T21:52:50.307833+00:00"
-  },
-  {
-    "scholar": "Breezedeus.com | 善意的AI生产幸福❤",
-    "scholar_url": "https://www.breezedeus.com/",
-    "affiliation": "",
-    "areas": [
-      "Agent",
-      "LLM"
-    ],
-    "watch": "general",
-    "kind": "update",
-    "text": "AI 治理",
-    "link": "https://www.breezedeus.com/",
-    "date_str": "",
-    "timestamp": 1785037016.663479,
-    "result_type": "changed",
-    "first_seen": "2026-07-26T03:36:56.663931+00:00"
   }
 ]

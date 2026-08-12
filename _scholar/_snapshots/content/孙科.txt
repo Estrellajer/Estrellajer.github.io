@@ -9,7 +9,7 @@ I am on the 2026–2027 academic job market.
 Contact : kesun6 [at] upenn [dot] edu, ke.sun [at] pennmedicine [dot] upenn [dot] edu
 Links : Google Scholar / CV / Github / LinkedIn
 Research Interests
-My research interest is reinforcement learning , especially the foundation-centered generic RL for decision intelligence. In particular, I focus on the algorithm ic foundations and development grounded in mathematical and statistical principles . The research goal is to build agents with effective perception, memory, reasoning, planning, exploration, and adaptation in complex environments, with broad applications in games, robotics, control systems, healthcare, economics, and language.
+My research interest is reinforcement learning , especially the foundation-centered generic RL for decision intelligence. In particular, I focus on the algorithm ic foundations and development grounded in mathematical and statistical principles . The research goal is to build agents with effective perception, memory, reasoning, planning, exploration, and adaptation in complex environments, with broad applications in games, language, robotics, control systems, healthcare, and business.
 [1] Algorithmic and Theoretical Foundations in Standard RL (RL as Problem Formulation):
 Uncertainty & Exploration : Distributional Learning and Risk Control, Entropy Regularization and Exploration
 Robustness & Adaptation : Environmental Nonstationarity , Safe/Robust RL, Transfer/Multi-task/Meta/ Continual RL

@@ -90,12 +90,12 @@ Zhiyuan Yu, Enneng Yang , Hao Jiang, Guojie Zhu, Feihong He, Peng Wang, Li Shen.
 Merge to Remember: Sharpness-Aware Isotropic Merging for Continual Learning
 ICML 2026 | Code
 Qun Yang, Enneng Yang , Wei Chen, Li Shen, Long Lan.
-- [Causal Direct Preference Optimization for Distributionally Robust Generative Recommendation](https://arxiv.org/pdf/2603.22335)\
-`ICML 2026`| [**Code**](https://github.com/user683/CausalDPO)  \
-Chu Zhao, **Enneng Yang**, Jianzhe Zhao, Guibing Guo.
 - [Automatic Pruning Discovery for Large Language Models](https://arxiv.org/pdf/2511.15390v2)\
 `ICML 2026`| [**Code**](https://github.com/yohbii/AutoPrune)  \
 Haidong Kang, Lihong Lin, **Enneng Yang**, Hong-Ning Dai, Hao Wang.
+- [Causal Direct Preference Optimization for Distributionally Robust Generative Recommendation](https://arxiv.org/pdf/2603.22335)\
+`ICML 2026`| [**Code**](https://github.com/user683/CausalDPO)  \
+Chu Zhao, **Enneng Yang**, Jianzhe Zhao, Guibing Guo.
 MergOPT: A Merge-Aware Optimizer for Robust Model Merging
 ICLR 2026 | Code
 Enneng Yang , Qun Yang, Peng Wang, Anke Tang, Guibing Guo, Xiaochun Cao, Li Shen.
@@ -162,7 +162,7 @@ Yalin Yu$^{\ast}$, **Enneng Yang**$^{\ast}$ ($^{\ast}$ *indicates co-first autho
 `IJCAI 2019` (Oral)| [**Code**](https://github.com/EnnengYang/DTMF)\
 Guibing Guo, **Enneng Yang**$^{\dagger}$ ($^{\dagger}$ *indicates corresponding authors*), Li Shen$^{\dagger}$, Xiaochun Yang, Xiaodong He.
 Journal Papers
-[Why is Repeated Padding Effective for Sequential Recommendation]
+Why is Repeated Padding Effective for Sequential Recommendation
 TKDE 2026 | Code
 Yizhou Dang, Enneng Yang , Chuang Zhao, Lianbo Ma, Guibing Guo, Xingwei Wang.
 Exploring and Tailoring the Test-Time Augmentation for Sequential Recommendation
