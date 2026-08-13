@@ -1,5 +1,54 @@
 [
   {
+    "scholar": "周嘉欢",
+    "scholar_url": "https://zhoujiahuan1991.github.io/",
+    "affiliation": "北京大学",
+    "areas": [
+      "Continual Learning"
+    ],
+    "watch": "general",
+    "kind": "paper",
+    "text": "International Conference on Learning Representations (ICLR)",
+    "link": "https://zhoujiahuan1991.github.io/",
+    "date_str": "",
+    "timestamp": 1786657056.948567,
+    "result_type": "changed",
+    "first_seen": "2026-08-13T21:37:36.948996+00:00"
+  },
+  {
+    "scholar": "周嘉欢",
+    "scholar_url": "https://zhoujiahuan1991.github.io/",
+    "affiliation": "北京大学",
+    "areas": [
+      "Continual Learning"
+    ],
+    "watch": "general",
+    "kind": "paper",
+    "text": "08.2026, Invited to serve as the Area Chair of ICLR'2027.",
+    "link": "https://zhoujiahuan1991.github.io/",
+    "date_str": "",
+    "timestamp": 1786657056.948556,
+    "result_type": "changed",
+    "first_seen": "2026-08-13T21:37:36.949004+00:00"
+  },
+  {
+    "scholar": "Breezedeus.com | 善意的AI生产幸福❤",
+    "scholar_url": "https://www.breezedeus.com/",
+    "affiliation": "",
+    "areas": [
+      "Agent",
+      "LLM"
+    ],
+    "watch": "general",
+    "kind": "update",
+    "text": "html",
+    "link": "https://www.breezedeus.com/",
+    "date_str": "",
+    "timestamp": 1786657056.948221,
+    "result_type": "changed",
+    "first_seen": "2026-08-08T21:23:16.665183+00:00"
+  },
+  {
     "scholar": "Breezedeus.com | 善意的AI生产幸福❤",
     "scholar_url": "https://www.breezedeus.com/",
     "affiliation": "",
@@ -248,23 +297,6 @@
     "timestamp": 1786539676.0,
     "result_type": "rss",
     "first_seen": "2026-08-12T21:37:39.011090+00:00"
-  },
-  {
-    "scholar": "Breezedeus.com | 善意的AI生产幸福❤",
-    "scholar_url": "https://www.breezedeus.com/",
-    "affiliation": "",
-    "areas": [
-      "Agent",
-      "LLM"
-    ],
-    "watch": "general",
-    "kind": "update",
-    "text": "html",
-    "link": "https://www.breezedeus.com/",
-    "date_str": "",
-    "timestamp": 1786501740.330569,
-    "result_type": "changed",
-    "first_seen": "2026-08-08T21:23:16.665183+00:00"
   },
   {
     "scholar": "Nathan Lambert",
@@ -542,6 +574,22 @@
     "first_seen": "2026-08-01T03:35:17.912514+00:00"
   },
   {
+    "scholar": "王立元",
+    "scholar_url": "https://lywang3081.github.io/",
+    "affiliation": "北京大学",
+    "areas": [
+      "Continual Learning"
+    ],
+    "watch": "general",
+    "kind": "paper",
+    "text": "2026/08 I will serve as an Area Chair at ICLR 2027.",
+    "link": "https://lywang3081.github.io/",
+    "date_str": "",
+    "timestamp": 1785542400.0,
+    "result_type": "changed",
+    "first_seen": "2026-08-13T21:37:36.949009+00:00"
+  },
+  {
     "scholar": "xuhuiz.com",
     "scholar_url": "https://xuhuiz.com/",
     "affiliation": "CMU",
@@ -758,53 +806,5 @@
     "timestamp": 1785102770.307322,
     "result_type": "changed",
     "first_seen": "2026-07-26T21:52:50.307818+00:00"
-  },
-  {
-    "scholar": "黄家斌",
-    "scholar_url": "https://jbhuang0604.github.io/",
-    "affiliation": "",
-    "areas": [
-      "3DV"
-    ],
-    "watch": "general",
-    "kind": "update",
-    "text": "[ Paper (PDF) ]",
-    "link": "https://jbhuang0604.github.io/",
-    "date_str": "",
-    "timestamp": 1785102770.307315,
-    "result_type": "changed",
-    "first_seen": "2026-07-26T21:52:50.307821+00:00"
-  },
-  {
-    "scholar": "黄家斌",
-    "scholar_url": "https://jbhuang0604.github.io/",
-    "affiliation": "",
-    "areas": [
-      "3DV"
-    ],
-    "watch": "general",
-    "kind": "paper",
-    "text": "arXiv 2026",
-    "link": "https://jbhuang0604.github.io/",
-    "date_str": "",
-    "timestamp": 1785102770.307308,
-    "result_type": "changed",
-    "first_seen": "2026-07-26T21:52:50.307824+00:00"
-  },
-  {
-    "scholar": "黄家斌",
-    "scholar_url": "https://jbhuang0604.github.io/",
-    "affiliation": "",
-    "areas": [
-      "3DV"
-    ],
-    "watch": "general",
-    "kind": "update",
-    "text": "Hadi Alzayer , Wenlong Huang , Haonan Chen , Christopher Luey , Lvmin Zhang , Maneesh Agrawala , Gordon Wetzstein , Li Fei-Fei , Yilun Du , Jiajun Wu , Jia-Bin Huang",
-    "link": "https://jbhuang0604.github.io/",
-    "date_str": "",
-    "timestamp": 1785102770.307297,
-    "result_type": "changed",
-    "first_seen": "2026-07-26T21:52:50.307827+00:00"
   }
 ]
