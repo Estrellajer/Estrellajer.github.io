@@ -1,5 +1,21 @@
 [
   {
+    "scholar": "Shuaichen Chang",
+    "scholar_url": "https://shuaichenchang.github.io/",
+    "affiliation": "AWS",
+    "areas": [
+      "Agent"
+    ],
+    "watch": "general",
+    "kind": "paper",
+    "text": "Co-organizer, Structured Understanding, Retrieval, and Generation in the LLM Era Workshop , ACL 2026",
+    "link": "https://shuaichenchang.github.io/",
+    "date_str": "",
+    "timestamp": 1786742416.717509,
+    "result_type": "changed",
+    "first_seen": "2026-08-14T21:20:16.717910+00:00"
+  },
+  {
     "scholar": "Breezedeus.com | 善意的AI生产幸福❤",
     "scholar_url": "https://www.breezedeus.com/",
     "affiliation": "",
@@ -790,21 +806,5 @@
     "timestamp": 1785329220.0,
     "result_type": "rss",
     "first_seen": "2026-07-29T21:54:07.372885+00:00"
-  },
-  {
-    "scholar": "黄家斌",
-    "scholar_url": "https://jbhuang0604.github.io/",
-    "affiliation": "",
-    "areas": [
-      "3DV"
-    ],
-    "watch": "general",
-    "kind": "update",
-    "text": "[ Code ]",
-    "link": "https://jbhuang0604.github.io/",
-    "date_str": "",
-    "timestamp": 1785102770.307328,
-    "result_type": "changed",
-    "first_seen": "2026-07-26T21:52:50.307809+00:00"
   }
 ]

@@ -8,6 +8,7 @@ Robustness and Evaluation : A core theme across my research is developing diagno
 Feel free to reach out if you’re interested in collaborating or just chatting about AI models and applications!
 Professional Service
 Workshop Organization
+Co-organizer, Structured Understanding, Retrieval, and Generation in the LLM Era Workshop , ACL 2026
 Co-organizer, Table Representation Learning Workshop , ACL 2025
 Program Committee / Reviewer
 NeurIPS, ICLR, ICML, ACL, EMNLP, NAACL, AAAI, ICASSP
@@ -18,4 +19,4 @@ Fudan Honors Student, 2017
 China National Scholarship, 2016
 China National Scholarship, 2015
 Miscs
-In my spare time I enjoy tennis, painting ( Summer Lake , Fall ), dancing, and traveling. I’ve stayed in Tianjin, Shanghai, Taipei, Columbus, San Jose, New York, and Honolulu for more than one month.
+In my spare time I enjoy tennis, painting ( Summer Lake , Fall ), dancing, and traveling.
