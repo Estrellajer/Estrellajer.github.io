@@ -15,12 +15,14 @@ Latest News with Compact Scrolling Design
 Latest News Learn More  >
 2026 Jul 12
 We have 2 papers accepted by ECCV 2026!
-2026 May 08
+2026 Apr 15
+We have 1 paper accepted by ACL 2026 Main!
+2026 Mar 01
 We have 2 papers accepted by CVPR 2026, including 1 Oral!
 2026 Jan 28
 We have 3 papers accepted by ICLR 2026!
 2025 Nov 08
-We have 2 papers accepted by AAAI 2026!
+We have 2 papers accepted by AAAI 2026, including 1 Oral!
 2025 Oct 31
 Our team won the first prize in the 19th Challenge Cup End-Deployable Dual-Arm Operation Algorithm Design Challenge!
 2025 Sep 20
@@ -31,8 +33,6 @@ Our team wins a first prize and a second prize at the 27th China Robot and Artif
 We won Team and Individual Awards at the China International College Students’ Innovation Competition 2025！
 2025 Jul 05
 We have 3 papers accepted by ACMMM 2025!
-2025 Jun 19
-Our team wins a first prize in RoboTwin Dual-Arm Collaboration Challenge of CVPR2025 (Real-world Track)!
 Drag, swipe, or use the arrows
 ↑ ↓
 Bottom Sections <div class="bottom-sections"> <div class="feature__wrapper">

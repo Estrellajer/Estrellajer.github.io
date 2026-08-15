@@ -19,7 +19,7 @@ Language & Agentic AI : Alignment, Reasoning RL, Agentic RL
 Robotics & Embodied AI : Model-based RL and World Model, Generative and Self-supervised RL, Multi-agent RL
 Selected Preprints / Publications [ Full Publications ]
 [7] Ke Sun*, Yizhou Zhao*, Jiayi Xin, Qi Long, Weijie Su . CurveRL: Principled Distribution-Aware Context Reweighting for LLM Reasoning ( submitted ), 2026. [ Code ] 🔥
-[6] Ke Sun, Linglong Kong, Hongtu Zhu, Chengchun Shi. ARMA-Design: Optimal Treatment Allocation Strategies for A/B Testing in Partially Observable Experiments . ( Minor Revision in Journal of American Statistical Association, 202 6 ) [ Code ]
+[6] Ke Sun, Linglong Kong, Hongtu Zhu, Chengchun Shi. ARMA-Design: Optimal Treatment Allocation Strategies for A/B Testing in Partially Observable Experiments . Journal of American Statistical Association (Theor y & Method ), Accepted, 202 6 [ Code ]
 [5] Ke Sun * , Hongming Zh ang* , Jun Jin, Chao Gao, Xi Chen, Wulong Liu, Linglong Kong. Principled Fast and Meta Knowledge Learners for Continual Reinforcement Learning . International Conference on Learning Representations ( ICLR ), 202 6 .  [ Code ]
 [ 4 ] Ke Sun , Yingnan Zhao, Enze Shi, Yafei Wang, Xiaodong Yan, Bei Jiang, Linglong Kong. Intrinsic Benefits of Being Categorical Distributional: Uncertainty-aware Regularized Exploration in Reinforcement Learning . Advances in Neural Information Processing Systems ( NeurIPS ), 2025
 [ 3 ] Ke Sun , Yingnan Zhao, Wulong Liu, Bei Jiang, Linglong Kong. Distributional Reinforcement Learning with Regularized Wasserstein Loss . Advances in Neural Information Processing Systems ( NeurIPS ), 2024. [ C ode ]

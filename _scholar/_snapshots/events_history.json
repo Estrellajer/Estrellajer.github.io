@@ -1,5 +1,242 @@
 [
   {
+    "scholar": "庄辉平",
+    "scholar_url": "https://zhuanghp.github.io/",
+    "affiliation": "华南理工大学",
+    "areas": [
+      "Continual Learning",
+      "Embodied AI"
+    ],
+    "watch": "general",
+    "kind": "paper",
+    "text": "We have 1 paper accepted by ACL 2026 Main!",
+    "link": "https://zhuanghp.github.io/",
+    "date_str": "",
+    "timestamp": 1786828493.573262,
+    "result_type": "changed",
+    "first_seen": "2026-08-15T21:14:53.573673+00:00"
+  },
+  {
+    "scholar": "Breezedeus.com | 善意的AI生产幸福❤",
+    "scholar_url": "https://www.breezedeus.com/",
+    "affiliation": "",
+    "areas": [
+      "Agent",
+      "LLM"
+    ],
+    "watch": "general",
+    "kind": "update",
+    "text": "详见： Pix2Text V1.1.1 新版发布，带来更好的数学公式检测模型",
+    "link": "https://www.breezedeus.com/",
+    "date_str": "",
+    "timestamp": 1786828493.573139,
+    "result_type": "changed",
+    "first_seen": "2026-08-10T21:34:36.519791+00:00"
+  },
+  {
+    "scholar": "Breezedeus.com | 善意的AI生产幸福❤",
+    "scholar_url": "https://www.breezedeus.com/",
+    "affiliation": "",
+    "areas": [
+      "Agent",
+      "LLM"
+    ],
+    "watch": "general",
+    "kind": "update",
+    "text": "V1.1.1 发布 ，带来全新的数学公式检测（MFD）模型",
+    "link": "https://www.breezedeus.com/",
+    "date_str": "",
+    "timestamp": 1786828493.573132,
+    "result_type": "changed",
+    "first_seen": "2026-08-10T21:34:36.519799+00:00"
+  },
+  {
+    "scholar": "Breezedeus.com | 善意的AI生产幸福❤",
+    "scholar_url": "https://www.breezedeus.com/",
+    "affiliation": "",
+    "areas": [
+      "Agent",
+      "LLM"
+    ],
+    "watch": "general",
+    "kind": "update",
+    "text": "-- 新版本特性 ---",
+    "link": "https://www.breezedeus.com/",
+    "date_str": "",
+    "timestamp": 1786828493.573126,
+    "result_type": "changed",
+    "first_seen": "2026-08-10T21:34:36.519803+00:00"
+  },
+  {
+    "scholar": "Breezedeus.com | 善意的AI生产幸福❤",
+    "scholar_url": "https://www.breezedeus.com/",
+    "affiliation": "",
+    "areas": [
+      "Agent",
+      "LLM"
+    ],
+    "watch": "general",
+    "kind": "update",
+    "text": "🎉Pix2Text V1.1.1 新版发布🎉",
+    "link": "https://www.breezedeus.com/",
+    "date_str": "",
+    "timestamp": 1786828493.573119,
+    "result_type": "changed",
+    "first_seen": "2026-08-10T21:34:36.519806+00:00"
+  },
+  {
+    "scholar": "Breezedeus.com | 善意的AI生产幸福❤",
+    "scholar_url": "https://www.breezedeus.com/",
+    "affiliation": "",
+    "areas": [
+      "Agent",
+      "LLM"
+    ],
+    "watch": "general",
+    "kind": "update",
+    "text": "Mobile-Agent-v3：新的 GUI Agents 开源王者",
+    "link": "https://www.breezedeus.com/",
+    "date_str": "",
+    "timestamp": 1786828493.573108,
+    "result_type": "changed",
+    "first_seen": "2026-08-10T21:34:36.519809+00:00"
+  },
+  {
+    "scholar": "Breezedeus.com | 善意的AI生产幸福❤",
+    "scholar_url": "https://www.breezedeus.com/",
+    "affiliation": "",
+    "areas": [
+      "Agent",
+      "LLM"
+    ],
+    "watch": "general",
+    "kind": "update",
+    "text": "AI Agent 性能优化：核心策略与实战技巧",
+    "link": "https://www.breezedeus.com/",
+    "date_str": "",
+    "timestamp": 1786828493.573102,
+    "result_type": "changed",
+    "first_seen": "2026-08-10T21:34:36.519812+00:00"
+  },
+  {
+    "scholar": "Breezedeus.com | 善意的AI生产幸福❤",
+    "scholar_url": "https://www.breezedeus.com/",
+    "affiliation": "",
+    "areas": [
+      "Agent",
+      "LLM"
+    ],
+    "watch": "general",
+    "kind": "update",
+    "text": "GUI Agents（智能体）最新论文",
+    "link": "https://www.breezedeus.com/",
+    "date_str": "",
+    "timestamp": 1786828493.573097,
+    "result_type": "changed",
+    "first_seen": "2026-08-10T21:34:36.519815+00:00"
+  },
+  {
+    "scholar": "Breezedeus.com | 善意的AI生产幸福❤",
+    "scholar_url": "https://www.breezedeus.com/",
+    "affiliation": "",
+    "areas": [
+      "Agent",
+      "LLM"
+    ],
+    "watch": "general",
+    "kind": "update",
+    "text": "AI Agent 中的上下文工程 (Context Engineering)",
+    "link": "https://www.breezedeus.com/",
+    "date_str": "",
+    "timestamp": 1786828493.573091,
+    "result_type": "changed",
+    "first_seen": "2026-08-10T21:34:36.519820+00:00"
+  },
+  {
+    "scholar": "Breezedeus.com | 善意的AI生产幸福❤",
+    "scholar_url": "https://www.breezedeus.com/",
+    "affiliation": "",
+    "areas": [
+      "Agent",
+      "LLM"
+    ],
+    "watch": "general",
+    "kind": "update",
+    "text": "企业 AI 转型路线图：从单点试验到可规模化能力",
+    "link": "https://www.breezedeus.com/",
+    "date_str": "",
+    "timestamp": 1786828493.573084,
+    "result_type": "changed",
+    "first_seen": "2026-07-25T21:46:11.546736+00:00"
+  },
+  {
+    "scholar": "Breezedeus.com | 善意的AI生产幸福❤",
+    "scholar_url": "https://www.breezedeus.com/",
+    "affiliation": "",
+    "areas": [
+      "Agent",
+      "LLM"
+    ],
+    "watch": "general",
+    "kind": "update",
+    "text": "为什么 Voice Agent 不能照搬 Coding Agent：实时对话与长任务如何共存",
+    "link": "https://www.breezedeus.com/",
+    "date_str": "",
+    "timestamp": 1786828493.573077,
+    "result_type": "changed",
+    "first_seen": "2026-08-10T21:34:36.519825+00:00"
+  },
+  {
+    "scholar": "Breezedeus.com | 善意的AI生产幸福❤",
+    "scholar_url": "https://www.breezedeus.com/",
+    "affiliation": "",
+    "areas": [
+      "Agent",
+      "LLM"
+    ],
+    "watch": "general",
+    "kind": "update",
+    "text": "最新发布",
+    "link": "https://www.breezedeus.com/",
+    "date_str": "",
+    "timestamp": 1786828493.573068,
+    "result_type": "changed",
+    "first_seen": "2026-08-10T21:34:36.519828+00:00"
+  },
+  {
+    "scholar": "Breezedeus.com | 善意的AI生产幸福❤",
+    "scholar_url": "https://www.breezedeus.com/",
+    "affiliation": "",
+    "areas": [
+      "Agent",
+      "LLM"
+    ],
+    "watch": "general",
+    "kind": "update",
+    "text": "Breezedeus",
+    "link": "https://www.breezedeus.com/",
+    "date_str": "",
+    "timestamp": 1786828493.57305,
+    "result_type": "changed",
+    "first_seen": "2026-08-10T21:34:36.519831+00:00"
+  },
+  {
+    "scholar": "孙科",
+    "scholar_url": "https://sites.google.com/view/kesun",
+    "affiliation": "宾夕法尼亚大学",
+    "areas": [
+      "Continuing RL"
+    ],
+    "watch": "general",
+    "kind": "update",
+    "text": "Page content updated",
+    "link": "https://sites.google.com/view/kesun",
+    "date_str": "",
+    "timestamp": 1786828493.572356,
+    "result_type": "changed",
+    "first_seen": "2026-07-31T03:35:24.388459+00:00"
+  },
+  {
     "scholar": "Breezedeus.com | 善意的AI生产幸福❤",
     "scholar_url": "https://www.breezedeus.com/",
     "affiliation": "",
@@ -45,210 +282,6 @@
     "timestamp": 1786742416.717509,
     "result_type": "changed",
     "first_seen": "2026-08-14T21:20:16.717910+00:00"
-  },
-  {
-    "scholar": "Breezedeus.com | 善意的AI生产幸福❤",
-    "scholar_url": "https://www.breezedeus.com/",
-    "affiliation": "",
-    "areas": [
-      "Agent",
-      "LLM"
-    ],
-    "watch": "general",
-    "kind": "update",
-    "text": "详见： Pix2Text V1.1.1 新版发布，带来更好的数学公式检测模型",
-    "link": "https://www.breezedeus.com/",
-    "date_str": "",
-    "timestamp": 1786674486.252751,
-    "result_type": "changed",
-    "first_seen": "2026-08-10T21:34:36.519791+00:00"
-  },
-  {
-    "scholar": "Breezedeus.com | 善意的AI生产幸福❤",
-    "scholar_url": "https://www.breezedeus.com/",
-    "affiliation": "",
-    "areas": [
-      "Agent",
-      "LLM"
-    ],
-    "watch": "general",
-    "kind": "update",
-    "text": "V1.1.1 发布 ，带来全新的数学公式检测（MFD）模型",
-    "link": "https://www.breezedeus.com/",
-    "date_str": "",
-    "timestamp": 1786674486.252743,
-    "result_type": "changed",
-    "first_seen": "2026-08-10T21:34:36.519799+00:00"
-  },
-  {
-    "scholar": "Breezedeus.com | 善意的AI生产幸福❤",
-    "scholar_url": "https://www.breezedeus.com/",
-    "affiliation": "",
-    "areas": [
-      "Agent",
-      "LLM"
-    ],
-    "watch": "general",
-    "kind": "update",
-    "text": "-- 新版本特性 ---",
-    "link": "https://www.breezedeus.com/",
-    "date_str": "",
-    "timestamp": 1786674486.252735,
-    "result_type": "changed",
-    "first_seen": "2026-08-10T21:34:36.519803+00:00"
-  },
-  {
-    "scholar": "Breezedeus.com | 善意的AI生产幸福❤",
-    "scholar_url": "https://www.breezedeus.com/",
-    "affiliation": "",
-    "areas": [
-      "Agent",
-      "LLM"
-    ],
-    "watch": "general",
-    "kind": "update",
-    "text": "🎉Pix2Text V1.1.1 新版发布🎉",
-    "link": "https://www.breezedeus.com/",
-    "date_str": "",
-    "timestamp": 1786674486.252727,
-    "result_type": "changed",
-    "first_seen": "2026-08-10T21:34:36.519806+00:00"
-  },
-  {
-    "scholar": "Breezedeus.com | 善意的AI生产幸福❤",
-    "scholar_url": "https://www.breezedeus.com/",
-    "affiliation": "",
-    "areas": [
-      "Agent",
-      "LLM"
-    ],
-    "watch": "general",
-    "kind": "update",
-    "text": "Mobile-Agent-v3：新的 GUI Agents 开源王者",
-    "link": "https://www.breezedeus.com/",
-    "date_str": "",
-    "timestamp": 1786674486.252714,
-    "result_type": "changed",
-    "first_seen": "2026-08-10T21:34:36.519809+00:00"
-  },
-  {
-    "scholar": "Breezedeus.com | 善意的AI生产幸福❤",
-    "scholar_url": "https://www.breezedeus.com/",
-    "affiliation": "",
-    "areas": [
-      "Agent",
-      "LLM"
-    ],
-    "watch": "general",
-    "kind": "update",
-    "text": "AI Agent 性能优化：核心策略与实战技巧",
-    "link": "https://www.breezedeus.com/",
-    "date_str": "",
-    "timestamp": 1786674486.252706,
-    "result_type": "changed",
-    "first_seen": "2026-08-10T21:34:36.519812+00:00"
-  },
-  {
-    "scholar": "Breezedeus.com | 善意的AI生产幸福❤",
-    "scholar_url": "https://www.breezedeus.com/",
-    "affiliation": "",
-    "areas": [
-      "Agent",
-      "LLM"
-    ],
-    "watch": "general",
-    "kind": "update",
-    "text": "GUI Agents（智能体）最新论文",
-    "link": "https://www.breezedeus.com/",
-    "date_str": "",
-    "timestamp": 1786674486.252699,
-    "result_type": "changed",
-    "first_seen": "2026-08-10T21:34:36.519815+00:00"
-  },
-  {
-    "scholar": "Breezedeus.com | 善意的AI生产幸福❤",
-    "scholar_url": "https://www.breezedeus.com/",
-    "affiliation": "",
-    "areas": [
-      "Agent",
-      "LLM"
-    ],
-    "watch": "general",
-    "kind": "update",
-    "text": "AI Agent 中的上下文工程 (Context Engineering)",
-    "link": "https://www.breezedeus.com/",
-    "date_str": "",
-    "timestamp": 1786674486.252691,
-    "result_type": "changed",
-    "first_seen": "2026-08-10T21:34:36.519820+00:00"
-  },
-  {
-    "scholar": "Breezedeus.com | 善意的AI生产幸福❤",
-    "scholar_url": "https://www.breezedeus.com/",
-    "affiliation": "",
-    "areas": [
-      "Agent",
-      "LLM"
-    ],
-    "watch": "general",
-    "kind": "update",
-    "text": "企业 AI 转型路线图：从单点试验到可规模化能力",
-    "link": "https://www.breezedeus.com/",
-    "date_str": "",
-    "timestamp": 1786674486.252682,
-    "result_type": "changed",
-    "first_seen": "2026-07-25T21:46:11.546736+00:00"
-  },
-  {
-    "scholar": "Breezedeus.com | 善意的AI生产幸福❤",
-    "scholar_url": "https://www.breezedeus.com/",
-    "affiliation": "",
-    "areas": [
-      "Agent",
-      "LLM"
-    ],
-    "watch": "general",
-    "kind": "update",
-    "text": "为什么 Voice Agent 不能照搬 Coding Agent：实时对话与长任务如何共存",
-    "link": "https://www.breezedeus.com/",
-    "date_str": "",
-    "timestamp": 1786674486.252673,
-    "result_type": "changed",
-    "first_seen": "2026-08-10T21:34:36.519825+00:00"
-  },
-  {
-    "scholar": "Breezedeus.com | 善意的AI生产幸福❤",
-    "scholar_url": "https://www.breezedeus.com/",
-    "affiliation": "",
-    "areas": [
-      "Agent",
-      "LLM"
-    ],
-    "watch": "general",
-    "kind": "update",
-    "text": "最新发布",
-    "link": "https://www.breezedeus.com/",
-    "date_str": "",
-    "timestamp": 1786674486.252661,
-    "result_type": "changed",
-    "first_seen": "2026-08-10T21:34:36.519828+00:00"
-  },
-  {
-    "scholar": "Breezedeus.com | 善意的AI生产幸福❤",
-    "scholar_url": "https://www.breezedeus.com/",
-    "affiliation": "",
-    "areas": [
-      "Agent",
-      "LLM"
-    ],
-    "watch": "general",
-    "kind": "update",
-    "text": "Breezedeus",
-    "link": "https://www.breezedeus.com/",
-    "date_str": "",
-    "timestamp": 1786674486.25264,
-    "result_type": "changed",
-    "first_seen": "2026-08-10T21:34:36.519831+00:00"
   },
   {
     "scholar": "周嘉欢",
@@ -313,22 +346,6 @@
     "timestamp": 1786570659.009946,
     "result_type": "changed",
     "first_seen": "2026-08-12T21:37:39.011078+00:00"
-  },
-  {
-    "scholar": "孙科",
-    "scholar_url": "https://sites.google.com/view/kesun",
-    "affiliation": "宾夕法尼亚大学",
-    "areas": [
-      "Continuing RL"
-    ],
-    "watch": "general",
-    "kind": "update",
-    "text": "Page content updated",
-    "link": "https://sites.google.com/view/kesun",
-    "date_str": "",
-    "timestamp": 1786570659.009946,
-    "result_type": "changed",
-    "first_seen": "2026-07-31T03:35:24.388459+00:00"
   },
   {
     "scholar": "Nathan Lambert",
@@ -786,22 +803,5 @@
     "timestamp": 1785448882.318341,
     "result_type": "changed",
     "first_seen": "2026-07-30T22:01:22.318948+00:00"
-  },
-  {
-    "scholar": "Breezedeus.com | 善意的AI生产幸福❤",
-    "scholar_url": "https://www.breezedeus.com/",
-    "affiliation": "",
-    "areas": [
-      "Agent",
-      "LLM"
-    ],
-    "watch": "general",
-    "kind": "update",
-    "text": "从每秒一帧的客户端采样到原生全双工 AV2AV，系统梳理实时流式音视频多模态的六条技术路线：增量 prefill 与 KV/GDN 状态、共享时间轴、显式说话触发、异步思考、模态专家，以及因果音视频生成；并拆解 Qwen3.5-Omni、MiniCPM-o、ROMA、DuplexOmni、ELLSA 与 Wan-Streamer 的实现边界与选型要点。",
-    "link": "https://www.breezedeus.com/",
-    "date_str": "",
-    "timestamp": 1785448882.318315,
-    "result_type": "changed",
-    "first_seen": "2026-07-30T22:01:22.318951+00:00"
   }
 ]
