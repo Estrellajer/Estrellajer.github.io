@@ -1,11 +1,12 @@
 # Scholar Monitor Report
 
-**Run:** 2026-08-14 21:20 UTC  |  **Total:** 58  |  Events 1  |  RSS 0  |  CHG 1  |  FIRST 0  |  OK 53  |  ERR 4
+**Run:** 2026-08-15 01:39 UTC  |  **Total:** 58  |  Events 2  |  RSS 1  |  CHG 1  |  FIRST 0  |  OK 52  |  ERR 4
 
 ---
-## Activity Feed (1)
+## Activity Feed (2)
 
-- **Shuaichen Chang** [AWS]: Co-organizer, Structured Understanding, Retrieval, and Generation in the LLM Era Workshop , ACL 2026
+- **Breezedeus.com | 善意的AI生产幸福❤**: html
+- **Nathan Lambert** [Interconnects]: GLM-5.3: How Chinese labs keep stride with the frontier
 
 ---
 ## Needs Attention (4)

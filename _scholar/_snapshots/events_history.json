@@ -1,5 +1,36 @@
 [
   {
+    "scholar": "Breezedeus.com | 善意的AI生产幸福❤",
+    "scholar_url": "https://www.breezedeus.com/",
+    "affiliation": "",
+    "areas": [
+      "Agent",
+      "LLM"
+    ],
+    "watch": "general",
+    "kind": "update",
+    "text": "html",
+    "link": "https://www.breezedeus.com/",
+    "date_str": "",
+    "timestamp": 1786757987.112593,
+    "result_type": "changed",
+    "first_seen": "2026-08-08T21:23:16.665183+00:00"
+  },
+  {
+    "scholar": "Nathan Lambert",
+    "scholar_url": "https://www.interconnects.ai/",
+    "affiliation": "Interconnects",
+    "areas": [],
+    "watch": "blog",
+    "kind": "post",
+    "text": "GLM-5.3: How Chinese labs keep stride with the frontier",
+    "link": "https://www.interconnects.ai/p/glm-53-how-chinese-labs-keep-stride",
+    "date_str": "Fri, 14 Aug 2026 21:23:35 GMT",
+    "timestamp": 1786742615.0,
+    "result_type": "rss",
+    "first_seen": "2026-08-15T01:39:47.112990+00:00"
+  },
+  {
     "scholar": "Shuaichen Chang",
     "scholar_url": "https://shuaichenchang.github.io/",
     "affiliation": "AWS",
@@ -250,23 +281,6 @@
     "timestamp": 1786657056.948556,
     "result_type": "changed",
     "first_seen": "2026-08-13T21:37:36.949004+00:00"
-  },
-  {
-    "scholar": "Breezedeus.com | 善意的AI生产幸福❤",
-    "scholar_url": "https://www.breezedeus.com/",
-    "affiliation": "",
-    "areas": [
-      "Agent",
-      "LLM"
-    ],
-    "watch": "general",
-    "kind": "update",
-    "text": "html",
-    "link": "https://www.breezedeus.com/",
-    "date_str": "",
-    "timestamp": 1786657056.948221,
-    "result_type": "changed",
-    "first_seen": "2026-08-08T21:23:16.665183+00:00"
   },
   {
     "scholar": "刘子铭（KAN）",
@@ -789,22 +803,5 @@
     "timestamp": 1785448882.318315,
     "result_type": "changed",
     "first_seen": "2026-07-30T22:01:22.318951+00:00"
-  },
-  {
-    "scholar": "苏剑林 - 科学空间",
-    "scholar_url": "https://kexue.fm/",
-    "affiliation": "Kimi",
-    "areas": [
-      "LLM",
-      "Theory"
-    ],
-    "watch": "blog",
-    "kind": "post",
-    "text": "解构Scaling Law：优化、架构、数据的三重奏",
-    "link": "https://kexue.fm/archives/11833",
-    "date_str": "Wed, 29 Jul 2026 20:47:00 +0800",
-    "timestamp": 1785329220.0,
-    "result_type": "rss",
-    "first_seen": "2026-07-29T21:54:07.372885+00:00"
   }
 ]
