@@ -31,12 +31,12 @@ ACM Transactions on Computing for Healthcare, 2023 2023
 Use of spatial autocorrelation and time series Landsat images for long-term monitoring of surface water shrinkage and expansion in Guanting Reservoir, China
 Z Li, Y Feng, H Gurgel, L Xu, N Dessay, P Gong
 Remote Sensing Letters 10 (12), 1192-1200, 2019 2019
-Rosd: Reflective on-policy self-distillation for language model reasoning across domains
-Z Zhao, X Ma, L Yang, Y Feng, D Shi, J He, X Xin, Z Ren, XM Wu
-arXiv preprint arXiv:2605.28014, 2026 2026
 Continual dialogue state tracking via reason-of-select distillation
 Y Feng, B Liu, X Dong, Z Lu, LM Zhan, A Lam, XM Wu
 Findings of ACL 2024 Long Paper, 2024 2024
+Rosd: Reflective on-policy self-distillation for language model reasoning across domains
+Z Zhao, X Ma, L Yang, Y Feng, D Shi, J He, X Xin, Z Ren, XM Wu
+arXiv preprint arXiv:2605.28014, 2026 2026
 DearLLM: Enhancing Personalized Healthcare via Large Language Models-Deduced Feature Correlations
 Y Xu, X Jiang, X Chu, R Qiu, Y Feng, H Ding, J Zhao, Y Wang, B Xie
 AAAI 2025, 2025 2025
