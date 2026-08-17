@@ -1,5 +1,36 @@
 [
   {
+    "scholar": "Nathan Lambert",
+    "scholar_url": "https://www.interconnects.ai/",
+    "affiliation": "Interconnects",
+    "areas": [],
+    "watch": "blog",
+    "kind": "post",
+    "text": "Teaching Everyone to Fish for Tokens",
+    "link": "https://www.interconnects.ai/p/teaching-everyone-to-fish-for-tokens",
+    "date_str": "Mon, 17 Aug 2026 15:07:49 GMT",
+    "timestamp": 1786979269.0,
+    "result_type": "rss",
+    "first_seen": "2026-08-17T21:19:22.464726+00:00"
+  },
+  {
+    "scholar": "苏剑林 - 科学空间",
+    "scholar_url": "https://kexue.fm/",
+    "affiliation": "Kimi",
+    "areas": [
+      "LLM",
+      "Theory"
+    ],
+    "watch": "blog",
+    "kind": "post",
+    "text": "流形上的最速下降：7. Stiefel的解析解",
+    "link": "https://kexue.fm/archives/11864",
+    "date_str": "Mon, 17 Aug 2026 18:44:00 +0800",
+    "timestamp": 1786963440.0,
+    "result_type": "rss",
+    "first_seen": "2026-08-17T21:19:22.464734+00:00"
+  },
+  {
     "scholar": "Breezedeus.com | 善意的AI生产幸福❤",
     "scholar_url": "https://www.breezedeus.com/",
     "affiliation": "",
@@ -769,39 +800,5 @@
     "timestamp": 1785448882.318358,
     "result_type": "changed",
     "first_seen": "2026-07-30T22:01:22.318942+00:00"
-  },
-  {
-    "scholar": "Breezedeus.com | 善意的AI生产幸福❤",
-    "scholar_url": "https://www.breezedeus.com/",
-    "affiliation": "",
-    "areas": [
-      "Agent",
-      "LLM"
-    ],
-    "watch": "general",
-    "kind": "update",
-    "text": "Multimodal Learning",
-    "link": "https://www.breezedeus.com/",
-    "date_str": "",
-    "timestamp": 1785448882.318351,
-    "result_type": "changed",
-    "first_seen": "2026-07-30T22:01:22.318945+00:00"
-  },
-  {
-    "scholar": "Breezedeus.com | 善意的AI生产幸福❤",
-    "scholar_url": "https://www.breezedeus.com/",
-    "affiliation": "",
-    "areas": [
-      "Agent",
-      "LLM"
-    ],
-    "watch": "general",
-    "kind": "update",
-    "text": "多模态学习",
-    "link": "https://www.breezedeus.com/",
-    "date_str": "",
-    "timestamp": 1785448882.318341,
-    "result_type": "changed",
-    "first_seen": "2026-07-30T22:01:22.318948+00:00"
   }
 ]
