@@ -1,12 +1,6 @@
 # Scholar Monitor Report
 
-**Run:** 2026-08-17 21:19 UTC  |  **Total:** 58  |  Events 2  |  RSS 2  |  CHG 0  |  FIRST 0  |  OK 52  |  ERR 4
-
----
-## Activity Feed (2)
-
-- **Nathan Lambert** [Interconnects]: Teaching Everyone to Fish for Tokens
-- **苏剑林 - 科学空间** [Kimi]: 流形上的最速下降：7. Stiefel的解析解
+**Run:** 2026-08-18 01:39 UTC  |  **Total:** 58  |  Events 0  |  RSS 0  |  CHG 0  |  FIRST 0  |  OK 54  |  ERR 4
 
 ---
 ## Needs Attention (4)
