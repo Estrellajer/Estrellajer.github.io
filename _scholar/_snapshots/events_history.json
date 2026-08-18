@@ -1,5 +1,21 @@
 [
   {
+    "scholar": "孙科",
+    "scholar_url": "https://sites.google.com/view/kesun",
+    "affiliation": "宾夕法尼亚大学",
+    "areas": [
+      "Continuing RL"
+    ],
+    "watch": "general",
+    "kind": "update",
+    "text": "Page content updated",
+    "link": "https://sites.google.com/view/kesun",
+    "date_str": "",
+    "timestamp": 1787087763.2272,
+    "result_type": "changed",
+    "first_seen": "2026-07-31T03:35:24.388459+00:00"
+  },
+  {
     "scholar": "Nathan Lambert",
     "scholar_url": "https://www.interconnects.ai/",
     "affiliation": "Interconnects",
@@ -267,22 +283,6 @@
     "timestamp": 1786828493.57305,
     "result_type": "changed",
     "first_seen": "2026-08-10T21:34:36.519831+00:00"
-  },
-  {
-    "scholar": "孙科",
-    "scholar_url": "https://sites.google.com/view/kesun",
-    "affiliation": "宾夕法尼亚大学",
-    "areas": [
-      "Continuing RL"
-    ],
-    "watch": "general",
-    "kind": "update",
-    "text": "Page content updated",
-    "link": "https://sites.google.com/view/kesun",
-    "date_str": "",
-    "timestamp": 1786828493.572356,
-    "result_type": "changed",
-    "first_seen": "2026-07-31T03:35:24.388459+00:00"
   },
   {
     "scholar": "Nathan Lambert",
