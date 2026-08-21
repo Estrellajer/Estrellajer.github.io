@@ -16,6 +16,322 @@
     "first_seen": "2026-08-20T21:20:34.676099+00:00"
   },
   {
+    "scholar": "吴太强",
+    "scholar_url": "https://wutaiqiang.github.io/",
+    "affiliation": "香港大学",
+    "areas": [
+      "Reasoning"
+    ],
+    "watch": "general",
+    "kind": "paper",
+    "text": "EMNLP 2026, Main Conference [ Paper ]",
+    "link": "https://wutaiqiang.github.io/",
+    "date_str": "",
+    "timestamp": 1787346981.707274,
+    "result_type": "changed",
+    "first_seen": "2026-08-21T21:16:21.707727+00:00"
+  },
+  {
+    "scholar": "周大蔚",
+    "scholar_url": "https://www.lamda.nju.edu.cn/zhoudw/",
+    "affiliation": "NJU LAMDA",
+    "areas": [
+      "Continual Learning"
+    ],
+    "watch": "general",
+    "kind": "update",
+    "text": "[ Code ] [<a href=\"https://mp.weixin.qq.com/s/TkoSd7Kg9eh_L3J5XNkkhg\">Media</a>]",
+    "link": "https://www.lamda.nju.edu.cn/zhoudw/",
+    "date_str": "",
+    "timestamp": 1787346981.707196,
+    "result_type": "changed",
+    "first_seen": "2026-08-21T21:16:21.707734+00:00"
+  },
+  {
+    "scholar": "周大蔚",
+    "scholar_url": "https://www.lamda.nju.edu.cn/zhoudw/",
+    "affiliation": "NJU LAMDA",
+    "areas": [
+      "Continual Learning"
+    ],
+    "watch": "general",
+    "kind": "update",
+    "text": "[ Paper ]",
+    "link": "https://www.lamda.nju.edu.cn/zhoudw/",
+    "date_str": "",
+    "timestamp": 1787346981.707187,
+    "result_type": "changed",
+    "first_seen": "2026-08-21T21:16:21.707738+00:00"
+  },
+  {
+    "scholar": "周大蔚",
+    "scholar_url": "https://www.lamda.nju.edu.cn/zhoudw/",
+    "affiliation": "NJU LAMDA",
+    "areas": [
+      "Continual Learning"
+    ],
+    "watch": "general",
+    "kind": "paper",
+    "text": "Conference on Empirical Methods in Natural Language Processing. EMNLP 2026",
+    "link": "https://www.lamda.nju.edu.cn/zhoudw/",
+    "date_str": "",
+    "timestamp": 1787346981.707181,
+    "result_type": "changed",
+    "first_seen": "2026-08-21T21:16:21.707742+00:00"
+  },
+  {
+    "scholar": "周大蔚",
+    "scholar_url": "https://www.lamda.nju.edu.cn/zhoudw/",
+    "affiliation": "NJU LAMDA",
+    "areas": [
+      "Continual Learning"
+    ],
+    "watch": "general",
+    "kind": "update",
+    "text": "Jun-Tao Tang, Zhen-Hao Xie, Yu-Cheng Shi, Da-Wei Zhou",
+    "link": "https://www.lamda.nju.edu.cn/zhoudw/",
+    "date_str": "",
+    "timestamp": 1787346981.707171,
+    "result_type": "changed",
+    "first_seen": "2026-08-21T21:16:21.707745+00:00"
+  },
+  {
+    "scholar": "周大蔚",
+    "scholar_url": "https://www.lamda.nju.edu.cn/zhoudw/",
+    "affiliation": "NJU LAMDA",
+    "areas": [
+      "Continual Learning"
+    ],
+    "watch": "general",
+    "kind": "update",
+    "text": "CRAM: Centroid-Routing and Adaptive MoE for Multimodal Continual Instruction Tuning",
+    "link": "https://www.lamda.nju.edu.cn/zhoudw/",
+    "date_str": "",
+    "timestamp": 1787346981.707121,
+    "result_type": "changed",
+    "first_seen": "2026-08-21T21:16:21.707747+00:00"
+  },
+  {
+    "scholar": "周大蔚",
+    "scholar_url": "https://www.lamda.nju.edu.cn/zhoudw/",
+    "affiliation": "NJU LAMDA",
+    "areas": [
+      "Continual Learning"
+    ],
+    "watch": "general",
+    "kind": "paper",
+    "text": "EMNLP",
+    "link": "https://www.lamda.nju.edu.cn/zhoudw/",
+    "date_str": "",
+    "timestamp": 1787346981.707112,
+    "result_type": "changed",
+    "first_seen": "2026-08-21T21:16:21.707750+00:00"
+  },
+  {
+    "scholar": "Breezedeus.com | 善意的AI生产幸福❤",
+    "scholar_url": "https://www.breezedeus.com/",
+    "affiliation": "",
+    "areas": [
+      "Agent",
+      "LLM"
+    ],
+    "watch": "general",
+    "kind": "update",
+    "text": "详见： Pix2Text V1.1.1 新版发布，带来更好的数学公式检测模型",
+    "link": "https://www.breezedeus.com/",
+    "date_str": "",
+    "timestamp": 1787346981.706964,
+    "result_type": "changed",
+    "first_seen": "2026-08-10T21:34:36.519791+00:00"
+  },
+  {
+    "scholar": "Breezedeus.com | 善意的AI生产幸福❤",
+    "scholar_url": "https://www.breezedeus.com/",
+    "affiliation": "",
+    "areas": [
+      "Agent",
+      "LLM"
+    ],
+    "watch": "general",
+    "kind": "update",
+    "text": "V1.1.1 发布 ，带来全新的数学公式检测（MFD）模型",
+    "link": "https://www.breezedeus.com/",
+    "date_str": "",
+    "timestamp": 1787346981.706956,
+    "result_type": "changed",
+    "first_seen": "2026-08-10T21:34:36.519799+00:00"
+  },
+  {
+    "scholar": "Breezedeus.com | 善意的AI生产幸福❤",
+    "scholar_url": "https://www.breezedeus.com/",
+    "affiliation": "",
+    "areas": [
+      "Agent",
+      "LLM"
+    ],
+    "watch": "general",
+    "kind": "update",
+    "text": "-- 新版本特性 ---",
+    "link": "https://www.breezedeus.com/",
+    "date_str": "",
+    "timestamp": 1787346981.706948,
+    "result_type": "changed",
+    "first_seen": "2026-08-10T21:34:36.519803+00:00"
+  },
+  {
+    "scholar": "Breezedeus.com | 善意的AI生产幸福❤",
+    "scholar_url": "https://www.breezedeus.com/",
+    "affiliation": "",
+    "areas": [
+      "Agent",
+      "LLM"
+    ],
+    "watch": "general",
+    "kind": "update",
+    "text": "🎉Pix2Text V1.1.1 新版发布🎉",
+    "link": "https://www.breezedeus.com/",
+    "date_str": "",
+    "timestamp": 1787346981.70694,
+    "result_type": "changed",
+    "first_seen": "2026-08-10T21:34:36.519806+00:00"
+  },
+  {
+    "scholar": "Breezedeus.com | 善意的AI生产幸福❤",
+    "scholar_url": "https://www.breezedeus.com/",
+    "affiliation": "",
+    "areas": [
+      "Agent",
+      "LLM"
+    ],
+    "watch": "general",
+    "kind": "update",
+    "text": "Mobile-Agent-v3：新的 GUI Agents 开源王者",
+    "link": "https://www.breezedeus.com/",
+    "date_str": "",
+    "timestamp": 1787346981.706928,
+    "result_type": "changed",
+    "first_seen": "2026-08-10T21:34:36.519809+00:00"
+  },
+  {
+    "scholar": "Breezedeus.com | 善意的AI生产幸福❤",
+    "scholar_url": "https://www.breezedeus.com/",
+    "affiliation": "",
+    "areas": [
+      "Agent",
+      "LLM"
+    ],
+    "watch": "general",
+    "kind": "update",
+    "text": "AI Agent 性能优化：核心策略与实战技巧",
+    "link": "https://www.breezedeus.com/",
+    "date_str": "",
+    "timestamp": 1787346981.70692,
+    "result_type": "changed",
+    "first_seen": "2026-08-10T21:34:36.519812+00:00"
+  },
+  {
+    "scholar": "Breezedeus.com | 善意的AI生产幸福❤",
+    "scholar_url": "https://www.breezedeus.com/",
+    "affiliation": "",
+    "areas": [
+      "Agent",
+      "LLM"
+    ],
+    "watch": "general",
+    "kind": "update",
+    "text": "GUI Agents（智能体）最新论文",
+    "link": "https://www.breezedeus.com/",
+    "date_str": "",
+    "timestamp": 1787346981.706912,
+    "result_type": "changed",
+    "first_seen": "2026-08-10T21:34:36.519815+00:00"
+  },
+  {
+    "scholar": "Breezedeus.com | 善意的AI生产幸福❤",
+    "scholar_url": "https://www.breezedeus.com/",
+    "affiliation": "",
+    "areas": [
+      "Agent",
+      "LLM"
+    ],
+    "watch": "general",
+    "kind": "update",
+    "text": "AI Agent 中的上下文工程 (Context Engineering)",
+    "link": "https://www.breezedeus.com/",
+    "date_str": "",
+    "timestamp": 1787346981.706905,
+    "result_type": "changed",
+    "first_seen": "2026-08-10T21:34:36.519820+00:00"
+  },
+  {
+    "scholar": "Breezedeus.com | 善意的AI生产幸福❤",
+    "scholar_url": "https://www.breezedeus.com/",
+    "affiliation": "",
+    "areas": [
+      "Agent",
+      "LLM"
+    ],
+    "watch": "general",
+    "kind": "update",
+    "text": "企业 AI 转型路线图：从单点试验到可规模化能力",
+    "link": "https://www.breezedeus.com/",
+    "date_str": "",
+    "timestamp": 1787346981.706896,
+    "result_type": "changed",
+    "first_seen": "2026-07-25T21:46:11.546736+00:00"
+  },
+  {
+    "scholar": "Breezedeus.com | 善意的AI生产幸福❤",
+    "scholar_url": "https://www.breezedeus.com/",
+    "affiliation": "",
+    "areas": [
+      "Agent",
+      "LLM"
+    ],
+    "watch": "general",
+    "kind": "update",
+    "text": "为什么 Voice Agent 不能照搬 Coding Agent：实时对话与长任务如何共存",
+    "link": "https://www.breezedeus.com/",
+    "date_str": "",
+    "timestamp": 1787346981.706887,
+    "result_type": "changed",
+    "first_seen": "2026-08-10T21:34:36.519825+00:00"
+  },
+  {
+    "scholar": "Breezedeus.com | 善意的AI生产幸福❤",
+    "scholar_url": "https://www.breezedeus.com/",
+    "affiliation": "",
+    "areas": [
+      "Agent",
+      "LLM"
+    ],
+    "watch": "general",
+    "kind": "update",
+    "text": "最新发布",
+    "link": "https://www.breezedeus.com/",
+    "date_str": "",
+    "timestamp": 1787346981.706875,
+    "result_type": "changed",
+    "first_seen": "2026-08-10T21:34:36.519828+00:00"
+  },
+  {
+    "scholar": "Breezedeus.com | 善意的AI生产幸福❤",
+    "scholar_url": "https://www.breezedeus.com/",
+    "affiliation": "",
+    "areas": [
+      "Agent",
+      "LLM"
+    ],
+    "watch": "general",
+    "kind": "update",
+    "text": "Breezedeus",
+    "link": "https://www.breezedeus.com/",
+    "date_str": "",
+    "timestamp": 1787346981.706856,
+    "result_type": "changed",
+    "first_seen": "2026-08-10T21:34:36.519831+00:00"
+  },
+  {
     "scholar": "Breezedeus.com | 善意的AI生产幸福❤",
     "scholar_url": "https://www.breezedeus.com/",
     "affiliation": "",
@@ -143,210 +459,6 @@
     "timestamp": 1787260834.675654,
     "result_type": "changed",
     "first_seen": "2026-08-20T21:20:34.676126+00:00"
-  },
-  {
-    "scholar": "Breezedeus.com | 善意的AI生产幸福❤",
-    "scholar_url": "https://www.breezedeus.com/",
-    "affiliation": "",
-    "areas": [
-      "Agent",
-      "LLM"
-    ],
-    "watch": "general",
-    "kind": "update",
-    "text": "详见： Pix2Text V1.1.1 新版发布，带来更好的数学公式检测模型",
-    "link": "https://www.breezedeus.com/",
-    "date_str": "",
-    "timestamp": 1787260834.67454,
-    "result_type": "changed",
-    "first_seen": "2026-08-10T21:34:36.519791+00:00"
-  },
-  {
-    "scholar": "Breezedeus.com | 善意的AI生产幸福❤",
-    "scholar_url": "https://www.breezedeus.com/",
-    "affiliation": "",
-    "areas": [
-      "Agent",
-      "LLM"
-    ],
-    "watch": "general",
-    "kind": "update",
-    "text": "V1.1.1 发布 ，带来全新的数学公式检测（MFD）模型",
-    "link": "https://www.breezedeus.com/",
-    "date_str": "",
-    "timestamp": 1787260834.674533,
-    "result_type": "changed",
-    "first_seen": "2026-08-10T21:34:36.519799+00:00"
-  },
-  {
-    "scholar": "Breezedeus.com | 善意的AI生产幸福❤",
-    "scholar_url": "https://www.breezedeus.com/",
-    "affiliation": "",
-    "areas": [
-      "Agent",
-      "LLM"
-    ],
-    "watch": "general",
-    "kind": "update",
-    "text": "-- 新版本特性 ---",
-    "link": "https://www.breezedeus.com/",
-    "date_str": "",
-    "timestamp": 1787260834.674525,
-    "result_type": "changed",
-    "first_seen": "2026-08-10T21:34:36.519803+00:00"
-  },
-  {
-    "scholar": "Breezedeus.com | 善意的AI生产幸福❤",
-    "scholar_url": "https://www.breezedeus.com/",
-    "affiliation": "",
-    "areas": [
-      "Agent",
-      "LLM"
-    ],
-    "watch": "general",
-    "kind": "update",
-    "text": "🎉Pix2Text V1.1.1 新版发布🎉",
-    "link": "https://www.breezedeus.com/",
-    "date_str": "",
-    "timestamp": 1787260834.674517,
-    "result_type": "changed",
-    "first_seen": "2026-08-10T21:34:36.519806+00:00"
-  },
-  {
-    "scholar": "Breezedeus.com | 善意的AI生产幸福❤",
-    "scholar_url": "https://www.breezedeus.com/",
-    "affiliation": "",
-    "areas": [
-      "Agent",
-      "LLM"
-    ],
-    "watch": "general",
-    "kind": "update",
-    "text": "Mobile-Agent-v3：新的 GUI Agents 开源王者",
-    "link": "https://www.breezedeus.com/",
-    "date_str": "",
-    "timestamp": 1787260834.674504,
-    "result_type": "changed",
-    "first_seen": "2026-08-10T21:34:36.519809+00:00"
-  },
-  {
-    "scholar": "Breezedeus.com | 善意的AI生产幸福❤",
-    "scholar_url": "https://www.breezedeus.com/",
-    "affiliation": "",
-    "areas": [
-      "Agent",
-      "LLM"
-    ],
-    "watch": "general",
-    "kind": "update",
-    "text": "AI Agent 性能优化：核心策略与实战技巧",
-    "link": "https://www.breezedeus.com/",
-    "date_str": "",
-    "timestamp": 1787260834.674497,
-    "result_type": "changed",
-    "first_seen": "2026-08-10T21:34:36.519812+00:00"
-  },
-  {
-    "scholar": "Breezedeus.com | 善意的AI生产幸福❤",
-    "scholar_url": "https://www.breezedeus.com/",
-    "affiliation": "",
-    "areas": [
-      "Agent",
-      "LLM"
-    ],
-    "watch": "general",
-    "kind": "update",
-    "text": "GUI Agents（智能体）最新论文",
-    "link": "https://www.breezedeus.com/",
-    "date_str": "",
-    "timestamp": 1787260834.674489,
-    "result_type": "changed",
-    "first_seen": "2026-08-10T21:34:36.519815+00:00"
-  },
-  {
-    "scholar": "Breezedeus.com | 善意的AI生产幸福❤",
-    "scholar_url": "https://www.breezedeus.com/",
-    "affiliation": "",
-    "areas": [
-      "Agent",
-      "LLM"
-    ],
-    "watch": "general",
-    "kind": "update",
-    "text": "AI Agent 中的上下文工程 (Context Engineering)",
-    "link": "https://www.breezedeus.com/",
-    "date_str": "",
-    "timestamp": 1787260834.674481,
-    "result_type": "changed",
-    "first_seen": "2026-08-10T21:34:36.519820+00:00"
-  },
-  {
-    "scholar": "Breezedeus.com | 善意的AI生产幸福❤",
-    "scholar_url": "https://www.breezedeus.com/",
-    "affiliation": "",
-    "areas": [
-      "Agent",
-      "LLM"
-    ],
-    "watch": "general",
-    "kind": "update",
-    "text": "企业 AI 转型路线图：从单点试验到可规模化能力",
-    "link": "https://www.breezedeus.com/",
-    "date_str": "",
-    "timestamp": 1787260834.674473,
-    "result_type": "changed",
-    "first_seen": "2026-07-25T21:46:11.546736+00:00"
-  },
-  {
-    "scholar": "Breezedeus.com | 善意的AI生产幸福❤",
-    "scholar_url": "https://www.breezedeus.com/",
-    "affiliation": "",
-    "areas": [
-      "Agent",
-      "LLM"
-    ],
-    "watch": "general",
-    "kind": "update",
-    "text": "为什么 Voice Agent 不能照搬 Coding Agent：实时对话与长任务如何共存",
-    "link": "https://www.breezedeus.com/",
-    "date_str": "",
-    "timestamp": 1787260834.674464,
-    "result_type": "changed",
-    "first_seen": "2026-08-10T21:34:36.519825+00:00"
-  },
-  {
-    "scholar": "Breezedeus.com | 善意的AI生产幸福❤",
-    "scholar_url": "https://www.breezedeus.com/",
-    "affiliation": "",
-    "areas": [
-      "Agent",
-      "LLM"
-    ],
-    "watch": "general",
-    "kind": "update",
-    "text": "最新发布",
-    "link": "https://www.breezedeus.com/",
-    "date_str": "",
-    "timestamp": 1787260834.674452,
-    "result_type": "changed",
-    "first_seen": "2026-08-10T21:34:36.519828+00:00"
-  },
-  {
-    "scholar": "Breezedeus.com | 善意的AI生产幸福❤",
-    "scholar_url": "https://www.breezedeus.com/",
-    "affiliation": "",
-    "areas": [
-      "Agent",
-      "LLM"
-    ],
-    "watch": "general",
-    "kind": "update",
-    "text": "Breezedeus",
-    "link": "https://www.breezedeus.com/",
-    "date_str": "",
-    "timestamp": 1787260834.674432,
-    "result_type": "changed",
-    "first_seen": "2026-08-10T21:34:36.519831+00:00"
   },
   {
     "scholar": "孙科",
@@ -692,107 +804,5 @@
     "timestamp": 1785794400.0,
     "result_type": "rss_no_change",
     "first_seen": "2026-08-05T03:15:44.676333+00:00"
-  },
-  {
-    "scholar": "Nathan Lambert",
-    "scholar_url": "https://www.interconnects.ai/",
-    "affiliation": "Interconnects",
-    "areas": [],
-    "watch": "blog",
-    "kind": "post",
-    "text": "Introducing our Artifacts Hub and Adoption Dashboard",
-    "link": "https://www.interconnects.ai/p/introducing-our-artifacts-hub-and",
-    "date_str": "Mon, 03 Aug 2026 14:03:08 GMT",
-    "timestamp": 1785765788.0,
-    "result_type": "rss",
-    "first_seen": "2026-08-03T22:01:07.321884+00:00"
-  },
-  {
-    "scholar": "Nathan Lambert",
-    "scholar_url": "https://www.interconnects.ai/",
-    "affiliation": "Interconnects",
-    "areas": [],
-    "watch": "blog",
-    "kind": "post",
-    "text": "Latest open artifacts (#23): Laguna S2.1, Inkling, & Kimi K3 show the utility of open models on the Pareto frontier",
-    "link": "https://www.interconnects.ai/p/latest-open-artifacts-23-laguna-s21",
-    "date_str": "Sun, 02 Aug 2026 13:01:40 GMT",
-    "timestamp": 1785675700.0,
-    "result_type": "rss",
-    "first_seen": "2026-08-02T21:47:31.815916+00:00"
-  },
-  {
-    "scholar": "🙋🏻‍♂️关于 | Chenxu's Blog",
-    "scholar_url": "https://www.chenxutalk.top/about/",
-    "affiliation": "北京邮电大学",
-    "areas": [],
-    "watch": "general",
-    "kind": "update",
-    "text": "linux 的基本操作",
-    "link": "https://www.chenxutalk.top/posts/study/cs0/linux-basic/",
-    "date_str": "Sun, 02 Aug 2026 17:57:45 +0800",
-    "timestamp": 1785664665.0,
-    "result_type": "rss",
-    "first_seen": "2026-08-02T21:47:31.815924+00:00"
-  },
-  {
-    "scholar": "🙋🏻‍♂️关于 | Chenxu's Blog",
-    "scholar_url": "https://www.chenxutalk.top/about/",
-    "affiliation": "北京邮电大学",
-    "areas": [],
-    "watch": "general",
-    "kind": "update",
-    "text": "启动我的服务",
-    "link": "https://www.chenxutalk.top/posts/study/cs0/start-my-service/",
-    "date_str": "Sun, 02 Aug 2026 17:57:45 +0800",
-    "timestamp": 1785664665.0,
-    "result_type": "rss",
-    "first_seen": "2026-08-02T21:47:31.815929+00:00"
-  },
-  {
-    "scholar": "🙋🏻‍♂️关于 | Chenxu's Blog",
-    "scholar_url": "https://www.chenxutalk.top/about/",
-    "affiliation": "北京邮电大学",
-    "areas": [],
-    "watch": "general",
-    "kind": "update",
-    "text": "更舒适地写代码（含学生白嫖指南）",
-    "link": "https://www.chenxutalk.top/posts/study/cs0/write-code-comfortably/",
-    "date_str": "Sun, 02 Aug 2026 15:02:17 +0800",
-    "timestamp": 1785654137.0,
-    "result_type": "rss",
-    "first_seen": "2026-08-02T21:47:31.815932+00:00"
-  },
-  {
-    "scholar": "Thinking Machines Lab",
-    "scholar_url": "https://thinkingmachines.ai/blog/",
-    "affiliation": "Thinking Machines",
-    "areas": [
-      "LLM"
-    ],
-    "watch": "general",
-    "kind": "update",
-    "text": "Thinking Machines",
-    "link": "https://thinkingmachines.ai/blog/",
-    "date_str": "",
-    "timestamp": 1785555317.912136,
-    "result_type": "changed",
-    "first_seen": "2026-08-01T03:35:17.912507+00:00"
-  },
-  {
-    "scholar": "Thinking Machines Lab",
-    "scholar_url": "https://thinkingmachines.ai/blog/",
-    "affiliation": "Thinking Machines",
-    "areas": [
-      "LLM"
-    ],
-    "watch": "general",
-    "kind": "update",
-    "text": "A Safe Path to Open Weights",
-    "link": "https://thinkingmachines.ai/blog/",
-    "date_str": "",
-    "timestamp": 1785555317.912099,
-    "result_type": "changed",
-    "first_seen": "2026-08-01T03:35:17.912514+00:00"
   }
 ]

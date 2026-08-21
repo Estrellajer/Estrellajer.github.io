@@ -5,7 +5,7 @@ For master, I studied in IIGroup in Tsinghua University,
 supervised by Prof. Yujiu Yang .
 In 2020, I received my bachelor degree in Department of Automation from Tsinghua University.
 My major research interests lie in Effcient Model methods for Large Language Models.
-Recently, I focus on the efficient reasoning via RL.
+Recently, I focus on the Model Consolidate (模型合版) via OPD.
 <p>
 <font color=#FF0000>
 <strong>I am looking for a postdoc opportunity, please contact me if you are interested.</strong>
@@ -13,6 +13,7 @@ Recently, I focus on the efficient reasoning via RL.
 </p>
 Recent News
 Show all
+2026.08 - Three papers are accepted by EMNLP 2026, check ART for details.
 2026.04 - Two papers are accepted by ACL 2026, check MI and Profit for details.
 2026.03 - Present a talk about "Occam’s Razor: Lossless CoT Compression for LLMs". [ TechBeat ] [<a target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=xugaVOQ6srU">Youtube</a>] [ Slide ]
 2026.02 - Release one report on LLM efficient reasoning via reward shaping. We losslessly compress CoT of Qwen3 models. [ Project ]
@@ -33,7 +34,7 @@ Show all
 Publications & Preprints
 🔥 The Art of Efficient Reasoning: Data, Reward, and Optimization
 Taiqiang Wu , Zenan Xu, Bo Zhou, Ngai Wong
-Arxiv Preprint [ Paper ]
+EMNLP 2026, Main Conference [ Paper ]
 [ Weights ]
 [ Blog ]
 🔥 Revisiting Model Interpolation for Efficient Reasoning
