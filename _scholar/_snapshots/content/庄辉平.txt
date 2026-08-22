@@ -13,6 +13,8 @@ Large Models
 <p><a href="/research/large-language-models" class="btn btn--inverse" style="margin: 2px">Learn More</a></p>
 Latest News with Compact Scrolling Design
 Latest News Learn More  >
+2026 Aug 22
+We have 1 paper accepted by EMNLP 2026 Main Conference!
 2026 Jul 12
 We have 2 papers accepted by ECCV 2026!
 2026 Apr 15
@@ -31,8 +33,6 @@ We have 1 paper accepted by NeurIPS 2025 !
 Our team wins a first prize and a second prize at the 27th China Robot and Artificial Intelligence Competition!
 2025 Aug 03
 We won Team and Individual Awards at the China International College Students’ Innovation Competition 2025！
-2025 Jul 05
-We have 3 papers accepted by ACMMM 2025!
 Drag, swipe, or use the arrows
 ↑ ↓
 Bottom Sections <div class="bottom-sections"> <div class="feature__wrapper">
