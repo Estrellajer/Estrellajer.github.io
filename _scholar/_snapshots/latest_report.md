@@ -1,12 +1,6 @@
 # Scholar Monitor Report
 
-**Run:** 2026-08-22 21:14 UTC  |  **Total:** 58  |  Events 2  |  RSS 0  |  CHG 1  |  FIRST 0  |  OK 53  |  ERR 4
-
----
-## Activity Feed (2)
-
-- **庄辉平** [华南理工大学]: We have 1 paper accepted by EMNLP 2026 Main Conference!
-- **庄辉平** [华南理工大学]: 2026 Aug 22
+**Run:** 2026-08-23 01:48 UTC  |  **Total:** 58  |  Events 0  |  RSS 0  |  CHG 0  |  FIRST 0  |  OK 54  |  ERR 4
 
 ---
 ## Needs Attention (4)
