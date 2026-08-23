@@ -1,6 +1,12 @@
 # Scholar Monitor Report
 
-**Run:** 2026-08-23 01:48 UTC  |  **Total:** 58  |  Events 0  |  RSS 0  |  CHG 0  |  FIRST 0  |  OK 54  |  ERR 4
+**Run:** 2026-08-23 21:14 UTC  |  **Total:** 58  |  Events 2  |  RSS 1  |  CHG 1  |  FIRST 0  |  OK 52  |  ERR 4
+
+---
+## Activity Feed (2)
+
+- **Breezedeus.com | 善意的AI生产幸福❤**: html
+- **苏剑林 - 科学空间** [Kimi]: 动量的新理解：逼近特征层面的梯度下降
 
 ---
 ## Needs Attention (4)

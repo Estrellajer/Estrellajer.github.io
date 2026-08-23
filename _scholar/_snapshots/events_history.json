@@ -16,6 +16,40 @@
     "first_seen": "2026-08-20T21:20:34.676099+00:00"
   },
   {
+    "scholar": "Breezedeus.com | 善意的AI生产幸福❤",
+    "scholar_url": "https://www.breezedeus.com/",
+    "affiliation": "",
+    "areas": [
+      "Agent",
+      "LLM"
+    ],
+    "watch": "general",
+    "kind": "update",
+    "text": "html",
+    "link": "https://www.breezedeus.com/",
+    "date_str": "",
+    "timestamp": 1787519655.286897,
+    "result_type": "changed",
+    "first_seen": "2026-08-08T21:23:16.665183+00:00"
+  },
+  {
+    "scholar": "苏剑林 - 科学空间",
+    "scholar_url": "https://kexue.fm/",
+    "affiliation": "Kimi",
+    "areas": [
+      "LLM",
+      "Theory"
+    ],
+    "watch": "blog",
+    "kind": "post",
+    "text": "动量的新理解：逼近特征层面的梯度下降",
+    "link": "https://kexue.fm/archives/11875",
+    "date_str": "Sun, 23 Aug 2026 18:01:00 +0800",
+    "timestamp": 1787479260.0,
+    "result_type": "rss",
+    "first_seen": "2026-08-23T21:14:15.287354+00:00"
+  },
+  {
     "scholar": "庄辉平",
     "scholar_url": "https://zhuanghp.github.io/",
     "affiliation": "华南理工大学",
@@ -347,23 +381,6 @@
     "timestamp": 1787346981.706856,
     "result_type": "changed",
     "first_seen": "2026-08-10T21:34:36.519831+00:00"
-  },
-  {
-    "scholar": "Breezedeus.com | 善意的AI生产幸福❤",
-    "scholar_url": "https://www.breezedeus.com/",
-    "affiliation": "",
-    "areas": [
-      "Agent",
-      "LLM"
-    ],
-    "watch": "general",
-    "kind": "update",
-    "text": "html",
-    "link": "https://www.breezedeus.com/",
-    "date_str": "",
-    "timestamp": 1787276698.919856,
-    "result_type": "changed",
-    "first_seen": "2026-08-08T21:23:16.665183+00:00"
   },
   {
     "scholar": "Zixuan Li",
@@ -786,22 +803,5 @@
     "timestamp": 1785844800.0,
     "result_type": "rss",
     "first_seen": "2026-08-04T22:07:02.038824+00:00"
-  },
-  {
-    "scholar": "苏剑林 - 科学空间",
-    "scholar_url": "https://kexue.fm/",
-    "affiliation": "Kimi",
-    "areas": [
-      "LLM",
-      "Theory"
-    ],
-    "watch": "blog",
-    "kind": "post",
-    "text": "简单谈谈K3的MoE和Attention",
-    "link": "https://kexue.fm/archives/11848",
-    "date_str": "Tue, 04 Aug 2026 13:07:00 +0800",
-    "timestamp": 1785820020.0,
-    "result_type": "rss",
-    "first_seen": "2026-08-04T22:07:02.038828+00:00"
   }
 ]
