@@ -2,6 +2,7 @@ I am currently an Assistant Professor at the Department of Psychological and Cog
 We are recuiting self-motivated postdocs and research interns! Directions include: continual learning, agent memory, AI4Science, AI4Health. Please contact me if you are interested.
 My email address is changed to liyuanwang@tsinghua.edu.cn and wly19@tsinghua.org.cn .
 Recent News
+2026/08 I received the NSFC Youth Science Fund (Category B).
 2026/08 I will serve as an Area Chair at ICLR 2027.
 2026/07 We are organizing the 1st CL4FMAgents Workshop at NeurIPS 2026.
 2026/06 One paper is accepted (in principle) to Nature Communications.
