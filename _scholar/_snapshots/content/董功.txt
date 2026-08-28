@@ -19,10 +19,10 @@ Vision & Multimodal Learning
 • Image restoration & enhancement
 ∞
 I am looking for highly motivated PhD and MPhil students with strong research background and initiative. Please check the details and drop me an email with your CV and transcripts if you are interested.
-All professional engagements for which I am the primary point of contact are managed directly by me .
-I do not delegate individuals to represent me or act on my behalf with investors, industry partners, or other external parties. Anyone interested in our work is welcome to contact us directly. We are always open to collaborations.
 Google Scholar GitHub Artificer AI Lab UNSW X LinkedIn Short Bio
 News
+(Aug 2026) 2 papers are accepted to EMNLP 2026 Findings: " Adaptive LoRA Rank Minimization for Forgetting Mitigation in Continual Learning "; Adaptive Anisotropic Learning Rates for LoRA. Congratulations to Haodong and Huiyi!
+(Aug 2026) I accepted to serve as an Area Chair for ICLR 2027.
 (July 2026) I accepted to serve as an Area Chair for AAAI 2027.
 (June 2026) 1 paper is accepted at ECCV 2026: " MotionEcho " — test-time distillation that restores motion control in fast (distilled) video generators. Congratulations to Jintao, Xin, and collaborators!
 (June 2026) I accepted to serve as an Action Editor (AE) for the Transactions on Machine Learning Research (TMLR) .
@@ -89,3 +89,5 @@ News
 Contact
 Office: Level 4, Building K17, UNSW, Sydney 2052, Australia
 Email: dong.gong at unsw.edu.au; edgong01 at gmail.com
+All professional engagements for which I am the primary point of contact are managed directly by me .
+I do not delegate individuals to represent me or act on my behalf with investors, industry partners, or other external parties. Anyone interested in our work is welcome to contact us directly. We are always open to collaborations.

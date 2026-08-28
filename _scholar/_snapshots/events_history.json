@@ -16,6 +16,54 @@
     "first_seen": "2026-08-20T21:20:34.676099+00:00"
   },
   {
+    "scholar": "周嘉欢",
+    "scholar_url": "https://zhoujiahuan1991.github.io/",
+    "affiliation": "北京大学",
+    "areas": [
+      "Continual Learning"
+    ],
+    "watch": "general",
+    "kind": "update",
+    "text": "[ code ] PL",
+    "link": "https://zhoujiahuan1991.github.io/",
+    "date_str": "",
+    "timestamp": 1787893712.706894,
+    "result_type": "changed",
+    "first_seen": "2026-08-28T05:08:32.707326+00:00"
+  },
+  {
+    "scholar": "周嘉欢",
+    "scholar_url": "https://zhoujiahuan1991.github.io/",
+    "affiliation": "北京大学",
+    "areas": [
+      "Continual Learning"
+    ],
+    "watch": "general",
+    "kind": "update",
+    "text": "[ pdf ]",
+    "link": "https://zhoujiahuan1991.github.io/",
+    "date_str": "",
+    "timestamp": 1787893712.706888,
+    "result_type": "changed",
+    "first_seen": "2026-08-28T05:08:32.707332+00:00"
+  },
+  {
+    "scholar": "周嘉欢",
+    "scholar_url": "https://zhoujiahuan1991.github.io/",
+    "affiliation": "北京大学",
+    "areas": [
+      "Continual Learning"
+    ],
+    "watch": "general",
+    "kind": "paper",
+    "text": "08.2026, One paper is accepted by IEEE TPAMI.",
+    "link": "https://zhoujiahuan1991.github.io/",
+    "date_str": "",
+    "timestamp": 1787893712.706834,
+    "result_type": "changed",
+    "first_seen": "2026-08-28T05:08:32.707334+00:00"
+  },
+  {
     "scholar": "Breezedeus.com | 善意的AI生产幸福❤",
     "scholar_url": "https://www.breezedeus.com/",
     "affiliation": "",
@@ -759,52 +807,5 @@
     "timestamp": 1786267080.0,
     "result_type": "rss",
     "first_seen": "2026-08-09T21:24:08.681771+00:00"
-  },
-  {
-    "scholar": "冯亮",
-    "scholar_url": "https://fenglang918.github.io/index.html",
-    "affiliation": "复旦大学",
-    "areas": [
-      "Develop tool"
-    ],
-    "watch": "general",
-    "kind": "update",
-    "text": "Page content updated",
-    "link": "https://fenglang918.github.io/index.html",
-    "date_str": "",
-    "timestamp": 1786138280.019286,
-    "result_type": "changed",
-    "first_seen": "2026-08-07T21:31:20.020033+00:00"
-  },
-  {
-    "scholar": "Xiongda Blog",
-    "scholar_url": "https://www.xxrbear.cn/",
-    "affiliation": "Software",
-    "areas": [],
-    "watch": "general",
-    "kind": "update",
-    "text": "Claude Banner",
-    "link": "https://www.xxrbear.cn/posts/tech/essays/claude-banner/",
-    "date_str": "Wed, 05 Aug 2026 10:46:21 +0800",
-    "timestamp": 1785897981.0,
-    "result_type": "rss",
-    "first_seen": "2026-08-05T03:15:44.676179+00:00"
-  },
-  {
-    "scholar": "Breezedeus.com | 善意的AI生产幸福❤",
-    "scholar_url": "https://www.breezedeus.com/",
-    "affiliation": "",
-    "areas": [
-      "Agent",
-      "LLM"
-    ],
-    "watch": "general",
-    "kind": "update",
-    "text": "Page content updated",
-    "link": "https://www.breezedeus.com/",
-    "date_str": "",
-    "timestamp": 1785881222.037568,
-    "result_type": "changed",
-    "first_seen": "2026-08-04T22:07:02.038816+00:00"
   }
 ]

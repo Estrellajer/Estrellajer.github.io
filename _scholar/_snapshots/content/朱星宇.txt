@@ -31,12 +31,12 @@ AAAI 2026, 2025 2025
 Principled Steering via Null-space Projection for Jailbreak Defense in Vision-Language Models
 X Zhu, B Zhu, S Wang, J Fang, K Zhao, H Zhang, X He
 CVPR 2026, 2026 2026
-Revisiting robustness for llm safety alignment via selective geometry control
-Y Yang, W Tao, J Liu, X Zhu, J Fang, W Huang, L Wu, R Hong, TS Chua
-arXiv preprint arXiv:2602.07340, 2026 2026
 Res-Bench: Benchmarking the Robustness of Multimodal Large Language Models to Dynamic Resolution Input
 C Li, Z Wang, Y Sheng, X Zhu, Y Hao, X Wang
 AAAI 2026, 2025 2025
+Revisiting robustness for llm safety alignment via selective geometry control
+Y Yang, W Tao, J Liu, X Zhu, J Fang, W Huang, L Wu, R Hong, TS Chua
+arXiv preprint arXiv:2602.07340, 2026 2026
 Robust adaptive beamforming for coprime array based on interference power estimation via subspace
 S Sun, Z Ye, X Zhu
 2020 IEEE 11th Sensor Array and Multichannel Signal Processing Workshop (SAM …, 2020 2020
