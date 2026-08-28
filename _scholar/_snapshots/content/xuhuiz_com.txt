@@ -1,4 +1,4 @@
-I recently defended my PhD at the Language Technologies Institute at CMU , where I was advised by Maarten Sap , and received a Microsoft PhD Fellowship .
+Currently, I am a Research Scientist at Meta Superintelligence TBD Lab . I recently defended my PhD at the Language Technologies Institute at CMU , where I was advised by Maarten Sap , and received a Microsoft PhD Fellowship .
 I am interested in socially intelligent AI. More specifically:
 📢 How do we build socially intelligent AI systems? e.g., Sotopia , Social World Models
 🧱 How do we create AI agents that effectively help humans? e.g., WebArena , TOM-SWE

@@ -16,6 +16,23 @@
     "first_seen": "2026-08-20T21:20:34.676099+00:00"
   },
   {
+    "scholar": "xuhuiz.com",
+    "scholar_url": "https://xuhuiz.com/",
+    "affiliation": "CMU",
+    "areas": [
+      "RL",
+      "CHI."
+    ],
+    "watch": "general",
+    "kind": "update",
+    "text": "Page content updated",
+    "link": "https://xuhuiz.com/",
+    "date_str": "",
+    "timestamp": 1787914776.540347,
+    "result_type": "changed",
+    "first_seen": "2026-08-28T10:59:36.541283+00:00"
+  },
+  {
     "scholar": "周嘉欢",
     "scholar_url": "https://zhoujiahuan1991.github.io/",
     "affiliation": "北京大学",
@@ -790,22 +807,5 @@
     "timestamp": 1786287431.0,
     "result_type": "rss",
     "first_seen": "2026-08-09T21:24:08.681767+00:00"
-  },
-  {
-    "scholar": "苏剑林 - 科学空间",
-    "scholar_url": "https://kexue.fm/",
-    "affiliation": "Kimi",
-    "areas": [
-      "LLM",
-      "Theory"
-    ],
-    "watch": "blog",
-    "kind": "post",
-    "text": "除了交叉熵，LM Loss还有什么选择？",
-    "link": "https://kexue.fm/archives/11854",
-    "date_str": "Sun, 09 Aug 2026 17:18:00 +0800",
-    "timestamp": 1786267080.0,
-    "result_type": "rss",
-    "first_seen": "2026-08-09T21:24:08.681771+00:00"
   }
 ]
