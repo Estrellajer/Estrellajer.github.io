@@ -55,6 +55,6 @@ ICLR 2026, 2026 2026
 Robustifying Vision-Language Models via Test-Time Prompt Adaptation
 X Zhu, H Wu, S Wang, B Zhu, J Ge, J Zhang, L Chen
 arXiv preprint arXiv:2607.09450, 2026 2026
-LPEdit: Locality-Preserving Knowledge Editing for MultiModal Large Language Models
-T Zhang, J Fang, H Jiang, X Zhu, X Wang, X He
-Proceedings of the ACM Web Conference 2026, 8425-8428, 2026 2026
+PEA-DPO: Perception-Enhanced Alignment Direct Preference Optimization for MLLMs Alignment
+J Feng, J Wu, X Zhu*, J Wu, X Wang, X He
+ACM MM 2026, 2026 2026

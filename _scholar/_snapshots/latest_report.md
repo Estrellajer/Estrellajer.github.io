@@ -1,11 +1,11 @@
 # Scholar Monitor Report
 
-**Run:** 2026-08-28 10:59 UTC  |  **Total:** 58  |  Events 1  |  RSS 0  |  CHG 1  |  FIRST 0  |  OK 53  |  ERR 4
+**Run:** 2026-08-29 02:59 UTC  |  **Total:** 58  |  Events 1  |  RSS 0  |  CHG 1  |  FIRST 0  |  OK 53  |  ERR 4
 
 ---
 ## Activity Feed (1)
 
-- **xuhuiz.com** [CMU]: Page content updated
+- **朱星宇** [NUS]: PEA-DPO: Perception-Enhanced Alignment Direct Preference Optimization for MLLMs Alignment · ACM MM 2026, 2026, 2026
 
 ---
 ## Needs Attention (4)
