@@ -54,7 +54,7 @@ X Zhu, B Zhu, J Fang, S Wang, Y Zhang, X Wang, X He
 ICLR 2026, 2026 2026
 Robustifying Vision-Language Models via Test-Time Prompt Adaptation
 X Zhu, H Wu, S Wang, B Zhu, J Ge, J Zhang, L Chen
-arXiv preprint arXiv:2607.09450, 2026 2026
+ICML, 2026 2026
 PEA-DPO: Perception-Enhanced Alignment Direct Preference Optimization for MLLMs Alignment
 J Feng, J Wu, X Zhu*, J Wu, X Wang, X He
-ACM MM 2026, 2026 2026
+ACM MM, 2026 2026
