@@ -1,23 +1,23 @@
 # Scholar Monitor Report
 
-**Run:** 2026-08-30 04:58 UTC  |  **Total:** 58  |  Events 13  |  RSS 1  |  CHG 1  |  FIRST 0  |  OK 52  |  ERR 4
+**Run:** 2026-08-30 23:03 UTC  |  **Total:** 58  |  Events 13  |  RSS 0  |  CHG 2  |  FIRST 0  |  OK 52  |  ERR 4
 
 ---
 ## Activity Feed (13)
 
-- **Breezedeus.com | 善意的AI生产幸福❤**: 详见： Pix2Text V1.1.1 新版发布，带来更好的数学公式检测模型
-- **Breezedeus.com | 善意的AI生产幸福❤**: V1.1.1 发布 ，带来全新的数学公式检测（MFD）模型
-- **Breezedeus.com | 善意的AI生产幸福❤**: -- 新版本特性 ---
-- **Breezedeus.com | 善意的AI生产幸福❤**: 🎉Pix2Text V1.1.1 新版发布🎉
-- **Breezedeus.com | 善意的AI生产幸福❤**: AI Agent 性能优化：核心策略与实战技巧
-- **Breezedeus.com | 善意的AI生产幸福❤**: GUI Agents（智能体）最新论文
-- **Breezedeus.com | 善意的AI生产幸福❤**: AI Agent 中的上下文工程 (Context Engineering)
-- **Breezedeus.com | 善意的AI生产幸福❤**: 企业 AI 转型路线图：从单点试验到可规模化能力
-- **Breezedeus.com | 善意的AI生产幸福❤**: 为什么 Voice Agent 不能照搬 Coding Agent：实时对话与长任务如何共存
-- **Breezedeus.com | 善意的AI生产幸福❤**: 模型如何边看边听边回应：流式多模态的能力阶梯与技术分野
-- **Breezedeus.com | 善意的AI生产幸福❤**: 最新发布
-- **Breezedeus.com | 善意的AI生产幸福❤**: Breezedeus
-- **刘子铭（KAN）** [清华大学]: Foundation Model or Not?
+- **沈立** [中山大学]: Pengxiang Li, Yefan Zhou, Dilxat Muhtar, Lu Yin, Shilin Yan, Li Shen , Yi Liang, Soroush Vosoughi, Shiwei Liu, Diffusion
+- **沈立** [中山大学]: Yan Sun, Qixin Zhang, Zhiyuan Yu, Xikun Zhang, Li Shen , Dacheng Tao, MaskPro: Linear-Space Probabilistic Learning for S
+- **沈立** [中山大学]: Yan Sun, Qixin Zhang, Li Shen , Dacheng Tao, Convergent Differential Privacy Analysis for General Federated Learning , I
+- **沈立** [中山大学]: Shengchao Hu, Peng Wang, Guozheng Ma, Shi Fu, Li Shen , Ya Zhang, Dacheng Tao, The State of Reinforcement Finetuning for
+- **沈立** [中山大学]: Guodong Zheng, Peng Wang, Shengchao Hu, Quan Zheng, Li Shen , Understanding the Dynamics of Forgetting and Generalizatio
+- **沈立** [中山大学]: Guinan Su, Li Shen , Lu Yin, Shiwei Liu, Yanwu Yang, Jonas Geiping, GPTailor: Large Language Model Pruning Through Layer
+- **沈立** [中山大学]: Ziqing Fan, Yuqiao Xian, Yan Sun, Ke Shen, Li Shen , Joint Selection for Large-Scale Pre-Training Data via Policy Gradie
+- **沈立** [中山大学]: Mingda Zhang, Mingli Zhu, Zihao Zhu, Li Shen , Baoyuan Wu, Reliable Poisoned Sample Detection against Backdoor Attacks E
+- **沈立** [中山大学]: Yongxian Wei, Runxi Cheng, Weike Jin, Enneng Yang, Li Shen , Lu Hou, SiNan Du, Chun Yuan, Xiaochun Cao, Dacheng Tao, Opt
+- **沈立** [中山大学]: Wei Ju, Siyu Yi, Kangjie Zheng, Yifan Wang, Ziyue Qiao, Li Shen , Yongdao Zhou, Xiaochun Cao, Jiancheng Lv, Compactness 
+- **沈立** [中山大学]: ⭐️⭐️⭐️ (NEW) 2027秋季入学博士生招聘：本科直博、硕博连读、申请考核制博士（可选中大-河套学院联培， 中大-鹏城实验室联培 ）
+- **Breezedeus.com | 善意的AI生产幸福❤**: html
+- **沈立** [中山大学]: Yang Dai, Oubo Ma, Xingxing Liang, Longfei Zhang, Xiaochun Cao, Shouling Ji, Jiaheng Zhang, Jincai Huang, Li Shen , Troj
 
 ---
 ## Needs Attention (4)

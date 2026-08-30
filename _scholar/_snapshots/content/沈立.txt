@@ -6,14 +6,26 @@ Li Shen (沈力)
 Associate Professor, Ph.D. Advisor
 School of Cyber Science and Technology, Shenzhen Campus of Sun Yat-sen University(SYSU)
 Address : Room 2-914, Engineering building, SYSU, Guangming, Shenzhen, Guangdong, China
-Email : shenli6@mail.sysu.edu.cn (Preferred)/ mathshenli@gmail.com
+Email : shenli6@mail.sysu.edu.cn (Preferred) / lishen@slai.edu.cn / mathshenli@gmail.com
 Google Scholar , 中 大 主页 , 河套学院主页
 Biography
-C urrently , Li Shen is the associate professor at the School of Cyber Science and Technology, Shenzhen Campus of Sun Yat-sen University. Previously, he was a research scientist at JD Explore Academy, Beijing, and a senior researcher at Tencent AI Lab, Shenzhen. He received his bachelor's degree and Ph.D. from the School of Mathematics, South China University of Technology . His research interests include efficient deep learning, efficient reinforcement learning, optimization and deep learning theory. He has published more than 100 papers in peer-reviewed top-tier journal papers (Nature Machine Intelligence, JMLR, IEEE TPAMI, IJCV, etc.) and conference papers (ICML, NeurIPS, ICLR, etc.). He has served as Area Chairs for ICML, NeurIPS, ICLR, CVPR, and ACMMM. He has also served as the associate editor for IEEE Transactions on Pattern Analysis and Machine Intelligence, IEEE Transactions on Knowledge and Data Engineering and IEEE Transactions on Multimedia, and action editor for Neural Networks.
-⭐️⭐️⭐️ Our team recruits several postdocs to work on trustworthy artificial intelligence, distributed/federated learning, continual learning, reinforcement learning,  and efficient training of foundation models. [ 逸仙博士后 ][ 深圳博士后政策 ][ 光明区人才政策 ]
+C urrently , Li Shen is the associate professor at the School of Cyber Science and Technology, Shenzhen Campus of Sun Yat-sen University. Previously, he was a research scientist at JD Explore Academy, Beijing, and a senior researcher at Tencent AI Lab, Shenzhen. He received his bachelor's degree and Ph.D. from the School of Mathematics, South China University of Technology . His research interests include efficient deep learning, efficient reinforcement learning, optimization and deep learning theory. He has published more than 100 papers in peer-reviewed top-tier journals (Nature Machine Intelligence, JMLR, IEEE TPAMI, IJCV, etc.) and conference papers (ICML, NeurIPS, ICLR, etc.). He has served as Area Chair for ICML, NeurIPS, ICLR, CVPR, AAAI, and ACMMM. He has also served as the associate editor for IEEE Transactions on Pattern Analysis and Machine Intelligence, IEEE Transactions on Knowledge and Data Engineering and IEEE Transactions on Multimedia, and action editor for Neural Networks.
+⭐️⭐️⭐️ Our team recruits several postdocs (CS, MATH, Physics) to work on efficient foundation models , Geo-distributed learning, continual learning, reinforcement learning,  and deep learning theory. [ 逸仙博士后 ][ 深圳博士后政策 ][ 光明区人才政策 ]
 ⭐️⭐️⭐️ (N EW ) Our team recruits several PHD students ( 2027 fall, SYSU, SYSU-SLAI, SYSU-PCL ), working on efficient training of foundation models/ Generative RL Models , optimization and learning theory. P lease contact me as soon as possible if you are interested in our group.
-⭐️⭐️⭐️ (NEW) 2027秋季入学博士生招聘：本科直博、硕博连读、申请考核制博士（可选中大-鹏城实验室联培，中大-河套学院联培计划）
+⭐️⭐️⭐️ (NEW) 2027秋季入学博士生招聘：本科直博、硕博连读、申请考核制博士（可选中大-河套学院联培， 中大-鹏城实验室联培 ）
 Selected Conference
+Pengxiang Li, Yefan Zhou, Dilxat Muhtar, Lu Yin, Shilin Yan, Li Shen , Yi Liang, Soroush Vosoughi, Shiwei Liu, Diffusion Language Model Knows the Answer Before It Decodes, ICLR, 2026. ( oral )
+Wei Ju, Siyu Yi, Kangjie Zheng, Yifan Wang, Ziyue Qiao, Li Shen , Yongdao Zhou, Xiaochun Cao, Jiancheng Lv, Compactness and Consistency: A Conjoint Framework for Deep Graph Clustering, ICLR, 2026. ( oral )
+Yongxian Wei, Runxi Cheng, Weike Jin, Enneng Yang, Li Shen , Lu Hou, SiNan Du, Chun Yuan, Xiaochun Cao, Dacheng Tao, OptMerge: Unifying Multimodal LLM Capabilities and Modalities via Model Merging , ICLR, 2026.
+Mingda Zhang, Mingli Zhu, Zihao Zhu, Li Shen , Baoyuan Wu, Reliable Poisoned Sample Detection against Backdoor Attacks Enhanced by Sharpness Aware Minimization , ICLR, 2026.
+Ziqing Fan, Yuqiao Xian, Yan Sun, Ke Shen, Li Shen , Joint Selection for Large-Scale Pre-Training Data via Policy Gradient-based Mask Learning , ICLR, 2026.
+Guinan Su, Li Shen , Lu Yin, Shiwei Liu, Yanwu Yang, Jonas Geiping, GPTailor: Large Language Model Pruning Through Layer Cutting and Stitching , ICLR, 2026.
+Guodong Zheng, Peng Wang, Shengchao Hu, Quan Zheng, Li Shen , Understanding the Dynamics of Forgetting and Generalization in Continual Learning via the Neural Tangent Kernel , ICLR, 2026.
+Yang Dai, Oubo Ma, Xingxing Liang, Longfei Zhang, Xiaochun Cao, Shouling Ji, Jiaheng Zhang, Jincai Huang, Li Shen , TrojanTO: Action-Level Backdoor Attacks Against Trajectory Optimization Models , ICLR, 2026.
+Shengchao Hu, Peng Wang, Guozheng Ma, Shi Fu, Li Shen , Ya Zhang, Dacheng Tao, The State of Reinforcement Finetuning for Transformer-based Agents , ICLR, 2026.
+Yan Sun, Qixin Zhang, Li Shen , Dacheng Tao, Convergent Differential Privacy Analysis for General Federated Learning , ICLR, 2026.
+Yan Sun, Qixin Zhang, Zhiyuan Yu, Xikun Zhang, Li Shen , Dacheng Tao, MaskPro: Linear-Space Probabilistic Learning for Strict (N:M)-Sparsity on LLMs , ICLR, 2026.
+Enneng Yang, Qun Yang, Peng Wang, Anke Tang, Guibing Guo, Xiaochun Cao, Li Shen , MergOPT: A Merge-Aware Optimizer for Robust Model Merging, ICLR, 2026.
 Yingsha Xie, Rui Min, Zeyu Qin, Fei Ma, Li Shen , Fei Yu, Xiaochun Cao, RoMa: A Robust Model Watermarking Scheme for Protecting IP in Diffusion Models , NeurIPS, 2025.
 Haotian Luo, Haiying He, Yibo Wang, Jinluan Yang, Rui Liu, Naiqiang Tan, Xiaochun Cao, Dacheng Tao, Li Shen , Ada-R1: Hybrid-CoT via Bi-Level Adaptive Reasoning Optimization , NeurIPS, 2025.
 Hongling Zheng, Li Shen , Yong Luo, Deheng Ye, Shuhan Xu, Bo Du, Jialie Shen, Dacheng Tao, Value-Guided Decision Transformer: A Unified Reinforcement Learning Framework for Online and Offline Settings , NeurIPS, 2025.
@@ -132,7 +144,6 @@ Shengchao Hu, Li Shen , Ya Zhang, Yixin Chen, Dacheng Tao, On Transforming Reinf
 Zhuo Huang, Muyang Li, Li Shen , Jun Yu, Chen Gong, Bo Han, Tongliang Liu, Winning Prize Comes from Losing Tickets: Improve Invariant Learning by Exploring Variant Parameters for Out-of-Distribution Generalization, International Journal of Computer Vision, 2024.
 Nan Yin, Li Shen , Huan Xiong, Bin Gu, Chong Chen, Xian-Sheng Hua, Siwei Liu, Xiao Luo, Messages Are Never Propagated Alone: Collaborative Hypergraph Neural Network for Time-series Forecasting, IEEE Transactions on Pattern Analysis and Machine Intelligence, 2023 .
 Zhenyi Wang, Li Shen , Tiehang Duan, Qiuling Suo, Le Fang, Wei Liu, Mingchen Gao, Distributionally Robust Memory Evolution with Generalized Divergence for Continual Learning, IEEE Transactions on Pattern Analysis and Machine Intelligence, 2023.
-Congliang Chen, Li Shen , Wei Liu, Zhi-Quan Luo, Efficient-Adam: Communication-Efficient Distributed Adam, IEEE Transactions on Signal Processing, 2023.
 Yan Sun, Li Shen , Hao Sun, Liang Ding, Dacheng Tao, Efficient Federated Learning via Local Adaptive Amended Optimizer with Linear Speedup, IEEE Transactions on Pattern Analysis and Machine Intelligence, 2023 .
 Zhihao Cheng, Li Shen , Miaoxi Zhu, Jiaxian Guo, Meng Fang, Liu Liu, Bo Du, Dacheng Tao, Prescribed Safety Performance Imitation Learning from A Single Expert Dataset, IEEE Transactions on Pattern Analysis and Machine Intelligence, 2023.
 Shiwei Liu, Yuesong Tian, Tianlong Chen, Li Shen , Don't Be So Dense: Sparse-to-Sparse GAN Training Without Sacrificing Performance, International Journal of Computer Vision, 2023.

@@ -1,5 +1,21 @@
 [
   {
+    "scholar": "沈立",
+    "scholar_url": "https://sites.google.com/site/mathshenli/home",
+    "affiliation": "中山大学",
+    "areas": [
+      "Model Merging"
+    ],
+    "watch": "general",
+    "kind": "paper",
+    "text": "Pengxiang Li, Yefan Zhou, Dilxat Muhtar, Lu Yin, Shilin Yan, Li Shen , Yi Liang, Soroush Vosoughi, Shiwei Liu, Diffusion Language Model Knows the Answer Before It Decodes, ICLR, 2026. ( oral )",
+    "link": "https://sites.google.com/site/mathshenli/home",
+    "date_str": "",
+    "timestamp": 1796083200.0,
+    "result_type": "changed",
+    "first_seen": "2026-08-30T23:03:18.531757+00:00"
+  },
+  {
     "scholar": "Zixuan Li",
     "scholar_url": "https://lee-zix.github.io/",
     "affiliation": "计算所",
@@ -14,6 +30,183 @@
     "timestamp": 1790812800.0,
     "result_type": "changed",
     "first_seen": "2026-08-20T21:20:34.676099+00:00"
+  },
+  {
+    "scholar": "沈立",
+    "scholar_url": "https://sites.google.com/site/mathshenli/home",
+    "affiliation": "中山大学",
+    "areas": [
+      "Model Merging"
+    ],
+    "watch": "general",
+    "kind": "paper",
+    "text": "Yan Sun, Qixin Zhang, Zhiyuan Yu, Xikun Zhang, Li Shen , Dacheng Tao, MaskPro: Linear-Space Probabilistic Learning for Strict (N:M)-Sparsity on LLMs , ICLR, 2026.",
+    "link": "https://sites.google.com/site/mathshenli/home",
+    "date_str": "",
+    "timestamp": 1788130998.531361,
+    "result_type": "changed",
+    "first_seen": "2026-08-30T23:03:18.531765+00:00"
+  },
+  {
+    "scholar": "沈立",
+    "scholar_url": "https://sites.google.com/site/mathshenli/home",
+    "affiliation": "中山大学",
+    "areas": [
+      "Model Merging"
+    ],
+    "watch": "general",
+    "kind": "paper",
+    "text": "Yan Sun, Qixin Zhang, Li Shen , Dacheng Tao, Convergent Differential Privacy Analysis for General Federated Learning , ICLR, 2026.",
+    "link": "https://sites.google.com/site/mathshenli/home",
+    "date_str": "",
+    "timestamp": 1788130998.531349,
+    "result_type": "changed",
+    "first_seen": "2026-08-30T23:03:18.531768+00:00"
+  },
+  {
+    "scholar": "沈立",
+    "scholar_url": "https://sites.google.com/site/mathshenli/home",
+    "affiliation": "中山大学",
+    "areas": [
+      "Model Merging"
+    ],
+    "watch": "general",
+    "kind": "paper",
+    "text": "Shengchao Hu, Peng Wang, Guozheng Ma, Shi Fu, Li Shen , Ya Zhang, Dacheng Tao, The State of Reinforcement Finetuning for Transformer-based Agents , ICLR, 2026.",
+    "link": "https://sites.google.com/site/mathshenli/home",
+    "date_str": "",
+    "timestamp": 1788130998.531338,
+    "result_type": "changed",
+    "first_seen": "2026-08-30T23:03:18.531771+00:00"
+  },
+  {
+    "scholar": "沈立",
+    "scholar_url": "https://sites.google.com/site/mathshenli/home",
+    "affiliation": "中山大学",
+    "areas": [
+      "Model Merging"
+    ],
+    "watch": "general",
+    "kind": "paper",
+    "text": "Guodong Zheng, Peng Wang, Shengchao Hu, Quan Zheng, Li Shen , Understanding the Dynamics of Forgetting and Generalization in Continual Learning via the Neural Tangent Kernel , ICLR, 2026.",
+    "link": "https://sites.google.com/site/mathshenli/home",
+    "date_str": "",
+    "timestamp": 1788130998.531305,
+    "result_type": "changed",
+    "first_seen": "2026-08-30T23:03:18.531774+00:00"
+  },
+  {
+    "scholar": "沈立",
+    "scholar_url": "https://sites.google.com/site/mathshenli/home",
+    "affiliation": "中山大学",
+    "areas": [
+      "Model Merging"
+    ],
+    "watch": "general",
+    "kind": "paper",
+    "text": "Guinan Su, Li Shen , Lu Yin, Shiwei Liu, Yanwu Yang, Jonas Geiping, GPTailor: Large Language Model Pruning Through Layer Cutting and Stitching , ICLR, 2026.",
+    "link": "https://sites.google.com/site/mathshenli/home",
+    "date_str": "",
+    "timestamp": 1788130998.531288,
+    "result_type": "changed",
+    "first_seen": "2026-08-30T23:03:18.531776+00:00"
+  },
+  {
+    "scholar": "沈立",
+    "scholar_url": "https://sites.google.com/site/mathshenli/home",
+    "affiliation": "中山大学",
+    "areas": [
+      "Model Merging"
+    ],
+    "watch": "general",
+    "kind": "paper",
+    "text": "Ziqing Fan, Yuqiao Xian, Yan Sun, Ke Shen, Li Shen , Joint Selection for Large-Scale Pre-Training Data via Policy Gradient-based Mask Learning , ICLR, 2026.",
+    "link": "https://sites.google.com/site/mathshenli/home",
+    "date_str": "",
+    "timestamp": 1788130998.531276,
+    "result_type": "changed",
+    "first_seen": "2026-08-30T23:03:18.531778+00:00"
+  },
+  {
+    "scholar": "沈立",
+    "scholar_url": "https://sites.google.com/site/mathshenli/home",
+    "affiliation": "中山大学",
+    "areas": [
+      "Model Merging"
+    ],
+    "watch": "general",
+    "kind": "paper",
+    "text": "Mingda Zhang, Mingli Zhu, Zihao Zhu, Li Shen , Baoyuan Wu, Reliable Poisoned Sample Detection against Backdoor Attacks Enhanced by Sharpness Aware Minimization , ICLR, 2026.",
+    "link": "https://sites.google.com/site/mathshenli/home",
+    "date_str": "",
+    "timestamp": 1788130998.531262,
+    "result_type": "changed",
+    "first_seen": "2026-08-30T23:03:18.531783+00:00"
+  },
+  {
+    "scholar": "沈立",
+    "scholar_url": "https://sites.google.com/site/mathshenli/home",
+    "affiliation": "中山大学",
+    "areas": [
+      "Model Merging"
+    ],
+    "watch": "general",
+    "kind": "paper",
+    "text": "Yongxian Wei, Runxi Cheng, Weike Jin, Enneng Yang, Li Shen , Lu Hou, SiNan Du, Chun Yuan, Xiaochun Cao, Dacheng Tao, OptMerge: Unifying Multimodal LLM Capabilities and Modalities via Model Merging , ICLR, 2026.",
+    "link": "https://sites.google.com/site/mathshenli/home",
+    "date_str": "",
+    "timestamp": 1788130998.531247,
+    "result_type": "changed",
+    "first_seen": "2026-08-30T23:03:18.531786+00:00"
+  },
+  {
+    "scholar": "沈立",
+    "scholar_url": "https://sites.google.com/site/mathshenli/home",
+    "affiliation": "中山大学",
+    "areas": [
+      "Model Merging"
+    ],
+    "watch": "general",
+    "kind": "paper",
+    "text": "Wei Ju, Siyu Yi, Kangjie Zheng, Yifan Wang, Ziyue Qiao, Li Shen , Yongdao Zhou, Xiaochun Cao, Jiancheng Lv, Compactness and Consistency: A Conjoint Framework for Deep Graph Clustering, ICLR, 2026. ( oral )",
+    "link": "https://sites.google.com/site/mathshenli/home",
+    "date_str": "",
+    "timestamp": 1788130998.531231,
+    "result_type": "changed",
+    "first_seen": "2026-08-30T23:03:18.531790+00:00"
+  },
+  {
+    "scholar": "沈立",
+    "scholar_url": "https://sites.google.com/site/mathshenli/home",
+    "affiliation": "中山大学",
+    "areas": [
+      "Model Merging"
+    ],
+    "watch": "general",
+    "kind": "update",
+    "text": "⭐️⭐️⭐️ (NEW) 2027秋季入学博士生招聘：本科直博、硕博连读、申请考核制博士（可选中大-河套学院联培， 中大-鹏城实验室联培 ）",
+    "link": "https://sites.google.com/site/mathshenli/home",
+    "date_str": "",
+    "timestamp": 1788130998.53113,
+    "result_type": "changed",
+    "first_seen": "2026-08-30T23:03:18.531792+00:00"
+  },
+  {
+    "scholar": "Breezedeus.com | 善意的AI生产幸福❤",
+    "scholar_url": "https://www.breezedeus.com/",
+    "affiliation": "",
+    "areas": [
+      "Agent",
+      "LLM"
+    ],
+    "watch": "general",
+    "kind": "update",
+    "text": "html",
+    "link": "https://www.breezedeus.com/",
+    "date_str": "",
+    "timestamp": 1788130998.530247,
+    "result_type": "changed",
+    "first_seen": "2026-08-08T21:23:16.665183+00:00"
   },
   {
     "scholar": "Breezedeus.com | 善意的AI生产幸福❤",
@@ -299,23 +492,6 @@
     "timestamp": 1787893712.706834,
     "result_type": "changed",
     "first_seen": "2026-08-28T05:08:32.707334+00:00"
-  },
-  {
-    "scholar": "Breezedeus.com | 善意的AI生产幸福❤",
-    "scholar_url": "https://www.breezedeus.com/",
-    "affiliation": "",
-    "areas": [
-      "Agent",
-      "LLM"
-    ],
-    "watch": "general",
-    "kind": "update",
-    "text": "html",
-    "link": "https://www.breezedeus.com/",
-    "date_str": "",
-    "timestamp": 1787820386.89342,
-    "result_type": "changed",
-    "first_seen": "2026-08-08T21:23:16.665183+00:00"
   },
   {
     "scholar": "苏剑林 - 科学空间",
@@ -638,176 +814,5 @@
     "timestamp": 1786963440.0,
     "result_type": "rss",
     "first_seen": "2026-08-17T21:19:22.464734+00:00"
-  },
-  {
-    "scholar": "庄辉平",
-    "scholar_url": "https://zhuanghp.github.io/",
-    "affiliation": "华南理工大学",
-    "areas": [
-      "Continual Learning",
-      "Embodied AI"
-    ],
-    "watch": "general",
-    "kind": "paper",
-    "text": "We have 1 paper accepted by ACL 2026 Main!",
-    "link": "https://zhuanghp.github.io/",
-    "date_str": "",
-    "timestamp": 1786828493.573262,
-    "result_type": "changed",
-    "first_seen": "2026-08-15T21:14:53.573673+00:00"
-  },
-  {
-    "scholar": "Nathan Lambert",
-    "scholar_url": "https://www.interconnects.ai/",
-    "affiliation": "Interconnects",
-    "areas": [],
-    "watch": "blog",
-    "kind": "post",
-    "text": "GLM-5.3: How Chinese labs keep stride with the frontier",
-    "link": "https://www.interconnects.ai/p/glm-53-how-chinese-labs-keep-stride",
-    "date_str": "Fri, 14 Aug 2026 21:23:35 GMT",
-    "timestamp": 1786742615.0,
-    "result_type": "rss",
-    "first_seen": "2026-08-15T01:39:47.112990+00:00"
-  },
-  {
-    "scholar": "Shuaichen Chang",
-    "scholar_url": "https://shuaichenchang.github.io/",
-    "affiliation": "AWS",
-    "areas": [
-      "Agent"
-    ],
-    "watch": "general",
-    "kind": "paper",
-    "text": "Co-organizer, Structured Understanding, Retrieval, and Generation in the LLM Era Workshop , ACL 2026",
-    "link": "https://shuaichenchang.github.io/",
-    "date_str": "",
-    "timestamp": 1786742416.717509,
-    "result_type": "changed",
-    "first_seen": "2026-08-14T21:20:16.717910+00:00"
-  },
-  {
-    "scholar": "周嘉欢",
-    "scholar_url": "https://zhoujiahuan1991.github.io/",
-    "affiliation": "北京大学",
-    "areas": [
-      "Continual Learning"
-    ],
-    "watch": "general",
-    "kind": "paper",
-    "text": "International Conference on Learning Representations (ICLR)",
-    "link": "https://zhoujiahuan1991.github.io/",
-    "date_str": "",
-    "timestamp": 1786657056.948567,
-    "result_type": "changed",
-    "first_seen": "2026-08-13T21:37:36.948996+00:00"
-  },
-  {
-    "scholar": "周嘉欢",
-    "scholar_url": "https://zhoujiahuan1991.github.io/",
-    "affiliation": "北京大学",
-    "areas": [
-      "Continual Learning"
-    ],
-    "watch": "general",
-    "kind": "paper",
-    "text": "08.2026, Invited to serve as the Area Chair of ICLR'2027.",
-    "link": "https://zhoujiahuan1991.github.io/",
-    "date_str": "",
-    "timestamp": 1786657056.948556,
-    "result_type": "changed",
-    "first_seen": "2026-08-13T21:37:36.949004+00:00"
-  },
-  {
-    "scholar": "刘子铭（KAN）",
-    "scholar_url": "https://kindxiaoming.github.io/blog/",
-    "affiliation": "清华大学",
-    "areas": [
-      "LLM"
-    ],
-    "watch": "blog",
-    "kind": "post",
-    "text": "AI finally enters its Tycho stage",
-    "link": "https://kindxiaoming.github.io/blog/2026/tycho/",
-    "date_str": "2026-08-13T00:00:00+00:00",
-    "timestamp": 1786579200.0,
-    "result_type": "rss_no_change",
-    "first_seen": "2026-08-14T02:28:06.253377+00:00"
-  },
-  {
-    "scholar": "杨恩能",
-    "scholar_url": "https://ennengyang.github.io/",
-    "affiliation": "中山大学",
-    "areas": [
-      "Model Merging"
-    ],
-    "watch": "general",
-    "kind": "update",
-    "text": "Page content updated",
-    "link": "https://ennengyang.github.io/",
-    "date_str": "",
-    "timestamp": 1786570659.009946,
-    "result_type": "changed",
-    "first_seen": "2026-08-12T21:37:39.011078+00:00"
-  },
-  {
-    "scholar": "Nathan Lambert",
-    "scholar_url": "https://www.interconnects.ai/",
-    "affiliation": "Interconnects",
-    "areas": [],
-    "watch": "blog",
-    "kind": "post",
-    "text": "I wrote an AI textbook — how long until AI can do it better?",
-    "link": "https://www.interconnects.ai/p/i-wrote-an-ai-textbook-how-long-until",
-    "date_str": "Wed, 12 Aug 2026 13:01:16 GMT",
-    "timestamp": 1786539676.0,
-    "result_type": "rss",
-    "first_seen": "2026-08-12T21:37:39.011090+00:00"
-  },
-  {
-    "scholar": "Nathan Lambert",
-    "scholar_url": "https://www.interconnects.ai/",
-    "affiliation": "Interconnects",
-    "areas": [],
-    "watch": "blog",
-    "kind": "post",
-    "text": "5 useful things you'll learn in my new post-training textbook (shipping now!)",
-    "link": "https://www.interconnects.ai/p/5-useful-things-youll-learn-in-my",
-    "date_str": "Mon, 10 Aug 2026 13:02:42 GMT",
-    "timestamp": 1786366962.0,
-    "result_type": "rss",
-    "first_seen": "2026-08-10T21:34:36.519833+00:00"
-  },
-  {
-    "scholar": "周嘉欢",
-    "scholar_url": "https://zhoujiahuan1991.github.io/",
-    "affiliation": "北京大学",
-    "areas": [
-      "Continual Learning"
-    ],
-    "watch": "general",
-    "kind": "update",
-    "text": "Page content updated",
-    "link": "https://zhoujiahuan1991.github.io/",
-    "date_str": "",
-    "timestamp": 1786310648.680901,
-    "result_type": "changed",
-    "first_seen": "2026-08-09T21:24:08.681756+00:00"
-  },
-  {
-    "scholar": "孙海龙",
-    "scholar_url": "https://sun-hailong.github.io/",
-    "affiliation": "NJU LAMDA",
-    "areas": [
-      "Continual Learning"
-    ],
-    "watch": "news",
-    "kind": "news",
-    "text": "Page content updated",
-    "link": "https://sun-hailong.github.io/",
-    "date_str": "",
-    "timestamp": 1786310648.680901,
-    "result_type": "changed",
-    "first_seen": "2026-08-09T21:24:08.681764+00:00"
   }
 ]
