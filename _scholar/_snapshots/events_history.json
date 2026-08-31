@@ -32,6 +32,40 @@
     "first_seen": "2026-08-20T21:20:34.676099+00:00"
   },
   {
+    "scholar": "xuhuiz.com",
+    "scholar_url": "https://xuhuiz.com/",
+    "affiliation": "CMU",
+    "areas": [
+      "RL",
+      "CHI."
+    ],
+    "watch": "general",
+    "kind": "update",
+    "text": "LinkedIn",
+    "link": "https://xuhuiz.com/",
+    "date_str": "",
+    "timestamp": 1788152584.246538,
+    "result_type": "changed",
+    "first_seen": "2026-08-31T05:03:04.246910+00:00"
+  },
+  {
+    "scholar": "苏剑林 - 科学空间",
+    "scholar_url": "https://kexue.fm/",
+    "affiliation": "Kimi",
+    "areas": [
+      "LLM",
+      "Theory"
+    ],
+    "watch": "blog",
+    "kind": "post",
+    "text": "让炼丹更科学一些（八）：多阶段训练的学习率",
+    "link": "https://kexue.fm/archives/11879",
+    "date_str": "Mon, 31 Aug 2026 11:07:00 +0800",
+    "timestamp": 1788145620.0,
+    "result_type": "rss",
+    "first_seen": "2026-08-31T05:03:04.246916+00:00"
+  },
+  {
     "scholar": "沈立",
     "scholar_url": "https://sites.google.com/site/mathshenli/home",
     "affiliation": "中山大学",
@@ -783,36 +817,5 @@
     "timestamp": 1787087763.2272,
     "result_type": "changed",
     "first_seen": "2026-07-31T03:35:24.388459+00:00"
-  },
-  {
-    "scholar": "Nathan Lambert",
-    "scholar_url": "https://www.interconnects.ai/",
-    "affiliation": "Interconnects",
-    "areas": [],
-    "watch": "blog",
-    "kind": "post",
-    "text": "Teaching Everyone to Fish for Tokens",
-    "link": "https://www.interconnects.ai/p/teaching-everyone-to-fish-for-tokens",
-    "date_str": "Mon, 17 Aug 2026 15:07:49 GMT",
-    "timestamp": 1786979269.0,
-    "result_type": "rss",
-    "first_seen": "2026-08-17T21:19:22.464726+00:00"
-  },
-  {
-    "scholar": "苏剑林 - 科学空间",
-    "scholar_url": "https://kexue.fm/",
-    "affiliation": "Kimi",
-    "areas": [
-      "LLM",
-      "Theory"
-    ],
-    "watch": "blog",
-    "kind": "post",
-    "text": "流形上的最速下降：7. Stiefel的解析解",
-    "link": "https://kexue.fm/archives/11864",
-    "date_str": "Mon, 17 Aug 2026 18:44:00 +0800",
-    "timestamp": 1786963440.0,
-    "result_type": "rss",
-    "first_seen": "2026-08-17T21:19:22.464734+00:00"
   }
 ]
