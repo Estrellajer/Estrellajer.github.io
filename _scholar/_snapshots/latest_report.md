@@ -1,11 +1,6 @@
 # Scholar Monitor Report
 
-**Run:** 2026-09-01 00:20 UTC  |  **Total:** 58  |  Events 1  |  RSS 0  |  CHG 1  |  FIRST 0  |  OK 53  |  ERR 4
-
----
-## Activity Feed (1)
-
-- **周嘉欢** [北京大学]: Page content updated
+**Run:** 2026-09-01 04:41 UTC  |  **Total:** 58  |  Events 0  |  RSS 0  |  CHG 0  |  FIRST 0  |  OK 54  |  ERR 4
 
 ---
 ## Needs Attention (4)
