@@ -36,7 +36,7 @@ C Li, Z Wang, Y Sheng, X Zhu, Y Hao, X Wang
 AAAI 2026, 2025 2025
 Revisiting robustness for llm safety alignment via selective geometry control
 Y Yang, W Tao, J Liu, X Zhu, J Fang, W Huang, L Wu, R Hong, TS Chua
-arXiv preprint arXiv:2602.07340, 2026 2026
+ICML 2026, 2026 2026
 Robust adaptive beamforming for coprime array based on interference power estimation via subspace
 S Sun, Z Ye, X Zhu
 2020 IEEE 11th Sensor Array and Multichannel Signal Processing Workshop (SAM …, 2020 2020
@@ -54,7 +54,7 @@ K Zhao, B Zhu, J Zhou, X Zhu, Z Yue, H Zhang
 arXiv preprint arXiv:2602.23959, 2026 2026
 Robustifying Vision-Language Models via Test-Time Prompt Adaptation
 X Zhu, H Wu, S Wang, B Zhu, J Ge, J Zhang, L Chen
-ICML, 2026 2026
+ICML 2026, 2026 2026
 PEA-DPO: Perception-Enhanced Alignment Direct Preference Optimization for MLLMs Alignment
 J Feng, J Wu, X Zhu*, J Wu, X Wang, X He
-ACM MM, 2026 2026
+ACM MM 2026, 2026 2026

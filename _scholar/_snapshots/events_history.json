@@ -32,6 +32,22 @@
     "first_seen": "2026-08-20T21:20:34.676099+00:00"
   },
   {
+    "scholar": "周嘉欢",
+    "scholar_url": "https://zhoujiahuan1991.github.io/",
+    "affiliation": "北京大学",
+    "areas": [
+      "Continual Learning"
+    ],
+    "watch": "general",
+    "kind": "update",
+    "text": "Page content updated",
+    "link": "https://zhoujiahuan1991.github.io/",
+    "date_str": "",
+    "timestamp": 1788222053.070107,
+    "result_type": "changed",
+    "first_seen": "2026-09-01T00:20:53.070694+00:00"
+  },
+  {
     "scholar": "xuhuiz.com",
     "scholar_url": "https://xuhuiz.com/",
     "affiliation": "CMU",
@@ -801,21 +817,5 @@
     "timestamp": 1787260834.675654,
     "result_type": "changed",
     "first_seen": "2026-08-20T21:20:34.676126+00:00"
-  },
-  {
-    "scholar": "孙科",
-    "scholar_url": "https://sites.google.com/view/kesun",
-    "affiliation": "宾夕法尼亚大学",
-    "areas": [
-      "Continuing RL"
-    ],
-    "watch": "general",
-    "kind": "update",
-    "text": "Page content updated",
-    "link": "https://sites.google.com/view/kesun",
-    "date_str": "",
-    "timestamp": 1787087763.2272,
-    "result_type": "changed",
-    "first_seen": "2026-07-31T03:35:24.388459+00:00"
   }
 ]

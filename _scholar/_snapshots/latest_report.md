@@ -1,12 +1,11 @@
 # Scholar Monitor Report
 
-**Run:** 2026-08-31 05:03 UTC  |  **Total:** 58  |  Events 2  |  RSS 1  |  CHG 1  |  FIRST 0  |  OK 52  |  ERR 4
+**Run:** 2026-09-01 00:20 UTC  |  **Total:** 58  |  Events 1  |  RSS 0  |  CHG 1  |  FIRST 0  |  OK 53  |  ERR 4
 
 ---
-## Activity Feed (2)
+## Activity Feed (1)
 
-- **xuhuiz.com** [CMU]: LinkedIn
-- **苏剑林 - 科学空间** [Kimi]: 让炼丹更科学一些（八）：多阶段训练的学习率
+- **周嘉欢** [北京大学]: Page content updated
 
 ---
 ## Needs Attention (4)
