@@ -1,11 +1,12 @@
 # Scholar Monitor Report
 
-**Run:** 2026-09-02 04:03 UTC  |  **Total:** 58  |  Events 0  |  RSS 0  |  CHG 0  |  FIRST 0  |  OK 54  |  ERR 4
+**Run:** 2026-09-02 22:56 UTC  |  **Total:** 58  |  Events 0  |  RSS 0  |  CHG 0  |  FIRST 0  |  OK 53  |  ERR 5
 
 ---
-## Needs Attention (4)
+## Needs Attention (5)
 
 - [卡里奇 - 知乎](https://www.zhihu.com/people/lyq2002): `Zhihu auth failed (cookies expired or invalid — refresh ZHIHU_COOKIES_B64); RSSHub fallback failed via https://rsshub.app (403 Client Error: Forbidden for url: https://rsshub.app/zhihu/people/activities/lyq2002)`
+- [YY Blog](https://yqqy.top/nav): `Fetch/extract failed: HTTPSConnectionPool(host='yqqy.top', port=443): Max retries exceeded with url: /nav (Caused by NewConnectionError("HTTPSConnection(host='yqqy.top', port=443): Failed to establish a new connection: [Errno 111] Connection refused"))`
 - [王子峰](https://kingspencer.github.io/): `GitHub Pages site not found (dead URL)`
 - [堪村无业土博鼠 - 知乎](https://www.zhihu.com/people/allen-zhu-16): `Zhihu auth failed (cookies expired or invalid — refresh ZHIHU_COOKIES_B64); RSSHub fallback failed via https://rsshub.app (403 Client Error: Forbidden for url: https://rsshub.app/zhihu/people/activities/allen-zhu-16)`
 - [傅宇千](https://www.zhihu.com/people/zxhy-1999/posts): `Zhihu auth failed (cookies expired or invalid — refresh ZHIHU_COOKIES_B64); RSSHub fallback failed via https://rsshub.app (403 Client Error: Forbidden for url: https://rsshub.app/zhihu/people/activities/zxhy-1999)`
