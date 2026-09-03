@@ -2,7 +2,7 @@ Short Bio
 I am an Associate Researcher (2024-) in the School of Artificial Intelligence at Nanjing University . I am a member of LAMDA Group .
 Previously, I received my Ph.D. (2018-2024) from Nanjing University, advised by Prof. De-Chuan Zhan and Prof. Han-Jia Ye .
 I was fortunate to visit MMLab@NTU (2022-2023), working closely with Prof. Ziwei Liu .
-My research interests include machine learning and its applications in computer vision, currently focusing on continual learning, pre-trained model reuse, and multimodal large language models.
+My research interests include machine learning and its applications in computer vision, currently focusing on continual learning, pre-trained model reuse, and multimodal large language models, with the broader goal of building self-evolving AI.
 I am seeking highly self-motivated students. If interested, please email me your resume and transcript.
 News
 [2026-08] Serving as an Area Chair for ICLR 2027.

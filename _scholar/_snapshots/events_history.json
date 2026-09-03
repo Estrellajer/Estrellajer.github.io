@@ -32,6 +32,22 @@
     "first_seen": "2026-08-20T21:20:34.676099+00:00"
   },
   {
+    "scholar": "周大蔚",
+    "scholar_url": "https://www.lamda.nju.edu.cn/zhoudw/",
+    "affiliation": "NJU LAMDA",
+    "areas": [
+      "Continual Learning"
+    ],
+    "watch": "general",
+    "kind": "update",
+    "text": "Page content updated",
+    "link": "https://www.lamda.nju.edu.cn/zhoudw/",
+    "date_str": "",
+    "timestamp": 1788476127.636947,
+    "result_type": "changed",
+    "first_seen": "2026-09-03T22:55:27.637840+00:00"
+  },
+  {
     "scholar": "周嘉欢",
     "scholar_url": "https://zhoujiahuan1991.github.io/",
     "affiliation": "北京大学",
@@ -801,21 +817,5 @@
     "timestamp": 1787260834.67566,
     "result_type": "changed",
     "first_seen": "2026-08-20T21:20:34.676121+00:00"
-  },
-  {
-    "scholar": "Zixuan Li",
-    "scholar_url": "https://lee-zix.github.io/",
-    "affiliation": "计算所",
-    "areas": [
-      "NLP"
-    ],
-    "watch": "general",
-    "kind": "update",
-    "text": "Research Projects",
-    "link": "https://lee-zix.github.io/",
-    "date_str": "",
-    "timestamp": 1787260834.675654,
-    "result_type": "changed",
-    "first_seen": "2026-08-20T21:20:34.676126+00:00"
   }
 ]
