@@ -32,6 +32,39 @@
     "first_seen": "2026-08-20T21:20:34.676099+00:00"
   },
   {
+    "scholar": "黄家斌",
+    "scholar_url": "https://jbhuang0604.github.io/",
+    "affiliation": "",
+    "areas": [
+      "3DV"
+    ],
+    "watch": "general",
+    "kind": "paper",
+    "text": "Conference on Robot Learning (CoRL) 2026",
+    "link": "https://jbhuang0604.github.io/",
+    "date_str": "",
+    "timestamp": 1788561670.109509,
+    "result_type": "changed",
+    "first_seen": "2026-09-04T22:41:10.109928+00:00"
+  },
+  {
+    "scholar": "Breezedeus.com | 善意的AI生产幸福❤",
+    "scholar_url": "https://www.breezedeus.com/",
+    "affiliation": "",
+    "areas": [
+      "Agent",
+      "LLM"
+    ],
+    "watch": "general",
+    "kind": "update",
+    "text": "Page content updated",
+    "link": "https://www.breezedeus.com/",
+    "date_str": "",
+    "timestamp": 1788561670.108726,
+    "result_type": "changed",
+    "first_seen": "2026-09-04T22:41:10.109936+00:00"
+  },
+  {
     "scholar": "Breezedeus.com | 善意的AI生产幸福❤",
     "scholar_url": "https://www.breezedeus.com/",
     "affiliation": "",
@@ -796,37 +829,5 @@
     "timestamp": 1787433297.178142,
     "result_type": "changed",
     "first_seen": "2026-08-22T21:14:57.178560+00:00"
-  },
-  {
-    "scholar": "吴太强",
-    "scholar_url": "https://wutaiqiang.github.io/",
-    "affiliation": "香港大学",
-    "areas": [
-      "Reasoning"
-    ],
-    "watch": "general",
-    "kind": "paper",
-    "text": "EMNLP 2026, Main Conference [ Paper ]",
-    "link": "https://wutaiqiang.github.io/",
-    "date_str": "",
-    "timestamp": 1787346981.707274,
-    "result_type": "changed",
-    "first_seen": "2026-08-21T21:16:21.707727+00:00"
-  },
-  {
-    "scholar": "周大蔚",
-    "scholar_url": "https://www.lamda.nju.edu.cn/zhoudw/",
-    "affiliation": "NJU LAMDA",
-    "areas": [
-      "Continual Learning"
-    ],
-    "watch": "general",
-    "kind": "update",
-    "text": "[ Code ] [<a href=\"https://mp.weixin.qq.com/s/TkoSd7Kg9eh_L3J5XNkkhg\">Media</a>]",
-    "link": "https://www.lamda.nju.edu.cn/zhoudw/",
-    "date_str": "",
-    "timestamp": 1787346981.707196,
-    "result_type": "changed",
-    "first_seen": "2026-08-21T21:16:21.707734+00:00"
   }
 ]

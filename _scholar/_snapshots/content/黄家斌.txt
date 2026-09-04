@@ -9,9 +9,9 @@ More about me: CV | CV of Failures | Awesome Tips | YouTube | Twitter/X | BlueSk
 Current teaching
 Fall 2026: CMSC848K Multimodal Foundation Models
 Past teaching and evaluations
-Spring 2026: CMSC426 Computer Vision
-Spring 2026: CMSC800 How to Conduct Great Research
-Fall 2025: CMSC848K Multimodal Foundation Models
+Spring 2026: CMSC426 Computer Vision  | Student evaluation
+Spring 2026: CMSC800 How to Conduct Great Research  | Student evaluation
+Fall 2025: CMSC848K Multimodal Foundation Models | Student evaluation
 Spring 2025: CMSC426 Computer Vision | Student evaluation
 Spring 2025: CMSC800 How to Conduct Great Research | Student evaluation
 Fall 2024: CMSC848K Multimodal Foundation Models | Student evaluation (MS) | Student evaluation (PhD)
@@ -108,7 +108,7 @@ arXiv 2026
 [ Code ]
 μ₀: A Scalable 3D Interaction-Trace World Model
 Seungjae Lee *, Yoonkyo Jung *, Jusuk Lee , Jonghun Shin , Amir Hossein Shahidzadeh , Yao-Chih Lee , H. Jin Kim , Jia-Bin Huang †, Furong Huang †
-arXiv 2026
+Conference on Robot Learning (CoRL) 2026
 [ Paper (PDF) ]
 [ Project page ] (*Equal contributions; † Equal advising.)
 DynaFLIP: Rethinking Robotics Perception via Tri-Modal-Dynamics Guided Representation
