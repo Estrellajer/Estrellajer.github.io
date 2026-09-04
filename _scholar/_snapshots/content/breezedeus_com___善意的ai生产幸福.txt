@@ -1,1 +1,178 @@
-html
+从”每秒传一张图”到原生全双工 AV2AV，一次拆清持续视频理解、共享时间轴、响应时机、异步思考与因果音视频生成。
+2026-8-24
+多模态学习
+Multimodal Learning
+多模态模型
+视频
+VLM
+LLM
+Transformer
+AI_Agent
+Voice Agent 的关键不在“把文字换成声音”，而在于同时维护持续的实时对话与可取消、可追踪的长任务。本文以 GPT-Live 和 Qwen-Audio-Agent 为例，拆解模型、媒体、调度与后台 Agent 如何分工。
+2026-8-10
+AI_Agent
+Voice_Agent
+Coding_Agent
+Audio
+智能体
+GPT-Live
+Qwen-Audio-Agent
+Qwen-Audio
+本文基于微软《The AI Strategy Roadmap》，总结企业 AI 从单点试验走向规模化的关键：从边界清晰、结果可测的真实业务问题开始；把数据契约、评测集、权限、监控和人工接管沉淀为可复用资产；再用清晰的组织责任与治理机制，把一次成功复制到下一个用例。真正值得规模化的，不是又上线一个 Agent，而是又验证并积累一套能重复交付业务结果的组织能力。
+2026-7-25
+AI 战略路线图
+企业 AI 转型
+AI 规模化
+企业级 AI
+AI_Agent
+GenAIOps
+组织变革
+AI 治理
+本文聚焦 AI Agents 上下文工程技术，揭秘了从静态提示词工程到动态上下文工程的进化逻辑，还拆解了 Manus 应对上下文腐烂的核心技术与简化至上的实践原则。
+2025-11-28
+LLM
+Generative
+大语言模型
+ChatGPT
+Prompt
+提示词
+OpenAI
+RAG
+Manus
+AI_Agent
+上下文工程
+Context Engineering
+Langchain
+本文深度拆解 AI Agent 性能优化的五大核心维度，提供超多可落地的实战技巧，助力打造更智能、鲁棒且高效的 AI Agent！
+2025-10-13
+LLM
+Generative
+大语言模型
+ChatGPT
+Prompt
+提示词
+RAG
+Manus
+AI_Agent
+上下文工程
+Context Engineering
+Prompt Engineering
+Anthropic
+Mobile-Agent-v3 凭借多模态 GUI-Owl 模型、自我进化数据生成和 TRPO 强化学习，在多平台 GUI 自动化上超越主流开源方案，部分场景甚至优于 GPT-4o、Claude 3.7。
+2025-9-6
+AI_Agent
+Multi-Agents
+UI Agents
+Web Agents
+Compute Use
+Phone Use
+Mobile Agents
+VLM
+LLM
+智能体
+GUI Agents
+Mobile-Agent-V3
+GUI-Owl
+Pix2Text (P2T)  的数学公式检测模型（MFD）和数学公式识别模型（MFR）发布新版 V1.5 系列模型，效果得到进一步提升。
+2025-7-24
+数学公式识别
+Math-Formula-Recognition
+MFR
+Pix2Text
+P2T
+LaTeX-OCR
+Math-OCR
+数学公式检测
+工具
+版面恢复
+LaTeX
+V1.5
+本文提出了一种自动化框架，该框架利用公开可用的视频内容生成 GUI Agents 训练使用的任务轨迹数据集，无需手动标注。
+2025-6-8
+AI_Agent
+Multi-Agents
+UI Agents
+Web Agents
+Compute Use
+Phone Use
+Mobile Agents
+VLM
+LLM
+智能体
+GUI Agents
+MONDAY
+InfiGUI-R1 引入一种以推理为中心的渐进式训练方法，将 GUI Agents 从反应式执行模型转变为深思熟虑的推理模型。
+2025-4-29
+AI_Agent
+Multi-Agents
+UI Agents
+Web Agents
+Compute Use
+Phone Use
+Mobile Agents
+VLM
+LLM
+智能体
+GUI Agents
+Reinfocement_Learning
+InfiGUI-R1
+Reason
+《控糖革命》的笔记，介绍了高血糖峰值对健康的负面影响，并详细介绍了通过调整饮食顺序、餐前饮醋、饭后运动、为碳水“穿衣”等实用策略来稳定血糖、促进整体健康的方法。
+2025-4-10
+控糖
+血糖管理
+饮食顺序
+餐后血糖
+健康饮食
+抗糖化
+控糖革命
+果糖
+葡萄糖
+碳水化合物
+介绍 GUI Agent 如果利用强化学习（RL）算法训练模型，以提升模型的 OOD 泛化能力。
+2025-3-3
+AI_Agent
+Multi-Agents
+UI Agents
+Web Agents
+Compute Use
+Phone Use
+AutoGLM
+Mobile Agents
+VLM
+LLM
+智能体
+ShowUI
+GUI Agents
+Reinfocement_Learning
+Digi-Q
+VEM
+介绍 KL散度（KL Divergence）的不同预估方法。
+2025-2-10
+Machine Learning
+Deep Learning
+Math
+KL-Divergence
+GRPO
+DeepSeek
+1 2 3 4 5
+Breezedeus
+Breezedeus
+最新发布
+模型如何边看边听边回应：流式多模态的能力阶梯与技术分野
+2026-8-24
+为什么 Voice Agent 不能照搬 Coding Agent：实时对话与长任务如何共存
+2026-8-14
+企业 AI 转型路线图：从单点试验到可规模化能力
+2026-7-30
+AI Agent 中的上下文工程 (Context Engineering)
+2026-2-12
+GUI Agents（智能体）最新论文
+2025-11-28
+AI Agent 性能优化：核心策略与实战技巧
+2025-10-22
+公告
+🎉Pix2Text V1.1.1 新版发布🎉
+-- 新版本特性 ---
+V1.1.1 发布 ，带来全新的数学公式检测（MFD）模型
+详见： Pix2Text V1.1.1 新版发布，带来更好的数学公式检测模型
