@@ -54,7 +54,7 @@ bib_search: true
 
 #
 
-max_width: 1100px
+max_width: 1300px
 
 # TODO: add layout settings (single page vs. multi-page)
 
@@ -435,7 +435,7 @@ third_party_libraries:
     version: "5.5.0"
   google_fonts:
     url:
-      fonts: "https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700&display=swap"
+      fonts: "https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700&family=Geist+Mono:wght@400;500;600&display=swap"
   highlightjs:
     integrity:
       css:

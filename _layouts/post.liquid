@@ -15,43 +15,39 @@ layout: default
 {% endif %}
 
 <style>
-  .layout-post #navbar > .container {
-    max-width: 1320px;
-  }
-
-  .layout-post .page-container {
-    max-width: 1320px;
-  }
-
   .reading-page {
-    --reading-text: #10141a;
-    --reading-muted: #3a414c;
-    --reading-soft: #5c6678;
-    --reading-line: rgba(17, 19, 23, 0.08);
-    --reading-surface: #ffffff;
-    --reading-code-surface: #f4f6f9;
-    --reading-accent: #3d6c8c;
-    --reading-accent-strong: #2f5470;
-    --reading-accent-soft: rgba(61, 108, 140, 0.08);
-    width: min(100%, 82rem);
+    --reading-text: var(--hl-text-primary);
+    --reading-muted: var(--hl-text-muted);
+    --reading-soft: var(--hl-text-soft);
+    --reading-line: var(--hl-border);
+    --reading-surface: var(--hl-surface);
+    --reading-code-surface: var(--hl-surface-alt);
+    --reading-accent: var(--hl-accent);
+    --reading-accent-strong: var(--hl-accent-hover);
+    --reading-accent-soft: var(--hl-accent-subtle);
+    width: 100%;
     margin: 0 auto;
     padding-top: 1.5rem;
   }
 
   .reading-shell {
     display: grid;
-    grid-template-columns: minmax(0, 1fr) 240px;
-    gap: 2.4rem;
-    align-items: start;
+    grid-template-columns: 240px minmax(0, 1fr);
+    gap: 3.5rem;
+    align-items: stretch;
+    max-width: 1260px;
+    width: 100%;
+    margin: 0 auto;
   }
 
   .reading-shell--single {
-    grid-template-columns: minmax(0, 1fr);
-    max-width: 68rem;
+    grid-template-columns: minmax(0, 960px);
+    justify-content: center;
   }
 
   .reading-main {
     min-width: 0;
+    max-width: 980px;
   }
 
   .reading-hero {
@@ -69,10 +65,10 @@ layout: default
 
   .reading-title {
     margin: 0;
-    font-size: clamp(2.4rem, 4.5vw, 3.8rem);
-    line-height: 1.03;
-    letter-spacing: -0.045em;
-    font-weight: 620;
+    font-size: clamp(2.2rem, 3.8vw, 3.2rem);
+    line-height: 1.15;
+    letter-spacing: -0.025em;
+    font-weight: 700;
     overflow-wrap: anywhere;
   }
 
@@ -111,6 +107,7 @@ layout: default
 
   .reading-sidebar {
     min-width: 0;
+    height: 100%;
   }
 
   .reading-sidebar[hidden] {
@@ -119,9 +116,12 @@ layout: default
 
   .reading-sidebar-inner {
     position: sticky;
-    top: 6rem;
-    padding: 0.8rem 0 0 1.1rem;
-    border-left: 1px solid var(--reading-line);
+    top: 5.5rem;
+    max-height: calc(100vh - 7rem);
+    overflow-y: auto;
+    padding: 0.5rem 1.4rem 1rem 0;
+    border-right: 1px solid var(--reading-line);
+    scrollbar-width: thin;
   }
 
   .reading-sidebar-label {
@@ -304,77 +304,80 @@ layout: default
     color: var(--reading-accent);
   }
 
+  /* Monospace Code Font Stack (System Native Monospace for 100% stable metrics) */
   .reading-article pre,
+  .reading-article code,
+  .reading-article kbd,
+  .reading-article samp {
+    font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, "Liberation Mono", "Fira Code", monospace !important;
+  }
+
+  /* Inline Code */
+  .reading-article p code,
+  .reading-article li code,
+  .reading-article table code,
+  .reading-article blockquote code {
+    padding: 0.18rem 0.42rem;
+    border: 1px solid var(--hl-code-border);
+    border-radius: 0.38rem;
+    background: var(--hl-inline-code-bg) !important;
+    color: var(--hl-inline-code-text) !important;
+    font-size: 0.86em;
+    font-weight: 500;
+    word-break: break-word;
+  }
+
+  /* Fenced Code Blocks & Rouge Containers */
+  .reading-article .highlighter-rouge,
   .reading-article figure.highlight,
-  .reading-article div.highlighter-rouge,
-  .reading-article .highlighter-rouge .highlight {
-    overflow-x: auto;
-    background: var(--reading-code-surface) !important;
-    border: 1px solid var(--reading-line);
-    box-shadow: none;
-  }
-
-  .reading-article pre {
-    margin: 1.4rem 0;
-    border-radius: 1rem;
-    padding: 1.05rem 1.2rem;
-  }
-
-  .reading-article figure.highlight {
-    margin: 1.4rem 0;
-    padding: 1.05rem 1.2rem;
-    border-radius: 1rem;
-  }
-
-  .reading-article div.highlighter-rouge {
-    margin: 1.4rem 0;
-    padding: 1.05rem 1.2rem;
-    border-radius: 1rem;
-  }
-
-  .reading-article .highlighter-rouge .highlight {
+  .reading-article .highlight {
     margin: 0;
     padding: 0;
-    border: 0;
-    border-radius: 0;
-    background: transparent !important;
-  }
-
-  .reading-article figure.highlight pre,
-  .reading-article div.highlighter-rouge pre,
-  .reading-article .highlighter-rouge .highlight pre {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    border-radius: 0;
+    border: none;
     background: transparent !important;
     box-shadow: none;
   }
 
   .reading-article figure.highlight code,
   .reading-article div.highlighter-rouge code,
-  .reading-article .highlighter-rouge .highlight code {
-    display: block;
+  .reading-article .highlighter-rouge .highlight code,
+  .reading-article pre code {
+    display: inline !important;
     border: 0;
     border-radius: 0;
-    background: transparent !important;
-    color: inherit;
-  }
-
-  .reading-article pre code {
     padding: 0;
     background: transparent !important;
-    border: 0;
     color: inherit;
+    font-family: inherit !important;
+    font-size: inherit;
+    line-height: inherit;
+    white-space: inherit !important;
+    tab-size: inherit !important;
+    -moz-tab-size: inherit !important;
+    letter-spacing: inherit !important;
   }
 
-  .reading-article code {
-    padding: 0.16rem 0.4rem;
-    border: 1px solid var(--reading-line);
-    border-radius: 0.45rem;
-    background: var(--reading-code-surface) !important;
-    color: var(--reading-accent);
-    font-size: 0.92em;
+  /* MathJax Formula Typography */
+  .reading-article mjx-container[display="true"] {
+    display: block !important;
+    margin: 1.6rem 0 !important;
+    padding: 0.85rem 1rem !important;
+    overflow-x: auto !important;
+    overflow-y: hidden !important;
+    text-align: center !important;
+    max-width: 100% !important;
+    font-size: 1.05em !important;
+    color: var(--reading-text) !important;
+    scrollbar-width: thin;
+    outline: none;
+  }
+
+  .reading-article mjx-container:not([display="true"]) {
+    font-size: 1em !important;
+    color: var(--reading-text) !important;
+    vertical-align: -0.12em !important;
+    margin: 0 0.1em;
+    outline: none;
   }
 
   .reading-article hr {
@@ -459,23 +462,43 @@ layout: default
     line-height: 1.7;
   }
 
-  @media (max-width: 980px) {
+  @media (max-width: 960px) {
     .reading-shell {
       grid-template-columns: 1fr;
-      gap: 1.8rem;
+      gap: 2rem;
+    }
+
+    .reading-main {
+      order: 1;
+      max-width: 100%;
+    }
+
+    .reading-sidebar {
+      order: 2;
     }
 
     .reading-sidebar-inner {
       position: static;
-      padding: 1rem 0 0;
+      max-height: none;
+      overflow-y: visible;
+      padding: 1.2rem 0 0;
+      border-right: 0;
       border-top: 1px solid var(--reading-line);
-      border-left: 0;
     }
   }
 </style>
 
 <div class="reading-page">
   <div class="reading-shell{% unless has_outline %} reading-shell--single{% endunless %}">
+    {% if has_outline %}
+      <aside class="reading-sidebar" data-reading-sidebar>
+        <div class="reading-sidebar-inner">
+          <div class="reading-sidebar-label">On This Page</div>
+          <nav class="reading-toc" data-reading-toc></nav>
+        </div>
+      </aside>
+    {% endif %}
+
     <div class="reading-main">
       <header class="reading-hero">
         <div class="reading-eyebrow">{% if url_beginning == '/blog/' %}Blog Post{% else %}Article{% endif %}</div>
@@ -546,15 +569,6 @@ layout: default
         </section>
       {% endif %}
     </div>
-
-    {% if has_outline %}
-      <aside class="reading-sidebar" data-reading-sidebar>
-        <div class="reading-sidebar-inner">
-          <div class="reading-sidebar-label">On This Page</div>
-          <nav class="reading-toc" data-reading-toc></nav>
-        </div>
-      </aside>
-    {% endif %}
   </div>
 
   {% if site.disqus_shortname and page.disqus_comments %}
@@ -581,6 +595,7 @@ layout: default
       });
       if (headings.length < 2) {
         sidebar.hidden = true;
+        document.querySelector('.reading-shell')?.classList.add('reading-shell--single');
         return;
       }
 
@@ -653,6 +668,7 @@ layout: default
 
       if (!rootList.children.length) {
         sidebar.hidden = true;
+        document.querySelector('.reading-shell')?.classList.add('reading-shell--single');
         return;
       }
 

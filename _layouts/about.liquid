@@ -1,467 +1,98 @@
 ---
 layout: default
 ---
-<style>
-  .home-landing {
-    --home-text: #10141a;
-    --home-muted: #3a414c;
-    --home-soft: #5c6678;
-    --home-line: rgba(17, 19, 23, 0.08);
-    --home-accent: #3d6c8c;
-    --home-accent-soft: rgba(61, 108, 140, 0.08);
-    --home-surface: #ffffff;
-    --home-surface-hover: #f7f9fb;
-    padding-top: 1.8rem;
-  }
-
-  .home-landing a {
-    color: var(--home-accent);
-    text-decoration-color: rgba(61, 108, 140, 0.28);
-    text-underline-offset: 0.2em;
-    text-decoration-thickness: 1px;
-    transition:
-      color 0.2s ease,
-      text-decoration-color 0.2s ease;
-  }
-
-  .home-landing a:hover {
-    color: #2f5470;
-    text-decoration-color: #2f5470;
-  }
-
-  /* ── Hero ── */
-  .home-hero {
-    display: grid;
-    grid-template-columns: minmax(0, 1fr) 340px;
-    gap: 2.4rem;
-    align-items: end;
-    margin-bottom: 3rem;
-  }
-
-  .home-eyebrow {
-    margin-bottom: 1rem;
-    color: var(--home-accent);
-    font-size: 0.72rem;
-    font-weight: 600;
-    letter-spacing: 0.2em;
-    text-transform: uppercase;
-  }
-
-  .home-title {
-    margin: 0;
-    font-size: clamp(2.4rem, 4.5vw, 3.6rem);
-    line-height: 0.98;
-    letter-spacing: -0.045em;
-    font-weight: 620;
-    color: var(--home-text);
-  }
-
-  .home-subtitle {
-    margin-top: 0.85rem;
-    font-size: 1.12rem;
-    line-height: 1.8;
-    color: var(--home-muted);
-    max-width: 42rem;
-  }
-
-  .home-intro {
-    margin-top: 1.4rem;
-    max-width: 44rem;
-    color: var(--home-muted);
-    font-size: 1.05rem;
-    line-height: 1.95;
-  }
-
-  .home-intro a {
-    color: var(--home-accent);
-    text-decoration-color: rgba(61, 108, 140, 0.28);
-    text-underline-offset: 0.2em;
-  }
-
-  .home-intro a:hover {
-    color: #2f5470;
-    text-decoration-color: #2f5470;
-  }
-
-  /* ── Portrait ── */
-  .home-portrait-wrap {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    height: 100%;
-    border-left: 1px solid var(--home-line);
-    padding-left: 1.6rem;
-  }
-
-  .home-portrait {
-    width: 100%;
-    aspect-ratio: 4 / 3;
-    object-fit: cover;
-    border-radius: 1.4rem;
-    box-shadow: 0 12px 40px rgba(15, 23, 42, 0.06);
-  }
-
-  .home-portrait-quote {
-    margin-top: 0.85rem;
-    color: var(--home-soft);
-    font-size: 0.88rem;
-    line-height: 1.7;
-    font-style: italic;
-  }
-
-  .home-side-block {
-    margin-top: 1.1rem;
-  }
-
-  .home-research {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 0.5rem;
-  }
-
-  .home-chip {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    min-height: 2.4rem;
-    padding: 0.32rem 0.72rem;
-    border: 1px solid var(--home-line);
-    border-radius: 0.75rem;
-    background: var(--home-accent-soft);
-    color: #3d6c8c;
-    font-size: 0.82rem;
-    font-weight: 520;
-    line-height: 1.3;
-    text-align: center;
-    letter-spacing: -0.01em;
-  }
-
-  /* ── Sections ── */
-  .home-section {
-    margin-top: 2.8rem;
-  }
-
-  .home-section + .home-section {
-    padding-top: 2.8rem;
-    border-top: 1px solid var(--home-line);
-  }
-
-  .home-section:first-of-type {
-    border-top: 0;
-    padding-top: 0;
-  }
-
-  .home-section-title {
-    margin: 0 0 1.2rem;
-    font-size: 1.28rem;
-    font-weight: 620;
-    letter-spacing: -0.015em;
-    color: var(--home-text);
-  }
-
-  /* ── News / Experience / Awards lists ── */
-  .home-news-list,
-  .home-meta-list {
-    display: grid;
-    gap: 0.4rem;
-  }
-
-  .home-news-item,
-  .home-meta-item {
-    display: grid;
-    grid-template-columns: 168px minmax(0, 1fr);
-    gap: 1.2rem;
-    align-items: baseline;
-    padding: 0.55rem 0.85rem;
-    border-radius: 0.75rem;
-    transition: background 0.18s ease;
-  }
-
-  .home-news-item:hover,
-  .home-meta-item:hover {
-    background: var(--home-accent-soft);
-  }
-
-  .home-news-date,
-  .home-meta-label {
-    color: var(--home-soft);
-    font-size: 0.78rem;
-    font-weight: 520;
-    letter-spacing: 0.05em;
-    white-space: nowrap;
-    font-variant-numeric: tabular-nums;
-  }
-
-  .home-news-copy,
-  .home-meta-copy {
-    margin: 0;
-    color: var(--home-muted);
-    line-height: 1.8;
-    font-size: 1.02rem;
-  }
-
-  .home-meta-copy a {
-    font-weight: 520;
-  }
-
-  /* ── Publications section ── */
-  .home-publications .publications {
-    margin-top: 0;
-  }
-
-  .home-publications .publications ol.bibliography {
-    margin-bottom: 0;
-    display: grid;
-    gap: 0.75rem;
-  }
-
-  .home-publications .publications ol.bibliography li {
-    margin-bottom: 0;
-    padding: 0.85rem 1rem;
-    border: 1px solid var(--home-line);
-    border-radius: 1rem;
-    background: var(--home-surface);
-    box-shadow: 0 1px 3px rgba(16, 24, 40, 0.04);
-    transition:
-      transform 0.2s ease,
-      box-shadow 0.2s ease,
-      border-color 0.2s ease;
-  }
-
-  .home-publications .publications ol.bibliography li:hover {
-    transform: translateY(-1px);
-    border-color: rgba(61, 108, 140, 0.18);
-    box-shadow: 0 4px 18px rgba(16, 24, 40, 0.07);
-  }
-
-  .home-publications .publications .row {
-    display: grid !important;
-    grid-template-columns: 168px minmax(0, 1fr);
-    gap: 1.2rem;
-    margin: 0;
-    align-items: stretch;
-  }
-
-  .home-publications .publications .abbr,
-  .home-publications .publications [class*='col-sm-'],
-  .home-publications .publications [class^='col-sm-'] {
-    max-width: none;
-    flex: none;
-    padding: 0;
-  }
-
-  .home-publications .publications .abbr {
-    margin-bottom: 0;
-    height: 100%;
-  }
-
-  .home-publications .publications .publication-preview figure {
-    margin-bottom: 0;
-  }
-
-  .home-publications .publications .publication-copy {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .home-publications .publications .publication-copy .links {
-    margin-top: auto;
-  }
-
-  .home-publications .publications .publication-meta-row {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.4rem;
-    margin-bottom: 0.25rem;
-  }
-
-  .home-publications .publications .publication-tag,
-  .home-publications .publications .publication-meta-link {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    max-width: 100%;
-    min-height: 1.45rem;
-    padding: 0.14rem 0.5rem;
-    border: 1px solid var(--home-line);
-    border-radius: 999px;
-    font-size: 0.62rem;
-    font-weight: 680;
-    letter-spacing: 0.08em;
-    line-height: 1.2;
-    text-decoration: none !important;
-    text-transform: uppercase;
-  }
-
-  .home-publications .publications .publication-tag {
-    background: var(--home-accent-soft);
-    color: #3d6c8c !important;
-    border-color: rgba(61, 108, 140, 0.14);
-  }
-
-  .home-publications .publications .publication-meta-link {
-    background: var(--home-surface);
-    color: var(--home-soft) !important;
-  }
-
-  .home-publications .publications .publication-tag:hover {
-    background: rgba(61, 108, 140, 0.14);
-    border-color: rgba(61, 108, 140, 0.22);
-  }
-
-  .home-publications .publications .publication-meta-link:hover {
-    background: var(--home-surface-hover);
-    border-color: var(--home-line);
-  }
-
-  .home-publications .publications .publication-preview {
-    overflow: hidden;
-    border-radius: 0.7rem;
-    height: 100%;
-  }
-
-  .home-publications .publications .publication-preview,
-  .home-publications .publications .publication-preview figure,
-  .home-publications .publications .publication-preview picture {
-    display: block;
-    margin: 0;
-  }
-
-  .home-publications .publications .publication-preview figure,
-  .home-publications .publications .publication-preview picture,
-  .home-publications .publications .publication-preview img.preview,
-  .home-publications .publications .publication-preview .preview {
-    display: block;
-    width: 100%;
-    height: 100%;
-    min-height: 0;
-    padding: 0;
-    object-fit: cover;
-    border-radius: 0.7rem;
-  }
-
-  .home-publications .publications .publication-media-fallback {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 100%;
-    min-height: 6rem;
-    border-radius: 0.7rem;
-    background: var(--home-accent-soft);
-  }
-
-  .home-publications .publications .publication-media-fallback-mark {
-    color: var(--home-soft);
-    font-size: 0.74rem;
-    font-weight: 600;
-    letter-spacing: 0.12em;
-    text-transform: uppercase;
-  }
-
-  .home-publications .publications .title {
-    color: var(--home-text);
-    font-size: 1.1rem;
-    line-height: 1.3;
-    margin-bottom: 0.22rem;
-    font-weight: 620;
-  }
-
-  .home-publications .publications .author,
-  .home-publications .publications .links {
-    color: var(--home-muted);
-  }
-
-  .home-publications .publications .author,
-  .home-publications .publications .periodical {
-    font-size: 0.84rem;
-    line-height: 1.5;
-  }
-
-  .home-publications .publications .periodical {
-    color: var(--home-soft);
-    margin-top: 0.1rem;
-  }
-
-  .home-publications .publications .links {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.35rem;
-    margin-top: 0.5rem;
-    padding-top: 0;
-  }
-
-  .home-publications .publications .links a.btn {
-    border: 1px solid var(--home-line);
-    border-radius: 999px;
-    background: var(--home-accent-soft);
-    padding: 0.18rem 0.58rem;
-    font-size: 0.7rem;
-    font-weight: 520;
-    line-height: 1.2;
-    color: #3d6c8c !important;
-    text-decoration: none !important;
-    transition:
-      background 0.18s ease,
-      border-color 0.18s ease;
-  }
-
-  .home-publications .publications .links a.btn:hover {
-    background: rgba(61, 108, 140, 0.15);
-    border-color: rgba(61, 108, 140, 0.25);
-  }
-
-  /* ── Responsive ── */
-  @media (max-width: 900px) {
-    .home-hero,
-    .home-news-item,
-    .home-meta-item,
-    .home-publications .publications .row {
-      grid-template-columns: 1fr;
-    }
-
-    .home-portrait-wrap {
-      border-left: 0;
-      padding-left: 0;
-      padding-top: 0.5rem;
-    }
-
-    .home-portrait {
-      max-width: 380px;
-    }
-
-    .home-section + .home-section {
-      padding-top: 2rem;
-    }
-  }
-
-  @media (max-width: 520px) {
-    .home-research {
-      grid-template-columns: 1fr;
-    }
-  }
-</style>
-
 <div class="home-landing">
+  <!-- Hero Section -->
   <section class="home-hero">
-    <div>
-      <div class="home-eyebrow">{{ page.hero_eyebrow }}</div>
-      <h1 class="home-title">{{ page.hero_name }}</h1>
-      <div class="home-subtitle">{{ page.hero_subtitle }}</div>
-      <div class="home-intro">{{ content }}</div>
+    <div class="home-hero-main">
+      <div class="home-identity">
+        <h1 class="home-title">
+          {% if page.hero_name contains '「' %}
+            {% assign name_parts = page.hero_name | split: '「' %}
+            {{ name_parts[0] -}}
+            <span class="name-zh">「{{ name_parts[1] }}</span>
+          {% else %}
+            {{ page.hero_name }}
+          {% endif %}
+        </h1>
+
+        {% if page.hero_subtitle or page.hero_eyebrow %}
+          <div class="home-subtitle">
+            <span class="status-indicator"></span>
+            <span class="subtitle-text">{{ page.hero_subtitle | default: page.hero_eyebrow }}</span>
+          </div>
+        {% endif %}
+      </div>
+
+      <div class="home-bio">
+        {{ content }}
+      </div>
+
+      <!-- Quick Action CTAs (tightly clustered with bio) -->
+      <div class="hero-actions">
+        <a
+          class="action-pill"
+          href="https://github.com/Estrellajer"
+          target="_blank"
+          rel="external nofollow noopener"
+          title="GitHub Profile"
+        >
+          <i class="fa-brands fa-github"></i>
+          <span>GitHub</span>
+        </a>
+        <a
+          class="action-pill"
+          href="https://openreview.net/profile?id=%7EMaoqi_Liu2"
+          target="_blank"
+          rel="external nofollow noopener"
+          title="OpenReview Profile"
+        >
+          <i class="ai ai-open-access"></i>
+          <span>OpenReview</span>
+        </a>
+        <a
+          class="action-pill"
+          href="mailto:{{ site.email }}"
+          title="Email Contact"
+        >
+          <i class="fa-regular fa-envelope"></i>
+          <span>Email</span>
+        </a>
+        {% if site.cv_download_path %}
+          <a
+            class="action-pill"
+            href="{{ site.cv_download_path | relative_url }}"
+            download
+            title="Download Curriculum Vitae"
+          >
+            <i class="fa-regular fa-file-lines"></i>
+            <span>CV</span>
+          </a>
+        {% endif %}
+      </div>
     </div>
 
+    <!-- Right Profile Bento -->
     {% if page.profile and page.profile.image %}
       {% assign profile_image_path = page.profile.image | prepend: 'assets/img/' %}
-      <aside class="home-portrait-wrap">
-        <img class="home-portrait" src="{{ profile_image_path | relative_url | bust_file_cache }}" alt="{{ page.hero_name }}">
+      <aside class="home-profile-card">
+        <div class="home-portrait-wrapper">
+          <img
+            class="home-portrait-img"
+            src="{{ profile_image_path | relative_url | bust_file_cache }}"
+            alt="{{ page.hero_name }}"
+          >
+        </div>
         {% if page.photo_quote %}
-          <div class="home-portrait-quote">{{ page.photo_quote }}</div>
+          <div class="home-quote-card">
+            <i class="fa-solid fa-quote-left"></i>
+            <span>{{ page.photo_quote }}</span>
+          </div>
         {% endif %}
         {% if page.research_areas %}
-          <div class="home-side-block">
-            <div class="home-research">
+          <div class="home-research-group">
+            <span class="research-label">Research Focus</span>
+            <div class="home-research-grid">
               {% for area in page.research_areas %}
                 <span class="home-chip">{{ area }}</span>
               {% endfor %}
@@ -472,16 +103,41 @@ layout: default
     {% endif %}
   </section>
 
+  <!-- News Section -->
   {% if page.announcements and page.announcements.enabled %}
     <section class="home-section">
-      <h2 class="home-section-title">News</h2>
-      <div class="home-news-list">
+      <div class="section-head">
+        <h2 class="home-section-title">
+          <i class="ti ti-bell title-icon"></i>
+          <span>News</span>
+        </h2>
+        <a class="section-more-link" href="{{ '/news/' | relative_url }}">
+          <span>All news</span>
+          <i class="fa-solid fa-arrow-right"></i>
+        </a>
+      </div>
+      <div class="home-news-stream">
         {% assign news_items = site.news | reverse %}
-        {% assign news_limit = page.announcements.limit | default: 3 %}
+        {% assign news_limit = page.announcements.limit | default: 5 %}
         {% for item in news_items limit: news_limit %}
-          <article class="home-news-item">
-            <div class="home-news-date">{{ item.date | date: '%b %Y' }}</div>
-            <div class="home-news-copy">
+          <article class="home-news-row">
+            <div class="news-date">{{ item.date | date: '%b %Y' }}</div>
+            <div class="news-category">
+              {% if item.category == 'paper' or item.content contains 'accepted' or item.content contains 'Paper' or item.content contains 'EMNLP' %}
+                <span class="news-badge badge-paper">Paper</span>
+              {% elsif item.category == 'intern'
+                or item.title contains 'intern'
+                or item.content contains 'intern'
+                or item.content contains 'ByteDance'
+              %}
+                <span class="news-badge badge-intern">Intern</span>
+              {% elsif item.category == 'grant' or item.title contains 'Qiyan' or item.title contains 'Grant' or item.content contains 'Grant' %}
+                <span class="news-badge badge-grant">Award</span>
+              {% else %}
+                <span class="news-badge badge-general">News</span>
+              {% endif %}
+            </div>
+            <div class="news-body">
               {% if item.inline %}
                 {{ item.content | remove: '<p>' | remove: '</p>' | emojify }}
               {% else %}
@@ -494,49 +150,77 @@ layout: default
     </section>
   {% endif %}
 
+  <!-- Selected Publications Section -->
   {% if page.selected_papers %}
     <section class="home-section home-publications">
-      <h2 class="home-section-title">Selected Publications</h2>
+      <div class="section-head">
+        <h2 class="home-section-title">
+          <i class="ti ti-books title-icon"></i>
+          <span>Selected Publications</span>
+        </h2>
+        <a class="section-more-link" href="{{ '/publications/' | relative_url }}">
+          <span>All publications</span>
+          <i class="fa-solid fa-arrow-right"></i>
+        </a>
+      </div>
       {% include selected_papers.liquid %}
     </section>
   {% endif %}
 
+  <!-- Awards Section -->
   {% if page.awards %}
     <section class="home-section">
-      <h2 class="home-section-title">Awards</h2>
-      <div class="home-meta-list">
+      <div class="section-head">
+        <h2 class="home-section-title">
+          <i class="ti ti-award title-icon"></i>
+          <span>Honors & Awards</span>
+        </h2>
+      </div>
+      <div class="home-meta-grid">
         {% for item in page.awards %}
-          <article class="home-meta-item">
-            <div class="home-meta-label">{{ item.label }}</div>
-            <p class="home-meta-copy">{{ item.text }}</p>
+          <article class="home-meta-card">
+            <div class="meta-period-badge">{{ item.label }}</div>
+            <div class="meta-detail">{{ item.text }}</div>
           </article>
         {% endfor %}
       </div>
     </section>
   {% endif %}
 
+  <!-- Experience Section -->
   {% if page.experience %}
     <section class="home-section">
-      <h2 class="home-section-title">Experience</h2>
-      <div class="home-meta-list">
+      <div class="section-head">
+        <h2 class="home-section-title">
+          <i class="ti ti-briefcase title-icon"></i>
+          <span>Experience</span>
+        </h2>
+      </div>
+      <div class="home-meta-grid">
         {% for item in page.experience %}
-          <article class="home-meta-item">
-            <div class="home-meta-label">{{ item.label }}</div>
-            <p class="home-meta-copy">{{ item.text }}</p>
+          <article class="home-meta-card">
+            <div class="meta-period-badge">{{ item.label }}</div>
+            <div class="meta-detail">{{ item.text }}</div>
           </article>
         {% endfor %}
       </div>
     </section>
   {% endif %}
 
+  <!-- Academic Service Section -->
   {% if page.service %}
     <section class="home-section">
-      <h2 class="home-section-title">Academic Service</h2>
-      <div class="home-meta-list">
+      <div class="section-head">
+        <h2 class="home-section-title">
+          <i class="ti ti-certificate title-icon"></i>
+          <span>Academic Service</span>
+        </h2>
+      </div>
+      <div class="home-meta-grid">
         {% for item in page.service %}
-          <article class="home-meta-item">
-            <div class="home-meta-label">{{ item.label }}</div>
-            <p class="home-meta-copy">{{ item.text }}</p>
+          <article class="home-meta-card">
+            <div class="meta-period-badge">{{ item.label }}</div>
+            <div class="meta-detail">{{ item.text }}</div>
           </article>
         {% endfor %}
       </div>

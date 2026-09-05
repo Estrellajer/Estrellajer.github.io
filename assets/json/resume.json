@@ -46,7 +46,7 @@
       "endDate": "",
       "score": "",
       "courses": [],
-      "summary": "Advisor: Quan Fang"
+      "summary": "Advisor: Prof. Fang Quan"
     },
     {
       "institution": "Beijing University of Posts and Telecommunications",
@@ -80,21 +80,21 @@
   "publications": [
     {
       "name": "NOTAM-Evolve: A Knowledge-Guided Self-Evolving Optimization Framework with LLMs for NOTAM Interpretation",
-      "publisher": "AAAI 2026 Conference (CCF-A)",
+      "publisher": "AAAI 2026",
       "releaseDate": "2026-01-01",
       "url": "",
       "summary": "Accurate interpretation of Notices to Airmen (NOTAMs) is vital for aviation safety, yet their condensed and cryptic language challenges both humans and automated systems. We define the task as deep parsing, which requires dynamic knowledge grounding and schema-based inference. To address this, we propose NOTAM-Evolve, a knowledge-guided self-evolving framework that enables large language models to autonomously enhance their reasoning through a closed-loop learning process with knowledge graph–based retrieval. Experiments on 10,000 expert-annotated NOTAMs show a 30.4% accuracy gain over base LLMs, establishing a new state of the art in structured NOTAM interpretation. First Author."
     },
     {
       "name": "Knots: A Large-Scale Multi-Agent Enhanced Expert-Annotated Dataset and LLM Prompt Optimization for NOTAM Semantic Parsing",
-      "publisher": "Advanced Engineering Informatics Journal (CCF-B, SCI-Q1)",
+      "publisher": "Advanced Engineering Informatics",
       "releaseDate": "2025-01-01",
       "url": "",
       "summary": "Notices to Air Missions (NOTAMs) convey essential flight safety information but remain difficult to parse due to their complex structure and implicit semantics. We introduce NOTAM semantic parsing, a task focused on deep understanding through semantic inference and aviation knowledge integration. To support it, we build Knots, a dataset of 12,347 expert-annotated NOTAMs across 194 Flight Information Regions, developed via a multi-agent framework for comprehensive field discovery. Extensive experiments on prompt design and model adaptation show notable gains in aviation text comprehension, offering new insights for automated NOTAM analysis. First Author."
     },
     {
       "name": "R²A²-MoE: Ridge Regression-based Analytic Adaptation with Mixture of Experts for Continual Learning with Vision-Language Models",
-      "publisher": "PRCV 2025 Conference (CCF-C, Oral)",
+      "publisher": "PRCV 2025 (Oral)",
       "releaseDate": "2025-01-01",
       "url": "",
       "summary": "Vision-Language Models (VLMs) show strong zero-shot performance but struggle to retain it under continual learning due to dual forgetting. We propose R²A²-MoE—Ridge Regression-based Analytic Adaptation with Mixture of Experts—which enables efficient collaborative specialization through closed-form expert optimization. This approach mitigates both backward and forward forgetting while improving adaptability. Experiments on X-TAIL and MTIL benchmarks demonstrate superior performance and efficiency, reducing parameters, memory, and training time by over 45%, 56%, and 46%, respectively. First Author."

@@ -1072,30 +1072,7 @@ progress::-moz-progress-bar {
   height: inherit;
 }
 
-/* Copy button */
-.code-display-wrapper {
-  position: relative;
-
-  .copy {
-    background: var(--global-card-bg-color);
-    border-color: var(--global-bg-color);
-    border-radius: 0.3rem;
-    border-style: none;
-    color: var(--global-text-color);
-    font-size: medium;
-    opacity: 0;
-    position: absolute;
-    right: 0.2rem;
-    top: 0.2rem;
-  }
-
-  &:active .copy,
-  &:focus .copy,
-  &:hover .copy {
-    color: var(--global-hover-color);
-    opacity: 1;
-  }
-}
+/* Modern copy button handled in _modern_landing.scss */
 
 .btn-group.dropdown {
   .btn {

@@ -2,16 +2,12 @@
 layout: about
 title: about
 permalink: /
-subtitle:
-hero_eyebrow: Graduate Student in AI
 hero_name: Maoqi Liu 「刘茂琦」
-hero_subtitle: Graduate student in artificial intelligence at BUPT. Currently interning at ByteDance Data, working on continual learning and LLM applications.
+hero_subtitle: Graduate Student @ BUPT · Research Intern @ ByteDance Data
 photo_quote: Failure will stay, success slips away.
 research_areas:
-  - Activation Steering
+  - Post-Training
   - Continual Learning
-  - Agentic RL
-  - LLM Applications
 awards:
   - label: 2024
     text: Beijing Natural Science Foundation Undergraduate "QiYan" Research Grant.
@@ -30,9 +26,9 @@ social: false
 
 announcements:
   enabled: true
-  limit: 3
+  limit: 5
 ---
 
-A first-year graduate student at the **School of Artificial Intelligence, [Beijing University of Posts and Telecommunications](https://ai.bupt.edu.cn/)** and a member of the **MKC Group**, advised by **[Prof. Quan Fang](https://quanfang.github.io/)**.
+I am a first-year graduate student at the **School of Artificial Intelligence, Beijing University of Posts and Telecommunications**, advised by **[Prof. Fang Quan](https://quanfang.github.io/)** in the **MKC Group**. Currently, I am also a Research Intern at **ByteDance Data**, mentored by **[He Junwei](https://jweihe.github.io/)**.
 
-My interests span **AI** and **deep learning**, with a current focus on **continual learning** and **LLM applications**.
+My research interests broadly center on **Post-Training** and **Continual Learning**. I am dedicated to exploring alignment algorithms, scalable reinforcement learning, and foundation models that continuously acquire new knowledge and reason robustly.
