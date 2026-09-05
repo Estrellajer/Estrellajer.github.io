@@ -41,6 +41,40 @@
     ],
     "watch": "general",
     "kind": "update",
+    "text": "Page content updated",
+    "link": "https://www.breezedeus.com/",
+    "date_str": "",
+    "timestamp": 1788647538.724489,
+    "result_type": "changed",
+    "first_seen": "2026-09-04T22:41:10.109936+00:00"
+  },
+  {
+    "scholar": "苏剑林 - 科学空间",
+    "scholar_url": "https://kexue.fm/",
+    "affiliation": "Kimi",
+    "areas": [
+      "LLM",
+      "Theory"
+    ],
+    "watch": "blog",
+    "kind": "post",
+    "text": "让炼丹更科学一些（九）：经典自适应梯度算法",
+    "link": "https://kexue.fm/archives/11882",
+    "date_str": "Sat, 05 Sep 2026 16:34:00 +0800",
+    "timestamp": 1788597240.0,
+    "result_type": "rss",
+    "first_seen": "2026-09-05T22:32:18.725739+00:00"
+  },
+  {
+    "scholar": "Breezedeus.com | 善意的AI生产幸福❤",
+    "scholar_url": "https://www.breezedeus.com/",
+    "affiliation": "",
+    "areas": [
+      "Agent",
+      "LLM"
+    ],
+    "watch": "general",
+    "kind": "update",
     "text": "Qwen-Audio-Agent",
     "link": "https://www.breezedeus.com/",
     "date_str": "",
@@ -252,23 +286,6 @@
     "first_seen": "2026-09-04T22:41:10.109928+00:00"
   },
   {
-    "scholar": "Breezedeus.com | 善意的AI生产幸福❤",
-    "scholar_url": "https://www.breezedeus.com/",
-    "affiliation": "",
-    "areas": [
-      "Agent",
-      "LLM"
-    ],
-    "watch": "general",
-    "kind": "update",
-    "text": "Page content updated",
-    "link": "https://www.breezedeus.com/",
-    "date_str": "",
-    "timestamp": 1788561670.108726,
-    "result_type": "changed",
-    "first_seen": "2026-09-04T22:41:10.109936+00:00"
-  },
-  {
     "scholar": "周大蔚",
     "scholar_url": "https://www.lamda.nju.edu.cn/zhoudw/",
     "affiliation": "NJU LAMDA",
@@ -299,6 +316,38 @@
     "timestamp": 1788222053.070107,
     "result_type": "changed",
     "first_seen": "2026-09-01T00:20:53.070694+00:00"
+  },
+  {
+    "scholar": "孙海龙",
+    "scholar_url": "https://sun-hailong.github.io/",
+    "affiliation": "NJU LAMDA",
+    "areas": [
+      "Continual Learning"
+    ],
+    "watch": "news",
+    "kind": "news",
+    "text": "[2026-09] Our team released Ling-3.0-flash-VL and Ling-3.0-flash-Sante , extending Ling 3.0 to visual agents and healthcare.",
+    "link": "https://sun-hailong.github.io/",
+    "date_str": "",
+    "timestamp": 1788220800.0,
+    "result_type": "changed",
+    "first_seen": "2026-09-05T22:32:18.725747+00:00"
+  },
+  {
+    "scholar": "孙海龙",
+    "scholar_url": "https://sun-hailong.github.io/",
+    "affiliation": "NJU LAMDA",
+    "areas": [
+      "Continual Learning"
+    ],
+    "watch": "news",
+    "kind": "news",
+    "text": "[2026-09] Our team open-sourced Ling-3.0-flash-Fin and FinFIRST for verifiable financial research agents.",
+    "link": "https://sun-hailong.github.io/",
+    "date_str": "",
+    "timestamp": 1788220800.0,
+    "result_type": "changed",
+    "first_seen": "2026-09-05T22:32:18.725750+00:00"
   },
   {
     "scholar": "xuhuiz.com",
@@ -779,55 +828,5 @@
     "timestamp": 1787893712.706888,
     "result_type": "changed",
     "first_seen": "2026-08-28T05:08:32.707332+00:00"
-  },
-  {
-    "scholar": "周嘉欢",
-    "scholar_url": "https://zhoujiahuan1991.github.io/",
-    "affiliation": "北京大学",
-    "areas": [
-      "Continual Learning"
-    ],
-    "watch": "general",
-    "kind": "paper",
-    "text": "08.2026, One paper is accepted by IEEE TPAMI.",
-    "link": "https://zhoujiahuan1991.github.io/",
-    "date_str": "",
-    "timestamp": 1787893712.706834,
-    "result_type": "changed",
-    "first_seen": "2026-08-28T05:08:32.707334+00:00"
-  },
-  {
-    "scholar": "苏剑林 - 科学空间",
-    "scholar_url": "https://kexue.fm/",
-    "affiliation": "Kimi",
-    "areas": [
-      "LLM",
-      "Theory"
-    ],
-    "watch": "blog",
-    "kind": "post",
-    "text": "动量的新理解：逼近特征层面的梯度下降",
-    "link": "https://kexue.fm/archives/11875",
-    "date_str": "Sun, 23 Aug 2026 18:01:00 +0800",
-    "timestamp": 1787479260.0,
-    "result_type": "rss",
-    "first_seen": "2026-08-23T21:14:15.287354+00:00"
-  },
-  {
-    "scholar": "庄辉平",
-    "scholar_url": "https://zhuanghp.github.io/",
-    "affiliation": "华南理工大学",
-    "areas": [
-      "Continual Learning",
-      "Embodied AI"
-    ],
-    "watch": "general",
-    "kind": "paper",
-    "text": "We have 1 paper accepted by EMNLP 2026 Main Conference!",
-    "link": "https://zhuanghp.github.io/",
-    "date_str": "",
-    "timestamp": 1787433297.178142,
-    "result_type": "changed",
-    "first_seen": "2026-08-22T21:14:57.178560+00:00"
   }
 ]

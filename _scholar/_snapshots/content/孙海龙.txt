@@ -1,6 +1,8 @@
+[2026-09] Our team released Ling-3.0-flash-VL and Ling-3.0-flash-Sante , extending Ling 3.0 to visual agents and healthcare.
+[2026-09] Our team open-sourced Ling-3.0-flash-Fin and FinFIRST for verifiable financial research agents.
 [2026-07] Our team released the Ling-3.0-flash model.
 [2026-04] I was recognized as an Outstanding Graduate of Nanjing University.
-[2026-03] I joined the Bailing Team at Ant Group.
+[2026-03] I joined the Ant Ling Team at Ant Group.
 [2026-03] Our survey was recognized as one of the Top-3 Most Influential IJCAI Papers .
 [2025-10] I was awarded the National Scholarship for Graduate Students.
 [2025-09] Two papers were accepted to NeurIPS 2025 .
