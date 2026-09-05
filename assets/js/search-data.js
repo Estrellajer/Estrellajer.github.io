@@ -178,18 +178,21 @@ ninja.data = [{
           description: "",
           section: "News",handler: () => {
               window.location.href = "/news/20240905/";
-            },},{id: "news-one-paper-accepted-by-aaai2026-ccf-a",
-          title: 'One Paper accepted by AAAI2026(CCF-A)! 🎉🎉🎉',
+            },},{id: "news-one-paper-accepted-by-aaai-2026",
+          title: 'One paper accepted by AAAI 2026! 🎉🎉🎉',
           description: "",
-          section: "News",},{id: "news-one-paper-accepted-by-advanced-engineering-informatics-ccf-b-sci-q1",
-          title: 'One Paper accepted by Advanced Engineering Informatics(CCF-B, SCI-Q1)! 🎉🎉🎉',
+          section: "News",},{id: "news-one-paper-accepted-by-advanced-engineering-informatics",
+          title: 'One paper accepted by Advanced Engineering Informatics! 🎉🎉🎉',
           description: "",
           section: "News",},{id: "news-started-internship-at-bytedance-data",
           title: 'Started internship at ByteDance Data',
           description: "",
           section: "News",handler: () => {
               window.location.href = "/news/20260610/";
-            },},{id: "projects-knots",
+            },},{id: "news-one-paper-accepted-by-emnlp-2026-arxiv-preprint-and-code-will-be-released-soon",
+          title: 'One paper accepted by EMNLP 2026! 🎉🎉🎉 ArXiv preprint and code will be...',
+          description: "",
+          section: "News",},{id: "projects-knots",
           title: 'Knots',
           description: "A large-scale expert-annotated dataset and prompt optimization pipeline for NOTAM semantic parsing.",
           section: "Projects",handler: () => {
@@ -212,13 +215,6 @@ ninja.data = [{
         section: 'Socials',
         handler: () => {
           window.open("https://github.com/Estrellajer", "_blank");
-        },
-      },{
-        id: 'social-custom_social',
-        title: 'Custom_social',
-        section: 'Socials',
-        handler: () => {
-          window.open("https://www.alberteinstein.com/", "_blank");
         },
       },{
       id: 'light-theme',
