@@ -192,16 +192,16 @@ ninja.data = [{
             },},{id: "news-one-paper-accepted-by-emnlp-2026-arxiv-preprint-and-code-will-be-released-soon",
           title: 'One paper accepted by EMNLP 2026! 🎉🎉🎉 ArXiv preprint and code will be...',
           description: "",
-          section: "News",},{id: "projects-knots",
+          section: "News",},{id: "projects-arxiv-digest",
+          title: 'arXiv-Digest',
+          description: "面向个人研究者的论文阅读自动化流水线：定时抓取 arXiv 关键词新论文，结合 MinerU 全文解析与 LLM 多维打分，推送结构化决策卡至飞书。",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/arxiv-digest/";
+            },},{id: "projects-knots",
           title: 'Knots',
-          description: "A large-scale expert-annotated dataset and prompt optimization pipeline for NOTAM semantic parsing.",
+          description: "面向航空航行通告（NOTAM）的大规模多智能体增强专家标注数据集与语义解析Prompt优化基准。",
           section: "Projects",handler: () => {
               window.location.href = "/projects/knots/";
-            },},{id: "projects-notam-evolve",
-          title: 'NOTAM-Evolve',
-          description: "A knowledge-guided self-evolving framework with LLMs for NOTAM interpretation.",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/notam-evolve/";
             },},{
         id: 'social-email',
         title: 'email',
