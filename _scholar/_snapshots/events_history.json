@@ -32,6 +32,22 @@
     "first_seen": "2026-08-20T21:20:34.676099+00:00"
   },
   {
+    "scholar": "王立元",
+    "scholar_url": "https://lywang3081.github.io/",
+    "affiliation": "北京大学",
+    "areas": [
+      "Continual Learning"
+    ],
+    "watch": "general",
+    "kind": "update",
+    "text": "Page content updated",
+    "link": "https://lywang3081.github.io/",
+    "date_str": "",
+    "timestamp": 1788822780.146951,
+    "result_type": "changed",
+    "first_seen": "2026-09-07T23:13:00.147869+00:00"
+  },
+  {
     "scholar": "Breezedeus.com | 善意的AI生产幸福❤",
     "scholar_url": "https://www.breezedeus.com/",
     "affiliation": "",
@@ -812,21 +828,5 @@
     "timestamp": 1787893712.706894,
     "result_type": "changed",
     "first_seen": "2026-08-28T05:08:32.707326+00:00"
-  },
-  {
-    "scholar": "周嘉欢",
-    "scholar_url": "https://zhoujiahuan1991.github.io/",
-    "affiliation": "北京大学",
-    "areas": [
-      "Continual Learning"
-    ],
-    "watch": "general",
-    "kind": "update",
-    "text": "[ pdf ]",
-    "link": "https://zhoujiahuan1991.github.io/",
-    "date_str": "",
-    "timestamp": 1787893712.706888,
-    "result_type": "changed",
-    "first_seen": "2026-08-28T05:08:32.707332+00:00"
   }
 ]

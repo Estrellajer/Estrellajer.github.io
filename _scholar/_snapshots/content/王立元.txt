@@ -29,7 +29,7 @@ Haolin Li, Yuyang Miao, Menglei Li, Jinshuai Bai, Liyuan Wang $^\dagger$, Xin Li
 arXiv:2607.24777, Under Review, 2026.
 ProCA: Progressive Contrastive Alignment for Robust EEG Visual Decoding.
 Kanglei Zhou, Chunyan Lan, Dongyang Li, Jun Zhu, Liyuan Wang $^\dagger$.
-Under Review, 2026.
+arXiv:2609.05094, Under Review, 2026.
 Continual Action Quality Assessment via Adaptive Manifold-Aligned Graph Regularization.
 Kanglei Zhou, Qingyi Pan, Xingxing Zhang, Hubert PH Shum, Frederick WB Li, Xiaohui Liang, Liyuan Wang $^\dagger$.
 arXiv:2510.06842, Under Review, 2026.
