@@ -41,6 +41,37 @@
     ],
     "watch": "general",
     "kind": "update",
+    "text": "html",
+    "link": "https://www.breezedeus.com/",
+    "date_str": "",
+    "timestamp": 1788908754.830547,
+    "result_type": "changed",
+    "first_seen": "2026-08-08T21:23:16.665183+00:00"
+  },
+  {
+    "scholar": "Nathan Lambert",
+    "scholar_url": "https://www.interconnects.ai/",
+    "affiliation": "Interconnects",
+    "areas": [],
+    "watch": "blog",
+    "kind": "post",
+    "text": "Latest open artifacts (#24): Motif-3, GLM-5.3, Hy4-preview and open model licenses",
+    "link": "https://www.interconnects.ai/p/latest-open-artifacts-24-motif-3",
+    "date_str": "Tue, 08 Sep 2026 14:15:25 GMT",
+    "timestamp": 1788876925.0,
+    "result_type": "rss",
+    "first_seen": "2026-09-08T23:05:54.831042+00:00"
+  },
+  {
+    "scholar": "Breezedeus.com | 善意的AI生产幸福❤",
+    "scholar_url": "https://www.breezedeus.com/",
+    "affiliation": "",
+    "areas": [
+      "Agent",
+      "LLM"
+    ],
+    "watch": "general",
+    "kind": "update",
     "text": "详见： Pix2Text V1.1.1 新版发布，带来更好的数学公式检测模型",
     "link": "https://www.breezedeus.com/",
     "date_str": "",
@@ -250,23 +281,6 @@
     "timestamp": 1788822780.146951,
     "result_type": "changed",
     "first_seen": "2026-09-07T23:13:00.147869+00:00"
-  },
-  {
-    "scholar": "Breezedeus.com | 善意的AI生产幸福❤",
-    "scholar_url": "https://www.breezedeus.com/",
-    "affiliation": "",
-    "areas": [
-      "Agent",
-      "LLM"
-    ],
-    "watch": "general",
-    "kind": "update",
-    "text": "html",
-    "link": "https://www.breezedeus.com/",
-    "date_str": "",
-    "timestamp": 1788734178.221434,
-    "result_type": "changed",
-    "first_seen": "2026-08-08T21:23:16.665183+00:00"
   },
   {
     "scholar": "Breezedeus.com | 善意的AI生产幸福❤",
@@ -812,21 +826,5 @@
     "timestamp": 1787914776.540347,
     "result_type": "changed",
     "first_seen": "2026-08-28T10:59:36.541283+00:00"
-  },
-  {
-    "scholar": "周嘉欢",
-    "scholar_url": "https://zhoujiahuan1991.github.io/",
-    "affiliation": "北京大学",
-    "areas": [
-      "Continual Learning"
-    ],
-    "watch": "general",
-    "kind": "update",
-    "text": "[ code ] PL",
-    "link": "https://zhoujiahuan1991.github.io/",
-    "date_str": "",
-    "timestamp": 1787893712.706894,
-    "result_type": "changed",
-    "first_seen": "2026-08-28T05:08:32.707326+00:00"
   }
 ]

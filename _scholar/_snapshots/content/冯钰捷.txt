@@ -53,7 +53,7 @@ Spatial-attention and demographic-augmented generative adversarial imputation ne
 Y Feng, J Wang, Y Wang, X Chu
 IEEE Transactions on Big Data 9 (4), 1057-1070, 2022 2022
 How order-sensitive are llms? orderprobe for deterministic structural reconstruction
-Y He, Z Kang, K Jiang, Q Zhang, J Qian, C Meng, Y Feng, Y Wang, J Dou, ...
+Z Kang, Y He, K Jiang, L Zheng, J Qian, Q Zhang, C Meng, Y Feng, ...
 arXiv preprint arXiv:2601.08626, 2026 2026
 FOREVER: Forgetting Curve-Inspired Memory Replay for Language Model Continual Learning
 Y Feng, H Wang, J Li, X Chu, Z Kang, Y Liu, Y Wang, PS Yu, XM Wu
