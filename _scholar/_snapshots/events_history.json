@@ -32,6 +32,20 @@
     "first_seen": "2026-08-20T21:20:34.676099+00:00"
   },
   {
+    "scholar": "Nathan Lambert",
+    "scholar_url": "https://www.interconnects.ai/",
+    "affiliation": "Interconnects",
+    "areas": [],
+    "watch": "blog",
+    "kind": "post",
+    "text": "When will average people feel AI’s impact?",
+    "link": "https://www.interconnects.ai/p/when-will-average-people-feel-ais",
+    "date_str": "Wed, 09 Sep 2026 11:01:23 GMT",
+    "timestamp": 1788951683.0,
+    "result_type": "rss",
+    "first_seen": "2026-09-09T22:52:17.892224+00:00"
+  },
+  {
     "scholar": "孙科",
     "scholar_url": "https://sites.google.com/view/kesun",
     "affiliation": "宾夕法尼亚大学",
@@ -809,21 +823,5 @@
     "timestamp": 1788130998.53113,
     "result_type": "changed",
     "first_seen": "2026-08-30T23:03:18.531792+00:00"
-  },
-  {
-    "scholar": "刘子铭（KAN）",
-    "scholar_url": "https://kindxiaoming.github.io/blog/",
-    "affiliation": "清华大学",
-    "areas": [
-      "LLM"
-    ],
-    "watch": "blog",
-    "kind": "post",
-    "text": "Foundation Model or Not?",
-    "link": "https://kindxiaoming.github.io/blog/2026/unified-or-not/",
-    "date_str": "2026-08-30T00:00:00+00:00",
-    "timestamp": 1788048000.0,
-    "result_type": "rss",
-    "first_seen": "2026-08-30T04:58:13.070115+00:00"
   }
 ]
