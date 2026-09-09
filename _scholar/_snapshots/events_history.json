@@ -32,6 +32,22 @@
     "first_seen": "2026-08-20T21:20:34.676099+00:00"
   },
   {
+    "scholar": "孙科",
+    "scholar_url": "https://sites.google.com/view/kesun",
+    "affiliation": "宾夕法尼亚大学",
+    "areas": [
+      "Continuing RL"
+    ],
+    "watch": "general",
+    "kind": "update",
+    "text": "Page content updated",
+    "link": "https://sites.google.com/view/kesun",
+    "date_str": "",
+    "timestamp": 1788927348.933803,
+    "result_type": "changed",
+    "first_seen": "2026-09-09T04:15:48.934667+00:00"
+  },
+  {
     "scholar": "Breezedeus.com | 善意的AI生产幸福❤",
     "scholar_url": "https://www.breezedeus.com/",
     "affiliation": "",
@@ -809,22 +825,5 @@
     "timestamp": 1788048000.0,
     "result_type": "rss",
     "first_seen": "2026-08-30T04:58:13.070115+00:00"
-  },
-  {
-    "scholar": "xuhuiz.com",
-    "scholar_url": "https://xuhuiz.com/",
-    "affiliation": "CMU",
-    "areas": [
-      "RL",
-      "CHI."
-    ],
-    "watch": "general",
-    "kind": "update",
-    "text": "Page content updated",
-    "link": "https://xuhuiz.com/",
-    "date_str": "",
-    "timestamp": 1787914776.540347,
-    "result_type": "changed",
-    "first_seen": "2026-08-28T10:59:36.541283+00:00"
   }
 ]
