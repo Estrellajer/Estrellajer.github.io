@@ -41,6 +41,37 @@
     ],
     "watch": "general",
     "kind": "update",
+    "text": "html",
+    "link": "https://www.breezedeus.com/",
+    "date_str": "",
+    "timestamp": 1789080786.323862,
+    "result_type": "changed",
+    "first_seen": "2026-08-08T21:23:16.665183+00:00"
+  },
+  {
+    "scholar": "Nathan Lambert",
+    "scholar_url": "https://www.interconnects.ai/",
+    "affiliation": "Interconnects",
+    "areas": [],
+    "watch": "blog",
+    "kind": "post",
+    "text": "One resignation turned the embers of AI fear into a wildfire",
+    "link": "https://www.interconnects.ai/p/one-resignation-turned-the-embers",
+    "date_str": "Thu, 10 Sep 2026 15:28:52 GMT",
+    "timestamp": 1789054132.0,
+    "result_type": "rss",
+    "first_seen": "2026-09-10T22:53:06.324322+00:00"
+  },
+  {
+    "scholar": "Breezedeus.com | 善意的AI生产幸福❤",
+    "scholar_url": "https://www.breezedeus.com/",
+    "affiliation": "",
+    "areas": [
+      "Agent",
+      "LLM"
+    ],
+    "watch": "general",
+    "kind": "update",
     "text": "详见： Pix2Text V1.1.1 新版发布，带来更好的数学公式检测模型",
     "link": "https://www.breezedeus.com/",
     "date_str": "",
@@ -252,6 +283,24 @@
     "first_seen": "2026-09-10T04:12:53.900828+00:00"
   },
   {
+    "scholar": "David Noel Ng",
+    "scholar_url": "https://dnhkng.github.io/",
+    "affiliation": "",
+    "areas": [
+      "Interpretability",
+      "Efficiency",
+      "LLM"
+    ],
+    "watch": "blog",
+    "kind": "post",
+    "text": "Teaching an M4 CPU to Tell Stories with XOR, Popcount and SDOT",
+    "link": "https://dnhkng.github.io/posts/m4-tinystories/",
+    "date_str": "2026-09-10T00:00:00+02:00",
+    "timestamp": 1788991200.0,
+    "result_type": "rss_no_change",
+    "first_seen": "2026-09-10T22:53:06.324457+00:00"
+  },
+  {
     "scholar": "Nathan Lambert",
     "scholar_url": "https://www.interconnects.ai/",
     "affiliation": "Interconnects",
@@ -296,23 +345,6 @@
     "timestamp": 1788912000.0,
     "result_type": "rss_no_change",
     "first_seen": "2026-09-10T04:12:53.900945+00:00"
-  },
-  {
-    "scholar": "Breezedeus.com | 善意的AI生产幸福❤",
-    "scholar_url": "https://www.breezedeus.com/",
-    "affiliation": "",
-    "areas": [
-      "Agent",
-      "LLM"
-    ],
-    "watch": "general",
-    "kind": "update",
-    "text": "html",
-    "link": "https://www.breezedeus.com/",
-    "date_str": "",
-    "timestamp": 1788908754.830547,
-    "result_type": "changed",
-    "first_seen": "2026-08-08T21:23:16.665183+00:00"
   },
   {
     "scholar": "Nathan Lambert",
@@ -791,37 +823,5 @@
     "timestamp": 1788130998.531276,
     "result_type": "changed",
     "first_seen": "2026-08-30T23:03:18.531778+00:00"
-  },
-  {
-    "scholar": "沈立",
-    "scholar_url": "https://sites.google.com/site/mathshenli/home",
-    "affiliation": "中山大学",
-    "areas": [
-      "Model Merging"
-    ],
-    "watch": "general",
-    "kind": "paper",
-    "text": "Mingda Zhang, Mingli Zhu, Zihao Zhu, Li Shen , Baoyuan Wu, Reliable Poisoned Sample Detection against Backdoor Attacks Enhanced by Sharpness Aware Minimization , ICLR, 2026.",
-    "link": "https://sites.google.com/site/mathshenli/home",
-    "date_str": "",
-    "timestamp": 1788130998.531262,
-    "result_type": "changed",
-    "first_seen": "2026-08-30T23:03:18.531783+00:00"
-  },
-  {
-    "scholar": "沈立",
-    "scholar_url": "https://sites.google.com/site/mathshenli/home",
-    "affiliation": "中山大学",
-    "areas": [
-      "Model Merging"
-    ],
-    "watch": "general",
-    "kind": "paper",
-    "text": "Yongxian Wei, Runxi Cheng, Weike Jin, Enneng Yang, Li Shen , Lu Hou, SiNan Du, Chun Yuan, Xiaochun Cao, Dacheng Tao, OptMerge: Unifying Multimodal LLM Capabilities and Modalities via Model Merging , ICLR, 2026.",
-    "link": "https://sites.google.com/site/mathshenli/home",
-    "date_str": "",
-    "timestamp": 1788130998.531247,
-    "result_type": "changed",
-    "first_seen": "2026-08-30T23:03:18.531786+00:00"
   }
 ]
