@@ -21,7 +21,7 @@ Vision & Multimodal Learning
 I am looking for highly motivated PhD and MPhil students with strong research background and initiative. Please check the details and drop me an email with your CV and transcripts if you are interested.
 Google Scholar GitHub Artificer AI Lab UNSW X LinkedIn Short Bio
 News
-(Aug 2026) 2 papers are accepted to EMNLP 2026 Findings: " Adaptive LoRA Rank Minimization for Forgetting Mitigation in Continual Learning "; Adaptive Anisotropic Learning Rates for LoRA. Congratulations to Haodong and Huiyi!
+(Aug 2026) 2 papers are accepted to EMNLP 2026 Findings: " Adaptive LoRA Rank Minimization for Forgetting Mitigation in Continual Learning "; " AnLR-LoRA: Adaptive Anisotropic Learning Rates for LoRA Fine-Tuning ". Congratulations to Haodong and Huiyi!
 (Aug 2026) I accepted to serve as an Area Chair for ICLR 2027.
 (July 2026) I accepted to serve as an Area Chair for AAAI 2027.
 (June 2026) 1 paper is accepted at ECCV 2026: " MotionEcho " — test-time distillation that restores motion control in fast (distilled) video generators. Congratulations to Jintao, Xin, and collaborators!
