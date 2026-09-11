@@ -32,6 +32,20 @@
     "first_seen": "2026-08-20T21:20:34.676099+00:00"
   },
   {
+    "scholar": "Nathan Lambert",
+    "scholar_url": "https://www.interconnects.ai/",
+    "affiliation": "Interconnects",
+    "areas": [],
+    "watch": "blog",
+    "kind": "post",
+    "text": "Open-Source AI & Open Models Reading List",
+    "link": "https://www.interconnects.ai/p/open-source-ai-reading-list",
+    "date_str": "Fri, 11 Sep 2026 12:36:25 GMT",
+    "timestamp": 1789130185.0,
+    "result_type": "rss",
+    "first_seen": "2026-09-11T22:55:12.962428+00:00"
+  },
+  {
     "scholar": "Breezedeus.com | 善意的AI生产幸福❤",
     "scholar_url": "https://www.breezedeus.com/",
     "affiliation": "",
@@ -807,21 +821,5 @@
     "timestamp": 1788130998.531288,
     "result_type": "changed",
     "first_seen": "2026-08-30T23:03:18.531776+00:00"
-  },
-  {
-    "scholar": "沈立",
-    "scholar_url": "https://sites.google.com/site/mathshenli/home",
-    "affiliation": "中山大学",
-    "areas": [
-      "Model Merging"
-    ],
-    "watch": "general",
-    "kind": "paper",
-    "text": "Ziqing Fan, Yuqiao Xian, Yan Sun, Ke Shen, Li Shen , Joint Selection for Large-Scale Pre-Training Data via Policy Gradient-based Mask Learning , ICLR, 2026.",
-    "link": "https://sites.google.com/site/mathshenli/home",
-    "date_str": "",
-    "timestamp": 1788130998.531276,
-    "result_type": "changed",
-    "first_seen": "2026-08-30T23:03:18.531778+00:00"
   }
 ]
