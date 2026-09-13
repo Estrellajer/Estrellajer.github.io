@@ -41,6 +41,23 @@
     ],
     "watch": "general",
     "kind": "update",
+    "text": "html",
+    "link": "https://www.breezedeus.com/",
+    "date_str": "",
+    "timestamp": 1789273403.842848,
+    "result_type": "changed",
+    "first_seen": "2026-08-08T21:23:16.665183+00:00"
+  },
+  {
+    "scholar": "Breezedeus.com | 善意的AI生产幸福❤",
+    "scholar_url": "https://www.breezedeus.com/",
+    "affiliation": "",
+    "areas": [
+      "Agent",
+      "LLM"
+    ],
+    "watch": "general",
+    "kind": "update",
     "text": "详见： Pix2Text V1.1.1 新版发布，带来更好的数学公式检测模型",
     "link": "https://www.breezedeus.com/",
     "date_str": "",
@@ -234,23 +251,6 @@
     "timestamp": 1789253105.177914,
     "result_type": "changed",
     "first_seen": "2026-08-10T21:34:36.519831+00:00"
-  },
-  {
-    "scholar": "Breezedeus.com | 善意的AI生产幸福❤",
-    "scholar_url": "https://www.breezedeus.com/",
-    "affiliation": "",
-    "areas": [
-      "Agent",
-      "LLM"
-    ],
-    "watch": "general",
-    "kind": "update",
-    "text": "html",
-    "link": "https://www.breezedeus.com/",
-    "date_str": "",
-    "timestamp": 1789186283.749522,
-    "result_type": "changed",
-    "first_seen": "2026-08-08T21:23:16.665183+00:00"
   },
   {
     "scholar": "Nathan Lambert",
