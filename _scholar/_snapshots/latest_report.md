@@ -1,11 +1,11 @@
 # Scholar Monitor Report
 
-**Run:** 2026-09-14 04:30 UTC  |  **Total:** 58  |  Events 1  |  RSS 0  |  CHG 1  |  FIRST 0  |  OK 53  |  ERR 4
+**Run:** 2026-09-14 23:38 UTC  |  **Total:** 58  |  Events 1  |  RSS 1  |  CHG 0  |  FIRST 0  |  OK 53  |  ERR 4
 
 ---
 ## Activity Feed (1)
 
-- **Breezedeus.com | 善意的AI生产幸福❤**: html
+- **苏剑林 - 科学空间** [Kimi]: 让炼丹更科学一些（十）：单调性假设的拆与补
 
 ---
 ## Needs Attention (4)
