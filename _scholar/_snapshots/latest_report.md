@@ -1,11 +1,6 @@
 # Scholar Monitor Report
 
-**Run:** 2026-09-14 23:38 UTC  |  **Total:** 58  |  Events 1  |  RSS 1  |  CHG 0  |  FIRST 0  |  OK 53  |  ERR 4
-
----
-## Activity Feed (1)
-
-- **苏剑林 - 科学空间** [Kimi]: 让炼丹更科学一些（十）：单调性假设的拆与补
+**Run:** 2026-09-15 04:30 UTC  |  **Total:** 58  |  Events 0  |  RSS 0  |  CHG 0  |  FIRST 0  |  OK 54  |  ERR 4
 
 ---
 ## Needs Attention (4)
