@@ -32,6 +32,39 @@
     "first_seen": "2026-08-20T21:20:34.676099+00:00"
   },
   {
+    "scholar": "庄辉平",
+    "scholar_url": "https://zhuanghp.github.io/",
+    "affiliation": "华南理工大学",
+    "areas": [
+      "Continual Learning",
+      "Embodied AI"
+    ],
+    "watch": "general",
+    "kind": "update",
+    "text": "Page content updated",
+    "link": "https://zhuanghp.github.io/",
+    "date_str": "",
+    "timestamp": 1789601263.713037,
+    "result_type": "changed",
+    "first_seen": "2026-09-16T23:27:43.713799+00:00"
+  },
+  {
+    "scholar": "mengrennwpu - 博客园",
+    "scholar_url": "https://www.cnblogs.com/mengrennwpu",
+    "affiliation": "",
+    "areas": [
+      "LLM Application"
+    ],
+    "watch": "blog",
+    "kind": "post",
+    "text": "LLM论文研读：Trace as State——把思考过程放到问题之前，真的能让大模型更会推理吗？ - mengrennwpu",
+    "link": "https://www.cnblogs.com/mengrennwpu/p/22997077",
+    "date_str": "2026-09-16T06:35:00Z",
+    "timestamp": 1789540500.0,
+    "result_type": "rss",
+    "first_seen": "2026-09-16T23:27:43.713808+00:00"
+  },
+  {
     "scholar": "周嘉欢",
     "scholar_url": "https://zhoujiahuan1991.github.io/",
     "affiliation": "北京大学",
@@ -790,37 +823,5 @@
     "timestamp": 1788145620.0,
     "result_type": "rss",
     "first_seen": "2026-08-31T05:03:04.246916+00:00"
-  },
-  {
-    "scholar": "沈立",
-    "scholar_url": "https://sites.google.com/site/mathshenli/home",
-    "affiliation": "中山大学",
-    "areas": [
-      "Model Merging"
-    ],
-    "watch": "general",
-    "kind": "paper",
-    "text": "Yan Sun, Qixin Zhang, Zhiyuan Yu, Xikun Zhang, Li Shen , Dacheng Tao, MaskPro: Linear-Space Probabilistic Learning for Strict (N:M)-Sparsity on LLMs , ICLR, 2026.",
-    "link": "https://sites.google.com/site/mathshenli/home",
-    "date_str": "",
-    "timestamp": 1788130998.531361,
-    "result_type": "changed",
-    "first_seen": "2026-08-30T23:03:18.531765+00:00"
-  },
-  {
-    "scholar": "沈立",
-    "scholar_url": "https://sites.google.com/site/mathshenli/home",
-    "affiliation": "中山大学",
-    "areas": [
-      "Model Merging"
-    ],
-    "watch": "general",
-    "kind": "paper",
-    "text": "Yan Sun, Qixin Zhang, Li Shen , Dacheng Tao, Convergent Differential Privacy Analysis for General Federated Learning , ICLR, 2026.",
-    "link": "https://sites.google.com/site/mathshenli/home",
-    "date_str": "",
-    "timestamp": 1788130998.531349,
-    "result_type": "changed",
-    "first_seen": "2026-08-30T23:03:18.531768+00:00"
   }
 ]

@@ -1,11 +1,12 @@
 # Scholar Monitor Report
 
-**Run:** 2026-09-16 04:26 UTC  |  **Total:** 58  |  Events 1  |  RSS 0  |  CHG 1  |  FIRST 0  |  OK 53  |  ERR 4
+**Run:** 2026-09-16 23:27 UTC  |  **Total:** 58  |  Events 2  |  RSS 1  |  CHG 1  |  FIRST 0  |  OK 52  |  ERR 4
 
 ---
-## Activity Feed (1)
+## Activity Feed (2)
 
-- **周嘉欢** [北京大学]: 09.2026, Invited to serve as the Area Chair of CVPR'2027.
+- **庄辉平** [华南理工大学]: Page content updated
+- **mengrennwpu - 博客园**: LLM论文研读：Trace as State——把思考过程放到问题之前，真的能让大模型更会推理吗？ - mengrennwpu
 
 ---
 ## Needs Attention (4)
