@@ -32,6 +32,22 @@
     "first_seen": "2026-08-20T21:20:34.676099+00:00"
   },
   {
+    "scholar": "周嘉欢",
+    "scholar_url": "https://zhoujiahuan1991.github.io/",
+    "affiliation": "北京大学",
+    "areas": [
+      "Continual Learning"
+    ],
+    "watch": "general",
+    "kind": "paper",
+    "text": "09.2026, Invited to serve as the Area Chair of CVPR'2027.",
+    "link": "https://zhoujiahuan1991.github.io/",
+    "date_str": "",
+    "timestamp": 1789532763.154977,
+    "result_type": "changed",
+    "first_seen": "2026-09-16T04:26:03.155434+00:00"
+  },
+  {
     "scholar": "苏剑林 - 科学空间",
     "scholar_url": "https://kexue.fm/",
     "affiliation": "Kimi",
@@ -806,21 +822,5 @@
     "timestamp": 1788130998.531349,
     "result_type": "changed",
     "first_seen": "2026-08-30T23:03:18.531768+00:00"
-  },
-  {
-    "scholar": "沈立",
-    "scholar_url": "https://sites.google.com/site/mathshenli/home",
-    "affiliation": "中山大学",
-    "areas": [
-      "Model Merging"
-    ],
-    "watch": "general",
-    "kind": "paper",
-    "text": "Shengchao Hu, Peng Wang, Guozheng Ma, Shi Fu, Li Shen , Ya Zhang, Dacheng Tao, The State of Reinforcement Finetuning for Transformer-based Agents , ICLR, 2026.",
-    "link": "https://sites.google.com/site/mathshenli/home",
-    "date_str": "",
-    "timestamp": 1788130998.531338,
-    "result_type": "changed",
-    "first_seen": "2026-08-30T23:03:18.531771+00:00"
   }
 ]
