@@ -41,6 +41,210 @@
     ],
     "watch": "general",
     "kind": "update",
+    "text": "Qwen-Audio-Agent",
+    "link": "https://www.breezedeus.com/",
+    "date_str": "",
+    "timestamp": 1789772224.665702,
+    "result_type": "changed",
+    "first_seen": "2026-09-04T04:04:29.138059+00:00"
+  },
+  {
+    "scholar": "Breezedeus.com | 善意的AI生产幸福❤",
+    "scholar_url": "https://www.breezedeus.com/",
+    "affiliation": "",
+    "areas": [
+      "Agent",
+      "LLM"
+    ],
+    "watch": "general",
+    "kind": "update",
+    "text": "GPT-Live",
+    "link": "https://www.breezedeus.com/",
+    "date_str": "",
+    "timestamp": 1789772224.665696,
+    "result_type": "changed",
+    "first_seen": "2026-09-04T04:04:29.138066+00:00"
+  },
+  {
+    "scholar": "Breezedeus.com | 善意的AI生产幸福❤",
+    "scholar_url": "https://www.breezedeus.com/",
+    "affiliation": "",
+    "areas": [
+      "Agent",
+      "LLM"
+    ],
+    "watch": "general",
+    "kind": "update",
+    "text": "Audio",
+    "link": "https://www.breezedeus.com/",
+    "date_str": "",
+    "timestamp": 1789772224.665691,
+    "result_type": "changed",
+    "first_seen": "2026-09-04T04:04:29.138070+00:00"
+  },
+  {
+    "scholar": "Breezedeus.com | 善意的AI生产幸福❤",
+    "scholar_url": "https://www.breezedeus.com/",
+    "affiliation": "",
+    "areas": [
+      "Agent",
+      "LLM"
+    ],
+    "watch": "general",
+    "kind": "update",
+    "text": "Coding_Agent",
+    "link": "https://www.breezedeus.com/",
+    "date_str": "",
+    "timestamp": 1789772224.665686,
+    "result_type": "changed",
+    "first_seen": "2026-09-04T04:04:29.138073+00:00"
+  },
+  {
+    "scholar": "Breezedeus.com | 善意的AI生产幸福❤",
+    "scholar_url": "https://www.breezedeus.com/",
+    "affiliation": "",
+    "areas": [
+      "Agent",
+      "LLM"
+    ],
+    "watch": "general",
+    "kind": "update",
+    "text": "Voice_Agent",
+    "link": "https://www.breezedeus.com/",
+    "date_str": "",
+    "timestamp": 1789772224.665677,
+    "result_type": "changed",
+    "first_seen": "2026-09-04T04:04:29.138076+00:00"
+  },
+  {
+    "scholar": "Breezedeus.com | 善意的AI生产幸福❤",
+    "scholar_url": "https://www.breezedeus.com/",
+    "affiliation": "",
+    "areas": [
+      "Agent",
+      "LLM"
+    ],
+    "watch": "general",
+    "kind": "update",
+    "text": "Voice Agent 的关键不在“把文字换成声音”，而在于同时维护持续的实时对话与可取消、可追踪的长任务。本文以 GPT-Live 和 Qwen-Audio-Agent 为例，拆解模型、媒体、调度与后台 Agent 如何分工。",
+    "link": "https://www.breezedeus.com/",
+    "date_str": "",
+    "timestamp": 1789772224.665669,
+    "result_type": "changed",
+    "first_seen": "2026-09-04T04:04:29.138078+00:00"
+  },
+  {
+    "scholar": "Breezedeus.com | 善意的AI生产幸福❤",
+    "scholar_url": "https://www.breezedeus.com/",
+    "affiliation": "",
+    "areas": [
+      "Agent",
+      "LLM"
+    ],
+    "watch": "general",
+    "kind": "update",
+    "text": "AI_Agent",
+    "link": "https://www.breezedeus.com/",
+    "date_str": "",
+    "timestamp": 1789772224.665658,
+    "result_type": "changed",
+    "first_seen": "2026-09-04T04:04:29.138081+00:00"
+  },
+  {
+    "scholar": "Breezedeus.com | 善意的AI生产幸福❤",
+    "scholar_url": "https://www.breezedeus.com/",
+    "affiliation": "",
+    "areas": [
+      "Agent",
+      "LLM"
+    ],
+    "watch": "general",
+    "kind": "update",
+    "text": "Transformer",
+    "link": "https://www.breezedeus.com/",
+    "date_str": "",
+    "timestamp": 1789772224.665653,
+    "result_type": "changed",
+    "first_seen": "2026-09-04T04:04:29.138085+00:00"
+  },
+  {
+    "scholar": "Breezedeus.com | 善意的AI生产幸福❤",
+    "scholar_url": "https://www.breezedeus.com/",
+    "affiliation": "",
+    "areas": [
+      "Agent",
+      "LLM"
+    ],
+    "watch": "general",
+    "kind": "update",
+    "text": "多模态模型",
+    "link": "https://www.breezedeus.com/",
+    "date_str": "",
+    "timestamp": 1789772224.665647,
+    "result_type": "changed",
+    "first_seen": "2026-09-04T04:04:29.138088+00:00"
+  },
+  {
+    "scholar": "Breezedeus.com | 善意的AI生产幸福❤",
+    "scholar_url": "https://www.breezedeus.com/",
+    "affiliation": "",
+    "areas": [
+      "Agent",
+      "LLM"
+    ],
+    "watch": "general",
+    "kind": "update",
+    "text": "Multimodal Learning",
+    "link": "https://www.breezedeus.com/",
+    "date_str": "",
+    "timestamp": 1789772224.66564,
+    "result_type": "changed",
+    "first_seen": "2026-09-04T04:04:29.138091+00:00"
+  },
+  {
+    "scholar": "Breezedeus.com | 善意的AI生产幸福❤",
+    "scholar_url": "https://www.breezedeus.com/",
+    "affiliation": "",
+    "areas": [
+      "Agent",
+      "LLM"
+    ],
+    "watch": "general",
+    "kind": "update",
+    "text": "多模态学习",
+    "link": "https://www.breezedeus.com/",
+    "date_str": "",
+    "timestamp": 1789772224.665631,
+    "result_type": "changed",
+    "first_seen": "2026-09-04T04:04:29.138093+00:00"
+  },
+  {
+    "scholar": "Breezedeus.com | 善意的AI生产幸福❤",
+    "scholar_url": "https://www.breezedeus.com/",
+    "affiliation": "",
+    "areas": [
+      "Agent",
+      "LLM"
+    ],
+    "watch": "general",
+    "kind": "update",
+    "text": "从”每秒传一张图”到原生全双工 AV2AV，一次拆清持续视频理解、共享时间轴、响应时机、异步思考与因果音视频生成。",
+    "link": "https://www.breezedeus.com/",
+    "date_str": "",
+    "timestamp": 1789772224.66561,
+    "result_type": "changed",
+    "first_seen": "2026-09-04T04:04:29.138095+00:00"
+  },
+  {
+    "scholar": "Breezedeus.com | 善意的AI生产幸福❤",
+    "scholar_url": "https://www.breezedeus.com/",
+    "affiliation": "",
+    "areas": [
+      "Agent",
+      "LLM"
+    ],
+    "watch": "general",
+    "kind": "update",
     "text": "详见： Pix2Text V1.1.1 新版发布，带来更好的数学公式检测模型",
     "link": "https://www.breezedeus.com/",
     "date_str": "",
@@ -505,210 +709,6 @@
     "timestamp": 1788597240.0,
     "result_type": "rss",
     "first_seen": "2026-09-05T22:32:18.725739+00:00"
-  },
-  {
-    "scholar": "Breezedeus.com | 善意的AI生产幸福❤",
-    "scholar_url": "https://www.breezedeus.com/",
-    "affiliation": "",
-    "areas": [
-      "Agent",
-      "LLM"
-    ],
-    "watch": "general",
-    "kind": "update",
-    "text": "Qwen-Audio-Agent",
-    "link": "https://www.breezedeus.com/",
-    "date_str": "",
-    "timestamp": 1788580855.992938,
-    "result_type": "changed",
-    "first_seen": "2026-09-04T04:04:29.138059+00:00"
-  },
-  {
-    "scholar": "Breezedeus.com | 善意的AI生产幸福❤",
-    "scholar_url": "https://www.breezedeus.com/",
-    "affiliation": "",
-    "areas": [
-      "Agent",
-      "LLM"
-    ],
-    "watch": "general",
-    "kind": "update",
-    "text": "GPT-Live",
-    "link": "https://www.breezedeus.com/",
-    "date_str": "",
-    "timestamp": 1788580855.992932,
-    "result_type": "changed",
-    "first_seen": "2026-09-04T04:04:29.138066+00:00"
-  },
-  {
-    "scholar": "Breezedeus.com | 善意的AI生产幸福❤",
-    "scholar_url": "https://www.breezedeus.com/",
-    "affiliation": "",
-    "areas": [
-      "Agent",
-      "LLM"
-    ],
-    "watch": "general",
-    "kind": "update",
-    "text": "Audio",
-    "link": "https://www.breezedeus.com/",
-    "date_str": "",
-    "timestamp": 1788580855.992926,
-    "result_type": "changed",
-    "first_seen": "2026-09-04T04:04:29.138070+00:00"
-  },
-  {
-    "scholar": "Breezedeus.com | 善意的AI生产幸福❤",
-    "scholar_url": "https://www.breezedeus.com/",
-    "affiliation": "",
-    "areas": [
-      "Agent",
-      "LLM"
-    ],
-    "watch": "general",
-    "kind": "update",
-    "text": "Coding_Agent",
-    "link": "https://www.breezedeus.com/",
-    "date_str": "",
-    "timestamp": 1788580855.99292,
-    "result_type": "changed",
-    "first_seen": "2026-09-04T04:04:29.138073+00:00"
-  },
-  {
-    "scholar": "Breezedeus.com | 善意的AI生产幸福❤",
-    "scholar_url": "https://www.breezedeus.com/",
-    "affiliation": "",
-    "areas": [
-      "Agent",
-      "LLM"
-    ],
-    "watch": "general",
-    "kind": "update",
-    "text": "Voice_Agent",
-    "link": "https://www.breezedeus.com/",
-    "date_str": "",
-    "timestamp": 1788580855.992911,
-    "result_type": "changed",
-    "first_seen": "2026-09-04T04:04:29.138076+00:00"
-  },
-  {
-    "scholar": "Breezedeus.com | 善意的AI生产幸福❤",
-    "scholar_url": "https://www.breezedeus.com/",
-    "affiliation": "",
-    "areas": [
-      "Agent",
-      "LLM"
-    ],
-    "watch": "general",
-    "kind": "update",
-    "text": "Voice Agent 的关键不在“把文字换成声音”，而在于同时维护持续的实时对话与可取消、可追踪的长任务。本文以 GPT-Live 和 Qwen-Audio-Agent 为例，拆解模型、媒体、调度与后台 Agent 如何分工。",
-    "link": "https://www.breezedeus.com/",
-    "date_str": "",
-    "timestamp": 1788580855.992903,
-    "result_type": "changed",
-    "first_seen": "2026-09-04T04:04:29.138078+00:00"
-  },
-  {
-    "scholar": "Breezedeus.com | 善意的AI生产幸福❤",
-    "scholar_url": "https://www.breezedeus.com/",
-    "affiliation": "",
-    "areas": [
-      "Agent",
-      "LLM"
-    ],
-    "watch": "general",
-    "kind": "update",
-    "text": "AI_Agent",
-    "link": "https://www.breezedeus.com/",
-    "date_str": "",
-    "timestamp": 1788580855.992892,
-    "result_type": "changed",
-    "first_seen": "2026-09-04T04:04:29.138081+00:00"
-  },
-  {
-    "scholar": "Breezedeus.com | 善意的AI生产幸福❤",
-    "scholar_url": "https://www.breezedeus.com/",
-    "affiliation": "",
-    "areas": [
-      "Agent",
-      "LLM"
-    ],
-    "watch": "general",
-    "kind": "update",
-    "text": "Transformer",
-    "link": "https://www.breezedeus.com/",
-    "date_str": "",
-    "timestamp": 1788580855.992886,
-    "result_type": "changed",
-    "first_seen": "2026-09-04T04:04:29.138085+00:00"
-  },
-  {
-    "scholar": "Breezedeus.com | 善意的AI生产幸福❤",
-    "scholar_url": "https://www.breezedeus.com/",
-    "affiliation": "",
-    "areas": [
-      "Agent",
-      "LLM"
-    ],
-    "watch": "general",
-    "kind": "update",
-    "text": "多模态模型",
-    "link": "https://www.breezedeus.com/",
-    "date_str": "",
-    "timestamp": 1788580855.992879,
-    "result_type": "changed",
-    "first_seen": "2026-09-04T04:04:29.138088+00:00"
-  },
-  {
-    "scholar": "Breezedeus.com | 善意的AI生产幸福❤",
-    "scholar_url": "https://www.breezedeus.com/",
-    "affiliation": "",
-    "areas": [
-      "Agent",
-      "LLM"
-    ],
-    "watch": "general",
-    "kind": "update",
-    "text": "Multimodal Learning",
-    "link": "https://www.breezedeus.com/",
-    "date_str": "",
-    "timestamp": 1788580855.992872,
-    "result_type": "changed",
-    "first_seen": "2026-09-04T04:04:29.138091+00:00"
-  },
-  {
-    "scholar": "Breezedeus.com | 善意的AI生产幸福❤",
-    "scholar_url": "https://www.breezedeus.com/",
-    "affiliation": "",
-    "areas": [
-      "Agent",
-      "LLM"
-    ],
-    "watch": "general",
-    "kind": "update",
-    "text": "多模态学习",
-    "link": "https://www.breezedeus.com/",
-    "date_str": "",
-    "timestamp": 1788580855.992862,
-    "result_type": "changed",
-    "first_seen": "2026-09-04T04:04:29.138093+00:00"
-  },
-  {
-    "scholar": "Breezedeus.com | 善意的AI生产幸福❤",
-    "scholar_url": "https://www.breezedeus.com/",
-    "affiliation": "",
-    "areas": [
-      "Agent",
-      "LLM"
-    ],
-    "watch": "general",
-    "kind": "update",
-    "text": "从”每秒传一张图”到原生全双工 AV2AV，一次拆清持续视频理解、共享时间轴、响应时机、异步思考与因果音视频生成。",
-    "link": "https://www.breezedeus.com/",
-    "date_str": "",
-    "timestamp": 1788580855.992841,
-    "result_type": "changed",
-    "first_seen": "2026-09-04T04:04:29.138095+00:00"
   },
   {
     "scholar": "黄家斌",
