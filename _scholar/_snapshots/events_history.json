@@ -32,6 +32,85 @@
     "first_seen": "2026-08-20T21:20:34.676099+00:00"
   },
   {
+    "scholar": "Phimes",
+    "scholar_url": "https://blog.phimes.top/",
+    "affiliation": "",
+    "areas": [
+      "LLM"
+    ],
+    "watch": "general",
+    "kind": "update",
+    "text": "1 前言 本来没打算写这种经验性或者思考的内容。不过最近~~团队出故障比较多~~问的人比较多，想想以后还是开上一个分系列，说说一些经验和探索。 2 Vibe 到 Spec 2.1 vibe coding Vibe Coding比较火的时候，可以在社交媒体上看到那些：一个人对着屏幕说了句“给我做一个类...",
+    "link": "https://blog.phimes.top/",
+    "date_str": "",
+    "timestamp": 1789857391.656353,
+    "result_type": "changed",
+    "first_seen": "2026-09-19T22:36:31.656719+00:00"
+  },
+  {
+    "scholar": "Phimes",
+    "scholar_url": "https://blog.phimes.top/",
+    "affiliation": "",
+    "areas": [
+      "LLM"
+    ],
+    "watch": "general",
+    "kind": "update",
+    "text": "从vibe到spec：可维护性视角下探讨为什么很多人的AI编程依然是小玩具",
+    "link": "https://blog.phimes.top/",
+    "date_str": "",
+    "timestamp": 1789857391.656338,
+    "result_type": "changed",
+    "first_seen": "2026-09-19T22:36:31.656726+00:00"
+  },
+  {
+    "scholar": "Phimes",
+    "scholar_url": "https://blog.phimes.top/",
+    "affiliation": "",
+    "areas": [
+      "LLM"
+    ],
+    "watch": "general",
+    "kind": "update",
+    "text": "[ ai-coding experience-sharing tech-discussion ]",
+    "link": "https://blog.phimes.top/",
+    "date_str": "",
+    "timestamp": 1789857391.656326,
+    "result_type": "changed",
+    "first_seen": "2026-09-19T22:36:31.656729+00:00"
+  },
+  {
+    "scholar": "Breezedeus.com | 善意的AI生产幸福❤",
+    "scholar_url": "https://www.breezedeus.com/",
+    "affiliation": "",
+    "areas": [
+      "Agent",
+      "LLM"
+    ],
+    "watch": "general",
+    "kind": "update",
+    "text": "html",
+    "link": "https://www.breezedeus.com/",
+    "date_str": "",
+    "timestamp": 1789857391.65612,
+    "result_type": "changed",
+    "first_seen": "2026-08-08T21:23:16.665183+00:00"
+  },
+  {
+    "scholar": "Nathan Lambert",
+    "scholar_url": "https://www.interconnects.ai/",
+    "affiliation": "Interconnects",
+    "areas": [],
+    "watch": "blog",
+    "kind": "post",
+    "text": "Why I still haven’t bought into true RSI",
+    "link": "https://www.interconnects.ai/p/where-i-stand-on-rsi",
+    "date_str": "Sat, 19 Sep 2026 15:42:20 GMT",
+    "timestamp": 1789832540.0,
+    "result_type": "rss",
+    "first_seen": "2026-09-19T22:36:31.656734+00:00"
+  },
+  {
     "scholar": "Breezedeus.com | 善意的AI生产幸福❤",
     "scholar_url": "https://www.breezedeus.com/",
     "affiliation": "",
@@ -523,23 +602,6 @@
     "first_seen": "2026-09-14T23:38:45.097668+00:00"
   },
   {
-    "scholar": "Breezedeus.com | 善意的AI生产幸福❤",
-    "scholar_url": "https://www.breezedeus.com/",
-    "affiliation": "",
-    "areas": [
-      "Agent",
-      "LLM"
-    ],
-    "watch": "general",
-    "kind": "update",
-    "text": "html",
-    "link": "https://www.breezedeus.com/",
-    "date_str": "",
-    "timestamp": 1789360213.28872,
-    "result_type": "changed",
-    "first_seen": "2026-08-08T21:23:16.665183+00:00"
-  },
-  {
     "scholar": "Junjie Su(苏俊杰)",
     "scholar_url": "https://momoyeyu.github.io/",
     "affiliation": "北京邮电大学",
@@ -757,71 +819,5 @@
     "timestamp": 1788222053.070107,
     "result_type": "changed",
     "first_seen": "2026-09-01T00:20:53.070694+00:00"
-  },
-  {
-    "scholar": "孙海龙",
-    "scholar_url": "https://sun-hailong.github.io/",
-    "affiliation": "NJU LAMDA",
-    "areas": [
-      "Continual Learning"
-    ],
-    "watch": "news",
-    "kind": "news",
-    "text": "[2026-09] Our team released Ling-3.0-flash-VL and Ling-3.0-flash-Sante , extending Ling 3.0 to visual agents and healthcare.",
-    "link": "https://sun-hailong.github.io/",
-    "date_str": "",
-    "timestamp": 1788220800.0,
-    "result_type": "changed",
-    "first_seen": "2026-09-05T22:32:18.725747+00:00"
-  },
-  {
-    "scholar": "孙海龙",
-    "scholar_url": "https://sun-hailong.github.io/",
-    "affiliation": "NJU LAMDA",
-    "areas": [
-      "Continual Learning"
-    ],
-    "watch": "news",
-    "kind": "news",
-    "text": "[2026-09] Our team open-sourced Ling-3.0-flash-Fin and FinFIRST for verifiable financial research agents.",
-    "link": "https://sun-hailong.github.io/",
-    "date_str": "",
-    "timestamp": 1788220800.0,
-    "result_type": "changed",
-    "first_seen": "2026-09-05T22:32:18.725750+00:00"
-  },
-  {
-    "scholar": "xuhuiz.com",
-    "scholar_url": "https://xuhuiz.com/",
-    "affiliation": "CMU",
-    "areas": [
-      "RL",
-      "CHI."
-    ],
-    "watch": "general",
-    "kind": "update",
-    "text": "LinkedIn",
-    "link": "https://xuhuiz.com/",
-    "date_str": "",
-    "timestamp": 1788152584.246538,
-    "result_type": "changed",
-    "first_seen": "2026-08-31T05:03:04.246910+00:00"
-  },
-  {
-    "scholar": "苏剑林 - 科学空间",
-    "scholar_url": "https://kexue.fm/",
-    "affiliation": "Kimi",
-    "areas": [
-      "LLM",
-      "Theory"
-    ],
-    "watch": "blog",
-    "kind": "post",
-    "text": "让炼丹更科学一些（八）：多阶段训练的学习率",
-    "link": "https://kexue.fm/archives/11879",
-    "date_str": "Mon, 31 Aug 2026 11:07:00 +0800",
-    "timestamp": 1788145620.0,
-    "result_type": "rss",
-    "first_seen": "2026-08-31T05:03:04.246916+00:00"
   }
 ]
