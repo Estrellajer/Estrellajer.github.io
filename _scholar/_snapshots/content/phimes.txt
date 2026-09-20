@@ -1,4 +1,4 @@
-你好，欢迎来到Phimes
+Phimes 的技术空间
 最新 2026-01-16 [ · llm / KV-Cache / MQA / GQA ]
 KV Cache（二）：从如何让GPU不摸鱼开始思考——MQA、GQA到MLA的计算拆解
 完整对比 MHA、MQA、GQA、MLA 四种 Attention 在 KV Cache 优化上的表现，每一步都用具体数字算清楚：每种方案到底能省多少？代价是什么？瓶颈卡在哪？

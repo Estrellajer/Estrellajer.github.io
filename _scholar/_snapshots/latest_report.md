@@ -1,17 +1,12 @@
 # Scholar Monitor Report
 
-**Run:** 2026-09-20 04:32 UTC  |  **Total:** 58  |  Events 7  |  RSS 0  |  CHG 2  |  FIRST 0  |  OK 52  |  ERR 4
+**Run:** 2026-09-20 22:51 UTC  |  **Total:** 58  |  Events 2  |  RSS 0  |  CHG 2  |  FIRST 0  |  OK 52  |  ERR 4
 
 ---
-## Activity Feed (7)
+## Activity Feed (2)
 
-- **Phimes**: [ 1 2 3 ]
-- **Phimes**: 时间 热度
-- **Phimes**: 历史文章 18 篇
-- **Phimes**: 最新文章 更多 →
-- **Phimes**: 阅读全文 →
-- **Phimes**: 完整对比 MHA、MQA、GQA、MLA 四种 Attention 在 KV Cache 优化上的表现，每一步都用具体数字算清楚：每种方案到底能省多少？代价是什么？瓶颈卡在哪？
-- **庄辉平** [华南理工大学]: Page content updated
+- **Phimes**: Phimes 的技术空间
+- **孙科** [宾夕法尼亚大学]: Page content updated
 
 ---
 ## Needs Attention (4)
