@@ -40,6 +40,119 @@
     ],
     "watch": "general",
     "kind": "update",
+    "text": "[ 1 2 3 ]",
+    "link": "https://blog.phimes.top/",
+    "date_str": "",
+    "timestamp": 1789878776.193981,
+    "result_type": "changed",
+    "first_seen": "2026-09-20T04:32:56.194595+00:00"
+  },
+  {
+    "scholar": "Phimes",
+    "scholar_url": "https://blog.phimes.top/",
+    "affiliation": "",
+    "areas": [
+      "LLM"
+    ],
+    "watch": "general",
+    "kind": "update",
+    "text": "时间 热度",
+    "link": "https://blog.phimes.top/",
+    "date_str": "",
+    "timestamp": 1789878776.193974,
+    "result_type": "changed",
+    "first_seen": "2026-09-20T04:32:56.194604+00:00"
+  },
+  {
+    "scholar": "Phimes",
+    "scholar_url": "https://blog.phimes.top/",
+    "affiliation": "",
+    "areas": [
+      "LLM"
+    ],
+    "watch": "general",
+    "kind": "update",
+    "text": "历史文章 18 篇",
+    "link": "https://blog.phimes.top/",
+    "date_str": "",
+    "timestamp": 1789878776.193968,
+    "result_type": "changed",
+    "first_seen": "2026-09-20T04:32:56.194608+00:00"
+  },
+  {
+    "scholar": "Phimes",
+    "scholar_url": "https://blog.phimes.top/",
+    "affiliation": "",
+    "areas": [
+      "LLM"
+    ],
+    "watch": "general",
+    "kind": "update",
+    "text": "最新文章 更多 →",
+    "link": "https://blog.phimes.top/",
+    "date_str": "",
+    "timestamp": 1789878776.193961,
+    "result_type": "changed",
+    "first_seen": "2026-09-20T04:32:56.194610+00:00"
+  },
+  {
+    "scholar": "Phimes",
+    "scholar_url": "https://blog.phimes.top/",
+    "affiliation": "",
+    "areas": [
+      "LLM"
+    ],
+    "watch": "general",
+    "kind": "update",
+    "text": "阅读全文 →",
+    "link": "https://blog.phimes.top/",
+    "date_str": "",
+    "timestamp": 1789878776.193953,
+    "result_type": "changed",
+    "first_seen": "2026-09-20T04:32:56.194614+00:00"
+  },
+  {
+    "scholar": "Phimes",
+    "scholar_url": "https://blog.phimes.top/",
+    "affiliation": "",
+    "areas": [
+      "LLM"
+    ],
+    "watch": "general",
+    "kind": "update",
+    "text": "完整对比 MHA、MQA、GQA、MLA 四种 Attention 在 KV Cache 优化上的表现，每一步都用具体数字算清楚：每种方案到底能省多少？代价是什么？瓶颈卡在哪？",
+    "link": "https://blog.phimes.top/",
+    "date_str": "",
+    "timestamp": 1789878776.193925,
+    "result_type": "changed",
+    "first_seen": "2026-09-20T04:32:56.194616+00:00"
+  },
+  {
+    "scholar": "庄辉平",
+    "scholar_url": "https://zhuanghp.github.io/",
+    "affiliation": "华南理工大学",
+    "areas": [
+      "Continual Learning",
+      "Embodied AI"
+    ],
+    "watch": "general",
+    "kind": "update",
+    "text": "Page content updated",
+    "link": "https://zhuanghp.github.io/",
+    "date_str": "",
+    "timestamp": 1789878776.192597,
+    "result_type": "changed",
+    "first_seen": "2026-09-16T23:27:43.713799+00:00"
+  },
+  {
+    "scholar": "Phimes",
+    "scholar_url": "https://blog.phimes.top/",
+    "affiliation": "",
+    "areas": [
+      "LLM"
+    ],
+    "watch": "general",
+    "kind": "update",
     "text": "1 前言 本来没打算写这种经验性或者思考的内容。不过最近~~团队出故障比较多~~问的人比较多，想想以后还是开上一个分系列，说说一些经验和探索。 2 Vibe 到 Spec 2.1 vibe coding Vibe Coding比较火的时候，可以在社交媒体上看到那些：一个人对着屏幕说了句“给我做一个类...",
     "link": "https://blog.phimes.top/",
     "date_str": "",
@@ -536,23 +649,6 @@
     "first_seen": "2026-08-10T21:34:36.519831+00:00"
   },
   {
-    "scholar": "庄辉平",
-    "scholar_url": "https://zhuanghp.github.io/",
-    "affiliation": "华南理工大学",
-    "areas": [
-      "Continual Learning",
-      "Embodied AI"
-    ],
-    "watch": "general",
-    "kind": "update",
-    "text": "Page content updated",
-    "link": "https://zhuanghp.github.io/",
-    "date_str": "",
-    "timestamp": 1789601263.713037,
-    "result_type": "changed",
-    "first_seen": "2026-09-16T23:27:43.713799+00:00"
-  },
-  {
     "scholar": "mengrennwpu - 博客园",
     "scholar_url": "https://www.cnblogs.com/mengrennwpu",
     "affiliation": "",
@@ -724,100 +820,5 @@
     "timestamp": 1788912000.0,
     "result_type": "rss_no_change",
     "first_seen": "2026-09-10T04:12:53.900945+00:00"
-  },
-  {
-    "scholar": "Nathan Lambert",
-    "scholar_url": "https://www.interconnects.ai/",
-    "affiliation": "Interconnects",
-    "areas": [],
-    "watch": "blog",
-    "kind": "post",
-    "text": "Latest open artifacts (#24): Motif-3, GLM-5.3, Hy4-preview and open model licenses",
-    "link": "https://www.interconnects.ai/p/latest-open-artifacts-24-motif-3",
-    "date_str": "Tue, 08 Sep 2026 14:15:25 GMT",
-    "timestamp": 1788876925.0,
-    "result_type": "rss",
-    "first_seen": "2026-09-08T23:05:54.831042+00:00"
-  },
-  {
-    "scholar": "王立元",
-    "scholar_url": "https://lywang3081.github.io/",
-    "affiliation": "北京大学",
-    "areas": [
-      "Continual Learning"
-    ],
-    "watch": "general",
-    "kind": "update",
-    "text": "Page content updated",
-    "link": "https://lywang3081.github.io/",
-    "date_str": "",
-    "timestamp": 1788822780.146951,
-    "result_type": "changed",
-    "first_seen": "2026-09-07T23:13:00.147869+00:00"
-  },
-  {
-    "scholar": "苏剑林 - 科学空间",
-    "scholar_url": "https://kexue.fm/",
-    "affiliation": "Kimi",
-    "areas": [
-      "LLM",
-      "Theory"
-    ],
-    "watch": "blog",
-    "kind": "post",
-    "text": "让炼丹更科学一些（九）：经典自适应梯度算法",
-    "link": "https://kexue.fm/archives/11882",
-    "date_str": "Sat, 05 Sep 2026 16:34:00 +0800",
-    "timestamp": 1788597240.0,
-    "result_type": "rss",
-    "first_seen": "2026-09-05T22:32:18.725739+00:00"
-  },
-  {
-    "scholar": "黄家斌",
-    "scholar_url": "https://jbhuang0604.github.io/",
-    "affiliation": "",
-    "areas": [
-      "3DV"
-    ],
-    "watch": "general",
-    "kind": "paper",
-    "text": "Conference on Robot Learning (CoRL) 2026",
-    "link": "https://jbhuang0604.github.io/",
-    "date_str": "",
-    "timestamp": 1788561670.109509,
-    "result_type": "changed",
-    "first_seen": "2026-09-04T22:41:10.109928+00:00"
-  },
-  {
-    "scholar": "周大蔚",
-    "scholar_url": "https://www.lamda.nju.edu.cn/zhoudw/",
-    "affiliation": "NJU LAMDA",
-    "areas": [
-      "Continual Learning"
-    ],
-    "watch": "general",
-    "kind": "update",
-    "text": "Page content updated",
-    "link": "https://www.lamda.nju.edu.cn/zhoudw/",
-    "date_str": "",
-    "timestamp": 1788476127.636947,
-    "result_type": "changed",
-    "first_seen": "2026-09-03T22:55:27.637840+00:00"
-  },
-  {
-    "scholar": "周嘉欢",
-    "scholar_url": "https://zhoujiahuan1991.github.io/",
-    "affiliation": "北京大学",
-    "areas": [
-      "Continual Learning"
-    ],
-    "watch": "general",
-    "kind": "update",
-    "text": "Page content updated",
-    "link": "https://zhoujiahuan1991.github.io/",
-    "date_str": "",
-    "timestamp": 1788222053.070107,
-    "result_type": "changed",
-    "first_seen": "2026-09-01T00:20:53.070694+00:00"
   }
 ]
