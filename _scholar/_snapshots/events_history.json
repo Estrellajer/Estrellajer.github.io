@@ -1,5 +1,288 @@
 [
   {
+    "scholar": "王立元",
+    "scholar_url": "https://lywang3081.github.io/",
+    "affiliation": "北京大学",
+    "areas": [
+      "Continual Learning"
+    ],
+    "watch": "general",
+    "kind": "update",
+    "text": "Under Review, 2026.",
+    "link": "https://lywang3081.github.io/",
+    "date_str": "",
+    "timestamp": 1790034347.907063,
+    "result_type": "changed",
+    "first_seen": "2026-09-21T23:45:47.907457+00:00"
+  },
+  {
+    "scholar": "王立元",
+    "scholar_url": "https://lywang3081.github.io/",
+    "affiliation": "北京大学",
+    "areas": [
+      "Continual Learning"
+    ],
+    "watch": "general",
+    "kind": "update",
+    "text": "Hongwei Yan, Kanglei Zhou, Qi Cheng, Weiyi Dong, Chunyan Lan, Jun Zhou, Guanglong Sun, Qian Li, Yi Zhong, Liyuan Wang $^\\dagger$.",
+    "link": "https://lywang3081.github.io/",
+    "date_str": "",
+    "timestamp": 1790034347.907031,
+    "result_type": "changed",
+    "first_seen": "2026-09-21T23:45:47.907464+00:00"
+  },
+  {
+    "scholar": "王立元",
+    "scholar_url": "https://lywang3081.github.io/",
+    "affiliation": "北京大学",
+    "areas": [
+      "Continual Learning"
+    ],
+    "watch": "general",
+    "kind": "update",
+    "text": "Brain-inspired Hierarchical Modularity for General Continual Learning.",
+    "link": "https://lywang3081.github.io/",
+    "date_str": "",
+    "timestamp": 1790034347.907008,
+    "result_type": "changed",
+    "first_seen": "2026-09-21T23:45:47.907467+00:00"
+  },
+  {
+    "scholar": "Breezedeus.com | 善意的AI生产幸福❤",
+    "scholar_url": "https://www.breezedeus.com/",
+    "affiliation": "",
+    "areas": [
+      "Agent",
+      "LLM"
+    ],
+    "watch": "general",
+    "kind": "update",
+    "text": "Qwen-Audio-Agent",
+    "link": "https://www.breezedeus.com/",
+    "date_str": "",
+    "timestamp": 1790034347.906904,
+    "result_type": "changed",
+    "first_seen": "2026-09-04T04:04:29.138059+00:00"
+  },
+  {
+    "scholar": "Breezedeus.com | 善意的AI生产幸福❤",
+    "scholar_url": "https://www.breezedeus.com/",
+    "affiliation": "",
+    "areas": [
+      "Agent",
+      "LLM"
+    ],
+    "watch": "general",
+    "kind": "update",
+    "text": "GPT-Live",
+    "link": "https://www.breezedeus.com/",
+    "date_str": "",
+    "timestamp": 1790034347.906895,
+    "result_type": "changed",
+    "first_seen": "2026-09-04T04:04:29.138066+00:00"
+  },
+  {
+    "scholar": "Breezedeus.com | 善意的AI生产幸福❤",
+    "scholar_url": "https://www.breezedeus.com/",
+    "affiliation": "",
+    "areas": [
+      "Agent",
+      "LLM"
+    ],
+    "watch": "general",
+    "kind": "update",
+    "text": "Audio",
+    "link": "https://www.breezedeus.com/",
+    "date_str": "",
+    "timestamp": 1790034347.906886,
+    "result_type": "changed",
+    "first_seen": "2026-09-04T04:04:29.138070+00:00"
+  },
+  {
+    "scholar": "Breezedeus.com | 善意的AI生产幸福❤",
+    "scholar_url": "https://www.breezedeus.com/",
+    "affiliation": "",
+    "areas": [
+      "Agent",
+      "LLM"
+    ],
+    "watch": "general",
+    "kind": "update",
+    "text": "Coding_Agent",
+    "link": "https://www.breezedeus.com/",
+    "date_str": "",
+    "timestamp": 1790034347.906875,
+    "result_type": "changed",
+    "first_seen": "2026-09-04T04:04:29.138073+00:00"
+  },
+  {
+    "scholar": "Breezedeus.com | 善意的AI生产幸福❤",
+    "scholar_url": "https://www.breezedeus.com/",
+    "affiliation": "",
+    "areas": [
+      "Agent",
+      "LLM"
+    ],
+    "watch": "general",
+    "kind": "update",
+    "text": "Voice_Agent",
+    "link": "https://www.breezedeus.com/",
+    "date_str": "",
+    "timestamp": 1790034347.906861,
+    "result_type": "changed",
+    "first_seen": "2026-09-04T04:04:29.138076+00:00"
+  },
+  {
+    "scholar": "Breezedeus.com | 善意的AI生产幸福❤",
+    "scholar_url": "https://www.breezedeus.com/",
+    "affiliation": "",
+    "areas": [
+      "Agent",
+      "LLM"
+    ],
+    "watch": "general",
+    "kind": "update",
+    "text": "Voice Agent 的关键不在“把文字换成声音”，而在于同时维护持续的实时对话与可取消、可追踪的长任务。本文以 GPT-Live 和 Qwen-Audio-Agent 为例，拆解模型、媒体、调度与后台 Agent 如何分工。",
+    "link": "https://www.breezedeus.com/",
+    "date_str": "",
+    "timestamp": 1790034347.906824,
+    "result_type": "changed",
+    "first_seen": "2026-09-04T04:04:29.138078+00:00"
+  },
+  {
+    "scholar": "Breezedeus.com | 善意的AI生产幸福❤",
+    "scholar_url": "https://www.breezedeus.com/",
+    "affiliation": "",
+    "areas": [
+      "Agent",
+      "LLM"
+    ],
+    "watch": "general",
+    "kind": "update",
+    "text": "AI_Agent",
+    "link": "https://www.breezedeus.com/",
+    "date_str": "",
+    "timestamp": 1790034347.906813,
+    "result_type": "changed",
+    "first_seen": "2026-09-04T04:04:29.138081+00:00"
+  },
+  {
+    "scholar": "Breezedeus.com | 善意的AI生产幸福❤",
+    "scholar_url": "https://www.breezedeus.com/",
+    "affiliation": "",
+    "areas": [
+      "Agent",
+      "LLM"
+    ],
+    "watch": "general",
+    "kind": "update",
+    "text": "Transformer",
+    "link": "https://www.breezedeus.com/",
+    "date_str": "",
+    "timestamp": 1790034347.906801,
+    "result_type": "changed",
+    "first_seen": "2026-09-04T04:04:29.138085+00:00"
+  },
+  {
+    "scholar": "Breezedeus.com | 善意的AI生产幸福❤",
+    "scholar_url": "https://www.breezedeus.com/",
+    "affiliation": "",
+    "areas": [
+      "Agent",
+      "LLM"
+    ],
+    "watch": "general",
+    "kind": "update",
+    "text": "多模态模型",
+    "link": "https://www.breezedeus.com/",
+    "date_str": "",
+    "timestamp": 1790034347.90679,
+    "result_type": "changed",
+    "first_seen": "2026-09-04T04:04:29.138088+00:00"
+  },
+  {
+    "scholar": "Breezedeus.com | 善意的AI生产幸福❤",
+    "scholar_url": "https://www.breezedeus.com/",
+    "affiliation": "",
+    "areas": [
+      "Agent",
+      "LLM"
+    ],
+    "watch": "general",
+    "kind": "update",
+    "text": "Multimodal Learning",
+    "link": "https://www.breezedeus.com/",
+    "date_str": "",
+    "timestamp": 1790034347.906774,
+    "result_type": "changed",
+    "first_seen": "2026-09-04T04:04:29.138091+00:00"
+  },
+  {
+    "scholar": "Breezedeus.com | 善意的AI生产幸福❤",
+    "scholar_url": "https://www.breezedeus.com/",
+    "affiliation": "",
+    "areas": [
+      "Agent",
+      "LLM"
+    ],
+    "watch": "general",
+    "kind": "update",
+    "text": "多模态学习",
+    "link": "https://www.breezedeus.com/",
+    "date_str": "",
+    "timestamp": 1790034347.906757,
+    "result_type": "changed",
+    "first_seen": "2026-09-04T04:04:29.138093+00:00"
+  },
+  {
+    "scholar": "Breezedeus.com | 善意的AI生产幸福❤",
+    "scholar_url": "https://www.breezedeus.com/",
+    "affiliation": "",
+    "areas": [
+      "Agent",
+      "LLM"
+    ],
+    "watch": "general",
+    "kind": "update",
+    "text": "从”每秒传一张图”到原生全双工 AV2AV，一次拆清持续视频理解、共享时间轴、响应时机、异步思考与因果音视频生成。",
+    "link": "https://www.breezedeus.com/",
+    "date_str": "",
+    "timestamp": 1790034347.905457,
+    "result_type": "changed",
+    "first_seen": "2026-09-04T04:04:29.138095+00:00"
+  },
+  {
+    "scholar": "苏剑林 - 科学空间",
+    "scholar_url": "https://kexue.fm/",
+    "affiliation": "Kimi",
+    "areas": [
+      "LLM",
+      "Theory"
+    ],
+    "watch": "blog",
+    "kind": "post",
+    "text": "排序不等式及其推广",
+    "link": "https://kexue.fm/archives/11910",
+    "date_str": "Mon, 21 Sep 2026 21:15:00 +0800",
+    "timestamp": 1789996500.0,
+    "result_type": "rss",
+    "first_seen": "2026-09-21T23:45:47.907484+00:00"
+  },
+  {
+    "scholar": "Nathan Lambert",
+    "scholar_url": "https://www.interconnects.ai/",
+    "affiliation": "Interconnects",
+    "areas": [],
+    "watch": "blog",
+    "kind": "post",
+    "text": "The current balance of power in open models",
+    "link": "https://www.interconnects.ai/p/the-current-balance-of-power-in-open",
+    "date_str": "Mon, 21 Sep 2026 11:56:56 GMT",
+    "timestamp": 1789991816.0,
+    "result_type": "rss",
+    "first_seen": "2026-09-21T23:45:47.907487+00:00"
+  },
+  {
     "scholar": "Phimes",
     "scholar_url": "https://blog.phimes.top/",
     "affiliation": "",
@@ -159,210 +442,6 @@
     "timestamp": 1789791184.302102,
     "result_type": "changed",
     "first_seen": "2026-09-04T22:41:10.109936+00:00"
-  },
-  {
-    "scholar": "Breezedeus.com | 善意的AI生产幸福❤",
-    "scholar_url": "https://www.breezedeus.com/",
-    "affiliation": "",
-    "areas": [
-      "Agent",
-      "LLM"
-    ],
-    "watch": "general",
-    "kind": "update",
-    "text": "Qwen-Audio-Agent",
-    "link": "https://www.breezedeus.com/",
-    "date_str": "",
-    "timestamp": 1789772224.665702,
-    "result_type": "changed",
-    "first_seen": "2026-09-04T04:04:29.138059+00:00"
-  },
-  {
-    "scholar": "Breezedeus.com | 善意的AI生产幸福❤",
-    "scholar_url": "https://www.breezedeus.com/",
-    "affiliation": "",
-    "areas": [
-      "Agent",
-      "LLM"
-    ],
-    "watch": "general",
-    "kind": "update",
-    "text": "GPT-Live",
-    "link": "https://www.breezedeus.com/",
-    "date_str": "",
-    "timestamp": 1789772224.665696,
-    "result_type": "changed",
-    "first_seen": "2026-09-04T04:04:29.138066+00:00"
-  },
-  {
-    "scholar": "Breezedeus.com | 善意的AI生产幸福❤",
-    "scholar_url": "https://www.breezedeus.com/",
-    "affiliation": "",
-    "areas": [
-      "Agent",
-      "LLM"
-    ],
-    "watch": "general",
-    "kind": "update",
-    "text": "Audio",
-    "link": "https://www.breezedeus.com/",
-    "date_str": "",
-    "timestamp": 1789772224.665691,
-    "result_type": "changed",
-    "first_seen": "2026-09-04T04:04:29.138070+00:00"
-  },
-  {
-    "scholar": "Breezedeus.com | 善意的AI生产幸福❤",
-    "scholar_url": "https://www.breezedeus.com/",
-    "affiliation": "",
-    "areas": [
-      "Agent",
-      "LLM"
-    ],
-    "watch": "general",
-    "kind": "update",
-    "text": "Coding_Agent",
-    "link": "https://www.breezedeus.com/",
-    "date_str": "",
-    "timestamp": 1789772224.665686,
-    "result_type": "changed",
-    "first_seen": "2026-09-04T04:04:29.138073+00:00"
-  },
-  {
-    "scholar": "Breezedeus.com | 善意的AI生产幸福❤",
-    "scholar_url": "https://www.breezedeus.com/",
-    "affiliation": "",
-    "areas": [
-      "Agent",
-      "LLM"
-    ],
-    "watch": "general",
-    "kind": "update",
-    "text": "Voice_Agent",
-    "link": "https://www.breezedeus.com/",
-    "date_str": "",
-    "timestamp": 1789772224.665677,
-    "result_type": "changed",
-    "first_seen": "2026-09-04T04:04:29.138076+00:00"
-  },
-  {
-    "scholar": "Breezedeus.com | 善意的AI生产幸福❤",
-    "scholar_url": "https://www.breezedeus.com/",
-    "affiliation": "",
-    "areas": [
-      "Agent",
-      "LLM"
-    ],
-    "watch": "general",
-    "kind": "update",
-    "text": "Voice Agent 的关键不在“把文字换成声音”，而在于同时维护持续的实时对话与可取消、可追踪的长任务。本文以 GPT-Live 和 Qwen-Audio-Agent 为例，拆解模型、媒体、调度与后台 Agent 如何分工。",
-    "link": "https://www.breezedeus.com/",
-    "date_str": "",
-    "timestamp": 1789772224.665669,
-    "result_type": "changed",
-    "first_seen": "2026-09-04T04:04:29.138078+00:00"
-  },
-  {
-    "scholar": "Breezedeus.com | 善意的AI生产幸福❤",
-    "scholar_url": "https://www.breezedeus.com/",
-    "affiliation": "",
-    "areas": [
-      "Agent",
-      "LLM"
-    ],
-    "watch": "general",
-    "kind": "update",
-    "text": "AI_Agent",
-    "link": "https://www.breezedeus.com/",
-    "date_str": "",
-    "timestamp": 1789772224.665658,
-    "result_type": "changed",
-    "first_seen": "2026-09-04T04:04:29.138081+00:00"
-  },
-  {
-    "scholar": "Breezedeus.com | 善意的AI生产幸福❤",
-    "scholar_url": "https://www.breezedeus.com/",
-    "affiliation": "",
-    "areas": [
-      "Agent",
-      "LLM"
-    ],
-    "watch": "general",
-    "kind": "update",
-    "text": "Transformer",
-    "link": "https://www.breezedeus.com/",
-    "date_str": "",
-    "timestamp": 1789772224.665653,
-    "result_type": "changed",
-    "first_seen": "2026-09-04T04:04:29.138085+00:00"
-  },
-  {
-    "scholar": "Breezedeus.com | 善意的AI生产幸福❤",
-    "scholar_url": "https://www.breezedeus.com/",
-    "affiliation": "",
-    "areas": [
-      "Agent",
-      "LLM"
-    ],
-    "watch": "general",
-    "kind": "update",
-    "text": "多模态模型",
-    "link": "https://www.breezedeus.com/",
-    "date_str": "",
-    "timestamp": 1789772224.665647,
-    "result_type": "changed",
-    "first_seen": "2026-09-04T04:04:29.138088+00:00"
-  },
-  {
-    "scholar": "Breezedeus.com | 善意的AI生产幸福❤",
-    "scholar_url": "https://www.breezedeus.com/",
-    "affiliation": "",
-    "areas": [
-      "Agent",
-      "LLM"
-    ],
-    "watch": "general",
-    "kind": "update",
-    "text": "Multimodal Learning",
-    "link": "https://www.breezedeus.com/",
-    "date_str": "",
-    "timestamp": 1789772224.66564,
-    "result_type": "changed",
-    "first_seen": "2026-09-04T04:04:29.138091+00:00"
-  },
-  {
-    "scholar": "Breezedeus.com | 善意的AI生产幸福❤",
-    "scholar_url": "https://www.breezedeus.com/",
-    "affiliation": "",
-    "areas": [
-      "Agent",
-      "LLM"
-    ],
-    "watch": "general",
-    "kind": "update",
-    "text": "多模态学习",
-    "link": "https://www.breezedeus.com/",
-    "date_str": "",
-    "timestamp": 1789772224.665631,
-    "result_type": "changed",
-    "first_seen": "2026-09-04T04:04:29.138093+00:00"
-  },
-  {
-    "scholar": "Breezedeus.com | 善意的AI生产幸福❤",
-    "scholar_url": "https://www.breezedeus.com/",
-    "affiliation": "",
-    "areas": [
-      "Agent",
-      "LLM"
-    ],
-    "watch": "general",
-    "kind": "update",
-    "text": "从”每秒传一张图”到原生全双工 AV2AV，一次拆清持续视频理解、共享时间轴、响应时机、异步思考与因果音视频生成。",
-    "link": "https://www.breezedeus.com/",
-    "date_str": "",
-    "timestamp": 1789772224.66561,
-    "result_type": "changed",
-    "first_seen": "2026-09-04T04:04:29.138095+00:00"
   },
   {
     "scholar": "Breezedeus.com | 善意的AI生产幸福❤",
@@ -740,21 +819,5 @@
     "timestamp": 1788130998.531757,
     "result_type": "changed",
     "first_seen": "2026-08-30T23:03:18.531757+00:00"
-  },
-  {
-    "scholar": "Zixuan Li",
-    "scholar_url": "https://lee-zix.github.io/",
-    "affiliation": "计算所",
-    "areas": [
-      "NLP"
-    ],
-    "watch": "general",
-    "kind": "update",
-    "text": "Visiting Postdoctoral Research Fellow , NExT Research Center, National University of Singapore, 2026-Now",
-    "link": "https://lee-zix.github.io/",
-    "date_str": "",
-    "timestamp": 1787260834.676099,
-    "result_type": "changed",
-    "first_seen": "2026-08-20T21:20:34.676099+00:00"
   }
 ]
