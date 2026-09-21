@@ -1,37 +1,5 @@
 [
   {
-    "scholar": "沈立",
-    "scholar_url": "https://sites.google.com/site/mathshenli/home",
-    "affiliation": "中山大学",
-    "areas": [
-      "Model Merging"
-    ],
-    "watch": "general",
-    "kind": "paper",
-    "text": "Pengxiang Li, Yefan Zhou, Dilxat Muhtar, Lu Yin, Shilin Yan, Li Shen , Yi Liang, Soroush Vosoughi, Shiwei Liu, Diffusion Language Model Knows the Answer Before It Decodes, ICLR, 2026. ( oral )",
-    "link": "https://sites.google.com/site/mathshenli/home",
-    "date_str": "",
-    "timestamp": 1796083200.0,
-    "result_type": "changed",
-    "first_seen": "2026-08-30T23:03:18.531757+00:00"
-  },
-  {
-    "scholar": "Zixuan Li",
-    "scholar_url": "https://lee-zix.github.io/",
-    "affiliation": "计算所",
-    "areas": [
-      "NLP"
-    ],
-    "watch": "general",
-    "kind": "update",
-    "text": "Visiting Postdoctoral Research Fellow , NExT Research Center, National University of Singapore, 2026-Now",
-    "link": "https://lee-zix.github.io/",
-    "date_str": "",
-    "timestamp": 1790812800.0,
-    "result_type": "changed",
-    "first_seen": "2026-08-20T21:20:34.676099+00:00"
-  },
-  {
     "scholar": "Phimes",
     "scholar_url": "https://blog.phimes.top/",
     "affiliation": "",
@@ -62,86 +30,6 @@
     "timestamp": 1789944665.889754,
     "result_type": "changed",
     "first_seen": "2026-09-09T04:15:48.934667+00:00"
-  },
-  {
-    "scholar": "Phimes",
-    "scholar_url": "https://blog.phimes.top/",
-    "affiliation": "",
-    "areas": [
-      "LLM"
-    ],
-    "watch": "general",
-    "kind": "update",
-    "text": "[ 1 2 3 ]",
-    "link": "https://blog.phimes.top/",
-    "date_str": "",
-    "timestamp": 1789878776.193981,
-    "result_type": "changed",
-    "first_seen": "2026-09-20T04:32:56.194595+00:00"
-  },
-  {
-    "scholar": "Phimes",
-    "scholar_url": "https://blog.phimes.top/",
-    "affiliation": "",
-    "areas": [
-      "LLM"
-    ],
-    "watch": "general",
-    "kind": "update",
-    "text": "时间 热度",
-    "link": "https://blog.phimes.top/",
-    "date_str": "",
-    "timestamp": 1789878776.193974,
-    "result_type": "changed",
-    "first_seen": "2026-09-20T04:32:56.194604+00:00"
-  },
-  {
-    "scholar": "Phimes",
-    "scholar_url": "https://blog.phimes.top/",
-    "affiliation": "",
-    "areas": [
-      "LLM"
-    ],
-    "watch": "general",
-    "kind": "update",
-    "text": "历史文章 18 篇",
-    "link": "https://blog.phimes.top/",
-    "date_str": "",
-    "timestamp": 1789878776.193968,
-    "result_type": "changed",
-    "first_seen": "2026-09-20T04:32:56.194608+00:00"
-  },
-  {
-    "scholar": "Phimes",
-    "scholar_url": "https://blog.phimes.top/",
-    "affiliation": "",
-    "areas": [
-      "LLM"
-    ],
-    "watch": "general",
-    "kind": "update",
-    "text": "最新文章 更多 →",
-    "link": "https://blog.phimes.top/",
-    "date_str": "",
-    "timestamp": 1789878776.193961,
-    "result_type": "changed",
-    "first_seen": "2026-09-20T04:32:56.194610+00:00"
-  },
-  {
-    "scholar": "Phimes",
-    "scholar_url": "https://blog.phimes.top/",
-    "affiliation": "",
-    "areas": [
-      "LLM"
-    ],
-    "watch": "general",
-    "kind": "update",
-    "text": "阅读全文 →",
-    "link": "https://blog.phimes.top/",
-    "date_str": "",
-    "timestamp": 1789878776.193953,
-    "result_type": "changed",
-    "first_seen": "2026-09-20T04:32:56.194614+00:00"
   },
   {
     "scholar": "Phimes",
@@ -820,5 +708,37 @@
     "timestamp": 1788951683.0,
     "result_type": "rss",
     "first_seen": "2026-09-09T22:52:17.892224+00:00"
+  },
+  {
+    "scholar": "沈立",
+    "scholar_url": "https://sites.google.com/site/mathshenli/home",
+    "affiliation": "中山大学",
+    "areas": [
+      "Model Merging"
+    ],
+    "watch": "general",
+    "kind": "paper",
+    "text": "Pengxiang Li, Yefan Zhou, Dilxat Muhtar, Lu Yin, Shilin Yan, Li Shen , Yi Liang, Soroush Vosoughi, Shiwei Liu, Diffusion Language Model Knows the Answer Before It Decodes, ICLR, 2026. ( oral )",
+    "link": "https://sites.google.com/site/mathshenli/home",
+    "date_str": "",
+    "timestamp": 1788130998.531757,
+    "result_type": "changed",
+    "first_seen": "2026-08-30T23:03:18.531757+00:00"
+  },
+  {
+    "scholar": "Zixuan Li",
+    "scholar_url": "https://lee-zix.github.io/",
+    "affiliation": "计算所",
+    "areas": [
+      "NLP"
+    ],
+    "watch": "general",
+    "kind": "update",
+    "text": "Visiting Postdoctoral Research Fellow , NExT Research Center, National University of Singapore, 2026-Now",
+    "link": "https://lee-zix.github.io/",
+    "date_str": "",
+    "timestamp": 1787260834.676099,
+    "result_type": "changed",
+    "first_seen": "2026-08-20T21:20:34.676099+00:00"
   }
 ]

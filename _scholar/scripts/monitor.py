@@ -645,13 +645,14 @@ def _format_publication_event(pub: dict) -> str:
 
 
 def _year_to_timestamp(year) -> float:
+    now_dt = datetime.now(timezone.utc)
     try:
         y = int(str(year).strip())
-        if 1900 <= y <= 2100:
-            return datetime(y, 6, 1, tzinfo=timezone.utc).timestamp()
+        if 1900 <= y <= now_dt.year:
+            return min(datetime(y, 6, 1, tzinfo=timezone.utc).timestamp(), now_dt.timestamp())
     except (ValueError, TypeError):
         pass
-    return datetime.now(timezone.utc).timestamp()
+    return now_dt.timestamp()
 
 
 def _is_google_scholar_result(result: dict) -> bool:
@@ -915,11 +916,14 @@ def _extract_new_additions(diff_text: str) -> list:
         "template", "jekyll", "designed by", "last updated",
         "power by", "hosted on", "github pages", "copyright",
         "人机身份验证", "enable javascript",
+        "阅读全文", "最新文章", "历史文章", "时间 热度", "标签",
     }
     for l in added_raw:
         if not l or len(l) < 4:
             continue
-        if re.match(r'^[0-9\s\-\.\,\:\/\\\|]+$', l):
+        if re.match(r'^[0-9\s\-\.\,\:\/\\\|\[\]\(\)]+$', l):
+            continue
+        if re.match(r'^\[\s*\d+(\s+\d+)*\s*\]$', l):
             continue
         lower_l = l.lower()
         if any(noise in lower_l for noise in noise_keywords):
@@ -942,32 +946,95 @@ def _extract_new_additions(diff_text: str) -> list:
 
 
 def _extract_timestamp_from_text(text: str) -> float:
+    now_dt = datetime.now(timezone.utc)
+    max_valid_ts = (now_dt + timedelta(days=1)).timestamp()
+
+    # 1. YYYY-MM-DD, YYYY.MM.DD, YYYY/MM/DD
     match = re.search(r'\b(202\d)[-\./](\d{1,2})[-\./](\d{1,2})\b', text)
     if match:
         try:
             dt = datetime(int(match.group(1)), int(match.group(2)), int(match.group(3)), tzinfo=timezone.utc)
-            return dt.timestamp()
+            if dt.timestamp() <= max_valid_ts:
+                return dt.timestamp()
         except ValueError:
             pass
-    match_month = re.search(r'\b(202\d)[-\./](\d{1,2})\b', text)
+
+    # 2. Chinese date format: YYYY年MM月(DD日)?
+    match_zh = re.search(r'\b(202\d)年(\d{1,2})月(?:(\d{1,2})日)?', text)
+    if match_zh:
+        try:
+            day = int(match_zh.group(3)) if match_zh.group(3) else 1
+            dt = datetime(int(match_zh.group(1)), int(match_zh.group(2)), day, tzinfo=timezone.utc)
+            if dt.timestamp() <= max_valid_ts:
+                return dt.timestamp()
+        except ValueError:
+            pass
+
+    # 3. YYYY-MM, YYYY.MM, [YYYY-MM], [YYYY.MM]
+    match_month = re.search(r'(?:\[|\(|\b)(202\d)[-\./](\d{1,2})(?:\]|\)|\b)', text)
     if match_month:
         try:
-            dt = datetime(int(match_month.group(1)), int(match_month.group(2)), 1, tzinfo=timezone.utc)
-            return dt.timestamp()
+            y, m = int(match_month.group(1)), int(match_month.group(2))
+            if 1 <= m <= 12:
+                dt = datetime(y, m, 1, tzinfo=timezone.utc)
+                if dt.timestamp() <= max_valid_ts:
+                    return dt.timestamp()
         except ValueError:
             pass
-    months = ["jan", "feb", "mar", "apr", "may", "jun", "jul", "aug", "sep", "oct", "nov", "dec"]
-    lower_text = text.lower()
-    for i, m in enumerate(months, 1):
-        if m in lower_text:
-            match_year = re.search(r'\b(202\d)\b', text)
-            if match_year:
-                try:
-                    dt = datetime(int(match_year.group(1)), i, 1, tzinfo=timezone.utc)
+
+    # 4. English month names with year (must be whole month word, in date context)
+    month_map = {
+        "jan": 1, "january": 1, "feb": 2, "february": 2,
+        "mar": 3, "march": 3, "apr": 4, "april": 4,
+        "may": 5, "jun": 6, "june": 6, "jul": 7, "july": 7,
+        "aug": 8, "august": 8, "sep": 9, "sept": 9, "september": 9,
+        "oct": 10, "october": 10, "nov": 11, "november": 11,
+        "dec": 12, "december": 12,
+    }
+    month_pattern = r'(?:jan(?:uary)?|feb(?:ruary)?|mar(?:ch)?|apr(?:il)?|may|jun(?:e)?|jul(?:y)?|aug(?:ust)?|sep(?:t(?:ember)?)?|oct(?:ober)?|nov(?:ember)?|dec(?:ember)?)'
+
+    match_a = re.search(rf'\b({month_pattern})\.?\s+(?:(\d{{1,2}})(?:st|nd|rd|th)?,?\s+)?\b(202\d)\b', text, re.IGNORECASE)
+    if match_a:
+        m_name = match_a.group(1).lower().rstrip(".")
+        m_num = month_map.get(m_name)
+        if m_num:
+            day = int(match_a.group(2)) if match_a.group(2) else 1
+            year = int(match_a.group(3))
+            try:
+                dt = datetime(year, m_num, day, tzinfo=timezone.utc)
+                if dt.timestamp() <= max_valid_ts:
                     return dt.timestamp()
-                except ValueError:
-                    pass
-    return datetime.now(timezone.utc).timestamp()
+            except ValueError:
+                pass
+
+    match_b = re.search(rf'\b(\d{{1,2}})(?:st|nd|rd|th)?\s+(?:of\s+)?({month_pattern})\.?,?\s+\b(202\d)\b', text, re.IGNORECASE)
+    if match_b:
+        m_name = match_b.group(2).lower().rstrip(".")
+        m_num = month_map.get(m_name)
+        if m_num:
+            day = int(match_b.group(1))
+            year = int(match_b.group(3))
+            try:
+                dt = datetime(year, m_num, day, tzinfo=timezone.utc)
+                if dt.timestamp() <= max_valid_ts:
+                    return dt.timestamp()
+            except ValueError:
+                pass
+
+    match_c = re.search(rf'\b(202\d)\s+({month_pattern})\b', text, re.IGNORECASE)
+    if match_c:
+        m_name = match_c.group(2).lower()
+        m_num = month_map.get(m_name)
+        if m_num:
+            year = int(match_c.group(1))
+            try:
+                dt = datetime(year, m_num, 1, tzinfo=timezone.utc)
+                if dt.timestamp() <= max_valid_ts:
+                    return dt.timestamp()
+            except ValueError:
+                pass
+
+    return now_dt.timestamp()
 
 
 def _kind_from_watch(watch: str, text: str = "") -> str:
@@ -1073,7 +1140,16 @@ def load_events_history() -> list:
         return []
     try:
         data = json.loads(EVENTS_HISTORY_PATH.read_text(encoding="utf-8"))
-        return data if isinstance(data, list) else []
+        if not isinstance(data, list):
+            return []
+        now_ts = datetime.now(timezone.utc).timestamp()
+        max_valid_ts = now_ts + 86400
+        for ev in data:
+            ts = ev.get("timestamp") or 0.0
+            if ts > max_valid_ts:
+                fs_ts = _first_seen_to_timestamp(ev.get("first_seen", ""))
+                ev["timestamp"] = fs_ts if fs_ts > 0 else now_ts
+        return data
     except (json.JSONDecodeError, OSError):
         return []
 
