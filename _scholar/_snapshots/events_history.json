@@ -1,5 +1,19 @@
 [
   {
+    "scholar": "Nathan Lambert",
+    "scholar_url": "https://www.interconnects.ai/",
+    "affiliation": "Interconnects",
+    "areas": [],
+    "watch": "blog",
+    "kind": "post",
+    "text": "Debating RSI, the US-China Gap, and Jaggedness with JS Denain of Epoch AI",
+    "link": "https://www.interconnects.ai/p/debating-rsi-the-us-china-gap-and",
+    "date_str": "Tue, 22 Sep 2026 13:37:45 GMT",
+    "timestamp": 1790084265.0,
+    "result_type": "rss",
+    "first_seen": "2026-09-22T23:25:02.188033+00:00"
+  },
+  {
     "scholar": "Breezedeus.com | 善意的AI生产幸福❤",
     "scholar_url": "https://www.breezedeus.com/",
     "affiliation": "",
@@ -803,21 +817,5 @@
     "timestamp": 1788912000.0,
     "result_type": "rss_no_change",
     "first_seen": "2026-09-21T04:30:13.844061+00:00"
-  },
-  {
-    "scholar": "沈立",
-    "scholar_url": "https://sites.google.com/site/mathshenli/home",
-    "affiliation": "中山大学",
-    "areas": [
-      "Model Merging"
-    ],
-    "watch": "general",
-    "kind": "paper",
-    "text": "Pengxiang Li, Yefan Zhou, Dilxat Muhtar, Lu Yin, Shilin Yan, Li Shen , Yi Liang, Soroush Vosoughi, Shiwei Liu, Diffusion Language Model Knows the Answer Before It Decodes, ICLR, 2026. ( oral )",
-    "link": "https://sites.google.com/site/mathshenli/home",
-    "date_str": "",
-    "timestamp": 1788130998.531757,
-    "result_type": "changed",
-    "first_seen": "2026-08-30T23:03:18.531757+00:00"
   }
 ]
