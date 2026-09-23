@@ -1,0 +1,3 @@
+About
+I am a machine learning researcher with expertise in graph neural networks, computer vision, and data mining. I recently completed my Ph.D. at Australian National University, focusing on graph machine learning.
+I bring a unique combination of academic research expertise and industry leadership experience. Prior to my doctoral studies, I served as a senior technical manager at JD.com in China, where I led teams developing machine learning applications for financial services.

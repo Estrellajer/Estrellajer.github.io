@@ -1,16 +1,17 @@
 # Scholar Monitor Report
 
-**Run:** 2026-09-23 04:23 UTC  |  **Total:** 58  |  Events 1  |  RSS 0  |  CHG 1  |  FIRST 0  |  OK 53  |  ERR 4
+**Run:** 2026-09-23 12:27 UTC  |  **Total:** 58  |  Events 10  |  RSS 0  |  CHG 3  |  FIRST 3  |  OK 52  |  ERR 0
 
 ---
-## Activity Feed (1)
+## Activity Feed (10)
 
-- **王立元** [北京大学]: Page content updated
-
----
-## Needs Attention (4)
-
-- [卡里奇 - 知乎](https://www.zhihu.com/people/lyq2002): `Zhihu auth failed (cookies expired or invalid — refresh ZHIHU_COOKIES_B64); RSSHub fallback failed via https://rsshub.app (403 Client Error: Forbidden for url: https://rsshub.app/zhihu/people/activities/lyq2002)`
-- [王子峰](https://kingspencer.github.io/): `GitHub Pages site not found (dead URL)`
-- [堪村无业土博鼠 - 知乎](https://www.zhihu.com/people/allen-zhu-16): `Zhihu auth failed (cookies expired or invalid — refresh ZHIHU_COOKIES_B64); RSSHub fallback failed via https://rsshub.app (403 Client Error: Forbidden for url: https://rsshub.app/zhihu/people/activities/allen-zhu-16)`
-- [傅宇千](https://www.zhihu.com/people/zxhy-1999/posts): `Zhihu auth failed (cookies expired or invalid — refresh ZHIHU_COOKIES_B64); RSSHub fallback failed via https://rsshub.app (403 Client Error: Forbidden for url: https://rsshub.app/zhihu/people/activities/zxhy-1999)`
+- **孙宇** [英伟达]: ">Test-Time Training.
+- **孙宇** [英伟达]: <a href="https://www2.eecs.berkeley.edu/Pubs/TechRpts/2023/EECS-2023-86.html
+- **冯钰捷** [香港理工大学]: More recently, I am interested in advancing the general capabilities of LLM-based agents, including reasoning, grounding
+- **冯钰捷** [香港理工大学]: My recent work studies how to efficiently adapt and evolve LLMs in dynamic environments, where new tasks, domains, and k
+- **冯钰捷** [香港理工大学]: My research focuses on Natural Language Processing (NLP) and Large Language Models (LLMs), with an emphasis on continual
+- **冯钰捷** [香港理工大学]: Research Interests
+- **冯钰捷** [香港理工大学]: I am a fourth-year Ph.D. candidate at Department of Data Science and Artificial Intelligence , The Hong Kong Polytechnic
+- **王子峰** [Google]: Agentic post-training
+- **王子峰** [Google]: Environment scaling for agent learning
+- **王子峰** [Google]: Self-evolving (multi-)agents

@@ -1,0 +1,2 @@
+本文主要总结了RubricRL的若干基本问题，和我自己的一些体会。rubrics(量规)是实践成本二级摊销，它的判分质量上界由世界模型、规范先验、激发工程和多步因果推理共同决定。这使得Rubrics评分成为了一个工程问题：Rubrics-engineering、Rubrics-Agent、Rubrics-Infra都是应有之意。
+阅读全文 »

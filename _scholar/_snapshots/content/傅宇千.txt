@@ -1,0 +1,11 @@
+Blog
+Playing to the Grader: Early Stopping and Low-Quality Delivery in Frontier Coding Agents
+An analysis of how frontier coding agents can optimize for grader-visible success, stop early,
+and deliver artifacts whose apparent completion exceeds their actual quality. [中文版]
+Revisiting On-Policy Distillation: Three Typical Failure Modes and Repair Paths
+Deep dive into the common failure modes in on-policy distillation for multi-agent reinforcement learning
+and practical solutions to address them. [中文版]
+How Anthropic/OpenAI Monitor Advanced Agent Behavior
+A comprehensive analysis on how Anthropic and OpenAI monitor agent behavior patterns
+during training to mitigate post-training issues like reward hacking and bad patterns. Synthesized from their
+technical blog posts and model cards, exploring trajectory monitoring and behavior mitigation strategies. [中文版]

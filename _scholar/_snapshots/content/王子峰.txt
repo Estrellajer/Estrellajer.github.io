@@ -1,13 +1,14 @@
 Zifeng Wang
-I am a Research Scientist at Google Cloud AI Research, focusing on large language models (LLMs) and their applications. My research interests span model adaptation, multi-LLM collaboration, and multi-agent systems. I received my PhD in Machine Learning from Northeastern University 's SPIRAL Group , advised by Prof. Jennifer G. Dy , with close collaboration with Prof. Stratis Ioannidis and Prof. Yanzhi Wang .
+I am a Research Scientist at Google Cloud AI Research, focusing on large language models (LLMs) and their applications. My research interests span self-improving agents, environment scaling, and agentic post-training. I received my PhD in Machine Learning from Northeastern University 's SPIRAL Group , advised by Prof. Jennifer G. Dy .
 Prior to my PhD, I earned my BS in Electronic Engineering from Tsinghua University , where I worked on computer vision with Prof. Jiwen Lu (Tsinghua) and Prof. Jia Deng (Princeton), and big data with Prof. Yong Li (Tsinghua).
 I am looking for self-motivated student researchers / research interns with interests and expertise in LLMs! Feel free to contact me if you would like to work on cutting-edge challenges in machine learning and LLMs.
 Email / Google Scholar / LinkedIn / Twitter / CV
 Research
 Large Language Models
-Model alignment and adaptation
+Self-evolving (multi-)agents
+Environment scaling for agent learning
+Agentic post-training
 Synthetic data for post-training and evaluation
-LLM agents and multi-agent systems
 Cost-effective LLM inference (e.g., Routing, Distillation)
 Continual (Lifelong) Learning
 Open Set Recognition / Novel Class Discovery
@@ -16,14 +17,14 @@ Experience
 Aug 2023 - Present, Google,
 Research Scientist
 at Cloud AI Research
-Sep 2018 - July 2023, Northeastern University,
+Sep 2018 - Jul 2023, Northeastern University,
 Research Assistant at SPIRAL Group
-June 2021 - Jan 2023, Google,
+Jun 2021 - Jan 2023, Google,
 Student Researcher / Research Intern
 at Cloud AI Research
-Feb 2017 - July 2018, Tsinghua University,
+Feb 2017 - Jul 2018, Tsinghua University,
 Research Assistant at i-Vision Group
-July 2017 - Sep 2017, University of Michigan,
+Jul 2017 - Sep 2017, University of Michigan,
 Visiting Researcher
 at Vision & Learning Lab
 Selected Publications
@@ -34,17 +35,14 @@ Publications will be rendered here by JavaScript
 Invited Talks
 Sparse Continual Learning on the Edge
 - ContinualAI , 2023, Remote
-- AI Time , 2023, Remote (Chinese
-version)
+- AI Time , 2023, Remote (Chinese version)
 Prompting-based Continual Learning
 - AI Talks SG , 2022, Remote
 - ContinualAI , 2022, Remote [ recording ]
 Revisiting Hilbert-Schmidt Information Bottleneck for Adversarial Robustness
 - INFORMS Annual
-Meeting ,
-2022, Indianapolis, Indiana [ abstract ]
-- AI Time , 2022, Remote (Chinese
-version) [ recording ][ blog ]
+Meeting , 2022, Indianapolis, Indiana [ abstract ]
+- AI Time , 2022, Remote (Chinese version) [ recording ][ blog ]
 Awards
 Outstanding Student Award in Research , Northeastern University,
 2023
