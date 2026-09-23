@@ -8,6 +8,54 @@
     ],
     "watch": "general",
     "kind": "update",
+    "text": "I'm an Incoming Assistant Professor in Computer Science at the University of Washington (currently serving as an Affiliate Professor), and a researcher at OpenAI.",
+    "link": "https://yueatsprograms.github.io/",
+    "date_str": "",
+    "timestamp": 1790205769.326514,
+    "result_type": "changed",
+    "first_seen": "2026-09-23T23:22:49.327541+00:00"
+  },
+  {
+    "scholar": "孙宇",
+    "scholar_url": "https://yueatsprograms.github.io/",
+    "affiliation": "英伟达",
+    "areas": [
+      "Test time Scaling"
+    ],
+    "watch": "general",
+    "kind": "update",
+    "text": "Email: yusun [at] berkeley.edu",
+    "link": "https://yueatsprograms.github.io/",
+    "date_str": "",
+    "timestamp": 1790205769.326487,
+    "result_type": "changed",
+    "first_seen": "2026-09-23T23:22:49.327550+00:00"
+  },
+  {
+    "scholar": "柠檬CC",
+    "scholar_url": "https://limoncc.com/",
+    "affiliation": "",
+    "areas": [
+      "LLM"
+    ],
+    "watch": "general",
+    "kind": "update",
+    "text": "本文主要总结了LitePPO论文观点的若干基本问题，和我自己的一些体会。",
+    "link": "https://limoncc.com/",
+    "date_str": "",
+    "timestamp": 1790205769.324682,
+    "result_type": "changed",
+    "first_seen": "2026-09-23T23:22:49.327554+00:00"
+  },
+  {
+    "scholar": "孙宇",
+    "scholar_url": "https://yueatsprograms.github.io/",
+    "affiliation": "英伟达",
+    "areas": [
+      "Test time Scaling"
+    ],
+    "watch": "general",
+    "kind": "update",
     "text": "\">Test-Time Training.",
     "link": "https://yueatsprograms.github.io/",
     "date_str": "",
