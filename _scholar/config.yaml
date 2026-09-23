@@ -1,5 +1,15 @@
 # Scholar monitor — config changes trigger CI re-run
 scholars:
+  - name: 柠檬CC
+    url: https://limoncc.com/
+    category: blog
+    site_type: personal_website
+    selectors: [article, .post-block, .post, main, .content]
+    remove_selectors: [script, style, nav, footer, header, aside, .sidebar, .comments]
+    labels: [blog]
+    research_areas: [LLM]
+    affiliation: ""
+    watch: general
   - name: percent4 Blog
     url: https://percent4.github.io/
     category: blog
@@ -69,7 +79,7 @@ scholars:
     labels: [blog]
     research_areas: [Agent, LLM]
     affiliation: ""
-    watch: general
+    watch: blog
   - name: mengrennwpu - 博客园
     url: https://www.cnblogs.com/mengrennwpu
     category: blog
@@ -79,16 +89,6 @@ scholars:
     labels: [blog]
     research_areas: [LLM Application]
     affiliation: ""
-    watch: blog
-  - name: 卡里奇 - 知乎
-    url: https://www.zhihu.com/people/lyq2002
-    category: blog
-    site_type: zhihu
-    selectors: [.RichText, .ContentItem, .Post-content, article]
-    remove_selectors: [script, style, nav, footer, header, aside, .sidebar, .comments]
-    labels: [blog]
-    research_areas: [LLM Alignment]
-    affiliation: 武汉大学
     watch: blog
   - name: Nathan Lambert
     url: https://www.interconnects.ai/
@@ -292,7 +292,7 @@ scholars:
     affiliation: "华南理工大学"
     watch: general
   - name: 王子峰
-    url: https://kingspencer.github.io/
+    url: https://zifengwang.me/
     category: HomePage
     site_type: github_pages
     selectors: [article, main, .post-content, .entry-content, .content]
@@ -351,16 +351,16 @@ scholars:
     research_areas: [NLP]
     affiliation: "计算所"
     watch: general
-  - name: 堪村无业土博鼠 - 知乎
-    url: https://www.zhihu.com/people/allen-zhu-16
+  - name: Hao Zhu (堪村无业土博鼠)
+    url: https://allenhaozhu.github.io/
     category: HomePage
-    site_type: zhihu
-    selectors: [.RichText, .ContentItem, .Post-content, article]
+    site_type: github_pages
+    selectors: [.section, .publication, article, main, .about]
     remove_selectors: [script, style, nav, footer, header, aside, .sidebar, .comments]
     labels: [homepage]
     research_areas: [Continual Learning]
-    affiliation:
-    watch: blog
+    affiliation: "ANU / CSIRO"
+    watch: general
   - name: 杨永进
     url: https://yangyongjin.github.io/
     category: HomePage
@@ -432,15 +432,15 @@ scholars:
     affiliation: "清华大学"
     watch: general
   - name: 冯钰捷
-    url: https://scholar.google.com/citations?user=J3zR-48AAAAJ&hl=zh-CN
+    url: https://woodscene.github.io/
     category: HomePage
-    site_type: google_scholar
-    selectors: ["#gsc_a_b", "#gsc_art", "#gsc_prf", table]
+    site_type: github_pages
+    selectors: [article, main, .page__content, "#main"]
     remove_selectors: [script, style, nav, footer, header, aside, .sidebar, .comments]
     labels: [homepage]
     research_areas: [Continual Learning]
     affiliation: "香港理工大学"
-    watch: publications
+    watch: general
 
   - name: 黄家斌
     url: https://jbhuang0604.github.io/
@@ -573,12 +573,12 @@ scholars:
     affiliation: "上海交通大学"
     watch: general
   - name: 傅宇千
-    url: https://www.zhihu.com/people/zxhy-1999/posts
+    url: https://fyqqyf.github.io/
     category: HomePage
-    site_type: zhihu
-    selectors: [.RichText, .ContentItem, .Post-content, article]
+    site_type: github_pages
+    selectors: ["#blog", "#publications", "#experience", .section, main, article]
     remove_selectors: [script, style, nav, footer, header, aside, .sidebar, .comments]
     labels: [homepage]
     research_areas: [RL, LLM Alignment]
     affiliation: 自动化所
-    watch: blog
+    watch: general

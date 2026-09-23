@@ -4,9 +4,7 @@ I'm a postdoc at Stanford University, hosted by Carlos Guestrin, Tatsu Hashimoto
 I'm also a researcher at NVIDIA under Yejin Choi.
 My research focuses on continual learning, specifically a conceptual framework called test-time training, where each test instance defines its own learning problem.
 I completed my PhD in 2023 at UC Berkeley, advised by Alyosha Efros and Moritz Hardt.
-My PhD thesis is
-<a href="https://www2.eecs.berkeley.edu/Pubs/TechRpts/2023/EECS-2023-86.html
-"><i>Test-Time Training</i></a>.
+My PhD thesis is Test-Time Training.
 During my undergrad at Cornell University, I worked with Kilian Weinberger. I'm a postdoc at Stanford University and a researcher at NVIDIA.
 My research focuses on continual learning, specifically a conceptual framework called test-time training, where each test instance defines its own learning problem.
 My Research

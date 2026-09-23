@@ -748,7 +748,7 @@ def extract_smart_preview(content: str) -> list:
     }
     clean_lines = []
     for l in lines:
-        cl = l.strip()
+        cl = re.sub(r'<[^>]+>', '', l).strip()
         if not cl or len(cl) < 5:
             continue
         lower_cl = cl.lower()
@@ -864,7 +864,7 @@ def check_scholar(scholar: dict, rss_cache: dict, rss_supplemental: dict, since:
     blog_mode = _is_blog_watch(scholar)
 
     if blog_mode:
-        rss_url = rss_cache.get(name)
+        rss_url = scholar.get("rss_url") or rss_cache.get(name) or rss_supplemental.get(name)
         if rss_url:
             rr = check_rss(name, rss_url, since)
             if "error" in rr:
@@ -904,30 +904,100 @@ def _group_by_area(results: list) -> dict:
     return groups
 
 
-def _extract_new_additions(diff_text: str) -> list:
-    if not diff_text:
-        return []
-    lines = diff_text.split("\n")
-    deleted_lines = [l[1:].strip() for l in lines if l.startswith("-") and not l.startswith("---") and len(l[1:].strip()) > 5]
-    added_raw = [l[1:].strip() for l in lines if l.startswith("+") and not l.startswith("+++")]
-    filtered = []
-    noise_keywords = {
+def _is_author_list_line(text: str) -> bool:
+    clean = re.sub(r'<[^>]+>', '', text).strip()
+    if re.search(r'(\$?\^?\\?(dagger|ast)|[\*†‡#]|et al\.|\*:|\(equal contribution\))', clean, re.I):
+        if clean.count(',') >= 1:
+            return True
+    parts = [p.strip() for p in clean.split(',') if p.strip()]
+    if len(parts) >= 3:
+        stop_words = {
+            'the', 'a', 'an', 'in', 'on', 'at', 'by', 'for', 'with', 'about', 'against',
+            'between', 'into', 'through', 'during', 'before', 'after', 'above', 'below',
+            'to', 'from', 'up', 'down', 'in', 'out', 'off', 'over', 'under', 'again',
+            'further', 'then', 'once', 'here', 'there', 'when', 'where', 'why', 'how',
+            'all', 'any', 'both', 'each', 'few', 'more', 'most', 'other', 'some', 'such',
+            'no', 'nor', 'not', 'only', 'own', 'same', 'so', 'than', 'too', 'very', 's', 't',
+            'can', 'will', 'just', 'don', 'should', 'now', 'and'
+        }
+        words = clean.lower().split()
+        stop_count = sum(1 for w in words if w in stop_words)
+        if stop_count <= 2 and all(len(p.split()) <= 4 for p in parts):
+            return True
+    return False
+
+
+def _is_status_or_venue_line(text: str) -> bool:
+    clean = re.sub(r'<[^>]+>', '', text).strip()
+    if len(clean) > 80:
+        return False
+    status_prefixes = (
+        r'^(?:arXiv:\d+|Under Review|Accepted (?:to|in|by|for)|In (?:Review|Press|Proceedings)|'
+        r'Nature (?:Communications|Machine Intelligence|Biomedical Engineering)|'
+        r'ICLR|ICML|CVPR|NeurIPS|EMNLP|ACL|AAAI|KDD|SIGIR|ECCV|ICCV|IEEE|ACM|'
+        r'Journal of|Transactions on|To appear in)\b'
+    )
+    return bool(re.match(status_prefixes, clean, re.I))
+
+
+def _is_tag_or_noise_line(text: str, scholar_name: str = "") -> bool:
+    clean = re.sub(r'<[^>]+>', '', text).strip()
+    if len(clean) < 4:
+        return True
+    if scholar_name and (clean.lower() == scholar_name.lower() or clean.lower() in scholar_name.lower()):
+        return True
+    # Tag brackets: [ paper ], [ ai-coding ... ]
+    if re.match(r'^\[\s*[a-zA-Z0-9_\-\s]+\s*\]$', clean):
+        return True
+    # Single identifiers without spaces: Coding_Agent, Voice_Agent, html, Transformer, Audio, etc.
+    if re.match(r'^[A-Za-z0-9_\-]+$', clean):
+        return True
+    # Multi-word short tags without punctuation/verbs
+    tag_words = {
+        'multimodal learning', 'machine learning', 'deep learning', 'continual learning',
+        'reinforcement learning', 'transfer learning', 'representation learning',
+        'large language model', 'language model', 'computer vision', 'natural language processing'
+    }
+    if clean.lower() in tag_words:
+        return True
+    # Short chinese tag words (<= 6 chars without punctuation)
+    if len(clean) <= 6 and not re.search(r'[\d\s\,\.\:\;\!\?，。：；！？\-_]', clean):
+        return True
+    # Noise keywords
+    noise_keywords = [
+        "最新发布", "公告", "新版本特性", "博文目录", "分享到", "微信扫一扫",
+        "上一篇", "下一篇", "未经许可", "版权声明", "点赞", "收藏", "评论", "转载", "免责声明",
         "举报不良行为", "google 网站", "many thanks", "great theme",
         "template", "jekyll", "designed by", "last updated",
         "power by", "hosted on", "github pages", "copyright",
         "人机身份验证", "enable javascript",
-        "阅读全文", "最新文章", "历史文章", "时间 热度", "标签",
-    }
+        "阅读全文", "最新文章", "历史文章", "时间 热度", "标签", "技术空间",
+    ]
+    lower_c = clean.lower()
+    if any(k in lower_c for k in noise_keywords):
+        return True
+    return False
+
+
+def _extract_new_additions(diff_text: str, scholar_name: str = "") -> list:
+    if not diff_text:
+        return []
+    lines = diff_text.split("\n")
+    deleted_lines = [re.sub(r'<[^>]+>', '', l[1:]).strip() for l in lines if l.startswith("-") and not l.startswith("---") and len(l[1:].strip()) > 5]
+    added_raw = [re.sub(r'<[^>]+>', '', l[1:]).strip() for l in lines if l.startswith("+") and not l.startswith("+++")]
+    filtered = []
     for l in added_raw:
         if not l or len(l) < 4:
             continue
         if re.match(r'^[0-9\s\-\.\,\:\/\\\|\[\]\(\)]+$', l):
             continue
-        if re.match(r'^\[\s*\d+(\s+\d+)*\s*\]$', l):
+        if _is_tag_or_noise_line(l, scholar_name):
+            continue
+        if _is_author_list_line(l):
+            continue
+        if _is_status_or_venue_line(l):
             continue
         lower_l = l.lower()
-        if any(noise in lower_l for noise in noise_keywords):
-            continue
         is_edit = False
         w_added = set(lower_l.split())
         for dl in deleted_lines:
@@ -1097,14 +1167,11 @@ def build_events(results: list) -> list:
         if r["type"] == "changed":
             if _is_google_scholar_result(r):
                 continue
-            additions = _extract_new_additions(r.get("diff", ""))
+            additions = _extract_new_additions(r.get("diff", ""), r.get("name", ""))
             if additions:
-                for add in additions[:12]:
+                for add in additions[:5]:
                     _add_event(r, add, r["url"], "", _extract_timestamp_from_text(add),
                                diff_text=r.get("diff"))
-            else:
-                _add_event(r, "Page content updated", r["url"], "",
-                           now_ts, diff_text=r.get("diff"))
 
     events.sort(key=lambda x: x["timestamp"], reverse=True)
     return events
@@ -1144,12 +1211,20 @@ def load_events_history() -> list:
             return []
         now_ts = datetime.now(timezone.utc).timestamp()
         max_valid_ts = now_ts + 86400
+        filtered_data = []
         for ev in data:
+            t = ev.get("text", "")
+            s = ev.get("scholar", "")
+            if t.lower() == "page content updated":
+                continue
+            if _is_tag_or_noise_line(t, s) or _is_author_list_line(t) or _is_status_or_venue_line(t):
+                continue
             ts = ev.get("timestamp") or 0.0
             if ts > max_valid_ts:
                 fs_ts = _first_seen_to_timestamp(ev.get("first_seen", ""))
                 ev["timestamp"] = fs_ts if fs_ts > 0 else now_ts
-        return data
+            filtered_data.append(ev)
+        return filtered_data
     except (json.JSONDecodeError, OSError):
         return []
 
@@ -1370,18 +1445,19 @@ def _scholar_status_summary(r: dict) -> str:
         n = len(r.get("entries", []))
         return f"{n} new item(s)"
     if t == "changed":
-        adds = _extract_new_additions(r.get("diff", ""))
-        return adds[0][:80] if adds else "Content changed"
+        adds = _extract_new_additions(r.get("diff", ""), r.get("name", ""))
+        txt = adds[0][:80] if adds else "Content changed"
+        return re.sub(r'<[^>]+>', '', txt)
     if t == "error":
-        return (r.get("error") or "Error")[:60]
+        return re.sub(r'<[^>]+>', '', (r.get("error") or "Error")[:60])
     if t == "first_check":
         return "Baseline snapshot taken"
     latest = r.get("latest_entries") or []
     if latest:
-        return latest[0].get("title", "")[:80]
+        return re.sub(r'<[^>]+>', '', latest[0].get("title", "")[:80])
     preview = r.get("preview") or []
     if preview:
-        return preview[0][:80]
+        return re.sub(r'<[^>]+>', '', preview[0][:80])
     return "No recent activity"
 
 
@@ -1400,9 +1476,10 @@ def generate_html_report(
     all_affiliations = sorted({r.get("affiliation", "") for r in results if r.get("affiliation")})
     all_areas = sorted({a for r in results for a in r.get("research_areas", []) if a})
 
+    warn_class = "sm-stat-warn" if errors else "sm-stat-muted"
     stats_html = f"""<div class="sm-stats">
       <span class="sm-stat sm-stat-new">动态 {new_count}</span>
-      <span class="sm-stat sm-stat-warn">需关注 {len(errors)}</span>
+      <span class="sm-stat {warn_class}">需关注 {len(errors)}</span>
       <span class="sm-stat">学者 {total}</span>
       <span class="sm-stat sm-stat-muted">正常 {ok_count}</span>
     </div>"""
