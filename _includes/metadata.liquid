@@ -26,16 +26,18 @@
   {% else %}
     {% capture title %}{{ site.title }}{% endcapture %}
   {% endif %}
-  {% if page.url == '/blog/index.html' %}
+  {% if page.url == '/' or page.url == '/index.html' %}
+    {{ author_name }} (刘茂琦)
+  {% elsif page.url == '/blog/index.html' %}
     {{ page.title }} | {{ title }}
-  {% elsif page.title != 'blank' and page.url != '/' %}
+  {% elsif page.title != 'blank' and page.title != 'about' and page.url != '/' %}
     {% if page.title == null or page.title == '' %}
       {{ page.date | date: '%Y' }} | {{ title }}
     {% else %}
       {{ page.title }} | {{ title }}
     {% endif %}
   {% else %}
-    {{ title }}
+    {{ author_name }} (刘茂琦)
   {% endif %}
 </title>
 <meta name="author" content="{{ author_name }}">
@@ -55,20 +57,20 @@
   <!-- OpenGraph -->
   <meta property="og:site_name" content="{{ title }}">
   <meta property="og:type" content="{% if is_blog_post %}article{% else %}website{% endif %}">
-  <meta property="og:title" content="{% if page.title %}{{ title }} | {{ page.title }}{% else %}{{ title }}{% endif %}">
+  <meta property="og:title" content="{% if page.url == '/' or page.url == '/index.html' %}{{ author_name }} (刘茂琦){% elsif page.title %}{{ title }} | {{ page.title }}{% else %}{{ title }}{% endif %}">
   <meta property="og:url" content="{{ page.url | prepend: site.baseurl | prepend: site.url | remove_first: 'index.html' }}">
   <meta property="og:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
   {% if page.og_image or site.og_image %}
-    <meta property="og:image" content="{% if page.og_image %}{{ page.og_image }}{% else %}{{ site.og_image }}{% endif %}">
+    <meta property="og:image" content="{% if page.og_image %}{{ page.og_image }}{% else %}{{ site.og_image | prepend: site.baseurl | prepend: site.url }}{% endif %}">
   {% endif %}
   <meta property="og:locale" content="{{ site.lang }}">
 
   <!-- Twitter card -->
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="{% if page.title %}{{ page.title }}{% else %}{{ title }}{% endif %}">
+  <meta name="twitter:title" content="{% if page.url == '/' or page.url == '/index.html' %}{{ author_name }} (刘茂琦){% elsif page.title %}{{ page.title }}{% else %}{{ title }}{% endif %}">
   <meta name="twitter:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
   {% if page.og_image or site.og_image %}
-    <meta name="twitter:image" content="{% if page.og_image %}{{ page.og_image }}{% else %}{{ site.og_image }}{% endif %}">
+    <meta name="twitter:image" content="{% if page.og_image %}{{ page.og_image }}{% else %}{{ site.og_image | prepend: site.baseurl | prepend: site.url }}{% endif %}">
   {% endif %}
   {% if site.x_username %}
     <meta name="twitter:site" content="@{{ site.x_username }}">
@@ -80,6 +82,8 @@
   <!-- Schema.org -->
   {% comment %} Social links generator for "sameAs schema" {% endcomment %}
   {% assign sameaslinks = '' | split: ',' %}
+  {% assign openreview_link = 'https://openreview.net/profile?id=%7EMaoqi_Liu2' %}
+  {% assign sameaslinks = sameaslinks | push: openreview_link %}
   {% for social in site.data.socials %}
     {% case social[0] %}
       {% when 'acm_id' %}
@@ -219,26 +223,69 @@
         {% capture link %}https://www.zotero.org/{{ social[1] }}{% endcapture %}
         {% assign sameaslinks = sameaslinks | push: link %}
       {% else %}
-        {% assign sameaslinks = sameaslinks | push: social[1].url %}
+        {% if social[1].url %}
+          {% assign sameaslinks = sameaslinks | push: social[1].url %}
+        {% endif %}
     {% endcase %}
   {% endfor %}
 
   <script type="application/ld+json">
+    {% if page.url == '/' or page.url == '/index.html' %}
     {
-        "author":
-        {
-            "@type": "Person",
-            "name": "{{ author_name }}"
+      "@context": "https://schema.org",
+      "@type": "ProfilePage",
+      "mainEntity": {
+        "@type": "Person",
+        "name": "{{ author_name }}",
+        "alternateName": ["刘茂琦", "Maoqi Liu 「刘茂琦」"],
+        "url": "{{ site.url }}{{ site.baseurl }}/",
+        "image": "{{ site.og_image | prepend: site.baseurl | prepend: site.url }}",
+        "description": {{ site.description | strip | jsonify }},
+        "jobTitle": "Graduate Student & Research Intern",
+        "worksFor": {
+          "@type": "Organization",
+          "name": "ByteDance Data"
         },
-        "url": "{{ page.url | prepend: site.baseurl | prepend: site.url }}",
-        "@type": "{% if is_blog_post %}BlogPosting{% else %}WebSite{% endif %}",
-        "description": "{% if page.description %}{{ page.description }}{% else if site.description %}{{ site.description }}{% endif %}",
-        "headline": "{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}",
+        "affiliation": [
+          {
+            "@type": "CollegeOrUniversity",
+            "name": "Beijing University of Posts and Telecommunications",
+            "alternateName": "BUPT"
+          },
+          {
+            "@type": "Organization",
+            "name": "ByteDance Data"
+          }
+        ],
+        "knowsAbout": [
+          "Post-Training",
+          "Continual Learning",
+          "Large Language Models",
+          "Reinforcement Learning",
+          "Artificial Intelligence"
+        ],
         {% if sameaslinks != blank %}
         "sameAs": {{ sameaslinks | jsonify }},
         {% endif %}
-        "name": "{{ author_name }}",
-        "@context": "https://schema.org"
+        "email": "mailto:{{ site.email }}"
+      }
     }
+    {% else %}
+    {
+      "@context": "https://schema.org",
+      "author": {
+        "@type": "Person",
+        "name": "{{ author_name }}"
+      },
+      "url": "{{ page.url | prepend: site.baseurl | prepend: site.url }}",
+      "@type": "{% if is_blog_post %}BlogPosting{% else %}WebSite{% endif %}",
+      "description": "{% if page.description %}{{ page.description }}{% else if site.description %}{{ site.description }}{% endif %}",
+      "headline": "{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}",
+      {% if sameaslinks != blank %}
+      "sameAs": {{ sameaslinks | jsonify }},
+      {% endif %}
+      "name": "{{ author_name }}"
+    }
+    {% endif %}
   </script>
 {% endif %}
