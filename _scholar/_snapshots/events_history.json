@@ -1,5 +1,21 @@
 [
   {
+    "scholar": "王立元",
+    "scholar_url": "https://lywang3081.github.io/",
+    "affiliation": "北京大学",
+    "areas": [
+      "Continual Learning"
+    ],
+    "watch": "general",
+    "kind": "update",
+    "text": "Page content updated",
+    "link": "https://lywang3081.github.io/",
+    "date_str": "",
+    "timestamp": 1790137389.862611,
+    "result_type": "changed",
+    "first_seen": "2026-09-23T04:23:09.863560+00:00"
+  },
+  {
     "scholar": "Nathan Lambert",
     "scholar_url": "https://www.interconnects.ai/",
     "affiliation": "Interconnects",
@@ -801,21 +817,5 @@
     "timestamp": 1788951683.0,
     "result_type": "rss",
     "first_seen": "2026-09-09T22:52:17.892224+00:00"
-  },
-  {
-    "scholar": "刘子铭（KAN）",
-    "scholar_url": "https://kindxiaoming.github.io/blog/",
-    "affiliation": "清华大学",
-    "areas": [
-      "LLM"
-    ],
-    "watch": "blog",
-    "kind": "post",
-    "text": "Six Bets on Auto-Research",
-    "link": "https://kindxiaoming.github.io/blog/2026/six-bets-auto-research/",
-    "date_str": "2026-09-09T00:00:00+00:00",
-    "timestamp": 1788912000.0,
-    "result_type": "rss_no_change",
-    "first_seen": "2026-09-21T04:30:13.844061+00:00"
   }
 ]
