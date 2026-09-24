@@ -5,6 +5,7 @@ I was fortunate to visit MMLab@NTU (2022-2023), working closely with Prof. Ziwei
 My research interests include machine learning and its applications in computer vision, currently focusing on continual learning, pre-trained model reuse, and multimodal large language models, with the broader goal of building self-evolving AI.
 I am seeking highly self-motivated students. If interested, please email me your resume and transcript.
 News
+[2026-09] Three papers about continual learning are accepted to NeurIPS 2026.
 [2026-08] Serving as an Area Chair for ICLR 2027.
 [2026-08] One paper about continual instruction tuning is accepted to EMNLP 2026.
 <li>[2026-08] We are hosting <a href="https://mp.weixin.qq.com/s/Q0C8UZffR9VujNnjvy7NMA" target="_blank">a tutorial on continual learning</a> at CNCC 2026.</li>
@@ -83,6 +84,18 @@ For more details, please view the full publication page or Google Scholar profil
 </ol>
 </div>
 Conference Paper
+NeurIPS
+Dynamic Cross-Modal Prompt Generation for Multimodal Continual Instruction Tuning
+Tao Hu, Da-Wei Zhou
+Neural Information Processing Systems. NeurIPS 2026
+[ Paper ]
+[ Code ]
+NeurIPS
+Hierarchical Semantic Tree Anchoring for CLIP-Based Class-Incremental Learning
+Tao Hu, Lan Li, Zhen-Hao Xie, Da-Wei Zhou
+Neural Information Processing Systems. NeurIPS 2026
+[ Paper ]
+[ Code ]
 ICML
 SAME: Stabilized Mixture-of-Experts for Multimodal Continual Instruction Tuning
 Zhen-Hao Xie, Jun-Tao Tang, Yu-Cheng Shi, Han-Jia Ye, De-Chuan Zhan, Da-Wei Zhou
@@ -135,6 +148,7 @@ Lan Li, Da-Wei Zhou , Han-Jia Ye,  De-Chuan Zhan
 International Conference on Machine Learning. ICML 2025
 [ Paper ]
 [ Code ]
+<img src="https://img.shields.io/badge/dynamic/json?labelColor=f6f6f6&color=9cf&style=flat&label=Citations&logo=Google%20Scholar&url=https%3A%2F%2Fcdn.jsdelivr.net%2Fgh%2Forangepiglet%2Forangepiglet.github.io@google-scholar-stats%2Fgs_data.json&query=$[%27publications%27][%27kMNaR-YAAAAJ:M3NEmzRMIkIC%27][%27num_citations%27]">
 <li>
 <div class="pub-row">
 <div class="col-sm-3 abbr" style="position: relative;padding-right: 15px;padding-left: 15px;">
@@ -177,8 +191,7 @@ IJCAI
 Continual Learning with Pre-Trained Models: A Survey
 Da-Wei Zhou , Hai-Long Sun, Jingyi Ning, Han-Jia Ye, De-Chuan Zhan
 International Joint Conference on Artificial Intelligence. IJCAI 2024
-Top-3 Most Influential IJCAI Papers
-[ Paper ]
+<br> <i style="color:#e74d3c">Top-3 Most Influential IJCAI Papers</i> [ Paper ]
 [ Code ]
 [ Media ]
 ICML
@@ -190,7 +203,7 @@ International Conference on Machine Learning. ICML 2024
 ICLR Spotlight
 A Model or 603 Exemplars: Towards Memory-Efficient Class-Incremental Learning
 Da-Wei Zhou , Qi-Wei Wang, Han-Jia Ye, De-Chuan Zhan
-International Conference on Learning Representations. ICLR 2023 Spotlight Presentation
+International Conference on Learning Representations. ICLR 2023 <strong><i style="color:#e74d3c">Spotlight Presentation</i></strong>
 [ Paper ]
 [ Code ]
 ICLR
@@ -222,8 +235,7 @@ CVPR Oral
 Learning Placeholders for Open-Set Recognition
 Da-Wei Zhou , Han-Jia Ye, De-Chuan Zhan
 IEEE Conference on Computer Vision and Pattern Recognition. CVPR 2021
-&nbsp;&nbsp; Oral Presentation
-[ Paper ]
+&nbsp;&nbsp; <strong><i style="color:#e74d3c">Oral Presentation</i></strong> <br> [ Paper ]
 [ Code ]
 [ Project Page ]
 ACM MM
@@ -244,16 +256,18 @@ IEEE Transactions on Pattern Analysis and Machine Intelligence. TPAMI 2025
 TPAMI
 Class-Incremental Learning: A Survey
 Da-Wei Zhou , Qi-Wei Wang, Zhi-Hong Qi, Han-Jia Ye, De-Chuan Zhan, Ziwei Liu
-IEEE Transactions on Pattern Analysis and Machine Intelligence. TPAMI 2024 TPAMI Popular Documents
-ESI Hot Cited Paper
+IEEE Transactions on Pattern Analysis and Machine Intelligence. TPAMI 2024 <strong><a href="  https://ieeexplore.ieee.org/xpl/topAccessedArticles.jsp?punumber=34&topArticlesDate=December%202024" target="_blank">  <i style="color:#e74d3c">TPAMI Popular Documents</i></a></strong>
+<strong><i style="color:#e74d3c">ESI Hot Cited Paper</i></strong>
 [ Paper ]
 [ Code ]
 [ Media ]
+<img src="https://img.shields.io/github/stars/zhoudw-zdw/CIL_survey?style=flat&label=Stars&logo=github&labelColor=f6f6f6&color=9cf&logoColor=020d12"/>
+<br>
 TPAMI
 Few-Shot Class-Incremental Learning by Sampling Multi-Phase Tasks
 Da-Wei Zhou , Han-Jia Ye, Liang Ma, Di Xie, Shiliang Pu, De-Chuan Zhan
 IEEE Transactions on Pattern Analysis and Machine Intelligence. TPAMI 2023
-ESI Highly Cited Paper
+<strong><i style="color:#e74d3c">ESI Highly Cited Paper</i></strong>
 [ Paper ]
 [ Code ]
 IJCV

@@ -1,5 +1,85 @@
 [
   {
+    "scholar": "黄家斌",
+    "scholar_url": "https://jbhuang0604.github.io/",
+    "affiliation": "",
+    "areas": [
+      "3DV"
+    ],
+    "watch": "general",
+    "kind": "paper",
+    "text": "Advances in Neural Information Processing Systems (NeurIPS), 2026",
+    "link": "https://jbhuang0604.github.io/",
+    "date_str": "",
+    "timestamp": 1790293357.810393,
+    "result_type": "changed",
+    "first_seen": "2026-09-24T23:42:37.811782+00:00"
+  },
+  {
+    "scholar": "周大蔚",
+    "scholar_url": "https://www.lamda.nju.edu.cn/zhoudw/",
+    "affiliation": "NJU LAMDA",
+    "areas": [
+      "Continual Learning"
+    ],
+    "watch": "general",
+    "kind": "update",
+    "text": "Hierarchical Semantic Tree Anchoring for CLIP-Based Class-Incremental Learning",
+    "link": "https://www.lamda.nju.edu.cn/zhoudw/",
+    "date_str": "",
+    "timestamp": 1790293357.810085,
+    "result_type": "changed",
+    "first_seen": "2026-09-24T23:42:37.811791+00:00"
+  },
+  {
+    "scholar": "周大蔚",
+    "scholar_url": "https://www.lamda.nju.edu.cn/zhoudw/",
+    "affiliation": "NJU LAMDA",
+    "areas": [
+      "Continual Learning"
+    ],
+    "watch": "general",
+    "kind": "paper",
+    "text": "Neural Information Processing Systems. NeurIPS 2026",
+    "link": "https://www.lamda.nju.edu.cn/zhoudw/",
+    "date_str": "",
+    "timestamp": 1790293357.810066,
+    "result_type": "changed",
+    "first_seen": "2026-09-24T23:42:37.811794+00:00"
+  },
+  {
+    "scholar": "周大蔚",
+    "scholar_url": "https://www.lamda.nju.edu.cn/zhoudw/",
+    "affiliation": "NJU LAMDA",
+    "areas": [
+      "Continual Learning"
+    ],
+    "watch": "general",
+    "kind": "update",
+    "text": "Tao Hu, Da-Wei Zhou",
+    "link": "https://www.lamda.nju.edu.cn/zhoudw/",
+    "date_str": "",
+    "timestamp": 1790293357.810047,
+    "result_type": "changed",
+    "first_seen": "2026-09-24T23:42:37.811798+00:00"
+  },
+  {
+    "scholar": "周大蔚",
+    "scholar_url": "https://www.lamda.nju.edu.cn/zhoudw/",
+    "affiliation": "NJU LAMDA",
+    "areas": [
+      "Continual Learning"
+    ],
+    "watch": "general",
+    "kind": "update",
+    "text": "Dynamic Cross-Modal Prompt Generation for Multimodal Continual Instruction Tuning",
+    "link": "https://www.lamda.nju.edu.cn/zhoudw/",
+    "date_str": "",
+    "timestamp": 1790293357.809182,
+    "result_type": "changed",
+    "first_seen": "2026-09-24T23:42:37.811800+00:00"
+  },
+  {
     "scholar": "孙宇",
     "scholar_url": "https://yueatsprograms.github.io/",
     "affiliation": "英伟达",
@@ -644,5 +724,21 @@
     "timestamp": 1788912000.0,
     "result_type": "rss_no_change",
     "first_seen": "2026-09-23T12:27:56.702284+00:00"
+  },
+  {
+    "scholar": "周大蔚",
+    "scholar_url": "https://www.lamda.nju.edu.cn/zhoudw/",
+    "affiliation": "NJU LAMDA",
+    "areas": [
+      "Continual Learning"
+    ],
+    "watch": "general",
+    "kind": "paper",
+    "text": "[2026-09] Three papers about continual learning are accepted to NeurIPS 2026.",
+    "link": "https://www.lamda.nju.edu.cn/zhoudw/",
+    "date_str": "",
+    "timestamp": 1788220800.0,
+    "result_type": "changed",
+    "first_seen": "2026-09-24T23:42:37.811803+00:00"
   }
 ]

@@ -102,22 +102,22 @@ Hao-Wei Yeh (Intern 2017), next PhD student at University of Tokyo.
 Publications
 Masked Visual Actions for Unified World Modeling
 Hadi Alzayer , Wenlong Huang , Haonan Chen , Christopher Luey , Lvmin Zhang , Maneesh Agrawala , Gordon Wetzstein , Li Fei-Fei , Yilun Du , Jiajun Wu , Jia-Bin Huang
-arXiv 2026
+Advances in Neural Information Processing Systems (NeurIPS), 2026
 [ Paper (PDF) ]
 [ Project page ]
 [ Code ]
+DynaFLIP: Rethinking Robotics Perception via Tri-Modal-Dynamics Guided Representation
+Jusuk Lee , Seungjae Lee , Jonghun Shin , Hoseong Jung , Sungha Kim , Daesol Cho , H. Jin Kim , Jia-Bin Huang †, Furong Huang †
+Advances in Neural Information Processing Systems (NeurIPS), 2026
+[ Paper (PDF) ]
+[ Project page ]
+[ Code ]
+[ Model ] († Equal advising.)
 μ₀: A Scalable 3D Interaction-Trace World Model
 Seungjae Lee *, Yoonkyo Jung *, Jusuk Lee , Jonghun Shin , Amir Hossein Shahidzadeh , Yao-Chih Lee , H. Jin Kim , Jia-Bin Huang †, Furong Huang †
 Conference on Robot Learning (CoRL) 2026
 [ Paper (PDF) ]
 [ Project page ] (*Equal contributions; † Equal advising.)
-DynaFLIP: Rethinking Robotics Perception via Tri-Modal-Dynamics Guided Representation
-Jusuk Lee , Seungjae Lee , Jonghun Shin , Hoseong Jung , Sungha Kim , Daesol Cho , H. Jin Kim , Jia-Bin Huang †, Furong Huang †
-arXiv 2026
-[ Paper (PDF) ]
-[ Project page ] († Equal advising.)
-[ Code ]
-[ Model ]
 TRACE: Object Motion Editing in Videos with First-Frame Trajectory Guidance
 Quynh Phung ,
 Long Mai,
