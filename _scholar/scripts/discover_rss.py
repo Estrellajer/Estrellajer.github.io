@@ -55,6 +55,9 @@ def main():
         url = s["url"]
         watch = s.get("watch", "general")
         is_blog = watch == "blog"
+        if s.get("category") == "HomePage" and not is_blog:
+            print("[-] (homepage, skip supplemental)")
+            continue
         target = rss_sources if is_blog else rss_supplemental
         print(f"  [{i+1}/{len(scholars)}] {name:<30s}", end=" ", flush=True)
 

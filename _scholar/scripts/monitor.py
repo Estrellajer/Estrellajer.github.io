@@ -1114,6 +1114,8 @@ def _is_html_or_artifact_noise(text: str) -> bool:
         return True
     if clean.startswith('">') or clean.startswith('="') or clean.startswith('href="'):
         return True
+    if re.match(r'^html\b', clean, re.I):
+        return True
     if re.search(r'https?://[^\s]+', clean) and len(clean.split()) <= 2:
         return True
     if re.match(r'^(?:email|e-mail|contact|tel|phone|office|fax|address)\s*:', clean, re.I):
@@ -1364,8 +1366,20 @@ def _extract_timestamp_from_text(text: str) -> float:
     return now_dt.timestamp()
 
 
+NEWS_ANNOUNCEMENT_PATTERNS = [
+    r'\b(?:accepted (?:by|to|in|at)|are accepted|is accepted|have been accepted|has been accepted|paper accepted)\b',
+    r'\b(?:invited to|serving as|area chair|session chair|action editor)\b',
+    r'\b(?:received (?:the|an?)|awarded|fellowship|scholarship|honorary)\b',
+    r'\b(?:released|open-sourced|announced|launched|joined|defended|graduated)\b',
+    r'\b(?:happy to announce|excited to share|pleased to announce)\b',
+]
+
+
 def _kind_from_watch(watch: str, text: str = "") -> str:
     lower = text.lower()
+    for pat in NEWS_ANNOUNCEMENT_PATTERNS:
+        if re.search(pat, lower, re.I):
+            return "news"
     if watch == "publications" or any(k in lower for k in PAPER_KEYWORDS):
         return "paper"
     if watch == "news":
@@ -1710,12 +1724,12 @@ def _scholar_status_summary(r: dict) -> str:
         return re.sub(r'<[^>]+>', '', (r.get("error") or "Error")[:60])
     if t == "first_check":
         return "Baseline snapshot taken"
-    latest = r.get("latest_entries") or []
-    if latest:
-        return re.sub(r'<[^>]+>', '', latest[0].get("title", "")[:80])
     preview = r.get("preview") or []
     if preview:
         return re.sub(r'<[^>]+>', '', preview[0][:80])
+    latest = r.get("latest_entries") or []
+    if latest:
+        return re.sub(r'<[^>]+>', '', latest[0].get("title", "")[:80])
     return "No recent activity"
 
 
