@@ -1,22 +1,20 @@
 Phimes 的技术空间
-最新 2026-01-16 [ · llm / KV-Cache / MQA / GQA ]
+最新 2026-01-16 · llm / KV-Cache / MQA / GQA
 KV Cache（二）：从如何让GPU不摸鱼开始思考——MQA、GQA到MLA的计算拆解
 完整对比 MHA、MQA、GQA、MLA 四种 Attention 在 KV Cache 优化上的表现，每一步都用具体数字算清楚：每种方案到底能省多少？代价是什么？瓶颈卡在哪？
 阅读全文 →
 最新文章 更多 →
-[
-[ llm Attention KV-Cache ]
+llm Attention KV-Cache
 KV Cache（一）：从KV Cache看懂Attention（MHA、MQA、GQA、MLA）的优化之路
 1/4
-[ ai-coding experience-sharing tech-discussion ]
+ai-coding experience-sharing tech-discussion
 从vibe到spec：可维护性视角下探讨为什么很多人的AI编程依然是小玩具
 2025/12/26
-[ llm algorithm-principles BERT ]
+llm algorithm-principles BERT
 通过下游任务理解BERT和GPT的区别：不只是完形填空和词语接龙
 2025/12/19
-]
 历史文章 18 篇
 时间 热度
 标签
-[ 1 为什么Embedding加上位置编码后不会破坏语义？ 2025/9/28 更新于 2/27 2 流形视角下的Embedding：从理论到RAG实践 2025/8/19 3 Add & Norm（二）从传统CV到Transformer里的Normalization详解 2025/7/28 更新于 2/27 4 Add & Norm：对残差连接深入解析（一） 2025/6/12 更新于 2/27 5 为什么前馈神经网络（FFN）对Transformer这么重要（二）：从激活函数到MOE 2025/6/2 更新于 2/27 6 为什么前馈神经网络（FFN）对Transformer这么重要（一） 2025/5/16 更新于 2/27 7 注意力机制之多头注意力（Multi-Head Attention） 2025/5/5 更新于 2/27 8 Qwen3-8b的变化和能力初探 2025/4/29 ]
-[ 1 2 3 ]
+1 为什么Embedding加上位置编码后不会破坏语义？ 2025/9/28 更新于 2/27 2 流形视角下的Embedding：从理论到RAG实践 2025/8/19 3 Add & Norm（二）从传统CV到Transformer里的Normalization详解 2025/7/28 更新于 2/27 4 Add & Norm：对残差连接深入解析（一） 2025/6/12 更新于 2/27 5 为什么前馈神经网络（FFN）对Transformer这么重要（二）：从激活函数到MOE 2025/6/2 更新于 2/27 6 为什么前馈神经网络（FFN）对Transformer这么重要（一） 2025/5/16 更新于 2/27 7 注意力机制之多头注意力（Multi-Head Attention） 2025/5/5 更新于 2/27 8 Qwen3-8b的变化和能力初探 2025/4/29
+1 2 3

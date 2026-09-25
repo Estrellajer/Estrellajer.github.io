@@ -1,5 +1,22 @@
 [
   {
+    "scholar": "jyopari.github.io",
+    "scholar_url": "https://jyopari.github.io/",
+    "affiliation": "MIT",
+    "areas": [
+      "LLM",
+      "Optimization"
+    ],
+    "watch": "blog",
+    "kind": "post",
+    "text": "html Jyo Pari",
+    "link": "https://jyopari.github.io/",
+    "date_str": "",
+    "timestamp": 1790332149.736526,
+    "result_type": "changed",
+    "first_seen": "2026-09-25T10:29:09.744904+00:00"
+  },
+  {
     "scholar": "周嘉欢",
     "scholar_url": "https://zhoujiahuan1991.github.io/",
     "affiliation": "北京大学",
@@ -721,7 +738,7 @@
     "link": "https://zifengwang.me/",
     "date_str": "2023-11",
     "timestamp": 1700000000.0,
-    "first_seen": "2026-09-23T00:00:00+00:00",
-    "result_type": "changed"
+    "result_type": "changed",
+    "first_seen": "2026-09-23T00:00:00+00:00"
   }
 ]

@@ -49,12 +49,12 @@ Journal of Data Acquisition & Processing/Shu Ju Cai Ji Yu Chu Li 34 (6), 962, 20
 GuardAlign: Test-time Safety Alignment in Multimodal Large Language Models
 X Zhu, B Zhu, J Fang, S Wang, Y Zhang, X Wang, X He
 ICLR 2026, 2026 2026
-Thinking with Images as Continuous Actions: Numerical Visual Chain-of-Thought
-K Zhao, B Zhu, J Zhou, X Zhu, Z Yue, H Zhang
-arXiv preprint arXiv:2602.23959, 2026 2026
 Robustifying Vision-Language Models via Test-Time Prompt Adaptation
 X Zhu, H Wu, S Wang, B Zhu, J Ge, J Zhang, L Chen
 ICML 2026, 2026 2026
+Thinking with Images as Continuous Actions: Numerical Visual Chain-of-Thought
+K Zhao, B Zhu, J Zhou, X Zhu, Z Yue, H Zhang
+arXiv preprint arXiv:2602.23959, 2026 2026
 PEA-DPO: Perception-Enhanced Alignment Direct Preference Optimization for MLLMs Alignment
 J Feng, J Wu, X Zhu*, J Wu, X Wang, X He
 ACM MM 2026, 2026 2026
