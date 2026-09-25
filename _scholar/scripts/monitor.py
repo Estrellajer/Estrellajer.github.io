@@ -58,7 +58,7 @@ EVENTS_HISTORY_PATH = SNAPSHOT_DIR / "events_history.json"
 HTML_PATH = BASE_DIR.parent / "scholar" / "index.html"
 
 EVENTS_HISTORY_LIMIT = 50
-EVENTS_DISPLAY_LIMIT = 10
+EVENTS_DISPLAY_LIMIT = 15
 
 RSSHUB_BASE = (os.environ.get("RSSHUB_BASE") or "https://rsshub.app").rstrip("/")
 SERPAPI_KEY = os.environ.get("SERPAPI_KEY", "")
@@ -293,10 +293,12 @@ def _merge_rss_into_result(result: dict, rr: dict, since: datetime | None) -> di
 
 # Content extraction
 def get_clean_text_custom(element) -> str:
-    from bs4 import NavigableString
+    from bs4 import Comment, NavigableString
     chunks = []
 
     def walk(node):
+        if isinstance(node, Comment):
+            return
         if isinstance(node, NavigableString):
             text = node.strip()
             if text:
@@ -374,6 +376,9 @@ def _normalize_for_diff(text: str) -> str:
 
 def extract_content(html: str, selectors: list = None, remove_selectors: list = None, watch: str = "general") -> str:
     soup = BeautifulSoup(html, "html.parser")
+    from bs4 import Comment
+    for c in soup.find_all(text=lambda t: isinstance(t, Comment)):
+        c.extract()
     for sel in (DEFAULT_REMOVE_SELECTORS + (remove_selectors or [])):
         for el in soup.select(sel):
             el.decompose()
@@ -904,65 +909,189 @@ def _group_by_area(results: list) -> dict:
     return groups
 
 
-def _is_author_list_line(text: str) -> bool:
+PAPER_TITLE_WORDS = {
+    'learning', 'models', 'model', 'neural', 'deep', 'network', 'networks',
+    'reasoning', 'framework', 'approach', 'optimization', 'representations',
+    'representation', 'transformers', 'transformer', 'reinforcement',
+    'continual', 'multimodal', 'generative', 'adaptation', 'adapter',
+    'prompt', 'instruction', 'tuning', 'scaling', 'agent', 'agents',
+    'diffusion', 'vision', 'language', 'knowledge', 'retrieval',
+    'efficient', 'robust', 'defense', 'attack', 'distillation', 'survey',
+    'rethinking', 'reweighting', 'tree', 'anchoring', 'hierarchical',
+    'curverl', 'dynaflip', 'reid', 'flexcover', 'rotvla'
+}
+
+NEWS_VERBS_REGEX = re.compile(
+    r'\b(?:is accepted|are accepted|accepted to|accepted by|organizing|invited to|'
+    r'serving as|serve as|released|open-sourced|we propose|we study|we introduce|'
+    r'congrats to|congratulations)\b', re.I
+)
+
+SECTION_HEADERS = {
+    "research interests", "selected papers", "selected publications",
+    "publications", "preprints", "conference paper", "conference papers",
+    "journal papers", "journal articles", "all papers", "latest news",
+    "recent news", "news", "updates", "biography", "short bio", "bio",
+    "awards", "honors", "services", "professional activities", "teaching",
+    "talks", "invited talks", "experiences", "work experience", "education",
+    "patents", "students", "team", "group", "contact", "links",
+    "favorite quotes", "open source", "projects", "selected projects",
+    "recent updates", "recent activities", "activity", "activities",
+    "selected preprints / publications"
+}
+
+BUTTON_KEYWORDS = [
+    'pdf', 'paper', 'code', 'project', 'project page', 'bib', 'slides',
+    'model', 'media', 'demo', 'video', 'website', 'talk', 'poster', 'arxiv',
+    'dataset', 'doc', 'docs', 'review', 'github'
+]
+
+STATUS_LINE_KEYWORDS = [
+    'oral presentation', 'spotlight presentation', 'poster presentation',
+    'oral', 'spotlight', 'poster', 'esi highly cited paper', 'esi hot cited paper',
+    'top-3 most influential ijcai papers'
+]
+
+VENUE_PATTERNS = [
+    r'(?:advances in\s+)?neural information processing systems(?:\s*\(\s*neurips\s*\))?',
+    r'neurips(?:\'?\d{2,4})?',
+    r'international conference on machine learning(?:\s*\(\s*icml\s*\))?',
+    r'icml(?:\'?\d{2,4})?',
+    r'international conference on learning representations(?:\s*\(\s*iclr\s*\))?',
+    r'iclr(?:\'?\d{2,4})?',
+    r'(?:ieee\s+)?conference on computer vision and pattern recognition(?:\s*\(\s*cvpr\s*\))?',
+    r'cvpr(?:\'?\d{2,4})?',
+    r'international conference on computer vision(?:\s*\(\s*iccv\s*\))?',
+    r'iccv(?:\'?\d{2,4})?',
+    r'european conference on computer vision(?:\s*\(\s*eccv\s*\))?',
+    r'eccv(?:\'?\d{2,4})?',
+    r'(?:ieee\s+)?transactions on [a-zA-Z\s]+(?:\s*\([a-zA-Z\s]+\))?',
+    r'tpami(?:\'?\d{2,4})?',
+    r'international joint conference on artificial intelligence(?:\s*\(\s*ijcai\s*\))?',
+    r'ijcai(?:\'?\d{2,4})?',
+    r'conference on robot learning(?:\s*\(\s*corl\s*\))?',
+    r'corl(?:\'?\d{2,4})?',
+    r'proceedings of (?:the\s+)?[a-zA-Z0-9\s,\-]+(?:conference|symposium|workshop)',
+    r'in proceedings of (?:the\s+)?[a-zA-Z0-9\s,\-]+',
+    r'acm multimedia(?:\s*\(\s*acm mm\s*\))?',
+    r'acm mm(?:\'?\d{2,4})?',
+    r'emnlp(?:\'?\d{2,4})?',
+    r'acl(?:\'?\d{2,4})?',
+    r'aaai(?:\'?\d{2,4})?',
+    r'arxiv(?::\d+|\s+20\d\d)?',
+]
+
+
+def _clean_html(text: str) -> str:
     clean = re.sub(r'<[^>]+>', '', text).strip()
-    if re.search(r'(\$?\^?\\?(dagger|ast)|[\*†‡#]|et al\.|\*:|\(equal contribution\))', clean, re.I):
-        if clean.count(',') >= 1:
-            return True
-    parts = [p.strip() for p in clean.split(',') if p.strip()]
-    if len(parts) >= 3:
-        stop_words = {
-            'the', 'a', 'an', 'in', 'on', 'at', 'by', 'for', 'with', 'about', 'against',
-            'between', 'into', 'through', 'during', 'before', 'after', 'above', 'below',
-            'to', 'from', 'up', 'down', 'in', 'out', 'off', 'over', 'under', 'again',
-            'further', 'then', 'once', 'here', 'there', 'when', 'where', 'why', 'how',
-            'all', 'any', 'both', 'each', 'few', 'more', 'most', 'other', 'some', 'such',
-            'no', 'nor', 'not', 'only', 'own', 'same', 'so', 'than', 'too', 'very', 's', 't',
-            'can', 'will', 'just', 'don', 'should', 'now', 'and'
-        }
-        words = clean.lower().split()
-        stop_count = sum(1 for w in words if w in stop_words)
-        if stop_count <= 2 and all(len(p.split()) <= 4 for p in parts):
+    clean = re.sub(r'^(?:\"?>|>|\"|<a\b[^>]*>|</a>|</?[a-z0-9]+[^>]*>)', '', clean).strip()
+    return clean
+
+
+def _clean_paper_entry(text: str) -> str:
+    m = re.match(r'^\s*\(([^)]+)\)\s*[-:]?\s*.*?"([^"]{8,})"', text)
+    if m:
+        venue_tag = m.group(1).strip()
+        title = m.group(2).strip()
+        return f"{title} · {venue_tag}"
+    return text
+
+
+def _is_html_or_artifact_noise(text: str) -> bool:
+    raw = text.strip()
+    if raw.startswith('">') or raw.startswith('="') or raw.startswith("'>") or raw.startswith('href="'):
+        return True
+    clean = _clean_html(text)
+    if not clean or len(clean) < 4:
+        return True
+    if clean.startswith('">') or clean.startswith('="') or clean.startswith('href="'):
+        return True
+    if re.search(r'https?://[^\s]+', clean) and len(clean.split()) <= 2:
+        return True
+    if re.match(r'^(?:email|e-mail|contact|tel|phone|office|fax|address)\s*:', clean, re.I):
+        return True
+    if '[at]' in clean.lower() and len(clean.split()) <= 4:
+        return True
+    return False
+
+
+def _is_author_list_line(text: str) -> bool:
+    clean = _clean_html(text)
+    # Negative checks:
+    if re.search(r'["“「][^"”」]{8,}["”」]', clean):
+        return False
+    if NEWS_VERBS_REGEX.search(clean):
+        return False
+    clean_words = set(re.findall(r'[a-zA-Z]{3,}', clean.lower()))
+    if any(w in PAPER_TITLE_WORDS for w in clean_words):
+        return False
+    if re.match(r'^(?:\[\d{4}[-/.]\d{1,2}\]|\d{1,2}[-/.]\d{4}|\d{4}[-/.]\d{1,2})', clean):
+        return False
+
+    simplified = re.sub(r'\b(?:et al\.?|\(equal contribution\)|\*: core contributors|core contributors|equal advising)\b', '', clean, flags=re.I)
+    simplified = re.sub(r'[\*†‡#\$^\\?0-9]', '', simplified)
+    simplified = re.sub(r'\([A-Za-z\s,]+\)', '', simplified)
+    simplified = simplified.strip()
+
+    parts = [p.strip() for p in re.split(r'[,、]|\band\b|&', simplified) if p.strip()]
+    if len(parts) >= 2:
+        name_count = 0
+        for p in parts:
+            if re.match(r"^[A-Z][a-zA-Z\.\-']+(?:\s+[A-Z][a-zA-Z\.\-']+){0,3}$", p):
+                name_count += 1
+            elif re.match(r"^[\u4e00-\u9fa5]{2,4}$", p):
+                name_count += 1
+        if name_count / len(parts) >= 0.75:
             return True
     return False
 
 
 def _is_status_or_venue_line(text: str) -> bool:
-    clean = re.sub(r'<[^>]+>', '', text).strip()
-    if len(clean) > 80:
+    clean = _clean_html(text)
+    if _is_tag_or_noise_line(text):
+        return True
+    if re.search(r'["“「][^"”」]{10,}["”」]', clean):
         return False
-    status_prefixes = (
-        r'^(?:arXiv:\d+|Under Review|Accepted (?:to|in|by|for)|In (?:Review|Press|Proceedings)|'
-        r'Nature (?:Communications|Machine Intelligence|Biomedical Engineering)|'
-        r'ICLR|ICML|CVPR|NeurIPS|EMNLP|ACL|AAAI|KDD|SIGIR|ECCV|ICCV|IEEE|ACM|'
-        r'Journal of|Transactions on|To appear in)\b'
-    )
-    return bool(re.match(status_prefixes, clean, re.I))
+    if NEWS_VERBS_REGEX.search(clean):
+        return False
+    for vp in VENUE_PATTERNS:
+        m = re.search(vp, clean, re.I)
+        if m:
+            rem = re.sub(vp, '', clean, flags=re.I)
+            rem = re.sub(r'\b(?:202\d|spotlight|oral|poster|dec\.\d+|nov\.\d+|sydney|australia|in|to appear in)\b', '', rem, flags=re.I)
+            rem = re.sub(r'[\(\)\[\]\,\.\:\;\-\s#\*\+]+', '', rem)
+            if len(rem) < 15:
+                return True
+    return False
 
 
 def _is_tag_or_noise_line(text: str, scholar_name: str = "") -> bool:
-    clean = re.sub(r'<[^>]+>', '', text).strip()
-    if len(clean) < 4:
+    clean = _clean_html(text)
+    if _is_html_or_artifact_noise(text):
         return True
     if scholar_name and (clean.lower() == scholar_name.lower() or clean.lower() in scholar_name.lower()):
         return True
-    # Tag brackets: [ paper ], [ ai-coding ... ]
-    if re.match(r'^\[\s*[a-zA-Z0-9_\-\s]+\s*\]$', clean):
+    lower = clean.lower().strip(" :#*-—–")
+    if lower in SECTION_HEADERS:
         return True
-    # Single identifiers without spaces: Coding_Agent, Voice_Agent, html, Transformer, Audio, etc.
-    if re.match(r'^[A-Za-z0-9_\-]+$', clean):
+    if lower in STATUS_LINE_KEYWORDS:
         return True
-    # Multi-word short tags without punctuation/verbs
-    tag_words = {
-        'multimodal learning', 'machine learning', 'deep learning', 'continual learning',
-        'reinforcement learning', 'transfer learning', 'representation learning',
-        'large language model', 'language model', 'computer vision', 'natural language processing'
-    }
-    if clean.lower() in tag_words:
+    if re.match(r'^\*+\s*(?:denotes|equal contribution|core contributors).*', lower):
         return True
-    # Short chinese tag words (<= 6 chars without punctuation)
-    if len(clean) <= 6 and not re.search(r'[\d\s\,\.\:\;\!\?，。：；！？\-_]', clean):
+
+    btn_regex = r'^\s*\[\s*(?:' + '|'.join(BUTTON_KEYWORDS) + r')(?:\s*\(.*?\))?\s*\]'
+    if re.match(btn_regex, clean, re.I):
+        if len(clean) < 60:
+            words = clean.lower().split()
+            if not any(w in PAPER_TITLE_WORDS for w in words if len(w) > 4):
+                return True
+
+    stripped_brackets = re.sub(r'\[\s*(?:' + '|'.join(BUTTON_KEYWORDS) + r')[^\]]*\]', '', clean, flags=re.I)
+    stripped_brackets = re.sub(r'\([^\)]*\)', '', stripped_brackets)
+    stripped_brackets = re.sub(r'[\s🔥✨💡👉🔗\*\,\.\-—–]+', '', stripped_brackets)
+    if len(clean) < 80 and len(stripped_brackets) <= 8 and any(bk in clean.lower() for bk in BUTTON_KEYWORDS):
         return True
+
     # Noise keywords
     noise_keywords = [
         "最新发布", "公告", "新版本特性", "博文目录", "分享到", "微信扫一扫",
@@ -997,7 +1126,8 @@ def _extract_new_additions(diff_text: str, scholar_name: str = "") -> list:
             continue
         if _is_status_or_venue_line(l):
             continue
-        lower_l = l.lower()
+        cl = _clean_paper_entry(_clean_html(l))
+        lower_l = cl.lower()
         is_edit = False
         w_added = set(lower_l.split())
         for dl in deleted_lines:
@@ -1010,8 +1140,8 @@ def _extract_new_additions(diff_text: str, scholar_name: str = "") -> list:
                 break
         if is_edit:
             continue
-        if l not in filtered:
-            filtered.append(l)
+        if cl not in filtered:
+            filtered.append(cl)
     return filtered
 
 
@@ -1169,7 +1299,7 @@ def build_events(results: list) -> list:
                 continue
             additions = _extract_new_additions(r.get("diff", ""), r.get("name", ""))
             if additions:
-                for add in additions[:5]:
+                for add in additions[:8]:
                     _add_event(r, add, r["url"], "", _extract_timestamp_from_text(add),
                                diff_text=r.get("diff"))
 
@@ -1219,6 +1349,7 @@ def load_events_history() -> list:
                 continue
             if _is_tag_or_noise_line(t, s) or _is_author_list_line(t) or _is_status_or_venue_line(t):
                 continue
+            ev["text"] = _clean_paper_entry(_clean_html(t))
             ts = ev.get("timestamp") or 0.0
             if ts > max_valid_ts:
                 fs_ts = _first_seen_to_timestamp(ev.get("first_seen", ""))

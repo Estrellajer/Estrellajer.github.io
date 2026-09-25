@@ -7,70 +7,6 @@
       "Continual Learning"
     ],
     "watch": "general",
-    "kind": "update",
-    "text": "[ pdf ] AIGC",
-    "link": "https://zhoujiahuan1991.github.io/",
-    "date_str": "",
-    "timestamp": 1790310635.722929,
-    "result_type": "changed",
-    "first_seen": "2026-09-25T04:30:35.724117+00:00"
-  },
-  {
-    "scholar": "周嘉欢",
-    "scholar_url": "https://zhoujiahuan1991.github.io/",
-    "affiliation": "北京大学",
-    "areas": [
-      "Continual Learning"
-    ],
-    "watch": "general",
-    "kind": "update",
-    "text": "[ pdf ] IL NL",
-    "link": "https://zhoujiahuan1991.github.io/",
-    "date_str": "",
-    "timestamp": 1790310635.722917,
-    "result_type": "changed",
-    "first_seen": "2026-09-25T04:30:35.724125+00:00"
-  },
-  {
-    "scholar": "周嘉欢",
-    "scholar_url": "https://zhoujiahuan1991.github.io/",
-    "affiliation": "北京大学",
-    "areas": [
-      "Continual Learning"
-    ],
-    "watch": "general",
-    "kind": "update",
-    "text": "[ pdf ] OR",
-    "link": "https://zhoujiahuan1991.github.io/",
-    "date_str": "",
-    "timestamp": 1790310635.722904,
-    "result_type": "changed",
-    "first_seen": "2026-09-25T04:30:35.724129+00:00"
-  },
-  {
-    "scholar": "周嘉欢",
-    "scholar_url": "https://zhoujiahuan1991.github.io/",
-    "affiliation": "北京大学",
-    "areas": [
-      "Continual Learning"
-    ],
-    "watch": "general",
-    "kind": "update",
-    "text": "[ pdf ] 2D to 3D",
-    "link": "https://zhoujiahuan1991.github.io/",
-    "date_str": "",
-    "timestamp": 1790310635.722884,
-    "result_type": "changed",
-    "first_seen": "2026-09-25T04:30:35.724132+00:00"
-  },
-  {
-    "scholar": "周嘉欢",
-    "scholar_url": "https://zhoujiahuan1991.github.io/",
-    "affiliation": "北京大学",
-    "areas": [
-      "Continual Learning"
-    ],
-    "watch": "general",
     "kind": "paper",
     "text": "09.2026, Five papers are accepted by NeurIPS'2026.",
     "link": "https://zhoujiahuan1991.github.io/",
@@ -80,20 +16,101 @@
     "first_seen": "2026-09-25T04:30:35.724135+00:00"
   },
   {
-    "scholar": "黄家斌",
-    "scholar_url": "https://jbhuang0604.github.io/",
-    "affiliation": "",
+    "scholar": "周嘉欢",
+    "scholar_url": "https://zhoujiahuan1991.github.io/",
+    "affiliation": "北京大学",
     "areas": [
-      "3DV"
+      "Continual Learning"
     ],
     "watch": "general",
     "kind": "paper",
-    "text": "Advances in Neural Information Processing Systems (NeurIPS), 2026",
-    "link": "https://jbhuang0604.github.io/",
+    "text": "3R-Adapter: Retrieval, Rewiring, and Refinement for Efficient Adaptation of 3D Reconstruction Model · NeurIPS'26, Spotlight",
+    "link": "https://zhoujiahuan1991.github.io/",
     "date_str": "",
-    "timestamp": 1790293357.810393,
+    "timestamp": 1790310635.72,
     "result_type": "changed",
-    "first_seen": "2026-09-24T23:42:37.811782+00:00"
+    "first_seen": "2026-09-25T04:30:35.812392+00:00"
+  },
+  {
+    "scholar": "周嘉欢",
+    "scholar_url": "https://zhoujiahuan1991.github.io/",
+    "affiliation": "北京大学",
+    "areas": [
+      "Continual Learning"
+    ],
+    "watch": "general",
+    "kind": "paper",
+    "text": "HypMoE-ReID: Hyperspherical Mixture-of-Experts for Large Scale Person Re-Identification · NeurIPS'26",
+    "link": "https://zhoujiahuan1991.github.io/",
+    "date_str": "",
+    "timestamp": 1790310635.72,
+    "result_type": "changed",
+    "first_seen": "2026-09-25T04:30:35.812392+00:00"
+  },
+  {
+    "scholar": "周嘉欢",
+    "scholar_url": "https://zhoujiahuan1991.github.io/",
+    "affiliation": "北京大学",
+    "areas": [
+      "Continual Learning"
+    ],
+    "watch": "general",
+    "kind": "paper",
+    "text": "Cross-Domain Knowledge Separation and Positive Transmission for Noisy Domain Incremental Learning · NeurIPS'26",
+    "link": "https://zhoujiahuan1991.github.io/",
+    "date_str": "",
+    "timestamp": 1790310635.72,
+    "result_type": "changed",
+    "first_seen": "2026-09-25T04:30:35.812392+00:00"
+  },
+  {
+    "scholar": "周嘉欢",
+    "scholar_url": "https://zhoujiahuan1991.github.io/",
+    "affiliation": "北京大学",
+    "areas": [
+      "Continual Learning"
+    ],
+    "watch": "general",
+    "kind": "paper",
+    "text": "FlexCover: Flexible Cover Song Generation via Symbolic Lead Sheet Control · NeurIPS'26",
+    "link": "https://zhoujiahuan1991.github.io/",
+    "date_str": "",
+    "timestamp": 1790310635.72,
+    "result_type": "changed",
+    "first_seen": "2026-09-25T04:30:35.812392+00:00"
+  },
+  {
+    "scholar": "周嘉欢",
+    "scholar_url": "https://zhoujiahuan1991.github.io/",
+    "affiliation": "北京大学",
+    "areas": [
+      "Continual Learning"
+    ],
+    "watch": "general",
+    "kind": "paper",
+    "text": "RotVLA: Rotational Latent Action for Vision-Language-Action Model · NeurIPS'26",
+    "link": "https://zhoujiahuan1991.github.io/",
+    "date_str": "",
+    "timestamp": 1790310635.72,
+    "result_type": "changed",
+    "first_seen": "2026-09-25T04:30:35.812392+00:00"
+  },
+  {
+    "scholar": "周大蔚",
+    "scholar_url": "https://www.lamda.nju.edu.cn/zhoudw/",
+    "affiliation": "NJU LAMDA",
+    "areas": [
+      "Continual Learning",
+      "LLM"
+    ],
+    "watch": "general",
+    "kind": "news",
+    "text": "[2026-09] Three papers about continual learning are accepted to NeurIPS 2026.",
+    "link": "https://www.lamda.nju.edu.cn/zhoudw/",
+    "date_str": "",
+    "timestamp": 1790293357.812,
+    "result_type": "changed",
+    "first_seen": "2026-09-24T23:42:37.811805+00:00"
   },
   {
     "scholar": "周大蔚",
@@ -110,38 +127,6 @@
     "timestamp": 1790293357.810085,
     "result_type": "changed",
     "first_seen": "2026-09-24T23:42:37.811791+00:00"
-  },
-  {
-    "scholar": "周大蔚",
-    "scholar_url": "https://www.lamda.nju.edu.cn/zhoudw/",
-    "affiliation": "NJU LAMDA",
-    "areas": [
-      "Continual Learning"
-    ],
-    "watch": "general",
-    "kind": "paper",
-    "text": "Neural Information Processing Systems. NeurIPS 2026",
-    "link": "https://www.lamda.nju.edu.cn/zhoudw/",
-    "date_str": "",
-    "timestamp": 1790293357.810066,
-    "result_type": "changed",
-    "first_seen": "2026-09-24T23:42:37.811794+00:00"
-  },
-  {
-    "scholar": "周大蔚",
-    "scholar_url": "https://www.lamda.nju.edu.cn/zhoudw/",
-    "affiliation": "NJU LAMDA",
-    "areas": [
-      "Continual Learning"
-    ],
-    "watch": "general",
-    "kind": "update",
-    "text": "Tao Hu, Da-Wei Zhou",
-    "link": "https://www.lamda.nju.edu.cn/zhoudw/",
-    "date_str": "",
-    "timestamp": 1790293357.810047,
-    "result_type": "changed",
-    "first_seen": "2026-09-24T23:42:37.811798+00:00"
   },
   {
     "scholar": "周大蔚",
@@ -176,22 +161,6 @@
     "first_seen": "2026-09-23T23:22:49.327541+00:00"
   },
   {
-    "scholar": "孙宇",
-    "scholar_url": "https://yueatsprograms.github.io/",
-    "affiliation": "英伟达",
-    "areas": [
-      "Test time Scaling"
-    ],
-    "watch": "general",
-    "kind": "update",
-    "text": "Email: yusun [at] berkeley.edu",
-    "link": "https://yueatsprograms.github.io/",
-    "date_str": "",
-    "timestamp": 1790205769.326487,
-    "result_type": "changed",
-    "first_seen": "2026-09-23T23:22:49.327550+00:00"
-  },
-  {
     "scholar": "柠檬CC",
     "scholar_url": "https://limoncc.com/",
     "affiliation": "",
@@ -206,38 +175,6 @@
     "timestamp": 1790205769.324682,
     "result_type": "changed",
     "first_seen": "2026-09-23T23:22:49.327554+00:00"
-  },
-  {
-    "scholar": "孙宇",
-    "scholar_url": "https://yueatsprograms.github.io/",
-    "affiliation": "英伟达",
-    "areas": [
-      "Test time Scaling"
-    ],
-    "watch": "general",
-    "kind": "update",
-    "text": "\">Test-Time Training.",
-    "link": "https://yueatsprograms.github.io/",
-    "date_str": "",
-    "timestamp": 1790166476.701632,
-    "result_type": "changed",
-    "first_seen": "2026-09-23T12:27:56.702171+00:00"
-  },
-  {
-    "scholar": "孙宇",
-    "scholar_url": "https://yueatsprograms.github.io/",
-    "affiliation": "英伟达",
-    "areas": [
-      "Test time Scaling"
-    ],
-    "watch": "general",
-    "kind": "update",
-    "text": "<a href=\"https://www2.eecs.berkeley.edu/Pubs/TechRpts/2023/EECS-2023-86.html",
-    "link": "https://yueatsprograms.github.io/",
-    "date_str": "",
-    "timestamp": 1790166476.701606,
-    "result_type": "changed",
-    "first_seen": "2026-09-23T12:27:56.702178+00:00"
   },
   {
     "scholar": "冯钰捷",
@@ -286,22 +223,6 @@
     "timestamp": 1790166476.701443,
     "result_type": "changed",
     "first_seen": "2026-09-23T12:27:56.702185+00:00"
-  },
-  {
-    "scholar": "冯钰捷",
-    "scholar_url": "https://woodscene.github.io/",
-    "affiliation": "香港理工大学",
-    "areas": [
-      "Continual Learning"
-    ],
-    "watch": "general",
-    "kind": "update",
-    "text": "Research Interests",
-    "link": "https://woodscene.github.io/",
-    "date_str": "",
-    "timestamp": 1790166476.70143,
-    "result_type": "changed",
-    "first_seen": "2026-09-23T12:27:56.702188+00:00"
   },
   {
     "scholar": "冯钰捷",
