@@ -13,87 +13,34 @@
     "date_str": "",
     "timestamp": 1790310635.721718,
     "result_type": "changed",
-    "first_seen": "2026-09-25T04:30:35.724135+00:00"
-  },
-  {
-    "scholar": "周嘉欢",
-    "scholar_url": "https://zhoujiahuan1991.github.io/",
-    "affiliation": "北京大学",
-    "areas": [
-      "Continual Learning"
-    ],
-    "watch": "general",
-    "kind": "paper",
-    "text": "3R-Adapter: Retrieval, Rewiring, and Refinement for Efficient Adaptation of 3D Reconstruction Model · NeurIPS'26, Spotlight",
-    "link": "https://zhoujiahuan1991.github.io/",
-    "date_str": "",
-    "timestamp": 1790310635.72,
-    "result_type": "changed",
-    "first_seen": "2026-09-25T04:30:35.812392+00:00"
-  },
-  {
-    "scholar": "周嘉欢",
-    "scholar_url": "https://zhoujiahuan1991.github.io/",
-    "affiliation": "北京大学",
-    "areas": [
-      "Continual Learning"
-    ],
-    "watch": "general",
-    "kind": "paper",
-    "text": "HypMoE-ReID: Hyperspherical Mixture-of-Experts for Large Scale Person Re-Identification · NeurIPS'26",
-    "link": "https://zhoujiahuan1991.github.io/",
-    "date_str": "",
-    "timestamp": 1790310635.72,
-    "result_type": "changed",
-    "first_seen": "2026-09-25T04:30:35.812392+00:00"
-  },
-  {
-    "scholar": "周嘉欢",
-    "scholar_url": "https://zhoujiahuan1991.github.io/",
-    "affiliation": "北京大学",
-    "areas": [
-      "Continual Learning"
-    ],
-    "watch": "general",
-    "kind": "paper",
-    "text": "Cross-Domain Knowledge Separation and Positive Transmission for Noisy Domain Incremental Learning · NeurIPS'26",
-    "link": "https://zhoujiahuan1991.github.io/",
-    "date_str": "",
-    "timestamp": 1790310635.72,
-    "result_type": "changed",
-    "first_seen": "2026-09-25T04:30:35.812392+00:00"
-  },
-  {
-    "scholar": "周嘉欢",
-    "scholar_url": "https://zhoujiahuan1991.github.io/",
-    "affiliation": "北京大学",
-    "areas": [
-      "Continual Learning"
-    ],
-    "watch": "general",
-    "kind": "paper",
-    "text": "FlexCover: Flexible Cover Song Generation via Symbolic Lead Sheet Control · NeurIPS'26",
-    "link": "https://zhoujiahuan1991.github.io/",
-    "date_str": "",
-    "timestamp": 1790310635.72,
-    "result_type": "changed",
-    "first_seen": "2026-09-25T04:30:35.812392+00:00"
-  },
-  {
-    "scholar": "周嘉欢",
-    "scholar_url": "https://zhoujiahuan1991.github.io/",
-    "affiliation": "北京大学",
-    "areas": [
-      "Continual Learning"
-    ],
-    "watch": "general",
-    "kind": "paper",
-    "text": "RotVLA: Rotational Latent Action for Vision-Language-Action Model · NeurIPS'26",
-    "link": "https://zhoujiahuan1991.github.io/",
-    "date_str": "",
-    "timestamp": 1790310635.72,
-    "result_type": "changed",
-    "first_seen": "2026-09-25T04:30:35.812392+00:00"
+    "first_seen": "2026-09-25T04:30:35.724135+00:00",
+    "sub_items": [
+      {
+        "text": "3R-Adapter: Retrieval, Rewiring, and Refinement for Efficient Adaptation of 3D Reconstruction Model · NeurIPS'26, Spotlight",
+        "link": "https://zhoujiahuan1991.github.io/",
+        "kind": "paper"
+      },
+      {
+        "text": "HypMoE-ReID: Hyperspherical Mixture-of-Experts for Large Scale Person Re-Identification · NeurIPS'26",
+        "link": "https://zhoujiahuan1991.github.io/",
+        "kind": "paper"
+      },
+      {
+        "text": "Cross-Domain Knowledge Separation and Positive Transmission for Noisy Domain Incremental Learning · NeurIPS'26",
+        "link": "https://zhoujiahuan1991.github.io/",
+        "kind": "paper"
+      },
+      {
+        "text": "FlexCover: Flexible Cover Song Generation via Symbolic Lead Sheet Control · NeurIPS'26",
+        "link": "https://zhoujiahuan1991.github.io/",
+        "kind": "paper"
+      },
+      {
+        "text": "RotVLA: Rotational Latent Action for Vision-Language-Action Model · NeurIPS'26",
+        "link": "https://zhoujiahuan1991.github.io/",
+        "kind": "paper"
+      }
+    ]
   },
   {
     "scholar": "周大蔚",
@@ -110,39 +57,19 @@
     "date_str": "",
     "timestamp": 1790293357.812,
     "result_type": "changed",
-    "first_seen": "2026-09-24T23:42:37.811805+00:00"
-  },
-  {
-    "scholar": "周大蔚",
-    "scholar_url": "https://www.lamda.nju.edu.cn/zhoudw/",
-    "affiliation": "NJU LAMDA",
-    "areas": [
-      "Continual Learning"
-    ],
-    "watch": "general",
-    "kind": "update",
-    "text": "Hierarchical Semantic Tree Anchoring for CLIP-Based Class-Incremental Learning",
-    "link": "https://www.lamda.nju.edu.cn/zhoudw/",
-    "date_str": "",
-    "timestamp": 1790293357.810085,
-    "result_type": "changed",
-    "first_seen": "2026-09-24T23:42:37.811791+00:00"
-  },
-  {
-    "scholar": "周大蔚",
-    "scholar_url": "https://www.lamda.nju.edu.cn/zhoudw/",
-    "affiliation": "NJU LAMDA",
-    "areas": [
-      "Continual Learning"
-    ],
-    "watch": "general",
-    "kind": "update",
-    "text": "Dynamic Cross-Modal Prompt Generation for Multimodal Continual Instruction Tuning",
-    "link": "https://www.lamda.nju.edu.cn/zhoudw/",
-    "date_str": "",
-    "timestamp": 1790293357.809182,
-    "result_type": "changed",
-    "first_seen": "2026-09-24T23:42:37.811800+00:00"
+    "first_seen": "2026-09-24T23:42:37.811805+00:00",
+    "sub_items": [
+      {
+        "text": "Hierarchical Semantic Tree Anchoring for CLIP-Based Class-Incremental Learning",
+        "link": "https://www.lamda.nju.edu.cn/zhoudw/",
+        "kind": "update"
+      },
+      {
+        "text": "Dynamic Cross-Modal Prompt Generation for Multimodal Continual Instruction Tuning",
+        "link": "https://www.lamda.nju.edu.cn/zhoudw/",
+        "kind": "update"
+      }
+    ]
   },
   {
     "scholar": "柠檬CC",
@@ -189,40 +116,6 @@
     "timestamp": 1790034347.907008,
     "result_type": "changed",
     "first_seen": "2026-09-21T23:45:47.907467+00:00"
-  },
-  {
-    "scholar": "Breezedeus.com | 善意的AI生产幸福❤",
-    "scholar_url": "https://www.breezedeus.com/",
-    "affiliation": "",
-    "areas": [
-      "Agent",
-      "LLM"
-    ],
-    "watch": "general",
-    "kind": "update",
-    "text": "Voice Agent 的关键不在“把文字换成声音”，而在于同时维护持续的实时对话与可取消、可追踪的长任务。本文以 GPT-Live 和 Qwen-Audio-Agent 为例，拆解模型、媒体、调度与后台 Agent 如何分工。",
-    "link": "https://www.breezedeus.com/",
-    "date_str": "",
-    "timestamp": 1790034347.906824,
-    "result_type": "changed",
-    "first_seen": "2026-09-04T04:04:29.138078+00:00"
-  },
-  {
-    "scholar": "Breezedeus.com | 善意的AI生产幸福❤",
-    "scholar_url": "https://www.breezedeus.com/",
-    "affiliation": "",
-    "areas": [
-      "Agent",
-      "LLM"
-    ],
-    "watch": "general",
-    "kind": "update",
-    "text": "从”每秒传一张图”到原生全双工 AV2AV，一次拆清持续视频理解、共享时间轴、响应时机、异步思考与因果音视频生成。",
-    "link": "https://www.breezedeus.com/",
-    "date_str": "",
-    "timestamp": 1790034347.905457,
-    "result_type": "changed",
-    "first_seen": "2026-09-04T04:04:29.138095+00:00"
   },
   {
     "scholar": "苏剑林 - 科学空间",
@@ -300,159 +193,6 @@
     "timestamp": 1789832540.0,
     "result_type": "rss",
     "first_seen": "2026-09-19T22:36:31.656734+00:00"
-  },
-  {
-    "scholar": "Breezedeus.com | 善意的AI生产幸福❤",
-    "scholar_url": "https://www.breezedeus.com/",
-    "affiliation": "",
-    "areas": [
-      "Agent",
-      "LLM"
-    ],
-    "watch": "general",
-    "kind": "update",
-    "text": "详见： Pix2Text V1.1.1 新版发布，带来更好的数学公式检测模型",
-    "link": "https://www.breezedeus.com/",
-    "date_str": "",
-    "timestamp": 1789705000.290558,
-    "result_type": "changed",
-    "first_seen": "2026-08-10T21:34:36.519791+00:00"
-  },
-  {
-    "scholar": "Breezedeus.com | 善意的AI生产幸福❤",
-    "scholar_url": "https://www.breezedeus.com/",
-    "affiliation": "",
-    "areas": [
-      "Agent",
-      "LLM"
-    ],
-    "watch": "general",
-    "kind": "update",
-    "text": "V1.1.1 发布 ，带来全新的数学公式检测（MFD）模型",
-    "link": "https://www.breezedeus.com/",
-    "date_str": "",
-    "timestamp": 1789705000.290553,
-    "result_type": "changed",
-    "first_seen": "2026-08-10T21:34:36.519799+00:00"
-  },
-  {
-    "scholar": "Breezedeus.com | 善意的AI生产幸福❤",
-    "scholar_url": "https://www.breezedeus.com/",
-    "affiliation": "",
-    "areas": [
-      "Agent",
-      "LLM"
-    ],
-    "watch": "general",
-    "kind": "update",
-    "text": "🎉Pix2Text V1.1.1 新版发布🎉",
-    "link": "https://www.breezedeus.com/",
-    "date_str": "",
-    "timestamp": 1789705000.290543,
-    "result_type": "changed",
-    "first_seen": "2026-08-10T21:34:36.519806+00:00"
-  },
-  {
-    "scholar": "Breezedeus.com | 善意的AI生产幸福❤",
-    "scholar_url": "https://www.breezedeus.com/",
-    "affiliation": "",
-    "areas": [
-      "Agent",
-      "LLM"
-    ],
-    "watch": "general",
-    "kind": "update",
-    "text": "AI Agent 性能优化：核心策略与实战技巧",
-    "link": "https://www.breezedeus.com/",
-    "date_str": "",
-    "timestamp": 1789705000.290535,
-    "result_type": "changed",
-    "first_seen": "2026-08-10T21:34:36.519812+00:00"
-  },
-  {
-    "scholar": "Breezedeus.com | 善意的AI生产幸福❤",
-    "scholar_url": "https://www.breezedeus.com/",
-    "affiliation": "",
-    "areas": [
-      "Agent",
-      "LLM"
-    ],
-    "watch": "general",
-    "kind": "update",
-    "text": "GUI Agents（智能体）最新论文",
-    "link": "https://www.breezedeus.com/",
-    "date_str": "",
-    "timestamp": 1789705000.290531,
-    "result_type": "changed",
-    "first_seen": "2026-08-10T21:34:36.519815+00:00"
-  },
-  {
-    "scholar": "Breezedeus.com | 善意的AI生产幸福❤",
-    "scholar_url": "https://www.breezedeus.com/",
-    "affiliation": "",
-    "areas": [
-      "Agent",
-      "LLM"
-    ],
-    "watch": "general",
-    "kind": "update",
-    "text": "AI Agent 中的上下文工程 (Context Engineering)",
-    "link": "https://www.breezedeus.com/",
-    "date_str": "",
-    "timestamp": 1789705000.290526,
-    "result_type": "changed",
-    "first_seen": "2026-08-10T21:34:36.519820+00:00"
-  },
-  {
-    "scholar": "Breezedeus.com | 善意的AI生产幸福❤",
-    "scholar_url": "https://www.breezedeus.com/",
-    "affiliation": "",
-    "areas": [
-      "Agent",
-      "LLM"
-    ],
-    "watch": "general",
-    "kind": "update",
-    "text": "企业 AI 转型路线图：从单点试验到可规模化能力",
-    "link": "https://www.breezedeus.com/",
-    "date_str": "",
-    "timestamp": 1789705000.290521,
-    "result_type": "changed",
-    "first_seen": "2026-07-25T21:46:11.546736+00:00"
-  },
-  {
-    "scholar": "Breezedeus.com | 善意的AI生产幸福❤",
-    "scholar_url": "https://www.breezedeus.com/",
-    "affiliation": "",
-    "areas": [
-      "Agent",
-      "LLM"
-    ],
-    "watch": "general",
-    "kind": "update",
-    "text": "为什么 Voice Agent 不能照搬 Coding Agent：实时对话与长任务如何共存",
-    "link": "https://www.breezedeus.com/",
-    "date_str": "",
-    "timestamp": 1789705000.290516,
-    "result_type": "changed",
-    "first_seen": "2026-08-10T21:34:36.519825+00:00"
-  },
-  {
-    "scholar": "Breezedeus.com | 善意的AI生产幸福❤",
-    "scholar_url": "https://www.breezedeus.com/",
-    "affiliation": "",
-    "areas": [
-      "Agent",
-      "LLM"
-    ],
-    "watch": "general",
-    "kind": "update",
-    "text": "模型如何边看边听边回应：流式多模态的能力阶梯与技术分野",
-    "link": "https://www.breezedeus.com/",
-    "date_str": "",
-    "timestamp": 1789705000.29051,
-    "result_type": "changed",
-    "first_seen": "2026-08-26T01:45:40.258986+00:00"
   },
   {
     "scholar": "mengrennwpu - 博客园",
@@ -596,6 +336,23 @@
     "first_seen": "2026-09-23T12:27:56.702284+00:00"
   },
   {
+    "scholar": "Breezedeus.com | 善意的AI生产幸福❤",
+    "scholar_url": "https://www.breezedeus.com/",
+    "affiliation": "",
+    "areas": [
+      "Agent",
+      "LLM"
+    ],
+    "watch": "blog",
+    "kind": "post",
+    "text": "模型如何边看边听、边回应：实时流式多模态模型技术路线",
+    "link": "https://www.breezedeus.com/article/real-time-streaming-multimodal-models",
+    "date_str": "2026-08-01",
+    "timestamp": 1785542400.0,
+    "result_type": "rss",
+    "first_seen": "2026-08-01T00:00:00+00:00"
+  },
+  {
     "scholar": "冯钰捷",
     "scholar_url": "https://woodscene.github.io/",
     "affiliation": "香港理工大学",
@@ -609,23 +366,14 @@
     "date_str": "2026-04",
     "timestamp": 1775001600.0,
     "result_type": "changed",
-    "first_seen": "2026-04-01T00:00:00+00:00"
-  },
-  {
-    "scholar": "冯钰捷",
-    "scholar_url": "https://woodscene.github.io/",
-    "affiliation": "香港理工大学",
-    "areas": [
-      "Continual Learning"
-    ],
-    "watch": "general",
-    "kind": "paper",
-    "text": "FOREVER: Forgetting Curve-Inspired Memory Replay for Language Model Continual Learning. [ PDF ] [ Code ] · ACL 2026",
-    "link": "https://woodscene.github.io/",
-    "date_str": "2026-04",
-    "timestamp": 1775001600.0,
-    "result_type": "changed",
-    "first_seen": "2026-04-01T00:00:00+00:00"
+    "first_seen": "2026-04-01T00:00:00+00:00",
+    "sub_items": [
+      {
+        "text": "FOREVER: Forgetting Curve-Inspired Memory Replay for Language Model Continual Learning. [ PDF ] [ Code ] · ACL 2026",
+        "link": "https://woodscene.github.io/",
+        "kind": "paper"
+      }
+    ]
   },
   {
     "scholar": "冯钰捷",
@@ -641,23 +389,14 @@
     "date_str": "2026-01",
     "timestamp": 1767225600.0,
     "result_type": "changed",
-    "first_seen": "2026-01-01T00:00:00+00:00"
-  },
-  {
-    "scholar": "冯钰捷",
-    "scholar_url": "https://woodscene.github.io/",
-    "affiliation": "香港理工大学",
-    "areas": [
-      "Continual Learning"
-    ],
-    "watch": "general",
-    "kind": "paper",
-    "text": "Micro-Macro Retrieval: Reducing Long-Form Hallucination in Large Language Models. [ PDF ] [ Code ] · ICLR 2026",
-    "link": "https://woodscene.github.io/",
-    "date_str": "2026-01",
-    "timestamp": 1767225600.0,
-    "result_type": "changed",
-    "first_seen": "2026-01-01T00:00:00+00:00"
+    "first_seen": "2026-01-01T00:00:00+00:00",
+    "sub_items": [
+      {
+        "text": "Micro-Macro Retrieval: Reducing Long-Form Hallucination in Large Language Models. [ PDF ] [ Code ] · ICLR 2026",
+        "link": "https://woodscene.github.io/",
+        "kind": "paper"
+      }
+    ]
   },
   {
     "scholar": "冯钰捷",

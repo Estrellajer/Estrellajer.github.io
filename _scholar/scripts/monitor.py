@@ -1274,7 +1274,7 @@ def _extract_new_additions(diff_text: str, scholar_name: str = "") -> list:
     return filtered
 
 
-def _extract_timestamp_from_text(text: str) -> float:
+def _extract_timestamp_and_date(text: str) -> tuple:
     now_dt = datetime.now(timezone.utc)
     max_valid_ts = (now_dt + timedelta(days=1)).timestamp()
 
@@ -1282,9 +1282,10 @@ def _extract_timestamp_from_text(text: str) -> float:
     match = re.search(r'\b(202\d)[-\./](\d{1,2})[-\./](\d{1,2})\b', text)
     if match:
         try:
-            dt = datetime(int(match.group(1)), int(match.group(2)), int(match.group(3)), tzinfo=timezone.utc)
+            y, m, d = int(match.group(1)), int(match.group(2)), int(match.group(3))
+            dt = datetime(y, m, d, tzinfo=timezone.utc)
             if dt.timestamp() <= max_valid_ts:
-                return dt.timestamp()
+                return dt.timestamp(), f"{y:04d}-{m:02d}-{d:02d}"
         except ValueError:
             pass
 
@@ -1292,10 +1293,12 @@ def _extract_timestamp_from_text(text: str) -> float:
     match_zh = re.search(r'\b(202\d)年(\d{1,2})月(?:(\d{1,2})日)?', text)
     if match_zh:
         try:
-            day = int(match_zh.group(3)) if match_zh.group(3) else 1
-            dt = datetime(int(match_zh.group(1)), int(match_zh.group(2)), day, tzinfo=timezone.utc)
+            y, m = int(match_zh.group(1)), int(match_zh.group(2))
+            d = int(match_zh.group(3)) if match_zh.group(3) else 1
+            dt = datetime(y, m, d, tzinfo=timezone.utc)
             if dt.timestamp() <= max_valid_ts:
-                return dt.timestamp()
+                date_str = f"{y:04d}-{m:02d}-{d:02d}" if match_zh.group(3) else f"{y:04d}-{m:02d}"
+                return dt.timestamp(), date_str
         except ValueError:
             pass
 
@@ -1307,11 +1310,23 @@ def _extract_timestamp_from_text(text: str) -> float:
             if 1 <= m <= 12:
                 dt = datetime(y, m, 1, tzinfo=timezone.utc)
                 if dt.timestamp() <= max_valid_ts:
-                    return dt.timestamp()
+                    return dt.timestamp(), f"{y:04d}-{m:02d}"
         except ValueError:
             pass
 
-    # 4. English month names with year (must be whole month word, in date context)
+    # 4. MM.YYYY e.g. "09.2026, Five papers"
+    match_my = re.search(r'\b(\d{1,2})[-\./](202\d)\b', text)
+    if match_my:
+        try:
+            m, y = int(match_my.group(1)), int(match_my.group(2))
+            if 1 <= m <= 12:
+                dt = datetime(y, m, 1, tzinfo=timezone.utc)
+                if dt.timestamp() <= max_valid_ts:
+                    return dt.timestamp(), f"{y:04d}-{m:02d}"
+        except ValueError:
+            pass
+
+    # 5. English month names with year (must be whole month word, in date context)
     month_map = {
         "jan": 1, "january": 1, "feb": 2, "february": 2,
         "mar": 3, "march": 3, "apr": 4, "april": 4,
@@ -1332,7 +1347,8 @@ def _extract_timestamp_from_text(text: str) -> float:
             try:
                 dt = datetime(year, m_num, day, tzinfo=timezone.utc)
                 if dt.timestamp() <= max_valid_ts:
-                    return dt.timestamp()
+                    date_str = f"{year:04d}-{m_num:02d}-{day:02d}" if match_a.group(2) else f"{year:04d}-{m_num:02d}"
+                    return dt.timestamp(), date_str
             except ValueError:
                 pass
 
@@ -1346,7 +1362,7 @@ def _extract_timestamp_from_text(text: str) -> float:
             try:
                 dt = datetime(year, m_num, day, tzinfo=timezone.utc)
                 if dt.timestamp() <= max_valid_ts:
-                    return dt.timestamp()
+                    return dt.timestamp(), f"{year:04d}-{m_num:02d}-{day:02d}"
             except ValueError:
                 pass
 
@@ -1359,11 +1375,16 @@ def _extract_timestamp_from_text(text: str) -> float:
             try:
                 dt = datetime(year, m_num, 1, tzinfo=timezone.utc)
                 if dt.timestamp() <= max_valid_ts:
-                    return dt.timestamp()
+                    return dt.timestamp(), f"{year:04d}-{m_num:02d}"
             except ValueError:
                 pass
 
-    return now_dt.timestamp()
+    return now_dt.timestamp(), ""
+
+
+def _extract_timestamp_from_text(text: str) -> float:
+    ts, _ = _extract_timestamp_and_date(text)
+    return ts
 
 
 NEWS_ANNOUNCEMENT_PATTERNS = [
@@ -1387,6 +1408,68 @@ def _kind_from_watch(watch: str, text: str = "") -> str:
     if watch == "blog":
         return "post"
     return "update"
+
+
+def aggregate_events(events: list) -> list:
+    """Cluster related events from the same scholar (e.g. an acceptance announcement
+    and the accompanying papers accepted in the same venue/batch) into a single parent event
+    with sub_items."""
+    if not events:
+        return []
+
+    by_scholar = {}
+    for ev in events:
+        by_scholar.setdefault(ev["scholar"], []).append(ev)
+
+    aggregated = []
+    for scholar, items in by_scholar.items():
+        announcements = []
+        others = []
+        for it in items:
+            text_lower = it.get("text", "").lower()
+            if it.get("kind") == "news" and any(re.search(pat, text_lower, re.I) for pat in NEWS_ANNOUNCEMENT_PATTERNS):
+                announcements.append(it)
+            else:
+                others.append(it)
+
+        if not announcements:
+            aggregated.extend(items)
+            continue
+
+        for ann in announcements:
+            ann_text = ann.get("text", "").lower()
+            venues = [v for v in ["neurips", "iclr", "icml", "cvpr", "iccv", "eccv", "acl", "emnlp", "aaai", "kdd"] if v in ann_text]
+            matched_subs = []
+            remaining_others = []
+            for o in others:
+                o_text = o.get("text", "").lower()
+                same_batch = abs((o.get("timestamp") or 0.0) - (ann.get("timestamp") or 0.0)) < 86400 * 3
+                venue_match = any(v in o_text for v in venues) if venues else False
+                if venue_match or (same_batch and o.get("kind") in ("paper", "update")):
+                    matched_subs.append({
+                        "text": o.get("text", ""),
+                        "link": o.get("link", ""),
+                        "kind": o.get("kind", "paper")
+                    })
+                else:
+                    remaining_others.append(o)
+
+            existing_subs = ann.get("sub_items", [])
+            seen_texts = {s["text"] for s in existing_subs}
+            for ms in matched_subs:
+                if ms["text"] not in seen_texts:
+                    existing_subs.append(ms)
+                    seen_texts.add(ms["text"])
+
+            if existing_subs:
+                ann["sub_items"] = existing_subs
+            aggregated.append(ann)
+            others = remaining_others
+
+        aggregated.extend(others)
+
+    aggregated.sort(key=lambda x: x.get("timestamp") or 0.0, reverse=True)
+    return aggregated
 
 
 def build_events(results: list) -> list:
@@ -1441,9 +1524,11 @@ def build_events(results: list) -> list:
             additions = _extract_new_additions(r.get("diff", ""), r.get("name", ""))
             if additions:
                 for add in additions[:8]:
-                    _add_event(r, add, r["url"], "", _extract_timestamp_from_text(add),
+                    ts, date_str = _extract_timestamp_and_date(add)
+                    _add_event(r, add, r["url"], date_str, ts,
                                diff_text=r.get("diff"))
 
+    events = aggregate_events(events)
     events.sort(key=lambda x: x["timestamp"], reverse=True)
     return events
 
@@ -1457,7 +1542,7 @@ def _strip_event_for_history(ev: dict) -> dict:
     areas = ev.get("areas") or []
     if not isinstance(areas, list):
         areas = list(areas)
-    return {
+    res = {
         "scholar": ev.get("scholar", ""),
         "scholar_url": ev.get("scholar_url", ""),
         "affiliation": ev.get("affiliation", ""),
@@ -1471,6 +1556,9 @@ def _strip_event_for_history(ev: dict) -> dict:
         "result_type": ev.get("result_type", ""),
         "first_seen": ev.get("first_seen") or datetime.now(timezone.utc).isoformat(),
     }
+    if ev.get("sub_items"):
+        res["sub_items"] = ev["sub_items"]
+    return res
 
 
 def load_events_history() -> list:
@@ -1490,13 +1578,16 @@ def load_events_history() -> list:
                 continue
             if _is_tag_or_noise_line(t, s) or _is_author_list_line(t) or _is_status_or_venue_line(t) or _is_bio_or_profile_line(t):
                 continue
+            # Filter out legacy Breezedeus content diff summaries
+            if "breezedeus" in s.lower() and ev.get("result_type") == "changed":
+                continue
             ev["text"] = _clean_paper_entry(_clean_html(t))
             ts = ev.get("timestamp") or 0.0
             if ts > max_valid_ts:
                 fs_ts = _first_seen_to_timestamp(ev.get("first_seen", ""))
                 ev["timestamp"] = fs_ts if fs_ts > 0 else now_ts
             filtered_data.append(ev)
-        return filtered_data
+        return aggregate_events(filtered_data)
     except (json.JSONDecodeError, OSError):
         return []
 
@@ -1536,6 +1627,7 @@ def merge_events_history(history: list, new_events: list) -> list:
         seen.add(key)
         merged.append(dict(h))
 
+    merged = aggregate_events(merged)
     merged.sort(key=lambda x: x.get("timestamp") or 0, reverse=True)
     return merged
 
@@ -1692,11 +1784,6 @@ def _kind_label(kind: str) -> str:
 def _format_event_date(ts: float, date_str: str) -> str:
     if date_str and date_str != "?":
         return date_str[:24]
-    if ts and ts > 0:
-        try:
-            return datetime.fromtimestamp(ts, tz=timezone.utc).strftime("%Y-%m-%d")
-        except (OSError, ValueError):
-            pass
     return ""
 
 
@@ -1813,13 +1900,35 @@ def generate_html_report(
                         f'<details class="sm-tl-diff"><summary>查看原始 diff</summary>'
                         f'<div class="sm-diff">{_diff_to_html(ev["diff"])}</div></details>'
                     )
+                sub_html = ""
+                if ev.get("sub_items"):
+                    subs = ev["sub_items"]
+                    sub_items_li = ""
+                    for s in subs:
+                        stext = _esc(s.get("text", ""))
+                        slink = s.get("link")
+                        skind = s.get("kind", "paper")
+                        skind_badge = f'<span class="sm-kind sm-kind-{_esc(skind)} sm-sub-kind">{_kind_label(skind)}</span>'
+                        if slink and slink != ev.get("scholar_url"):
+                            sub_items_li += f'<li class="sm-tl-subpaper-item">{skind_badge}<a href="{_esc(slink)}" target="_blank">{stext}</a></li>'
+                        else:
+                            sub_items_li += f'<li class="sm-tl-subpaper-item">{skind_badge}<span>{stext}</span></li>'
+                    sub_html = (
+                        f'<details class="sm-tl-subpapers" open>'
+                        f'<summary class="sm-tl-subpapers-summary">收录成果 / 论文 ({len(subs)} 篇)</summary>'
+                        f'<ul class="sm-tl-subpapers-list">{sub_items_li}</ul>'
+                        f'</details>'
+                    )
+                search_text = ev.get("text", "")
+                if ev.get("sub_items"):
+                    search_text += " " + " ".join(s.get("text", "") for s in ev["sub_items"])
                 timeline_html += (
                     f'<article class="sm-tl-item" data-filterable '
                     f'data-name="{_esc(ev["scholar"].lower())}" '
                     f'data-affiliation="{_esc(aff.lower())}" '
                     f'data-areas="{_esc(areas.lower())}" '
                     f'data-kind="{_esc(ev.get("kind", "update"))}" '
-                    f'data-text="{_esc(ev.get("text", "").lower())}">'
+                    f'data-text="{_esc(search_text.lower())}">'
                     f'<div class="sm-tl-meta">'
                     f'<span class="sm-kind sm-kind-{_esc(ev.get("kind", "update"))}">{_kind_label(ev.get("kind", "update"))}</span>'
                     f'<a href="{_esc(ev["scholar_url"])}" target="_blank" class="sm-tl-scholar">{_esc(ev["scholar"])}</a>'
@@ -1836,7 +1945,7 @@ def generate_html_report(
                     timeline_html += f'<a href="{_esc(link)}" target="_blank" class="sm-tl-text">{_esc(ev["text"])}</a>'
                 else:
                     timeline_html += f'<p class="sm-tl-text">{_esc(ev["text"])}</p>'
-                timeline_html += diff_block + '</article>'
+                timeline_html += sub_html + diff_block + '</article>'
             timeline_html += '</div></div>'
     timeline_html += '</section>'
 

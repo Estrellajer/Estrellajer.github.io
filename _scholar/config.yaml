@@ -72,6 +72,7 @@ scholars:
     watch: blog
   - name: Breezedeus.com | 善意的AI生产幸福❤
     url: https://www.breezedeus.com/
+    rss_url: https://www.breezedeus.com/feed
     category: blog
     site_type: personal_website
     selectors: [main, .content, "#content", article]
@@ -161,16 +162,16 @@ scholars:
     research_areas: [LLM]
     affiliation: "Kimi"
     watch: general
-  - name: jyopari.github.io
+  - name: Jyo Pari
     url: https://jyopari.github.io/
-    category: blog
+    category: HomePage
     site_type: github_pages
-    selectors: [article, main, .post-content, .entry-content, .content]
-    remove_selectors: [script, style, nav, footer, header, aside, .sidebar, .comments]
-    labels: [blog]
+    selectors: ["nav.links a", "nav.links"]
+    remove_selectors: [script, style, footer, aside, .comments]
+    labels: [homepage]
     research_areas: [LLM, Optimization]
     affiliation: "MIT"
-    watch: blog
+    watch: publications
   - name: Lil'Log
     url: https://lilianweng.github.io/
     category: blog
