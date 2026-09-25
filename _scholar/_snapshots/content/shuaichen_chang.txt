@@ -1,22 +1,54 @@
-I am an AI researcher at the AWS AI Lab in New York and a founding member of the AWS Bedrock RAG and Agentic AI Science team. Before joining AWS, I obtained my Ph.D. in Computer Science Department at The Ohio State University, advised by Prof. Eric Fosler-Lussier . Prior to OSU, I obtained my B.S. at Fudan University, advised by Prof. Xipeng Qiu .
-Research Interests
-My research focuses on building robust and generalizable AI models and systems that interact with data and environments through natural language. My work spans several interconnected areas:
-Continual Learning and LLM Memory : I explore continual adaptation in LLMs and agents, with a specific focus on continual learning through associative memory, and test-time training to enable models to learn in dynamic environments. I am writing a blog series on this topic.
-Natural Language Interfaces to Data : I develop methods for enabling natural language interaction with structured and semi-structured data, including text-to-SQL, table understanding, and database question answering. A significant focus of my work is on improving robustness and cross-domain generalization of these models and systems. I also co-organized the TRL workshop at ACL 2025 and the SURGeLLM workshop at ACL 2026.
-Agentic AI and Retrieval-Augmented Systems : I build autonomous computer-use agents and advanced RAG solutions. My work includes developing retrieval-augmented world models for agent planning, orchestrating complex workflows, and agentic retrieval across heterogeneous data.
-Robustness and Evaluation : A core theme across my research is developing diagnostic benchmarks and evaluation frameworks to systematically assess model capabilities and failure modes, enabling more reliable AI systems.
-Feel free to reach out if you’re interested in collaborating or just chatting about AI models and applications!
-Professional Service
-Workshop Organization
-Co-organizer, Structured Understanding, Retrieval, and Generation in the LLM Era Workshop , ACL 2026
-Co-organizer, Table Representation Learning Workshop , ACL 2025
-Program Committee / Reviewer
-NeurIPS, ICLR, ICML, ACL, EMNLP, NAACL, AAAI, ICASSP
-Awards & Honors
-Amazon Post Intership Fellowship, 2022
-ACL Best Demo Paper, 2021
-Fudan Honors Student, 2017
-China National Scholarship, 2016
-China National Scholarship, 2015
-Miscs
-In my spare time I enjoy tennis, painting ( Summer Lake , Fall ), dancing, and traveling.
+Publications
+You can also find my articles on Google Scholar and Semantic Scholar .
+2025
+R-WoM: Retrieval-augmented World Model For Computer-use Agents [ PDF ]
+Kai Mei, Jiang Guo, Shuaichen Chang, Mingwen Dong, Dongkyu Lee, Xing Niu, Jiarong Jiang
+ICLR 2026
+Automated Composition of Agents: A Knapsack Approach for Agentic Component Selection [ PDF ]
+Michelle Yuan, Khushbu Pahwa, Shuaichen Chang, Mustafa Kaba, Jiarong Jiang, Xiaofei Ma, Yi Zhang, Monica Sunkarag
+NeurIPS 2025
+Towards Better Understanding Table Instruction Tuning: Decoupling the Effects from Data versus Models [ PDF ]
+Naihao Deng, Sheng Zhang, Henghui Zhu, Shuaichen Chang, Jiani Zhang, Alexander Hanbo Li, Chung-Wei Hang, Hideo Kobayashi, Yiqun Hu, Patrick Ng
+EACL 2026
+PRACTIQ: A Practical Conversational text-to-SQL dataset with Ambiguous and Unanswerable Queries [ PDF ]
+Mingwen Dong, Nischal Ashok Kumar, Yiqun Hu, Anuj Chauhan, Chung-Wei Hang, Shuaichen Chang, Lin Pan, Wuwei Lan, Henghui Zhu, Jiarong Jiang, Patrick Ng, Zhiguo Wang
+NAACL 2025
+You Only Read Once (YORO): Learning to Internalize Database Knowledge for Text-to-SQL [ PDF ]
+Hideo Kobayashi, Wuwei Lan, Peng Shi, Shuaichen Chang, Jiang Guo, Henghui Zhu, Zhiguo Wang, Patrick Ng
+NAACL 2025
+2024
+RAGChecker: A Fine-grained Framework for Diagnosing Retrieval-Augmented Generation [ PDF ] [ Code ] [ LlamaIndex ]
+Dongyu Ru*, Lin Qiu*, Xiangkun Hu*, Tianhang Zhang*, Peng Shi*, Shuaichen Chang*, Cheng Jiayang, Cunxiang Wang, Shichao Sun, Huanyu Li, Zizhao Zhang, Binjie Wang, Jiarong Jiang, Tong He, Zhiguo Wang, Pengfei Liu, Yue Zhang, Zheng Zhang (* shared first author)
+NeurIPS 2024
+2023
+Selective Demonstrations for Cross-domain Text-to-SQL [ PDF ] [ Code ] [ Video ]
+Shuaichen Chang, Eric Fosler-Lussier
+EMNLP Findings 2023
+How to Prompt LLMs for Text-to-SQL: A Study in Zero-shot, Single-domain, and Cross-domain Settings [ PDF ] [ Code ]
+Shuaichen Chang, Eric Fosler-Lussier
+NeurIPS TRL Workshop 2023
+Dr.Spider: A Diagnostic Evaluation Benchmark towards Text-to-SQL Robustness (Top 5% Accepted Paper, Oral) [ PDF ] [ Data ] [ Blog ] [ Slides ] [ Video ]
+Shuaichen Chang, Jun Wang, Mingwen Dong, Lin Pan, Henghui Zhu, Alexander Hanbo Li, Wuwei Lan, Sheng Zhang, Jiarong Jiang, Joseph Lilien, Steve Ash, William Yang Wang, Zhiguo Wang, Vittorio Castelli, Patrick Ng, Bing Xiang
+ICLR 2023
+2022
+MapQA: A Dataset for Question Answering on Chorpleth Maps [ PDF ] [ Data ]
+Shuaichen Chang*, David Palzer*, Jialin Li, Eric Fosler-Lussier, Ningchuan Xiao (* equal contribution)
+NeurIPS TRL Workshop 2022
+2021
+Explainaboard: An Explainable Leaderboard for NLP (Best Demo Paper) [ PDF ] [ Demo ]
+Pengfei Liu, Jinlan Fu, Yang Xiao, Weizhe Yuan, Shuaichen Chang, Junqi Dai, Yixin Liu, Zihuiwen Ye, Zi-Yi Dou, Graham Neubig
+ACL 2021
+Prefix-to-SQL: Text-to-SQL Generation from Incomplete User Questions [ PDF ]
+Naihao Deng, Shuaichen Chang, Peng Shi, Tao Yu, Rui Zhang
+ACL NLP4Prog Workshop 2021
+2020
+Did You Ask a Good Question? A Cross-Domain Question Intention Classification Benchmark for Text-to-SQL [ PDF ]
+Yusen Zhang, Xiangyu Dong, Shuaichen Chang, Tao Yu, Peng Shi, Rui Zhang
+EMNLP IntEx-SemPar Workshop 2020
+Zero-shot Text-to-SQL Learning with Auxiliary Task [ PDF ] [ Code ]
+Shuaichen Chang, Pengfei Liu, Yun Tang, Jing Huang, Xiaodong He, Bowen Zhou
+AAAI 2020
+2019
+Contextualized Non-local Neural Networks for Sequence Learning [ PDF ]
+Pengfei Liu, Shuaichen Chang, Xuanjing Huang, Jian Tang, Jackie Chi Kit Cheung
+AAAI 2019

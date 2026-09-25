@@ -1,22 +1,3 @@
-搜索此网站
-嵌入的文件
-跳至主要内容
-调至导航栏
-I am a Machine Learning researcher.
-My name is Ke Sun (孙科). I am currently a postdoctoral researcher at University of Pennsylvania, working with Prof. Qi Long and Prof. Weijie Su , starting from early 2026. I was a postdoctoral f ellow at Harvard University in 2025.
-I received my Ph.D. degree in Statistical Machine Learning from University of Alberta in 2024, advised by Prof. Linglong Kong , also affiliated at Alberta Machine Intelligence Institute ( Amii ), led by Prof. Richard S. Sutton . I was fortunate to visit Prof. Chengchun Shi at the London School of Economics and Political Science in 2023. I obtained my MPhil in Data Science at Peking University in 2020 advised by Prof. Zhouchen Lin and Prof. Zhanxing Zhu . I earned my Bachelor's degree in financial statistics and risk management from SouthWestern University of Finance and Economics in 2017.
-I am on the 2026–2027 academic job market.
-Contact : kesun6 [at] upenn [dot] edu, ke.sun [at] pennmedicine [dot] upenn [dot] edu
-Links : Google Scholar / CV / Github / LinkedIn
-Research Interests
-My research interest is reinforcement learning , especially the foundation-centered generic RL for decision intelligence. In particular, I focus on the algorithm ic foundations and development grounded in mathematical and statistical principles . The research goal is to build agents with effective perception, memory, reasoning, planning, exploration, and adaptation in complex environments, with broad applications in games, language, robotics, control systems, healthcare, and business.
-[1] Algorithmic and Theoretical Foundations in Standard RL (RL as Problem Formulation):
-Uncertainty & Exploration : Distributional Learning and Risk Control, Entropy Regularization and Exploration
-Robustness & Adaptation : Environmental Nonstationarity , Safe/Robust RL, Transfer/Multi-task/Meta/ Continual RL
-Offline & Causality : Imitation learning, Offline and Hy brid RL, Causal RL, Adaptive Experimental Design
-[2] Foundations in RL for General Decision Intelligence (RL as Optimization Tool vs Problem Formulation):
-Language & Agentic AI : Alignment, Reasoning RL, Agentic RL
-Robotics & Embodied AI : Model-based RL and World Model, Generative and Self-supervised RL, Multi-agent RL
 Selected Preprints / Publications [ Full Publications ]
 [7] Ke Sun*, Yizhou Zhao*, Jiayi Xin, Qi Long, Weijie Su . CurveRL: Principled Distribution-Aware Context Reweighting for LLM Reasoning . Advances in Neural Information Processing Systems ( NeurIPS ), 202 6 . [ Code ] 🔥
 [6] Ke Sun, Linglong Kong, Hongtu Zhu, Chengchun Shi. ARMA-Design: Optimal Treatment Allocation Strategies for A/B Testing in Partially Observable Experiments . Journal of American Statistical Association (Theor y & Method ), 202 6 [ Code ] 🔥
@@ -26,11 +7,3 @@ Selected Preprints / Publications [ Full Publications ]
 [2] Ke Sun *, Yafei Wang*, Yi Liu, Yingnan Zhao, Bo Pan, Shangling Jui, Bei Jiang, Linglong Kong. ( * equal contribution in alphabetical order). Damped Anderson Mixing for Deep Reinforcement Learning: Acceleration, Convergence, and Stabilization Advances in Neural Information Processing Systems ( NeurIPS ), 2021. [ C ode ] .
 [1] Ke Sun , Zhanxing Zhu, Zhouchen Lin. AdaGCN: AdaBoosting Graph Convolutional Networks into Deep Models International Conference on Learning Representations ( ICLR ), 2021 . [ code ] .
 * denotes equal contribution
-Favorite Quotes
-Practice without theory is blind, but equally, theory without practice is mere intellectual play.  ——Immanuel Kant
-The statistical community has been committed to the almost exclusive use of data models. This commitment has led to irrelevant theory, questionable conclusions, and has kept statisticians from working on a large range of interesting current problems. …… The danger is that if we define the boundaries of our field in terms of familiar tools and familiar problems, we will fail to grasp the new opportunities. —— Leo Breiman
-Talk is cheap, show me the code. —— Linus Torvalds
-Google 网站
-举报不良行为
-Google 网站
-举报不良行为

@@ -145,22 +145,6 @@
     "first_seen": "2026-09-24T23:42:37.811800+00:00"
   },
   {
-    "scholar": "孙宇",
-    "scholar_url": "https://yueatsprograms.github.io/",
-    "affiliation": "英伟达",
-    "areas": [
-      "Test time Scaling"
-    ],
-    "watch": "general",
-    "kind": "update",
-    "text": "I'm an Incoming Assistant Professor in Computer Science at the University of Washington (currently serving as an Affiliate Professor), and a researcher at OpenAI.",
-    "link": "https://yueatsprograms.github.io/",
-    "date_str": "",
-    "timestamp": 1790205769.326514,
-    "result_type": "changed",
-    "first_seen": "2026-09-23T23:22:49.327541+00:00"
-  },
-  {
     "scholar": "柠檬CC",
     "scholar_url": "https://limoncc.com/",
     "affiliation": "",
@@ -175,121 +159,6 @@
     "timestamp": 1790205769.324682,
     "result_type": "changed",
     "first_seen": "2026-09-23T23:22:49.327554+00:00"
-  },
-  {
-    "scholar": "冯钰捷",
-    "scholar_url": "https://woodscene.github.io/",
-    "affiliation": "香港理工大学",
-    "areas": [
-      "Continual Learning"
-    ],
-    "watch": "general",
-    "kind": "update",
-    "text": "More recently, I am interested in advancing the general capabilities of LLM-based agents, including reasoning, grounding, and long-horizon decision-making, as well as their continual improvement over time.",
-    "link": "https://woodscene.github.io/",
-    "date_str": "",
-    "timestamp": 1790166476.701512,
-    "result_type": "changed",
-    "first_seen": "2026-09-23T12:27:56.702181+00:00"
-  },
-  {
-    "scholar": "冯钰捷",
-    "scholar_url": "https://woodscene.github.io/",
-    "affiliation": "香港理工大学",
-    "areas": [
-      "Continual Learning"
-    ],
-    "watch": "general",
-    "kind": "update",
-    "text": "My recent work studies how to efficiently adapt and evolve LLMs in dynamic environments, where new tasks, domains, and knowledge continuously emerge. This includes topics such as continual learning, model editing, and memory-based adaptation.",
-    "link": "https://woodscene.github.io/",
-    "date_str": "",
-    "timestamp": 1790166476.701471,
-    "result_type": "changed",
-    "first_seen": "2026-09-23T12:27:56.702183+00:00"
-  },
-  {
-    "scholar": "冯钰捷",
-    "scholar_url": "https://woodscene.github.io/",
-    "affiliation": "香港理工大学",
-    "areas": [
-      "Continual Learning"
-    ],
-    "watch": "general",
-    "kind": "update",
-    "text": "My research focuses on Natural Language Processing (NLP) and Large Language Models (LLMs), with an emphasis on continual adaptation and capability evolution.",
-    "link": "https://woodscene.github.io/",
-    "date_str": "",
-    "timestamp": 1790166476.701443,
-    "result_type": "changed",
-    "first_seen": "2026-09-23T12:27:56.702185+00:00"
-  },
-  {
-    "scholar": "冯钰捷",
-    "scholar_url": "https://woodscene.github.io/",
-    "affiliation": "香港理工大学",
-    "areas": [
-      "Continual Learning"
-    ],
-    "watch": "general",
-    "kind": "update",
-    "text": "I am a fourth-year Ph.D. candidate at Department of Data Science and Artificial Intelligence , The Hong Kong Polytechnic University (PolyU) , under the supervision of Prof. Xiao-Ming Wu . Currently, I am remotely visiting the University of Illinois at Chicago (UIC) , where I am honored to work with Prof. Philip S. Yu .",
-    "link": "https://woodscene.github.io/",
-    "date_str": "",
-    "timestamp": 1790166476.701368,
-    "result_type": "changed",
-    "first_seen": "2026-09-23T12:27:56.702190+00:00"
-  },
-  {
-    "scholar": "王子峰",
-    "scholar_url": "https://zifengwang.me/",
-    "affiliation": "Google",
-    "areas": [
-      "LLM",
-      "Agent"
-    ],
-    "watch": "general",
-    "kind": "update",
-    "text": "Agentic post-training",
-    "link": "https://zifengwang.me/",
-    "date_str": "",
-    "timestamp": 1790166476.695188,
-    "result_type": "changed",
-    "first_seen": "2026-09-23T12:27:56.702194+00:00"
-  },
-  {
-    "scholar": "王子峰",
-    "scholar_url": "https://zifengwang.me/",
-    "affiliation": "Google",
-    "areas": [
-      "LLM",
-      "Agent"
-    ],
-    "watch": "general",
-    "kind": "update",
-    "text": "Environment scaling for agent learning",
-    "link": "https://zifengwang.me/",
-    "date_str": "",
-    "timestamp": 1790166476.695169,
-    "result_type": "changed",
-    "first_seen": "2026-09-23T12:27:56.702196+00:00"
-  },
-  {
-    "scholar": "王子峰",
-    "scholar_url": "https://zifengwang.me/",
-    "affiliation": "Google",
-    "areas": [
-      "LLM",
-      "Agent"
-    ],
-    "watch": "general",
-    "kind": "update",
-    "text": "Self-evolving (multi-)agents",
-    "link": "https://zifengwang.me/",
-    "date_str": "",
-    "timestamp": 1790166476.694275,
-    "result_type": "changed",
-    "first_seen": "2026-09-23T12:27:56.702199+00:00"
   },
   {
     "scholar": "Nathan Lambert",
@@ -725,5 +594,134 @@
     "timestamp": 1788912000.0,
     "result_type": "rss_no_change",
     "first_seen": "2026-09-23T12:27:56.702284+00:00"
+  },
+  {
+    "scholar": "冯钰捷",
+    "scholar_url": "https://woodscene.github.io/",
+    "affiliation": "香港理工大学",
+    "areas": [
+      "Continual Learning"
+    ],
+    "watch": "general",
+    "kind": "news",
+    "text": "2026.04 : 🎉 One paper has been accepted to ACL 2026!",
+    "link": "https://woodscene.github.io/",
+    "date_str": "2026-04",
+    "timestamp": 1775001600.0,
+    "result_type": "changed",
+    "first_seen": "2026-04-01T00:00:00+00:00"
+  },
+  {
+    "scholar": "冯钰捷",
+    "scholar_url": "https://woodscene.github.io/",
+    "affiliation": "香港理工大学",
+    "areas": [
+      "Continual Learning"
+    ],
+    "watch": "general",
+    "kind": "paper",
+    "text": "FOREVER: Forgetting Curve-Inspired Memory Replay for Language Model Continual Learning. [ PDF ] [ Code ] · ACL 2026",
+    "link": "https://woodscene.github.io/",
+    "date_str": "2026-04",
+    "timestamp": 1775001600.0,
+    "result_type": "changed",
+    "first_seen": "2026-04-01T00:00:00+00:00"
+  },
+  {
+    "scholar": "冯钰捷",
+    "scholar_url": "https://woodscene.github.io/",
+    "affiliation": "香港理工大学",
+    "areas": [
+      "Continual Learning"
+    ],
+    "watch": "general",
+    "kind": "news",
+    "text": "2026.01 : 🎉 Two papers have been accepted to ICLR 2026!",
+    "link": "https://woodscene.github.io/",
+    "date_str": "2026-01",
+    "timestamp": 1767225600.0,
+    "result_type": "changed",
+    "first_seen": "2026-01-01T00:00:00+00:00"
+  },
+  {
+    "scholar": "冯钰捷",
+    "scholar_url": "https://woodscene.github.io/",
+    "affiliation": "香港理工大学",
+    "areas": [
+      "Continual Learning"
+    ],
+    "watch": "general",
+    "kind": "paper",
+    "text": "Micro-Macro Retrieval: Reducing Long-Form Hallucination in Large Language Models. [ PDF ] [ Code ] · ICLR 2026",
+    "link": "https://woodscene.github.io/",
+    "date_str": "2026-01",
+    "timestamp": 1767225600.0,
+    "result_type": "changed",
+    "first_seen": "2026-01-01T00:00:00+00:00"
+  },
+  {
+    "scholar": "冯钰捷",
+    "scholar_url": "https://woodscene.github.io/",
+    "affiliation": "香港理工大学",
+    "areas": [
+      "Continual Learning"
+    ],
+    "watch": "general",
+    "kind": "paper",
+    "text": "AIMMerging: Leveraging Training Trajectories for Adaptive Iterative Model Merging in Language Model Continual Learning. [ PDF ] [ Code ] · EMNLP 2025",
+    "link": "https://woodscene.github.io/",
+    "date_str": "2025-08",
+    "timestamp": 1754006400.0,
+    "result_type": "changed",
+    "first_seen": "2025-08-01T00:00:00+00:00"
+  },
+  {
+    "scholar": "孙宇",
+    "scholar_url": "https://yueatsprograms.github.io/",
+    "affiliation": "英伟达",
+    "areas": [
+      "Test time Scaling"
+    ],
+    "watch": "general",
+    "kind": "paper",
+    "text": "End-to-End Test-Time Training for Long Context",
+    "link": "https://yueatsprograms.github.io/",
+    "date_str": "2024-11",
+    "timestamp": 1730419200.0,
+    "result_type": "changed",
+    "first_seen": "2024-11-01T00:00:00+00:00"
+  },
+  {
+    "scholar": "孙宇",
+    "scholar_url": "https://yueatsprograms.github.io/",
+    "affiliation": "英伟达",
+    "areas": [
+      "Test time Scaling"
+    ],
+    "watch": "general",
+    "kind": "paper",
+    "text": "Learning to Discover at Test Time",
+    "link": "https://yueatsprograms.github.io/",
+    "date_str": "2024-10",
+    "timestamp": 1727740800.0,
+    "result_type": "changed",
+    "first_seen": "2024-10-01T00:00:00+00:00"
+  },
+  {
+    "scholar": "王子峰",
+    "scholar_url": "https://zifengwang.me/",
+    "affiliation": "Google",
+    "areas": [
+      "LLM",
+      "Agent"
+    ],
+    "watch": "general",
+    "kind": "paper",
+    "text": "Sparse Continual Learning on the Edge",
+    "link": "https://zifengwang.me/",
+    "date_str": "2023-11",
+    "timestamp": 1700000000.0,
+    "first_seen": "2026-09-23T00:00:00+00:00",
+    "result_type": "changed"
   }
 ]

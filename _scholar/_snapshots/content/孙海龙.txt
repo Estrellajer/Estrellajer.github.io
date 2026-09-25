@@ -22,3 +22,73 @@
 [2024-03] I joined Alibaba · AIDC-AI Business as an MLLM Research Intern.
 [2024-02] One paper about class-incremental learning was accepted to CVPR 2024 .
 [2023-09] We released a toolbox for pre-trained model-based continual learning.
+
+ACL
+Mitigating Visual Forgetting via Take-along Visual Conditioning for Multi-modal Long CoT Reasoning
+Hai-Long Sun , Zhun Sun, Houwen Peng, Han-Jia Ye.
+First Author
+ACL'25. CCF-A
+Paper Project Page Huggingface
+ICML
+Parrot: Multilingual Visual Instruction Tuning
+Hai-Long Sun , Da-Wei Zhou, Yang Li, Shiyin Lu, Chao Yi, Qing-Guo Chen, Zhao Xu, Weihua Luo, Kaifu Zhang, De-Chuan Zhan, Han-Jia Ye.
+First Author
+ICML'25. CCF-A
+Paper Code Project Page Huggingface
+SCIS
+PILOT: A Pre-Trained Model-Based Continual Learning Toolbox
+Hai-Long Sun , Da-Wei Zhou, De-Chuan Zhan, Han-Jia Ye.
+First Author
+SCIS 2025. CCF-A
+Paper Code 中文解读
+AAAI
+MOS: Model Surgery for Pre-Trained Model-Based Class-Incremental Learning
+Hai-Long Sun , Da-Wei Zhou, Hanbin Zhao, Le Gan, De-Chuan Zhan, Han-Jia Ye.
+First Author
+AAAI'25. CCF-A
+Paper Code
+CVPR
+Expandable Subspace Ensemble for Pre-Trained Model-Based Class-Incremental Learning
+Da-Wei Zhou, Hai-Long Sun , Han-Jia Ye, De-Chuan Zhan.
+Student First Author
+CVPR'24. CCF-A
+Paper Code
+IJCAI
+Continual Learning with Pre-Trained Models: A Survey
+Da-Wei Zhou, Hai-Long Sun , Han-Jia Ye, De-Chuan Zhan.
+Student First Author
+IJCAI'24. CCF-A
+Top-3 Most Influential IJCAI Papers
+Paper Code 中文解读 Media
+IJCAI
+Length-Adaptive Caption Generation with LLMs
+Hai-Long Sun , Qing-Guo Chen, Da-Wei Zhou, De-Chuan Zhan, Han-Jia Ye.
+First Author
+IJCAI'24 Workshop · SCICAP Challenge 2024
+Paper Challenge Page
+
+Technical Report
+Ovis2.5 Technical Report
+Ovis Contributors
+Technical Report
+Paper Code
+Technical Report
+VLMEvalKit: A Toolkit for Evaluating Large Vision-Language Models
+VLMEvalKit Contributors
+Technical Report
+Paper Code
+CVPR
+Insight-V: Exploring Long-Chain Visual Reasoning with Multimodal Large Language Models
+Yuhao Dong, Zuyan Liu, Hai-Long Sun , Jingkang Yang, Winston Hu, Yongming Rao, Ziwei Liu.
+CVPR'25 (Highlight). CCF-A
+Paper Code
+NeurIPS
+Triplets Better Than Pairs: Towards Stable and Effective Self-Play Fine-Tuning for LLMs
+Yibo Wang, Hai-Long Sun , Guangda Huzhang, Qing-Guo Chen, Zhao Xu, Weihua Luo, Kaifu Zhang, Lijun Zhang
+NeurIPS'25. CCF-A
+Paper
+NeurIPS
+Multimodal Tabular Reasoning with Privileged Structured Information
+Jun-Peng Jiang, Yu Xia, Hai-Long Sun , Shiyin Lu, Qing-Guo Chen, Weihua Luo, Kaifu Zhang, De-Chuan Zhan, Han-Jia Ye
+NeurIPS'25. CCF-A
+Paper

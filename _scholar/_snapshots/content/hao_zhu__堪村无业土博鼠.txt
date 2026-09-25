@@ -1,3 +1,29 @@
-About
-I am a machine learning researcher with expertise in graph neural networks, computer vision, and data mining. I recently completed my Ph.D. at Australian National University, focusing on graph machine learning.
-I bring a unique combination of academic research expertise and industry leadership experience. Prior to my doctoral studies, I served as a senior technical manager at JD.com in China, where I led teams developing machine learning applications for financial services.
+Simple Spectral Graph Convolution
+Hao Zhu, Piotr Koniusz
+International Conference on Learning Representations (ICLR) 2021
+421 citations
+
+COSTA: Covariance-Preserving Feature Augmentation for Graph Contrastive Learning
+Yizhen Zhang, Hao Zhu, Zhiqiang Song, Piotr Koniusz, Irwin King
+ACM SIGKDD International Conference on Knowledge Discovery and Data Mining 2022
+149 citations
+
+Spectral Feature Augmentation for Graph Contrastive Learning and Beyond
+Yizhen Zhang, Hao Zhu, Zhiqiang Song, Piotr Koniusz, Irwin King
+Proceedings of the AAAI Conference on Artificial Intelligence 2023
+108 citations
+
+EASE: Unsupervised Discriminant Subspace Learning for Transductive Few-Shot Learning
+Hao Zhu, Piotr Koniusz
+Conference on Computer Vision and Pattern Recognition (CVPR) 2022
+80 citations
+
+Transductive Few-shot Learning with Prototype-based Label Propagation by Iterative Graph Refinement
+Hao Zhu, Piotr Koniusz
+International Conference on Computer Vision and Pattern Recognition (CVPR) 2023
+72 citations
+
+Contrastive Laplacian Eigenmaps
+Hao Zhu, Ke Sun, Piotr Koniusz
+Conference on Neural Information Processing Systems (NeurIPS) 2021
+58 citations

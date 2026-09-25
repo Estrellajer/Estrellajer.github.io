@@ -1,2 +1,19 @@
-Learning from better data
-Learning is, at its core, fitting data, so the data often matters most. I am interested in which data should be used for which tasks, how to organize it into curricula, and how to construct effective data for knowledge distillation.
+Transferability for General Reasoning: An Automated Curriculum for Multi-Domain RLVR
+NeurIPS 2026 · ICML 2026 RLxF Workshop, Oral (4 of 222 submissions)
+[paper] [code]
+
+Toward Skill-Native LLMs: Skill Entropy for Benchmarking and Training Long-Horizon Reasoning
+NeurIPS 2026
+[paper] [code]
+
+LLM-as-a-Tutor: Policy-Aware Prompt Adaptation for Non-Verifiable RL
+NeurIPS 2026
+[paper]
+
+Entropy-Aware On-Policy Distillation of Language Models
+ICML 2026
+[paper] [code]
+
+Automated Filtering of Human Feedback Data for Aligning Text-to-Image Diffusion Models
+ICLR 2025
+[paper] [code] [project]

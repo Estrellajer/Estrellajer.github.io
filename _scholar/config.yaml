@@ -52,9 +52,9 @@ scholars:
     watch: blog
   - name: 胡君耀
     url: https://junyaohu.github.io/
-    category:
+    category: HomePage
     site_type: github_pages
-    selectors: [article, main, .post-content, .entry-content, .content]
+    selectors: [".home-news__item", "#selected-publications + ul", "#publications"]
     remove_selectors: [script, style, nav, footer, header, aside, .sidebar, .comments]
     labels: [news]
     research_areas: [CV]
@@ -275,7 +275,7 @@ scholars:
     url: https://www.lamda.nju.edu.cn/zhoudw/
     category: HomePage
     site_type: personal_website
-    selectors: [main, .content, "#content", article]
+    selectors: ["#news + ol", "#news + ul", ".pub-row"]
     remove_selectors: [script, style, nav, footer, header, aside, .sidebar, .comments]
     labels: [homepage]
     research_areas: [Continual Learning]
@@ -285,7 +285,7 @@ scholars:
     url: https://zhuanghp.github.io/
     category: HomePage
     site_type: github_pages
-    selectors: [article, main, .post-content, .entry-content, .content]
+    selectors: [".compact-news-list", ".news-panel:has(.compact-news-list)"]
     remove_selectors: [script, style, nav, footer, header, aside, .sidebar, .comments]
     labels: [homepage]
     research_areas: [Continual Learning, Embodied AI]
@@ -295,7 +295,7 @@ scholars:
     url: https://zifengwang.me/
     category: HomePage
     site_type: github_pages
-    selectors: [article, main, .post-content, .entry-content, .content]
+    selectors: ["papertitle", "table.publications"]
     remove_selectors: [script, style, nav, footer, header, aside, .sidebar, .comments]
     labels: [homepage]
     research_areas: [LLM, Agent]
@@ -305,7 +305,7 @@ scholars:
     url: https://lywang3081.github.io/
     category: HomePage
     site_type: github_pages
-    selectors: [article, main, .post-content, .entry-content, .content]
+    selectors: ["#recent-news + ul", "#selected-publications-and-preprints + ol", "#selected-publications-and-preprints + ul"]
     remove_selectors: [script, style, nav, footer, header, aside, .sidebar, .comments]
     labels: [homepage]
     research_areas: [Continual Learning]
@@ -315,7 +315,7 @@ scholars:
     url: https://zhoujiahuan1991.github.io/
     category: HomePage
     site_type: github_pages
-    selectors: [article, main, .post-content, .entry-content, .content]
+    selectors: [".news-item", "#publications"]
     remove_selectors: [script, style, nav, footer, header, aside, .sidebar, .comments]
     labels: [homepage]
     research_areas: [Continual Learning]
@@ -325,7 +325,7 @@ scholars:
     url: https://ysymyth.github.io/
     category: HomePage
     site_type: github_pages
-    selectors: [article, main, .post-content, .entry-content, .content]
+    selectors: ["#selected-work + ul"]
     remove_selectors: [script, style, nav, footer, header, aside, .sidebar, .comments]
     labels: [homepage]
     research_areas: [LLM, Agent]
@@ -335,7 +335,7 @@ scholars:
     url: https://jiangjiechen.github.io/
     category: HomePage
     site_type: github_pages
-    selectors: [article, main, .post-content, .entry-content, .content]
+    selectors: [".wg-collection", "#news + div", "#news + ul"]
     remove_selectors: [script, style, nav, footer, header, aside, .sidebar, .comments]
     labels: [homepage]
     research_areas: [LLM]
@@ -345,7 +345,7 @@ scholars:
     url: https://lee-zix.github.io/
     category: HomePage
     site_type: github_pages
-    selectors: [article, main, .post-content, .entry-content, .content]
+    selectors: ["#project + ul", "#research-projects + ul"]
     remove_selectors: [script, style, nav, footer, header, aside, .sidebar, .comments]
     labels: [homepage]
     research_areas: [NLP]
@@ -355,7 +355,7 @@ scholars:
     url: https://allenhaozhu.github.io/
     category: HomePage
     site_type: github_pages
-    selectors: [.section, .publication, article, main, .about]
+    selectors: [".publication"]
     remove_selectors: [script, style, nav, footer, header, aside, .sidebar, .comments]
     labels: [homepage]
     research_areas: [Continual Learning]
@@ -365,7 +365,7 @@ scholars:
     url: https://yangyongjin.github.io/
     category: HomePage
     site_type: github_pages
-    selectors: [article, main, .post-content, .entry-content, .content]
+    selectors: [".pub", "#news + ul"]
     remove_selectors: [script, style, nav, footer, header, aside, .sidebar, .comments]
     labels: [homepage]
     research_areas: [Agent, LLM Alignment]
@@ -375,7 +375,7 @@ scholars:
     url: https://yifeiacc.github.io/
     category: HomePage
     site_type: github_pages
-    selectors: [article, main, .post-content, .entry-content, .content]
+    selectors: [".colorlib-news", ".colorlib-publication"]
     remove_selectors: [script, style, nav, footer, header, aside, .sidebar, .comments]
     labels: [homepage]
     research_areas: [Continual Learning]
@@ -385,7 +385,7 @@ scholars:
     url: https://sun-hailong.github.io/
     category: HomePage
     site_type: github_pages
-    selectors: [main, .content, "#content", article]
+    selectors: ["#news + ul", "#publications + ul", ".publications"]
     remove_selectors: [script, style, nav, footer, header, aside, .sidebar, .comments]
     labels: [homepage]
     research_areas: [Continual Learning]
@@ -395,7 +395,7 @@ scholars:
     url: https://wutaiqiang.github.io/
     category: HomePage
     site_type: github_pages
-    selectors: [article, main, .post-content, .entry-content, .content]
+    selectors: ["#Recent-News + ul", "#Publications + ul", "#news-list", "#publications"]
     remove_selectors: [script, style, nav, footer, header, aside, .sidebar, .comments]
     labels: [homepage]
     research_areas: [Reasoning]
@@ -405,7 +405,7 @@ scholars:
     url: https://sites.google.com/site/mathshenli/home
     category: HomePage
     site_type: google_sites
-    selectors: [.main-content, "#content", .sites-embed]
+    selectors: [".tyJCtd"]
     remove_selectors: [script, style, nav, footer, header, aside, .sidebar, .comments]
     labels: [homepage]
     research_areas: [Model Merging]
@@ -415,7 +415,7 @@ scholars:
     url: https://ennengyang.github.io/
     category: HomePage
     site_type: github_pages
-    selectors: [article, main, .post-content, .entry-content, .content]
+    selectors: ["#-news + ul", "#-selected-preprints-and-publications + ul"]
     remove_selectors: [script, style, nav, footer, header, aside, .sidebar, .comments]
     labels: [homepage]
     research_areas: [Model Merging]
@@ -425,7 +425,7 @@ scholars:
     url: https://tanganke.github.io/
     category: HomePage
     site_type: github_pages
-    selectors: [article, main, .post-content, .entry-content, .content]
+    selectors: [".news", ".publications"]
     remove_selectors: [script, style, nav, footer, header, aside, .sidebar, .comments]
     labels: [homepage]
     research_areas: [Model Merging]
@@ -435,7 +435,7 @@ scholars:
     url: https://woodscene.github.io/
     category: HomePage
     site_type: github_pages
-    selectors: [article, main, .page__content, "#main"]
+    selectors: ["#-news + ul", "#preprint + ul", "#selected-publications + ul"]
     remove_selectors: [script, style, nav, footer, header, aside, .sidebar, .comments]
     labels: [homepage]
     research_areas: [Continual Learning]
@@ -446,7 +446,7 @@ scholars:
     url: https://jbhuang0604.github.io/
     category: HomePage
     site_type: github_pages
-    selectors: [article, main, .post-content, .entry-content, .content]
+    selectors: ["h2 ~ table.imgtable"]
     remove_selectors: [script, style, nav, footer, header, aside, .sidebar, .comments]
     labels: [homepage]
     research_areas: [3DV]
@@ -456,17 +456,17 @@ scholars:
     url: https://fenglang918.github.io/index.html
     category: HomePage
     site_type: github_pages
-    selectors: [article, main, .post-content, .entry-content, .content]
+    selectors: [".publication-item", "#publications"]
     remove_selectors: [script, style, nav, footer, header, aside, .sidebar, .comments]
     labels: [homepage]
     research_areas: [Develop tool]
     affiliation: "复旦大学"
     watch: general
   - name: Shuaichen Chang
-    url: https://shuaichenchang.github.io/
+    url: https://shuaichenchang.github.io/publications/
     category: HomePage
     site_type: github_pages
-    selectors: [article, main, .post-content, .entry-content, .content]
+    selectors: [".archive", ".page__content"]
     remove_selectors: [script, style, nav, footer, header, aside, .sidebar, .comments]
     labels: [homepage]
     research_areas: [Agent]
@@ -476,7 +476,7 @@ scholars:
     url: https://yueatsprograms.github.io/
     category: HomePage
     site_type: github_pages
-    selectors: [article, main, .post-content, .entry-content, .content]
+    selectors: ["h3 ~ p"]
     remove_selectors: [script, style, nav, footer, header, aside, .sidebar, .comments]
     labels: [homepage]
     research_areas: [Test time Scaling]
@@ -486,7 +486,7 @@ scholars:
     url: https://sites.google.com/view/kesun
     category: HomePage
     site_type: google_sites
-    selectors: [.main-content, "#content", .sites-embed]
+    selectors: [".yaqOZd"]
     remove_selectors: [script, style, nav, footer, header, aside, .sidebar, .comments]
     labels: [homepage]
     research_areas: [Continuing RL]
@@ -496,7 +496,7 @@ scholars:
     url: https://kamichanw.github.io/publications/
     category: HomePage
     site_type: github_pages
-    selectors: [article, main, .post-content, .entry-content, .content]
+    selectors: [".legacy-publications", "article.legacy-publication"]
     remove_selectors: [script, style, nav, footer, header, aside, .sidebar, .comments]
     labels: [homepage]
     research_areas: [Machine learning, LLM, Post training]
@@ -506,7 +506,7 @@ scholars:
     url: https://linzhiqiu.github.io/
     category: HomePage
     site_type: github_pages
-    selectors: [article, main, .post-content, .entry-content, .content]
+    selectors: ["#-news + ul", ".paper-box"]
     remove_selectors: [script, style, nav, footer, header, aside, .sidebar, .comments]
     labels: [homepage]
     research_areas: [CV evaluation]
@@ -526,7 +526,7 @@ scholars:
     url: https://tianyuanzhang.com/
     category: HomePage
     site_type: personal_website
-    selectors: [main, .content, "#content", article]
+    selectors: ["papertitle"]
     remove_selectors: [script, style, nav, footer, header, aside, .sidebar, .comments]
     labels: [homepage]
     research_areas: [3DV]
@@ -536,7 +536,7 @@ scholars:
     url: https://donggong1.github.io/index.html
     category: HomePage
     site_type: github_pages
-    selectors: [article, main, .post-content, .entry-content, .content]
+    selectors: [".news", ".news-list", "#news"]
     remove_selectors: [script, style, nav, footer, header, aside, .sidebar, .comments]
     labels: [homepage]
     research_areas: [Continual Learning]
@@ -546,7 +546,7 @@ scholars:
     url: https://people.iiis.tsinghua.edu.cn/~yuanyang/en.html
     category: HomePage
     site_type: personal_website
-    selectors: [main, .content, "#content", article]
+    selectors: [".publication-list"]
     remove_selectors: [script, style, nav, footer, header, aside, .sidebar, .comments]
     labels: [homepage]
     research_areas: [范畴论]
@@ -556,7 +556,7 @@ scholars:
     url: https://xuhuiz.com/
     category: HomePage
     site_type: personal_website
-    selectors: [main, .content, "#content", article]
+    selectors: [".overflow-x-auto"]
     remove_selectors: [script, style, nav, footer, header, aside, .sidebar, .comments]
     labels: [homepage]
     research_areas: [RL, CHI.]
@@ -566,7 +566,7 @@ scholars:
     url: https://chongjiesi.site/home/
     category: HomePage
     site_type: personal_website
-    selectors: [main, .content, "#content", article]
+    selectors: [".news-item", ".section-heading-news + div"]
     remove_selectors: [script, style, nav, footer, header, aside, .sidebar, .comments]
     labels: [homepage]
     research_areas: [Optimize theory]
@@ -576,7 +576,7 @@ scholars:
     url: https://fyqqyf.github.io/
     category: HomePage
     site_type: github_pages
-    selectors: ["#blog", "#publications", "#experience", .section, main, article]
+    selectors: [".pub-item", "#publications"]
     remove_selectors: [script, style, nav, footer, header, aside, .sidebar, .comments]
     labels: [homepage]
     research_areas: [RL, LLM Alignment]

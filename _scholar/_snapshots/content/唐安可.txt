@@ -1,9 +1,5 @@
-Nanyang Technological University
-Singapore
-I am currently a Research Fellow (Postdoctoral Researcher) at Nanyang Technological University (NTU), Singapore. I received my Ph.D. degree from the School of Computer Science, Wuhan University, under the supervision of Prof. Yong Luo and Assoc. Prof. Shen Li . I received my Bachelor degree at the School of Physics and Technology, Wuhan University in 2020. My research interests include machine learning, transfer learning, and multi-task learning.
-news
 Sep 20, 2025 Three of our papers have been accepted to NeurIPS 2025, with two on continual model merging.
-selected publications
+
 TPAMI
 Zero-Shot Sparse Mixture of Low-Rank Experts Construction From Pre-Trained Foundation Models
 Anke Tang , Li Shen , Yong Luo , and 5 more authors

@@ -363,25 +363,137 @@ PUB_SELECTORS = [
 
 def _normalize_for_diff(text: str) -> str:
     out = []
-    for line in text.split("\n"):
+    for line in text.splitlines():
         s = line.strip()
         if not s:
-            out.append(line)
             continue
         if _NOISE_LINE_DATE.match(s) or _NOISE_LINE_NUM.match(s) or _NOISE_LINE_HEX.match(s):
             continue
-        out.append(line)
+        out.append(s)
     return "\n".join(out)
 
 
-def extract_content(html: str, selectors: list = None, remove_selectors: list = None, watch: str = "general") -> str:
+SECTION_BLACKLIST_KEYWORDS = [
+    'about me', 'about', 'bio', 'biography', 'short bio', 'personal',
+    'research interest', 'research focus', 'research statement', 'overview',
+    'education', 'educations', 'academic background',
+    'experience', 'working experience', 'work experience', 'internship', 'employment',
+    'service', 'services', 'academic service', 'professional service', 'activities',
+    'teaching', 'current teaching', 'past teaching', 'course', 'courses', 'evaluations',
+    'mentoring', 'alumni', 'student', 'students', 'group', 'research group', 'team', 'members',
+    'award', 'awards', 'honor', 'honors', 'fellowship', 'scholarship', 'grant', 'grants',
+    'invited talk', 'talks', 'recent talks', 'presentation', 'presentations',
+    'quote', 'quotes', 'favorite quotes',
+    'connect', 'contact', 'contact me', 'links', 'comments', 'visitors',
+    'repositories', 'open source', 'misc', 'miscs', 'miscellaneous',
+]
+
+SECTION_WHITELIST_KEYWORDS = [
+    'news', 'recent news', 'latest news', 'highlights', 'updates',
+    'publication', 'publications', 'selected publication', 'selected publications',
+    'paper', 'papers', 'selected paper', 'selected papers',
+    'preprint', 'preprints', 'conference', 'journal', 'refereed',
+    'project', 'projects', 'research project', 'research projects',
+    'selected work', 'work',
+]
+
+
+def _is_blacklisted_academic_heading(text: str, tag_id: str = '', tag_cls: str = '') -> bool:
+    combined = f"{text} {tag_id} {tag_cls}".lower().strip()
+    for w in SECTION_WHITELIST_KEYWORDS:
+        if w in combined:
+            return False
+    for b in SECTION_BLACKLIST_KEYWORDS:
+        if re.search(r'\b' + re.escape(b) + r'\b', combined):
+            return True
+    return False
+
+
+def _clean_academic_soup(soup: BeautifulSoup) -> None:
+    """Decompose non-publication/news sections (Bio, Interests, Teaching, Service, etc.) in-place."""
+    from bs4 import Tag
+    heading_tags = ['h1', 'h2', 'h3', 'h4', 'heading']
+    for h in soup.find_all(heading_tags):
+        if not h.parent:
+            continue
+        txt = h.get_text(strip=True)
+        hid = h.get('id', '')
+        hcls = ' '.join(h.get('class', [])) if h.get('class') else ''
+        if _is_blacklisted_academic_heading(txt, hid, hcls):
+            curr = h.next_sibling
+            while curr:
+                nxt = curr.next_sibling
+                if isinstance(curr, Tag):
+                    if curr.name in heading_tags:
+                        curr_txt = curr.get_text(strip=True)
+                        curr_id = curr.get('id', '')
+                        curr_cls = ' '.join(curr.get('class', [])) if curr.get('class') else ''
+                        if not _is_blacklisted_academic_heading(curr_txt, curr_id, curr_cls):
+                            break
+                    curr.decompose()
+                curr = nxt
+            h.decompose()
+
+
+def extract_content(html: str, selectors: list = None, remove_selectors: list = None, watch: str = "general", scholar: dict = None) -> str:
     soup = BeautifulSoup(html, "html.parser")
     from bs4 import Comment
-    for c in soup.find_all(text=lambda t: isinstance(t, Comment)):
+    for c in soup.find_all(string=lambda t: isinstance(t, Comment)):
         c.extract()
     for sel in (DEFAULT_REMOVE_SELECTORS + (remove_selectors or [])):
         for el in soup.select(sel):
             el.decompose()
+
+    url = (scholar.get("url", "") if scholar else "")
+    name = (scholar.get("name", "") if scholar else "")
+    is_academic = (
+        (scholar and scholar.get("category") == "HomePage")
+        or (scholar and scholar.get("site_type") in ("github_pages", "personal_website", "google_sites"))
+        or any(d in url for d in ("github.io", "sites.google.com", "edu.cn", "berkeley.edu", "tsinghua.edu.cn", "mit.edu"))
+    )
+
+    # Special handling for Google Sites
+    if "sites.google.com/site/mathshenli" in url or "沈立" in name:
+        texts = []
+        for h2 in soup.find_all("h2"):
+            t = h2.get_text().lower()
+            if any(k in t for k in ("conference", "journal", "thesis")):
+                parent = h2.parent
+                if parent:
+                    texts.append(get_clean_text_custom(parent))
+        if texts:
+            return "\n\n".join(texts)
+
+    if "sites.google.com/view/kesun" in url or "孙科" in name:
+        for sec in soup.find_all("section"):
+            t = sec.get_text().lower()
+            if any(k in t for k in ("selected preprints", "curverl", "selectedpreprint", "publications")):
+                return get_clean_text_custom(sec)
+
+    # Multi-element selector matching
+    BROAD_FALLBACKS = {"article", "main", ".post", ".content", "#content", ".entry-content", ".page__content", "#main", "body"}
+
+    if selectors:
+        specific_sels = [s for s in selectors if s not in BROAD_FALLBACKS]
+        fallback_sels = [s for s in selectors if s in BROAD_FALLBACKS]
+
+        extracted_parts = []
+        for sel in specific_sels:
+            for el in soup.select(sel):
+                t = get_clean_text_custom(el)
+                if len(t) >= 5 and t not in extracted_parts:
+                    extracted_parts.append(t)
+        if extracted_parts:
+            return "\n\n".join(extracted_parts)
+
+        if is_academic:
+            _clean_academic_soup(soup)
+
+        for sel in fallback_sels:
+            for el in soup.select(sel):
+                t = get_clean_text_custom(el)
+                if len(t) >= 15:
+                    return t
 
     targeted = NEWS_SELECTORS if watch == "news" else PUB_SELECTORS if watch == "publications" else []
     for sel in targeted:
@@ -391,13 +503,9 @@ def extract_content(html: str, selectors: list = None, remove_selectors: list = 
             if len(t) >= 20:
                 return t
 
-    if selectors:
-        for sel in selectors:
-            el = soup.select_one(sel)
-            if el:
-                t = get_clean_text_custom(el)
-                if len(t) >= 10:
-                    return t
+    if is_academic:
+        _clean_academic_soup(soup)
+
     for tag in ["article", "main", ".post", ".content", "#content", ".entry-content"]:
         el = soup.select_one(tag)
         if el:
@@ -795,7 +903,7 @@ def _content_diff_check(scholar: dict, since: datetime | None, result: dict) -> 
     try:
         resp = fetch(url)
         content = extract_content(
-            resp.text, scholar.get("selectors"), scholar.get("remove_selectors"), watch=watch)
+            resp.text, scholar.get("selectors"), scholar.get("remove_selectors"), watch=watch, scholar=scholar)
     except requests.exceptions.HTTPError as e:
         resp = getattr(e, "response", None)
         if resp is not None and resp.status_code in (403, 404):
@@ -1065,6 +1173,23 @@ def _is_status_or_venue_line(text: str) -> bool:
     return False
 
 
+def _is_bio_or_profile_line(text: str) -> bool:
+    clean = _clean_html(text)
+    bio_regexes = [
+        r'\b(?:i am a|i was a|i am an|i am currently|i\'m an?)\s+(?:final-year\s+)?(?:ph\.?d\.?|postdoc|researcher|scientist|assistant\s+professor|associate\s+professor|professor|student|candidate|fellow)\b',
+        r'\b(?:under the supervision of|advised by|co-advised by|working with\s+prof)\b',
+        r'\b(?:my research focuses on|my research interests? (?:include|lie in|is|are)|my recent work studies|i am interested in)\b',
+        r'\b(?:i received my|i obtained my|i earned my|i completed my)\s+(?:ph\.?d\.?|b\.?s\.?|m\.?s\.?|master|bachelor|degree)\b',
+        r'\b(?:incoming assistant professor|tenure-track assistant professor)\b',
+        r'\b(?:welcome to (?:my|our) (?:homepage|personal website|website))\b',
+        r'\b(?:curriculum vitae|full cv|download cv)\b',
+    ]
+    for r in bio_regexes:
+        if re.search(r, clean, re.I):
+            return True
+    return False
+
+
 def _is_tag_or_noise_line(text: str, scholar_name: str = "") -> bool:
     clean = _clean_html(text)
     if _is_html_or_artifact_noise(text):
@@ -1125,6 +1250,8 @@ def _extract_new_additions(diff_text: str, scholar_name: str = "") -> list:
         if _is_author_list_line(l):
             continue
         if _is_status_or_venue_line(l):
+            continue
+        if _is_bio_or_profile_line(l):
             continue
         cl = _clean_paper_entry(_clean_html(l))
         lower_l = cl.lower()
@@ -1347,7 +1474,7 @@ def load_events_history() -> list:
             s = ev.get("scholar", "")
             if t.lower() == "page content updated":
                 continue
-            if _is_tag_or_noise_line(t, s) or _is_author_list_line(t) or _is_status_or_venue_line(t):
+            if _is_tag_or_noise_line(t, s) or _is_author_list_line(t) or _is_status_or_venue_line(t) or _is_bio_or_profile_line(t):
                 continue
             ev["text"] = _clean_paper_entry(_clean_html(t))
             ts = ev.get("timestamp") or 0.0

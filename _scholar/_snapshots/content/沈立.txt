@@ -1,18 +1,3 @@
-搜索此网站
-嵌入的文件
-跳至主要内容
-调至导航栏
-Li Shen (沈力)
-Associate Professor, Ph.D. Advisor
-School of Cyber Science and Technology, Shenzhen Campus of Sun Yat-sen University(SYSU)
-Address : Room 2-914, Engineering building, SYSU, Guangming, Shenzhen, Guangdong, China
-Email : shenli6@mail.sysu.edu.cn (Preferred) / lishen@slai.edu.cn / mathshenli@gmail.com
-Google Scholar , 中 大 主页 , 河套学院主页
-Biography
-C urrently , Li Shen is the associate professor at the School of Cyber Science and Technology, Shenzhen Campus of Sun Yat-sen University. Previously, he was a research scientist at JD Explore Academy, Beijing, and a senior researcher at Tencent AI Lab, Shenzhen. He received his bachelor's degree and Ph.D. from the School of Mathematics, South China University of Technology . His research interests include efficient deep learning, efficient reinforcement learning, optimization and deep learning theory. He has published more than 100 papers in peer-reviewed top-tier journals (Nature Machine Intelligence, JMLR, IEEE TPAMI, IJCV, etc.) and conference papers (ICML, NeurIPS, ICLR, etc.). He has served as Area Chair for ICML, NeurIPS, ICLR, CVPR, AAAI, and ACMMM. He has also served as the associate editor for IEEE Transactions on Pattern Analysis and Machine Intelligence, IEEE Transactions on Knowledge and Data Engineering and IEEE Transactions on Multimedia, and action editor for Neural Networks.
-⭐️⭐️⭐️ Our team recruits several postdocs (CS, MATH, Physics) to work on efficient foundation models , Geo-distributed learning, continual learning, reinforcement learning,  and deep learning theory. [ 逸仙博士后 ][ 深圳博士后政策 ][ 光明区人才政策 ]
-⭐️⭐️⭐️ (N EW ) Our team recruits several PHD students ( 2027 fall, SYSU, SYSU-SLAI, SYSU-PCL ), working on efficient training of foundation models/ Generative RL Models , optimization and learning theory. P lease contact me as soon as possible if you are interested in our group.
-⭐️⭐️⭐️ (NEW) 2027秋季入学博士生招聘：本科直博、硕博连读、申请考核制博士（可选中大-河套学院联培， 中大-鹏城实验室联培 ）
 Selected Conference
 Pengxiang Li, Yefan Zhou, Dilxat Muhtar, Lu Yin, Shilin Yan, Li Shen , Yi Liang, Soroush Vosoughi, Shiwei Liu, Diffusion Language Model Knows the Answer Before It Decodes, ICLR, 2026. ( oral )
 Wei Ju, Siyu Yi, Kangjie Zheng, Yifan Wang, Ziyue Qiao, Li Shen , Yongdao Zhou, Xiaochun Cao, Jiancheng Lv, Compactness and Consistency: A Conjoint Framework for Deep Graph Clustering, ICLR, 2026. ( oral )
@@ -118,6 +103,7 @@ Shiwei Liu, Tianlong Chen, Xiaohan Chen, Zahra Atashgahi, Lu Yin, Huanyu Kou, Li
 Zhishuai Guo, Mingrui Liu, Zhuoning Yuan, Li Shen , Wei Liu, Tianbao Yang, Communication-Efficient Distributed Stochastic AUC Maximization with Deep Neural Networks, ICML, 2020.
 Li Shen , Peng Sun, Yitong Wang, Wei Liu, Tong Zhang, An Algorithmic Framework of Variable Metric Over-Relaxed Hybrid Proximal Extra-Gradient Method, ICML, 2018. ( oral )
 Li Shen , Wei Liu, Ganzhao Yuan, Shiqian Ma, GSOS: Gauss-Seidel Operator Splitting Algorithm for Multi-Term Nonsmooth Convex Composite Optimization, ICML, 2017.[ extended version ] ( oral )
+
 Selected Journal
 Anke Tang, Li Shen , Yong Luo, Yang Enneng, Han Hu, Zhang Lefei, Bo Du, Dacheng Tao, FusionBench: A Comprehensive Benchmark of Deep Model Fusion, Journal of Machine Learning Research, 2025.
 Li Shen , Anke Tang, Enneng Yang, Guibing Guo, Yong Luo, Lefei Zhang, Xiaochun Cao, Bo Du, Dacheng Tao, Efficient and Effective Weight-Ensembling Mixture of Experts for Multi-Task Model Merging, IEEE Transactions on Pattern Analysis and Machine Intelligence, 2025.
@@ -152,9 +138,6 @@ Congliang Chen*, Li Shen* , Fangyu Zou*, Wei Liu, Towards Practical Adam: Non-Co
 Yuesong Tian, Li Shen , Li Shen, Guinan Su, Zhifeng Li, Wei Liu, AlphaGAN: Fully Differentiable Architecture Search for Generative Adversarial Networks, IEEE Transactions on Pattern Analysis and Machine Intelligence, 2021. [ code ]
 Xiaojun Chen, Weijun Hong, Feiping Nie, Joshua Zhexue Huang, Li Shen , Enhanced Balanced Min Cut, International Journal of Computer Vision, 2020.
 Baoyuan Wu, Li Shen , Tong Zhang, Bernard Ghanem, MAP Inference via L2-Sphere Linear Program Reformulation, International Journal of Computer Vision, 2020.
+
 PhD Thesis
 Li Shen ,  A Class of Variable Metric Over-relaxed Hybrid Proximal Extra-gradient Algorithm (In Chinese),  PhD Thesis, 2017. [ thesis ]
-Google 网站
-举报不良行为
-Google 网站
-举报不良行为
