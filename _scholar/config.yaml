@@ -166,7 +166,7 @@ scholars:
     url: https://jyopari.github.io/
     category: HomePage
     site_type: github_pages
-    selectors: ["nav.links a", "nav.links"]
+    selectors: ["nav.links a"]
     remove_selectors: [script, style, footer, aside, .comments]
     labels: [homepage]
     research_areas: [LLM, Optimization]
@@ -194,6 +194,7 @@ scholars:
     watch: blog
   - name: Phimes
     url: https://blog.phimes.top/
+    rss_url: https://blog.phimes.top/rss.xml
     category: blog
     site_type: personal_website
     selectors: [main, .content, "#content", article]
@@ -201,7 +202,7 @@ scholars:
     labels: [blog]
     research_areas: [LLM]
     affiliation: ""
-    watch: general
+    watch: blog
   - name: Lcf Blogs
     url: https://lllcf.github.io/
     category: blog
