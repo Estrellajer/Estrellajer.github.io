@@ -1,13 +1,12 @@
 # Scholar Monitor Report
 
-**Run:** 2026-09-24 23:42 UTC  |  **Total:** 58  |  Events 6  |  RSS 0  |  CHG 4  |  FIRST 0  |  OK 54  |  ERR 0
+**Run:** 2026-09-25 04:30 UTC  |  **Total:** 58  |  Events 5  |  RSS 0  |  CHG 1  |  FIRST 0  |  OK 57  |  ERR 0
 
 ---
-## Activity Feed (6)
+## Activity Feed (5)
 
-- **黄家斌**: Advances in Neural Information Processing Systems (NeurIPS), 2026
-- **周大蔚** [NJU LAMDA]: Hierarchical Semantic Tree Anchoring for CLIP-Based Class-Incremental Learning
-- **周大蔚** [NJU LAMDA]: Neural Information Processing Systems. NeurIPS 2026
-- **周大蔚** [NJU LAMDA]: Tao Hu, Da-Wei Zhou
-- **周大蔚** [NJU LAMDA]: Dynamic Cross-Modal Prompt Generation for Multimodal Continual Instruction Tuning
-- **周大蔚** [NJU LAMDA]: [2026-09] Three papers about continual learning are accepted to NeurIPS 2026.
+- **周嘉欢** [北京大学]: [ pdf ] AIGC
+- **周嘉欢** [北京大学]: [ pdf ] IL NL
+- **周嘉欢** [北京大学]: [ pdf ] OR
+- **周嘉欢** [北京大学]: [ pdf ] 2D to 3D
+- **周嘉欢** [北京大学]: 09.2026, Five papers are accepted by NeurIPS'2026.

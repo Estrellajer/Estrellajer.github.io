@@ -10,6 +10,7 @@ Latest News
 We are always actively recruiting Post-doc Fellows,
 Ph.D., Master, and Research Interns! Welcome to contact me with your detailed CV!
 (常年招收博士后、博士、硕士和科研实习生！)
+09.2026, Five papers are accepted by NeurIPS'2026.
 09.2026, Invited to serve as the Area Chair of CVPR'2027.
 08.2026, One paper is accepted by IEEE TPAMI.
 08.2026, Invited to serve as the Area Chair of ICLR'2027.
@@ -94,6 +95,16 @@ All Papers
 2023
 2022 and before
 The bib of the selected paper has copied!
+( NeurIPS'26, Spotlight )-Zixiang Ai, Zhenyu Cui, Xu Zou, and Jiahuan Zhou* , "3R-Adapter: Retrieval, Rewiring, and Refinement for Efficient Adaptation of 3D Reconstruction Model", in Proceedings of the Fortieth Annual Conference on Neural Information Processing Systems, Sydney, Australia, Dec.6 - Dec.12, 2026
+[ pdf ] 2D to 3D
+( NeurIPS'26 )-Kunlun Xu, Haotong Cheng, Yufei Guo, and Jiahuan Zhou* , "HypMoE-ReID: Hyperspherical Mixture-of-Experts for Large Scale Person Re-Identification", in Proceedings of the Fortieth Annual Conference on Neural Information Processing Systems, Sydney, Australia, Dec.6 - Dec.12, 2026
+[ pdf ] OR
+( NeurIPS'26 )-Kunlun Xu, Zhengyuan Cai, and Jiahuan Zhou* , "Cross-Domain Knowledge Separation and Positive Transmission for Noisy Domain Incremental Learning", in Proceedings of the Fortieth Annual Conference on Neural Information Processing Systems, Sydney, Australia, Dec.6 - Dec.12, 2026
+[ pdf ] IL NL
+( NeurIPS'26 )-Xiaoyu Yi, Zihan Xiong, Junjie Cao, Xiaolong Weng, Yingzhe Ma, Gus Xia, Jinliang Liu, Yuxin Xie, Xianwei Zhuang, Yuguo Yin, Qiao Jin, Gongxi Zhu, Jiayu Wang, Junjie Liang, Qin Yue, Ziyu Wang, Dading Chong, Meng Cao, Jiahuan Zhou* , and Dongchao Yang*, "FlexCover: Flexible Cover Song Generation via Symbolic Lead Sheet Control", in Proceedings of the Fortieth Annual Conference on Neural Information Processing Systems, Sydney, Australia, Dec.6 - Dec.12, 2026
+[ pdf ] AIGC
+( NeurIPS'26 )-Qiwei Li, Xicheng Gong, Xinghang Li, Peiyan Li, Quanyun Zhou, Hangjun Ye, Jiahuan Zhou* , and Yadong Mu*, "RotVLA: Rotational Latent Action for Vision-Language-Action Model", in Proceedings of the Fortieth Annual Conference on Neural Information Processing Systems, Sydney, Australia, Dec.6 - Dec.12, 2026
+[ pdf ] V&L
 ( TPAMI'26 )- Zixiang Ai, Zhenyu Cui, Yufei Guo, Wenwen Qiang, Lei Chen, Jiwen Lu, and Jiahuan Zhou* , "GAPrompt++: Multi-Granular Geometry-Aware Point Cloud Prompt for 3D Vision Model", in IEEE Transactions on Pattern Analysis and Machine Intelligence, 2026
 [ pdf ]
 [ code ] PL
@@ -631,6 +642,16 @@ clustering by nonnegative restriction", in Proceedings of the International
 Conference on Pattern Recognition, pp. 1550-1553, Tsukuba, Japan, Nov.11 -
 Nov.15, 2012
 [ pdf ] [ bib ]
+( NeurIPS'26, Spotlight )-Zixiang Ai, Zhenyu Cui, Xu Zou, and Jiahuan Zhou* , "3R-Adapter: Retrieval, Rewiring, and Refinement for Efficient Adaptation of 3D Reconstruction Model", in Proceedings of the Fortieth Annual Conference on Neural Information Processing Systems, Sydney, Australia, Dec.6 - Dec.12, 2026
+[ pdf ] 2D to 3D
+( NeurIPS'26 )-Kunlun Xu, Haotong Cheng, Yufei Guo, and Jiahuan Zhou* , "HypMoE-ReID: Hyperspherical Mixture-of-Experts for Large Scale Person Re-Identification", in Proceedings of the Fortieth Annual Conference on Neural Information Processing Systems, Sydney, Australia, Dec.6 - Dec.12, 2026
+[ pdf ] OR
+( NeurIPS'26 )-Kunlun Xu, Zhengyuan Cai, and Jiahuan Zhou* , "Cross-Domain Knowledge Separation and Positive Transmission for Noisy Domain Incremental Learning", in Proceedings of the Fortieth Annual Conference on Neural Information Processing Systems, Sydney, Australia, Dec.6 - Dec.12, 2026
+[ pdf ] IL NL
+( NeurIPS'26 )-Xiaoyu Yi, Zihan Xiong, Junjie Cao, Xiaolong Weng, Yingzhe Ma, Gus Xia, Jinliang Liu, Yuxin Xie, Xianwei Zhuang, Yuguo Yin, Qiao Jin, Gongxi Zhu, Jiayu Wang, Junjie Liang, Qin Yue, Ziyu Wang, Dading Chong, Meng Cao, Jiahuan Zhou* , and Dongchao Yang*, "FlexCover: Flexible Cover Song Generation via Symbolic Lead Sheet Control", in Proceedings of the Fortieth Annual Conference on Neural Information Processing Systems, Sydney, Australia, Dec.6 - Dec.12, 2026
+[ pdf ] AIGC
+( NeurIPS'26 )-Qiwei Li, Xicheng Gong, Xinghang Li, Peiyan Li, Quanyun Zhou, Hangjun Ye, Jiahuan Zhou* , and Yadong Mu*, "RotVLA: Rotational Latent Action for Vision-Language-Action Model", in Proceedings of the Fortieth Annual Conference on Neural Information Processing Systems, Sydney, Australia, Dec.6 - Dec.12, 2026
+[ pdf ] V&L
 ( TPAMI'26 )- Zixiang Ai, Zhenyu Cui, Yufei Guo, Wenwen Qiang, Lei Chen, Jiwen Lu, and Jiahuan Zhou* , "GAPrompt++: Multi-Granular Geometry-Aware Point Cloud Prompt for 3D Vision Model", in IEEE Transactions on Pattern Analysis and Machine Intelligence, 2026
 [ pdf ]
 [ code ] PL

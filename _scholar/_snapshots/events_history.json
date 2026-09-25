@@ -1,5 +1,85 @@
 [
   {
+    "scholar": "周嘉欢",
+    "scholar_url": "https://zhoujiahuan1991.github.io/",
+    "affiliation": "北京大学",
+    "areas": [
+      "Continual Learning"
+    ],
+    "watch": "general",
+    "kind": "update",
+    "text": "[ pdf ] AIGC",
+    "link": "https://zhoujiahuan1991.github.io/",
+    "date_str": "",
+    "timestamp": 1790310635.722929,
+    "result_type": "changed",
+    "first_seen": "2026-09-25T04:30:35.724117+00:00"
+  },
+  {
+    "scholar": "周嘉欢",
+    "scholar_url": "https://zhoujiahuan1991.github.io/",
+    "affiliation": "北京大学",
+    "areas": [
+      "Continual Learning"
+    ],
+    "watch": "general",
+    "kind": "update",
+    "text": "[ pdf ] IL NL",
+    "link": "https://zhoujiahuan1991.github.io/",
+    "date_str": "",
+    "timestamp": 1790310635.722917,
+    "result_type": "changed",
+    "first_seen": "2026-09-25T04:30:35.724125+00:00"
+  },
+  {
+    "scholar": "周嘉欢",
+    "scholar_url": "https://zhoujiahuan1991.github.io/",
+    "affiliation": "北京大学",
+    "areas": [
+      "Continual Learning"
+    ],
+    "watch": "general",
+    "kind": "update",
+    "text": "[ pdf ] OR",
+    "link": "https://zhoujiahuan1991.github.io/",
+    "date_str": "",
+    "timestamp": 1790310635.722904,
+    "result_type": "changed",
+    "first_seen": "2026-09-25T04:30:35.724129+00:00"
+  },
+  {
+    "scholar": "周嘉欢",
+    "scholar_url": "https://zhoujiahuan1991.github.io/",
+    "affiliation": "北京大学",
+    "areas": [
+      "Continual Learning"
+    ],
+    "watch": "general",
+    "kind": "update",
+    "text": "[ pdf ] 2D to 3D",
+    "link": "https://zhoujiahuan1991.github.io/",
+    "date_str": "",
+    "timestamp": 1790310635.722884,
+    "result_type": "changed",
+    "first_seen": "2026-09-25T04:30:35.724132+00:00"
+  },
+  {
+    "scholar": "周嘉欢",
+    "scholar_url": "https://zhoujiahuan1991.github.io/",
+    "affiliation": "北京大学",
+    "areas": [
+      "Continual Learning"
+    ],
+    "watch": "general",
+    "kind": "paper",
+    "text": "09.2026, Five papers are accepted by NeurIPS'2026.",
+    "link": "https://zhoujiahuan1991.github.io/",
+    "date_str": "",
+    "timestamp": 1790310635.721718,
+    "result_type": "changed",
+    "first_seen": "2026-09-25T04:30:35.724135+00:00"
+  },
+  {
     "scholar": "黄家斌",
     "scholar_url": "https://jbhuang0604.github.io/",
     "affiliation": "",
@@ -724,21 +804,5 @@
     "timestamp": 1788912000.0,
     "result_type": "rss_no_change",
     "first_seen": "2026-09-23T12:27:56.702284+00:00"
-  },
-  {
-    "scholar": "周大蔚",
-    "scholar_url": "https://www.lamda.nju.edu.cn/zhoudw/",
-    "affiliation": "NJU LAMDA",
-    "areas": [
-      "Continual Learning"
-    ],
-    "watch": "general",
-    "kind": "paper",
-    "text": "[2026-09] Three papers about continual learning are accepted to NeurIPS 2026.",
-    "link": "https://www.lamda.nju.edu.cn/zhoudw/",
-    "date_str": "",
-    "timestamp": 1788220800.0,
-    "result_type": "changed",
-    "first_seen": "2026-09-24T23:42:37.811803+00:00"
   }
 ]
