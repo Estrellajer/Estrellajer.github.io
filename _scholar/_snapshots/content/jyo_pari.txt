@@ -41,3 +41,10 @@
 >  Langevin Sampling
 
 >  Centered Kernel Alignment
+
+Papers + Mini Research + Ideas
+> [Mini Research] Optimizing the Optimization Trajectory Sept 28, 2025 > [Paper] RL's Razor: Why Online Reinforcement Learning Forgets Less Sept 4, 2025 > [Mini Research] Peculiarities of Mixture-of-Expert Optimization July 13, 2025 > [Paper] Self-Adapting Language Models Jun 23, 2025 > [Mini Research] Reuse Can Be Useful Mar 1, 2025 > [Paper] General Intelligence Requires Reward-based Pretraining Feb 26, 2025 > [Idea] Towards Self-Editing Models: Part 1 Jan 19, 2025 > [Paper] Collective Model Intelligence Requires Compatible Specialization Nov 4, 2024
+Literature Review
+>  Preconditioners in Optimization Nov 23, 2025 >  Understanding PaTH Attention Sept 16, 2025 >  Improving Recurrent Models with Group Theory Mar 22, 2025 >  Recurrent Networks and Test Time Training (TTT) Feb 1, 2025 >  Model Merging 2024 >  Mixture of Experts (MoE) Fall 2023
+Misc
+>  Mystery of the Quintics Jan 5, 2026 >  Distances Between Subspaces >  Symmetries in Neural Networks >  Discrete Optimal Transport >  Euler-Lagrange Equation >  Gumbel Softmax >  Langevin Sampling >  Centered Kernel Alignment
