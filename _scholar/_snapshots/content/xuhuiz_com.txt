@@ -1,5 +1,5 @@
+Sep 26, 2026 OdysSim: Building Foundation Models for Human Behavior Simulation has been accepted to NeurIPS 2026!
 Aug 12, 2026 I defended my PhD! [Slides]
 Jul 8, 2026 Excited that five papers were accepted to COLM 2026 : Mind the Sim2Real Gap in User Simulation for Agentic Tasks , SOTOPIA-TOM , Social World Models , GoodPoint , and Training Proactive and Personalized LLM Agents .
 Apr 18, 2026 Gave a talk on "User-Effective AI Agents" at Scale AI . [Slides]
 Apr 9, 2026 I received a Microsoft PhD Fellowship !
-Mar 6, 2025 Excited to give a guest lecture on "Safety, bias, ethics in LLMs" for Data Bias and Fairness Series

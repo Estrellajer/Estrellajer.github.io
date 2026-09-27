@@ -1,5 +1,21 @@
 [
   {
+    "scholar": "Junjie Su(苏俊杰)",
+    "scholar_url": "https://momoyeyu.github.io/",
+    "affiliation": "北京邮电大学",
+    "areas": [
+      "AI Infra"
+    ],
+    "watch": "blog",
+    "kind": "post",
+    "text": "一文搞懂归一化技术",
+    "link": "https://momoyeyu.github.io/posts/llm-normalization/",
+    "date_str": "Sun, 27 Sep 2026 00:00:00 GMT",
+    "timestamp": 1790467200.0,
+    "result_type": "rss",
+    "first_seen": "2026-09-27T04:53:50.018690+00:00"
+  },
+  {
     "scholar": "🙋🏻‍♂️关于 | Chenxu's Blog",
     "scholar_url": "https://www.chenxutalk.top/about/",
     "affiliation": "北京邮电大学",
@@ -10,8 +26,25 @@
     "link": "https://www.chenxutalk.top/posts/life/travel/travel/jiangsu/",
     "date_str": "Sat, 26 Sep 2026 21:56:10 +0800",
     "timestamp": 1790430970.0,
-    "result_type": "rss",
-    "first_seen": "2026-09-26T23:17:02.926216+00:00"
+    "result_type": "unchanged",
+    "first_seen": "2026-09-27T04:53:50.018870+00:00"
+  },
+  {
+    "scholar": "xuhuiz.com",
+    "scholar_url": "https://xuhuiz.com/",
+    "affiliation": "CMU",
+    "areas": [
+      "RL",
+      "CHI."
+    ],
+    "watch": "general",
+    "kind": "news",
+    "text": "Sep 26, 2026 OdysSim: Building Foundation Models for Human Behavior Simulation has been accepted to NeurIPS 2026!",
+    "link": "https://xuhuiz.com/",
+    "date_str": "2026-09-26",
+    "timestamp": 1790380800.0,
+    "result_type": "changed",
+    "first_seen": "2026-09-27T04:53:50.018699+00:00"
   },
   {
     "scholar": "周嘉欢",

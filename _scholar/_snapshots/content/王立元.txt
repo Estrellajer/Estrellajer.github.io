@@ -77,9 +77,6 @@ Science China Information Sciences ( SCIS ), 2025.
 Trend Virtual Adversarial Training for Semi-Supervised Time Series Classification.
 Qingyi Pan, Liyuan Wang $^\dagger$, Jingyi Zhang, Jun Zhu, Ning Chen$^\dagger$.
 Science China Information Sciences ( SCIS ), 2025.
-DualTeacher: Bridging Coexistence of Unlabelled Classes for Semi-supervised Incremental Object Detection.
-Ziqi Yuan$^{\ast}$, Liyuan Wang $^{\ast}$, Wenbo Ding, Xingxing Zhang, Jiachen Zhong, Jianyong Ai, Jianmin Li, Jun Zhu.
-Science China Information Sciences ( SCIS ), 2025.
 Convergent Multi-Modular Architecture for Adaptive Learning in Drosophila and Artificial Intelligence.
 Liyuan Wang $^\dagger$, Qian Li$^\dagger$.
 iScience , 2025.
