@@ -1,5 +1,21 @@
 [
   {
+    "scholar": "柠檬CC",
+    "scholar_url": "https://limoncc.com/",
+    "affiliation": "",
+    "areas": [
+      "LLM"
+    ],
+    "watch": "general",
+    "kind": "update",
+    "text": "本文主要总结了MiMoV2.6组级智能体评分的若干基本问题，和我自己的一些体会。",
+    "link": "https://limoncc.com/",
+    "date_str": "",
+    "timestamp": 1790551888.981728,
+    "result_type": "changed",
+    "first_seen": "2026-09-27T23:31:28.987911+00:00"
+  },
+  {
     "scholar": "Junjie Su(苏俊杰)",
     "scholar_url": "https://momoyeyu.github.io/",
     "affiliation": "北京邮电大学",
@@ -27,7 +43,7 @@
     "date_str": "Sat, 26 Sep 2026 21:56:10 +0800",
     "timestamp": 1790430970.0,
     "result_type": "unchanged",
-    "first_seen": "2026-09-27T04:53:50.018870+00:00"
+    "first_seen": "2026-09-27T23:31:28.988078+00:00"
   },
   {
     "scholar": "xuhuiz.com",
@@ -349,6 +365,22 @@
     "timestamp": 1788912000.0,
     "result_type": "rss_no_change",
     "first_seen": "2026-09-23T12:27:56.702284+00:00"
+  },
+  {
+    "scholar": "董功",
+    "scholar_url": "https://donggong1.github.io/index.html",
+    "affiliation": "",
+    "areas": [
+      "Continual Learning"
+    ],
+    "watch": "general",
+    "kind": "update",
+    "text": "MILES: Modular Instruction Memory with Learnable Selection for Self-Improving LLM Reasoning · Sep 2026",
+    "link": "https://donggong1.github.io/index.html",
+    "date_str": "2026-09",
+    "timestamp": 1788220800.0,
+    "result_type": "changed",
+    "first_seen": "2026-09-27T23:31:28.987920+00:00"
   },
   {
     "scholar": "Breezedeus.com | 善意的AI生产幸福❤",

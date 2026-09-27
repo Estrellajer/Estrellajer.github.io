@@ -1,9 +1,9 @@
 # Scholar Monitor Report
 
-**Run:** 2026-09-27 04:53 UTC  |  **Total:** 58  |  Events 2  |  RSS 1  |  CHG 2  |  FIRST 0  |  OK 55  |  ERR 0
+**Run:** 2026-09-27 23:31 UTC  |  **Total:** 58  |  Events 2  |  RSS 0  |  CHG 2  |  FIRST 0  |  OK 56  |  ERR 0
 
 ---
 ## Activity Feed (2)
 
-- **Junjie Su(苏俊杰)** [北京邮电大学]: 一文搞懂归一化技术
-- **xuhuiz.com** [CMU]: Sep 26, 2026 OdysSim: Building Foundation Models for Human Behavior Simulation has been accepted to NeurIPS 2026!
+- **柠檬CC**: 本文主要总结了MiMoV2.6组级智能体评分的若干基本问题，和我自己的一些体会。
+- **董功**: MILES: Modular Instruction Memory with Learnable Selection for Self-Improving LLM Reasoning · Sep 2026
