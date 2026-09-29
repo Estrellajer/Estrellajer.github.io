@@ -1,5 +1,22 @@
 [
   {
+    "scholar": "苏剑林 - 科学空间",
+    "scholar_url": "https://kexue.fm/",
+    "affiliation": "Kimi",
+    "areas": [
+      "LLM",
+      "Theory"
+    ],
+    "watch": "blog",
+    "kind": "post",
+    "text": "慢即是快：1. Shampoo的尽头是Muon？",
+    "link": "https://kexue.fm/archives/11917",
+    "date_str": "Mon, 28 Sep 2026 17:00:00 +0800",
+    "timestamp": 1790586000.0,
+    "result_type": "rss",
+    "first_seen": "2026-09-29T00:45:58.756420+00:00"
+  },
+  {
     "scholar": "柠檬CC",
     "scholar_url": "https://limoncc.com/",
     "affiliation": "",
@@ -43,7 +60,7 @@
     "date_str": "Sat, 26 Sep 2026 21:56:10 +0800",
     "timestamp": 1790430970.0,
     "result_type": "unchanged",
-    "first_seen": "2026-09-28T04:55:54.903041+00:00"
+    "first_seen": "2026-09-29T00:45:58.756593+00:00"
   },
   {
     "scholar": "xuhuiz.com",
