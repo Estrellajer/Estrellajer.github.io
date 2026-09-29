@@ -60,7 +60,7 @@
     "date_str": "Sat, 26 Sep 2026 21:56:10 +0800",
     "timestamp": 1790430970.0,
     "result_type": "unchanged",
-    "first_seen": "2026-09-29T00:45:58.756593+00:00"
+    "first_seen": "2026-09-29T05:20:51.473047+00:00"
   },
   {
     "scholar": "xuhuiz.com",
@@ -382,6 +382,22 @@
     "timestamp": 1788912000.0,
     "result_type": "rss_no_change",
     "first_seen": "2026-09-23T12:27:56.702284+00:00"
+  },
+  {
+    "scholar": "王立元",
+    "scholar_url": "https://lywang3081.github.io/",
+    "affiliation": "北京大学",
+    "areas": [
+      "Continual Learning"
+    ],
+    "watch": "general",
+    "kind": "news",
+    "text": "2026/09 Two papers are accepted to IJCV.",
+    "link": "https://lywang3081.github.io/",
+    "date_str": "2026-09",
+    "timestamp": 1788220800.0,
+    "result_type": "changed",
+    "first_seen": "2026-09-29T05:20:51.472542+00:00"
   },
   {
     "scholar": "董功",
