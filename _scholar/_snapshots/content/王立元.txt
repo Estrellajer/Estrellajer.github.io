@@ -36,15 +36,18 @@ arXiv:2510.06842, Under Review, 2026.
 Domain Generalizable Continual Learning.
 Hongwei Yan, Guanglong Sun, Zhiqi Kang, Yi Zhong, Liyuan Wang $^\dagger$.
 arXiv:2510.16914, Under Review, 2026.
+SLCA++: Unleash the Power of Sequential Fine-tuning for Continual Learning with Pre-training.
+Gengwei Zhang$^{\ast}$, Liyuan Wang $^{\ast}$, Guoliang Kang, Ling Chen, Yunchao Wei.
+International Journal of Computer Vision ( IJCV ), 2026.
+Spacing Effect Improves Generalization in Biological and Artificial Systems.
+Guanglong Sun, Ning Huang, Hongwei Yan, Jun Zhou, Qian Li, Bo Lei, Yi Zhong, Liyuan Wang $^\dagger$.
+Patterns , Cover Paper , 2026.
 Cephalopod-Inspired Embodied Camouflage System for Simultaneous Evasion of Biological and Artificial Visual Perceptions.
 Xiaopei Zhu$^{\ast}$, Jiongchen Zhang$^{\ast}$, Liyuan Wang $^{\ast}$, Xitong Liang, Jun Zhu, Xiaolin Hu.
 Nature Communications , 2026.
 Brain-Inspired Spatial Intelligence for Embodied Agents.
 Shouwei Ruan$^{\ast}$, Liyuan Wang $^{\ast}$, Caixin Kang, Qihui Zhu, Songming Liu, Xingxing Wei, Hang Su.
 Nature Communications , 2026.
-Spacing Effect Improves Generalization in Biological and Artificial Systems.
-Guanglong Sun, Ning Huang, Hongwei Yan, Jun Zhou, Qian Li, Bo Lei, Yi Zhong, Liyuan Wang $^\dagger$.
-Patterns , Cover Paper , 2026.
 CE$^4$L: Continual Ego, Exo, and Ego-Exo Learning.
 Hongwei Yan, Kanglei Zhou, Yuchen Liu, Qingyu Shi, Yi Zhong, Liyuan Wang $^{\dagger}$.
 International Conference on Machine Learning ( ICML ), 2026.
@@ -68,7 +71,7 @@ Hongwei Yan, Guanglong Sun, Kanglei Zhou, Qian Li, Liyuan Wang $^{\dagger}$, Yi 
 International Conference on Learning Representations ( ICLR ), 2026.
 Versatile Cardiovascular Signal Generation with a Unified Diffusion Transformer.
 Zehua Chen$^{\ast}$, Yuyang Miao$^{\ast}$, Liyuan Wang $^{\ast\dagger}$, Luyun Fan, Danilo P. Mandic, Jun Zhu$^{\dagger}$.
-Nature Machine Intelligence , 2025.
+Nature Machine Intelligence , 2026.
 HiDe-PET: Continual Learning via Hierarchical Decomposition of Parameter-Efficient Tuning.
 Liyuan Wang , Jingyi Xie, Xingxing Zhang, Hang Su, Jun Zhu.
 IEEE Transactions on Pattern Analysis and Machine Intelligence ( TPAMI ), 2025.
