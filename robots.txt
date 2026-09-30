@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://Estrellajer.github.io/sitemap.xml
+Sitemap: https://estrellajer.github.io/sitemap.xml
