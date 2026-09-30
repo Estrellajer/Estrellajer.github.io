@@ -8,7 +8,7 @@
     - name: Email
       value: liumaoqi@bupt.edu.cn
     - name: Home Page
-      value: <a href="https://Estrellajer.github.io">https://Estrellajer.github.io</a>
+      value: <a href="https://estrellajer.github.io">https://estrellajer.github.io</a>
 
 - title: Education
   type: time_table
