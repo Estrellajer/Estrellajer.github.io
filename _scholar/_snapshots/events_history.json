@@ -1,5 +1,37 @@
 [
   {
+    "scholar": "周嘉欢",
+    "scholar_url": "https://zhoujiahuan1991.github.io/",
+    "affiliation": "北京大学",
+    "areas": [
+      "Continual Learning"
+    ],
+    "watch": "general",
+    "kind": "news",
+    "text": "09.2026, Invited to serve as the Workshops Chair of ICCV'2027.",
+    "link": "https://zhoujiahuan1991.github.io/",
+    "date_str": "2026-09-30",
+    "timestamp": 1790744925.207709,
+    "result_type": "changed",
+    "first_seen": "2026-09-30T05:08:45.207709+00:00"
+  },
+  {
+    "scholar": "王立远",
+    "scholar_url": "https://lywang3081.github.io/",
+    "affiliation": "清华大学",
+    "areas": [
+      "Continual Learning"
+    ],
+    "watch": "general",
+    "kind": "news",
+    "text": "2026/09 Two papers are accepted to IJCV.",
+    "link": "https://lywang3081.github.io/",
+    "date_str": "2026-09-29",
+    "timestamp": 1790659251.472542,
+    "result_type": "changed",
+    "first_seen": "2026-09-29T05:20:51.472542+00:00"
+  },
+  {
     "scholar": "苏剑林 - 科学空间",
     "scholar_url": "https://kexue.fm/",
     "affiliation": "Kimi",
@@ -15,6 +47,22 @@
     "timestamp": 1790586000.0,
     "result_type": "rss",
     "first_seen": "2026-09-29T00:45:58.756420+00:00"
+  },
+  {
+    "scholar": "董功",
+    "scholar_url": "https://donggong1.github.io/index.html",
+    "affiliation": "",
+    "areas": [
+      "Continual Learning"
+    ],
+    "watch": "general",
+    "kind": "update",
+    "text": "MILES: Modular Instruction Memory with Learnable Selection for Self-Improving LLM Reasoning · Sep 2026",
+    "link": "https://donggong1.github.io/index.html",
+    "date_str": "2026-09-27",
+    "timestamp": 1790551888.98792,
+    "result_type": "changed",
+    "first_seen": "2026-09-27T23:31:28.987920+00:00"
   },
   {
     "scholar": "柠檬CC",
@@ -368,54 +416,6 @@
     "first_seen": "2026-09-23T12:27:56.702284+00:00"
   },
   {
-    "scholar": "周嘉欢",
-    "scholar_url": "https://zhoujiahuan1991.github.io/",
-    "affiliation": "北京大学",
-    "areas": [
-      "Continual Learning"
-    ],
-    "watch": "general",
-    "kind": "news",
-    "text": "09.2026, Invited to serve as the Workshops Chair of ICCV'2027.",
-    "link": "https://zhoujiahuan1991.github.io/",
-    "date_str": "2026-09",
-    "timestamp": 1788220800.0,
-    "result_type": "changed",
-    "first_seen": "2026-09-30T05:08:45.207709+00:00"
-  },
-  {
-    "scholar": "王立远",
-    "scholar_url": "https://lywang3081.github.io/",
-    "affiliation": "清华大学",
-    "areas": [
-      "Continual Learning"
-    ],
-    "watch": "general",
-    "kind": "news",
-    "text": "2026/09 Two papers are accepted to IJCV.",
-    "link": "https://lywang3081.github.io/",
-    "date_str": "2026-09",
-    "timestamp": 1788220800.0,
-    "result_type": "changed",
-    "first_seen": "2026-09-29T05:20:51.472542+00:00"
-  },
-  {
-    "scholar": "董功",
-    "scholar_url": "https://donggong1.github.io/index.html",
-    "affiliation": "",
-    "areas": [
-      "Continual Learning"
-    ],
-    "watch": "general",
-    "kind": "update",
-    "text": "MILES: Modular Instruction Memory with Learnable Selection for Self-Improving LLM Reasoning · Sep 2026",
-    "link": "https://donggong1.github.io/index.html",
-    "date_str": "2026-09",
-    "timestamp": 1788220800.0,
-    "result_type": "changed",
-    "first_seen": "2026-09-27T23:31:28.987920+00:00"
-  },
-  {
     "scholar": "Breezedeus.com | 善意的AI生产幸福❤",
     "scholar_url": "https://www.breezedeus.com/",
     "affiliation": "",
@@ -459,7 +459,7 @@
     "kind": "news",
     "text": "2026.04 : 🎉 One paper has been accepted to ACL 2026!",
     "link": "https://woodscene.github.io/",
-    "date_str": "2026-04",
+    "date_str": "2026-04-01",
     "timestamp": 1775001600.0,
     "result_type": "changed",
     "first_seen": "2026-04-01T00:00:00+00:00",
@@ -498,7 +498,7 @@
     "kind": "news",
     "text": "2026.01 : 🎉 Two papers have been accepted to ICLR 2026!",
     "link": "https://woodscene.github.io/",
-    "date_str": "2026-01",
+    "date_str": "2026-01-01",
     "timestamp": 1767225600.0,
     "result_type": "changed",
     "first_seen": "2026-01-01T00:00:00+00:00",
@@ -521,7 +521,7 @@
     "kind": "paper",
     "text": "AIMMerging: Leveraging Training Trajectories for Adaptive Iterative Model Merging in Language Model Continual Learning. [ PDF ] [ Code ] · EMNLP 2025",
     "link": "https://woodscene.github.io/",
-    "date_str": "2025-08",
+    "date_str": "2025-08-01",
     "timestamp": 1754006400.0,
     "result_type": "changed",
     "first_seen": "2025-08-01T00:00:00+00:00"
@@ -537,7 +537,7 @@
     "kind": "paper",
     "text": "End-to-End Test-Time Training for Long Context",
     "link": "https://yueatsprograms.github.io/",
-    "date_str": "2024-11",
+    "date_str": "2024-11-01",
     "timestamp": 1730419200.0,
     "result_type": "changed",
     "first_seen": "2024-11-01T00:00:00+00:00"
@@ -553,7 +553,7 @@
     "kind": "paper",
     "text": "Learning to Discover at Test Time",
     "link": "https://yueatsprograms.github.io/",
-    "date_str": "2024-10",
+    "date_str": "2024-10-01",
     "timestamp": 1727740800.0,
     "result_type": "changed",
     "first_seen": "2024-10-01T00:00:00+00:00"

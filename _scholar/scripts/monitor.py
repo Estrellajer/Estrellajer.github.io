@@ -7,6 +7,7 @@ Strategy per site (by watch type):
   google_scholar   -> SerpApi when SERPAPI_KEY set, else direct fetch + captcha detection
   zhihu            -> cookie API preferred, RSSHub fallback (RSSHUB_BASE)
 """
+import calendar
 import json
 import os
 import re
@@ -57,8 +58,8 @@ LAST_CHECKED_PATH = SNAPSHOT_DIR / "last_checked.txt"
 EVENTS_HISTORY_PATH = SNAPSHOT_DIR / "events_history.json"
 HTML_PATH = BASE_DIR.parent / "scholar" / "index.html"
 
-EVENTS_HISTORY_LIMIT = 50
-EVENTS_DISPLAY_LIMIT = 15
+EVENTS_HISTORY_LIMIT = 100
+EVENTS_DISPLAY_LIMIT = 50
 
 RSSHUB_BASE = (os.environ.get("RSSHUB_BASE") or "https://rsshub.app").rstrip("/")
 SERPAPI_KEY = os.environ.get("SERPAPI_KEY", "")
@@ -1315,7 +1316,14 @@ def _extract_timestamp_and_date(text: str) -> tuple:
         try:
             y, m = int(match_month.group(1)), int(match_month.group(2))
             if 1 <= m <= 12:
-                dt = datetime(y, m, 1, tzinfo=timezone.utc)
+                now_utc = datetime.now(timezone.utc)
+                if y == now_utc.year and m == now_utc.month:
+                    dt = now_utc
+                elif y == now_utc.year and (now_utc.month - m == 1 or (now_utc.month == 1 and m == 12)):
+                    last_day = calendar.monthrange(y, m)[1]
+                    dt = datetime(y, m, last_day, 12, 0, tzinfo=timezone.utc)
+                else:
+                    dt = datetime(y, m, 1, tzinfo=timezone.utc)
                 if dt.timestamp() <= max_valid_ts:
                     return dt.timestamp(), f"{y:04d}-{m:02d}"
         except ValueError:
@@ -1327,7 +1335,14 @@ def _extract_timestamp_and_date(text: str) -> tuple:
         try:
             m, y = int(match_my.group(1)), int(match_my.group(2))
             if 1 <= m <= 12:
-                dt = datetime(y, m, 1, tzinfo=timezone.utc)
+                now_utc = datetime.now(timezone.utc)
+                if y == now_utc.year and m == now_utc.month:
+                    dt = now_utc
+                elif y == now_utc.year and (now_utc.month - m == 1 or (now_utc.month == 1 and m == 12)):
+                    last_day = calendar.monthrange(y, m)[1]
+                    dt = datetime(y, m, last_day, 12, 0, tzinfo=timezone.utc)
+                else:
+                    dt = datetime(y, m, 1, tzinfo=timezone.utc)
                 if dt.timestamp() <= max_valid_ts:
                     return dt.timestamp(), f"{y:04d}-{m:02d}"
         except ValueError:
@@ -1590,9 +1605,17 @@ def load_events_history() -> list:
                 continue
             ev["text"] = _clean_paper_entry(_clean_html(t))
             ts = ev.get("timestamp") or 0.0
+            fs_ts = _first_seen_to_timestamp(ev.get("first_seen", ""))
             if ts > max_valid_ts:
-                fs_ts = _first_seen_to_timestamp(ev.get("first_seen", ""))
                 ev["timestamp"] = fs_ts if fs_ts > 0 else now_ts
+            elif fs_ts > 0 and ts > 0:
+                dt = datetime.fromtimestamp(ts, tz=timezone.utc)
+                if dt.day == 1 and dt.hour == 0 and dt.minute == 0:
+                    fs_dt = datetime.fromtimestamp(fs_ts, tz=timezone.utc)
+                    if fs_dt.year == dt.year and fs_dt.month == dt.month:
+                        ev["timestamp"] = fs_ts
+                        if ev.get("date_str") == f"{dt.year:04d}-{dt.month:02d}":
+                            ev["date_str"] = fs_dt.strftime("%Y-%m-%d")
             filtered_data.append(ev)
         return aggregate_events(filtered_data)
     except (json.JSONDecodeError, OSError):
