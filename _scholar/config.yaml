@@ -303,16 +303,16 @@ scholars:
     research_areas: [LLM, Agent]
     affiliation: "Google"
     watch: general
-  - name: 王立元
+  - name: 王立远
     url: https://lywang3081.github.io/
     category: HomePage
     site_type: github_pages
-    selectors: ["#recent-news + ul", "#selected-publications-and-preprints + ol", "#selected-publications-and-preprints + ul"]
+    selectors: ["#recent-news + ul"]
     remove_selectors: [script, style, nav, footer, header, aside, .sidebar, .comments]
-    labels: [homepage]
+    labels: [news]
     research_areas: [Continual Learning]
-    affiliation: "北京大学"
-    watch: general
+    affiliation: "清华大学"
+    watch: news
   - name: 周嘉欢
     url: https://zhoujiahuan1991.github.io/
     category: HomePage

@@ -1,53 +1,5 @@
 [
   {
-    "scholar": "王立元",
-    "scholar_url": "https://lywang3081.github.io/",
-    "affiliation": "北京大学",
-    "areas": [
-      "Continual Learning"
-    ],
-    "watch": "general",
-    "kind": "paper",
-    "text": "International Journal of Computer Vision ( IJCV ), 2026.",
-    "link": "https://lywang3081.github.io/",
-    "date_str": "",
-    "timestamp": 1790726467.629473,
-    "result_type": "changed",
-    "first_seen": "2026-09-30T00:01:07.631481+00:00"
-  },
-  {
-    "scholar": "王立元",
-    "scholar_url": "https://lywang3081.github.io/",
-    "affiliation": "北京大学",
-    "areas": [
-      "Continual Learning"
-    ],
-    "watch": "general",
-    "kind": "update",
-    "text": "Gengwei Zhang$^{\\ast}$, Liyuan Wang $^{\\ast}$, Guoliang Kang, Ling Chen, Yunchao Wei.",
-    "link": "https://lywang3081.github.io/",
-    "date_str": "",
-    "timestamp": 1790726467.629441,
-    "result_type": "changed",
-    "first_seen": "2026-09-30T00:01:07.631489+00:00"
-  },
-  {
-    "scholar": "王立元",
-    "scholar_url": "https://lywang3081.github.io/",
-    "affiliation": "北京大学",
-    "areas": [
-      "Continual Learning"
-    ],
-    "watch": "general",
-    "kind": "update",
-    "text": "SLCA++: Unleash the Power of Sequential Fine-tuning for Continual Learning with Pre-training.",
-    "link": "https://lywang3081.github.io/",
-    "date_str": "",
-    "timestamp": 1790726467.628445,
-    "result_type": "changed",
-    "first_seen": "2026-09-30T00:01:07.631491+00:00"
-  },
-  {
     "scholar": "苏剑林 - 科学空间",
     "scholar_url": "https://kexue.fm/",
     "affiliation": "Kimi",
@@ -228,22 +180,6 @@
     "timestamp": 1790084265.0,
     "result_type": "rss",
     "first_seen": "2026-09-22T23:25:02.188033+00:00"
-  },
-  {
-    "scholar": "王立元",
-    "scholar_url": "https://lywang3081.github.io/",
-    "affiliation": "北京大学",
-    "areas": [
-      "Continual Learning"
-    ],
-    "watch": "general",
-    "kind": "update",
-    "text": "Brain-inspired Hierarchical Modularity for General Continual Learning.",
-    "link": "https://lywang3081.github.io/",
-    "date_str": "",
-    "timestamp": 1790034347.907008,
-    "result_type": "changed",
-    "first_seen": "2026-09-21T23:45:47.907467+00:00"
   },
   {
     "scholar": "苏剑林 - 科学空间",
@@ -432,9 +368,9 @@
     "first_seen": "2026-09-23T12:27:56.702284+00:00"
   },
   {
-    "scholar": "王立元",
+    "scholar": "王立远",
     "scholar_url": "https://lywang3081.github.io/",
-    "affiliation": "北京大学",
+    "affiliation": "清华大学",
     "areas": [
       "Continual Learning"
     ],

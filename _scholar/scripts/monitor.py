@@ -1087,6 +1087,10 @@ VENUE_PATTERNS = [
     r'acl(?:\'?\d{2,4})?',
     r'aaai(?:\'?\d{2,4})?',
     r'arxiv(?::\d+|\s+20\d\d)?',
+    r'international journal of computer vision(?:\s*\(\s*ijcv\s*\))?',
+    r'ijcv(?:\'?\d{2,4})?',
+    r'nature\s+(?:communications|machine intelligence|biotechnology|methods|machine learning)',
+    r'patterns(?:\s*,\s*cover paper)?',
 ]
 
 
@@ -1138,12 +1142,15 @@ def _is_author_list_line(text: str) -> bool:
     if re.match(r'^(?:\[\d{4}[-/.]\d{1,2}\]|\d{1,2}[-/.]\d{4}|\d{4}[-/.]\d{1,2})', clean):
         return False
 
-    simplified = re.sub(r'\b(?:et al\.?|\(equal contribution\)|\*: core contributors|core contributors|equal advising)\b', '', clean, flags=re.I)
-    simplified = re.sub(r'[\*†‡#\$^\\?0-9]', '', simplified)
+    simplified = re.sub(r'\$[^$]+?\$', '', clean)
+    simplified = re.sub(r'\^\{?[^}]*\}?', '', simplified)
+    simplified = re.sub(r'\\(?:ast|dagger|ddagger|star)\b', '', simplified)
+    simplified = re.sub(r'\b(?:et al\.?|\(equal contribution\)|\*: core contributors|core contributors|equal advising)\b', '', simplified, flags=re.I)
+    simplified = re.sub(r'[\*†‡#\$^\\?0-9\{\}\\]', '', simplified)
     simplified = re.sub(r'\([A-Za-z\s,]+\)', '', simplified)
     simplified = simplified.strip()
 
-    parts = [p.strip() for p in re.split(r'[,、]|\band\b|&', simplified) if p.strip()]
+    parts = [p.strip().rstrip('.') for p in re.split(r'[,、]|\band\b|&', simplified) if p.strip()]
     if len(parts) >= 2:
         name_count = 0
         for p in parts:
