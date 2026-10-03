@@ -54,7 +54,7 @@ X Zhu, H Wu, S Wang, B Zhu, J Ge, J Zhang, L Chen
 ICML 2026, 2026 2026
 Thinking with Images as Continuous Actions: Numerical Visual Chain-of-Thought
 K Zhao, B Zhu, J Zhou, X Zhu, Z Yue, H Zhang
-arXiv preprint arXiv:2602.23959, 2026 2026
-PEA-DPO: Perception-Enhanced Alignment Direct Preference Optimization for MLLMs Alignment
-J Feng, J Wu, X Zhu*, J Wu, X Wang, X He
-ACM MM 2026, 2026 2026
+NeurIPS 2027, 2026 2026
+BiMoGen: Bidirectional Motion-Text Generation via Unified Masked Discrete Diffusion
+W Weng, Y Wu, X Tan, X Zhu, W Zhu, H Wang
+NeurIPS 2027, 2026 2026

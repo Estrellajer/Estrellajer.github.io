@@ -108,7 +108,7 @@
     "date_str": "Sat, 26 Sep 2026 21:56:10 +0800",
     "timestamp": 1790430970.0,
     "result_type": "unchanged",
-    "first_seen": "2026-10-02T05:11:31.867359+00:00"
+    "first_seen": "2026-10-03T00:05:10.414463+00:00"
   },
   {
     "scholar": "xuhuiz.com",
@@ -495,6 +495,22 @@
     "timestamp": 1785542400.0,
     "result_type": "rss",
     "first_seen": "2026-08-01T00:00:00+00:00"
+  },
+  {
+    "scholar": "朱星宇",
+    "scholar_url": "https://scholar.google.com/citations?hl=zh-CN&user=PpqUnAwAAAAJ&view_op=list_works&sortby=pubdate",
+    "affiliation": "NUS",
+    "areas": [
+      "Vision language model"
+    ],
+    "watch": "publications",
+    "kind": "paper",
+    "text": "BiMoGen: Bidirectional Motion-Text Generation via Unified Masked Discrete Diffusion · NeurIPS 2027, 2026, 2026",
+    "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=PpqUnAwAAAAJ&citation_for_view=PpqUnAwAAAAJ:aqlVkmm33-oC",
+    "date_str": "2026",
+    "timestamp": 1780272000.0,
+    "result_type": "changed",
+    "first_seen": "2026-10-03T00:05:10.414119+00:00"
   },
   {
     "scholar": "冯钰捷",
