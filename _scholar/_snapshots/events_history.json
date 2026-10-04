@@ -1,5 +1,37 @@
 [
   {
+    "scholar": "YY Blog",
+    "scholar_url": "https://yqqy.top/blog.html",
+    "affiliation": "",
+    "areas": [
+      "Tool"
+    ],
+    "watch": "blog",
+    "kind": "post",
+    "text": "日常记录，零零散散啥都记",
+    "link": "https://yqqy.top/blog.html",
+    "date_str": "",
+    "timestamp": 1791112302.653714,
+    "result_type": "changed",
+    "first_seen": "2026-10-04T11:11:42.663798+00:00"
+  },
+  {
+    "scholar": "YY Blog",
+    "scholar_url": "https://yqqy.top/blog.html",
+    "affiliation": "",
+    "areas": [
+      "Tool"
+    ],
+    "watch": "blog",
+    "kind": "post",
+    "text": "博客笔记 ​",
+    "link": "https://yqqy.top/blog.html",
+    "date_str": "",
+    "timestamp": 1791112302.653281,
+    "result_type": "changed",
+    "first_seen": "2026-10-04T11:11:42.663805+00:00"
+  },
+  {
     "scholar": "DaNing Blog",
     "scholar_url": "https://adaning.github.io/",
     "affiliation": "东北大学",
@@ -842,6 +874,115 @@
     "first_seen": "2026-10-04T08:46:36.704567+00:00"
   },
   {
+    "scholar": "唐安可",
+    "scholar_url": "https://tanganke.github.io/publications/",
+    "affiliation": "清华大学",
+    "areas": [
+      "Model Merging"
+    ],
+    "watch": "publications",
+    "kind": "paper",
+    "text": "In The Fourteenth International Conference on Learning Representations , 2026",
+    "link": "https://tanganke.github.io/publications/",
+    "date_str": "2026",
+    "timestamp": 1780272000.0,
+    "result_type": "unchanged",
+    "first_seen": "2026-10-04T11:11:42.664287+00:00",
+    "sub_items": [
+      {
+        "text": "@inproceedings { yang2026mergopt , title = {MergOPT: A Merge-Aware Optimizer for Robust Model Merging} , author = {Yang, Enneng and Yang, Q and Wang, P and Tang, Anke and Guo, Guibing and Cao, Xiaochun and Shen, Li} , booktitle = {The Fourteenth International Conference on Learning Representations} , year = {2026} , }",
+        "link": "https://tanganke.github.io/publications/",
+        "kind": "paper"
+      },
+      {
+        "text": "arXiv preprint arXiv:2601.21690 , 2026",
+        "link": "https://tanganke.github.io/publications/",
+        "kind": "paper"
+      },
+      {
+        "text": "@article { li2026understanding , title = {A Unified Generalization Framework for Model Merging: Trade-offs, Non-Linearity, and Scaling Laws} , author = {Li, Qinglun and Tang, Anke and Zhang, Miao and Wang, Mengzhu and Yin, Quanjun and Shen, Li} , journal = {arXiv preprint arXiv:2601.21690} , year = {2026} , }",
+        "link": "https://tanganke.github.io/publications/",
+        "kind": "paper"
+      }
+    ]
+  },
+  {
+    "scholar": "Hao Zhu (堪村无业土博鼠)",
+    "scholar_url": "https://scholar.google.com/citations?hl=en&user=cpee-44AAAAJ&view_op=list_works&sortby=pubdate",
+    "affiliation": "ANU / CSIRO",
+    "areas": [
+      "Continual Learning"
+    ],
+    "watch": "publications",
+    "kind": "paper",
+    "text": "When Gradient Boosting Meets Adaption: Exploring Weak Learner Principle for Parameter Efficient Fine-tuning · 32nd SIGKDD Conference on Knowledge Discovery and Data Mining, 2026, 2026, 2026",
+    "link": "https://scholar.google.com/citations?hl=en&user=cpee-44AAAAJ&view_op=list_works&sortby=pubdate",
+    "date_str": "2026",
+    "timestamp": 1780272000.0,
+    "result_type": "unchanged",
+    "first_seen": "2026-10-04T10:33:23.486861+00:00",
+    "sub_items": [
+      {
+        "text": "FLASH: Fast Generative Retrieval via Autoregressive Semantic Hashing with Provably Distance Bounds · 32nd SIGKDD Conference on Knowledge Discovery and Data Mining, 2026, 2026, 2026",
+        "link": "https://scholar.google.com/citations?hl=en&user=cpee-44AAAAJ&view_op=list_works&sortby=pubdate",
+        "kind": "paper"
+      },
+      {
+        "text": "Federated Domain Generalization for Time-Series Classification via Dynamics-to-Domain Generation · 32nd SIGKDD Conference on Knowledge Discovery and Data Mining, 2026, 2026, 2026",
+        "link": "https://scholar.google.com/citations?hl=en&user=cpee-44AAAAJ&view_op=list_works&sortby=pubdate",
+        "kind": "paper"
+      },
+      {
+        "text": "Machine unlearning via task simplex arithmetic · Advances in Neural Information Processing Systems 38, 166676-166707, 2026, 2026",
+        "link": "https://scholar.google.com/citations?hl=en&user=cpee-44AAAAJ&view_op=list_works&sortby=pubdate",
+        "kind": "paper"
+      },
+      {
+        "text": "CrossSpectra: exploiting cross-layer smoothness for parameter-efficient fine-tuning · Advances in Neural Information Processing Systems 38, 141383-141405, 2026, 2026",
+        "link": "https://scholar.google.com/citations?hl=en&user=cpee-44AAAAJ&view_op=list_works&sortby=pubdate",
+        "kind": "paper"
+      }
+    ]
+  },
+  {
+    "scholar": "袁洋",
+    "scholar_url": "https://scholar.google.com/citations?hl=en&user=7o4wtKEAAAAJ&view_op=list_works&sortby=pubdate",
+    "affiliation": "Tsinghua University",
+    "areas": [
+      "范畴论"
+    ],
+    "watch": "publications",
+    "kind": "paper",
+    "text": "Calculus of intelligence: A topos-monadic framework for agentic workflows · iFuture, 2026, 2026",
+    "link": "https://scholar.google.com/citations?hl=en&user=7o4wtKEAAAAJ&view_op=list_works&sortby=pubdate",
+    "date_str": "2026",
+    "timestamp": 1780272000.0,
+    "result_type": "unchanged",
+    "first_seen": "2026-10-04T10:33:23.486867+00:00",
+    "sub_items": [
+      {
+        "text": "Tensor product attention is all you need · Advances in Neural Information Processing Systems 38, 112206-112251, 2026, 2026",
+        "link": "https://scholar.google.com/citations?hl=en&user=7o4wtKEAAAAJ&view_op=list_works&sortby=pubdate",
+        "kind": "paper"
+      },
+      {
+        "text": "Group representational position encoding · International Conference on Learning Representations 2026, 56496-56519, 2026, 2026",
+        "link": "https://scholar.google.com/citations?hl=en&user=7o4wtKEAAAAJ&view_op=list_works&sortby=pubdate",
+        "kind": "paper"
+      },
+      {
+        "text": "On the design of kl-regularized policy gradient algorithms for llm reasoning · International Conference on Learning Representations 2026, 88357-88395, 2026, 2026",
+        "link": "https://scholar.google.com/citations?hl=en&user=7o4wtKEAAAAJ&view_op=list_works&sortby=pubdate",
+        "kind": "paper"
+      },
+      {
+        "text": "Probing the Lack of Stable Internal Beliefs in LLMs · arXiv preprint arXiv:2603.25187, 2026, 2026",
+        "link": "https://scholar.google.com/citations?hl=en&user=7o4wtKEAAAAJ&view_op=list_works&sortby=pubdate",
+        "kind": "paper"
+      }
+    ]
+  },
+  {
     "scholar": "Yifei Zhang Homepage",
     "scholar_url": "https://scholar.google.com/citations?hl=en&user=DmwXESQAAAAJ&view_op=list_works&sortby=pubdate",
     "affiliation": "港中文",
@@ -928,44 +1069,6 @@
     ]
   },
   {
-    "scholar": "袁洋",
-    "scholar_url": "https://scholar.google.com/citations?hl=en&user=7o4wtKEAAAAJ&view_op=list_works&sortby=pubdate",
-    "affiliation": "Tsinghua University",
-    "areas": [
-      "范畴论"
-    ],
-    "watch": "publications",
-    "kind": "paper",
-    "text": "Calculus of intelligence: A topos-monadic framework for agentic workflows · iFuture, 2026, 2026",
-    "link": "https://scholar.google.com/citations?hl=en&user=7o4wtKEAAAAJ&view_op=list_works&sortby=pubdate",
-    "date_str": "2026",
-    "timestamp": 1780272000.0,
-    "result_type": "unchanged",
-    "first_seen": "2026-10-04T10:33:23.486867+00:00",
-    "sub_items": [
-      {
-        "text": "Tensor product attention is all you need · Advances in Neural Information Processing Systems 38, 112206-112251, 2026, 2026",
-        "link": "https://scholar.google.com/citations?hl=en&user=7o4wtKEAAAAJ&view_op=list_works&sortby=pubdate",
-        "kind": "paper"
-      },
-      {
-        "text": "Group representational position encoding · International Conference on Learning Representations 2026, 56496-56519, 2026, 2026",
-        "link": "https://scholar.google.com/citations?hl=en&user=7o4wtKEAAAAJ&view_op=list_works&sortby=pubdate",
-        "kind": "paper"
-      },
-      {
-        "text": "On the design of kl-regularized policy gradient algorithms for llm reasoning · International Conference on Learning Representations 2026, 88357-88395, 2026, 2026",
-        "link": "https://scholar.google.com/citations?hl=en&user=7o4wtKEAAAAJ&view_op=list_works&sortby=pubdate",
-        "kind": "paper"
-      },
-      {
-        "text": "Probing the Lack of Stable Internal Beliefs in LLMs · arXiv preprint arXiv:2603.25187, 2026, 2026",
-        "link": "https://scholar.google.com/citations?hl=en&user=7o4wtKEAAAAJ&view_op=list_works&sortby=pubdate",
-        "kind": "paper"
-      }
-    ]
-  },
-  {
     "scholar": "📚 plmblog",
     "scholar_url": "https://plmsmile.github.io/posts/archive.html",
     "affiliation": "Alibaba",
@@ -980,44 +1083,6 @@
     "timestamp": 1780272000.0,
     "result_type": "unchanged",
     "first_seen": "2026-10-04T10:33:23.486857+00:00"
-  },
-  {
-    "scholar": "Hao Zhu (堪村无业土博鼠)",
-    "scholar_url": "https://scholar.google.com/citations?hl=en&user=cpee-44AAAAJ&view_op=list_works&sortby=pubdate",
-    "affiliation": "ANU / CSIRO",
-    "areas": [
-      "Continual Learning"
-    ],
-    "watch": "publications",
-    "kind": "paper",
-    "text": "When Gradient Boosting Meets Adaption: Exploring Weak Learner Principle for Parameter Efficient Fine-tuning · 32nd SIGKDD Conference on Knowledge Discovery and Data Mining, 2026, 2026, 2026",
-    "link": "https://scholar.google.com/citations?hl=en&user=cpee-44AAAAJ&view_op=list_works&sortby=pubdate",
-    "date_str": "2026",
-    "timestamp": 1780272000.0,
-    "result_type": "unchanged",
-    "first_seen": "2026-10-04T10:33:23.486861+00:00",
-    "sub_items": [
-      {
-        "text": "FLASH: Fast Generative Retrieval via Autoregressive Semantic Hashing with Provably Distance Bounds · 32nd SIGKDD Conference on Knowledge Discovery and Data Mining, 2026, 2026, 2026",
-        "link": "https://scholar.google.com/citations?hl=en&user=cpee-44AAAAJ&view_op=list_works&sortby=pubdate",
-        "kind": "paper"
-      },
-      {
-        "text": "Federated Domain Generalization for Time-Series Classification via Dynamics-to-Domain Generation · 32nd SIGKDD Conference on Knowledge Discovery and Data Mining, 2026, 2026, 2026",
-        "link": "https://scholar.google.com/citations?hl=en&user=cpee-44AAAAJ&view_op=list_works&sortby=pubdate",
-        "kind": "paper"
-      },
-      {
-        "text": "Machine unlearning via task simplex arithmetic · Advances in Neural Information Processing Systems 38, 166676-166707, 2026, 2026",
-        "link": "https://scholar.google.com/citations?hl=en&user=cpee-44AAAAJ&view_op=list_works&sortby=pubdate",
-        "kind": "paper"
-      },
-      {
-        "text": "CrossSpectra: exploiting cross-layer smoothness for parameter-efficient fine-tuning · Advances in Neural Information Processing Systems 38, 141383-141405, 2026, 2026",
-        "link": "https://scholar.google.com/citations?hl=en&user=cpee-44AAAAJ&view_op=list_works&sortby=pubdate",
-        "kind": "paper"
-      }
-    ]
   },
   {
     "scholar": "张天远",
@@ -1413,6 +1478,38 @@
     "first_seen": "2025-07-13T00:00:00+00:00"
   },
   {
+    "scholar": "Hao Zhu (堪村无业土博鼠)",
+    "scholar_url": "https://scholar.google.com/citations?hl=en&user=cpee-44AAAAJ&view_op=list_works&sortby=pubdate",
+    "affiliation": "ANU / CSIRO",
+    "areas": [
+      "Continual Learning"
+    ],
+    "watch": "publications",
+    "kind": "paper",
+    "text": "Robustifying Zero-Shot Vision Language Models by Subspaces Alignment · International Conference on Computer Vision (ICCV 2025), 2025, 2025",
+    "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=cpee-44AAAAJ&sortby=pubdate&citation_for_view=cpee-44AAAAJ:4OULZ7Gr8RgC",
+    "date_str": "2025",
+    "timestamp": 1748736000.0,
+    "result_type": "changed",
+    "first_seen": "2026-10-04T11:11:42.663808+00:00"
+  },
+  {
+    "scholar": "袁洋",
+    "scholar_url": "https://scholar.google.com/citations?hl=en&user=7o4wtKEAAAAJ&view_op=list_works&sortby=pubdate",
+    "affiliation": "Tsinghua University",
+    "areas": [
+      "范畴论"
+    ],
+    "watch": "publications",
+    "kind": "paper",
+    "text": "Clarifying before reasoning: A coq prover with structural context · arXiv preprint arXiv:2507.02541, 2025, 2025",
+    "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=7o4wtKEAAAAJ&sortby=pubdate&citation_for_view=7o4wtKEAAAAJ:xtRiw3GOFMkC",
+    "date_str": "2025",
+    "timestamp": 1748736000.0,
+    "result_type": "changed",
+    "first_seen": "2026-10-04T10:38:56.347950+00:00"
+  },
+  {
     "scholar": "Yifei Zhang Homepage",
     "scholar_url": "https://scholar.google.com/citations?hl=en&user=DmwXESQAAAAJ&view_op=list_works&sortby=pubdate",
     "affiliation": "港中文",
@@ -1539,22 +1636,6 @@
     "timestamp": 1748736000.0,
     "result_type": "changed",
     "first_seen": "2026-10-04T10:38:56.347947+00:00"
-  },
-  {
-    "scholar": "袁洋",
-    "scholar_url": "https://scholar.google.com/citations?hl=en&user=7o4wtKEAAAAJ&view_op=list_works&sortby=pubdate",
-    "affiliation": "Tsinghua University",
-    "areas": [
-      "范畴论"
-    ],
-    "watch": "publications",
-    "kind": "paper",
-    "text": "Clarifying before reasoning: A coq prover with structural context · arXiv preprint arXiv:2507.02541, 2025, 2025",
-    "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=7o4wtKEAAAAJ&sortby=pubdate&citation_for_view=7o4wtKEAAAAJ:xtRiw3GOFMkC",
-    "date_str": "2025",
-    "timestamp": 1748736000.0,
-    "result_type": "changed",
-    "first_seen": "2026-10-04T10:38:56.347950+00:00"
   },
   {
     "scholar": "Zixuan Li",
