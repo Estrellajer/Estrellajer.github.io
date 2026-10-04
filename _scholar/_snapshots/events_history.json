@@ -452,6 +452,34 @@
     "first_seen": "2026-09-23T12:27:56.702284+00:00"
   },
   {
+    "scholar": "朱星宇",
+    "scholar_url": "https://scholar.google.com/citations?hl=zh-CN&user=PpqUnAwAAAAJ&view_op=list_works&sortby=pubdate",
+    "affiliation": "NUS",
+    "areas": [
+      "Vision language model"
+    ],
+    "watch": "publications",
+    "kind": "paper",
+    "text": "Thinking with Images as Continuous Actions: Numerical Visual Chain-of-Thought · NeurIPS 2026 Oral",
+    "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=PpqUnAwAAAAJ&citation_for_view=PpqUnAwAAAAJ:aqlVkmm33-oC",
+    "date_str": "2026-09",
+    "timestamp": 1788220800.0,
+    "result_type": "changed",
+    "first_seen": "2026-10-03T00:05:10.414119+00:00",
+    "sub_items": [
+      {
+        "text": "BiMoGen: Bidirectional Motion-Text Generation via Unified Masked Discrete Diffusion · NeurIPS 2026",
+        "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=PpqUnAwAAAAJ&citation_for_view=PpqUnAwAAAAJ:aqlVkmm33-oC",
+        "kind": "paper"
+      },
+      {
+        "text": "Robustifying Vision-Language Models via Test-Time Prompt Adaptation · ICML 2026",
+        "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=PpqUnAwAAAAJ&citation_for_view=PpqUnAwAAAAJ:aqlVkmm33-oC",
+        "kind": "paper"
+      }
+    ]
+  },
+  {
     "scholar": "庄辉平",
     "scholar_url": "https://zhuanghp.github.io/",
     "affiliation": "华南理工大学",
@@ -532,34 +560,6 @@
     "timestamp": 1788220800.0,
     "result_type": "unchanged",
     "first_seen": "2026-10-04T08:46:36.704571+00:00"
-  },
-  {
-    "scholar": "朱星宇",
-    "scholar_url": "https://scholar.google.com/citations?hl=zh-CN&user=PpqUnAwAAAAJ&view_op=list_works&sortby=pubdate",
-    "affiliation": "NUS",
-    "areas": [
-      "Vision language model"
-    ],
-    "watch": "publications",
-    "kind": "paper",
-    "text": "Thinking with Images as Continuous Actions: Numerical Visual Chain-of-Thought · NeurIPS 2026 Oral",
-    "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=PpqUnAwAAAAJ&citation_for_view=PpqUnAwAAAAJ:aqlVkmm33-oC",
-    "date_str": "2026-09",
-    "timestamp": 1788220800.0,
-    "result_type": "changed",
-    "first_seen": "2026-10-03T00:05:10.414119+00:00",
-    "sub_items": [
-      {
-        "text": "BiMoGen: Bidirectional Motion-Text Generation via Unified Masked Discrete Diffusion · NeurIPS 2026",
-        "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=PpqUnAwAAAAJ&citation_for_view=PpqUnAwAAAAJ:aqlVkmm33-oC",
-        "kind": "paper"
-      },
-      {
-        "text": "Robustifying Vision-Language Models via Test-Time Prompt Adaptation · ICML 2026",
-        "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=PpqUnAwAAAAJ&citation_for_view=PpqUnAwAAAAJ:aqlVkmm33-oC",
-        "kind": "paper"
-      }
-    ]
   },
   {
     "scholar": "Xiongda Blog",
@@ -735,6 +735,70 @@
     "timestamp": 1782864000.0,
     "result_type": "unchanged",
     "first_seen": "2026-10-04T08:46:36.704567+00:00"
+  },
+  {
+    "scholar": "朱星宇",
+    "scholar_url": "https://scholar.google.com/citations?hl=zh-CN&user=PpqUnAwAAAAJ&view_op=list_works&sortby=pubdate",
+    "affiliation": "NUS",
+    "areas": [
+      "Vision language model"
+    ],
+    "watch": "publications",
+    "kind": "paper",
+    "text": "PEA-DPO: Perception-Enhanced Alignment Direct Preference Optimization for MLLMs Alignment · ACM MM 2026, 2026, 2026",
+    "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=PpqUnAwAAAAJ&sortby=pubdate&citation_for_view=PpqUnAwAAAAJ:qxL8FJ1GzNcC",
+    "date_str": "2026",
+    "timestamp": 1780272000.0,
+    "result_type": "changed",
+    "first_seen": "2026-10-04T09:00:45.345182+00:00"
+  },
+  {
+    "scholar": "朱星宇",
+    "scholar_url": "https://scholar.google.com/citations?hl=zh-CN&user=PpqUnAwAAAAJ&view_op=list_works&sortby=pubdate",
+    "affiliation": "NUS",
+    "areas": [
+      "Vision language model"
+    ],
+    "watch": "publications",
+    "kind": "paper",
+    "text": "LPEdit: Locality-Preserving Knowledge Editing for MultiModal Large Language Models · Proceedings of the ACM Web Conference 2026, 8425-8428, 2026, 2026",
+    "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=PpqUnAwAAAAJ&sortby=pubdate&citation_for_view=PpqUnAwAAAAJ:Zph67rFs4hoC",
+    "date_str": "2026",
+    "timestamp": 1780272000.0,
+    "result_type": "changed",
+    "first_seen": "2026-10-04T09:00:45.345186+00:00"
+  },
+  {
+    "scholar": "朱星宇",
+    "scholar_url": "https://scholar.google.com/citations?hl=zh-CN&user=PpqUnAwAAAAJ&view_op=list_works&sortby=pubdate",
+    "affiliation": "NUS",
+    "areas": [
+      "Vision language model"
+    ],
+    "watch": "publications",
+    "kind": "paper",
+    "text": "Adapting Point Cloud Analysis via Multimodal Bayesian Distribution Learning · CVPR 2026, 2026, 2026",
+    "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=PpqUnAwAAAAJ&sortby=pubdate&citation_for_view=PpqUnAwAAAAJ:kNdYIx-mwKoC",
+    "date_str": "2026",
+    "timestamp": 1780272000.0,
+    "result_type": "changed",
+    "first_seen": "2026-10-04T09:00:45.345188+00:00"
+  },
+  {
+    "scholar": "朱星宇",
+    "scholar_url": "https://scholar.google.com/citations?hl=zh-CN&user=PpqUnAwAAAAJ&view_op=list_works&sortby=pubdate",
+    "affiliation": "NUS",
+    "areas": [
+      "Vision language model"
+    ],
+    "watch": "publications",
+    "kind": "paper",
+    "text": "Hybrid Granularity Distribution Estimation for Few-Shot Learning: Statistics Transfer From Categories and Instances · IEEE Transactions on Image Processing, 2026, 2026",
+    "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=PpqUnAwAAAAJ&sortby=pubdate&citation_for_view=PpqUnAwAAAAJ:hqOjcs7Dif8C",
+    "date_str": "2026",
+    "timestamp": 1780272000.0,
+    "result_type": "changed",
+    "first_seen": "2026-10-04T09:00:45.345190+00:00"
   },
   {
     "scholar": "王子峰",
