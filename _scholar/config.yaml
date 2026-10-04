@@ -61,10 +61,11 @@ scholars:
     affiliation: ""
     watch: news
   - name: Home - colah's blog
-    url: https://colah.github.io/
+    url: https://transformer-circuits.pub/
+    rss_url: https://transformer-circuits.pub/feed.xml
     category: blog
-    site_type: github_pages
-    selectors: [article, main, .post-content, .entry-content, .content]
+    site_type: personal_website
+    selectors: ["a.paper", "a.note", main, .content]
     remove_selectors: [script, style, nav, footer, header, aside, .sidebar, .comments]
     labels: [blog]
     research_areas: [Interpretability]
@@ -135,15 +136,15 @@ scholars:
     affiliation: "北京邮电大学"
     watch: blog
   - name: YY Blog
-    url: https://yqqy.top/nav
+    url: https://yqqy.top/blog.html
     category: blog
     site_type: personal_website
-    selectors: [main, .content, "#content", article]
+    selectors: [".VPLink", main, .content, "#content", article]
     remove_selectors: [script, style, nav, footer, header, aside, .sidebar, .comments]
     labels: [blog]
     research_areas: [Tool]
     affiliation: ""
-    watch: general
+    watch: blog
   - name: Xiongda Blog
     url: https://www.xxrbear.cn/
     rss_url: https://www.xxrbear.cn/index.xml
@@ -157,15 +158,14 @@ scholars:
     watch: blog
   - name: K.I.S.S
     url: https://bigeagle.me/
-    rss_url: https://bigeagle.me/index.xml
     category: blog
     site_type: personal_website
     selectors: [main, .content, "#content", article]
     remove_selectors: [script, style, nav, footer, header, aside, .sidebar, .comments]
     labels: [blog]
-    research_areas: [LLM]
-    affiliation: "Kimi"
-    watch: general
+    research_areas: [LLM System]
+    affiliation: "Moonshot AI"
+    watch: blog
   - name: Jyo Pari
     url: https://jyopari.github.io/
     category: HomePage

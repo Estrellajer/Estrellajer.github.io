@@ -1948,6 +1948,77 @@ def load_events_history() -> list:
                 "result_type": "changed",
                 "first_seen": "2025-07-13T00:00:00+00:00",
             })
+        if "Home - colah's blog" not in names_in_filtered:
+            filtered_data.append({
+                "scholar": "Home - colah's blog",
+                "scholar_url": "https://transformer-circuits.pub/",
+                "affiliation": "Anthropic",
+                "areas": ["Interpretability"],
+                "watch": "blog",
+                "kind": "paper",
+                "text": "Characterizing interference weights in a tiny language model",
+                "link": "https://transformer-circuits.pub/2026/interference_effectiveness_helpfulness/index.html",
+                "date_str": "2026-08-21",
+                "timestamp": datetime(2026, 8, 21, tzinfo=timezone.utc).timestamp(),
+                "result_type": "rss",
+                "first_seen": "2026-08-21T00:00:00+00:00",
+                "sub_items": [
+                    {
+                        "text": "Verbalizable Representations Form a Global Workspace in Language Models",
+                        "link": "https://transformer-circuits.pub/2026/workspace/index.html",
+                        "kind": "paper",
+                    },
+                    {
+                        "text": "Circuits Updates — June 2026",
+                        "link": "https://transformer-circuits.pub/2026/june-update/index.html",
+                        "kind": "post",
+                    },
+                ],
+            })
+        if "K.I.S.S" not in names_in_filtered:
+            filtered_data.append({
+                "scholar": "K.I.S.S",
+                "scholar_url": "https://bigeagle.me/",
+                "affiliation": "Moonshot AI",
+                "areas": ["LLM System"],
+                "watch": "blog",
+                "kind": "post",
+                "text": "身在 Kimi 的 800 天",
+                "link": "https://github.com/bigeagle/bigeagle.me/blob/master/content/post/20260404-800-days-at-kimi/index.md",
+                "date_str": "2026-04-04",
+                "timestamp": datetime(2026, 4, 4, tzinfo=timezone.utc).timestamp(),
+                "result_type": "changed",
+                "first_seen": "2026-04-04T00:00:00+00:00",
+                "sub_items": [
+                    {
+                        "text": "写在 Kimi K2 发布之后：再也不仅仅是 ChatBot",
+                        "link": "https://github.com/bigeagle/bigeagle.me/blob/master/content/post/20250713-kimi-k2/index.md",
+                        "kind": "post",
+                    }
+                ],
+            })
+        if "YY Blog" not in names_in_filtered:
+            filtered_data.append({
+                "scholar": "YY Blog",
+                "scholar_url": "https://yqqy.top/blog.html",
+                "affiliation": "",
+                "areas": ["Tool"],
+                "watch": "blog",
+                "kind": "post",
+                "text": "夜莺v8执行自定义脚本并告警通知",
+                "link": "https://yqqy.top/blog/2025/nightingale-monitor-notification",
+                "date_str": "2025-11-20",
+                "timestamp": datetime(2025, 11, 20, tzinfo=timezone.utc).timestamp(),
+                "result_type": "changed",
+                "first_seen": "2025-11-20T00:00:00+00:00",
+                "sub_items": [
+                    {
+                        "text": "使用confluent-kafka-go包遇到的cgo问题",
+                        "link": "https://yqqy.top/blog/2025/confluent-kafka-go-cgo-build",
+                        "kind": "post",
+                    }
+                ],
+            })
         if "DaNing Blog" not in names_in_filtered:
             filtered_data.append({
                 "scholar": "DaNing Blog",

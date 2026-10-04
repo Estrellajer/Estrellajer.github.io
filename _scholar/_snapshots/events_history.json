@@ -578,6 +578,34 @@
     ]
   },
   {
+    "scholar": "Home - colah's blog",
+    "scholar_url": "https://transformer-circuits.pub/",
+    "affiliation": "Anthropic",
+    "areas": [
+      "Interpretability"
+    ],
+    "watch": "blog",
+    "kind": "paper",
+    "text": "Characterizing interference weights in a tiny language model",
+    "link": "https://transformer-circuits.pub/2026/interference_effectiveness_helpfulness/index.html",
+    "date_str": "2026-08-21",
+    "timestamp": 1787270400.0,
+    "result_type": "rss",
+    "first_seen": "2026-08-21T00:00:00+00:00",
+    "sub_items": [
+      {
+        "text": "Verbalizable Representations Form a Global Workspace in Language Models",
+        "link": "https://transformer-circuits.pub/2026/workspace/index.html",
+        "kind": "paper"
+      },
+      {
+        "text": "Circuits Updates — June 2026",
+        "link": "https://transformer-circuits.pub/2026/june-update/index.html",
+        "kind": "post"
+      }
+    ]
+  },
+  {
     "scholar": "Yuteng Shen(沉宇腾)",
     "scholar_url": "https://syt-nju.github.io/writing/",
     "affiliation": "南京大学",
@@ -812,39 +840,6 @@
     "timestamp": 1782864000.0,
     "result_type": "unchanged",
     "first_seen": "2026-10-04T08:46:36.704567+00:00"
-  },
-  {
-    "scholar": "唐安可",
-    "scholar_url": "https://tanganke.github.io/publications/",
-    "affiliation": "清华大学",
-    "areas": [
-      "Model Merging"
-    ],
-    "watch": "publications",
-    "kind": "paper",
-    "text": "In The Fourteenth International Conference on Learning Representations , 2026",
-    "link": "https://tanganke.github.io/publications/",
-    "date_str": "2026",
-    "timestamp": 1780272000.0,
-    "result_type": "unchanged",
-    "first_seen": "2026-10-04T10:38:56.348595+00:00",
-    "sub_items": [
-      {
-        "text": "@inproceedings { yang2026mergopt , title = {MergOPT: A Merge-Aware Optimizer for Robust Model Merging} , author = {Yang, Enneng and Yang, Q and Wang, P and Tang, Anke and Guo, Guibing and Cao, Xiaochun and Shen, Li} , booktitle = {The Fourteenth International Conference on Learning Representations} , year = {2026} , }",
-        "link": "https://tanganke.github.io/publications/",
-        "kind": "paper"
-      },
-      {
-        "text": "arXiv preprint arXiv:2601.21690 , 2026",
-        "link": "https://tanganke.github.io/publications/",
-        "kind": "paper"
-      },
-      {
-        "text": "@article { li2026understanding , title = {A Unified Generalization Framework for Model Merging: Trade-offs, Non-Linearity, and Scaling Laws} , author = {Li, Qinglun and Tang, Anke and Zhang, Miao and Wang, Mengzhu and Yin, Quanjun and Shen, Li} , journal = {arXiv preprint arXiv:2601.21690} , year = {2026} , }",
-        "link": "https://tanganke.github.io/publications/",
-        "kind": "paper"
-      }
-    ]
   },
   {
     "scholar": "Yifei Zhang Homepage",
@@ -1172,6 +1167,29 @@
     "first_seen": "2026-10-04T08:46:36.704560+00:00"
   },
   {
+    "scholar": "K.I.S.S",
+    "scholar_url": "https://bigeagle.me/",
+    "affiliation": "Moonshot AI",
+    "areas": [
+      "LLM System"
+    ],
+    "watch": "blog",
+    "kind": "post",
+    "text": "身在 Kimi 的 800 天",
+    "link": "https://github.com/bigeagle/bigeagle.me/blob/master/content/post/20260404-800-days-at-kimi/index.md",
+    "date_str": "2026-04-04",
+    "timestamp": 1775260800.0,
+    "result_type": "changed",
+    "first_seen": "2026-04-04T00:00:00+00:00",
+    "sub_items": [
+      {
+        "text": "写在 Kimi K2 发布之后：再也不仅仅是 ChatBot",
+        "link": "https://github.com/bigeagle/bigeagle.me/blob/master/content/post/20250713-kimi-k2/index.md",
+        "kind": "post"
+      }
+    ]
+  },
+  {
     "scholar": "冯钰捷",
     "scholar_url": "https://woodscene.github.io/",
     "affiliation": "香港理工大学",
@@ -1283,6 +1301,29 @@
     "timestamp": 1764115200.0,
     "result_type": "rss_no_change",
     "first_seen": "2026-10-04T08:46:36.704528+00:00"
+  },
+  {
+    "scholar": "YY Blog",
+    "scholar_url": "https://yqqy.top/blog.html",
+    "affiliation": "",
+    "areas": [
+      "Tool"
+    ],
+    "watch": "blog",
+    "kind": "post",
+    "text": "夜莺v8执行自定义脚本并告警通知",
+    "link": "https://yqqy.top/blog/2025/nightingale-monitor-notification",
+    "date_str": "2025-11-20",
+    "timestamp": 1763596800.0,
+    "result_type": "changed",
+    "first_seen": "2025-11-20T00:00:00+00:00",
+    "sub_items": [
+      {
+        "text": "使用confluent-kafka-go包遇到的cgo问题",
+        "link": "https://yqqy.top/blog/2025/confluent-kafka-go-cgo-build",
+        "kind": "post"
+      }
+    ]
   },
   {
     "scholar": "唐安可",
