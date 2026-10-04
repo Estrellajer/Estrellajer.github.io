@@ -30,7 +30,51 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/projects/";
           },
-        },{id: "post-agentic-rl-综述-工具调用-信用分配与训练稳定性-从-rap-到-aepo",
+        },{id: "post-auto-research-下-can-we-have-kaiming-as-personal-advisor",
+        
+          title: "Auto Research（下）：Can We have Kaiming as Personal Advisor",
+        
+        description: "当 AI Advisor 介入科研闭环：探索模型自主迭代与专家反馈的真实边界。",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/auto-research-part2/";
+          
+        },
+      },{id: "post-privileged-information-与-dynamic-rubrics-七篇-post-training-论文串读与实测",
+        
+          title: "Privileged Information 与 Dynamic Rubrics：七篇 Post-Training 论文串读与实测",
+        
+        description: "七篇 Post-Training 论文串读：在 Outcome Reward 与 Full Reference 之间，如何用特权信息与动态量规打破困境。",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/privileged-information-dynamic-rubrics/";
+          
+        },
+      },{id: "post-auto-research-上-1-万块一篇-ccf-a-理想与现实",
+        
+          title: "Auto Research（上）：1 万块一篇 CCF-A？理想与现实",
+        
+        description: "从成本、生成机制到现实困境：Auto Research 离全自动科研还有多远？",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/auto-research-part1/";
+          
+        },
+      },{id: "post-on-policy-self-distillation-opsd-的机制困境与-2026-上半年改进工作复盘",
+        
+          title: "On-Policy Self-Distillation (OPSD) 的机制困境与 2026 上半年改进工作复盘",
+        
+        description: "从信息不对称、容量间隙到轨迹修正与信号净化：系统复盘 2026 上半年 On-Policy Self-Distillation (OPSD) 的核心痛点与改进工作。",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/opsd-pitfalls-and-advances/";
+          
+        },
+      },{id: "post-agentic-rl-综述-工具调用-信用分配与训练稳定性-从-rap-到-aepo",
         
           title: "Agentic RL 综述：工具调用、信用分配与训练稳定性——从 RAP 到 AEPO",
         
@@ -74,11 +118,11 @@ ninja.data = [{
             window.location.href = "/blog/2026/cli-in-ssh/";
           
         },
-      },{id: "post-task-vector-in-multimodal-in-context-learning-论文阅读笔记",
+      },{id: "post-从-task-vector-到-activation-steering-我们离理想的上下文学习还有多远",
         
-          title: "Task Vector in Multimodal In-Context Learning 论文阅读笔记",
+          title: "从 Task Vector 到 Activation Steering：我们离理想的上下文学习还有多远？",
         
-        description: "Notes on task vectors, function vectors, in-context vectors, and multimodal in-context learning.",
+        description: "顺着技术演进路线，从 task vector 一路走到 activation steering，看我们离理想的上下文学习还有多远。",
         section: "Posts",
         handler: () => {
           
@@ -94,17 +138,6 @@ ninja.data = [{
         handler: () => {
           
             window.location.href = "/blog/2026/leetcode-notes/";
-          
-        },
-      },{id: "post-self-distillation论文阅读",
-        
-          title: "Self-Distillation论文阅读",
-        
-        description: "Notes on Papers about Self Distillation",
-        section: "Posts",
-        handler: () => {
-          
-            window.location.href = "/blog/2026/self-distillation/";
           
         },
       },{id: "post-llm八股学习与手撕",
