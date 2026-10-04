@@ -113,6 +113,7 @@ scholars:
     watch: blog
   - name: Tobias Lee Blog
     url: https://tobiaslee.top/
+    rss_url: https://tobiaslee.top/atom.xml
     category: blog
     site_type: personal_website
     selectors: [main, .content, "#content", article]
@@ -120,10 +121,11 @@ scholars:
     labels: [blog]
     research_areas: [LLM]
     affiliation: "Xiaomi Mimo"
-    watch: general
+    watch: blog
 
-  - name: 🙋🏻‍♂️关于 | Chenxu's Blog
-    url: https://www.chenxutalk.top/about/
+  - name: Chenxu's Blog
+    url: https://www.chenxutalk.top/
+    rss_url: https://www.chenxutalk.top/index.xml
     category: blog
     site_type: personal_website
     selectors: [main, .content, "#content", article]
@@ -131,7 +133,7 @@ scholars:
     labels: [blog]
     research_areas: []
     affiliation: "北京邮电大学"
-    watch: general
+    watch: blog
   - name: YY Blog
     url: https://yqqy.top/nav
     category: blog
@@ -144,6 +146,7 @@ scholars:
     watch: general
   - name: Xiongda Blog
     url: https://www.xxrbear.cn/
+    rss_url: https://www.xxrbear.cn/index.xml
     category: blog
     site_type: personal_website
     selectors: [main, .content, "#content", article]
@@ -151,7 +154,7 @@ scholars:
     labels: [blog]
     research_areas: []
     affiliation: "Software"
-    watch: general
+    watch: blog
   - name: K.I.S.S
     url: https://bigeagle.me/
     category: blog
@@ -174,6 +177,7 @@ scholars:
     watch: publications
   - name: Lil'Log
     url: https://lilianweng.github.io/
+    rss_url: https://lilianweng.github.io/index.xml
     category: blog
     site_type: github_pages
     selectors: [article, main, .post-content, .entry-content, .content]
@@ -296,13 +300,13 @@ scholars:
   - name: 王子峰
     url: https://zifengwang.me/
     category: HomePage
-    site_type: github_pages
+    site_type: zifeng_wang
     selectors: ["papertitle", "table.publications"]
     remove_selectors: [script, style, nav, footer, header, aside, .sidebar, .comments]
     labels: [homepage]
     research_areas: [LLM, Agent]
     affiliation: "Google"
-    watch: general
+    watch: publications
   - name: 王立远
     url: https://lywang3081.github.io/
     category: HomePage

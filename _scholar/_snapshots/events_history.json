@@ -1,5 +1,22 @@
 [
   {
+    "scholar": "傅宇千",
+    "scholar_url": "https://fyqqyf.github.io/",
+    "affiliation": "自动化所",
+    "areas": [
+      "RL",
+      "LLM Alignment"
+    ],
+    "watch": "general",
+    "kind": "update",
+    "text": "COLM 2026 Core A* Blog Zhihu",
+    "link": "https://fyqqyf.github.io/",
+    "date_str": "2026-10-04",
+    "timestamp": 1791103596.704572,
+    "result_type": "unchanged",
+    "first_seen": "2026-10-04T08:46:36.704572+00:00"
+  },
+  {
     "scholar": "苏剑林 - 科学空间",
     "scholar_url": "https://kexue.fm/",
     "affiliation": "Kimi",
@@ -14,7 +31,23 @@
     "date_str": "Sat, 03 Oct 2026 19:08:00 +0800",
     "timestamp": 1791025680.0,
     "result_type": "rss",
-    "first_seen": "2026-10-03T23:27:24.560439+00:00"
+    "first_seen": "2026-10-04T08:46:36.703914+00:00"
+  },
+  {
+    "scholar": "孙海龙",
+    "scholar_url": "https://sun-hailong.github.io/",
+    "affiliation": "NJU LAMDA",
+    "areas": [
+      "Continual Learning"
+    ],
+    "watch": "news",
+    "kind": "news",
+    "text": "[2026-09] Our team released Ling-3.0-flash-VL and Ling-3.0-flash-Sante , extending Ling 3.0 to visual agents and healthcare.",
+    "link": "https://sun-hailong.github.io/",
+    "date_str": "2026-09",
+    "timestamp": 1790769600.0,
+    "result_type": "unchanged",
+    "first_seen": "2026-10-04T08:46:36.704549+00:00"
   },
   {
     "scholar": "周嘉欢",
@@ -112,20 +145,6 @@
     "timestamp": 1790467200.0,
     "result_type": "rss",
     "first_seen": "2026-09-27T04:53:50.018690+00:00"
-  },
-  {
-    "scholar": "🙋🏻‍♂️关于 | Chenxu's Blog",
-    "scholar_url": "https://www.chenxutalk.top/about/",
-    "affiliation": "北京邮电大学",
-    "areas": [],
-    "watch": "general",
-    "kind": "update",
-    "text": "江苏篇",
-    "link": "https://www.chenxutalk.top/posts/life/travel/travel/jiangsu/",
-    "date_str": "Sat, 26 Sep 2026 21:56:10 +0800",
-    "timestamp": 1790430970.0,
-    "result_type": "unchanged",
-    "first_seen": "2026-10-04T05:26:04.331257+00:00"
   },
   {
     "scholar": "xuhuiz.com",
@@ -433,6 +452,176 @@
     "first_seen": "2026-09-23T12:27:56.702284+00:00"
   },
   {
+    "scholar": "庄辉平",
+    "scholar_url": "https://zhuanghp.github.io/",
+    "affiliation": "华南理工大学",
+    "areas": [
+      "Continual Learning",
+      "Embodied AI"
+    ],
+    "watch": "general",
+    "kind": "news",
+    "text": "2026 Jul 12 · We have 2 papers accepted by ECCV 2026!",
+    "link": "https://zhuanghp.github.io/",
+    "date_str": "2026-09",
+    "timestamp": 1788220800.0,
+    "result_type": "unchanged",
+    "first_seen": "2026-10-04T08:46:36.704536+00:00"
+  },
+  {
+    "scholar": "杨永进",
+    "scholar_url": "https://yangyongjin.github.io/",
+    "affiliation": "多伦多大学",
+    "areas": [
+      "Agent",
+      "LLM Alignment"
+    ],
+    "watch": "general",
+    "kind": "paper",
+    "text": "Toward Skill-Native LLMs: Skill Entropy for Benchmarking and Training Long-Horizon Reasoning · NeurIPS 2026",
+    "link": "https://yangyongjin.github.io/",
+    "date_str": "2026-09",
+    "timestamp": 1788220800.0,
+    "result_type": "unchanged",
+    "first_seen": "2026-10-04T08:46:36.704545+00:00"
+  },
+  {
+    "scholar": "黄家斌",
+    "scholar_url": "https://jbhuang0604.github.io/",
+    "affiliation": "",
+    "areas": [
+      "3DV"
+    ],
+    "watch": "general",
+    "kind": "paper",
+    "text": "Masked Visual Actions for Unified World Modeling · Advances in Neural Information Processing Systems (NeurIPS), 2026",
+    "link": "https://jbhuang0604.github.io/",
+    "date_str": "2026-09",
+    "timestamp": 1788220800.0,
+    "result_type": "unchanged",
+    "first_seen": "2026-10-04T08:46:36.704558+00:00"
+  },
+  {
+    "scholar": "孙科",
+    "scholar_url": "https://sites.google.com/view/kesun",
+    "affiliation": "宾夕法尼亚大学",
+    "areas": [
+      "Continuing RL"
+    ],
+    "watch": "general",
+    "kind": "paper",
+    "text": "[7] Ke Sun*, Yizhou Zhao*, Jiayi Xin, Qi Long, Weijie Su . CurveRL: Principled Distribution-Aware Context Reweighting for LLM Reasoning . Advances in Neural Information Processing Systems ( NeurIPS ), 2026 . [ Code ] 🔥",
+    "link": "https://sites.google.com/view/kesun",
+    "date_str": "2026-09",
+    "timestamp": 1788220800.0,
+    "result_type": "unchanged",
+    "first_seen": "2026-10-04T08:46:36.704565+00:00"
+  },
+  {
+    "scholar": "Chongjie Si",
+    "scholar_url": "https://chongjiesi.site/home/",
+    "affiliation": "上海交通大学",
+    "areas": [
+      "Optimize theory"
+    ],
+    "watch": "general",
+    "kind": "news",
+    "text": "📘 One paper has been accepted to ECCV 2026.",
+    "link": "https://chongjiesi.site/home/",
+    "date_str": "2026-09",
+    "timestamp": 1788220800.0,
+    "result_type": "unchanged",
+    "first_seen": "2026-10-04T08:46:36.704571+00:00"
+  },
+  {
+    "scholar": "朱星宇",
+    "scholar_url": "https://scholar.google.com/citations?hl=zh-CN&user=PpqUnAwAAAAJ&view_op=list_works&sortby=pubdate",
+    "affiliation": "NUS",
+    "areas": [
+      "Vision language model"
+    ],
+    "watch": "publications",
+    "kind": "paper",
+    "text": "Thinking with Images as Continuous Actions: Numerical Visual Chain-of-Thought · NeurIPS 2026 Oral",
+    "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=PpqUnAwAAAAJ&citation_for_view=PpqUnAwAAAAJ:aqlVkmm33-oC",
+    "date_str": "2026-09",
+    "timestamp": 1788220800.0,
+    "result_type": "changed",
+    "first_seen": "2026-10-03T00:05:10.414119+00:00",
+    "sub_items": [
+      {
+        "text": "BiMoGen: Bidirectional Motion-Text Generation via Unified Masked Discrete Diffusion · NeurIPS 2026",
+        "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=PpqUnAwAAAAJ&citation_for_view=PpqUnAwAAAAJ:aqlVkmm33-oC",
+        "kind": "paper"
+      },
+      {
+        "text": "Robustifying Vision-Language Models via Test-Time Prompt Adaptation · ICML 2026",
+        "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=PpqUnAwAAAAJ&citation_for_view=PpqUnAwAAAAJ:aqlVkmm33-oC",
+        "kind": "paper"
+      }
+    ]
+  },
+  {
+    "scholar": "Xiongda Blog",
+    "scholar_url": "https://www.xxrbear.cn/",
+    "affiliation": "Software",
+    "areas": [],
+    "watch": "blog",
+    "kind": "post",
+    "text": "Claude Banner",
+    "link": "https://www.xxrbear.cn/posts/tech/essays/claude-banner/",
+    "date_str": "Wed, 05 Aug 2026 10:46:21 +0800",
+    "timestamp": 1785897981.0,
+    "result_type": "rss_no_change",
+    "first_seen": "2026-10-04T08:46:36.704515+00:00"
+  },
+  {
+    "scholar": "Chenxu's Blog",
+    "scholar_url": "https://www.chenxutalk.top/",
+    "affiliation": "北京邮电大学",
+    "areas": [],
+    "watch": "blog",
+    "kind": "post",
+    "text": "写出一份好的代码",
+    "link": "https://www.chenxutalk.top/posts/study/cs0/good-code/",
+    "date_str": "Tue, 04 Aug 2026 20:00:00 +0800",
+    "timestamp": 1785844800.0,
+    "result_type": "rss_no_change",
+    "first_seen": "2026-10-04T08:50:55.607337+00:00"
+  },
+  {
+    "scholar": "吴太强",
+    "scholar_url": "https://wutaiqiang.github.io/",
+    "affiliation": "香港大学",
+    "areas": [
+      "Reasoning"
+    ],
+    "watch": "general",
+    "kind": "paper",
+    "text": "🔥 Revisiting Model Interpolation for Efficient Reasoning · ACL 2026, Main Conference [ Paper ]",
+    "link": "https://wutaiqiang.github.io/",
+    "date_str": "2026-08",
+    "timestamp": 1785542400.0,
+    "result_type": "unchanged",
+    "first_seen": "2026-10-04T08:46:36.704551+00:00"
+  },
+  {
+    "scholar": "Shuaichen Chang",
+    "scholar_url": "https://shuaichenchang.github.io/publications/",
+    "affiliation": "AWS",
+    "areas": [
+      "Agent"
+    ],
+    "watch": "general",
+    "kind": "paper",
+    "text": "Towards Better Understanding Table Instruction Tuning: Decoupling the Effects from Data versus Models [ PDF ] · EACL 2026",
+    "link": "https://shuaichenchang.github.io/publications/",
+    "date_str": "2026-08",
+    "timestamp": 1785542400.0,
+    "result_type": "unchanged",
+    "first_seen": "2026-10-04T08:46:36.704562+00:00"
+  },
+  {
     "scholar": "Breezedeus.com | 善意的AI生产幸福❤",
     "scholar_url": "https://www.breezedeus.com/",
     "affiliation": "",
@@ -450,20 +639,211 @@
     "first_seen": "2026-08-01T00:00:00+00:00"
   },
   {
-    "scholar": "朱星宇",
-    "scholar_url": "https://scholar.google.com/citations?hl=zh-CN&user=PpqUnAwAAAAJ&view_op=list_works&sortby=pubdate",
-    "affiliation": "NUS",
+    "scholar": "Thinking Machines Lab",
+    "scholar_url": "https://thinkingmachines.ai/blog/",
+    "affiliation": "Thinking Machines",
     "areas": [
-      "Vision language model"
+      "LLM"
+    ],
+    "watch": "general",
+    "kind": "update",
+    "text": "A Safe Path to Open Weights",
+    "link": "https://thinkingmachines.ai/blog/a-safe-path-to-open-weights/",
+    "date_str": "Fri, 31 Jul 2026 00:00:00 GMT",
+    "timestamp": 1785456000.0,
+    "result_type": "unchanged",
+    "first_seen": "2026-10-04T08:46:36.704530+00:00"
+  },
+  {
+    "scholar": "A. Weers Blog",
+    "scholar_url": "https://aweers.de/blog/",
+    "affiliation": "",
+    "areas": [
+      "RL"
+    ],
+    "watch": "general",
+    "kind": "update",
+    "text": "July 25, 2026 · 35 min read",
+    "link": "https://aweers.de/blog/",
+    "date_str": "2026-07-25",
+    "timestamp": 1784937600.0,
+    "result_type": "unchanged",
+    "first_seen": "2026-10-04T08:46:36.704532+00:00"
+  },
+  {
+    "scholar": "Lil'Log",
+    "scholar_url": "https://lilianweng.github.io/",
+    "affiliation": "Thinking Machines",
+    "areas": [
+      "LLM"
+    ],
+    "watch": "blog",
+    "kind": "post",
+    "text": "Harness Engineering for Self-Improvement",
+    "link": "https://lilianweng.github.io/posts/2026-07-04-harness/",
+    "date_str": "Sat, 04 Jul 2026 00:00:00 +0000",
+    "timestamp": 1783123200.0,
+    "result_type": "rss_no_change",
+    "first_seen": "2026-10-04T08:46:36.704519+00:00"
+  },
+  {
+    "scholar": "杨恩能",
+    "scholar_url": "https://ennengyang.github.io/",
+    "affiliation": "中山大学",
+    "areas": [
+      "Model Merging"
+    ],
+    "watch": "general",
+    "kind": "news",
+    "text": "2026.07: Our paper on data augmentation has been accepted by TKDE 2026.",
+    "link": "https://ennengyang.github.io/",
+    "date_str": "2026-07",
+    "timestamp": 1782864000.0,
+    "result_type": "unchanged",
+    "first_seen": "2026-10-04T08:46:36.704554+00:00"
+  },
+  {
+    "scholar": "孙宇",
+    "scholar_url": "https://yueatsprograms.github.io/",
+    "affiliation": "英伟达",
+    "areas": [
+      "Test time Scaling"
+    ],
+    "watch": "general",
+    "kind": "paper",
+    "text": "Learning to Discover at Test Time · ICML 2026",
+    "link": "https://yueatsprograms.github.io/",
+    "date_str": "2026-07",
+    "timestamp": 1782864000.0,
+    "result_type": "unchanged",
+    "first_seen": "2026-10-04T08:46:36.704564+00:00"
+  },
+  {
+    "scholar": "蒋玉初",
+    "scholar_url": "https://kamichanw.github.io/publications/",
+    "affiliation": "东南大学",
+    "areas": [
+      "Machine learning",
+      "LLM",
+      "Post training"
+    ],
+    "watch": "general",
+    "kind": "paper",
+    "text": "Rethinking LLM Ensembling from the Perspective of Mixture Models · Published in ICML (Spotlight) , 2026",
+    "link": "https://kamichanw.github.io/publications/",
+    "date_str": "2026-07",
+    "timestamp": 1782864000.0,
+    "result_type": "unchanged",
+    "first_seen": "2026-10-04T08:46:36.704567+00:00"
+  },
+  {
+    "scholar": "王子峰",
+    "scholar_url": "https://zifengwang.me/",
+    "affiliation": "Google",
+    "areas": [
+      "LLM",
+      "Agent"
     ],
     "watch": "publications",
     "kind": "paper",
-    "text": "BiMoGen: Bidirectional Motion-Text Generation via Unified Masked Discrete Diffusion · NeurIPS 2027, 2026, 2026",
-    "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=PpqUnAwAAAAJ&citation_for_view=PpqUnAwAAAAJ:aqlVkmm33-oC",
+    "text": "EnvHarness: Awakening Static Worlds for Agent Learning · arXiv, 2026",
+    "link": "https://arxiv.org/abs/2608.19880",
     "date_str": "2026",
     "timestamp": 1780272000.0,
-    "result_type": "changed",
-    "first_seen": "2026-10-03T00:05:10.414119+00:00"
+    "result_type": "unchanged",
+    "first_seen": "2026-10-04T08:46:36.704538+00:00",
+    "sub_items": [
+      {
+        "text": "SkillOS: Learning Skill Curation for Self-Evolving Agents · NeurIPS 2026",
+        "link": "https://arxiv.org/abs/2605.06614",
+        "kind": "paper"
+      },
+      {
+        "text": "RRSI: Regularized Recursive Self-Improvement of Agent Harnesses · arXiv 2026",
+        "link": "https://arxiv.org/abs/2609.24972",
+        "kind": "paper"
+      }
+    ]
+  },
+  {
+    "scholar": "林知秋",
+    "scholar_url": "https://linzhiqiu.github.io/",
+    "affiliation": "MIT",
+    "areas": [
+      "CV evaluation"
+    ],
+    "watch": "general",
+    "kind": "paper",
+    "text": "2020.06 : Best Paper Nomination at CVPR’20 for Visual Chirality ! · CVPR 2026 Highlight (Top 3%)",
+    "link": "https://linzhiqiu.github.io/",
+    "date_str": "2026-06",
+    "timestamp": 1780272000.0,
+    "result_type": "unchanged",
+    "first_seen": "2026-10-04T08:46:36.704569+00:00"
+  },
+  {
+    "scholar": "Blogs | wh",
+    "scholar_url": "https://nrehiew.github.io/blog/",
+    "affiliation": "",
+    "areas": [
+      "LLM"
+    ],
+    "watch": "blog",
+    "kind": "post",
+    "text": "SFT, RL, and On-Policy Distillation Through a Distributional Lens",
+    "link": "https://nrehiew.github.io/blog/sft_rl_opd/",
+    "date_str": "Sun, 10 May 2026 00:00:00 +0000",
+    "timestamp": 1778371200.0,
+    "result_type": "rss_no_change",
+    "first_seen": "2026-10-04T08:46:36.704509+00:00"
+  },
+  {
+    "scholar": "胡君耀",
+    "scholar_url": "https://junyaohu.github.io/",
+    "affiliation": "",
+    "areas": [
+      "CV"
+    ],
+    "watch": "news",
+    "kind": "news",
+    "text": "2026-05-08 💼 Activity I attended VALSE 2026 (Wuhan, China).",
+    "link": "https://junyaohu.github.io/",
+    "date_str": "2026-05-08",
+    "timestamp": 1778198400.0,
+    "result_type": "unchanged",
+    "first_seen": "2026-10-04T08:46:36.704506+00:00"
+  },
+  {
+    "scholar": "沈立",
+    "scholar_url": "https://sites.google.com/site/mathshenli/home",
+    "affiliation": "中山大学",
+    "areas": [
+      "Model Merging"
+    ],
+    "watch": "general",
+    "kind": "paper",
+    "text": "Pengxiang Li, Yefan Zhou, Dilxat Muhtar, Lu Yin, Shilin Yan, Li Shen , Yi Liang, Soroush Vosoughi, Shiwei Liu, Diffusion Language Model Knows the Answer Before It Decodes, ICLR, 2026. ( oral )",
+    "link": "https://sites.google.com/site/mathshenli/home",
+    "date_str": "2026-05",
+    "timestamp": 1777593600.0,
+    "result_type": "unchanged",
+    "first_seen": "2026-10-04T08:46:36.704552+00:00"
+  },
+  {
+    "scholar": "冯亮",
+    "scholar_url": "https://fenglang918.github.io/index.html",
+    "affiliation": "复旦大学",
+    "areas": [
+      "Develop tool"
+    ],
+    "watch": "general",
+    "kind": "paper",
+    "text": "HiCache: A Plug-in Scaled-Hermite Upgrade for Taylor-Style Cache-then-Forecast Diffusion Acceleration · Accepted (Poster) at ICLR 2026 .",
+    "link": "https://fenglang918.github.io/index.html",
+    "date_str": "2026-05",
+    "timestamp": 1777593600.0,
+    "result_type": "unchanged",
+    "first_seen": "2026-10-04T08:46:36.704560+00:00"
   },
   {
     "scholar": "冯钰捷",
@@ -505,6 +885,23 @@
     "first_seen": "2026-01-16T00:00:00+00:00"
   },
   {
+    "scholar": "Jyo Pari",
+    "scholar_url": "https://jyopari.github.io/",
+    "affiliation": "MIT",
+    "areas": [
+      "LLM",
+      "Optimization"
+    ],
+    "watch": "publications",
+    "kind": "paper",
+    "text": "Mystery of the Quintics Jan 5, 2026",
+    "link": "https://jyopari.github.io/",
+    "date_str": "2026-01-05",
+    "timestamp": 1767571200.0,
+    "result_type": "unchanged",
+    "first_seen": "2026-10-04T08:46:36.704517+00:00"
+  },
+  {
     "scholar": "冯钰捷",
     "scholar_url": "https://woodscene.github.io/",
     "affiliation": "香港理工大学",
@@ -528,6 +925,88 @@
     ]
   },
   {
+    "scholar": "袁粒组会",
+    "scholar_url": "https://pku-ml-group.github.io/",
+    "affiliation": "北京大学",
+    "areas": [
+      "LLM",
+      "CV",
+      "ML"
+    ],
+    "watch": "blog",
+    "kind": "post",
+    "text": "[2025-12-12] Cambrain-S: Towards Spatial Supersensing in Video. [ pdf ] Yu-Wei Niu",
+    "link": "https://pku-ml-group.github.io/",
+    "date_str": "2025-12-12",
+    "timestamp": 1765497600.0,
+    "result_type": "unchanged",
+    "first_seen": "2026-10-04T08:46:36.704521+00:00"
+  },
+  {
+    "scholar": "Lcf Blogs",
+    "scholar_url": "https://lllcf.github.io/",
+    "affiliation": "",
+    "areas": [
+      "LLM"
+    ],
+    "watch": "blog",
+    "kind": "post",
+    "text": "OCR模型",
+    "link": "https://lllcf.github.io/LLM_OCR/",
+    "date_str": "2025-11-26T00:00:00+00:00",
+    "timestamp": 1764115200.0,
+    "result_type": "rss_no_change",
+    "first_seen": "2026-10-04T08:46:36.704528+00:00"
+  },
+  {
+    "scholar": "唐安可",
+    "scholar_url": "https://tanganke.github.io/",
+    "affiliation": "清华大学",
+    "areas": [
+      "Model Merging"
+    ],
+    "watch": "general",
+    "kind": "news",
+    "text": "Sep 20, 2025 Three of our papers have been accepted to NeurIPS 2025, with two on continual model merging.",
+    "link": "https://tanganke.github.io/",
+    "date_str": "2025-09-20",
+    "timestamp": 1758326400.0,
+    "result_type": "unchanged",
+    "first_seen": "2026-10-04T08:46:36.704556+00:00"
+  },
+  {
+    "scholar": "Jiangjie Chen Homepage",
+    "scholar_url": "https://jiangjiechen.github.io/",
+    "affiliation": "Seed",
+    "areas": [
+      "LLM"
+    ],
+    "watch": "general",
+    "kind": "paper",
+    "text": "May, 2025 In The Thirty-Ninth Annual Conference on Neural Information Processing Systems ( NeurIPS 2025 ) , Spotlight",
+    "link": "https://jiangjiechen.github.io/",
+    "date_str": "2025-09",
+    "timestamp": 1756684800.0,
+    "result_type": "unchanged",
+    "first_seen": "2026-10-04T08:46:36.704541+00:00"
+  },
+  {
+    "scholar": "Yifei Zhang Homepage",
+    "scholar_url": "https://yifeiacc.github.io/",
+    "affiliation": "港中文",
+    "areas": [
+      "Continual Learning"
+    ],
+    "watch": "news",
+    "kind": "news",
+    "text": "2025 Sep: Three paper accepted in NeurIPS'25, One Paper is in Position Track (~8% acceptance rate)",
+    "link": "https://yifeiacc.github.io/",
+    "date_str": "2025-09",
+    "timestamp": 1756684800.0,
+    "result_type": "unchanged",
+    "first_seen": "2026-10-04T08:46:36.704546+00:00"
+  },
+  {
     "scholar": "冯钰捷",
     "scholar_url": "https://woodscene.github.io/",
     "affiliation": "香港理工大学",
@@ -544,52 +1023,52 @@
     "first_seen": "2025-08-01T00:00:00+00:00"
   },
   {
-    "scholar": "孙宇",
-    "scholar_url": "https://yueatsprograms.github.io/",
-    "affiliation": "英伟达",
-    "areas": [
-      "Test time Scaling"
-    ],
-    "watch": "general",
-    "kind": "paper",
-    "text": "End-to-End Test-Time Training for Long Context",
-    "link": "https://yueatsprograms.github.io/",
-    "date_str": "2024-11-01",
-    "timestamp": 1730419200.0,
-    "result_type": "changed",
-    "first_seen": "2024-11-01T00:00:00+00:00"
-  },
-  {
-    "scholar": "孙宇",
-    "scholar_url": "https://yueatsprograms.github.io/",
-    "affiliation": "英伟达",
-    "areas": [
-      "Test time Scaling"
-    ],
-    "watch": "general",
-    "kind": "paper",
-    "text": "Learning to Discover at Test Time",
-    "link": "https://yueatsprograms.github.io/",
-    "date_str": "2024-10-01",
-    "timestamp": 1727740800.0,
-    "result_type": "changed",
-    "first_seen": "2024-10-01T00:00:00+00:00"
-  },
-  {
-    "scholar": "王子峰",
-    "scholar_url": "https://zifengwang.me/",
-    "affiliation": "Google",
+    "scholar": "姚顺雨",
+    "scholar_url": "https://ysymyth.github.io/",
+    "affiliation": "",
     "areas": [
       "LLM",
       "Agent"
     ],
     "watch": "general",
     "kind": "paper",
-    "text": "Sparse Continual Learning on the Edge",
-    "link": "https://zifengwang.me/",
-    "date_str": "2023-11",
-    "timestamp": 1700000000.0,
-    "result_type": "changed",
-    "first_seen": "2026-09-23T00:00:00+00:00"
+    "text": "τ-bench: A Benchmark for Tool-Agent-User Interaction in Real-World Domains · ICLR 2025",
+    "link": "https://ysymyth.github.io/",
+    "date_str": "2025-05",
+    "timestamp": 1746057600.0,
+    "result_type": "unchanged",
+    "first_seen": "2026-10-04T08:46:36.704539+00:00"
+  },
+  {
+    "scholar": "Zixuan Li",
+    "scholar_url": "https://lee-zix.github.io/",
+    "affiliation": "计算所",
+    "areas": [
+      "NLP"
+    ],
+    "watch": "general",
+    "kind": "update",
+    "text": "National Key Research and Development Project of China, 2025.05-2028.04",
+    "link": "https://lee-zix.github.io/",
+    "date_str": "2025-05",
+    "timestamp": 1746057600.0,
+    "result_type": "unchanged",
+    "first_seen": "2026-10-04T08:46:36.704543+00:00"
+  },
+  {
+    "scholar": "Tobias Lee Blog",
+    "scholar_url": "https://tobiaslee.top/",
+    "affiliation": "Xiaomi Mimo",
+    "areas": [
+      "LLM"
+    ],
+    "watch": "blog",
+    "kind": "post",
+    "text": "2025 年 4 月随笔",
+    "link": "https://tobiaslee.top/2025/04/06/thoughts-2025-0406/",
+    "date_str": "2025-04-05T17:08:00.000Z",
+    "timestamp": 1743872880.0,
+    "result_type": "rss_no_change",
+    "first_seen": "2026-10-04T08:46:36.704511+00:00"
   }
 ]

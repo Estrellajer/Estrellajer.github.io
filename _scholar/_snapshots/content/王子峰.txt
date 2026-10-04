@@ -1,5 +1,84 @@
-Sparse Continual Learning on the Edge
-
-Prompting-based Continual Learning
-
+EnvHarness: Awakening Static Worlds for Agent Learning
+Chengsong Huang, Zifeng Wang, Rujun Han, Jun Yan, Yanfei Chen, Zoey CuiZhu, Ke Jiang, Peng Xia, Han Yu, Yufan Zhuang, Yifei Ming, Jiaqi Pan, Bhavana Dalvi Mishra, Jiaxin Huang, Burak Gokturk, Tomas Pfister, Chen-Yu Lee
+arXiv 2026
+RRSI: Regularized Recursive Self-Improvement of Agent Harnesses
+Peng Xia, Rujun Han, Zifeng Wang, Yanfei Chen, Yufan Zhuang, Yoonho Lee, Chengsong Huang, Han Yu, Zhongying CuiZhu, Yifei Ming, Huaxiu Yao, Burak Gokturk, Tomas Pfister, Chen-Yu Lee
+arXiv 2026
+SkillOS: Learning Skill Curation for Self-Evolving Agents
+Siru Ouyang, Jun Yan, Yanfei Chen, Rujun Han, Zifeng Wang, Bhavana Dalvi Mishra, Rui Meng, Chun-Liang Li, Yizhu Jiao, Kaiwen Zha, Maohao Shen, Vishy Tirumalashetty, George Lee, Jiawei Han, Tomas Pfister, Chen-Yu Lee
+NeurIPS 2026
+Budget-Aware Tool-Use Enables Effective Agent Scaling
+Tengxiao Liu, Zifeng Wang, Jin Miao, I Hsu, Jun Yan, Jiefeng Chen, Rujun Han, Fangyuan Xu, Yanfei Chen, Ke Jiang, Samira Daruki, Yi Liang, William Yang Wang, Tomas Pfister, Chen-Yu Lee
+COLM 2026
+ReasoningBank: Scaling Agent Self-Evolving with Reasoning Memory
+Siru Ouyang, Jun Yan, I-Hung Hsu, Yanfei Chen, Ke Jiang, Zifeng Wang, Rujun Han, Long T. Le, Samira Daruki, Xiangru Tang, Vishy Tirumalashetty, George Lee, Mahsan Rofouei, Hangfei Lin, Jiawei Han, Chen-Yu Lee, Tomas Pfister
+ICLR 2026
+Supervised Reinforcement Learning: From Expert Trajectories to Step-wise Reasoning
+Yihe Deng, I-Hung Hsu, Jun Yan, Zifeng Wang, Rujun Han, Gufeng Zhang, Yanfei Chen, Wei Wang, Tomas Pfister, Chen-Yu Lee
+ICLR 2026
+Universal Model Routing for Efficient LLM Inference
+Wittawat Jitkrittum, Harikrishna Narasimhan, Ankit Singh Rawat, Jeevesh Juneja, Congchao Wang, Zifeng Wang, Alec Go, Chen-Yu Lee, Pradeep Shenoy, Rina Panigrahy, Aditya Krishna Menon, Sanjiv Kumar
+ICLR 2026
+Gemini 2.5: Pushing the Frontier with Advanced Reasoning, Multimodality, Long Context, and Next Generation Agentic Capabilities
+Gemini Team, Google
+arXiv 2025
+Heterogeneous Swarms: Jointly Optimizing Model Roles and Weights for Multi-LLM Systems
+Shangbin Feng, Zifeng Wang, Palash Goyal, Yike Wang, Weijia Shi, Huang Xia, Hamid Palangi, Luke Zettlemoyer, Yulia Tsvetkov, Chen-Yu Lee, Tomas Pfister
+NeurIPS 2025
+Model Swarms: Collaborative Search to Adapt LLM Experts via Swarm Intelligence
+Shangbin Feng, Zifeng Wang, Yike Wang, Sayna Ebrahimi, Hamid Palangi, Lesly Miculicich, Achin Kulshrestha, Nathalie Rauschmayr, Yejin Choi, Yulia Tsvetkov, Chen-Yu Lee, Tomas Pfister
+ICML 2025
+Magnet: Multi-turn Tool-use Data Synthesis and Distillation via Graph Translation
+Fan Yin, Zifeng Wang, I-Hung Hsu, Jun Yan, Ke Jiang, Yanfei Chen, Jindong Gu, Long T. Le, Kai-Wei Chang, Chen-Yu Lee, Hamid Palangi, Tomas Pfister
+ACL 2025
+In Prospect and Retrospect: Reflective Memory Management for Long-term Personalized Dialogue Agents
+Zhen Tan, Jun Yan, I-Hung Hsu, Rujun Han, Zifeng Wang, Long T. Le, Yiwen Song, Yanfei Chen, Hamid Palangi, George Lee, Anand Iyer, Tianlong Chen, Huan Liu, Chen-Yu Lee, Tomas Pfister
+ACL 2025
+Speculative Knowledge Distillation: Bridging the Teacher-Student Gap Through Interleaved Sampling
+Wenda Xu, Rujun Han, Zifeng Wang, Long T. Le, Dhruv Madeka, Lei Li, William Yang Wang, Rishabh Agarwal, Chen-Yu Lee, Tomas Pfister
+ICLR 2025
+Reverse Thinking Makes LLMs Stronger Reasoners
+Justin Chih-Yao Chen, Zifeng Wang, Hamid Palangi, Rujun Han, Sayna Ebrahimi, Long Le, Vincent Perot, Swaroop Mishra, Mohit Bansal, Chen-Yu Lee, Tomas Pfister
+NAACL 2025
+Speculative RAG: Enhancing Retrieval Augmented Generation through Drafting
+Zilong Wang, Zifeng Wang, Long Le, Huaixiu Steven Zheng, Swaroop Mishra, Vincent Perot, Yuwei Zhang, Anush Mattapalli, Ankur Taly, Jingbo Shang, Chen-Yu Lee, Tomas Pfister
+ICLR 2025
+TableRAG: Million-Token Table Understanding with Language Models
+Si-An Chen, Lesly Miculicich, Julian Martin Eisenschlos, Zifeng Wang, Zilong Wang, Yanfei Chen, Yasuhisa Fujii, Hsuan-Tien Lin, Chen-Yu Lee, Tomas Pfister
+NeurIPS 2024
+CaLM: Contrasting Large and Small Language Models to Verify Grounded Generation
+I-Hung Hsu, Zifeng Wang, Long T Le, Lesly Miculicich, Nanyun Peng, Chen-Yu Lee, Tomas Pfister
+ACL 2024
+Found in the Middle: Calibrating Positional Attention Bias Improves Long Context Utilization
+Cheng-Yu Hsieh, Yung-Sung Chuang, Chun-Liang Li, Zifeng Wang, Long T. Le, Abhishek Kumar, James Glass, Alexander Ratner, Chen-Yu Lee, Ranjay Krishna, Tomas Pfister
+ACL 2024
+CodecLM: Aligning Language Models with Tailored Synthetic Data
+Zifeng Wang, Chun-Liang Li, Vincent Perot, Long T. Le, Jin Miao, Zizhao Zhang, Chen-Yu Lee, Tomas Pfister
+NAACL 2024
+Chain-of-Table: Evolving Tables in the Reasoning Chain for Table Understanding
+Zilong Wang, Hao Zhang, Chun-Liang Li, Julian Martin Eisenschlos, Vincent Perot, Zifeng Wang, Lesly Miculicich, Yasuhisa Fujii, Jingbo Shang, Chen-Yu Lee, Tomas Pfister
+ICLR 2024
+QueryForm: A Simple Zero-shot Form Entity Query Framework
+Zifeng Wang, Zizhao Zhang, Jacob Devlin, Chen-Yu Lee, Guolong Su, Hao Zhang, Jennifer Dy, Vincent Perot, Tomas Pfister
+ACL 2023
+DualHSIC: HSIC-Bottleneck and Alignment for Continual Learning
+Zifeng Wang*, Zheng Zhan*, Yifan Gong, Yucai Shao, Stratis Ioannidis, Yanzhi Wang, Jennifer Dy
+ICML 2023
+SparCL: Sparse Continual Learning on the Edge
+Zifeng Wang*, Zheng Zhan*, Yifan Gong, Geng Yuan, Wei Niu, Tong Jian, Bin Ren, Stratis Ioannidis, Yanzhi Wang, Jennifer Dy
+NeurIPS 2022
+DualPrompt: Complementary Prompting for Rehearsal-free Continual Learning
+Zifeng Wang, Zizhao Zhang, Sayna Ebrahimi, Ruoxi Sun, Han Zhang, Chen-Yu Lee, Xiaoqi Ren, Guolong Su, Vincent Perot, Jennifer Dy, Tomas Pfister
+ECCV 2022
+Learning to Prompt for Continual Learning
+Zifeng Wang, Zizhao Zhang, Chen-Yu Lee, Han Zhang, Ruoxi Sun, Xiaoqi Ren, Guolong Su, Vincent Perot, Jennifer Dy, Tomas Pfister
+CVPR 2022
 Revisiting Hilbert-Schmidt Information Bottleneck for Adversarial Robustness
+Zifeng Wang*, Tong Jian*, Aria Masoomi, Stratis Ioannidis, Jennifer Dy
+NeurIPS 2021
+Learn-Prune-Share for Lifelong Learning
+Zifeng Wang*, Tong Jian*, Kaushik Chowdhury, Yanzhi Wang, Jennifer Dy, Stratis Ioannidis
+ICDM 2020
+Open-World Class Discovery with Kernel Networks
+Zifeng Wang, Batool Salehi, Andrey Gritsenko, Kaushik Chowdhury, Stratis Ioannidis, Jennifer Dy
+ICDM 2020

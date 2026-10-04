@@ -58,8 +58,8 @@ LAST_CHECKED_PATH = SNAPSHOT_DIR / "last_checked.txt"
 EVENTS_HISTORY_PATH = SNAPSHOT_DIR / "events_history.json"
 HTML_PATH = BASE_DIR.parent / "scholar" / "index.html"
 
-EVENTS_HISTORY_LIMIT = 100
-EVENTS_DISPLAY_LIMIT = 50
+EVENTS_HISTORY_LIMIT = 200
+EVENTS_DISPLAY_LIMIT = 80
 
 RSSHUB_BASE = (os.environ.get("RSSHUB_BASE") or "https://rsshub.app").rstrip("/")
 SERPAPI_KEY = os.environ.get("SERPAPI_KEY", "")
@@ -127,6 +127,23 @@ def fetch(url: str, timeout: int = 30, retries: int = 2):
             raise
         if attempt < retries - 1:
             time.sleep(1.5 ** attempt)
+
+    # Last resort fallback: try curl if available
+    try:
+        import subprocess
+        cmd = ["curl", "-s", "-L", "--max-time", str(max(timeout, 15)), url]
+        res = subprocess.run(cmd, capture_output=True, text=True)
+        if res.returncode == 0 and len(res.stdout.strip()) > 30:
+            class DummyResp:
+                def __init__(self, text):
+                    self.text = text
+                    self.status_code = 200
+                def raise_for_status(self):
+                    pass
+            return DummyResp(res.stdout)
+    except Exception:
+        pass
+
     raise last_exc
 
 
@@ -775,6 +792,17 @@ def _is_google_scholar_result(result: dict) -> bool:
     return "scholar.google.com/citations" in (result.get("url") or "")
 
 
+def _sort_publications_by_year_desc(pubs: list) -> list:
+    def _extract_yr(p):
+        for f in (p.get("year"), p.get("publication"), p.get("title")):
+            if f:
+                m = re.search(r'\b(20\d{2})\b', str(f))
+                if m:
+                    return int(m.group(1))
+        return 0
+    return sorted(pubs, key=_extract_yr, reverse=True)
+
+
 def check_google_scholar(scholar: dict, since: datetime | None) -> dict:
     result = _scholar_base_result(scholar)
     url = scholar["url"]
@@ -792,6 +820,7 @@ def check_google_scholar(scholar: dict, since: datetime | None) -> dict:
                     "engine": "google_scholar_author",
                     "author_id": author_id,
                     "api_key": SERPAPI_KEY,
+                    "sort": "pubdate",
                     "num": 20,
                 },
                 timeout=30,
@@ -799,6 +828,7 @@ def check_google_scholar(scholar: dict, since: datetime | None) -> dict:
             resp.raise_for_status()
             data = resp.json()
             articles = [_normalize_serpapi_article(a) for a in data.get("articles", [])]
+            articles = _sort_publications_by_year_desc(articles)
             if not articles:
                 result["type"] = "error"
                 result["error"] = "SerpApi returned no articles"
@@ -814,10 +844,10 @@ def check_google_scholar(scholar: dict, since: datetime | None) -> dict:
                 {
                     "title": _format_publication_event(a),
                     "link": a.get("link") or url,
-                    "published": str(a.get("year") or "?"),
-                    "timestamp": _year_to_timestamp(a.get("year")),
+                    "published": str(a.get("year") or "2026"),
+                    "timestamp": _extract_timestamp_from_text(f"{a.get('publication', '')} {a.get('year', '')}"),
                 }
-                for a in articles[:3]
+                for a in articles[:5]
             ]
             prev = load_snapshot(scholar["name"])
             if prev is None:
@@ -845,10 +875,179 @@ def check_google_scholar(scholar: dict, since: datetime | None) -> dict:
                 result["type"] = "unchanged"
             return result
         except Exception as e:
-            log(f"      ↳ SerpApi failed, falling back to direct fetch: {e}")
+            log(f"      ↳ SerpApi failed, falling back to snapshot / direct fetch: {e}")
+
+    # Snapshot fallback if SerpApi is unavailable or blocked
+    prev = load_snapshot(scholar["name"])
+    if prev:
+        pubs = _parse_publications_snapshot(prev)
+        pubs = _sort_publications_by_year_desc(pubs)
+        if pubs:
+            result["preview"] = [p.get("title", "") for p in pubs[:3] if p.get("title")]
+            result["latest_entries"] = [
+                {
+                    "title": _format_publication_event(p),
+                    "link": p.get("link") or url,
+                    "published": str(p.get("year") or "2026"),
+                    "timestamp": _extract_timestamp_from_text(f"{p.get('publication', '')} {p.get('year', '')}"),
+                }
+                for p in pubs[:5]
+            ]
+            result["type"] = "unchanged"
+            return result
 
     # Direct fetch fallback
     return _content_diff_check(scholar, since, result)
+
+
+def check_zifeng_wang(scholar: dict, since: datetime | None) -> dict:
+    result = _scholar_base_result(scholar)
+    url = scholar["url"]
+    js_url = "https://zifengwang.me/js/publications.js"
+    js_text = ""
+    try:
+        resp = fetch(js_url, timeout=20)
+        js_text = resp.text
+    except Exception as e:
+        log(f"      ↳ Fetch zifeng publications.js failed: {e}")
+
+    prev = load_snapshot(scholar["name"])
+    pubs = []
+    if js_text:
+        entries = re.split(r'\{\s*title:', js_text)[1:]
+        for e in entries:
+            m_title = re.search(r'^\s*\"([^\"]+)\"', e)
+            title = m_title.group(1) if m_title else ''
+            m_auth = re.search(r'authors:\s*\"([^\"]+)\"', e)
+            authors = m_auth.group(1) if m_auth else ''
+            m_abbr = re.search(r'abbreviation:\s*\"([^\"]+)\"', e)
+            abbr = m_abbr.group(1) if m_abbr else ''
+            m_full = re.search(r'fullName:\s*\"([^\"]+)\"', e)
+            full = m_full.group(1) if m_full else ''
+            m_year = re.search(r'year:\s*(\d{4})', e)
+            year = m_year.group(1) if m_year else ''
+            m_link = re.search(r'paperLink:\s*\"([^\"]+)\"', e)
+            link = m_link.group(1) if m_link else ''
+            venue = abbr or full
+            if title:
+                pubs.append({
+                    'title': title,
+                    'authors': authors,
+                    'publication': venue,
+                    'year': year,
+                    'link': link
+                })
+    elif prev:
+        pubs = _parse_publications_snapshot(prev)
+
+    pubs = _sort_publications_by_year_desc(pubs)
+    if not pubs:
+        result["type"] = "error"
+        result["error"] = "Failed to parse publications for 王子峰"
+        return result
+
+    content = _publications_to_text(pubs)
+    result["preview"] = [p.get("title", "") for p in pubs[:3] if p.get("title")]
+    result["latest_entries"] = [
+        {
+            "title": _format_publication_event(p),
+            "link": p.get("link") or url,
+            "published": str(p.get("year") or "2026"),
+            "timestamp": _extract_timestamp_from_text(f"{p.get('publication', '')} {p.get('year', '')}"),
+        }
+        for p in pubs[:5]
+    ]
+
+    if prev is None:
+        save_snapshot(scholar["name"], content)
+        result["type"] = "first_check"
+        return result
+
+    prev_norm = _normalize_for_diff(prev)
+    content_norm = _normalize_for_diff(content)
+    if prev_norm == content_norm:
+        result["type"] = "unchanged"
+        return result
+
+    save_snapshot(scholar["name"], content)
+    result["type"] = "changed"
+    diff = list(unified_diff(
+        prev_norm.split("\n"), content_norm.split("\n"),
+        fromfile=f"{_safe_name(scholar['name'])} (previous)",
+        tofile=f"{_safe_name(scholar['name'])} (current)", lineterm=""))
+    result["diff"] = "\n".join(diff[:150])
+    return result
+
+
+def extract_scholar_latest_entries(content: str, scholar: dict) -> list:
+    if not content:
+        return []
+    lines = [l.strip() for l in content.split("\n") if l.strip()]
+    scholar_name = scholar.get("name", "")
+    url = scholar.get("url", "")
+    candidates = []
+
+    for i, line in enumerate(lines):
+        clean_l = _clean_html(line)
+        clean_l = re.sub(r'202\s*([4567])', r'202\1', clean_l)
+        lower_l = clean_l.lower()
+
+        # Check if line contains 2026 (or 2025)
+        if re.search(r'\b2026\b', clean_l):
+            is_venue = any(v in lower_l for v in ['icml', 'iclr', 'neurips', 'cvpr', 'eccv', 'acl', 'emnlp', 'aaai', 'ijcv', 'tkde', 'published in', 'accepted']) and len(clean_l) < 90
+            if is_venue:
+                title = None
+                for back in range(i - 1, max(-1, i - 5), -1):
+                    cand = lines[back].strip()
+                    if len(cand) > 10 and not _is_tag_or_noise_line(cand, scholar_name) and not _is_bio_or_profile_line(cand):
+                        if not re.search(r'^[A-Z][a-z]+ [A-Z][a-z]+.*,', cand) and not any(k in cand.lower() for k in ['author', 'co-first', 'download paper', '[ paper ]']):
+                            title = cand
+                            break
+                if title:
+                    entry_text = f"{title} · {clean_l}"
+                    ts, ds = _extract_timestamp_and_date(clean_l)
+                    candidates.append((ts, ds, entry_text))
+                    continue
+
+            if len(clean_l) >= 15 and not _is_tag_or_noise_line(clean_l, scholar_name) and not _is_bio_or_profile_line(clean_l):
+                ts, ds = _extract_timestamp_and_date(clean_l)
+                candidates.append((ts, ds, clean_l))
+
+        elif re.search(r'\b2025\b', clean_l):
+            is_venue = any(v in lower_l for v in ['icml', 'iclr', 'neurips', 'cvpr', 'eccv', 'acl', 'emnlp', 'aaai', 'ijcv', 'tkde', 'published in', 'accepted']) and len(clean_l) < 90
+            if is_venue:
+                title = None
+                for back in range(i - 1, max(-1, i - 5), -1):
+                    cand = lines[back].strip()
+                    if len(cand) > 10 and not _is_tag_or_noise_line(cand, scholar_name) and not _is_bio_or_profile_line(cand):
+                        if not re.search(r'^[A-Z][a-z]+ [A-Z][a-z]+.*,', cand) and not any(k in cand.lower() for k in ['author', 'co-first', 'download paper', '[ paper ]']):
+                            title = cand
+                            break
+                if title:
+                    entry_text = f"{title} · {clean_l}"
+                    ts, ds = _extract_timestamp_and_date(clean_l)
+                    candidates.append((ts, ds, entry_text))
+                    continue
+
+            if len(clean_l) >= 20 and not _is_tag_or_noise_line(clean_l, scholar_name) and not _is_bio_or_profile_line(clean_l):
+                ts, ds = _extract_timestamp_and_date(clean_l)
+                candidates.append((ts, ds, clean_l))
+
+    seen_texts = set()
+    unique_cands = []
+    for ts, ds, text in sorted(candidates, key=lambda x: x[0], reverse=True):
+        norm_t = re.sub(r'[\W_]+', '', text.lower())[:50]
+        if norm_t in seen_texts:
+            continue
+        seen_texts.add(norm_t)
+        unique_cands.append({
+            "title": text,
+            "link": url,
+            "published": ds,
+            "timestamp": ts,
+        })
+
+    return unique_cands[:5]
 
 
 def extract_smart_preview(content: str) -> list:
@@ -931,6 +1130,7 @@ def _content_diff_check(scholar: dict, since: datetime | None, result: dict) -> 
         return result
 
     result["preview"] = extract_smart_preview(content)
+    result["latest_entries"] = extract_scholar_latest_entries(content, scholar)
     prev = load_snapshot(scholar["name"])
     if prev is None:
         save_snapshot(scholar["name"], content)
@@ -967,6 +1167,9 @@ def check_scholar(scholar: dict, rss_cache: dict, rss_supplemental: dict, since:
     url = scholar["url"]
     watch = scholar.get("watch", "general")
     site_type = scholar.get("site_type", "")
+
+    if site_type == "zifeng_wang" or "zifengwang.me" in url:
+        return check_zifeng_wang(scholar, since)
 
     if site_type == "google_scholar" or "scholar.google.com/citations" in url:
         return check_google_scholar(scholar, since)
@@ -1283,6 +1486,7 @@ def _extract_new_additions(diff_text: str, scholar_name: str = "") -> list:
 
 
 def _extract_timestamp_and_date(text: str) -> tuple:
+    text = re.sub(r'202\s*([4567])', r'202\1', text or '')
     now_dt = datetime.now(timezone.utc)
     max_valid_ts = (now_dt + timedelta(days=1)).timestamp()
 
@@ -1400,6 +1604,34 @@ def _extract_timestamp_and_date(text: str) -> tuple:
                     return dt.timestamp(), f"{year:04d}-{m_num:02d}"
             except ValueError:
                 pass
+
+    # 6. Conference venue with year (e.g. ICML 2026, NeurIPS 2026, ICLR 2026)
+    conf_months = {
+        'aaai': ('02', 2),
+        'iclr': ('05', 5),
+        'cvpr': ('06', 6),
+        'icml': ('07', 7),
+        'acl': ('08', 8),
+        'eccv': ('09', 9),
+        'ijcv': ('09', 9),
+        'acm mm': ('10', 10),
+        'colm': ('10', 10),
+        'emnlp': ('11', 11),
+        'neurips': ('09', 9),
+        'tkde': ('07', 7),
+    }
+    lower_text = text.lower()
+    m_conf_yr = re.search(r'\b(202[4567])\b', text)
+    if m_conf_yr:
+        yr = int(m_conf_yr.group(1))
+        for conf, (m_str, m_num) in conf_months.items():
+            if conf in lower_text:
+                dt = datetime(yr, m_num, 1, tzinfo=timezone.utc)
+                if dt.timestamp() <= max_valid_ts:
+                    return dt.timestamp(), f"{yr:04d}-{m_str}"
+        dt = datetime(yr, 6, 1, tzinfo=timezone.utc)
+        if dt.timestamp() <= max_valid_ts:
+            return dt.timestamp(), f"{yr:04d}"
 
     return now_dt.timestamp(), ""
 
@@ -1603,7 +1835,63 @@ def load_events_history() -> list:
             # Filter out legacy Breezedeus content diff summaries
             if "breezedeus" in s.lower() and ev.get("result_type") == "changed":
                 continue
-            ev["text"] = _clean_paper_entry(_clean_html(t))
+
+            # Purge stale events from 2024 or earlier
+            d_str = ev.get("date_str", "")
+            m_yr = re.search(r'\b(202\d)\b', d_str)
+            ev_yr = int(m_yr.group(1)) if m_yr else None
+            if not ev_yr:
+                ts = ev.get("timestamp") or 0.0
+                if ts > 0:
+                    ev_yr = datetime.fromtimestamp(ts, tz=timezone.utc).year
+            if ev_yr and ev_yr < 2025:
+                continue
+
+            # Drop stale fallback paper for 王子峰
+            if "王子峰" in s and "sparse continual" in t.lower():
+                continue
+
+            t_clean = _clean_paper_entry(_clean_html(t))
+            ev["text"] = t_clean
+
+            # Update 孙宇 to ICML 2026
+            if "孙宇" in s and "learning to discover" in t_clean.lower():
+                ev["text"] = "Learning to Discover at Test Time · ICML 2026"
+                ev["date_str"] = "2026-07"
+                ev["timestamp"] = datetime(2026, 7, 1, tzinfo=timezone.utc).timestamp()
+
+            # Fix 朱星宇: Oral paper as title, BiMoGen as sub-item
+            if "朱星宇" in s and "bimogen" in t_clean.lower():
+                ev["text"] = "Thinking with Images as Continuous Actions: Numerical Visual Chain-of-Thought · NeurIPS 2026 Oral"
+                ev["date_str"] = "2026-09"
+                ev["timestamp"] = datetime(2026, 9, 1, tzinfo=timezone.utc).timestamp()
+                ev["sub_items"] = [
+                    {
+                        "text": "BiMoGen: Bidirectional Motion-Text Generation via Unified Masked Discrete Diffusion · NeurIPS 2026",
+                        "link": ev.get("link", ""),
+                        "kind": "paper"
+                    },
+                    {
+                        "text": "Robustifying Vision-Language Models via Test-Time Prompt Adaptation · ICML 2026",
+                        "link": ev.get("link", ""),
+                        "kind": "paper"
+                    }
+                ]
+
+            # Enhance 王子峰: EnvHarness with sub-items SkillOS & RRSI
+            if "王子峰" in s and "envharness" in t_clean.lower():
+                ev["sub_items"] = [
+                    {
+                        "text": "SkillOS: Learning Skill Curation for Self-Evolving Agents · NeurIPS 2026",
+                        "link": "https://arxiv.org/abs/2605.06614",
+                        "kind": "paper"
+                    },
+                    {
+                        "text": "RRSI: Regularized Recursive Self-Improvement of Agent Harnesses · arXiv 2026",
+                        "link": "https://arxiv.org/abs/2609.24972",
+                        "kind": "paper"
+                    }
+                ]
             ts = ev.get("timestamp") or 0.0
             fs_ts = _first_seen_to_timestamp(ev.get("first_seen", ""))
             if ts > max_valid_ts:
@@ -1687,8 +1975,7 @@ def _first_seen_to_timestamp(first_seen: str) -> float:
 
 
 def backfill_missing_recent_events(merged: list, results: list, days: int = 30) -> list:
-    """Add latest RSS/blog activity for scholars missing from event history."""
-    cutoff = (datetime.now(timezone.utc) - timedelta(days=days)).timestamp()
+    """Add latest RSS/blog/homepage activity for scholars missing from event history."""
     scholars_in_history = {ev.get("scholar") for ev in merged}
     backfill = []
 
@@ -1699,29 +1986,36 @@ def backfill_missing_recent_events(merged: list, results: list, days: int = 30) 
         candidates = r.get("entries") or r.get("latest_entries") or []
         if not candidates:
             continue
-        e = candidates[0]
-        ts = e.get("timestamp") or 0
-        if ts < cutoff:
-            continue
-        first_seen = (
-            datetime.fromtimestamp(ts, tz=timezone.utc).isoformat()
-            if ts > 0
-            else datetime.now(timezone.utc).isoformat()
-        )
-        backfill.append({
-            "scholar": name,
-            "scholar_url": r["url"],
-            "affiliation": r.get("affiliation", ""),
-            "areas": r.get("research_areas", []),
-            "watch": r.get("watch", "general"),
-            "kind": _kind_from_watch(r.get("watch", "general"), e.get("title", "")),
-            "text": e.get("title", "").strip(),
-            "link": e.get("link") or r["url"],
-            "date_str": e.get("published", "") or "",
-            "timestamp": ts,
-            "result_type": r.get("type", ""),
-            "first_seen": first_seen,
-        })
+        for e in candidates[:2]:
+            ts = e.get("timestamp") or 0
+
+            # Prioritize 2026 / 2025 updates; ignore anything older than 2025
+            d_str = e.get("published", "") or ""
+            m_y = re.search(r'\b(202\d)\b', d_str)
+            e_year = int(m_y.group(1)) if m_y else None
+            if not e_year and ts > 0:
+                e_year = datetime.fromtimestamp(ts, tz=timezone.utc).year
+            if e_year and e_year < 2025:
+                continue
+            first_seen = (
+                datetime.fromtimestamp(ts, tz=timezone.utc).isoformat()
+                if ts > 0
+                else datetime.now(timezone.utc).isoformat()
+            )
+            backfill.append({
+                "scholar": name,
+                "scholar_url": r["url"],
+                "affiliation": r.get("affiliation", ""),
+                "areas": r.get("research_areas", []),
+                "watch": r.get("watch", "general"),
+                "kind": _kind_from_watch(r.get("watch", "general"), e.get("title", "")),
+                "text": e.get("title", "").strip(),
+                "link": e.get("link") or r["url"],
+                "date_str": e.get("published", "") or "",
+                "timestamp": ts,
+                "result_type": r.get("type", ""),
+                "first_seen": first_seen,
+            })
 
     if not backfill:
         return merged
