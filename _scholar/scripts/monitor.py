@@ -2107,7 +2107,20 @@ def _kind_label(kind: str) -> str:
 
 def _format_event_date(ts: float, date_str: str) -> str:
     if date_str and date_str != "?":
+        m = re.match(r"^(\d{4}[-/]\d{1,2}(?:[-/]\d{1,2})?)", date_str)
+        if m:
+            return m.group(1).replace("/", "-")
+        if ts:
+            try:
+                return datetime.fromtimestamp(ts, timezone.utc).strftime("%Y-%m-%d")
+            except Exception:
+                pass
         return date_str[:24]
+    if ts:
+        try:
+            return datetime.fromtimestamp(ts, timezone.utc).strftime("%Y-%m-%d")
+        except Exception:
+            pass
     return ""
 
 
