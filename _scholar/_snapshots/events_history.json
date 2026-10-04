@@ -1,5 +1,169 @@
 [
   {
+    "scholar": "傅宇千",
+    "scholar_url": "https://fyqqyf.github.io/",
+    "affiliation": "自动化所",
+    "areas": [
+      "Distillation",
+      "RL",
+      "Reasoning"
+    ],
+    "watch": "publications",
+    "kind": "paper",
+    "text": "A comprehensive analysis on how Anthropic and OpenAI monitor agent behavior patterns",
+    "link": "https://fyqqyf.github.io/",
+    "date_str": "2026-10-04",
+    "timestamp": 1791072000.0,
+    "result_type": "changed",
+    "first_seen": "2026-10-04T16:14:05.231468+00:00",
+    "sub_items": [
+      {
+        "text": "How Anthropic/OpenAI Monitor Advanced Agent Behavior",
+        "link": "https://fyqqyf.github.io/",
+        "kind": "paper",
+        "date": "2026-10-04",
+        "timestamp": 1791072000.0
+      },
+      {
+        "text": "and practical solutions to address them. [中文版]",
+        "link": "https://fyqqyf.github.io/",
+        "kind": "paper",
+        "date": "2026-10-04",
+        "timestamp": 1791072000.0
+      },
+      {
+        "text": "Deep dive into the common failure modes in on-policy distillation for multi-agent reinforcement learning",
+        "link": "https://fyqqyf.github.io/",
+        "kind": "paper",
+        "date": "2026-10-04",
+        "timestamp": 1791072000.0
+      },
+      {
+        "text": "Revisiting On-Policy Distillation: Three Typical Failure Modes and Repair Paths",
+        "link": "https://fyqqyf.github.io/",
+        "kind": "paper",
+        "date": "2026-10-04",
+        "timestamp": 1791072000.0
+      },
+      {
+        "text": "and deliver artifacts whose apparent completion exceeds their actual quality. [中文版]",
+        "link": "https://fyqqyf.github.io/",
+        "kind": "paper",
+        "date": "2026-10-04",
+        "timestamp": 1791072000.0
+      },
+      {
+        "text": "An analysis of how frontier coding agents can optimize for grader-visible success, stop early,",
+        "link": "https://fyqqyf.github.io/",
+        "kind": "paper",
+        "date": "2026-10-04",
+        "timestamp": 1791072000.0
+      },
+      {
+        "text": "Playing to the Grader: Early Stopping and Low-Quality Delivery in Frontier Coding Agents",
+        "link": "https://fyqqyf.github.io/",
+        "kind": "paper",
+        "date": "2026-10-04",
+        "timestamp": 1791072000.0
+      },
+      {
+        "text": "Revisiting On-Policy Distillation: Empirical Failure Modes and Simple Fixes · COLM 2026",
+        "link": "https://arxiv.org/abs/2603.25562",
+        "kind": "paper",
+        "date": "2026-09-15",
+        "timestamp": 1789430400.0
+      },
+      {
+        "text": "AVA: Attentive VLM Agent for Mastering StarCraft II · ACL 2026",
+        "link": "https://fyqqyf.github.io/",
+        "kind": "paper",
+        "date": "2026-05-10",
+        "timestamp": 1778371200.0
+      }
+    ]
+  },
+  {
+    "scholar": "📚 plmblog",
+    "scholar_url": "https://plmsmile.github.io/posts/archive.html",
+    "affiliation": "Alibaba",
+    "areas": [
+      "LLM"
+    ],
+    "watch": "blog",
+    "kind": "post",
+    "text": "SWE 自进化",
+    "link": "https://plmsmile.github.io/posts/archive.html",
+    "date_str": "2026-10-04",
+    "timestamp": 1791072000.0,
+    "result_type": "changed",
+    "first_seen": "2026-10-04T16:14:05.231477+00:00",
+    "sub_items": [
+      {
+        "text": "面壁 MiniCPM 系列",
+        "link": "https://plmsmile.github.io/posts/archive.html",
+        "kind": "post",
+        "date": "2026-10-04",
+        "timestamp": 1791072000.0
+      },
+      {
+        "text": "iQuest 系列",
+        "link": "https://plmsmile.github.io/posts/archive.html",
+        "kind": "post",
+        "date": "2026-10-04",
+        "timestamp": 1791072000.0
+      },
+      {
+        "text": "阶跃星辰系列",
+        "link": "https://plmsmile.github.io/posts/archive.html",
+        "kind": "post",
+        "date": "2026-10-04",
+        "timestamp": 1791072000.0
+      },
+      {
+        "text": "MiroMind 系列",
+        "link": "https://plmsmile.github.io/posts/archive.html",
+        "kind": "post",
+        "date": "2026-10-04",
+        "timestamp": 1791072000.0
+      },
+      {
+        "text": "AllenAI Olmo 系列",
+        "link": "https://plmsmile.github.io/posts/archive.html",
+        "kind": "post",
+        "date": "2026-10-04",
+        "timestamp": 1791072000.0
+      },
+      {
+        "text": "Mistral 系列",
+        "link": "https://plmsmile.github.io/posts/archive.html",
+        "kind": "post",
+        "date": "2026-10-04",
+        "timestamp": 1791072000.0
+      },
+      {
+        "text": "Meta 系列",
+        "link": "https://plmsmile.github.io/posts/archive.html",
+        "kind": "post",
+        "date": "2026-10-04",
+        "timestamp": 1791072000.0
+      },
+      {
+        "text": "大模型评测与基准体系综述",
+        "link": "https://plmsmile.github.io/posts/llm/eval/01-eval-survey.html",
+        "kind": "post",
+        "date": "2026-03-10",
+        "timestamp": 1773100800.0
+      },
+      {
+        "text": "Meta LLaMA 系列技术演进与架构剖析",
+        "link": "https://plmsmile.github.io/posts/llm/industry/mainllm/20-meta-series.html",
+        "kind": "post",
+        "date": "2026-01-15",
+        "timestamp": 1768435200.0
+      }
+    ]
+  },
+  {
     "scholar": "苏剑林 - 科学空间",
     "scholar_url": "https://kexue.fm/",
     "affiliation": "Kimi",
@@ -12,8 +176,8 @@
     "text": "通过微扰分析求解等式约束优化问题",
     "link": "https://kexue.fm/archives/11928",
     "date_str": "2026-10-03",
-    "timestamp": 1790956800.0,
-    "result_type": "rss",
+    "timestamp": 1791025680.0,
+    "result_type": "rss_no_change",
     "first_seen": "2026-10-04T08:46:36.703914+00:00",
     "sub_items": [
       {
@@ -21,21 +185,134 @@
         "link": "https://kexue.fm/archives/11917",
         "kind": "post",
         "date": "2026-09-28",
-        "timestamp": 1790524800.0
+        "timestamp": 1790586000.0
       },
       {
         "text": "排序不等式及其推广",
         "link": "https://kexue.fm/archives/11910",
         "kind": "post",
         "date": "2026-09-21",
-        "timestamp": 1789920000.0
+        "timestamp": 1789996500.0
       },
       {
         "text": "让炼丹更科学一些（十）：单调性假设的拆与补",
         "link": "https://kexue.fm/archives/11885",
         "kind": "post",
         "date": "2026-09-14",
-        "timestamp": 1789315200.0
+        "timestamp": 1789376340.0
+      },
+      {
+        "text": "让炼丹更科学一些（九）：经典自适应梯度算法",
+        "link": "https://kexue.fm/archives/11882",
+        "kind": "post",
+        "date": "2026-09-05",
+        "timestamp": 1788597240.0
+      },
+      {
+        "text": "让炼丹更科学一些（八）：多阶段训练的学习率",
+        "link": "https://kexue.fm/archives/11879",
+        "kind": "post",
+        "date": "2026-08-31",
+        "timestamp": 1788145620.0
+      }
+    ]
+  },
+  {
+    "scholar": "Junjie Su(苏俊杰)",
+    "scholar_url": "https://momoyeyu.github.io/",
+    "affiliation": "北京邮电大学",
+    "areas": [
+      "AI Infra"
+    ],
+    "watch": "blog",
+    "kind": "post",
+    "text": "NVIDIA GPU 谱系",
+    "link": "https://momoyeyu.github.io/posts/ai-infra-gpu-lineup/",
+    "date_str": "2026-10-01",
+    "timestamp": 1790812800.0,
+    "result_type": "rss_no_change",
+    "first_seen": "2026-10-04T16:14:05.263541+00:00",
+    "sub_items": [
+      {
+        "text": "一文搞懂归一化技术",
+        "link": "https://momoyeyu.github.io/posts/llm-normalization/",
+        "kind": "post",
+        "date": "2026-09-27",
+        "timestamp": 1790467200.0
+      },
+      {
+        "text": "MoE 技术原理",
+        "link": "https://momoyeyu.github.io/posts/llm-moe/",
+        "kind": "post",
+        "date": "2026-09-23",
+        "timestamp": 1790121600.0
+      },
+      {
+        "text": "autodev：打开 Vibe Coding 的黑盒",
+        "link": "https://momoyeyu.github.io/posts/autodev/",
+        "kind": "post",
+        "date": "2026-09-19",
+        "timestamp": 1789776000.0
+      },
+      {
+        "text": "Transformer 的数学表示与代码实现",
+        "link": "https://momoyeyu.github.io/posts/llm-transformer/",
+        "kind": "post",
+        "date": "2026-09-14",
+        "timestamp": 1789344000.0
+      },
+      {
+        "text": "再谈 AI Infra",
+        "link": "https://momoyeyu.github.io/posts/ai-infra-revisit/",
+        "kind": "post",
+        "date": "2026-05-26",
+        "timestamp": 1779753600.0
+      },
+      {
+        "text": "通过 WSL 使用 CUDA",
+        "link": "https://momoyeyu.github.io/posts/wsl-cuda/",
+        "kind": "post",
+        "date": "2026-05-22",
+        "timestamp": 1779408000.0
+      },
+      {
+        "text": "GPU 访存延迟",
+        "link": "https://momoyeyu.github.io/posts/gpu-mem-latency/",
+        "kind": "post",
+        "date": "2026-05-20",
+        "timestamp": 1779235200.0
+      }
+    ]
+  },
+  {
+    "scholar": "王立远",
+    "scholar_url": "https://lywang3081.github.io/",
+    "affiliation": "清华大学",
+    "areas": [
+      "Continual Learning"
+    ],
+    "watch": "news",
+    "kind": "news",
+    "text": "2026/10 One paper is accepted to IEEE TPAMI. 2026/09 Two papers are accepted to IJCV. 2026/08 I received the NSFC Youth Science Fund (Category B). 2026/08 I will serve as an Area Chair at ICLR 2027. 2026/07 We are organizing the 1st CL4FMAgents Workshop at NeurIPS 2026. 2026/06 One paper is accepted to Nature Communications. 2026/05 Three papers are accepted to ICML. 2026/04 One paper is accepted to Nature Communications. 2026/04 One paper is accepted to Patterns (as the cover). 2026/03 I will serve as an Action Editor for TMLR. 2026/02 Two papers are accepted to CVPR 2026. 2026/01 Two papers are accepted to ICLR 2026. 2025/11 I received the CFAA Award for our continual learning survey. 2025/11 I will serve as an Area Chair at ICML 2026. 2025/10 One paper is accepted to Nature Machine Intelligence. 2025/07 I received the WAIC Youth Outstanding Paper Award. 2025/06 I was awarded the CAAI Rising Scientist. 2025/05 We are organizing the 6th CLVision Workshop at ICCV 2025. 2025/04 One paper is accepted to IEEE TPAMI. 2025/04 I will serve as an Area Chair at NeurIPS 2025. 2024/09 I received the Excellent Conference Poster Award in CNS 2024. 2024/06 I was awarded the WAIC Rising Star. 2023/12 One paper is published in Nature Machine Intelligence (as the cover).",
+    "link": "https://neurips26-cl4fmagents.github.io/",
+    "date_str": "2026-10",
+    "timestamp": 1790812800.0,
+    "result_type": "changed",
+    "first_seen": "2026-10-04T16:14:05.263548+00:00",
+    "sub_items": [
+      {
+        "text": "2026/10 One paper is accepted to IEEE TPAMI.",
+        "link": "https://lywang3081.github.io/",
+        "kind": "news",
+        "date": "2026-10",
+        "timestamp": 1790812800.0
+      },
+      {
+        "text": "2026/09 Two papers are accepted to IJCV.",
+        "link": "https://lywang3081.github.io/",
+        "kind": "news",
+        "date": "2026-09-29",
+        "timestamp": 1790640000.0
       }
     ]
   },
@@ -52,7 +329,7 @@
     "text": "Invited to serve as the Workshops Chair of ICCV'2027",
     "link": "https://zhoujiahuan1991.github.io/",
     "date_str": "2026-09-30",
-    "timestamp": 1790697600.0,
+    "timestamp": 1790726400.0,
     "result_type": "changed",
     "first_seen": "2026-09-30T05:08:45+00:00",
     "sub_items": [
@@ -61,122 +338,65 @@
         "link": "https://zhoujiahuan1991.github.io/",
         "kind": "paper",
         "date": "2026-09-25",
-        "timestamp": 1790265600.0
+        "timestamp": 1790294400.0
       },
       {
         "text": "HypMoE-ReID: Hyperspherical Mixture-of-Experts for Large Scale Person Re-Identification · NeurIPS 2026",
         "link": "https://zhoujiahuan1991.github.io/",
         "kind": "paper",
         "date": "2026-09-25",
-        "timestamp": 1790265600.0
+        "timestamp": 1790294400.0
       },
       {
         "text": "Cross-Domain Knowledge Separation and Positive Transmission for Noisy Domain Incremental Learning · NeurIPS 2026",
         "link": "https://zhoujiahuan1991.github.io/",
         "kind": "paper",
         "date": "2026-09-25",
-        "timestamp": 1790265600.0
+        "timestamp": 1790294400.0
       },
       {
         "text": "FlexCover: Flexible Cover Song Generation via Symbolic Lead Sheet Control · NeurIPS 2026",
         "link": "https://zhoujiahuan1991.github.io/",
         "kind": "paper",
         "date": "2026-09-25",
-        "timestamp": 1790265600.0
+        "timestamp": 1790294400.0
       },
       {
         "text": "RotVLA: Rotational Latent Action for Vision-Language-Action Model · NeurIPS 2026",
         "link": "https://zhoujiahuan1991.github.io/",
         "kind": "paper",
         "date": "2026-09-25",
-        "timestamp": 1790265600.0
+        "timestamp": 1790294400.0
       },
       {
         "text": "Progressive Prototype Evolving for Dual-Forgetting Mitigation in Non-Exemplar Online Continual Learning · ACM MM 2024",
         "link": "https://doi.org/10.1145/3664647.3681234",
         "kind": "paper",
         "date": "2024-10-28",
-        "timestamp": 1730044800.0
+        "timestamp": 1730073600.0
       },
       {
         "text": "Mitigate Catastrophic Remembering via Continual Knowledge Purification for Noisy Lifelong Person Re-Identification · ACM MM 2024",
         "link": "https://doi.org/10.1145/3664647.3681235",
         "kind": "paper",
         "date": "2024-10-28",
-        "timestamp": 1730044800.0
+        "timestamp": 1730073600.0
       },
       {
         "text": "Distribution-aware Knowledge Projection for Lifelong Person Re-Identification · CVPR 2024",
         "link": "https://doi.org/10.1109/CVPR52733.2024.01571",
         "kind": "paper",
         "date": "2024-06-17",
-        "timestamp": 1718553600.0
+        "timestamp": 1718582400.0
       },
       {
         "text": "Compositional Prompting for Anti-Forgetting in Domain Incremental Learning · IJCV 2024",
         "link": "https://doi.org/10.1007/s11263-024-02134-3",
         "kind": "paper",
         "date": "2024-05-20",
-        "timestamp": 1716134400.0
+        "timestamp": 1716163200.0
       }
     ]
-  },
-  {
-    "scholar": "王立远",
-    "scholar_url": "https://lywang3081.github.io/",
-    "affiliation": "清华大学",
-    "areas": [
-      "Continual Learning"
-    ],
-    "watch": "general",
-    "kind": "news",
-    "text": "2026/09 Two papers are accepted to IJCV.",
-    "link": "https://lywang3081.github.io/",
-    "date_str": "2026-09-29",
-    "timestamp": 1790611200.0,
-    "result_type": "changed",
-    "first_seen": "2026-09-29T05:20:51.472542+00:00"
-  },
-  {
-    "scholar": "Junjie Su(苏俊杰)",
-    "scholar_url": "https://momoyeyu.github.io/",
-    "affiliation": "北京邮电大学",
-    "areas": [
-      "AI Infra"
-    ],
-    "watch": "blog",
-    "kind": "post",
-    "text": "一文搞懂归一化技术",
-    "link": "https://momoyeyu.github.io/posts/llm-normalization/",
-    "date_str": "2026-09-27",
-    "timestamp": 1790438400.0,
-    "result_type": "rss",
-    "first_seen": "2026-09-27T04:53:50.018690+00:00",
-    "sub_items": [
-      {
-        "text": "Transformer 的数学表示与代码实现",
-        "link": "https://momoyeyu.github.io/posts/dl-transformer/",
-        "kind": "post",
-        "date": "2026-09-14",
-        "timestamp": 1789315200.0
-      }
-    ]
-  },
-  {
-    "scholar": "董功",
-    "scholar_url": "https://donggong1.github.io/index.html",
-    "affiliation": "",
-    "areas": [
-      "Continual Learning"
-    ],
-    "watch": "general",
-    "kind": "update",
-    "text": "MILES: Modular Instruction Memory with Learnable Selection for Self-Improving LLM Reasoning · Sep 2026",
-    "link": "https://donggong1.github.io/index.html",
-    "date_str": "2026-09-27",
-    "timestamp": 1790438400.0,
-    "result_type": "changed",
-    "first_seen": "2026-09-27T23:31:28.987920+00:00"
   },
   {
     "scholar": "柠檬CC",
@@ -191,7 +411,7 @@
     "text": "强化学习讲义2——MiMoV2.6组级智能体评分",
     "link": "https://limoncc.com/post/a2cf7f69fb416ea5/",
     "date_str": "2026-09-27",
-    "timestamp": 1790438400.0,
+    "timestamp": 1790467200.0,
     "result_type": "changed",
     "first_seen": "2026-09-27T00:00:00+00:00",
     "sub_items": [
@@ -200,63 +420,63 @@
         "link": "https://limoncc.com/post/e2dd286f4b3be253/",
         "kind": "post",
         "date": "2026-09-23",
-        "timestamp": 1790092800.0
+        "timestamp": 1790121600.0
       },
       {
         "text": "大语言模型研究10——RubricRL实践",
         "link": "https://limoncc.com/post/793a20286198dbac/",
         "kind": "post",
         "date": "2026-09-16",
-        "timestamp": 1789488000.0
+        "timestamp": 1789516800.0
       },
       {
         "text": "大语言模型研究09-RubricRL理论分析",
         "link": "https://limoncc.com/post/70fa56fce8a7ff4f/",
         "kind": "post",
         "date": "2026-09-14",
-        "timestamp": 1789315200.0
+        "timestamp": 1789344000.0
       },
       {
         "text": "RNN的复兴04:线性注意力并行计算DPLR",
         "link": "https://limoncc.com/post/9e070b6858f0e490/",
         "kind": "post",
         "date": "2026-08-18",
-        "timestamp": 1786982400.0
+        "timestamp": 1787011200.0
       },
       {
         "text": "大语言模型研究17——强化学习中KL散度惩罚问题",
         "link": "https://limoncc.com/post/9e2e995289848c87/",
         "kind": "post",
         "date": "2026-06-28",
-        "timestamp": 1782576000.0
+        "timestamp": 1782604800.0
       },
       {
         "text": "大语言模型研究16——注意力机制优化之稀疏注意",
         "link": "https://limoncc.com/post/1540fb65f18f359a/",
         "kind": "post",
         "date": "2026-05-25",
-        "timestamp": 1779638400.0
+        "timestamp": 1779667200.0
       },
       {
         "text": "大语言模型研究14——注意力机制优化之FlashAttention",
         "link": "https://limoncc.com/post/f8b4cf8901e0b294/",
         "kind": "post",
         "date": "2026-05-19",
-        "timestamp": 1779120000.0
+        "timestamp": 1779148800.0
       },
       {
         "text": "大语言模型研究15——注意力机制优化之KV缓存",
         "link": "https://limoncc.com/post/64e24a5816e7035f/",
         "kind": "post",
         "date": "2026-05-19",
-        "timestamp": 1779120000.0
+        "timestamp": 1779148800.0
       },
       {
         "text": "大语言模型研究12——均方根层归一化(RMSNorm)",
         "link": "https://limoncc.com/post/459cffa89d9d94ff/",
         "kind": "post",
         "date": "2026-05-18",
-        "timestamp": 1779033600.0
+        "timestamp": 1779062400.0
       }
     ]
   },
@@ -270,65 +490,12 @@
     ],
     "watch": "general",
     "kind": "news",
-    "text": "Sep 26, 2026 OdysSim: Building Foundation Models for Human Behavior Simulation has been accepted to NeurIPS 2026!",
-    "link": "https://xuhuiz.com/",
+    "text": "Sep 26, 2026 OdysSim: Building Foundation Models for Human Behavior Simulation has been accepted to NeurIPS 2026! Aug 12, 2026 I defended my PhD! [Slides] Jul 8, 2026 Excited that five papers were accepted to COLM 2026 : Mind the Sim2Real Gap in User Simulation for Agentic Tasks , SOTOPIA-TOM , Social World Models , GoodPoint , and Training Proactive and Personalized LLM Agents . Apr 18, 2026 Gave a talk on \"User-Effective AI Agents\" at Scale AI . [Slides] Apr 9, 2026 I received a Microsoft PhD Fellowship !",
+    "link": "https://arxiv.org/abs/2606.14199",
     "date_str": "2026-09-26",
-    "timestamp": 1790352000.0,
-    "result_type": "changed",
-    "first_seen": "2026-09-27T04:53:50.018699+00:00"
-  },
-  {
-    "scholar": "袁洋",
-    "scholar_url": "https://scholar.google.com/citations?hl=en&user=7o4wtKEAAAAJ&view_op=list_works&sortby=pubdate",
-    "affiliation": "Tsinghua University",
-    "areas": [
-      "范畴论"
-    ],
-    "watch": "publications",
-    "kind": "paper",
-    "text": "Tensor product attention is all you need · NeurIPS 2026",
-    "link": "https://scholar.google.com/citations?hl=en&user=7o4wtKEAAAAJ&view_op=list_works&sortby=pubdate",
-    "date_str": "2026-09-25",
-    "timestamp": 1790265600.0,
+    "timestamp": 1790380800.0,
     "result_type": "unchanged",
-    "first_seen": "2026-10-04T10:33:23.486867+00:00",
-    "sub_items": [
-      {
-        "text": "Probing the Lack of Stable Internal Beliefs in LLMs · arXiv 2026",
-        "link": "https://arxiv.org/abs/2603.25187",
-        "kind": "paper",
-        "date": "2026-03-25",
-        "timestamp": 1774368000.0
-      },
-      {
-        "text": "Group representational position encoding · ICLR 2026",
-        "link": "https://scholar.google.com/citations?hl=en&user=7o4wtKEAAAAJ&view_op=list_works&sortby=pubdate",
-        "kind": "paper",
-        "date": "2026-01-20",
-        "timestamp": 1768838400.0
-      },
-      {
-        "text": "On the design of kl-regularized policy gradient algorithms for llm reasoning · ICLR 2026",
-        "link": "https://scholar.google.com/citations?hl=en&user=7o4wtKEAAAAJ&view_op=list_works&sortby=pubdate",
-        "kind": "paper",
-        "date": "2026-01-20",
-        "timestamp": 1768838400.0
-      },
-      {
-        "text": "Monadic Context Engineering · arXiv 2025",
-        "link": "https://arxiv.org/abs/2512.22431",
-        "kind": "paper",
-        "date": "2025-12-25",
-        "timestamp": 1766592000.0
-      },
-      {
-        "text": "Clarifying before reasoning: A coq prover with structural context · arXiv 2025",
-        "link": "https://arxiv.org/abs/2507.02541",
-        "kind": "paper",
-        "date": "2025-07-05",
-        "timestamp": 1751644800.0
-      }
-    ]
+    "first_seen": "2026-10-04T16:14:05.263592+00:00"
   },
   {
     "scholar": "Hao Zhu (堪村无业土博鼠)",
@@ -342,7 +509,7 @@
     "text": "Machine unlearning via task simplex arithmetic · NeurIPS 2026",
     "link": "https://scholar.google.com/citations?hl=en&user=cpee-44AAAAJ&view_op=list_works&sortby=pubdate",
     "date_str": "2026-09-25",
-    "timestamp": 1790265600.0,
+    "timestamp": 1790294400.0,
     "result_type": "unchanged",
     "first_seen": "2026-10-04T10:33:23.486861+00:00",
     "sub_items": [
@@ -351,28 +518,123 @@
         "link": "https://scholar.google.com/citations?hl=en&user=cpee-44AAAAJ&view_op=list_works&sortby=pubdate",
         "kind": "paper",
         "date": "2026-09-25",
-        "timestamp": 1790265600.0
+        "timestamp": 1790294400.0
       },
       {
-        "text": "FLASH: Fast Generative Retrieval via Autoregressive Semantic Hashing with Provably Distance Bounds · SIGKDD 2026",
-        "link": "https://scholar.google.com/citations?hl=en&user=cpee-44AAAAJ&view_op=list_works&sortby=pubdate",
+        "text": "When Gradient Boosting Meets Adaption: Exploring Weak Learner Principle for Parameter Efficient Fine-tuning · 32nd SIGKDD Conference on Knowledge Discovery and Data Mining, 2026",
+        "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=cpee-44AAAAJ&sortby=pubdate&citation_for_view=cpee-44AAAAJ:uWQEDVKXjbEC",
         "kind": "paper",
-        "date": "2026-08-20",
-        "timestamp": 1787155200.0
+        "date": "2026",
+        "timestamp": 1780272000.0
       },
       {
-        "text": "Federated Domain Generalization for Time-Series Classification via Dynamics-to-Domain Generation · SIGKDD 2026",
-        "link": "https://scholar.google.com/citations?hl=en&user=cpee-44AAAAJ&view_op=list_works&sortby=pubdate",
+        "text": "FLASH: Fast Generative Retrieval via Autoregressive Semantic Hashing with Provably Distance Bounds · 32nd SIGKDD Conference on Knowledge Discovery and Data Mining, 2026",
+        "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=cpee-44AAAAJ&sortby=pubdate&citation_for_view=cpee-44AAAAJ:SP6oXDckpogC",
         "kind": "paper",
-        "date": "2026-08-20",
-        "timestamp": 1787155200.0
+        "date": "2026",
+        "timestamp": 1780272000.0
+      },
+      {
+        "text": "Federated Domain Generalization for Time-Series Classification via Dynamics-to-Domain Generation · 32nd SIGKDD Conference on Knowledge Discovery and Data Mining, 2026",
+        "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=cpee-44AAAAJ&sortby=pubdate&citation_for_view=cpee-44AAAAJ:UxriW0iASnsC",
+        "kind": "paper",
+        "date": "2026",
+        "timestamp": 1780272000.0
+      },
+      {
+        "text": "Machine unlearning via task simplex arithmetic · Advances in Neural Information Processing Systems 38, 2026",
+        "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=cpee-44AAAAJ&sortby=pubdate&citation_for_view=cpee-44AAAAJ:yD5IFk8b50cC",
+        "kind": "paper",
+        "date": "2026",
+        "timestamp": 1780272000.0
       },
       {
         "text": "Hierarchically Robust Zero-shot Vision-language Models · CVPR 2026",
         "link": "https://scholar.google.com/citations?hl=en&user=cpee-44AAAAJ&view_op=list_works&sortby=pubdate",
         "kind": "paper",
         "date": "2026-02-27",
-        "timestamp": 1772121600.0
+        "timestamp": 1772150400.0
+      },
+      {
+        "text": "Robustifying Zero-Shot Vision Language Models by Subspaces Alignment · International Conference on Computer Vision (ICCV 2025), 2025",
+        "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=cpee-44AAAAJ&sortby=pubdate&citation_for_view=cpee-44AAAAJ:4OULZ7Gr8RgC",
+        "kind": "paper",
+        "date": "2025",
+        "timestamp": 1748736000.0
+      }
+    ]
+  },
+  {
+    "scholar": "袁洋",
+    "scholar_url": "https://scholar.google.com/citations?hl=en&user=7o4wtKEAAAAJ&view_op=list_works&sortby=pubdate",
+    "affiliation": "Tsinghua University",
+    "areas": [
+      "范畴论"
+    ],
+    "watch": "publications",
+    "kind": "paper",
+    "text": "Tensor product attention is all you need · NeurIPS 2026",
+    "link": "https://scholar.google.com/citations?hl=en&user=7o4wtKEAAAAJ&view_op=list_works&sortby=pubdate",
+    "date_str": "2026-09-25",
+    "timestamp": 1790294400.0,
+    "result_type": "unchanged",
+    "first_seen": "2026-10-04T10:33:23.486867+00:00",
+    "sub_items": [
+      {
+        "text": "Calculus of intelligence: A topos-monadic framework for agentic workflows · iFuture, 2026",
+        "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=7o4wtKEAAAAJ&sortby=pubdate&citation_for_view=7o4wtKEAAAAJ:uWQEDVKXjbEC",
+        "kind": "paper",
+        "date": "2026",
+        "timestamp": 1780272000.0
+      },
+      {
+        "text": "Tensor product attention is all you need · Advances in Neural Information Processing Systems 38, 2026",
+        "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=7o4wtKEAAAAJ&sortby=pubdate&citation_for_view=7o4wtKEAAAAJ:_xSYboBqXhAC",
+        "kind": "paper",
+        "date": "2026",
+        "timestamp": 1780272000.0
+      },
+      {
+        "text": "Group representational position encoding · International Conference on Learning Representations 2026",
+        "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=7o4wtKEAAAAJ&sortby=pubdate&citation_for_view=7o4wtKEAAAAJ:KxtntwgDAa4C",
+        "kind": "paper",
+        "date": "2026",
+        "timestamp": 1780272000.0
+      },
+      {
+        "text": "On the design of kl-regularized policy gradient algorithms for llm reasoning · International Conference on Learning Representations 2026",
+        "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=7o4wtKEAAAAJ&sortby=pubdate&citation_for_view=7o4wtKEAAAAJ:P5F9QuxV20EC",
+        "kind": "paper",
+        "date": "2026",
+        "timestamp": 1780272000.0
+      },
+      {
+        "text": "Probing the Lack of Stable Internal Beliefs in LLMs · arXiv 2026",
+        "link": "https://arxiv.org/abs/2603.25187",
+        "kind": "paper",
+        "date": "2026-03-25",
+        "timestamp": 1774396800.0
+      },
+      {
+        "text": "Group representational position encoding · ICLR 2026",
+        "link": "https://scholar.google.com/citations?hl=en&user=7o4wtKEAAAAJ&view_op=list_works&sortby=pubdate",
+        "kind": "paper",
+        "date": "2026-01-20",
+        "timestamp": 1768867200.0
+      },
+      {
+        "text": "Monadic Context Engineering · arXiv 2025",
+        "link": "https://arxiv.org/abs/2512.22431",
+        "kind": "paper",
+        "date": "2025-12-25",
+        "timestamp": 1766620800.0
+      },
+      {
+        "text": "Clarifying before reasoning: A coq prover with structural context · arXiv preprint arXiv:2507.02541, 2025",
+        "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=7o4wtKEAAAAJ&sortby=pubdate&citation_for_view=7o4wtKEAAAAJ:xtRiw3GOFMkC",
+        "kind": "paper",
+        "date": "2025",
+        "timestamp": 1748736000.0
       }
     ]
   },
@@ -389,7 +651,7 @@
     "text": "Dynamic Cross-Modal Prompt Generation for Multimodal Continual Instruction Tuning · NeurIPS 2026",
     "link": "https://arxiv.org/abs/2605.10765",
     "date_str": "2026-09-24",
-    "timestamp": 1790179200.0,
+    "timestamp": 1790208000.0,
     "result_type": "changed",
     "first_seen": "2026-09-24T23:42:37+00:00",
     "sub_items": [
@@ -398,63 +660,63 @@
         "link": "https://arxiv.org/abs/2511.15633",
         "kind": "paper",
         "date": "2026-09-24",
-        "timestamp": 1790179200.0
+        "timestamp": 1790208000.0
       },
       {
         "text": "CRAM: Centroid-Routing and Adaptive MoE for Multimodal Continual Instruction Tuning · EMNLP 2026",
         "link": "https://arxiv.org/abs/2606.02502",
         "kind": "paper",
         "date": "2026-08-20",
-        "timestamp": 1787155200.0
+        "timestamp": 1787184000.0
       },
       {
         "text": "SAME: Stabilized Mixture-of-Experts for Multimodal Continual Instruction Tuning · ICML 2026",
         "link": "https://arxiv.org/abs/2602.01990",
         "kind": "paper",
         "date": "2026-05-15",
-        "timestamp": 1778774400.0
+        "timestamp": 1778803200.0
       },
       {
         "text": "AREA: Attribute Extraction and Aggregation for CLIP-Based Class-Incremental Learning · ICML 2026",
         "link": "https://arxiv.org/abs/2605.28809",
         "kind": "paper",
         "date": "2026-05-15",
-        "timestamp": 1778774400.0
+        "timestamp": 1778803200.0
       },
       {
         "text": "External Knowledge Injection for CLIP-Based Class-Incremental Learning · ICCV 2025",
         "link": "https://arxiv.org/abs/2503.08510",
         "kind": "paper",
         "date": "2025-07-10",
-        "timestamp": 1752076800.0
+        "timestamp": 1752105600.0
       },
       {
         "text": "Integrating Task-Specific and Universal Adapters for Pre-Trained Model-Based Class-Incremental Learning · ICCV 2025",
         "link": "https://arxiv.org/abs/2508.08165",
         "kind": "paper",
         "date": "2025-07-10",
-        "timestamp": 1752076800.0
+        "timestamp": 1752105600.0
       },
       {
         "text": "Dual Consolidation for Pre-Trained Model-Based Domain-Incremental Learning · CVPR 2025",
         "link": "http://arxiv.org/abs/2410.00911",
         "kind": "paper",
         "date": "2025-02-27",
-        "timestamp": 1740585600.0
+        "timestamp": 1740614400.0
       },
       {
         "text": "Task-Agnostic Guided Feature Expansion for Class-Incremental Learning · CVPR 2025",
         "link": "https://arxiv.org/abs/2503.00823",
         "kind": "paper",
         "date": "2025-02-27",
-        "timestamp": 1740585600.0
+        "timestamp": 1740614400.0
       },
       {
         "text": "Learning without Forgetting for Vision-Language Models · TPAMI 2025",
         "link": "http://arxiv.org/abs/2305.19270",
         "kind": "paper",
         "date": "2025-01-15",
-        "timestamp": 1736870400.0
+        "timestamp": 1736899200.0
       }
     ]
   },
@@ -468,8 +730,8 @@
     "text": "Debating RSI, the US-China Gap, and Jaggedness with JS Denain of Epoch AI",
     "link": "https://www.interconnects.ai/p/debating-rsi-the-us-china-gap-and",
     "date_str": "2026-09-22",
-    "timestamp": 1790006400.0,
-    "result_type": "rss",
+    "timestamp": 1790084265.0,
+    "result_type": "rss_no_change",
     "first_seen": "2026-09-22T23:25:02.188033+00:00",
     "sub_items": [
       {
@@ -477,103 +739,21 @@
         "link": "https://www.interconnects.ai/p/the-current-balance-of-power-in-open",
         "kind": "post",
         "date": "2026-09-21",
-        "timestamp": 1789920000.0
+        "timestamp": 1789991816.0
       },
       {
         "text": "Why I still haven’t bought into true RSI",
         "link": "https://www.interconnects.ai/p/where-i-stand-on-rsi",
         "kind": "post",
         "date": "2026-09-19",
-        "timestamp": 1789747200.0
+        "timestamp": 1789832540.0
       },
       {
         "text": "Open-Source AI & Open Models Reading List",
         "link": "https://www.interconnects.ai/p/open-source-ai-reading-list",
         "kind": "post",
         "date": "2026-09-11",
-        "timestamp": 1789056000.0
-      },
-      {
-        "text": "One resignation turned the embers of AI fear into a wildfire",
-        "link": "https://www.interconnects.ai/p/one-resignation-turned-the-embers",
-        "kind": "post",
-        "date": "2026-09-10",
-        "timestamp": 1788969600.0
-      },
-      {
-        "text": "When will average people feel AI’s impact?",
-        "link": "https://www.interconnects.ai/p/when-will-average-people-feel-ais",
-        "kind": "post",
-        "date": "2026-09-09",
-        "timestamp": 1788883200.0
-      }
-    ]
-  },
-  {
-    "scholar": "孙海龙",
-    "scholar_url": "https://sun-hailong.github.io/",
-    "affiliation": "NJU LAMDA",
-    "areas": [
-      "Continual Learning",
-      "Multimodal"
-    ],
-    "watch": "news",
-    "kind": "news",
-    "text": "Our team released Ling-3.0-flash-VL and Ling-3.0-flash-Sante, extending Ling 3.0 to visual agents and healthcare",
-    "link": "https://x.com/AntLingAGI/status/2095935971556782372",
-    "date_str": "2026-09-20",
-    "timestamp": 1789833600.0,
-    "result_type": "changed",
-    "first_seen": "2026-09-20T00:00:00+00:00",
-    "sub_items": [
-      {
-        "text": "Open-sourced Ling-3.0-flash-Fin and FinFIRST for verifiable financial research agents",
-        "link": "https://huggingface.co/inclusionAI/Ling-3.0-flash-Fin",
-        "kind": "post",
-        "date": "2026-09-10",
-        "timestamp": 1788969600.0
-      },
-      {
-        "text": "Release of Ling-3.0-flash model",
-        "link": "https://huggingface.co/inclusionAI/Ling-3.0-flash",
-        "kind": "post",
-        "date": "2026-07-15",
-        "timestamp": 1784044800.0
-      },
-      {
-        "text": "Released multimodal LLM Ovis2.5-9B",
-        "link": "https://huggingface.co/AIDC-AI/Ovis2.5-9B",
-        "kind": "post",
-        "date": "2025-08-20",
-        "timestamp": 1755619200.0
-      },
-      {
-        "text": "Mitigating Visual Forgetting in Multimodal LLMs · ACL 2025",
-        "link": "https://arxiv.org/abs/2503.13360",
-        "kind": "paper",
-        "date": "2025-05-15",
-        "timestamp": 1747238400.0
-      },
-      {
-        "text": "Parrot: Multilingual Multimodal LLMs · ICML 2025",
-        "link": "https://arxiv.org/abs/2406.02539",
-        "kind": "paper",
-        "date": "2025-05-10",
-        "timestamp": 1746806400.0
-      },
-      {
-        "text": "MLLM Long-Chain Reasoning via Visual Tree Search · CVPR 2025",
-        "link": "https://arxiv.org/abs/2411.14432",
-        "kind": "paper",
-        "date": "2025-02-27",
-        "timestamp": 1740585600.0
-      },
-      {
-        "text": "PILOT: Pre-Trained Model-Based Continual Learning Toolbox · SCIS 2025",
-        "link": "https://github.com/sun-hailong/LAMDA-PILOT",
-        "kind": "paper",
-        "date": "2025-01-15",
-        "timestamp": 1736870400.0
+        "timestamp": 1789130185.0
       }
     ]
   },
@@ -590,7 +770,7 @@
     "text": "CurveRL: Principled Distribution-Aware Context Reweighting for LLM Reasoning · NeurIPS 2026",
     "link": "https://arxiv.org/abs/2605.24331",
     "date_str": "2026-09-18",
-    "timestamp": 1789660800.0,
+    "timestamp": 1789689600.0,
     "result_type": "changed",
     "first_seen": "2026-09-18T00:00:00+00:00",
     "sub_items": [
@@ -599,28 +779,42 @@
         "link": "https://www.arxiv.org/abs/2408.05342",
         "kind": "paper",
         "date": "2026-06-10",
-        "timestamp": 1781020800.0
+        "timestamp": 1781049600.0
+      },
+      {
+        "text": "Favorite Quotes Practice without theory is blind, but equally, theory without practice is mere intellectual play.  ——Immanuel Kant The statistical community has been committed to the almost exclusive use of data models. This commitment has led to irrelevant theory, questionable conclusions, and has kept statisticians from working on a large range of interesting current problems. …… The danger is that if we define the boundaries of our field in terms of familiar tools and familiar problems, we will fail to grasp the new opportunities. —— Leo Breiman Talk is cheap, show me the code. —— Linus Torvalds",
+        "link": "https://sites.google.com/view/kesun#h.ctv4v6g45txy",
+        "kind": "paper",
+        "date": "2026",
+        "timestamp": 1780272000.0
+      },
+      {
+        "text": "Selected Preprints / Publications [ Full Publications ] [7] Ke Sun*, Yizhou Zhao*, Jiayi Xin, Qi Long, Weijie Su . CurveRL: Principled Distribution-Aware Context Reweighting for LLM Reasoning . Advances in Neural Information Processing Systems ( NeurIPS ), 202 6 .🔥 [6] Ke Sun, Linglong Kong, Hongtu Zhu, Chengchun Shi. ARMA-Design: Optimal Treatment Allocation Strategies for A/B Testing in Partially Observable Experiments . Journal of American Statistical Association (Theor y & Method ), 202 6🔥 [5] Ke Sun * , Hongming Zh ang* , Jun Jin, Chao Gao, Xi Chen, Wulong Liu, Linglong Kong. Principled Fast and Meta Knowledge Learners for Continual Reinforcement Learning . International Conference on Learning Representations ( ICLR ), 202 6 .🔥 [ 4 ] Ke Sun , Yingnan Zhao, Enze Shi, Yafei Wang, Xiaodong Yan, Bei Jiang, Linglong Kong. Intrinsic Benefits of Being Categorical Distributional: Uncertainty-aware Regularized Exploration in Reinforcement Learning . Advances in Neural Information Processing Systems ( NeurIPS ), 2025 [ 3 ] Ke Sun , Yingnan Zhao, Wulong Liu, Bei Jiang, Linglong Kong. Distributional Reinforcement Learning with Regularized Wasserstein Loss . Advances in Neural Information Processing Systems ( NeurIPS ), 2024. [ C ode ] [2] Ke Sun *, Yafei Wang*, Yi Liu, Yingnan Zhao, Bo Pan, Shangling Jui, Bei Jiang, Linglong Kong. ( * equal contribution in alphabetical order). Damped Anderson Mixing for Deep Reinforcement Learning: Acceleration, Convergence, and Stabilization Advances in Neural Information Processing Systems ( NeurIPS ), 2021. [ C ode ] . [1] Ke Sun , Zhanxing Zhu, Zhouchen Lin. AdaGCN: AdaBoosting Graph Convolutional Networks into Deep Models International Conference on Learning Representations ( ICLR ), 2021 .. * denotes equal contribution",
+        "link": "https://sites.google.com/view/kesun#h.2784szx9fhbd",
+        "kind": "paper",
+        "date": "2026-05",
+        "timestamp": 1777593600.0
       },
       {
         "text": "Principled Fast and Meta Knowledge Learners for Continual Reinforcement Learning · ICLR 2026",
         "link": "https://sites.google.com/view/kesun",
         "kind": "paper",
         "date": "2026-01-20",
-        "timestamp": 1768838400.0
+        "timestamp": 1768867200.0
       },
       {
         "text": "Intrinsic Benefits of Being Categorical Distributional: Uncertainty-aware Regularized Exploration in Reinforcement Learning · NeurIPS 2025",
         "link": "https://arxiv.org/abs/2110.03155",
         "kind": "paper",
         "date": "2025-09-25",
-        "timestamp": 1758729600.0
+        "timestamp": 1758758400.0
       },
       {
         "text": "Distributional Reinforcement Learning with Regularized Wasserstein Loss · NeurIPS 2024",
         "link": "https://arxiv.org/abs/2202.00769",
         "kind": "paper",
         "date": "2024-09-25",
-        "timestamp": 1727193600.0
+        "timestamp": 1727222400.0
       }
     ]
   },
@@ -636,62 +830,140 @@
     "text": "LLM论文研读：Trace as State——把思考过程放到问题之前，真的能让大模型更会推理吗？ - mengrennwpu",
     "link": "https://www.cnblogs.com/mengrennwpu/p/22997077",
     "date_str": "2026-09-16",
-    "timestamp": 1789488000.0,
-    "result_type": "rss",
-    "first_seen": "2026-09-16T23:27:43.713808+00:00"
-  },
-  {
-    "scholar": "傅宇千",
-    "scholar_url": "https://fyqqyf.github.io/",
-    "affiliation": "自动化所",
-    "areas": [
-      "Distillation",
-      "RL",
-      "Reasoning"
-    ],
-    "watch": "publications",
-    "kind": "paper",
-    "text": "Revisiting On-Policy Distillation: Empirical Failure Modes and Simple Fixes · COLM 2026",
-    "link": "https://arxiv.org/abs/2603.25562",
-    "date_str": "2026-09-15",
-    "timestamp": 1789401600.0,
-    "result_type": "changed",
-    "first_seen": "2026-09-15T00:00:00+00:00",
+    "timestamp": 1789540500.0,
+    "result_type": "rss_no_change",
+    "first_seen": "2026-09-16T23:27:43.713808+00:00",
     "sub_items": [
       {
-        "text": "Revisiting On-Policy Distillation: Three Typical Failure Modes and Repair Paths · Qingke AI",
-        "link": "https://qingkeai.online/archives/revisiting_opd",
+        "text": "龙虾白嫖指南，请查收~ - mengrennwpu",
+        "link": "https://www.cnblogs.com/mengrennwpu/p/19771313",
         "kind": "post",
-        "date": "2026-07-12",
-        "timestamp": 1783785600.0
+        "date": "2026-03-25",
+        "timestamp": 1774430760.0
       },
       {
-        "text": "AVA: Attentive VLM Agent for Mastering StarCraft II · ACL 2026",
-        "link": "https://fyqqyf.github.io/",
-        "kind": "paper",
-        "date": "2026-05-10",
-        "timestamp": 1778342400.0
+        "text": "Qwen3-Embedding国产化部署 - mengrennwpu",
+        "link": "https://www.cnblogs.com/mengrennwpu/p/19679320",
+        "kind": "post",
+        "date": "2026-03-06",
+        "timestamp": 1772788920.0
       },
       {
-        "text": "SRFT: A Single-Stage Method with Supervised and Reinforcement Fine-Tuning for Reasoning · ICLR 2026",
-        "link": "https://openreview.net/forum?id=n6E0r6kQWQ",
-        "kind": "paper",
-        "date": "2026-01-20",
-        "timestamp": 1768838400.0
+        "text": "LLM应用实践: NoteBookLM初次使用 - mengrennwpu",
+        "link": "https://www.cnblogs.com/mengrennwpu/p/19351375",
+        "kind": "post",
+        "date": "2025-12-15",
+        "timestamp": 1765767720.0
       },
       {
-        "text": "RLAE: Reinforcement Learning-Assisted Ensemble for LLMs · EMNLP 2025",
-        "link": "https://aclanthology.org/2025.emnlp-main.680/",
-        "kind": "paper",
-        "date": "2025-11-05",
-        "timestamp": 1762272000.0
+        "text": "LLM应用剖析: 手机智能助理Phone Agent - mengrennwpu",
+        "link": "https://www.cnblogs.com/mengrennwpu/p/19337656",
+        "kind": "post",
+        "date": "2025-12-11",
+        "timestamp": 1765445520.0
       },
       {
-        "text": "INS: Interaction-aware Synthesis to Enhance Offline Multi-agent Reinforcement Learning · ICLR 2025",
-        "link": "https://fyqqyf.github.io/",
+        "text": "LLM应用剖析: 小红书AI图文生成器-红墨 - mengrennwpu",
+        "link": "https://www.cnblogs.com/mengrennwpu/p/19323498",
+        "kind": "post",
+        "date": "2025-12-08",
+        "timestamp": 1765195680.0
+      },
+      {
+        "text": "LLM应用剖析: 热点新闻助手TrendRadar - mengrennwpu",
+        "link": "https://www.cnblogs.com/mengrennwpu/p/19280245",
+        "kind": "post",
+        "date": "2025-11-28",
+        "timestamp": 1764292620.0
+      },
+      {
+        "text": "LLM书籍参阅: 谷歌提示工程 - mengrennwpu",
+        "link": "https://www.cnblogs.com/mengrennwpu/p/19252003",
+        "kind": "post",
+        "date": "2025-11-21",
+        "timestamp": 1763696880.0
+      },
+      {
+        "text": "LLM应用剖析: AI对冲基金 - mengrennwpu",
+        "link": "https://www.cnblogs.com/mengrennwpu/p/19242557",
+        "kind": "post",
+        "date": "2025-11-19",
+        "timestamp": 1763535420.0
+      }
+    ]
+  },
+  {
+    "scholar": "孙海龙",
+    "scholar_url": "https://sun-hailong.github.io/",
+    "affiliation": "NJU LAMDA",
+    "areas": [
+      "Continual Learning",
+      "Multimodal"
+    ],
+    "watch": "news",
+    "kind": "post",
+    "text": "Open-sourced Ling-3.0-flash-Fin and FinFIRST for verifiable financial research agents",
+    "link": "https://huggingface.co/inclusionAI/Ling-3.0-flash-Fin",
+    "date_str": "2026-09-10",
+    "timestamp": 1788998400.0,
+    "result_type": "changed",
+    "first_seen": "2026-09-20T00:00:00+00:00",
+    "sub_items": [
+      {
+        "text": "Our team released Ling-3.0-flash-VL and Ling-3.0-flash-Sante , extending Ling 3.0 to visual agents and healthcare.",
+        "link": "https://x.com/AntLingAGI/status/2095935971556782372",
+        "kind": "news",
+        "date": "2026-09",
+        "timestamp": 1788220800.0
+      },
+      {
+        "text": "Our team open-sourced Ling-3.0-flash-Fin and FinFIRST for verifiable financial research agents.",
+        "link": "https://huggingface.co/inclusionAI/Ling-3.0-flash-Fin",
+        "kind": "news",
+        "date": "2026-09",
+        "timestamp": 1788220800.0
+      },
+      {
+        "text": "Release of Ling-3.0-flash model",
+        "link": "https://huggingface.co/inclusionAI/Ling-3.0-flash",
+        "kind": "post",
+        "date": "2026-07-15",
+        "timestamp": 1784073600.0
+      },
+      {
+        "text": "Released multimodal LLM Ovis2.5-9B",
+        "link": "https://huggingface.co/AIDC-AI/Ovis2.5-9B",
+        "kind": "post",
+        "date": "2025-08-20",
+        "timestamp": 1755648000.0
+      },
+      {
+        "text": "Mitigating Visual Forgetting in Multimodal LLMs · ACL 2025",
+        "link": "https://arxiv.org/abs/2503.13360",
         "kind": "paper",
-        "date": "2025-01-22",
-        "timestamp": 1737475200.0
+        "date": "2025-05-15",
+        "timestamp": 1747267200.0
+      },
+      {
+        "text": "Parrot: Multilingual Multimodal LLMs · ICML 2025",
+        "link": "https://arxiv.org/abs/2406.02539",
+        "kind": "paper",
+        "date": "2025-05-10",
+        "timestamp": 1746835200.0
+      },
+      {
+        "text": "MLLM Long-Chain Reasoning via Visual Tree Search · CVPR 2025",
+        "link": "https://arxiv.org/abs/2411.14432",
+        "kind": "paper",
+        "date": "2025-02-27",
+        "timestamp": 1740614400.0
+      },
+      {
+        "text": "PILOT: Pre-Trained Model-Based Continual Learning Toolbox · SCIS 2025",
+        "link": "https://github.com/sun-hailong/LAMDA-PILOT",
+        "kind": "paper",
+        "date": "2025-01-15",
+        "timestamp": 1736899200.0
       }
     ]
   },
@@ -709,9 +981,32 @@
     "text": "Teaching an M4 CPU to Tell Stories with XOR, Popcount and SDOT",
     "link": "https://dnhkng.github.io/posts/m4-tinystories/",
     "date_str": "2026-09-10",
-    "timestamp": 1788969600.0,
+    "timestamp": 1788991200.0,
     "result_type": "rss_no_change",
-    "first_seen": "2026-09-10T22:53:06.324457+00:00"
+    "first_seen": "2026-09-10T22:53:06.324457+00:00",
+    "sub_items": [
+      {
+        "text": "2x GH200 for LLM inference, Part 4: DeepSeek V4 Flash - SGLang vs vLLM at 1M context",
+        "link": "https://dnhkng.github.io/posts/gh200-benchmarking-part-4-dsv4-released/",
+        "kind": "post",
+        "date": "2026-08-04",
+        "timestamp": 1785794400.0
+      },
+      {
+        "text": "Building the",
+        "link": "https://dnhkng.github.io/posts/building-a-quantum-llm/",
+        "kind": "post",
+        "date": "2026-07-22",
+        "timestamp": 1784671200.0
+      },
+      {
+        "text": "2x GH200 for LLM inference, Part 3: GLM-5.2, expert offload, and the CPU question",
+        "link": "https://dnhkng.github.io/posts/gh200-benchmarking-part-3-glm52/",
+        "kind": "post",
+        "date": "2026-06-17",
+        "timestamp": 1781647200.0
+      }
+    ]
   },
   {
     "scholar": "刘子铭（KAN）",
@@ -725,9 +1020,67 @@
     "text": "Six Bets on Auto-Research",
     "link": "https://kindxiaoming.github.io/blog/2026/six-bets-auto-research/",
     "date_str": "2026-09-09",
-    "timestamp": 1788883200.0,
+    "timestamp": 1788912000.0,
     "result_type": "rss_no_change",
-    "first_seen": "2026-09-23T12:27:56.702284+00:00"
+    "first_seen": "2026-09-23T12:27:56.702284+00:00",
+    "sub_items": [
+      {
+        "text": "Foundation Model or Not?",
+        "link": "https://kindxiaoming.github.io/blog/2026/unified-or-not/",
+        "kind": "post",
+        "date": "2026-08-30",
+        "timestamp": 1788048000.0
+      },
+      {
+        "text": "A True World Model Requires Mixture of Compression",
+        "link": "https://kindxiaoming.github.io/blog/2026/mixture-of-abstraction/",
+        "kind": "post",
+        "date": "2026-08-29",
+        "timestamp": 1787961600.0
+      },
+      {
+        "text": "AI finally enters its Tycho stage",
+        "link": "https://kindxiaoming.github.io/blog/2026/tycho/",
+        "kind": "post",
+        "date": "2026-08-13",
+        "timestamp": 1786579200.0
+      },
+      {
+        "text": "Discovering 108 tricks to accelerate grokking",
+        "link": "https://kindxiaoming.github.io/blog/2026/grokking-tricks/",
+        "kind": "post",
+        "date": "2026-06-22",
+        "timestamp": 1782086400.0
+      },
+      {
+        "text": "AI4AI needs its own “world model”",
+        "link": "https://kindxiaoming.github.io/blog/2026/ai4ai-pretraining/",
+        "kind": "post",
+        "date": "2026-05-06",
+        "timestamp": 1778025600.0
+      },
+      {
+        "text": "How does memorization affect l2?",
+        "link": "https://kindxiaoming.github.io/blog/2026/memorization-l2/",
+        "kind": "post",
+        "date": "2026-05-05",
+        "timestamp": 1777939200.0
+      },
+      {
+        "text": "Data efficiency of Bi-gram data",
+        "link": "https://kindxiaoming.github.io/blog/2026/bigram-data-efficiency/",
+        "kind": "post",
+        "date": "2026-05-03",
+        "timestamp": 1777766400.0
+      },
+      {
+        "text": "Grokking in loss doesn’t necessarily imply grokking in accuracy",
+        "link": "https://kindxiaoming.github.io/blog/2026/gaussian-blob/",
+        "kind": "post",
+        "date": "2026-05-03",
+        "timestamp": 1777766400.0
+      }
+    ]
   },
   {
     "scholar": "庄辉平",
@@ -744,7 +1097,16 @@
     "date_str": "2026-09",
     "timestamp": 1788220800.0,
     "result_type": "unchanged",
-    "first_seen": "2026-10-04T08:46:36.704536+00:00"
+    "first_seen": "2026-10-04T08:46:36.704536+00:00",
+    "sub_items": [
+      {
+        "text": "2026 Aug 22 We have 1 paper accepted by EMNLP 2026 Main Conference! 2026 Jul 12 We have 2 papers accepted by ECCV 2026! 2026 Apr 15 We have 1 paper accepted by ACL 2026 Main! 2026 Mar 01 We have 2 papers accepted by CVPR 2026, including 1 Oral! 2026 Jan 28 We have 3 papers accepted by ICLR 2026! 2025 Nov 08 We have 2 papers accepted by AAAI 2026, including 1 Oral! 2025 Oct 31 Our team won the first prize in the 19th Challenge Cup End-Deployable Dual-Arm Operation Algorithm Design Challenge! 2025 Sep 20 We have 1 paper accepted by NeurIPS 2025 ! 2025 Aug 14 Our team wins a first prize and a second prize at the 27th China Robot and Artificial Intelligence Competition! 2025 Aug 03 We won Team and Individual Awards at the China International College Students’ Innovation Competition 2025！",
+        "link": "https://zhuanghp.github.io/2026-08-22-emnlp-main-paper/",
+        "kind": "news",
+        "date": "2026-08",
+        "timestamp": 1785542400.0
+      }
+    ]
   },
   {
     "scholar": "杨永进",
@@ -756,12 +1118,42 @@
     ],
     "watch": "general",
     "kind": "paper",
-    "text": "Toward Skill-Native LLMs: Skill Entropy for Benchmarking and Training Long-Horizon Reasoning · NeurIPS 2026",
-    "link": "https://yangyongjin.github.io/",
+    "text": "Toward Skill-Native LLMs: Skill Entropy for Benchmarking and Training Long-Horizon Reasoning NeurIPS 2026",
+    "link": "https://arxiv.org/abs/2608.05139",
     "date_str": "2026-09",
     "timestamp": 1788220800.0,
     "result_type": "unchanged",
-    "first_seen": "2026-10-04T08:46:36.704545+00:00"
+    "first_seen": "2026-10-04T16:14:05.263557+00:00",
+    "sub_items": [
+      {
+        "text": "LLM-as-a-Tutor: Policy-Aware Prompt Adaptation for Non-Verifiable RL NeurIPS 2026",
+        "link": "https://arxiv.org/abs/2607.04412",
+        "kind": "paper",
+        "date": "2026-09",
+        "timestamp": 1788220800.0
+      },
+      {
+        "text": "Transferability for General Reasoning: An Automated Curriculum for Multi-Domain RLVR NeurIPS 2026 · ICML 2026 RLxF Workshop, Oral (4 of 222 submissions)",
+        "link": "https://arxiv.org/abs/2606.25178",
+        "kind": "paper",
+        "date": "2026-07",
+        "timestamp": 1782864000.0
+      },
+      {
+        "text": "Entropy-Aware On-Policy Distillation of Language Models ICML 2026",
+        "link": "https://arxiv.org/abs/2603.07079",
+        "kind": "paper",
+        "date": "2026-07",
+        "timestamp": 1782864000.0
+      },
+      {
+        "text": "Automated Filtering of Human Feedback Data for Aligning Text-to-Image Diffusion Models ICLR 2025",
+        "link": "https://arxiv.org/abs/2410.10166",
+        "kind": "paper",
+        "date": "2025-05",
+        "timestamp": 1746057600.0
+      }
+    ]
   },
   {
     "scholar": "黄家斌",
@@ -772,28 +1164,77 @@
     ],
     "watch": "general",
     "kind": "paper",
-    "text": "Masked Visual Actions for Unified World Modeling · Advances in Neural Information Processing Systems (NeurIPS), 2026",
-    "link": "https://jbhuang0604.github.io/",
+    "text": "Masked Visual Actions for Unified World Modeling Hadi Alzayer , Wenlong Huang , Haonan Chen , Christopher Luey , Lvmin Zhang , Maneesh Agrawala , Gordon Wetzstein , Li Fei-Fei , Yilun Du , Jiajun Wu , Jia-Bin Huang Advances in Neural Information Processing Systems (NeurIPS), 2026 [ Paper (PDF) ]\n[ Project page ]",
+    "link": "https://hadizayer.github.io/",
     "date_str": "2026-09",
     "timestamp": 1788220800.0,
     "result_type": "unchanged",
-    "first_seen": "2026-10-04T08:46:36.704558+00:00"
-  },
-  {
-    "scholar": "Chongjie Si",
-    "scholar_url": "https://chongjiesi.site/home/",
-    "affiliation": "上海交通大学",
-    "areas": [
-      "Optimize theory"
-    ],
-    "watch": "general",
-    "kind": "news",
-    "text": "One paper has been accepted to ECCV 2026.",
-    "link": "https://chongjiesi.site/home/",
-    "date_str": "2026-09",
-    "timestamp": 1788220800.0,
-    "result_type": "unchanged",
-    "first_seen": "2026-10-04T08:46:36.704571+00:00"
+    "first_seen": "2026-10-04T16:14:05.263572+00:00",
+    "sub_items": [
+      {
+        "text": "DynaFLIP: Rethinking Robotics Perception via Tri-Modal-Dynamics Guided Representation Jusuk Lee , Seungjae Lee , Jonghun Shin , Hoseong Jung , Sungha Kim , Daesol Cho , H. Jin Kim , Jia-Bin Huang †, Furong Huang † Advances in Neural Information Processing Systems (NeurIPS), 2026 [ Paper (PDF) ]\n[ Project page ][ Model ] († Equal advising.)",
+        "link": "https://ju-suk.github.io/",
+        "kind": "paper",
+        "date": "2026-09",
+        "timestamp": 1788220800.0
+      },
+      {
+        "text": "Masked Visual Actions for Unified World Modeling · Advances in Neural Information Processing Systems (NeurIPS), 2026",
+        "link": "https://jbhuang0604.github.io/",
+        "kind": "paper",
+        "date": "2026-09",
+        "timestamp": 1788220800.0
+      },
+      {
+        "text": "μ₀: A Scalable 3D Interaction-Trace World Model Seungjae Lee *, Yoonkyo Jung *, Jusuk Lee , Jonghun Shin , Amir Hossein Shahidzadeh , Yao-Chih Lee , H. Jin Kim , Jia-Bin Huang †, Furong Huang † Conference on Robot Learning (CoRL) 2026 [ Paper (PDF) ]\n[ Project page ] (*Equal contributions; † Equal advising.)",
+        "link": "https://sjlee.cc/",
+        "kind": "paper",
+        "date": "2026",
+        "timestamp": 1780272000.0
+      },
+      {
+        "text": "TRACE: Object Motion Editing in Videos with First-Frame Trajectory Guidance Quynh Phung , \nLong Mai, \nCharles Ham, \nFeng Liu, Jia-Bin Huang , \nAniket Mahapatra arXiv preprint arXiv:2603.25707 [ Paper (PDF) ]\n[ Google Scholar ]",
+        "link": "https://qqphung.github.io/",
+        "kind": "paper",
+        "date": "2026",
+        "timestamp": 1780272000.0
+      },
+      {
+        "text": "TraceGen: World Modeling in 3D Trace-Space Enables Learning from Cross-Embodiment Videos Seungjae Lee *, Yoonkyo Jung *, Inkook Chun , Yao-Chih Lee , Zikui Cai , Hongjia Huang , Aayush Talreja , Tan Dat Dao , Yongyuan Liang , Jia-Bin Huang , Furong Huang Proceedings of IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR), 2026 [ Paper (PDF) ]\n[ Project page ] (*Equal contributions)",
+        "link": "https://sjlee.cc/",
+        "kind": "paper",
+        "date": "2026-06",
+        "timestamp": 1780272000.0
+      },
+      {
+        "text": "SIMPACT: Simulation-Enabled Action Planning using Vision-Language Models Haowen Liu *, Shaoxiong Yao *, Haonan Chen , Jiawei Gao , Jiayuan Mao , Jia-Bin Huang , Yilun Du Proceedings of IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR), 2026 [ Paper (PDF) ]\n[ Project page ] (*Equal contributions)",
+        "link": "https://www.cs.umd.edu/people/hwl",
+        "kind": "paper",
+        "date": "2026-06",
+        "timestamp": 1780272000.0
+      },
+      {
+        "text": "Coupled Diffusion Sampling for Training-Free Multi-View Image Editing Hadi Alzayer , Yunzhi Zhang , Chen Geng , Jia-Bin Huang , Jiajun Wu Proceedings of IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR), 2026 [ Paper (PDF) ]\n[ Project page ]",
+        "link": "https://hadizayer.github.io/",
+        "kind": "paper",
+        "date": "2026-06",
+        "timestamp": 1780272000.0
+      },
+      {
+        "text": "Generalizable Sparse-View 3D Reconstruction from Unconstrained Images Vinayak Gupta , Chih-Hao Lin , Shenlong Wang , Anand Bhattad , Jia-Bin Huang , Proceedings of IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR), 2026 [ Paper (PDF) ]\n[ Project page ]",
+        "link": "https://vinayak-vg.github.io/",
+        "kind": "paper",
+        "date": "2026-06",
+        "timestamp": 1780272000.0
+      },
+      {
+        "text": "UniVerse: A Unified Modulation Framework for Segmentation-Free, Disentangled Multi-Concept Personalization Quynh Phung , Sandesh Ghimire , Minsi Hu , Chung-Chi Tsai , Jia-Bin Huang , Proceedings of IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR), 2026 [ Paper (PDF) ]\n[ Project page ]",
+        "link": "https://qqphung.github.io/",
+        "kind": "paper",
+        "date": "2026-06",
+        "timestamp": 1780272000.0
+      }
+    ]
   },
   {
     "scholar": "朱星宇",
@@ -811,20 +1252,6 @@
     "result_type": "changed",
     "first_seen": "2026-10-03T00:05:10.414119+00:00",
     "sub_items": [
-      {
-        "text": "BiMoGen: Bidirectional Motion-Text Generation via Unified Masked Discrete Diffusion · NeurIPS 2026",
-        "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=PpqUnAwAAAAJ&citation_for_view=PpqUnAwAAAAJ:aqlVkmm33-oC",
-        "kind": "paper",
-        "date": "2026-09-01",
-        "timestamp": 1788220800.0
-      },
-      {
-        "text": "PEA-DPO: Perception-Enhanced Alignment Direct Preference Optimization for MLLMs Alignment · ACM MM 2026",
-        "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=PpqUnAwAAAAJ&citation_for_view=PpqUnAwAAAAJ:aqlVkmm33-oC",
-        "kind": "paper",
-        "date": "2026-09-01",
-        "timestamp": 1788220800.0
-      },
       {
         "text": "Robustifying Vision-Language Models via Test-Time Prompt Adaptation · ICML 2026",
         "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=PpqUnAwAAAAJ&citation_for_view=PpqUnAwAAAAJ:aqlVkmm33-oC",
@@ -859,6 +1286,110 @@
         "kind": "paper",
         "date": "2026-09-01",
         "timestamp": 1788220800.0
+      },
+      {
+        "text": "BiMoGen: Bidirectional Motion-Text Generation via Unified Masked Discrete Diffusion · NeurIPS 2026",
+        "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=PpqUnAwAAAAJ&sortby=pubdate&citation_for_view=PpqUnAwAAAAJ:aqlVkmm33-oC",
+        "kind": "paper",
+        "date": "2026",
+        "timestamp": 1780272000.0
+      },
+      {
+        "text": "PEA-DPO: Perception-Enhanced Alignment Direct Preference Optimization for MLLMs Alignment · ACM MM 2026",
+        "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=PpqUnAwAAAAJ&sortby=pubdate&citation_for_view=PpqUnAwAAAAJ:qxL8FJ1GzNcC",
+        "kind": "paper",
+        "date": "2026",
+        "timestamp": 1780272000.0
+      }
+    ]
+  },
+  {
+    "scholar": "董功",
+    "scholar_url": "https://donggong1.github.io/index.html",
+    "affiliation": "",
+    "areas": [
+      "Continual Learning"
+    ],
+    "watch": "general",
+    "kind": "update",
+    "text": "MILES: Modular Instruction Memory with Learnable Selection for Self-Improving LLM Reasoning · Sep 2026",
+    "link": "https://artificer-ai-lab.github.io/MILES/",
+    "date_str": "2026-09",
+    "timestamp": 1788220800.0,
+    "result_type": "unchanged",
+    "first_seen": "2026-09-27T23:31:28.987920+00:00"
+  },
+  {
+    "scholar": "Chongjie Si",
+    "scholar_url": "https://chongjiesi.site/home/",
+    "affiliation": "上海交通大学",
+    "areas": [
+      "Optimize theory"
+    ],
+    "watch": "general",
+    "kind": "news",
+    "text": "One paper has been accepted to ECCV 2026.",
+    "link": "https://chongjiesi.site/home/",
+    "date_str": "2026-09",
+    "timestamp": 1788220800.0,
+    "result_type": "unchanged",
+    "first_seen": "2026-10-04T08:46:36.704571+00:00",
+    "sub_items": [
+      {
+        "text": "🎯 See you in Wuhan, Valse 2026!",
+        "link": "https://chongjiesi.site/home/",
+        "kind": "update",
+        "date": "2026",
+        "timestamp": 1780272000.0
+      },
+      {
+        "text": "🎁 I have been awarded the Optiver AI PhD Scholarship! Pleaser refer to this page for more details",
+        "link": "https://mp.weixin.qq.com/s/oBr_OIb81CL9W3Zrf1bU6g?scene=1&click_id=24",
+        "kind": "news",
+        "date": "2026",
+        "timestamp": 1780272000.0
+      },
+      {
+        "text": "One paper has been accepted to CVPR 2026.",
+        "link": "https://chongjiesi.site/home/",
+        "kind": "news",
+        "date": "2026-06",
+        "timestamp": 1780272000.0
+      },
+      {
+        "text": "One paper has been accepted to TPAMI 2026.",
+        "link": "https://chongjiesi.site/home/",
+        "kind": "news",
+        "date": "2026",
+        "timestamp": 1780272000.0
+      },
+      {
+        "text": "🎁 I'm now working as a Research Intern in Anuttacon! Please refer to this page for more details",
+        "link": "https://www.anuttacon.com",
+        "kind": "update",
+        "date": "2026",
+        "timestamp": 1780272000.0
+      },
+      {
+        "text": "One paper has been accepted to ICLR 2026.",
+        "link": "https://chongjiesi.site/home/",
+        "kind": "news",
+        "date": "2026-05",
+        "timestamp": 1777593600.0
+      },
+      {
+        "text": "One paper has been accepted to COLM 2025.",
+        "link": "https://chongjiesi.site/home/",
+        "kind": "news",
+        "date": "2025-10",
+        "timestamp": 1759276800.0
+      },
+      {
+        "text": "Two papers have been accepted to NeurIPS 2025.",
+        "link": "https://chongjiesi.site/home/",
+        "kind": "news",
+        "date": "2025-09",
+        "timestamp": 1756684800.0
       }
     ]
   },
@@ -870,27 +1401,55 @@
       "Interpretability"
     ],
     "watch": "blog",
-    "kind": "paper",
-    "text": "Verbalizable Representations Form a Global Workspace in Language Models",
-    "link": "https://transformer-circuits.pub/2026/workspace/index.html",
+    "kind": "post",
+    "text": "Characterizing interference weights in a tiny language model",
+    "link": "https://transformer-circuits.pub/2026/interference_effectiveness_helpfulness/index.html",
     "date_str": "2026-08-21",
-    "timestamp": 1787241600.0,
-    "result_type": "rss",
-    "first_seen": "2026-08-21T00:00:00+00:00",
+    "timestamp": 1787270400.0,
+    "result_type": "rss_no_change",
+    "first_seen": "2026-10-04T16:14:05.263523+00:00",
     "sub_items": [
+      {
+        "text": "Verbalizable Representations Form a Global Workspace in Language Models",
+        "link": "https://transformer-circuits.pub/2026/workspace/index.html",
+        "kind": "post",
+        "date": "2026-07-06",
+        "timestamp": 1783296000.0
+      },
       {
         "text": "Circuits Updates — June 2026",
         "link": "https://transformer-circuits.pub/2026/june-update/index.html",
         "kind": "post",
-        "date": "2026-08-21",
-        "timestamp": 1787241600.0
+        "date": "2026-06-30",
+        "timestamp": 1782777600.0
       },
       {
-        "text": "Characterizing interference weights in a tiny language model",
-        "link": "https://transformer-circuits.pub/2026/interference_effectiveness_helpfulness/index.html",
-        "kind": "paper",
-        "date": "2026-08-21",
-        "timestamp": 1787241600.0
+        "text": "Circuits Updates — May 2026",
+        "link": "https://transformer-circuits.pub/2026/may-update/index.html",
+        "kind": "post",
+        "date": "2026-06-01",
+        "timestamp": 1780272000.0
+      },
+      {
+        "text": "Natural Language Autoencoders Produce Unsupervised Explanations of LLM Activations",
+        "link": "https://transformer-circuits.pub/2026/nla/index.html",
+        "kind": "post",
+        "date": "2026-05-07",
+        "timestamp": 1778112000.0
+      },
+      {
+        "text": "HeadVis",
+        "link": "https://transformer-circuits.pub/2026/headvis/index.html",
+        "kind": "post",
+        "date": "2026-05-04",
+        "timestamp": 1777852800.0
+      },
+      {
+        "text": "Emotion Concepts and their Function in a Large Language Model",
+        "link": "https://transformer-circuits.pub/2026/emotions/index.html",
+        "kind": "post",
+        "date": "2026-04-02",
+        "timestamp": 1775088000.0
       }
     ]
   },
@@ -906,7 +1465,7 @@
     "text": "Reading GSPO: routing replay, sequence-level clipping, and why the objective changes",
     "link": "https://zhuanlan.zhihu.com/p/1933217003654586554",
     "date_str": "2026-08-15",
-    "timestamp": 1786723200.0,
+    "timestamp": 1786752000.0,
     "result_type": "changed",
     "first_seen": "2026-08-15T00:00:00+00:00",
     "sub_items": [
@@ -915,7 +1474,7 @@
         "link": "https://zhuanlan.zhihu.com/p/1941603697311342965",
         "kind": "post",
         "date": "2026-08-15",
-        "timestamp": 1786723200.0
+        "timestamp": 1786752000.0
       }
     ]
   },
@@ -929,9 +1488,67 @@
     "text": "Claude Banner",
     "link": "https://www.xxrbear.cn/posts/tech/essays/claude-banner/",
     "date_str": "2026-08-05",
-    "timestamp": 1785859200.0,
+    "timestamp": 1785897981.0,
     "result_type": "rss_no_change",
-    "first_seen": "2026-10-04T08:46:36.704515+00:00"
+    "first_seen": "2026-10-04T08:46:36.704515+00:00",
+    "sub_items": [
+      {
+        "text": "每个人都应该做的事（第二部分）：编码规范",
+        "link": "https://www.xxrbear.cn/posts/tech/base/stuff-everyone-should-do-part2/",
+        "kind": "post",
+        "date": "2026-07-15",
+        "timestamp": 1784085373.0
+      },
+      {
+        "text": "十倍效率程序员",
+        "link": "https://www.xxrbear.cn/posts/tech/base/ten-times-more-efficient-programmers/",
+        "kind": "post",
+        "date": "2026-07-14",
+        "timestamp": 1784021492.0
+      },
+      {
+        "text": "Github封号记录",
+        "link": "https://www.xxrbear.cn/posts/tech/github/github%E5%B0%81%E5%8F%B7%E8%AE%B0%E5%BD%95/",
+        "kind": "post",
+        "date": "2026-04-21",
+        "timestamp": 1776763091.0
+      },
+      {
+        "text": "Apache Airflow 自定义时间表",
+        "link": "https://www.xxrbear.cn/posts/tech/airflow/airflow-timetable/",
+        "kind": "post",
+        "date": "2026-04-01",
+        "timestamp": 1775029396.0
+      },
+      {
+        "text": "Apache Airflow 配置项",
+        "link": "https://www.xxrbear.cn/posts/tech/airflow/airflow-config/",
+        "kind": "post",
+        "date": "2026-03-17",
+        "timestamp": 1773738964.0
+      },
+      {
+        "text": "Apache Airflow 基本用法",
+        "link": "https://www.xxrbear.cn/posts/tech/airflow/airflow-start/",
+        "kind": "post",
+        "date": "2026-03-03",
+        "timestamp": 1772528643.0
+      },
+      {
+        "text": "我的二〇二五",
+        "link": "https://www.xxrbear.cn/posts/essays/%E6%88%91%E7%9A%842025/",
+        "kind": "post",
+        "date": "2026-02-16",
+        "timestamp": 1771207783.0
+      },
+      {
+        "text": "Apache Airflow 安装与调试",
+        "link": "https://www.xxrbear.cn/posts/tech/airflow/airflow-install/",
+        "kind": "post",
+        "date": "2026-01-26",
+        "timestamp": 1769416682.0
+      }
+    ]
   },
   {
     "scholar": "Chenxu's Blog",
@@ -943,9 +1560,107 @@
     "text": "写出一份好的代码",
     "link": "https://www.chenxutalk.top/posts/study/cs0/good-code/",
     "date_str": "2026-08-04",
-    "timestamp": 1785772800.0,
+    "timestamp": 1785844800.0,
     "result_type": "rss_no_change",
-    "first_seen": "2026-10-04T08:50:55.607337+00:00"
+    "first_seen": "2026-10-04T16:14:05.263529+00:00",
+    "sub_items": [
+      {
+        "text": "linux 的基本操作",
+        "link": "https://www.chenxutalk.top/posts/study/cs0/linux-basic/",
+        "kind": "post",
+        "date": "2026-08-02",
+        "timestamp": 1785664665.0
+      },
+      {
+        "text": "启动我的服务",
+        "link": "https://www.chenxutalk.top/posts/study/cs0/start-my-service/",
+        "kind": "post",
+        "date": "2026-08-02",
+        "timestamp": 1785664665.0
+      },
+      {
+        "text": "更舒适地写代码",
+        "link": "https://www.chenxutalk.top/posts/study/cs0/write-code-comfortably/",
+        "kind": "post",
+        "date": "2026-08-02",
+        "timestamp": 1785654137.0
+      },
+      {
+        "text": "RAG检索优化：从 68% 到 82.2%",
+        "link": "https://www.chenxutalk.top/posts/study/ai/rag/retrieval-eval/",
+        "kind": "post",
+        "date": "2026-04-08",
+        "timestamp": 1775638436.0
+      },
+      {
+        "text": "学习深度学习",
+        "link": "https://www.chenxutalk.top/posts/study/ai/learn-dl/",
+        "kind": "post",
+        "date": "2026-02-12",
+        "timestamp": 1770905836.0
+      },
+      {
+        "text": "北邮计算机研究生选课指北",
+        "link": "https://www.chenxutalk.top/posts/bugs/bupt-master-courses/",
+        "kind": "post",
+        "date": "2026-01-15",
+        "timestamp": 1768482188.0
+      },
+      {
+        "text": "学习机器学习",
+        "link": "https://www.chenxutalk.top/posts/study/ai/learn-ml/",
+        "kind": "post",
+        "date": "2026-01-09",
+        "timestamp": 1767967522.0
+      }
+    ]
+  },
+  {
+    "scholar": "Breezedeus.com | 善意的AI生产幸福❤",
+    "scholar_url": "https://www.breezedeus.com/",
+    "affiliation": "",
+    "areas": [
+      "Agent",
+      "LLM"
+    ],
+    "watch": "blog",
+    "kind": "post",
+    "text": "模型如何边看边听、边回应：实时流式多模态模型技术路线",
+    "link": "https://www.breezedeus.com/article/real-time-streaming-multimodal-models",
+    "date_str": "2026-08-01",
+    "timestamp": 1785542400.0,
+    "result_type": "rss_no_change",
+    "first_seen": "2026-08-01T00:00:00+00:00",
+    "sub_items": [
+      {
+        "text": "企业 AI 转型路线图：从单点试验到可规模化能力",
+        "link": "https://www.breezedeus.com/article/enterprise-ai-transform-roadmap",
+        "kind": "post",
+        "date": "2026-07-25",
+        "timestamp": 1784937600.0
+      },
+      {
+        "text": "AI Agent 中的上下文工程 (Context Engineering)",
+        "link": "https://www.breezedeus.com/article/ai-agent-context-engineering",
+        "kind": "post",
+        "date": "2025-11-28",
+        "timestamp": 1764288000.0
+      },
+      {
+        "text": "AI Agent 性能优化：核心策略与实战技巧",
+        "link": "https://www.breezedeus.com/article/ai-agent-perf-tips",
+        "kind": "post",
+        "date": "2025-10-13",
+        "timestamp": 1760313600.0
+      },
+      {
+        "text": "Mobile-Agent-v3：新的 GUI Agents 开源王者",
+        "link": "https://www.breezedeus.com/article/ui-agent-mobile-agent-v3",
+        "kind": "post",
+        "date": "2025-09-06",
+        "timestamp": 1757116800.0
+      }
+    ]
   },
   {
     "scholar": "Zixuan Li",
@@ -968,21 +1683,28 @@
         "link": "https://lee-zix.github.io/publications/",
         "kind": "paper",
         "date": "2026-08-01",
-        "timestamp": 1785513600.0
+        "timestamp": 1785542400.0
       },
       {
         "text": "The Innovation 2026",
         "link": "https://lee-zix.github.io/publications/",
         "kind": "paper",
         "date": "2026-08-01",
-        "timestamp": 1785513600.0
+        "timestamp": 1785542400.0
       },
       {
         "text": "The 49th International ACM SIGIR Conference on Research and Development in Information Retrieval (SIGIR 2026)",
         "link": "https://lee-zix.github.io/publications/",
         "kind": "paper",
         "date": "2026-08-01",
-        "timestamp": 1785513600.0
+        "timestamp": 1785542400.0
+      },
+      {
+        "text": "Publications Selected and full publications are listed below by year. 2026 Event Ontology Expansion via LLM-Based Conceptualization arXiv Weicheng Ren, Zixuan Li , Long Bai, Xiaolong Jin, Jiafeng Guo, Xueqi Cheng arXiv preprint arXiv:2606.21048Code-on-Graph: Iterative Programmatic Reasoning via Large Language Models on Knowledge Graphs arXiv Weiwei Ding, Zixuan Li , Long Bai, Zhuo Chen, Kun Su, Fei Wang, Xiaolong Jin, Jin Zhang, Jiafeng Guo, Xueqi Cheng arXiv preprint arXiv:2606.03705AI for science: Progress, challenges, and perspectives The Innovation Yongjun Xu, Zezhi Shao, Xin Liu, Yuquan Li, Zhulin An, Chenguang Fu, Changping Huang, Lin Zhang, Feng Gao, Jian Li, et al. The Innovation 2026Beyond Dialogue Time: Temporal Semantic Memory for Personalized LLM Agents ACL Miao Su, Yucan Guo, Zhongni Hou, Long Bai, Zixuan Li , Yufei Zhang, Guojun Yin, Wei Lin, Xiaolong Jin, Jiafeng Guo, Xueqi Cheng Findings of the Association for Computational Linguistics: ACL 2026JudgeAgent: Beyond Static Benchmarks for Knowledge-Driven and Dynamic LLM Evaluation ACL Zhichao Shi, Xuhui Jiang, Chengjin Xu, Cangli Yao, Shengjie Ma, Yinghan Shen, Zixuan Li , Jian Guo, Yuanzhuo Wang Findings of the Association for Computational Linguistics: ACL 2026Incentivizing Agentic Reasoning Capability with Outcome Supervision for Knowledge Base Question Answering WWW Zhuo Chen, Fei Wang, Zixuan Li , Zhao Zhang, Weiwei Ding, Chuanguang Yang, Yongjun Xu, Xiaolong Jin, Jiafeng Guo Proceedings of the ACM Web Conference 2026Towards Knowledgeable Deep Research: Framework and Benchmark SIGIR Wenxuan Liu, Zixuan Li , Long Bai, Chunmao Zhang, Fenghui Zhang, Zhuo Chen, Wei Li, Yuxin Zuo, Fei Wang, Bingbing Xu, Xuhui Jiang, Jin Zhang, Xiaolong Jin, Jiafeng Guo, Tat-Seng Chua, Xueqi Cheng The 49th International ACM SIGIR Conference on Research and Development in Information Retrieval (SIGIR 2026)Identify-Conceptualize-Align: A Schema-Adaptive Framework for Unified Entity Recognition and Event Detection WSDM Weicheng Ren, Zixuan Li , Long Bai, Xiaolong Jin, Jiafeng Guo, Xueqi Cheng The Nineteenth ACM International Conference on Web Search and Data Mining, WSDM 20262025 KnowCoder-V2: Deep Knowledge Analysis arXiv Zixuan Li , Wenxuan Liu, Long Bai, Chunmao Zhang, Wei Li, Fenghui Zhang, Quanxin Jin, Ruoyun He, Zhuo Chen, Zhilei Hu, Fei Wang, Bingbing Xu, Xuhui Jiang, Xiaolong Jin, Jiafeng Guo, Xueqi Cheng ArxivTemporal Knowledge Graph Question Answering: A Survey arXiv Miao Su, Zixuan Li , Zhuo Chen, Long Bai, Xiaolong Jin, Jiafeng Guo arxiv基于线索挖掘的篇章间事件关系抽取方法 BigData Best Academic Paper Nomination Award 胡志磊, 李紫宣 , 隗继耀, 张瑾, 靳小龙 第十三届CCF大数据学术会议, CCF BigData 2025 KnowCoder-Taxo: Code-based Taxonomy Expansion with Large Language Models. MedAI Ruoyun He, Zixuan Li , Xiaolong Jin, Jiafeng Guo The Third IEEE International Conference on Medical Artificial Intelligence, IEEE MedAI 2025 基于原型学习的事件关系抽取框架 JCIP 胡志磊, 李紫宣 , 靳小龙, 白龙, 郭嘉丰, 程学旗 中文信息学报 2025 D-RAG: Differentiable Retrieval-Augmented Generation for Knowledge Graph Question Answering EMNLP Guangze Gao, Zixuan Li , Chunfeng Yuan, Jiawei Li, Wu Jianzhuo, Yuehao Zhang, Xiaolong Jin, Bing Li, Weiming Hu The 2025 Conference on Empirical Methods in Natural Language Processing, EMNLP 2025Towards Event Extraction with Massive Types: LLM-based Collaborative Annotation and Partitioning Extraction EMNLP Wenxuan Liu, Zixuan Li , Long Bai, Yuxin Zuo, Daozhu Xu, Xiaolong Jin, Jiafeng Guo, Xueqi Cheng The 2025 Conference on Empirical Methods in Natural Language Processing. EMNLP 2025面向知识图谱问答的无监督问题查询对构建 CCIR 刘衍涛， 李紫宣 ，靳小龙，白龙，郭嘉丰 CCIR 2025 Towards Robust Universal Information Extraction: Dataset, Evaluation, and Solution ACL Jizhao Zhu, Akang Shi, Zixuan Li , Long Bai, Xiaolong Jin, Jiafeng Guo, Xueqi Cheng ACL 2025KnowCoder-X: Boosting Multilingual Information Extraction via Code ACL Yuxin Zuo, Wenxuan Jiang, Wenxuan Liu, Zixuan Li , Long Bai, Hanbin Wang, Yutao Zeng, Xiaolong Jin, Jiafeng Guo, Xueqi Cheng ACL 2025 FindingsG2S: A General-to-Specific Learning Framework for Temporal Knowledge Graph Forecasting with Large Language Models ACL Long Bai, Zixuan Li , Xiaolong Jin, Jiafeng Guo, Xueqi Cheng, Tat-Seng Chua ACL 2025 FindingsLarge Language Model-Based Event Relation Extraction with Rationales COLING Zhilei Hu, Zixuan Li , Xiaolong Jin, Long Bai, Jiafeng Guo, Xueqi Cheng In Proceedings of The 31st International Conference on Computational Linguistics, COLING 2025代码大模型赋能的知识图谱关键技术综述 BigData 李紫宣 , 白龙, 任韦澄, 苏淼, 刘文轩, 陈磊, 靳小龙 Big Data Research2024 A New Pipeline for Knowledge Graph Reasoning Enhanced by Large Language Models Without Fine-Tuning EMNLP Zhongwu Chen, Long Bai, Zixuan Li , Zhen Huang, Xiaolong Jin, Yong Dou The 2024 Conference on Empirical Methods in Natural Language Processing, EMNLP 2024Multi-task Instruction Tuning for Temporal Question Answering over Knowledge Graphs CCIR Miao Su, Zixuan Li , Xiaolong Jin and Jiafeng Guo The 30th China Conference on Information Retrieval, CCIR 2024 Retrieval-Augmented Code Generation for Universal Information Extraction NLPCC Yucan Guo, Zixuan Li , Xiaolong Jin, Yantao Liu, Yutao Zeng, Wenxuan Liu, Xiang Li, Pan Yang, Long Bai, Jiafeng Guo, Xueqi Cheng The 13th CCF International Conference on Natural Language Processing and Chinese Computing, NLPCC 2024An In-Context Schema Understanding Method for Knowledge Base Question Answering KSEM Yantao Liu, Zixuan Li , Xiaolong Jin, Long Bai, Saiping Guan, Jiafeng Guo, Xueqi Cheng The 17th International Conference on Knowledge Science, Engineering and Management, KSEM 2024Nested Event Extraction upon Pivot Element Recogniton COLING Weicheng Ren, Zixuan Li , Xiaolong Jin, Long Bai, Miao Su, Yantao Liu, Saiping Guan, Jiafeng Guo, Xueqi Cheng The 2024 Joint International Conference on Computational Linguistics, Language Resources and Evaluation, LREC-COLING 2024Self-Improvement Programming for Temporal Knowledge Graph Question Answering COLING Zhuo Chen, Zhao Zhang, Zixuan Li , Fei Wang, Yutao Zeng, Xiaolong Jin and Yongjun Xu The 2024 Joint International Conference on Computational Linguistics, Language Resources and Evaluation, LREC-COLING 2024Selective Temporal Knowledge Graph Reasoning COLING Zhongni Hou, Xiaolong Jin, Zixuan Li , Long Bai, Jiafeng Guo and Xueqi Cheng The 2024 Joint International Conference on Computational Linguistics, Language Resources and Evaluation, LREC-COLING 2024KnowCoder: Coding Structured Knowledge into LLMs for Universal Information Extraction ACL OpenKG Outstanding Open Resource Award Zixuan Li , Yutao Zeng, Yuxin Zuo, Weicheng Ren, Wenxuan Liu, Miao Su, Yucan Guo, Yantao Liu, Xiang Li, Zhilei Hu, Long Bai, Wei Li, Yidan Liu, Pan Yang, Xiaolong Jin, Jiafeng Guo, Xueqi Cheng The 62nd Annual Meeting of the Association for Computational Linguistics, ACL 2024Unlocking the Power of Large Language Models for Entity Alignment ACL Xuhui Jiang, Yinghan Shen, Zhichao Shi, Chengjin Xu, Wei Li, Zixuan Li , Jian Guo, Huawei Shen, Yuanzhuo Wang The 62nd Annual Meeting of the Association for Computational Linguistics, ACL 2024Toward Practical Entity Alignment Method Design: Insights from New Highly Heterogeneous Knowledge Graph Datasets WWW Xuhui Jiang, Chengjin Xu, Yinghan Shen, Yuanzhuo Wang, Fenglong Su, Fei Sun, Zixuan Li , Zhichao Shi, Jian Guo, Huawei Shen The Web Conf 20242023 ProtoEM: A Prototype-Enhanced Matching Framework for Event Relation Extraction arXiv Zhilei Hu, Zixuan Li , Daozhu Xu, Long Bai, Cheng Jin, Xiaolong Jin, Jiafeng Guo, Xueqi Cheng ArxivTemporal Knowledge Graph Reasoning Based on N-tuple Modeling EMNLP Zhongni Hou, Xiaolong Jin, Zixuan Li , Long Bai, Saiping Guan, Yutao Zeng, Jiafeng Guo, Xueqi Cheng The 2023 Conference on Empirical Methods in Natural Language Processing, Findings of EMNLP'2023Semantic Structure Enhanced Event Causality Identification ACL CodaLab International Open Challenge Champion Zhilei Hu, Zixuan Li , Xiaolong Jin, Long Bai, Saiping Guan, Jiafeng Guo and Xueqi Cheng Proceedings of The 61st Annual Meeting of the Association for Computational Linguistics, ACL'2023Rich Event Modeling for Script Event Prediction AAAI Long Bai, Saiping Guan, Zixuan Li , Jiafeng Guo, Xiaolong Jin, Xueqi Cheng Proceedings of the 37th AAAI Conference on Artificial Intelligence时态知识图谱的推理研究综述 计算机学报'2023 沈英汉, 江旭晖, 王元卓, 李紫宣 , 李子健, 谭鹤翔, 沈华伟 计算机学报'2023 2022 大数据分析处理技术与应用前沿 COMMUNICATIONS OF THE CCF，中国计算机学会通讯 靳小龙, 李紫宣 , 程学旗, 任伟澄 COMMUNICATIONS OF THE CCF，中国计算机学会通讯 HiSMatch: Historical Structure Matching based Temporal Knowledge Graph Reasoning EMNLP Zixuan Li , Zhongni Hou, Saiping Guan, Xiaolong Jin, Weihua Peng, Long Bai, Yajuan Lyu, Wei Li, Jiafeng Guo, Xueqi Cheng EMNLP'2022 Findings基于多历史序列联合演化建模的两阶段时序知识图谱推理 JCIP 李紫宣 , 官赛萍, 靳小龙, 白龙, 郭嘉丰, 程学旗 中文信息学报'2022Complex Evolutional Pattern Learning for Temporal Knowledge Graph Reasoning ACL Zixuan Li , Saiping Guan, Xiaolong Jin, Weihua Peng, Yajuan Lyu, Yong Zhu, Long Bai, Wei Li, Jiafeng Guo, Xueqi Cheng ACL'2022What is Event Knowledge Graph: A Survey TKDE Saiping Guan, Xueqi Cheng, Long Bai, Fujun Zhang, Zixuan Li , Yutao Zeng, Xiaolong Jin, Jiafeng Guo TKDE'20222021 Integrating Deep Event-Level and Script-Level Information for Script Event Prediction EMNLP Long Bai, Saiping Guan, Jiafeng Guo, Zixuan Li , Xiaolong Jin, Xueqi Cheng EMNLP'2021Temporal Knowledge Graph Reasoning Based on Evolutional Representation Learning SIGIR Paper Digest SIGIR Most Influential Paper Zixuan Li , Xiaolong Jin, Wei Li, Saiping Guan, Jiafeng Guo, Huawei Shen, Yuanzhuo Wang, Xueqi Cheng SIGIR'2021Search from History and Reason for Future: Two-stage Reasoning on Temporal Knowledge Graphs ACL Zixuan Li , Xiaolong Jin, Saiping Guan, Wei Li, Jiafeng Guo, Huawei Shen, Yuanzhuo Wang, Xueqi Cheng ACL'2021Rule-Aware Reinforcement Learning for Knowledge Graph Reasoning ACL Zhongni Hou, Xiaolong Jin, Zixuan Li , Long Bai ACL'2021 findings2019 Self-learning and embedding based entity alignment KIS Saiping Guan, Xiaolong Jin, Yuanzhuo Wang, Yantao Jia, Huawei Shen, Zixuan Li , Xueqi Cheng KIS'20192018 Path reasoning over knowledge graph: A multi-agent and reinforcement learning based method ICDM Zixuan Li , Xiaolong Jin, Saiping Guan, Yuanzhuo Wang, Xueqi Cheng ICDM Workshop'20182017 The Open Knowledge System for TAC KBP 2017 TAC-KBP Zixuan Li , Yunqi Qiu, Fan Qiu, Xiaolong Jin, Yuanzhuo Wang, Yantao Jia, Haoran Yan, Kailin Zhao, Jialin Su TAC-KBP",
+        "link": "https://arxiv.org/pdf/2606.21048",
+        "kind": "paper",
+        "date": "2026-02",
+        "timestamp": 1769904000.0
       },
       {
         "text": "National Key Research and Development Project of China, 2025.05-2028.04",
@@ -1002,26 +1724,33 @@
     ],
     "watch": "general",
     "kind": "paper",
-    "text": "The Art of Efficient Reasoning: Data, Reward, and Optimization · EMNLP 2026",
-    "link": "https://arxiv.org/abs/2602.20945",
+    "text": "The Art of Efficient Reasoning: Data, Reward, and Optimization Taiqiang Wu , Zenan Xu, Bo Zhou, Ngai Wong EMNLP 2026, Main Conference[ Weights ]\n                                [ Blog ] 🔥 Revisiting Model Interpolation for Efficient Reasoning Taiqiang Wu , Runming Yang, Tao Liu, Jiahao Wang, Ngai Wong ACL 2026, Main Conference[ Slide ] Timber: Training-free Instruct Model Refining with Base via Effective Rank Taiqiang Wu , Runming Yang, Tao Liu, Jiahao Wang, Zenan Xu, Ngai Wong Arxiv Preprint[ Weight ] Shadow-FT: Tuning Instruct Model via Training on Paired Base Model Taiqiang Wu * , Runming Yang * , Jiayi Li, Pengfei Hu, Yik Chung WU, Ngai Wong, Yujiu Yang Arxiv Preprint[ Weight ] A Survey on the Honesty of Large Language Models Siheng Li * , Cheng Yang * , Taiqiang Wu * , Chufan Shi, Yuji Zhang, Xinyu Zhu, Zesen Cheng, Deng Cai, Mo Yu, Lemao Liu, Jie Zhou, Yujiu Yang, Ngai Wong, Xixin Wu, Wai Lam TMLR 2025 JournalMixture-of-Subspaces in Low-Rank Adaptation Taiqiang Wu , Jiahao Wang, Zhe Zhao, Ngai Wong EMNLP 2024 ConferenceRethinking Kullback-Leibler Divergence in Knowledge Distillation for Large Language Models Taiqiang Wu , Chaofan Tao, Jiahao Wang, Runming Yang, Zhe Zhao, Ngai Wong CoLING 2025 Conference[ Video ] Weight-Inherited Distillation for Task-Agnostic BERT Compression Taiqiang Wu * , \n                                Cheng Hou * , \n                                Shanshan Lao, Jiayi Li, Ngai Wong, Zhe Zhao, Yujiu Yang. NAACL 2024 findings Conference[ Poster ] Edge-free but Structure-aware: Prototype-Guided Knowledge Distillation from GNNs to MLPs Taiqiang Wu , Zhe Zhao, Jiahao Wang, Xingyu Bai, Lei Wang, Ngai Wong, Yujiu Yang CoLING 2025 Conference",
+    "link": "https://arxiv.org/pdf/2602.20945",
     "date_str": "2026-08",
     "timestamp": 1785542400.0,
     "result_type": "unchanged",
-    "first_seen": "2026-10-04T08:46:36.704551+00:00",
+    "first_seen": "2026-10-04T16:14:05.263561+00:00",
     "sub_items": [
+      {
+        "text": "The Art of Efficient Reasoning: Data, Reward, and Optimization · EMNLP 2026",
+        "link": "https://arxiv.org/abs/2602.20945",
+        "kind": "paper",
+        "date": "2026-08",
+        "timestamp": 1785542400.0
+      },
       {
         "text": "Revisiting Model Interpolation for Efficient Reasoning · ACL 2026",
         "link": "https://arxiv.org/abs/2510.10977",
         "kind": "paper",
         "date": "2026-04-15",
-        "timestamp": 1776182400.0
+        "timestamp": 1776211200.0
       },
       {
         "text": "Timber: Training-free Instruct Model Refining with Base via Effective Rank · arXiv 2025",
         "link": "https://arxiv.org/abs/2509.23595",
         "kind": "paper",
         "date": "2025-09-25",
-        "timestamp": 1758729600.0
+        "timestamp": 1758758400.0
       }
     ]
   },
@@ -1039,24 +1768,16 @@
     "date_str": "2026-08",
     "timestamp": 1785542400.0,
     "result_type": "unchanged",
-    "first_seen": "2026-10-04T08:46:36.704562+00:00"
-  },
-  {
-    "scholar": "Breezedeus.com | 善意的AI生产幸福❤",
-    "scholar_url": "https://www.breezedeus.com/",
-    "affiliation": "",
-    "areas": [
-      "Agent",
-      "LLM"
-    ],
-    "watch": "blog",
-    "kind": "post",
-    "text": "模型如何边看边听、边回应：实时流式多模态模型技术路线",
-    "link": "https://www.breezedeus.com/article/real-time-streaming-multimodal-models",
-    "date_str": "2026-08-01",
-    "timestamp": 1785513600.0,
-    "result_type": "rss",
-    "first_seen": "2026-08-01T00:00:00+00:00"
+    "first_seen": "2026-10-04T08:46:36.704562+00:00",
+    "sub_items": [
+      {
+        "text": "Publications You can also find my articles on Google Scholar and Semantic Scholar . 2025 R-WoM: Retrieval-augmented World Model For Computer-use AgentsKai Mei, Jiang Guo, Shuaichen Chang, Mingwen Dong, Dongkyu Lee, Xing Niu, Jiarong Jiang ICLR 2026 Automated Composition of Agents: A Knapsack Approach for Agentic Component SelectionMichelle Yuan, Khushbu Pahwa, Shuaichen Chang, Mustafa Kaba, Jiarong Jiang, Xiaofei Ma, Yi Zhang, Monica Sunkarag NeurIPS 2025 Towards Better Understanding Table Instruction Tuning: Decoupling the Effects from Data versus ModelsNaihao Deng, Sheng Zhang, Henghui Zhu, Shuaichen Chang, Jiani Zhang, Alexander Hanbo Li, Chung-Wei Hang, Hideo Kobayashi, Yiqun Hu, Patrick Ng EACL 2026 PRACTIQ: A Practical Conversational text-to-SQL dataset with Ambiguous and Unanswerable QueriesMingwen Dong, Nischal Ashok Kumar, Yiqun Hu, Anuj Chauhan, Chung-Wei Hang, Shuaichen Chang, Lin Pan, Wuwei Lan, Henghui Zhu, Jiarong Jiang, Patrick Ng, Zhiguo Wang NAACL 2025 You Only Read Once (YORO): Learning to Internalize Database Knowledge for Text-to-SQLHideo Kobayashi, Wuwei Lan, Peng Shi, Shuaichen Chang, Jiang Guo, Henghui Zhu, Zhiguo Wang, Patrick Ng NAACL 2025 2024 RAGChecker: A Fine-grained Framework for Diagnosing Retrieval-Augmented Generation[ LlamaIndex ] Dongyu Ru*, Lin Qiu*, Xiangkun Hu*, Tianhang Zhang*, Peng Shi*, Shuaichen Chang*, Cheng Jiayang, Cunxiang Wang, Shichao Sun, Huanyu Li, Zizhao Zhang, Binjie Wang, Jiarong Jiang, Tong He, Zhiguo Wang, Pengfei Liu, Yue Zhang, Zheng Zhang (* shared first author) NeurIPS 2024 2023 Selective Demonstrations for Cross-domain Text-to-SQL[ Video ] Shuaichen Chang, Eric Fosler-Lussier EMNLP Findings 2023 How to Prompt LLMs for Text-to-SQL: A Study in Zero-shot, Single-domain, and Cross-domain SettingsShuaichen Chang, Eric Fosler-Lussier NeurIPS TRL Workshop 2023 Dr.Spider: A Diagnostic Evaluation Benchmark towards Text-to-SQL Robustness (Top 5% Accepted Paper, Oral)[ Data ] [ Blog ] [ Slides ] [ Video ] Shuaichen Chang, Jun Wang, Mingwen Dong, Lin Pan, Henghui Zhu, Alexander Hanbo Li, Wuwei Lan, Sheng Zhang, Jiarong Jiang, Joseph Lilien, Steve Ash, William Yang Wang, Zhiguo Wang, Vittorio Castelli, Patrick Ng, Bing Xiang ICLR 2023 2022 MapQA: A Dataset for Question Answering on Chorpleth Maps[ Data ] Shuaichen Chang*, David Palzer*, Jialin Li, Eric Fosler-Lussier, Ningchuan Xiao (* equal contribution) NeurIPS TRL Workshop 2022 2021 Explainaboard: An Explainable Leaderboard for NLP (Best Demo Paper)[ Demo ] Pengfei Liu, Jinlan Fu, Yang Xiao, Weizhe Yuan, Shuaichen Chang, Junqi Dai, Yixin Liu, Zihuiwen Ye, Zi-Yi Dou, Graham Neubig ACL 2021 Prefix-to-SQL: Text-to-SQL Generation from Incomplete User QuestionsNaihao Deng, Shuaichen Chang, Peng Shi, Tao Yu, Rui Zhang ACL NLP4Prog Workshop 2021 2020 Did You Ask a Good Question? A Cross-Domain Question Intention Classification Benchmark for Text-to-SQLYusen Zhang, Xiangyu Dong, Shuaichen Chang, Tao Yu, Peng Shi, Rui Zhang EMNLP IntEx-SemPar Workshop 2020 Zero-shot Text-to-SQL Learning with Auxiliary TaskShuaichen Chang, Pengfei Liu, Yun Tang, Jing Huang, Xiaodong He, Bowen Zhou AAAI 2020 2019 Contextualized Non-local Neural Networks for Sequence LearningPengfei Liu, Shuaichen Chang, Xuanjing Huang, Jian Tang, Jackie Chi Kit Cheung AAAI 2019",
+        "link": "https://scholar.google.com/citations?user=enrSEP4AAAAJ&hl=en&oi=ao",
+        "kind": "paper",
+        "date": "2025-02",
+        "timestamp": 1738368000.0
+      }
+    ]
   },
   {
     "scholar": "Thinking Machines Lab",
@@ -1070,9 +1791,53 @@
     "text": "A Safe Path to Open Weights",
     "link": "https://thinkingmachines.ai/blog/a-safe-path-to-open-weights/",
     "date_str": "2026-07-31",
-    "timestamp": 1785427200.0,
+    "timestamp": 1785456000.0,
     "result_type": "unchanged",
-    "first_seen": "2026-10-04T08:46:36.704530+00:00"
+    "first_seen": "2026-10-04T08:46:36.704530+00:00",
+    "sub_items": [
+      {
+        "text": "The Future Worth Building Is Human",
+        "link": "https://thinkingmachines.ai/blog/the-future-worth-building-is-human/",
+        "kind": "update",
+        "date": "2026-07-10",
+        "timestamp": 1783641600.0
+      },
+      {
+        "text": "Interaction Models: A Scalable Approach to Human-AI Collaboration",
+        "link": "https://thinkingmachines.ai/blog/interaction-models/",
+        "kind": "update",
+        "date": "2026-05-11",
+        "timestamp": 1778457600.0
+      },
+      {
+        "text": "On-Policy Distillation",
+        "link": "https://thinkingmachines.ai/blog/on-policy-distillation/",
+        "kind": "update",
+        "date": "2025-10-27",
+        "timestamp": 1761523200.0
+      },
+      {
+        "text": "LoRA Without Regret",
+        "link": "https://thinkingmachines.ai/blog/lora/",
+        "kind": "update",
+        "date": "2025-09-29",
+        "timestamp": 1759104000.0
+      },
+      {
+        "text": "Modular Manifolds",
+        "link": "https://thinkingmachines.ai/blog/modular-manifolds/",
+        "kind": "update",
+        "date": "2025-09-26",
+        "timestamp": 1758844800.0
+      },
+      {
+        "text": "Defeating Nondeterminism in LLM Inference",
+        "link": "https://thinkingmachines.ai/blog/defeating-nondeterminism-in-llm-inference/",
+        "kind": "update",
+        "date": "2025-09-10",
+        "timestamp": 1757487660.0
+      }
+    ]
   },
   {
     "scholar": "A. Weers Blog",
@@ -1087,7 +1852,7 @@
     "text": "Denser rewards, nearly free: contrastive potential shaping",
     "link": "https://aweers.de/blog/2026/potential/",
     "date_str": "2026-07-25",
-    "timestamp": 1784908800.0,
+    "timestamp": 1784937600.0,
     "result_type": "changed",
     "first_seen": "2026-07-25T00:00:00+00:00",
     "sub_items": [
@@ -1096,28 +1861,28 @@
         "link": "https://aweers.de/blog/2026/rl-for-llms/",
         "kind": "post",
         "date": "2026-03-15",
-        "timestamp": 1773504000.0
+        "timestamp": 1773532800.0
       },
       {
         "text": "LoRA initialization",
         "link": "https://aweers.de/blog/2025/lora-init/",
         "kind": "post",
         "date": "2025-12-15",
-        "timestamp": 1765728000.0
+        "timestamp": 1765756800.0
       },
       {
         "text": "nanochat's gpt.py",
         "link": "https://aweers.de/blog/2025/nanochat/",
         "kind": "post",
         "date": "2025-11-04",
-        "timestamp": 1762185600.0
+        "timestamp": 1762214400.0
       },
       {
         "text": "DPO is SFT",
         "link": "https://aweers.de/blog/2025/dpo-is-sft/",
         "kind": "post",
         "date": "2025-09-07",
-        "timestamp": 1757174400.0
+        "timestamp": 1757203200.0
       }
     ]
   },
@@ -1133,9 +1898,25 @@
     "text": "Harness Engineering for Self-Improvement",
     "link": "https://lilianweng.github.io/posts/2026-07-04-harness/",
     "date_str": "2026-07-04",
-    "timestamp": 1783094400.0,
+    "timestamp": 1783123200.0,
     "result_type": "rss_no_change",
-    "first_seen": "2026-10-04T08:46:36.704519+00:00"
+    "first_seen": "2026-10-04T08:46:36.704519+00:00",
+    "sub_items": [
+      {
+        "text": "Scaling Laws, Carefully",
+        "link": "https://lilianweng.github.io/posts/2026-06-24-scaling-laws/",
+        "kind": "post",
+        "date": "2026-06-24",
+        "timestamp": 1782259200.0
+      },
+      {
+        "text": "Why We Think",
+        "link": "https://lilianweng.github.io/posts/2025-05-01-thinking/",
+        "kind": "post",
+        "date": "2025-05-01",
+        "timestamp": 1746057600.0
+      }
+    ]
   },
   {
     "scholar": "杨恩能",
@@ -1146,12 +1927,21 @@
     ],
     "watch": "general",
     "kind": "news",
-    "text": "Our paper on data augmentation has been accepted by TKDE 2026.",
+    "text": "Our paper on data augmentation has been accepted by TKDE 2026. 2026.05: Several of our papers have been accepted by ICML 2026. 2026.05: Our survey paper on data augmentation has been accepted by TKDE 2026. 2026.04: Our paper on POI recommendation has been accepted by SIGIR 2026. 2026.02: Our paper on sequential recommendation has been accepted by TPAMI 2026. 2026.01: Two of our papers on model merging have been accepted by ICLR 2026. 2025.12: Our survey on model merging has been accepted by ACM Computing Surveys (CSUR) 2026. 2025.11: Our paper on model merging benchmark has been accepted by JMLR 2025. 2025.11: Our paper on long-sequence recommendation has been accepted by AAAI 2026. 2025.10: Our paper on model merging has been accepted by TPAMI 2025. 2025.09: Two of our papers on continual model merging have been accepted by NeurIPS 2025. 2025.05: Our paper on knowledge editing has been accepted by ACL (Main) 2025. 2025.05: Our paper on model merging has been accepted by ICML 2025. 2025.04: Our paper on explainable recommendation has been accepted by TOIS 2025. 2025.04: Two of our papers on sequential recommendation have been accepted by SIGIR 2025. 2025.02: Our paper on out-of-distribution recommendation has been accepted by TOIS 2025. 2025.01: Our paper on flatness-aware continual learning has been accepted by TPAMI 2025. 2025.01: Two of our papers on out-of-distribution recommendation have been accepted by WWW 2025. 2024.12: Two of our papers on LLM fine-tuning and sequential recommendation have been accepted by AAAI 2025. 2024.11: Our paper on recommendation unlearning has been accepted by TOIS 2024. 2024.11: Our survey on forgetting in deep learning has been accepted by TPAMI 2024. 2024.09: Our paper on continual learning has been accepted by TPAMI 2024. 2024.05: Our paper on model merging has been accepted by ICML 2024. 2024.01: Our paper on model merging has been accepted by ICLR 2024. 2023.10: Our paper on sequential recommendation has been accepted by TKDE 2023. 2023.09: Our paper on dataset condensation has been accepted by NeurIPS 2023. 2023.07: Our paper on flatness-aware continual learning has been accepted by ICCV 2023. More",
     "link": "https://ennengyang.github.io/",
     "date_str": "2026-07",
     "timestamp": 1782864000.0,
     "result_type": "unchanged",
-    "first_seen": "2026-10-04T08:46:36.704554+00:00"
+    "first_seen": "2026-10-04T16:14:05.263566+00:00",
+    "sub_items": [
+      {
+        "text": "Our paper on data augmentation has been accepted by TKDE 2026.",
+        "link": "https://ennengyang.github.io/",
+        "kind": "news",
+        "date": "2026-07",
+        "timestamp": 1782864000.0
+      }
+    ]
   },
   {
     "scholar": "孙宇",
@@ -1162,19 +1952,431 @@
     ],
     "watch": "general",
     "kind": "paper",
-    "text": "Learning to Discover at Test Time · ICML 2026",
+    "text": "Learning to Discover at Test Time Mert Yuksekgonul*, Daniel Koceja*, Xinhao Li*, Federico Bianchi*, Jed McCaleb, Xiaolong Wang, Jan Kautz, Yejin Choi, James Zou†, Carlos Guestrin†, Yu Sun* (*: core contributors) ICML 2026",
     "link": "https://arxiv.org/abs/2601.16175",
     "date_str": "2026-07",
     "timestamp": 1782864000.0,
     "result_type": "unchanged",
-    "first_seen": "2026-10-04T08:46:36.704564+00:00",
+    "first_seen": "2026-10-04T16:14:05.263577+00:00",
     "sub_items": [
+      {
+        "text": "Learning to Discover at Test Time · ICML 2026",
+        "link": "https://arxiv.org/abs/2601.16175",
+        "kind": "paper",
+        "date": "2026-07",
+        "timestamp": 1782864000.0
+      },
+      {
+        "text": "For a complete list of papers, please see my Google Scholar .",
+        "link": "https://scholar.google.com/citations?user=a7drwRMAAAAJ&hl=en&oi=ao",
+        "kind": "update",
+        "date": "2026",
+        "timestamp": 1780272000.0
+      },
+      {
+        "text": "Test-Time Training with Self-Supervision for Generalization under Distribution Shifts Yu Sun, Xiaolong Wang, Zhuang Liu, John Miller, Alexei A. Efros, Moritz Hardt ICML 2020[ website ]\n[ talk ]",
+        "link": "https://arxiv.org/abs/1909.13231",
+        "kind": "paper",
+        "date": "2026",
+        "timestamp": 1780272000.0
+      },
       {
         "text": "End-to-End Test-Time Training for Long Context · arXiv 2025",
         "link": "https://arxiv.org/abs/2512.23675",
         "kind": "paper",
         "date": "2025-12-30",
-        "timestamp": 1767024000.0
+        "timestamp": 1767052800.0
+      }
+    ]
+  },
+  {
+    "scholar": "YY Blog",
+    "scholar_url": "https://yqqy.top/blog.html",
+    "affiliation": "",
+    "areas": [
+      "Tool"
+    ],
+    "watch": "blog",
+    "kind": "post",
+    "text": "JS逆向从入门到放弃",
+    "link": "https://yqqy.top/reverse-engineering/js",
+    "date_str": "2026",
+    "timestamp": 1780272000.0,
+    "result_type": "unchanged",
+    "first_seen": "2026-10-04T16:14:05.263531+00:00",
+    "sub_items": [
+      {
+        "text": "Obsidian",
+        "link": "https://yqqy.top/softs/obsidian",
+        "kind": "post",
+        "date": "2026",
+        "timestamp": 1780272000.0
+      },
+      {
+        "text": "Git 命令清单",
+        "link": "https://yqqy.top/workflow/git/command",
+        "kind": "post",
+        "date": "2026",
+        "timestamp": 1780272000.0
+      },
+      {
+        "text": "Git 常用命令",
+        "link": "https://yqqy.top/workflow/git/common-command",
+        "kind": "post",
+        "date": "2026",
+        "timestamp": 1780272000.0
+      },
+      {
+        "text": "Git 多账户配置",
+        "link": "https://yqqy.top/workflow/git/multi-account",
+        "kind": "post",
+        "date": "2026",
+        "timestamp": 1780272000.0
+      },
+      {
+        "text": "Windows 平台",
+        "link": "https://yqqy.top/efficiency/windows/keymap",
+        "kind": "post",
+        "date": "2026",
+        "timestamp": 1780272000.0
+      },
+      {
+        "text": "FeedsSub",
+        "link": "https://yqqy.top/feeds-sub",
+        "kind": "post",
+        "date": "2026",
+        "timestamp": 1780272000.0
+      },
+      {
+        "text": "📝 夜莺v8执行自定义脚本并告警通知",
+        "link": "https://yqqy.top/blog/2025/nightingale-monitor-notification",
+        "kind": "post",
+        "date": "2026",
+        "timestamp": 1780272000.0
+      },
+      {
+        "text": "使用confluent-kafka-go包遇到的cgo问题",
+        "link": "https://yqqy.top/blog/2025/confluent-kafka-go-cgo-build",
+        "kind": "post",
+        "date": "2025-11-20",
+        "timestamp": 1763596800.0
+      }
+    ]
+  },
+  {
+    "scholar": "王子峰",
+    "scholar_url": "https://zifengwang.me/",
+    "affiliation": "Google",
+    "areas": [
+      "LLM",
+      "Agent"
+    ],
+    "watch": "publications",
+    "kind": "paper",
+    "text": "EnvHarness: Awakening Static Worlds for Agent Learning · arXiv, 2026",
+    "link": "https://arxiv.org/abs/2608.19880",
+    "date_str": "2026",
+    "timestamp": 1780272000.0,
+    "result_type": "unchanged",
+    "first_seen": "2026-10-04T08:46:36.704538+00:00",
+    "sub_items": [
+      {
+        "text": "RRSI: Regularized Recursive Self-Improvement of Agent Harnesses · arXiv, 2026",
+        "link": "https://arxiv.org/abs/2609.24972",
+        "kind": "paper",
+        "date": "2026",
+        "timestamp": 1780272000.0
+      },
+      {
+        "text": "SkillOS: Learning Skill Curation for Self-Evolving Agents · NeurIPS, 2026",
+        "link": "https://arxiv.org/abs/2605.06614",
+        "kind": "paper",
+        "date": "2026",
+        "timestamp": 1780272000.0
+      },
+      {
+        "text": "Budget-Aware Tool-Use Enables Effective Agent Scaling · COLM, 2026",
+        "link": "https://arxiv.org/abs/2511.17006",
+        "kind": "paper",
+        "date": "2026",
+        "timestamp": 1780272000.0
+      },
+      {
+        "text": "ReasoningBank: Scaling Agent Self-Evolving with Reasoning Memory · ICLR, 2026",
+        "link": "https://arxiv.org/abs/2509.25140",
+        "kind": "paper",
+        "date": "2026",
+        "timestamp": 1780272000.0
+      },
+      {
+        "text": "Supervised Reinforcement Learning: From Expert Trajectories to Step-wise Reasoning · ICLR, 2026",
+        "link": "https://arxiv.org/abs/2510.25992",
+        "kind": "paper",
+        "date": "2026",
+        "timestamp": 1780272000.0
+      },
+      {
+        "text": "Universal Model Routing for Efficient LLM Inference · ICLR, 2026",
+        "link": "https://arxiv.org/abs/2502.08773",
+        "kind": "paper",
+        "date": "2026",
+        "timestamp": 1780272000.0
+      }
+    ]
+  },
+  {
+    "scholar": "沈立",
+    "scholar_url": "https://sites.google.com/site/mathshenli/home",
+    "affiliation": "中山大学",
+    "areas": [
+      "Model Merging"
+    ],
+    "watch": "general",
+    "kind": "update",
+    "text": "Li Shen (沈力) Associate Professor, Ph.D. Advisor School of Cyber Science and Technology, Shenzhen Campus of Sun Yat-sen University(SYSU) Address : Room 2-914, Engineering building, SYSU, Guangming, Shenzhen, Guangdong, China Email : shenli6@mail.sysu.edu.cn (Preferred) / lishen@slai.edu.cn / mathshenli@gmail.com Google Scholar , 中 大 主页 , 河套学院主页",
+    "link": "https://sites.google.com/site/mathshenli/home#h.upuzd9x36sca",
+    "date_str": "2026",
+    "timestamp": 1780272000.0,
+    "result_type": "unchanged",
+    "first_seen": "2026-10-04T16:14:05.263563+00:00",
+    "sub_items": [
+      {
+        "text": "Previously, he was a research scientist at JD Explore Academy, Beijing, and a senior researcher at Tencent AI Lab, Shenzhen. He received his bachelor's degree and Ph.D. from the School of Mathematics, South China University of Technology . His research interests include efficient deep learning, efficient reinforcement learning, optimization and deep learning theory. He has published more than 100 papers in peer-reviewed top-tier journals (Nature Machine Intelligence, JMLR, IEEE TPAMI, IJCV, etc.) and conference papers (ICML, NeurIPS, ICLR, etc.). He has served as Area Chair for ICML, NeurIPS, ICLR, CVPR, AAAI, and ACMMM. He has also served as the associate editor for IEEE Transactions on Pattern Analysis and Machine Intelligence, IEEE Transactions on Knowledge and Data Engineering and IEEE Transactions on Multimedia, and action editor for Neural Networks. ⭐️⭐️⭐️ Our team recruits several postdocs (CS, MATH, Physics) to work on efficient foundation models , Geo-distributed learning, continual learning, reinforcement learning,  and deep learning theory. [ 逸仙博士后 ][ 深圳博士后政策 ][ 光明区人才政策 ] ⭐️⭐️⭐️ (N EW ) Our team recruits several PHD students ( 2027 fall, SYSU, SYSU-SLAI, SYSU-PCL ), working on efficient training of foundation models/ Generative RL Models , optimization and learning theory. P lease contact me as soon as possible if you are interested in our group. ⭐️⭐️⭐️ (NEW) 2027秋季入学博士生招聘： 本科直博（已招满） 、硕博连读、申请考核制博士（可选中大-河套学院联培， 中大-鹏城实验室联培 （已招满） ） ⭐️⭐️⭐️ (NEW) 博士 后长期 招聘 ：计算机、电子信息、数学、物理等专业（即将）毕业的博士。 [ 逸仙博士后 ][ 深圳博士后政策 ][ 光明区人才政策 ]",
+        "link": "https://sites.google.com/site/mathshenli/home#h.p_pPXVOGEegmuh",
+        "kind": "news",
+        "date": "2026",
+        "timestamp": 1780272000.0
+      },
+      {
+        "text": "PhD Thesis Li Shen ,  A Class of Variable Metric Over-relaxed Hybrid Proximal Extra-gradient Algorithm (In Chinese),  PhD Thesis, 2017. [ thesis ]",
+        "link": "https://sites.google.com/site/mathshenli/home#h.4adjdsddthmu",
+        "kind": "update",
+        "date": "2026",
+        "timestamp": 1780272000.0
+      },
+      {
+        "text": "Selected Conference Pengxiang Li, Yefan Zhou, Dilxat Muhtar, Lu Yin, Shilin Yan, Li Shen , Yi Liang, Soroush Vosoughi, Shiwei Liu, Diffusion Language Model Knows the Answer Before It Decodes, ICLR, 2026. ( oral ) Wei Ju, Siyu Yi, Kangjie Zheng, Yifan Wang, Ziyue Qiao, Li Shen , Yongdao Zhou, Xiaochun Cao, Jiancheng Lv, Compactness and Consistency: A Conjoint Framework for Deep Graph Clustering, ICLR, 2026. ( oral ) Yongxian Wei, Runxi Cheng, Weike Jin, Enneng Yang, Li Shen , Lu Hou, SiNan Du, Chun Yuan, Xiaochun Cao, Dacheng Tao, OptMerge: Unifying Multimodal LLM Capabilities and Modalities via Model Merging , ICLR, 2026. Mingda Zhang, Mingli Zhu, Zihao Zhu, Li Shen , Baoyuan Wu, Reliable Poisoned Sample Detection against Backdoor Attacks Enhanced by Sharpness Aware Minimization , ICLR, 2026. Ziqing Fan, Yuqiao Xian, Yan Sun, Ke Shen, Li Shen , Joint Selection for Large-Scale Pre-Training Data via Policy Gradient-based Mask Learning , ICLR, 2026. Guinan Su, Li Shen , Lu Yin, Shiwei Liu, Yanwu Yang, Jonas Geiping, GPTailor: Large Language Model Pruning Through Layer Cutting and Stitching , ICLR, 2026. Guodong Zheng, Peng Wang, Shengchao Hu, Quan Zheng, Li Shen , Understanding the Dynamics of Forgetting and Generalization in Continual Learning via the Neural Tangent Kernel , ICLR, 2026. Yang Dai, Oubo Ma, Xingxing Liang, Longfei Zhang, Xiaochun Cao, Shouling Ji, Jiaheng Zhang, Jincai Huang, Li Shen , TrojanTO: Action-Level Backdoor Attacks Against Trajectory Optimization Models , ICLR, 2026. Shengchao Hu, Peng Wang, Guozheng Ma, Shi Fu, Li Shen , Ya Zhang, Dacheng Tao, The State of Reinforcement Finetuning for Transformer-based Agents , ICLR, 2026. Yan Sun, Qixin Zhang, Li Shen , Dacheng Tao, Convergent Differential Privacy Analysis for General Federated Learning , ICLR, 2026. Yan Sun, Qixin Zhang, Zhiyuan Yu, Xikun Zhang, Li Shen , Dacheng Tao, MaskPro: Linear-Space Probabilistic Learning for Strict (N:M)-Sparsity on LLMs , ICLR, 2026. Enneng Yang, Qun Yang, Peng Wang, Anke Tang, Guibing Guo, Xiaochun Cao, Li Shen , MergOPT: A Merge-Aware Optimizer for Robust Model Merging, ICLR, 2026. Yingsha Xie, Rui Min, Zeyu Qin, Fei Ma, Li Shen , Fei Yu, Xiaochun Cao, RoMa: A Robust Model Watermarking Scheme for Protecting IP in Diffusion Models , NeurIPS, 2025. Haotian Luo, Haiying He, Yibo Wang, Jinluan Yang, Rui Liu, Naiqiang Tan, Xiaochun Cao, Dacheng Tao, Li Shen , Ada-R1: Hybrid-CoT via Bi-Level Adaptive Reasoning Optimization , NeurIPS, 2025. Hongling Zheng, Li Shen , Yong Luo, Deheng Ye, Shuhan Xu, Bo Du, Jialie Shen, Dacheng Tao, Value-Guided Decision Transformer: A Unified Reinforcement Learning Framework for Online and Offline Settings , NeurIPS, 2025. Di He, Songjun Tu, Ajay Jaiswal, Li Shen , Ganzhao Yuan, Shiwei Liu, Lu Yin, AlphaDecay: Module-wise Weight Decay for Heavy-Tailed Balancing in LLMs , NeurIPS, 2025. Chao Huang, Benfeng Wang, Wei Wang, Jie Wen, Chengliang Liu, Li Shen , Xiaochun Cao, Vad-R1: Towards Video Anomaly Reasoning via Perception-to-Cognition Chain-of-Thought , NeurIPS, 2025. Fei Wang, Li Shen , Liang Ding, Chao Xue, Ye Liu, Changxing Ding, Layer as Puzzle Pieces: Compressing Large Language Models through Layer Concatenation , NeurIPS, 2025. Jinluan Yang, Dingnan Jin, Anke Tang, Li Shen , Didi Zhu, Zhengyu Chen, Ziyu Zhao, Daixin Wang, Qing Cui, Zhiqiang Zhang, JUN ZHOU, Fei Wu, Kun Kuang, Mix Data or Merge Models? Balancing the Helpfulness, Honesty, and Harmlessness of Large Language Model via Model Merging , NeurIPS, 2025. Yibo Wang, Tiansheng Huang, Li Shen , Huanjin Yao, Haotian Luo, Rui Liu, Naiqiang Tan, Jiaxing Huang, Dacheng Tao, Panacea: Mitigating Harmful Fine-tuning for Large Language Models via Post-fine-tuning Perturbation , NeurIPS, 2025. Ao Zhou, Jiayi Guan, Li Shen , Fan Lu, Sanqing Qu, Junqiao Zhao, Ziqiao Wang, Ya Wu, Guang Chen, CHPO: Constrained Hybrid-action Policy Optimization for Reinforcement Learning , NeurIPS, 2025. Shi Fu, Yingjie Wang, Yuzhu Chen, Li Shen , Dacheng Tao, Self-Verification Provably Prevents Model Collapse in Recursive Synthetic Training , NeurIPS, 2025. Anke Tang, Enneng Yang, Li Shen , Yong Luo, Han Hu, Lefei Zhang, Bo Du, Dacheng Tao, Merging on the Fly Without Retraining: A Sequential Approach to Scalable Continual Model Merging , NeurIPS, 2025. Qinglun Li, Yingqi Liu, Miao Zhang, Xiaochun Cao, Quanjun Yin, Li Shen , Unveiling the Power of Multiple Gossip Steps: A Stability-Based Generalization Analysis in Decentralized Training , NeurIPS, 2025. ( spotlight ) Zhiwei Hao, Zhongyu Xiao, Jianyuan Guo, Li Shen , Yong Luo, Han Hu, Dan Zeng, MixPrompt: Efficient Mixed Prompting for Multimodal Semantic Segmentation , NeurIPS, 2025. Shiyuan Zuo, Xingrun Yan, Rongfei Fan, Li Shen , Puning Zhao, Jie Xu, Han Hu, Efficient Federated Learning against Byzantine Attacks and Data Heterogeneity via Aggregating Normalized Gradients , NeurIPS, 2025. Enneng Yang, Anke Tang, Li Shen , Guibing Guo, Xingwei Wang, Xiaochun Cao, Jie Zhang, Continual Model Merging without Data: Dual Projections for Balancing Stability and Plasticity , NeurIPS, 2025. Qixin Zhang, Yan Sun, Can Jin, Xikun ZHANG, Yao Shu, Puning Zhao, Li Shen , Dacheng Tao, Effective Policy Learning for Multi-Agent Online Coordination Beyond Submodular Objectives , NeurIPS, 2025. Jifeng Hu, Sili Huang, Zhejian Yang, Shengchao Hu, Li Shen , Hechang Chen, Lichao Sun, Yi Chang, Dacheng Tao, Analytic Energy-Guided Policy Optimization for Offline Reinforcement Learning , NeurIPS, 2025. Jifeng Hu, Sili Huang, Li Shen , Zhejian Yang, Shengchao Hu, Shisong Tang, Hechang Chen, Lichao Sun, Yi Chang, Dacheng Tao, Tackling Continual Offline RL through Selective Weights Activation on Aligned Spaces , NeurIPS, 2025. Fanhu Zeng, Haiyang Guo, Fei Zhu, Li Shen , Hao Tang, RobustMerge: Parameter-Efficient Model Merging for MLLMs with Direction Robustness , NeurIPS, 2025. ( spotlight ) Huanjin Yao, Qixiang Yin, Jingyi Zhang, Min Yang, Yibo Wang, Wenhao Wu, Fei Su, Li Shen , Minghui Qiu, Dacheng Tao, Jiaxing Huang, R1-ShareVL: Incentivizing Reasoning Capabilities of Multimodal Large Language Models via Share-GRPO , NeurIPS, 2025. Zixuan Hu, Li Shen , Zhenyi Wang, Yongxian Wei, Dacheng Tao, Adaptive Defense against Harmful Fine-Tuning for Large Language Models via Bayesian Data Scheduler , NeurIPS, 2025. ( spotlight ) Longxiang He, Deheng Ye, Junbo Tan, Xueqian Wang, Li Shen , Robust Policy Expansion for Offline-to-Online RL under Diverse Data Corruption , NeurIPS, 2025. Huanjin Yao, Jiaxing Huang, Wenhao Wu, Jingyi Zhang, Yibo Wang, Shunyu Liu, Yingjie Wang, YuXin Song, Haocheng Feng, Li Shen, Dacheng Tao, Mulberry: Empowering MLLM with o1-like Reasoning and Reflection via Collective Monte Carlo Tree Search, NeurIPS, 2025. ( spotlight ) Puning Zhao, Rongfei Fan, Shaowei Wang, Li Shen , Qixin Zhang, Zong Ke, Tianhang Zheng, Contextual bandits for unbounded context distributions, ICML, 2025. Hongling Zheng, Li Shen , Yong Luo, Deheng Ye, Bo Du, Jialie Shen, Dacheng Tao, Decision Mixer: Integrating Long-term and Local Dependencies via Dynamic Token Selection for Decision-Making , ICML, 2025. Li Shen , Anke Tang, Yong Luo, Tao Sun, Han Hu, Xiaochun Cao, Targeted Low-rank Refinement: Enhancing Sparse Language Models with Precision , ICML, 2025. Qixin Zhang, Wei Huang, Can Jin, Puning Zhao, Yao Shu, Li Shen , Dacheng Tao, Multinoulli Extension: A Lossless Yet Effective Probabilistic Framework for Subset Selection over Partition Constraints , ICML, 2025. Haoyu Wang, Zeyu Qin, Li Shen , Xueqian Wang, Dacheng Tao, Minhao Cheng, Safety Reasoning with Guidelines , ICML, 2025. Guozheng Ma, Lu Li, Zilin Wang, Li Shen , Pierre-Luc Bacon, Dacheng Tao, Network Sparsity Unlocks the Scaling Potential of Deep Reinforcement Learning , ICML, 2025. ( oral ) Liang Chen, Xueting Han, Li Shen , Jing Bai, Kam-Fai Wong, Vulnerability-Aware Alignment: Mitigating Uneven Forgetting in Harmful Fine-Tuning , ICML, 2025. Yilun Kong, Guozheng Ma, Qi Zhao, Haoyu Wang, Li Shen , Xueqian Wang, Dacheng Tao, Mastering Massive Multi-Task Reinforcement Learning via Mixture-of-Expert Decision Transformer, ICML, 2025. Wenbin Wang, Yongcheng Jing, Liang Ding, Yingjie Wang, Li Shen , Yong Luo, Bo Du, Dacheng Tao, Retrieval-Augmented Perception: High-Resolution Image Perception Meets Visual RAG , ICML, 2025. ( oral ) Xialie Zhuang, Zhikai Jia, Jianjin Li, Zhenyu Zhang, Li Shen , Zheng Cao, Shiwei Liu, Mask-Enhanced Autoregressive Prediction: Pay Less Attention to Learn More , ICML, 2025. Yongxian Wei, Anke Tang, Li Shen , Chun Yuan, Xiaochun Cao, Modeling Multi-Task Model Merging as Adaptive Projective Gradient Descent , ICML, 2025. Mengzhu Wang, Houcheng Su, Jiao Li, Chuan Li, Nan Yin, Li Shen , Jingcai Guo, GraphCL: Graph-based Clustering for Semi-Supervised Medical Image Segmentation, IC ML , 2025. Yingqi Liu, Qinglun Li, Jie Tan, Yifan Shi, Li Shen , Xiaochun Cao, Understanding the Stability-based Generalization of Personalized Federated Learning , ICLR, 2025. Jinluan Yang, Anke Tang, Didi Zhu, Zhengyu Chen, Li Shen , Fei Wu, Mitigating the Backdoor Effect for Multi-Task Model Merging via Safety-Aware Subspace , ICLR, 2025. Puning Zhao, Jiafei Wu, Zhe Liu, Li Shen , Zhikun Zhang, Rongfei Fan, Le Sun, Qingming Li, Enhancing Learning with Label Differential Privacy by Vector Approximation , ICLR, 2025.  ( s potlight ) Liang Chen, Li Shen , Yang Deng, Xiaoyan Zhao, Bin Liang, Kam-Fai Wong, PEARL: Towards Permutation-Resilient LLMs, ICLR, 2025. Ziqing Fan, Siyuan Du, Shengchao Hu, Pingjie Wang, Li Shen , Ya Zhang, Dacheng Tao, Yanfeng Wang, Combatting Dimensional Collapse in LLM Pre-Training Data via Submodular File Selection , ICLR, 2025. ( oral ) Qixin Zhang, Zongqi Wan, Yu Yang, Li Shen , Dacheng Tao, Near-Optimal Online Learning for Multi-Agent Submodular Coordination: Tight Approximation and Communication Efficiency , ICLR, 2025.  ( s potlight ) Siyu Luan, Zhenyi Wang, Li Shen , Zonghua Gu, Chao Wu, Dacheng Tao, Dynamic Neural Fortresses: An Adaptive Shield for Model Extraction Defense, ICLR, 2025. Yongxian Wei, Zixuan Hu, Li Shen , Zhenyi Wang, Chun Yuan, Dacheng Tao, Open-Vocabulary Customization from CLIP via Data-Free Knowledge Distillation, ICLR, 2025. ( oral ) Yan Sun, Li Shen , Dacheng Tao, A-FedPD: Aligning Dual-Drift is All Federated Primal-Dual Learning Need, NeurIPS, 2024. ( spotlight ) Rui Min, Zeyu Qin, Nevin L. Zhang, Li Shen , Minhao Cheng, Uncovering, Explaining, and Mitigating the Superficial Safety of Backdoor Defense , NeurIPS, 2024. ( spotlight ) Hongling Zheng, Li Shen , Yong Luo, Tongliang Liu, Jialie Shen, Dacheng Tao, Multi-Task Prompt Decision Transformer for Efficient Unseen Task Generalization, NeurIPS, 2024. Yang Dai, Oubo Ma, Longfei Zhang, Xingxing Liang, Shengchao Hu, Mengzhu Wang, Shouling Ji, Jincai Huang, Li Shen , Is Mamba Compatible with Trajectory Optimization in Offline Reinforcement Learning?, NeurIPS, 2024. Puning Zhao, Lifeng Lai, Li Shen , Qingming Li, Jiafei Wu, Zhe Liu, A Huber Loss Minimization Approach to Mean Estimation under User-level Differential Privacy, NeurIPS, 2024. Peng Wang, Li Shen , Zerui Tao, Shuaida He, Dacheng Tao, Generalization Analysis of Stochastic Weight Averaging with General Sampling, ICML, 2024. Anke Tang, Li Shen , Yong Luo, Nan Yin, Lefei Zhang, Dacheng Tao, Merging Multi-Task Models via Weight-Ensembling Mixture of Experts, ICML, 2024. Enneng Yang, Li Shen , Zhenyi Wang, Guibing Guo, Xiaojun Chen, Xingwei Wang, Dacheng Tao, Representation Surgery for Multi-Task Model Merging, ICML, 2024. Shengchao Hu, Ziqing Fan, Chaoqin Huang, Li Shen , Ya Zhang, Yanfeng Wang, Dacheng Tao, Q-learning Transformer for Offline Reinforcement Learning, ICML, 2024. Shengchao Hu, Ziqing Fan, Li Shen , Ya Zhang, Yanfeng Wang, Dacheng Tao, HarmoDT: Harmony Multi-Task Decision Transformer for Offline Reinforcement Learning, ICML, 2024. Zixuan Hu, Yongxian Wei, Li Shen , Zhenyi Wang, Lei Li, Chun Yuan, Dacheng Tao, Sparse Model Inversion: Efficient Inversion of Vision Transformers with Less Hallucination, ICML, 2024. Yongxian Wei, Zixuan Hu, Li Shen , Zhenyi Wang, Yu Li, Chun Yuan, Dacheng Tao, Task Groupings Regularization: Data-Free Meta-Learning with Heterogeneous Pre-trained Models, ICML, 2024. Enneng Yang, Zhenyi Wang, Li Shen , Shiwei Liu, Guibing Guo, Xingwei Wang, Dacheng Tao, AdaMerging: Adaptive Model Merging for Multi-Task Learning, ICLR, 2024. Anke Tang, Li Shen , Yong Luo, Yibing Zhan, Han Hu, Bo Du, Yixin Chen, Dacheng Tao, Parameter-Efficient Multi-Task Model Fusion with Partial Linearization , ICLR, 2024. Shengchao Hu, Li Shen , Ya Zhang, Dacheng Tao, Learning Multi-Agent Communication from Graph Modeling Perspective , ICLR, 2024. Guozheng Ma, Lu Li, Sen Zhang, Zixuan Liu, Zhen Wang, Yixin Chen, Li Shen , Xueqian Wang, Dacheng Tao, Revisiting Plasticity in Visual Reinforcement Learning: Data, Modules and Training Stages , ICLR, 2024. Zhenyi Wang, Yan Li, Li Shen , Heng Huang, A Unified and General Framework for Continual Learning , ICLR, 2024. Ziming Hong, Zhenyi Wang, Li Shen , Yu Yao, Zhuo Huang, Shiming Chen, Chuanwu Yang, Mingming Gong, Tongliang Liu, Improving Non-Transferable Representation Learning by Harnessing Content and Style , ICLR, 2024. ( spotlight ) Nan Yin, Mengzhu Wang, Zhenghan Chen, Li Shen , Huan Xiong, Bin Gu, Xiao Luo, DREAM: Dual Structured Exploration with Mixup for Open-set Graph Domain Adaption , ICLR, 2024. Yan Sun, Li Shen , Dacheng Tao, Understanding How Consistency Works in Federated Learning via Stage-wise Relaxed Initialization , NeurIPS, 2023. Miaoxi Zhu, Li Shen , Bo Du, Dacheng Tao, Stability and Generalization of the Decentralized Stochastic Gradient Descent Ascent Algorithm , NeurIPS, 2023. Zhenyi Wang, Li Shen , Tongliang Liu, Tiehang Duan, Yanjun Zhu, Donglin Zhan, David Doermann, Mingchen Gao, Defending against Data-Free Model Extraction by Distributionally Robust Defensive Training, NeurIPS, 2023. Enneng Yang, Li Shen , Zhenyi Wang, Tongliang Liu, Guibing Guo, An Efficient Dataset Condensation Plugin and Its Application to Continual Learning , NeurIPS, 2023. Zhuo Huang, Li Shen , Jun Yu, Bo Han, Tongliang Liu, FlatMatch: Bridging Labeled Data and Unlabeled Data with Cross-Sharpness for Semi-Supervised Learning, NeurIPS, 2023. Xuming An, Li Shen , Han Hu, Yong Luo, Federated Learning with Manifold Regularization and Normalized Update Reaggregation , NeurIPS, 2023. Rui Min, Zeyu Qin, Li Shen , Minhao Cheng, Stable Backdoor Purification with Feature Shift Tuning , NeurIPS, 2023. Guozheng Ma, Linrui Zhang, Haoyu Wang, Lu Li, Zilin Wang, Zhen Wang, Li Shen , Xueqian Wang, Dacheng Tao, Learning Better with Less: Effective Augmentation for Sample-Efficient Visual Reinforcement Learning , NeurIPS, 2023. Lu Yin, Gen Li, Meng Fang, Li Shen , Tianjin Huang, Zhangyang Wang, Vlado Menkovski, Xiaolong Ma, Mykola Pechenizkiy, Shiwei Liu, Dynamic Sparsity Is Channel-Level Sparsity Learner, NeurIPS, 2023. Yan Sun, Li Shen , Shixiang Chen, Liang Ding, Dacheng Tao, Dynamic Regularized Sharpness Aware Minimization in Federated Learning: Approaching Global Consistency and Smooth Landscape, ICML, 2023. ( oral ) Zixuan Hu, Li Shen , Zhenyi Wang, Baoyuan Wu, Chun Yuan, Dacheng Tao, Learning to Learn from APIs: Black-box Data-free Meta-Learning, ICML, 2023. Yifan Shi, Li Shen , Kang Wei, Yan Sun, Bo Yuan, Xueqian Wang, Dacheng Tao, Improving the Model Consistency of Decentralized Federated Learning, ICML, 2023. Nan Yin, Li Shen , Mengzhu Wang, Long Lan, Zeyu Ma, Chong Chen, Xian-Sheng Hua, Xiao Luo, CoCo: A Coupled Contrastive Framework for Unsupervised Domain Adaptive Graph Classification, ICML, 2023. Tianjin Huang, Lu Yin, Zhenyu Zhang, Li Shen , Meng Fang, Mykola Pechenizkiy, Zhangyang Wang, Shiwei Liu, Are Large Kernels Better Teachers than Transformers for ConvNets?, ICML, 2023. Yan Sun, Li Shen , Tiansheng Huang, Liang Ding, Dacheng Tao, FedSpeed: Larger Local Interval, Less Communication Round, and Higher Generalization Accuracy, ICLR, 2023. Runzhong Wang, Li Shen , Yiting Chen, Xiaokang Yang, Dacheng Tao, Junchi Yan, Relaxed Combinatorial Optimization Networks with Self-Supervision: Theoretical and Empirical Notes on the Cardinality-Constrained Case, ICLR, 2023. Zhuo Huang, Xiaobo Xia, Li Shen , Bo Han, Mingming Gong, Chen Gong, Tongliang Liu, Harnessing Out-Of-Distribution Examples via Augmenting Content and Style, ICLR, 2023. Peng Mi, Li Shen , Tianhe Ren, Yiyi Zhou, Xiaoshuai Sun, Rongrong Ji, Dacheng Tao, Make Sharpness-Aware Minimization Stronger: A Sparsified Perturbation Approach, NeurIPS, 2022. Erdun Gao, Ignavier Ng, Mingming Gong, Li Shen , Wei Huang, Tongliang Liu, Kun Zhang, Howard Bondell, MissDAG: Causal Discovery in the Presence of Missing Data with Continuous Additive Noise Models, NeurIPS, 2022. Zeyu Qin, Yanbo Fan, Yi Liu, Li Shen , Yong Zhang, Jue Wang, Baoyuan Wu, Boosting the Transferability of Adversarial Attacks with Reverse Adversarial Perturbation, NeurIPS, 2022. Zhenyi Wang, Li Shen , Le Fang, Qiuling Suo, Tiehang Duan, Mingchen Gao, Improving Task-free Continual Learning by Distributionally Robust Memory Evolution, ICML, 2022. Rong Dai, Li Shen , Fengxiang He, Xinmei Tian, Dacheng Tao, DisPFL: Towards Communication-Efficient Personalized Federated learning via Decentralized Sparse Training, ICML, 2022.Chang Liu, Chenfei Lou, Runzhong Wang, Alan Yuhan Xi, Li Shen , Junchi Yan, Deep Neural Network Fusion via Graph Matching with Applications to Model Ensemble and Federated Learning, ICML, 2022. Chaojian Yu, Bo Han, Li Shen , Jun Yu, Chen Gong, Mingming Gong, Tongliang liu, Understanding Robust Overfitting of Adversarial Training and Beyond, ICML, 2022. Shiwei Liu, Tianlong Chen, Xiaohan Chen, Li Shen , Decebal Constantin Mocanu, Zhangyang Wang, Mykola Pechenizkiy, The Unreasonable Effectiveness of Random Pruning: Return of the Most Naive Baseline for Sparse Training, ICLR , 2022. Shaopeng Fu, Fengxiang He, Yang Liu, Li Shen , Dacheng Tao, Robust Unlearnable Examples: Protecting Data Privacy Against Adversarial Learning, ICLR , 2022. Shiwei Liu, Tianlong Chen, Xiaohan Chen, Zahra Atashgahi, Lu Yin, Huanyu Kou, Li Shen , Mykola Pechenizkiy, Zhangyang Wang, Decebal Constantin Mocanu, Sparse Training via Boosting Pruning Plasticity with Neuroregeneration, NeurIPS, 2021. Zhishuai Guo, Mingrui Liu, Zhuoning Yuan, Li Shen , Wei Liu, Tianbao Yang, Communication-Efficient Distributed Stochastic AUC Maximization with Deep Neural Networks, ICML, 2020. Li Shen , Peng Sun, Yitong Wang, Wei Liu, Tong Zhang, An Algorithmic Framework of Variable Metric Over-Relaxed Hybrid Proximal Extra-Gradient Method, ICML, 2018. ( oral ) Li Shen , Wei Liu, Ganzhao Yuan, Shiqian Ma, GSOS: Gauss-Seidel Operator Splitting Algorithm for Multi-Term Nonsmooth Convex Composite Optimization, ICML, 2017.[ extended version ] ( oral )",
+        "link": "https://sites.google.com/site/mathshenli/home#h.njiqmprn83s8",
+        "kind": "paper",
+        "date": "2026-05",
+        "timestamp": 1777593600.0
+      },
+      {
+        "text": "Pengxiang Li, Yefan Zhou, Dilxat Muhtar, Lu Yin, Shilin Yan, Li Shen , Yi Liang, Soroush Vosoughi, Shiwei Liu, Diffusion Language Model Knows the Answer Before It Decodes, ICLR, 2026. ( oral )",
+        "link": "https://sites.google.com/site/mathshenli/home",
+        "kind": "paper",
+        "date": "2026-05",
+        "timestamp": 1777593600.0
+      },
+      {
+        "text": "A Comprehensive Benchmark of Deep Model Fusion, Journal of Machine Learning Research, 2025. Li Shen , Anke Tang, Enneng Yang, Guibing Guo, Yong Luo, Lefei Zhang, Xiaochun Cao, Bo Du, Dacheng Tao, Efficient and Effective Weight-Ensembling Mixture of Experts for Multi-Task Model Merging, IEEE Transactions on Pattern Analysis and Machine Intelligence, 2025. Zhenyi Wang, Li Shen , Tiehang Duan, Yanjun Zhu, Tongliang Liu, Mingchen Gao, Dacheng Tao, Release the Potential of Memory Buffer in Continual Learning: A Dynamic System Perspective , IEEE Transactions on Pattern Analysis and Machine Intelligence, 2025. Anke Tang, Li Shen , Yong Luo, Shuai Xie, Han Hu, Lefei Zhang, Bo Du, Dacheng Tao, Zero-Shot Sparse Mixture of Low-Rank Experts Construction From Pre-Trained Foundation Models , IEEE Transactions on Pattern Analysis and Machine Intelligence, 2025. Xuming An, Li Shen , Yong Luo, Han Hu, Dacheng Tao, Adaptive Batch Size Time Evolving Stochastic Gradient Descent for Federated Learning , IEEE Transactions on Pattern Analysis and Machine Intelligence, 2025. Zixuan Hu, Li Shen , Zhenyi Wang, Yongxian Wei, Baoyuan Wu, Chun Yuan, Dacheng Tao, Task-Distributionally Robust Data-Free Meta-Learning, IEEE Transactions on Pattern Analysis and Machine Intelligence, 2025. Yifan Shi, Kang Wei, Li Shen , Yingqi Liu, Xueqian Wang, Bo Yuan, Dacheng Tao, Towards the flatter landscape and better generalization in federated learning under client-level differential privacy, IEEE Transactions on Pattern Analysis and Machine Intelligence, 2025 Nan Yin, Li Shen , Mengzhu Wang, Xinwang Liu, Chong Chen, Xian-Sheng Hua, DREAM: a Dual Variational Framework for Unsupervised Graph Domain Adaptation, IEEE Transactions on Pattern Analysis and Machine Intelligence, 2025. Ziyi Zhang, Sen Zhang, Li Shen , Yibing Zhan, Yong Luo, Han Hu, Bo Du, Yonggang Wen, Dacheng Tao, Aligning Text-to-Image Diffusion Models with Constrained Reinforcement Learning, IEEE Transactions on Pattern Analysis and Machine Intelligence, 2025. Peng Mi, Li Shen , Tianhe Ren, Yiyi Zhou, Tianshuo Xu, Xiaoshuai Sun, Tongliang Liu, Rongrong Ji, Dacheng Tao, Systematic Investigation of Sparse Perturbed Sharpness-Aware Minimization Optimizer, IEEE Transactions on Pattern Analysis and Machine Intelligence, 2025. Xiaoge Deng, Li Shen , Shengwei Li, Tao Sun, Dongsheng Li, Dacheng Tao, Towards Understanding the Generalizability of Delayed Stochastic Gradient Descent, IEEE Transactions on Pattern Analysis and Machine Intelligence, 2025. Tao Sun, Li Shen , Xinwang Liu, On Nonconvex SGD under Unbounded Noise with Weak Gradient Lipschitz and Delayed Stochastic Gradient, IEEE Transactions on Pattern Analysis and Machine Intelligence, 2025. Zhiwei Hao, Jianyuan Guo, Li Shen , Yong Luo, Han Hu, Yonggang Wen, ADEM-VL: Adaptive and Embedded Fusion for Efficient Vision-Language Tuning , International Journal of Computer Vision, 2025. Shuang Wu, Shixiang Chen, Li Shen , Lefei Zhang, Dacheng Tao, Constraint Boundary Wandering Framework: Enhancing Constrained Optimization with Deep Neural Networks, IEEE Transactions on Pattern Analysis and Machine Intelligence, 2025. Anke Tang, Li Shen , Yong Luo, Shiwei Liu, Han Hu, Bo Do, Dacheng Tao, Data-Adaptive Weight-Ensembling for Multi-Task Model Fusion, International Journal of Computer Vision, 2025. Qinglun Li, Li Shen , Guanghao Li, Quanjun Yin, Dacheng Tao, DFedADMM: Dual Constraint Controlled Model Inconsistency for Decentralize Federated Learning, IEEE Transactions on Pattern Analysis and Machine Intelligence, 2025. Enneng Yang, Li Shen , Zhenyi Wang, Shiwei Liu, Guibing Guo, Xingwei Wang, Dacheng Tao, Revisiting Flatness-aware Optimization in Continual Learning with Orthogonal Gradient Projection, IEEE Transactions on Pattern Analysis and Machine Intelligence, 202 5 . Hongling Zheng, Li Shen , Anke Tang, Yong Luo, Han Hu, Bo Du, Yonggang Wen, Dacheng Tao, Learning from models beyond fine-tuning, Nature Machine Intelligence, 2025. Zhenyi Wang, Enneng Yang, Li Shen , Heng Huang, A Comprehensive Survey of Forgetting in Deep Learning Beyond Continual Learning, IEEE Transactions on Pattern Analysis and Machine Intelligence, 2024. Li Shen * , Yan Sun * , Zhiyuan Yu * , Liang Ding, Xinmei Tian, Dacheng Tao, On Efficient Training of Large-Scale Deep Learning Models, ACM Computing Surveys, 2024. [ 新智元 ] Enneng Yang, Zhenyi Wang, Li Shen , Nan Yin, Tongliang Liu, Guibing Guo, Xingwei Wang, Dacheng Tao, Continual Learning From a Stream of APIs, IEEE Transactions on Pattern Analysis and Machine Intelligence, 2024. Shengchao Hu, Li Shen , Ya Zhang, Yixin Chen, Dacheng Tao, On Transforming Reinforcement Learning by Transformer: The Development Trajectory, IEEE Transactions on Pattern Analysis and Machine Intelligence, 2024. Zhuo Huang, Muyang Li, Li Shen , Jun Yu, Chen Gong, Bo Han, Tongliang Liu, Winning Prize Comes from Losing Tickets: Improve Invariant Learning by Exploring Variant Parameters for Out-of-Distribution Generalization, International Journal of Computer Vision, 2024. Nan Yin, Li Shen , Huan Xiong, Bin Gu, Chong Chen, Xian-Sheng Hua, Siwei Liu, Xiao Luo, Messages Are Never Propagated Alone: Collaborative Hypergraph Neural Network for Time-series Forecasting, IEEE Transactions on Pattern Analysis and Machine Intelligence, 2023 . Zhenyi Wang, Li Shen , Tiehang Duan, Qiuling Suo, Le Fang, Wei Liu, Mingchen Gao, Distributionally Robust Memory Evolution with Generalized Divergence for Continual Learning, IEEE Transactions on Pattern Analysis and Machine Intelligence, 2023. Yan Sun, Li Shen , Hao Sun, Liang Ding, Dacheng Tao, Efficient Federated Learning via Local Adaptive Amended Optimizer with Linear Speedup, IEEE Transactions on Pattern Analysis and Machine Intelligence, 2023 . Zhihao Cheng, Li Shen , Miaoxi Zhu, Jiaxian Guo, Meng Fang, Liu Liu, Bo Du, Dacheng Tao, Prescribed Safety Performance Imitation Learning from A Single Expert Dataset, IEEE Transactions on Pattern Analysis and Machine Intelligence, 2023. Shiwei Liu, Yuesong Tian, Tianlong Chen, Li Shen , Don't Be So Dense: Sparse-to-Sparse GAN Training Without Sacrificing Performance, International Journal of Computer Vision, 2023. Hanchi Huang, Deheng Ye, Li Shen , Wei Liu, Curriculum-based Asymmetric Multi-task Reinforcement Learning, IEEE Transactions on Pattern Analysis and Machine Intelligence, 2022. Congliang Chen*, Li Shen* , Fangyu Zou*, Wei Liu, Towards Practical Adam: Non-Convexity, Convergence Theory, and Mini-Batch Acceleration, Journal of Machine Learning Research, 2022. Yuesong Tian, Li Shen , Li Shen, Guinan Su, Zhifeng Li, Wei Liu, AlphaGAN: Fully Differentiable Architecture Search for Generative Adversarial Networks, IEEE Transactions on Pattern Analysis and Machine Intelligence, 2021.Xiaojun Chen, Weijun Hong, Feiping Nie, Joshua Zhexue Huang, Li Shen , Enhanced Balanced Min Cut, International Journal of Computer Vision, 2020. Baoyuan Wu, Li Shen , Tong Zhang, Bernard Ghanem, MAP Inference via L2-Sphere Linear Program Reformulation, International Journal of Computer Vision, 2020.",
+        "link": "https://sites.google.com/site/mathshenli/home#h.ay3plop9nej1",
+        "kind": "paper",
+        "date": "2025",
+        "timestamp": 1748736000.0
+      }
+    ]
+  },
+  {
+    "scholar": "唐安可",
+    "scholar_url": "https://tanganke.github.io/publications/",
+    "affiliation": "清华大学",
+    "areas": [
+      "Model Merging"
+    ],
+    "watch": "publications",
+    "kind": "paper",
+    "text": "A Unified Generalization Framework for Model Merging: Trade-offs, Non-Linearity, and Scaling Laws Qinglun Li, Anke Tang , Miao Zhang, and 3 more authors arXiv preprint arXiv:2601.21690 , 2026 Bib @article { li2026understanding , title = {A Unified Generalization Framework for Model Merging: Trade-offs, Non-Linearity, and Scaling Laws} , author = {Li, Qinglun and Tang, Anke and Zhang, Miao and Wang, Mengzhu and Yin, Quanjun and Shen, Li} , journal = {arXiv preprint arXiv:2601.21690} , year = {2026} , }",
+    "link": "https://tanganke.github.io/publications/",
+    "date_str": "2026",
+    "timestamp": 1780272000.0,
+    "result_type": "unchanged",
+    "first_seen": "2026-10-04T16:14:05.263567+00:00",
+    "sub_items": [
+      {
+        "text": "ICLR MergOPT: A Merge-Aware Optimizer for Robust Model Merging Enneng Yang , Q Yang, P Wang, and 4 more authors In The Fourteenth International Conference on Learning Representations , 2026 Bib @inproceedings { yang2026mergopt , title = {MergOPT: A Merge-Aware Optimizer for Robust Model Merging} , author = {Yang, Enneng and Yang, Q and Wang, P and Tang, Anke and Guo, Guibing and Cao, Xiaochun and Shen, Li} , booktitle = {The Fourteenth International Conference on Learning Representations} , year = {2026} , }",
+        "link": "https://ennengyang.github.io/",
+        "kind": "paper",
+        "date": "2026-05",
+        "timestamp": 1777593600.0
+      },
+      {
+        "text": "Sep 20, 2025 Three of our papers have been accepted to NeurIPS 2025, with two on continual model merging.",
+        "link": "https://tanganke.github.io/",
+        "kind": "news",
+        "date": "2025-09-20",
+        "timestamp": 1758326400.0
+      },
+      {
+        "text": "IJCV Data-adaptive weight-ensembling for multi-task model fusion Anke Tang , Li Shen , Yong Luo , and 4 more authors International Journal of Computer Vision , 2025 Bib @article { tang2025data , title = {Data-adaptive weight-ensembling for multi-task model fusion} , author = {Tang, Anke and Shen, Li and Luo, Yong and Liu, Shiwei and Hu, Han and Du, Bo and Tao, Dacheng} , journal = {International Journal of Computer Vision} , pages = {1--17} , year = {2025} , publisher = {Springer US} , }",
+        "link": "https://sites.google.com/site/mathshenli/home",
+        "kind": "paper",
+        "date": "2025-09",
+        "timestamp": 1756684800.0
+      },
+      {
+        "text": "NeurIPS Merging models on the fly without retraining: A sequential approach to scalable continual model merging Anke Tang , Enneng Yang , Li Shen , and 4 more authors The Thirty-Ninth Annual Conference on Neural Information Processing Systems , 2025 Bib HTML @article { tang2025merging , title = {Merging models on the fly without retraining: A sequential approach to scalable continual model merging} , author = {Tang, Anke and Yang, Enneng and Shen, Li and Luo, Yong and Hu, Han and Du, Bo and Tao, Dacheng} , journal = {The Thirty-Ninth Annual Conference on Neural Information Processing Systems} , year = {2025} , }",
+        "link": "https://ennengyang.github.io/",
+        "kind": "paper",
+        "date": "2025-09",
+        "timestamp": 1756684800.0
+      },
+      {
+        "text": "NeurIPS Continual Model Merging without Data: Dual Projections for Balancing Stability and Plasticity Enneng Yang , Anke Tang , Li Shen , and 4 more authors The Thirty-Ninth Annual Conference on Neural Information Processing Systems , 2025 Bib @article { yang2025continual , title = {Continual Model Merging without Data: Dual Projections for Balancing Stability and Plasticity} , author = {Yang, Enneng and Tang, Anke and Shen, Li and Guo, Guibing and Wang, Xingwei and Cao, Xiaochun and Jie, Zhang} , journal = {The Thirty-Ninth Annual Conference on Neural Information Processing Systems} , year = {2025} , }",
+        "link": "https://ennengyang.github.io/",
+        "kind": "paper",
+        "date": "2025-09",
+        "timestamp": 1756684800.0
+      },
+      {
+        "text": "NeurIPS Mix Data or Merge Models? Balancing the Helpfulness, Honesty, and Harmlessness of Large Language Model via Model Merging Jinluan Yang, Dingnan Jin, Anke Tang , and 10 more authors The Thirty-Ninth Annual Conference on Neural Information Processing Systems , 2025 Bib @article { yang2025mix , title = {Mix Data or Merge Models? Balancing the Helpfulness, Honesty, and Harmlessness of Large Language Model via Model Merging} , author = {Yang, Jinluan and Jin, Dingnan and Tang, Anke and Shen, Li and Zhu, Didi and Chen, Zhengyu and Zhao, Ziyu and Wang, Daixin and Cui, Qing and Zhang, Zhiqiang and Zhou, Jun and Wu, Fei and Kuang, Kun} , journal = {The Thirty-Ninth Annual Conference on Neural Information Processing Systems} , year = {2025} , }",
+        "link": "https://tanganke.github.io/publications/",
+        "kind": "paper",
+        "date": "2025-09",
+        "timestamp": 1756684800.0
+      },
+      {
+        "text": "ICML Targeted Low-rank Refinement: Enhancing Sparse Language Models with Precision Li Shen , Anke Tang , Yong Luo , and 3 more authors In Forty-second International Conference on Machine Learning , 2025 Bib @inproceedings { shentargeted , title = {Targeted Low-rank Refinement: Enhancing Sparse Language Models with Precision} , author = {Shen, Li and Tang, Anke and Luo, Yong and Sun, Tao and Hu, Han and Cao, Xiaochun} , booktitle = {Forty-second International Conference on Machine Learning} , year = {2025} , }",
+        "link": "https://sites.google.com/site/mathshenli/home",
+        "kind": "paper",
+        "date": "2025-07",
+        "timestamp": 1751328000.0
+      },
+      {
+        "text": "ICML Modeling Multi-Task Model Merging as Adaptive Projective Gradient Descent Yongxian Wei, Anke Tang , Li Shen , and 3 more authors In Forty-second International Conference on Machine Learning , 2025 Bib @inproceedings { weimodeling , title = {Modeling Multi-Task Model Merging as Adaptive Projective Gradient Descent} , author = {Wei, Yongxian and Tang, Anke and Shen, Li and Hu, Zixuan and Yuan, Chun and Cao, Xiaochun} , booktitle = {Forty-second International Conference on Machine Learning} , year = {2025} , }",
+        "link": "https://sites.google.com/site/mathshenli/home",
+        "kind": "paper",
+        "date": "2025-07",
+        "timestamp": 1751328000.0
+      },
+      {
+        "text": "TPAMI Zero-Shot Sparse Mixture of Low-Rank Experts Construction From Pre-Trained Foundation Models Anke Tang , Li Shen , Yong Luo , and 5 more authors IEEE Transactions on Pattern Analysis and Machine Intelligence , 2025 Bib @article { tang2025zero , title = {Zero-Shot Sparse Mixture of Low-Rank Experts Construction From Pre-Trained Foundation Models} , author = {Tang, Anke and Shen, Li and Luo, Yong and Xie, Shuai and Hu, Han and Zhang, Lefei and Du, Bo and Tao, Dacheng} , journal = {IEEE Transactions on Pattern Analysis and Machine Intelligence} , year = {2025} , publisher = {IEEE} , }",
+        "link": "https://sites.google.com/site/mathshenli/home",
+        "kind": "paper",
+        "date": "2025",
+        "timestamp": 1748736000.0
+      }
+    ]
+  },
+  {
+    "scholar": "林知秋",
+    "scholar_url": "https://linzhiqiu.github.io/",
+    "affiliation": "CMU",
+    "areas": [
+      "Multimodal",
+      "Video",
+      "VLM"
+    ],
+    "watch": "publications",
+    "kind": "paper",
+    "text": "CVPR 2026 Highlight (Top 3%) CHAI: Building a Precise Video Language with Human-AI Oversight (CVPR’26 Highlight, Top 3%) Zhiqiu Lin , Chancharik Mitra , Siyuan Cen , Isaac Li , Yuhan Huang , Yu Tong Tiffany Ling , Hewei Wang , Irene Pi , Shihang Zhu , Ryan Rao , George Liu , Jiaxi Li , Ruojin Li , Yili Han , Yilun Du , Deva Ramanan Website | Arxiv Before AI can generate professional videos, it needs to see like a professional. We spent a year with 100+ content creators building the shared language of cinema for AI. A structured video specification grounded by 200+ visual primitives across subjects, scenes, motion, spatial framing, and camera dynamics. Critique-based Human-AI oversight (CHAI) : AI drafts fluent captions, humans critique visual errors — each doing what they’re best at. Post-training on CHAI triplets lets our 8B Qwen3-VL surpass GPT-5 and Gemini-3.1-Pro on captioning, reward modeling, and critique generation. Unlocks professional-grade video generation — fine-tuned Wan follows 400-word cinematic prompts for dolly zooms, rack focus, speed ramps, Dutch angles, and more.",
+    "link": "https://scholar.google.com/citations?user=k85XvocAAAAJ&hl=en",
+    "date_str": "2026-06",
+    "timestamp": 1780272000.0,
+    "result_type": "changed",
+    "first_seen": "2026-10-04T16:14:05.263584+00:00",
+    "sub_items": [
+      {
+        "text": "CVPR 2023 Multimodality Helps Unimodality: Cross-Modal Few-Shot Learning with Multimodal Models (CVPR’23) Zhiqiu Lin *, Samuel Yu* , Zhiyi Kuang , Deepak Pathak , Deva Ramanan Website | Arxiv | We propose a simple cross-modal adaptation method for multimodal models that repurposes information from other modalities (e.g., class names and audio clips) as additional training samples. For CLIP, it achieves SOTA few-shot adaptation performance even with a simple linear probe , and consistently improves prior art such as prompting, adapter, and weight ensembling. Audiovisual experiments with AudioCLIP suggest that one can learn a better dog visual classifier by listening to them bark.",
+        "link": "https://scholar.google.com/citations?user=gxRDkLMAAAAJ&hl=en",
+        "kind": "paper",
+        "date": "2026",
+        "timestamp": 1780272000.0
+      },
+      {
+        "text": "NeurIPS 2022 LECO: Continual Learning with Evolving Class Ontologies (NeurIPS’22) Zhiqiu Lin , Deepak Pathak , Yu-Xiong Wang , Deva Ramanan* , Shu Kong* Website | Arxiv | NeurIPS’22 Talk A practical lifelong vision benchmark motivated by real-world dataset versioning issues, e.g., Mapillary 1.2 to 2.0. Simple but effective solutions such as joint training, semi-supervised learning, and learning-with-partial-labels to address inconsistent annotation (both coarse-grained and fine-grained).",
+        "link": "https://www.cs.cmu.edu/~dpathak/",
+        "kind": "paper",
+        "date": "2026",
+        "timestamp": 1780272000.0
+      },
+      {
+        "text": "CHAI: Beating GPT-5 and Gemini-3.1-Pro on Professional Video Captioning · CVPR 2026 Highlight",
+        "link": "https://linzhiqiu.github.io/papers/chai/",
+        "kind": "paper",
+        "date": "2026-04-10",
+        "timestamp": 1775779200.0
+      },
+      {
+        "text": "CameraBench: Comprehensive Benchmark for Camera-Controlled Video Generation · NeurIPS 2025 Spotlight",
+        "link": "https://linzhiqiu.github.io/papers/camerabench/",
+        "kind": "paper",
+        "date": "2025-09-20",
+        "timestamp": 1758326400.0
+      },
+      {
+        "text": "NeurIPS 2025 Spotlight (Top 3%) CameraBench: Towards Understanding Camera Motions in Any Video (NeurIPS’25 Spotlight, Top 3%) Zhiqiu Lin *, Siyuan Cen* , Daniel Jiang , Jay Karhade , Hewei Wang , Chancharik Mitra , Yu Tong Tiffany Ling , Yuhan Huang , Sifan Liu , Mingyu Chen , Rushikesh Zawar , Xue Bai , Yilun Du , Chuang Gan , Deva Ramanan Website | Arxiv | We introduce CameraBench, a large-scale effort that pushes video-language models to reason about the language of camera motion just like professional cinematographers. Our open-source dataset and models are gaining strong interest and adoption from frontier video understanding and generation labs such as Deepmind, xAI, and Kling.",
+        "link": "https://linzhiqiu.github.io/papers/camerabench/",
+        "kind": "paper",
+        "date": "2025-09",
+        "timestamp": 1756684800.0
+      },
+      {
+        "text": "NaturalBench: Evaluating Vision-Language Models on Natural Adversarial Images · NeurIPS 2024",
+        "link": "https://linzhiqiu.github.io/papers/naturalbench/",
+        "kind": "paper",
+        "date": "2024-09-25",
+        "timestamp": 1727222400.0
+      },
+      {
+        "text": "VQAScore: Evaluating Text-to-Visual Generation with Image-to-Text Generation · ECCV 2024",
+        "link": "https://linzhiqiu.github.io/papers/vqascore/",
+        "kind": "paper",
+        "date": "2024-08-15",
+        "timestamp": 1723680000.0
+      },
+      {
+        "text": "VisualGPTScore: Generative Evaluation for Vision-Language Models · ICML 2024",
+        "link": "http://arxiv.org/abs/2306.01879",
+        "kind": "paper",
+        "date": "2024-05-10",
+        "timestamp": 1715299200.0
+      }
+    ]
+  },
+  {
+    "scholar": "张天远",
+    "scholar_url": "https://scholar.google.com/citations?hl=en&user=uJocZjkAAAAJ&view_op=list_works&sortby=pubdate",
+    "affiliation": "MIT",
+    "areas": [
+      "3DV"
+    ],
+    "watch": "publications",
+    "kind": "paper",
+    "text": "Aligning visual foundation encoders to tokenizers for diffusion models · International Conference on Learning Representations 2026",
+    "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=uJocZjkAAAAJ&sortby=pubdate&citation_for_view=uJocZjkAAAAJ:R3hNpaxXUhUC",
+    "date_str": "2026",
+    "timestamp": 1780272000.0,
+    "result_type": "unchanged",
+    "first_seen": "2026-10-04T10:33:23.486866+00:00",
+    "sub_items": [
+      {
+        "text": "Test-time training done right · International Conference on Learning Representations 2026",
+        "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=uJocZjkAAAAJ&sortby=pubdate&citation_for_view=uJocZjkAAAAJ:IWHjjKOFINEC",
+        "kind": "paper",
+        "date": "2026",
+        "timestamp": 1780272000.0
+      },
+      {
+        "text": "Zipmap: Linear-time stateful 3d reconstruction via test-time training · Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern …, 2026",
+        "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=uJocZjkAAAAJ&sortby=pubdate&citation_for_view=uJocZjkAAAAJ:hFOr9nPyWt4C",
+        "kind": "paper",
+        "date": "2026",
+        "timestamp": 1780272000.0
+      },
+      {
+        "text": "Large video planner enables generalizable robot control · arXiv preprint arXiv:2512.15840, 2025",
+        "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=uJocZjkAAAAJ&sortby=pubdate&citation_for_view=uJocZjkAAAAJ:-f6ydRqryjwC",
+        "kind": "paper",
+        "date": "2025",
+        "timestamp": 1748736000.0
+      },
+      {
+        "text": "AlignTok: Aligning Visual Foundation Encoders to Tokenizers for Diffusion Models · arXiv preprint arXiv:2509.25162, 2025",
+        "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=uJocZjkAAAAJ&sortby=pubdate&citation_for_view=uJocZjkAAAAJ:e5wmG9Sq2KIC",
+        "kind": "paper",
+        "date": "2025",
+        "timestamp": 1748736000.0
       }
     ]
   },
@@ -1220,28 +2422,28 @@
         "link": "https://scholar.google.com/citations?hl=en&user=DmwXESQAAAAJ&view_op=list_works&sortby=pubdate",
         "kind": "paper",
         "date": "2026-06-01",
-        "timestamp": 1780243200.0
+        "timestamp": 1780272000.0
       },
       {
         "text": "FLASH: Fast Generative Retrieval via Autoregressive Semantic Hashing with Provably Distance Bounds · SIGKDD 2026",
         "link": "https://scholar.google.com/citations?hl=en&user=DmwXESQAAAAJ&view_op=list_works&sortby=pubdate",
         "kind": "paper",
         "date": "2026-06-01",
-        "timestamp": 1780243200.0
+        "timestamp": 1780272000.0
       },
       {
         "text": "When Gradient Boosting Meets Adapter: Exploring Weak Learners for Parameter-Efficient Fine-tuning of LLMs · SIGKDD 2026",
         "link": "https://scholar.google.com/citations?hl=en&user=DmwXESQAAAAJ&view_op=list_works&sortby=pubdate",
         "kind": "paper",
         "date": "2026-06-01",
-        "timestamp": 1780243200.0
+        "timestamp": 1780272000.0
       },
       {
         "text": "Machine unlearning via task simplex arithmetic · NeurIPS 2026",
         "link": "https://scholar.google.com/citations?hl=en&user=DmwXESQAAAAJ&view_op=list_works&sortby=pubdate",
         "kind": "paper",
         "date": "2026-06-01",
-        "timestamp": 1780243200.0
+        "timestamp": 1780272000.0
       },
       {
         "text": "2025 Sep: Three paper accepted in NeurIPS'25, One Paper is in Position Track (~8% acceptance rate)",
@@ -1255,86 +2457,7 @@
         "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=DmwXESQAAAAJ&sortby=pubdate&citation_for_view=DmwXESQAAAAJ:cFHS6HbyZ2cC",
         "kind": "paper",
         "date": "2025-09-01",
-        "timestamp": 1756656000.0
-      }
-    ]
-  },
-  {
-    "scholar": "张天远",
-    "scholar_url": "https://scholar.google.com/citations?hl=en&user=uJocZjkAAAAJ&view_op=list_works&sortby=pubdate",
-    "affiliation": "MIT",
-    "areas": [
-      "3DV"
-    ],
-    "watch": "publications",
-    "kind": "paper",
-    "text": "Aligning visual foundation encoders to tokenizers for diffusion models · International Conference on Learning Representations 2026",
-    "link": "https://arxiv.org/abs/2509.25162",
-    "date_str": "2026",
-    "timestamp": 1780272000.0,
-    "result_type": "unchanged",
-    "first_seen": "2026-10-04T10:33:23.486866+00:00",
-    "sub_items": [
-      {
-        "text": "Zipmap: Linear-time stateful 3d reconstruction via test-time training · CVPR 2026",
-        "link": "https://zipmap3d.github.io/",
-        "kind": "paper",
-        "date": "2026-02-27",
-        "timestamp": 1772121600.0
-      },
-      {
-        "text": "Test-time training done right · ICLR 2026",
-        "link": "https://arxiv.org/abs/2410.05229",
-        "kind": "paper",
-        "date": "2026-01-20",
-        "timestamp": 1768838400.0
-      },
-      {
-        "text": "Large video planner enables generalizable robot control · arXiv 2025",
-        "link": "https://arxiv.org/abs/2512.15840",
-        "kind": "paper",
-        "date": "2025-12-20",
-        "timestamp": 1766160000.0
-      },
-      {
-        "text": "AlignTok: Aligning Visual Foundation Encoders to Tokenizers for Diffusion Models · arXiv 2025",
-        "link": "https://arxiv.org/abs/2509.25162",
-        "kind": "paper",
-        "date": "2025-09-25",
-        "timestamp": 1758729600.0
-      }
-    ]
-  },
-  {
-    "scholar": "王子峰",
-    "scholar_url": "https://zifengwang.me/",
-    "affiliation": "Google",
-    "areas": [
-      "LLM",
-      "Agent"
-    ],
-    "watch": "publications",
-    "kind": "paper",
-    "text": "EnvHarness: Awakening Static Worlds for Agent Learning · arXiv, 2026",
-    "link": "https://arxiv.org/abs/2608.19880",
-    "date_str": "2026",
-    "timestamp": 1780272000.0,
-    "result_type": "unchanged",
-    "first_seen": "2026-10-04T08:46:36.704538+00:00",
-    "sub_items": [
-      {
-        "text": "SkillOS: Learning Skill Curation for Self-Evolving Agents · NeurIPS 2026",
-        "link": "https://arxiv.org/abs/2605.06614",
-        "kind": "paper",
-        "date": "2026-06-01",
-        "timestamp": 1780272000.0
-      },
-      {
-        "text": "RRSI: Regularized Recursive Self-Improvement of Agent Harnesses · arXiv 2026",
-        "link": "https://arxiv.org/abs/2609.24972",
-        "kind": "paper",
-        "date": "2026-06-01",
-        "timestamp": 1780272000.0
+        "timestamp": 1756684800.0
       }
     ]
   },
@@ -1350,9 +2473,32 @@
     "text": "SFT, RL, and On-Policy Distillation Through a Distributional Lens",
     "link": "https://nrehiew.github.io/blog/sft_rl_opd/",
     "date_str": "2026-05-10",
-    "timestamp": 1778342400.0,
+    "timestamp": 1778371200.0,
     "result_type": "rss_no_change",
-    "first_seen": "2026-10-04T08:46:36.704509+00:00"
+    "first_seen": "2026-10-04T08:46:36.704509+00:00",
+    "sub_items": [
+      {
+        "text": "Coding Models Are Doing Too Much",
+        "link": "https://nrehiew.github.io/blog/minimal_editing/",
+        "kind": "post",
+        "date": "2026-04-20",
+        "timestamp": 1776643200.0
+      },
+      {
+        "text": "Evaluating Long Context (Reasoning) Ability",
+        "link": "https://nrehiew.github.io/blog/long_context/",
+        "kind": "post",
+        "date": "2025-10-16",
+        "timestamp": 1760572800.0
+      },
+      {
+        "text": "Flow Matching in 5 Minutes",
+        "link": "https://nrehiew.github.io/blog/flow_matching/",
+        "kind": "post",
+        "date": "2025-07-17",
+        "timestamp": 1752710400.0
+      }
+    ]
   },
   {
     "scholar": "胡君耀",
@@ -1364,11 +2510,73 @@
     "watch": "news",
     "kind": "news",
     "text": "08 💼 Activity I attended VALSE 2026 (Wuhan, China).",
-    "link": "https://junyaohu.github.io/",
+    "link": "https://valser.org/2026/#/",
     "date_str": "2026-05-08",
-    "timestamp": 1778169600.0,
+    "timestamp": 1778198400.0,
     "result_type": "unchanged",
-    "first_seen": "2026-10-04T08:46:36.704506+00:00"
+    "first_seen": "2026-10-04T08:46:36.704506+00:00",
+    "sub_items": [
+      {
+        "text": "26 😋 Accepted A paper was accepted to CVPR 2026 Workshop CVEU.",
+        "link": "https://junyaohu.github.io/",
+        "kind": "news",
+        "date": "2026-03-26",
+        "timestamp": 1774483200.0
+      },
+      {
+        "text": "23 😋 Accepted A paper was accepted to CVPR 2026.",
+        "link": "https://junyaohu.github.io/",
+        "kind": "news",
+        "date": "2026-02-23",
+        "timestamp": 1771804800.0
+      },
+      {
+        "text": "06 💼 Activity I attended VALSE 2025 (Zhuhai, China).",
+        "link": "http://valser.org/2025",
+        "kind": "news",
+        "date": "2025-06-06",
+        "timestamp": 1749168000.0
+      },
+      {
+        "text": "19 💼 Activity I attended First AMC AI Film Festival (Hongkong, China).",
+        "link": "https://amc.hkust.edu.hk/events/1st-hkust-ai-film-festival",
+        "kind": "news",
+        "date": "2025-04-19",
+        "timestamp": 1745020800.0
+      },
+      {
+        "text": "08 😋 Accepted A film was selected as Finalist at First AMC AI Film Festival .",
+        "link": "https://amc.hkust.edu.hk/events/1st-hkust-ai-film-festival",
+        "kind": "news",
+        "date": "2025-03-08",
+        "timestamp": 1741392000.0
+      }
+    ]
+  },
+  {
+    "scholar": "冯亮",
+    "scholar_url": "https://fenglang918.github.io/index.html",
+    "affiliation": "复旦大学",
+    "areas": [
+      "Develop tool"
+    ],
+    "watch": "general",
+    "kind": "paper",
+    "text": "HiCache: A Plug-in Scaled-Hermite Upgrade for Taylor-Style Cache-then-Forecast Diffusion Acceleration Liang Feng* , et al. (Co-first Author · 1st author) Accepted (Poster) at ICLR 2026 .",
+    "link": "https://github.com/fenglang918/HiCache",
+    "date_str": "2026-05",
+    "timestamp": 1777593600.0,
+    "result_type": "unchanged",
+    "first_seen": "2026-10-04T16:14:05.263574+00:00",
+    "sub_items": [
+      {
+        "text": "Forecast then Calibrate: Feature Caching as ODE for Efficient Diffusion Transformers Co-first Author · 2nd author Accepted (Poster) at AAAI 2026 .",
+        "link": "https://arxiv.org/abs/2508.16211",
+        "kind": "paper",
+        "date": "2026-02",
+        "timestamp": 1769904000.0
+      }
+    ]
   },
   {
     "scholar": "蒋玉初",
@@ -1381,90 +2589,19 @@
     ],
     "watch": "general",
     "kind": "paper",
-    "text": "Rethinking LLM Ensembling from the Perspective of Mixture Models · ICML 2026 Spotlight",
-    "link": "https://arxiv.org/abs/2605.00419",
+    "text": "Rethinking LLM Ensembling from the Perspective of Mixture Models Jiale Fu*, Yuchu Jiang *, Peijun Wu, Chonghan Liu, Joey Tianyi Zhou, Xu Yang Published in ICML (Spotlight) , 2026 Mixture-model-like Ensemble (ME) is a training-free, plug-and-play ensembling method that reinterprets LLM ensembling as a mixture model and samples from the same ensemble distribution while invoking only one model per step. ME is mathematically equivalent to sampling from the ensemble distribution and only requires evaluating one model per step, making it 1.78x-2.68x faster than conventional ensembling. Download Paper d2Cache: Accelerating Diffusion-Based LLMs via Dual Adaptive Caching Yuchu Jiang , Yue Cai, Xiangzhong Luo, Jiale Fu, Jiarui Wang, Chonghan Liu, Xu Yang Published in ICLR , 2026 Dual aDaptive Cache (d²Cache) is a training-free approximate KV cache framework for accelerating dLLM inference. d²Cache features a two-stage fine-grained selection strategy to identify tokens and adaptively update their KV states at each decoding step, while caching the KV states of the remaining tokens for reuse. Furthermore, d²Cache naturally offers a more reliable decoding alternative, which can enable quasi left-to-right generation and mitigate premature overconfidence in tokens at the end of the sequence. Extensive experimental results on two representative dLLMs (i.e., LLaDA and Dream) demonstrate that d²Cache not only achieves substantial inference speedups, but also yields consistent improvements in generation quality. Download Paper Mimic In-Context Learning in Multimodal Tasks Yuchu Jiang , Jiale Fu, Chenduo Hao, Xinting Hu, Yingzhe Peng, Xin Geng, Xu Yang Published in CVPR , 2025 MimIC is a novel framework that mimics in-context learning for multimodal tasks by injecting lightweight, query-conditioned shift vectors after each attention head. Applied to Idefics1-9B, MimIC achieves up to +3.46% accuracy improvement on VQAv2, +3.57% on OK-VQA, and +9.00 CIDEr on image captioning, compared to standard 32-shot in-context learning. Moreover, MimIC effectively mitigates hallucination commonly introduced by conventional ICL approaches, while incurring inference overhead comparable to zero-shot inference. Download Paper Fast Large Language Model Collaborative Decoding via Speculation Jiale Fu*, Yuchu Jiang *, Junkai Chen, Jiaming Fan, Xin Geng, Xu Yang Published in ICML , 2025 Collaborative decoding via Speculation (CoS) is a novel framework that accelerates the ensemble of any number of LLMs without sacrificing performance. It could reach 1.11x-2.23x over standard ensemble techniques on two-model or three-model pairs. Download Paper",
+    "link": "https://kamichanw.github.io/publication/2026-05-01-mixture",
     "date_str": "2026-05",
     "timestamp": 1777593600.0,
     "result_type": "unchanged",
-    "first_seen": "2026-10-04T08:46:36.704567+00:00"
-  },
-  {
-    "scholar": "沈立",
-    "scholar_url": "https://sites.google.com/site/mathshenli/home",
-    "affiliation": "中山大学",
-    "areas": [
-      "Model Merging"
-    ],
-    "watch": "general",
-    "kind": "paper",
-    "text": "Pengxiang Li, Yefan Zhou, Dilxat Muhtar, Lu Yin, Shilin Yan, Li Shen , Yi Liang, Soroush Vosoughi, Shiwei Liu, Diffusion Language Model Knows the Answer Before It Decodes, ICLR, 2026. ( oral )",
-    "link": "https://sites.google.com/site/mathshenli/home",
-    "date_str": "2026-05",
-    "timestamp": 1777593600.0,
-    "result_type": "unchanged",
-    "first_seen": "2026-10-04T08:46:36.704552+00:00"
-  },
-  {
-    "scholar": "冯亮",
-    "scholar_url": "https://fenglang918.github.io/index.html",
-    "affiliation": "复旦大学",
-    "areas": [
-      "Develop tool"
-    ],
-    "watch": "general",
-    "kind": "paper",
-    "text": "HiCache: A Plug-in Scaled-Hermite Upgrade for Taylor-Style Cache-then-Forecast Diffusion Acceleration · Accepted (Poster) at ICLR 2026 .",
-    "link": "https://fenglang918.github.io/index.html",
-    "date_str": "2026-05",
-    "timestamp": 1777593600.0,
-    "result_type": "unchanged",
-    "first_seen": "2026-10-04T08:46:36.704560+00:00"
-  },
-  {
-    "scholar": "林知秋",
-    "scholar_url": "https://linzhiqiu.github.io/",
-    "affiliation": "CMU",
-    "areas": [
-      "Multimodal",
-      "Video",
-      "VLM"
-    ],
-    "watch": "publications",
-    "kind": "paper",
-    "text": "CHAI: Beating GPT-5 and Gemini-3.1-Pro on Professional Video Captioning · CVPR 2026 Highlight",
-    "link": "https://linzhiqiu.github.io/papers/chai/",
-    "date_str": "2026-04-10",
-    "timestamp": 1775750400.0,
-    "result_type": "changed",
-    "first_seen": "2026-04-10T00:00:00+00:00",
+    "first_seen": "2026-10-04T16:14:05.263582+00:00",
     "sub_items": [
       {
-        "text": "CameraBench: Comprehensive Benchmark for Camera-Controlled Video Generation · NeurIPS 2025 Spotlight",
-        "link": "https://linzhiqiu.github.io/papers/camerabench/",
+        "text": "Rethinking LLM Ensembling from the Perspective of Mixture Models · ICML 2026 Spotlight",
+        "link": "https://arxiv.org/abs/2605.00419",
         "kind": "paper",
-        "date": "2025-09-20",
-        "timestamp": 1758297600.0
-      },
-      {
-        "text": "NaturalBench: Evaluating Vision-Language Models on Natural Adversarial Images · NeurIPS 2024",
-        "link": "https://linzhiqiu.github.io/papers/naturalbench/",
-        "kind": "paper",
-        "date": "2024-09-25",
-        "timestamp": 1727193600.0
-      },
-      {
-        "text": "VQAScore: Evaluating Text-to-Visual Generation with Image-to-Text Generation · ECCV 2024",
-        "link": "https://linzhiqiu.github.io/papers/vqascore/",
-        "kind": "paper",
-        "date": "2024-08-15",
-        "timestamp": 1723651200.0
-      },
-      {
-        "text": "VisualGPTScore: Generative Evaluation for Vision-Language Models · ICML 2024",
-        "link": "http://arxiv.org/abs/2306.01879",
-        "kind": "paper",
-        "date": "2024-05-10",
-        "timestamp": 1715270400.0
+        "date": "2026-05",
+        "timestamp": 1777593600.0
       }
     ]
   },
@@ -1480,7 +2617,7 @@
     "text": "写在 Kimi K2 发布之后：再也不仅仅是 ChatBot",
     "link": "https://github.com/bigeagle/bigeagle.me/blob/master/content/post/20250713-kimi-k2/index.md",
     "date_str": "2026-04-04",
-    "timestamp": 1775232000.0,
+    "timestamp": 1775260800.0,
     "result_type": "changed",
     "first_seen": "2026-04-04T00:00:00+00:00",
     "sub_items": [
@@ -1489,7 +2626,7 @@
         "link": "https://github.com/bigeagle/bigeagle.me/blob/master/content/post/20260404-800-days-at-kimi/index.md",
         "kind": "post",
         "date": "2026-04-04",
-        "timestamp": 1775232000.0
+        "timestamp": 1775260800.0
       }
     ]
   },
@@ -1500,95 +2637,56 @@
     "areas": [
       "Continual Learning"
     ],
-    "watch": "publications",
-    "kind": "paper",
-    "text": "FOREVER: Forgetting Curve-Inspired Memory Replay for Language Model Continual Learning · ACL 2026",
-    "link": "https://arxiv.org/abs/2601.03938",
-    "date_str": "2026-04-01",
-    "timestamp": 1774972800.0,
-    "result_type": "changed",
-    "first_seen": "2026-04-01T00:00:00+00:00",
+    "watch": "general",
+    "kind": "news",
+    "text": "One paper has been accepted to ACL 2026! 2026.01 : 🎉 Two papers have been accepted to ICLR 2026! 2025.08 : 🎉 Two papers have been accepted to EMNLP 2025! 2025.07 : 🎉 One paper has been accepted to COLM 2025! 2025.05 : 🎉 Two papers have been accepted to ACL 2025! 2024.12 : 🎉 One paper has been accepted to AAAI 2025! 2024.09 : 🎉 One paper has been accepted to EMNLP 2024! 2024.08 : 🥳 One paper about continual learning is online! 2024.05 : 🎉 Two papers have been accepted to ACL 2024 (1 Main + 1 Findings)! 2024.02 : 🎉 One paper has been accepted to COLING 2024! 2023.10 : 🎉 One paper has been accepted by EMNLP 2023!",
+    "link": "https://arxiv.org/abs/2408.05200",
+    "date_str": "2026-04",
+    "timestamp": 1775001600.0,
+    "result_type": "unchanged",
+    "first_seen": "2026-10-04T16:14:05.263570+00:00",
     "sub_items": [
+      {
+        "text": "FOREVER: Forgetting Curve-Inspired Memory Replay for Language Model Continual Learning · ACL 2026",
+        "link": "https://arxiv.org/abs/2601.03938",
+        "kind": "paper",
+        "date": "2026-04-01",
+        "timestamp": 1775001600.0
+      },
       {
         "text": "Micro-Macro Retrieval: Reducing Long-Form Hallucination in Large Language Models · ICLR 2026",
         "link": "https://openreview.net/forum?id=ABdgMoJhlO",
         "kind": "paper",
         "date": "2026-01-15",
-        "timestamp": 1768406400.0
+        "timestamp": 1768435200.0
       },
       {
         "text": "AIMMerging: Leveraging Training Trajectories for Adaptive Iterative Model Merging in Language Model Continual Learning · EMNLP 2025",
         "link": "https://aclanthology.org/2025.emnlp-main.678.pdf",
         "kind": "paper",
         "date": "2025-08-15",
-        "timestamp": 1755187200.0
+        "timestamp": 1755216000.0
       },
       {
         "text": "GeoEdit: Geometric Knowledge Editing for Large Language Models · EMNLP 2025",
         "link": "https://arxiv.org/pdf/2502.19953",
         "kind": "paper",
         "date": "2025-08-15",
-        "timestamp": 1755187200.0
+        "timestamp": 1755216000.0
       },
       {
         "text": "Recurrent Knowledge Identification and Fusion for Language Model Continual Learning · ACL 2025",
         "link": "https://arxiv.org/abs/2502.17510",
         "kind": "paper",
         "date": "2025-05-15",
-        "timestamp": 1747238400.0
+        "timestamp": 1747267200.0
       },
       {
         "text": "TaSL: Task Skill Localization and Consolidation for Language Model Continual Learning · arXiv 2024",
         "link": "https://arxiv.org/abs/2408.05200",
         "kind": "paper",
         "date": "2024-08-10",
-        "timestamp": 1723219200.0
-      }
-    ]
-  },
-  {
-    "scholar": "📚 plmblog",
-    "scholar_url": "https://plmsmile.github.io/posts/archive.html",
-    "affiliation": "Alibaba",
-    "areas": [
-      "LLM"
-    ],
-    "watch": "blog",
-    "kind": "post",
-    "text": "大模型评测与基准体系综述",
-    "link": "https://plmsmile.github.io/posts/llm/eval/01-eval-survey.html",
-    "date_str": "2026-03-10",
-    "timestamp": 1773072000.0,
-    "result_type": "changed",
-    "first_seen": "2026-03-10T00:00:00+00:00",
-    "sub_items": [
-      {
-        "text": "Meta LLaMA 系列技术演进与架构剖析",
-        "link": "https://plmsmile.github.io/posts/llm/industry/mainllm/20-meta-series.html",
-        "kind": "post",
-        "date": "2026-01-15",
-        "timestamp": 1768406400.0
-      },
-      {
-        "text": "Mistral 与 Mixtral 混合专家模型技术拆解",
-        "link": "https://plmsmile.github.io/posts/llm/industry/mainllm/21-mistral-series.html",
-        "kind": "post",
-        "date": "2025-11-20",
-        "timestamp": 1763568000.0
-      },
-      {
-        "text": "AllenAI Olmo 开源大模型与数据管线构建",
-        "link": "https://plmsmile.github.io/posts/llm/industry/mainllm/22-olmo-series.html",
-        "kind": "post",
-        "date": "2025-09-18",
-        "timestamp": 1758124800.0
-      },
-      {
-        "text": "MiroMind: 面向思考与推理的端到端大模型",
-        "link": "https://plmsmile.github.io/posts/llm/industry/mainllm/23-mirothinker-series.html",
-        "kind": "post",
-        "date": "2025-08-05",
-        "timestamp": 1754323200.0
+        "timestamp": 1723248000.0
       }
     ]
   },
@@ -1604,9 +2702,67 @@
     "text": "KV Cache（二）：从如何让GPU不摸鱼开始思考——MQA、GQA到MLA的计算拆解",
     "link": "https://blog.phimes.top/posts/2026/01/16/transformer-kv-cache-attention-roofline",
     "date_str": "2026-01-16",
-    "timestamp": 1768492800.0,
-    "result_type": "rss",
-    "first_seen": "2026-01-16T00:00:00+00:00"
+    "timestamp": 1768521600.0,
+    "result_type": "rss_no_change",
+    "first_seen": "2026-01-16T00:00:00+00:00",
+    "sub_items": [
+      {
+        "text": "KV Cache（一）：从KV Cache看懂Attention（MHA、MQA、GQA、MLA）的优化之路",
+        "link": "https://blog.phimes.top/posts/2026/01/04/transformer-kv-cache-attention",
+        "kind": "post",
+        "date": "2026-01-04",
+        "timestamp": 1767484800.0
+      },
+      {
+        "text": "从vibe到spec：可维护性视角下探讨为什么很多人的AI编程依然是小玩具",
+        "link": "https://blog.phimes.top/posts/2025/12/26/ai-coding-spec-maintainability-vibe-coding",
+        "kind": "post",
+        "date": "2025-12-26",
+        "timestamp": 1766707200.0
+      },
+      {
+        "text": "通过下游任务理解BERT和GPT的区别：不只是完形填空和词语接龙",
+        "link": "https://blog.phimes.top/posts/2025/12/19/bert-gpt-deep-learning",
+        "kind": "post",
+        "date": "2025-12-19",
+        "timestamp": 1766102400.0
+      },
+      {
+        "text": "为什么Embedding加上位置编码后不会破坏语义？",
+        "link": "https://blog.phimes.top/posts/2025/09/28/transformer-positional-encoding-embedding",
+        "kind": "post",
+        "date": "2025-09-28",
+        "timestamp": 1759017600.0
+      },
+      {
+        "text": "流形视角下的Embedding：从理论到RAG实践",
+        "link": "https://blog.phimes.top/posts/2025/08/19/llm-algorithm-principles",
+        "kind": "post",
+        "date": "2025-08-19",
+        "timestamp": 1755561600.0
+      },
+      {
+        "text": "Add & Norm（二）从传统CV到Transformer里的Normalization详解",
+        "link": "https://blog.phimes.top/posts/2025/07/28/transformer-normalization",
+        "kind": "post",
+        "date": "2025-07-28",
+        "timestamp": 1753660800.0
+      },
+      {
+        "text": "Add & Norm：对残差连接深入解析（一）",
+        "link": "https://blog.phimes.top/posts/2025/06/12/transformer-residual-connection",
+        "kind": "post",
+        "date": "2025-06-12",
+        "timestamp": 1749686400.0
+      },
+      {
+        "text": "为什么前馈神经网络（FFN）对Transformer这么重要（二）：从激活函数到MOE",
+        "link": "https://blog.phimes.top/posts/2025/06/02/transformer-ffn-activation-function-moe",
+        "kind": "post",
+        "date": "2025-06-02",
+        "timestamp": 1748822400.0
+      }
+    ]
   },
   {
     "scholar": "DaNing Blog",
@@ -1621,7 +2777,7 @@
     "text": "Multimodal Large Language Model 总结",
     "link": "https://adaning.github.io/posts/64567.html",
     "date_str": "2026-01-10",
-    "timestamp": 1767974400.0,
+    "timestamp": 1768003200.0,
     "result_type": "changed",
     "first_seen": "2026-01-10T00:00:00+00:00",
     "sub_items": [
@@ -1630,63 +2786,63 @@
         "link": "https://adaning.github.io/posts/53773.html",
         "kind": "post",
         "date": "2025-12-18",
-        "timestamp": 1765987200.0
+        "timestamp": 1766016000.0
       },
       {
         "text": "TCSinger 2: Customizable Multilingual Zero-shot Singing Voice Synthesis",
         "link": "https://adaning.github.io/posts/46935.html",
         "kind": "post",
         "date": "2025-10-20",
-        "timestamp": 1760889600.0
+        "timestamp": 1760918400.0
       },
       {
         "text": "Flow Matching: Flow Matching for Generative Modeling",
         "link": "https://adaning.github.io/posts/19143.html",
         "kind": "post",
         "date": "2025-09-15",
-        "timestamp": 1757865600.0
+        "timestamp": 1757894400.0
       },
       {
         "text": "MeanFlow: Mean Flows for One-step Generative Modeling",
         "link": "https://adaning.github.io/posts/24991.html",
         "kind": "post",
         "date": "2025-08-12",
-        "timestamp": 1754928000.0
+        "timestamp": 1754956800.0
       },
       {
         "text": "ReFlow: Flow Straight and Fast-Learning to Generate and Transfer Data with Rectified Flow",
         "link": "https://adaning.github.io/posts/24725.html",
         "kind": "post",
         "date": "2025-07-08",
-        "timestamp": 1751904000.0
+        "timestamp": 1751932800.0
       },
       {
         "text": "AlignSTS: Speech-to-Singing Conversion via Cross-Modal Alignment",
         "link": "https://adaning.github.io/posts/26761.html",
         "kind": "post",
         "date": "2025-06-01",
-        "timestamp": 1748707200.0
+        "timestamp": 1748736000.0
       },
       {
         "text": "DDIM: Denoising Diffusion Implicit Models",
         "link": "https://adaning.github.io/posts/40650.html",
         "kind": "post",
         "date": "2025-05-10",
-        "timestamp": 1746806400.0
+        "timestamp": 1746835200.0
       },
       {
         "text": "RoPE / RoFormer: Enhanced Transformer with Rotary Position Embedding",
         "link": "https://adaning.github.io/posts/50765.html",
         "kind": "post",
         "date": "2025-04-15",
-        "timestamp": 1744646400.0
+        "timestamp": 1744675200.0
       },
       {
         "text": "CLAP: Large-scale Contrastive Language-Audio Pretraining",
         "link": "https://adaning.github.io/posts/21614.html",
         "kind": "post",
         "date": "2025-03-20",
-        "timestamp": 1742400000.0
+        "timestamp": 1742428800.0
       }
     ]
   },
@@ -1703,9 +2859,74 @@
     "text": "Mystery of the Quintics Jan 5, 2026",
     "link": "https://jyopari.github.io/",
     "date_str": "2026-01-05",
-    "timestamp": 1767542400.0,
+    "timestamp": 1767571200.0,
     "result_type": "unchanged",
-    "first_seen": "2026-10-04T08:46:36.704517+00:00"
+    "first_seen": "2026-10-04T08:46:36.704517+00:00",
+    "sub_items": [
+      {
+        "text": "Preconditioners in Optimization Nov 23, 2025",
+        "link": "https://jyopari.github.io/posts/preconditioner",
+        "kind": "paper",
+        "date": "2025-11-23",
+        "timestamp": 1763856000.0
+      },
+      {
+        "text": "[Mini Research] Optimizing the Optimization Trajectory Sept 28, 2025",
+        "link": "https://jyopari.github.io/posts/curriculum",
+        "kind": "paper",
+        "date": "2025-09-28",
+        "timestamp": 1759017600.0
+      },
+      {
+        "text": "Understanding PaTH Attention Sept 16, 2025",
+        "link": "https://jyopari.github.io/posts/path",
+        "kind": "paper",
+        "date": "2025-09-16",
+        "timestamp": 1757980800.0
+      },
+      {
+        "text": "RL's Razor: Why Online Reinforcement Learning Forgets Less Sept 4, 2025",
+        "link": "https://jyopari.github.io/posts/rl_razor",
+        "kind": "paper",
+        "date": "2025-09-04",
+        "timestamp": 1756944000.0
+      },
+      {
+        "text": "[Mini Research] Peculiarities of Mixture-of-Expert Optimization July 13, 2025",
+        "link": "https://jyopari.github.io/posts/peculiarities_moe",
+        "kind": "paper",
+        "date": "2025-07-13",
+        "timestamp": 1752364800.0
+      },
+      {
+        "text": "Self-Adapting Language Models Jun 23, 2025",
+        "link": "https://jyopari.github.io/posts/seal",
+        "kind": "paper",
+        "date": "2025-06-23",
+        "timestamp": 1750636800.0
+      },
+      {
+        "text": "[Mini Research] Reuse Can Be Useful Mar 1, 2025",
+        "link": "https://jyopari.github.io/posts/reuse",
+        "kind": "paper",
+        "date": "2025-03-01",
+        "timestamp": 1740787200.0
+      },
+      {
+        "text": "General Intelligence Requires Reward-based Pretraining Feb 26, 2025",
+        "link": "https://arxiv.org/abs/2502.19402",
+        "kind": "paper",
+        "date": "2025-02-26",
+        "timestamp": 1740528000.0
+      },
+      {
+        "text": "[Idea] Towards Self-Editing Models: Part 1 Jan 19, 2025",
+        "link": "https://jyopari.github.io/posts/self-edit-part1",
+        "kind": "paper",
+        "date": "2025-01-19",
+        "timestamp": 1737244800.0
+      }
+    ]
   },
   {
     "scholar": "袁粒组会",
@@ -1718,12 +2939,77 @@
     ],
     "watch": "blog",
     "kind": "post",
-    "text": "[2025-12-12] Cambrain-S: Towards Spatial Supersensing in Video.Yu-Wei Niu",
+    "text": "[2025-12-12] Cambrain-S: Towards Spatial Supersensing in Video. [ pdf ] Yu-Wei Niu",
     "link": "https://pku-ml-group.github.io/",
     "date_str": "2025-12-12",
-    "timestamp": 1765468800.0,
+    "timestamp": 1765497600.0,
     "result_type": "unchanged",
-    "first_seen": "2026-10-04T08:46:36.704521+00:00"
+    "first_seen": "2026-10-04T16:14:05.263536+00:00",
+    "sub_items": [
+      {
+        "text": "[2025-12-12] Cambrain-S: Towards Spatial Supersensing in Video.Yu-Wei Niu",
+        "link": "https://pku-ml-group.github.io/",
+        "kind": "post",
+        "date": "2025-12-12",
+        "timestamp": 1765497600.0
+      },
+      {
+        "text": "[2025-12-05] Is CLIP ideal? [ pdf ] Tian-Tian Peng",
+        "link": "https://pku-ml-group.github.io/",
+        "kind": "post",
+        "date": "2025-12-05",
+        "timestamp": 1764892800.0
+      },
+      {
+        "text": "[2025-11-28] Calibration, Self-Evaluation, Hallucination. [ pdf ] Qiu-He Hong",
+        "link": "https://pku-ml-group.github.io/",
+        "kind": "post",
+        "date": "2025-11-28",
+        "timestamp": 1764288000.0
+      },
+      {
+        "text": "[2025-11-07] On Policy Distillation. [ pdf ] Shuo Yang",
+        "link": "https://pku-ml-group.github.io/",
+        "kind": "post",
+        "date": "2025-11-07",
+        "timestamp": 1762473600.0
+      },
+      {
+        "text": "[2025-10-31] The Entropy Mechanism of Reinforcement Learning for Reasoning Language Models. [ pdf ] Xin-Lin Peng",
+        "link": "https://pku-ml-group.github.io/",
+        "kind": "post",
+        "date": "2025-10-31",
+        "timestamp": 1761868800.0
+      },
+      {
+        "text": "[2025-10-17] Learning to See Before Seeing. [ pdf ] Yu-Lu Zhou",
+        "link": "https://pku-ml-group.github.io/",
+        "kind": "post",
+        "date": "2025-10-17",
+        "timestamp": 1760659200.0
+      },
+      {
+        "text": "[2025-09-26] Unify Models. [ pdf ] Yu-Wei Niu",
+        "link": "https://pku-ml-group.github.io/",
+        "kind": "post",
+        "date": "2025-09-26",
+        "timestamp": 1758844800.0
+      },
+      {
+        "text": "[2025-09-19] Generalization of CLIP. [ pdf ] Tian-Tian Peng",
+        "link": "https://pku-ml-group.github.io/",
+        "kind": "post",
+        "date": "2025-09-19",
+        "timestamp": 1758240000.0
+      },
+      {
+        "text": "[2025-09-12] LLMs Post-training Dreams, Reality, and Fallacies. [ pdf ] Shuo Yang",
+        "link": "https://pku-ml-group.github.io/",
+        "kind": "post",
+        "date": "2025-09-12",
+        "timestamp": 1757635200.0
+      }
+    ]
   },
   {
     "scholar": "Lcf Blogs",
@@ -1737,86 +3023,109 @@
     "text": "OCR模型",
     "link": "https://lllcf.github.io/LLM_OCR/",
     "date_str": "2025-11-26",
-    "timestamp": 1764086400.0,
+    "timestamp": 1764115200.0,
     "result_type": "rss_no_change",
-    "first_seen": "2026-10-04T08:46:36.704528+00:00"
-  },
-  {
-    "scholar": "YY Blog",
-    "scholar_url": "https://yqqy.top/blog.html",
-    "affiliation": "",
-    "areas": [
-      "Tool"
-    ],
-    "watch": "blog",
-    "kind": "post",
-    "text": "使用confluent-kafka-go包遇到的cgo问题",
-    "link": "https://yqqy.top/blog/2025/confluent-kafka-go-cgo-build",
-    "date_str": "2025-11-20",
-    "timestamp": 1763568000.0,
-    "result_type": "changed",
-    "first_seen": "2025-11-20T00:00:00+00:00",
+    "first_seen": "2026-10-04T08:46:36.704528+00:00",
     "sub_items": [
       {
-        "text": "夜莺v8执行自定义脚本并告警通知",
-        "link": "https://yqqy.top/blog/2025/nightingale-monitor-notification",
+        "text": "后训练-强化学习RL",
+        "link": "https://lllcf.github.io/RL/",
         "kind": "post",
-        "date": "2025-11-20",
-        "timestamp": 1763568000.0
+        "date": "2025-11-03",
+        "timestamp": 1762128000.0
+      },
+      {
+        "text": "激活函数解析：从 Sigmoid 到 SwiGLU 的演进",
+        "link": "https://lllcf.github.io/Activation-Function/",
+        "kind": "post",
+        "date": "2025-10-12",
+        "timestamp": 1760227200.0
+      },
+      {
+        "text": "优化器解析：从 SGD 到 Muon 的演进之路",
+        "link": "https://lllcf.github.io/Optimization-Algorithms/",
+        "kind": "post",
+        "date": "2025-10-12",
+        "timestamp": 1760227200.0
+      },
+      {
+        "text": "Embedding微调-对齐下游检索",
+        "link": "https://lllcf.github.io/Embedding_finetune/",
+        "kind": "post",
+        "date": "2025-10-08",
+        "timestamp": 1759881600.0
+      },
+      {
+        "text": "Embedding-传统词频到预训练语义表示",
+        "link": "https://lllcf.github.io/Embedding/",
+        "kind": "post",
+        "date": "2025-10-07",
+        "timestamp": 1759795200.0
+      },
+      {
+        "text": "GPT和Qwen系列",
+        "link": "https://lllcf.github.io/GPT_and_Qwen/",
+        "kind": "post",
+        "date": "2025-10-02",
+        "timestamp": 1759363200.0
+      },
+      {
+        "text": "基于文本的违禁词分类挑战赛",
+        "link": "https://lllcf.github.io/Classification/",
+        "kind": "post",
+        "date": "2025-08-28",
+        "timestamp": 1756339200.0
       }
     ]
   },
   {
-    "scholar": "唐安可",
-    "scholar_url": "https://tanganke.github.io/",
-    "affiliation": "清华大学",
-    "areas": [
-      "Model Merging"
-    ],
-    "watch": "general",
-    "kind": "news",
-    "text": "Sep 20, 2025 Three of our papers have been accepted to NeurIPS 2025, with two on continual model merging.",
-    "link": "https://tanganke.github.io/",
-    "date_str": "2025-09-20",
-    "timestamp": 1758297600.0,
-    "result_type": "unchanged",
-    "first_seen": "2026-10-04T08:46:36.704556+00:00"
-  },
-  {
     "scholar": "Jiangjie Chen Homepage",
     "scholar_url": "https://jiangjiechen.github.io/",
-    "affiliation": "Seed",
+    "affiliation": "复旦大学 / ByteDance Seed",
     "areas": [
-      "LLM"
+      "LLM",
+      "Agent"
     ],
-    "watch": "general",
+    "watch": "news",
     "kind": "paper",
-    "text": "May, 2025 In The Thirty-Ninth Annual Conference on Neural Information Processing Systems ( NeurIPS 2025 ) , Spotlight",
-    "link": "https://jiangjiechen.github.io/",
+    "text": "Sept. 2025 : Thrilled that our NeurIPS 2025 papers ARIA , KORGym , ORIGAMISPACE , and Enigmata were selected as Spotlight papers, and DAPO was selected for poster presentation!",
+    "link": "https://jiangjiechen.github.io/publication/aria",
     "date_str": "2025-09",
     "timestamp": 1756684800.0,
-    "result_type": "unchanged",
-    "first_seen": "2026-10-04T08:46:36.704541+00:00"
+    "result_type": "changed",
+    "first_seen": "2026-10-04T16:14:05.231483+00:00"
   },
   {
     "scholar": "percent4 Blog",
     "scholar_url": "https://percent4.github.io/",
     "affiliation": "",
-    "areas": [
-      "NLP"
-    ],
+    "areas": [],
     "watch": "blog",
     "kind": "post",
-    "text": "NLP（一百二十一）用飞书机器人打造你的专属AI新闻推送助手",
-    "link": "https://percent4.github.io/NLP%EF%BC%88%E4%B8%80%E7%99%BE%E4%BA%8C%E5%8D%81%E4%B8%80%EF%BC%89%E7%94%A8%E9%A3%9E%E4%B9%A6%E6%9C%BA%E5%99%A8%E4%BA%BA%E6%89%93%E9%80%A0%E4%BD%A0%E7%9A%84%E4%B8%93%E5%B1%9EAI%E6%96%B0%E9%97%BB%E6%8E%A8%E9%80%81%E5%8A%A9%E6%89%8B%EF%BC%88%E5%90%AB%E4%BB%A3%E7%A0%81%E5%AE%9E%E6%88%98%EF%BC%89/",
+    "text": "NLP（一百二十二）使用mem0为你的大模型加入记忆层 本文将会介绍如何使用mem0工具来为你的大模型加入记忆层。 2025-07-13 NLP #NLP #mem0",
+    "link": "https://percent4.github.io/NLP%EF%BC%88%E4%B8%80%E7%99%BE%E4%BA%8C%E5%8D%81%E4%BA%8C%EF%BC%89%E4%BD%BF%E7%94%A8mem0%E4%B8%BA%E4%BD%A0%E7%9A%84%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%8A%A0%E5%85%A5%E8%AE%B0%E5%BF%86%E5%B1%82/",
     "date_str": "2025-07-13",
     "timestamp": 1752364800.0,
-    "result_type": "changed",
-    "first_seen": "2025-07-13T00:00:00+00:00",
+    "result_type": "unchanged",
+    "first_seen": "2026-10-04T16:14:05.263516+00:00",
     "sub_items": [
       {
-        "text": "NLP（一百二十）LiteLLM解析：构建统一大模型接口的利器",
-        "link": "https://percent4.github.io/NLP%EF%BC%88%E4%B8%80%E7%99%BE%E4%BA%8C%E5%8D%81%EF%BC%89LiteLLM%E8%A7%A3%E6%9E%90%EF%BC%9A%E6%9E%84%E5%BB%BA%E7%BB%9F%E4%B8%80%E5%A4%A7%E6%A8%A1%E5%9E%8B%E6%8E%A5%E5%8F%A3%E7%9A%84%E5%88%A9%E5%99%A8/",
+        "text": "HTTP请求鉴权之JWT 本文将会简单介绍什么是HTTP请求中的JWT鉴权以及如何在实际项目中使用JWT。 2025-07-13 Python #JWT",
+        "link": "https://percent4.github.io/HTTP%E8%AF%B7%E6%B1%82%E9%89%B4%E6%9D%83%E4%B9%8BJWT/",
+        "kind": "post",
+        "date": "2025-07-13",
+        "timestamp": 1752364800.0
+      },
+      {
+        "text": "NLP（一百二十一）用飞书机器人打造你的专属AI新闻推送助手（含代码实战） 本文将会介绍如何在飞书群中，使用群机器人实现每日AI新闻推送。 2025-07-13 NLP #NLP",
+        "link": "https://percent4.github.io/NLP%EF%BC%88%E4%B8%80%E7%99%BE%E4%BA%8C%E5%8D%81%E4%B8%80%EF%BC%89%E7%94%A8%E9%A3%9E%E4%B9%A6%E6%9C%BA%E5%99%A8%E4%BA%BA%E6%89%93%E9%80%A0%E4%BD%A0%E7%9A%84%E4%B8%93%E5%B1%9EAI%E6%96%B0%E9%97%BB%E6%8E%A8%E9%80%81%E5%8A%A9%E6%89%8B%EF%BC%88%E5%90%AB%E4%BB%A3%E7%A0%81%E5%AE%9E%E6%88%98%EF%BC%89/",
+        "kind": "post",
+        "date": "2025-07-13",
+        "timestamp": 1752364800.0
+      },
+      {
+        "text": "Redis进阶（二）实现消息队列 本文将会介绍如何使用Redis中的List和Stream结构来实现消息队列。 2025-07-13 数据库 #Redis #消息队列",
+        "link": "https://percent4.github.io/Redis%E8%BF%9B%E9%98%B6%EF%BC%88%E4%BA%8C%EF%BC%89%E5%AE%9E%E7%8E%B0%E6%B6%88%E6%81%AF%E9%98%9F%E5%88%97/",
         "kind": "post",
         "date": "2025-07-13",
         "timestamp": 1752364800.0
@@ -1826,7 +3135,42 @@
         "link": "https://percent4.github.io/NLP%EF%BC%88%E4%B8%80%E7%99%BE%E4%BA%8C%E5%8D%81%E4%BA%8C%EF%BC%89%E4%BD%BF%E7%94%A8mem0%E4%B8%BA%E4%BD%A0%E7%9A%84%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%8A%A0%E5%85%A5%E8%AE%B0%E5%BF%86%E5%B1%82/",
         "kind": "post",
         "date": "2025-07-13",
-        "timestamp": 1752336000.0
+        "timestamp": 1752364800.0
+      },
+      {
+        "text": "NLP（一百二十一）用飞书机器人打造你的专属AI新闻推送助手",
+        "link": "https://percent4.github.io/NLP%EF%BC%88%E4%B8%80%E7%99%BE%E4%BA%8C%E5%8D%81%E4%B8%80%EF%BC%89%E7%94%A8%E9%A3%9E%E4%B9%A6%E6%9C%BA%E5%99%A8%E4%BA%BA%E6%89%93%E9%80%A0%E4%BD%A0%E7%9A%84%E4%B8%93%E5%B1%9EAI%E6%96%B0%E9%97%BB%E6%8E%A8%E9%80%81%E5%8A%A9%E6%89%8B%EF%BC%88%E5%90%AB%E4%BB%A3%E7%A0%81%E5%AE%9E%E6%88%98%EF%BC%89/",
+        "kind": "post",
+        "date": "2025-07-13",
+        "timestamp": 1752364800.0
+      },
+      {
+        "text": "NLP（一百二十）LiteLLM解析：构建统一大模型接口的利器",
+        "link": "https://percent4.github.io/NLP%EF%BC%88%E4%B8%80%E7%99%BE%E4%BA%8C%E5%8D%81%EF%BC%89LiteLLM%E8%A7%A3%E6%9E%90%EF%BC%9A%E6%9E%84%E5%BB%BA%E7%BB%9F%E4%B8%80%E5%A4%A7%E6%A8%A1%E5%9E%8B%E6%8E%A5%E5%8F%A3%E7%9A%84%E5%88%A9%E5%99%A8/",
+        "kind": "post",
+        "date": "2025-07-13",
+        "timestamp": 1752364800.0
+      },
+      {
+        "text": "Redis进阶（一）使用Redis实现分布式锁 本文将会介绍如何使用Redis来实现分布式锁，以及分布式锁的两个应用场景。 2025-04-27 数据库 #Redis #分布式锁",
+        "link": "https://percent4.github.io/Redis%E8%BF%9B%E9%98%B6%EF%BC%88%E4%B8%80%EF%BC%89%E4%BD%BF%E7%94%A8Redis%E5%AE%9E%E7%8E%B0%E5%88%86%E5%B8%83%E5%BC%8F%E9%94%81/",
+        "kind": "post",
+        "date": "2025-04-27",
+        "timestamp": 1745712000.0
+      },
+      {
+        "text": "NLP（一百二十）LiteLLM解析：构建统一大模型接口的利器 本文介绍了如何使用 LiteLLM 以统一的 OpenAI 风格调用包括 OpenAI、Anthropic 和 Google 在内的多种主流大模型 API，并通过具体代码展示其 Completion 接口、路由机制的使用，以及在 OpenAI Agents 框架中集成任意模型的方式。LiteLLM 大大简化了多模型调用的复杂性，提高了多供应商大模型接入的效率与稳定性。 2025-04-27 NLP #LiteLLM",
+        "link": "https://percent4.github.io/NLP%EF%BC%88%E4%B8%80%E7%99%BE%E4%BA%8C%E5%8D%81%EF%BC%89LiteLLM%E8%A7%A3%E6%9E%90%EF%BC%9A%E6%9E%84%E5%BB%BA%E7%BB%9F%E4%B8%80%E5%A4%A7%E6%A8%A1%E5%9E%8B%E6%8E%A5%E5%8F%A3%E7%9A%84%E5%88%A9%E5%99%A8/",
+        "kind": "post",
+        "date": "2025-04-27",
+        "timestamp": 1745712000.0
+      },
+      {
+        "text": "Kafka入门（五）Kafka_4.0零依赖Zookeeper：Docker一键部署+可视化管理+Python实战 本文将会介绍如何使用Docker来启动最新版Kafka和可视化工具kafka-ui，并使用Python连接Kafka进行基础操作。 2025-04-27 数据库 #Kafka #Docker",
+        "link": "https://percent4.github.io/Kafka%E5%85%A5%E9%97%A8%EF%BC%88%E4%BA%94%EF%BC%89Kafka-4-0%E9%9B%B6%E4%BE%9D%E8%B5%96Zookeeper%EF%BC%9ADocker%E4%B8%80%E9%94%AE%E9%83%A8%E7%BD%B2-%E5%8F%AF%E8%A7%86%E5%8C%96%E7%AE%A1%E7%90%86-Python%E5%AE%9E%E6%88%98/",
+        "kind": "post",
+        "date": "2025-04-27",
+        "timestamp": 1745712000.0
       }
     ]
   },
@@ -1840,12 +3184,21 @@
     ],
     "watch": "general",
     "kind": "paper",
-    "text": "τ-bench: A Benchmark for Tool-Agent-User Interaction in Real-World Domains · ICLR 2025",
-    "link": "https://ysymyth.github.io/",
+    "text": "Computer-Using Agent (CUA) OpenAI A universal agent/interface to interact with the digital world. product | blogpost | system card | bibtex Deep Research OpenAI An agent that navigates and reasons over the Internet to research for you. product | blogpost τ-bench: A Benchmark for Tool-Agent-User Interaction in Real-World Domains Shunyu Yao, Noah Shinn, Pedram Razavi, Karthik Narasimhan ICLR 2025 paper | repo | blog Language Agents: From Next-Token Prediction to Digital Automation Shunyu Yao PhD Thesis paper | slides | talk SWE-agent: Agent Computer Interfaces Enable Software Engineering Language Models John Yang*, Carlos E. Jimenez*, Alexander Wettig, Kilian Lieret, Shunyu Yao, Karthik Narasimhan, Ofir Press NeurIPS 2024 paper | repo | tweet | project SWE-bench: Can Language Models Resolve Real-World Github Issues? Carlos E. Jimenez*, John Yang*, Alexander Wettig, Shunyu Yao, Kexin Pei, Ofir Press, Karthik Narasimhan ICLR 2024 (Oral) paper | repo | tweet | project Cognitive Architectures for Language Agents Shunyu Yao*, Theodore Sumers*, Karthik Narasimhan, Thomas L. Griffiths TMLR 2024 paper | repo | tweet",
+    "link": "https://operator.chatgpt.com",
     "date_str": "2025-05",
     "timestamp": 1746057600.0,
     "result_type": "unchanged",
-    "first_seen": "2026-10-04T08:46:36.704539+00:00"
+    "first_seen": "2026-10-04T16:14:05.263551+00:00",
+    "sub_items": [
+      {
+        "text": "τ-bench: A Benchmark for Tool-Agent-User Interaction in Real-World Domains · ICLR 2025",
+        "link": "https://ysymyth.github.io/",
+        "kind": "paper",
+        "date": "2025-05",
+        "timestamp": 1746057600.0
+      }
+    ]
   },
   {
     "scholar": "Tobias Lee Blog",
@@ -1859,7 +3212,7 @@
     "text": "2025 年 4 月随笔",
     "link": "https://tobiaslee.top/2025/04/06/thoughts-2025-0406/",
     "date_str": "2025-04-05",
-    "timestamp": 1743782400.0,
+    "timestamp": 1743872880.0,
     "result_type": "rss_no_change",
     "first_seen": "2026-10-04T08:46:36.704511+00:00"
   }

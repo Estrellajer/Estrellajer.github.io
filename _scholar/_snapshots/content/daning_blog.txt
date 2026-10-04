@@ -1,3 +1,7 @@
+Introduction: Vector Quantization
+
+Multimodal Large Language Model 总结
+
 JiT: Back to Basics-Let Denoising Generative Models Denoise
 
 TCSinger 2: Customizable Multilingual Zero-shot Singing Voice Synthesis
@@ -21,7 +25,3 @@ CLAP: Large-scale Contrastive Language-Audio Pretraining with Feature Fusion and
 EVA-GAN: Enhanced Various Audio Generation via Scalable Generative Adversarial Networks
 
 Whisper: Robust Speech Recognition via Large-Scale Weak Supervision
-
-Introduction: Vector Quantization
-
-Multimodal Large Language Model 总结

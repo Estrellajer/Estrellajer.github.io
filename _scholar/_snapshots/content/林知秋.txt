@@ -1,19 +1,3 @@
-2026.04 : CHAI was accepted to CVPR’26 as a Highlight (Top 3%) ! An 8B model beating GPT-5 and Gemini-3.1-Pro on professional video captioning.
-2025.09 : CameraBench was accepted to NeurIPS’25 (Spotlight).
-2024.09 : NaturalBench was accepted to NeurIPS’24.
-2024.08 : VQAScore was accepted to ECCV’24. In addition, VQAScore is highlighted in Google’s Imagen3 Technical Report as the strongest replacement for CLIPScore, with Imagen3 achieving SOTA on GenAI-Bench for compositional text-to-visual generation.
-2024.06 : GenAI-Bench won Best Short Paper Award at SynData@CVPR2024 !
-2024.05 : VisualGPTScore was accepted to ICML’24.
-2024.04 : We introduced VQAScore for evaluating the prompt alignment of text-to-image/video/3D models: Evaluating Text-to-Visual Generation with Image-to-Text Generation .
-2024.02 : Two papers accepted to CVPR’24: Language Models as Black-Box Optimizers for Vision-Language Models and The Neglected Tails of Vision-Language Models .
-2023.12 : Finished my internship at Meta GenAI. Many thanks to my great mentors Pengchuan Zhang and Xide Xia !
-2023.09 : My recent work Revisiting the Role of Language Priors in Vision-Language Models demonstrates top-tier performance across retrieval benchmarks like ARO/SugarCrepe/Winoground.
-2023.02 : Multimodality Helps Unimodality: Cross-Modal Few-Shot Learning with Multimodal Models was accepted by CVPR’23.
-2022.09 : LECO: Continual Learning with Evolving Class Ontologies was accepted by NeurIPS’22. Check out the website and slides for a quick overview!
-2022.06 : The 1st CLEAR Challenge was hosted on CVPR’22 2nd Workshop on Open World Vision . Check out the slides for a quick overview!
-2021.09 : The CLEAR Benchmark: Continual LEArning on Real-World Imagery accepted by NeurIPS’21.
-2020.06 : Best Paper Nomination at CVPR’20 for Visual Chirality !
-
 CVPR 2026 Highlight (Top 3%)
 CHAI: Building a Precise Video Language with Human-AI Oversight (CVPR’26 Highlight, Top 3%)
 Zhiqiu Lin , Chancharik Mitra , Siyuan Cen , Isaac Li , Yuhan Huang , Yu Tong Tiffany Ling , Hewei Wang , Irene Pi , Shihang Zhu , Ryan Rao , George Liu , Jiaxi Li , Ruojin Li , Yili Han , Yilun Du , Deva Ramanan
@@ -103,3 +87,49 @@ Visual Chirality (CVPR’20, Best Paper Nomination)
 Zhiqiu Lin , Jin Sun , Abe Davis , Noah Snavely
 Website | Arxiv | Video |
 How does reflection change what we learn from images? Despite widespread use in data augmentation, people had not looked closely at this question before our work.
+
+2026.04 : CHAI was accepted to CVPR’26 as a Highlight (Top 3%) ! An 8B model beating GPT-5 and Gemini-3.1-Pro on professional video captioning.
+
+2025.09 : CameraBench was accepted to NeurIPS’25 (Spotlight).
+
+2024.09 : NaturalBench was accepted to NeurIPS’24.
+
+2024.08 : VQAScore was accepted to ECCV’24. In addition, VQAScore is highlighted in Google’s Imagen3 Technical Report as the strongest replacement for CLIPScore, with Imagen3 achieving SOTA on GenAI-Bench for compositional text-to-visual generation.
+
+2024.06 : GenAI-Bench won Best Short Paper Award at SynData@CVPR2024 !
+
+2024.05 : VisualGPTScore was accepted to ICML’24.
+
+2024.04 : We introduced VQAScore for evaluating the prompt alignment of text-to-image/video/3D models: Evaluating Text-to-Visual Generation with Image-to-Text Generation .
+
+2024.02 : Two papers accepted to CVPR’24: Language Models as Black-Box Optimizers for Vision-Language Models and The Neglected Tails of Vision-Language Models .
+
+2023.12 : Finished my internship at Meta GenAI. Many thanks to my great mentors Pengchuan Zhang and Xide Xia !
+
+2023.09 : My recent work Revisiting the Role of Language Priors in Vision-Language Models demonstrates top-tier performance across retrieval benchmarks like ARO/SugarCrepe/Winoground.
+
+2023.02 : Multimodality Helps Unimodality: Cross-Modal Few-Shot Learning with Multimodal Models was accepted by CVPR’23.
+
+2022.09 : LECO: Continual Learning with Evolving Class Ontologies was accepted by NeurIPS’22. Check out the website and slides for a quick overview!
+
+2022.06 : The 1st CLEAR Challenge was hosted on CVPR’22 2nd Workshop on Open World Vision . Check out the slides for a quick overview!
+
+2021.09 : The CLEAR Benchmark: Continual LEArning on Real-World Imagery accepted by NeurIPS’21.
+
+2020.06 : Best Paper Nomination at CVPR’20 for Visual Chirality !
+
+2026.04 : CHAI was accepted to CVPR’26 as a Highlight (Top 3%) ! An 8B model beating GPT-5 and Gemini-3.1-Pro on professional video captioning.
+2025.09 : CameraBench was accepted to NeurIPS’25 (Spotlight).
+2024.09 : NaturalBench was accepted to NeurIPS’24.
+2024.08 : VQAScore was accepted to ECCV’24. In addition, VQAScore is highlighted in Google’s Imagen3 Technical Report as the strongest replacement for CLIPScore, with Imagen3 achieving SOTA on GenAI-Bench for compositional text-to-visual generation.
+2024.06 : GenAI-Bench won Best Short Paper Award at SynData@CVPR2024 !
+2024.05 : VisualGPTScore was accepted to ICML’24.
+2024.04 : We introduced VQAScore for evaluating the prompt alignment of text-to-image/video/3D models: Evaluating Text-to-Visual Generation with Image-to-Text Generation .
+2024.02 : Two papers accepted to CVPR’24: Language Models as Black-Box Optimizers for Vision-Language Models and The Neglected Tails of Vision-Language Models .
+2023.12 : Finished my internship at Meta GenAI. Many thanks to my great mentors Pengchuan Zhang and Xide Xia !
+2023.09 : My recent work Revisiting the Role of Language Priors in Vision-Language Models demonstrates top-tier performance across retrieval benchmarks like ARO/SugarCrepe/Winoground.
+2023.02 : Multimodality Helps Unimodality: Cross-Modal Few-Shot Learning with Multimodal Models was accepted by CVPR’23.
+2022.09 : LECO: Continual Learning with Evolving Class Ontologies was accepted by NeurIPS’22. Check out the website and slides for a quick overview!
+2022.06 : The 1st CLEAR Challenge was hosted on CVPR’22 2nd Workshop on Open World Vision . Check out the slides for a quick overview!
+2021.09 : The CLEAR Benchmark: Continual LEArning on Real-World Imagery accepted by NeurIPS’21.
+2020.06 : Best Paper Nomination at CVPR’20 for Visual Chirality !

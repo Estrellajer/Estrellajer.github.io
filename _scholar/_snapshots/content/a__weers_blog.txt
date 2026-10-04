@@ -1,16 +1,2 @@
-Blog
 Denser rewards, nearly free: contrastive potential shaping
-July 25, 2026 · 35 min read
 Add contrastive prefix-level credit assignment to outcome-based RL
-State of RL for reasoning LLMs
-March 15, 2026 · 26 min read
-Evolution of reinforcement learning for reasoning LLMs
-LoRA initialization
-December 15, 2025 · 8 min read
-Showing that $0\neq 0$
-nanochat's gpt.py
-November 04, 2025 · 24 min read
-Step-by-step exploration of nanochat's model
-DPO is SFT
-September 07, 2025 · 8 min read
-Close examination of gradients of DPO and SFT
