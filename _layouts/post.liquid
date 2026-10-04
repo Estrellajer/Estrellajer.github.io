@@ -304,12 +304,22 @@ layout: default
     color: var(--reading-accent);
   }
 
-  /* Monospace Code Font Stack (System Native Monospace for 100% stable metrics) */
+  /* Monospace Code Font Stack (JetBrains Mono First-Class Developer Font) */
   .reading-article pre,
   .reading-article code,
   .reading-article kbd,
   .reading-article samp {
-    font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, "Liberation Mono", "Fira Code", monospace !important;
+    font-family: "JetBrains Mono", "Fira Code", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace !important;
+  }
+
+  .reading-article ::selection {
+    background-color: rgba(56, 139, 253, 0.32) !important;
+    color: inherit !important;
+  }
+
+  .reading-article ::-moz-selection {
+    background-color: rgba(56, 139, 253, 0.32) !important;
+    color: inherit !important;
   }
 
   /* Inline Code (Strictly exclude code inside pre to avoid leaking styles) */
@@ -328,8 +338,7 @@ layout: default
 
   /* Standalone / Fallback Rouge Containers (ensures beautiful presentation even prior to JS execution) */
   .reading-article .highlighter-rouge,
-  .reading-article figure.highlight,
-  .reading-article pre {
+  .reading-article figure.highlight {
     position: relative;
     margin: 1.85rem 0;
     border-radius: 0.75rem;
@@ -340,16 +349,54 @@ layout: default
     box-sizing: border-box;
   }
 
+  .reading-article pre:not(.code-display-wrapper pre) {
+    position: relative;
+    margin: 0 !important;
+    padding: 1.25rem 1.6rem 1.4rem 1.6rem !important;
+    border: none !important;
+    border-radius: 0 !important;
+    background-color: transparent !important;
+    box-sizing: border-box !important;
+    overflow-x: auto !important;
+  }
+
+  .reading-article pre:not(.highlighter-rouge pre):not(.code-display-wrapper pre) {
+    position: relative;
+    margin: 1.85rem 0 !important;
+    padding: 1.25rem 1.6rem 1.4rem 1.6rem !important;
+    border-radius: 0.75rem !important;
+    border: 1px solid var(--hl-code-border) !important;
+    background-color: var(--hl-code-bg) !important;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04) !important;
+    overflow-x: auto !important;
+    box-sizing: border-box !important;
+  }
+
   /* When wrapped in modern JS chrome wrapper, cancel the inner box styling and reset margins/borders */
   .reading-article .code-display-wrapper .highlighter-rouge,
   .reading-article .code-display-wrapper figure.highlight,
-  .reading-article .code-display-wrapper .highlight,
-  .reading-article .code-display-wrapper pre {
+  .reading-article .code-display-wrapper div.highlight {
     margin: 0 !important;
+    padding: 0 !important;
     border: none !important;
     border-radius: 0 !important;
     box-shadow: none !important;
     background: transparent !important;
+  }
+
+  .reading-article .code-display-wrapper pre,
+  .reading-article .code-display-wrapper pre.highlight,
+  .reading-article .code-display-wrapper .highlight pre {
+    margin: 0 !important;
+    padding: 1.25rem 1.6rem 1.4rem 1.6rem !important;
+    border: none !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+    background: transparent !important;
+    color: var(--hl-code-text) !important;
+    overflow-x: auto !important;
+    box-sizing: border-box !important;
+    font-family: "JetBrains Mono", "Fira Code", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace !important;
   }
 
   /* Code element inside pre: VitePress / GitHub Developer-Grade Best Practice

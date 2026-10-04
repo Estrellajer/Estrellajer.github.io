@@ -3,6 +3,18 @@
  * First-class Light / Dark mode, fluid wide-screen layout & responsive design
  ******************************************************************************/
 
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap");
+
+::selection {
+  background-color: rgba(56, 139, 253, 0.32) !important;
+  color: inherit !important;
+}
+
+::-moz-selection {
+  background-color: rgba(56, 139, 253, 0.32) !important;
+  color: inherit !important;
+}
+
 :root {
   --hl-bg: #f8fafc;
   --hl-surface: #ffffff;
@@ -1501,7 +1513,7 @@ html[data-theme="dark"] .navbar.navbar-light {
   }
 
   .code-lang-badge {
-    font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, "Liberation Mono", monospace;
+    font-family: "JetBrains Mono", "Fira Code", ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, "Liberation Mono", monospace;
     font-size: 0.72rem;
     font-weight: 600;
     letter-spacing: 0.06em;
@@ -1522,7 +1534,7 @@ html[data-theme="dark"] .navbar.navbar-light {
     background: transparent;
     border: 1px solid transparent;
     color: var(--hl-text-soft);
-    font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+    font-family: "JetBrains Mono", "Fira Code", ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
     font-size: 0.74rem;
     font-weight: 500;
     line-height: 1.2;
@@ -1550,9 +1562,10 @@ html[data-theme="dark"] .navbar.navbar-light {
     }
   }
 
-  pre {
+  pre,
+  pre.highlight {
     margin: 0 !important;
-    padding: 1.25rem 1.5rem 1.4rem 1.5rem !important;
+    padding: 1.25rem 1.6rem 1.4rem 1.6rem !important;
     border: none !important;
     border-radius: 0 !important;
     background-color: transparent !important;
@@ -1568,7 +1581,7 @@ html[data-theme="dark"] .navbar.navbar-light {
     overflow-wrap: normal !important;
     tab-size: 4 !important;
     -moz-tab-size: 4 !important;
-    font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, "Liberation Mono", "Fira Code", monospace !important;
+    font-family: "JetBrains Mono", "Fira Code", ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, "Liberation Mono", monospace !important;
     font-size: 0.86rem !important;
     line-height: 1.68 !important;
     letter-spacing: 0 !important;
@@ -1620,9 +1633,11 @@ html[data-theme="dark"] .navbar.navbar-light {
   }
 }
 
-/* Neutralize nested Rouge containers when wrapped in .code-display-wrapper */
+/* Neutralize nested Rouge wrapper DIVs when wrapped in .code-display-wrapper.
+   CRITICAL: Must target div.highlight and NOT bare .highlight, because Rouge outputs <pre class="highlight">
+   which would inadvertently match and have its padding wiped to 0! */
 .code-display-wrapper .highlighter-rouge,
-.code-display-wrapper .highlight,
+.code-display-wrapper div.highlight,
 .code-display-wrapper figure.highlight {
   margin: 0 !important;
   padding: 0 !important;
@@ -1630,6 +1645,21 @@ html[data-theme="dark"] .navbar.navbar-light {
   background: transparent !important;
   box-shadow: none !important;
   overflow: visible !important;
+}
+
+/* Explicit high-specificity guarantee for pre.highlight inside .code-display-wrapper */
+.code-display-wrapper pre,
+.code-display-wrapper pre.highlight,
+.code-display-wrapper .highlight pre {
+  margin: 0 !important;
+  padding: 1.25rem 1.6rem 1.4rem 1.6rem !important;
+  border: none !important;
+  border-radius: 0 !important;
+  background-color: transparent !important;
+  color: var(--hl-code-text) !important;
+  overflow-x: auto !important;
+  box-sizing: border-box !important;
+  font-family: "JetBrains Mono", "Fira Code", ui-monospace, SFMono-Regular, Menlo, Consolas, monospace !important;
 }
 
 /* Standalone Rouge & pre fallback (ensures perfect presentation before JS runs or when JS disabled) */
@@ -1645,9 +1675,10 @@ html[data-theme="dark"] .navbar.navbar-light {
   overflow: hidden;
   box-sizing: border-box;
 
-  pre {
+  pre,
+  pre.highlight {
     margin: 0 !important;
-    padding: 1.25rem 1.5rem 1.4rem 1.5rem !important;
+    padding: 1.25rem 1.6rem 1.4rem 1.6rem !important;
     border: none !important;
     border-radius: 0 !important;
     background-color: transparent !important;
@@ -1657,7 +1688,7 @@ html[data-theme="dark"] .navbar.navbar-light {
     white-space: pre !important;
     tab-size: 4 !important;
     -moz-tab-size: 4 !important;
-    font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, "Liberation Mono", "Fira Code", monospace !important;
+    font-family: "JetBrains Mono", "Fira Code", ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, "Liberation Mono", monospace !important;
     font-size: 0.86rem !important;
     line-height: 1.68 !important;
     letter-spacing: 0 !important;
@@ -1713,7 +1744,7 @@ html[data-theme="dark"] .navbar.navbar-light {
 :not(pre) > code {
   padding: 0.2rem 0.45rem;
   border-radius: 0.38rem;
-  font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, "Liberation Mono", "Fira Code", monospace !important;
+  font-family: "JetBrains Mono", "Fira Code", ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace !important;
   font-size: 0.85em;
   font-weight: 500;
   background: var(--hl-inline-code-bg) !important;
@@ -2313,7 +2344,7 @@ html[data-theme="dark"] .code-display-wrapper {
     background: var(--hl-code-bg);
     border: 1px solid var(--hl-code-border);
     border-radius: 0.75rem;
-    font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+    font-family: "JetBrains Mono", "Fira Code", ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
     font-size: 0.84rem;
     line-height: 1.55;
     color: var(--hl-code-text);
@@ -2436,7 +2467,7 @@ html[data-theme="dark"] .code-display-wrapper {
     padding: 0.18rem 0.55rem;
     border-radius: 6px;
     word-break: break-all;
-    font-family: ui-monospace, Menlo, Consolas, monospace;
+    font-family: "JetBrains Mono", "Fira Code", ui-monospace, Menlo, Consolas, monospace;
   }
 
   .sm-attn-hint {
