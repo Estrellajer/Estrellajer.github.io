@@ -1,48 +1,27 @@
 JiT: Back to Basics-Let Denoising Generative Models Denoise
-本文前置知识: DDPM: DDPM: Denoising Diffusion Probabilistic Model. Rectified Flow: ReFlow: Flow Straight and Fast-Learning t
-2025-12-18 深度学习
-Diffusion
+
 TCSinger 2: Customizable Multilingual Zero-shot Singing Voice Synthesis
-本文前置知识: Flow Matching: Flow Matching: Flow Matching for Generative Modeling. TCSinger: TCSinger: Zero-Shot Singing Voi
-2025-08-07 深度学习
-Audio SVS
+
 TCSinger: Zero-Shot Singing Voice Synthesis with Style Transfer and Multi-Level Style Control
-TCSinger: Zero-Shot Singing Voice Synthesis with Style Transfer and Multi-Level Style Control 论文: TCSinger: Zero-Shot Si
-2025-07-01 深度学习
-Audio SVS
+
 Flow Matching: Flow Matching for Generative Modeling
-本文前置知识: Rectified Flow: ReFlow: Flow Straight and Fast-Learning to Generate and Transfer Data with Rectified Flow. F
-2025-05-29 深度学习
-Diffusion Flow Flow Matching
+
 MeanFlow: Mean Flows for One-step Generative Modeling
-本文前置知识: Flow Matching: Flow Matching for Generative Modeling. 或者: Rectified Flow: ReFlow: Flow Straight and Fast: Le
-2025-05-22 深度学习
-Diffusion Flow Flow Matching Mean Flow
+
 ReFlow: Flow Straight and Fast-Learning to Generate and Transfer Data with Rectified Flow
-Flow Straight and Fast: Learning to Generate and Transfer Data with Rectified Flow 论文: Flow Straight and Fast: Learning
-2025-05-20 深度学习
-Diffusion Flow ReFlow
+
 AlignSTS: Speech-to-Singing Conversion via Cross-Modal Alignment
-AlignSTS: Speech-to-Singing Conversion via Cross-Modal Alignment 论文: AlignSTS: Speech-to-Singing Conversion via Cross-Mo
-2025-05-13 深度学习
-STS Audio
+
 DDIM: Denoising Diffusion Implicit Models
-本文前置知识: DDPM: DDPM: Denoising Diffusion Probabilistic Model. Denoising Diffusion Implicit Models 论文: Denoising Diffu
-2025-03-21 深度学习
-Diffusion DDIM
+
 RoPE / RoFormer: Enhanced Transformer with Rotary Position Embedding
-RoPE / RoFormer: Enhanced Transformer with Rotary Position Embedding本文是论文 RoFormer: Enhanced Transformer with Rotary Pos
-2025-02-12 深度学习
-RoPE LLM
+
 CLAP: Large-scale Contrastive Language-Audio Pretraining with Feature Fusion and Keyword-to-Caption Augmentation
-Large-scale Contrastive Language-Audio Pretraining with Feature Fusion and Keyword-to-Caption Augmentation本文是论文Large-Sca
-2025-02-07 深度学习
-Audio
+
 EVA-GAN: Enhanced Various Audio Generation via Scalable Generative Adversarial Networks
-本文前置知识: HiFi - GAN: HiFi-GAN: Generative Adversarial Networks for Efficient and High Fidelity Speech Synthesis. EVA-
-2025-01-17 深度学习
-Audio SVS Vocoder TTS
+
 Whisper: Robust Speech Recognition via Large-Scale Weak Supervision
-Robust Speech Recognition via Large-Scale Weak Supervision本文是论文Robust Speech Recognition via Large-Scale Weak Supervisio
-2025-01-14 DaNing
-Audio ASR
+
+Introduction: Vector Quantization
+
+Multimodal Large Language Model 总结

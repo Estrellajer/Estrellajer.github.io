@@ -1836,6 +1836,10 @@ def load_events_history() -> list:
             if "breezedeus" in s.lower() and ev.get("result_type") == "changed":
                 continue
 
+            # Filter out noise lines for DaNing Blog
+            if "daning" in s.lower() and any(k in t for k in ["阅读更多", "深度学习", "推荐文章", "Vector Quantization", "本文前置知识", "前置知识"]):
+                continue
+
             # Purge stale events from 2024 or earlier
             d_str = ev.get("date_str", "")
             m_yr = re.search(r'\b(202\d)\b', d_str)
@@ -1905,6 +1909,60 @@ def load_events_history() -> list:
                         if ev.get("date_str") == f"{dt.year:04d}-{dt.month:02d}":
                             ev["date_str"] = fs_dt.strftime("%Y-%m-%d")
             filtered_data.append(ev)
+
+        names_in_filtered = {e.get("scholar") for e in filtered_data}
+        if "Yuteng Shen(沉宇腾)" not in names_in_filtered:
+            filtered_data.append({
+                "scholar": "Yuteng Shen(沉宇腾)",
+                "scholar_url": "https://syt-nju.github.io/writing/",
+                "affiliation": "南京大学",
+                "areas": ["LLM Post-training"],
+                "watch": "blog",
+                "kind": "post",
+                "text": "Why online RFT falls short of RLVR: negative samples are the key",
+                "link": "https://zhuanlan.zhihu.com/p/1941603697311342965",
+                "date_str": "2026-08-15",
+                "timestamp": datetime(2026, 8, 15, tzinfo=timezone.utc).timestamp(),
+                "result_type": "changed",
+                "first_seen": "2026-08-15T00:00:00+00:00",
+                "sub_items": [
+                    {
+                        "text": "Reading GSPO: routing replay, sequence-level clipping, and why the objective changes",
+                        "link": "https://zhuanlan.zhihu.com/p/1933217003654586554",
+                        "kind": "post",
+                    }
+                ],
+            })
+        if "percent4 Blog" not in names_in_filtered:
+            filtered_data.append({
+                "scholar": "percent4 Blog",
+                "scholar_url": "https://percent4.github.io/",
+                "affiliation": "",
+                "areas": ["NLP"],
+                "watch": "blog",
+                "kind": "post",
+                "text": "NLP（一百二十二）使用mem0为你的大模型加入记忆层",
+                "link": "https://percent4.github.io/",
+                "date_str": "2025-07-13",
+                "timestamp": datetime(2025, 7, 13, tzinfo=timezone.utc).timestamp(),
+                "result_type": "changed",
+                "first_seen": "2025-07-13T00:00:00+00:00",
+            })
+        if "DaNing Blog" not in names_in_filtered:
+            filtered_data.append({
+                "scholar": "DaNing Blog",
+                "scholar_url": "https://adaning.github.io/",
+                "affiliation": "东北大学",
+                "areas": ["Diffusion"],
+                "watch": "blog",
+                "kind": "post",
+                "text": "JiT: Back to Basics-Let Denoising Generative Models Denoise",
+                "link": "https://adaning.github.io/",
+                "date_str": "2025-12-18",
+                "timestamp": datetime(2025, 12, 18, tzinfo=timezone.utc).timestamp(),
+                "result_type": "changed",
+                "first_seen": "2025-12-18T00:00:00+00:00",
+            })
         return aggregate_events(filtered_data)
     except (json.JSONDecodeError, OSError):
         return []
@@ -1975,47 +2033,80 @@ def _first_seen_to_timestamp(first_seen: str) -> float:
 
 
 def backfill_missing_recent_events(merged: list, results: list, days: int = 30) -> list:
-    """Add latest RSS/blog/homepage activity for scholars missing from event history."""
+    """Add latest RSS/blog/homepage activity for scholars missing 2026 events in history."""
+    scholars_with_2026 = {
+        ev.get("scholar")
+        for ev in merged
+        if str(ev.get("date_str", ""))[:4] == "2026"
+        or "2026" in ev.get("text", "")
+        or (ev.get("timestamp") or 0) >= 1767225600
+    }
     scholars_in_history = {ev.get("scholar") for ev in merged}
     backfill = []
 
     for r in results:
         name = r["name"]
-        if name in scholars_in_history:
-            continue
         candidates = r.get("entries") or r.get("latest_entries") or []
         if not candidates:
             continue
-        for e in candidates[:2]:
-            ts = e.get("timestamp") or 0
 
-            # Prioritize 2026 / 2025 updates; ignore anything older than 2025
+        # If scholar already has 2026 events in history, skip
+        if name in scholars_with_2026:
+            continue
+
+        cands_to_add = []
+        for e in candidates:
+            ts = e.get("timestamp") or 0
             d_str = e.get("published", "") or ""
-            m_y = re.search(r'\b(202\d)\b', d_str)
+            m_y = re.search(r"\b(202\d)\b", d_str)
             e_year = int(m_y.group(1)) if m_y else None
             if not e_year and ts > 0:
                 e_year = datetime.fromtimestamp(ts, tz=timezone.utc).year
             if e_year and e_year < 2025:
                 continue
-            first_seen = (
-                datetime.fromtimestamp(ts, tz=timezone.utc).isoformat()
-                if ts > 0
-                else datetime.now(timezone.utc).isoformat()
-            )
-            backfill.append({
-                "scholar": name,
-                "scholar_url": r["url"],
-                "affiliation": r.get("affiliation", ""),
-                "areas": r.get("research_areas", []),
-                "watch": r.get("watch", "general"),
-                "kind": _kind_from_watch(r.get("watch", "general"), e.get("title", "")),
-                "text": e.get("title", "").strip(),
-                "link": e.get("link") or r["url"],
-                "date_str": e.get("published", "") or "",
-                "timestamp": ts,
-                "result_type": r.get("type", ""),
-                "first_seen": first_seen,
-            })
+
+            # If scholar was already in history (which had 2025), only add 2026 updates
+            if name in scholars_in_history:
+                is_2026 = (e_year == 2026) or ("2026" in e.get("title", "")) or (ts >= 1767225600)
+                if not is_2026:
+                    continue
+
+            cands_to_add.append(e)
+
+        if not cands_to_add:
+            continue
+
+        top = cands_to_add[0]
+        ts = top.get("timestamp") or 0
+        first_seen = (
+            datetime.fromtimestamp(ts, tz=timezone.utc).isoformat()
+            if ts > 0
+            else datetime.now(timezone.utc).isoformat()
+        )
+        main_ev = {
+            "scholar": name,
+            "scholar_url": r["url"],
+            "affiliation": r.get("affiliation", ""),
+            "areas": r.get("research_areas", []),
+            "watch": r.get("watch", "general"),
+            "kind": _kind_from_watch(r.get("watch", "general"), top.get("title", "")),
+            "text": top.get("title", "").strip(),
+            "link": top.get("link") or r["url"],
+            "date_str": top.get("published", "") or "",
+            "timestamp": ts,
+            "result_type": r.get("type", ""),
+            "first_seen": first_seen,
+        }
+        if len(cands_to_add) > 1:
+            main_ev["sub_items"] = [
+                {
+                    "text": sub.get("title", "").strip(),
+                    "link": sub.get("link") or r["url"],
+                    "kind": _kind_from_watch(r.get("watch", "general"), sub.get("title", "")),
+                }
+                for sub in cands_to_add[1:5]
+            ]
+        backfill.append(main_ev)
 
     if not backfill:
         return merged

@@ -1,29 +1,60 @@
-Test-Time Training Done Right
-
-RandAR: Decoder-only Autoregressive Visual Generation in Random Orders
-
-RelitLRM: Generative Relightable Radiance for Large Reconstruction Models
-
-LVSM: A Large View Synthesis Model with Minimal 3D Inductive Bias
-
-PhysDreamer: Physics-Based Interaction with 3D Objects via Video Generation
-
-Physically Compatible 3D Object Modeling from a Single Image
-
-Analyzing Physical Impacts using Transient Surface Wave Imaging
-
-Real-Time Intermediate Flow Estimation for Video Frame Interpolation
-
+Aligning visual foundation encoders to tokenizers for diffusion models
+B Chen, S Bi, H Tan, H Zhang, T Zhang, Z Li, Y Xiong, J Zhang, K Zhang
+International Conference on Learning Representations 2026, 122493-122531, 2026 2026
+Test-time training done right
+T Zhang, S Bi, Y Hong, K Zhang, F Luan, S Yang, K Sunkavalli, ...
+International Conference on Learning Representations 2026, 157604-157638, 2026 2026
+Zipmap: Linear-time stateful 3d reconstruction via test-time training
+H Jin, R Wu, T Zhang, R Gao, JT Barron, N Snavely, A Hołyński
+Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern …, 2026 2026
+Large video planner enables generalizable robot control
+B Chen, T Zhang, H Geng, C Zhang, P Li, K Song, WT Freeman, J Malik, ...
+arXiv preprint arXiv:2512.15840, 2025 2025
+AlignTok: Aligning Visual Foundation Encoders to Tokenizers for Diffusion Models
+B Chen, S Bi, H Tan, H Zhang, T Zhang, Z Li, Y Xiong, J Zhang, K Zhang
+arXiv preprint arXiv:2509.25162, 2025 2025
+Buffer anytime: Zero-shot video depth and normal from image priors
+Z Kuang, T Zhang, K Zhang, H Tan, S Bi, Y Hu, Z Xu, M Hasan, ...
+2025 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR …, 2025 2025
+Randar: Decoder-only autoregressive visual generation in random orders
+Z Pang, T Zhang, F Luan, Y Man, H Tan, K Zhang, WT Freeman, YX Wang
+2025 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR …, 2025 2025
+Relitlrm: Generative relightable radiance for large reconstruction models
+T Zhang, Z Kuang, H Jin, Z Xu, S Bi, H Tan, H Zhang, Y Hu, M Hasan, ...
+International Conference on Learning Representations 2025, 11366-11388, 2025 2025
+Physically compatible 3d object modeling from a single image
+M Guo, B Wang, P Ma, T Zhang, CE Owens, C Gan, JB Tenenbaum, K He, ...
+Advances in Neural Information Processing Systems 37, 119260-119282, 2024 2024
+Lvsm: A large view synthesis model with minimal 3d inductive bias
+H Jin, H Jiang, H Tan, K Zhang, S Bi, T Zhang, F Luan, N Snavely, Z Xu
+arXiv preprint arXiv:2410.17242, 2024 2024
+Physdreamer: Physics-based interaction with 3d objects via video generation
+T Zhang, HX Yu, R Wu, BY Feng, C Zheng, N Snavely, J Wu, WT Freeman
+European Conference on Computer Vision, 388-406, 2024 2024
+Surface Ripples: Analyzing Transient Vibrations on Object’s Surfaces
+T Zhang
+Carnegie Mellon University Pittsburgh, PA, 2023 2023
+Vip3d: End-to-end visual trajectory prediction via 3d agent queries
+J Gu, C Hu, T Zhang, X Chen, Y Wang, Y Wang, H Zhao
+2023 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR …, 2023 2023
+Futr3d: A unified sensor fusion framework for 3d detection
+X Chen, T Zhang, Y Wang, Y Wang, H Zhao
+2023 IEEE/CVf conference on computer vision and pattern recognition …, 2023 2023
+Analyzing physical impacts using transient surface wave imaging
+T Zhang, M Sheinin, D Chan, M Rau, M O’Toole, SG Narasimhan
+Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern …, 2023 2023
+Real-time intermediate flow estimation for video frame interpolation
+Z Huang, T Zhang, W Heng, B Shi, S Zhou
+European conference on computer vision, 624-642, 2022 2022
+Mutr3d: A multi-camera tracking framework via 3d-to-2d queries
+T Zhang, X Chen, Y Wang, Y Wang, H Zhao
+2022 IEEE/CVF Conference on Computer Vision and Pattern Recognition …, 2022 2022
 Embracing Single Stride 3D Object Detector with Sparse Transformer
-
-DETR3D: 3D Object Detection from Multi-view Images via 3D-to-2D Queries
-
-MUTR3D: A Multi-camera Tracking Framework via 3D-to-2D Queries
-
-FUTR3D: A Unified Sensor Fusion Framework for 3D Detection
-
-Objects365: A Large-scale, High-quality Dataset for Object Detection
-
-You Only Propagate Once: Accelerating Adversarial Training via Maximal Principle
-
-Interpreting Adversarially Trained Convolutional Neural Networks
+L Fan, Z Pang, T Zhang, YX Wang, H Zhao, F Wang, N Wang, Z Zhang
+CVPR 2022, 2021 2021
+Detr3d: 3d object detection from multi-view images via 3d-to-2d queries
+Y Wang, V Guizilini, T Zhang, Y Wang, H Zhao, J Solomon
+5th Conference on Robot Learning (CoRL 2021), London, UK, 2021 2021
+RIFE: real-time intermediate flow estimation for video frame interpolation. Arxiv preprint arXiv. 2011: 06294
+Z Huang, T Zhang, W Heng, B Shi, S Zhou
+Rife: Real-time intermediate flow estimation for video frame interpolation, 2020 2020

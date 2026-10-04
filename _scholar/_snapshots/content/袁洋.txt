@@ -1,10 +1,60 @@
-On the power of foundation models
-Yang Yuan ICML 2023
-《孟子·告子下》：有诸内，必形诸外。
-《黄帝内经·灵枢·外揣》：司外揣内，司内揣外。
+Calculus of intelligence: A topos-monadic framework for agentic workflows
+Y Yuan, ACC Yao
+iFuture, 2026 2026
+Tensor product attention is all you need
+Y Zhang, Y Liu, H Yuan, Z Qin, Y Yuan, Q Gu, A Yao
+Advances in Neural Information Processing Systems 38, 112206-112251, 2026 2026
+Group representational position encoding
+Y Zhang, Z Chen, Y Liu, Q Zhen, R Hughes, K Xu, Y Yuan, Q Gu, A Yao
+International Conference on Learning Representations 2026, 56496-56519, 2026 2026
+On the design of kl-regularized policy gradient algorithms for llm reasoning
+Y Zhang, Y Liu, R Hughes, Y Yuan, Q Gu, A Yao
+International Conference on Learning Representations 2026, 88357-88395, 2026 2026
+Probing the Lack of Stable Internal Beliefs in LLMs
+Y Luo, K Xu, Y Lu, Y Yuan, ACC Yao
+arXiv preprint arXiv:2603.25187, 2026 2026
+Monadic Context Engineering
+Y Zhang, Y Yuan, M Wang, ACC Yao
+arXiv preprint arXiv:2512.22431, 2025 2025
+AutoMathText-V2: A 2.46 Trillion Token AI-Curated STEM Pretraining Dataset
+CLY Zhang, Y Yuan, AC Yao
+ 2025
+Clarifying before reasoning: A coq prover with structural context
+Y Lu, H Yang, X Wang, G Zhang, B Li, C Fu, C Li, Y Yuan, ACC Yao
+arXiv preprint arXiv:2507.02541, 2025 2025
+Autonomous data selection with zero-shot generative classifiers for mathematical texts
+Y Zhang, Y Luo, Y Yuan, AC Yao
+Findings of the Association for Computational Linguistics: ACL 2025, 4168-4189, 2025 2025
+Hierarchical Attention Generates Better Proofs
+J Chen, C Li, Y Yuan, AC Yao
+Proceedings of the 63rd Annual Meeting of the Association for Computational …, 2025 2025
+Existing llms are not self-consistent for simple tasks
+Z Lin, J Tao, Y Yuan, ACC Yao
+arXiv preprint arXiv:2506.18781, 2025 2025
+Towards Automated Formal Verification of Backend Systems with LLMs
+K Xu, Y Luo, Y Yuan, ACC Yao
+arXiv preprint arXiv:2506.10998, 2025 2025
+On the diagram of thought
+Y Zhang, Y Yuan, ACC Yao
+arXiv preprint arXiv:2409.10038, 2024 2024
 Contrastive learning is spectral clustering on similarity graph
-Zhiquan Tan, Yifan Zhang, Jingqin Yang, Yang Yuan ICLR 2024
-Category theory for AI in single dimensional case.
+Z Tan, Y Zhang, J Yang, Y Yuan
+International Conference on Learning Representations 2024, 19019-19035, 2024 2024
+CatCode: A Comprehensive Evaluation Framework for LLMs On the Mixture of Code and Text
+Z Lin, Y Yao, Y Yuan
+arXiv preprint arXiv:2403.01784, 2024 2024
+Autonomous data selection with language models for mathematical texts
+Y Zhang, Y Luo, Y Yuan, AC Yao
+ICLR 2024 Workshop on Navigating and Addressing Data Problems for Foundation …, 2024 2024
 Trade-off between efficiency and consistency for removal-based explanations
-Yifan Zhang, Haowei He, Zhiquan Tan, Yang Yuan NeurIPS 2023
-Impossible Trinity of removal-based explanations.
+Y Zhang, H He, Z Tan, Y Yuan
+Advances in Neural Information Processing Systems 36, 25627-25661, 2023 2023
+Towards data-algorithm dependent generalization: a case study on overparameterized linear regression
+J Xu, J Teng, Y Yuan, A Yao
+Advances in Neural Information Processing Systems 36, 79698-79733, 2023 2023
+Meta prompting for ai systems
+Y Zhang, Y Yuan, ACC Yao
+arXiv preprint arXiv:2311.11482, 2023 2023
+Information flow in self-supervised learning
+Z Tan, J Yang, W Huang, Y Yuan, Y Zhang
+arXiv preprint arXiv:2309.17281, 2023 2023

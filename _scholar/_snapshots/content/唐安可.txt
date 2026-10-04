@@ -1,5 +1,220 @@
-Sep 20, 2025 Three of our papers have been accepted to NeurIPS 2025, with two on continual model merging.
+ICLR
+MergOPT: A Merge-Aware Optimizer for Robust Model Merging
+Enneng Yang , Q Yang, P Wang, and 4 more authors
+In The Fourteenth International Conference on Learning Representations , 2026
+Bib
+@inproceedings { yang2026mergopt , title = {MergOPT: A Merge-Aware Optimizer for Robust Model Merging} , author = {Yang, Enneng and Yang, Q and Wang, P and Tang, Anke and Guo, Guibing and Cao, Xiaochun and Shen, Li} , booktitle = {The Fourteenth International Conference on Learning Representations} , year = {2026} , }
 
+A Unified Generalization Framework for Model Merging: Trade-offs, Non-Linearity, and Scaling Laws
+Qinglun Li, Anke Tang , Miao Zhang, and 3 more authors
+arXiv preprint arXiv:2601.21690 , 2026
+Bib
+@article { li2026understanding , title = {A Unified Generalization Framework for Model Merging: Trade-offs, Non-Linearity, and Scaling Laws} , author = {Li, Qinglun and Tang, Anke and Zhang, Miao and Wang, Mengzhu and Yin, Quanjun and Shen, Li} , journal = {arXiv preprint arXiv:2601.21690} , year = {2026} , }
+
+TPAMI
+Zero-Shot Sparse Mixture of Low-Rank Experts Construction From Pre-Trained Foundation Models
+Anke Tang , Li Shen , Yong Luo , and 5 more authors
+IEEE Transactions on Pattern Analysis and Machine Intelligence , 2025
+Bib
+@article { tang2025zero , title = {Zero-Shot Sparse Mixture of Low-Rank Experts Construction From Pre-Trained Foundation Models} , author = {Tang, Anke and Shen, Li and Luo, Yong and Xie, Shuai and Hu, Han and Zhang, Lefei and Du, Bo and Tao, Dacheng} , journal = {IEEE Transactions on Pattern Analysis and Machine Intelligence} , year = {2025} , publisher = {IEEE} , }
+
+IJCV
+Data-adaptive weight-ensembling for multi-task model fusion
+Anke Tang , Li Shen , Yong Luo , and 4 more authors
+International Journal of Computer Vision , 2025
+Bib
+@article { tang2025data , title = {Data-adaptive weight-ensembling for multi-task model fusion} , author = {Tang, Anke and Shen, Li and Luo, Yong and Liu, Shiwei and Hu, Han and Du, Bo and Tao, Dacheng} , journal = {International Journal of Computer Vision} , pages = {1--17} , year = {2025} , publisher = {Springer US} , }
+
+NeurIPS
+Merging models on the fly without retraining: A sequential approach to scalable continual model merging
+Anke Tang , Enneng Yang , Li Shen , and 4 more authors
+The Thirty-Ninth Annual Conference on Neural Information Processing Systems , 2025
+Bib HTML
+@article { tang2025merging , title = {Merging models on the fly without retraining: A sequential approach to scalable continual model merging} , author = {Tang, Anke and Yang, Enneng and Shen, Li and Luo, Yong and Hu, Han and Du, Bo and Tao, Dacheng} , journal = {The Thirty-Ninth Annual Conference on Neural Information Processing Systems} , year = {2025} , }
+
+NeurIPS
+Continual Model Merging without Data: Dual Projections for Balancing Stability and Plasticity
+Enneng Yang , Anke Tang , Li Shen , and 4 more authors
+The Thirty-Ninth Annual Conference on Neural Information Processing Systems , 2025
+Bib
+@article { yang2025continual , title = {Continual Model Merging without Data: Dual Projections for Balancing Stability and Plasticity} , author = {Yang, Enneng and Tang, Anke and Shen, Li and Guo, Guibing and Wang, Xingwei and Cao, Xiaochun and Jie, Zhang} , journal = {The Thirty-Ninth Annual Conference on Neural Information Processing Systems} , year = {2025} , }
+
+NeurIPS
+Mix Data or Merge Models? Balancing the Helpfulness, Honesty, and Harmlessness of Large Language Model via Model Merging
+Jinluan Yang, Dingnan Jin, Anke Tang , and 10 more authors
+The Thirty-Ninth Annual Conference on Neural Information Processing Systems , 2025
+Bib
+@article { yang2025mix , title = {Mix Data or Merge Models? Balancing the Helpfulness, Honesty, and Harmlessness of Large Language Model via Model Merging} , author = {Yang, Jinluan and Jin, Dingnan and Tang, Anke and Shen, Li and Zhu, Didi and Chen, Zhengyu and Zhao, Ziyu and Wang, Daixin and Cui, Qing and Zhang, Zhiqiang and Zhou, Jun and Wu, Fei and Kuang, Kun} , journal = {The Thirty-Ninth Annual Conference on Neural Information Processing Systems} , year = {2025} , }
+
+ICML
+Targeted Low-rank Refinement: Enhancing Sparse Language Models with Precision
+Li Shen , Anke Tang , Yong Luo , and 3 more authors
+In Forty-second International Conference on Machine Learning , 2025
+Bib
+@inproceedings { shentargeted , title = {Targeted Low-rank Refinement: Enhancing Sparse Language Models with Precision} , author = {Shen, Li and Tang, Anke and Luo, Yong and Sun, Tao and Hu, Han and Cao, Xiaochun} , booktitle = {Forty-second International Conference on Machine Learning} , year = {2025} , }
+
+ICML
+Modeling Multi-Task Model Merging as Adaptive Projective Gradient Descent
+Yongxian Wei, Anke Tang , Li Shen , and 3 more authors
+In Forty-second International Conference on Machine Learning , 2025
+Bib
+@inproceedings { weimodeling , title = {Modeling Multi-Task Model Merging as Adaptive Projective Gradient Descent} , author = {Wei, Yongxian and Tang, Anke and Shen, Li and Hu, Zixuan and Yuan, Chun and Cao, Xiaochun} , booktitle = {Forty-second International Conference on Machine Learning} , year = {2025} , }
+
+ICLR
+Mitigating the Backdoor Effect for Multi-Task Model Merging via Safety-Aware Subspace
+Jinluan Yang, Anke Tang , Didi Zhu, and 3 more authors
+In The 13th International Conference on Learning Representations (ICLR) , 2025
+Bib
+@inproceedings { yang2025mitigating , title = {Mitigating the Backdoor Effect for Multi-Task Model Merging via Safety-Aware Subspace} , author = {Yang, Jinluan and Tang, Anke and Zhu, Didi and Chen, Zhengyu and Shen, Li and Wu, Fei} , booktitle = {The 13th International Conference on Learning Representations (ICLR)} , year = {2025} , }
+
+NMI
+Learning from models beyond fine-tuning
+Hongling Zheng, Li Shen , Anke Tang , and 5 more authors
+Nature Machine Intelligence , 2025
+Bib
+@article { zheng2025learning , title = {Learning from models beyond fine-tuning} , author = {Zheng, Hongling and Shen, Li and Tang, Anke and Luo, Yong and Hu, Han and Du, Bo and Wen, Yonggang and Tao, Dacheng} , journal = {Nature Machine Intelligence} , volume = {7} , number = {1} , pages = {6--17} , year = {2025} , publisher = {Nature Publishing Group UK London} , }
+
+JMLR
+FusionBench: A Unified Library and Comprehensive Benchmark for Deep Model Fusion
+Anke Tang , Li Shen , Yong Luo , and 5 more authors
+Journal of Machine Learning Research , 2025
+Bib
+@article { tang2025fusionbench , title = {FusionBench: A Unified Library and Comprehensive Benchmark for Deep Model Fusion} , author = {Tang, Anke and Shen, Li and Luo, Yong and Yang, Enneng and Hu, Han and Zhang, Lefei and Du, Bo and Tao, Dacheng} , journal = {Journal of Machine Learning Research} , volume = {26} , number = {307} , year = {2025} , }
+
+ICONIP
+Successive Mouse Movement: Dual-Phase Adaptation with Pre-balancing and Test-Time Learning
+J Feng, Yong Luo , Anke Tang , and 1 more author
+In International Conference on Neural Information Processing , 2025
+Bib
+@inproceedings { feng2025successive , title = {Successive Mouse Movement: Dual-Phase Adaptation with Pre-balancing and Test-Time Learning} , author = {Feng, J and Luo, Yong and Tang, Anke and Liu, X} , booktitle = {International Conference on Neural Information Processing} , year = {2025} , }
+
+TPAMI
+Efficient and Effective Weight-Ensembling Mixture of Experts for Multi-Task Model Merging
+Li Shen , Anke Tang , Enneng Yang , and 6 more authors
+IEEE Transactions on Pattern Analysis and Machine Intelligence , 2025
+Bib
+@article { shen2024efficient , title = {Efficient and Effective Weight-Ensembling Mixture of Experts for Multi-Task Model Merging} , author = {Shen, Li and Tang, Anke and Yang, Enneng and Guo, Guibing and Luo, Yong and Zhang, Lefei and Cao, Xiaochun and Du, Bo and Tao, Dacheng} , journal = {IEEE Transactions on Pattern Analysis and Machine Intelligence} , year = {2025} , publisher = {IEEE} , }
+
+Fusionbench: A comprehensive benchmark of deep model fusion
+Anke Tang , Li Shen , Yong Luo , and 3 more authors
+arXiv preprint arXiv:2406.03280 , 2024
+Bib
+@article { tang2024fusionbench , title = {Fusionbench: A comprehensive benchmark of deep model fusion} , author = {Tang, Anke and Shen, Li and Luo, Yong and Hu, Han and Du, Bo and Tao, Dacheng} , journal = {arXiv preprint arXiv:2406.03280} , year = {2024} , }
+
+Towards efficient pareto set approximation via mixture of experts based model fusion
+Anke Tang , Li Shen , Yong Luo , and 3 more authors
+arXiv preprint arXiv:2406.09770 , 2024
+
+ICML
+Merging Multi-Task Models via Weight-Ensembling Mixture of Experts
+Anke Tang , Li Shen , Yong Luo , and 3 more authors
+In The 41th International Conference on Machine Learning (ICML) , 2024
+Bib
+@inproceedings { tang2024merging , title = {Merging Multi-Task Models via Weight-Ensembling Mixture of Experts} , author = {Tang, Anke and Shen, Li and Luo, Yong and Yin, Nan and Zhang, Lefei and Tao, Dacheng} , booktitle = {The 41th International Conference on Machine Learning (ICML)} , year = {2024} , }
+
+ICLR
+Parameter efficient multi-task model fusion with partial linearization
+Anke Tang , Li Shen , Yong Luo , and 5 more authors
+In the 12th International Conference on Learning Representations , 2024
+Bib
+@inproceedings { tang2024parameter , title = {Parameter efficient multi-task model fusion with partial linearization} , author = {Tang, Anke and Shen, Li and Luo, Yong and Zhan, Yibing and Hu, Han and Du, Bo and Chen, Yixin and Tao, Dacheng} , booktitle = {the 12th International Conference on Learning Representations} , year = {2024} , }
+
+Concrete subspace learning based interference elimination for multi-task model fusion
+Anke Tang , Li Shen , Yong Luo , and 4 more authors
+arXiv preprint arXiv:2312.06173 , 2023
+
+IJCAI
+Improving Heterogeneous Model Reuse by Density Estimation
+Anke Tang , Yong Luo , Han Hu, and 5 more authors
+In Thirty-Second International Joint Conference on Artificial Intelligence , 2023
+Bib
+@inproceedings { tang2023improving , title = {Improving Heterogeneous Model Reuse by Density Estimation} , author = {Tang, Anke and Luo, Yong and Hu, Han and He, Fengxiang and Su, Kehua and Du, Bo and Chen, Yixin and Tao, Dacheng} , booktitle = {Thirty-Second International Joint Conference on Artificial Intelligence} , year = {2023} , }
+
+MergOPT: A Merge-Aware Optimizer for Robust Model Merging
+
+A Unified Generalization Framework for Model Merging: Trade-offs, Non-Linearity, and Scaling Laws
+
+Zero-Shot Sparse Mixture of Low-Rank Experts Construction From Pre-Trained Foundation Models
+
+Data-adaptive weight-ensembling for multi-task model fusion
+
+Merging models on the fly without retraining: A sequential approach to scalable continual model merging
+
+Continual Model Merging without Data: Dual Projections for Balancing Stability and Plasticity
+
+Mix Data or Merge Models? Balancing the Helpfulness, Honesty, and Harmlessness of Large Language Model via Model Merging
+
+Targeted Low-rank Refinement: Enhancing Sparse Language Models with Precision
+
+Modeling Multi-Task Model Merging as Adaptive Projective Gradient Descent
+
+Mitigating the Backdoor Effect for Multi-Task Model Merging via Safety-Aware Subspace
+
+Learning from models beyond fine-tuning
+
+FusionBench: A Unified Library and Comprehensive Benchmark for Deep Model Fusion
+
+Successive Mouse Movement: Dual-Phase Adaptation with Pre-balancing and Test-Time Learning
+
+Efficient and Effective Weight-Ensembling Mixture of Experts for Multi-Task Model Merging
+
+Fusionbench: A comprehensive benchmark of deep model fusion
+
+Towards efficient pareto set approximation via mixture of experts based model fusion
+
+Merging Multi-Task Models via Weight-Ensembling Mixture of Experts
+
+Parameter efficient multi-task model fusion with partial linearization
+
+Concrete subspace learning based interference elimination for multi-task model fusion
+
+Improving Heterogeneous Model Reuse by Density Estimation
+
+In The Fourteenth International Conference on Learning Representations , 2026
+
+arXiv preprint arXiv:2601.21690 , 2026
+
+IEEE Transactions on Pattern Analysis and Machine Intelligence , 2025
+
+International Journal of Computer Vision , 2025
+
+The Thirty-Ninth Annual Conference on Neural Information Processing Systems , 2025
+
+In Forty-second International Conference on Machine Learning , 2025
+
+In The 13th International Conference on Learning Representations (ICLR) , 2025
+
+Nature Machine Intelligence , 2025
+
+Journal of Machine Learning Research , 2025
+
+In International Conference on Neural Information Processing , 2025
+
+arXiv preprint arXiv:2406.03280 , 2024
+
+arXiv preprint arXiv:2406.09770 , 2024
+
+In The 41th International Conference on Machine Learning (ICML) , 2024
+
+In the 12th International Conference on Learning Representations , 2024
+
+arXiv preprint arXiv:2312.06173 , 2023
+
+In Thirty-Second International Joint Conference on Artificial Intelligence , 2023
+
+2026
+ICLR
+MergOPT: A Merge-Aware Optimizer for Robust Model Merging
+Enneng Yang , Q Yang, P Wang, and 4 more authors
+In The Fourteenth International Conference on Learning Representations , 2026
+Bib
+@inproceedings { yang2026mergopt , title = {MergOPT: A Merge-Aware Optimizer for Robust Model Merging} , author = {Yang, Enneng and Yang, Q and Wang, P and Tang, Anke and Guo, Guibing and Cao, Xiaochun and Shen, Li} , booktitle = {The Fourteenth International Conference on Learning Representations} , year = {2026} , }
+A Unified Generalization Framework for Model Merging: Trade-offs, Non-Linearity, and Scaling Laws
+Qinglun Li, Anke Tang , Miao Zhang, and 3 more authors
+arXiv preprint arXiv:2601.21690 , 2026
+Bib
+@article { li2026understanding , title = {A Unified Generalization Framework for Model Merging: Trade-offs, Non-Linearity, and Scaling Laws} , author = {Li, Qinglun and Tang, Anke and Zhang, Miao and Wang, Mengzhu and Yin, Quanjun and Shen, Li} , journal = {arXiv preprint arXiv:2601.21690} , year = {2026} , }
+2025
 TPAMI
 Zero-Shot Sparse Mixture of Low-Rank Experts Construction From Pre-Trained Foundation Models
 Anke Tang , Li Shen , Yong Luo , and 5 more authors
@@ -24,6 +239,12 @@ Enneng Yang , Anke Tang , Li Shen , and 4 more authors
 The Thirty-Ninth Annual Conference on Neural Information Processing Systems , 2025
 Bib
 @article { yang2025continual , title = {Continual Model Merging without Data: Dual Projections for Balancing Stability and Plasticity} , author = {Yang, Enneng and Tang, Anke and Shen, Li and Guo, Guibing and Wang, Xingwei and Cao, Xiaochun and Jie, Zhang} , journal = {The Thirty-Ninth Annual Conference on Neural Information Processing Systems} , year = {2025} , }
+NeurIPS
+Mix Data or Merge Models? Balancing the Helpfulness, Honesty, and Harmlessness of Large Language Model via Model Merging
+Jinluan Yang, Dingnan Jin, Anke Tang , and 10 more authors
+The Thirty-Ninth Annual Conference on Neural Information Processing Systems , 2025
+Bib
+@article { yang2025mix , title = {Mix Data or Merge Models? Balancing the Helpfulness, Honesty, and Harmlessness of Large Language Model via Model Merging} , author = {Yang, Jinluan and Jin, Dingnan and Tang, Anke and Shen, Li and Zhu, Didi and Chen, Zhengyu and Zhao, Ziyu and Wang, Daixin and Cui, Qing and Zhang, Zhiqiang and Zhou, Jun and Wu, Fei and Kuang, Kun} , journal = {The Thirty-Ninth Annual Conference on Neural Information Processing Systems} , year = {2025} , }
 ICML
 Targeted Low-rank Refinement: Enhancing Sparse Language Models with Precision
 Li Shen , Anke Tang , Yong Luo , and 3 more authors
@@ -54,6 +275,27 @@ Anke Tang , Li Shen , Yong Luo , and 5 more authors
 Journal of Machine Learning Research , 2025
 Bib
 @article { tang2025fusionbench , title = {FusionBench: A Unified Library and Comprehensive Benchmark for Deep Model Fusion} , author = {Tang, Anke and Shen, Li and Luo, Yong and Yang, Enneng and Hu, Han and Zhang, Lefei and Du, Bo and Tao, Dacheng} , journal = {Journal of Machine Learning Research} , volume = {26} , number = {307} , year = {2025} , }
+ICONIP
+Successive Mouse Movement: Dual-Phase Adaptation with Pre-balancing and Test-Time Learning
+J Feng, Yong Luo , Anke Tang , and 1 more author
+In International Conference on Neural Information Processing , 2025
+Bib
+@inproceedings { feng2025successive , title = {Successive Mouse Movement: Dual-Phase Adaptation with Pre-balancing and Test-Time Learning} , author = {Feng, J and Luo, Yong and Tang, Anke and Liu, X} , booktitle = {International Conference on Neural Information Processing} , year = {2025} , }
+TPAMI
+Efficient and Effective Weight-Ensembling Mixture of Experts for Multi-Task Model Merging
+Li Shen , Anke Tang , Enneng Yang , and 6 more authors
+IEEE Transactions on Pattern Analysis and Machine Intelligence , 2025
+Bib
+@article { shen2024efficient , title = {Efficient and Effective Weight-Ensembling Mixture of Experts for Multi-Task Model Merging} , author = {Shen, Li and Tang, Anke and Yang, Enneng and Guo, Guibing and Luo, Yong and Zhang, Lefei and Cao, Xiaochun and Du, Bo and Tao, Dacheng} , journal = {IEEE Transactions on Pattern Analysis and Machine Intelligence} , year = {2025} , publisher = {IEEE} , }
+2024
+Fusionbench: A comprehensive benchmark of deep model fusion
+Anke Tang , Li Shen , Yong Luo , and 3 more authors
+arXiv preprint arXiv:2406.03280 , 2024
+Bib
+@article { tang2024fusionbench , title = {Fusionbench: A comprehensive benchmark of deep model fusion} , author = {Tang, Anke and Shen, Li and Luo, Yong and Hu, Han and Du, Bo and Tao, Dacheng} , journal = {arXiv preprint arXiv:2406.03280} , year = {2024} , }
+Towards efficient pareto set approximation via mixture of experts based model fusion
+Anke Tang , Li Shen , Yong Luo , and 3 more authors
+arXiv preprint arXiv:2406.09770 , 2024
 ICML
 Merging Multi-Task Models via Weight-Ensembling Mixture of Experts
 Anke Tang , Li Shen , Yong Luo , and 3 more authors
@@ -66,6 +308,10 @@ Anke Tang , Li Shen , Yong Luo , and 5 more authors
 In the 12th International Conference on Learning Representations , 2024
 Bib
 @inproceedings { tang2024parameter , title = {Parameter efficient multi-task model fusion with partial linearization} , author = {Tang, Anke and Shen, Li and Luo, Yong and Zhan, Yibing and Hu, Han and Du, Bo and Chen, Yixin and Tao, Dacheng} , booktitle = {the 12th International Conference on Learning Representations} , year = {2024} , }
+2023
+Concrete subspace learning based interference elimination for multi-task model fusion
+Anke Tang , Li Shen , Yong Luo , and 4 more authors
+arXiv preprint arXiv:2312.06173 , 2023
 IJCAI
 Improving Heterogeneous Model Reuse by Density Estimation
 Anke Tang , Yong Luo , Han Hu, and 5 more authors

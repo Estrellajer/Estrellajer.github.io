@@ -1,3 +1,155 @@
-National Key Research and Development Project of China, 2025.05-2028.04
-The National Youth Fund, 2024.01-2026.12
-Special Research Assistant Program of the Chinese Academy of Sciences, 2023.01-2025.01
+Publications
+Selected and full publications are listed below by year.
+2026
+Event Ontology Expansion via LLM-Based Conceptualization arXiv
+Weicheng Ren, Zixuan Li , Long Bai, Xiaolong Jin, Jiafeng Guo, Xueqi Cheng
+arXiv preprint arXiv:2606.21048 [Paper]
+Code-on-Graph: Iterative Programmatic Reasoning via Large Language Models on Knowledge Graphs arXiv
+Weiwei Ding, Zixuan Li , Long Bai, Zhuo Chen, Kun Su, Fei Wang, Xiaolong Jin, Jin Zhang, Jiafeng Guo, Xueqi Cheng
+arXiv preprint arXiv:2606.03705 [Paper]
+AI for science: Progress, challenges, and perspectives The Innovation
+Yongjun Xu, Zezhi Shao, Xin Liu, Yuquan Li, Zhulin An, Chenguang Fu, Changping Huang, Lin Zhang, Feng Gao, Jian Li, et al.
+The Innovation 2026 [Paper]
+Beyond Dialogue Time: Temporal Semantic Memory for Personalized LLM Agents ACL
+Miao Su, Yucan Guo, Zhongni Hou, Long Bai, Zixuan Li , Yufei Zhang, Guojun Yin, Wei Lin, Xiaolong Jin, Jiafeng Guo, Xueqi Cheng
+Findings of the Association for Computational Linguistics: ACL 2026 [Paper]
+JudgeAgent: Beyond Static Benchmarks for Knowledge-Driven and Dynamic LLM Evaluation ACL
+Zhichao Shi, Xuhui Jiang, Chengjin Xu, Cangli Yao, Shengjie Ma, Yinghan Shen, Zixuan Li , Jian Guo, Yuanzhuo Wang
+Findings of the Association for Computational Linguistics: ACL 2026 [Paper] [Code]
+Incentivizing Agentic Reasoning Capability with Outcome Supervision for Knowledge Base Question Answering WWW
+Zhuo Chen, Fei Wang, Zixuan Li , Zhao Zhang, Weiwei Ding, Chuanguang Yang, Yongjun Xu, Xiaolong Jin, Jiafeng Guo
+Proceedings of the ACM Web Conference 2026 [Paper]
+Towards Knowledgeable Deep Research: Framework and Benchmark SIGIR
+Wenxuan Liu, Zixuan Li , Long Bai, Chunmao Zhang, Fenghui Zhang, Zhuo Chen, Wei Li, Yuxin Zuo, Fei Wang, Bingbing Xu, Xuhui Jiang, Jin Zhang, Xiaolong Jin, Jiafeng Guo, Tat-Seng Chua, Xueqi Cheng
+The 49th International ACM SIGIR Conference on Research and Development in Information Retrieval (SIGIR 2026) [Paper]
+Identify-Conceptualize-Align: A Schema-Adaptive Framework for Unified Entity Recognition and Event Detection WSDM
+Weicheng Ren, Zixuan Li , Long Bai, Xiaolong Jin, Jiafeng Guo, Xueqi Cheng
+The Nineteenth ACM International Conference on Web Search and Data Mining, WSDM 2026 [Paper]
+2025
+KnowCoder-V2: Deep Knowledge Analysis arXiv
+Zixuan Li , Wenxuan Liu, Long Bai, Chunmao Zhang, Wei Li, Fenghui Zhang, Quanxin Jin, Ruoyun He, Zhuo Chen, Zhilei Hu, Fei Wang, Bingbing Xu, Xuhui Jiang, Xiaolong Jin, Jiafeng Guo, Xueqi Cheng
+Arxiv [Paper]
+Temporal Knowledge Graph Question Answering: A Survey arXiv
+Miao Su, Zixuan Li , Zhuo Chen, Long Bai, Xiaolong Jin, Jiafeng Guo
+arxiv [Paper]
+基于线索挖掘的篇章间事件关系抽取方法 BigData Best Academic Paper Nomination Award
+胡志磊, 李紫宣 , 隗继耀, 张瑾, 靳小龙
+第十三届CCF大数据学术会议, CCF BigData 2025
+KnowCoder-Taxo: Code-based Taxonomy Expansion with Large Language Models. MedAI
+Ruoyun He, Zixuan Li , Xiaolong Jin, Jiafeng Guo
+The Third IEEE International Conference on Medical Artificial Intelligence, IEEE MedAI 2025
+基于原型学习的事件关系抽取框架 JCIP
+胡志磊, 李紫宣 , 靳小龙, 白龙, 郭嘉丰, 程学旗
+中文信息学报 2025
+D-RAG: Differentiable Retrieval-Augmented Generation for Knowledge Graph Question Answering EMNLP
+Guangze Gao, Zixuan Li , Chunfeng Yuan, Jiawei Li, Wu Jianzhuo, Yuehao Zhang, Xiaolong Jin, Bing Li, Weiming Hu
+The 2025 Conference on Empirical Methods in Natural Language Processing, EMNLP 2025 [Paper]
+Towards Event Extraction with Massive Types: LLM-based Collaborative Annotation and Partitioning Extraction EMNLP
+Wenxuan Liu, Zixuan Li , Long Bai, Yuxin Zuo, Daozhu Xu, Xiaolong Jin, Jiafeng Guo, Xueqi Cheng
+The 2025 Conference on Empirical Methods in Natural Language Processing. EMNLP 2025 [Paper]
+面向知识图谱问答的无监督问题查询对构建 CCIR
+刘衍涛， 李紫宣 ，靳小龙，白龙，郭嘉丰
+CCIR 2025
+Towards Robust Universal Information Extraction: Dataset, Evaluation, and Solution ACL
+Jizhao Zhu, Akang Shi, Zixuan Li , Long Bai, Xiaolong Jin, Jiafeng Guo, Xueqi Cheng
+ACL 2025 [Paper]
+KnowCoder-X: Boosting Multilingual Information Extraction via Code ACL
+Yuxin Zuo, Wenxuan Jiang, Wenxuan Liu, Zixuan Li , Long Bai, Hanbin Wang, Yutao Zeng, Xiaolong Jin, Jiafeng Guo, Xueqi Cheng
+ACL 2025 Findings [Paper]
+G2S: A General-to-Specific Learning Framework for Temporal Knowledge Graph Forecasting with Large Language Models ACL
+Long Bai, Zixuan Li , Xiaolong Jin, Jiafeng Guo, Xueqi Cheng, Tat-Seng Chua
+ACL 2025 Findings [Paper]
+Large Language Model-Based Event Relation Extraction with Rationales COLING
+Zhilei Hu, Zixuan Li , Xiaolong Jin, Long Bai, Jiafeng Guo, Xueqi Cheng
+In Proceedings of The 31st International Conference on Computational Linguistics, COLING 2025 [Paper] [Code]
+代码大模型赋能的知识图谱关键技术综述 BigData
+李紫宣 , 白龙, 任韦澄, 苏淼, 刘文轩, 陈磊, 靳小龙
+Big Data Research [Paper]
+2024
+A New Pipeline for Knowledge Graph Reasoning Enhanced by Large Language Models Without Fine-Tuning EMNLP
+Zhongwu Chen, Long Bai, Zixuan Li , Zhen Huang, Xiaolong Jin, Yong Dou
+The 2024 Conference on Empirical Methods in Natural Language Processing, EMNLP 2024 [Paper] [Code]
+Multi-task Instruction Tuning for Temporal Question Answering over Knowledge Graphs CCIR
+Miao Su, Zixuan Li , Xiaolong Jin and Jiafeng Guo
+The 30th China Conference on Information Retrieval, CCIR 2024
+Retrieval-Augmented Code Generation for Universal Information Extraction NLPCC
+Yucan Guo, Zixuan Li , Xiaolong Jin, Yantao Liu, Yutao Zeng, Wenxuan Liu, Xiang Li, Pan Yang, Long Bai, Jiafeng Guo, Xueqi Cheng
+The 13th CCF International Conference on Natural Language Processing and Chinese Computing, NLPCC 2024 [Paper] [Code]
+An In-Context Schema Understanding Method for Knowledge Base Question Answering KSEM
+Yantao Liu, Zixuan Li , Xiaolong Jin, Long Bai, Saiping Guan, Jiafeng Guo, Xueqi Cheng
+The 17th International Conference on Knowledge Science, Engineering and Management, KSEM 2024 [Paper]
+Nested Event Extraction upon Pivot Element Recogniton COLING
+Weicheng Ren, Zixuan Li , Xiaolong Jin, Long Bai, Miao Su, Yantao Liu, Saiping Guan, Jiafeng Guo, Xueqi Cheng
+The 2024 Joint International Conference on Computational Linguistics, Language Resources and Evaluation, LREC-COLING 2024 [Paper] [Code]
+Self-Improvement Programming for Temporal Knowledge Graph Question Answering COLING
+Zhuo Chen, Zhao Zhang, Zixuan Li , Fei Wang, Yutao Zeng, Xiaolong Jin and Yongjun Xu
+The 2024 Joint International Conference on Computational Linguistics, Language Resources and Evaluation, LREC-COLING 2024 [Paper]
+Selective Temporal Knowledge Graph Reasoning COLING
+Zhongni Hou, Xiaolong Jin, Zixuan Li , Long Bai, Jiafeng Guo and Xueqi Cheng
+The 2024 Joint International Conference on Computational Linguistics, Language Resources and Evaluation, LREC-COLING 2024 [Paper]
+KnowCoder: Coding Structured Knowledge into LLMs for Universal Information Extraction ACL OpenKG Outstanding Open Resource Award
+Zixuan Li , Yutao Zeng, Yuxin Zuo, Weicheng Ren, Wenxuan Liu, Miao Su, Yucan Guo, Yantao Liu, Xiang Li, Zhilei Hu, Long Bai, Wei Li, Yidan Liu, Pan Yang, Xiaolong Jin, Jiafeng Guo, Xueqi Cheng
+The 62nd Annual Meeting of the Association for Computational Linguistics, ACL 2024 [Paper] [Code]
+Unlocking the Power of Large Language Models for Entity Alignment ACL
+Xuhui Jiang, Yinghan Shen, Zhichao Shi, Chengjin Xu, Wei Li, Zixuan Li , Jian Guo, Huawei Shen, Yuanzhuo Wang
+The 62nd Annual Meeting of the Association for Computational Linguistics, ACL 2024 [Paper] [Code]
+Toward Practical Entity Alignment Method Design: Insights from New Highly Heterogeneous Knowledge Graph Datasets WWW
+Xuhui Jiang, Chengjin Xu, Yinghan Shen, Yuanzhuo Wang, Fenglong Su, Fei Sun, Zixuan Li , Zhichao Shi, Jian Guo, Huawei Shen
+The Web Conf 2024 [Paper] [Code]
+2023
+ProtoEM: A Prototype-Enhanced Matching Framework for Event Relation Extraction arXiv
+Zhilei Hu, Zixuan Li , Daozhu Xu, Long Bai, Cheng Jin, Xiaolong Jin, Jiafeng Guo, Xueqi Cheng
+Arxiv [Paper]
+Temporal Knowledge Graph Reasoning Based on N-tuple Modeling EMNLP
+Zhongni Hou, Xiaolong Jin, Zixuan Li , Long Bai, Saiping Guan, Yutao Zeng, Jiafeng Guo, Xueqi Cheng
+The 2023 Conference on Empirical Methods in Natural Language Processing, Findings of EMNLP'2023 [Paper]
+Semantic Structure Enhanced Event Causality Identification ACL CodaLab International Open Challenge Champion
+Zhilei Hu, Zixuan Li , Xiaolong Jin, Long Bai, Saiping Guan, Jiafeng Guo and Xueqi Cheng
+Proceedings of The 61st Annual Meeting of the Association for Computational Linguistics, ACL'2023 [Paper]
+Rich Event Modeling for Script Event Prediction AAAI
+Long Bai, Saiping Guan, Zixuan Li , Jiafeng Guo, Xiaolong Jin, Xueqi Cheng
+Proceedings of the 37th AAAI Conference on Artificial Intelligence [Paper] [Code]
+时态知识图谱的推理研究综述 计算机学报'2023
+沈英汉, 江旭晖, 王元卓, 李紫宣 , 李子健, 谭鹤翔, 沈华伟
+计算机学报'2023
+2022
+大数据分析处理技术与应用前沿 COMMUNICATIONS OF THE CCF，中国计算机学会通讯
+靳小龙, 李紫宣 , 程学旗, 任伟澄
+COMMUNICATIONS OF THE CCF，中国计算机学会通讯
+HiSMatch: Historical Structure Matching based Temporal Knowledge Graph Reasoning EMNLP
+Zixuan Li , Zhongni Hou, Saiping Guan, Xiaolong Jin, Weihua Peng, Long Bai, Yajuan Lyu, Wei Li, Jiafeng Guo, Xueqi Cheng
+EMNLP'2022 Findings [Paper] [Code]
+基于多历史序列联合演化建模的两阶段时序知识图谱推理 JCIP
+李紫宣 , 官赛萍, 靳小龙, 白龙, 郭嘉丰, 程学旗
+中文信息学报'2022 [Paper]
+Complex Evolutional Pattern Learning for Temporal Knowledge Graph Reasoning ACL
+Zixuan Li , Saiping Guan, Xiaolong Jin, Weihua Peng, Yajuan Lyu, Yong Zhu, Long Bai, Wei Li, Jiafeng Guo, Xueqi Cheng
+ACL'2022 [Paper] [Code]
+What is Event Knowledge Graph: A Survey TKDE
+Saiping Guan, Xueqi Cheng, Long Bai, Fujun Zhang, Zixuan Li , Yutao Zeng, Xiaolong Jin, Jiafeng Guo
+TKDE'2022 [Paper]
+2021
+Integrating Deep Event-Level and Script-Level Information for Script Event Prediction EMNLP
+Long Bai, Saiping Guan, Jiafeng Guo, Zixuan Li , Xiaolong Jin, Xueqi Cheng
+EMNLP'2021 [Paper] [Code]
+Temporal Knowledge Graph Reasoning Based on Evolutional Representation Learning SIGIR Paper Digest SIGIR Most Influential Paper
+Zixuan Li , Xiaolong Jin, Wei Li, Saiping Guan, Jiafeng Guo, Huawei Shen, Yuanzhuo Wang, Xueqi Cheng
+SIGIR'2021 [Paper] [Code]
+Search from History and Reason for Future: Two-stage Reasoning on Temporal Knowledge Graphs ACL
+Zixuan Li , Xiaolong Jin, Saiping Guan, Wei Li, Jiafeng Guo, Huawei Shen, Yuanzhuo Wang, Xueqi Cheng
+ACL'2021 [Paper]
+Rule-Aware Reinforcement Learning for Knowledge Graph Reasoning ACL
+Zhongni Hou, Xiaolong Jin, Zixuan Li , Long Bai
+ACL'2021 findings [Paper]
+2019
+Self-learning and embedding based entity alignment KIS
+Saiping Guan, Xiaolong Jin, Yuanzhuo Wang, Yantao Jia, Huawei Shen, Zixuan Li , Xueqi Cheng
+KIS'2019 [Paper]
+2018
+Path reasoning over knowledge graph: A multi-agent and reinforcement learning based method ICDM
+Zixuan Li , Xiaolong Jin, Saiping Guan, Yuanzhuo Wang, Xueqi Cheng
+ICDM Workshop'2018 [Paper] [Code]
+2017
+The Open Knowledge System for TAC KBP 2017 TAC-KBP
+Zixuan Li , Yunqi Qiu, Fan Qiu, Xiaolong Jin, Yuanzhuo Wang, Yantao Jia, Haoran Yan, Kailin Zhao, Jialin Su
+TAC-KBP [Paper]

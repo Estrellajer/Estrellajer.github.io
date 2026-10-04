@@ -1,5 +1,69 @@
 技术文章写作计划
 个人技术文章写作计划
-2023-07-06
 写作计划
 #写作计划
+
+NLP（一百二十二）使用mem0为你的大模型加入记忆层
+本文将会介绍如何使用mem0工具来为你的大模型加入记忆层。
+NLP
+#NLP #mem0
+
+HTTP请求鉴权之JWT
+本文将会简单介绍什么是HTTP请求中的JWT鉴权以及如何在实际项目中使用JWT。
+Python
+#JWT
+
+NLP（一百二十一）用飞书机器人打造你的专属AI新闻推送助手（含代码实战）
+本文将会介绍如何在飞书群中，使用群机器人实现每日AI新闻推送。
+NLP
+#NLP
+
+Redis进阶（二）实现消息队列
+本文将会介绍如何使用Redis中的List和Stream结构来实现消息队列。
+数据库
+#Redis #消息队列
+
+Redis进阶（一）使用Redis实现分布式锁
+本文将会介绍如何使用Redis来实现分布式锁，以及分布式锁的两个应用场景。
+数据库
+#Redis #分布式锁
+
+NLP（一百二十）LiteLLM解析：构建统一大模型接口的利器
+本文介绍了如何使用 LiteLLM 以统一的 OpenAI 风格调用包括 OpenAI、Anthropic 和 Google 在内的多种主流大模型 API，并通过具体代码展示其 Completion 接口、路由机制的使用，以及在 OpenAI Agents 框架中集成任意模型的方式。LiteLLM 大大简化了多模型调用的复杂性，提高了多供应商大模型接入的效率与稳定性。
+NLP
+#LiteLLM
+
+Kafka入门（五）Kafka_4.0零依赖Zookeeper：Docker一键部署+可视化管理+Python实战
+本文将会介绍如何使用Docker来启动最新版Kafka和可视化工具kafka-ui，并使用Python连接Kafka进行基础操作。
+数据库
+#Kafka #Docker
+
+NLP（一百一十九）在Open_WebUI中玩转MCP！从入门到实战全指南
+本文将会介绍如何在Open WebUI中使用MCP.
+NLP
+#Open WebUI #MCP
+
+NLP（一百一十八）SQLite+Agent+Docker：一站式打造智能数据库助手
+本文将会介绍如何使用Docker来启动MCP Server，并结合大模型和Agent实现Sqlite数据库的本地操作。
+NLP
+#MCP #Agent #Docker
+
+技术文章写作计划
+
+NLP（一百二十二）使用mem0为你的大模型加入记忆层
+
+HTTP请求鉴权之JWT
+
+NLP（一百二十一）用飞书机器人打造你的专属AI新闻推送助手（含代码实战）
+
+Redis进阶（二）实现消息队列
+
+Redis进阶（一）使用Redis实现分布式锁
+
+NLP（一百二十）LiteLLM解析：构建统一大模型接口的利器
+
+Kafka入门（五）Kafka_4.0零依赖Zookeeper：Docker一键部署+可视化管理+Python实战
+
+NLP（一百一十九）在Open_WebUI中玩转MCP！从入门到实战全指南
+
+NLP（一百一十八）SQLite+Agent+Docker：一站式打造智能数据库助手

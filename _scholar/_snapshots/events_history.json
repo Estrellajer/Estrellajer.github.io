@@ -1,5 +1,21 @@
 [
   {
+    "scholar": "DaNing Blog",
+    "scholar_url": "https://adaning.github.io/",
+    "affiliation": "东北大学",
+    "areas": [
+      "Diffusion"
+    ],
+    "watch": "blog",
+    "kind": "post",
+    "text": "Multimodal Large Language Model 总结",
+    "link": "https://adaning.github.io/",
+    "date_str": "",
+    "timestamp": 1791110003.480443,
+    "result_type": "changed",
+    "first_seen": "2026-10-04T10:33:23.486126+00:00"
+  },
+  {
     "scholar": "傅宇千",
     "scholar_url": "https://fyqqyf.github.io/",
     "affiliation": "自动化所",
@@ -452,34 +468,6 @@
     "first_seen": "2026-09-23T12:27:56.702284+00:00"
   },
   {
-    "scholar": "朱星宇",
-    "scholar_url": "https://scholar.google.com/citations?hl=zh-CN&user=PpqUnAwAAAAJ&view_op=list_works&sortby=pubdate",
-    "affiliation": "NUS",
-    "areas": [
-      "Vision language model"
-    ],
-    "watch": "publications",
-    "kind": "paper",
-    "text": "Thinking with Images as Continuous Actions: Numerical Visual Chain-of-Thought · NeurIPS 2026 Oral",
-    "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=PpqUnAwAAAAJ&citation_for_view=PpqUnAwAAAAJ:aqlVkmm33-oC",
-    "date_str": "2026-09",
-    "timestamp": 1788220800.0,
-    "result_type": "changed",
-    "first_seen": "2026-10-03T00:05:10.414119+00:00",
-    "sub_items": [
-      {
-        "text": "BiMoGen: Bidirectional Motion-Text Generation via Unified Masked Discrete Diffusion · NeurIPS 2026",
-        "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=PpqUnAwAAAAJ&citation_for_view=PpqUnAwAAAAJ:aqlVkmm33-oC",
-        "kind": "paper"
-      },
-      {
-        "text": "Robustifying Vision-Language Models via Test-Time Prompt Adaptation · ICML 2026",
-        "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=PpqUnAwAAAAJ&citation_for_view=PpqUnAwAAAAJ:aqlVkmm33-oC",
-        "kind": "paper"
-      }
-    ]
-  },
-  {
     "scholar": "庄辉平",
     "scholar_url": "https://zhuanghp.github.io/",
     "affiliation": "华南理工大学",
@@ -562,6 +550,57 @@
     "first_seen": "2026-10-04T08:46:36.704571+00:00"
   },
   {
+    "scholar": "朱星宇",
+    "scholar_url": "https://scholar.google.com/citations?hl=zh-CN&user=PpqUnAwAAAAJ&view_op=list_works&sortby=pubdate",
+    "affiliation": "NUS",
+    "areas": [
+      "Vision language model"
+    ],
+    "watch": "publications",
+    "kind": "paper",
+    "text": "Thinking with Images as Continuous Actions: Numerical Visual Chain-of-Thought · NeurIPS 2026 Oral",
+    "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=PpqUnAwAAAAJ&citation_for_view=PpqUnAwAAAAJ:aqlVkmm33-oC",
+    "date_str": "2026-09",
+    "timestamp": 1788220800.0,
+    "result_type": "changed",
+    "first_seen": "2026-10-03T00:05:10.414119+00:00",
+    "sub_items": [
+      {
+        "text": "BiMoGen: Bidirectional Motion-Text Generation via Unified Masked Discrete Diffusion · NeurIPS 2026",
+        "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=PpqUnAwAAAAJ&citation_for_view=PpqUnAwAAAAJ:aqlVkmm33-oC",
+        "kind": "paper"
+      },
+      {
+        "text": "Robustifying Vision-Language Models via Test-Time Prompt Adaptation · ICML 2026",
+        "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=PpqUnAwAAAAJ&citation_for_view=PpqUnAwAAAAJ:aqlVkmm33-oC",
+        "kind": "paper"
+      }
+    ]
+  },
+  {
+    "scholar": "Yuteng Shen(沉宇腾)",
+    "scholar_url": "https://syt-nju.github.io/writing/",
+    "affiliation": "南京大学",
+    "areas": [
+      "LLM Post-training"
+    ],
+    "watch": "blog",
+    "kind": "post",
+    "text": "Why online RFT falls short of RLVR: negative samples are the key",
+    "link": "https://zhuanlan.zhihu.com/p/1941603697311342965",
+    "date_str": "2026-08-15",
+    "timestamp": 1786752000.0,
+    "result_type": "changed",
+    "first_seen": "2026-08-15T00:00:00+00:00",
+    "sub_items": [
+      {
+        "text": "Reading GSPO: routing replay, sequence-level clipping, and why the objective changes",
+        "link": "https://zhuanlan.zhihu.com/p/1933217003654586554",
+        "kind": "post"
+      }
+    ]
+  },
+  {
     "scholar": "Xiongda Blog",
     "scholar_url": "https://www.xxrbear.cn/",
     "affiliation": "Software",
@@ -588,6 +627,44 @@
     "timestamp": 1785844800.0,
     "result_type": "rss_no_change",
     "first_seen": "2026-10-04T08:50:55.607337+00:00"
+  },
+  {
+    "scholar": "Zixuan Li",
+    "scholar_url": "https://lee-zix.github.io/publications/",
+    "affiliation": "计算所",
+    "areas": [
+      "NLP"
+    ],
+    "watch": "publications",
+    "kind": "paper",
+    "text": "Beyond Dialogue Time: Temporal Semantic Memory for Personalized LLM Agents ACL · Findings of the Association for Computational Linguistics: ACL 2026 [Paper]",
+    "link": "https://lee-zix.github.io/publications/",
+    "date_str": "2026-08",
+    "timestamp": 1785542400.0,
+    "result_type": "unchanged",
+    "first_seen": "2026-10-04T10:33:23.486860+00:00",
+    "sub_items": [
+      {
+        "text": "JudgeAgent: Beyond Static Benchmarks for Knowledge-Driven and Dynamic LLM Evaluation ACL · Findings of the Association for Computational Linguistics: ACL 2026 [Paper] [Code]",
+        "link": "https://lee-zix.github.io/publications/",
+        "kind": "paper"
+      },
+      {
+        "text": "The Innovation 2026 [Paper]",
+        "link": "https://lee-zix.github.io/publications/",
+        "kind": "paper"
+      },
+      {
+        "text": "Proceedings of the ACM Web Conference 2026 [Paper]",
+        "link": "https://lee-zix.github.io/publications/",
+        "kind": "paper"
+      },
+      {
+        "text": "The 49th International ACM SIGIR Conference on Research and Development in Information Retrieval (SIGIR 2026) [Paper]",
+        "link": "https://lee-zix.github.io/publications/",
+        "kind": "paper"
+      }
+    ]
   },
   {
     "scholar": "吴太强",
@@ -737,68 +814,205 @@
     "first_seen": "2026-10-04T08:46:36.704567+00:00"
   },
   {
-    "scholar": "朱星宇",
-    "scholar_url": "https://scholar.google.com/citations?hl=zh-CN&user=PpqUnAwAAAAJ&view_op=list_works&sortby=pubdate",
-    "affiliation": "NUS",
+    "scholar": "唐安可",
+    "scholar_url": "https://tanganke.github.io/publications/",
+    "affiliation": "清华大学",
     "areas": [
-      "Vision language model"
+      "Model Merging"
     ],
     "watch": "publications",
     "kind": "paper",
-    "text": "PEA-DPO: Perception-Enhanced Alignment Direct Preference Optimization for MLLMs Alignment · ACM MM 2026, 2026, 2026",
-    "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=PpqUnAwAAAAJ&sortby=pubdate&citation_for_view=PpqUnAwAAAAJ:qxL8FJ1GzNcC",
+    "text": "In The Fourteenth International Conference on Learning Representations , 2026",
+    "link": "https://tanganke.github.io/publications/",
     "date_str": "2026",
     "timestamp": 1780272000.0,
-    "result_type": "changed",
-    "first_seen": "2026-10-04T09:00:45.345182+00:00"
+    "result_type": "unchanged",
+    "first_seen": "2026-10-04T10:36:13.300300+00:00",
+    "sub_items": [
+      {
+        "text": "@inproceedings { yang2026mergopt , title = {MergOPT: A Merge-Aware Optimizer for Robust Model Merging} , author = {Yang, Enneng and Yang, Q and Wang, P and Tang, Anke and Guo, Guibing and Cao, Xiaochun and Shen, Li} , booktitle = {The Fourteenth International Conference on Learning Representations} , year = {2026} , }",
+        "link": "https://tanganke.github.io/publications/",
+        "kind": "paper"
+      },
+      {
+        "text": "arXiv preprint arXiv:2601.21690 , 2026",
+        "link": "https://tanganke.github.io/publications/",
+        "kind": "paper"
+      },
+      {
+        "text": "@article { li2026understanding , title = {A Unified Generalization Framework for Model Merging: Trade-offs, Non-Linearity, and Scaling Laws} , author = {Li, Qinglun and Tang, Anke and Zhang, Miao and Wang, Mengzhu and Yin, Quanjun and Shen, Li} , journal = {arXiv preprint arXiv:2601.21690} , year = {2026} , }",
+        "link": "https://tanganke.github.io/publications/",
+        "kind": "paper"
+      }
+    ]
   },
   {
-    "scholar": "朱星宇",
-    "scholar_url": "https://scholar.google.com/citations?hl=zh-CN&user=PpqUnAwAAAAJ&view_op=list_works&sortby=pubdate",
-    "affiliation": "NUS",
+    "scholar": "📚 plmblog",
+    "scholar_url": "https://plmsmile.github.io/posts/archive.html",
+    "affiliation": "Alibaba",
     "areas": [
-      "Vision language model"
+      "LLM"
     ],
-    "watch": "publications",
-    "kind": "paper",
-    "text": "LPEdit: Locality-Preserving Knowledge Editing for MultiModal Large Language Models · Proceedings of the ACM Web Conference 2026, 8425-8428, 2026, 2026",
-    "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=PpqUnAwAAAAJ&sortby=pubdate&citation_for_view=PpqUnAwAAAAJ:Zph67rFs4hoC",
+    "watch": "blog",
+    "kind": "post",
+    "text": "PLM's Blog @ 2016 - 2026",
+    "link": "https://plmsmile.github.io/posts/archive.html",
     "date_str": "2026",
     "timestamp": 1780272000.0,
-    "result_type": "changed",
-    "first_seen": "2026-10-04T09:00:45.345186+00:00"
+    "result_type": "unchanged",
+    "first_seen": "2026-10-04T10:33:23.486857+00:00"
   },
   {
-    "scholar": "朱星宇",
-    "scholar_url": "https://scholar.google.com/citations?hl=zh-CN&user=PpqUnAwAAAAJ&view_op=list_works&sortby=pubdate",
-    "affiliation": "NUS",
+    "scholar": "Hao Zhu (堪村无业土博鼠)",
+    "scholar_url": "https://scholar.google.com/citations?hl=en&user=cpee-44AAAAJ&view_op=list_works&sortby=pubdate",
+    "affiliation": "ANU / CSIRO",
     "areas": [
-      "Vision language model"
+      "Continual Learning"
     ],
     "watch": "publications",
     "kind": "paper",
-    "text": "Adapting Point Cloud Analysis via Multimodal Bayesian Distribution Learning · CVPR 2026, 2026, 2026",
-    "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=PpqUnAwAAAAJ&sortby=pubdate&citation_for_view=PpqUnAwAAAAJ:kNdYIx-mwKoC",
+    "text": "When Gradient Boosting Meets Adaption: Exploring Weak Learner Principle for Parameter Efficient Fine-tuning · 32nd SIGKDD Conference on Knowledge Discovery and Data Mining, 2026, 2026, 2026",
+    "link": "https://scholar.google.com/citations?hl=en&user=cpee-44AAAAJ&view_op=list_works&sortby=pubdate",
     "date_str": "2026",
     "timestamp": 1780272000.0,
-    "result_type": "changed",
-    "first_seen": "2026-10-04T09:00:45.345188+00:00"
+    "result_type": "unchanged",
+    "first_seen": "2026-10-04T10:33:23.486861+00:00",
+    "sub_items": [
+      {
+        "text": "FLASH: Fast Generative Retrieval via Autoregressive Semantic Hashing with Provably Distance Bounds · 32nd SIGKDD Conference on Knowledge Discovery and Data Mining, 2026, 2026, 2026",
+        "link": "https://scholar.google.com/citations?hl=en&user=cpee-44AAAAJ&view_op=list_works&sortby=pubdate",
+        "kind": "paper"
+      },
+      {
+        "text": "Federated Domain Generalization for Time-Series Classification via Dynamics-to-Domain Generation · 32nd SIGKDD Conference on Knowledge Discovery and Data Mining, 2026, 2026, 2026",
+        "link": "https://scholar.google.com/citations?hl=en&user=cpee-44AAAAJ&view_op=list_works&sortby=pubdate",
+        "kind": "paper"
+      },
+      {
+        "text": "Machine unlearning via task simplex arithmetic · Advances in Neural Information Processing Systems 38, 166676-166707, 2026, 2026",
+        "link": "https://scholar.google.com/citations?hl=en&user=cpee-44AAAAJ&view_op=list_works&sortby=pubdate",
+        "kind": "paper"
+      },
+      {
+        "text": "CrossSpectra: exploiting cross-layer smoothness for parameter-efficient fine-tuning · Advances in Neural Information Processing Systems 38, 141383-141405, 2026, 2026",
+        "link": "https://scholar.google.com/citations?hl=en&user=cpee-44AAAAJ&view_op=list_works&sortby=pubdate",
+        "kind": "paper"
+      }
+    ]
   },
   {
-    "scholar": "朱星宇",
-    "scholar_url": "https://scholar.google.com/citations?hl=zh-CN&user=PpqUnAwAAAAJ&view_op=list_works&sortby=pubdate",
-    "affiliation": "NUS",
+    "scholar": "Yifei Zhang Homepage",
+    "scholar_url": "https://scholar.google.com/citations?hl=en&user=DmwXESQAAAAJ&view_op=list_works&sortby=pubdate",
+    "affiliation": "港中文",
     "areas": [
-      "Vision language model"
+      "Continual Learning"
     ],
     "watch": "publications",
     "kind": "paper",
-    "text": "Hybrid Granularity Distribution Estimation for Few-Shot Learning: Statistics Transfer From Categories and Instances · IEEE Transactions on Image Processing, 2026, 2026",
-    "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=PpqUnAwAAAAJ&sortby=pubdate&citation_for_view=PpqUnAwAAAAJ:hqOjcs7Dif8C",
+    "text": "Federated Domain Generalization for Time-Series Classification via Dynamics-to-Domain Generation · SIGKDD 2026, 2026, 2026",
+    "link": "https://scholar.google.com/citations?hl=en&user=DmwXESQAAAAJ&view_op=list_works&sortby=pubdate",
     "date_str": "2026",
     "timestamp": 1780272000.0,
-    "result_type": "changed",
-    "first_seen": "2026-10-04T09:00:45.345190+00:00"
+    "result_type": "unchanged",
+    "first_seen": "2026-10-04T10:33:23.486863+00:00",
+    "sub_items": [
+      {
+        "text": "LC-ERD: Mining latent logic for self-evolving reasoning via consistency-regulated reward decomposition · SIGKDD 2026, 2026, 2026",
+        "link": "https://scholar.google.com/citations?hl=en&user=DmwXESQAAAAJ&view_op=list_works&sortby=pubdate",
+        "kind": "paper"
+      },
+      {
+        "text": "FLASH: Fast Generative Retrieval via Autoregressive Semantic Hashing with Provably Distance Bounds · SIGKDD 2026, 2026, 2026",
+        "link": "https://scholar.google.com/citations?hl=en&user=DmwXESQAAAAJ&view_op=list_works&sortby=pubdate",
+        "kind": "paper"
+      },
+      {
+        "text": "When Gradient Boosting Meets Adapter: Exploring Weak Learners for Parameter-Efficient Fine-tuning of LLMs · SIGKDD 2026, 2026, 2026",
+        "link": "https://scholar.google.com/citations?hl=en&user=DmwXESQAAAAJ&view_op=list_works&sortby=pubdate",
+        "kind": "paper"
+      },
+      {
+        "text": "Machine unlearning via task simplex arithmetic · NeurIPS 2026, 2026, 2026",
+        "link": "https://scholar.google.com/citations?hl=en&user=DmwXESQAAAAJ&view_op=list_works&sortby=pubdate",
+        "kind": "paper"
+      }
+    ]
+  },
+  {
+    "scholar": "张天远",
+    "scholar_url": "https://scholar.google.com/citations?hl=en&user=uJocZjkAAAAJ&view_op=list_works&sortby=pubdate",
+    "affiliation": "MIT",
+    "areas": [
+      "3DV"
+    ],
+    "watch": "publications",
+    "kind": "paper",
+    "text": "Aligning visual foundation encoders to tokenizers for diffusion models · International Conference on Learning Representations 2026, 122493-122531, 2026, 2026",
+    "link": "https://scholar.google.com/citations?hl=en&user=uJocZjkAAAAJ&view_op=list_works&sortby=pubdate",
+    "date_str": "2026",
+    "timestamp": 1780272000.0,
+    "result_type": "unchanged",
+    "first_seen": "2026-10-04T10:33:23.486866+00:00",
+    "sub_items": [
+      {
+        "text": "Test-time training done right · International Conference on Learning Representations 2026, 157604-157638, 2026, 2026",
+        "link": "https://scholar.google.com/citations?hl=en&user=uJocZjkAAAAJ&view_op=list_works&sortby=pubdate",
+        "kind": "paper"
+      },
+      {
+        "text": "Zipmap: Linear-time stateful 3d reconstruction via test-time training · Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern …, 2026, 2026",
+        "link": "https://scholar.google.com/citations?hl=en&user=uJocZjkAAAAJ&view_op=list_works&sortby=pubdate",
+        "kind": "paper"
+      },
+      {
+        "text": "Large video planner enables generalizable robot control · arXiv preprint arXiv:2512.15840, 2025, 2025",
+        "link": "https://scholar.google.com/citations?hl=en&user=uJocZjkAAAAJ&view_op=list_works&sortby=pubdate",
+        "kind": "paper"
+      },
+      {
+        "text": "AlignTok: Aligning Visual Foundation Encoders to Tokenizers for Diffusion Models · arXiv preprint arXiv:2509.25162, 2025, 2025",
+        "link": "https://scholar.google.com/citations?hl=en&user=uJocZjkAAAAJ&view_op=list_works&sortby=pubdate",
+        "kind": "paper"
+      }
+    ]
+  },
+  {
+    "scholar": "袁洋",
+    "scholar_url": "https://scholar.google.com/citations?hl=en&user=7o4wtKEAAAAJ&view_op=list_works&sortby=pubdate",
+    "affiliation": "Tsinghua University",
+    "areas": [
+      "范畴论"
+    ],
+    "watch": "publications",
+    "kind": "paper",
+    "text": "Calculus of intelligence: A topos-monadic framework for agentic workflows · iFuture, 2026, 2026",
+    "link": "https://scholar.google.com/citations?hl=en&user=7o4wtKEAAAAJ&view_op=list_works&sortby=pubdate",
+    "date_str": "2026",
+    "timestamp": 1780272000.0,
+    "result_type": "unchanged",
+    "first_seen": "2026-10-04T10:33:23.486867+00:00",
+    "sub_items": [
+      {
+        "text": "Tensor product attention is all you need · Advances in Neural Information Processing Systems 38, 112206-112251, 2026, 2026",
+        "link": "https://scholar.google.com/citations?hl=en&user=7o4wtKEAAAAJ&view_op=list_works&sortby=pubdate",
+        "kind": "paper"
+      },
+      {
+        "text": "Group representational position encoding · International Conference on Learning Representations 2026, 56496-56519, 2026, 2026",
+        "link": "https://scholar.google.com/citations?hl=en&user=7o4wtKEAAAAJ&view_op=list_works&sortby=pubdate",
+        "kind": "paper"
+      },
+      {
+        "text": "On the design of kl-regularized policy gradient algorithms for llm reasoning · International Conference on Learning Representations 2026, 88357-88395, 2026, 2026",
+        "link": "https://scholar.google.com/citations?hl=en&user=7o4wtKEAAAAJ&view_op=list_works&sortby=pubdate",
+        "kind": "paper"
+      },
+      {
+        "text": "Probing the Lack of Stable Internal Beliefs in LLMs · arXiv preprint arXiv:2603.25187, 2026, 2026",
+        "link": "https://scholar.google.com/citations?hl=en&user=7o4wtKEAAAAJ&view_op=list_works&sortby=pubdate",
+        "kind": "paper"
+      }
+    ]
   },
   {
     "scholar": "王子峰",
@@ -1039,22 +1253,6 @@
     "first_seen": "2026-10-04T08:46:36.704556+00:00"
   },
   {
-    "scholar": "Jiangjie Chen Homepage",
-    "scholar_url": "https://jiangjiechen.github.io/",
-    "affiliation": "Seed",
-    "areas": [
-      "LLM"
-    ],
-    "watch": "general",
-    "kind": "paper",
-    "text": "May, 2025 In The Thirty-Ninth Annual Conference on Neural Information Processing Systems ( NeurIPS 2025 ) , Spotlight",
-    "link": "https://jiangjiechen.github.io/",
-    "date_str": "2025-09",
-    "timestamp": 1756684800.0,
-    "result_type": "unchanged",
-    "first_seen": "2026-10-04T08:46:36.704541+00:00"
-  },
-  {
     "scholar": "Yifei Zhang Homepage",
     "scholar_url": "https://yifeiacc.github.io/",
     "affiliation": "港中文",
@@ -1069,6 +1267,22 @@
     "timestamp": 1756684800.0,
     "result_type": "unchanged",
     "first_seen": "2026-10-04T08:46:36.704546+00:00"
+  },
+  {
+    "scholar": "Jiangjie Chen Homepage",
+    "scholar_url": "https://jiangjiechen.github.io/",
+    "affiliation": "Seed",
+    "areas": [
+      "LLM"
+    ],
+    "watch": "general",
+    "kind": "paper",
+    "text": "May, 2025 In The Thirty-Ninth Annual Conference on Neural Information Processing Systems ( NeurIPS 2025 ) , Spotlight",
+    "link": "https://jiangjiechen.github.io/",
+    "date_str": "2025-09",
+    "timestamp": 1756684800.0,
+    "result_type": "unchanged",
+    "first_seen": "2026-10-04T08:46:36.704541+00:00"
   },
   {
     "scholar": "冯钰捷",
@@ -1087,21 +1301,20 @@
     "first_seen": "2025-08-01T00:00:00+00:00"
   },
   {
-    "scholar": "姚顺雨",
-    "scholar_url": "https://ysymyth.github.io/",
+    "scholar": "percent4 Blog",
+    "scholar_url": "https://percent4.github.io/",
     "affiliation": "",
     "areas": [
-      "LLM",
-      "Agent"
+      "NLP"
     ],
-    "watch": "general",
-    "kind": "paper",
-    "text": "τ-bench: A Benchmark for Tool-Agent-User Interaction in Real-World Domains · ICLR 2025",
-    "link": "https://ysymyth.github.io/",
-    "date_str": "2025-05",
-    "timestamp": 1746057600.0,
-    "result_type": "unchanged",
-    "first_seen": "2026-10-04T08:46:36.704539+00:00"
+    "watch": "blog",
+    "kind": "post",
+    "text": "NLP（一百二十二）使用mem0为你的大模型加入记忆层",
+    "link": "https://percent4.github.io/",
+    "date_str": "2025-07-13",
+    "timestamp": 1752364800.0,
+    "result_type": "changed",
+    "first_seen": "2025-07-13T00:00:00+00:00"
   },
   {
     "scholar": "Zixuan Li",
@@ -1118,6 +1331,23 @@
     "timestamp": 1746057600.0,
     "result_type": "unchanged",
     "first_seen": "2026-10-04T08:46:36.704543+00:00"
+  },
+  {
+    "scholar": "姚顺雨",
+    "scholar_url": "https://ysymyth.github.io/",
+    "affiliation": "",
+    "areas": [
+      "LLM",
+      "Agent"
+    ],
+    "watch": "general",
+    "kind": "paper",
+    "text": "τ-bench: A Benchmark for Tool-Agent-User Interaction in Real-World Domains · ICLR 2025",
+    "link": "https://ysymyth.github.io/",
+    "date_str": "2025-05",
+    "timestamp": 1746057600.0,
+    "result_type": "unchanged",
+    "first_seen": "2026-10-04T08:46:36.704539+00:00"
   },
   {
     "scholar": "Tobias Lee Blog",

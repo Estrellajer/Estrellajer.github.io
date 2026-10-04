@@ -1,3 +1,756 @@
-🤖
-主要记录LLM相关笔记
-Agent、Tool-Use、Interaction、LLM、RL等等。
+Skip to content
+Return to top
+文章归档 194 篇
+知识的沉淀 · 成长的足迹
+2026 年
+55 篇
+23
+9月
+Meta 系列
+# 基模 # Pretrain # SFT # RL
+23
+9月
+Mistral 系列
+# 基模 # Pretrain # SFT # RL
+23
+9月
+AllenAI Olmo 系列
+# 基模 # Pretrain # SFT # RL
+23
+9月
+MiroMind 系列
+# 基模 # Pretrain # SFT # RL
+21
+9月
+阶跃星辰系列
+# stepfun
+21
+9月
+iQuest 系列
+# iquest
+21
+9月
+面壁 MiniCPM 系列
+# MiniCPM
+16
+9月
+SWE 自进化
+13
+7月
+AppWorld Skill与经验知识相关
+# ASSAY # SkillX # Skill Library # Experience Knowledge
+13
+7月
+AppWorld 相关论文总结
+# AppWorld # AgentRL # Process-Reward # Skill # Memory # Context-Engineering # Agent-Architecture
+25
+6月
+16-技巧
+23
+6月
+15-多维DP
+10
+6月
+14-动态规划
+8
+6月
+写题常用
+7
+6月
+13-贪心
+7
+6月
+12-堆
+7
+6月
+11-栈
+2
+6月
+10-搜索
+22
+5月
+09-回溯
+19
+5月
+08-图相关
+19
+5月
+相似题目汇总
+6
+5月
+SWE 其他相关工作
+6
+5月
+On Policy Distillation
+6
+5月
+Claw SFT 训练相关
+30
+4月
+SWE 环境相关
+20
+4月
+Claw Bench
+16
+4月
+一些疑难杂症
+# github访问
+3
+4月
+SWE 相关技巧
+2
+4月
+07-二叉树
+2
+4月
+06-链表
+2
+4月
+05-矩阵
+2
+4月
+04-数组
+# 最大子数组和 # 贪心累加 # 前缀和 # DP递推 # 合并区间 # 排序合并 # 轮转数组 # python切片 # 整体翻转再左右翻转 # 除自身以外的数组乘积 # 左右侧乘积前缀 # 缺失的第一个正整数 # Hash位置
+2
+4月
+03-滑动窗口
+2
+4月
+02-双指针
+# 移动0到末尾 # 快慢指针 # 盛最多水的容器 # 左右指针 # 三数之和 # 接雨水
+2
+4月
+01-Hash
+# 两数之和 # 字母异位词 # 最长连续序列 # 补数hash查找法 # 排序遍历 # 起点判断
+1
+4月
+Qwen3.5 RL 环境踩坑
+# pytorch # flash-attention # transformer-engine # megatron-lm # sglang # mbridge # verl # GDN # PackedSequence # CP
+1
+4月
+Agent 安装记录
+# claude # dashscope # tavily # mcp
+31
+3月
+NanoAgent 核心笔记
+# Tools # Memory # Planning # Plan-As-Tool # Rules # Skills # MCP # SubAgent # SubAent-as-Tool # TeamsAgent # 上下文压缩 # 安全权限控制 # Harness # skill_run # 5种SKILL模式 # 纯Prompt注入型 # 脚本执行型 # 库调用型 # 参考文档渐进型 # 编排型
+26
+3月
+SWE 主流开源数据
+# swe
+25
+3月
+常见模型架构参数汇总
+# Qwen3.5 # Qwen3 # DeepSeek # GPT-OSS
+18
+3月
+AppWorld 合成数据相关
+# CoEvolve # CuES # Agent-Data Mutual Evolution
+18
+3月
+SWE-MidTrain 方法
+18
+3月
+AgentRL 目录
+# agentrl
+15
+3月
+AppWorld 上下文相关
+# Metis # PAACE # ACE # Remember Me # Refine Me # ACON
+15
+3月
+AppWorld Agent框架相关
+# HCL-GP # IBM CUGA # Generalized Planning # Hierarchical Planning
+15
+3月
+AppWorld 训练相关
+# SIRI # GVPO # Skill-SD # Skill-Augmented GRPO # AgentEvolver # SALT # ProST # Leave-One-Out PPO
+6
+3月
+MiniSWE-Agent Scaffold
+# miniswe scaffold
+7
+2月
+Openhands Scaffold
+6
+2月
+SWE 任务简介
+# swe-example # problem_statement # test_patch # f2p # p2f # eval_script # mini_swe # scaffold
+31
+1月
+训练观测指标
+27
+1月
+常见命令
+# docker # podman # git # pip # ray # kill # heredoc
+5
+1月
+SWE-数据合成及SFT方法
+# SWE-Lego # Mask错误动作 # SFT课程学习 # BugPilot # FeatAddBug # SWE-Mirror # Issue迁移 # 生成测试用例 # 生成Bug源码，Issue描述生成 # AgentSFT 数据蒸馏 # SWE-Mirror-LM-32B # Skywork-SWE # SWE-rebench # 自动Issue-PR 收集 # SWE-smith # SWE-Agent-LM-32B # Agent安装环境 # 4策略合成Bug # PR Mirror # 执行验证 # 逆向合成Issue # R2E-Gym # Hybrid TTS # 挖掘Commit数据 # SWE-Gym
+5
+1月
+SWE 合成数据 系列
+# SWE-Lego # Mask错误动作 # SFT课程学习 # BugPilot # FeatAddBug # SWE-Mirror # Issue迁移 # 生成测试用例 # 生成Bug源码，Issue描述生成 # AgentSFT 数据蒸馏 # SWE-Mirror-LM-32B # Skywork-SWE # SWE-rebench # 自动Issue-PR 收集 # SWE-smith # SWE-Agent-LM-32B # Agent安装环境 # 4策略合成Bug # PR Mirror # 执行验证 # 逆向合成Issue # R2E-Gym # Hybrid TTS # 挖掘Commit数据 # SWE-Gym
+5
+1月
+SWE 笔记索引
+# Self-play SWE-RL # 写Bug修Bug自我博弈JointRL # SKyRL-Agent # AST工具增强 # 增加环境提示信息 # 留一法估计优势 # InfoCode # 对抗生成代码和测试 # Kimi-Dev # Agentless训练 # SWE-Agent适配 # MidTrain # CodeEditRL # SWE-Swiss # 3任务SFT # 2阶段课程RL # NEBIUS-SWE # Mask错误动作SFT # DeepSWE # GRPO++ # Devstral2 # Devstral # SWE-RL # Patch相似度奖励信号 # SWE-Agent # ACI # Agent-Computer-Interface # SWE-Lego # Mask错误动作 # SFT课程学习 # BugPilot # FeatAddBug # SWE-Mirror # Issue迁移 # 生成测试用例 # 生成Bug源码，Issue描述生成 # AgentSFT 数据蒸馏 # SWE-Mirror-LM-32B # Skywork-SWE # SWE-rebench # 自动Issue-PR 收集 # SWE-smith # SWE-Agent-LM-32B # Agent安装环境 # 4策略合成Bug # PR Mirror # 执行验证 # 逆向合成Issue # R2E-Gym # Hybrid TTS # 挖掘Commit数据 # SWE-Gym # tts # scaffold
+5
+1月
+SWE 总结索引
+# Self-play SWE-RL # 写Bug修Bug自我博弈JointRL # SKyRL-Agent # AST工具增强 # 增加环境提示信息 # 留一法估计优势 # InfoCode # 对抗生成代码和测试 # Kimi-Dev # Agentless训练 # SWE-Agent适配 # MidTrain # CodeEditRL # SWE-Swiss # 3任务SFT # 2阶段课程RL # NEBIUS-SWE # Mask错误动作SFT # DeepSWE # GRPO++ # Devstral2 # Devstral # SWE-RL # Patch相似度奖励信号 # SWE-Agent # ACI # Agent-Computer-Interface # SWE-Lego # Mask错误动作 # SFT课程学习 # BugPilot # FeatAddBug # SWE-Mirror # Issue迁移 # 生成测试用例 # 生成Bug源码，Issue描述生成 # AgentSFT 数据蒸馏 # SWE-Mirror-LM-32B # Skywork-SWE # SWE-rebench # 自动Issue-PR 收集 # SWE-smith # SWE-Agent-LM-32B # Agent安装环境 # 4策略合成Bug # PR Mirror # 执行验证 # 逆向合成Issue # R2E-Gym # Hybrid TTS # 挖掘Commit数据 # SWE-Gym # tts # scaffold
+2025 年
+67 篇
+31
+12月
+快手系列
+31
+12月
+腾讯系列
+28
+12月
+Code 全训练 论文阅读
+# KAT-Dev # Mid-Training # SFT # 轨迹数据合成 # RFT # AgenticRL # 难度和熵感知增强探索 # seed-coder # 预训练数据Pipeline # Github数据处理 # Commit数据处理 # Code-Web数据处理 # CPT-高质数据处理 # CPT-长上下文数据处理 # 预训练策略 # 2阶段后训练 # 指令微调数据构建 # 高质量数据合成 # DPO偏好数据构建 # LongCoT RL
+21
+12月
+Code TaskRL 论文阅读
+# Klear-Reasoner # LongCoT SFT # 精细化RL数据 # GPPO算法 # SkyWork-OR1 # 数学代码数据构建 # 多阶段长度扩展 # 高温采样 # on-policy # AceReason-Nemotron # 分阶段RL # 鲁棒数据构建Pipeline # Code-R1-Interpreter # 数据潜力 # 多阶段课程学习 # DeepCoder-14B-Preview # 迭代扩展长度 # AceCoder # RewardModel # Rule奖励
+17
+12月
+CodeLLM 索引简记
+# code-llm
+17
+12月
+Code 安全相关
+# safety
+17
+12月
+Code RL 任务
+14
+12月
+Code 任务Bench相关
+# metrics # task
+6
+12月
+Code Survey
+# survey
+6
+12月
+Claude 系列
+# claude3 # claude4 # claude 4.5
+6
+12月
+LongCat 系列
+6
+12月
+Gemini 系列
+6
+12月
+Seed 系列
+6
+12月
+OpenAI 系列
+# gpt5 # gpt5-codex # gpt-oss # o1 # o1mini # o3 # o3-mini # GPT4 # ChatGPT # InstructGPT # CodeX
+6
+12月
+Qwen 系列
+1
+12月
+Verl 训练流程源代码阅读
+# main_ppo # RayPPOTrainer.fit # Rollout # Reward 计算 # Old LogProb计算 # Ref LogProb计算 # CriticValues计算 # 优势计算 # create_rl_dataset # _build_messages # _create_dataloader # Validate # generate_sequences # val_reward_fn # process_validation_metrics # compute_advantage # compute_gae_advantage_return # compute_grpo_outcome_advantage # MegatronPPOActor.compute_log_prob # MegatronPPOActor.forward_backward_batch # forward_step # 计算熵 # 计算label logprobs # Policy Loss 计算 # PG Loss计算 # compute_policy_loss_vanilla # agg_loss # token-mean # seq-mean-token-mean # MegatronCriticWorker.update_critic # MegatronPPOCriitc.update_critic、forward_backward_batch、forward_step、loss_func # compute_value_loss # core_alogs.py # value clip # update_actor # update_policy # load_reward_manager # NaiveRewardManager # RayPPOTrainer.init_workers # MegatronActorRolloutRefWorker # MegatronActorRolloutRefWorker.init_model
+26
+11月
+Verl 有趣的功能
+# sandbox
+25
+11月
+Verl AgentLoop Rollout 相关
+# agent-loop # AgentState # AgentData # AgentLoopOutput # InternalAgentLoop # _handle_generating_state # LLM生成 # _handle_processing_tools_state # 环境交互 # 用户交互 # prompt_ids # response_ids # response_mask # reward_score # rollout.prompt_length # rollout.response_length # attention_mask # rm_scores # rollout调用过程 # _get_gen_batch # AgentLoopManager # generate_sequences # AgentLoopWorker # 异步提交多任务 # 数据后处理 # _run_agent_loop # _initialize_llm_servers # _init_agent_loop_workers # SGLangReplica # SGLangHttpServer # RolloutReplica
+24
+11月
+LLM位置编码和长度外推系列
+# Position Embedding # 绝对位置编码 # 可训练式参数 # 三角式 # 递归式 # 绝对位置编码注意力公式 # 传统相对位置编码 # 旋转位置编码 # RoPE # 旋转矩阵 # 弧度 # 二维旋转 # 多维旋转 # 远程衰减性 # 高频分量 # 低频分量 # 周期性 # 旋转速度 # 长度外推 # 线性位置插值 # NTK-Aware 插值 # NTK-by-parts插值 # Dynamic NTK # YaRN # 注意力修正
+17
+11月
+Agent-RL 相关算法
+# agentrl # LOOP
+14
+11月
+LLM 解码相关
+# topk # topp # Temperature # 算术强度 # 预填充 # 解码
+14
+11月
+LLM Attention 系列
+# softmax attention
+7
+11月
+MiniMax 系列
+# MiniMax-Text-01 # MiniMax-VL-01 # MiniMax-M1 # Linear attention # Lightning Attention # Hybrid Attention # 预训练数据 # 数据有效性实验 # 多阶段训练策略 # Reward Model # GenRM # Offline-DPO # Online-GRPO # 安全对齐 # 长上下文 # VL模型 # CiSPO算法 # 可验证数据 # 不可验证数据 # SynLogic合成数据 # GenRM长度偏差问题 # 长思考Scaling
+3
+11月
+熵和RL相关文章
+# entropy
+3
+11月
+GRPO 改进系列
+# GPPO # 悲观更新 # GRPO # DAPO # 熵坍塌 # Clip机制不公平 # 探索 # 奖励噪声 # 训练不稳定 # Clip-Higher # 动态采样 # Token-Level Loss # Overlong 奖励设计 # GSPO # Token-Level 重要性权重 # Seq-Level 重要性权重 # MoE Routing RePlay # CISPO # 重要性权重 Clip # Dr.GRPO
+31
+10月
+Verl 常见参数配置和理解
+# verl # max_new_tokens # rollout.response_length # rollout.prompt_length # rollout.response_length # data.train_batch_size # actor.ppo_mini_batch_size # actor.ppo_micro_batch_size_per_gpu # rollout.log_prob_micro_batch_size_per_gpu # ref.log_prob_micro_batch_size_per_gpu # model_parallel_size # tensor_model_parallel_size # pipeline_model_parallel_size # num_attention_heads # num_layers # max_token_len_per_gpu # sglang # Yarn # rope_scaling # recompute_granularity # recompute_modules # model_merger
+24
+9月
+GLM 系列
+# glm4.5 # moe # pretrain # midtrain # posttrain # agentic sft # reasoning rl # Agentic RL # WebSearcj # SWE RL # GeneralRL # HolisticRL # InstructionFollowing RL # FunctionCall RL # Pathology RL
+22
+9月
+PPO 改进系列
+# ppo # vc-ppo # vapo # 价值偏差 # 长度不一 # 奖励稀疏 # GAE奖励信号衰减 # 价值预训练 # Decoupled-GAE # 长度自适应GAE # Token-level Policy # Clip-Higher # 正样本LM Loss # 分组采样 # RLOO # REINFORCE++
+3
+9月
+Verl 早期概念型学习文章
+# verl # ray # ray actor # ray task # hybrid flow # 控制流 # 计算流 # Single Controller # Multi Controller # 训练引擎 # 推理引擎 # fsdp # 模型放置策略 # 分组放置 # Hybrid Engine # Colocate # Worker # WorkerDict # WorkerGroup # main_ppo.py # ray_trainer.py # core_algos.py # fsdp_workers.py # ActorRolloutRefWorker # update_actor # generate_sequences # compute_log_prob # compute_ref_log_prob # CriticWorker # compute_values # update_critic # RewardModelWorker # compute_rm_score
+1
+9月
+典型策略提升方法：TRPO+PPO+DPO+GRPO
+# 重要性采样 # 重要性采样策略梯度 # KL约束 # 信任区域 # GAE # n步优势估计 # TRPO # PPO # 优势策略梯度 # PPO-Clip # PPO-Penalty # Reward Model # Pairwise loss # KL负奖励 # Critic学习目标 # Critic Loss # TD Error # Critic Value Clip # 踩坑经验 # DPO # 标准RLHF目标 # DPO显示最优解 # DPO Loss # DPO缺点 # GRPO # 相对组优势
+1
+9月
+确定性策略梯度
+# 连续动作 # 确定性策略 # 随机性策略 # DPG # DDPG # TD3 # Actor-Critic # Q_估计 # Q_target # 目标网络 # 经验回放 # OU噪声 # TD3 # 双Q网络 # Actor 延迟更新 # Critic 噪声正则化
+31
+8月
+Actor-Critic 算法
+# Actor # Critic # Q Actor-Critic # A2C # A3C # Advantage # Actor loss # Critic Loss # GAE # λ-return # 单步TD # MC估计
+30
+8月
+策略梯度算法
+# 策略梯度 # 轨迹概率 # 轨迹回报 # 对数微分技巧 # 梯度上升法 # 策略梯度目标函数 # 策略梯度loss # 策略函数设计 # logits_p # 权重 # 基线 # 优势函数 # 降低方差 # 策略梯度分类 # 蒙特卡洛策略梯度 # 时序差分策略梯度 # REINFORCE算法 # REINOFRCE++
+29
+8月
+DQN算法及进阶
+# DQN # Q网络 # 半梯度方法 # 致命三元组 # 目标值 # 预测值 # MSE Loss # 评论员 # 评论员V函数 # 评论员Q函数 # 蒙特卡洛 # 时序差分 # 对比Case # Q函数学习过程 # 经验回放 # Replay Buffer # 目标网络 # Q值过估计 # Double DQN # Dueling DQN # 优势层 # 价值层 # 竞争更新 # 优势约束 # Noisy DQN # 依赖状态的探索 # 优先级经验回放 # SumTree # 样本采样概率 # 重要性采样权重 # MC-TD平衡 # 多步方法 # 分布Q网络 # 彩虹
+27
+8月
+免模型预测和控制
+# 免模型 # 免模型预测 # 免模型控制 # 蒙特卡洛 # 时序差分 # λ-return算法 # 狭义策略迭代 # 广义策略迭代 # 同策略 # 异策略 # Sarsa # Q学习 # 经验平均回报 # 增量均值 # 蒙特卡洛误差 # 动态规划 # 自举 # 采样 # 强化 # 单步时序差分 # n步时序差分，TD Error # e贪心策略 # 行为策略 # 目标策略 # Q函数估计
+27
+8月
+有模型预测和控制
+# 有模型 # 动态规划算法 # 价值迭代 # 策略迭代 # 贝尔曼最优方程 # 最优性原理 # 价值函数 # 最佳价值函数 # 最佳策略函数
+25
+8月
+马尔可夫决策过程
+# 马尔可夫性质 # 马尔可夫过程 # 马尔可夫奖励过程 # 奖励 # 回报 # 价值函数 # 折扣因子 # V函数 # Q函数 # 贝尔曼方程 # 贝尔曼期望方程 # 贝尔曼最优方程 # 动态规划 # 自举 # 预测 # 策略评估 # 控制 # 策略搜索
+18
+8月
+强化学习基本概念
+# 试错学习 # 智能体 # 环境 # 动作空间 # 策略 # 随机性策略 # 确定性策略 # 模型 # 状态转移 # 奖励 # 回报 # 价值 # 序列决策 # 规划 # 学习 # Value-based RL # Policy-based RL # Model-based RL # Model-free RL # 探索 # 利用
+18
+8月
+强化学习基本概念
+# 试错学习 # 智能体 # 环境 # 动作空间 # 策略 # 随机性策略 # 确定性策略 # 模型 # 状态转移 # 奖励 # 回报 # 价值 # 序列决策 # 规划 # 学习 # Value-based RL # Policy-based RL # Model-based RL # Model-free RL # 探索 # 利用
+25
+7月
+推理优化技术
+# prefix caching # kv cache # attention优化 # MLA # flash attention # PagedAttention # Copy-On-Write # 动态批处理
+17
+7月
+分布式训练框架
+# 浮点数 # 有偏指数 # FP32 # FP16 # BF16 # 梯度溢出 # 舍入误差 # 动态损失缩放 # 混合精度优化 # FP32权重备份 # 模型显存分析 # 参数 # 梯度 # 优化器 # 激活值 # DeepSpeed # ZeRO-DP # Zero1 # Zero2 # Zero3 # Zero-Offload
+17
+7月
+分布式并行策略
+# data parrallel # pipeline pararrlel # F-then-B # 1F1B # Gpipe # PipeDream # PipeDream-Flush # Tensor Parrallel # 行并行 # 列并行 # 1D Parralel # 多维并行 # 3D并行 # 序列并行 # 混合并行 # DP+PP+TP # MoE并行
+16
+7月
+DeepSeek 系列
+# DeepSeek R1 # R1-Zero # Native Sparse Attention
+15
+7月
+Kimi 系列
+# Kimi K2 # MLA # MuonClip # QK-Clip # Agent数据合成技术 # Rewards Gym # Self-Critic Rubric Reward # Kimi Researcher # 上下文管理 # 全异步rollouts # Reinforce # 端到端RL学习 # 工具使用数据生成方法 # Kimi1.5 # 上下文扩展 # Partial Rollouts # 改进Policy # Long2short
+9
+7月
+LLM 基础知识
+9
+7月
+LLM 架构相关
+# Decoder-only # Encoder # Dense Model # MoE Model # 工业级大模型标准方案 # 专家 # 门控网络 # Recurrent Model # RWKV # Mamba # DeltaNet # Gated DeltaNet # Diffusion-LLM # DiffSeq # SSD-LM # LLaDA # Gemini Diffusion # Hybrid Architectures # Jamba # Qwen3-Next # DeepSeek
+8
+7月
+Transformer细节
+# transformer
+3
+7月
+语言模型重要组件
+# Attention # Batch Norm # Layer Norm # PreLorm # PostNorm # RMSNorm # QK-Norm # RoPE # GeLU # TopK # TopP # Temperature
+27
+6月
+语言模型定义及信息理论
+# 自回归语言模型 # 扩散语言模型 # 温度参数 # 极大似然估计 # 信息量 # 熵 # 交叉熵 # 困惑度 # N-Gram # 神经语言模型 # 分词算法 # 词向量 # word2vec # BPE # 方差 # 协方差 # 相关系数
+25
+6月
+DeepResearch 评估
+9
+6月
+shell 命令行
+# oh-my-zsh
+4
+6月
+Computer-Agent
+# GUI # CUA
+30
+5月
+Agent-Interaction-RL 笔记
+# StarPo # RAGEN # GiGPO
+30
+5月
+Agent-Search-RL 笔记
+# R1-Searcher # Search-R1 # ReSearch # DeepResearcher # WebSearch
+30
+5月
+Agent-Tool-RL 笔记
+# ToRL # ToolRL # ReTool # OTC-PO # SkyRL-v0 # Nemotron-Tool-N1 # ARTIST # ZeroTIR # Tool-Use # Agent-RL
+21
+5月
+Agent-RL 综述型笔记
+# agent-rl
+15
+5月
+博客搭建的一些坑
+# VitePress博客 # busuanzi # 图片缩放
+14
+5月
+Agent 思考性文章
+14
+5月
+一些流行的Agents
+14
+5月
+Agent 评估 Benchmarks
+# agent evalution
+13
+5月
+Agent基础概念 (李宏毅笔记)
+# agent # function call # tool use # memory # planning # reasonning
+2
+1月
+SkyWork 系列
+# SkyRL-Agent # Skywork-SWE # SWE任务收集 # 执行测试
+2
+1月
+小米系列
+# MiMo-V2.6 # MiMo-V2-Flash # RL # MOPD2
+2
+1月
+Nvidia 系列
+# nvidia
+2
+1月
+SWE-Agent-RL训练方法
+# Self-play SWE-RL # 写Bug修Bug自我博弈JointRL # SKyRL-Agent # AST工具增强 # 增加环境提示信息 # 留一法估计优势 # InfoCode # 对抗生成代码和测试 # Kimi-Dev # Agentless训练 # SWE-Agent适配 # MidTrain # CodeEditRL # SWE-Swiss # 3任务SFT # 2阶段课程RL # NEBIUS-SWE # Mask错误动作SFT # DeepSWE # GRPO++ # Devstral2 # Devstral # SWE-RL # Patch相似度奖励信号 # SWE-Agent # ACI # Agent-Computer-Interface
+2
+1月
+SWE 训练方法 系列
+# Self-play SWE-RL # 写Bug修Bug自我博弈JointRL # SKyRL-Agent # AST工具增强 # 增加环境提示信息 # 留一法估计优势 # InfoCode # 对抗生成代码和测试 # Kimi-Dev # Agentless训练 # SWE-Agent适配 # MidTrain # CodeEditRL # SWE-Swiss # 3任务SFT # 2阶段课程RL # NEBIUS-SWE # Mask错误动作SFT # DeepSWE # GRPO++ # Devstral2 # Devstral # SWE-RL # Patch相似度奖励信号 # SWE-Agent # ACI # Agent-Computer-Interface
+1
+1月
+Code 预训练相关
+# KAT-Dev # Seed-Coder
+2019 年
+2 篇
+30
+3月
+机器阅读(二)--模型(未完成)
+# 机器阅读
+7
+3月
+机器阅读(一)--整体概述
+# 机器阅读 # MRC发展历史 # MRC任务形式 # MRC数据集 # SQuAD # RACE # TriviaQA # NarrativeQA # HotpotQA
+2018 年
+32 篇
+15
+12月
+BERT 详解
+# Transformer # 语言模型 # 迁移学习 # MLM # NSP # BERT # ELMo # GPT
+13
+12月
+OpenAI GPT：Improving Language Understanding by Generative Pre-Training
+# transformer # 语言模型 # 迁移学习
+11
+12月
+ELMo：Deep Contextualized Word Representations
+# ELMo # 词向量 # 迁移学习 # 语言模型 # LSTM
+30
+8月
+QANet
+# Self-Attention # 可分离卷积
+29
+8月
+Transformer
+# Transformer # Self-Attention # 多头注意力 # 残差连接 # 层归一化 # 位置编码 # 机器翻译 # 论文笔记
+22
+5月
+Bidirectional Attention Flow
+# 机器阅读理解 # BiDAF
+15
+5月
+R-Net (Gated Self-Matching Networks)
+# 机器阅读 # 论文笔记 # Gated Attention RNN # Self-Matching # RNet # Pointer Network
+9
+5月
+Match-LSTM and Answer Pointer
+# 机器阅读 # 论文笔记 # Match-LSTM # Pointer Net
+3
+5月
+强化学习在NLP中的应用
+# 强化学习 # TaskBot
+2
+5月
+意图识别和槽填充
+# 论文笔记 # 意图检测 # 槽填充 # RNN # 注意力 # 对齐
+24
+4月
+(18年笔记)强化学习算法小结
+# 策略迭代 # 值迭代 # 蒙特卡罗 # 时序差分 # SARSA # Q学习 # Q网络 # DQN # 策略梯度
+24
+4月
+强化学习算法小结
+# 策略迭代 # 值迭代 # 蒙特卡罗 # 时序差分 # SARSA # Q学习 # Q网络 # DQN # 策略梯度
+22
+4月
+(18年笔记)基于策略函数的学习方法
+# 策略函数 # 策略梯度 # REINFORCE # 基准函数 # Actot-Critic # 强化学习算法总结
+22
+4月
+基于策略函数的学习方法
+# 策略函数 # 策略梯度 # REINFORCE # 基准函数 # Actot-Critic # 强化学习算法总结
+21
+4月
+(18年笔记)基于值函数的学习
+# 值函数 # 时序差分 # SARSA # Q学习 # Q网络 # DQN # 蒙特卡罗 # 动态规划 # 策略迭代 # 值迭代
+21
+4月
+基于值函数的学习
+# 值函数 # 时序差分 # SARSA # Q学习 # Q网络 # DQN # 蒙特卡罗 # 动态规划 # 策略迭代 # 值迭代
+12
+4月
+阅读理解模型总结
+# QANet # 机器阅读理解
+11
+4月
+卷积神经网络总结
+# 卷积 # 1*1卷积 # 分组卷积 # 可分离卷积 # LeNet # AlexNet # InceptionNet # ResNet # XceptionNet # ShuffleNet
+1
+4月
+强化学习
+# 智能体 # 环境 # 值函数 # 贝尔曼方程 # V函数 # Q函数
+31
+3月
+阿里小蜜论文
+# chatbot # qa # IR # BM25 # seq2seq # CNN
+30
+3月
+网络优化
+# 神经网络 # 数据预处理 # 归一化 # 优化方法 # Adam # 动量法 # 学习率
+25
+3月
+各种注意力总结
+# Attention # 论文笔记
+15
+3月
+Dynamic Coattention Network (Plus)
+# DCN # coattention # QA
+14
+3月
+协同注意力简介
+# 论文笔记 # 注意力 # VQA
+13
+3月
+使用Dynamic Memory Network实现一个简单QA
+# DMN # QA
+5
+3月
+决策树笔记
+# 决策树 # ID3 # C4.5 # CART # 熵 # 信息增益 # 基尼指数
+3
+3月
+机器学习知识点汇总整理
+# 机器学习
+2
+3月
+剑指offer4(51-64)
+# leetcode
+1
+3月
+SVM笔记
+# SVM # 机器学习 # 拉格朗日对偶性 # 对偶问题 # 支持向量 # 核函数 # 感知机 # 损失函数
+10
+2月
+IDE配置
+# vscode
+25
+1月
+Linux使用笔记
+# linux # tmux
+7
+1月
+剑指offer3(21-40)
+# leetcode
+2017 年
+38 篇
+31
+12月
+数据结构之搜索算法
+# 搜索
+29
+12月
+树的总结
+# leetcode # 数据结构 # 树
+29
+12月
+leetcode-01
+# leetcode # 树
+29
+12月
+剑指offer(11-20)
+# leetcode
+26
+12月
+排序算法总结
+# 排序 # 插入 # 快排，快速排序 # 堆排序 # 归并排序 # 基数排序 # 冒泡排序
+25
+12月
+C++类对象和指针的区别
+# cpp # 指针，对象，引用
+17
+12月
+cs224n作业一
+# cs224n # assignment # word2vec # cbow # skip-gram
+3
+12月
+词性标注和句法依存的表示符号
+# 自然语言处理 # 词性标注 # 句法依存
+27
+11月
+cs231n线性分类器和损失函数
+# cs231n # 线性分类 # svm
+26
+11月
+神经网络-过拟合-预处理-BN
+# 正则化 # 范数 # Dropout # 数据预处理 # PCA # 白化 # BN
+23
+11月
+神经网络基础-反向传播-激活函数
+# 神经网络 # 反向传播 # 激活函数
+12
+11月
+Word2vec之总体介绍
+# word2vec # cbow # skip-gram # 负采样
+2
+11月
+Word2vec之数学模型
+# word2vec # 自然语言处理
+2
+11月
+Word2vec之公式推导笔记
+# word2vec # 深度学习
+19
+10月
+subword-units
+# NMT # subword
+19
+10月
+Wordpiece模型
+# WordPiece # 语音搜索 # 语音识别
+18
+10月
+循环神经网络
+# RNN # LSTM # GRU
+17
+10月
+谷歌RNN翻译模型
+# 论文笔记 # 神经机器翻译 # RNN
+16
+10月
+博客搭建及相关问题
+# 心得 # hexo # pandoc # 数学公式 # indigo # 中文 # pyplot
+12
+10月
+机器翻译注意力机制及其PyTorch实现
+# Attention # 自然语言处理 # 深度学习 # 论文笔记 # 注意力 # 机器翻译
+10
+10月
+图文介绍RNN注意力机制
+# 自然语言处理 # Attention Model # Encoder-Decoder # 注意力 # 机器翻译
+5
+10月
+PyTorch快速上手
+# PyTorch # 神经网络 # 深度学习
+2
+10月
+最初RNN神经翻译简略笔记
+# 机器翻译 # 自然语言处理 # 深度学习
+28
+9月
+条件随机场
+# 条件随机场 # 概率无向图 # 概率计算问题 # 学习算法 # 预测问题 # 维特比 # 前向后向 # 迭代尺度法
+20
+9月
+最大熵模型
+# 各种熵 # 自然语言处理 # 最大熵模型 # IIS # 机器学习 # 期望
+20
+8月
+线性回归和逻辑回归
+# 机器学习 # 线性回归 # 逻辑回归 # 梯度下降
+13
+8月
+最大期望算法
+# 机器学习 # 最大期望算法 # Jensen不等式
+4
+8月
+马尔可夫模型
+# 概率图模型 # 自然语言处理 # 马尔可夫链 # 隐马尔科夫模型 # 维特比算法 # 前向算法 # 后向算法，BW算法
+31
+7月
+语言模型和平滑方法
+# 语言模型 # 自然语言处理 # 各种熵 # 数据平滑
+29
+7月
+剑指Offer(1-10)
+# leetcode # 排序
+14
+7月
+利用tensorflow实现简版word2vec
+# 深度学习 # word2vec # 自然语言处理
+6
+5月
+朴素贝叶斯算法及其代码实现
+# 机器学习 # 朴素贝叶斯
+15
+4月
+NumPy
+# Python # NumPy
+25
+3月
+Spark基础编程核心思想介绍
+# Spark # RDD
+19
+3月
+Spark-SQL的简略笔记
+# Spark # Spark SQL
+13
+3月
+旧版博客搭建过程及其问题
+# hexo搭建 # 配置Git
+13
+3月
+Spark键值对RDD的常用API
+# Spark # PairRDD
+13
+3月
+Spark基础RDD的常用API
+# Spark # RDD
+总访客数：— · 总访问量：—
+PLM's Blog @ 2016 - 2026
