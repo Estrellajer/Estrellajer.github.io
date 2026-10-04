@@ -1,24 +1,60 @@
 Federated Domain Generalization for Time-Series Classification via Dynamics-to-Domain Generation
-Yifei Zhang, et al.
-SIGKDD 2026, 2026 2026
+H Shi, J Zhang, X Tang, Y Zhang, H Zhu, Y Dong, L Cui, H Yu
+Proceedings of the 32nd ACM SIGKDD Conference on Knowledge Discovery and …, 2026 2026
 LC-ERD: Mining latent logic for self-evolving reasoning via consistency-regulated reward decomposition
-Yifei Zhang, et al.
-SIGKDD 2026, 2026 2026
+Y Chen, J Jiang, D Yu, Z Wu, J Liu, J Han, X Guo, J Qi, Y Li, Y Zhang, ...
+Proceedings of the 32nd ACM SIGKDD Conference on Knowledge Discovery and …, 2026 2026
 FLASH: Fast Generative Retrieval via Autoregressive Semantic Hashing with Provably Distance Bounds
-Yifei Zhang, et al.
-SIGKDD 2026, 2026 2026
+Y Zhang, H Zhu, H Shi, Y Chen, X Han, Y Zhang, L Song, W Wang, ...
+Proceedings of the 32nd ACM SIGKDD Conference on Knowledge Discovery and …, 2026 2026
 When Gradient Boosting Meets Adapter: Exploring Weak Learners for Parameter-Efficient Fine-tuning of LLMs
-Yifei Zhang, et al.
-SIGKDD 2026, 2026 2026
+Y Zhang, H Zhu, H Shi, J Dong, L Song, X Han, Y Chen, W Wang, H Yu, ...
+Proceedings of the 32nd ACM SIGKDD Conference on Knowledge Discovery and …, 2026 2026
+Geometric Collapse: When Vision Models Fail to Verify Physical Causality
+W Zhang, J Qi, W Jin, Y Zhang, CT Lam, I King
+arXiv preprint arXiv:2607.06871, 2026 2026
 Machine unlearning via task simplex arithmetic
-Yifei Zhang, et al.
-NeurIPS 2026, 2026 2026
+J Dong, H Zhu, Y Zhang, X Qu, YS Ong, P Koniusz
+Advances in Neural Information Processing Systems 38, 166676-166707, 2026 2026
 CrossSpectra: exploiting cross-layer smoothness for parameter-efficient fine-tuning
-Yifei Zhang, et al.
-NeurIPS 2026, 2026 2026
+Y Zhang, H Zhu, J Dong, H Shi, Z Meng, P Koniusz, H Yu
+Advances in Neural Information Processing Systems 38, 141383-141405, 2026 2026
+Hierarchically Robust Zero-shot Vision-language Models
+J Dong, Y Zhang, H Zhu, YS Ong, P Koniusz
+arXiv preprint arXiv:2604.18867, 2026 2026
 Trace: Trajectory-aware comprehensive evaluation for deep research agents
-Yifei Zhang, et al.
-WWW 2026, 2026 2026
+Y Chen, J Jiang, J Liu, Y Zhang, X Guo, I King
+Proceedings of the ACM Web Conference 2026, 2524-2534, 2026 2026
 Recent advances of multimodal continual learning: A comprehensive survey
-Yifei Zhang, et al.
-IEEE Transactions on Neural Networks and Learning Systems 2026
+D Yu, X Zhang, Y Chen, A Liu, Y Zhang, PS Yu, I King
+IEEE Transactions on Neural Networks and Learning Systems, 2026 2026
+Exploiting Low-Dimensional Manifold of Features for Few-Shot Whole Slide Image Classification
+C Xiong, Z Guo, Z Xu, Y Zhang, RK Tong, SY Yeo, H Chen, JJY Sung, ...
+The Fourteenth International Conference on Learning Representations, 2026 2026
+ConSurv: Multimodal Continual Learning for Survival Analysis
+D Yu, C Xiong, Y Chen, W Cui, X Zhang, Y Zhang, H Chen, JJY Sung, ...
+The 40th Annual AAAI Conference on Artificial Intelligence (AAAI'26), 2025 2025
+Embracing Trustworthy Brain-Agent Collaboration as Paradigm Extension for Intelligent Assistive Technologies
+Y Chen, X Zhang, Y Zhang, Y Li, HP Zou, C Miao, W Zhang, X Liu, PS Yu
+Neural Information Processing Systems (NeurIPS'25), 2025 2025
+Robustifying zero-shot vision language models by subspaces alignment
+J Dong, P Koniusz, L Feng, Y Zhang, H Zhu, W Liu, X Qu, YS Ong
+2025 IEEE/CVF International Conference on Computer Vision (ICCV), 21037-21047, 2025 2025
+Soft Separation and Distillation: Toward Global Uniformity in Federated Unsupervised Learning
+HC Fang, HT Lin, I King, Y Zhang
+2025 IEEE/CVF International Conference on Computer Vision (ICCV), 2971-2980, 2025 2025
+Track and Tweak: Monitoring and Improving Group Fairness for Temporal Graph Neural Networks in Real Time
+Z Song, M Li, Y Zhang, I King, JM Hernández-Lobato
+Proceedings of the 31st ACM SIGKDD Conference on Knowledge Discovery and …, 2025 2025
+pfedmxf: Personalized federated class-incremental learning with mixture of frequency aggregation
+Y Zhang, H Zhu, AZ Tan, D Yu, L Huang, H Yu
+2025 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR …, 2025 2025
+Bilora: Almost-orthogonal parameter spaces for continual learning
+H Zhu, Y Zhang, J Dong, P Koniusz
+2025 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR …, 2025 2025
+Ntpp: Generative speech language modeling for dual-channel spoken dialogue via next-token-pair prediction
+Q Wang, Z Meng, W Cui, Y Zhang, P Wu, B Wu, I King, L Chen, P Zhao
+arXiv preprint arXiv:2506.00975, 2025 2025
+Towards non-euclidean foundation models: advancing AI beyond euclidean frameworks
+M Yang, Y Zhang, J Chen, M Weber, R Ying
+Companion Proceedings of the ACM on Web Conference 2025, 1811-1814, 2025 2025

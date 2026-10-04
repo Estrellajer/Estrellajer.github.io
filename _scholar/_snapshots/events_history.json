@@ -827,7 +827,7 @@
     "date_str": "2026",
     "timestamp": 1780272000.0,
     "result_type": "unchanged",
-    "first_seen": "2026-10-04T10:36:13.300300+00:00",
+    "first_seen": "2026-10-04T10:38:56.348595+00:00",
     "sub_items": [
       {
         "text": "@inproceedings { yang2026mergopt , title = {MergOPT: A Merge-Aware Optimizer for Robust Model Merging} , author = {Yang, Enneng and Yang, Q and Wang, P and Tang, Anke and Guo, Guibing and Cao, Xiaochun and Shen, Li} , booktitle = {The Fourteenth International Conference on Learning Representations} , year = {2026} , }",
@@ -842,6 +842,130 @@
       {
         "text": "@article { li2026understanding , title = {A Unified Generalization Framework for Model Merging: Trade-offs, Non-Linearity, and Scaling Laws} , author = {Li, Qinglun and Tang, Anke and Zhang, Miao and Wang, Mengzhu and Yin, Quanjun and Shen, Li} , journal = {arXiv preprint arXiv:2601.21690} , year = {2026} , }",
         "link": "https://tanganke.github.io/publications/",
+        "kind": "paper"
+      }
+    ]
+  },
+  {
+    "scholar": "Yifei Zhang Homepage",
+    "scholar_url": "https://scholar.google.com/citations?hl=en&user=DmwXESQAAAAJ&view_op=list_works&sortby=pubdate",
+    "affiliation": "港中文",
+    "areas": [
+      "Continual Learning"
+    ],
+    "watch": "publications",
+    "kind": "paper",
+    "text": "Geometric Collapse: When Vision Models Fail to Verify Physical Causality · arXiv preprint arXiv:2607.06871, 2026, 2026",
+    "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=DmwXESQAAAAJ&sortby=pubdate&citation_for_view=DmwXESQAAAAJ:_xSYboBqXhAC",
+    "date_str": "2026",
+    "timestamp": 1780272000.0,
+    "result_type": "changed",
+    "first_seen": "2026-10-04T10:38:56.347907+00:00"
+  },
+  {
+    "scholar": "Yifei Zhang Homepage",
+    "scholar_url": "https://scholar.google.com/citations?hl=en&user=DmwXESQAAAAJ&view_op=list_works&sortby=pubdate",
+    "affiliation": "港中文",
+    "areas": [
+      "Continual Learning"
+    ],
+    "watch": "publications",
+    "kind": "paper",
+    "text": "Hierarchically Robust Zero-shot Vision-language Models · arXiv preprint arXiv:2604.18867, 2026, 2026",
+    "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=DmwXESQAAAAJ&sortby=pubdate&citation_for_view=DmwXESQAAAAJ:bFI3QPDXJZMC",
+    "date_str": "2026",
+    "timestamp": 1780272000.0,
+    "result_type": "changed",
+    "first_seen": "2026-10-04T10:38:56.347916+00:00"
+  },
+  {
+    "scholar": "Yifei Zhang Homepage",
+    "scholar_url": "https://scholar.google.com/citations?hl=en&user=DmwXESQAAAAJ&view_op=list_works&sortby=pubdate",
+    "affiliation": "港中文",
+    "areas": [
+      "Continual Learning"
+    ],
+    "watch": "publications",
+    "kind": "paper",
+    "text": "Exploiting Low-Dimensional Manifold of Features for Few-Shot Whole Slide Image Classification · The Fourteenth International Conference on Learning Representations, 2026, 2026",
+    "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=DmwXESQAAAAJ&sortby=pubdate&citation_for_view=DmwXESQAAAAJ:pyW8ca7W8N0C",
+    "date_str": "2026",
+    "timestamp": 1780272000.0,
+    "result_type": "changed",
+    "first_seen": "2026-10-04T10:38:56.347920+00:00"
+  },
+  {
+    "scholar": "Yifei Zhang Homepage",
+    "scholar_url": "https://scholar.google.com/citations?hl=en&user=DmwXESQAAAAJ&view_op=list_works&sortby=pubdate",
+    "affiliation": "港中文",
+    "areas": [
+      "Continual Learning"
+    ],
+    "watch": "publications",
+    "kind": "paper",
+    "text": "Federated Domain Generalization for Time-Series Classification via Dynamics-to-Domain Generation · SIGKDD 2026, 2026, 2026",
+    "link": "https://scholar.google.com/citations?hl=en&user=DmwXESQAAAAJ&view_op=list_works&sortby=pubdate",
+    "date_str": "2026",
+    "timestamp": 1780272000.0,
+    "result_type": "unchanged",
+    "first_seen": "2026-10-04T10:33:23.486863+00:00",
+    "sub_items": [
+      {
+        "text": "LC-ERD: Mining latent logic for self-evolving reasoning via consistency-regulated reward decomposition · SIGKDD 2026, 2026, 2026",
+        "link": "https://scholar.google.com/citations?hl=en&user=DmwXESQAAAAJ&view_op=list_works&sortby=pubdate",
+        "kind": "paper"
+      },
+      {
+        "text": "FLASH: Fast Generative Retrieval via Autoregressive Semantic Hashing with Provably Distance Bounds · SIGKDD 2026, 2026, 2026",
+        "link": "https://scholar.google.com/citations?hl=en&user=DmwXESQAAAAJ&view_op=list_works&sortby=pubdate",
+        "kind": "paper"
+      },
+      {
+        "text": "When Gradient Boosting Meets Adapter: Exploring Weak Learners for Parameter-Efficient Fine-tuning of LLMs · SIGKDD 2026, 2026, 2026",
+        "link": "https://scholar.google.com/citations?hl=en&user=DmwXESQAAAAJ&view_op=list_works&sortby=pubdate",
+        "kind": "paper"
+      },
+      {
+        "text": "Machine unlearning via task simplex arithmetic · NeurIPS 2026, 2026, 2026",
+        "link": "https://scholar.google.com/citations?hl=en&user=DmwXESQAAAAJ&view_op=list_works&sortby=pubdate",
+        "kind": "paper"
+      }
+    ]
+  },
+  {
+    "scholar": "袁洋",
+    "scholar_url": "https://scholar.google.com/citations?hl=en&user=7o4wtKEAAAAJ&view_op=list_works&sortby=pubdate",
+    "affiliation": "Tsinghua University",
+    "areas": [
+      "范畴论"
+    ],
+    "watch": "publications",
+    "kind": "paper",
+    "text": "Calculus of intelligence: A topos-monadic framework for agentic workflows · iFuture, 2026, 2026",
+    "link": "https://scholar.google.com/citations?hl=en&user=7o4wtKEAAAAJ&view_op=list_works&sortby=pubdate",
+    "date_str": "2026",
+    "timestamp": 1780272000.0,
+    "result_type": "unchanged",
+    "first_seen": "2026-10-04T10:33:23.486867+00:00",
+    "sub_items": [
+      {
+        "text": "Tensor product attention is all you need · Advances in Neural Information Processing Systems 38, 112206-112251, 2026, 2026",
+        "link": "https://scholar.google.com/citations?hl=en&user=7o4wtKEAAAAJ&view_op=list_works&sortby=pubdate",
+        "kind": "paper"
+      },
+      {
+        "text": "Group representational position encoding · International Conference on Learning Representations 2026, 56496-56519, 2026, 2026",
+        "link": "https://scholar.google.com/citations?hl=en&user=7o4wtKEAAAAJ&view_op=list_works&sortby=pubdate",
+        "kind": "paper"
+      },
+      {
+        "text": "On the design of kl-regularized policy gradient algorithms for llm reasoning · International Conference on Learning Representations 2026, 88357-88395, 2026, 2026",
+        "link": "https://scholar.google.com/citations?hl=en&user=7o4wtKEAAAAJ&view_op=list_works&sortby=pubdate",
+        "kind": "paper"
+      },
+      {
+        "text": "Probing the Lack of Stable Internal Beliefs in LLMs · arXiv preprint arXiv:2603.25187, 2026, 2026",
+        "link": "https://scholar.google.com/citations?hl=en&user=7o4wtKEAAAAJ&view_op=list_works&sortby=pubdate",
         "kind": "paper"
       }
     ]
@@ -901,44 +1025,6 @@
     ]
   },
   {
-    "scholar": "Yifei Zhang Homepage",
-    "scholar_url": "https://scholar.google.com/citations?hl=en&user=DmwXESQAAAAJ&view_op=list_works&sortby=pubdate",
-    "affiliation": "港中文",
-    "areas": [
-      "Continual Learning"
-    ],
-    "watch": "publications",
-    "kind": "paper",
-    "text": "Federated Domain Generalization for Time-Series Classification via Dynamics-to-Domain Generation · SIGKDD 2026, 2026, 2026",
-    "link": "https://scholar.google.com/citations?hl=en&user=DmwXESQAAAAJ&view_op=list_works&sortby=pubdate",
-    "date_str": "2026",
-    "timestamp": 1780272000.0,
-    "result_type": "unchanged",
-    "first_seen": "2026-10-04T10:33:23.486863+00:00",
-    "sub_items": [
-      {
-        "text": "LC-ERD: Mining latent logic for self-evolving reasoning via consistency-regulated reward decomposition · SIGKDD 2026, 2026, 2026",
-        "link": "https://scholar.google.com/citations?hl=en&user=DmwXESQAAAAJ&view_op=list_works&sortby=pubdate",
-        "kind": "paper"
-      },
-      {
-        "text": "FLASH: Fast Generative Retrieval via Autoregressive Semantic Hashing with Provably Distance Bounds · SIGKDD 2026, 2026, 2026",
-        "link": "https://scholar.google.com/citations?hl=en&user=DmwXESQAAAAJ&view_op=list_works&sortby=pubdate",
-        "kind": "paper"
-      },
-      {
-        "text": "When Gradient Boosting Meets Adapter: Exploring Weak Learners for Parameter-Efficient Fine-tuning of LLMs · SIGKDD 2026, 2026, 2026",
-        "link": "https://scholar.google.com/citations?hl=en&user=DmwXESQAAAAJ&view_op=list_works&sortby=pubdate",
-        "kind": "paper"
-      },
-      {
-        "text": "Machine unlearning via task simplex arithmetic · NeurIPS 2026, 2026, 2026",
-        "link": "https://scholar.google.com/citations?hl=en&user=DmwXESQAAAAJ&view_op=list_works&sortby=pubdate",
-        "kind": "paper"
-      }
-    ]
-  },
-  {
     "scholar": "张天远",
     "scholar_url": "https://scholar.google.com/citations?hl=en&user=uJocZjkAAAAJ&view_op=list_works&sortby=pubdate",
     "affiliation": "MIT",
@@ -972,44 +1058,6 @@
       {
         "text": "AlignTok: Aligning Visual Foundation Encoders to Tokenizers for Diffusion Models · arXiv preprint arXiv:2509.25162, 2025, 2025",
         "link": "https://scholar.google.com/citations?hl=en&user=uJocZjkAAAAJ&view_op=list_works&sortby=pubdate",
-        "kind": "paper"
-      }
-    ]
-  },
-  {
-    "scholar": "袁洋",
-    "scholar_url": "https://scholar.google.com/citations?hl=en&user=7o4wtKEAAAAJ&view_op=list_works&sortby=pubdate",
-    "affiliation": "Tsinghua University",
-    "areas": [
-      "范畴论"
-    ],
-    "watch": "publications",
-    "kind": "paper",
-    "text": "Calculus of intelligence: A topos-monadic framework for agentic workflows · iFuture, 2026, 2026",
-    "link": "https://scholar.google.com/citations?hl=en&user=7o4wtKEAAAAJ&view_op=list_works&sortby=pubdate",
-    "date_str": "2026",
-    "timestamp": 1780272000.0,
-    "result_type": "unchanged",
-    "first_seen": "2026-10-04T10:33:23.486867+00:00",
-    "sub_items": [
-      {
-        "text": "Tensor product attention is all you need · Advances in Neural Information Processing Systems 38, 112206-112251, 2026, 2026",
-        "link": "https://scholar.google.com/citations?hl=en&user=7o4wtKEAAAAJ&view_op=list_works&sortby=pubdate",
-        "kind": "paper"
-      },
-      {
-        "text": "Group representational position encoding · International Conference on Learning Representations 2026, 56496-56519, 2026, 2026",
-        "link": "https://scholar.google.com/citations?hl=en&user=7o4wtKEAAAAJ&view_op=list_works&sortby=pubdate",
-        "kind": "paper"
-      },
-      {
-        "text": "On the design of kl-regularized policy gradient algorithms for llm reasoning · International Conference on Learning Representations 2026, 88357-88395, 2026, 2026",
-        "link": "https://scholar.google.com/citations?hl=en&user=7o4wtKEAAAAJ&view_op=list_works&sortby=pubdate",
-        "kind": "paper"
-      },
-      {
-        "text": "Probing the Lack of Stable Internal Beliefs in LLMs · arXiv preprint arXiv:2603.25187, 2026, 2026",
-        "link": "https://scholar.google.com/citations?hl=en&user=7o4wtKEAAAAJ&view_op=list_works&sortby=pubdate",
         "kind": "paper"
       }
     ]
@@ -1266,7 +1314,14 @@
     "date_str": "2025-09",
     "timestamp": 1756684800.0,
     "result_type": "unchanged",
-    "first_seen": "2026-10-04T08:46:36.704546+00:00"
+    "first_seen": "2026-10-04T08:46:36.704546+00:00",
+    "sub_items": [
+      {
+        "text": "Embracing Trustworthy Brain-Agent Collaboration as Paradigm Extension for Intelligent Assistive Technologies · Neural Information Processing Systems (NeurIPS'25), 2025, 2025",
+        "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=DmwXESQAAAAJ&sortby=pubdate&citation_for_view=DmwXESQAAAAJ:cFHS6HbyZ2cC",
+        "kind": "paper"
+      }
+    ]
   },
   {
     "scholar": "Jiangjie Chen Homepage",
@@ -1315,6 +1370,150 @@
     "timestamp": 1752364800.0,
     "result_type": "changed",
     "first_seen": "2025-07-13T00:00:00+00:00"
+  },
+  {
+    "scholar": "Yifei Zhang Homepage",
+    "scholar_url": "https://scholar.google.com/citations?hl=en&user=DmwXESQAAAAJ&view_op=list_works&sortby=pubdate",
+    "affiliation": "港中文",
+    "areas": [
+      "Continual Learning"
+    ],
+    "watch": "publications",
+    "kind": "paper",
+    "text": "ConSurv: Multimodal Continual Learning for Survival Analysis · The 40th Annual AAAI Conference on Artificial Intelligence (AAAI'26), 2025, 2025",
+    "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=DmwXESQAAAAJ&sortby=pubdate&citation_for_view=DmwXESQAAAAJ:yD5IFk8b50cC",
+    "date_str": "2025",
+    "timestamp": 1748736000.0,
+    "result_type": "changed",
+    "first_seen": "2026-10-04T10:38:56.347922+00:00"
+  },
+  {
+    "scholar": "Yifei Zhang Homepage",
+    "scholar_url": "https://scholar.google.com/citations?hl=en&user=DmwXESQAAAAJ&view_op=list_works&sortby=pubdate",
+    "affiliation": "港中文",
+    "areas": [
+      "Continual Learning"
+    ],
+    "watch": "publications",
+    "kind": "paper",
+    "text": "Robustifying zero-shot vision language models by subspaces alignment · 2025 IEEE/CVF International Conference on Computer Vision (ICCV), 21037-21047, 2025, 2025",
+    "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=DmwXESQAAAAJ&sortby=pubdate&citation_for_view=DmwXESQAAAAJ:D03iK_w7-QYC",
+    "date_str": "2025",
+    "timestamp": 1748736000.0,
+    "result_type": "changed",
+    "first_seen": "2026-10-04T10:38:56.347928+00:00"
+  },
+  {
+    "scholar": "Yifei Zhang Homepage",
+    "scholar_url": "https://scholar.google.com/citations?hl=en&user=DmwXESQAAAAJ&view_op=list_works&sortby=pubdate",
+    "affiliation": "港中文",
+    "areas": [
+      "Continual Learning"
+    ],
+    "watch": "publications",
+    "kind": "paper",
+    "text": "Soft Separation and Distillation: Toward Global Uniformity in Federated Unsupervised Learning · 2025 IEEE/CVF International Conference on Computer Vision (ICCV), 2971-2980, 2025, 2025",
+    "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=DmwXESQAAAAJ&sortby=pubdate&citation_for_view=DmwXESQAAAAJ:zA6iFVUQeVQC",
+    "date_str": "2025",
+    "timestamp": 1748736000.0,
+    "result_type": "changed",
+    "first_seen": "2026-10-04T10:38:56.347931+00:00"
+  },
+  {
+    "scholar": "Yifei Zhang Homepage",
+    "scholar_url": "https://scholar.google.com/citations?hl=en&user=DmwXESQAAAAJ&view_op=list_works&sortby=pubdate",
+    "affiliation": "港中文",
+    "areas": [
+      "Continual Learning"
+    ],
+    "watch": "publications",
+    "kind": "paper",
+    "text": "Track and Tweak: Monitoring and Improving Group Fairness for Temporal Graph Neural Networks in Real Time · Proceedings of the 31st ACM SIGKDD Conference on Knowledge Discovery and …, 2025, 2025",
+    "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=DmwXESQAAAAJ&sortby=pubdate&citation_for_view=DmwXESQAAAAJ:4OULZ7Gr8RgC",
+    "date_str": "2025",
+    "timestamp": 1748736000.0,
+    "result_type": "changed",
+    "first_seen": "2026-10-04T10:38:56.347936+00:00"
+  },
+  {
+    "scholar": "Yifei Zhang Homepage",
+    "scholar_url": "https://scholar.google.com/citations?hl=en&user=DmwXESQAAAAJ&view_op=list_works&sortby=pubdate",
+    "affiliation": "港中文",
+    "areas": [
+      "Continual Learning"
+    ],
+    "watch": "publications",
+    "kind": "paper",
+    "text": "pfedmxf: Personalized federated class-incremental learning with mixture of frequency aggregation · 2025 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR …, 2025, 2025",
+    "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=DmwXESQAAAAJ&sortby=pubdate&citation_for_view=DmwXESQAAAAJ:rO6llkc54NcC",
+    "date_str": "2025",
+    "timestamp": 1748736000.0,
+    "result_type": "changed",
+    "first_seen": "2026-10-04T10:38:56.347939+00:00"
+  },
+  {
+    "scholar": "Yifei Zhang Homepage",
+    "scholar_url": "https://scholar.google.com/citations?hl=en&user=DmwXESQAAAAJ&view_op=list_works&sortby=pubdate",
+    "affiliation": "港中文",
+    "areas": [
+      "Continual Learning"
+    ],
+    "watch": "publications",
+    "kind": "paper",
+    "text": "Bilora: Almost-orthogonal parameter spaces for continual learning · 2025 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR …, 2025, 2025",
+    "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=DmwXESQAAAAJ&sortby=pubdate&citation_for_view=DmwXESQAAAAJ:3s1wT3WcHBgC",
+    "date_str": "2025",
+    "timestamp": 1748736000.0,
+    "result_type": "changed",
+    "first_seen": "2026-10-04T10:38:56.347942+00:00"
+  },
+  {
+    "scholar": "Yifei Zhang Homepage",
+    "scholar_url": "https://scholar.google.com/citations?hl=en&user=DmwXESQAAAAJ&view_op=list_works&sortby=pubdate",
+    "affiliation": "港中文",
+    "areas": [
+      "Continual Learning"
+    ],
+    "watch": "publications",
+    "kind": "paper",
+    "text": "Ntpp: Generative speech language modeling for dual-channel spoken dialogue via next-token-pair prediction · arXiv preprint arXiv:2506.00975, 2025, 2025",
+    "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=DmwXESQAAAAJ&sortby=pubdate&citation_for_view=DmwXESQAAAAJ:fPk4N6BV_jEC",
+    "date_str": "2025",
+    "timestamp": 1748736000.0,
+    "result_type": "changed",
+    "first_seen": "2026-10-04T10:38:56.347945+00:00"
+  },
+  {
+    "scholar": "Yifei Zhang Homepage",
+    "scholar_url": "https://scholar.google.com/citations?hl=en&user=DmwXESQAAAAJ&view_op=list_works&sortby=pubdate",
+    "affiliation": "港中文",
+    "areas": [
+      "Continual Learning"
+    ],
+    "watch": "publications",
+    "kind": "paper",
+    "text": "Towards non-euclidean foundation models: advancing AI beyond euclidean frameworks · Companion Proceedings of the ACM on Web Conference 2025, 1811-1814, 2025, 2025",
+    "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=DmwXESQAAAAJ&sortby=pubdate&citation_for_view=DmwXESQAAAAJ:ZHo1McVdvXMC",
+    "date_str": "2025",
+    "timestamp": 1748736000.0,
+    "result_type": "changed",
+    "first_seen": "2026-10-04T10:38:56.347947+00:00"
+  },
+  {
+    "scholar": "袁洋",
+    "scholar_url": "https://scholar.google.com/citations?hl=en&user=7o4wtKEAAAAJ&view_op=list_works&sortby=pubdate",
+    "affiliation": "Tsinghua University",
+    "areas": [
+      "范畴论"
+    ],
+    "watch": "publications",
+    "kind": "paper",
+    "text": "Clarifying before reasoning: A coq prover with structural context · arXiv preprint arXiv:2507.02541, 2025, 2025",
+    "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=7o4wtKEAAAAJ&sortby=pubdate&citation_for_view=7o4wtKEAAAAJ:xtRiw3GOFMkC",
+    "date_str": "2025",
+    "timestamp": 1748736000.0,
+    "result_type": "changed",
+    "first_seen": "2026-10-04T10:38:56.347950+00:00"
   },
   {
     "scholar": "Zixuan Li",

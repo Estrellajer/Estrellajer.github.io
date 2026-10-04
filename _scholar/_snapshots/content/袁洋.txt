@@ -18,7 +18,7 @@ Y Zhang, Y Yuan, M Wang, ACC Yao
 arXiv preprint arXiv:2512.22431, 2025 2025
 AutoMathText-V2: A 2.46 Trillion Token AI-Curated STEM Pretraining Dataset
 CLY Zhang, Y Yuan, AC Yao
- 2025
+2025
 Clarifying before reasoning: A coq prover with structural context
 Y Lu, H Yang, X Wang, G Zhang, B Li, C Fu, C Li, Y Yuan, ACC Yao
 arXiv preprint arXiv:2507.02541, 2025 2025
@@ -27,7 +27,7 @@ Y Zhang, Y Luo, Y Yuan, AC Yao
 Findings of the Association for Computational Linguistics: ACL 2025, 4168-4189, 2025 2025
 Hierarchical Attention Generates Better Proofs
 J Chen, C Li, Y Yuan, AC Yao
-Proceedings of the 63rd Annual Meeting of the Association for Computational …, 2025 2025
+Proceedings of the 63rd Annual Meeting of the Association for Computational …, 2025 2025
 Existing llms are not self-consistent for simple tasks
 Z Lin, J Tao, Y Yuan, ACC Yao
 arXiv preprint arXiv:2506.18781, 2025 2025
@@ -45,7 +45,7 @@ Z Lin, Y Yao, Y Yuan
 arXiv preprint arXiv:2403.01784, 2024 2024
 Autonomous data selection with language models for mathematical texts
 Y Zhang, Y Luo, Y Yuan, AC Yao
-ICLR 2024 Workshop on Navigating and Addressing Data Problems for Foundation …, 2024 2024
+ICLR 2024 Workshop on Navigating and Addressing Data Problems for Foundation …, 2024 2024
 Trade-off between efficiency and consistency for removal-based explanations
 Y Zhang, H He, Z Tan, Y Yuan
 Advances in Neural Information Processing Systems 36, 25627-25661, 2023 2023

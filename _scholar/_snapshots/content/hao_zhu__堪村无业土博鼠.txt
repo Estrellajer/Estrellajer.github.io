@@ -1,0 +1,60 @@
+When Gradient Boosting Meets Adaption: Exploring Weak Learner Principle for Parameter Efficient Fine-tuning
+Y Zhang, H Zhu, H Shi, J Dong, L Song, X Han, Y CHEN, W Wang, H Yu, ...
+32nd SIGKDD Conference on Knowledge Discovery and Data Mining, 2026, 2026 2026
+FLASH: Fast Generative Retrieval via Autoregressive Semantic Hashing with Provably Distance Bounds
+Y Zhang, H Zhu, H Shi, Y CHEN, X Han, Y Zhang, L Song, W Wang, ...
+32nd SIGKDD Conference on Knowledge Discovery and Data Mining, 2026, 2026 2026
+Federated Domain Generalization for Time-Series Classification via Dynamics-to-Domain Generation
+H Shi, J Zhang, X Tang, Y Zhang, H Zhu, Y Dong, L Cui, H Yu
+32nd SIGKDD Conference on Knowledge Discovery and Data Mining, 2026, 2026 2026
+Machine unlearning via task simplex arithmetic
+J Dong, H Zhu, Y Zhang, X Qu, YS Ong, P Koniusz
+Advances in Neural Information Processing Systems 38, 166676-166707, 2026 2026
+CrossSpectra: exploiting cross-layer smoothness for parameter-efficient fine-tuning
+Y Zhang, H Zhu, J Dong, H Shi, Z Meng, P Koniusz, H Yu
+Advances in Neural Information Processing Systems 38, 141383-141405, 2026 2026
+Hierarchically Robust Zero-shot Vision-language Models
+J Dong, Y Zhang, H Zhu, YS Ong, P Koniusz
+arXiv preprint arXiv:2604.18867, 2026 2026
+RcAE: Recursive Reconstruction Framework for Unsupervised Industrial Anomaly Detection
+R Wu, H Zhu, S Zhang, M Wang, Z Li, H Li, J Zhou, J Cui, F Chen, P Sun, ...
+Proceedings of the AAAI Conference on Artificial Intelligence 40 (13), 10736 …, 2026 2026
+Exploiting Class-agnostic Visual Prior for Few-shot Keypoint Detection
+C Lu, H Zhu, P Koniusz
+International Journal of Computer Vision 134 (2), 63, 2026 2026
+Distilling Graph Geometry: Knowledge Gap from GNNs to MLPs
+C Zhewei, Z Hao, J Jiaojiao, Z Ahad N.
+The Fortieth Annual Conference on Neural Information Processing Systems …, 2026 2026
+FedSOUL: Federated Continual Unlearning via Spectral Orthogonality
+S Haoran, Z Hao, Z Yifei, Z Junru, C Lizhen, J Yali, T Xiaoli, H Yu
+The Fortieth Annual Conference on Neural Information Processing Systems …, 2026 2026
+Effective and Scalable Representation Learning for Graphs: From Theory to Applications
+H Zhu
+2025
+Robustifying Zero-Shot Vision Language Models by Subspaces Alignment
+J Dong, P Koniusz, L Feng, Y Zhang, H Zhu, W Liu, X Qu, YS Ong
+International Conference on Computer Vision (ICCV 2025), 2025 2025
+Beyond Random Masking: When Dropout meets Graph Convolutional Networks
+Y Luo, XM Wu, H Zhu
+The Thirteenth International Conference on Learning Representations (ICLR2025), 2025 2025
+Improving Zero-Shot Adversarial Robustness in VLMs by Closed-form Alignment of Adversarial Path Simplices
+J Dong, P Koniusz, Y Zhang, H Zhu, W Liu, X Qu, YS Ong
+Forty-second International Conference on Machine Learning (ICML 2025), 2025 2025
+pFedMixF: Personalized Federated Class-Incremental Learning with Mixture of Frequency Aggregation
+Y Zhang, H Zhu, AZ Tan, D Yu, L Huang, H Yu
+International Conference on Computer Vision and Pattern Recognition (CVPR2025), 2025 2025
+BiLoRA: Almost-Orthogonal Parameter Spaces for Continual Learning
+H Zhu, Y Zhang, J Dong, P Koniusz
+International Conference on Computer Vision and Pattern Recognition (CVPR2025), 2025 2025
+Graph Self-Supervised Learning with Learnable Structural and Positional Encodings
+A Wijesinghe, H Zhu, P Koniusz
+ACM TheWebConf 2025, 2025 2025
+Protein Fitness Landscape: Spectral Graph Theory Perspective
+H Zhu, DM Steinberg, P Koniusz
+The 28th International Conference on Artificial Intelligence and Statistics, 2025 2025
+Understanding and Mitigating Hyperbolic Dimensional Collapse in Graph Contrastive Learning
+Y Zhang, H Zhu, M Yang, J Liu, R Ying, I King, P Koniusz
+31st SIGKDD Conference on Knowledge Discovery and Data Mining, 2025 2025
+Less is more: Extreme gradient boost rank-1 adaption for efficient finetuning of llms
+Y Zhang, H Zhu, A Liu, H Yu, P Koniusz, I King
+arXiv preprint arXiv:2410.19694, 2024 2024
