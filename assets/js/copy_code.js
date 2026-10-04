@@ -99,9 +99,9 @@ function initCodeCopyBlocks() {
       wrapper.className = "code-display-wrapper";
 
       var targetNode = codeBlock;
-      var rougeParent = codeBlock.closest(".highlighter-rouge");
-      if (rougeParent && !rougeParent.closest(".code-display-wrapper")) {
-        targetNode = rougeParent;
+      var containerParent = codeBlock.closest(".highlighter-rouge, figure.highlight");
+      if (containerParent && !containerParent.closest(".code-display-wrapper")) {
+        targetNode = containerParent;
       }
 
       var parent = targetNode.parentElement;

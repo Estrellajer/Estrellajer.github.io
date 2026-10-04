@@ -312,49 +312,69 @@ layout: default
     font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, "Liberation Mono", "Fira Code", monospace !important;
   }
 
-  /* Inline Code */
-  .reading-article p code,
-  .reading-article li code,
-  .reading-article table code,
-  .reading-article blockquote code {
-    padding: 0.18rem 0.42rem;
-    border: 1px solid var(--hl-code-border);
+  /* Inline Code (Strictly exclude code inside pre to avoid leaking styles) */
+  .reading-article :not(pre) > code {
+    padding: 0.2rem 0.45rem;
+    border: 1px solid var(--hl-inline-code-border);
     border-radius: 0.38rem;
     background: var(--hl-inline-code-bg) !important;
     color: var(--hl-inline-code-text) !important;
     font-size: 0.86em;
     font-weight: 500;
     word-break: break-word;
+    box-decoration-break: clone;
+    -webkit-box-decoration-break: clone;
   }
 
-  /* Fenced Code Blocks & Rouge Containers */
+  /* Standalone / Fallback Rouge Containers (ensures beautiful presentation even prior to JS execution) */
   .reading-article .highlighter-rouge,
   .reading-article figure.highlight,
-  .reading-article .highlight {
-    margin: 0;
-    padding: 0;
-    border: none;
-    background: transparent !important;
-    box-shadow: none;
+  .reading-article pre {
+    position: relative;
+    margin: 1.85rem 0;
+    border-radius: 0.75rem;
+    border: 1px solid var(--hl-code-border);
+    background-color: var(--hl-code-bg) !important;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+    overflow: hidden;
+    box-sizing: border-box;
   }
 
-  .reading-article figure.highlight code,
-  .reading-article div.highlighter-rouge code,
-  .reading-article .highlighter-rouge .highlight code,
-  .reading-article pre code {
-    display: inline !important;
-    border: 0;
-    border-radius: 0;
-    padding: 0;
+  /* When wrapped in modern JS chrome wrapper, cancel the inner box styling and reset margins/borders */
+  .reading-article .code-display-wrapper .highlighter-rouge,
+  .reading-article .code-display-wrapper figure.highlight,
+  .reading-article .code-display-wrapper .highlight,
+  .reading-article .code-display-wrapper pre {
+    margin: 0 !important;
+    border: none !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+    background: transparent !important;
+  }
+
+  /* Code element inside pre: VitePress / GitHub Developer-Grade Best Practice
+     display: block + fit-content ensures padding-right is strictly preserved during horizontal scrolling */
+  .reading-article pre code,
+  .reading-article .code-display-wrapper pre code {
+    display: block !important;
+    width: fit-content !important;
+    min-width: 100% !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    border: none !important;
+    border-radius: 0 !important;
     background: transparent !important;
     color: inherit;
     font-family: inherit !important;
     font-size: inherit;
     line-height: inherit;
-    white-space: inherit !important;
-    tab-size: inherit !important;
-    -moz-tab-size: inherit !important;
-    letter-spacing: inherit !important;
+    white-space: pre !important;
+    word-break: normal !important;
+    word-wrap: normal !important;
+    overflow-wrap: normal !important;
+    tab-size: 4 !important;
+    -moz-tab-size: 4 !important;
+    letter-spacing: 0 !important;
   }
 
   /* MathJax Formula Typography */

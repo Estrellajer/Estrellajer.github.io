@@ -4,12 +4,12 @@ scholars:
     url: https://limoncc.com/
     category: blog
     site_type: personal_website
-    selectors: [article, .post-block, .post, main, .content]
+    selectors: ["article h2 a", ".post-title a", "article a[href*='/post/']", article]
     remove_selectors: [script, style, nav, footer, header, aside, .sidebar, .comments]
     labels: [blog]
-    research_areas: [LLM]
+    research_areas: [LLM, RL]
     affiliation: ""
-    watch: general
+    watch: blog
   - name: percent4 Blog
     url: https://percent4.github.io/
     category: blog
@@ -34,10 +34,10 @@ scholars:
     url: https://adaning.github.io/
     category: blog
     site_type: github_pages
-    selectors: ["span.card-title", ".article-title", "h5.card-title", ".post-title"]
+    selectors: ["a[href*='/posts/']:not([href*='page'])", ".card-title a", article]
     remove_selectors: [script, style, nav, footer, header, aside, .sidebar, .comments]
     labels: [blog]
-    research_areas: [Diffusion]
+    research_areas: [Diffusion, Multimodal]
     affiliation: "东北大学"
     watch: blog
   - name: David Noel Ng
@@ -253,8 +253,8 @@ scholars:
     url: https://plmsmile.github.io/posts/archive.html
     category: blog
     site_type: github_pages
-    selectors: [".vp-doc", main, article]
-    remove_selectors: [script, style, nav, footer, header, aside, .sidebar, .comments]
+    selectors: [".post-card a.post-title", "a.post-title", ".post-card"]
+    remove_selectors: [script, style, nav, footer, header, aside, .sidebar, .comments, .site-stats, .site-footer]
     labels: [blog]
     research_areas: [LLM]
     affiliation: "Alibaba"
@@ -263,12 +263,12 @@ scholars:
     url: https://aweers.de/blog/
     category: blog
     site_type: personal_website
-    selectors: [main, .content, "#content", article]
-    remove_selectors: [script, style, nav, footer, header, aside, .sidebar, .comments]
+    selectors: [".post-entry h2 a", ".post-entry a", "article h2 a"]
+    remove_selectors: [script, style, nav, footer, header, aside, .sidebar, .comments, .post-meta]
     labels: [blog]
-    research_areas: [RL]
+    research_areas: [RL, LLM]
     affiliation: ""
-    watch: general
+    watch: blog
   - name: 刘子铭（KAN）
     url: https://kindxiaoming.github.io/blog/
     category: blog
@@ -283,12 +283,12 @@ scholars:
     url: https://www.lamda.nju.edu.cn/zhoudw/
     category: HomePage
     site_type: personal_website
-    selectors: ["#news + ol", "#news + ul", ".pub-row"]
+    selectors: ["#news + ol li", "#news + ul li", ".pub-row", "#publications li"]
     remove_selectors: [script, style, nav, footer, header, aside, .sidebar, .comments]
     labels: [homepage]
-    research_areas: [Continual Learning]
+    research_areas: [Continual Learning, Multimodal]
     affiliation: NJU LAMDA
-    watch: general
+    watch: publications
   - name: 庄辉平
     url: https://zhuanghp.github.io/
     category: HomePage
@@ -323,12 +323,12 @@ scholars:
     url: https://zhoujiahuan1991.github.io/
     category: HomePage
     site_type: github_pages
-    selectors: [".news-item", "#publications"]
+    selectors: [".news-item", "#publications tr", "#publications li", ".publication"]
     remove_selectors: [script, style, nav, footer, header, aside, .sidebar, .comments]
     labels: [homepage]
-    research_areas: [Continual Learning]
+    research_areas: [Continual Learning, Multimodal]
     affiliation: "北京大学"
-    watch: general
+    watch: publications
   - name: 姚顺雨
     url: https://ysymyth.github.io/
     category: HomePage
@@ -343,12 +343,12 @@ scholars:
     url: https://jiangjiechen.github.io/
     category: HomePage
     site_type: github_pages
-    selectors: [".wg-collection", "#news + div", "#news + ul"]
+    selectors: ["#news li", "#news", ".article-title"]
     remove_selectors: [script, style, nav, footer, header, aside, .sidebar, .comments]
     labels: [homepage]
-    research_areas: [LLM]
-    affiliation: "Seed"
-    watch: general
+    research_areas: [LLM, Agent]
+    affiliation: "复旦大学 / ByteDance Seed"
+    watch: news
   - name: Zixuan Li
     url: https://lee-zix.github.io/publications/
     category: HomePage
@@ -393,10 +393,10 @@ scholars:
     url: https://sun-hailong.github.io/
     category: HomePage
     site_type: github_pages
-    selectors: ["#news + ul", "#publications + ul", ".publications"]
+    selectors: ["#news + ul li", "#news li", "#publications + ul li"]
     remove_selectors: [script, style, nav, footer, header, aside, .sidebar, .comments]
     labels: [homepage]
-    research_areas: [Continual Learning]
+    research_areas: [Continual Learning, Multimodal]
     affiliation: NJU LAMDA
     watch: news
   - name: 吴太强
@@ -494,12 +494,12 @@ scholars:
     url: https://sites.google.com/view/kesun
     category: HomePage
     site_type: google_sites
-    selectors: [".yaqOZd"]
+    selectors: [".yaqOZd", "li", "p"]
     remove_selectors: [script, style, nav, footer, header, aside, .sidebar, .comments]
     labels: [homepage]
-    research_areas: [Continuing RL]
+    research_areas: [Continuing RL, LLM Reasoning]
     affiliation: "宾夕法尼亚大学"
-    watch: general
+    watch: publications
   - name: 蒋玉初
     url: https://kamichanw.github.io/publications/
     category: HomePage
@@ -514,12 +514,12 @@ scholars:
     url: https://linzhiqiu.github.io/
     category: HomePage
     site_type: github_pages
-    selectors: ["#-news + ul", ".paper-box"]
+    selectors: [".paper-box", "#-news + ul li", "#-news + ul"]
     remove_selectors: [script, style, nav, footer, header, aside, .sidebar, .comments]
     labels: [homepage]
-    research_areas: [CV evaluation]
-    affiliation: "MIT"
-    watch: general
+    research_areas: [Multimodal, Video, VLM]
+    affiliation: "CMU"
+    watch: publications
   - name: 朱星宇
     url: https://scholar.google.com/citations?hl=zh-CN&user=PpqUnAwAAAAJ&view_op=list_works&sortby=pubdate
     category: HomePage
@@ -584,9 +584,9 @@ scholars:
     url: https://fyqqyf.github.io/
     category: HomePage
     site_type: github_pages
-    selectors: [".pub-item", "#publications"]
+    selectors: [".pub-item", ".blog-item", ".pub-title a", "#publications"]
     remove_selectors: [script, style, nav, footer, header, aside, .sidebar, .comments]
     labels: [homepage]
-    research_areas: [RL, LLM Alignment]
+    research_areas: [Distillation, RL, Reasoning]
     affiliation: 自动化所
-    watch: general
+    watch: publications
