@@ -30,7 +30,18 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/projects/";
           },
-        },{id: "post-auto-research-下-can-we-have-kaiming-as-personal-advisor",
+        },{id: "post-halftime-is-over",
+        
+          title: "Halftime Is Over",
+        
+        description: "当时只道是寻常。关于那些跑过的带状公园、散落的朋友与再无暑假的人生。",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/halftime-is-over/";
+          
+        },
+      },{id: "post-auto-research-下-can-we-have-kaiming-as-personal-advisor",
         
           title: "Auto Research（下）：Can We have Kaiming as Personal Advisor",
         
@@ -72,17 +83,6 @@ ninja.data = [{
         handler: () => {
           
             window.location.href = "/blog/2026/opsd-pitfalls-and-advances/";
-          
-        },
-      },{id: "post-agentic-rl-综述-工具调用-信用分配与训练稳定性-从-rap-到-aepo",
-        
-          title: "Agentic RL 综述：工具调用、信用分配与训练稳定性——从 RAP 到 AEPO",
-        
-        description: "梳理 Agentic RL 从树搜索到可训练策略的演进，涵盖 Planner-R1、TORL/ToolRL/ARTIST、GiGPO/ARPO、RAGEN/RAGEN-2 及 AEPO，聚焦 reward 设计、credit assignment 与 reasoning collapse 三大核心问题。",
-        section: "Posts",
-        handler: () => {
-          
-            window.location.href = "/blog/2026/agentic-rl/";
           
         },
       },{id: "post-opd-如何重构后训练的不可能三角",
