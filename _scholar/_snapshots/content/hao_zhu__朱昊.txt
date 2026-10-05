@@ -18,19 +18,19 @@ J Dong, Y Zhang, H Zhu, YS Ong, P Koniusz
 arXiv preprint arXiv:2604.18867, 2026 2026
 RcAE: Recursive Reconstruction Framework for Unsupervised Industrial Anomaly Detection
 R Wu, H Zhu, S Zhang, M Wang, Z Li, H Li, J Zhou, J Cui, F Chen, P Sun, ...
-Proceedings of the AAAI Conference on Artificial Intelligence 40 (13), 10736 …, 2026 2026
+Proceedings of the AAAI Conference on Artificial Intelligence 40 (13), 10736 …, 2026 2026
 Exploiting Class-agnostic Visual Prior for Few-shot Keypoint Detection
 C Lu, H Zhu, P Koniusz
 International Journal of Computer Vision 134 (2), 63, 2026 2026
 Distilling Graph Geometry: Knowledge Gap from GNNs to MLPs
 C Zhewei, Z Hao, J Jiaojiao, Z Ahad N.
-The Fortieth Annual Conference on Neural Information Processing Systems …, 2026 2026
+The Fortieth Annual Conference on Neural Information Processing Systems …, 2026 2026
 FedSOUL: Federated Continual Unlearning via Spectral Orthogonality
 S Haoran, Z Hao, Z Yifei, Z Junru, C Lizhen, J Yali, T Xiaoli, H Yu
-The Fortieth Annual Conference on Neural Information Processing Systems …, 2026 2026
+The Fortieth Annual Conference on Neural Information Processing Systems …, 2026 2026
 Effective and Scalable Representation Learning for Graphs: From Theory to Applications
 H Zhu
- 2025
+2025
 Robustifying Zero-Shot Vision Language Models by Subspaces Alignment
 J Dong, P Koniusz, L Feng, Y Zhang, H Zhu, W Liu, X Qu, YS Ong
 International Conference on Computer Vision (ICCV 2025), 2025 2025

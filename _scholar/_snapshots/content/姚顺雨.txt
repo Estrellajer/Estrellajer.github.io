@@ -2,6 +2,41 @@ Computer-Using Agent (CUA)
 OpenAI
 A universal agent/interface to interact with the digital world.
 product | blogpost | system card | bibtex
+
+Deep Research
+OpenAI
+An agent that navigates and reasons over the Internet to research for you.
+product | blogpost
+
+τ-bench: A Benchmark for Tool-Agent-User Interaction in Real-World Domains
+Shunyu Yao, Noah Shinn, Pedram Razavi, Karthik Narasimhan
+ICLR 2025
+paper | repo | blog
+
+Language Agents: From Next-Token Prediction to Digital Automation
+Shunyu Yao
+PhD Thesis
+paper | slides | talk
+
+SWE-agent: Agent Computer Interfaces Enable Software Engineering Language Models
+John Yang*, Carlos E. Jimenez*, Alexander Wettig, Kilian Lieret, Shunyu Yao, Karthik Narasimhan, Ofir Press
+NeurIPS 2024
+paper | repo | tweet | project
+
+SWE-bench: Can Language Models Resolve Real-World Github Issues?
+Carlos E. Jimenez*, John Yang*, Alexander Wettig, Shunyu Yao, Kexin Pei, Ofir Press, Karthik Narasimhan
+ICLR 2024 (Oral)
+paper | repo | tweet | project
+
+Cognitive Architectures for Language Agents
+Shunyu Yao*, Theodore Sumers*, Karthik Narasimhan, Thomas L. Griffiths
+TMLR 2024
+paper | repo | tweet
+
+Computer-Using Agent (CUA)
+OpenAI
+A universal agent/interface to interact with the digital world.
+product | blogpost | system card | bibtex
 Deep Research
 OpenAI
 An agent that navigates and reasons over the Internet to research for you.
