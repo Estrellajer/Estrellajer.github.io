@@ -339,10 +339,17 @@ ul.task-list input[type="checkbox"] {
     }
   }
 
+  .navbar-nav {
+    display: flex;
+    align-items: center;
+    gap: 0.42rem;
+  }
+
   .navbar-nav .nav-item .nav-link {
     color: var(--global-text-color);
     border-radius: 999px;
-    padding: 0.45rem 0.85rem;
+    padding: 0.42rem 0.92rem;
+    font-weight: 500;
     transition:
       background-color 0.18s ease,
       color 0.18s ease;
