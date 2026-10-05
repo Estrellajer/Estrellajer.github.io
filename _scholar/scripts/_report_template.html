@@ -36,11 +36,23 @@ function setScope(scope) {
   applyFilters();
 }
 
+function toggleAllFilters(className, selectAll) {
+  document.querySelectorAll('.' + className).forEach(cb => {
+    cb.checked = selectAll;
+  });
+  applyFilters();
+}
+
 function applyFilters() {
   const q = (document.getElementById('searchInput')?.value || '').toLowerCase().trim();
   const kinds = [...document.querySelectorAll('.fl-kind:checked')].map(c => c.value);
   const affs = [...document.querySelectorAll('.fl-aff:checked')].map(c => c.value);
   const areas = [...document.querySelectorAll('.fl-area:checked')].map(c => c.value);
+
+  const allAffInputs = document.querySelectorAll('.fl-aff');
+  const isAllAffChecked = affs.length === allAffInputs.length;
+  const allAreaInputs = document.querySelectorAll('.fl-area');
+  const isAllAreaChecked = areas.length === allAreaInputs.length;
 
   let visible = 0, total = 0;
 
@@ -66,9 +78,8 @@ function applyFilters() {
     const matchSearch = !q || name.includes(q) || text.includes(q) || affiliation.includes(q)
       || areaList.some(a => a.includes(q));
     const matchKind = kinds.length === 0 || kinds.includes(kind);
-    const matchAff = affs.length === 0 || !affiliation || affs.includes(affiliation);
-    const matchArea = areas.length === 0 || areaList.length === 0
-      || areaList.some(a => areas.includes(a));
+    const matchAff = isAllAffChecked || (affs.length > 0 && affiliation && affs.includes(affiliation));
+    const matchArea = isAllAreaChecked || (areas.length > 0 && areaList.length > 0 && areaList.some(a => areas.includes(a)));
 
     const show = matchScope && matchSearch && matchKind && matchAff && matchArea;
     el.classList.toggle('sm-hidden', !show);
@@ -86,9 +97,8 @@ function applyFilters() {
     const matchSearch = !q || name.includes(q) || text.includes(q) || affiliation.includes(q)
       || areaList.some(a => a.includes(q));
     const matchKind = kinds.length === 0 || kinds.includes(kind);
-    const matchAff = affs.length === 0 || !affiliation || affs.includes(affiliation);
-    const matchArea = areas.length === 0 || areaList.length === 0
-      || areaList.some(a => areas.includes(a));
+    const matchAff = isAllAffChecked || (affs.length > 0 && affiliation && affs.includes(affiliation));
+    const matchArea = isAllAreaChecked || (areas.length > 0 && areaList.length > 0 && areaList.some(a => areas.includes(a)));
 
     const show = matchSearch && matchKind && matchAff && matchArea;
     el.classList.toggle('sm-hidden', !show);

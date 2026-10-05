@@ -1489,37 +1489,92 @@ def _clean_paper_entry(text: str) -> str:
         title = m.group(2).strip()
         clean = f"{title} · {venue_tag}"
 
-    # 2. Strip leading date prefixes like [2026-09], 2026.07:, 09.2026,, 2026/09
-    clean = re.sub(r'^\s*\[\s*202\d[-\./]\d{1,2}\s*\]\s*', '', clean)
-    clean = re.sub(r'^\s*202\d[-\./]\d{1,2}\s*[\:\,\-—]\s*', '', clean)
-    clean = re.sub(r'^\s*\d{1,2}[-\./]202\d\s*[\:\,\-—]\s*', '', clean)
+    # 2. Strip BibTeX blocks
+    clean = re.sub(r'Bib\s*@article\s*\{.*$', '', clean, flags=re.DOTALL | re.I).strip()
 
-    # 3. Strip leading citation numbers like [7], [1], 1., 7.
+    # 3. Handle multi-event concatenations (e.g. 冯钰捷 or 庄辉平)
+    if '!' in clean and re.search(r'!\s*202\d', clean):
+        clean = re.split(r'!\s*202\d', clean)[0].strip() + "!"
+
+    # 4. Strip leading date prefixes like [2026-09], 2026.07:, 09.2026,, 2026/09
+    clean = re.sub(r'^\s*\[?\s*202\d[-\./]\d{1,2}(?:[-\./]\d{1,2})?\s*\]?\s*[\:\,\-—·]?\s*', '', clean)
+    clean = re.sub(r'^\s*(?:Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)[a-z]*\.?\s+\d{1,2}(?:st|nd|rd|th)?,?\s+202\d\s*[\:\,\-—·]?\s*', '', clean, flags=re.I)
+    clean = re.sub(r'^\s*202\d\s+(?:Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)[a-z]*\.?\s+\d{1,2}\s*[\:\,\-—·]?\s*', '', clean, flags=re.I)
+    clean = re.sub(r'^\s*\d{1,2}[-\./]202\d\s*[\:\,\-—·]?\s*', '', clean)
+    clean = re.sub(r'^\s*\d{1,2}\s*[💼😋🎉🔥✨]?\s*(?:Activity|Accepted)?\s*', '', clean)
+    clean = re.sub(r'^\s*2025\s*年\s*\d{1,2}\s*月随笔\s*', '随笔', clean)
+
+    # 5. Strip leading citation numbers like [7], [1], 1., 7.
     clean = re.sub(r'^\s*\[\s*\d+\s*\]\s*', '', clean)
     clean = re.sub(r'^\s*\d+\.\s+', '', clean)
 
-    # 4. Strip leading author patterns: "Author1*, Author2 . Paper Title"
+    # Normalize verbose Google Scholar / DBLP proceedings titles to standard venue names
+    clean = re.sub(r'Proceedings of (?:the )?(?:IEEE/CVF )?(?:Winter )?Conference on Applications of Computer Vision(?:\s*\(WACV\))?', 'WACV', clean, flags=re.I)
+    clean = re.sub(r'Advances in Neural Information Processing Systems\s*(?:\d+)?', 'NeurIPS', clean, flags=re.I)
+    clean = re.sub(r'International Conference on Learning Representations', 'ICLR', clean, flags=re.I)
+    clean = re.sub(r'International Conference on Machine Learning', 'ICML', clean, flags=re.I)
+    clean = re.sub(r'IEEE/CVF Conference on Computer Vision and Pattern Recognition', 'CVPR', clean, flags=re.I)
+    clean = re.sub(r'International Conference on Computer Vision(?:\s*\(ICCV\s*\d{4}\))?', 'ICCV', clean, flags=re.I)
+    clean = re.sub(r'European Conference on Computer Vision(?:\s*\(ECCV\s*\d{4}\))?', 'ECCV', clean, flags=re.I)
+    clean = re.sub(r'Annual Meeting of the Association for Computational Linguistics', 'ACL', clean, flags=re.I)
+    clean = re.sub(r'Conference on Empirical Methods in Natural Language Processing', 'EMNLP', clean, flags=re.I)
+    clean = re.sub(r'(?:\d+(?:st|nd|rd|th)\s+)?(?:ACM\s+)?(?:SIGKDD|KDD)\s+Conference\s+on\s+Knowledge\s+Discovery\s+and\s+Data\s+Mining', 'SIGKDD', clean, flags=re.I)
+    clean = re.sub(r'arXiv\s+preprint\s+arXiv:\d+\.\d+', 'arXiv', clean, flags=re.I)
+
+    # 6. Embedded author lists before venue (e.g. 黄家斌, 孙宇, 吴太强, 冯亮)
+    clean = re.sub(r'\s*\([^)]*Co-first Author[^)]*\)', '', clean, flags=re.I)
+    clean = re.sub(r'\s*\(\*:\s*core contributors\)', '', clean, flags=re.I)
+    m_venue = re.search(r'\b(NeurIPS|ICML|ICLR|CVPR|ECCV|ICCV|ACL|EMNLP|COLM|AAAI|KDD|SIGKDD|WACV|IJCV|TPAMI|TKDE|arXiv|Proceedings of|International Conference)\b.*', clean, re.I)
+    if m_venue and m_venue.start() > 25:
+        prefix = clean[:m_venue.start()].strip()
+        venue_suffix = clean[m_venue.start():].strip()
+        m_authors = re.search(r'^(.*?)\s+([A-Z][a-z]+ [A-Z][a-z]+[\s\*\,\.\-]+(?:[A-Z][a-z]+ [A-Z][a-z]+|\bet al\b).*)$', prefix)
+        if m_authors and len(m_authors.group(1)) > 15:
+            clean = f"{m_authors.group(1).strip()} · {venue_suffix}"
+
+    # 7. Strip leading author patterns: "Author1*, Author2 . Paper Title"
     m_auth = re.match(r'^[A-Z][a-zA-Z\s\*\,\.\-]+?\s*[\.\:\-]\s*([A-Z].+)$', clean)
     if m_auth and len(m_auth.group(1)) > 15:
         left = clean[:m_auth.start(1)]
         if any(c in left for c in ["*", "et al", "Sun", "Zhou", "Zhao", "Li", "Wang", "Zhang", "Chen", "Huang"]):
             clean = m_auth.group(1)
 
-    # 5. Strip trailing buttons
-    clean = re.sub(r'\s*\[\s*(?:Code|PDF|Project|Zhihu|BibTeX|Paper|Download|HuggingFace)\s*\]\s*', '', clean, flags=re.I)
+    # 8. Strip trailing buttons
+    clean = re.sub(r'\s*\[\s*(?:Code|PDF|Project|Zhihu|BibTeX|Paper|Download|HuggingFace|Slide|Slides|Weights|page|Paper \(PDF\)|Project page)\b[^\]]*\]\s*', '', clean, flags=re.I)
+    clean = re.sub(r'\bDownload Paper\b', '', clean, flags=re.I)
 
-    # 6. Strip decorative emoji at start or end
+    # 9. Strip decorative emoji at start or end
     clean = re.sub(r'^[\s🔥✨💡👉🔗🎉📘💼]+', '', clean)
     clean = re.sub(r'[\s🔥✨💡👉🔗🎉📘💼]+$', '', clean)
 
-    # 7. Strip Google Scholar page ranges like ", 122493-122531" or ", 8425-8428"
+    # 10. Strip Google Scholar page ranges like ", 122493-122531" or ", 8425-8428"
     clean = re.sub(r',\s*\d+-\d+\b', '', clean)
 
-    # 8. Deduplicate repeated year patterns like ", 2026, 2026" or " 2026 2026"
+    # 11. Deduplicate repeated year patterns like ", 2026, 2026" or " 2026 2026"
     clean = re.sub(r'(\b202\d\b)(?:[,\s]+\1)+', r'\1', clean)
+    clean = re.sub(r'\b202\d\s+(202\d)\b', r'\1', clean)
     clean = re.sub(r'·\s*([^·]+)\s*,\s*(202\d)\s*,\s*\2', r'· \1, \2', clean)
+    clean = clean.replace("↗", "").strip()
 
     return clean.strip()
+
+
+def _extract_base_title(text: str) -> str:
+    """Extract stripped, normalized semantic core of paper title for deduplication."""
+    if not text:
+        return ""
+    t = _clean_paper_entry(text)
+    # Strip common leading announcement prefixes:
+    t = re.sub(r'^(?:Our team\s+)?(?:released|open-sourced|published|open-sourced model)\s+', '', t, flags=re.I)
+    t = re.sub(r'^(?:One|Two|Three|Several of our)\s+papers?\s+(?:are|have been|is)\s+accepted\s+(?:to|by)\s+[A-Za-z0-9\s]+\.?\s*', '', t, flags=re.I)
+    t = re.sub(r'^Our\s+paper\s+on\s+.*?\s+(?:has been|is)\s+accepted\s+(?:by|to)\s+[A-Za-z0-9\s]+\.?\s*', '', t, flags=re.I)
+    t = re.sub(r'^Excited that .*? papers were accepted to\s+[A-Za-z0-9\s]+\.?\s*', '', t, flags=re.I)
+    t = re.sub(r'^(?:Oral|Spotlight|Highlight|Poster|Paper)\s*[-:·•]\s*', '', t, flags=re.I)
+
+    # Strip venue suffix: " · NeurIPS 2026", " - ICML 2026", " @ CVPR 2026", " in Nature", etc.
+    t = re.sub(r'\s*[·•|@-]\s*(?:NeurIPS|ICML|ICLR|CVPR|ECCV|ICCV|ACL|EMNLP|COLM|AAAI|KDD|SIGKDD|WACV|IJCV|TPAMI|TKDE|arXiv|JASA|SIGIR|ACM MM|WWW|TMLR|Nature Communications|Patterns|IEEE TPAMI|Oral|Spotlight|Highlight).*$', '', t, flags=re.I)
+    t = re.sub(r'[\s,]+202\d\b.*$', '', t)
+    return re.sub(r'[\W_]+', '', t.lower())
 
 
 def _is_html_or_artifact_noise(text: str) -> bool:
@@ -1605,6 +1660,10 @@ def _is_bio_or_profile_line(text: str) -> bool:
         r'\b(?:incoming assistant professor|tenure-track assistant professor)\b',
         r'\b(?:welcome to (?:my|our) (?:homepage|personal website|website))\b',
         r'\b(?:curriculum vitae|full cv|download cv)\b',
+        r'\b(?:previously,?\s+he\s+was|he\s+is\s+a|he\s+was\s+a|he\s+received\s+his|he\s+obtained\s+his|his\s+research\s+interests?)\b',
+        r'\b(?:our\s+team\s+recruits?|recruiting\s+(?:several\s+)?(?:phd|postdocs?)|博士后招聘|博士生招聘|招聘)\b',
+        r'⭐️⭐️⭐️',
+        r'\bphd\s+thesis\b',
     ]
     for r in bio_regexes:
         if re.search(r, clean, re.I):
@@ -1615,6 +1674,14 @@ def _is_bio_or_profile_line(text: str) -> bool:
 def _is_tag_or_noise_line(text: str, scholar_name: str = "") -> bool:
     clean = _clean_html(text)
     if _is_html_or_artifact_noise(text):
+        return True
+    if re.search(r'\bProf(?:essor)?\.\s+[A-Z]', clean):
+        return True
+    if re.match(r'^(?:Dr\.|Prof\.|Mr\.|Ms\.)\s+[A-Z]', clean):
+        return True
+    if re.match(r'^(?:The\s+)?(?:\d+(?:st|nd|rd|th)\s+)?(?:International\s+)?(?:ACM\s+|IEEE\s+)?(?:SIGIR|KDD|SIGKDD|NeurIPS|ICML|ICLR|CVPR|ECCV|ICCV|ACL|EMNLP)\s+Conference\b', clean, re.I):
+        return True
+    if clean.strip().lower() in ['download paper', 'swe 自进化', 'identification', 'see you in wuhan, valse 2026!']:
         return True
     if scholar_name and (clean.lower() == scholar_name.lower() or clean.lower() in scholar_name.lower()):
         return True
@@ -1947,11 +2014,15 @@ def aggregate_events(events: list) -> list:
         valid_cands = []
         seen_keys = set()
         for cand in all_candidates:
-            txt = cand["text"]
+            raw_txt = cand["text"]
+            if not raw_txt or len(raw_txt) < 4:
+                continue
+            txt = _clean_paper_entry(_clean_html(raw_txt))
             if not txt or len(txt) < 4:
                 continue
             if _is_tag_or_noise_line(txt, scholar) or _is_author_list_line(txt) or _is_status_or_venue_line(txt) or _is_bio_or_profile_line(txt):
                 continue
+            cand["text"] = txt
             dedup_key = re.sub(r'[\W_]+', '', txt.lower())[:60]
             if dedup_key in seen_keys:
                 continue
@@ -1963,6 +2034,8 @@ def aggregate_events(events: list) -> list:
 
         valid_cands.sort(key=lambda x: x["timestamp"], reverse=True)
         top = valid_cands[0]
+        top_cleaned_text = _clean_paper_entry(top.get("text", ""))
+        top_norm = re.sub(r'[\W_]+', '', top_cleaned_text.lower())
         parent_ev = {
             "scholar": scholar,
             "scholar_url": top.get("scholar_url") or (items[0].get("scholar_url") if items else ""),
@@ -1970,7 +2043,7 @@ def aggregate_events(events: list) -> list:
             "areas": top.get("areas") or (items[0].get("areas") if items else []),
             "watch": top.get("watch") or (items[0].get("watch") if items else "general"),
             "kind": top.get("kind", "update"),
-            "text": top.get("text", ""),
+            "text": top_cleaned_text,
             "link": top.get("link") or top.get("scholar_url"),
             "date_str": top.get("date_str", ""),
             "timestamp": top.get("timestamp") or 0.0,
@@ -1980,15 +2053,65 @@ def aggregate_events(events: list) -> list:
         if top.get("diff"):
             parent_ev["diff"] = top["diff"]
 
+        from difflib import SequenceMatcher
         sub_items = []
-        for cand in valid_cands[1:10]:
+        top_base = _extract_base_title(top_cleaned_text)
+        seen_norms = {top_norm}
+        seen_bases = {top_base} if top_base else set()
+
+        for cand in valid_cands[1:]:
+            cand_clean = _clean_paper_entry(cand["text"])
+            if not cand_clean or len(cand_clean) < 4:
+                continue
+            cand_norm = re.sub(r'[\W_]+', '', cand_clean.lower())
+            cand_base = _extract_base_title(cand_clean)
+            if cand_norm in seen_norms or (cand_base and cand_base in seen_bases):
+                continue
+
+            # Compare against top headline
+            if SequenceMatcher(None, top_norm, cand_norm).ratio() > 0.70:
+                continue
+            if top_base and cand_base and SequenceMatcher(None, top_base, cand_base).ratio() > 0.70:
+                continue
+            if len(top_base) > 12 and len(cand_base) > 12 and (cand_base in top_base or top_base in cand_base):
+                continue
+            if len(cand_norm) > 15 and (cand_norm in top_norm or top_norm in cand_norm):
+                continue
+
+            # Compare against previous sub items
+            is_dupe = False
+            for prev_norm in seen_norms:
+                if SequenceMatcher(None, prev_norm, cand_norm).ratio() > 0.75:
+                    is_dupe = True
+                    break
+                if len(cand_norm) > 15 and len(prev_norm) > 15 and (cand_norm in prev_norm or prev_norm in cand_norm):
+                    is_dupe = True
+                    break
+            if is_dupe:
+                continue
+
+            for prev_base in seen_bases:
+                if SequenceMatcher(None, prev_base, cand_base).ratio() > 0.72:
+                    is_dupe = True
+                    break
+                if len(cand_base) > 12 and len(prev_base) > 12 and (cand_base in prev_base or prev_base in cand_base):
+                    is_dupe = True
+                    break
+            if is_dupe:
+                continue
+
+            seen_norms.add(cand_norm)
+            if cand_base:
+                seen_bases.add(cand_base)
             sub_items.append({
-                "text": cand["text"],
+                "text": cand_clean,
                 "link": cand["link"],
                 "kind": cand["kind"],
                 "date": cand["date_str"],
                 "timestamp": cand["timestamp"],
             })
+            if len(sub_items) >= 9:
+                break
         if sub_items:
             parent_ev["sub_items"] = sub_items
 
@@ -2096,354 +2219,59 @@ def load_events_history() -> list:
             return []
         now_ts = datetime.now(timezone.utc).timestamp()
         max_valid_ts = now_ts + 86400
+
+        config = load_yaml(BASE_DIR / "config.yaml")
+        scholars_cfg = {s["name"]: s for s in config.get("scholars", []) if "name" in s}
+
         filtered_data = []
         for ev in data:
-            t = ev.get("text", "")
             s = ev.get("scholar", "")
-            if t.lower() == "page content updated":
+            t = ev.get("text", "")
+            if not s or not t or t.lower() == "page content updated":
                 continue
 
-            # Scholar-specific overrides and cleanups first
-            if "王立远" in s:
-                ev["kind"] = "news"
-                ev["text"] = "2026/10 One paper is accepted to IEEE TPAMI."
-                ev["date_str"] = "2026-10"
-                ev["timestamp"] = datetime(2026, 10, 1, 12, 0, tzinfo=timezone.utc).timestamp()
-                ev["link"] = "https://neurips26-cl4fmagents.github.io/"
-                ev["sub_items"] = [
-                    {"text": "2026/09 Two papers are accepted to IJCV.", "link": "https://lywang3081.github.io/", "kind": "news", "date": "2026-09-29", "timestamp": datetime(2026, 9, 29, tzinfo=timezone.utc).timestamp()},
-                    {"text": "2026/08 I received the NSFC Youth Science Fund (Category B).", "link": "https://lywang3081.github.io/", "kind": "news", "date": "2026-08-15", "timestamp": datetime(2026, 8, 15, tzinfo=timezone.utc).timestamp()},
-                    {"text": "2026/08 I will serve as an Area Chair at ICLR 2027.", "link": "https://lywang3081.github.io/", "kind": "news", "date": "2026-08-10", "timestamp": datetime(2026, 8, 10, tzinfo=timezone.utc).timestamp()},
-                    {"text": "2026/07 We are organizing the 1st CL4FMAgents Workshop at NeurIPS 2026.", "link": "https://lywang3081.github.io/", "kind": "news", "date": "2026-07-20", "timestamp": datetime(2026, 7, 20, tzinfo=timezone.utc).timestamp()},
-                    {"text": "2026/06 One paper is accepted to Nature Communications.", "link": "https://lywang3081.github.io/", "kind": "news", "date": "2026-06-15", "timestamp": datetime(2026, 6, 15, tzinfo=timezone.utc).timestamp()},
-                    {"text": "2026/05 Three papers are accepted to ICML.", "link": "https://lywang3081.github.io/", "kind": "news", "date": "2026-05-15", "timestamp": datetime(2026, 5, 15, tzinfo=timezone.utc).timestamp()},
-                    {"text": "2026/04 One paper is accepted to Nature Communications.", "link": "https://lywang3081.github.io/", "kind": "news", "date": "2026-04-15", "timestamp": datetime(2026, 4, 15, tzinfo=timezone.utc).timestamp()},
-                    {"text": "2026/04 One paper is accepted to Patterns (as the cover).", "link": "https://lywang3081.github.io/", "kind": "news", "date": "2026-04-10", "timestamp": datetime(2026, 4, 10, tzinfo=timezone.utc).timestamp()},
-                    {"text": "2026/03 I will serve as an Action Editor for TMLR.", "link": "https://lywang3081.github.io/", "kind": "news", "date": "2026-03-01", "timestamp": datetime(2026, 3, 1, tzinfo=timezone.utc).timestamp()},
-                    {"text": "2026/02 Two papers are accepted to CVPR 2026.", "link": "https://lywang3081.github.io/", "kind": "news", "date": "2026-02-20", "timestamp": datetime(2026, 2, 20, tzinfo=timezone.utc).timestamp()},
-                ]
-
-            elif "傅宇千" in s:
-                ev["kind"] = "post"
-                ev["text"] = "Playing to the Grader: Early Stopping and Low-Quality Delivery in Frontier Coding Agents"
-                ev["date_str"] = "2026-10-04"
-                ev["timestamp"] = datetime(2026, 10, 4, 18, 0, tzinfo=timezone.utc).timestamp()
-                ev["link"] = "https://fyqqyf.github.io/"
-                ev["sub_items"] = [
-                    {"text": "Revisiting On-Policy Distillation: Three Typical Failure Modes and Repair Paths", "link": "https://fyqqyf.github.io/", "kind": "post", "date": "2026-10-04", "timestamp": datetime(2026, 10, 4, 12, 0, tzinfo=timezone.utc).timestamp()},
-                    {"text": "How Anthropic/OpenAI Monitor Advanced Agent Behavior", "link": "https://fyqqyf.github.io/", "kind": "post", "date": "2026-10-04", "timestamp": datetime(2026, 10, 4, 10, 0, tzinfo=timezone.utc).timestamp()},
-                    {"text": "Revisiting On-Policy Distillation: Empirical Failure Modes and Simple Fixes · COLM 2026", "link": "https://arxiv.org/abs/2603.25562", "kind": "paper", "date": "2026-09-15", "timestamp": datetime(2026, 9, 15, tzinfo=timezone.utc).timestamp()},
-                    {"text": "SRFT: A Single-Stage Method with Supervised and Reinforcement Fine-Tuning for Reasoning · ICLR 2026", "link": "https://fyqqyf.github.io/", "kind": "paper", "date": "2026-01-20", "timestamp": datetime(2026, 1, 20, tzinfo=timezone.utc).timestamp()},
-                    {"text": "AVA: Attentive VLM Agent for Mastering StarCraft II · ACL 2026", "link": "https://fyqqyf.github.io/", "kind": "paper", "date": "2026-05-10", "timestamp": datetime(2026, 5, 10, tzinfo=timezone.utc).timestamp()},
-                ]
-
-            elif "孙科" in s:
-                ev["kind"] = "paper"
-                ev["text"] = "CurveRL: Principled Distribution-Aware Context Reweighting for LLM Reasoning · NeurIPS 2026"
-                ev["sub_items"] = [
-                    {"text": "ARMA-Design: Optimal Treatment Allocation Strategies for A/B Testing in Partially Observable Environments", "link": "https://arxiv.org/abs/2605.24331", "kind": "paper", "date": "2026-09-10", "timestamp": datetime(2026, 9, 10, tzinfo=timezone.utc).timestamp()},
-                    {"text": "Policy Optimization in Continuous Action Spaces with Heavy Tails", "link": "https://sites.google.com/view/kesun", "kind": "paper", "date": "2026-05-01", "timestamp": datetime(2026, 5, 1, tzinfo=timezone.utc).timestamp()},
-                ]
-
-            elif "杨恩能" in s:
-                ev["kind"] = "news"
-                ev["text"] = "2026.07: Our paper on data augmentation has been accepted by TKDE 2026."
-                ev["sub_items"] = [
-                    {"text": "2026.05: Several of our papers have been accepted by ICML 2026.", "link": "https://ennengyang.github.io/", "kind": "news", "date": "2026-05-15", "timestamp": datetime(2026, 5, 15, tzinfo=timezone.utc).timestamp()},
-                    {"text": "2026.05: Our survey paper on data augmentation has been accepted by IEEE TPAMI.", "link": "https://ennengyang.github.io/", "kind": "news", "date": "2026-05-10", "timestamp": datetime(2026, 5, 10, tzinfo=timezone.utc).timestamp()},
-                    {"text": "2026.04: Two papers have been accepted by IJCAI 2026.", "link": "https://ennengyang.github.io/", "kind": "news", "date": "2026-04-15", "timestamp": datetime(2026, 4, 15, tzinfo=timezone.utc).timestamp()},
-                    {"text": "2026.01: Our paper on model merging has been accepted by ICLR 2026.", "link": "https://ennengyang.github.io/", "kind": "news", "date": "2026-01-20", "timestamp": datetime(2026, 1, 20, tzinfo=timezone.utc).timestamp()},
-                ]
-
-            elif "xuhuiz.com" in s:
-                ev["kind"] = "news"
-                ev["text"] = "Sep 26, 2026 OdysSim: Building Foundation Models for Human Behavior Simulation has been accepted to NeurIPS 2026!"
-                ev["sub_items"] = [
-                    {"text": "Aug 12, 2026 I defended my PhD! [Slides] [Recording]", "link": "https://xuhuiz.com/", "kind": "news", "date": "2026-08-12", "timestamp": datetime(2026, 8, 12, tzinfo=timezone.utc).timestamp()}
-                ]
-
-            elif "沈立" in s:
-                ev["kind"] = "paper"
-                ev["text"] = "OptMerge: Unifying Multimodal LLM Capabilities and Modalities via Model Merging · ICLR 2026"
-                ev["link"] = "https://sites.google.com/site/mathshenli/home"
-                ev["date_str"] = "2026-05"
-                ev["timestamp"] = datetime(2026, 5, 1, tzinfo=timezone.utc).timestamp()
-                ev["sub_items"] = [
-                    {
-                        "text": "MergOPT: A Merge-Aware Optimizer for Robust Model Merging · ICLR 2026",
-                        "link": "https://sites.google.com/site/mathshenli/home",
-                        "kind": "paper",
-                        "date": "2026-05-01",
-                        "timestamp": datetime(2026, 5, 1, tzinfo=timezone.utc).timestamp()
-                    },
-                    {
-                        "text": "Diffusion Language Model Knows the Answer Before It Decodes · ICLR 2026 Oral",
-                        "link": "https://sites.google.com/site/mathshenli/home",
-                        "kind": "paper",
-                        "date": "2026-05-01",
-                        "timestamp": datetime(2026, 5, 1, tzinfo=timezone.utc).timestamp()
-                    },
-                    {
-                        "text": "Understanding the Dynamics of Forgetting and Generalization in Continual Learning · ICLR 2026",
-                        "link": "https://sites.google.com/site/mathshenli/home",
-                        "kind": "paper",
-                        "date": "2026-05-01",
-                        "timestamp": datetime(2026, 5, 1, tzinfo=timezone.utc).timestamp()
-                    }
-                ]
-
-            elif "林知秋" in s:
-                ev["kind"] = "paper"
-                ev["text"] = "CVPR 2026 Highlight (Top 3%): CHAI - Building a Precise Video Language with Human-AI Oversight"
-
-            elif "姚顺雨" in s:
-                ev["kind"] = "paper"
-                ev["text"] = "Computer-Using Agent (CUA) OpenAI · A universal agent/interface to interact with the digital world"
-
-            # Update 孙宇 to ICML 2026 with direct arXiv link
-            elif "孙宇" in s:
-                ev["text"] = "Learning to Discover at Test Time · ICML 2026"
-                ev["link"] = "https://arxiv.org/abs/2601.16175"
-                ev["date_str"] = "2026-07"
-                ev["timestamp"] = datetime(2026, 7, 1, tzinfo=timezone.utc).timestamp()
-                ev["sub_items"] = [
-                    {
-                        "text": "End-to-End Test-Time Training for Long Context · arXiv 2025",
-                        "link": "https://arxiv.org/abs/2512.23675",
-                        "kind": "paper",
-                        "date": "2025-12-30",
-                    }
-                ]
-
-            # Update 吴太强 with direct arXiv links
-            elif "吴太强" in s:
-                ev["text"] = "The Art of Efficient Reasoning: Data, Reward, and Optimization · EMNLP 2026"
-                ev["link"] = "https://arxiv.org/abs/2602.20945"
-                ev["date_str"] = "2026-08"
-                ev["timestamp"] = datetime(2026, 8, 1, tzinfo=timezone.utc).timestamp()
-                ev["sub_items"] = [
-                    {
-                        "text": "Revisiting Model Interpolation for Efficient Reasoning · ACL 2026",
-                        "link": "https://arxiv.org/abs/2510.10977",
-                        "kind": "paper",
-                        "date": "2026-04-15"
-                    },
-                    {
-                        "text": "Timber: Training-free Instruct Model Refining with Base via Effective Rank · arXiv 2025",
-                        "link": "https://arxiv.org/abs/2509.23595",
-                        "kind": "paper",
-                        "date": "2025-09-25"
-                    }
-                ]
-
-            # Update 蒋玉初 with direct ICML Spotlight link
-            elif "蒋玉初" in s:
-                ev["text"] = "Rethinking LLM Ensembling from the Perspective of Mixture Models · ICML 2026 Spotlight"
-                ev["link"] = "https://arxiv.org/abs/2605.00419"
-                ev["date_str"] = "2026-05"
-                ev["timestamp"] = datetime(2026, 5, 1, tzinfo=timezone.utc).timestamp()
-                ev["sub_items"] = [
-                    {
-                        "text": "Cross-domain Few-shot Incremental Learning · CVPR 2025",
-                        "link": "https://kamichanw.github.io/publications/",
-                        "kind": "paper",
-                        "date": "2025-06-01"
-                    }
-                ]
-
-            elif _is_tag_or_noise_line(t, s) or _is_author_list_line(t) or _is_status_or_venue_line(t) or _is_bio_or_profile_line(t):
-                continue
-            elif "breezedeus" in s.lower() and ev.get("result_type") == "changed":
+            # Skip scholars not present in current config.yaml to eliminate ghost entries
+            if s not in scholars_cfg:
                 continue
 
-            # Purge stale events from 2024 or earlier
+            # Synchronize canonical metadata directly from config.yaml
+            cfg_entry = scholars_cfg[s]
+            ev["affiliation"] = _norm_str(cfg_entry.get("affiliation"))
+            ev["areas"] = cfg_entry.get("research_areas") or []
+            ev["scholar_url"] = cfg_entry.get("url", ev.get("scholar_url", ""))
+            ev["watch"] = cfg_entry.get("watch", ev.get("watch", "general"))
+
+            # Filter out stale events prior to 2025
             d_str = ev.get("date_str", "")
             m_yr = re.search(r'\b(202\d)\b', d_str)
             ev_yr = int(m_yr.group(1)) if m_yr else None
             if not ev_yr:
-                ts = ev.get("timestamp") or 0.0
-                if ts > 0:
-                    ev_yr = datetime.fromtimestamp(ts, tz=timezone.utc).year
+                ts_cand = ev.get("timestamp") or 0.0
+                if ts_cand > 0:
+                    ev_yr = datetime.fromtimestamp(ts_cand, tz=timezone.utc).year
             if ev_yr and ev_yr < 2025:
                 continue
 
-            # Drop stale fallback paper for 王子峰
-            if "王子峰" in s and "sparse continual" in t.lower():
-                continue
-
             t_clean = _clean_paper_entry(_clean_html(t))
-            if not any(k in s for k in ["王立远", "傅宇千", "孙科", "杨恩能", "xuhuiz.com", "沈立", "林知秋", "姚顺雨", "孙宇", "吴太强", "蒋玉初"]):
-                ev["text"] = t_clean
+            if not t_clean or len(t_clean) < 4:
+                continue
+            if _is_tag_or_noise_line(t_clean, s) or _is_author_list_line(t_clean) or _is_status_or_venue_line(t_clean) or _is_bio_or_profile_line(t_clean):
+                continue
+            ev["text"] = t_clean
 
-            # Fix 朱星宇: Oral paper as title, BiMoGen as sub-item
-            # Fix 朱星宇: Oral paper as title, all 2026 papers as sub-items
-            if "朱星宇" in s and ("bimogen" in t_clean.lower() or "thinking with images" in t_clean.lower()):
-                ev["text"] = "Thinking with Images as Continuous Actions: Numerical Visual Chain-of-Thought · NeurIPS 2026 Oral"
-                ev["date_str"] = "2026-09"
-                ev["timestamp"] = datetime(2026, 9, 1, tzinfo=timezone.utc).timestamp()
-                ev["sub_items"] = [
-                    {
-                        "text": "BiMoGen: Bidirectional Motion-Text Generation via Unified Masked Discrete Diffusion · NeurIPS 2026",
-                        "link": ev.get("link", ""),
-                        "kind": "paper"
-                    },
-                    {
-                        "text": "PEA-DPO: Perception-Enhanced Alignment Direct Preference Optimization for MLLMs Alignment · ACM MM 2026",
-                        "link": ev.get("link", ""),
-                        "kind": "paper"
-                    },
-                    {
-                        "text": "Robustifying Vision-Language Models via Test-Time Prompt Adaptation · ICML 2026",
-                        "link": ev.get("link", ""),
-                        "kind": "paper"
-                    },
-                    {
-                        "text": "Mitigating Hallucinations in Large Vision-Language Models without Performance Degradation · ACL 2026 Oral",
-                        "link": ev.get("link", ""),
-                        "kind": "paper"
-                    },
-                    {
-                        "text": "LPEdit: Locality-Preserving Knowledge Editing for MultiModal Large Language Models · WWW 2026",
-                        "link": ev.get("link", ""),
-                        "kind": "paper"
-                    },
-                    {
-                        "text": "Principled Steering via Null-space Projection for Jailbreak Defense in Vision-Language Models · CVPR 2026",
-                        "link": ev.get("link", ""),
-                        "kind": "paper"
-                    },
-                    {
-                        "text": "Adapting Point Cloud Analysis via Multimodal Bayesian Distribution Learning · CVPR 2026",
-                        "link": ev.get("link", ""),
-                        "kind": "paper"
-                    }
-                ]
-
-            # Enhance 王子峰: EnvHarness with sub-items SkillOS & RRSI
-            if "王子峰" in s and "envharness" in t_clean.lower():
-                ev["sub_items"] = [
-                    {
-                        "text": "SkillOS: Learning Skill Curation for Self-Evolving Agents · NeurIPS 2026",
-                        "link": "https://arxiv.org/abs/2605.06614",
-                        "kind": "paper"
-                    },
-                    {
-                        "text": "RRSI: Regularized Recursive Self-Improvement of Agent Harnesses · arXiv 2026",
-                        "link": "https://arxiv.org/abs/2609.24972",
-                        "kind": "paper"
-                    }
-                ]
-
-            # Enhance 张天远 with direct arXiv links
-            if "张天远" in s:
-                ev["link"] = "https://arxiv.org/abs/2509.25162"
-                ev["sub_items"] = [
-                    {
-                        "text": "Test-time training done right · ICLR 2026",
-                        "link": "https://arxiv.org/abs/2410.05229",
-                        "kind": "paper",
-                        "date": "2026-01-20"
-                    },
-                    {
-                        "text": "Zipmap: Linear-time stateful 3d reconstruction via test-time training · CVPR 2026",
-                        "link": "https://zipmap3d.github.io/",
-                        "kind": "paper",
-                        "date": "2026-02-27"
-                    },
-                    {
-                        "text": "Large video planner enables generalizable robot control · arXiv 2025",
-                        "link": "https://arxiv.org/abs/2512.15840",
-                        "kind": "paper",
-                        "date": "2025-12-20"
-                    },
-                    {
-                        "text": "AlignTok: Aligning Visual Foundation Encoders to Tokenizers for Diffusion Models · arXiv 2025",
-                        "link": "https://arxiv.org/abs/2509.25162",
-                        "kind": "paper",
-                        "date": "2025-09-25"
-                    }
-                ]
-
-            # Enhance 袁洋 with deeper recent papers
-            if "袁洋" in s:
-                ev["sub_items"] = [
-                    {
-                        "text": "Tensor product attention is all you need · NeurIPS 2026",
-                        "link": ev.get("link", ""),
-                        "kind": "paper",
-                        "date": "2026-09-25"
-                    },
-                    {
-                        "text": "Group representational position encoding · ICLR 2026",
-                        "link": ev.get("link", ""),
-                        "kind": "paper",
-                        "date": "2026-01-20"
-                    },
-                    {
-                        "text": "On the design of kl-regularized policy gradient algorithms for llm reasoning · ICLR 2026",
-                        "link": ev.get("link", ""),
-                        "kind": "paper",
-                        "date": "2026-01-20"
-                    },
-                    {
-                        "text": "Probing the Lack of Stable Internal Beliefs in LLMs · arXiv 2026",
-                        "link": "https://arxiv.org/abs/2603.25187",
-                        "kind": "paper",
-                        "date": "2026-03-25"
-                    },
-                    {
-                        "text": "Monadic Context Engineering · arXiv 2025",
-                        "link": "https://arxiv.org/abs/2512.22431",
-                        "kind": "paper",
-                        "date": "2025-12-25"
-                    },
-                    {
-                        "text": "Clarifying before reasoning: A coq prover with structural context · arXiv 2025",
-                        "link": "https://arxiv.org/abs/2507.02541",
-                        "kind": "paper",
-                        "date": "2025-07-05"
-                    }
-                ]
-
-            # Enhance 堪村无业土博鼠 (Hao Zhu) with deeper recent papers
-            if "hao zhu" in s.lower() or "堪村无业土博鼠" in s:
-                ev["sub_items"] = [
-                    {
-                        "text": "FLASH: Fast Generative Retrieval via Autoregressive Semantic Hashing with Provably Distance Bounds · SIGKDD 2026",
-                        "link": ev.get("link", ""),
-                        "kind": "paper",
-                        "date": "2026-08-20"
-                    },
-                    {
-                        "text": "Federated Domain Generalization for Time-Series Classification via Dynamics-to-Domain Generation · SIGKDD 2026",
-                        "link": ev.get("link", ""),
-                        "kind": "paper",
-                        "date": "2026-08-20"
-                    },
-                    {
-                        "text": "Machine unlearning via task simplex arithmetic · NeurIPS 2026",
-                        "link": ev.get("link", ""),
-                        "kind": "paper",
-                        "date": "2026-09-25"
-                    },
-                    {
-                        "text": "CrossSpectra: exploiting cross-layer smoothness for parameter-efficient fine-tuning · NeurIPS 2026",
-                        "link": ev.get("link", ""),
-                        "kind": "paper",
-                        "date": "2026-09-25"
-                    },
-                    {
-                        "text": "Hierarchically Robust Zero-shot Vision-language Models · CVPR 2026",
-                        "link": ev.get("link", ""),
-                        "kind": "paper",
-                        "date": "2026-02-27"
-                    }
-                ]
-
+            # Clean and filter sub_items
             if "sub_items" in ev and isinstance(ev["sub_items"], list):
+                cleaned_subs = []
                 for sub in ev["sub_items"]:
-                    if "text" in sub:
-                        sub["text"] = _clean_paper_entry(_clean_html(sub["text"]))
+                    sub_txt = sub.get("text", "")
+                    sub_clean = _clean_paper_entry(_clean_html(sub_txt))
+                    if not sub_clean or len(sub_clean) < 4:
+                        continue
+                    if _is_tag_or_noise_line(sub_clean, s) or _is_author_list_line(sub_clean) or _is_status_or_venue_line(sub_clean) or _is_bio_or_profile_line(sub_clean):
+                        continue
+                    sub["text"] = sub_clean
+                    cleaned_subs.append(sub)
+                ev["sub_items"] = cleaned_subs
 
             ts = ev.get("timestamp") or 0.0
             fs_ts = _first_seen_to_timestamp(ev.get("first_seen", ""))
@@ -2457,376 +2285,9 @@ def load_events_history() -> list:
                         ev["timestamp"] = fs_ts
                         if ev.get("date_str") == f"{dt.year:04d}-{dt.month:02d}":
                             ev["date_str"] = fs_dt.strftime("%Y-%m-%d")
+
             filtered_data.append(ev)
 
-        names_in_filtered = {e.get("scholar") for e in filtered_data}
-        if "Yuteng Shen(沉宇腾)" not in names_in_filtered:
-            filtered_data.append({
-                "scholar": "Yuteng Shen(沉宇腾)",
-                "scholar_url": "https://syt-nju.github.io/writing/",
-                "affiliation": "南京大学",
-                "areas": ["LLM Post-training"],
-                "watch": "blog",
-                "kind": "post",
-                "text": "Why online RFT falls short of RLVR: negative samples are the key",
-                "link": "https://zhuanlan.zhihu.com/p/1941603697311342965",
-                "date_str": "2026-08-15",
-                "timestamp": datetime(2026, 8, 15, tzinfo=timezone.utc).timestamp(),
-                "result_type": "changed",
-                "first_seen": "2026-08-15T00:00:00+00:00",
-                "sub_items": [
-                    {
-                        "text": "Reading GSPO: routing replay, sequence-level clipping, and why the objective changes",
-                        "link": "https://zhuanlan.zhihu.com/p/1933217003654586554",
-                        "kind": "post",
-                    }
-                ],
-            })
-        if "percent4 Blog" not in names_in_filtered:
-            filtered_data.append({
-                "scholar": "percent4 Blog",
-                "scholar_url": "https://percent4.github.io/",
-                "affiliation": "",
-                "areas": ["NLP"],
-                "watch": "blog",
-                "kind": "post",
-                "text": "NLP（一百二十二）使用mem0为你的大模型加入记忆层",
-                "link": "https://percent4.github.io/NLP%EF%BC%88%E4%B8%80%E7%99%BE%E4%BA%8C%E5%8D%81%E4%BA%8C%EF%BC%89%E4%BD%BF%E7%94%A8mem0%E4%B8%BA%E4%BD%A0%E7%9A%84%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%8A%A0%E5%85%A5%E8%AE%B0%E5%BF%86%E5%B1%82/",
-                "date_str": "2025-07-13",
-                "timestamp": datetime(2025, 7, 13, tzinfo=timezone.utc).timestamp(),
-                "result_type": "changed",
-                "first_seen": "2025-07-13T00:00:00+00:00",
-                "sub_items": [
-                    {
-                        "text": "NLP（一百二十一）用飞书机器人打造你的专属AI新闻推送助手",
-                        "link": "https://percent4.github.io/NLP%EF%BC%88%E4%B8%80%E7%99%BE%E4%BA%8C%E5%8D%81%E4%B8%80%EF%BC%89%E7%94%A8%E9%A3%9E%E4%B9%A6%E6%9C%BA%E5%99%A8%E4%BA%BA%E6%89%93%E9%80%A0%E4%BD%A0%E7%9A%84%E4%B8%93%E5%B1%9EAI%E6%96%B0%E9%97%BB%E6%8E%A8%E9%80%81%E5%8A%A9%E6%89%8B%EF%BC%88%E5%90%AB%E4%BB%A3%E7%A0%81%E5%AE%9E%E6%88%98%EF%BC%89/",
-                        "kind": "post",
-                    },
-                    {
-                        "text": "NLP（一百二十）LiteLLM解析：构建统一大模型接口的利器",
-                        "link": "https://percent4.github.io/NLP%EF%BC%88%E4%B8%80%E7%99%BE%E4%BA%8C%E5%8D%81%EF%BC%89LiteLLM%E8%A7%A3%E6%9E%90%EF%BC%9A%E6%9E%84%E5%BB%BA%E7%BB%9F%E4%B8%80%E5%A4%A7%E6%A8%A1%E5%9E%8B%E6%8E%A5%E5%8F%A3%E7%9A%84%E5%88%A9%E5%99%A8/",
-                        "kind": "post",
-                    }
-                ]
-            })
-        if "Home - colah's blog" not in names_in_filtered:
-            filtered_data.append({
-                "scholar": "Home - colah's blog",
-                "scholar_url": "https://transformer-circuits.pub/",
-                "affiliation": "Anthropic",
-                "areas": ["Interpretability"],
-                "watch": "blog",
-                "kind": "paper",
-                "text": "Characterizing interference weights in a tiny language model",
-                "link": "https://transformer-circuits.pub/2026/interference_effectiveness_helpfulness/index.html",
-                "date_str": "2026-08-21",
-                "timestamp": datetime(2026, 8, 21, tzinfo=timezone.utc).timestamp(),
-                "result_type": "rss",
-                "first_seen": "2026-08-21T00:00:00+00:00",
-                "sub_items": [
-                    {
-                        "text": "Verbalizable Representations Form a Global Workspace in Language Models",
-                        "link": "https://transformer-circuits.pub/2026/workspace/index.html",
-                        "kind": "paper",
-                    },
-                    {
-                        "text": "Circuits Updates — June 2026",
-                        "link": "https://transformer-circuits.pub/2026/june-update/index.html",
-                        "kind": "post",
-                    },
-                ],
-            })
-        if "K.I.S.S" not in names_in_filtered:
-            filtered_data.append({
-                "scholar": "K.I.S.S",
-                "scholar_url": "https://bigeagle.me/",
-                "affiliation": "Moonshot AI",
-                "areas": ["LLM System"],
-                "watch": "blog",
-                "kind": "post",
-                "text": "身在 Kimi 的 800 天",
-                "link": "https://github.com/bigeagle/bigeagle.me/blob/master/content/post/20260404-800-days-at-kimi/index.md",
-                "date_str": "2026-04-04",
-                "timestamp": datetime(2026, 4, 4, tzinfo=timezone.utc).timestamp(),
-                "result_type": "changed",
-                "first_seen": "2026-04-04T00:00:00+00:00",
-                "sub_items": [
-                    {
-                        "text": "写在 Kimi K2 发布之后：再也不仅仅是 ChatBot",
-                        "link": "https://github.com/bigeagle/bigeagle.me/blob/master/content/post/20250713-kimi-k2/index.md",
-                        "kind": "post",
-                    }
-                ],
-            })
-        if "YY Blog" not in names_in_filtered:
-            filtered_data.append({
-                "scholar": "YY Blog",
-                "scholar_url": "https://yqqy.top/blog.html",
-                "affiliation": "",
-                "areas": ["Tool"],
-                "watch": "blog",
-                "kind": "post",
-                "text": "夜莺v8执行自定义脚本并告警通知",
-                "link": "https://yqqy.top/blog/2025/nightingale-monitor-notification",
-                "date_str": "2025-11-20",
-                "timestamp": datetime(2025, 11, 20, tzinfo=timezone.utc).timestamp(),
-                "result_type": "changed",
-                "first_seen": "2025-11-20T00:00:00+00:00",
-                "sub_items": [
-                    {
-                        "text": "使用confluent-kafka-go包遇到的cgo问题",
-                        "link": "https://yqqy.top/blog/2025/confluent-kafka-go-cgo-build",
-                        "kind": "post",
-                    }
-                ],
-            })
-        # Batch 1: Technical Blogs (柠檬CC, DaNing Blog, A. Weers Blog, 📚 plmblog)
-        filtered_data.append({
-            "scholar": "柠檬CC",
-            "scholar_url": "https://limoncc.com/",
-            "affiliation": "",
-            "areas": ["LLM", "RL"],
-            "watch": "blog",
-            "kind": "post",
-            "text": "强化学习讲义2——MiMoV2.6组级智能体评分",
-            "link": "https://limoncc.com/post/a2cf7f69fb416ea5/",
-            "date_str": "2026-09-27",
-            "timestamp": datetime(2026, 9, 27, tzinfo=timezone.utc).timestamp(),
-            "result_type": "changed",
-            "first_seen": "2026-09-27T00:00:00+00:00",
-            "sub_items": [
-                {"text": "强化学习讲义1——RL-for-LLM技术选择决策图Tricks-or-Traps", "link": "https://limoncc.com/post/e2dd286f4b3be253/", "date": "2026-09-23", "kind": "post"},
-                {"text": "大语言模型研究10——RubricRL实践", "link": "https://limoncc.com/post/793a20286198dbac/", "date": "2026-09-16", "kind": "post"},
-                {"text": "大语言模型研究09-RubricRL理论分析", "link": "https://limoncc.com/post/70fa56fce8a7ff4f/", "date": "2026-09-14", "kind": "post"},
-                {"text": "RNN的复兴04:线性注意力并行计算DPLR", "link": "https://limoncc.com/post/9e070b6858f0e490/", "date": "2026-08-18", "kind": "post"},
-                {"text": "大语言模型研究17——强化学习中KL散度惩罚问题", "link": "https://limoncc.com/post/9e2e995289848c87/", "date": "2026-06-28", "kind": "post"},
-                {"text": "大语言模型研究16——注意力机制优化之稀疏注意", "link": "https://limoncc.com/post/1540fb65f18f359a/", "date": "2026-05-25", "kind": "post"},
-                {"text": "大语言模型研究14——注意力机制优化之FlashAttention", "link": "https://limoncc.com/post/f8b4cf8901e0b294/", "date": "2026-05-19", "kind": "post"},
-                {"text": "大语言模型研究15——注意力机制优化之KV缓存", "link": "https://limoncc.com/post/64e24a5816e7035f/", "date": "2026-05-19", "kind": "post"},
-                {"text": "大语言模型研究12——均方根层归一化(RMSNorm)", "link": "https://limoncc.com/post/459cffa89d9d94ff/", "date": "2026-05-18", "kind": "post"},
-            ],
-        })
-        filtered_data.append({
-            "scholar": "DaNing Blog",
-            "scholar_url": "https://adaning.github.io/",
-            "affiliation": "东北大学",
-            "areas": ["Diffusion", "Multimodal"],
-            "watch": "blog",
-            "kind": "post",
-            "text": "Multimodal Large Language Model 总结",
-            "link": "https://adaning.github.io/posts/64567.html",
-            "date_str": "2026-01-10",
-            "timestamp": datetime(2026, 1, 10, tzinfo=timezone.utc).timestamp(),
-            "result_type": "changed",
-            "first_seen": "2026-01-10T00:00:00+00:00",
-            "sub_items": [
-                {"text": "JiT: Back to Basics-Let Denoising Generative Models Denoise", "link": "https://adaning.github.io/posts/53773.html", "date": "2025-12-18", "kind": "post"},
-                {"text": "TCSinger 2: Customizable Multilingual Zero-shot Singing Voice Synthesis", "link": "https://adaning.github.io/posts/46935.html", "date": "2025-10-20", "kind": "post"},
-                {"text": "Flow Matching: Flow Matching for Generative Modeling", "link": "https://adaning.github.io/posts/19143.html", "date": "2025-09-15", "kind": "post"},
-                {"text": "MeanFlow: Mean Flows for One-step Generative Modeling", "link": "https://adaning.github.io/posts/24991.html", "date": "2025-08-12", "kind": "post"},
-                {"text": "ReFlow: Flow Straight and Fast-Learning to Generate and Transfer Data with Rectified Flow", "link": "https://adaning.github.io/posts/24725.html", "date": "2025-07-08", "kind": "post"},
-                {"text": "AlignSTS: Speech-to-Singing Conversion via Cross-Modal Alignment", "link": "https://adaning.github.io/posts/26761.html", "date": "2025-06-01", "kind": "post"},
-                {"text": "DDIM: Denoising Diffusion Implicit Models", "link": "https://adaning.github.io/posts/40650.html", "date": "2025-05-10", "kind": "post"},
-                {"text": "RoPE / RoFormer: Enhanced Transformer with Rotary Position Embedding", "link": "https://adaning.github.io/posts/50765.html", "date": "2025-04-15", "kind": "post"},
-                {"text": "CLAP: Large-scale Contrastive Language-Audio Pretraining", "link": "https://adaning.github.io/posts/21614.html", "date": "2025-03-20", "kind": "post"},
-            ],
-        })
-        filtered_data.append({
-            "scholar": "A. Weers Blog",
-            "scholar_url": "https://aweers.de/blog/",
-            "affiliation": "",
-            "areas": ["RL", "LLM"],
-            "watch": "blog",
-            "kind": "post",
-            "text": "Denser rewards, nearly free: contrastive potential shaping",
-            "link": "https://aweers.de/blog/2026/potential/",
-            "date_str": "2026-07-25",
-            "timestamp": datetime(2026, 7, 25, tzinfo=timezone.utc).timestamp(),
-            "result_type": "changed",
-            "first_seen": "2026-07-25T00:00:00+00:00",
-            "sub_items": [
-                {"text": "State of RL for reasoning LLMs", "link": "https://aweers.de/blog/2026/rl-for-llms/", "date": "2026-03-15", "kind": "post"},
-                {"text": "LoRA initialization", "link": "https://aweers.de/blog/2025/lora-init/", "date": "2025-12-15", "kind": "post"},
-                {"text": "nanochat's gpt.py", "link": "https://aweers.de/blog/2025/nanochat/", "date": "2025-11-04", "kind": "post"},
-                {"text": "DPO is SFT", "link": "https://aweers.de/blog/2025/dpo-is-sft/", "date": "2025-09-07", "kind": "post"},
-            ],
-        })
-        filtered_data.append({
-            "scholar": "📚 plmblog",
-            "scholar_url": "https://plmsmile.github.io/posts/archive.html",
-            "affiliation": "Alibaba",
-            "areas": ["LLM"],
-            "watch": "blog",
-            "kind": "post",
-            "text": "大模型评测与基准体系综述",
-            "link": "https://plmsmile.github.io/posts/llm/eval/01-eval-survey.html",
-            "date_str": "2026-03-10",
-            "timestamp": datetime(2026, 3, 10, tzinfo=timezone.utc).timestamp(),
-            "result_type": "changed",
-            "first_seen": "2026-03-10T00:00:00+00:00",
-            "sub_items": [
-                {"text": "Meta LLaMA 系列技术演进与架构剖析", "link": "https://plmsmile.github.io/posts/llm/industry/mainllm/20-meta-series.html", "date": "2026-01-15", "kind": "post"},
-                {"text": "Mistral 与 Mixtral 混合专家模型技术拆解", "link": "https://plmsmile.github.io/posts/llm/industry/mainllm/21-mistral-series.html", "date": "2025-11-20", "kind": "post"},
-                {"text": "AllenAI Olmo 开源大模型与数据管线构建", "link": "https://plmsmile.github.io/posts/llm/industry/mainllm/22-olmo-series.html", "date": "2025-09-18", "kind": "post"},
-                {"text": "MiroMind: 面向思考与推理的端到端大模型", "link": "https://plmsmile.github.io/posts/llm/industry/mainllm/23-mirothinker-series.html", "date": "2025-08-05", "kind": "post"},
-            ],
-        })
-        # Batch 2: Academic Homepages (周大蔚, 周嘉欢, 傅宇千, 孙海龙, 孙科, 林知秋, 冯钰捷)
-        filtered_data.append({
-            "scholar": "周大蔚",
-            "scholar_url": "https://www.lamda.nju.edu.cn/zhoudw/",
-            "affiliation": "NJU LAMDA",
-            "areas": ["Continual Learning", "Multimodal"],
-            "watch": "publications",
-            "kind": "paper",
-            "text": "Dynamic Cross-Modal Prompt Generation for Multimodal Continual Instruction Tuning · NeurIPS 2026",
-            "link": "https://arxiv.org/abs/2605.10765",
-            "date_str": "2026-09-24",
-            "timestamp": datetime(2026, 9, 24, tzinfo=timezone.utc).timestamp(),
-            "result_type": "changed",
-            "first_seen": "2026-09-24T23:42:37+00:00",
-            "sub_items": [
-                {"text": "Hierarchical Semantic Tree Anchoring for CLIP-Based Class-Incremental Learning · NeurIPS 2026", "link": "https://arxiv.org/abs/2511.15633", "date": "2026-09-24", "kind": "paper"},
-                {"text": "SAME: Stabilized Mixture-of-Experts for Multimodal Continual Instruction Tuning · ICML 2026", "link": "https://arxiv.org/abs/2602.01990", "date": "2026-05-15", "kind": "paper"},
-                {"text": "AREA: Attribute Extraction and Aggregation for CLIP-Based Class-Incremental Learning · ICML 2026", "link": "https://arxiv.org/abs/2605.28809", "date": "2026-05-15", "kind": "paper"},
-                {"text": "CRAM: Centroid-Routing and Adaptive MoE for Multimodal Continual Instruction Tuning · EMNLP 2026", "link": "https://arxiv.org/abs/2606.02502", "date": "2026-08-20", "kind": "paper"},
-                {"text": "External Knowledge Injection for CLIP-Based Class-Incremental Learning · ICCV 2025", "link": "https://arxiv.org/abs/2503.08510", "date": "2025-07-10", "kind": "paper"},
-                {"text": "Integrating Task-Specific and Universal Adapters for Pre-Trained Model-Based Class-Incremental Learning · ICCV 2025", "link": "https://arxiv.org/abs/2508.08165", "date": "2025-07-10", "kind": "paper"},
-                {"text": "Dual Consolidation for Pre-Trained Model-Based Domain-Incremental Learning · CVPR 2025", "link": "http://arxiv.org/abs/2410.00911", "date": "2025-02-27", "kind": "paper"},
-                {"text": "Task-Agnostic Guided Feature Expansion for Class-Incremental Learning · CVPR 2025", "link": "https://arxiv.org/abs/2503.00823", "date": "2025-02-27", "kind": "paper"},
-                {"text": "Learning without Forgetting for Vision-Language Models · TPAMI 2025", "link": "http://arxiv.org/abs/2305.19270", "date": "2025-01-15", "kind": "paper"},
-            ],
-        })
-        filtered_data.append({
-            "scholar": "周嘉欢",
-            "scholar_url": "https://zhoujiahuan1991.github.io/",
-            "affiliation": "北京大学",
-            "areas": ["Continual Learning", "Multimodal"],
-            "watch": "publications",
-            "kind": "news",
-            "text": "Invited to serve as the Workshops Chair of ICCV'2027",
-            "link": "https://zhoujiahuan1991.github.io/",
-            "date_str": "2026-09-30",
-            "timestamp": datetime(2026, 9, 30, tzinfo=timezone.utc).timestamp(),
-            "result_type": "changed",
-            "first_seen": "2026-09-30T05:08:45+00:00",
-            "sub_items": [
-                {"text": "3R-Adapter: Retrieval, Rewiring, and Refinement for Efficient Adaptation of 3D Reconstruction Model · NeurIPS 2026 Spotlight", "link": "https://zhoujiahuan1991.github.io/", "date": "2026-09-25", "kind": "paper"},
-                {"text": "HypMoE-ReID: Hyperspherical Mixture-of-Experts for Large Scale Person Re-Identification · NeurIPS 2026", "link": "https://zhoujiahuan1991.github.io/", "date": "2026-09-25", "kind": "paper"},
-                {"text": "Cross-Domain Knowledge Separation and Positive Transmission for Noisy Domain Incremental Learning · NeurIPS 2026", "link": "https://zhoujiahuan1991.github.io/", "date": "2026-09-25", "kind": "paper"},
-                {"text": "FlexCover: Flexible Cover Song Generation via Symbolic Lead Sheet Control · NeurIPS 2026", "link": "https://zhoujiahuan1991.github.io/", "date": "2026-09-25", "kind": "paper"},
-                {"text": "RotVLA: Rotational Latent Action for Vision-Language-Action Model · NeurIPS 2026", "link": "https://zhoujiahuan1991.github.io/", "date": "2026-09-25", "kind": "paper"},
-                {"text": "Progressive Prototype Evolving for Dual-Forgetting Mitigation in Non-Exemplar Online Continual Learning · ACM MM 2024", "link": "https://doi.org/10.1145/3664647.3681234", "date": "2024-10-28", "kind": "paper"},
-                {"text": "Mitigate Catastrophic Remembering via Continual Knowledge Purification for Noisy Lifelong Person Re-Identification · ACM MM 2024", "link": "https://doi.org/10.1145/3664647.3681235", "date": "2024-10-28", "kind": "paper"},
-                {"text": "Compositional Prompting for Anti-Forgetting in Domain Incremental Learning · IJCV 2024", "link": "https://doi.org/10.1007/s11263-024-02134-3", "date": "2024-05-20", "kind": "paper"},
-                {"text": "Distribution-aware Knowledge Projection for Lifelong Person Re-Identification · CVPR 2024", "link": "https://doi.org/10.1109/CVPR52733.2024.01571", "date": "2024-06-17", "kind": "paper"},
-            ],
-        })
-        filtered_data.append({
-            "scholar": "傅宇千",
-            "scholar_url": "https://fyqqyf.github.io/",
-            "affiliation": "自动化所",
-            "areas": ["Distillation", "RL", "Reasoning"],
-            "watch": "publications",
-            "kind": "paper",
-            "text": "Revisiting On-Policy Distillation: Empirical Failure Modes and Simple Fixes · COLM 2026",
-            "link": "https://arxiv.org/abs/2603.25562",
-            "date_str": "2026-09-15",
-            "timestamp": datetime(2026, 9, 15, tzinfo=timezone.utc).timestamp(),
-            "result_type": "changed",
-            "first_seen": "2026-09-15T00:00:00+00:00",
-            "sub_items": [
-                {"text": "SRFT: A Single-Stage Method with Supervised and Reinforcement Fine-Tuning for Reasoning · ICLR 2026", "link": "https://openreview.net/forum?id=n6E0r6kQWQ", "date": "2026-01-20", "kind": "paper"},
-                {"text": "RLAE: Reinforcement Learning-Assisted Ensemble for LLMs · EMNLP 2025", "link": "https://aclanthology.org/2025.emnlp-main.680/", "date": "2025-11-05", "kind": "paper"},
-                {"text": "AVA: Attentive VLM Agent for Mastering StarCraft II · ACL 2026", "link": "https://fyqqyf.github.io/", "date": "2026-05-10", "kind": "paper"},
-                {"text": "Revisiting On-Policy Distillation: Three Typical Failure Modes and Repair Paths · Qingke AI", "link": "https://qingkeai.online/archives/revisiting_opd", "date": "2026-07-12", "kind": "post"},
-                {"text": "INS: Interaction-aware Synthesis to Enhance Offline Multi-agent Reinforcement Learning · ICLR 2025", "link": "https://fyqqyf.github.io/", "date": "2025-01-22", "kind": "paper"},
-            ],
-        })
-        filtered_data.append({
-            "scholar": "孙海龙",
-            "scholar_url": "https://sun-hailong.github.io/",
-            "affiliation": "NJU LAMDA",
-            "areas": ["Continual Learning", "Multimodal"],
-            "watch": "news",
-            "kind": "news",
-            "text": "Our team released Ling-3.0-flash-VL and Ling-3.0-flash-Sante, extending Ling 3.0 to visual agents and healthcare",
-            "link": "https://x.com/AntLingAGI/status/2095935971556782372",
-            "date_str": "2026-09-20",
-            "timestamp": datetime(2026, 9, 20, tzinfo=timezone.utc).timestamp(),
-            "result_type": "changed",
-            "first_seen": "2026-09-20T00:00:00+00:00",
-            "sub_items": [
-                {"text": "Open-sourced Ling-3.0-flash-Fin and FinFIRST for verifiable financial research agents", "link": "https://huggingface.co/inclusionAI/Ling-3.0-flash-Fin", "date": "2026-09-10", "kind": "post"},
-                {"text": "Release of Ling-3.0-flash model", "link": "https://huggingface.co/inclusionAI/Ling-3.0-flash", "date": "2026-07-15", "kind": "post"},
-                {"text": "Released multimodal LLM Ovis2.5-9B", "link": "https://huggingface.co/AIDC-AI/Ovis2.5-9B", "date": "2025-08-20", "kind": "post"},
-                {"text": "Mitigating Visual Forgetting in Multimodal LLMs · ACL 2025", "link": "https://arxiv.org/abs/2503.13360", "date": "2025-05-15", "kind": "paper"},
-                {"text": "Parrot: Multilingual Multimodal LLMs · ICML 2025", "link": "https://arxiv.org/abs/2406.02539", "date": "2025-05-10", "kind": "paper"},
-                {"text": "MLLM Long-Chain Reasoning via Visual Tree Search · CVPR 2025", "link": "https://arxiv.org/abs/2411.14432", "date": "2025-02-27", "kind": "paper"},
-                {"text": "PILOT: Pre-Trained Model-Based Continual Learning Toolbox · SCIS 2025", "link": "https://github.com/sun-hailong/LAMDA-PILOT", "date": "2025-01-15", "kind": "paper"},
-            ],
-        })
-        filtered_data.append({
-            "scholar": "孙科",
-            "scholar_url": "https://sites.google.com/view/kesun",
-            "affiliation": "宾夕法尼亚大学",
-            "areas": ["Continuing RL", "LLM Reasoning"],
-            "watch": "publications",
-            "kind": "paper",
-            "text": "CurveRL: Principled Distribution-Aware Context Reweighting for LLM Reasoning · NeurIPS 2026",
-            "link": "https://arxiv.org/abs/2605.24331",
-            "date_str": "2026-09-18",
-            "timestamp": datetime(2026, 9, 18, tzinfo=timezone.utc).timestamp(),
-            "result_type": "changed",
-            "first_seen": "2026-09-18T00:00:00+00:00",
-            "sub_items": [
-                {"text": "ARMA-Design: Optimal Treatment Allocation Strategies for A/B Testing in Partially Observable Experiments · JASA 2026", "link": "https://www.arxiv.org/abs/2408.05342", "date": "2026-06-10", "kind": "paper"},
-                {"text": "Principled Fast and Meta Knowledge Learners for Continual Reinforcement Learning · ICLR 2026", "link": "https://sites.google.com/view/kesun", "date": "2026-01-20", "kind": "paper"},
-                {"text": "Intrinsic Benefits of Being Categorical Distributional: Uncertainty-aware Regularized Exploration in Reinforcement Learning · NeurIPS 2025", "link": "https://arxiv.org/abs/2110.03155", "date": "2025-09-25", "kind": "paper"},
-                {"text": "Distributional Reinforcement Learning with Regularized Wasserstein Loss · NeurIPS 2024", "link": "https://arxiv.org/abs/2202.00769", "date": "2024-09-25", "kind": "paper"},
-            ],
-        })
-        filtered_data.append({
-            "scholar": "林知秋",
-            "scholar_url": "https://linzhiqiu.github.io/",
-            "affiliation": "CMU",
-            "areas": ["Multimodal", "Video", "VLM"],
-            "watch": "publications",
-            "kind": "paper",
-            "text": "CHAI: Beating GPT-5 and Gemini-3.1-Pro on Professional Video Captioning · CVPR 2026 Highlight",
-            "link": "https://linzhiqiu.github.io/papers/chai/",
-            "date_str": "2026-04-10",
-            "timestamp": datetime(2026, 4, 10, tzinfo=timezone.utc).timestamp(),
-            "result_type": "changed",
-            "first_seen": "2026-04-10T00:00:00+00:00",
-            "sub_items": [
-                {"text": "CameraBench: Comprehensive Benchmark for Camera-Controlled Video Generation · NeurIPS 2025 Spotlight", "link": "https://linzhiqiu.github.io/papers/camerabench/", "date": "2025-09-20", "kind": "paper"},
-                {"text": "NaturalBench: Evaluating Vision-Language Models on Natural Adversarial Images · NeurIPS 2024", "link": "https://linzhiqiu.github.io/papers/naturalbench/", "date": "2024-09-25", "kind": "paper"},
-                {"text": "VQAScore: Evaluating Text-to-Visual Generation with Image-to-Text Generation · ECCV 2024", "link": "https://linzhiqiu.github.io/papers/vqascore/", "date": "2024-08-15", "kind": "paper"},
-                {"text": "VisualGPTScore: Generative Evaluation for Vision-Language Models · ICML 2024", "link": "http://arxiv.org/abs/2306.01879", "date": "2024-05-10", "kind": "paper"},
-            ],
-        })
-        filtered_data.append({
-            "scholar": "冯钰捷",
-            "scholar_url": "https://woodscene.github.io/",
-            "affiliation": "香港理工大学",
-            "areas": ["Continual Learning"],
-            "watch": "publications",
-            "kind": "paper",
-            "text": "FOREVER: Forgetting Curve-Inspired Memory Replay for Language Model Continual Learning · ACL 2026",
-            "link": "https://arxiv.org/abs/2601.03938",
-            "date_str": "2026-04-01",
-            "timestamp": datetime(2026, 4, 1, tzinfo=timezone.utc).timestamp(),
-            "result_type": "changed",
-            "first_seen": "2026-04-01T00:00:00+00:00",
-            "sub_items": [
-                {"text": "Micro-Macro Retrieval: Reducing Long-Form Hallucination in Large Language Models · ICLR 2026", "link": "https://openreview.net/forum?id=ABdgMoJhlO", "date": "2026-01-15", "kind": "paper"},
-                {"text": "AIMMerging: Leveraging Training Trajectories for Adaptive Iterative Model Merging in Language Model Continual Learning · EMNLP 2025", "link": "https://aclanthology.org/2025.emnlp-main.678.pdf", "date": "2025-08-15", "kind": "paper"},
-                {"text": "GeoEdit: Geometric Knowledge Editing for Large Language Models · EMNLP 2025", "link": "https://arxiv.org/pdf/2502.19953", "date": "2025-08-15", "kind": "paper"},
-                {"text": "Recurrent Knowledge Identification and Fusion for Language Model Continual Learning · ACL 2025", "link": "https://arxiv.org/abs/2502.17510", "date": "2025-05-15", "kind": "paper"},
-                {"text": "TaSL: Task Skill Localization and Consolidation for Language Model Continual Learning · arXiv 2024", "link": "https://arxiv.org/abs/2408.05200", "date": "2024-08-10", "kind": "paper"},
-            ],
-        })
         return aggregate_events(filtered_data)
     except (json.JSONDecodeError, OSError):
         return []
@@ -3123,7 +2584,14 @@ def generate_html_report(
         filter_html += f'<label class="sm-chip"><input type="checkbox" class="fl-kind" value="{k}" checked onchange="applyFilters()">{lb}</label>'
     filter_html += '</div>'
     if all_areas:
-        filter_html += '<details class="sm-filter-more"><summary>研究方向</summary><div class="sm-filter-row">'
+        filter_html += (
+            '<details class="sm-filter-more">'
+            '<summary class="sm-filter-summary"><span>研究方向</span>'
+            '<span class="sm-filter-actions">'
+            '<button type="button" class="sm-btn-link" onclick="toggleAllFilters(\'fl-area\', true); event.stopPropagation();">全选</button> / '
+            '<button type="button" class="sm-btn-link" onclick="toggleAllFilters(\'fl-area\', false); event.stopPropagation();">清空</button>'
+            '</span></summary><div class="sm-filter-row">'
+        )
         for area in all_areas:
             filter_html += (
                 f'<label class="sm-chip"><input type="checkbox" class="fl-area" '
@@ -3131,7 +2599,14 @@ def generate_html_report(
             )
         filter_html += '</div></details>'
     if all_affiliations:
-        filter_html += '<details class="sm-filter-more"><summary>单位</summary><div class="sm-filter-row">'
+        filter_html += (
+            '<details class="sm-filter-more">'
+            '<summary class="sm-filter-summary"><span>单位</span>'
+            '<span class="sm-filter-actions">'
+            '<button type="button" class="sm-btn-link" onclick="toggleAllFilters(\'fl-aff\', true); event.stopPropagation();">全选</button> / '
+            '<button type="button" class="sm-btn-link" onclick="toggleAllFilters(\'fl-aff\', false); event.stopPropagation();">清空</button>'
+            '</span></summary><div class="sm-filter-row">'
+        )
         for aff in all_affiliations:
             filter_html += (
                 f'<label class="sm-chip"><input type="checkbox" class="fl-aff" '
@@ -3200,39 +2675,59 @@ def generate_html_report(
                 if ev.get("sub_items"):
                     subs = ev["sub_items"]
                     sub_items_li = ""
+                    main_kind = ev.get("kind", "update")
                     for s in subs:
                         stext = _esc(s.get("text", ""))
                         slink = s.get("link")
-                        skind = s.get("kind", "paper")
+                        skind = s.get("kind", main_kind)
                         sdate = s.get("date") or s.get("date_str") or s.get("published") or ""
                         sdate_disp = ""
                         if sdate:
                             sdate_disp, _ = normalize_date(sdate, s.get("timestamp") or 0.0)
-                        date_badge = f'<time class="sm-sub-date">{_esc(sdate_disp)}</time>' if sdate_disp else ""
-                        skind_badge = f'<span class="sm-kind sm-kind-{_esc(skind)} sm-sub-kind">{_kind_label(skind)}</span>'
-                        if slink and slink != ev.get("scholar_url"):
-                            sub_items_li += f'<li class="sm-tl-subpaper-item">{skind_badge}{date_badge}<a href="{_esc(slink)}" target="_blank" class="sm-sub-link">{stext} <span class="sm-link-icon">↗</span></a></li>'
-                        else:
-                            sub_items_li += f'<li class="sm-tl-subpaper-item">{skind_badge}{date_badge}<span class="sm-sub-text">{stext}</span></li>'
+                        date_badge = f'<time class="sm-sub-date">{_esc(sdate_disp)}</time>' if sdate_disp else '<time class="sm-sub-date sm-sub-date-empty">—</time>'
 
-                    main_kind = ev.get("kind", "update")
+                        # Only show badge if the sub-item type differs from the card's main type
+                        if skind != main_kind:
+                            skind_badge = f'<span class="sm-kind sm-kind-{_esc(skind)} sm-sub-kind">{_kind_label(skind)}</span>'
+                        else:
+                            skind_badge = ''
+
+                        if slink and slink != ev.get("scholar_url"):
+                            link_html = f'<a href="{_esc(slink)}" target="_blank" class="sm-sub-link">{stext} <span class="sm-link-icon">↗</span></a>'
+                        elif slink or ev.get("scholar_url"):
+                            target_link = slink or ev.get("scholar_url")
+                            link_html = f'<a href="{_esc(target_link)}" target="_blank" class="sm-sub-link sm-sub-link-site">{stext} <span class="sm-link-badge">主页 ↗</span></a>'
+                        else:
+                            link_html = f'<span class="sm-sub-text">{stext}</span>'
+
+                        sub_items_li += (
+                            f'<li class="sm-tl-subpaper-item">'
+                            f'{date_badge}{skind_badge}'
+                            f'<div class="sm-sub-title-wrap">{link_html}</div>'
+                            f'</li>'
+                        )
+
                     sub_kinds = [s.get("kind", main_kind) for s in subs]
                     counts = Counter([main_kind] + sub_kinds)
                     dominant_kind = counts.most_common(1)[0][0]
-                    total_count_sub = len(subs) + 1
                     if dominant_kind == "paper":
-                        summary_title = f"📚 近期发表成果 / 论文 (共 {total_count_sub} 篇)"
+                        summary_label = "近期发表成果 / 论文"
                     elif dominant_kind == "post":
-                        summary_title = f"✍️ 近期技术博文 (共 {total_count_sub} 篇)"
+                        summary_label = "近期技术博文"
                     elif dominant_kind == "news":
-                        summary_title = f"📢 更多近期动态 (共 {total_count_sub} 条)"
+                        summary_label = "更多近期动态"
                     else:
-                        summary_title = f"📋 更多更新记录 (共 {total_count_sub} 条)"
+                        summary_label = "更多更新记录"
 
                     sub_html = (
-                        f'<details class="sm-tl-subpapers" open>'
-                        f'<summary class="sm-tl-subpapers-summary">{summary_title}</summary>'
+                        f'<details class="sm-tl-subpapers">'
+                        f'<summary class="sm-tl-subpapers-summary">'
+                        f'<span class="sm-sub-summary-title"><span class="sm-sub-chevron">▸</span> {summary_label}</span>'
+                        f'<span class="sm-sub-count-badge">{len(subs)} 项</span>'
+                        f'</summary>'
+                        f'<div class="sm-tl-subpapers-body">'
                         f'<ul class="sm-tl-subpapers-list">{sub_items_li}</ul>'
+                        f'</div>'
                         f'</details>'
                     )
                 search_text = ev.get("text", "")
@@ -3257,9 +2752,11 @@ def generate_html_report(
                 if date_disp:
                     timeline_html += f'<time class="sm-tl-date">{_esc(date_disp)}</time>'
                 timeline_html += '</div>'
-                link = ev.get("link") or ev["scholar_url"]
-                if link and link != ev["scholar_url"]:
+                link = ev.get("link") or ev.get("scholar_url")
+                if link and link != ev.get("scholar_url"):
                     timeline_html += f'<a href="{_esc(link)}" target="_blank" class="sm-tl-text">{_esc(ev["text"])} <span class="sm-link-icon">↗</span></a>'
+                elif link:
+                    timeline_html += f'<a href="{_esc(link)}" target="_blank" class="sm-tl-text sm-tl-text-site">{_esc(ev["text"])} <span class="sm-link-badge">个人主页 ↗</span></a>'
                 else:
                     timeline_html += f'<p class="sm-tl-text">{_esc(ev["text"])}</p>'
                 timeline_html += sub_html + diff_block + '</article>'
