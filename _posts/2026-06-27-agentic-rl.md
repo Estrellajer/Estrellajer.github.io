@@ -2,6 +2,7 @@
 layout: post
 title: Agentic RL 综述：工具调用、信用分配与训练稳定性——从 RAP 到 AEPO
 date: 2026-06-27 12:00:00
+hidden: true
 description: 梳理 Agentic RL 从树搜索到可训练策略的演进，涵盖 Planner-R1、TORL/ToolRL/ARTIST、GiGPO/ARPO、RAGEN/RAGEN-2 及 AEPO，聚焦 reward 设计、credit assignment 与 reasoning collapse 三大核心问题。
 tags: agentic-rl llm agent tool-use grpo reasoning
 categories: Research

@@ -313,7 +313,7 @@ scholars:
     url: https://lywang3081.github.io/
     category: HomePage
     site_type: github_pages
-    selectors: ["#recent-news + ul"]
+    selectors: ["#recent-news + ul li"]
     remove_selectors: [script, style, nav, footer, header, aside, .sidebar, .comments]
     labels: [news]
     research_areas: [Continual Learning]
@@ -403,7 +403,7 @@ scholars:
     url: https://wutaiqiang.github.io/
     category: HomePage
     site_type: github_pages
-    selectors: ["#Recent-News + ul", "#Publications + ul", "#news-list", "#publications"]
+    selectors: ["#Recent-News + ul li", "#Publications + ul li", "#news-list li", "#publications li", "#news-list", "#publications"]
     remove_selectors: [script, style, nav, footer, header, aside, .sidebar, .comments]
     labels: [homepage]
     research_areas: [Reasoning]
@@ -423,7 +423,7 @@ scholars:
     url: https://ennengyang.github.io/
     category: HomePage
     site_type: github_pages
-    selectors: ["#-news + ul", "#-selected-preprints-and-publications + ul"]
+    selectors: ["#-news + ul li", "#-selected-preprints-and-publications + ul li"]
     remove_selectors: [script, style, nav, footer, header, aside, .sidebar, .comments]
     labels: [homepage]
     research_areas: [Model Merging]
@@ -494,7 +494,7 @@ scholars:
     url: https://sites.google.com/view/kesun
     category: HomePage
     site_type: google_sites
-    selectors: [".yaqOZd", "li", "p"]
+    selectors: [".yaqOZd a", ".yaqOZd"]
     remove_selectors: [script, style, nav, footer, header, aside, .sidebar, .comments]
     labels: [homepage]
     research_areas: [Continuing RL, LLM Reasoning]
@@ -504,7 +504,7 @@ scholars:
     url: https://kamichanw.github.io/publications/
     category: HomePage
     site_type: github_pages
-    selectors: [".legacy-publications", "article.legacy-publication"]
+    selectors: [".legacy-publications .paper-title", "article.legacy-publication h3", "article.legacy-publication a", "article.legacy-publication"]
     remove_selectors: [script, style, nav, footer, header, aside, .sidebar, .comments]
     labels: [homepage]
     research_areas: [Machine learning, LLM, Post training]
@@ -564,7 +564,7 @@ scholars:
     url: https://xuhuiz.com/
     category: HomePage
     site_type: personal_website
-    selectors: [".overflow-x-auto"]
+    selectors: [".overflow-x-auto table tr", ".overflow-x-auto"]
     remove_selectors: [script, style, nav, footer, header, aside, .sidebar, .comments]
     labels: [homepage]
     research_areas: [RL, CHI.]
@@ -584,9 +584,9 @@ scholars:
     url: https://fyqqyf.github.io/
     category: HomePage
     site_type: github_pages
-    selectors: [".pub-item", ".blog-item", ".pub-title a", "#publications"]
+    selectors: [".pub-title a", ".blog-title a", ".pub-item", ".blog-item"]
     remove_selectors: [script, style, nav, footer, header, aside, .sidebar, .comments]
     labels: [homepage]
     research_areas: [Distillation, RL, Reasoning]
     affiliation: 自动化所
-    watch: publications
+    watch: general

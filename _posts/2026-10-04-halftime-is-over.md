@@ -2,7 +2,6 @@
 layout: post
 title: Halftime Is Over
 date: 2026-10-04 20:00:00
-hidden: true
 description: 当时只道是寻常。关于那些跑过的带状公园、散落的朋友与再无暑假的人生。
 tags: reflection
 categories: Life

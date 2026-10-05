@@ -19,3 +19,5 @@ _scholar/cookies_raw.txt
 _scholar/zhihu_cookies.b64.txt
 __pycache__/
 *.pyc
+.venv/
+_scholar/.venv/

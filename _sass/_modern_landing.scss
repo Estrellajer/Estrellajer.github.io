@@ -2076,8 +2076,106 @@ html[data-theme="dark"] .code-display-wrapper {
     margin-bottom: 3rem;
   }
 
+  .sm-scope-tabs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.65rem;
+    align-items: center;
+    margin-bottom: 1.6rem;
+  }
+
+  .sm-scope-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.45rem 1.05rem;
+    border-radius: 9999px;
+    border: 1px solid var(--hl-border);
+    background: var(--hl-surface);
+    color: var(--hl-text-muted);
+    font-size: 0.88rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+    user-select: none;
+
+    &:hover {
+      border-color: var(--hl-border-hover);
+      color: var(--hl-text-primary);
+      background: var(--hl-surface-hover);
+      transform: translateY(-1px);
+    }
+
+    &.active {
+      background: var(--hl-accent);
+      color: #ffffff;
+      border-color: var(--hl-accent);
+      box-shadow: 0 4px 12px rgba(37, 99, 235, 0.25);
+
+      .sm-scope-count {
+        background: rgba(255, 255, 255, 0.25);
+        color: #ffffff;
+      }
+    }
+
+    .sm-scope-count {
+      font-size: 0.78rem;
+      padding: 0.1rem 0.5rem;
+      border-radius: 9999px;
+      background: var(--hl-surface-alt);
+      color: var(--hl-text-soft);
+      font-weight: 650;
+      transition: all 0.2s ease;
+    }
+  }
+
   .sm-tl-group {
     margin-bottom: 2.2rem;
+  }
+
+  .sm-tl-group-earlier {
+    background: var(--hl-surface-alt);
+    border: 1px dashed var(--hl-border);
+    border-radius: 1.25rem;
+    padding: 0.85rem 1.45rem;
+    margin-top: 2rem;
+    transition: border-color 0.2s ease, background-color 0.2s ease;
+
+    summary.sm-tl-earlier-summary {
+      cursor: pointer;
+      list-style: none;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      user-select: none;
+      padding: 0.4rem 0;
+      margin: 0;
+      font-size: 1.05rem;
+      font-weight: 650;
+      color: var(--hl-text-muted);
+
+      &::-webkit-details-marker {
+        display: none;
+      }
+
+      &:hover {
+        color: var(--hl-accent);
+      }
+    }
+
+    &[open] {
+      background: var(--hl-surface);
+      border-style: solid;
+      border-color: var(--hl-border);
+      padding: 1.25rem 1.45rem 1.75rem;
+
+      summary.sm-tl-earlier-summary {
+        margin-bottom: 1.25rem;
+        border-bottom: 1px solid var(--hl-border);
+        padding-bottom: 0.85rem;
+        color: var(--hl-text-primary);
+      }
+    }
   }
 
   .sm-tl-heading {

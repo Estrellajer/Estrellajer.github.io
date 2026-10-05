@@ -18,6 +18,24 @@ permalink: /scholar/
 
 
 <script>
+let currentScope = 'recent'; // 'recent' (week + month), 'week', 'month', 'all'
+
+function setScope(scope) {
+  currentScope = scope;
+  document.querySelectorAll('.sm-scope-btn').forEach(btn => {
+    btn.classList.toggle('active', btn.dataset.scope === scope);
+  });
+  const earlierGroup = document.querySelector('.sm-tl-group-earlier');
+  if (earlierGroup) {
+    if (scope === 'all') {
+      earlierGroup.open = true;
+    } else if (scope === 'week' || scope === 'month') {
+      earlierGroup.open = false;
+    }
+  }
+  applyFilters();
+}
+
 function applyFilters() {
   const q = (document.getElementById('searchInput')?.value || '').toLowerCase().trim();
   const kinds = [...document.querySelectorAll('.fl-kind:checked')].map(c => c.value);
@@ -26,8 +44,39 @@ function applyFilters() {
 
   let visible = 0, total = 0;
 
-  document.querySelectorAll('[data-filterable]').forEach(el => {
+  // Filter timeline items
+  document.querySelectorAll('.sm-tl-item[data-filterable]').forEach(el => {
     total++;
+    const name = el.dataset.name || '';
+    const text = el.dataset.text || '';
+    const affiliation = el.dataset.affiliation || '';
+    const areaList = (el.dataset.areas || '').split(',').map(x => x.trim()).filter(Boolean);
+    const kind = el.dataset.kind || 'update';
+    const bucket = el.dataset.bucket || 'earlier';
+
+    let matchScope = true;
+    if (currentScope === 'week') {
+      matchScope = (bucket === 'week');
+    } else if (currentScope === 'month') {
+      matchScope = (bucket === 'month');
+    } else if (currentScope === 'recent') {
+      matchScope = (bucket === 'week' || bucket === 'month');
+    } // 'all' matches everything
+
+    const matchSearch = !q || name.includes(q) || text.includes(q) || affiliation.includes(q)
+      || areaList.some(a => a.includes(q));
+    const matchKind = kinds.length === 0 || kinds.includes(kind);
+    const matchAff = affs.length === 0 || !affiliation || affs.includes(affiliation);
+    const matchArea = areas.length === 0 || areaList.length === 0
+      || areaList.some(a => areas.includes(a));
+
+    const show = matchScope && matchSearch && matchKind && matchAff && matchArea;
+    el.classList.toggle('sm-hidden', !show);
+    if (show) visible++;
+  });
+
+  // Filter non-timeline items (directory & attention panel, not restricted by scope)
+  document.querySelectorAll('.sm-dir-row[data-filterable], .sm-attn-item[data-filterable]').forEach(el => {
     const name = el.dataset.name || '';
     const text = el.dataset.text || '';
     const affiliation = el.dataset.affiliation || '';
@@ -43,7 +92,6 @@ function applyFilters() {
 
     const show = matchSearch && matchKind && matchAff && matchArea;
     el.classList.toggle('sm-hidden', !show);
-    if (show) visible++;
   });
 
   document.querySelectorAll('.sm-tl-group').forEach(g => {

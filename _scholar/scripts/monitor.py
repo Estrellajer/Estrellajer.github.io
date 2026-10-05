@@ -1648,10 +1648,18 @@ def _is_tag_or_noise_line(text: str, scholar_name: str = "") -> bool:
         "power by", "hosted on", "github pages", "copyright",
         "人机身份验证", "enable javascript",
         "阅读全文", "最新文章", "历史文章", "时间 热度", "标签", "技术空间",
+        "favorite quotes", "practice without theory", "theory without practice",
+        "immanuel kant", "selected preprints", "full publications",
+        "view all publications", "google scholar",
     ]
     lower_c = clean.lower()
     if any(k in lower_c for k in noise_keywords):
         return True
+
+    # Broken sentence fragments from multi-line descriptions
+    if re.match(r'^(?:and|whose|during|synthesized|exploring|with|for|or|to)\s+', clean, re.I):
+        return True
+
     return False
 
 
@@ -1859,17 +1867,29 @@ NEWS_ANNOUNCEMENT_PATTERNS = [
 ]
 
 
+POST_ANNOUNCEMENT_PATTERNS = [
+    r'\[中文版\]', r'\bblog\b', r'\bzhihu\b', r'\bpost\b', r'\bessay\b',
+    r'failure modes', r'repair paths', r'agent behavior', r'early stopping',
+    r'deep dive into', r'playing to the grader', r'thoughts? on',
+]
+
+
 def _kind_from_watch(watch: str, text: str = "") -> str:
     lower = text.lower()
+    for pat in POST_ANNOUNCEMENT_PATTERNS:
+        if re.search(pat, lower, re.I):
+            return "post"
     for pat in NEWS_ANNOUNCEMENT_PATTERNS:
         if re.search(pat, lower, re.I):
             return "news"
-    if watch == "publications" or any(k in lower for k in PAPER_KEYWORDS):
+    if watch == "blog":
+        return "post"
+    if watch == "publications":
+        return "paper"
+    if any(k in lower for k in PAPER_KEYWORDS):
         return "paper"
     if watch == "news":
         return "news"
-    if watch == "blog":
-        return "post"
     return "update"
 
 
@@ -2082,36 +2102,106 @@ def load_events_history() -> list:
             s = ev.get("scholar", "")
             if t.lower() == "page content updated":
                 continue
-            if _is_tag_or_noise_line(t, s) or _is_author_list_line(t) or _is_status_or_venue_line(t) or _is_bio_or_profile_line(t):
-                continue
-            # Filter out legacy Breezedeus content diff summaries
-            if "breezedeus" in s.lower() and ev.get("result_type") == "changed":
-                continue
 
-            # Filter out legacy/dirty entries for Batch 1 and Batch 2
-            if any(k in s for k in ["柠檬CC", "DaNing", "A. Weers", "plmblog", "📚 plmblog", "周大蔚", "周嘉欢", "傅宇千", "孙海龙", "孙科", "林知秋", "冯钰捷", "percent4"]):
-                continue
+            # Scholar-specific overrides and cleanups first
+            if "王立远" in s:
+                ev["kind"] = "news"
+                ev["text"] = "2026/10 One paper is accepted to IEEE TPAMI."
+                ev["date_str"] = "2026-10"
+                ev["timestamp"] = datetime(2026, 10, 1, 12, 0, tzinfo=timezone.utc).timestamp()
+                ev["link"] = "https://neurips26-cl4fmagents.github.io/"
+                ev["sub_items"] = [
+                    {"text": "2026/09 Two papers are accepted to IJCV.", "link": "https://lywang3081.github.io/", "kind": "news", "date": "2026-09-29", "timestamp": datetime(2026, 9, 29, tzinfo=timezone.utc).timestamp()},
+                    {"text": "2026/08 I received the NSFC Youth Science Fund (Category B).", "link": "https://lywang3081.github.io/", "kind": "news", "date": "2026-08-15", "timestamp": datetime(2026, 8, 15, tzinfo=timezone.utc).timestamp()},
+                    {"text": "2026/08 I will serve as an Area Chair at ICLR 2027.", "link": "https://lywang3081.github.io/", "kind": "news", "date": "2026-08-10", "timestamp": datetime(2026, 8, 10, tzinfo=timezone.utc).timestamp()},
+                    {"text": "2026/07 We are organizing the 1st CL4FMAgents Workshop at NeurIPS 2026.", "link": "https://lywang3081.github.io/", "kind": "news", "date": "2026-07-20", "timestamp": datetime(2026, 7, 20, tzinfo=timezone.utc).timestamp()},
+                    {"text": "2026/06 One paper is accepted to Nature Communications.", "link": "https://lywang3081.github.io/", "kind": "news", "date": "2026-06-15", "timestamp": datetime(2026, 6, 15, tzinfo=timezone.utc).timestamp()},
+                    {"text": "2026/05 Three papers are accepted to ICML.", "link": "https://lywang3081.github.io/", "kind": "news", "date": "2026-05-15", "timestamp": datetime(2026, 5, 15, tzinfo=timezone.utc).timestamp()},
+                    {"text": "2026/04 One paper is accepted to Nature Communications.", "link": "https://lywang3081.github.io/", "kind": "news", "date": "2026-04-15", "timestamp": datetime(2026, 4, 15, tzinfo=timezone.utc).timestamp()},
+                    {"text": "2026/04 One paper is accepted to Patterns (as the cover).", "link": "https://lywang3081.github.io/", "kind": "news", "date": "2026-04-10", "timestamp": datetime(2026, 4, 10, tzinfo=timezone.utc).timestamp()},
+                    {"text": "2026/03 I will serve as an Action Editor for TMLR.", "link": "https://lywang3081.github.io/", "kind": "news", "date": "2026-03-01", "timestamp": datetime(2026, 3, 1, tzinfo=timezone.utc).timestamp()},
+                    {"text": "2026/02 Two papers are accepted to CVPR 2026.", "link": "https://lywang3081.github.io/", "kind": "news", "date": "2026-02-20", "timestamp": datetime(2026, 2, 20, tzinfo=timezone.utc).timestamp()},
+                ]
 
-            # Purge stale events from 2024 or earlier
-            d_str = ev.get("date_str", "")
-            m_yr = re.search(r'\b(202\d)\b', d_str)
-            ev_yr = int(m_yr.group(1)) if m_yr else None
-            if not ev_yr:
-                ts = ev.get("timestamp") or 0.0
-                if ts > 0:
-                    ev_yr = datetime.fromtimestamp(ts, tz=timezone.utc).year
-            if ev_yr and ev_yr < 2025:
-                continue
+            elif "傅宇千" in s:
+                ev["kind"] = "post"
+                ev["text"] = "Playing to the Grader: Early Stopping and Low-Quality Delivery in Frontier Coding Agents"
+                ev["date_str"] = "2026-10-04"
+                ev["timestamp"] = datetime(2026, 10, 4, 18, 0, tzinfo=timezone.utc).timestamp()
+                ev["link"] = "https://fyqqyf.github.io/"
+                ev["sub_items"] = [
+                    {"text": "Revisiting On-Policy Distillation: Three Typical Failure Modes and Repair Paths", "link": "https://fyqqyf.github.io/", "kind": "post", "date": "2026-10-04", "timestamp": datetime(2026, 10, 4, 12, 0, tzinfo=timezone.utc).timestamp()},
+                    {"text": "How Anthropic/OpenAI Monitor Advanced Agent Behavior", "link": "https://fyqqyf.github.io/", "kind": "post", "date": "2026-10-04", "timestamp": datetime(2026, 10, 4, 10, 0, tzinfo=timezone.utc).timestamp()},
+                    {"text": "Revisiting On-Policy Distillation: Empirical Failure Modes and Simple Fixes · COLM 2026", "link": "https://arxiv.org/abs/2603.25562", "kind": "paper", "date": "2026-09-15", "timestamp": datetime(2026, 9, 15, tzinfo=timezone.utc).timestamp()},
+                    {"text": "SRFT: A Single-Stage Method with Supervised and Reinforcement Fine-Tuning for Reasoning · ICLR 2026", "link": "https://fyqqyf.github.io/", "kind": "paper", "date": "2026-01-20", "timestamp": datetime(2026, 1, 20, tzinfo=timezone.utc).timestamp()},
+                    {"text": "AVA: Attentive VLM Agent for Mastering StarCraft II · ACL 2026", "link": "https://fyqqyf.github.io/", "kind": "paper", "date": "2026-05-10", "timestamp": datetime(2026, 5, 10, tzinfo=timezone.utc).timestamp()},
+                ]
 
-            # Drop stale fallback paper for 王子峰
-            if "王子峰" in s and "sparse continual" in t.lower():
-                continue
+            elif "孙科" in s:
+                ev["kind"] = "paper"
+                ev["text"] = "CurveRL: Principled Distribution-Aware Context Reweighting for LLM Reasoning · NeurIPS 2026"
+                ev["sub_items"] = [
+                    {"text": "ARMA-Design: Optimal Treatment Allocation Strategies for A/B Testing in Partially Observable Environments", "link": "https://arxiv.org/abs/2605.24331", "kind": "paper", "date": "2026-09-10", "timestamp": datetime(2026, 9, 10, tzinfo=timezone.utc).timestamp()},
+                    {"text": "Policy Optimization in Continuous Action Spaces with Heavy Tails", "link": "https://sites.google.com/view/kesun", "kind": "paper", "date": "2026-05-01", "timestamp": datetime(2026, 5, 1, tzinfo=timezone.utc).timestamp()},
+                ]
 
-            t_clean = _clean_paper_entry(_clean_html(t))
-            ev["text"] = t_clean
+            elif "杨恩能" in s:
+                ev["kind"] = "news"
+                ev["text"] = "2026.07: Our paper on data augmentation has been accepted by TKDE 2026."
+                ev["sub_items"] = [
+                    {"text": "2026.05: Several of our papers have been accepted by ICML 2026.", "link": "https://ennengyang.github.io/", "kind": "news", "date": "2026-05-15", "timestamp": datetime(2026, 5, 15, tzinfo=timezone.utc).timestamp()},
+                    {"text": "2026.05: Our survey paper on data augmentation has been accepted by IEEE TPAMI.", "link": "https://ennengyang.github.io/", "kind": "news", "date": "2026-05-10", "timestamp": datetime(2026, 5, 10, tzinfo=timezone.utc).timestamp()},
+                    {"text": "2026.04: Two papers have been accepted by IJCAI 2026.", "link": "https://ennengyang.github.io/", "kind": "news", "date": "2026-04-15", "timestamp": datetime(2026, 4, 15, tzinfo=timezone.utc).timestamp()},
+                    {"text": "2026.01: Our paper on model merging has been accepted by ICLR 2026.", "link": "https://ennengyang.github.io/", "kind": "news", "date": "2026-01-20", "timestamp": datetime(2026, 1, 20, tzinfo=timezone.utc).timestamp()},
+                ]
+
+            elif "xuhuiz.com" in s:
+                ev["kind"] = "news"
+                ev["text"] = "Sep 26, 2026 OdysSim: Building Foundation Models for Human Behavior Simulation has been accepted to NeurIPS 2026!"
+                ev["sub_items"] = [
+                    {"text": "Aug 12, 2026 I defended my PhD! [Slides] [Recording]", "link": "https://xuhuiz.com/", "kind": "news", "date": "2026-08-12", "timestamp": datetime(2026, 8, 12, tzinfo=timezone.utc).timestamp()}
+                ]
+
+            elif "沈立" in s:
+                ev["kind"] = "paper"
+                ev["text"] = "OptMerge: Unifying Multimodal LLM Capabilities and Modalities via Model Merging · ICLR 2026"
+                ev["link"] = "https://sites.google.com/site/mathshenli/home"
+                ev["date_str"] = "2026-05"
+                ev["timestamp"] = datetime(2026, 5, 1, tzinfo=timezone.utc).timestamp()
+                ev["sub_items"] = [
+                    {
+                        "text": "MergOPT: A Merge-Aware Optimizer for Robust Model Merging · ICLR 2026",
+                        "link": "https://sites.google.com/site/mathshenli/home",
+                        "kind": "paper",
+                        "date": "2026-05-01",
+                        "timestamp": datetime(2026, 5, 1, tzinfo=timezone.utc).timestamp()
+                    },
+                    {
+                        "text": "Diffusion Language Model Knows the Answer Before It Decodes · ICLR 2026 Oral",
+                        "link": "https://sites.google.com/site/mathshenli/home",
+                        "kind": "paper",
+                        "date": "2026-05-01",
+                        "timestamp": datetime(2026, 5, 1, tzinfo=timezone.utc).timestamp()
+                    },
+                    {
+                        "text": "Understanding the Dynamics of Forgetting and Generalization in Continual Learning · ICLR 2026",
+                        "link": "https://sites.google.com/site/mathshenli/home",
+                        "kind": "paper",
+                        "date": "2026-05-01",
+                        "timestamp": datetime(2026, 5, 1, tzinfo=timezone.utc).timestamp()
+                    }
+                ]
+
+            elif "林知秋" in s:
+                ev["kind"] = "paper"
+                ev["text"] = "CVPR 2026 Highlight (Top 3%): CHAI - Building a Precise Video Language with Human-AI Oversight"
+
+            elif "姚顺雨" in s:
+                ev["kind"] = "paper"
+                ev["text"] = "Computer-Using Agent (CUA) OpenAI · A universal agent/interface to interact with the digital world"
 
             # Update 孙宇 to ICML 2026 with direct arXiv link
-            if "孙宇" in s:
+            elif "孙宇" in s:
                 ev["text"] = "Learning to Discover at Test Time · ICML 2026"
                 ev["link"] = "https://arxiv.org/abs/2601.16175"
                 ev["date_str"] = "2026-07"
@@ -2126,7 +2216,7 @@ def load_events_history() -> list:
                 ]
 
             # Update 吴太强 with direct arXiv links
-            if "吴太强" in s:
+            elif "吴太强" in s:
                 ev["text"] = "The Art of Efficient Reasoning: Data, Reward, and Optimization · EMNLP 2026"
                 ev["link"] = "https://arxiv.org/abs/2602.20945"
                 ev["date_str"] = "2026-08"
@@ -2147,11 +2237,43 @@ def load_events_history() -> list:
                 ]
 
             # Update 蒋玉初 with direct ICML Spotlight link
-            if "蒋玉初" in s:
+            elif "蒋玉初" in s:
                 ev["text"] = "Rethinking LLM Ensembling from the Perspective of Mixture Models · ICML 2026 Spotlight"
                 ev["link"] = "https://arxiv.org/abs/2605.00419"
                 ev["date_str"] = "2026-05"
                 ev["timestamp"] = datetime(2026, 5, 1, tzinfo=timezone.utc).timestamp()
+                ev["sub_items"] = [
+                    {
+                        "text": "Cross-domain Few-shot Incremental Learning · CVPR 2025",
+                        "link": "https://kamichanw.github.io/publications/",
+                        "kind": "paper",
+                        "date": "2025-06-01"
+                    }
+                ]
+
+            elif _is_tag_or_noise_line(t, s) or _is_author_list_line(t) or _is_status_or_venue_line(t) or _is_bio_or_profile_line(t):
+                continue
+            elif "breezedeus" in s.lower() and ev.get("result_type") == "changed":
+                continue
+
+            # Purge stale events from 2024 or earlier
+            d_str = ev.get("date_str", "")
+            m_yr = re.search(r'\b(202\d)\b', d_str)
+            ev_yr = int(m_yr.group(1)) if m_yr else None
+            if not ev_yr:
+                ts = ev.get("timestamp") or 0.0
+                if ts > 0:
+                    ev_yr = datetime.fromtimestamp(ts, tz=timezone.utc).year
+            if ev_yr and ev_yr < 2025:
+                continue
+
+            # Drop stale fallback paper for 王子峰
+            if "王子峰" in s and "sparse continual" in t.lower():
+                continue
+
+            t_clean = _clean_paper_entry(_clean_html(t))
+            if not any(k in s for k in ["王立远", "傅宇千", "孙科", "杨恩能", "xuhuiz.com", "沈立", "林知秋", "姚顺雨", "孙宇", "吴太强", "蒋玉初"]):
+                ev["text"] = t_clean
 
             # Fix 朱星宇: Oral paper as title, BiMoGen as sub-item
             # Fix 朱星宇: Oral paper as title, all 2026 papers as sub-items
@@ -3021,11 +3143,32 @@ def generate_html_report(
 
     # Timeline
     buckets = {"week": [], "month": [], "earlier": []}
-    bucket_labels = {"week": "本周", "month": "本月", "earlier": "更早"}
+    bucket_labels = {"week": "🔥 本周动态", "month": "⚡️ 本月动态", "earlier": "📜 更早历史动态"}
     for ev in display_events:
         buckets[_timeline_bucket(ev["timestamp"])].append(ev)
 
-    timeline_html = '<section class="sm-timeline" id="timelineSection"><h2 class="sm-section-title">最近在做什么</h2>'
+    week_count = len(buckets["week"])
+    month_count = len(buckets["month"])
+    earlier_count = len(buckets["earlier"])
+    recent_count = week_count + month_count
+    total_count = len(display_events)
+
+    scope_tabs_html = (
+        '<div class="sm-scope-tabs" id="scopeTabs">'
+        f'<button type="button" class="sm-scope-btn active" data-scope="recent" onclick="setScope(\'recent\')">⚡️ 近期精选 <span class="sm-scope-count">{recent_count}</span></button>'
+        f'<button type="button" class="sm-scope-btn" data-scope="week" onclick="setScope(\'week\')">🔥 本周动态 <span class="sm-scope-count">{week_count}</span></button>'
+        f'<button type="button" class="sm-scope-btn" data-scope="month" onclick="setScope(\'month\')">📅 本月动态 <span class="sm-scope-count">{month_count}</span></button>'
+        f'<button type="button" class="sm-scope-btn" data-scope="all" onclick="setScope(\'all\')">📜 全部动态 <span class="sm-scope-count">{total_count}</span></button>'
+        '</div>'
+    )
+
+    timeline_html = (
+        '<section class="sm-timeline" id="timelineSection">'
+        '<div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:1rem; margin-bottom:1.5rem;">'
+        '<h2 class="sm-section-title" style="margin:0;">最近在做什么</h2>'
+        f'{scope_tabs_html}'
+        '</div>'
+    )
     if not display_events:
         timeline_html += (
             '<div class="sm-empty"><div class="sm-empty-title">暂无动态记录</div>'
@@ -3036,8 +3179,12 @@ def generate_html_report(
             group = buckets[key]
             if not group:
                 continue
-            timeline_html += f'<div class="sm-tl-group" data-bucket="{key}">'
-            timeline_html += f'<h3 class="sm-tl-heading">{bucket_labels[key]} <span class="sm-tl-count">{len(group)}</span></h3>'
+            if key == "earlier":
+                timeline_html += f'<details class="sm-tl-group sm-tl-group-earlier" data-bucket="{key}">'
+                timeline_html += f'<summary class="sm-tl-heading sm-tl-earlier-summary"><span>📜 更早历史动态 (点击展开剩余 {len(group)} 条)</span> <span class="sm-tl-count">{len(group)}</span></summary>'
+            else:
+                timeline_html += f'<div class="sm-tl-group" data-bucket="{key}">'
+                timeline_html += f'<h3 class="sm-tl-heading">{bucket_labels[key]} <span class="sm-tl-count">{len(group)}</span></h3>'
             timeline_html += '<div class="sm-tl-list">'
             for ev in group:
                 areas = ",".join(ev.get("areas", []))
@@ -3072,15 +3219,15 @@ def generate_html_report(
                     sub_kinds = [s.get("kind", main_kind) for s in subs]
                     counts = Counter([main_kind] + sub_kinds)
                     dominant_kind = counts.most_common(1)[0][0]
-                    total_count = len(subs) + 1
+                    total_count_sub = len(subs) + 1
                     if dominant_kind == "paper":
-                        summary_title = f"📚 近期发表成果 / 论文 (共 {total_count} 篇)"
+                        summary_title = f"📚 近期发表成果 / 论文 (共 {total_count_sub} 篇)"
                     elif dominant_kind == "post":
-                        summary_title = f"✍️ 近期技术博文 (共 {total_count} 篇)"
+                        summary_title = f"✍️ 近期技术博文 (共 {total_count_sub} 篇)"
                     elif dominant_kind == "news":
-                        summary_title = f"📢 更多近期动态 (共 {total_count} 条)"
+                        summary_title = f"📢 更多近期动态 (共 {total_count_sub} 条)"
                     else:
-                        summary_title = f"📋 更多更新记录 (共 {total_count} 条)"
+                        summary_title = f"📋 更多更新记录 (共 {total_count_sub} 条)"
 
                     sub_html = (
                         f'<details class="sm-tl-subpapers" open>'
@@ -3093,6 +3240,7 @@ def generate_html_report(
                     search_text += " " + " ".join(s.get("text", "") for s in ev["sub_items"])
                 timeline_html += (
                     f'<article class="sm-tl-item" data-filterable '
+                    f'data-bucket="{key}" '
                     f'data-name="{_esc(ev["scholar"].lower())}" '
                     f'data-affiliation="{_esc(aff.lower())}" '
                     f'data-areas="{_esc(areas.lower())}" '
@@ -3115,7 +3263,11 @@ def generate_html_report(
                 else:
                     timeline_html += f'<p class="sm-tl-text">{_esc(ev["text"])}</p>'
                 timeline_html += sub_html + diff_block + '</article>'
-            timeline_html += '</div></div>'
+            timeline_html += '</div>'
+            if key == "earlier":
+                timeline_html += '</details>'
+            else:
+                timeline_html += '</div>'
     timeline_html += '</section>'
 
     # Attention section
