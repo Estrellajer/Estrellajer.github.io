@@ -9,8 +9,7 @@ layout: default
         <h1 class="home-title">
           {% if page.hero_name contains '「' %}
             {% assign name_parts = page.hero_name | split: '「' %}
-            <span class="name-en">{{ name_parts[0] | strip }}</span>
-            <span class="name-zh">「{{ name_parts[1] | strip }}</span>
+            <span class="name-en">{{ name_parts[0] | strip }}</span><span class="name-zh">「{{ name_parts[1] | strip }}</span>
           {% else %}
             {{ page.hero_name }}
           {% endif %}
