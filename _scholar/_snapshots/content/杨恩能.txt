@@ -1,28 +1,53 @@
 2026.07: Our paper on data augmentation has been accepted by TKDE 2026.
+
 2026.05: Several of our papers have been accepted by ICML 2026.
+
 2026.05: Our survey paper on data augmentation has been accepted by TKDE 2026.
+
 2026.04: Our paper on POI recommendation has been accepted by SIGIR 2026.
+
 2026.02: Our paper on sequential recommendation has been accepted by TPAMI 2026.
+
 2026.01: Two of our papers on model merging have been accepted by ICLR 2026.
+
 2025.12: Our survey on model merging has been accepted by ACM Computing Surveys (CSUR) 2026.
+
 2025.11: Our paper on model merging benchmark has been accepted by JMLR 2025.
+
 2025.11: Our paper on long-sequence recommendation has been accepted by AAAI 2026.
+
 2025.10: Our paper on model merging has been accepted by TPAMI 2025.
+
 2025.09: Two of our papers on continual model merging have been accepted by NeurIPS 2025.
+
 2025.05: Our paper on knowledge editing has been accepted by ACL (Main) 2025.
+
 2025.05: Our paper on model merging has been accepted by ICML 2025.
+
 2025.04: Our paper on explainable recommendation has been accepted by TOIS 2025.
+
 2025.04: Two of our papers on sequential recommendation have been accepted by SIGIR 2025.
+
 2025.02: Our paper on out-of-distribution recommendation has been accepted by TOIS 2025.
+
 2025.01: Our paper on flatness-aware continual learning has been accepted by TPAMI 2025.
+
 2025.01: Two of our papers on out-of-distribution recommendation have been accepted by WWW 2025.
+
 2024.12: Two of our papers on LLM fine-tuning and sequential recommendation have been accepted by AAAI 2025.
+
 2024.11: Our paper on recommendation unlearning has been accepted by TOIS 2024.
+
 2024.11: Our survey on forgetting in deep learning has been accepted by TPAMI 2024.
+
 2024.09: Our paper on continual learning has been accepted by TPAMI 2024.
+
 2024.05: Our paper on model merging has been accepted by ICML 2024.
+
 2024.01: Our paper on model merging has been accepted by ICLR 2024.
+
 2023.10: Our paper on sequential recommendation has been accepted by TKDE 2023.
+
 2023.09: Our paper on dataset condensation has been accepted by NeurIPS 2023.
+
 2023.07: Our paper on flatness-aware continual learning has been accepted by ICCV 2023.
-More
