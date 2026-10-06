@@ -1,15 +1,276 @@
-Sep 26, 2026 OdysSim: Building Foundation Models for Human Behavior Simulation has been accepted to NeurIPS 2026!
-
-Aug 12, 2026 I defended my PhD! [Slides]
-
-Jul 8, 2026 Excited that five papers were accepted to COLM 2026 : Mind the Sim2Real Gap in User Simulation for Agentic Tasks , SOTOPIA-TOM , Social World Models , GoodPoint , and Training Proactive and Personalized LLM Agents .
-
-Apr 18, 2026 Gave a talk on "User-Effective AI Agents" at Scale AI . [Slides]
-
-Apr 9, 2026 I received a Microsoft PhD Fellowship !
-
-Sep 26, 2026 OdysSim: Building Foundation Models for Human Behavior Simulation has been accepted to NeurIPS 2026!
-Aug 12, 2026 I defended my PhD! [Slides]
-Jul 8, 2026 Excited that five papers were accepted to COLM 2026 : Mind the Sim2Real Gap in User Simulation for Agentic Tasks , SOTOPIA-TOM , Social World Models , GoodPoint , and Training Proactive and Personalized LLM Agents .
-Apr 18, 2026 Gave a talk on "User-Effective AI Agents" at Scale AI . [Slides]
-Apr 9, 2026 I received a Microsoft PhD Fellowship !
+Publications
+Research on AI agents, human behavior, and safety.
+Filters
+Filter by
+All ( 48 ) Representative ( 14 ) First Author ( 10 ) Awards ( 3 )
+Venue
+All Venues AAAI ACL CHI COLM CVPR EACL EMNLP ICLR ICML LLMSEC MLSys NAACL NeurIPS arXiv
+Theme
+All Themes AI Safety Agents Social AI Grounding Multi-Agent Systems
+Showing 48 publication s
+2026
+OdysSim: Building Foundation Models for Human Behavior Simulation
+Xuhui Zhou* , Weiwei Sun* , Weihua Du , Jiarui Liu , Haojia Sun , Qianou Ma , Sherry Tongshuang Wu , Yiming Yang , Maarten Sap
+NeurIPS 2026
+Social AI Agents
+NeurIPS
+Paper Code
+Reinforcing Human Behavior Simulation via Verbal Feedback
+Weiwei Sun* , Xuhui Zhou* , Jiarui Liu , Weihua Du , Haojia Sun , Yiqing Xie , Qianou Ma , Sihao Chen , Mengting Wan , Longqi Yang , Pei Zhou , Sherry Tongshuang Wu , Sean Welleck , Graham Neubig , Yiming Yang , Maarten Sap
+arXiv preprint
+Social AI Agents
+arXiv
+Paper
+Mind the Sim2Real Gap in User Simulation for Agentic Tasks
+Xuhui Zhou* , Weiwei Sun* , Qianou Ma , Yiqing Xie , Jiarui Liu , Weihua Du , Sean Welleck , Yiming Yang , Graham Neubig , Sherry Tongshuang Wu , Maarten Sap
+COLM 2026
+Agents Social AI Evaluation
+COLM
+Paper
+SOTOPIA-TOM: Evaluating Information Management in Multi-Agent Interaction with Theory of Mind
+Yashwanth YS , Ruichen Wang , Shihua Zeng , Xuhui Zhou , Koichi Onoue , Vasudha Varadarajan , Maarten Sap
+COLM 2026
+Social AI Multi-Agent Systems
+COLM
+Paper
+The OpenHands Software Agent SDK: A Composable and Extensible Foundation for Production Agents
+Xingyao Wang , Simon Rosenberg , Juan Michelini , Calvin Smith , Hoang Tran , Engel Nyst , Rohit Malhotra , Xuhui Zhou , Valerie Chen , Robert Brennan , Graham Neubig
+MLSys 2026
+Agents
+MLSys
+Paper
+Imperfectly Cooperative Human-AI Interactions: Comparing the Impacts of Human and AI Attributes in Simulated and User Studies
+Myke C Cohen , Mingqian Zheng , Neel Bhandari , Hsien-Te Kao , Xuhui Zhou , Daniel Nguyen , Laura Cassani , Maarten Sap , Svitlana Volkova
+ACL Findings 2026
+Social AI Agents
+ACL Findings
+Paper
+GoodPoint: Learning Constructive Scientific Paper Feedback from Author Responses
+Jimin Mun , Chani Jung , Xuhui Zhou , Hyunwoo Kim , Maarten Sap
+COLM 2026
+COLM
+Paper
+PoliSim@CHI 2026: LLM Agent Simulation for Policy
+Yuxuan Li , Wesley Hanwen Deng , Xuhui Zhou , Kevin Klyman , Chun Yu , Yuanchun Shi , Nicholas Vincent , Amy X. Zhang , Maarten Sap , Sauvik Das , Hirokazu Shirado
+CHI EA 2026
+Social AI Multi-Agent Systems
+CHI EA
+Paper
+CodeScout: An Effective Recipe for Reinforcement Learning of Code Search Agents
+Lintang Sutawika , Aditya Bharat Soni , Bharath Sriraam R R , Apurva Gandhi , Taha Yassine , Sanidhya Vijayvargiya , Yuchen Li , Xuhui Zhou , Yilin Zhang , Leander Melroy Maben , Graham Neubig
+arXiv preprint
+Agents
+arXiv
+Paper
+Training Proactive and Personalized LLM Agents
+Weiwei Sun , Xuhui Zhou , Weihua Du , Xingyao Wang , Sean Welleck , Graham Neubig , Maarten Sap , Yiming Yang
+COLM 2026
+Agents Social AI
+COLM
+Paper
+TOM-SWE: User Mental Modeling For Software Engineering Agents
+Xuhui Zhou , Valerie Chen , Zora Zhiruo Wang , Graham Neubig , Maarten Sap , Xingyao Wang
+ICML 2026
+Agents Social AI
+ICML
+Paper X Post
+Social World Models
+Xuhui Zhou , Jiarui Liu , Akhila Yerukola , Hyunwoo Kim , Maarten Sap
+COLM 2026
+Social AI Multi-Agent Systems
+COLM
+Paper
+OpenAgentSafety: A Comprehensive Framework for Evaluating Real-World AI Agent Safety
+Sanidhya Vijayvargiya , Aditya Bharat Soni , Xuhui Zhou , Zora Zhiruo Wang , Nouha Dziri , Graham Neubig , Maarten Sap
+ICLR 2026
+AI Safety Agents
+ICLR
+Paper
+How can we assess human-agent interactions? Case studies in software agent design
+Valerie Chen , Rohit Malhotra , Xingyao Wang , Juan Michelini , Xuhui Zhou , Aditya Bharat Soni , Hoang H. Tran , Calvin Smith , Ameet Talwalkar , Graham Neubig
+ICML 2026
+Agents Social AI
+ICML
+Paper
+Interactive Agents to Overcome Ambiguity in Software Engineering
+Sanidhya Vijayvargiya , Xuhui Zhou , Akhila Yerukola , Maarten Sap , Graham Neubig
+ICLR 2026
+Agents Social AI
+ICLR
+Paper
+2025
+SoMi-ToM: Evaluating Multi-Perspective Theory of Mind in Embodied Social Interactions
+Xianzhe Fan , Xuhui Zhou , Chenxu Jin , Kathryn Nottingham , Hao Zhu , Maarten Sap
+NeurIPS 2025 Datasets and Benchmarks
+Social AI Agents
+NeurIPS
+Paper
+1-2-3 Check: Enhancing Contextual Privacy in LLM via Multi-Agent Reasoning
+Wenkai Li , Liwen Sun , Zhenxiang Guan , Xuhui Zhou , Maarten Sap
+LLMSEC Workshop 2025
+AI Safety Multi-Agent Systems
+LLMSEC
+Paper
+The PIMMUR Principles: Ensuring Validity in Collective Behavior of LLM Societies
+Jiaxu Zhou , Jen-tse Huang , Xuhui Zhou , Man Ho Lam , Xintao Wang , Hao Zhu , Wenxuan Wang , Maarten Sap
+arXiv preprint
+Multi-Agent Systems Social AI
+arXiv
+Paper
+Rethinking Theory of Mind Benchmarks for LLMs: Towards A User-Centered Perspective
+Qiaosi Wang , Xuhui Zhou , Maarten Sap , Jodi Forlizzi , Hong Shen
+arXiv preprint
+Social AI
+arXiv
+Paper
+Words Like Knives: Backstory-Personalized Modeling and Detection of Violent Communication
+Jocelyn Shen , Akhila Yerukola , Xuhui Zhou , Cynthia Breazeal , Maarten Sap , Hae Won Park
+EMNLP 2025
+EMNLP
+Paper
+AutoPresent: Designing Structured Visuals from Scratch
+Jun Ge , Zhengzhong Wang , Xuhui Zhou , Yuhang Peng , Siddharth Subramanian , Qian Tan , Maarten Sap , Alane Suhr
+CVPR 2025
+CVPR
+Paper
+Bridging the Data Provenance Gap Across Text, Speech, and Video
+Shayne Longpre , Nikhil Singh , Manuel Cherep , Kushagra Tiwary , Joanna Materzynska , William Brannon , Robert Mahari , Manan Dey , Mohammed Hamdy , Nayan Saxena , Ahmad Mustafa Anis , Emad A. Alghamdi , Vu Minh Chien , Naana Obeng-Marnu , Da Yin , Kun Qian , Yizhi LI , Minnie Liang , An Dinh , Shrestha Mohanty , Deividas Mataciunas , Tobin South , Jianguo Zhang , Ariel N. Lee , Campbell S. Lund , Christopher Klamm , Damien Sileo , Diganta Misra , Enrico Shippole , Kevin Klyman , Lester James Validad Miranda , Niklas Muennighoff , Seonghyeon Ye , Seungone Kim , Vipul Gupta , Vivek Sharma , Xuhui Zhou , Caiming Xiong , Luis Villa , Stella Biderman , Alex Pentland , Sara Hooker , Jad Kabbara
+ICLR 2025
+ICLR
+Paper
+AI-LieDar: Examine the Trade-off Between Utility and Truthfulness in LLM Agents
+Zhe Su , Xuhui Zhou , Sanketh Rangreji , Anubha Kabra , Julia Mendelsohn , Faeze Brahman , Maarten Sap
+NAACL 2025
+AI Safety Agents
+NAACL
+Paper
+User-Driven Value Alignment: Understanding Users' Perceptions and Strategies for Addressing Biased and Discriminatory Statements in AI Companions
+Xianzhe Fan , Qing Xiao , Xuhui Zhou , Jiaxin Pei , Maarten Sap , Zhicong Lu , Hong Shen
+CHI 2025
+CHI
+Paper
+TheAgentCompany: Benchmarking LLM Agents on Consequential Real World Tasks
+Frank F Xu , Yiwei Song , Bowen Li , Yujia Tang , Khushi Jain , Mingyu Bao , Zhengzhong Wang , Xuhui Zhou , Zhiyi Guo
+NeurIPS 2025 Datasets and Benchmarks
+Agents Evaluation
+NeurIPS
+Paper
+BIG5-CHAT: Shaping LLM Personalities Through Training on Human-Grounded Data
+Wenkai Li , Jiarui Liu , Andy Liu , Xuhui Zhou , Mona Diab , Maarten Sap
+ACL 2025
+ACL
+Paper
+HAICOSYSTEM: An Ecosystem for Sandboxing Safety Risks in Human-AI Interactions
+Xuhui Zhou , Hyunwoo Kim , Faeze Brahman , Liwei Jiang , Hao Zhu , Ximing Lu , Frank Xu , Bill Yuchen Lin , Yejin Choi , Niloofar Mireshghallah , Ronan Le Bras , Maarten Sap
+COLM 2025
+AI Safety Social AI Multi-Agent Systems
+COLM
+Paper Website
+On the Resilience of LLM-Based Multi-Agent Collaboration with Faulty Agents
+Jen-tse Huang , Jiaxu Zhou , Tailin Jin , Xuhui Zhou , Zixi Chen , Wenxuan Wang , Youliang Yuan , Maarten Sap , Michael R. Lyu
+ICML 2025
+Multi-Agent Systems AI Safety
+ICML
+Paper
+2024
+Consent in Crisis: The Rapid Decline of the AI Data Commons
+Shayne Longpre , Robert Mahari , Ariel Lee , Chris Lund , Hakeem Oderinwale , Will Brannon , Xuhui Zhou , Yizhi Li , Caiming Xiong , Luis Villa , Stella Biderman , Hanlin Li , Daphne Ippolito , Sara Hooker , Jad Kabbara , Sandy Pentland
+NeurIPS 2024 Datasets and Benchmarks
+NeurIPS
+Paper Website
+Minion: A Technology Probe for Resolving Value Conflicts through Expert-Driven and User-Driven Strategies in AI Companion Applications
+Xianzhe Fan , Qing Xiao , Xuhui Zhou , Yuran Su , Zhicong Lu , Maarten Sap , Hong Shen
+arXiv preprint
+arXiv
+Paper
+PolygloToxicityPrompts: Multilingual Evaluation of Neural Toxic Degeneration in Large Language Models
+Devansh Jain , Priyanshu Kumar , Samuel Gehman , Xuhui Zhou , Thomas Hartvigsen , Maarten Sap
+COLM 2024
+COLM
+Paper
+Is this the real life? Is this just fantasy? The Misleading Success of Simulating Social Interactions With LLMs
+Xuhui Zhou , Zhe Su , Tiwalayo Eisape , Hyunwoo Kim , Maarten Sap
+EMNLP 2024
+Social AI
+EMNLP
+Paper
+Can LLMs Keep a Secret? Testing Privacy Implications of Language Models via Contextual Integrity Theory
+Niloofar Mireshghallah , Hyunwoo Kim , Xuhui Zhou , Yulia Tsvetkov , Maarten Sap , Reza Shokri , Yejin Choi
+ICLR 2024 🏆 Spotlight (top 5%)
+AI Safety
+ICLR
+Paper Website
+SOTOPIA: Interactive Evaluation for Social Intelligence in Language Agents
+Xuhui Zhou , Hao Zhu , Leena Mathur , Ruohong Zhang , Zhengyang Qi , Haofei Yu , Louis-Philippe Morency , Yonatan Bisk , Daniel Fried , Graham Neubig , Maarten Sap
+ICLR 2024 🏆 Spotlight (top 5%)
+Social AI Multi-Agent Systems
+ICLR
+Paper Website
+WebArena: A Realistic Web Environment for Building Autonomous Agents
+Shuyan Zhou , Frank F. Xu , Hao Zhu , Xuhui Zhou , Robert Lo , Abishek Sridhar , Xianyi Cheng , Yonatan Bisk , Daniel Fried , Uri Alon , Graham Neubig
+ICLR 2024
+Agents Grounding
+ICLR
+Paper Website Demo
+Clever Hans or Neural Theory of Mind? Stress Testing Social Reasoning in Large Language Models
+Natalie Shapira , Mosh Levy , Hossein Seyed Alavi , Xuhui Zhou , Yejin Choi , Yoav Goldberg , Maarten Sap , Vered Shwartz
+EACL 2024
+Social AI
+EACL
+Paper
+2023
+ACL
+Paper Website Demo
+EMNLP
+Paper
+FANToM: A Benchmark for Stress-testing Machine Theory of Mind in Interactions
+Hyunwoo Kim , Melanie Sclar , Xuhui Zhou , Ronan Le Bras , Gunhee Kim , Yejin Choi , Maarten Sap
+EMNLP 2023
+EMNLP
+Paper Website
+Learning to translate by learning to communicate
+C. Downey , Xuhui Zhou , L. Liu , Shane Steinert-Threlkeld
+EMNLP MRL 2023
+EMNLP
+Paper
+2022
+Annotators with Attitudes: How Annotator Beliefs And Identities Bias Toxic Language Detection
+Maarten Sap , Swabha Swayamdipta , Laura Vianna , Xuhui Zhou , Yejin Choi , Noah A. Smith
+NAACL 2022
+NAACL
+Paper
+ACL ConvAI
+Paper
+Emergent Communication Fine-tuning (EC-FT) for Pretrained Language Models
+Shane Steinert-Threlkeld , Xuhui Zhou , Zeyu Liu , C.M. Downey
+ICLR EmeCom Workshop 2022 🏆 Runner-up Best Paper
+ICLR EmeCom
+Paper
+2021
+Challenges in Automated Debiasing for Toxic Language Detection
+Xuhui Zhou , Maarten Sap , Swabha Swayamdipta , Yejin Choi , Noah A. Smith
+EACL 2021
+AI Safety
+EACL
+Paper PDF Code
+2020
+Linguistically-Informed Transformations (LIT): A Method for Automatically Generating Contrast Sets
+Chuanrong Li , Lin Shengshuo , Zeyu Liu , Xinyi Wu , Xuhui Zhou , Shane Steinert-Threlkeld
+BlackboxNLP Workshop 2020
+BlackboxNLP
+Paper Abstract
+Multilevel Text Alignment with Cross-Document Attention
+Xuhui Zhou , Nikolaos Pappas , Noah A. Smith
+EMNLP 2020
+EMNLP
+Paper Website Abstract
+RPD: A Distance Function Between Word Embeddings
+Xuhui Zhou , Shujian Huang , Zaixiang Zheng
+ACL Student Research Workshop 2020
+ACL SRW
+Paper Abstract
+Evaluating Commonsense in Pre-trained Language Models
+Xuhui Zhou , Y. Zhang , Leyang Cui , Dandan Huang
+AAAI 2020
+AAAI
+Paper

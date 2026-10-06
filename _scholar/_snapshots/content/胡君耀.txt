@@ -17,10 +17,3 @@
 2023-07-15 ✒️ Study I ended my undergraduate life at China University of Mining and Technology (CUMT) , thanks to all teachers and friends around me, especially my parents.
 
 2023-06-10 💼 Activity I attended VALSE 2023 (Wuxi, China).
-
-Selected Publications
-For full list, please go to Publications . Note: # = Equal Contribution, * = Corresponding Author.
-CVPR26
-Garments2Look: A Multi-Reference Dataset for High-Fidelity Outfit-Level Virtual Try-On with Clothing and Accessories
-Junyao Hu , Zhongwei Cheng , Waikeung Wong , Xingxing Zou *
-TL;DR: Garments2Look, the first outfit-level VTON dataset with 80K pairs, 40 categories, rich annotations, tests SOTA models and reveals their limitations in layering/styling.
