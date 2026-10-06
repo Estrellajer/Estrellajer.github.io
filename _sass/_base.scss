@@ -938,27 +938,151 @@ footer.sticky-bottom {
       }
 
       .hidden.open {
-        max-height: 100em;
-        transition-property: 0.15s ease;
-        -moz-transition: 0.15s ease;
-        -ms-transition: 0.15s ease;
-        -o-transition: 0.15s ease;
-        transition: all 0.15s ease;
+        max-height: 120em;
+        transition: all 0.2s ease;
       }
 
-      div.abstract.hidden {
-        border: dashed 1px var(--global-bg-color);
+      div.abstract.hidden,
+      div.bibtex.hidden,
+      div.award.hidden {
+        border: 1px solid transparent;
       }
 
-      div.abstract.hidden.open {
-        border-color: var(--global-text-color);
+      div.abstract.hidden.open,
+      div.award.hidden.open {
+        margin-top: 0.85rem;
+        margin-bottom: 0.5rem;
+        padding: 1.1rem 1.35rem;
+        border-radius: 0.85rem;
+        background: var(--hl-surface-alt, rgba(0, 0, 0, 0.02));
+        border: 1px solid var(--hl-border, rgba(0, 0, 0, 0.08));
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.03);
+        text-align: left;
+
+        p {
+          margin: 0;
+          line-height: 1.65;
+          color: var(--hl-text-muted, var(--global-text-color));
+          font-size: 0.875rem;
+        }
+      }
+
+      div.award.hidden.open {
+        background: var(--hl-tag-grant-bg, rgba(245, 158, 11, 0.06));
+        border: 1px solid var(--hl-tag-grant-border, rgba(245, 158, 11, 0.25));
+        color: var(--hl-tag-grant-text, #b45309);
+
+        p {
+          color: inherit;
+        }
+      }
+
+      div.bibtex.hidden {
+        border-radius: 0.85rem;
+      }
+
+      div.bibtex.hidden.open {
+        margin-top: 0.85rem;
+        margin-bottom: 0.5rem;
+        padding: 0;
+        border-radius: 0.85rem;
+        background: var(--hl-surface-alt, rgba(0, 0, 0, 0.02));
+        border: 1px solid var(--hl-border, rgba(0, 0, 0, 0.08));
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.03);
+        overflow: hidden;
+
+        .bibtex-drawer-header {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          padding: 0.65rem 1rem;
+          border-bottom: 1px solid var(--hl-border, rgba(0, 0, 0, 0.08));
+          background: var(--hl-surface, rgba(0, 0, 0, 0.02));
+          border-top-left-radius: 0.85rem;
+          border-top-right-radius: 0.85rem;
+          user-select: none;
+        }
+
+        .bibtex-drawer-title {
+          font-family: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+          font-size: 0.74rem;
+          font-weight: 600;
+          letter-spacing: 0.08em;
+          text-transform: uppercase;
+          color: var(--hl-text-soft, var(--global-text-color-light));
+          display: inline-flex;
+          align-items: center;
+          gap: 0.35rem;
+        }
+
+        .bibtex-copy-btn {
+          display: inline-flex;
+          align-items: center;
+          gap: 0.35rem;
+          padding: 0.24rem 0.65rem;
+          border-radius: 0.45rem;
+          font-family: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+          font-size: 0.74rem;
+          font-weight: 550;
+          color: var(--hl-text-soft, var(--global-text-color-light));
+          background: var(--hl-surface, #ffffff);
+          border: 1px solid var(--hl-border, rgba(0, 0, 0, 0.12));
+          cursor: pointer;
+          transition: all 0.18s ease;
+
+          &:hover {
+            color: var(--hl-accent, var(--global-theme-color));
+            border-color: var(--hl-accent, var(--global-theme-color));
+            background: var(--hl-surface-hover, rgba(0, 0, 0, 0.04));
+          }
+
+          &.copied {
+            color: #059669;
+            border-color: rgba(16, 185, 129, 0.35);
+            background: rgba(16, 185, 129, 0.1);
+          }
+        }
+
+        .bibtex-code-wrap {
+          margin: 0 !important;
+          padding: 0.95rem 1.15rem !important;
+          border: none !important;
+          border-radius: 0 0 0.85rem 0.85rem !important;
+          background: transparent !important;
+          box-shadow: none !important;
+
+          figure.highlight,
+          div.highlight {
+            margin: 0 !important;
+            padding: 0 !important;
+            border: none !important;
+            background: transparent !important;
+            box-shadow: none !important;
+          }
+
+          pre {
+            margin: 0 !important;
+            padding: 0 !important;
+            background: transparent !important;
+            border: none !important;
+            box-shadow: none !important;
+            font-size: 0.82rem !important;
+            line-height: 1.65 !important;
+            color: var(--hl-code-text, inherit) !important;
+            overflow-x: auto;
+            white-space: pre !important;
+            font-family: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace !important;
+          }
+        }
       }
     }
     div.award.hidden {
-      border: dashed 1px var(--global-bg-color);
+      border: 1px solid transparent;
     }
     div.award.hidden.open {
-      border-color: var(--global-highlight-color);
+      border-radius: 0.85rem;
+      background: var(--hl-tag-grant-bg, rgba(245, 158, 11, 0.06));
+      border: 1px solid var(--hl-tag-grant-border, rgba(245, 158, 11, 0.25));
     }
   }
 }

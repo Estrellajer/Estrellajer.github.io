@@ -485,22 +485,48 @@ layout: default
     border-top: 1px solid var(--reading-line);
   }
 
+  /* Table Responsive Container */
+  .reading-article .table-responsive,
+  .reading-article .reading-table-container {
+    display: block;
+    width: 100%;
+    margin: 1.6rem 0;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    border: 1px solid var(--reading-line);
+    border-radius: 0.85rem;
+    background: var(--reading-surface);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.02);
+  }
+
+  .reading-article .table-responsive table,
+  .reading-article .reading-table-container table {
+    width: 100%;
+    min-width: 520px;
+    margin: 0 !important;
+    border: none !important;
+    border-radius: 0 !important;
+    border-collapse: collapse;
+    background: transparent;
+  }
+
   .reading-article table {
     width: 100%;
-    overflow: hidden;
+    max-width: 100%;
+    overflow-x: auto;
     border-collapse: separate;
     border-spacing: 0;
     border: 1px solid var(--reading-line);
-    border-radius: 0.95rem;
+    border-radius: 0.85rem;
     background: var(--reading-surface);
   }
 
   .reading-article th,
   .reading-article td {
-    padding: 0.85rem 1rem;
+    padding: 0.85rem 1.15rem;
     border-bottom: 1px solid var(--reading-line);
     text-align: left;
-    vertical-align: top;
+    vertical-align: middle;
   }
 
   .reading-article th {
@@ -511,6 +537,14 @@ layout: default
 
   .reading-article tr:last-child td {
     border-bottom: 0;
+  }
+
+  .reading-article tbody tr {
+    transition: background-color 0.15s ease;
+  }
+
+  .reading-article tbody tr:hover {
+    background-color: var(--reading-accent-soft);
   }
 
   .reading-article a {
@@ -561,10 +595,299 @@ layout: default
     line-height: 1.7;
   }
 
+  /* Previous / Next Post Navigation Cards */
+  .reading-post-nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.25rem;
+    margin-top: 3.2rem;
+    padding-top: 2rem;
+    border-top: 1px solid var(--reading-line);
+  }
+
+  .reading-nav-spacer {
+    display: block;
+  }
+
+  .reading-nav-card {
+    display: flex;
+    flex-direction: column;
+    padding: 1.25rem 1.45rem;
+    border-radius: 0.95rem;
+    border: 1px solid var(--reading-line);
+    background: var(--reading-surface);
+    text-decoration: none !important;
+    transition: transform 0.22s ease, border-color 0.22s ease, box-shadow 0.22s ease, background 0.22s ease;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.02);
+  }
+
+  .reading-nav-card:hover {
+    transform: translateY(-2px);
+    border-color: var(--reading-accent);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.07);
+    background: var(--reading-surface);
+  }
+
+  .reading-nav-card--next {
+    text-align: right;
+  }
+
+  .reading-nav-label {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.45rem;
+    color: var(--reading-accent);
+    font-family: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+    font-size: 0.76rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+
+  .reading-nav-card--next .reading-nav-label {
+    justify-content: flex-end;
+  }
+
+  .reading-nav-arrow {
+    display: inline-block;
+    transition: transform 0.2s ease;
+  }
+
+  .reading-nav-card--prev:hover .reading-nav-arrow {
+    transform: translateX(-3px);
+  }
+
+  .reading-nav-card--next:hover .reading-nav-arrow {
+    transform: translateX(3px);
+  }
+
+  .reading-nav-title {
+    margin-top: 0.45rem;
+    color: var(--reading-text);
+    font-size: 1.05rem;
+    font-weight: 650;
+    line-height: 1.42;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  .reading-nav-card:hover .reading-nav-title {
+    color: var(--reading-accent);
+  }
+
+  .reading-nav-date {
+    margin-top: 0.4rem;
+    color: var(--reading-soft);
+    font-family: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+    font-size: 0.8rem;
+  }
+
+  /* Mobile Top Collapsible TOC Card */
+  .reading-mobile-toc-card {
+    margin: 1.5rem 0 2rem;
+    border: 1px solid var(--reading-line);
+    border-radius: 0.85rem;
+    background: var(--reading-surface);
+    overflow: hidden;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.02);
+  }
+
+  .reading-mobile-toc-summary {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.85rem 1.15rem;
+    cursor: pointer;
+    user-select: none;
+    list-style: none;
+    color: var(--reading-text);
+    transition: background 0.15s ease;
+  }
+
+  .reading-mobile-toc-summary::-webkit-details-marker {
+    display: none;
+  }
+
+  .reading-mobile-toc-summary:hover {
+    background: var(--reading-accent-soft);
+  }
+
+  .reading-mobile-toc-title {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.55rem;
+    font-size: 0.95rem;
+    font-weight: 650;
+  }
+
+  .reading-mobile-toc-title i {
+    color: var(--reading-accent);
+  }
+
+  .reading-mobile-toc-badge {
+    margin-left: auto;
+    margin-right: 0.75rem;
+    font-family: "JetBrains Mono", ui-monospace, monospace;
+    font-size: 0.72rem;
+    font-weight: 600;
+    padding: 0.15rem 0.55rem;
+    border-radius: 999px;
+    background: var(--reading-accent-soft);
+    color: var(--reading-accent);
+    border: 1px solid var(--reading-line);
+  }
+
+  .reading-mobile-toc-chevron {
+    font-size: 0.8rem;
+    color: var(--reading-soft);
+    transition: transform 0.2s ease;
+  }
+
+  .reading-mobile-toc-details[open] .reading-mobile-toc-chevron {
+    transform: rotate(180deg);
+  }
+
+  .reading-mobile-toc-body {
+    padding: 0.85rem 1.15rem 1.15rem;
+    border-top: 1px solid var(--reading-line);
+    background: var(--reading-code-surface);
+  }
+
+  /* Floating Micro Drawer Button */
+  .reading-floating-toc-btn {
+    position: fixed;
+    bottom: 2rem;
+    right: 1.5rem;
+    z-index: 1040;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.45rem;
+    padding: 0.65rem 1.15rem;
+    border-radius: 999px;
+    background: var(--reading-surface);
+    color: var(--reading-text);
+    border: 1px solid var(--reading-line);
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.14), 0 1px 3px rgba(0, 0, 0, 0.06);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    font-family: "JetBrains Mono", ui-monospace, monospace;
+    font-size: 0.82rem;
+    font-weight: 600;
+    cursor: pointer;
+    opacity: 0;
+    transform: translateY(14px) scale(0.95);
+    pointer-events: none;
+    transition: opacity 0.25s ease, transform 0.25s ease, background 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+  }
+
+  .reading-floating-toc-btn i {
+    color: var(--reading-accent);
+  }
+
+  .reading-floating-toc-btn.is-visible {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+    pointer-events: auto;
+  }
+
+  .reading-floating-toc-btn:hover {
+    border-color: var(--reading-accent);
+    box-shadow: 0 6px 22px rgba(0, 0, 0, 0.18);
+  }
+
+  /* Slide-up Drawer Backdrop */
+  .reading-toc-drawer-backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.45);
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
+    z-index: 1050;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.25s ease, visibility 0.25s ease;
+  }
+
+  .reading-toc-drawer-backdrop.is-open {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  /* Slide-up Drawer Sheet */
+  .reading-toc-drawer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    max-height: 75vh;
+    background: var(--reading-surface);
+    border-top: 1px solid var(--reading-line);
+    border-radius: 1.25rem 1.25rem 0 0;
+    box-shadow: 0 -8px 30px rgba(0, 0, 0, 0.18);
+    z-index: 1060;
+    display: flex;
+    flex-direction: column;
+    transform: translateY(100%);
+    visibility: hidden;
+    transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), visibility 0.3s ease;
+  }
+
+  .reading-toc-drawer.is-open {
+    transform: translateY(0);
+    visibility: visible;
+  }
+
+  .reading-toc-drawer-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 1.4rem;
+    border-bottom: 1px solid var(--reading-line);
+  }
+
+  .reading-toc-drawer-title {
+    font-size: 1rem;
+    font-weight: 650;
+    color: var(--reading-text);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .reading-toc-drawer-title i {
+    color: var(--reading-accent);
+  }
+
+  .reading-toc-drawer-close {
+    background: transparent;
+    border: none;
+    color: var(--reading-soft);
+    font-size: 1.15rem;
+    padding: 0.25rem 0.5rem;
+    cursor: pointer;
+    border-radius: 0.375rem;
+    transition: color 0.15s ease;
+  }
+
+  .reading-toc-drawer-close:hover {
+    color: var(--reading-text);
+  }
+
+  .reading-toc-drawer-body {
+    padding: 1.2rem 1.4rem 2.2rem;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
   @media (max-width: 960px) {
     .reading-shell {
       grid-template-columns: 1fr;
-      gap: 2rem;
+      gap: 1.5rem;
     }
 
     .reading-main {
@@ -572,17 +895,44 @@ layout: default
       max-width: 100%;
     }
 
+    /* Completely hide desktop sidebar on mobile so it is never dumped at the bottom */
     .reading-sidebar {
-      order: 2;
+      display: none !important;
+    }
+  }
+
+  @media (min-width: 961px) {
+    .reading-mobile-toc-card,
+    .reading-floating-toc-btn,
+    .reading-toc-drawer-backdrop,
+    .reading-toc-drawer {
+      display: none !important;
+    }
+  }
+
+  @media (max-width: 640px) {
+    .reading-post-nav {
+      grid-template-columns: 1fr;
+      gap: 1rem;
     }
 
-    .reading-sidebar-inner {
-      position: static;
-      max-height: none;
-      overflow-y: visible;
-      padding: 1.2rem 0 0;
-      border-right: 0;
-      border-top: 1px solid var(--reading-line);
+    .reading-nav-spacer {
+      display: none;
+    }
+
+    .reading-nav-card--next {
+      text-align: left;
+    }
+
+    .reading-nav-card--next .reading-nav-label {
+      justify-content: flex-start;
+    }
+
+    .reading-floating-toc-btn {
+      bottom: 1.4rem;
+      right: 1.2rem;
+      padding: 0.55rem 0.95rem;
+      font-size: 0.78rem;
     }
   }
 </style>
@@ -631,6 +981,22 @@ layout: default
         </div>
       </header>
 
+      {% if has_outline %}
+        <div class="reading-mobile-toc-card" data-reading-mobile-toc-card>
+          <details class="reading-mobile-toc-details">
+            <summary class="reading-mobile-toc-summary">
+              <span class="reading-mobile-toc-title">
+                <i class="fa-solid fa-list-ul"></i>
+                <span>Table of Contents</span>
+              </span>
+              <span class="reading-mobile-toc-badge" data-toc-count>Outline</span>
+              <i class="fa-solid fa-chevron-down reading-mobile-toc-chevron"></i>
+            </summary>
+            <nav class="reading-mobile-toc-body reading-toc" data-reading-mobile-toc></nav>
+          </details>
+        </div>
+      {% endif %}
+
       <article class="reading-article">
         <div id="markdown-content">
           {{ content }}
@@ -667,6 +1033,34 @@ layout: default
           </ul>
         </section>
       {% endif %}
+
+      {% if page.previous or page.next %}
+        <nav class="reading-post-nav" aria-label="Post navigation">
+          {% if page.previous %}
+            <a class="reading-nav-card reading-nav-card--prev" href="{{ page.previous.url | relative_url }}">
+              <div class="reading-nav-label">
+                <span class="reading-nav-arrow">&larr;</span> Older Post
+              </div>
+              <div class="reading-nav-title">{{ page.previous.title }}</div>
+              <div class="reading-nav-date">{{ page.previous.date | date: '%B %d, %Y' }}</div>
+            </a>
+          {% else %}
+            <div class="reading-nav-spacer"></div>
+          {% endif %}
+
+          {% if page.next %}
+            <a class="reading-nav-card reading-nav-card--next" href="{{ page.next.url | relative_url }}">
+              <div class="reading-nav-label">
+                Newer Post <span class="reading-nav-arrow">&rarr;</span>
+              </div>
+              <div class="reading-nav-title">{{ page.next.title }}</div>
+              <div class="reading-nav-date">{{ page.next.date | date: '%B %d, %Y' }}</div>
+            </a>
+          {% else %}
+            <div class="reading-nav-spacer"></div>
+          {% endif %}
+        </nav>
+      {% endif %}
     </div>
   </div>
 
@@ -676,122 +1070,230 @@ layout: default
   {% if site.giscus and page.giscus_comments %}
     {% include giscus.liquid %}
   {% endif %}
+
+  {% if has_outline %}
+    <!-- Floating Quick TOC Button for Mobile -->
+    <button class="reading-floating-toc-btn" type="button" aria-label="Open Table of Contents" data-reading-floating-btn>
+      <i class="fa-solid fa-bars-staggered"></i>
+      <span>Outline</span>
+    </button>
+
+    <!-- Mobile Slide-up Drawer -->
+    <div class="reading-toc-drawer-backdrop" data-reading-drawer-backdrop></div>
+    <div class="reading-toc-drawer" data-reading-drawer role="dialog" aria-modal="true" aria-label="Table of Contents">
+      <div class="reading-toc-drawer-header">
+        <div class="reading-toc-drawer-title">
+          <i class="fa-solid fa-list-ul"></i>
+          <span>Table of Contents</span>
+        </div>
+        <button class="reading-toc-drawer-close" type="button" aria-label="Close outline" data-reading-drawer-close>
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+      <nav class="reading-toc-drawer-body reading-toc" data-reading-drawer-toc></nav>
+    </div>
+  {% endif %}
 </div>
 
-{% if has_outline %}
-  <script>
-    document.addEventListener('DOMContentLoaded', function () {
-      const article = document.getElementById('markdown-content');
-      const sidebar = document.querySelector('[data-reading-sidebar]');
-      const toc = document.querySelector('[data-reading-toc]');
-
-      if (!article || !sidebar || !toc) {
-        return;
-      }
-
-      const headings = Array.from(article.querySelectorAll('h1, h2, h3, h4')).filter((heading) => {
-        return heading.textContent && heading.textContent.trim().length > 0;
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    // 1. Safe responsive table wrapping for all article tables
+    const article = document.getElementById('markdown-content');
+    if (article) {
+      article.querySelectorAll('table').forEach(function (table) {
+        if (!table.closest('.table-responsive') && !table.closest('.reading-table-container')) {
+          const wrapper = document.createElement('div');
+          wrapper.className = 'table-responsive reading-table-container';
+          table.parentNode.insertBefore(wrapper, table);
+          wrapper.appendChild(table);
+        }
       });
-      if (headings.length < 2) {
-        sidebar.hidden = true;
-        document.querySelector('.reading-shell')?.classList.add('reading-shell--single');
-        return;
+    }
+
+    {% if has_outline %}
+    // 2. Outline generator & mobile drawer controller
+    const sidebar = document.querySelector('[data-reading-sidebar]');
+    const toc = document.querySelector('[data-reading-toc]');
+    const mobileToc = document.querySelector('[data-reading-mobile-toc]');
+    const drawerToc = document.querySelector('[data-reading-drawer-toc]');
+
+    if (!article || !sidebar || !toc) {
+      return;
+    }
+
+    const headings = Array.from(article.querySelectorAll('h1, h2, h3, h4')).filter((heading) => {
+      return heading.textContent && heading.textContent.trim().length > 0;
+    });
+
+    if (headings.length < 2) {
+      sidebar.hidden = true;
+      document.querySelector('.reading-shell')?.classList.add('reading-shell--single');
+      document.querySelector('[data-reading-mobile-toc-card]')?.remove();
+      document.querySelector('[data-reading-floating-btn]')?.remove();
+      document.querySelector('[data-reading-drawer]')?.remove();
+      document.querySelector('[data-reading-drawer-backdrop]')?.remove();
+      return;
+    }
+
+    const rawLevels = [...new Set(headings.map((heading) => Number(heading.tagName.slice(1))))].sort((a, b) => a - b);
+    const levelMap = new Map(rawLevels.map((level, index) => [level, index + 1]));
+    const usedIds = new Map();
+
+    const ensureUniqueId = (value, index) => {
+      const base =
+        String(value || '')
+          .trim()
+          .toLowerCase()
+          .replace(/[^\p{Letter}\p{Number}\s-]/gu, '')
+          .replace(/\s+/g, '-')
+          .replace(/-+/g, '-')
+          .replace(/^-|-$/g, '') || `section-${index + 1}`;
+
+      const count = usedIds.get(base) || 0;
+      usedIds.set(base, count + 1);
+
+      if (count === 0) {
+        return base;
       }
 
-      const rawLevels = [...new Set(headings.map((heading) => Number(heading.tagName.slice(1))))].sort((a, b) => a - b);
-      const levelMap = new Map(rawLevels.map((level, index) => [level, index + 1]));
-      const usedIds = new Map();
+      return `${base}-${count + 1}`;
+    };
 
-      const ensureUniqueId = (value, index) => {
-        const base =
-          String(value || '')
-            .trim()
-            .toLowerCase()
-            .replace(/[^\p{Letter}\p{Number}\s-]/gu, '')
-            .replace(/\s+/g, '-')
-            .replace(/-+/g, '-')
-            .replace(/^-|-$/g, '') || `section-${index + 1}`;
+    headings.forEach((heading, index) => {
+      heading.id = ensureUniqueId(heading.id || heading.textContent, index);
 
-        const count = usedIds.get(base) || 0;
-        usedIds.set(base, count + 1);
+      const normalizedLevel = levelMap.get(Number(heading.tagName.slice(1))) || 1;
+      heading.dataset.readingLevel = String(normalizedLevel);
+    });
 
-        if (count === 0) {
-          return base;
+    const rootList = document.createElement('ul');
+    const listStack = [rootList];
+    let currentLevel = 1;
+
+    headings.forEach((heading) => {
+      const normalizedLevel = Number(heading.dataset.readingLevel || 1);
+
+      while (currentLevel < normalizedLevel) {
+        const parentList = listStack[listStack.length - 1];
+        const lastItem = parentList.lastElementChild;
+
+        if (!lastItem) {
+          break;
         }
 
-        return `${base}-${count + 1}`;
-      };
+        const nestedList = document.createElement('ul');
+        lastItem.appendChild(nestedList);
+        listStack.push(nestedList);
+        currentLevel += 1;
+      }
 
-      headings.forEach((heading, index) => {
-        heading.id = ensureUniqueId(heading.id || heading.textContent, index);
+      while (currentLevel > normalizedLevel) {
+        listStack.pop();
+        currentLevel -= 1;
+      }
 
-        const normalizedLevel = levelMap.get(Number(heading.tagName.slice(1))) || 1;
-        heading.dataset.readingLevel = String(normalizedLevel);
+      const item = document.createElement('li');
+      item.dataset.level = String(normalizedLevel);
+
+      const link = document.createElement('a');
+      link.href = `#${heading.id}`;
+      link.textContent = heading.textContent;
+      item.appendChild(link);
+      listStack[listStack.length - 1].appendChild(item);
+    });
+
+    if (!rootList.children.length) {
+      sidebar.hidden = true;
+      document.querySelector('.reading-shell')?.classList.add('reading-shell--single');
+      document.querySelector('[data-reading-mobile-toc-card]')?.remove();
+      document.querySelector('[data-reading-floating-btn]')?.remove();
+      document.querySelector('[data-reading-drawer]')?.remove();
+      document.querySelector('[data-reading-drawer-backdrop]')?.remove();
+      return;
+    }
+
+    // Mount to desktop sidebar
+    toc.appendChild(rootList);
+
+    // Update section badges
+    document.querySelectorAll('[data-toc-count]').forEach((badge) => {
+      badge.textContent = `${headings.length} sections`;
+    });
+
+    // Mount to mobile top collapsible card
+    if (mobileToc) {
+      mobileToc.appendChild(rootList.cloneNode(true));
+    }
+
+    // Mount to mobile slide-up drawer
+    if (drawerToc) {
+      drawerToc.appendChild(rootList.cloneNode(true));
+    }
+
+    // Mobile slide-up drawer controls
+    const floatingBtn = document.querySelector('[data-reading-floating-btn]');
+    const drawer = document.querySelector('[data-reading-drawer]');
+    const backdrop = document.querySelector('[data-reading-drawer-backdrop]');
+    const closeBtn = document.querySelector('[data-reading-drawer-close]');
+
+    const openDrawer = () => {
+      drawer?.classList.add('is-open');
+      backdrop?.classList.add('is-open');
+      document.body.style.overflow = 'hidden';
+    };
+
+    const closeDrawer = () => {
+      drawer?.classList.remove('is-open');
+      backdrop?.classList.remove('is-open');
+      document.body.style.overflow = '';
+    };
+
+    floatingBtn?.addEventListener('click', openDrawer);
+    closeBtn?.addEventListener('click', closeDrawer);
+    backdrop?.addEventListener('click', closeDrawer);
+
+    // Close drawer when clicking any link inside it
+    drawer?.querySelectorAll('a').forEach((link) => {
+      link.addEventListener('click', () => {
+        closeDrawer();
       });
+    });
 
-      const rootList = document.createElement('ul');
-      const listStack = [rootList];
-      let currentLevel = 1;
+    // Toggle floating outline button visibility based on scroll position
+    const updateFloatingBtn = () => {
+      if (!floatingBtn) return;
+      const scrollY = window.scrollY || document.documentElement.scrollTop;
+      if (window.innerWidth <= 960 && scrollY > 260) {
+        floatingBtn.classList.add('is-visible');
+      } else {
+        floatingBtn.classList.remove('is-visible');
+      }
+    };
+
+    document.addEventListener('scroll', updateFloatingBtn, { passive: true });
+    window.addEventListener('resize', updateFloatingBtn);
+    updateFloatingBtn();
+
+    // Active heading tracking across all TOC links
+    const allTocLinks = Array.from(document.querySelectorAll('.reading-toc a'));
+    const setActiveHeading = () => {
+      const offset = 140;
+      let currentHeading = headings[0];
 
       headings.forEach((heading) => {
-        const normalizedLevel = Number(heading.dataset.readingLevel || 1);
-
-        while (currentLevel < normalizedLevel) {
-          const parentList = listStack[listStack.length - 1];
-          const lastItem = parentList.lastElementChild;
-
-          if (!lastItem) {
-            break;
-          }
-
-          const nestedList = document.createElement('ul');
-          lastItem.appendChild(nestedList);
-          listStack.push(nestedList);
-          currentLevel += 1;
+        if (heading.getBoundingClientRect().top <= offset) {
+          currentHeading = heading;
         }
-
-        while (currentLevel > normalizedLevel) {
-          listStack.pop();
-          currentLevel -= 1;
-        }
-
-        const item = document.createElement('li');
-        item.dataset.level = String(normalizedLevel);
-
-        const link = document.createElement('a');
-        link.href = `#${heading.id}`;
-        link.textContent = heading.textContent;
-        item.appendChild(link);
-        listStack[listStack.length - 1].appendChild(item);
       });
 
-      if (!rootList.children.length) {
-        sidebar.hidden = true;
-        document.querySelector('.reading-shell')?.classList.add('reading-shell--single');
-        return;
-      }
+      allTocLinks.forEach((link) => {
+        link.classList.toggle('is-active', link.getAttribute('href') === `#${currentHeading.id}`);
+      });
+    };
 
-      toc.appendChild(rootList);
-
-      const links = Array.from(toc.querySelectorAll('a'));
-      const setActiveHeading = () => {
-        const offset = 140;
-        let currentHeading = headings[0];
-
-        headings.forEach((heading) => {
-          if (heading.getBoundingClientRect().top <= offset) {
-            currentHeading = heading;
-          }
-        });
-
-        links.forEach((link) => {
-          link.classList.toggle('is-active', link.getAttribute('href') === `#${currentHeading.id}`);
-        });
-      };
-
-      setActiveHeading();
-      document.addEventListener('scroll', setActiveHeading, { passive: true });
-      window.addEventListener('resize', setActiveHeading);
-    });
-  </script>
-{% endif %}
+    setActiveHeading();
+    document.addEventListener('scroll', setActiveHeading, { passive: true });
+    window.addEventListener('resize', setActiveHeading);
+    {% endif %}
+  });
+</script>

@@ -29,11 +29,15 @@ function setScope(scope) {
   if (earlierGroup) {
     if (scope === 'all') {
       earlierGroup.open = true;
-    } else if (scope === 'week' || scope === 'month') {
-      earlierGroup.open = false;
     }
   }
   applyFilters();
+}
+
+function toggleAllSubDrawers(open) {
+  document.querySelectorAll('.sm-tl-subpapers').forEach(el => {
+    el.open = open;
+  });
 }
 
 function toggleAllFilters(className, selectAll) {

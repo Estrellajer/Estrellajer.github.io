@@ -9,7 +9,12 @@ layout: default
         <h1 class="home-title">
           {% if page.hero_name contains '「' %}
             {% assign name_parts = page.hero_name | split: '「' %}
-            <span class="name-en">{{ name_parts[0] | strip }}</span><span class="name-zh">「{{ name_parts[1] | strip }}</span>
+            {% assign zh_part = name_parts[1] | remove: '」' | strip %}
+            <span class="name-en">{{ name_parts[0] | strip }}</span
+            ><span class="name-zh" lang="zh-CN"
+              ><span class="bracket bracket-open">「</span><span class="name-zh-text">{{ zh_part }}</span
+              ><span class="bracket bracket-close">」</span></span
+            >
           {% else %}
             {{ page.hero_name }}
           {% endif %}

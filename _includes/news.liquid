@@ -1,34 +1,138 @@
-<div class="news">
+<style>
+  .news-stream-container {
+    width: 100%;
+  }
+
+  .news-stream-container .news-stream-list {
+    display: grid;
+    gap: 0.85rem;
+  }
+
+  .news-stream-container .news-stream-row {
+    display: grid;
+    grid-template-columns: 116px 78px minmax(0, 1fr);
+    gap: 1.25rem;
+    align-items: center;
+    padding: 1rem 1.35rem;
+    border-radius: 1rem;
+    background: var(--hl-surface);
+    border: 1px solid var(--hl-border);
+    box-shadow: var(--hl-card-shadow);
+    transition: all 0.22s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+
+  .news-stream-container .news-stream-row:hover {
+    background: var(--hl-surface-hover);
+    border-color: var(--hl-border-hover);
+    box-shadow: var(--hl-card-hover-shadow);
+    transform: translateX(4px);
+  }
+
+  .news-stream-container .news-date {
+    font-family: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+    font-size: 0.86rem;
+    font-weight: 550;
+    color: var(--hl-text-soft);
+    font-variant-numeric: tabular-nums;
+    white-space: nowrap;
+  }
+
+  .news-stream-container .news-badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.22rem 0.6rem;
+    border-radius: 9999px;
+    font-family: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+    font-size: 0.72rem;
+    font-weight: 650;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    white-space: nowrap;
+  }
+
+  .news-stream-container .news-body {
+    margin: 0;
+    font-size: 1.02rem;
+    line-height: 1.7;
+    color: var(--hl-text-primary);
+  }
+
+  .news-stream-container .news-body a {
+    color: var(--hl-accent);
+    font-weight: 600;
+    text-decoration: none;
+    transition: color 0.18s ease;
+  }
+
+  .news-stream-container .news-body a:hover {
+    color: var(--hl-accent-hover);
+    text-decoration: underline;
+  }
+
+  .news-stream-container .news-empty {
+    padding: 2.5rem;
+    text-align: center;
+    background: var(--hl-surface);
+    border: 1px dashed var(--hl-border);
+    border-radius: 1rem;
+    color: var(--hl-text-soft);
+    font-size: 0.95rem;
+  }
+
+  @media (max-width: 680px) {
+    .news-stream-container .news-stream-row {
+      grid-template-columns: 1fr;
+      gap: 0.6rem;
+      align-items: flex-start;
+      padding: 0.95rem 1.15rem;
+    }
+
+    .news-stream-container .news-stream-row:hover {
+      transform: translateY(-2px);
+    }
+  }
+</style>
+
+<div class="news-stream-container">
   {% if site.news != blank %}
     {% assign news_size = site.news | size %}
-    <div
-      class="table-responsive"
-      {% if include.limit and page.announcements.scrollable and news_size > 3 %}
-        style="max-height: 60vw"
+    <div class="home-news-stream news-stream-list">
+      {% assign news = site.news | reverse %}
+      {% if include.limit and page.announcements.limit %}
+        {% assign news_limit = page.announcements.limit %}
+      {% else %}
+        {% assign news_limit = news_size %}
       {% endif %}
-    >
-      <table class="table table-sm table-borderless">
-        {% assign news = site.news | reverse %}
-        {% if include.limit and page.announcements.limit %}
-          {% assign news_limit = page.announcements.limit %}
-        {% else %}
-          {% assign news_limit = news_size %}
-        {% endif %}
-        {% for item in news limit: news_limit %}
-          <tr>
-            <th scope="row" style="width: 20%">{{ item.date | date: '%b %d, %Y' }}</th>
-            <td>
-              {% if item.inline %}
-                {{ item.content | remove: '<p>' | remove: '</p>' | emojify }}
-              {% else %}
-                <a class="news-title" href="{{ item.url | relative_url }}">{{ item.title }}</a>
-              {% endif %}
-            </td>
-          </tr>
-        {% endfor %}
-      </table>
+      {% for item in news limit: news_limit %}
+        <article class="home-news-row news-stream-row">
+          <div class="news-date">{{ item.date | date: '%b %d, %Y' }}</div>
+          <div class="news-category">
+            {% if item.category == 'paper' or item.content contains 'accepted' or item.content contains 'Paper' or item.content contains 'EMNLP' %}
+              <span class="news-badge badge-paper">Paper</span>
+            {% elsif item.category == 'intern'
+              or item.title contains 'intern'
+              or item.content contains 'intern'
+              or item.content contains 'ByteDance'
+            %}
+              <span class="news-badge badge-intern">Intern</span>
+            {% elsif item.category == 'grant' or item.title contains 'Qiyan' or item.title contains 'Grant' or item.content contains 'Grant' %}
+              <span class="news-badge badge-grant">Award</span>
+            {% else %}
+              <span class="news-badge badge-general">News</span>
+            {% endif %}
+          </div>
+          <div class="news-body">
+            {% if item.inline %}
+              {{ item.content | remove: '<p>' | remove: '</p>' | emojify }}
+            {% else %}
+              <a class="news-title" href="{{ item.url | relative_url }}">{{ item.title }}</a>
+            {% endif %}
+          </div>
+        </article>
+      {% endfor %}
     </div>
   {% else %}
-    <p>No news so far...</p>
+    <p class="news-empty">No news so far...</p>
   {% endif %}
 </div>

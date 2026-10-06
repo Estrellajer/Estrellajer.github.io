@@ -132,9 +132,9 @@ scholars:
   category: HomePage
   site_type: github_pages
   selectors:
+  - '#selected-publications ~ div.paper-item'
+  - '#selected-publications + ul li'
   - .home-news__item
-  - '#selected-publications + ul'
-  - '#publications'
   remove_selectors:
   - script
   - style
@@ -149,7 +149,7 @@ scholars:
   research_areas:
   - CV
   affiliation: 武汉大学
-  watch: news
+  watch: general
 - name: Chris Olah (colah)
   url: https://transformer-circuits.pub/
   rss_url: https://transformer-circuits.pub/feed.xml
@@ -699,13 +699,14 @@ scholars:
   affiliation: 南京大学 (LAMDA)
   watch: publications
 - name: 庄辉平
-  url: https://zhuanghp.github.io/
+  url: https://zhuanghp.github.io/publications/
   category: HomePage
   site_type: github_pages
   selectors:
+  - .publications-list li
+  - article
+  - .pub-item
   - .compact-news-list li
-  - .news-panel li
-  - .compact-news-list
   remove_selectors:
   - script
   - style
@@ -721,7 +722,7 @@ scholars:
   - Continual Learning
   - Embodied AI
   affiliation: 华南理工大学
-  watch: general
+  watch: publications
 - name: 王子峰
   url: https://zifengwang.me/
   category: HomePage
@@ -750,6 +751,8 @@ scholars:
   category: HomePage
   site_type: github_pages
   selectors:
+  - '#selected-publications-and-preprints + ol > li'
+  - '#selected-publications-and-preprints + ul > li'
   - '#recent-news + ul li'
   remove_selectors:
   - script
@@ -761,18 +764,19 @@ scholars:
   - .sidebar
   - .comments
   labels:
-  - news
+  - publications
   research_areas:
   - Continual Learning
   affiliation: 清华大学
-  watch: news
+  watch: publications
 - name: 周嘉欢
   url: https://zhoujiahuan1991.github.io/
   category: HomePage
   site_type: github_pages
   selectors:
-  - .news-item
   - '#publications tr'
+  - li
+  - .news-item
   - '#publications li'
   - .publication
   remove_selectors:
@@ -791,7 +795,7 @@ scholars:
   - Multimodal
   affiliation: 北京大学
   watch: publications
-- name: 姚顺雨
+- name: 姚顺宇 (Shunyu Yao)
   url: https://ysymyth.github.io/
   category: HomePage
   site_type: github_pages
@@ -821,9 +825,10 @@ scholars:
   category: HomePage
   site_type: github_pages
   selectors:
+  - .article-title
+  - .pub-list-item
   - '#news li'
   - '#news'
-  - .article-title
   remove_selectors:
   - script
   - style
@@ -1013,8 +1018,8 @@ scholars:
   category: HomePage
   site_type: github_pages
   selectors:
-  - '#-news + ul li'
   - '#-selected-preprints-and-publications + ul li'
+  - '#-news + ul li'
   remove_selectors:
   - script
   - style
@@ -1057,7 +1062,7 @@ scholars:
   - Model Merging
   affiliation: 清华大学
   watch: publications
-- name: 冯钰捷
+- name: 冯钰捷 (Yujie Feng)
   url: https://woodscene.github.io/
   category: HomePage
   site_type: github_pages
@@ -1337,12 +1342,13 @@ scholars:
   affiliation: 清华大学
   watch: publications
 - name: 周旭辉 (Xuhui Zhou)
-  url: https://xuhuiz.com/
+  url: https://xuhuiz.com/publications
   category: HomePage
   site_type: personal_website
   selectors:
+  - .publication-item
+  - article
   - .overflow-x-auto table tr
-  - .overflow-x-auto
   remove_selectors:
   - script
   - style
@@ -1358,14 +1364,16 @@ scholars:
   - RL
   - CHI
   affiliation: CMU
-  watch: general
+  watch: publications
 - name: Chongjie Si
-  url: https://chongjiesi.site/home/
+  url: https://chongjiesi.site/full-publications/
   category: HomePage
   site_type: personal_website
   selectors:
+  - .publication-card
+  - article
+  - .pub-item
   - .news-item
-  - .section-heading-news + div
   remove_selectors:
   - script
   - style

@@ -1496,13 +1496,18 @@ def _clean_paper_entry(text: str) -> str:
     if '!' in clean and re.search(r'!\s*202\d', clean):
         clean = re.split(r'!\s*202\d', clean)[0].strip() + "!"
 
-    # 4. Strip leading date prefixes like [2026-09], 2026.07:, 09.2026,, 2026/09
+    # 4. Strip leading date prefixes like [2026-09], 2026.07:, 09.2026,, 2026/09 (protecting Chinese year like 2025年)
     clean = re.sub(r'^\s*\[?\s*202\d[-\./]\d{1,2}(?:[-\./]\d{1,2})?\s*\]?\s*[\:\,\-—·]?\s*', '', clean)
     clean = re.sub(r'^\s*(?:Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)[a-z]*\.?\s+\d{1,2}(?:st|nd|rd|th)?,?\s+202\d\s*[\:\,\-—·]?\s*', '', clean, flags=re.I)
     clean = re.sub(r'^\s*202\d\s+(?:Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)[a-z]*\.?\s+\d{1,2}\s*[\:\,\-—·]?\s*', '', clean, flags=re.I)
     clean = re.sub(r'^\s*\d{1,2}[-\./]202\d\s*[\:\,\-—·]?\s*', '', clean)
+    clean = re.sub(r'^\s*202\d\b(?!\s*年)\s*[\:\,\-—·]?\s*', '', clean)
     clean = re.sub(r'^\s*\d{1,2}\s*[💼😋🎉🔥✨]?\s*(?:Activity|Accepted)?\s*', '', clean)
     clean = re.sub(r'^\s*2025\s*年\s*\d{1,2}\s*月随笔\s*', '随笔', clean)
+
+    # Restore "2025 年 4 月技术随想" if it got trimmed to "年 4 月技术随想"
+    if clean.startswith("年 ") or clean.startswith("年"):
+        clean = "2025 " + clean
 
     # 5. Strip leading citation numbers like [7], [1], 1., 7.
     clean = re.sub(r'^\s*\[\s*\d+\s*\]\s*', '', clean)
@@ -1521,16 +1526,28 @@ def _clean_paper_entry(text: str) -> str:
     clean = re.sub(r'(?:\d+(?:st|nd|rd|th)\s+)?(?:ACM\s+)?(?:SIGKDD|KDD)\s+Conference\s+on\s+Knowledge\s+Discovery\s+and\s+Data\s+Mining', 'SIGKDD', clean, flags=re.I)
     clean = re.sub(r'arXiv\s+preprint\s+arXiv:\d+\.\d+', 'arXiv', clean, flags=re.I)
 
+    # Fix bad venue replacements
+    clean = re.sub(r'·\s*E·\s*ACL', '· EACL', clean)
+    clean = re.sub(r'·\s*NA·\s*ACL', '· NAACL', clean)
+    clean = re.sub(r'\bE·\s*ACL', 'EACL', clean)
+    clean = re.sub(r'\bNA·\s*ACL', 'NAACL', clean)
+
     # 6. Embedded author lists before venue (e.g. 黄家斌, 孙宇, 吴太强, 冯亮)
     clean = re.sub(r'\s*\([^)]*Co-first Author[^)]*\)', '', clean, flags=re.I)
     clean = re.sub(r'\s*\(\*:\s*core contributors\)', '', clean, flags=re.I)
+    clean = re.sub(r'\s+(?:Co-first Author|first author|corresponding author)\b.*', '', clean, flags=re.I)
+
     m_venue = re.search(r'\b(NeurIPS|ICML|ICLR|CVPR|ECCV|ICCV|ACL|EMNLP|COLM|AAAI|KDD|SIGKDD|WACV|IJCV|TPAMI|TKDE|arXiv|Proceedings of|International Conference)\b.*', clean, re.I)
     if m_venue and m_venue.start() > 25:
         prefix = clean[:m_venue.start()].strip()
         venue_suffix = clean[m_venue.start():].strip()
-        m_authors = re.search(r'^(.*?)\s+([A-Z][a-z]+ [A-Z][a-z]+[\s\*\,\.\-]+(?:[A-Z][a-z]+ [A-Z][a-z]+|\bet al\b).*)$', prefix)
-        if m_authors and len(m_authors.group(1)) > 15:
-            clean = f"{m_authors.group(1).strip()} · {venue_suffix}"
+        m_authors = re.search(r'^(.*?)\s+([A-Z][a-z]+ [A-Z][a-z]+(?:[\,\*]+|\s+and|\s+et al\b).*)$', prefix)
+        if m_authors:
+            cand_title = m_authors.group(1).strip()
+            if (len(cand_title) > 15
+                and not re.search(r'\b(?:for|with|via|in|by|to|of|and|on|the|from|at|a|an|into)$', cand_title, re.I)
+                and not cand_title.endswith((':', '-', '—', '·'))):
+                clean = f"{cand_title} · {venue_suffix}"
 
     # 7. Strip leading author patterns: "Author1*, Author2 . Paper Title"
     m_auth = re.match(r'^[A-Z][a-zA-Z\s\*\,\.\-]+?\s*[\.\:\-]\s*([A-Z].+)$', clean)
@@ -1543,18 +1560,23 @@ def _clean_paper_entry(text: str) -> str:
     clean = re.sub(r'\s*\[\s*(?:Code|PDF|Project|Zhihu|BibTeX|Paper|Download|HuggingFace|Slide|Slides|Weights|page|Paper \(PDF\)|Project page)\b[^\]]*\]\s*', '', clean, flags=re.I)
     clean = re.sub(r'\bDownload Paper\b', '', clean, flags=re.I)
 
-    # 9. Strip decorative emoji at start or end
+    # 9. Strip trailing dates glued to titles (e.g. Mystery of the Quintics Jan 5, 2026)
+    clean = re.sub(r'\s+(?:Jan(?:uary)?|Feb(?:ruary)?|Mar(?:ch)?|Apr(?:il)?|May|Jun(?:e)?|Jul(?:y)?|Aug(?:ust)?|Sep(?:t(?:ember)?)?|Oct(?:ober)?|Nov(?:ember)?|Dec(?:ember)?)\.?\s+\d{1,2}(?:st|nd|rd|th)?,?\s+202\d\b.*$', '', clean, flags=re.I)
+
+    # 10. Strip trailing attached author names only when preceded by sentence delimiter (e.g. Video.Yu-Wei Niu)
+    clean = re.sub(r'([\.?!])\s*(?:[A-Z][a-z]+-[A-Z][a-z]+|[A-Z][a-z]+)\s+[A-Z][a-z]+$', r'\1', clean)
+
+    # 11. Clean decorative emoji and punctuation
     clean = re.sub(r'^[\s🔥✨💡👉🔗🎉📘💼]+', '', clean)
     clean = re.sub(r'[\s🔥✨💡👉🔗🎉📘💼]+$', '', clean)
-
-    # 10. Strip Google Scholar page ranges like ", 122493-122531" or ", 8425-8428"
+    clean = re.sub(r'[\.\,]\s*·', ' ·', clean)
+    clean = re.sub(r'\s*·\s*·\s*', ' · ', clean)
     clean = re.sub(r',\s*\d+-\d+\b', '', clean)
-
-    # 11. Deduplicate repeated year patterns like ", 2026, 2026" or " 2026 2026"
     clean = re.sub(r'(\b202\d\b)(?:[,\s]+\1)+', r'\1', clean)
     clean = re.sub(r'\b202\d\s+(202\d)\b', r'\1', clean)
     clean = re.sub(r'·\s*([^·]+)\s*,\s*(202\d)\s*,\s*\2', r'· \1, \2', clean)
     clean = clean.replace("↗", "").strip()
+    clean = re.sub(r'[\.\?!]$', '', clean)
 
     return clean.strip()
 
@@ -1572,7 +1594,8 @@ def _extract_base_title(text: str) -> str:
     t = re.sub(r'^(?:Oral|Spotlight|Highlight|Poster|Paper)\s*[-:·•]\s*', '', t, flags=re.I)
 
     # Strip venue suffix: " · NeurIPS 2026", " - ICML 2026", " @ CVPR 2026", " in Nature", etc.
-    t = re.sub(r'\s*[·•|@-]\s*(?:NeurIPS|ICML|ICLR|CVPR|ECCV|ICCV|ACL|EMNLP|COLM|AAAI|KDD|SIGKDD|WACV|IJCV|TPAMI|TKDE|arXiv|JASA|SIGIR|ACM MM|WWW|TMLR|Nature Communications|Patterns|IEEE TPAMI|Oral|Spotlight|Highlight).*$', '', t, flags=re.I)
+    t = re.sub(r'\s*[·•|@-]\s*(?:NeurIPS|ICML|ICLR|CVPR|ECCV|ICCV|ACL|EMNLP|COLM|AAAI|KDD|SIGKDD|WACV|IJCV|TPAMI|TKDE|arXiv|JASA|SIGIR|ACM MM|WWW|TMLR|Nature Communications|Patterns|IEEE TPAMI|Oral|Spotlight|Highlight|Advances in Neural Information Processing Systems).*$', '', t, flags=re.I)
+    t = re.sub(r'\s*(?:Advances in Neural Information Processing Systems|International Conference on [A-Za-z\s]+|Proceedings of the [A-Za-z0-9\s]+).*$', '', t, flags=re.I)
     t = re.sub(r'[\s,]+202\d\b.*$', '', t)
     return re.sub(r'[\W_]+', '', t.lower())
 
@@ -1679,10 +1702,33 @@ def _is_tag_or_noise_line(text: str, scholar_name: str = "") -> bool:
         return True
     if re.match(r'^(?:Dr\.|Prof\.|Mr\.|Ms\.)\s+[A-Z]', clean):
         return True
-    if re.match(r'^(?:The\s+)?(?:\d+(?:st|nd|rd|th)\s+)?(?:International\s+)?(?:ACM\s+|IEEE\s+)?(?:SIGIR|KDD|SIGKDD|NeurIPS|ICML|ICLR|CVPR|ECCV|ICCV|ACL|EMNLP)\s+Conference\b', clean, re.I):
+    if clean.strip().lower() in ['download paper', 'swe 自进化', 'identification', 'see you in wuhan, valse 2026!', 'claude banner']:
         return True
-    if clean.strip().lower() in ['download paper', 'swe 自进化', 'identification', 'see you in wuhan, valse 2026!']:
-        return True
+
+    announcement_patterns = [
+        r'^(?:one|two|three|four|five|several of our|we have \d+)\s+papers?\s+(?:are|have been|is|were)\s+accepted\b',
+        r'^(?:one|two|three)\s+papers?\s+accepted\b',
+        r'^our paper on .*? has been accepted\b',
+        r'^excited that .*? papers were accepted\b',
+        r'^thrilled that our .*? papers\b',
+        r'^(?:sept\.|oct\.|nov\.|dec\.|jan\.|feb\.|mar\.|apr\.|may|jun\.|jul\.|aug\.)\s*202\d\s*:\s*(?:thrilled|excited|pleased)\b',
+        r'^(?:attended|invited to serve as|serving as|co-organizing|organizing the)\b',
+        r'^see you in\b',
+        r'^i defended my phd\b',
+        r'^gave a talk\b',
+        r'^i received\b',
+        r'^i will serve as\b',
+        r'^we are organizing\b',
+        r'^i have been awarded\b',
+        r"^i'm now working as\b",
+        r'^a film was selected\b',
+        r'^claude banner$',
+        r'^swe 自进化',
+        r'^identification\s*·\s*acm mm\b',
+    ]
+    for ap in announcement_patterns:
+        if re.search(ap, clean, re.I):
+            return True
     if scholar_name and (clean.lower() == scholar_name.lower() or clean.lower() in scholar_name.lower()):
         return True
     lower = clean.lower().strip(" :#*-—–")
@@ -2640,7 +2686,13 @@ def generate_html_report(
     timeline_html = (
         '<section class="sm-timeline" id="timelineSection">'
         '<div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:1rem; margin-bottom:1.5rem;">'
+        '<div style="display:flex; align-items:center; gap:0.85rem; flex-wrap:wrap;">'
         '<h2 class="sm-section-title" style="margin:0;">最近在做什么</h2>'
+        '<div class="sm-drawer-toggles">'
+        '<button type="button" class="sm-btn-drawer" onclick="toggleAllSubDrawers(true)">展开全部成果 ▾</button>'
+        '<button type="button" class="sm-btn-drawer" onclick="toggleAllSubDrawers(false)">收起全部成果 ▴</button>'
+        '</div>'
+        '</div>'
         f'{scope_tabs_html}'
         '</div>'
     )
@@ -2673,63 +2725,88 @@ def generate_html_report(
                     )
                 sub_html = ""
                 if ev.get("sub_items"):
-                    subs = ev["sub_items"]
-                    sub_items_li = ""
-                    main_kind = ev.get("kind", "update")
-                    for s in subs:
-                        stext = _esc(s.get("text", ""))
-                        slink = s.get("link")
-                        skind = s.get("kind", main_kind)
-                        sdate = s.get("date") or s.get("date_str") or s.get("published") or ""
-                        sdate_disp = ""
-                        if sdate:
-                            sdate_disp, _ = normalize_date(sdate, s.get("timestamp") or 0.0)
-                        date_badge = f'<time class="sm-sub-date">{_esc(sdate_disp)}</time>' if sdate_disp else '<time class="sm-sub-date sm-sub-date-empty">—</time>'
+                    headline_base = _extract_base_title(ev.get("text", ""))
+                    seen_sub_bases = {headline_base}
+                    subs = []
+                    from difflib import SequenceMatcher
+                    for s in ev["sub_items"]:
+                        stext = s.get("text", "")
+                        sbase = _extract_base_title(stext)
+                        if not sbase or len(sbase) < 4:
+                            continue
+                        if sbase in seen_sub_bases or headline_base in sbase or (len(sbase) > 8 and sbase in headline_base):
+                            continue
+                        is_dupe = False
+                        for prev_b in seen_sub_bases:
+                            if SequenceMatcher(None, prev_b, sbase).ratio() > 0.72:
+                                is_dupe = True
+                                break
+                        if is_dupe:
+                            continue
+                        seen_sub_bases.add(sbase)
+                        subs.append(s)
 
-                        # Only show badge if the sub-item type differs from the card's main type
-                        if skind != main_kind:
-                            skind_badge = f'<span class="sm-kind sm-kind-{_esc(skind)} sm-sub-kind">{_kind_label(skind)}</span>'
+                    if subs:
+                        sub_items_li = ""
+                        main_kind = ev.get("kind", "update")
+                        for s in subs:
+                            stext = _esc(s.get("text", ""))
+                            slink = s.get("link")
+                            skind = s.get("kind", main_kind)
+                            sdate = s.get("date") or s.get("date_str") or s.get("published") or ""
+                            sdate_disp = ""
+                            if sdate:
+                                sdate_disp, _ = normalize_date(sdate, s.get("timestamp") or 0.0)
+                            date_badge = f'<time class="sm-sub-date">{_esc(sdate_disp)}</time>' if sdate_disp else '<time class="sm-sub-date sm-sub-date-empty">—</time>'
+
+                            # Only show badge if the sub-item type differs from the card's main type
+                            if skind != main_kind:
+                                skind_badge = f'<span class="sm-kind sm-kind-{_esc(skind)} sm-sub-kind">{_kind_label(skind)}</span>'
+                            else:
+                                skind_badge = ''
+
+                            if slink and slink != ev.get("scholar_url"):
+                                link_html = f'<a href="{_esc(slink)}" target="_blank" class="sm-sub-link">{stext} <span class="sm-link-icon">↗</span></a>'
+                            elif slink or ev.get("scholar_url"):
+                                target_link = slink or ev.get("scholar_url")
+                                link_html = f'<a href="{_esc(target_link)}" target="_blank" class="sm-sub-link sm-sub-link-site">{stext} <span class="sm-link-badge">主页 ↗</span></a>'
+                            else:
+                                link_html = f'<span class="sm-sub-text">{stext}</span>'
+
+                            sub_items_li += (
+                                f'<li class="sm-tl-subpaper-item">'
+                                f'{date_badge}{skind_badge}'
+                                f'<div class="sm-sub-title-wrap">{link_html}</div>'
+                                f'</li>'
+                            )
+
+                        sub_kinds = [s.get("kind", main_kind) for s in subs]
+                        counts = Counter([main_kind] + sub_kinds)
+                        dominant_kind = counts.most_common(1)[0][0]
+                        if dominant_kind == "paper":
+                            summary_label = "近期发表成果 / 论文"
+                        elif dominant_kind == "post":
+                            summary_label = "近期技术博文"
+                        elif dominant_kind == "news":
+                            summary_label = "更多近期动态"
                         else:
-                            skind_badge = ''
+                            summary_label = "更多更新记录"
 
-                        if slink and slink != ev.get("scholar_url"):
-                            link_html = f'<a href="{_esc(slink)}" target="_blank" class="sm-sub-link">{stext} <span class="sm-link-icon">↗</span></a>'
-                        elif slink or ev.get("scholar_url"):
-                            target_link = slink or ev.get("scholar_url")
-                            link_html = f'<a href="{_esc(target_link)}" target="_blank" class="sm-sub-link sm-sub-link-site">{stext} <span class="sm-link-badge">主页 ↗</span></a>'
-                        else:
-                            link_html = f'<span class="sm-sub-text">{stext}</span>'
-
-                        sub_items_li += (
-                            f'<li class="sm-tl-subpaper-item">'
-                            f'{date_badge}{skind_badge}'
-                            f'<div class="sm-sub-title-wrap">{link_html}</div>'
-                            f'</li>'
+                        sub_html = (
+                            f'<details class="sm-tl-subpapers">'
+                            f'<summary class="sm-tl-subpapers-summary">'
+                            f'<span class="sm-sub-summary-title">'
+                            f'<span class="sm-sub-chevron">▸</span> '
+                            f'<span class="sm-sub-label-closed">{summary_label}</span>'
+                            f'<span class="sm-sub-label-open">收起成果列表</span>'
+                            f'</span>'
+                            f'<span class="sm-sub-count-badge">{len(subs)} 项</span>'
+                            f'</summary>'
+                            f'<div class="sm-tl-subpapers-body">'
+                            f'<ul class="sm-tl-subpapers-list">{sub_items_li}</ul>'
+                            f'</div>'
+                            f'</details>'
                         )
-
-                    sub_kinds = [s.get("kind", main_kind) for s in subs]
-                    counts = Counter([main_kind] + sub_kinds)
-                    dominant_kind = counts.most_common(1)[0][0]
-                    if dominant_kind == "paper":
-                        summary_label = "近期发表成果 / 论文"
-                    elif dominant_kind == "post":
-                        summary_label = "近期技术博文"
-                    elif dominant_kind == "news":
-                        summary_label = "更多近期动态"
-                    else:
-                        summary_label = "更多更新记录"
-
-                    sub_html = (
-                        f'<details class="sm-tl-subpapers">'
-                        f'<summary class="sm-tl-subpapers-summary">'
-                        f'<span class="sm-sub-summary-title"><span class="sm-sub-chevron">▸</span> {summary_label}</span>'
-                        f'<span class="sm-sub-count-badge">{len(subs)} 项</span>'
-                        f'</summary>'
-                        f'<div class="sm-tl-subpapers-body">'
-                        f'<ul class="sm-tl-subpapers-list">{sub_items_li}</ul>'
-                        f'</div>'
-                        f'</details>'
-                    )
                 search_text = ev.get("text", "")
                 if ev.get("sub_items"):
                     search_text += " " + " ".join(s.get("text", "") for s in ev["sub_items"])
