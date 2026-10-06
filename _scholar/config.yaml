@@ -703,10 +703,7 @@ scholars:
   category: HomePage
   site_type: github_pages
   selectors:
-  - .publications-list li
-  - article
-  - .pub-item
-  - .compact-news-list li
+  - 'div[style*="display: flex"]'
   remove_selectors:
   - script
   - style
@@ -751,9 +748,9 @@ scholars:
   category: HomePage
   site_type: github_pages
   selectors:
+  - '#recent-news + ul > li'
   - '#selected-publications-and-preprints + ol > li'
   - '#selected-publications-and-preprints + ul > li'
-  - '#recent-news + ul li'
   remove_selectors:
   - script
   - style
@@ -774,11 +771,9 @@ scholars:
   category: HomePage
   site_type: github_pages
   selectors:
-  - '#publications tr'
-  - li
-  - .news-item
+  - '#publications ol > li'
+  - '#publications ul > li'
   - '#publications li'
-  - .publication
   remove_selectors:
   - script
   - style
@@ -825,10 +820,9 @@ scholars:
   category: HomePage
   site_type: github_pages
   selectors:
-  - .article-title
-  - .pub-list-item
-  - '#news li'
-  - '#news'
+  - '#featured .article-title a'
+  - '#publications .article-title a'
+  - .pub-list-item .article-title a
   remove_selectors:
   - script
   - style
@@ -844,7 +838,7 @@ scholars:
   - LLM
   - Agent
   affiliation: 复旦大学 / ByteDance Seed
-  watch: news
+  watch: publications
 - name: Zixuan Li
   url: https://lee-zix.github.io/publications/
   category: HomePage

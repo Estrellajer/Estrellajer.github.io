@@ -32,6 +32,15 @@ from urllib3.util import Retry
 import yaml
 from bs4 import BeautifulSoup
 
+try:
+    from extractors import extract_scholar_entries
+except ImportError:
+    try:
+        from _scholar.scripts.extractors import extract_scholar_entries
+    except ImportError:
+        def extract_scholar_entries(html, scholar):
+            return []
+
 def _get_session():
     s = requests.Session()
     retries = Retry(
@@ -1074,6 +1083,12 @@ def check_zifeng_wang(scholar: dict, since: datetime | None) -> dict:
 def extract_entries_from_html(html: str, scholar: dict) -> list:
     name = scholar.get("name", "")
     base_url = scholar.get("url", "")
+
+    # Priority: Dedicated robust academic extractors
+    custom_entries = extract_scholar_entries(html, scholar)
+    if custom_entries:
+        return custom_entries[:10]
+
     soup = BeautifulSoup(html, "html.parser")
     entries = []
 
@@ -1298,11 +1313,12 @@ def _content_diff_check(scholar: dict, since: datetime | None, result: dict) -> 
         result["error"] = blocked
         return result
 
-    result["preview"] = extract_smart_preview(content)
     html_entries = extract_entries_from_html(resp.text, scholar)
     if html_entries:
         result["latest_entries"] = html_entries
+        result["preview"] = [e["title"] for e in html_entries[:3] if e.get("title")]
     else:
+        result["preview"] = extract_smart_preview(content)
         result["latest_entries"] = extract_scholar_latest_entries(content, scholar)
     prev = load_snapshot(scholar["name"])
     if prev is None:
@@ -1502,7 +1518,7 @@ def _clean_paper_entry(text: str) -> str:
     clean = re.sub(r'^\s*202\d\s+(?:Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)[a-z]*\.?\s+\d{1,2}\s*[\:\,\-—·]?\s*', '', clean, flags=re.I)
     clean = re.sub(r'^\s*\d{1,2}[-\./]202\d\s*[\:\,\-—·]?\s*', '', clean)
     clean = re.sub(r'^\s*202\d\b(?!\s*年)\s*[\:\,\-—·]?\s*', '', clean)
-    clean = re.sub(r'^\s*\d{1,2}\s*[💼😋🎉🔥✨]?\s*(?:Activity|Accepted)?\s*', '', clean)
+    clean = re.sub(r'^\s*\d{1,2}\s*(?:[💼😋🎉🔥✨]+|(?:Activity|Accepted)\b)\s*', '', clean)
     clean = re.sub(r'^\s*2025\s*年\s*\d{1,2}\s*月随笔\s*', '随笔', clean)
 
     # Restore "2025 年 4 月技术随想" if it got trimmed to "年 4 月技术随想"
@@ -2216,12 +2232,17 @@ def build_events(results: list) -> list:
         if r["type"] == "changed":
             if _is_google_scholar_result(r):
                 continue
-            additions = _extract_new_additions(r.get("diff", ""), r.get("name", ""))
-            if additions:
-                for add in additions[:8]:
-                    ts, date_str = _extract_timestamp_and_date(add)
-                    _add_event(r, add, r["url"], date_str, ts,
-                               diff_text=r.get("diff"))
+            if r.get("latest_entries"):
+                for e in r["latest_entries"][:8]:
+                    _add_event(r, e.get("title", ""), e.get("link", r["url"]),
+                               e.get("published", ""), e.get("timestamp", 0.0))
+            else:
+                additions = _extract_new_additions(r.get("diff", ""), r.get("name", ""))
+                if additions:
+                    for add in additions[:8]:
+                        ts, date_str = _extract_timestamp_and_date(add)
+                        _add_event(r, add, r["url"], date_str, ts,
+                                   diff_text=r.get("diff"))
 
     events = aggregate_events(events)
     events.sort(key=lambda x: x["timestamp"], reverse=True)

@@ -1,116 +1,106 @@
-I am an incoming M.S. student in Artificial Intelligence at
-Beijing University of Posts and Telecommunications (BUPT)
-, where I also received my B.E. in Cyberspace Security (Experimental Class). My research interests include
+置顶
+LLM
+Transformer 的数学表示与代码实现
+2026-09-14
+/
+LLM
+/
+深度学习
+/
+Transformer
+从 Transformer 开始的 LLM 之旅
+5042 字 · 25 分钟
+项目
+Mascot Anything
+2026-05-13
+/
+深度学习
+/
+开源
+开源网页桌宠工具：用 AI 生成角色立绘，一行 script 嵌入任意网页。
+845 字 · 4 分钟
+最新文章
 AI Infra
-,
-AI Agents
-and
-Trustworthy AI
-. I also write on my
-tech blog
-.
-Starting Fall 2026, I will join
-Prof. Jun Liu
-’s group. Previously, I worked with
-Prof. Jie Hao
-on Audio Security and Adversarial Machine Learning. Currently, I am at
-MiroFish
-(Shanda Group) as an AI Intern & Founding Member.
-News
-04/2026
-: Awarded Outstanding Graduate of Beijing.
-01/2026
-: Joined
-MiroFish
-(Shanda Group) as an AI Intern & Founding Member.
-11/2025
-: Won Second Prize at the
-Global Campus AI Algorithm Elite Competition
-.
-10/2025
-: We released a paper on adversarial attacks against polyphonic sound event detection systems on
-arXiv
-.
-09/2025
-: Admitted to BUPT M.S. program in Intelligent Science and Technology.
-09/2025
-: Our paper on guardrails for audio-language models was accepted to NeurIPS 2025.
-08/2025
-: Won First Prize at the
-National College Students Information Security Contest
-.
-07/2025
-: Joined ByteDance as Backend R&D Intern at TikTok-Servarch-Cost&Performance.
-04/2025
-: Won Bronze Award at the
-China International College Students’ Innovation Competition
-.
-03/2025
-: Our paper on transferability of audio adversarial examples was accepted to ICME 2025.
-01/2025
-: Our paper on speech privacy protection was accepted to USENIX Security 2025.
-11/2024
-: Won Second Prize at the
-National Cryptography Technology Competition
-.
-04/2024
-: Our paper on robustness of ASR systems was accepted to SecTL 2024 (AsiaCCS Workshop).
-Publications
-ALMGuard: Safety Shortcuts and Where to Find Them as Guardrails for Audio–Language Models
-Weifei Jin, Yuxin Cao,
-Junjie Su
-, Minhui Xue, Jie Hao, Ke Xu, Jin Song Dong, Derui Wang.
-In the Thirty-ninth Annual Conference on Neural Information Processing Systems (NeurIPS), 2025.
-Mirage Fools the Ear, Mute Hides the Truth: Precise Targeted Adversarial Attacks on Polyphonic Sound Event Detection Systems
-Junjie Su
-, Weifei Jin, Yuxin Cao, Derui Wang, Kai Ye, Jie Hao.
-arXiv preprint, 2025.
-Whispering Under the Eaves: Protecting User Privacy Against Commercial and LLM-powered Automatic Speech Recognition Systems
-Weifei Jin, Yuxin Cao,
-Junjie Su
-, Derui Wang, Yedi Zhang, Minhui Xue, Jie Hao, Jin Song Dong, Yixian Yang.
-In the 34th USENIX Security Symposium (USENIX Security), 2025.
-Boosting the Transferability of Audio Adversarial Examples with Acoustic Representation Optimization
-Weifei Jin,
-Junjie Su
-, Hejia Wang, Yulin Ye, Jie Hao.
-In IEEE International Conference on Multimedia & Expo (ICME), 2025.
-Towards Evaluating the Robustness of Automatic Speech Recognition Systems via Audio Style Transfer
-Weifei Jin, Yuxin Cao,
-Junjie Su
-, Qi Shen, Kai Ye, Derui Wang, Jie Hao, Ziyao Liu.
-In the 2nd ACM Workshop on Secure and Trustworthy Deep Learning Systems (SecTL, AsiaCCS Workshop), 2024, pp. 47–55.
-Work Experience
-Shanda Group — MiroFish (AI Startup)
-AI Intern & Founding Member & Team Lead
-—
-Jan 2026 – Present
-ByteDance
-Backend R&D Intern — TikTok-Servarch-Cost&Performance
-—
-Jul 2025 – Dec 2025
-Antiy Technology Group Co., Ltd.
-Security Development Intern — Technical Committee
-—
-Jul 2024 – Aug 2024
-Student Work
-BUPT Table Tennis Association
-President
-—
-Sept 2023 – Jul 2024
-Core Member
-—
-Sept 2022 – Jul 2023
-Scholarships & Awards
-2025
-Global Campus AI Algorithm Elite Competition
-— Second Prize
-2025
-National College Students Information Security Contest
-— First Prize
-2024
-China International College Students’ Innovation Competition
-— Bronze Award
-2024
-National Cryptography Technology Competition
-— Second Prize
+NVIDIA GPU 谱系
+2026-10-01
+/
+AI Infra
+/
+GPU
+/
+LLM
+从 GeForce 到 GB200 NVL72：NVIDIA 面向 AI 的完整产品线梳理，包括工作站卡、数据中心卡、出口特供版和那些不太常见的形态。
+3508 字 · 18 分钟
+LLM
+一文搞懂归一化技术
+2026-09-27
+/
+LLM
+/
+RMSNorm
+本文梳理大模型里的归一化技术：为什么需要它、BN 为何不适合序列模型，以及 LayerNorm、RMSNorm、Pre-Norm/Post-Norm 等方案的取舍。
+4544 字 · 23 分钟
+LLM
+MoE 技术原理
+2026-09-23
+/
+LLM
+/
+MoE
+/
+Deepseek
+本文将介绍 MoE 技术，解释其如何在扩大模型参数容量的同时控制计算成本，并逐渐成为现代 LLM 的核心技术。
+5649 字 · 28 分钟
+项目
+autodev：打开 Vibe Coding 的黑盒
+2026-09-19
+/
+Agent
+/
+开源
+开源 Agent Skill：先把意图对齐成人确认过的可执行 test，再在约定内迭代，最后交付一张表或一张图。
+3432 字 · 17 分钟
+AI Infra
+再谈 AI Infra
+2026-05-26
+/
+AI Infra
+/
+职业
+一位来自工业界，一位来自学术界。两场对话之后，我对 AI Infra 的理解变了不少。
+3767 字 · 19 分钟
+环境搭建
+通过 WSL 使用 CUDA
+2026-05-22
+/
+WSL
+/
+CUDA
+SSH 直连 WSL2：AI 一键配置，或手动配置 portproxy、sshd 与防火墙，验证 CUDA。
+2613 字 · 13 分钟
+AI Infra
+GPU 访存延迟
+2026-05-20
+/
+AI Infra
+/
+CUDA
+/
+GPU
+从 Grid-Stride Loop 入手，解释 warp 切换、SM 并发与 L1/L2 cache 对 GPU 访存延迟的影响，并复盘一次向量化反而变慢的原因。
+2330 字 · 12 分钟
+AI Infra
+初识 AI Infra
+2026-05-15
+/
+AI Infra
+/
+LLM
+/
+CUDA
+对 AI Infra 这个方向的初步认识：核心命题、和传统应用开发的差异、为什么选它，以及现实风险。
+2354 字 · 12 分钟
+1
+2 3 4 5 8
+© 2026 墨末夜羽. All Rights Reserved. / RSS / Sitemap / 开往 🚇
+Powered by Astro & Fuwari

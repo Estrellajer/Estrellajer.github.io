@@ -1,224 +1,258 @@
-Publications
-Selected Publications
-This page highlights representative papers from the lab across continual learning, large models, embodied intelligence, federated learning, and multimodal understanding. We refreshed the layout and added direct code links whenever a public repository is available, so the page works better both as a publication list and as a research showcase.
-2026 2025 2024 2023 2022
-2026
-Conference Papers
 Beyond Codebook Uniformity: Triplet-Level Metrics and Triplet-Driven Semantic IDs for Generative Retrieval
 Xiang Tan, Dongliang Liao, Junwu Du, Haijun Wu, Run He, Shuquan Man, Ziqian Zeng, Huiping Zhuang
 EMNLP 2026 Main Conference
 News
+
 X-SGS: Safe and Generalizable Gaussian Splatting with X-dimensional Watermarks
 Zihang Cheng, Wentao Bao, Huiping Zhuang, Chun Li, Xin Meng, Ziqian Zeng, Cen Chen, Ming Li, Fei Yu
 ECCV 2026
 Paper
+
 AnaPFL: When Closed-Form Solutions Meet Generalization and Personalization in Personalized Federated Learning
 Kejia Fan, Jianheng Tang, Zhirui Yang, Feijiang Han, Yajiang Huang, Run He, Jiaxu Li, Songning Lai, Anfeng Liu, Houbing Herbert Song, Yunhuai Liu, Huiping Zhuang
 ECCV 2026
 Paper
+
 SciEducator: Scientific Video Understanding and Educating via Deming-Cycle Multi-Agent System
 Zhiyu Xu, Weilong Yan, Yufei Shi, Xin Meng, Tao He, Huiping Zhuang, Ming Li, Hehe Fan
 CVPR 2026
 Paper
+
 ARGUS: Defending Against Multimodal Indirect Prompt Injection via Steering Instruction-Following Behavior
 Weikai Lu, Ziqian Zeng, Kehua Zhang, Haoran Li, Huiping Zhuang, Ruidong Wang, Cen Chen, Hao Peng
 CVPR 2026
 Paper
+
 DeepAFL: Deep Analytic Federated Learning
 Jianheng Tang, Yajiang Huang, Kejia Fan, Feijiang Han, Jiaxu Li, Jinfeng Xu, Run He, Anfeng Liu, Houbing Herbert Song, Huiping Zhuang, Yunhuai Liu
 ICLR 2026
 Paper Code
+
 ManipEvalAgent: Promptable and Efficient Evaluation Framework for Robotic Manipulation Policies
 Yiteng Chen, Huiping Zhuang, Wenbo Li, Shiyi Wang, Xiangyu Zhao, Qingyao Wu
 ICLR 2026
 Paper
+
 WINA: Weight Informed Neuron Activation for Accelerating Large Language Model Inference
 Sihan Chen, Dan Zhao, Jongwoo Ko, Colby Banbury, Huiping Zhuang, Luming Liang, Pashmina Cameron, Tianyi Chen
 ICLR 2026
 Paper Code
+
 RCP-Merging: Merging Long Chain-of-Thought Models with Domain-Specific Models by Considering Reasoning Capability as Prior
 Junyao Yang, Jianwei Wang, Huiping Zhuang, Cen Chen, Ziqian Zeng
 AAAI 2026
 Paper
-2025
-Conference Papers
+
 Probabilistic Mixture of Hyperbolic Mamba for Few-Shot Class-Incremental Learning
 Y Cui, W Zou, Huiping Zhuang, Y Wang, LP Chau
 Proceedings of the 33rd ACM International Conference on Multimedia (ACM MM 2025)
 Paper Code
+
 CFSSeg: Closed-Form Solution for Class-Incremental Semantic Segmentation of 2D Images and 3D Point Clouds
 J Li, R Li, J Qi, S Lai, L Lv, K Fan, J Tang, Y Yue, D Zhou, Y Liu, Huiping Zhuang
 Proceedings of the 33rd ACM International Conference on Multimedia (ACM MM 2025)
 Paper
+
 AnalyticKWS: Towards Exemplar-Free Analytic Class Incremental Learning for Small-Footprint Keyword Spotting
 Yang Xiao, Tianyi Peng, Rohan Kumar Das, Yuchen Hu, Huiping Zhuang
 Findings of the Association for Computational Linguistics: ACL 2025
 Paper
+
 GenderAlign: An Alignment Dataset for Mitigating Gender Bias in Large Language Models
 Tao Zhang, Ziqian Zeng, Yuxiang Xiao, Huiping Zhuang, Cen Chen, James R. Foulds, Shimei Pan
 Proceedings of the 63rd Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)
 Paper Code
+
 PrivacyRestore: Privacy-Preserving Inference in Large Language Models via Privacy Removal and Restoration
 Ziqian Zeng, Jianwei Wang, Junyao Yang, Zhengdong Lu, Haoran Li, Huiping Zhuang, Cen Chen
 Proceedings of the 63rd Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)
 Paper Code
+
 Semantic Shift Estimation via Dual-Projection and Classifier Reconstruction for Exemplar-Free Class-Incremental Learning
 Run He, Di Fang, Yicheng Xu, Yawen Cui, Ming Li, Cen Chen, Ziqian Zeng, Huiping Zhuang
 ICML 2025
 Paper Code
+
 L3A: Label-Augmented Analytic Adaptation for Multi-Label Class Incremental Learning
 Xiang Zhang, Run He, Jiao Chen, Di Fang, Ming Li, Ziqian Zeng, Cen Chen, Huiping Zhuang
 ICML 2025
 Paper Code
+
 WMarkGPT: Watermarked Image Understanding via Multi-modal Large Language Models
 Songbai Tan, Xuerui Qiu, Yao Shu, Gang Xu, Linrui Xu, Xiangyu Xu, Huiping Zhuang, Ming Li, Fei Yu
 ICML 2025
 Paper Code
+
 Any-SSR: How Recursive Least Squares Works in Continual Learning of Large Language Model
 Kai Tong, Kang Pan, Xiao Zhang, Erli Meng, Run He, Yawen Cui, Nuoyan Guo, Huiping Zhuang
 ICCV 2025
 Paper Code
+
 AFL: A Single-Round Analytic Approach for Federated Learning with Pre-trained Models
 Run He, Kai Tong, Di Fang, Han Sun, Haoran Li, Tianyi Chen, Ziqian Zeng, Huiping Zhuang
 CVPR 2025
 Paper Code
+
 SEA: Low-Resource Safety Alignment for Multimodal Large Language Models via Synthetic Embeddings
 Weikai Lu, Hao Peng, Huiping Zhuang, Cen Chen, Ziqian Zeng
 Proceedings of the 63rd Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)
 Paper Code
-Journal Papers
+
 Online weighted hashing for cross-modal retrieval
 Zining Jiang, Zhenyu Weng, Runhao Li, Huiping Zhuang, Zhiping Lin
 Pattern Recognition 161, 111232
 Paper
+
 DRViT: A Dynamic Redundancy-Aware Vision Transformer Accelerator via Algorithm and Architecture Co-design on FPGA
 Xiangfeng Sun, Yuanting Zhang, Qinyu Wang, Xiaofeng Zou, Yujia Liu, Ziqian Zeng, Huiping Zhuang
 Journal of Parallel and Distributed Computing, 105042
 Paper
+
 Subkv: Quantizing Long Context KV Cache for Sub‐Billion Parameter Language Models on Edge Devices
 Ziqian Zeng, Tao Zhang, Zhengdong Lu, Wenjun Li, Huiping Zhuang, Hongen Shao, Sin G. Teo, Xiaofeng Zou
 Software: Practice and Experience
 Paper
+
 3D-AOCL: Analytic online continual learning for imbalanced 3D point cloud classification
 Ziqian Zeng, Jianwei Wang, Lin Wu, Weikai Lu, Huiping Zhuang
 Alexandria Engineering Journal 111, 530-539
 Paper
+
 An analytic formulation of convolutional neural network learning for pattern recognition
 Huiping Zhuang, Zhiping Lin, Yimin Yang, Kar-Ann Toh
 Information Sciences 686, 121317
 Paper
+
 ResDecode: Accelerating Large Language Models Inference via Residual Decoding Heads
 Ziqian Zeng, Jiahong Yu, Qianshi Pang, Zihao Wang, Huiping Zhuang, Fan Yu, Hongen Shao, Xiaofeng Zou
 Big Data Mining and Analytics 8 (4), 779-793
 Paper
+
 REAL: Representation Enhanced Analytic Learning for Exemplar-free Class-incremental Learning
 Run He, Huiping Zhuang, Di Fang, Yizhu Chen, Kai Tong, Cen Chen
 Knowledge-Based Systems
 Paper
-2024
-Conference Papers
+
 Joint-Neighborhood Product Quantization for Unsupervised Cross-Modal Retrieval
 Runhao Li, Zhenyu Weng, Yongming Chen, Huiping Zhuang, Yap-Peng Tan, Zhiping Lin
 2024 IEEE International Conference on Visual Communications and Image
 Paper
+
 Advancing Cross-domain Discriminability in Continual Learning of Vision-Language Models
 Yicheng Xu, Yuxin Chen, Jiahao Nie, Yusong Wang, Huiping Zhuang, Manabu Okumura
 NeurIPS 2024
 Paper Code
+
 GACL: Exemplar-Free Generalized Analytic Continual Learning
 Huiping Zhuang, Yizhu Chen, Di Fang, Run He, Kai Tong, Hongxin Wei, Zigian Zeng, Cen Chen
 NeurIPS 2024
 Paper Code
+
 F-OAL: Forward-only Online Analytic Learning with Fast Training and Low Memory Footprint in Class Incremental Learning
 Huiping Zhuang, Yuchen Liu, Run He, Kai Tong, Ziqian Zeng, Cen Chen, Yi Wang, Lap-Pui Chau
 NeurIPS 2024
 Paper Code
+
 MMAL: Multi-Modal Analytic Learning for Exemplar-Free Audio-Visual Class Incremental Tasks
 Xianghu Yue, Xueyi Zhang, Yiming Chen, Chengwei Zhang, Mingrui Lao, Huiping Zhuang, Xinyuan Qian, Haizhou Li
 Proceedings of the 32nd ACM International Conference on Multimedia, 2428-2437
 Paper
+
 Complex Motion Planning for Quadruped Robots Using Large Language Models
 Xiang Zhang, Run He, Kai Tong, Shuquan Man, Jingyu Tong, Haodong Li, Huiping Zhuang
 2024 IEEE International Symposium on Circuits and Systems (ISCAS), 1-5
 Paper
+
 Zero-shot Event Detection using a Textual Entailment Model as an Enhanced Annotator
 Ziqian Zeng, Runyu Wu, Yuxiang Xiao, Xiaoda Zhong, Hanlin Wang, Zhengdong Lu, Huiping Zhuang
 Proceedings of the 2024 Joint International Conference on Computational Linguistics, Language Resources and Evaluation (LREC-COLING 2024)
 Paper Code
+
 DS-AL: A dual-stream analytic learning for exemplar-free class-incremental learning
 Huiping Zhuang, Run He, Kai Tong, Ziqian Zeng, Cen Chen, Zhiping Lin
 Proceedings of the AAAI Conference on Artificial Intelligence 38 (15), 17237
 Paper Code
+
 Consistentee: A consistent and hardness-guided early exiting method for accelerating language models inference
 Ziqian Zeng, Yihuai Hong, Hongliang Dai, Huiping Zhuang, Cen Chen
 Proceedings of the AAAI Conference on Artificial Intelligence 38 (17), 19506
 Paper Code
+
 Mitigating privacy risk in membership inference by convex-concave loss
 Zhenlong Liu, Lei Feng, Huiping Zhuang, Xiaofeng Cao, Hongxin Wei
 ICML 2024
 Paper
-Journal Papers
+
 Class incremental learning with analytic learning for hyperspectral image classification
 Huiping Zhuang, Yue Yan, Run He, Ziqian Zeng
 Journal of the Franklin Institute 361 (18), 107285
 Paper
+
 Analytic class incremental learning for sound source localization with privacy protection
 Xinyuan Qian, Xianghu Yue, Jiadong Wang, Huiping Zhuang, Haizhou Li
 IEEE Signal Processing Letters
 Paper Code
+
 Zero-shot event argument extraction by disentangling trigger from argument and role
 Zhengdong Lu, Ziqian Zeng, Jianwei Wang, Hanlin Wang, Weikai Lu, Huiping Zhuang
 International Journal of Machine Learning and Cybernetics
 Paper
+
 Less confidence, less forgetting: Learning with a humbler teacher in exemplar-free Class-Incremental learning
 Zijian Gao, Kele Xu, Huiping Zhuang, Li Liu, Xinjun Mao, Bo Ding, Dawei Feng, Huaimin Wang
 Neural Networks 179, 106513
 Paper
+
 Online Analytic Exemplar-Free Continual Learning with Large Models for Imbalanced Autonomous Driving Task
 Huiping Zhuang, Di Fang, Kai Tong, Yuchen Liu, Ziqian Zeng, Xu Zhou, Cen Chen
 IEEE Transactions on Vehicular Technology
 Paper Code
+
 A three-stream fusion and self-differential attention network for multi-modal crowd counting
 Haihan Tang, Yi Wang, Zhiping Lin, Lap-Pui Chau, Huiping Zhuang
 Pattern Recognition Letters 183, 35-41
 Paper
+
 Efficient Point Cloud Video Recognition via Spatio-Temporal Pruning for MEC-Based Consumer Applications
 Cen Chen, Songyu Xie, Jing Liu, Zhongyao Cheng, Ziqian Zeng, Huiping Zhuang
 IEEE Transactions on Consumer Electronics, vol. 70, no. 1, pp. 4108-4119, Feb. 2024
 Paper
+
 Explored seeds generation for weakly supervised semantic segmentation
 Terence Chow, Haojin Deng, Yimin Yang, Zhiping Lin, Huiping Zhuang, Shan Du
 Neural Computing and Applications 36 (2), 1007-1022
 Paper
-2023
-Conference Papers
+
 Neighborhood learning from noisy labels for cross-modal retrieval
 Runhao Li, Zhenyu Weng, Huiping Zhuang, Yongming Chen, Zhiping Lin
 2023 IEEE International Symposium on Circuits and Systems (ISCAS), 1-5
 Paper
+
 Mitigating memorization of noisy labels by clipping the model prediction
 Hongxin Wei, Huiping Zhuang, Renchunzi Xie, Lei Feng, Gang Niu, Bo An, Yixuan Li
 International conference on machine learning, 36868-36886
 Paper
+
 GKEAL: Gaussian Kernel Embedded Analytic Learning for Few-shot Class Incremental Task
 Huiping Zhuang, Zhenyu Weng, Run He, Zhiping Lin, Ziqian Zeng
 Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) 2023
 Paper Code
-Journal Papers
+
 Few-Shot Contrastive Transfer Learning With Pretrained Model for Masked Face Verification
 Zhenyu Weng, Huiping Zhuang, Fulin Luo, Haizhou Li, Zhiping Lin
 IEEE Transactions on Multimedia, vol. 26, pp. 3871-3883, 2024
 Paper
+
 Attention multihop graph and multiscale convolutional fusion network for hyperspectral image classification
 Hao Zhou, Fulin Luo, Huiping Zhuang, Zhenyu Weng, Xiuwen Gong, Zhiping Lin
 IEEE Transactions on Geoscience and Remote Sensing 61, 1-14
 Paper
+
 Decoupled neural network training with re-computation and weight prediction
 Jiawei Peng, Yicheng Xu, Zhiping Lin, Zhenyu Weng, Zishuo Yang, Huiping Zhuang
 PloS one 18 (2), e0276427
 Paper
-2022
-Conference Papers
+
 ACIL: Analytic class-incremental learning with absolute memorization and privacy protection
 Huiping Zhuang, Zhenyu Weng, Hongxin Wei, Renchunzi Xie, Kar-Ann Toh, Zhiping Lin
 Advances in Neural Information Processing Systems 35, 11602-11614

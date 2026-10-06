@@ -1,37 +1,16 @@
-AI4AI needs its own "world model"
-6 min read   ·   May 06, 2026
-2026
-·
-Physics-of-AI
-Methodology
-·
-AI
-How does memorization affect l2?
-6 min read   ·   May 05, 2026
-2026
-·
-ComfyResearch
-Workflow
-Grokking in loss doesn't necessarily imply grokking in accuracy
-4 min read   ·   May 03, 2026
-2026
-·
-Research-agent
-·
-AI
-Data efficiency of Bi-gram data
-2 min read   ·   May 03, 2026
-2026
-·
-ComfyResearch
-Workflow
-·
-AI
-Must-read papers by Jürgen Schmidhuber
-1 min read   ·   April 12, 2026
-2026
-·
-Physics-of-AI
-Must-read
-·
-AI
+Six Bets on Auto-Research
+Can scientific research be made explicit and externalized? Different answers lead to different Auto-Research technical routes.
+9 min read   ·   September 09, 2026
+2026 · Physics-of-AI Methodology · AI
+Foundation Model or Not?
+9 min read   ·   August 30, 2026
+2026 · Physics-of-AI Methodology · AI
+A True World Model Requires Mixture of Compression
+3 min read   ·   August 29, 2026
+2026 · Physics-of-AI Methodology · AI
+AI finally enters its Tycho stage
+7 min read   ·   August 13, 2026
+2026 · Physics-of-AI Methodology · AI
+Discovering 108 tricks to accelerate grokking
+4 min read   ·   June 22, 2026
+2026 · Physics-of-AI Methodology Research-agent Learning-mechanics · AI

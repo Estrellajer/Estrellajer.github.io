@@ -1,30 +1,17 @@
-I am a final-year undergraduate student in Artificial Intelligence at Nanjing University, interested in building reliable AI systems that connect model capability with real-world deployment.
-I like widening the boundary of my understanding a little at a time, while focusing on work that can create real value in practice. My recent work has focused on agent training, post-training, and evaluation workflows for fast system iteration. I have interned as an algorithm engineer at Tencent and Huawei, where I worked on practical model behavior, training stability, and testing infrastructure.
-Focus
-Agent training and tool-use behavior
-Post-training with reinforcement learning
-Evaluation systems for reliable model iteration
-Practical AI engineering with strong feedback loops
-Selected Experience
-Tencent, Algorithm Engineer Intern
-Worked on a multi-intent financial function-calling component trained with multi-turn SFT and DAPO, and supported online financial traffic in production systems.
-Built the interaction and testing workflow for a financial search agent based on Qwen3 30A3B, helping the system surpass DeepSeek V3.2 on FinSearchComp under the same business tool setting.
-Reduced evaluation instability by standardizing tool environments, lowering judge variance, and iterating the judging prompt until score fluctuation dropped from 10% to 1%.
-Received a return offer and continued working on production-facing model systems.
-Huawei, Algorithm Engineer Intern
-Improved an internal RL training framework by introducing DAPO and designing dynamic sampling for high-variance rewards.
-Increased training stability without extra compute by prioritizing informative samples during optimization.
-Selected Projects
-myTorch
-A NumPy-based neural network framework that mimics parts of the PyTorch experience. It uses operator overloading to enter the computation graph, manages the graph lifecycle during backpropagation, and emphasizes reusable abstractions in the core design.
-Open Source Fixes
-Fixed a checkpoint-saving bug in the DAPO trainer of
-verl
-and contributed the patch upstream.
-Identified and fixed a typing issue in the
-GRPO
-trainer of
-TRL
-.
-Writing
-I use writing to organize newly learned material, capture temporary ideas from work, and reflect on experiences that changed my understanding. Over time, this site will collect the notes that best reflect how I learn, think, and build.
+Why online RFT falls short of RLVR
+
+Understanding GSPO from the objective level
+
+I treat writing as a way to organize my thoughts and force myself to understand what I have learned more clearly. For me, a good technical blog is less a polished conclusion than a structured trace of learning, where scattered intuition becomes something explicit enough to revisit and reuse. Because of that, much of what I write comes from newly learned material and temporary ideas that are still taking shape.
+
+I regularly share technical reflections outside formal project documentation, including public writing in Chinese. Across those posts, I have accumulated more than 400 followers and over 400,000 total reads. Most of them are notes written close to the learning process itself, which is why they often focus on fresh concepts, partial understandings, and ideas worth testing rather than only finished conclusions.
+
+Why online RFT falls short of RLVR: negative samples are the key
+
+This post starts from an online RFT experiment built on top of a modified DAPO pipeline and asks a practical question: if we keep amplifying hard cases and positive trajectories, can pass@1 approach pass@k without full RL-style exploration? The conclusion is no. Pure RFT quickly memorizes successful trajectories and reaches high training reward, but its evaluation reward falls behind. My main takeaway is that RL’s exploration and generalization are both tightly connected to negative samples, because they keep correcting unstable reasoning paths instead of letting the model profit from lucky guesses and hallucinated successes.
+
+Reading GSPO: routing replay, sequence-level clipping, and why the objective changes
+
+This post is a reading note on GSPO and its relation to GRPO and DAPO. I focus on why MoE training is sensitive to routing replay, how token-level clipping can create unstable updates when routing changes, and why GSPO moves clipping toward the sequence level. I also discuss a broader intuition: sequence-level clipping may reduce the built-in preference for reinforcing already high-probability tokens, which could make exploration paths easier to preserve during RLVR training.
+
+Writing forces me to turn vague intuition into explicit reasoning. In practice, that habit improves how I debug model behavior, design experiments, and communicate system changes with teammates. Over time, I want this page to become a curated set of the notes that best reflect how I learn, think, and build.
