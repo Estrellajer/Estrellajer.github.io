@@ -331,6 +331,38 @@ layout: default
           {% endfor %}
         </div>
       {% endif %}
+    {% elsif page.type == 'year' %}
+      {% assign shown_cats = "" %}
+      {% assign has_cats = false %}
+      {% for document in archive_documents %}
+        {% if document.categories.size > 0 %}
+          {% assign has_cats = true %}
+        {% endif %}
+      {% endfor %}
+
+      {% if has_cats %}
+        <div class="archive-topics">
+          {% for document in archive_documents %}
+            {% for cat in document.categories %}
+              {% assign cat_key = cat | prepend: "|" | append: "|" %}
+              {% unless shown_cats contains cat_key %}
+                {% assign cat_count = 0 %}
+                {% for doc in archive_documents %}
+                  {% if doc.categories contains cat %}
+                    {% assign cat_count = cat_count | plus: 1 %}
+                  {% endif %}
+                {% endfor %}
+                <a class="archive-topic-pill" href="{{ cat | slugify | prepend: '/blog/category/' | relative_url }}">
+                  <i class="fa-regular fa-folder pill-icon"></i>
+                  <span>{{ cat }}</span>
+                  <span class="pill-counter">{{ cat_count }}</span>
+                </a>
+                {% assign shown_cats = shown_cats | append: cat_key %}
+              {% endunless %}
+            {% endfor %}
+          {% endfor %}
+        </div>
+      {% endif %}
     {% endif %}
   </section>
 
@@ -338,10 +370,11 @@ layout: default
   <ul class="blog-list">
     {% for document in archive_documents %}
       {% if document.external_source == blank %}
-        {% assign read_time = document.content | number_of_words | divided_by: 180 | plus: 1 %}
+        {% assign doc_chars = document.content | strip_html | strip_newlines | size %}
       {% else %}
-        {% assign read_time = document.feed_content | strip_html | number_of_words | divided_by: 180 | plus: 1 %}
+        {% assign doc_chars = document.feed_content | strip_html | strip_newlines | size %}
       {% endif %}
+      {% assign read_time = doc_chars | divided_by: 380 | plus: 1 %}
 
       <li class="blog-item">
         <div class="blog-item-grid{% if document.thumbnail %} blog-item-grid--with-thumb{% endif %}">

@@ -16,55 +16,6 @@ pagination:
     after: 3
 ---
 
-<style>
-  .blog-filters {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.55rem;
-    align-items: center;
-    margin-top: 1.5rem;
-  }
-
-  .blog-filter-group {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.55rem;
-    align-items: center;
-  }
-
-  .blog-filter.active {
-    background: var(--hl-accent) !important;
-    border-color: var(--hl-accent) !important;
-    color: #ffffff !important;
-    box-shadow: 0 3px 12px rgba(37, 99, 235, 0.28);
-  }
-
-  .blog-filter.active .blog-filter-count {
-    background: rgba(255, 255, 255, 0.25) !important;
-    color: #ffffff !important;
-  }
-
-  html[data-theme="dark"] .blog-filter.active {
-    background: var(--hl-accent) !important;
-    border-color: var(--hl-accent) !important;
-    color: #0f172a !important;
-    box-shadow: 0 3px 14px rgba(96, 165, 250, 0.3);
-  }
-
-  html[data-theme="dark"] .blog-filter.active .blog-filter-count {
-    background: rgba(15, 23, 42, 0.22) !important;
-    color: #0f172a !important;
-  }
-
-  .blog-item-footer {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    gap: 0.2rem;
-    margin-top: 0.65rem;
-  }
-</style>
-
 <div class="blog-landing">
   <section class="blog-hero">
     <div class="blog-eyebrow">Blog</div>
@@ -124,10 +75,11 @@ pagination:
 
     {% for post in postlist %}
       {% if post.external_source == blank %}
-        {% assign read_time = post.content | number_of_words | divided_by: 180 | plus: 1 %}
+        {% assign post_chars = post.content | strip_html | strip_newlines | size %}
       {% else %}
-        {% assign read_time = post.feed_content | strip_html | number_of_words | divided_by: 180 | plus: 1 %}
+        {% assign post_chars = post.feed_content | strip_html | strip_newlines | size %}
       {% endif %}
+      {% assign read_time = post_chars | divided_by: 380 | plus: 1 %}
 
       <li class="blog-item">
         <div class="blog-item-grid{% if post.thumbnail %} blog-item-grid--with-thumb{% endif %}">
@@ -149,12 +101,24 @@ pagination:
             <div class="blog-item-footer">
               <span class="blog-item-meta"><i class="fa-regular fa-clock" style="margin-right: 0.3rem;"></i>{{ read_time }} min read</span>
 
-              {% assign tags = post.tags | join: "" %}
               {% assign categories = post.categories | join: "" %}
               {% if categories != "" %}
                 <span class="blog-item-taxonomy">
                   {% for category in post.categories %}
-                    <a href="{{ category | slugify | prepend: '/blog/category/' | relative_url }}">{{ category }}</a>{% unless forloop.last %} · {% endunless %}
+                    <a class="archive-badge-cat" href="{{ category | slugify | prepend: '/blog/category/' | relative_url }}">
+                      <i class="fa-regular fa-folder" style="font-size: 0.72rem; margin-right: 0.25rem;"></i>{{ category }}
+                    </a>
+                  {% endfor %}
+                </span>
+              {% endif %}
+
+              {% assign tags = post.tags | join: "" %}
+              {% if tags != "" %}
+                <span class="blog-item-tags">
+                  {% for tag in post.tags %}
+                    <a class="archive-badge-tag" href="{{ tag | slugify | prepend: '/blog/tag/' | relative_url }}">
+                      #{{ tag }}
+                    </a>
                   {% endfor %}
                 </span>
               {% endif %}

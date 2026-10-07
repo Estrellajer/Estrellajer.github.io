@@ -3,6 +3,8 @@ layout: default
 ---
 {% assign year = page.date | date: '%Y' %}
 {% assign url_beginning = page.url | slice: 0, 6 %}
+{% assign post_chars = content | strip_html | strip_newlines | size %}
+{% assign read_time = post_chars | divided_by: 380 | plus: 1 %}
 {% assign has_outline = false %}
 {% if content contains '<h1' or content contains '<h2' or content contains '<h3' or content contains '<h4' %}
   {% assign has_outline = true %}
@@ -177,8 +179,11 @@ layout: default
   }
 
   .reading-toc a.is-active {
-    color: var(--reading-text);
+    color: var(--reading-accent);
     border-left-color: var(--reading-accent);
+    background: var(--reading-accent-soft);
+    border-radius: 0 0.38rem 0.38rem 0;
+    font-weight: 600;
   }
 
   .reading-toc li[data-level='1'] > a {
@@ -228,6 +233,14 @@ layout: default
     height: auto;
     margin: 1.4rem 0;
     border-radius: 1rem;
+  }
+
+  .reading-article figcaption {
+    margin-top: 0.65rem;
+    text-align: center;
+    font-size: 0.88rem;
+    color: var(--reading-muted);
+    font-style: italic;
   }
 
   .reading-article h1,
@@ -293,6 +306,10 @@ layout: default
     color: var(--reading-muted);
     background: var(--reading-accent-soft);
     border-radius: 0 0.75rem 0.75rem 0;
+
+    p:last-child {
+      margin-bottom: 0;
+    }
   }
 
   .reading-article ul,
@@ -953,29 +970,36 @@ layout: default
         <div class="reading-eyebrow">{% if url_beginning == '/blog/' %}Blog Post{% else %}Article{% endif %}</div>
         <h1 class="reading-title">{{ page.title }}</h1>
         <div class="reading-meta">
-          <span>{{ page.date | date: '%B %d, %Y' }}</span>
-          {% if page.author %}<span>{{ page.author }}</span>{% endif %}
+          <span><i class="fa-regular fa-calendar-days" style="margin-right: 0.35rem;"></i>{{ page.date | date: '%B %d, %Y' }}</span>
+          <span><i class="fa-regular fa-clock" style="margin-right: 0.35rem;"></i>{{ read_time }} min read</span>
+          {% if page.author %}<span><i class="fa-regular fa-user" style="margin-right: 0.35rem;"></i>{{ page.author }}</span>{% endif %}
           {% if page.last_updated %}<span>Updated {{ page.last_updated | date: '%B %d, %Y' }}</span>{% endif %}
           {% if page.meta %}<span>{{ page.meta }}</span>{% endif %}
         </div>
         <div class="reading-taxonomy">
           {% if url_beginning == '/blog/' %}
-            <a class="reading-chip" href="{{ year | prepend: '/blog/' | relative_url }}">{{ year }}</a>
+            <a class="reading-chip" href="{{ year | prepend: '/blog/' | relative_url }}">
+              <i class="fa-regular fa-calendar" style="margin-right: 0.35rem; font-size: 0.76rem;"></i>{{ year }}
+            </a>
           {% else %}
-            <span class="reading-chip">{{ year }}</span>
+            <span class="reading-chip"><i class="fa-regular fa-calendar" style="margin-right: 0.35rem; font-size: 0.76rem;"></i>{{ year }}</span>
           {% endif %}
-          {% for tag in page.tags %}
-            {% if url_beginning == '/blog/' %}
-              <a class="reading-chip" href="{{ tag | slugify | prepend: '/blog/tag/' | relative_url }}">{{ tag }}</a>
-            {% else %}
-              <span class="reading-chip">{{ tag }}</span>
-            {% endif %}
-          {% endfor %}
           {% for category in page.categories %}
             {% if url_beginning == '/blog/' %}
-              <a class="reading-chip" href="{{ category | slugify | prepend: '/blog/category/' | relative_url }}">{{ category }}</a>
+              <a class="reading-chip" href="{{ category | slugify | prepend: '/blog/category/' | relative_url }}">
+                <i class="fa-regular fa-folder" style="margin-right: 0.35rem; font-size: 0.76rem;"></i>{{ category }}
+              </a>
             {% else %}
-              <span class="reading-chip">{{ category }}</span>
+              <span class="reading-chip"><i class="fa-regular fa-folder" style="margin-right: 0.35rem; font-size: 0.76rem;"></i>{{ category }}</span>
+            {% endif %}
+          {% endfor %}
+          {% for tag in page.tags %}
+            {% if url_beginning == '/blog/' %}
+              <a class="reading-chip" href="{{ tag | slugify | prepend: '/blog/tag/' | relative_url }}">
+                <span style="margin-right: 0.15rem; font-weight: 700; color: var(--reading-accent);">#</span>{{ tag }}
+              </a>
+            {% else %}
+              <span class="reading-chip"><span style="margin-right: 0.15rem; font-weight: 700; color: var(--reading-accent);">#</span>{{ tag }}</span>
             {% endif %}
           {% endfor %}
         </div>
