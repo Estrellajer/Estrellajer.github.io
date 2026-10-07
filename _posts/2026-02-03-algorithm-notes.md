@@ -286,7 +286,9 @@ squeeze(-1) → (1, 3) = [[-1.0, -1.2, -2.2]]
 
 `chosen/rejected` 各算 `log_ratio = policy_logp - ref_logp` -- `logits = β × (chosen_ratio - rejected_ratio)` -- `loss = -logsigmoid(logits)`
 
-**公式**：$\mathcal{L} = -\mathbb{E}\left[\log \sigma\left(\beta \log\frac{\pi_\theta(y_w|x)}{\pi_{ref}(y_w|x)} - \beta \log\frac{\pi_\theta(y_l|x)}{\pi_{ref}(y_l|x)}\right)\right]$
+**公式**：
+
+$$\mathcal{L}_{\text{DPO}}(\theta; \pi_{\text{ref}}) = -\mathbb{E}_{(x, y_w, y_l) \sim \mathcal{D}}\left[\log \sigma\left(\beta \log\frac{\pi_\theta(y_w \mid x)}{\pi_{\text{ref}}(y_w \mid x)} - \beta \log\frac{\pi_\theta(y_l \mid x)}{\pi_{\text{ref}}(y_l \mid x)}\right)\right]$$
 
 **记忆**：让 `chosen` 的 `log_ratio` 比 `rejected` 大，loss 才小；`β` 控制偏离参考模型的强度。
 
