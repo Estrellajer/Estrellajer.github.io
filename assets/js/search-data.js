@@ -222,11 +222,11 @@ ninja.data = [{
           description: "",
           section: "News",handler: () => {
               window.location.href = "/news/20260610/";
-            },},{id: "news-one-paper-accepted-by-emnlp-2026-arxiv-preprint-and-code-will-be-released-soon",
-          title: 'One paper accepted by EMNLP 2026! 🎉🎉🎉 ArXiv preprint and code will be...',
+            },},{id: "news-one-paper-accepted-by-emnlp-2026-check-out-the-preprint-on-arxiv-and-code-on-github",
+          title: 'One paper accepted by EMNLP 2026! 🎉🎉🎉 Check out the preprint on arXiv...',
           description: "",
-          section: "News",},{id: "news-new-preprint-released-our-paper-scoring-higher-answering-worse-mitigating-reward-hacking-in-rubric-based-rl-via-protocol-level-rubrics-is-now-on-arxiv-we-explore-reward-hacking-in-rubric-based-rl-and-propose-protocol-level-rubrics-prorubric-check-out-the-arxiv-preprint-and-open-source-code-on-github",
-          title: 'New preprint released! Our paper Scoring Higher, Answering Worse: Mitigating Reward Hacking in...',
+          section: "News",},{id: "news-new-preprint-prorubric-is-now-on-arxiv-with-code-on-github",
+          title: 'New preprint ProRubric is now on arXiv, with code on GitHub! 🚀',
           description: "",
           section: "News",},{id: "projects-arxiv-digest",
           title: 'arXiv-Digest',
