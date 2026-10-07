@@ -1,5 +1,23 @@
 [
   {
+    "scholar": "Nathan Lambert",
+    "scholar_url": "https://www.interconnects.ai/",
+    "affiliation": "Interconnects",
+    "areas": [
+      "RL",
+      "Alignment",
+      "LLM"
+    ],
+    "watch": "blog",
+    "kind": "post",
+    "text": "The Cyber Risk Discourse is Broken",
+    "link": "https://www.interconnects.ai/p/the-cyber-risk-discourse-is-broken",
+    "date_str": "2026-10-06",
+    "timestamp": 1791296561.0,
+    "result_type": "rss",
+    "first_seen": "2026-10-07T00:16:44.658213+00:00"
+  },
+  {
     "scholar": "傅宇千",
     "scholar_url": "https://fyqqyf.github.io/",
     "affiliation": "自动化所",
@@ -105,6 +123,20 @@
         "kind": "post",
         "date": "2026-09-14",
         "timestamp": 1789376340.0
+      },
+      {
+        "text": "让炼丹更科学一些（九）：经典自适应梯度算法",
+        "link": "https://kexue.fm/archives/11882",
+        "kind": "post",
+        "date": "2026-09-05",
+        "timestamp": 1788597240.0
+      },
+      {
+        "text": "让炼丹更科学一些（八）：多阶段训练的学习率",
+        "link": "https://kexue.fm/archives/11879",
+        "kind": "post",
+        "date": "2026-08-31",
+        "timestamp": 1788145620.0
       }
     ]
   },
@@ -130,6 +162,48 @@
         "kind": "post",
         "date": "2026-09-27",
         "timestamp": 1790467200.0
+      },
+      {
+        "text": "MoE 技术原理",
+        "link": "https://momoyeyu.github.io/posts/llm-moe/",
+        "kind": "post",
+        "date": "2026-09-23",
+        "timestamp": 1790121600.0
+      },
+      {
+        "text": "autodev：打开 Vibe Coding 的黑盒",
+        "link": "https://momoyeyu.github.io/posts/autodev/",
+        "kind": "post",
+        "date": "2026-09-19",
+        "timestamp": 1789776000.0
+      },
+      {
+        "text": "Transformer 的数学表示与代码实现",
+        "link": "https://momoyeyu.github.io/posts/llm-transformer/",
+        "kind": "post",
+        "date": "2026-09-14",
+        "timestamp": 1789344000.0
+      },
+      {
+        "text": "再谈 AI Infra",
+        "link": "https://momoyeyu.github.io/posts/ai-infra-revisit/",
+        "kind": "post",
+        "date": "2026-05-26",
+        "timestamp": 1779753600.0
+      },
+      {
+        "text": "通过 WSL 使用 CUDA",
+        "link": "https://momoyeyu.github.io/posts/wsl-cuda/",
+        "kind": "post",
+        "date": "2026-05-22",
+        "timestamp": 1779408000.0
+      },
+      {
+        "text": "GPU 访存延迟",
+        "link": "https://momoyeyu.github.io/posts/gpu-mem-latency/",
+        "kind": "post",
+        "date": "2026-05-20",
+        "timestamp": 1779235200.0
       }
     ]
   },
@@ -147,7 +221,65 @@
     "date_str": "2026-10",
     "timestamp": 1790812800.0,
     "result_type": "unchanged",
-    "first_seen": "2026-10-06T10:00:00+00:00"
+    "first_seen": "2026-10-06T10:00:00+00:00",
+    "sub_items": [
+      {
+        "text": "SLCA++: Unleash the Power of Sequential Fine-tuning for Continual Learning with Pre-training · IJCV 2026",
+        "link": "https://arxiv.org/abs/2408.08295",
+        "kind": "paper",
+        "date": "2026-09",
+        "timestamp": 1788220800.0
+      },
+      {
+        "text": "Brain-inspired Hierarchical Modularity for General Continual Learning · arXiv 2026",
+        "link": "https://arxiv.org/abs/2609.25146",
+        "kind": "paper",
+        "date": "2026",
+        "timestamp": 1780272000.0
+      },
+      {
+        "text": "Steering Topology Distributions for Unified Generative Design of Architected Metamaterials · arXiv 2026",
+        "link": "https://www.researchsquare.com/article/rs-10141322/v1.pdf",
+        "kind": "paper",
+        "date": "2026",
+        "timestamp": 1780272000.0
+      },
+      {
+        "text": "ProCA: Progressive Contrastive Alignment for Robust EEG Visual Decoding · arXiv 2026",
+        "link": "https://arxiv.org/abs/2609.05094",
+        "kind": "paper",
+        "date": "2026",
+        "timestamp": 1780272000.0
+      },
+      {
+        "text": "Domain Generalizable Continual Learning · arXiv 2026",
+        "link": "http://arxiv.org/abs/2510.16914",
+        "kind": "paper",
+        "date": "2026",
+        "timestamp": 1780272000.0
+      },
+      {
+        "text": "Spacing Effect Improves Generalization in Biological and Artificial Systems · Patterns 2026",
+        "link": "https://www.biorxiv.org/content/10.64898/2025.12.18.695340v2.full.pdf",
+        "kind": "paper",
+        "date": "2026",
+        "timestamp": 1780272000.0
+      },
+      {
+        "text": "Cephalopod-Inspired Embodied Camouflage System for Simultaneous Evasion of Biological and Artificial Visual Perceptions · Nature Communications 2026",
+        "link": "https://lywang3081.github.io/",
+        "kind": "paper",
+        "date": "2026",
+        "timestamp": 1780272000.0
+      },
+      {
+        "text": "Brain-Inspired Spatial Intelligence for Embodied Agents · Nature Communications 2026",
+        "link": "https://www.nature.com/articles/s41467-026-74358-5",
+        "kind": "paper",
+        "date": "2026",
+        "timestamp": 1780272000.0
+      }
+    ]
   },
   {
     "scholar": "柠檬CC",
@@ -172,6 +304,41 @@
         "kind": "post",
         "date": "2026-09-23",
         "timestamp": 1790121600.0
+      },
+      {
+        "text": "大语言模型研究10——RubricRL实践",
+        "link": "https://limoncc.com/post/793a20286198dbac/",
+        "kind": "post",
+        "date": "2026-09-16",
+        "timestamp": 1789516800.0
+      },
+      {
+        "text": "RNN的复兴04:线性注意力并行计算DPLR",
+        "link": "https://limoncc.com/post/9e070b6858f0e490/",
+        "kind": "post",
+        "date": "2026-08-18",
+        "timestamp": 1787011200.0
+      },
+      {
+        "text": "大语言模型研究17——强化学习中KL散度惩罚问题",
+        "link": "https://limoncc.com/post/9e2e995289848c87/",
+        "kind": "post",
+        "date": "2026-06-28",
+        "timestamp": 1782604800.0
+      },
+      {
+        "text": "大语言模型研究16——注意力机制优化之稀疏注意",
+        "link": "https://limoncc.com/post/1540fb65f18f359a/",
+        "kind": "post",
+        "date": "2026-05-25",
+        "timestamp": 1779667200.0
+      },
+      {
+        "text": "大语言模型研究14——注意力机制优化之FlashAttention",
+        "link": "https://limoncc.com/post/f8b4cf8901e0b294/",
+        "kind": "post",
+        "date": "2026-05-19",
+        "timestamp": 1779148800.0
       }
     ]
   },
@@ -198,48 +365,6 @@
         "kind": "paper",
         "date": "2026-09-25",
         "timestamp": 1790294400.0
-      },
-      {
-        "text": "Cross-Domain Knowledge Separation and Positive Transmission for Noisy Domain Incremental Learning · NeurIPS 2026",
-        "link": "https://openreview.net/pdf?id=QpRuEc6Iem",
-        "kind": "paper",
-        "date": "2026-09-25",
-        "timestamp": 1790294400.0
-      },
-      {
-        "text": "FlexCover: Flexible Cover Song Generation via Symbolic Lead Sheet Control · NeurIPS 2026",
-        "link": "https://zhoujiahuan1991.github.io/",
-        "kind": "paper",
-        "date": "2026-09-25",
-        "timestamp": 1790294400.0
-      },
-      {
-        "text": "RotVLA: Rotational Latent Action for Vision-Language-Action Model · NeurIPS 2026",
-        "link": "https://zhoujiahuan1991.github.io/",
-        "kind": "paper",
-        "date": "2026-09-25",
-        "timestamp": 1790294400.0
-      },
-      {
-        "text": "DG-Force: Disentangling and Gathering Forensic Cues is Needed for Face Forgery Detection · ECCV 2026",
-        "link": "https://zhoujiahuan1991.github.io/",
-        "kind": "paper",
-        "date": "2026-07-20",
-        "timestamp": 1784505600.0
-      },
-      {
-        "text": "SCORE: SubDistribution-aware Collaborative Optimization for Few-Shot Object Detection · ECCV 2026",
-        "link": "https://zhoujiahuan1991.github.io/",
-        "kind": "paper",
-        "date": "2026-07-20",
-        "timestamp": 1784505600.0
-      },
-      {
-        "text": "Hyper-LLaVA: Hyperbolic Uncertainty-Aware Large Vision-Language Models · ICML 2026",
-        "link": "https://zhoujiahuan1991.github.io/",
-        "kind": "paper",
-        "date": "2026-05-15",
-        "timestamp": 1778803200.0
       }
     ]
   },
@@ -453,61 +578,6 @@
     ]
   },
   {
-    "scholar": "Nathan Lambert",
-    "scholar_url": "https://www.interconnects.ai/",
-    "affiliation": "Interconnects",
-    "areas": [
-      "RL",
-      "Alignment",
-      "LLM"
-    ],
-    "watch": "blog",
-    "kind": "post",
-    "text": "Debating RSI, the US-China Gap, and Jaggedness with JS Denain of Epoch AI",
-    "link": "https://www.interconnects.ai/p/debating-rsi-the-us-china-gap-and",
-    "date_str": "2026-09-22",
-    "timestamp": 1790084265.0,
-    "result_type": "rss_no_change",
-    "first_seen": "2026-09-22T00:00:00+00:00",
-    "sub_items": [
-      {
-        "text": "The current balance of power in open models",
-        "link": "https://www.interconnects.ai/p/the-current-balance-of-power-in-open",
-        "kind": "post",
-        "date": "2026-09-21",
-        "timestamp": 1789991816.0
-      },
-      {
-        "text": "Why I still haven’t bought into true RSI",
-        "link": "https://www.interconnects.ai/p/where-i-stand-on-rsi",
-        "kind": "post",
-        "date": "2026-09-19",
-        "timestamp": 1789832540.0
-      },
-      {
-        "text": "Open-Source AI & Open Models Reading List",
-        "link": "https://www.interconnects.ai/p/open-source-ai-reading-list",
-        "kind": "post",
-        "date": "2026-09-11",
-        "timestamp": 1789130185.0
-      },
-      {
-        "text": "One resignation turned the embers of AI fear into a wildfire",
-        "link": "https://www.interconnects.ai/p/one-resignation-turned-the-embers",
-        "kind": "post",
-        "date": "2026-09-10",
-        "timestamp": 1789054132.0
-      },
-      {
-        "text": "When will average people feel AI’s impact",
-        "link": "https://www.interconnects.ai/p/when-will-average-people-feel-ais",
-        "kind": "post",
-        "date": "2026-09-09",
-        "timestamp": 1788951683.0
-      }
-    ]
-  },
-  {
     "scholar": "mengrennwpu",
     "scholar_url": "https://www.cnblogs.com/mengrennwpu",
     "affiliation": "西北工业大学",
@@ -521,65 +591,7 @@
     "date_str": "2026-09-16",
     "timestamp": 1789540500.0,
     "result_type": "rss_no_change",
-    "first_seen": "2026-10-06T10:46:18.682760+00:00",
-    "sub_items": [
-      {
-        "text": "龙虾白嫖指南，请查收~ - mengrennwpu",
-        "link": "https://www.cnblogs.com/mengrennwpu/p/19771313",
-        "kind": "post",
-        "date": "2026-03-25",
-        "timestamp": 1774430760.0
-      },
-      {
-        "text": "龙虾白嫖指南，请查收~",
-        "link": "https://www.cnblogs.com/mengrennwpu/p/19771313",
-        "kind": "post",
-        "date": "2026-03-25",
-        "timestamp": 1774396800.0
-      },
-      {
-        "text": "Qwen3-Embedding国产化部署",
-        "link": "https://www.cnblogs.com/mengrennwpu/p/19679320",
-        "kind": "post",
-        "date": "2026-03-06",
-        "timestamp": 1772755200.0
-      },
-      {
-        "text": "LLM应用实践: NoteBookLM初次使用",
-        "link": "https://www.cnblogs.com/mengrennwpu/p/19351375",
-        "kind": "post",
-        "date": "2025-12-15",
-        "timestamp": 1765756800.0
-      },
-      {
-        "text": "LLM应用剖析: 手机智能助理Phone Agent",
-        "link": "https://www.cnblogs.com/mengrennwpu/p/19337656",
-        "kind": "post",
-        "date": "2025-12-11",
-        "timestamp": 1765411200.0
-      },
-      {
-        "text": "LLM应用剖析: 小红书AI图文生成器-红墨",
-        "link": "https://www.cnblogs.com/mengrennwpu/p/19323498",
-        "kind": "post",
-        "date": "2025-12-08",
-        "timestamp": 1765152000.0
-      },
-      {
-        "text": "LLM应用剖析: 热点新闻助手TrendRadar",
-        "link": "https://www.cnblogs.com/mengrennwpu/p/19280245",
-        "kind": "post",
-        "date": "2025-11-28",
-        "timestamp": 1764288000.0
-      },
-      {
-        "text": "LLM书籍参阅: 谷歌提示工程",
-        "link": "https://www.cnblogs.com/mengrennwpu/p/19252003",
-        "kind": "post",
-        "date": "2025-11-21",
-        "timestamp": 1763683200.0
-      }
-    ]
+    "first_seen": "2026-10-06T10:46:18.682760+00:00"
   },
   {
     "scholar": "孙海龙",
@@ -704,7 +716,65 @@
     "date_str": "2026-09-09",
     "timestamp": 1788912000.0,
     "result_type": "rss_no_change",
-    "first_seen": "2026-09-23T12:27:56.702284+00:00"
+    "first_seen": "2026-09-23T12:27:56.702284+00:00",
+    "sub_items": [
+      {
+        "text": "Foundation Model or Not",
+        "link": "https://kindxiaoming.github.io/blog/2026/unified-or-not/",
+        "kind": "post",
+        "date": "2026-08-30",
+        "timestamp": 1788048000.0
+      },
+      {
+        "text": "A True World Model Requires Mixture of Compression",
+        "link": "https://kindxiaoming.github.io/blog/2026/mixture-of-abstraction/",
+        "kind": "post",
+        "date": "2026-08-29",
+        "timestamp": 1787961600.0
+      },
+      {
+        "text": "AI finally enters its Tycho stage",
+        "link": "https://kindxiaoming.github.io/blog/2026/tycho/",
+        "kind": "post",
+        "date": "2026-08-13",
+        "timestamp": 1786579200.0
+      },
+      {
+        "text": "Discovering 108 tricks to accelerate grokking",
+        "link": "https://kindxiaoming.github.io/blog/2026/grokking-tricks/",
+        "kind": "post",
+        "date": "2026-06-22",
+        "timestamp": 1782086400.0
+      },
+      {
+        "text": "AI4AI needs its own “world model”",
+        "link": "https://kindxiaoming.github.io/blog/2026/ai4ai-pretraining/",
+        "kind": "post",
+        "date": "2026-05-06",
+        "timestamp": 1778025600.0
+      },
+      {
+        "text": "How does memorization affect l2",
+        "link": "https://kindxiaoming.github.io/blog/2026/memorization-l2/",
+        "kind": "post",
+        "date": "2026-05-05",
+        "timestamp": 1777939200.0
+      },
+      {
+        "text": "Data efficiency of Bi-gram data",
+        "link": "https://kindxiaoming.github.io/blog/2026/bigram-data-efficiency/",
+        "kind": "post",
+        "date": "2026-05-03",
+        "timestamp": 1777766400.0
+      },
+      {
+        "text": "Grokking in loss doesn’t necessarily imply grokking in accuracy",
+        "link": "https://kindxiaoming.github.io/blog/2026/gaussian-blob/",
+        "kind": "post",
+        "date": "2026-05-03",
+        "timestamp": 1777766400.0
+      }
+    ]
   },
   {
     "scholar": "杨永进",
@@ -721,7 +791,7 @@
     "date_str": "2026-09",
     "timestamp": 1788220800.0,
     "result_type": "unchanged",
-    "first_seen": "2026-10-06T10:46:18.682805+00:00",
+    "first_seen": "2026-10-07T00:16:45.314178+00:00",
     "sub_items": [
       {
         "text": "LLM-as-a-Tutor: Policy-Aware Prompt Adaptation for Non-Verifiable RL NeurIPS 2026",
@@ -750,87 +820,6 @@
         "kind": "paper",
         "date": "2025-05",
         "timestamp": 1746057600.0
-      }
-    ]
-  },
-  {
-    "scholar": "黄家斌",
-    "scholar_url": "https://jbhuang0604.github.io/",
-    "affiliation": "马里兰大学 (UMD)",
-    "areas": [
-      "3DV"
-    ],
-    "watch": "general",
-    "kind": "update",
-    "text": "Capital One endowed Associate Professor",
-    "link": "https://www.cs.umd.edu/",
-    "date_str": "2026-09",
-    "timestamp": 1788220800.0,
-    "result_type": "unchanged",
-    "first_seen": "2026-10-06T10:46:18.682824+00:00",
-    "sub_items": [
-      {
-        "text": "Vinayak Gupta",
-        "link": "https://vinayak-vg.github.io/",
-        "kind": "update",
-        "date": "2026-09",
-        "timestamp": 1788220800.0
-      },
-      {
-        "text": "Seungjae (Jay) Lee",
-        "link": "https://sjlee.cc/",
-        "kind": "update",
-        "date": "2026-09",
-        "timestamp": 1788220800.0
-      },
-      {
-        "text": "Masked Visual Actions for Unified World Modeling · NeurIPS 2026",
-        "link": "https://arxiv.org/abs/2607.19343",
-        "kind": "paper",
-        "date": "2026-09",
-        "timestamp": 1788220800.0
-      },
-      {
-        "text": "DynaFLIP: Rethinking Robotics Perception via Tri-Modal-Dynamics Guided Representation · NeurIPS 2026",
-        "link": "https://arxiv.org/abs/2605.30350",
-        "kind": "paper",
-        "date": "2026-09",
-        "timestamp": 1788220800.0
-      },
-      {
-        "text": "μ₀: A Scalable 3D Interaction-Trace World Model · CoRL 2026",
-        "link": "https://arxiv.org/abs/2606.13769",
-        "kind": "paper",
-        "date": "2026-06",
-        "timestamp": 1780272000.0
-      },
-      {
-        "text": "TraceGen: World Modeling in 3D Trace-Space Enables Learning from Cross-Embodiment Videos · CVPR 2026",
-        "link": "https://arxiv.org/abs/2511.21690",
-        "kind": "paper",
-        "date": "2026-06",
-        "timestamp": 1780272000.0
-      },
-      {
-        "text": "Generalizable Sparse-View 3D Reconstruction from Unconstrained Images · CVPR 2026",
-        "link": "https://arxiv.org/abs/2604.28193",
-        "kind": "paper",
-        "date": "2026-04",
-        "timestamp": 1775001600.0
-      },
-      {
-        "text": "SIMPACT: Simulation-Enabled Action Planning using Vision-Language Models · CVPR 2026",
-        "link": "https://arxiv.org/pdf/2512.05955",
-        "kind": "paper",
-        "date": "2026-03",
-        "timestamp": 1772323200.0
-      },
-      {
-        "text": "CineVerse: Consistent Keyframe Synthesis for Cinematic Scene Composition · WACV 2026",
-        "link": "https://arxiv.org/abs/2504.19894",
-        "kind": "paper",
-        "date": "2026-01",
-        "timestamp": 1767225600.0
       }
     ]
   },
@@ -930,6 +919,13 @@
         "kind": "paper",
         "date": "2026-09",
         "timestamp": 1788220800.0
+      },
+      {
+        "text": "On Token's Dilemma",
+        "link": "https://zhaoc5.github.io/DyMoE",
+        "kind": "update",
+        "date": "2026-09",
+        "timestamp": 1788220800.0
       }
     ]
   },
@@ -956,6 +952,122 @@
         "kind": "paper",
         "date": "2026-07",
         "timestamp": 1782864000.0
+      },
+      {
+        "text": "How can we assess human-agent interactions? Case studies in software agent design · ICML 2026",
+        "link": "https://xuhuiz.com/publications",
+        "kind": "paper",
+        "date": "2026-07",
+        "timestamp": 1782864000.0
+      },
+      {
+        "text": "PoliSim@CHI 2026: LLM Agent Simulation for Policy",
+        "link": "https://xuhuiz.com/publications",
+        "kind": "paper",
+        "date": "2026",
+        "timestamp": 1780272000.0
+      },
+      {
+        "text": "OpenAgentSafety: A Comprehensive Framework for Evaluating Real-World AI Agent Safety · ICLR 2026",
+        "link": "https://xuhuiz.com/publications",
+        "kind": "paper",
+        "date": "2026-05",
+        "timestamp": 1777593600.0
+      },
+      {
+        "text": "Interactive Agents to Overcome Ambiguity in Software Engineering · ICLR 2026",
+        "link": "https://xuhuiz.com/publications",
+        "kind": "paper",
+        "date": "2026-05",
+        "timestamp": 1777593600.0
+      },
+      {
+        "text": "Backstory-Personalized Modeling and Detection of Violent Communication · EMNLP 2025",
+        "link": "https://xuhuiz.com/publications",
+        "kind": "paper",
+        "date": "2025-11",
+        "timestamp": 1761955200.0
+      }
+    ]
+  },
+  {
+    "scholar": "黄家斌",
+    "scholar_url": "https://jbhuang0604.github.io/",
+    "affiliation": "马里兰大学 (UMD)",
+    "areas": [
+      "3DV"
+    ],
+    "watch": "general",
+    "kind": "update",
+    "text": "Capital One endowed Associate Professor",
+    "link": "https://www.cs.umd.edu/",
+    "date_str": "2026-09",
+    "timestamp": 1788220800.0,
+    "result_type": "unchanged",
+    "first_seen": "2026-10-06T10:46:18.682824+00:00",
+    "sub_items": [
+      {
+        "text": "Vinayak Gupta",
+        "link": "https://vinayak-vg.github.io/",
+        "kind": "update",
+        "date": "2026-09",
+        "timestamp": 1788220800.0
+      },
+      {
+        "text": "Seungjae (Jay) Lee",
+        "link": "https://sjlee.cc/",
+        "kind": "update",
+        "date": "2026-09",
+        "timestamp": 1788220800.0
+      },
+      {
+        "text": "Masked Visual Actions for Unified World Modeling · NeurIPS 2026",
+        "link": "https://arxiv.org/abs/2607.19343",
+        "kind": "paper",
+        "date": "2026-09",
+        "timestamp": 1788220800.0
+      },
+      {
+        "text": "DynaFLIP: Rethinking Robotics Perception via Tri-Modal-Dynamics Guided Representation · NeurIPS 2026",
+        "link": "https://arxiv.org/abs/2605.30350",
+        "kind": "paper",
+        "date": "2026-09",
+        "timestamp": 1788220800.0
+      },
+      {
+        "text": "μ₀: A Scalable 3D Interaction-Trace World Model · CoRL 2026",
+        "link": "https://arxiv.org/abs/2606.13769",
+        "kind": "paper",
+        "date": "2026-06",
+        "timestamp": 1780272000.0
+      },
+      {
+        "text": "TraceGen: World Modeling in 3D Trace-Space Enables Learning from Cross-Embodiment Videos · CVPR 2026",
+        "link": "https://arxiv.org/abs/2511.21690",
+        "kind": "paper",
+        "date": "2026-06",
+        "timestamp": 1780272000.0
+      },
+      {
+        "text": "Generalizable Sparse-View 3D Reconstruction from Unconstrained Images · CVPR 2026",
+        "link": "https://arxiv.org/abs/2604.28193",
+        "kind": "paper",
+        "date": "2026-04",
+        "timestamp": 1775001600.0
+      },
+      {
+        "text": "SIMPACT: Simulation-Enabled Action Planning using Vision-Language Models · CVPR 2026",
+        "link": "https://arxiv.org/pdf/2512.05955",
+        "kind": "paper",
+        "date": "2026-03",
+        "timestamp": 1772323200.0
+      },
+      {
+        "text": "CineVerse: Consistent Keyframe Synthesis for Cinematic Scene Composition · WACV 2026",
+        "link": "https://arxiv.org/abs/2504.19894",
+        "kind": "paper",
+        "date": "2026-01",
+        "timestamp": 1767225600.0
       }
     ]
   },
@@ -988,27 +1100,6 @@
         "kind": "post",
         "date": "2026-06-30",
         "timestamp": 1782777600.0
-      },
-      {
-        "text": "Natural Language Autoencoders Produce Unsupervised Explanations of LLM Activations",
-        "link": "https://transformer-circuits.pub/2026/nla/index.html",
-        "kind": "post",
-        "date": "2026-05-07",
-        "timestamp": 1778112000.0
-      },
-      {
-        "text": "HeadVis",
-        "link": "https://transformer-circuits.pub/2026/headvis/index.html",
-        "kind": "post",
-        "date": "2026-05-04",
-        "timestamp": 1777852800.0
-      },
-      {
-        "text": "Emotion Concepts and their Function in a Large Language Model",
-        "link": "https://transformer-circuits.pub/2026/emotions/index.html",
-        "kind": "post",
-        "date": "2026-04-02",
-        "timestamp": 1775088000.0
       }
     ]
   },
@@ -1113,21 +1204,21 @@
     "date_str": "2026-08-04",
     "timestamp": 1785844800.0,
     "result_type": "rss_no_change",
-    "first_seen": "2026-10-06T10:46:18.682767+00:00",
+    "first_seen": "2026-10-07T00:16:45.314134+00:00",
     "sub_items": [
       {
         "text": "linux 的基本操作",
         "link": "https://www.chenxutalk.top/posts/study/cs0/linux-basic/",
         "kind": "post",
         "date": "2026-08-02",
-        "timestamp": 1785664665.0
+        "timestamp": 1785628800.0
       },
       {
         "text": "启动我的服务",
         "link": "https://www.chenxutalk.top/posts/study/cs0/start-my-service/",
         "kind": "post",
         "date": "2026-08-02",
-        "timestamp": 1785664665.0
+        "timestamp": 1785628800.0
       },
       {
         "text": "更舒适地写代码",
@@ -1266,7 +1357,7 @@
     "date_str": "2026-08",
     "timestamp": 1785542400.0,
     "result_type": "unchanged",
-    "first_seen": "2026-10-06T10:46:18.682812+00:00",
+    "first_seen": "2026-10-07T00:16:45.314187+00:00",
     "sub_items": [
       {
         "text": "The Art of Efficient Reasoning: Data, Reward, and Optimization · EMNLP 2026",
@@ -1334,20 +1425,6 @@
         "kind": "paper",
         "date": "2026-08",
         "timestamp": 1785542400.0
-      },
-      {
-        "text": "You Only Read Once (YORO): Learning to Internalize Database Knowledge for Text-to-SQL · NAACL 2025",
-        "link": "https://arxiv.org/pdf/2409.12172",
-        "kind": "paper",
-        "date": "2025-08",
-        "timestamp": 1754006400.0
-      },
-      {
-        "text": "RAGChecker: A Fine-grained Framework for Diagnosing Retrieval-Augmented Generation · NeurIPS 2024",
-        "link": "https://arxiv.org/pdf/2408.08067",
-        "kind": "paper",
-        "date": "2024-09",
-        "timestamp": 1725148800.0
       }
     ]
   },
@@ -1380,6 +1457,34 @@
         "kind": "update",
         "date": "2026-05-11",
         "timestamp": 1778457600.0
+      },
+      {
+        "text": "On-Policy Distillation",
+        "link": "https://thinkingmachines.ai/blog/on-policy-distillation/",
+        "kind": "update",
+        "date": "2025-10-27",
+        "timestamp": 1761523200.0
+      },
+      {
+        "text": "LoRA Without Regret",
+        "link": "https://thinkingmachines.ai/blog/lora/",
+        "kind": "update",
+        "date": "2025-09-29",
+        "timestamp": 1759104000.0
+      },
+      {
+        "text": "Modular Manifolds",
+        "link": "https://thinkingmachines.ai/blog/modular-manifolds/",
+        "kind": "update",
+        "date": "2025-09-26",
+        "timestamp": 1758844800.0
+      },
+      {
+        "text": "Defeating Nondeterminism in LLM Inference",
+        "link": "https://thinkingmachines.ai/blog/defeating-nondeterminism-in-llm-inference/",
+        "kind": "update",
+        "date": "2025-09-10",
+        "timestamp": 1757487660.0
       }
     ]
   },
@@ -1543,7 +1648,7 @@
     "date_str": "2026-07",
     "timestamp": 1782864000.0,
     "result_type": "unchanged",
-    "first_seen": "2026-10-06T10:46:18.682830+00:00",
+    "first_seen": "2026-10-07T00:16:45.314202+00:00",
     "sub_items": [
       {
         "text": "Test-Time Training with Self-Supervision for Generalization under Distribution Shifts · ICML 2020[ website ]\n[ talk ]",
@@ -1597,6 +1702,20 @@
         "kind": "post",
         "date": "2026",
         "timestamp": 1780272000.0
+      },
+      {
+        "text": "Git 多账户配置",
+        "link": "https://yqqy.top/workflow/git/multi-account",
+        "kind": "post",
+        "date": "2026",
+        "timestamp": 1780272000.0
+      },
+      {
+        "text": "Windows 平台",
+        "link": "https://yqqy.top/efficiency/windows/keymap",
+        "kind": "post",
+        "date": "2026",
+        "timestamp": 1780272000.0
       }
     ]
   },
@@ -1636,20 +1755,6 @@
         "kind": "post",
         "date": "2026",
         "timestamp": 1780272000.0
-      },
-      {
-        "text": "阶跃星辰系列",
-        "link": "https://plmsmile.github.io/posts/llm/industry/mainllm/17-stepfun-series.html",
-        "kind": "post",
-        "date": "2026",
-        "timestamp": 1780272000.0
-      },
-      {
-        "text": "大模型评测与基准体系综述",
-        "link": "https://plmsmile.github.io/posts/llm/eval/01-eval-survey.html",
-        "kind": "post",
-        "date": "2026-03-10",
-        "timestamp": 1773100800.0
       }
     ]
   },
@@ -1680,6 +1785,34 @@
       {
         "text": "AnaPFL: When Closed-Form Solutions · ECCV 2026",
         "link": "https://openreview.net/forum?id=QINxiI8jrF",
+        "kind": "paper",
+        "date": "2026",
+        "timestamp": 1780272000.0
+      },
+      {
+        "text": "SciEducator: Scientific · CVPR 2026",
+        "link": "https://openaccess.thecvf.com/content/CVPR2026/papers/Xu_SciEducator_Scientific_Video_Understanding_and_Educating_via_Deming-Cycle_Multi-Agent_System_CVPR_2026_paper.pdf",
+        "kind": "paper",
+        "date": "2026",
+        "timestamp": 1780272000.0
+      },
+      {
+        "text": "ARGUS: Defending Against Multimodal Indirect Prompt Injection via Steering Instruction-Following Behavior · CVPR 2026",
+        "link": "https://openaccess.thecvf.com/content/CVPR2026/papers/Lu_ARGUS_Defending_Against_Multimodal_Indirect_Prompt_Injection_via_Steering_Instruction-Following_CVPR_2026_paper.pdf",
+        "kind": "paper",
+        "date": "2026",
+        "timestamp": 1780272000.0
+      },
+      {
+        "text": "DeepAFL: Deep Analytic Federated Learning · ICLR 2026",
+        "link": "https://openreview.net/forum?id=ve3EzAvMGe",
+        "kind": "paper",
+        "date": "2026",
+        "timestamp": 1780272000.0
+      },
+      {
+        "text": "ManipEvalAgent: Promptable and Efficient Evaluation Framework for Robotic Manipulation Policies · ICLR 2026",
+        "link": "https://openreview.net/forum?id=3u6AkbWEls",
         "kind": "paper",
         "date": "2026",
         "timestamp": 1780272000.0
@@ -1716,34 +1849,6 @@
         "kind": "paper",
         "date": "2026",
         "timestamp": 1780272000.0
-      },
-      {
-        "text": "Budget-Aware Tool-Use Enables Effective Agent Scaling · COLM, 2026",
-        "link": "https://arxiv.org/abs/2511.17006",
-        "kind": "paper",
-        "date": "2026",
-        "timestamp": 1780272000.0
-      },
-      {
-        "text": "ReasoningBank: Scaling Agent Self-Evolving with Reasoning Memory · ICLR, 2026",
-        "link": "https://arxiv.org/abs/2509.25140",
-        "kind": "paper",
-        "date": "2026",
-        "timestamp": 1780272000.0
-      },
-      {
-        "text": "Supervised Reinforcement Learning: From Expert Trajectories to Step-wise Reasoning · ICLR, 2026",
-        "link": "https://arxiv.org/abs/2510.25992",
-        "kind": "paper",
-        "date": "2026",
-        "timestamp": 1780272000.0
-      },
-      {
-        "text": "Universal Model Routing for Efficient LLM Inference · ICLR, 2026",
-        "link": "https://arxiv.org/abs/2502.08773",
-        "kind": "paper",
-        "date": "2026",
-        "timestamp": 1780272000.0
       }
     ]
   },
@@ -1761,65 +1866,7 @@
     "date_str": "2026",
     "timestamp": 1780272000.0,
     "result_type": "unchanged",
-    "first_seen": "2026-10-06T10:46:18.682819+00:00",
-    "sub_items": [
-      {
-        "text": "A Unified Generalization Framework for Model Merging: Trade-offs, Non-Linearity, and Scaling Laws · arXiv 2026",
-        "link": "https://tanganke.github.io/publications/",
-        "kind": "paper",
-        "date": "2026-03-15",
-        "timestamp": 1773532800.0
-      },
-      {
-        "text": "Merging models on the fly without retraining: A sequential approach to scalable continual model merging · NeurIPS 2025",
-        "link": "https://tanganke.github.io/publications/",
-        "kind": "paper",
-        "date": "2025-09-20",
-        "timestamp": 1758326400.0
-      },
-      {
-        "text": "Continual Model Merging without Data: Dual Projections for Balancing Stability and Plasticity · NeurIPS 2025",
-        "link": "https://tanganke.github.io/publications/",
-        "kind": "paper",
-        "date": "2025-09-20",
-        "timestamp": 1758326400.0
-      },
-      {
-        "text": "Mix Data or Merge Models? Balancing the Helpfulness, Honesty, and Harmlessness of Large Language Model via Model Merging · NeurIPS 2025",
-        "link": "https://tanganke.github.io/publications/",
-        "kind": "paper",
-        "date": "2025-09-20",
-        "timestamp": 1758326400.0
-      },
-      {
-        "text": "Data-adaptive weight-ensembling for multi-task model fusion · IJCV 2025",
-        "link": "https://tanganke.github.io/publications/",
-        "kind": "paper",
-        "date": "2025-09",
-        "timestamp": 1756684800.0
-      },
-      {
-        "text": "Zero-Shot Sparse Mixture of Low-Rank Experts Construction From Pre-Trained Foundation Models · TPAMI 2025",
-        "link": "https://tanganke.github.io/publications/",
-        "kind": "paper",
-        "date": "2025-08",
-        "timestamp": 1754006400.0
-      },
-      {
-        "text": "Targeted Low-rank Refinement: Enhancing Sparse Language Models with Precision · ICML 2025",
-        "link": "https://tanganke.github.io/publications/",
-        "kind": "paper",
-        "date": "2025-07",
-        "timestamp": 1751328000.0
-      },
-      {
-        "text": "Modeling Multi-Task Model Merging as Adaptive Projective Gradient Descent · ICML 2025",
-        "link": "https://tanganke.github.io/publications/",
-        "kind": "paper",
-        "date": "2025-07",
-        "timestamp": 1751328000.0
-      }
-    ]
+    "first_seen": "2026-10-06T10:46:18.682819+00:00"
   },
   {
     "scholar": "孙科",
@@ -1858,20 +1905,6 @@
         "kind": "paper",
         "date": "2026",
         "timestamp": 1780272000.0
-      },
-      {
-        "text": "Policy Optimization in Continuous Action Spaces with Heavy Tails · 2026",
-        "link": "https://sites.google.com/view/kesun",
-        "kind": "paper",
-        "date": "2026-05-01",
-        "timestamp": 1777593600.0
-      },
-      {
-        "text": "Distributional Reinforcement Learning with Regularized Wasserstein Loss · NeurIPS 2024",
-        "link": "https://arxiv.org/abs/2202.00769",
-        "kind": "paper",
-        "date": "2024-09-25",
-        "timestamp": 1727222400.0
       }
     ]
   },
@@ -1935,53 +1968,11 @@
     "first_seen": "2026-10-06T10:46:18.682838+00:00",
     "sub_items": [
       {
-        "text": "NeurIPS 2022 LECO: Continual Learning with Evolving Class Ontologies (NeurIPS’22) Zhiqiu Lin , Deepak Pathak , Yu-Xiong Wang , Deva Ramanan* , Shu Kong* Website | Arxiv | NeurIPS’22 Talk A practical lifelong vision benchmark motivated by real-world dataset versioning issues, e.g., Mapillary 1.2 to 2.0. Simple but effective solutions such as joint training, semi-supervised learning, and learning-with-partial-labels to address inconsistent annotation (both coarse-grained and fine-grained)",
-        "link": "https://www.cs.cmu.edu/~dpathak/",
-        "kind": "paper",
-        "date": "2026",
-        "timestamp": 1780272000.0
-      },
-      {
-        "text": "CHAI: Building a Precise Video Language with Human-AI Oversight · CVPR 2026 Highlight",
-        "link": "https://linzhiqiu.github.io/papers/chai/",
-        "kind": "paper",
-        "date": "2026-04-10",
-        "timestamp": 1775779200.0
-      },
-      {
-        "text": "CameraBench: Towards Understanding Camera Motions in Any Video · NeurIPS 2025 Spotlight",
+        "text": "NeurIPS 2025 Spotlight (Top 3%) CameraBench: Towards Understanding Camera Motions in Any Video (NeurIPS’25 Spotlight, Top 3%) Zhiqiu Lin *, Siyuan Cen* , Daniel Jiang , Jay Karhade , Hewei Wang , Chancharik Mitra , Yu Tong Tiffany Ling , Yuhan Huang , Sifan Liu , Mingyu Chen , Rushikesh Zawar , Xue Bai , Yilun Du , Chuang Gan , Deva Ramanan Website | Arxiv | We introduce CameraBench, a large-scale effort that pushes video-language models to reason about the language of camera motion just like professional cinematographers. Our open-source dataset and models are gaining strong interest and adoption from frontier video understanding and generation labs such as Deepmind, xAI, and Kling",
         "link": "https://linzhiqiu.github.io/papers/camerabench/",
         "kind": "paper",
-        "date": "2025-09-20",
-        "timestamp": 1758326400.0
-      },
-      {
-        "text": "NaturalBench: Evaluating Vision-Language Models on Natural Adversarial Samples · NeurIPS 2024",
-        "link": "https://linzhiqiu.github.io/papers/naturalbench/",
-        "kind": "paper",
-        "date": "2024-09-25",
-        "timestamp": 1727222400.0
-      },
-      {
-        "text": "Evaluating Text-to-Visual Generation with Image-to-Text Generation · ECCV 2024",
-        "link": "https://linzhiqiu.github.io/papers/vqascore/",
-        "kind": "paper",
-        "date": "2024-08-15",
-        "timestamp": 1723680000.0
-      },
-      {
-        "text": "VisualGPTScore: Generative Evaluation for Vision-Language Models · ICML 2024",
-        "link": "http://arxiv.org/abs/2306.01879",
-        "kind": "paper",
-        "date": "2024-05-10",
-        "timestamp": 1715299200.0
-      },
-      {
-        "text": "Multimodality Helps Unimodality: Cross-Modal Few-Shot Learning with Multimodal Models · CVPR 2023",
-        "link": "https://arxiv.org/abs/2301.06267",
-        "kind": "paper",
-        "date": "2023-06-15",
-        "timestamp": 1686787200.0
+        "date": "2025-09",
+        "timestamp": 1756684800.0
       }
     ]
   },
@@ -1999,7 +1990,7 @@
     "date_str": "2026",
     "timestamp": 1780272000.0,
     "result_type": "unchanged",
-    "first_seen": "2026-10-06T10:46:18.682842+00:00",
+    "first_seen": "2026-10-07T00:16:45.314211+00:00",
     "sub_items": [
       {
         "text": "Test-time training done right · ICLR 2026",
@@ -2060,34 +2051,6 @@
         "kind": "paper",
         "date": "2026",
         "timestamp": 1780272000.0
-      },
-      {
-        "text": "On the design of kl-regularized policy gradient algorithms for llm reasoning · ICLR 2026",
-        "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=7o4wtKEAAAAJ&sortby=pubdate&citation_for_view=7o4wtKEAAAAJ:P5F9QuxV20EC",
-        "kind": "paper",
-        "date": "2026",
-        "timestamp": 1780272000.0
-      },
-      {
-        "text": "Probing the Lack of Stable Internal Beliefs in LLMs · arXiv 2026",
-        "link": "https://arxiv.org/abs/2603.25187",
-        "kind": "paper",
-        "date": "2026-03-25",
-        "timestamp": 1774396800.0
-      },
-      {
-        "text": "Monadic Context Engineering · arXiv 2025",
-        "link": "https://arxiv.org/abs/2512.22431",
-        "kind": "paper",
-        "date": "2025-12-25",
-        "timestamp": 1766620800.0
-      },
-      {
-        "text": "Clarifying before reasoning: A coq prover with structural context · arXiv, 2025",
-        "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=7o4wtKEAAAAJ&sortby=pubdate&citation_for_view=7o4wtKEAAAAJ:xtRiw3GOFMkC",
-        "kind": "paper",
-        "date": "2025",
-        "timestamp": 1748736000.0
       }
     ]
   },
@@ -2147,46 +2110,11 @@
     "first_seen": "2026-10-06T10:46:18.682753+00:00",
     "sub_items": [
       {
-        "text": "Garments2Look: A Multi-Reference Dataset for High-Fidelity Outfit-Level Virtual Try-On with Clothing and Accessories · CVPR 2026 Workshop CVEU",
-        "link": "https://arxiv.org/abs/2603.14153",
-        "kind": "paper",
-        "date": "2026-05-08",
-        "timestamp": 1778198400.0
-      },
-      {
         "text": "😋 Accepted A paper was accepted to CVPR 2026 Workshop CVEU",
         "link": "https://junyaohu.github.io/",
         "kind": "news",
         "date": "2026-03-26",
         "timestamp": 1774483200.0
-      },
-      {
-        "text": "DRA-MTransfer: Physically Realistic Video Motion Transfer with Dual-Grained Re-Adaptation · CVPR 2026 Workshop CVEU",
-        "link": "https://junyaohu.github.io/publication",
-        "kind": "paper",
-        "date": "2026-03-26",
-        "timestamp": 1774483200.0
-      },
-      {
-        "text": "Emotion-Director: From Emotion-Aware Image Generation to Art Design · IEEE TAFFC 2026",
-        "link": "https://arxiv.org/abs/2512.19479",
-        "kind": "paper",
-        "date": "2025-12-28",
-        "timestamp": 1766880000.0
-      },
-      {
-        "text": "Activity I attended First AMC AI Film Festival (Hongkong, China)",
-        "link": "https://amc.hkust.edu.hk/events/1st-hkust-ai-film-festival",
-        "kind": "update",
-        "date": "2025-04-19",
-        "timestamp": 1745020800.0
-      },
-      {
-        "text": "😋 Accepted A film was selected as Finalist at First AMC AI Film Festival",
-        "link": "https://amc.hkust.edu.hk/events/1st-hkust-ai-film-festival",
-        "kind": "update",
-        "date": "2025-03-08",
-        "timestamp": 1741392000.0
       }
     ]
   },
@@ -2204,7 +2132,7 @@
     "date_str": "2026-05",
     "timestamp": 1777593600.0,
     "result_type": "unchanged",
-    "first_seen": "2026-10-06T10:46:18.682814+00:00",
+    "first_seen": "2026-10-07T00:16:45.314190+00:00",
     "sub_items": [
       {
         "text": "Diffusion Language Model Knows the Answer Before It Decodes · ICLR 2026 Oral",
@@ -2293,7 +2221,7 @@
     "date_str": "2026-04",
     "timestamp": 1775001600.0,
     "result_type": "unchanged",
-    "first_seen": "2026-10-06T10:46:18.682821+00:00",
+    "first_seen": "2026-10-07T00:16:45.314196+00:00",
     "sub_items": [
       {
         "text": "Micro-Macro Retrieval: Reducing Long-Form Hallucination in Large Language Models · ICLR 2026",
@@ -2360,7 +2288,65 @@
     "date_str": "2026-01-16",
     "timestamp": 1768521600.0,
     "result_type": "rss_no_change",
-    "first_seen": "2026-01-16T00:00:00+00:00"
+    "first_seen": "2026-01-16T00:00:00+00:00",
+    "sub_items": [
+      {
+        "text": "KV Cache（一）：从KV Cache看懂Attention（MHA、MQA、GQA、MLA）的优化之路",
+        "link": "https://blog.phimes.top/posts/2026/01/04/transformer-kv-cache-attention",
+        "kind": "post",
+        "date": "2026-01-04",
+        "timestamp": 1767484800.0
+      },
+      {
+        "text": "从vibe到spec：可维护性视角下探讨为什么很多人的AI编程依然是小玩具",
+        "link": "https://blog.phimes.top/posts/2025/12/26/ai-coding-spec-maintainability-vibe-coding",
+        "kind": "post",
+        "date": "2025-12-26",
+        "timestamp": 1766707200.0
+      },
+      {
+        "text": "通过下游任务理解BERT和GPT的区别：不只是完形填空和词语接龙",
+        "link": "https://blog.phimes.top/posts/2025/12/19/bert-gpt-deep-learning",
+        "kind": "post",
+        "date": "2025-12-19",
+        "timestamp": 1766102400.0
+      },
+      {
+        "text": "为什么Embedding加上位置编码后不会破坏语义？",
+        "link": "https://blog.phimes.top/posts/2025/09/28/transformer-positional-encoding-embedding",
+        "kind": "post",
+        "date": "2025-09-28",
+        "timestamp": 1759017600.0
+      },
+      {
+        "text": "流形视角下的Embedding：从理论到RAG实践",
+        "link": "https://blog.phimes.top/posts/2025/08/19/llm-algorithm-principles",
+        "kind": "post",
+        "date": "2025-08-19",
+        "timestamp": 1755561600.0
+      },
+      {
+        "text": "Add & Norm（二）从传统CV到Transformer里的Normalization详解",
+        "link": "https://blog.phimes.top/posts/2025/07/28/transformer-normalization",
+        "kind": "post",
+        "date": "2025-07-28",
+        "timestamp": 1753660800.0
+      },
+      {
+        "text": "Add & Norm：对残差连接深入解析（一）",
+        "link": "https://blog.phimes.top/posts/2025/06/12/transformer-residual-connection",
+        "kind": "post",
+        "date": "2025-06-12",
+        "timestamp": 1749686400.0
+      },
+      {
+        "text": "为什么前馈神经网络（FFN）对Transformer这么重要（二）：从激活函数到MOE",
+        "link": "https://blog.phimes.top/posts/2025/06/02/transformer-ffn-activation-function-moe",
+        "kind": "post",
+        "date": "2025-06-02",
+        "timestamp": 1748822400.0
+      }
+    ]
   },
   {
     "scholar": "DaNing",
@@ -2548,6 +2534,34 @@
         "kind": "paper",
         "date": "2026-01",
         "timestamp": 1767225600.0
+      },
+      {
+        "text": "OPMapper: Enhancing Open-Vocabulary Semantic Segmentation with Multi-Guidance Information · NeurIPS 2025",
+        "link": "https://chongjiesi.site/full-publications/2025-nips-opmapper/",
+        "kind": "paper",
+        "date": "2025-01",
+        "timestamp": 1735689600.0
+      },
+      {
+        "text": "DualEdit: Dual Editing for Knowledge Updating in Vision-Language Models · COLM 2025",
+        "link": "https://chongjiesi.site/full-publications/2025-colm-dualedit/",
+        "kind": "update",
+        "date": "2025-01",
+        "timestamp": 1735689600.0
+      },
+      {
+        "text": "Weight Spectra Induced Efficient Model Adaptation · arXiv 2025",
+        "link": "https://chongjiesi.site/full-publications/2025-arxiv-speclora/",
+        "kind": "paper",
+        "date": "2025-01",
+        "timestamp": 1735689600.0
+      },
+      {
+        "text": "MAP: Revisiting Weight Decomposition for Low-Rank Adaptation · arXiv 2025",
+        "link": "https://chongjiesi.site/full-publications/2025-arxiv-map/",
+        "kind": "paper",
+        "date": "2025-01",
+        "timestamp": 1735689600.0
       }
     ]
   },
@@ -2567,7 +2581,7 @@
     "date_str": "2025-12-12",
     "timestamp": 1765497600.0,
     "result_type": "unchanged",
-    "first_seen": "2026-10-06T10:46:18.682776+00:00",
+    "first_seen": "2026-10-07T00:16:45.314145+00:00",
     "sub_items": [
       {
         "text": "Is CLIP ideal",
@@ -2642,6 +2656,27 @@
         "kind": "post",
         "date": "2025-10-12",
         "timestamp": 1760227200.0
+      },
+      {
+        "text": "优化器解析：从 SGD 到 Muon 的演进之路",
+        "link": "https://lllcf.github.io/Optimization-Algorithms/",
+        "kind": "post",
+        "date": "2025-10-12",
+        "timestamp": 1760227200.0
+      },
+      {
+        "text": "Embedding微调-对齐下游检索",
+        "link": "https://lllcf.github.io/Embedding_finetune/",
+        "kind": "post",
+        "date": "2025-10-08",
+        "timestamp": 1759881600.0
+      },
+      {
+        "text": "Embedding-传统词频到预训练语义表示",
+        "link": "https://lllcf.github.io/Embedding/",
+        "kind": "post",
+        "date": "2025-10-07",
+        "timestamp": 1759795200.0
       }
     ]
   },
@@ -2743,34 +2778,6 @@
         "kind": "post",
         "date": "2025-07-13",
         "timestamp": 1752364800.0
-      },
-      {
-        "text": "Redis进阶（二）实现消息队列 本文将会介绍如何使用Redis中的List和Stream结构来实现消息队列。 2025-07-13 数据库 #Redis #消息队列",
-        "link": "https://percent4.github.io/Redis%E8%BF%9B%E9%98%B6%EF%BC%88%E4%BA%8C%EF%BC%89%E5%AE%9E%E7%8E%B0%E6%B6%88%E6%81%AF%E9%98%9F%E5%88%97/",
-        "kind": "post",
-        "date": "2025-07-13",
-        "timestamp": 1752364800.0
-      },
-      {
-        "text": "NLP（一百二十）LiteLLM解析：构建统一大模型接口的利器",
-        "link": "https://percent4.github.io/NLP%EF%BC%88%E4%B8%80%E7%99%BE%E4%BA%8C%E5%8D%81%EF%BC%89LiteLLM%E8%A7%A3%E6%9E%90%EF%BC%9A%E6%9E%84%E5%BB%BA%E7%BB%9F%E4%B8%80%E5%A4%A7%E6%A8%A1%E5%9E%8B%E6%8E%A5%E5%8F%A3%E7%9A%84%E5%88%A9%E5%99%A8/",
-        "kind": "post",
-        "date": "2025-07-13",
-        "timestamp": 1752364800.0
-      },
-      {
-        "text": "Redis进阶（一）使用Redis实现分布式锁 本文将会介绍如何使用Redis来实现分布式锁，以及分布式锁的两个应用场景。 2025-04-27 数据库 #Redis #分布式锁",
-        "link": "https://percent4.github.io/Redis%E8%BF%9B%E9%98%B6%EF%BC%88%E4%B8%80%EF%BC%89%E4%BD%BF%E7%94%A8Redis%E5%AE%9E%E7%8E%B0%E5%88%86%E5%B8%83%E5%BC%8F%E9%94%81/",
-        "kind": "post",
-        "date": "2025-04-27",
-        "timestamp": 1745712000.0
-      },
-      {
-        "text": "Kafka入门（五）Kafka_4.0零依赖Zookeeper：Docker一键部署+可视化管理+Python实战 本文将会介绍如何使用Docker来启动最新版Kafka和可视化工具kafka-ui，并使用Python连接Kafka进行基础操作。 2025-04-27 数据库 #Kafka #Docker",
-        "link": "https://percent4.github.io/Kafka%E5%85%A5%E9%97%A8%EF%BC%88%E4%BA%94%EF%BC%89Kafka-4-0%E9%9B%B6%E4%BE%9D%E8%B5%96Zookeeper%EF%BC%9ADocker%E4%B8%80%E9%94%AE%E9%83%A8%E7%BD%B2-%E5%8F%AF%E8%A7%86%E5%8C%96%E7%AE%A1%E7%90%86-Python%E5%AE%9E%E6%88%98/",
-        "kind": "post",
-        "date": "2025-04-27",
-        "timestamp": 1745712000.0
       }
     ]
   },
@@ -2820,34 +2827,6 @@
         "kind": "paper",
         "date": "2025-02",
         "timestamp": 1738368000.0
-      },
-      {
-        "text": "SWE-agent: Agent Computer Interfaces Enable Software Engineering Language Models · NeurIPS 2024",
-        "link": "https://arxiv.org/abs/2405.15793",
-        "kind": "paper",
-        "date": "2024-05-24",
-        "timestamp": 1716508800.0
-      },
-      {
-        "text": "SWE-bench: Can Language Models Resolve Real-World Github Issues? · ICLR 2024 Oral",
-        "link": "https://arxiv.org/abs/2310.06770",
-        "kind": "paper",
-        "date": "2024-01-16",
-        "timestamp": 1705363200.0
-      },
-      {
-        "text": "Tree of Thoughts: Deliberate Problem Solving with Large Language Models · NeurIPS 2023",
-        "link": "https://arxiv.org/abs/2305.10601",
-        "kind": "paper",
-        "date": "2023-05-17",
-        "timestamp": 1684281600.0
-      },
-      {
-        "text": "ReAct: Synergizing Reasoning and Acting in Language Models · ICLR 2023",
-        "link": "https://arxiv.org/abs/2210.03629",
-        "kind": "paper",
-        "date": "2022-10-06",
-        "timestamp": 1665014400.0
       }
     ]
   }
