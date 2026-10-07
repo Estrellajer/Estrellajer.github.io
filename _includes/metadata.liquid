@@ -27,7 +27,7 @@
     {% capture title %}{{ site.title }}{% endcapture %}
   {% endif %}
   {% if page.url == '/' or page.url == '/index.html' %}
-    {{ author_name }} (刘茂琦)
+    {{ title }}
   {% elsif page.url == '/blog/index.html' %}
     {{ page.title }} | {{ title }}
   {% elsif page.title != 'blank' and page.title != 'about' and page.url != '/' %}
@@ -37,7 +37,7 @@
       {{ page.title }} | {{ title }}
     {% endif %}
   {% else %}
-    {{ author_name }} (刘茂琦)
+    {{ title }}
   {% endif %}
 </title>
 <meta name="author" content="{{ author_name }}">
@@ -57,7 +57,7 @@
   <!-- OpenGraph -->
   <meta property="og:site_name" content="{{ title }}">
   <meta property="og:type" content="{% if is_blog_post %}article{% else %}website{% endif %}">
-  <meta property="og:title" content="{% if page.url == '/' or page.url == '/index.html' %}{{ author_name }} (刘茂琦){% elsif page.title %}{{ title }} | {{ page.title }}{% else %}{{ title }}{% endif %}">
+  <meta property="og:title" content="{% if page.url == '/' or page.url == '/index.html' %}{{ title }}{% elsif page.title %}{{ title }} | {{ page.title }}{% else %}{{ title }}{% endif %}">
   <meta property="og:url" content="{{ page.url | prepend: site.baseurl | prepend: site.url | remove_first: 'index.html' }}">
   <meta property="og:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
   {% if page.og_image or site.og_image %}

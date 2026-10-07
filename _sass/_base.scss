@@ -303,6 +303,7 @@ ul.task-list input[type="checkbox"] {
     align-items: center;
     gap: 0.85rem;
     min-width: 0;
+    flex-shrink: 0;
   }
 
   .navbar-brand {
@@ -839,12 +840,12 @@ footer.sticky-bottom {
       .publication-preview .preview {
         display: block;
         width: 100%;
-        aspect-ratio: 4 / 3;
-        object-fit: cover;
-        padding: 0;
+        aspect-ratio: 16 / 10;
+        object-fit: contain;
+        padding: 0.35rem;
         border: 0;
         border-radius: 0.75rem;
-        background: transparent;
+        background: var(--hl-surface-alt, #f8f9fa);
         box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
       }
 
