@@ -1,3 +1,9 @@
+RASteer: Retain-Aware Activation Steering for Concept Erasure in Diffusion Models
+Y Wu, H Lu, Y Wu, J Luo, X Zhu*, Y Liu
+arXiv preprint arXiv:2610.01969, 2026 2026
+Continual Concept Erasure in Diffusion Models by Suppressing Cross-Edit Interference
+Y Wu, H Lu, J Luo, W Cao, X Zhu*, Y Liu
+arXiv preprint arXiv:2610.01989, 2026 2026
 BiMoGen: Bidirectional Motion-Text Generation via Unified Masked Discrete Diffusion
 W Weng, Y Wu, X Tan, X Zhu, W Zhu, H Wang
 NeurIPS 2026, 2026 2026
@@ -52,9 +58,3 @@ ACM MM 2025, 2025 2025
 Enhancing Zero-Shot Vision Models by Label-Free Prompt Distribution Learning and Bias Correcting
 X Zhu, B Zhu, Y Tan, S Wang, Y Hao, H Zhang
 NeurIPS 2024 (Spotlight), 2024 2024
-Selective Vision-Language Subspace Projection for Few-shot CLIP
-X Zhu, B Zhu, Y Tan, S Wang, Y Hao, H Zhang
-ACM MM 24 Oral, 2024 2024
-Boosting Few-Shot Learning via Attentive Feature Regularization
-X Zhu, S Wang, J Lu, Y Hao, H Liu, X He
-AAAI 2024, 2024 2024

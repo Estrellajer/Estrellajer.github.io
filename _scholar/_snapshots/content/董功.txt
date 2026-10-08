@@ -1,4 +1,4 @@
-(Sep 2026) 2 papers are accepted to NeurIPS 2026: " MILES: Modular Instruction Memory with Learnable Selection for Self-Improving LLM Reasoning " (self-improving LLM with modular memory of re-usable sub-skills/instructions + learned reading); "Towards Identifiable Latent Additive Noise Models" (causal representation learning). Congratulations to Ruilin and Yuhang!
+(Sep 2026) 2 papers are accepted to NeurIPS 2026: " MILES: Modular Instruction Memory with Learnable Selection for Self-Improving LLM Reasoning " (self-improving LLM with modular memory of re-usable sub-skills/instructions + learned reading); " Towards Identifiable Latent Additive Noise Models " (causal representation learning). Congratulations to Ruilin and Yuhang!
 (Aug 2026) 2 papers are accepted to EMNLP 2026 Findings: " Take Only What You Need: Rank Minimization as an Implicit Forgetting Regularizer in Continual Learning "; " AnLR-LoRA: Adaptive Anisotropic Learning Rates for LoRA Fine-Tuning ". Congratulations to Haodong and Huiyi!
 (Aug 2026) I accepted to serve as an Area Chair for ICLR 2027.
 (July 2026) I accepted to serve as an Area Chair for AAAI 2027.
