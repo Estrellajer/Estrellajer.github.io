@@ -1,3 +1,5 @@
+2026.09: Several of our papers have been accepted by NeurIPS 2026.
+
 2026.07: Our paper on data augmentation has been accepted by TKDE 2026.
 
 2026.05: Several of our papers have been accepted by ICML 2026.
