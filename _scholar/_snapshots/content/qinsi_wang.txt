@@ -1,0 +1,125 @@
+Selected Publications
+Vision-Zero: Scalable VLM Self-Improvement via Strategic Gamified Self-Play
+Qinsi Wang , Bo Liu, Tianyi Zhou, Jing Shi, Yueqian Lin, Yiran Chen, Hai Helen Li, Kun Wan, Wentian Zhao
+ICLR 2026
+PDF
+Cite
+Code
+Angles Don't Lie: Unlocking Training-Efficient RL Through the Model's Own Signals
+Qinsi Wang , Jinghan Ke, Hancheng Ye, Yueqian Lin, Yuzhe Fu, Jianyi Zhang, Kurt Keutzer, Chenfeng Xu, Yiran Chen
+NeuIPS Spotlight 2025
+PDF
+Cite
+Code
+CoreMatching: A Co-adaptive Sparse Inference Framework with Token and Neuron Pruning for Comprehensive Acceleration of Vision-Language Models
+Qinsi Wang ,  Hancheng Ye, Ming-Yu Chung, Yudong Liu, Yueqian Lin, Martin Kuo, Mingyuan Ma, Jianyi Zhang, Yiran Chen
+ICML 2025
+PDF
+Cite
+Code
+Dobi-SVD: Differentiable SVD for LLM Compression and Some New Perspectives
+Qinsi Wang* , Jinghan Ke*, Masayoshi Tomizuka, Yiran Chen, Kurt Keutzer, Chenfeng Xu
+ICLR 2025
+PDF
+Page
+Code
+CoreInfer: Accelerating Large Language Model Inference with Semantics-Inspired Adaptive Sparse Activation
+Qinsi Wang , Saeed Vahidian, Hancheng Ye, Jianyang Gu, Jianyi Zhang, Yiran Chen
+ICML 2026
+PDF
+Demo
+Code
+MathNAS: If Blocks Have a Role in Mathematical  Architecture Design
+Qinsi Wang* , Jinghan Ke*, Zhi Liang, Sihai Zhang
+NeuIPS 2024
+PDF
+Poster
+Code
+DGL: Device Generic Latency model for Neural Architecture Search
+Qinsi Wang , Sihai Zhang
+IEEE Transactions on Mobile Computing, 2023
+PDF
+Code
+Cite
+Citation copied to clipboard!
+
+News
+[ May 2026 ] : I’ll be joining Meta Reality Labs in Burlingame as a summer research intern in 2026! Looking forward to meeting more outstanding people. 🎉😊✨
+[ Apr 2026 ] : CoreInfer and See is Solving have been accepted by ICML 2026 ! At the same time, I am honored to have been selected as a Gold Reviewer.
+[ JAN 2026 ] : Vision-Zero has been accepted by ICLR 2026 ! Code is released at project page .
+[ Apr 2025 ] : Angles Don't Lie has been accepted by NeurIPS 2025 (Spotlight) ! Code is released at project page .
+[ May 2025 ] : I’ll be joining Adobe in San Jose as a summer research intern in 2025! Always open to coffee chats ☕😊 — feel free to reach out!
+[ Apr 2025 ] : A little personal milestone :I’ve had first-author papers accepted at all three major AI conferences — ICML, ICLR, and NeurIPS! Cheers🎉!
+[ Apr 2025 ] : CoreMatching has been accepted by ICML 2025 . Code is released at project page .
+[ Feb 2025 ] : Dobi-SVD has been accepted by ICLR 2025 . Dobi-SVD is a novel LLM compression solution on low-cost computation devices! Visit the project page for more information.
+[ Oct 2024 ] : CoreInfer has been uploaded to arXiv. CoreInfer achieves a 10.33x speedup on an NVIDIA Titan XP without sacrificing performance! Visit the project page for more information.
+[ Mar 2024 ] : I am excited to announce that I will join the Department of Electrical and Computer Engineering at Duke University as a PhD student in Fall 2024! Looking forward to my PhD life!
+[ Sep 2023 ] : MathNAS has been accepted by NeurIPS 2023 . See project page for more information.
+[ Apr 2023 ] : DGL has been accepted by the IEEE Transaction on Mobile Computing (CCF A) . Visit the project code for more information.
+[ Jul 2022 ] : I received my B.S. from Huazhong University of Science and Technology (HUST) and received the title of Outstanding Graduate !
+[ Sep 2021 ] : I received the China National Scholarship (0.2%)! This is the highest award given by the Ministry of Education of China for undergraduates.
+
+Hobby
+I love photography and travel, here are some of my favorite photography works and wonderful life moments!
+
+News
+[ May 2026 ] : I’ll be joining Meta Reality Labs in Burlingame as a summer research intern in 2026! Looking forward to meeting more outstanding people. 🎉😊✨
+[ Apr 2026 ] : CoreInfer and See is Solving have been accepted by ICML 2026 ! At the same time, I am honored to have been selected as a Gold Reviewer.
+[ JAN 2026 ] : Vision-Zero has been accepted by ICLR 2026 ! Code is released at project page .
+[ Apr 2025 ] : Angles Don't Lie has been accepted by NeurIPS 2025 (Spotlight) ! Code is released at project page .
+[ May 2025 ] : I’ll be joining Adobe in San Jose as a summer research intern in 2025! Always open to coffee chats ☕😊 — feel free to reach out!
+[ Apr 2025 ] : A little personal milestone :I’ve had first-author papers accepted at all three major AI conferences — ICML, ICLR, and NeurIPS! Cheers🎉!
+[ Apr 2025 ] : CoreMatching has been accepted by ICML 2025 . Code is released at project page .
+[ Feb 2025 ] : Dobi-SVD has been accepted by ICLR 2025 . Dobi-SVD is a novel LLM compression solution on low-cost computation devices! Visit the project page for more information.
+[ Oct 2024 ] : CoreInfer has been uploaded to arXiv. CoreInfer achieves a 10.33x speedup on an NVIDIA Titan XP without sacrificing performance! Visit the project page for more information.
+[ Mar 2024 ] : I am excited to announce that I will join the Department of Electrical and Computer Engineering at Duke University as a PhD student in Fall 2024! Looking forward to my PhD life!
+[ Sep 2023 ] : MathNAS has been accepted by NeurIPS 2023 . See project page for more information.
+[ Apr 2023 ] : DGL has been accepted by the IEEE Transaction on Mobile Computing (CCF A) . Visit the project code for more information.
+[ Jul 2022 ] : I received my B.S. from Huazhong University of Science and Technology (HUST) and received the title of Outstanding Graduate !
+[ Sep 2021 ] : I received the China National Scholarship (0.2%)! This is the highest award given by the Ministry of Education of China for undergraduates.
+Selected Publications
+Vision-Zero: Scalable VLM Self-Improvement via Strategic Gamified Self-Play
+Qinsi Wang , Bo Liu, Tianyi Zhou, Jing Shi, Yueqian Lin, Yiran Chen, Hai Helen Li, Kun Wan, Wentian Zhao
+ICLR 2026
+PDF
+Cite
+Code
+Angles Don't Lie: Unlocking Training-Efficient RL Through the Model's Own Signals
+Qinsi Wang , Jinghan Ke, Hancheng Ye, Yueqian Lin, Yuzhe Fu, Jianyi Zhang, Kurt Keutzer, Chenfeng Xu, Yiran Chen
+NeuIPS Spotlight 2025
+PDF
+Cite
+Code
+CoreMatching: A Co-adaptive Sparse Inference Framework with Token and Neuron Pruning for Comprehensive Acceleration of Vision-Language Models
+Qinsi Wang ,  Hancheng Ye, Ming-Yu Chung, Yudong Liu, Yueqian Lin, Martin Kuo, Mingyuan Ma, Jianyi Zhang, Yiran Chen
+ICML 2025
+PDF
+Cite
+Code
+Dobi-SVD: Differentiable SVD for LLM Compression and Some New Perspectives
+Qinsi Wang* , Jinghan Ke*, Masayoshi Tomizuka, Yiran Chen, Kurt Keutzer, Chenfeng Xu
+ICLR 2025
+PDF
+Page
+Code
+CoreInfer: Accelerating Large Language Model Inference with Semantics-Inspired Adaptive Sparse Activation
+Qinsi Wang , Saeed Vahidian, Hancheng Ye, Jianyang Gu, Jianyi Zhang, Yiran Chen
+ICML 2026
+PDF
+Demo
+Code
+MathNAS: If Blocks Have a Role in Mathematical  Architecture Design
+Qinsi Wang* , Jinghan Ke*, Zhi Liang, Sihai Zhang
+NeuIPS 2024
+PDF
+Poster
+Code
+DGL: Device Generic Latency model for Neural Architecture Search
+Qinsi Wang , Sihai Zhang
+IEEE Transactions on Mobile Computing, 2023
+PDF
+Code
+Cite
+Citation copied to clipboard!
+Hobby
+I love photography and travel, here are some of my favorite photography works and wonderful life moments!

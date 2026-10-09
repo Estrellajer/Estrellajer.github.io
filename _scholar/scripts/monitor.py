@@ -580,6 +580,24 @@ def extract_content(html: str, selectors: list = None, remove_selectors: list = 
             if any(k in t for k in ("selected preprints", "curverl", "selectedpreprint", "publications")):
                 return get_clean_text_custom(sec)
 
+    if "yixuantt.github.io" in url or "yixuan" in name.lower() or "汤亦轩" in name:
+        try:
+            import json as _json
+            resp_p = fetch("https://yixuantt.github.io/publications.json", timeout=15)
+            pubs_raw = _json.loads(resp_p.text)
+            p_list = []
+            for p in pubs_raw:
+                p_list.append({
+                    'title': p.get('title', ''),
+                    'authors': ", ".join(p.get('authors', [])) if isinstance(p.get('authors'), list) else p.get('authors', ''),
+                    'publication': p.get('venue', ''),
+                    'year': str(p.get('year', '2026')),
+                    'link': p.get('url', '')
+                })
+            return _publications_to_text(p_list)
+        except Exception:
+            pass
+
     # Multi-element selector matching
     BROAD_FALLBACKS = {"article", "main", ".post", ".content", "#content", ".entry-content", ".page__content", "#main", "body"}
 
@@ -1080,6 +1098,113 @@ def check_zifeng_wang(scholar: dict, since: datetime | None) -> dict:
     return result
 
 
+def check_yixuan_tang(scholar: dict, since: datetime | None) -> dict:
+    result = _scholar_base_result(scholar)
+    base_url = scholar["url"]
+    pubs_url = urljoin(base_url, "publications.json")
+    news_url = urljoin(base_url, "news.json")
+    pubs_data = []
+    news_data = []
+    try:
+        resp = fetch(pubs_url, timeout=20)
+        pubs_data = json.loads(resp.text)
+    except Exception as e:
+        log(f"      ↳ Fetch Yixuan Tang publications.json failed: {e}")
+
+    try:
+        resp_news = fetch(news_url, timeout=20)
+        news_data = json.loads(resp_news.text)
+    except Exception as e:
+        log(f"      ↳ Fetch Yixuan Tang news.json failed: {e}")
+
+    prev = load_snapshot(scholar["name"])
+
+    pubs = []
+    for p in pubs_data:
+        title = _clean_paper_entry(p.get("title", ""))
+        authors = ", ".join(p.get("authors", [])) if isinstance(p.get("authors"), list) else p.get("authors", "")
+        venue_raw = p.get("venue", "")
+        year = str(p.get("year", "2026"))
+        link = p.get("url") or base_url
+        if title:
+            pubs.append({
+                "title": title,
+                "authors": authors,
+                "publication": venue_raw,
+                "year": year,
+                "link": link
+            })
+
+    if not pubs and prev:
+        pubs = _parse_publications_snapshot(prev)
+
+    if not pubs:
+        result["type"] = "error"
+        result["error"] = "Failed to parse publications for Yixuan Tang"
+        return result
+
+    content_lines = [_publications_to_text(pubs)]
+    if news_data:
+        news_text_lines = []
+        for n in news_data:
+            d = n.get("date", "")
+            c = _clean_paper_entry(_clean_html(n.get("content", "")))
+            if c:
+                news_text_lines.append(f"{d}: {c}")
+        if news_text_lines:
+            content_lines.append("News:\n" + "\n".join(news_text_lines))
+    content = "\n\n".join(content_lines)
+
+    entries = []
+    for p in pubs[:10]:
+        t = p.get("title", "")
+        v_raw = p.get("publication", "")
+        m_short = re.search(r'\(([^)]+)\)\s*(\d{4})', v_raw)
+        if m_short:
+            v_short = f"{m_short.group(1)} {m_short.group(2)}"
+        else:
+            m_v = re.search(r'\b(NeurIPS|ICML|ICLR|ACL|EMNLP|COLM|ICAIF)\b.*?(\d{4})', v_raw)
+            v_short = f"{m_v.group(1)} {m_v.group(2)}" if m_v else v_raw
+        full_title = f"{t} · {v_short}" if v_short else t
+        lk = p.get("link") or base_url
+        yr = str(p.get("year") or "2026")
+        m_ar = re.search(r'arxiv\.org/(?:abs|pdf)/(\d{2})(\d{2})\.', lk)
+        if m_ar:
+            pub_date = f"20{m_ar.group(1)}-{m_ar.group(2)}"
+            ts = datetime(int("20" + m_ar.group(1)), int(m_ar.group(2)), 1, tzinfo=timezone.utc).timestamp()
+        else:
+            pub_date = yr
+            ts = datetime(int(yr), 1, 1, tzinfo=timezone.utc).timestamp()
+        entries.append({
+            "title": full_title,
+            "link": lk,
+            "published": pub_date,
+            "timestamp": ts,
+        })
+    result["latest_entries"] = entries
+    result["preview"] = [e["title"] for e in entries[:3] if e.get("title")]
+
+    if prev is None:
+        save_snapshot(scholar["name"], content)
+        result["type"] = "first_check"
+        return result
+
+    prev_norm = _normalize_for_diff(prev)
+    content_norm = _normalize_for_diff(content)
+    if prev_norm == content_norm:
+        result["type"] = "unchanged"
+        return result
+
+    save_snapshot(scholar["name"], content)
+    result["type"] = "changed"
+    diff = list(unified_diff(
+        prev_norm.split("\n"), content_norm.split("\n"),
+        fromfile=f"{_safe_name(scholar['name'])} (previous)",
+        tofile=f"{_safe_name(scholar['name'])} (current)", lineterm=""))
+    result["diff"] = "\n".join(diff[:150])
+    return result
+
+
 def extract_entries_from_html(html: str, scholar: dict) -> list:
     name = scholar.get("name", "")
     base_url = scholar.get("url", "")
@@ -1359,6 +1484,9 @@ def check_scholar(scholar: dict, rss_cache: dict, rss_supplemental: dict, since:
 
     if site_type == "zifeng_wang" or "zifengwang.me" in url:
         return check_zifeng_wang(scholar, since)
+
+    if site_type == "yixuan_tang" or "yixuantt.github.io" in url:
+        return check_yixuan_tang(scholar, since)
 
     if site_type == "google_scholar" or "scholar.google.com/citations" in url:
         return check_google_scholar(scholar, since)
@@ -2977,10 +3105,14 @@ def main():
         log("Report-only mode: generating HTML from snapshots and history...")
         events = load_events_history()
         save_events_history(events)
+        scholar_event_map = {ev.get("scholar"): ev for ev in events if ev.get("scholar")}
         results = []
         for s in scholars:
             base_r = _scholar_base_result(s)
             base_r["type"] = "unchanged"
+            ev = scholar_event_map.get(s["name"])
+            if ev:
+                base_r["preview"] = [ev.get("text", "")]
             results.append(base_r)
         last_update_map = build_last_update_map(events)
         display_events = events[:EVENTS_DISPLAY_LIMIT]

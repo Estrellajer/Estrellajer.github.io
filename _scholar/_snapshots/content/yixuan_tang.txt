@@ -1,0 +1,58 @@
+Mind the Shift: Decoding Monetary Policy Stance from FOMC Statements with Large Language Models
+Yixuan Tang, Yi Yang
+International Conference on AI in Finance (ICAIF) 2026 2026
+Crowded in B-Space: Calibrating Shared Directions for LoRA Merging
+Yixuan Tang, Yi Yang
+Conference on Neural Information Processing Systems (NeurIPS) 2026 2026
+SR-GRPO: Stable Rank as an Intrinsic Geometric Reward for Large Language Model Alignment
+Yixuan Tang, Yi Yang
+Conference on Neural Information Processing Systems (NeurIPS) 2026 2026
+KV-Embedding: Training-free Text Embedding via Internal KV Re-routing in Decoder-only LLMs
+Yixuan Tang, Yi Yang
+Annual Meeting of the Association for Computational Linguistics (ACL) 2026 2026
+FLARE: Task-Agnostic Embedding Model Evaluation via Normalizing Flows
+Jingzhou Jiang, Yixuan Tang, Yi Yang, Kar Yan Tam
+Annual Meeting of the Association for Computational Linguistics (ACL) 2026 Findings 2026
+GAPrune: Gradient-Alignment Pruning for Domain-Aware Embeddings
+Yixuan Tang, Yi Yang
+International Conference on Learning Representations (ICLR) 2026 2026
+Revealing the Numeracy Gap: An Empirical Investigation of Text Embedding Models
+Ningyuan Deng, Hanyu Duan, Yixuan Tang, Yi Yang
+European Chapter of the Association for Computational Linguistics (EACL) 2026 Findings 2026
+Learning from Earnings Calls: Graph-Based Conversational Modeling for Financial Prediction
+Yi Yang, Yixuan Tang, Yangyang Fan, Kunpeng Zhang
+Information Systems Research 2026
+Evaluating and Aligning Human Economic Risk Preferences in LLMs
+Jiaxin Liu, Yixuan Tang, Yi Yang, Kar Yan Tam
+Empirical Methods in Natural Language Processing (EMNLP) 2025 2025
+FinMTEB: Finance Massive Text Embedding Benchmark
+Yixuan Tang, Yi Yang
+Empirical Methods in Natural Language Processing (EMNLP) 2025 2025
+MultiHop-RAG: Benchmarking Retrieval-Augmented Generation for Multi-Hop Queries
+Yixuan Tang, Yi Yang
+Conference on Language Modeling (COLM) 2024 2024
+InvestLM: A Large Language Model for Investment
+Yi Yang, Yixuan Tang, Kar Yan Tam
+Preprint 2023
+Know the Unknown: An Uncertainty-Sensitive Method for LLM Instruction Tuning
+Jiaqi Li, Yixuan Tang, Yi Yang
+Annual Meeting of the Association for Computational Linguistics (ACL) 2025 Findings 2025
+Adversarial Mixup Unlearning
+Zhuoyi PENG, Yixuan Tang, Yi Yang
+International Conference on Learning Representations (ICLR) 2025 2025
+Exploring the Relationship between In-Context Learning and Instruction Tuning
+Hanyu Duan, Yixuan Tang, Yi Yang, Ahmed Abbasi, Kar Yan Tam
+Empirical Methods in Natural Language Processing (EMNLP) 2024 Findings 2024
+FinEntity: Entity-level Sentiment Classification for Financial Texts
+Yixuan Tang, Yi Yang
+Empirical Methods in Natural Language Processing (EMNLP) 2023 2023
+
+News:
+Oct 2026: One paper accepted to ICAIF 2026: 'Mind the Shift'
+Sep 2026: Two papers accepted to NeurIPS 2026: 'Crowded in B-Space' and 'SR-GRPO'
+Jan 2026: Two papers accepted to ACL 2026: 'KV-Embedding' and 'FLARE'
+Jan 2026: One paper accepted to ICLR 2026: 'GAPrune'
+Nov 2025: Two papers accepted to EMNLP 2025: 'Evaluating and Aligning Human Economic Risk Preferences in LLMs' and 'FinMTEB'
+Oct 2025: One paper accepted to ACL 2025 Findings
+Sep 2025: One paper accepted to ICLR 2025
+May 2024: Presented 'MultiHop-RAG' at COLM 2024

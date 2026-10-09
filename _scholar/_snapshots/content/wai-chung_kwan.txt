@@ -1,0 +1,37 @@
+(* indicates equal contribution)
+
+SCOPE: Self-Play via Co-Evolving Policies for Open-Ended Tasks
+Wai-Chung Kwan , Aryo Pradipta Gema, Joshua Ong Jun Leang, and Pasquale Minervini.
+NeurIPS 2026. [ code ] [ project page ] [ models ] [ W&B logs ]
+
+OpenSIR: Open-Ended Self-Improving Reasoner
+Wai-Chung Kwan , Joshua Ong Jun Leang, Pavlos Vougiouklis, Jeff Z. Pan, Marco Valentino, and Pasquale Minervini.
+Preprint (2025). [ code ] [ project page ]
+
+MT-Eval: A Multi-Turn Capabilities Evaluation Benchmark for Large Language Models
+Wai-Chung Kwan , Xingshan Zeng, Yuxin Jiang, Yufei Wang, Liangyou Li, Lifeng Shang, Xin Jiang, Qun Liu, and Kam-Fai Wong
+EMNLP 2024 (long papers). [ code ]
+
+M4LE: A Multi-Ability Multi-Range Multi-Task Multi-Domain Long-Context Evaluation Benchmark for Large Language Models
+Wai-Chung Kwan , Xingshan Zeng, Yufei Wang, Yusen Sun, Liangyou Li, Lifeng Shang, Qun Liu, and Kam-Fai Wong
+ACL 2024 (long papers). [ code ] ( Outstanding Paper Award )
+
+JoTR: A Joint Transformer and Reinforcement Learning Framework for Dialog Policy Learning
+Wai-Chung Kwan *, Huimin Wang*, Hongru Wang, Zezhong Wang, Xian Wu, Yefeng Zheng, and Kam-Fai Wong.
+COLING 2024 (long papers). [ code ] [ poster ]
+
+Dialog Action-Aware Transformer for Dialog Policy Learning
+Huimin Wang*, Wai-Chung Kwan *, and Kam-Fai Wong.
+SIGDIAL 2023 (short papers). [ poster ]
+
+CoAD: Automatic Diagnosis through Symptom and Disease Collaborative Generation
+Huimin Wang*, Wai-Chung Kwan *, and Kam-Fai Wong.
+ACL 2023 (long papers). [ code ]
+
+A Survey on Recent Advances and Challenges in Reinforcement Learning Methods for Task-Oriented Dialogue Policy Learning
+Wai-Chung Kwan *, Hongru Wang*, Huimin Wang, and Kam-Fai Wong.
+Machine Intelligence Research (2023).
+
+In my free time, I enjoy reading books related to science, especially neuroscience. I also like watching movies and visiting art galleries. I used to play badminton and drums regularly before my PhD journey. Hopefully, I can pick them up again shortly.
+
+Selected Publications

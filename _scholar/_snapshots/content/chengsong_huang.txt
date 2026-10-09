@@ -1,0 +1,507 @@
+NEW · PREPRINT 2026 · arXiv 2610.04299
+Questioning the Questions: Sustaining Self-Evolution in Reasoning Models
+Jinyuan Li, Chengsong Huang , Langlin Huang, Donghong Cai, Shiping Gao, Yuyi Yang, Jiaxin Huang
+paper
+
+NEW · PREPRINT 2026 · arXiv 2610.02826
+Scaling Trajectories for Complex Tasks through Recursive Self-Rewrite
+Zongxia Li, Yucheng Shi, Zhongzhi Li, Junyao Yang, Ruhan Wang, Chengsong Huang , Fuxiao Liu, Haitao Mi, Jordan Boyd-Graber, LeoweiLiang
+paper model
+
+NEW · PREPRINT 2026 · arXiv 2609.24972
+RRSI: Regularized Recursive Self-Improvement of Agent Harnesses
+Peng Xia, Rujun Han, Zifeng Wang, Yanfei Chen, Yufan Zhuang, Yoonho Lee, Chengsong Huang , Han Yu, Zhongying CuiZhu, Yifei Ming, Huaxiu Yao, Burak Gokturk, Tomas Pfister, Chen-Yu Lee
+paper
+
+NEW · PREPRINT 2026 · arXiv 2608.19880
+EnvHarness: Awakening Static Worlds for Agent Learning
+Chengsong Huang , Zifeng Wang, Rujun Han, Jun Yan, Yanfei Chen, Zoey CuiZhu, Ke Jiang, Peng Xia, Han Yu, Yufan Zhuang, Yifei Ming, Jiaqi Pan, Bhavana Dalvi Mishra, Jiaxin Huang, Burak Gokturk, Tomas Pfister, Chen-Yu Lee
+paper code
+
+NeurIPS · Spotlight 2026
+G-Zero: Self-Play for Open-Ended Generation from Zero Data
+Chengsong Huang , Haolin Liu, Tong Zheng, Runpeng Dai, Langlin Huang, Jinyuan Li, Zongxia Li, Zhepei Wei, Yu Meng, Jiaxin Huang
+paper code
+
+NeurIPS 2026
+LLMs Improving LLMs: Agentic Discovery for Test-Time Scaling
+Tong Zheng, Haolin Liu, Chengsong Huang , Huiwen Bao, Sheng Zhang, Rui Liu, Runpeng Dai, Ruibo Chen, Chenxi Liu, Tianyi Xiong, Xidong Wu, Hongming Zhang, Heng Huang
+paper code
+
+NeurIPS 2026
+You Only Need Minimal RLVR Training: Extrapolating LLMs via Rank-1 Trajectories
+Zhepei Wei, Xinyu Zhu, Wei-Lin Chen, Chengsong Huang , Jiaxin Huang, Yu Meng
+paper code
+
+NeurIPS 2026
+TTCS: Test-Time Curriculum Synthesis for Self-Evolving
+Chengyi Yang, Zhishang Xiang, Yunbo Tang, Zongpei Teng, Chengsong Huang , Fei Long, Yuhan Liu, Jinsong Su
+paper code
+
+ICML 2026
+Parallel-Probe: Towards Efficient Parallel Thinking via 2D Probing
+Tong Zheng*, Chengsong Huang* , Runpeng Dai*, Yun He, Rui Liu, Xin Ni, Huiwen Bao, Kaishen Wang, Hongtu Zhu, Jiaxin Huang, Furong Huang, Heng Huang
+paper code
+
+ICML 2026
+Training Data Efficiency in Multimodal Process Reward Models
+Jinyuan Li, Chengsong Huang , Langlin Huang, Shaoyang Xu, Haolin Liu, Wenxuan Zhang, Jiaxin Huang
+paper code
+
+ICLR 2026
+R-Zero: Self-Evolving Reasoning LLM from Zero Data
+Chengsong Huang , Wenhao Yu, Xiaoyang Wang, Hongming Zhang, Zongxia Li, Ruosen Li, Jiaxin Huang, Haitao Mi, Dong Yu
+paper code
+
+ICLR 2026
+Efficient Test-Time Scaling via Self-Calibration
+Chengsong Huang , Langlin Huang, Jixuan Leng, Jiacheng Liu, Jiaxin Huang
+paper code
+
+ICLR 2026
+Parallel-R1: Towards Parallel Thinking via Reinforcement Learning
+Tong Zheng, Hongming Zhang, Wenhao Yu, Xiaoyang Wang, Runpeng Dai, Rui Liu, Huiwen Bao, Chengsong Huang , Heng Huang, Dong Yu
+paper code
+
+ICLR 2026
+Self-Rewarding Vision-Language Model via Reasoning Decomposition
+Zongxia Li, Wenhao Yu, Chengsong Huang , Zhenwen Liang, Rui Liu, Fuxiao Liu, Jingxi Che, Dian Yu, Jordan Boyd-Graber, Haitao Mi, Dong Yu
+paper code
+
+CVPR 2026
+VisPlay: Self-Evolving Vision-Language Models from Images
+Yicheng He*, Chengsong Huang* , Zongxia Li*, Jiaxin Huang, Yonghui Yang
+paper code
+
+WORKSHOP 2026 · Joint Audio-Video Gen.
+Multimodal Video Generation Models with Audio: Present and Future
+Zongxia Li, Hongyang Du, Dawei Liu, Xiyang Wu, Lantao Yu, Jingxi Chen, Fuxiao Liu, Xiaomin Wu, Jing Xie, Chengsong Huang , Yicheng He, Guangyao Shi
+paper
+
+EMNLP 2026
+Self-Evolving Vision Language Models for Structured Visual Understanding
+Zongxia Li, Hongyang Du, Chengsong Huang , Lantao Yu, Zhichao Liu, Xiyang Wu, Yicheng He, Jing Xie, Xiaomin Wu, Jiarui Zhang, Fuxiao Liu
+paper code
+
+EMNLP 2026
+Small RL Controller, Large Language Model: RL-Guided Adaptive Sampling for Test-Time Scaling
+Runpeng Dai, Tong Zheng, Rui Liu, Chengsong Huang , Hongtu Zhu
+paper code
+
+EMNLP-F 2026
+RelayLLM: Efficient Reasoning via Collaborative Decoding
+Chengsong Huang , Tong Zheng, Langlin Huang, Jinyuan Li, Haolin Liu, Jiaxin Huang
+paper code
+
+EMNLP-F 2026
+Nonsense Helps: Prompt Space Perturbation Broadens Reasoning Exploration
+Langlin Huang, Chengsong Huang , Jinyuan Li, Donghong Cai, Yuyi Yang, Jiaxin Huang
+paper code
+
+EACL 2026
+Divide, Reweight, and Conquer: A Logit Arithmetic Approach for In-Context Learning
+Chengsong Huang , Langlin Huang, Jiaxin Huang
+paper code
+
+COLM 2026
+POSS: Position Specialist Generates Better Draft for Speculative Decoding
+Langlin Huang, Chengsong Huang , Jixuan Leng, Di Huang, Jiaxin Huang
+paper code
+
+COLM 2025
+CrossWordBench: Evaluating the Reasoning Capabilities of LLMs and LVLMs with Controllable Puzzle Generation
+Jixuan Leng, Chengsong Huang , Langlin Huang, Bill Yuchen Lin, William W. Cohen, Haohan Wang, Jiaxin Huang
+paper code
+
+ICLR 2025
+GOFA: A Generative One-For-All Model for Joint Graph Language Modeling
+Lecheng Kong, Jiarui Feng, Hao Liu, Chengsong Huang , Jiaxin Huang, Yixin Chen, Muhan Zhang
+paper code
+
+ICLR 2025
+Taming Overconfidence in LLMs: Reward Calibration in RLHF
+Jixuan Leng, Chengsong Huang , Banghua Zhu, Jiaxin Huang
+paper code
+
+COLM 2024
+LoraHub: Efficient Cross-Task Generalization via Dynamic LoRA Composition
+Chengsong Huang* , Qian Liu*, Bill Yuchen Lin*, Tianyu Pang, Chao Du, Min Lin
+paper code
+
+EMNLP-F 2023
+Watermarking PLMs on Classification Tasks by Combining Contrastive Learning with Weight Perturbation
+Chenxi Gu, Xiaoqing Zheng, Jianhan Xu, Muling Wu, Cenyuan Zhang, Chengsong Huang , Hua Cai, Xuanjing Huang
+paper
+
+ACL 2023
+TableVLM: Multi-modal Pre-training for Table Structure Recognition
+LeiYuan Chen, Chengsong Huang , Xiaoqing Zheng, Jinshu Lin, Xuanjing Huang
+paper
+
+AAAI 2023
+On Grounded Planning for Embodied Tasks with Language Models
+Bill Yuchen Lin*, Chengsong Huang* , Qian Liu, Wenda Gu, Sam Sommerer, Xiang Ren
+paper
+
+CIKM 2021
+WebKE: Knowledge Extraction from Semi-structured Web with Pre-trained Markup Language Model
+Chenhao Xie, Wenhao Huang, Jiaqing Liang, Chengsong Huang , Yanghua Xiao
+paper code
+
+ACL 2021
+Revisiting the Negative Data of Distantly Supervised Relation Extraction
+Chenhao Xie, Jiaqing Liang, Jingping Liu, Chengsong Huang , Wenhao Huang, Yanghua Xiao
+paper code
+
+PREPRINT 2026 · arXiv 2606.31651
+FARS: A Fully Automated Research System Deployed at Scale
+Qiong Tang, Tianxiang Sun, Xiangkun Hu, Xiangyang Liu, Yiran Chen, Yunfan Shao, Bobo Li, Changze Lv, Cheng Xu, Chengsong Huang , Chunyang Li, Dizhan Xue, Hao Bai, Haodong Duan, Hengquan Guo, Hongyang He, Hongyi Chen, Hui Shen, Jiahao Yuan, Jiankai Sun, Jikang Cheng, Jinfeng Xu, Jingqi Tong, Jingye Chen, Jinxiu Liu, Jixuan Leng, Junchi Yu, Kaixun Jiang, Kun Xiang, Kunpeng Yao, Lang Feng, Liangqi Yuan, Longsen Gao, Meng Li, Qi Jia, Qiushi Sun, Shengyuan Ding, Shizhan Gong, Siru Zhong, Terry Jingchen Zhang, Tianle Gu, Tianyi Liang, Weijie Liu, Weikai Yang, Weizhi Fei, Xin Wang, Xinpeng Liu, Xuanwen Ding, Yihong Tang, Yuanli Wang, Yukun Jiang, Yuming Yang, Zhengbao He, Zhikai Chen, Zhikun Xu, Zhuang Li, Zihao Huang
+paper
+
+PREPRINT 2026 · arXiv 2605.15529
+Process Rewards with Learned Reliability
+Jinyuan Li, Langlin Huang, Chengsong Huang , Sheng Xu, Donghong Cai, Yuyi Yang, Wenliang Zhang, Jiaxin Huang
+paper code
+
+PREPRINT 2026 · TechRxiv
+A Systematic Survey of Self-Evolving Agents: From Model-Centric to Environment-Driven Co-Evolution
+Zhishang Xiang, Chengyi Yang, Zerui Chen, Zhimin Wei, Yunbo Tang, Zongpei Teng, Zexi Peng, Zongxia Li, Chengsong Huang , Yicheng He, Chang Yang, Xinrun Wang, Xiao Huang, Qinggang Zhang, Jinsong Su
+paper code
+
+PREPRINT 2026 · arXiv 2602.03689
+Rethinking the Reranker: Boundary-Aware Evidence Selection for Robust Retrieval-Augmented Generation
+Jiashuo Sun, Pengcheng Jiang, Saizhuo Wang, Jiajun Fan, Heng Wang, Siru Ouyang, Ming Zhong, Yizhu Jiao, Chengsong Huang , Xueqiang Xu, Pengrui Han, Peiran Li, Jiaxin Huang, Ge Liu, Heng Ji, Jiawei Han
+paper code
+
+PREPRINT 2026 · arXiv 2601.03986
+Benchmark²: Systematic Evaluation of LLM Benchmarks
+Qi Qian*, Chengsong Huang* , Jingwen Xu, Changze Lv, Muling Wu, Wenhao Liu, Xiaohua Wang, Zhenghua Wang, Zisu Huang, Muzhao Tian, Jianhan Xu, Kun Hu, He-Da Wang, Yao Hu, Xuanjing Huang, Xiaoqing Zheng
+paper
+
+PREPRINT 2026 · arXiv 2601.21257
+MoCo: A One-Stop Shop for Model Collaboration Research
+Shangbin Feng, Yuyang Bai, Ziyuan Yang, Yike Wang, Zhaoxuan Tan, Jiajie Yan, Zhenyu Lei, Wenxuan Ding, Weijia Shi, Haojin Wang, Zhenting Qi, Yuru Jiang, Heng Wang, Chengsong Huang , Yu Fei, Jihan Yao, Yilun Du, Luke Zettlemoyer, Yejin Choi, Yulia Tsvetkov
+paper code
+
+PREPRINT 2025 · arXiv 2512.17043
+UniRel-R1: RL-tuned LLM Reasoning for Knowledge Graph Relational Question Answering
+Yinxu Tang, Chengsong Huang , Jiaxin Huang, William Yeoh
+paper
+
+PREPRINT 2025 · arXiv 2512.02472
+Guided Self-Evolving LLMs with Minimal Human Supervision
+Wenhao Yu, Zhenwen Liang, Chengsong Huang , Kishan Panaganti, Tianqing Fang, Haitao Mi, Dong Yu
+paper
+
+PREPRINT 2024 · arXiv 2405.04086
+Optimizing Language Model's Reasoning Abilities with Weak Supervision
+Yongqi Tong, Sizhe Wang, Dawei Li, Yifan Wang, Simeng Han, Zi Lin, Chengsong Huang , Jiaxin Huang, Jingbo Shang
+paper
+
+PREPRINT 2022 · arXiv 2210.07543
+Watermarking Pre-trained Language Models with Backdooring
+Chenxi Gu*, Chengsong Huang* , Xiaoqing Zheng, Kai-Wei Chang, Cho-Jui Hsieh
+paper
+
+Oct 2026
+New preprints released: R-Quest (sustaining self-evolution in reasoning models, a follow-up to R-Zero), RRSI (regularized recursive self-improvement of agent harnesses), and Recursive Self-Rewrite (scaling trajectories for complex tasks).
+
+Sep 2026
+G-Zero accepted to NeurIPS 2026 as a Spotlight ; LLMs Improving LLMs , RELEX , and TTCS also accepted to NeurIPS 2026.
+
+Aug 2026
+New preprint EnvHarness released — first project from my Google Cloud AI internship.
+
+Aug 2026
+Self-Evolving VLM for Structured Visual Understanding and Small RL Controller accepted to EMNLP 2026 Main; RelayLLM and Nonsense Helps accepted to EMNLP 2026 Findings.
+
+Jul 2026
+POSS accepted to COLM 2026.
+
+Jun 2026
+New preprint Small RL Controller, Large Language Model is released.
+
+May 2026
+New preprints released: G-Zero , RELEX , Process Rewards , and Nonsense Helps .
+
+May 2026
+Parallel-Probe and Training Data Efficiency in Multimodal PRM accepted to ICML 2026.
+
+Apr 2026
+Passed my Ph.D. proposal. 🎉
+
+Feb 2026
+VisPlay accepted to CVPR 2026.
+
+Jan 2026
+R-Zero , Vision-SR1 , Parallel-R1 , and Self-Calibration accepted to ICLR 2026.
+
+Questioning the Questions: Sustaining Self-Evolution in Reasoning Models
+
+Scaling Trajectories for Complex Tasks through Recursive Self-Rewrite
+
+RRSI: Regularized Recursive Self-Improvement of Agent Harnesses
+
+EnvHarness: Awakening Static Worlds for Agent Learning
+
+G-Zero: Self-Play for Open-Ended Generation from Zero Data
+
+LLMs Improving LLMs: Agentic Discovery for Test-Time Scaling
+
+You Only Need Minimal RLVR Training: Extrapolating LLMs via Rank-1 Trajectories
+
+TTCS: Test-Time Curriculum Synthesis for Self-Evolving
+
+Parallel-Probe: Towards Efficient Parallel Thinking via 2D Probing
+
+Training Data Efficiency in Multimodal Process Reward Models
+
+R-Zero: Self-Evolving Reasoning LLM from Zero Data
+
+Efficient Test-Time Scaling via Self-Calibration
+
+Parallel-R1: Towards Parallel Thinking via Reinforcement Learning
+
+Self-Rewarding Vision-Language Model via Reasoning Decomposition
+
+VisPlay: Self-Evolving Vision-Language Models from Images
+
+Multimodal Video Generation Models with Audio: Present and Future
+
+Self-Evolving Vision Language Models for Structured Visual Understanding
+
+Small RL Controller, Large Language Model: RL-Guided Adaptive Sampling for Test-Time Scaling
+
+RelayLLM: Efficient Reasoning via Collaborative Decoding
+
+Nonsense Helps: Prompt Space Perturbation Broadens Reasoning Exploration
+
+Divide, Reweight, and Conquer: A Logit Arithmetic Approach for In-Context Learning
+
+POSS: Position Specialist Generates Better Draft for Speculative Decoding
+
+CrossWordBench: Evaluating the Reasoning Capabilities of LLMs and LVLMs with Controllable Puzzle Generation
+
+GOFA: A Generative One-For-All Model for Joint Graph Language Modeling
+
+Taming Overconfidence in LLMs: Reward Calibration in RLHF
+
+LoraHub: Efficient Cross-Task Generalization via Dynamic LoRA Composition
+
+Watermarking PLMs on Classification Tasks by Combining Contrastive Learning with Weight Perturbation
+
+TableVLM: Multi-modal Pre-training for Table Structure Recognition
+
+On Grounded Planning for Embodied Tasks with Language Models
+
+WebKE: Knowledge Extraction from Semi-structured Web with Pre-trained Markup Language Model
+
+Revisiting the Negative Data of Distantly Supervised Relation Extraction
+
+FARS: A Fully Automated Research System Deployed at Scale
+
+Process Rewards with Learned Reliability
+
+A Systematic Survey of Self-Evolving Agents: From Model-Centric to Environment-Driven Co-Evolution
+
+Rethinking the Reranker: Boundary-Aware Evidence Selection for Robust Retrieval-Augmented Generation
+
+Benchmark²: Systematic Evaluation of LLM Benchmarks
+
+MoCo: A One-Stop Shop for Model Collaboration Research
+
+UniRel-R1: RL-tuned LLM Reasoning for Knowledge Graph Relational Question Answering
+
+Guided Self-Evolving LLMs with Minimal Human Supervision
+
+Optimizing Language Model's Reasoning Abilities with Weak Supervision
+
+Watermarking Pre-trained Language Models with Backdooring
+
+NEW · PREPRINT 2026 · arXiv 2610.04299
+Questioning the Questions: Sustaining Self-Evolution in Reasoning Models
+Jinyuan Li, Chengsong Huang , Langlin Huang, Donghong Cai, Shiping Gao, Yuyi Yang, Jiaxin Huang
+paper
+NEW · PREPRINT 2026 · arXiv 2610.02826
+Scaling Trajectories for Complex Tasks through Recursive Self-Rewrite
+Zongxia Li, Yucheng Shi, Zhongzhi Li, Junyao Yang, Ruhan Wang, Chengsong Huang , Fuxiao Liu, Haitao Mi, Jordan Boyd-Graber, LeoweiLiang
+paper model
+NEW · PREPRINT 2026 · arXiv 2609.24972
+RRSI: Regularized Recursive Self-Improvement of Agent Harnesses
+Peng Xia, Rujun Han, Zifeng Wang, Yanfei Chen, Yufan Zhuang, Yoonho Lee, Chengsong Huang , Han Yu, Zhongying CuiZhu, Yifei Ming, Huaxiu Yao, Burak Gokturk, Tomas Pfister, Chen-Yu Lee
+paper
+NEW · PREPRINT 2026 · arXiv 2608.19880
+EnvHarness: Awakening Static Worlds for Agent Learning
+Chengsong Huang , Zifeng Wang, Rujun Han, Jun Yan, Yanfei Chen, Zoey CuiZhu, Ke Jiang, Peng Xia, Han Yu, Yufan Zhuang, Yifei Ming, Jiaqi Pan, Bhavana Dalvi Mishra, Jiaxin Huang, Burak Gokturk, Tomas Pfister, Chen-Yu Lee
+paper code
+NeurIPS · Spotlight 2026
+G-Zero: Self-Play for Open-Ended Generation from Zero Data
+Chengsong Huang , Haolin Liu, Tong Zheng, Runpeng Dai, Langlin Huang, Jinyuan Li, Zongxia Li, Zhepei Wei, Yu Meng, Jiaxin Huang
+paper code
+NeurIPS 2026
+LLMs Improving LLMs: Agentic Discovery for Test-Time Scaling
+Tong Zheng, Haolin Liu, Chengsong Huang , Huiwen Bao, Sheng Zhang, Rui Liu, Runpeng Dai, Ruibo Chen, Chenxi Liu, Tianyi Xiong, Xidong Wu, Hongming Zhang, Heng Huang
+paper code
+NeurIPS 2026
+You Only Need Minimal RLVR Training: Extrapolating LLMs via Rank-1 Trajectories
+Zhepei Wei, Xinyu Zhu, Wei-Lin Chen, Chengsong Huang , Jiaxin Huang, Yu Meng
+paper code
+NeurIPS 2026
+TTCS: Test-Time Curriculum Synthesis for Self-Evolving
+Chengyi Yang, Zhishang Xiang, Yunbo Tang, Zongpei Teng, Chengsong Huang , Fei Long, Yuhan Liu, Jinsong Su
+paper code
+ICML 2026
+Parallel-Probe: Towards Efficient Parallel Thinking via 2D Probing
+Tong Zheng*, Chengsong Huang* , Runpeng Dai*, Yun He, Rui Liu, Xin Ni, Huiwen Bao, Kaishen Wang, Hongtu Zhu, Jiaxin Huang, Furong Huang, Heng Huang
+paper code
+ICML 2026
+Training Data Efficiency in Multimodal Process Reward Models
+Jinyuan Li, Chengsong Huang , Langlin Huang, Shaoyang Xu, Haolin Liu, Wenxuan Zhang, Jiaxin Huang
+paper code
+ICLR 2026
+R-Zero: Self-Evolving Reasoning LLM from Zero Data
+Chengsong Huang , Wenhao Yu, Xiaoyang Wang, Hongming Zhang, Zongxia Li, Ruosen Li, Jiaxin Huang, Haitao Mi, Dong Yu
+paper code
+ICLR 2026
+Efficient Test-Time Scaling via Self-Calibration
+Chengsong Huang , Langlin Huang, Jixuan Leng, Jiacheng Liu, Jiaxin Huang
+paper code
+ICLR 2026
+Parallel-R1: Towards Parallel Thinking via Reinforcement Learning
+Tong Zheng, Hongming Zhang, Wenhao Yu, Xiaoyang Wang, Runpeng Dai, Rui Liu, Huiwen Bao, Chengsong Huang , Heng Huang, Dong Yu
+paper code
+ICLR 2026
+Self-Rewarding Vision-Language Model via Reasoning Decomposition
+Zongxia Li, Wenhao Yu, Chengsong Huang , Zhenwen Liang, Rui Liu, Fuxiao Liu, Jingxi Che, Dian Yu, Jordan Boyd-Graber, Haitao Mi, Dong Yu
+paper code
+CVPR 2026
+VisPlay: Self-Evolving Vision-Language Models from Images
+Yicheng He*, Chengsong Huang* , Zongxia Li*, Jiaxin Huang, Yonghui Yang
+paper code
+WORKSHOP 2026 · Joint Audio-Video Gen.
+Multimodal Video Generation Models with Audio: Present and Future
+Zongxia Li, Hongyang Du, Dawei Liu, Xiyang Wu, Lantao Yu, Jingxi Chen, Fuxiao Liu, Xiaomin Wu, Jing Xie, Chengsong Huang , Yicheng He, Guangyao Shi
+paper
+EMNLP 2026
+Self-Evolving Vision Language Models for Structured Visual Understanding
+Zongxia Li, Hongyang Du, Chengsong Huang , Lantao Yu, Zhichao Liu, Xiyang Wu, Yicheng He, Jing Xie, Xiaomin Wu, Jiarui Zhang, Fuxiao Liu
+paper code
+EMNLP 2026
+Small RL Controller, Large Language Model: RL-Guided Adaptive Sampling for Test-Time Scaling
+Runpeng Dai, Tong Zheng, Rui Liu, Chengsong Huang , Hongtu Zhu
+paper code
+EMNLP-F 2026
+RelayLLM: Efficient Reasoning via Collaborative Decoding
+Chengsong Huang , Tong Zheng, Langlin Huang, Jinyuan Li, Haolin Liu, Jiaxin Huang
+paper code
+EMNLP-F 2026
+Nonsense Helps: Prompt Space Perturbation Broadens Reasoning Exploration
+Langlin Huang, Chengsong Huang , Jinyuan Li, Donghong Cai, Yuyi Yang, Jiaxin Huang
+paper code
+EACL 2026
+Divide, Reweight, and Conquer: A Logit Arithmetic Approach for In-Context Learning
+Chengsong Huang , Langlin Huang, Jiaxin Huang
+paper code
+COLM 2026
+POSS: Position Specialist Generates Better Draft for Speculative Decoding
+Langlin Huang, Chengsong Huang , Jixuan Leng, Di Huang, Jiaxin Huang
+paper code
+COLM 2025
+CrossWordBench: Evaluating the Reasoning Capabilities of LLMs and LVLMs with Controllable Puzzle Generation
+Jixuan Leng, Chengsong Huang , Langlin Huang, Bill Yuchen Lin, William W. Cohen, Haohan Wang, Jiaxin Huang
+paper code
+ICLR 2025
+GOFA: A Generative One-For-All Model for Joint Graph Language Modeling
+Lecheng Kong, Jiarui Feng, Hao Liu, Chengsong Huang , Jiaxin Huang, Yixin Chen, Muhan Zhang
+paper code
+ICLR 2025
+Taming Overconfidence in LLMs: Reward Calibration in RLHF
+Jixuan Leng, Chengsong Huang , Banghua Zhu, Jiaxin Huang
+paper code
+COLM 2024
+LoraHub: Efficient Cross-Task Generalization via Dynamic LoRA Composition
+Chengsong Huang* , Qian Liu*, Bill Yuchen Lin*, Tianyu Pang, Chao Du, Min Lin
+paper code
+EMNLP-F 2023
+Watermarking PLMs on Classification Tasks by Combining Contrastive Learning with Weight Perturbation
+Chenxi Gu, Xiaoqing Zheng, Jianhan Xu, Muling Wu, Cenyuan Zhang, Chengsong Huang , Hua Cai, Xuanjing Huang
+paper
+ACL 2023
+TableVLM: Multi-modal Pre-training for Table Structure Recognition
+LeiYuan Chen, Chengsong Huang , Xiaoqing Zheng, Jinshu Lin, Xuanjing Huang
+paper
+AAAI 2023
+On Grounded Planning for Embodied Tasks with Language Models
+Bill Yuchen Lin*, Chengsong Huang* , Qian Liu, Wenda Gu, Sam Sommerer, Xiang Ren
+paper
+CIKM 2021
+WebKE: Knowledge Extraction from Semi-structured Web with Pre-trained Markup Language Model
+Chenhao Xie, Wenhao Huang, Jiaqing Liang, Chengsong Huang , Yanghua Xiao
+paper code
+ACL 2021
+Revisiting the Negative Data of Distantly Supervised Relation Extraction
+Chenhao Xie, Jiaqing Liang, Jingping Liu, Chengsong Huang , Wenhao Huang, Yanghua Xiao
+paper code
+PREPRINT 2026 · arXiv 2606.31651
+FARS: A Fully Automated Research System Deployed at Scale
+Qiong Tang, Tianxiang Sun, Xiangkun Hu, Xiangyang Liu, Yiran Chen, Yunfan Shao, Bobo Li, Changze Lv, Cheng Xu, Chengsong Huang , Chunyang Li, Dizhan Xue, Hao Bai, Haodong Duan, Hengquan Guo, Hongyang He, Hongyi Chen, Hui Shen, Jiahao Yuan, Jiankai Sun, Jikang Cheng, Jinfeng Xu, Jingqi Tong, Jingye Chen, Jinxiu Liu, Jixuan Leng, Junchi Yu, Kaixun Jiang, Kun Xiang, Kunpeng Yao, Lang Feng, Liangqi Yuan, Longsen Gao, Meng Li, Qi Jia, Qiushi Sun, Shengyuan Ding, Shizhan Gong, Siru Zhong, Terry Jingchen Zhang, Tianle Gu, Tianyi Liang, Weijie Liu, Weikai Yang, Weizhi Fei, Xin Wang, Xinpeng Liu, Xuanwen Ding, Yihong Tang, Yuanli Wang, Yukun Jiang, Yuming Yang, Zhengbao He, Zhikai Chen, Zhikun Xu, Zhuang Li, Zihao Huang
+paper
+PREPRINT 2026 · arXiv 2605.15529
+Process Rewards with Learned Reliability
+Jinyuan Li, Langlin Huang, Chengsong Huang , Sheng Xu, Donghong Cai, Yuyi Yang, Wenliang Zhang, Jiaxin Huang
+paper code
+PREPRINT 2026 · TechRxiv
+A Systematic Survey of Self-Evolving Agents: From Model-Centric to Environment-Driven Co-Evolution
+Zhishang Xiang, Chengyi Yang, Zerui Chen, Zhimin Wei, Yunbo Tang, Zongpei Teng, Zexi Peng, Zongxia Li, Chengsong Huang , Yicheng He, Chang Yang, Xinrun Wang, Xiao Huang, Qinggang Zhang, Jinsong Su
+paper code
+PREPRINT 2026 · arXiv 2602.03689
+Rethinking the Reranker: Boundary-Aware Evidence Selection for Robust Retrieval-Augmented Generation
+Jiashuo Sun, Pengcheng Jiang, Saizhuo Wang, Jiajun Fan, Heng Wang, Siru Ouyang, Ming Zhong, Yizhu Jiao, Chengsong Huang , Xueqiang Xu, Pengrui Han, Peiran Li, Jiaxin Huang, Ge Liu, Heng Ji, Jiawei Han
+paper code
+PREPRINT 2026 · arXiv 2601.03986
+Benchmark²: Systematic Evaluation of LLM Benchmarks
+Qi Qian*, Chengsong Huang* , Jingwen Xu, Changze Lv, Muling Wu, Wenhao Liu, Xiaohua Wang, Zhenghua Wang, Zisu Huang, Muzhao Tian, Jianhan Xu, Kun Hu, He-Da Wang, Yao Hu, Xuanjing Huang, Xiaoqing Zheng
+paper
+PREPRINT 2026 · arXiv 2601.21257
+MoCo: A One-Stop Shop for Model Collaboration Research
+Shangbin Feng, Yuyang Bai, Ziyuan Yang, Yike Wang, Zhaoxuan Tan, Jiajie Yan, Zhenyu Lei, Wenxuan Ding, Weijia Shi, Haojin Wang, Zhenting Qi, Yuru Jiang, Heng Wang, Chengsong Huang , Yu Fei, Jihan Yao, Yilun Du, Luke Zettlemoyer, Yejin Choi, Yulia Tsvetkov
+paper code
+PREPRINT 2025 · arXiv 2512.17043
+UniRel-R1: RL-tuned LLM Reasoning for Knowledge Graph Relational Question Answering
+Yinxu Tang, Chengsong Huang , Jiaxin Huang, William Yeoh
+paper
+PREPRINT 2025 · arXiv 2512.02472
+Guided Self-Evolving LLMs with Minimal Human Supervision
+Wenhao Yu, Zhenwen Liang, Chengsong Huang , Kishan Panaganti, Tianqing Fang, Haitao Mi, Dong Yu
+paper
+PREPRINT 2024 · arXiv 2405.04086
+Optimizing Language Model's Reasoning Abilities with Weak Supervision
+Yongqi Tong, Sizhe Wang, Dawei Li, Yifan Wang, Simeng Han, Zi Lin, Chengsong Huang , Jiaxin Huang, Jingbo Shang
+paper
+PREPRINT 2022 · arXiv 2210.07543
+Watermarking Pre-trained Language Models with Backdooring
+Chenxi Gu*, Chengsong Huang* , Xiaoqing Zheng, Kai-Wei Chang, Cho-Jui Hsieh
+paper
+
+Oct 2026
+New preprints released: R-Quest (sustaining self-evolution in reasoning models, a follow-up to R-Zero), RRSI (regularized recursive self-improvement of agent harnesses), and Recursive Self-Rewrite (scaling trajectories for complex tasks).
+Sep 2026
+G-Zero accepted to NeurIPS 2026 as a Spotlight ; LLMs Improving LLMs , RELEX , and TTCS also accepted to NeurIPS 2026.
+Aug 2026
+New preprint EnvHarness released — first project from my Google Cloud AI internship.
+Aug 2026
+Self-Evolving VLM for Structured Visual Understanding and Small RL Controller accepted to EMNLP 2026 Main; RelayLLM and Nonsense Helps accepted to EMNLP 2026 Findings.
+Jul 2026
+POSS accepted to COLM 2026.
+Jun 2026
+New preprint Small RL Controller, Large Language Model is released.
+May 2026
+New preprints released: G-Zero , RELEX , Process Rewards , and Nonsense Helps .
+May 2026
+Parallel-Probe and Training Data Efficiency in Multimodal PRM accepted to ICML 2026.
+Apr 2026
+Passed my Ph.D. proposal. 🎉
+Feb 2026
+VisPlay accepted to CVPR 2026.
+Jan 2026
+R-Zero , Vision-SR1 , Parallel-R1 , and Self-Calibration accepted to ICLR 2026.

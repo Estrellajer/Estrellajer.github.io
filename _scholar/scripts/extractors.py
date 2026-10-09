@@ -326,4 +326,148 @@ def extract_scholar_entries(html: str, scholar: dict) -> list:
         if entries:
             return entries[:10]
 
+    # 15. Chengsong Huang (黄承松) - #grid .card
+    if "chengsong" in base_url or "Chengsong" in name or "黄承松" in name:
+        for card in soup.select("#grid .card"):
+            t_el = card.select_one(".card-title")
+            if not t_el:
+                continue
+            title = clean_text(t_el.get_text())
+            v_el = card.select_one(".venue")
+            y_el = card.select_one(".year")
+            venue = v_el.get_text(strip=True) if v_el else ""
+            year_str = y_el.get_text(strip=True) if y_el else card.get("data-year", "2026")
+            if "PREPRINT" in venue.upper():
+                m_ar = re.search(r'arXiv\s*([\d\.]+)', year_str)
+                v_disp = f"arXiv {m_ar.group(1)}" if m_ar else "arXiv 2026"
+            else:
+                yr_m = re.search(r'\b(202\d)\b', year_str)
+                yr = yr_m.group(1) if yr_m else "2026"
+                v_clean = venue.replace(" · Spotlight", " Spotlight").replace(" · Oral", " Oral")
+                v_disp = f"{v_clean} {yr}" if yr not in v_clean else v_clean
+            a = card.select_one(".card-links a[href]")
+            link = urljoin(base_url, a["href"]) if a else base_url
+            full_title = f"{title} · {v_disp}" if v_disp else title
+            m_ar = re.search(r'arXiv\s*(2\d)(0[1-9]|1[0-2])\.', year_str)
+            if m_ar:
+                pub_date = f"20{m_ar.group(1)}-{m_ar.group(2)}"
+                dt = datetime(int("20" + m_ar.group(1)), int(m_ar.group(2)), 1, tzinfo=timezone.utc)
+                ts = dt.timestamp()
+            else:
+                yr_m = re.search(r'\b(202\d)\b', year_str)
+                pub_date = yr_m.group(1) if yr_m else "2026"
+                ts = datetime(int(pub_date), 1, 1, tzinfo=timezone.utc).timestamp()
+            entries.append({"title": full_title, "link": link, "published": pub_date, "timestamp": ts})
+        if entries:
+            return entries[:10]
+
+    # 16. Qinsi Wang (王沁思) - section.section2 h2/h4/div
+    if "wangqinsi" in base_url or "Qinsi Wang" in name or "王沁思" in name:
+        sec2 = soup.select_one("section.section2") or soup
+        for h2 in sec2.find_all("h2"):
+            title = clean_text(h2.get_text())
+            if title in ["News", "Selected Publications", "Hobby", "Biography"]:
+                continue
+            sib = h2.next_sibling
+            venue = ""
+            link = base_url
+            while sib and getattr(sib, "name", None) != "h2":
+                if getattr(sib, "name", None) == "h4" and not venue:
+                    venue = clean_text(sib.get_text())
+                elif getattr(sib, "name", None) == "div" and link == base_url:
+                    for a in sib.find_all("a", href=True):
+                        href = a.get("href", "")
+                        if any(k in href.lower() for k in ["arxiv", "openreview", "ieee", "pdf"]):
+                            link = urljoin(base_url, href)
+                            break
+                    if link == base_url:
+                        a_first = sib.find("a", href=True)
+                        if a_first:
+                            link = urljoin(base_url, a_first["href"])
+                sib = sib.next_sibling
+            venue = venue.replace("NeuIPS", "NeurIPS")
+            full_title = f"{title} · {venue}" if venue else title
+            m_yr = re.search(r'\b(202\d)\b', venue)
+            pub_year = m_yr.group(1) if m_yr else "2026"
+            m_ar = re.search(r'arxiv\.org/(?:abs|pdf)/(\d{2})(\d{2})\.', link)
+            if m_ar:
+                pub_date = f"20{m_ar.group(1)}-{m_ar.group(2)}"
+                dt = datetime(int("20" + m_ar.group(1)), int(m_ar.group(2)), 1, tzinfo=timezone.utc)
+                ts = dt.timestamp()
+            else:
+                pub_date = pub_year
+                ts = datetime(int(pub_year), 1, 1, tzinfo=timezone.utc).timestamp()
+            entries.append({"title": full_title, "link": link, "published": pub_date, "timestamp": ts})
+        if entries:
+            return entries[:10]
+
+    # 17. Wai-Chung Kwan (关伟聪) - #selected-publications ~ p
+    if "kwanwaichung" in base_url or "Wai-Chung Kwan" in name or "关伟聪" in name:
+        pub_h1 = soup.find(id="selected-publications")
+        if pub_h1:
+            sib = pub_h1.next_sibling
+            while sib and getattr(sib, "name", None) != "h1":
+                if getattr(sib, "name", None) == "p":
+                    a_first = sib.find("a", href=True)
+                    if a_first:
+                        title = clean_text(a_first.get_text())
+                        link = urljoin(base_url, a_first["href"])
+                        txt = clean_text(sib.get_text())
+                        m_v = re.search(r'\b(NeurIPS|ICML|ICLR|ACL|EMNLP|COLING|SIGDIAL|Preprint|Machine Intelligence Research)\b[^\.\[\(]*?(?:\(?\d{4}\)?|\d{4})', txt, re.IGNORECASE)
+                        venue = m_v.group(0).strip(" .").replace("(", "").replace(")", "").strip() if m_v else ""
+                        m_yr = re.search(r'\b(202\d)\b', txt)
+                        pub_year = m_yr.group(1) if m_yr else "2026"
+                        full = f"{title} · {venue}" if venue else title
+                        m_ar = re.search(r'arxiv\.org/(?:abs|pdf)/(\d{2})(\d{2})\.', link)
+                        if m_ar:
+                            pub_date = f"20{m_ar.group(1)}-{m_ar.group(2)}"
+                            dt = datetime(int("20" + m_ar.group(1)), int(m_ar.group(2)), 1, tzinfo=timezone.utc)
+                            ts = dt.timestamp()
+                        else:
+                            pub_date = pub_year
+                            ts = datetime(int(pub_year), 1, 1, tzinfo=timezone.utc).timestamp()
+                        entries.append({"title": full, "link": link, "published": pub_date, "timestamp": ts})
+                sib = sib.next_sibling
+        if entries:
+            return entries[:10]
+
+    # 18. Yixuan Tang (汤亦轩) - publications.json
+    if "yixuantt" in base_url or "Yixuan Tang" in name or "汤亦轩" in name:
+        try:
+            import requests as _requests
+            p_url = urljoin(base_url, "publications.json")
+            r = _requests.get(p_url, headers={"User-Agent": "Mozilla/5.0"}, timeout=10)
+            if r.status_code == 200:
+                pubs = r.json()
+                for p in pubs:
+                    title = clean_text(p.get("title", ""))
+                    if not title:
+                        continue
+                    venue_raw = p.get("venue", "")
+                    m_short = re.search(r'\(([^)]+)\)\s*(\d{4})', venue_raw)
+                    if m_short:
+                        venue = f"{m_short.group(1)} {m_short.group(2)}"
+                    else:
+                        m_v = re.search(r'\b(NeurIPS|ICML|ICLR|ACL|EMNLP|COLM|ICAIF)\b.*?(\d{4})', venue_raw)
+                        venue = f"{m_v.group(1)} {m_v.group(2)}" if m_v else venue_raw
+                    full_title = f"{title} · {venue}" if venue else title
+                    link = p.get("url") or base_url
+                    year = str(p.get("year") or "2026")
+                    m_ar = re.search(r'arxiv\.org/(?:abs|pdf)/(\d{2})(\d{2})\.', link)
+                    if m_ar:
+                        pub_date = f"20{m_ar.group(1)}-{m_ar.group(2)}"
+                        dt = datetime(int("20" + m_ar.group(1)), int(m_ar.group(2)), 1, tzinfo=timezone.utc)
+                        ts = dt.timestamp()
+                    else:
+                        pub_date = year
+                        try:
+                            ts = datetime(int(year), 1, 1, tzinfo=timezone.utc).timestamp()
+                        except Exception:
+                            ts = 1767225600.0
+                    entries.append({"title": full_title, "link": link, "published": pub_date, "timestamp": ts})
+        except Exception:
+            pass
+        if entries:
+            return entries[:10]
+
     return entries

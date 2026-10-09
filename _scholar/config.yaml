@@ -1409,3 +1409,107 @@ scholars:
   - Reasoning
   affiliation: 自动化所
   watch: general
+- name: Chengsong Huang
+  url: https://chengsong-huang.github.io/
+  category: HomePage
+  site_type: github_pages
+  selectors:
+  - "#grid .card"
+  - ".news-card"
+  - ".card-title"
+  - "#grid"
+  - ".news"
+  remove_selectors:
+  - script
+  - style
+  - nav
+  - footer
+  - header
+  - aside
+  - .sidebar
+  - .comments
+  labels:
+  - homepage
+  research_areas:
+  - LLM
+  - Reasoning
+  - Agent
+  affiliation: Washington University in St. Louis
+  watch: publications
+- name: Qinsi Wang
+  url: https://wangqinsi1.github.io/
+  category: HomePage
+  site_type: github_pages
+  selectors:
+  - section.section2
+  - section.section1
+  - section.mainContent
+  remove_selectors:
+  - script
+  - style
+  - nav
+  - footer
+  - header
+  - aside
+  - .sidebar
+  - .comments
+  labels:
+  - homepage
+  research_areas:
+  - LLM
+  - VLM
+  - RL
+  - Optimization
+  affiliation: Duke University
+  watch: publications
+- name: Wai-Chung Kwan
+  url: https://kwanwaichung.github.io/
+  category: HomePage
+  site_type: github_pages
+  selectors:
+  - "#selected-publications ~ p"
+  - "#selected-publications"
+  remove_selectors:
+  - script
+  - style
+  - nav
+  - footer
+  - header
+  - aside
+  - .sidebar
+  - .comments
+  labels:
+  - homepage
+  research_areas:
+  - LLM
+  - Reasoning
+  - NLP
+  affiliation: University of Edinburgh
+  watch: publications
+- name: Yixuan Tang
+  url: https://yixuantt.github.io/
+  category: HomePage
+  site_type: yixuan_tang
+  selectors:
+  - "#pub-list"
+  - "#news-container"
+  - .pub-card
+  - .section
+  remove_selectors:
+  - script
+  - style
+  - nav
+  - footer
+  - header
+  - aside
+  - .sidebar
+  - .comments
+  labels:
+  - homepage
+  research_areas:
+  - LLM
+  - Finance
+  - NLP
+  affiliation: HKUST
+  watch: publications
+
