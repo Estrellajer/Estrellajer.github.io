@@ -1,3 +1,5 @@
+2026/10 Our first paper on AI Psychology is posted on arXiv.
+
 2026/10 One paper is accepted to IEEE TPAMI.
 
 2026/09 Two papers are accepted to IJCV.
@@ -43,6 +45,10 @@
 2024/06 I was awarded the WAIC Rising Star.
 
 2023/12 One paper is published in Nature Machine Intelligence (as the cover).
+
+Beyond Belief Nesting: Rethinking Higher-Order Theory of Mind in Large Language Models.
+Shanshan You, Zhengqi Wang, Hao Liu, Yuqin Liu, Ya He, Xin Hao, Liyuan Wang $^\dagger$.
+arXiv:2610.17777, Under Review, 2026.
 
 Brain-inspired Hierarchical Modularity for General Continual Learning.
 Hongwei Yan, Kanglei Zhou, Qi Cheng, Weiyi Dong, Chunyan Lan, Jun Zhou, Guanglong Sun, Qian Li, Yi Zhong, Liyuan Wang $^\dagger$.
