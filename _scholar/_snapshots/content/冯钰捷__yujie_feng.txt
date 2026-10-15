@@ -2,6 +2,8 @@
 
 2026.08 : 🎉 One paper has been accepted to EMNLP 2026 Findings!
 
+2026.07 : 🥳 Organized the Continual Learning in the Era of Foundation Models and Embodied Agents Workshop at NeurIPS 2026.
+
 2026.04 : 🎉 One paper has been accepted to ACL 2026!
 
 2026.01 : 🎉 Two papers have been accepted to ICLR 2026!
@@ -62,6 +64,7 @@ Proceedings of the Web Conference 2021 ( WWW 2021 ).
 
 2026.10 : 🎉 One paper has been accepted to IEEE Transactions on Mobile Computing!
 2026.08 : 🎉 One paper has been accepted to EMNLP 2026 Findings!
+2026.07 : 🥳 Organized the Continual Learning in the Era of Foundation Models and Embodied Agents Workshop at NeurIPS 2026.
 2026.04 : 🎉 One paper has been accepted to ACL 2026!
 2026.01 : 🎉 Two papers have been accepted to ICLR 2026!
 2025.08 : 🎉 Two papers have been accepted to EMNLP 2025!
