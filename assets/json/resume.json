@@ -6,7 +6,7 @@
     "email": "liumaoqi@bupt.edu.cn",
     "phone": "+86 18537205012",
     "url": "https://estrellajer.github.io",
-    "summary": "A first-year graduate student at the School of Artificial Intelligence, Beijing University of Posts and Telecommunications. Research interests broadly span artificial intelligence and deep learning, with a current focus on continual learning and large language model (LLM) applications.",
+    "summary": "First-year graduate student at the School of Artificial Intelligence, Beijing University of Posts and Telecommunications. Research focuses on Post-Training and Continual Learning in Large Language Models.",
     "location": {
       "address": "",
       "postalCode": "",
@@ -19,10 +19,31 @@
         "network": "GitHub",
         "username": "Estrellajer",
         "url": "https://github.com/Estrellajer"
+      },
+      {
+        "network": "OpenReview",
+        "username": "~Maoqi_Liu2",
+        "url": "https://openreview.net/profile?id=%7EMaoqi_Liu2"
       }
     ]
   },
-  "work": [],
+  "work": [
+    {
+      "name": "ByteDance",
+      "position": "LLM Algorithm Intern",
+      "url": "",
+      "startDate": "2026-06-01",
+      "endDate": "",
+      "summary": "Douyin E-commerce Customer Service team, mentored by Junwei He. Solely responsible for full-scenario RL post-training for customer service single-Agent architecture.",
+      "highlights": [
+        "Data Construction: Back-traced training & reward annotation data from online sessions with real actions and final outcomes; improved good-outcome annotation consistency from 14% to 90%+.",
+        "Solution Reward: Modeled issue resolution with distilled small RM (F1 0.86) and TabPFN correlation mining; decomposed trajectory-level rewards into step-level actions for fine-grained credit assignment.",
+        "Experience Reward: Converted pointwise scoring to role-swapped pairwise comparison with business protocol constraints, boosting intra-group reward ranking for GRPO advantage estimation.",
+        "Training & Deployment: GRPO training with dual rewards deployed to pre-sales scenarios: session resolution +3.2pp, experience +2pp, interaction blockage rate -7pp.",
+        "Research: Proposed protocol-level rubrics ProRubric to mitigate reward hacking (First Author, under review) and co-authored Agentic RL with TabPFN credit assignment."
+      ]
+    }
+  ],
   "volunteer": [
     {
       "organization": "Community Service",
@@ -46,7 +67,7 @@
       "endDate": "",
       "score": "",
       "courses": [],
-      "summary": "Advisor: Prof. Fang Quan"
+      "summary": "Advisor: Prof. Fang Quan. Honor: Graduate Freshman Academic Scholarship (硕士新生学业奖学金)."
     },
     {
       "institution": "Beijing University of Posts and Telecommunications",
@@ -57,21 +78,36 @@
       "startDate": "2021-09-01",
       "endDate": "2025-06-01",
       "score": "",
-      "courses": []
+      "courses": [],
+      "summary": "Honor: Outstanding University Graduate (校级优秀毕业生)."
     }
   ],
   "awards": [
     {
-      "title": "Undergraduate \"QiYan\" Research Grant",
-      "date": "2024-01-01",
+      "title": "Graduate Freshman Academic Scholarship",
+      "date": "2025-09-01",
+      "awarder": "Beijing University of Posts and Telecommunications",
+      "url": "",
+      "summary": ""
+    },
+    {
+      "title": "Outstanding University Graduate",
+      "date": "2025-06-01",
+      "awarder": "Beijing University of Posts and Telecommunications",
+      "url": "",
+      "summary": ""
+    },
+    {
+      "title": "Undergraduate \"QiYan\" Research Grant (50,000 RMB)",
+      "date": "2024-09-01",
       "awarder": "Beijing Natural Science Foundation",
       "url": "",
-      "summary": "Awarded to only 30 students across the university. The first truly meaningful research grant received, providing strong support for scientific exploration."
+      "summary": "Awarded to support undergraduate scientific research and innovative exploration."
     },
     {
       "title": "Second Prize",
       "date": "2022-10-01",
-      "awarder": "2022 National English Competition for College Students",
+      "awarder": "National English Competition for College Students",
       "url": "",
       "summary": ""
     }
@@ -79,75 +115,79 @@
   "certificates": [],
   "publications": [
     {
+      "name": "Scoring Higher, Answering Worse: Mitigating Reward Hacking in Rubric-Based RL via Protocol-Level Rubrics",
+      "publisher": "Under Review",
+      "releaseDate": "2026-09-01",
+      "url": "https://arxiv.org/abs/2609.38847",
+      "summary": "Maoqi Liu, Junwei He, Bowen Zhang, Feiran Li, Wentao Ma, Rongyi Lin, Shuhan Zhong, Quan Fang. First Author. Identifies that reward hacking in Rubric-RL stems from compensatory linear weighted sum rather than criteria design. Proposes reorganizing rubrics into protocol-level dimensions where scores are awarded only when full protocol conditions are met without vetoes, achieving +10.8 appropriateness gain and outperforming all baselines across 7 benchmarks."
+    },
+    {
+      "name": "CoDe-LoRA: Mitigating the Orthogonality Dilemma in Continual Learning of LLMs via Knowledge Consolidation and Decoupling",
+      "publisher": "EMNLP 2026",
+      "releaseDate": "2026-10-01",
+      "url": "https://arxiv.org/abs/2610.08312",
+      "summary": "Maoqi Liu, Quan Fang, Yufei He. First Author. Identifies the orthogonality dilemma in continual learning of LLMs, where strict orthogonal isolation discards shared knowledge. Proposes a replay-free dual-branch LoRA consolidating commonalities via adaptive null-space projection and decoupling task-specific features via prototype semantic routing, reaching 80.6% average accuracy and +7.0 over O-LoRA."
+    },
+    {
       "name": "NOTAM-Evolve: A Knowledge-Guided Self-Evolving Optimization Framework with LLMs for NOTAM Interpretation",
       "publisher": "AAAI 2026",
       "releaseDate": "2026-01-01",
       "url": "",
-      "summary": "Accurate interpretation of Notices to Airmen (NOTAMs) is vital for aviation safety, yet their condensed and cryptic language challenges both humans and automated systems. We define the task as deep parsing, which requires dynamic knowledge grounding and schema-based inference. To address this, we propose NOTAM-Evolve, a knowledge-guided self-evolving framework that enables large language models to autonomously enhance their reasoning through a closed-loop learning process with knowledge graph–based retrieval. Experiments on 10,000 expert-annotated NOTAMs show a 30.4% accuracy gain over base LLMs, establishing a new state of the art in structured NOTAM interpretation. First Author."
+      "summary": "Maoqi Liu, Quan Fang, Yuhao Wu, Can Zhao, Yang Yang, Kaiquan Cai. First Author. Accurately interpreting NOTAMs requires dynamic knowledge grounding and regulation-based reasoning. Proposes knowledge-graph-guided retrieval combined with iterative SFT/DPO self-evolution, improving 7B model accuracy from 0.458 to 0.762."
     },
     {
       "name": "Knots: A Large-Scale Multi-Agent Enhanced Expert-Annotated Dataset and LLM Prompt Optimization for NOTAM Semantic Parsing",
-      "publisher": "Advanced Engineering Informatics",
+      "publisher": "Advanced Engineering Informatics (ADVEI 2025)",
       "releaseDate": "2025-01-01",
       "url": "",
-      "summary": "Notices to Air Missions (NOTAMs) convey essential flight safety information but remain difficult to parse due to their complex structure and implicit semantics. We introduce NOTAM semantic parsing, a task focused on deep understanding through semantic inference and aviation knowledge integration. To support it, we build Knots, a dataset of 12,347 expert-annotated NOTAMs across 194 Flight Information Regions, developed via a multi-agent framework for comprehensive field discovery. Extensive experiments on prompt design and model adaptation show notable gains in aviation text comprehension, offering new insights for automated NOTAM analysis. First Author."
+      "summary": "Maoqi Liu, Quan Fang, Yang Yang, et al. First Author. Advances NOTAM analysis from surface extraction to domain semantic parsing. Constructs a benchmark of 12,347 expert-annotated NOTAMs across 194 FIRs using a multi-agent debate framework (F1 92% vs 57% baseline)."
     },
     {
       "name": "R²A²-MoE: Ridge Regression-based Analytic Adaptation with Mixture of Experts for Continual Learning with Vision-Language Models",
       "publisher": "PRCV 2025 (Oral)",
       "releaseDate": "2025-01-01",
       "url": "",
-      "summary": "Vision-Language Models (VLMs) show strong zero-shot performance but struggle to retain it under continual learning due to dual forgetting. We propose R²A²-MoE—Ridge Regression-based Analytic Adaptation with Mixture of Experts—which enables efficient collaborative specialization through closed-form expert optimization. This approach mitigates both backward and forward forgetting while improving adaptability. Experiments on X-TAIL and MTIL benchmarks demonstrate superior performance and efficiency, reducing parameters, memory, and training time by over 45%, 56%, and 46%, respectively. First Author."
+      "summary": "Maoqi Liu, et al. First Author. Proposes Ridge Regression-based Analytic Adaptation with Mixture of Experts for VLMs, mitigating dual forgetting through closed-form expert optimization."
     }
   ],
   "skills": [
     {
+      "name": "Reinforcement Learning & Post-Training",
+      "level": "Advanced",
+      "icon": "fa-solid fa-robot",
+      "keywords": ["verl", "VeOmni", "GRPO", "Reward Modeling", "Rubric-Based RL", "Credit Assignment", "TabPFN"]
+    },
+    {
       "name": "Artificial Intelligence",
       "level": "Advanced",
       "icon": "fa-solid fa-brain",
-      "keywords": [
-        "Deep Learning",
-        "Continual Learning",
-        "Large Language Models",
-        "Natural Language Processing",
-        "Computer Vision",
-        "Knowledge Graphs"
-      ]
+      "keywords": ["Continual Learning", "LoRA / PEFT", "Large Language Models", "Deep Learning", "Natural Language Processing", "Knowledge Graphs"]
     }
   ],
   "languages": [
     {
       "language": "Chinese",
-      "fluency": "Native speaker",
-      "icon": ""
+      "fluency": "Native speaker"
     },
     {
       "language": "English",
-      "fluency": "Fluent",
-      "icon": ""
+      "fluency": "Professional working proficiency"
     }
   ],
-  "interests": [
-    {
-      "name": "Research",
-      "icon": "fa-solid fa-microscope",
-      "keywords": ["Continual Learning", "Lifelong Learning", "Incremental Learning", "Large Language Models", "LLM Applications", "Deep Learning"]
-    },
-    {
-      "name": "Leadership & Activities",
-      "icon": "fa-solid fa-users",
-      "keywords": ["Vice President of BUPT's Long-distance Running Association", "Debate Team Champion", "Class Leader"]
-    }
-  ],
+  "interests": [],
   "references": [],
   "projects": [
     {
       "name": "Job Recommendation System Based on Knowledge Graphs",
-      "summary": "This project leverages a knowledge graph to help university students quickly identify ideal job opportunities and clarify their career positioning. By fine-tuning the open-source Paddle large language model for skill extraction and quantitative evaluation, the project fills gaps in job-related knowledge graphs and enhances visual analytics for understanding employment trends.",
-      "highlights": ["Knowledge Graph Construction", "LLM Fine-tuning", "Skill Extraction", "Visual Analytics"],
+      "description": "Fine-tuned open-source Paddle LLM for skill extraction and quantitative evaluation, filling gaps in job-related knowledge graphs with visual employment analytics.",
+      "highlights": ["Project Leader"],
+      "keywords": ["Knowledge Graphs", "LLMs", "Data Analytics"],
       "startDate": "2024-04-01",
       "endDate": "2024-06-01",
-      "url": ""
+      "url": "",
+      "roles": ["Project Leader"],
+      "entity": "",
+      "type": ""
     }
   ]
 }

@@ -18,28 +18,60 @@
       year: 2025.09 - Present
       description:
         - Advisor: Prof. Fang Quan
+        - Honor: Graduate Freshman Academic Scholarship (硕士新生学业奖学金)
     - title: B.Sc. in Artificial Intelligence
       institution: Beijing University of Posts and Telecommunications
       year: 2021.09 - 2025.06
+      description:
+        - Honor: Outstanding University Graduate (校级优秀毕业生)
+
+- title: Experience
+  type: time_table
+  contents:
+    - title: LLM Algorithm Intern | ByteDance (Douyin E-commerce Customer Service)
+      institution: ByteDance, Beijing
+      year: 2026.06 - Present
+      description:
+        - "Mentor: Junwei He"
+        - "Architecture migration to a single-Agent model replacing independently optimized scene models. Solely responsible for full-scenario RL post-training: data cleaning/filtering -> reward system construction -> model training and online deployment."
+        - "Data Construction: Back-traced training & reward annotation data from online sessions with real actions and final outcomes; improved good-outcome annotation consistency from 14% to 90%+."
+        - "Solution Reward: Modeled issue resolution with a distilled small RM (F1 0.86), explored real data correlations using TabPFN, and decomposed trajectory-level rewards into step-level actions for fine-grained credit assignment."
+        - "Experience Reward: Converted pointwise scoring to role-swapped pairwise comparison with business protocol and whitelist hard constraints, boosting intra-group reward ranking for GRPO advantage estimation."
+        - "Training & Deployment: GRPO training with dual rewards fully rolled out to pre-sales scenarios: session resolution +3.2pp, experience +2pp, interaction blockage rate -7pp."
+        - "Post-Training Research: Explored Rubric-Based RL and OPD; proposed protocol-level rubrics ProRubric to mitigate reward hacking (First Author, under review); collaborated on Agentic RL with TabPFN credit assignment."
 
 - title: Publications
   type: time_table
   contents:
+    - title: "Scoring Higher, Answering Worse: Mitigating Reward Hacking in Rubric-Based RL via Protocol-Level Rubrics"
+      year: 2026
+      description:
+        - First Author, Under Review
+        - "Authors: Maoqi Liu, Junwei He, Bowen Zhang, et al."
+        - "Overview: Identifies that reward hacking in Rubric-RL stems from compensatory linear weighted sum rather than criteria design. Proposes reorganizing rubrics into protocol-level dimensions where scores are awarded only when full protocol conditions are met without vetoes, achieving +10.8 appropriateness gain and outperforming all baselines across 7 benchmarks."
+    - title: "CoDe-LoRA: Mitigating the Orthogonality Dilemma in Continual Learning of LLMs via Knowledge Consolidation and Decoupling"
+      year: 2026
+      description:
+        - First Author, Accepted by EMNLP 2026 (CCF-B)
+        - "Authors: Maoqi Liu, Quan Fang, Yufei He"
+        - "Overview: Identifies the orthogonality dilemma in continual learning of LLMs, where strict orthogonal isolation discards shared knowledge. Proposes a replay-free dual-branch LoRA consolidating commonalities via adaptive null-space projection and decoupling task-specific features via prototype semantic routing, achieving 80.6% average accuracy on standard CL benchmarks (+7.0 over O-LoRA)."
     - title: "NOTAM-Evolve: A Knowledge-Guided Self-Evolving Optimization Framework with LLMs for NOTAM Interpretation"
       year: 2026
       description:
-        - First Author, Accepted by AAAI 2026
-        - Overview: Accurate interpretation of Notices to Airmen (NOTAMs) is vital for aviation safety, yet their condensed and cryptic language challenges both humans and automated systems. We define the task as deep parsing, which requires dynamic knowledge grounding and schema-based inference. To address this, we propose NOTAM-Evolve, a knowledge-guided self-evolving framework that enables large language models to autonomously enhance their reasoning through a closed-loop learning process with knowledge graph–based retrieval. Experiments on 10,000 expert-annotated NOTAMs show a 30.4% accuracy gain over base LLMs, establishing a new state of the art in structured NOTAM interpretation.
+        - First Author, Accepted by AAAI 2026 (CCF-A)
+        - "Authors: Maoqi Liu, Quan Fang, Yuhao Wu, Can Zhao, Yang Yang, Kaiquan Cai"
+        - "Overview: Demonstrates that NOTAM deep interpretation requires dynamic knowledge grounding and regulation-based reasoning. Proposes knowledge-graph-guided retrieval combined with iterative SFT/DPO self-evolution, improving 7B model accuracy from 0.458 to 0.762."
     - title: "Knots: A Large-Scale Multi-Agent Enhanced Expert-Annotated Dataset and LLM Prompt Optimization for NOTAM Semantic Parsing"
       year: 2025
       description:
-        - First Author, Accepted by Advanced Engineering Informatics
-        - Overview: Notices to Air Missions (NOTAMs) convey essential flight safety information but remain difficult to parse due to their complex structure and implicit semantics. We introduce NOTAM semantic parsing, a task focused on deep understanding through semantic inference and aviation knowledge integration. To support it, we build Knots, a dataset of 12,347 expert-annotated NOTAMs across 194 Flight Information Regions, developed via a multi-agent framework for comprehensive field discovery. Extensive experiments on prompt design and model adaptation show notable gains in aviation text comprehension, offering new insights for automated NOTAM analysis.
+        - First Author, Accepted by Advanced Engineering Informatics (ADVEI 2025, SCI Q1, CCF-B)
+        - "Authors: Maoqi Liu, Quan Fang, Yang Yang, et al."
+        - "Overview: Advances NOTAM analysis from surface extraction to domain semantic parsing. Constructs a benchmark of 12,347 expert-annotated NOTAMs across 194 FIRs using a multi-agent debate framework (F1 92% vs 57% baseline)."
     - title: "R²A²-MoE: Ridge Regression-based Analytic Adaptation with Mixture of Experts for Continual Learning with Vision-Language Models"
       year: 2025
       description:
         - First Author, Accepted by PRCV 2025 (Oral)
-        - Overview: Vision-Language Models (VLMs) show strong zero-shot performance but struggle to retain it under continual learning due to dual forgetting. We propose R²A²-MoE—Ridge Regression-based Analytic Adaptation with Mixture of Experts—which enables efficient collaborative specialization through closed-form expert optimization. This approach mitigates both backward and forward forgetting while improving adaptability. Experiments on X-TAIL and MTIL benchmarks demonstrate superior performance and efficiency, reducing parameters, memory, and training time by over 45%, 56%, and 46%, respectively.
+        - "Overview: Proposes Ridge Regression-based Analytic Adaptation with Mixture of Experts for VLMs, mitigating dual forgetting through closed-form expert optimization."
 
 - title: Projects
   type: time_table
@@ -47,14 +79,18 @@
     - title: Job Recommendation System Based on Knowledge Graphs | Project Leader
       year: 2024.04 - 2024.06
       description:
-        - Overview: This project leverages a knowledge graph to help university students quickly identify ideal job opportunities and clarify their career positioning. By fine-tuning the open-source Paddle large language model for skill extraction and quantitative evaluation, the project fills gaps in job-related knowledge graphs and enhances visual analytics for understanding employment trends.
+        - Overview: Fine-tuned Paddle LLM for skill extraction and quantitative evaluation, filling gaps in job-related knowledge graphs with visual employment analytics.
 
 - title: Honors and Awards
   type: time_table
   contents:
-    - year: 2024
+    - year: 2025
       items:
-        - Beijing Natural Science Foundation Undergraduate "QiYan" Research Grant
+        - Graduate Freshman Academic Scholarship, Beijing University of Posts and Telecommunications
+        - Outstanding University Graduate, Beijing University of Posts and Telecommunications
+    - year: 2024.09
+      items:
+        - Beijing Natural Science Foundation Undergraduate "QiYan" Research Grant (50,000 RMB)
     - year: 2022.10
       items:
         - 2022 National English Competition for College Students Second Prize
@@ -62,5 +98,7 @@
 - title: Personal Statement
   type: list
   contents:
-    - Demonstrated leadership and teamwork as Vice President of BUPT's Long-distance Running Association, debate team champion, and class leader at both undergraduate and graduate levels.
-    - Over 100 hours of volunteer service, actively supporting community initiatives and providing daily assistance to fellow students.
+    - Familiar with verl / VeOmni and other RL post-training frameworks; rapid learning and reproduction of cutting-edge algorithms.
+    - Prolific technical blogger: ByteTech Lv5 Author, AI Knowledge Master (Top 3%).
+    - Demonstrated leadership as Vice President of BUPT Long-distance Running Association, debate champion, and class leader at both undergraduate and graduate levels.
+    - Over 100 hours of community volunteer service.

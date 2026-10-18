@@ -4,7 +4,8 @@ permalink: /cv/
 title: cv
 nav: false
 nav_order: 5
-redirect: /assets/files/maoqi-liu-cv-v2.docx
+cv_pdf: Maoqi_Liu_Resume.pdf
+redirect: /assets/pdf/Maoqi_Liu_Resume.pdf
 ---
 
 <p>Redirecting to CV download...</p>

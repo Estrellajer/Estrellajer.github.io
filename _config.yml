@@ -7,7 +7,7 @@ first_name: Maoqi
 middle_name:
 last_name: Liu
 email: liumaoqi@bupt.edu.cn
-cv_download_path: /assets/files/maoqi-liu-cv-v2.docx
+cv_download_path: /assets/pdf/Maoqi_Liu_Resume.pdf
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
   The academic profile of Maoqi Liu (刘茂琦), Graduate Student at BUPT and Research Intern at ByteDance Data focusing on Post-Training and Continual Learning.
 footer_text: >
@@ -375,7 +375,6 @@ enable_google_analytics: false # enables google analytics
 enable_cronitor_analytics: false # enables cronitor RUM analytics
 enable_pirsch_analytics: false # enables Pirsch analytics (https://pirsch.io/)
 enable_openpanel_analytics: false # enables Openpanel analytics (https://openpanel.dev/)
-enable_google_verification: false # enables google site verification
 enable_bing_verification: false # enables bing site verification
 enable_masonry: false # enables automatic project cards arrangement
 enable_math: true # enables math typesetting (uses MathJax)

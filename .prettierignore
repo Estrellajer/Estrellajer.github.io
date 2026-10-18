@@ -44,3 +44,4 @@ package-lock.json
 purgecss.config.js
 _scholar/**
 scholar/**
+_config.yml
