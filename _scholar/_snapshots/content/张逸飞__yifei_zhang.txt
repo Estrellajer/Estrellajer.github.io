@@ -13,6 +13,9 @@ Proceedings of the 32nd ACM SIGKDD Conference on Knowledge Discovery and …, 20
 Geometric Collapse: When Vision Models Fail to Verify Physical Causality
 W Zhang, J Qi, W Jin, Y Zhang, CT Lam, I King
 arXiv preprint arXiv:2607.06871, 2026 2026
+Identifying the Achilles’ Heel: An Iterative Method for Uncovering Factual Errors in Large Language Models
+W Wang, YK Chan, Z Ling, S Juluan, Y Yuan, J Huang, Y Zhang, W Jiao, ...
+Findings of the Association for Computational Linguistics: ACL 2026, 34288-34309, 2026 2026
 Machine unlearning via task simplex arithmetic
 J Dong, H Zhu, Y Zhang, X Qu, YS Ong, P Koniusz
 Advances in Neural Information Processing Systems 38, 166676-166707, 2026 2026
@@ -55,6 +58,3 @@ H Zhu, Y Zhang, J Dong, P Koniusz
 Ntpp: Generative speech language modeling for dual-channel spoken dialogue via next-token-pair prediction
 Q Wang, Z Meng, W Cui, Y Zhang, P Wu, B Wu, I King, L Chen, P Zhao
 arXiv preprint arXiv:2506.00975, 2025 2025
-Towards non-euclidean foundation models: advancing AI beyond euclidean frameworks
-M Yang, Y Zhang, J Chen, M Weber, R Ying
-Companion Proceedings of the ACM on Web Conference 2025, 1811-1814, 2025 2025
