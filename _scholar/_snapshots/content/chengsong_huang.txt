@@ -1,3 +1,13 @@
+NEW · PREPRINT 2026 · arXiv 2610.13395
+ProgramGym: Scaling Training Environments for Long-Horizon Program Reproduction Agents
+Chengyi Yang, Renxu Bao, Jue Hou, Zongpei Teng, Ziheng Wang, Yujie Lin, Chengsong Huang , Junnan Zhu, Delai Qiu, Yining Wang, Shengping Liu, Fei Long, Jinsong Su
+paper project
+
+NEW · PREPRINT 2026 · arXiv 2610.14146
+Long-Horizon-Terminal-Bench 2.0: Automating Diverse Task Construction and Measuring Sustained Agent Progress
+Zongxia Li, Zhongzhi Li, Yucheng Shi, Ruhan Wang, Junyao Yang, Chengsong Huang , Zhichao Liu, Xiyang Wu, Anhao Li, Yue Yu, Ergan Shang, Fuxiao Liu, Tong Zheng, Ninghao Liu, Lichao Sun, Haitao Mi, Leowei Liang
+paper project code
+
 NEW · PREPRINT 2026 · arXiv 2610.04299
 Questioning the Questions: Sustaining Self-Evolution in Reasoning Models
 Jinyuan Li, Chengsong Huang , Langlin Huang, Donghong Cai, Shiping Gao, Yuyi Yang, Jiaxin Huang
@@ -5,7 +15,7 @@ paper
 
 NEW · PREPRINT 2026 · arXiv 2610.02826
 Scaling Trajectories for Complex Tasks through Recursive Self-Rewrite
-Zongxia Li, Yucheng Shi, Zhongzhi Li, Junyao Yang, Ruhan Wang, Chengsong Huang , Fuxiao Liu, Haitao Mi, Jordan Boyd-Graber, LeoweiLiang
+Zongxia Li, Yucheng Shi, Zhongzhi Li, Junyao Yang, Ruhan Wang, Chengsong Huang , Fuxiao Liu, Haitao Mi, Jordan Boyd-Graber, Leowei Liang
 paper model
 
 NEW · PREPRINT 2026 · arXiv 2609.24972
@@ -18,7 +28,7 @@ EnvHarness: Awakening Static Worlds for Agent Learning
 Chengsong Huang , Zifeng Wang, Rujun Han, Jun Yan, Yanfei Chen, Zoey CuiZhu, Ke Jiang, Peng Xia, Han Yu, Yufan Zhuang, Yifei Ming, Jiaqi Pan, Bhavana Dalvi Mishra, Jiaxin Huang, Burak Gokturk, Tomas Pfister, Chen-Yu Lee
 paper code
 
-NeurIPS · Spotlight 2026
+NeurIPS · Spotlight 2026 🏆 Best Paper Award · NeurIPS 2026 TTCL Workshop
 G-Zero: Self-Play for Open-Ended Generation from Zero Data
 Chengsong Huang , Haolin Liu, Tong Zheng, Runpeng Dai, Langlin Huang, Jinyuan Li, Zongxia Li, Zhepei Wei, Yu Meng, Jiaxin Huang
 paper code
@@ -152,6 +162,11 @@ ACL 2021
 Revisiting the Negative Data of Distantly Supervised Relation Extraction
 Chenhao Xie, Jiaqing Liang, Jingping Liu, Chengsong Huang , Wenhao Huang, Yanghua Xiao
 paper code
+
+PREPRINT 2026 · arXiv 2607.08964
+Long-Horizon-Terminal-Bench: Testing the Limits of Agents on Long-Horizon Terminal Tasks with Dense Reward-Based Grading
+Zongxia Li, Zhongzhi Li, Yucheng Shi, Ruhan Wang, Junyao Yang, Zhichao Liu, Xiyang Wu, Anhao Li, Chengsong Huang , Ergan Shang, Yue Yu, Ninghao Liu, Lichao Sun, Haitao Mi, Leowei Liang
+paper project code
 
 PREPRINT 2026 · arXiv 2606.31651
 FARS: A Fully Automated Research System Deployed at Scale
@@ -204,6 +219,9 @@ Chenxi Gu*, Chengsong Huang* , Xiaoqing Zheng, Kai-Wei Chang, Cho-Jui Hsieh
 paper
 
 Oct 2026
+G-Zero received the Best Paper Award at the NeurIPS 2026 Workshop on Towards Test-Time Continual Learning Agents (TTCL). 🏆
+
+Oct 2026
 New preprints released: R-Quest (sustaining self-evolution in reasoning models, a follow-up to R-Zero), RRSI (regularized recursive self-improvement of agent harnesses), and Recursive Self-Rewrite (scaling trajectories for complex tasks).
 
 Sep 2026
@@ -235,6 +253,10 @@ VisPlay accepted to CVPR 2026.
 
 Jan 2026
 R-Zero , Vision-SR1 , Parallel-R1 , and Self-Calibration accepted to ICLR 2026.
+
+ProgramGym: Scaling Training Environments for Long-Horizon Program Reproduction Agents
+
+Long-Horizon-Terminal-Bench 2.0: Automating Diverse Task Construction and Measuring Sustained Agent Progress
 
 Questioning the Questions: Sustaining Self-Evolution in Reasoning Models
 
@@ -298,6 +320,8 @@ WebKE: Knowledge Extraction from Semi-structured Web with Pre-trained Markup Lan
 
 Revisiting the Negative Data of Distantly Supervised Relation Extraction
 
+Long-Horizon-Terminal-Bench: Testing the Limits of Agents on Long-Horizon Terminal Tasks with Dense Reward-Based Grading
+
 FARS: A Fully Automated Research System Deployed at Scale
 
 Process Rewards with Learned Reliability
@@ -318,13 +342,21 @@ Optimizing Language Model's Reasoning Abilities with Weak Supervision
 
 Watermarking Pre-trained Language Models with Backdooring
 
+NEW · PREPRINT 2026 · arXiv 2610.13395
+ProgramGym: Scaling Training Environments for Long-Horizon Program Reproduction Agents
+Chengyi Yang, Renxu Bao, Jue Hou, Zongpei Teng, Ziheng Wang, Yujie Lin, Chengsong Huang , Junnan Zhu, Delai Qiu, Yining Wang, Shengping Liu, Fei Long, Jinsong Su
+paper project
+NEW · PREPRINT 2026 · arXiv 2610.14146
+Long-Horizon-Terminal-Bench 2.0: Automating Diverse Task Construction and Measuring Sustained Agent Progress
+Zongxia Li, Zhongzhi Li, Yucheng Shi, Ruhan Wang, Junyao Yang, Chengsong Huang , Zhichao Liu, Xiyang Wu, Anhao Li, Yue Yu, Ergan Shang, Fuxiao Liu, Tong Zheng, Ninghao Liu, Lichao Sun, Haitao Mi, Leowei Liang
+paper project code
 NEW · PREPRINT 2026 · arXiv 2610.04299
 Questioning the Questions: Sustaining Self-Evolution in Reasoning Models
 Jinyuan Li, Chengsong Huang , Langlin Huang, Donghong Cai, Shiping Gao, Yuyi Yang, Jiaxin Huang
 paper
 NEW · PREPRINT 2026 · arXiv 2610.02826
 Scaling Trajectories for Complex Tasks through Recursive Self-Rewrite
-Zongxia Li, Yucheng Shi, Zhongzhi Li, Junyao Yang, Ruhan Wang, Chengsong Huang , Fuxiao Liu, Haitao Mi, Jordan Boyd-Graber, LeoweiLiang
+Zongxia Li, Yucheng Shi, Zhongzhi Li, Junyao Yang, Ruhan Wang, Chengsong Huang , Fuxiao Liu, Haitao Mi, Jordan Boyd-Graber, Leowei Liang
 paper model
 NEW · PREPRINT 2026 · arXiv 2609.24972
 RRSI: Regularized Recursive Self-Improvement of Agent Harnesses
@@ -334,7 +366,7 @@ NEW · PREPRINT 2026 · arXiv 2608.19880
 EnvHarness: Awakening Static Worlds for Agent Learning
 Chengsong Huang , Zifeng Wang, Rujun Han, Jun Yan, Yanfei Chen, Zoey CuiZhu, Ke Jiang, Peng Xia, Han Yu, Yufan Zhuang, Yifei Ming, Jiaqi Pan, Bhavana Dalvi Mishra, Jiaxin Huang, Burak Gokturk, Tomas Pfister, Chen-Yu Lee
 paper code
-NeurIPS · Spotlight 2026
+NeurIPS · Spotlight 2026 🏆 Best Paper Award · NeurIPS 2026 TTCL Workshop
 G-Zero: Self-Play for Open-Ended Generation from Zero Data
 Chengsong Huang , Haolin Liu, Tong Zheng, Runpeng Dai, Langlin Huang, Jinyuan Li, Zongxia Li, Zhepei Wei, Yu Meng, Jiaxin Huang
 paper code
@@ -442,6 +474,10 @@ ACL 2021
 Revisiting the Negative Data of Distantly Supervised Relation Extraction
 Chenhao Xie, Jiaqing Liang, Jingping Liu, Chengsong Huang , Wenhao Huang, Yanghua Xiao
 paper code
+PREPRINT 2026 · arXiv 2607.08964
+Long-Horizon-Terminal-Bench: Testing the Limits of Agents on Long-Horizon Terminal Tasks with Dense Reward-Based Grading
+Zongxia Li, Zhongzhi Li, Yucheng Shi, Ruhan Wang, Junyao Yang, Zhichao Liu, Xiyang Wu, Anhao Li, Chengsong Huang , Ergan Shang, Yue Yu, Ninghao Liu, Lichao Sun, Haitao Mi, Leowei Liang
+paper project code
 PREPRINT 2026 · arXiv 2606.31651
 FARS: A Fully Automated Research System Deployed at Scale
 Qiong Tang, Tianxiang Sun, Xiangkun Hu, Xiangyang Liu, Yiran Chen, Yunfan Shao, Bobo Li, Changze Lv, Cheng Xu, Chengsong Huang , Chunyang Li, Dizhan Xue, Hao Bai, Haodong Duan, Hengquan Guo, Hongyang He, Hongyi Chen, Hui Shen, Jiahao Yuan, Jiankai Sun, Jikang Cheng, Jinfeng Xu, Jingqi Tong, Jingye Chen, Jinxiu Liu, Jixuan Leng, Junchi Yu, Kaixun Jiang, Kun Xiang, Kunpeng Yao, Lang Feng, Liangqi Yuan, Longsen Gao, Meng Li, Qi Jia, Qiushi Sun, Shengyuan Ding, Shizhan Gong, Siru Zhong, Terry Jingchen Zhang, Tianle Gu, Tianyi Liang, Weijie Liu, Weikai Yang, Weizhi Fei, Xin Wang, Xinpeng Liu, Xuanwen Ding, Yihong Tang, Yuanli Wang, Yukun Jiang, Yuming Yang, Zhengbao He, Zhikai Chen, Zhikun Xu, Zhuang Li, Zihao Huang
@@ -483,6 +519,8 @@ Watermarking Pre-trained Language Models with Backdooring
 Chenxi Gu*, Chengsong Huang* , Xiaoqing Zheng, Kai-Wei Chang, Cho-Jui Hsieh
 paper
 
+Oct 2026
+G-Zero received the Best Paper Award at the NeurIPS 2026 Workshop on Towards Test-Time Continual Learning Agents (TTCL). 🏆
 Oct 2026
 New preprints released: R-Quest (sustaining self-evolution in reasoning models, a follow-up to R-Zero), RRSI (regularized recursive self-improvement of agent harnesses), and Recursive Self-Rewrite (scaling trajectories for complex tasks).
 Sep 2026
