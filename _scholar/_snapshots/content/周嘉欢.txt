@@ -1,16 +1,30 @@
-Zhou, Jiahuan（周嘉欢）
+Zhou Jiahuan（周嘉欢）
 Excellent Young Scientists Fund Program (Overseas) 国家级人才计划青年项目（海外）入选者,
 Peking University Boya Young Fellow 北京大学博雅青年学者,
 Wangxuan Institute of Computer Technology, Peking University.
 Beijing, China
-E-mail: jiahuanzhou@pku.edu.cn
-Jiahuan Zhou received his B.E. (2013) from Tsinghua University, and his Ph.D. degree (2018) in the Department of Electrical Engineering & Computer Science, Northwestern University. Currently, he is a Tenure-Track Assistant Professor at the Wangxuan Institute of Computer Technology, Peking University. His research interests include Computer Vision, Multi-modal Learning, and AI4Science. He has authored more than 80 papers in international journals and conferences including Nature Synthesis, Nature Communications, IEEE TPAMI, IJCV, IEEE TIP, CVPR, ICCV, ECCV, ICML, NeurIPS, ICLR, and so on. He serves as an Area Chair for CVPR, ECCV, ICML, NeurIPS, ICLR, BMVC, ICME, and ICPR, a Senior Program Committee Member for AAAI, an Associate Editor of the Springer Journal of Machine Vision and Applications (MVA), a Youth Associate Editor of National Materials. He has been selected for the National Overseas Excellent Young Scholars Program, the Xiaomi Young Scholar Award, and the Yang Fuqing-Wang Yangyuan Academician Faculty Award Excellence Prize.
-周嘉欢，北京大学王选计算机研究所研究员、助理教授、博士生导师，国家高层次青年人才，小米博雅青年学者。2013年本科毕业于清华大学自动化系，2018年博士毕业于美国Northwestern University计算机科学专业。主要研究方向为开放环境终身智能、多模态大模型高效微调、AI4Science等，已发表Nature子刊、CCF-A和IEEE Trans论文80余篇，包括Nature Synthesis、Nature Communications、IEEE TPAMI（9篇）、IJCV、IEEE TIP、CVPR、ICCV、ECCV、ICML、NeurIPS、ICLR等领域内顶级期刊和会议论文。主持包括国家自然科学基金优秀青年科学基金项目（海外）、国家自然科学基金面上项目、某基础加强计划技术领域基金、全国重点实验室开放基金、多项校企合作项目等，相关研究成果成功应用在部队、公安、字节跳动、腾讯、航天科工、铁科院等部门企业。担任CCF-CV专委会、CSF-VCS专委会、CSF-团体标准工作委员会委员，国际会议CVPR、ECCV、ICML、NeurIPS、ICLR、BMVC、ICME、ICPR领域主席，AAAI资深程序委员会委员，国际期刊Machine Vision and Applications编委，National Materials首届青年编委。曾获北京大学青教赛（理工科）二等奖（2024年）、北京大学青教赛（理工科）最受学生欢迎奖（2024年）、北京大学“杨芙清-王阳元院士奖教金优等奖”（2025年），北京大学教学成果奖一等奖（2025年）。
+Jiahuan Zhou received his B.E. (2013) from Tsinghua University, and his Ph.D. degree
+(2018) in the Department of Electrical Engineering & Computer Science, Northwestern
+University. Currently, he is a Tenure-Track Assistant Professor at the Wangxuan
+Institute of Computer Technology, Peking University. His research interests include
+Computer Vision, Multi-modal Learning, and AI4Science. He has authored more than 80
+papers in international journals and conferences including Nature Synthesis, Nature
+Communications, IEEE TPAMI, IJCV, IEEE TIP, CVPR, ICCV, ECCV, ICML, NeurIPS, ICLR, and
+so on. He serves as an Area Chair for CVPR, ECCV, ICML, NeurIPS, ICLR, BMVC, ICME, and
+ICPR, a Senior Program Committee Member for AAAI, an Associate Editor of the Springer
+Journal of Machine Vision and Applications (MVA), a Youth Associate Editor of National
+Materials. He has been selected for the National Overseas Excellent Young Scholars
+Program, the Xiaomi Young Scholar Award, and the Yang Fuqing-Wang Yangyuan Academician
+Faculty Award Excellence Prize.
+周嘉欢，北京大学王选计算机研究所研究员、助理教授、博士生导师，国家高层次青年人才，小米博雅青年学者。2013年本科毕业于清华大学自动化系，2018年博士毕业于美国Northwestern
+University计算机科学专业。主要研究方向为开放环境终身智能、多模态大模型高效微调、AI4Science等，已发表Nature子刊、CCF-A和IEEE
+Trans论文80余篇，包括Nature Synthesis、Nature Communications、IEEE TPAMI（9篇）、IJCV、IEEE
+TIP、CVPR、ICCV、ECCV、ICML、NeurIPS、ICLR等领域内顶级期刊和会议论文。主持包括国家自然科学基金优秀青年科学基金项目（海外）、国家自然科学基金面上项目、某基础加强计划技术领域基金、全国重点实验室开放基金、多项校企合作项目等，相关研究成果成功应用在部队、公安、字节跳动、腾讯、航天科工、铁科院等部门企业。担任CCF-CV专委会、CSF-VCS专委会、CSF-团体标准工作委员会委员，国际会议CVPR、ECCV、ICML、NeurIPS、ICLR、BMVC、ICME、ICPR领域主席，AAAI资深程序委员会委员，国际期刊Machine
+Vision and Applications编委，National
+Materials首届青年编委。曾获北京大学青教赛（理工科）二等奖（2024年）、北京大学青教赛（理工科）最受学生欢迎奖（2024年）、北京大学“杨芙清-王阳元院士奖教金优等奖”（2025年），北京大学教学成果奖一等奖（2025年）。
 Latest News
-We are always actively recruiting Post-doc Fellows,
-Ph.D., Master, and Research Interns! Welcome to contact me with your detailed CV!
-(常年招收博士后、博士、硕士和科研实习生！)
-09.2026, Invited to serve as the Workshops Chair of ICCV'2027.
+10.2026, Invited to serve as the Area Chair of ICML'2027.
+09.2026, Invited to serve as the Workshop Chair of ICCV'2027.
 09.2026, Five papers are accepted by NeurIPS'2026.
 09.2026, Invited to serve as the Area Chair of CVPR'2027.
 08.2026, One paper is accepted by IEEE TPAMI.
@@ -73,21 +87,33 @@ Show More
 Show Less
 Research Interests
 Open-Environment Computer Vision
-Object Re-Identification
-Fine-grained Recogniiton
-Object Detection
+Object
+Re-Identification
+Fine-grained
+Recogniiton
+Object
+Detection
 AIGC
-Efficient Learning from Limited Data
-Zero/Few-shot Learning
-Incremental Learning
-Prompt Learning
-Online Learning
-Noisy Learning
-Multi-Modal Learning
+Efficient
+Learning from Limited Data
+Zero/Few-shot
+Learning
+Incremental
+Learning
+Prompt
+Learning
+Online
+Learning
+Noisy
+Learning
+Multi-Modal
+Learning
 Visual-Language
 2D to 3D
-Visible to Thermal
-Sketch to Photo
+Visible to
+Thermal
+Sketch to
+Photo
 Publications
 All Papers
 2026
@@ -96,23 +122,54 @@ All Papers
 2023
 2022 and before
 The bib of the selected paper has copied!
-( NeurIPS'26, Spotlight )-Zixiang Ai, Zhenyu Cui, Xu Zou, and Jiahuan Zhou* , "3R-Adapter: Retrieval, Rewiring, and Refinement for Efficient Adaptation of 3D Reconstruction Model", in Proceedings of the Fortieth Annual Conference on Neural Information Processing Systems, Sydney, Australia, Dec.6 - Dec.12, 2026
+( NeurIPS'26, Spotlight )-Zixiang Ai,
+Zhenyu Cui, Xu Zou, and Jiahuan Zhou* , "3R-Adapter: Retrieval, Rewiring,
+and Refinement for Efficient Adaptation of 3D Reconstruction Model", in
+Proceedings of the Fortieth Annual Conference on Neural Information Processing
+Systems, Sydney, Australia, Dec.6 - Dec.12, 2026
 [ pdf ] 2D to 3D
-( NeurIPS'26 )-Kunlun Xu, Haotong Cheng, Yufei Guo, and Jiahuan Zhou* , "HypMoE-ReID: Hyperspherical Mixture-of-Experts for Large Scale Person Re-Identification", in Proceedings of the Fortieth Annual Conference on Neural Information Processing Systems, Sydney, Australia, Dec.6 - Dec.12, 2026
+( NeurIPS'26 )-Kunlun Xu, Haotong Cheng,
+Yufei Guo, and Jiahuan Zhou* , "HypMoE-ReID: Hyperspherical
+Mixture-of-Experts for Large Scale Person Re-Identification", in Proceedings of
+the Fortieth Annual Conference on Neural Information Processing Systems, Sydney,
+Australia, Dec.6 - Dec.12, 2026
 [ pdf ] OR
-( NeurIPS'26 )-Kunlun Xu, Zhengyuan Cai, and Jiahuan Zhou* , "Cross-Domain Knowledge Separation and Positive Transmission for Noisy Domain Incremental Learning", in Proceedings of the Fortieth Annual Conference on Neural Information Processing Systems, Sydney, Australia, Dec.6 - Dec.12, 2026
+( NeurIPS'26 )-Kunlun Xu, Zhengyuan Cai,
+and Jiahuan Zhou* , "Cross-Domain Knowledge Separation and Positive
+Transmission for Noisy Domain Incremental Learning", in Proceedings of the
+Fortieth Annual Conference on Neural Information Processing Systems, Sydney,
+Australia, Dec.6 - Dec.12, 2026
 [ pdf ] IL NL
-( NeurIPS'26 )-Xiaoyu Yi, Zihan Xiong, Junjie Cao, Xiaolong Weng, Yingzhe Ma, Gus Xia, Jinliang Liu, Yuxin Xie, Xianwei Zhuang, Yuguo Yin, Qiao Jin, Gongxi Zhu, Jiayu Wang, Junjie Liang, Qin Yue, Ziyu Wang, Dading Chong, Meng Cao, Jiahuan Zhou* , and Dongchao Yang*, "FlexCover: Flexible Cover Song Generation via Symbolic Lead Sheet Control", in Proceedings of the Fortieth Annual Conference on Neural Information Processing Systems, Sydney, Australia, Dec.6 - Dec.12, 2026
+( NeurIPS'26 )-Xiaoyu Yi, Zihan Xiong,
+Junjie Cao, Xiaolong Weng, Yingzhe Ma, Gus Xia, Jinliang Liu, Yuxin Xie, Xianwei
+Zhuang, Yuguo Yin, Qiao Jin, Gongxi Zhu, Jiayu Wang, Junjie Liang, Qin Yue, Ziyu
+Wang, Dading Chong, Meng Cao, Jiahuan Zhou* , and Dongchao Yang*,
+"FlexCover: Flexible Cover Song Generation via Symbolic Lead Sheet Control", in
+Proceedings of the Fortieth Annual Conference on Neural Information Processing
+Systems, Sydney, Australia, Dec.6 - Dec.12, 2026
 [ pdf ] AIGC
-( NeurIPS'26 )-Qiwei Li, Xicheng Gong, Xinghang Li, Peiyan Li, Quanyun Zhou, Hangjun Ye, Jiahuan Zhou* , and Yadong Mu*, "RotVLA: Rotational Latent Action for Vision-Language-Action Model", in Proceedings of the Fortieth Annual Conference on Neural Information Processing Systems, Sydney, Australia, Dec.6 - Dec.12, 2026
+( NeurIPS'26 )-Qiwei Li, Xicheng Gong,
+Xinghang Li, Peiyan Li, Quanyun Zhou, Hangjun Ye, Jiahuan Zhou* , and
+Yadong Mu*, "RotVLA: Rotational Latent Action for Vision-Language-Action Model",
+in Proceedings of the Fortieth Annual Conference on Neural Information
+Processing Systems, Sydney, Australia, Dec.6 - Dec.12, 2026
 [ pdf ] V&L
-( TPAMI'26 )- Zixiang Ai, Zhenyu Cui, Yufei Guo, Wenwen Qiang, Lei Chen, Jiwen Lu, and Jiahuan Zhou* , "GAPrompt++: Multi-Granular Geometry-Aware Point Cloud Prompt for 3D Vision Model", in IEEE Transactions on Pattern Analysis and Machine Intelligence, 2026
+( TPAMI'26 )- Zixiang Ai, Zhenyu Cui, Yufei
+Guo, Wenwen Qiang, Lei Chen, Jiwen Lu, and Jiahuan Zhou* , "GAPrompt++:
+Multi-Granular Geometry-Aware Point Cloud Prompt for 3D Vision Model", in IEEE
+Transactions on Pattern Analysis and Machine Intelligence, 2026
 [ pdf ]
 [ code ] PL
-( ECCV'26 )-Yao Yong, Zhenyu Cui, Lei Chen, Jiwen Lu, and Jiahuan Zhou* , "DG-Force: Disentangling and Gathering Forensic Cues is Needed for Image Manipulation Localization", in Proceedings of the
+( ECCV'26 )-Yao Yong, Zhenyu Cui, Lei Chen,
+Jiwen Lu, and Jiahuan Zhou* , "DG-Force: Disentangling and Gathering
+Forensic Cues is Needed for Image Manipulation Localization", in Proceedings of
+the
 European Conference on Computer Vision, Sep.8 – Sep.12, Malmö, Sweden, 2026
 [ pdf ] AIGC
-( ECCV'26 )-Kunlun Xu, Liangyu Ma, Jiangmeng Li, Xin Tong, Xiaode Liu, Yufei Guo, and Jiahuan Zhou* , "SCORE: SubDistribution-aware Collaborative Knowledge Reinforcing for Cloth-Hybrid Lifelong Person Re-Identification", in Proceedings of the
+( ECCV'26 )-Kunlun Xu, Liangyu Ma,
+Jiangmeng Li, Xin Tong, Xiaode Liu, Yufei Guo, and Jiahuan Zhou* , "SCORE:
+SubDistribution-aware Collaborative Knowledge Reinforcing for Cloth-Hybrid
+Lifelong Person Re-Identification", in Proceedings of the
 European Conference on Computer Vision, Sep.8 – Sep.12, Malmö, Sweden, 2026
 [ pdf ] OR
 ( TPAMI'26 )-Kunlun Xu, Jiangmeng Li, Yufei
@@ -121,7 +178,8 @@ via Continual Self-Paced Dual-Knowledge Purification for Noisy Lifelong Person
 Re-Identification", in IEEE Transactions on Pattern Analysis and Machine
 Intelligence, 2026
 [ pdf ]
-[ bib ] [ DOI:10.1109/TPAMI.2026.3693671 ] OR IL
+[ bib ]
+[ DOI:10.1109/TPAMI.2026.3693671 ] OR IL
 ( ICML'26 )-Kunlun Xu, Yanqin Zhang, Wenwen
 Qiang, and Jiahuan Zhou* , "Hyper-LLaVA: Hyperbolic Uncertainty-aware
 Modality-Balanced Routing for Multimodal Continual Instruction Tuning", in
@@ -169,7 +227,8 @@ Zhou* , Sheng Zhong, and Luxin Yan, "MSCD-GS: Motion-Separated
 Cooperative Deblurring Dynamic Reconstruction via Gaussian Splatting", in
 Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern
 Recognition, Denver, Colorado, USA, Jun.3 - Jun.7, 2026
-[ pdf ] [ bib ] 2D to 3D
+[ pdf ]
+[ bib ] 2D to 3D
 ( CVPR'26 )-Zehua Zang, Xi Wang, Fuchun
 Sun, Xiao Xu, Lixiang Liu, Jiangmeng Li*, and Jiahuan Zhou* , "Test-Time
 Perturbation Tuning with Delayed Feedback for Vision-Language-Action Models", in
@@ -182,7 +241,8 @@ Wenwen Qiang*, Jiahuan Zhou , Changwen Zheng, and Gang Hua, "COPO:
 Causal-Oriented Policy Optimization for Hallucinations of MLLMs", in Proceedings
 of the IEEE/CVF Conference on Computer Vision and Pattern Recognition, Denver,
 Colorado, USA, Jun.3 - Jun.7, 2026
-[ pdf ] [ bib ] V&L
+[ pdf ]
+[ bib ] V&L
 ( ICLR'26 )-Qiwei Li, Xiaochen Yang, and Jiahuan Zhou* , "Naming to Learn: Class Incremental Learning for
 Vision-Language Model with Unlabeled Data", in Proceedings of the 14th
 International Conference on Learning Representations, Rio de Janeiro, Brazil,
@@ -193,43 +253,55 @@ Apr.23 - Apr.27, 2026
 Liqun Chen, Wenjun Chen, Shixiang Huang, Chunxi Li, Jiahuan Zhou , Luxin
 Yan, Sheng Zhong, and Xu Zou, "Supervisory Feedback for High-resolution
 Low-textured Large-scale Multi-view Stereo", in Pattern Recognization, 2026
-[ pdf ] [ bib ] [ DOI:10.1016/j.patcog.2025.112907 ] 2D to 3D
+[ pdf ]
+[ bib ]
+[ DOI:10.1016/j.patcog.2025.112907 ] 2D to 3D
 ( TPAMI'26 )-Zhenyu Cui, Jiahuan
 Zhou , and Yuxin Peng, "Bi-C2R: Bidirectional Continual Compatible
 Representation for Re-indexing Free Lifelong Person Re-identification", in IEEE
 Transactions on Pattern Analysis and Machine Intelligence, 2026
-[ pdf ] [ code ] [ bib ] [ DOI:10.1109/TPAMI.2025.3649078 ] OR IL
+[ pdf ] [ code ] [ bib ]
+[ DOI:10.1109/TPAMI.2025.3649078 ] OR IL
 ( AAAI'26 )-Zhenyu Cui, Jiahuan
 Zhou , and Yuxin Peng, "CKDA: Cross-modality Knowledge Disentanglement
 and Alignment for Visible-Infrared Lifelong Person Re-identification", in
 Proceedings of the 40th Annual AAAI Conference on Artificial Intelligence,
 Singapore, Jan.20 - Jan.27, 2026
-[ pdf ] [ code ] [ doi ] [ bib ] [ 机器之心报道 ] OR VT
+[ pdf ]
+[ code ] [ doi ] [ bib ]
+[ 机器之心报道 ] OR VT
 ( AAAI'26, Oral )-Fei Song, Yi Li, Rui
 Wang, Jiahuan Zhou , Changwen Zheng, and Jiangmeng Li, "Doubly Debiased
 Test-Time Prompt Tuning for Vision-Language Models", in Proceedings of the 40th
 Annual AAAI Conference on Artificial Intelligence, Singapore, Jan.20 - Jan.27,
 2026
 [ pdf ]
-[ code ] [ DOI:10.1609/aaai.v40i11.37863 ] [ bib ] PL V&L
+[ code ] [ DOI:10.1609/aaai.v40i11.37863 ]
+[ bib ] PL V&L
 ( NeurIPS'25 )-Kunlun Xu, Yibo Feng,
 Jiangmeng Li, Yongsheng Qi, and Jiahuan Zhou* , "C²Prompt: Class-aware
 Client Knowledge Interaction for Federated Continual Learning", in Proceedings
 of the Conference on Neural Information Processing Systems, San Diego, USA,
 Nov.30 - Dec.7, 2025
-[ pdf ] [ code ] [ bib ] [ DOI:10.52202/085713-1470 ] PL IL
+[ pdf ]
+[ code ] [ bib ]
+[ DOI:10.52202/085713-1470 ] PL IL
 ( NeurIPS'25 )- Jiahuan Zhou , Kai
 Zhu, Zhenyu Cui, Zichen Liu, Xu Zou, and Gang Hua, "State Space Prompting via
 Gathering and Spreading Spatio-Temporal Information for Video Understanding", in
 Proceedings of the Conference on Neural Information Processing Systems, San
 Diego, USA, Nov.30 - Dec.7, 2025
-[ pdf ] [ code ] [ bib ] [ DOI:10.52202/085713-4794 ] PL
+[ pdf ]
+[ code ] [ bib ]
+[ DOI:10.52202/085713-4794 ] PL
 ( NeurIPS'25 )- Jiahuan Zhou , Chao
 Zhu, Zhenyu Cui, Zichen Liu, Xu Zou, and Gang Hua, "Class-aware Domain Knowledge
 Fusion and Fission for Continual Test-Time Adaptation", in Proceedings of the
 Conference on Neural Information Processing Systems, San Diego, USA, Nov.30 -
 Dec.7, 2025
-[ pdf ] [ code ] [ bib ] [ DOI:10.52202/085713-1866 ] IL
+[ pdf ]
+[ code ] [ bib ]
+[ DOI:10.52202/085713-1866 ] IL
 ( TPAMI'25 )- Jiahuan Zhou , Kunlun
 Xu, Fan Zhuo, Xu Zou, and Yuxin Peng, "Distribution-aware Knowledge Aligning and
 Prototyping for Non-exemplar Lifelong Person Re-Identification", in IEEE
@@ -643,23 +715,54 @@ clustering by nonnegative restriction", in Proceedings of the International
 Conference on Pattern Recognition, pp. 1550-1553, Tsukuba, Japan, Nov.11 -
 Nov.15, 2012
 [ pdf ] [ bib ]
-( NeurIPS'26, Spotlight )-Zixiang Ai, Zhenyu Cui, Xu Zou, and Jiahuan Zhou* , "3R-Adapter: Retrieval, Rewiring, and Refinement for Efficient Adaptation of 3D Reconstruction Model", in Proceedings of the Fortieth Annual Conference on Neural Information Processing Systems, Sydney, Australia, Dec.6 - Dec.12, 2026
+( NeurIPS'26, Spotlight )-Zixiang Ai,
+Zhenyu Cui, Xu Zou, and Jiahuan Zhou* , "3R-Adapter: Retrieval, Rewiring,
+and Refinement for Efficient Adaptation of 3D Reconstruction Model", in
+Proceedings of the Fortieth Annual Conference on Neural Information Processing
+Systems, Sydney, Australia, Dec.6 - Dec.12, 2026
 [ pdf ] 2D to 3D
-( NeurIPS'26 )-Kunlun Xu, Haotong Cheng, Yufei Guo, and Jiahuan Zhou* , "HypMoE-ReID: Hyperspherical Mixture-of-Experts for Large Scale Person Re-Identification", in Proceedings of the Fortieth Annual Conference on Neural Information Processing Systems, Sydney, Australia, Dec.6 - Dec.12, 2026
+( NeurIPS'26 )-Kunlun Xu, Haotong Cheng,
+Yufei Guo, and Jiahuan Zhou* , "HypMoE-ReID: Hyperspherical
+Mixture-of-Experts for Large Scale Person Re-Identification", in Proceedings of
+the Fortieth Annual Conference on Neural Information Processing Systems, Sydney,
+Australia, Dec.6 - Dec.12, 2026
 [ pdf ] OR
-( NeurIPS'26 )-Kunlun Xu, Zhengyuan Cai, and Jiahuan Zhou* , "Cross-Domain Knowledge Separation and Positive Transmission for Noisy Domain Incremental Learning", in Proceedings of the Fortieth Annual Conference on Neural Information Processing Systems, Sydney, Australia, Dec.6 - Dec.12, 2026
+( NeurIPS'26 )-Kunlun Xu, Zhengyuan Cai,
+and Jiahuan Zhou* , "Cross-Domain Knowledge Separation and Positive
+Transmission for Noisy Domain Incremental Learning", in Proceedings of the
+Fortieth Annual Conference on Neural Information Processing Systems, Sydney,
+Australia, Dec.6 - Dec.12, 2026
 [ pdf ] IL NL
-( NeurIPS'26 )-Xiaoyu Yi, Zihan Xiong, Junjie Cao, Xiaolong Weng, Yingzhe Ma, Gus Xia, Jinliang Liu, Yuxin Xie, Xianwei Zhuang, Yuguo Yin, Qiao Jin, Gongxi Zhu, Jiayu Wang, Junjie Liang, Qin Yue, Ziyu Wang, Dading Chong, Meng Cao, Jiahuan Zhou* , and Dongchao Yang*, "FlexCover: Flexible Cover Song Generation via Symbolic Lead Sheet Control", in Proceedings of the Fortieth Annual Conference on Neural Information Processing Systems, Sydney, Australia, Dec.6 - Dec.12, 2026
+( NeurIPS'26 )-Xiaoyu Yi, Zihan Xiong,
+Junjie Cao, Xiaolong Weng, Yingzhe Ma, Gus Xia, Jinliang Liu, Yuxin Xie, Xianwei
+Zhuang, Yuguo Yin, Qiao Jin, Gongxi Zhu, Jiayu Wang, Junjie Liang, Qin Yue, Ziyu
+Wang, Dading Chong, Meng Cao, Jiahuan Zhou* , and Dongchao Yang*,
+"FlexCover: Flexible Cover Song Generation via Symbolic Lead Sheet Control", in
+Proceedings of the Fortieth Annual Conference on Neural Information Processing
+Systems, Sydney, Australia, Dec.6 - Dec.12, 2026
 [ pdf ] AIGC
-( NeurIPS'26 )-Qiwei Li, Xicheng Gong, Xinghang Li, Peiyan Li, Quanyun Zhou, Hangjun Ye, Jiahuan Zhou* , and Yadong Mu*, "RotVLA: Rotational Latent Action for Vision-Language-Action Model", in Proceedings of the Fortieth Annual Conference on Neural Information Processing Systems, Sydney, Australia, Dec.6 - Dec.12, 2026
+( NeurIPS'26 )-Qiwei Li, Xicheng Gong,
+Xinghang Li, Peiyan Li, Quanyun Zhou, Hangjun Ye, Jiahuan Zhou* , and
+Yadong Mu*, "RotVLA: Rotational Latent Action for Vision-Language-Action Model",
+in Proceedings of the Fortieth Annual Conference on Neural Information
+Processing Systems, Sydney, Australia, Dec.6 - Dec.12, 2026
 [ pdf ] V&L
-( TPAMI'26 )- Zixiang Ai, Zhenyu Cui, Yufei Guo, Wenwen Qiang, Lei Chen, Jiwen Lu, and Jiahuan Zhou* , "GAPrompt++: Multi-Granular Geometry-Aware Point Cloud Prompt for 3D Vision Model", in IEEE Transactions on Pattern Analysis and Machine Intelligence, 2026
+( TPAMI'26 )- Zixiang Ai, Zhenyu Cui, Yufei
+Guo, Wenwen Qiang, Lei Chen, Jiwen Lu, and Jiahuan Zhou* , "GAPrompt++:
+Multi-Granular Geometry-Aware Point Cloud Prompt for 3D Vision Model", in IEEE
+Transactions on Pattern Analysis and Machine Intelligence, 2026
 [ pdf ]
 [ code ] PL
-( ECCV'26 )-Yao Yong, Zhenyu Cui, Lei Chen, Jiwen Lu, and Jiahuan Zhou* , "DG-Force: Disentangling and Gathering Forensic Cues is Needed for Image Manipulation Localization", in Proceedings of the
+( ECCV'26 )-Yao Yong, Zhenyu Cui, Lei Chen,
+Jiwen Lu, and Jiahuan Zhou* , "DG-Force: Disentangling and Gathering
+Forensic Cues is Needed for Image Manipulation Localization", in Proceedings of
+the
 European Conference on Computer Vision, Sep.8 – Sep.12, Malmö, Sweden, 2026
 [ pdf ] AIGC
-( ECCV'26 )-Kunlun Xu, Liangyu Ma, Jiangmeng Li, Xin Tong, Xiaode Liu, Yufei Guo, and Jiahuan Zhou* , "SCORE: SubDistribution-aware Collaborative Knowledge Reinforcing for Cloth-Hybrid Lifelong Person Re-Identification", in Proceedings of the
+( ECCV'26 )-Kunlun Xu, Liangyu Ma,
+Jiangmeng Li, Xin Tong, Xiaode Liu, Yufei Guo, and Jiahuan Zhou* , "SCORE:
+SubDistribution-aware Collaborative Knowledge Reinforcing for Cloth-Hybrid
+Lifelong Person Re-Identification", in Proceedings of the
 European Conference on Computer Vision, Sep.8 – Sep.12, Malmö, Sweden, 2026
 [ pdf ] OR
 ( TPAMI'26 )-Kunlun Xu, Jiangmeng Li, Yufei
@@ -668,7 +771,8 @@ via Continual Self-Paced Dual-Knowledge Purification for Noisy Lifelong Person
 Re-Identification", in IEEE Transactions on Pattern Analysis and Machine
 Intelligence, 2026
 [ pdf ]
-[ bib ] [ DOI:10.1109/TPAMI.2026.3693671 ] OR IL
+[ bib ]
+[ DOI:10.1109/TPAMI.2026.3693671 ] OR IL
 ( ICML'26 )-Kunlun Xu, Yanqin Zhang, Wenwen
 Qiang, and Jiahuan Zhou* , "Hyper-LLaVA: Hyperbolic Uncertainty-aware
 Modality-Balanced Routing for Multimodal Continual Instruction Tuning", in
@@ -716,7 +820,8 @@ Zhou* , Sheng Zhong, and Luxin Yan, "MSCD-GS: Motion-Separated
 Cooperative Deblurring Dynamic Reconstruction via Gaussian Splatting", in
 Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern
 Recognition, Denver, Colorado, USA, Jun.3 - Jun.7, 2026
-[ pdf ] [ bib ] 2D to 3D
+[ pdf ]
+[ bib ] 2D to 3D
 ( CVPR'26 )-Zehua Zang, Xi Wang, Fuchun
 Sun, Xiao Xu, Lixiang Liu, Jiangmeng Li*, and Jiahuan Zhou* , "Test-Time
 Perturbation Tuning with Delayed Feedback for Vision-Language-Action Models", in
@@ -729,7 +834,8 @@ Wenwen Qiang*, Jiahuan Zhou , Changwen Zheng, and Gang Hua, "COPO:
 Causal-Oriented Policy Optimization for Hallucinations of MLLMs", in Proceedings
 of the IEEE/CVF Conference on Computer Vision and Pattern Recognition, Denver,
 Colorado, USA, Jun.3 - Jun.7, 2026
-[ pdf ] [ bib ] V&L
+[ pdf ]
+[ bib ] V&L
 ( ICLR'26 )-Qiwei Li, Xiaochen Yang, and Jiahuan Zhou* , "Naming to Learn: Class Incremental Learning for
 Vision-Language Model with Unlabeled Data", in Proceedings of the 14th
 International Conference on Learning Representations, Rio de Janeiro, Brazil,
@@ -740,43 +846,55 @@ Apr.23 - Apr.27, 2026
 Liqun Chen, Wenjun Chen, Shixiang Huang, Chunxi Li, Jiahuan Zhou , Luxin
 Yan, Sheng Zhong, and Xu Zou, "Supervisory Feedback for High-resolution
 Low-textured Large-scale Multi-view Stereo", in Pattern Recognization, 2026
-[ pdf ] [ bib ] [ DOI:10.1016/j.patcog.2025.112907 ] 2D to 3D
+[ pdf ]
+[ bib ]
+[ DOI:10.1016/j.patcog.2025.112907 ] 2D to 3D
 ( TPAMI'26 )-Zhenyu Cui, Jiahuan
 Zhou , and Yuxin Peng, "Bi-C2R: Bidirectional Continual Compatible
 Representation for Re-indexing Free Lifelong Person Re-identification", in IEEE
 Transactions on Pattern Analysis and Machine Intelligence, 2026
-[ pdf ] [ code ] [ bib ] [ DOI:10.1109/TPAMI.2025.3649078 ] OR IL
+[ pdf ] [ code ] [ bib ]
+[ DOI:10.1109/TPAMI.2025.3649078 ] OR IL
 ( AAAI'26 )-Zhenyu Cui, Jiahuan
 Zhou , and Yuxin Peng, "CKDA: Cross-modality Knowledge Disentanglement
 and Alignment for Visible-Infrared Lifelong Person Re-identification", in
 Proceedings of the 40th Annual AAAI Conference on Artificial Intelligence,
 Singapore, Jan.20 - Jan.27, 2026
-[ pdf ] [ code ] [ doi ] [ bib ] [ 机器之心报道 ] OR VT
+[ pdf ]
+[ code ] [ doi ] [ bib ]
+[ 机器之心报道 ] OR VT
 ( AAAI'26, Oral )-Fei Song, Yi Li, Rui
 Wang, Jiahuan Zhou , Changwen Zheng, and Jiangmeng Li, "Doubly Debiased
 Test-Time Prompt Tuning for Vision-Language Models", in Proceedings of the 40th
 Annual AAAI Conference on Artificial Intelligence, Singapore, Jan.20 - Jan.27,
 2026
 [ pdf ]
-[ code ] [ DOI:10.1609/aaai.v40i11.37863 ] [ bib ] PL V&L
+[ code ] [ DOI:10.1609/aaai.v40i11.37863 ]
+[ bib ] PL V&L
 ( NeurIPS'25 )-Kunlun Xu, Yibo Feng,
 Jiangmeng Li, Yongsheng Qi, and Jiahuan Zhou* , "C²Prompt: Class-aware
 Client Knowledge Interaction for Federated Continual Learning", in Proceedings
 of the Conference on Neural Information Processing Systems, San Diego, USA,
 Nov.30 - Dec.7, 2025
-[ pdf ] [ code ] [ bib ] [ DOI:10.52202/085713-1470 ] PL IL
+[ pdf ]
+[ code ] [ bib ]
+[ DOI:10.52202/085713-1470 ] PL IL
 ( NeurIPS'25 )- Jiahuan Zhou , Kai
 Zhu, Zhenyu Cui, Zichen Liu, Xu Zou, and Gang Hua, "State Space Prompting via
 Gathering and Spreading Spatio-Temporal Information for Video Understanding", in
 Proceedings of the Conference on Neural Information Processing Systems, San
 Diego, USA, Nov.30 - Dec.7, 2025
-[ pdf ] [ code ] [ bib ] [ DOI:10.52202/085713-4794 ] PL
+[ pdf ]
+[ code ] [ bib ]
+[ DOI:10.52202/085713-4794 ] PL
 ( NeurIPS'25 )- Jiahuan Zhou , Chao
 Zhu, Zhenyu Cui, Zichen Liu, Xu Zou, and Gang Hua, "Class-aware Domain Knowledge
 Fusion and Fission for Continual Test-Time Adaptation", in Proceedings of the
 Conference on Neural Information Processing Systems, San Diego, USA, Nov.30 -
 Dec.7, 2025
-[ pdf ] [ code ] [ bib ] [ DOI:10.52202/085713-1866 ] IL
+[ pdf ]
+[ code ] [ bib ]
+[ DOI:10.52202/085713-1866 ] IL
 ( TPAMI'25 )- Jiahuan Zhou , Kunlun
 Xu, Fan Zhuo, Xu Zou, and Yuxin Peng, "Distribution-aware Knowledge Aligning and
 Prototyping for Non-exemplar Lifelong Person Re-Identification", in IEEE
@@ -806,22 +924,26 @@ on Pattern Analysis and Machine Intelligence, May. 2025
 and Jiahuan Zhou* , "Componential Prompt-Knowledge Alignment for Domain
 Incremental Learning", in Proceedings of the International Conference on Machine
 Learning, Vancouver, Canada, Jul.13 - Jul.19, 2025
-[ pdf ] [ code ] [ bib ] [ PaperWeekly报道 ] PL IL
+[ pdf ] [ code ] [ bib ]
+[ PaperWeekly报道 ] PL IL
 ( ICML'25 )-Zichen Liu, Xu Zou, Gang Hua,
 and Jiahuan Zhou* , "Token Coordinated Prompt Attention is Needed for
 Visual Prompting", in Proceedings of the International Conference on Machine
 Learning, Vancouver, Canada, Jul.13 - Jul.19, 2025
-[ pdf ] [ code ] [ bib ] [ AI前沿速递报道 ] [ PaperWeekly报道 ] PL
+[ pdf ] [ code ] [ bib ]
+[ AI前沿速递报道 ] [ PaperWeekly报道 ] PL
 ( ICML'25 )-Zixiang Ai, Zichen Liu,
 Yuanhang Lei, Zhenyu Cui, Xu Zou, and Jiahuan Zhou* , "GAPrompt:
 Geometry-Aware Point cloud Prompt for 3D Vision Model", in Proceedings of the
 International Conference on Machine Learning, Vancouver, Canada, Jul.13 -
 Jul.19, 2025
-[ pdf ] [ code ] [ bib ] [ PaperWeekly报道 ] PL
+[ pdf ] [ code ] [ bib ]
+[ PaperWeekly报道 ] PL
 ( ICML'25 )-Zixiang Ai, Zichen Liu, and Jiahuan Zhou* , "Vision Graph Prompting via Semantic Low-Rank
 Decomposition", in Proceedings of the International Conference on Machine
 Learning, Vancouver, Canada, Jul.13 - Jul.19, 2025
-[ pdf ] [ code ] [ bib ] [ PaperWeekly报道 ] PL
+[ pdf ] [ code ] [ bib ]
+[ PaperWeekly报道 ] PL
 ( ICLR'25 )-Yanjie Wang, Liqun Chen,
 Tianming Zhao, Tao Zhang, Guodong Wang, Luxin Yan, Sheng Zhong, Jiahuan
 Zhou* , and Xu Zou*, "High-dimension Prototype is a Better Incremental
