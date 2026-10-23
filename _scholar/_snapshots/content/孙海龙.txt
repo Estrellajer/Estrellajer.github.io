@@ -1,3 +1,5 @@
+[2026-10] We introduce Ling-3.1-flash-1019 , scoring 44 on the Artificial Analysis Intelligence Index, up from 41 and on par with Kimi-K3 . We also open-source Ling-3.0-flash-Sante for healthcare.
+
 [2026-10] We introduce Ling-3.1-flash , a 560B MoE model with 25B active parameters for coding, reasoning, and agentic tasks, scoring 41 on the Artificial Analysis Intelligence Index .
 
 [2026-09] Our team released Ling-3.0-flash-VL and Ling-3.0-flash-Sante , extending Ling 3.0 to visual agents and healthcare.
