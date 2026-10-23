@@ -1,3 +1,6 @@
+Generating a re-illuminated reconstruction of an object
+T Zhang, Z Kuang, Z Xu, Y HU, S Bi, M Hašan, KK Sunkavalli, K Zhang, ...
+US Patent App. 19/041,371, 2026 2026
 Aligning visual foundation encoders to tokenizers for diffusion models
 B Chen, S Bi, H Tan, H Zhang, T Zhang, Z Li, Y Xiong, J Zhang, K Zhang
 International Conference on Learning Representations 2026, 122493-122531, 2026 2026
@@ -55,6 +58,3 @@ CVPR 2022, 2021 2021
 Detr3d: 3d object detection from multi-view images via 3d-to-2d queries
 Y Wang, V Guizilini, T Zhang, Y Wang, H Zhao, J Solomon
 5th Conference on Robot Learning (CoRL 2021), London, UK, 2021 2021
-RIFE: real-time intermediate flow estimation for video frame interpolation. Arxiv preprint arXiv. 2011: 06294
-Z Huang, T Zhang, W Heng, B Shi, S Zhou
-Rife: Real-time intermediate flow estimation for video frame interpolation, 2020 2020
