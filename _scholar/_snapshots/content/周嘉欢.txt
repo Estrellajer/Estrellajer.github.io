@@ -154,7 +154,7 @@ Yadong Mu*, "RotVLA: Rotational Latent Action for Vision-Language-Action Model",
 in Proceedings of the Fortieth Annual Conference on Neural Information
 Processing Systems, Sydney, Australia, Dec.6 - Dec.12, 2026
 [ pdf ] V&L
-( TPAMI'26 )- Zixiang Ai, Zhenyu Cui, Yufei
+( TPAMI'26 )-Zixiang Ai, Zhenyu Cui, Yufei
 Guo, Wenwen Qiang, Lei Chen, Jiwen Lu, and Jiahuan Zhou* , "GAPrompt++:
 Multi-Granular Geometry-Aware Point Cloud Prompt for 3D Vision Model", in IEEE
 Transactions on Pattern Analysis and Machine Intelligence, 2026
@@ -747,7 +747,7 @@ Yadong Mu*, "RotVLA: Rotational Latent Action for Vision-Language-Action Model",
 in Proceedings of the Fortieth Annual Conference on Neural Information
 Processing Systems, Sydney, Australia, Dec.6 - Dec.12, 2026
 [ pdf ] V&L
-( TPAMI'26 )- Zixiang Ai, Zhenyu Cui, Yufei
+( TPAMI'26 )-Zixiang Ai, Zhenyu Cui, Yufei
 Guo, Wenwen Qiang, Lei Chen, Jiwen Lu, and Jiahuan Zhou* , "GAPrompt++:
 Multi-Granular Geometry-Aware Point Cloud Prompt for 3D Vision Model", in IEEE
 Transactions on Pattern Analysis and Machine Intelligence, 2026
