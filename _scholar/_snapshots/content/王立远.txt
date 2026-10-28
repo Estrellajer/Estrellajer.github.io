@@ -50,6 +50,10 @@
 
 2023/12 One paper is published in Nature Machine Intelligence (as the cover).
 
+A Drosophila Connectome Prior Enables Adaptable Embodied Control.
+Siyu Yu, Kanglei Zhou, Hongwei Yan, Xinyi Wang, Sen Song, Bo Hong, Liyuan Wang $^\dagger$.
+Under Review, 2026.
+
 Beyond Belief Nesting: Rethinking Higher-Order Theory of Mind in Large Language Models.
 Shanshan You, Zhengqi Wang, Hao Liu, Yuqin Liu, Ya He, Xin Hao, Liyuan Wang $^\dagger$.
 arXiv:2610.17777, Under Review, 2026.
