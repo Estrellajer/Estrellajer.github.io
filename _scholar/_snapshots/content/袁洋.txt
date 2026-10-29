@@ -17,7 +17,7 @@ Monadic Context Engineering
 Y Zhang, Y Yuan, M Wang, ACC Yao
 arXiv preprint arXiv:2512.22431, 2025 2025
 AutoMathText-V2: A 2.46 Trillion Token AI-Curated STEM Pretraining Dataset
-CLY Zhang, Y Yuan, AC Yao
+C Li, Y Zhang, Y Lu, AC Yao
 2025
 Clarifying before reasoning: A coq prover with structural context
 Y Lu, H Yang, X Wang, G Zhang, B Li, C Fu, C Li, Y Yuan, ACC Yao
