@@ -1,3 +1,6 @@
+Algebraic World Model: From Exploration to Proofs
+G Pan, Q Tan, Y Yuan, ACC Yao
+arXiv preprint arXiv:2610.40503, 2026 2026
 Calculus of intelligence: A topos-monadic framework for agentic workflows
 Y Yuan, ACC Yao
 iFuture, 2026 2026
@@ -55,6 +58,3 @@ Advances in Neural Information Processing Systems 36, 79698-79733, 2023 2023
 Meta prompting for ai systems
 Y Zhang, Y Yuan, ACC Yao
 arXiv preprint arXiv:2311.11482, 2023 2023
-Information flow in self-supervised learning
-Z Tan, J Yang, W Huang, Y Yuan, Y Zhang
-arXiv preprint arXiv:2309.17281, 2023 2023
