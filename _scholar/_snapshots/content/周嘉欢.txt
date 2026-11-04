@@ -3,25 +3,8 @@ Excellent Young Scientists Fund Program (Overseas) 国家级人才计划青年�
 Peking University Boya Young Fellow 北京大学博雅青年学者,
 Wangxuan Institute of Computer Technology, Peking University.
 Beijing, China
-Jiahuan Zhou received his B.E. (2013) from Tsinghua University, and his Ph.D. degree
-(2018) in the Department of Electrical Engineering & Computer Science, Northwestern
-University. Currently, he is a Tenure-Track Assistant Professor at the Wangxuan
-Institute of Computer Technology, Peking University. His research interests include
-Computer Vision, Multi-modal Learning, and AI4Science. He has authored more than 80
-papers in international journals and conferences including Nature Synthesis, Nature
-Communications, IEEE TPAMI, IJCV, IEEE TIP, CVPR, ICCV, ECCV, ICML, NeurIPS, ICLR, and
-so on. He serves as an Area Chair for CVPR, ECCV, ICML, NeurIPS, ICLR, BMVC, ICME, and
-ICPR, a Senior Program Committee Member for AAAI, an Associate Editor of the Springer
-Journal of Machine Vision and Applications (MVA), a Youth Associate Editor of National
-Materials. He has been selected for the National Overseas Excellent Young Scholars
-Program, the Xiaomi Young Scholar Award, and the Yang Fuqing-Wang Yangyuan Academician
-Faculty Award Excellence Prize.
-周嘉欢，北京大学王选计算机研究所研究员、助理教授、博士生导师，国家高层次青年人才，小米博雅青年学者。2013年本科毕业于清华大学自动化系，2018年博士毕业于美国Northwestern
-University计算机科学专业。主要研究方向为开放环境终身智能、多模态大模型高效微调、AI4Science等，已发表Nature子刊、CCF-A和IEEE
-Trans论文80余篇，包括Nature Synthesis、Nature Communications、IEEE TPAMI（9篇）、IJCV、IEEE
-TIP、CVPR、ICCV、ECCV、ICML、NeurIPS、ICLR等领域内顶级期刊和会议论文。主持包括国家自然科学基金优秀青年科学基金项目（海外）、国家自然科学基金面上项目、某基础加强计划技术领域基金、全国重点实验室开放基金、多项校企合作项目等，相关研究成果成功应用在部队、公安、字节跳动、腾讯、航天科工、铁科院等部门企业。担任CCF-CV专委会、CSF-VCS专委会、CSF-团体标准工作委员会委员，国际会议CVPR、ECCV、ICML、NeurIPS、ICLR、BMVC、ICME、ICPR领域主席，AAAI资深程序委员会委员，国际期刊Machine
-Vision and Applications编委，National
-Materials首届青年编委。曾获北京大学青教赛（理工科）二等奖（2024年）、北京大学青教赛（理工科）最受学生欢迎奖（2024年）、北京大学“杨芙清-王阳元院士奖教金优等奖”（2025年），北京大学教学成果奖一等奖（2025年）。
+Jiahuan Zhou received his B.E. degree from the Department of Automation at Tsinghua University in 2013 and his Ph.D. degree from the Department of Electrical Engineering and Computer Science at Northwestern University in 2018. He is a tenure-track Assistant Professor at the Wangxuan Institute of Computer Technology, Peking University. His research lies at the intersection of computer vision, multimodal learning, and AI for Science. He has authored more than 90 papers in leading journals and conferences, including Nature Synthesis, Nature Communications, IEEE TPAMI, IJCV, IEEE TIP, CVPR, ICCV, ECCV, ICML, NeurIPS, and ICLR. Dr. Zhou has served as a Workshop Chair for ICCV 2027; an Area Chair for CVPR, ECCV, ICML, NeurIPS, ICLR, BMVC, ICME, and ICPR; and a Senior Program Committee Member for AAAI. He is also an Associate Editor for Machine Vision and Applications and a Youth Associate Editor for National Materials. His honors include the National Overseas Excellent Young Scholars Award, the Xiaomi–Boya Young Scholar Award, the Excellence Prize of the Yang Fuqing–Wang Yangyuan Academician Faculty Award, the Walter Murphy Fellowship Award, and the Terminal Year Fellowship Award.
+周嘉欢，北京大学王选计算机研究所研究员、助理教授、博士生导师，国家高层次青年人才，小米博雅青年学者。2013年本科毕业于清华大学自动化系，2018年博士毕业于美国Northwestern University计算机科学专业。主要研究方向为开放环境终身智能、多模态大模型高效微调、AI4Science等，已发表Nature子刊、CCF-A和IEEE Trans论文九十余篇，包括Nature Synthesis、Nature Communications、IEEE TPAMI（10篇）、IJCV、IEEE TIP、CVPR、ICCV、ECCV、ICML、NeurIPS、ICLR等领域内重要期刊和会议论文。主持包括国家自然科学基金优秀青年科学基金项目（海外）、国家自然科学基金面上项目、JKW某工程重点项目课题、JKW基础加强计划技术领域基金（2项）、全国重点实验室基金、多项校企合作项目等，相关研究成果成功应用在部队、公安、国安、字节跳动、腾讯、航天科工、铁科院等部门企业。担任“十五五”国家重点研发计划某重点专项指南论证专家组专家，中国科协人工智能发展与安全专委会、CCF-CV专委会、CSF-VCS专委会、CSF-团体标准工作委员会委员，国际会议ICCV 2027 Workshop主席（Organizing Committee Member），CVPR、ECCV、ICML、NeurIPS、ICLR、BMVC、ICME、ICPR领域主席，AAAI资深程序委员会委员，国际期刊Machine Vision and Applications编委，National Materials首届青年编委。曾获北京大学“杨芙清-王阳元院士奖教金优等奖”（2025年）、北京大学教学成果奖一等奖（2025年）、北京大学青教赛（理工科）最受学生欢迎奖（2024年）、北京大学青教赛（理工科）二等奖（2024年）。
 Latest News
 10.2026, Invited to serve as the Area Chair of ICML'2027.
 09.2026, Invited to serve as the Workshop Chair of ICCV'2027.
