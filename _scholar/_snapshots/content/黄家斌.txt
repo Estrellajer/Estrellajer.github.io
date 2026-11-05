@@ -1,3 +1,37 @@
+Fly-by-Code: Embodied Coding Agents for Aerial Manipulation with Active Visual and Physical Feedback
+Jaewoo Lee,
+Jeongyeon Seo,
+Sihyun Cho,
+Gyeongrak Choe,
+Yutong Wang,
+Bavin Saravanan, Jia-Bin Huang , Furong Huang ,
+Sebastian Scherer,
+Guanya Shi, H. Jin Kim , Seungjae Lee ,
+Dongjae Lee
+arXiv 2026
+[ Paper (PDF) ]
+[ Project page ]
+
+Dex-One2Many: Learning Dexterous Manipulation from a Single Human Demonstration
+Jusuk Lee *, Sungha Kim *,
+Yeonsoo Park*,
+Jonguk Cheon, Yoonkyo Jung ,
+Yongjun You, H. Jin Kim , Jia-Bin Huang , Furong Huang ,
+Youngseok Jang†, Seungjae Lee †
+arXiv 2026
+[ Paper (PDF) ]
+[ Project page ] (*Equal contributions; † Equal advising.)
+
+Adapting Vision Foundation Models to Acoustics for Pose-Free 3D Sonar Reconstruction
+Kevin Zhang ,
+Jingxi Chen*,
+Mohamad Qadri*,
+Russell Shomberg,
+Michael Kaess, Jia-Bin Huang ,
+Adithya Pediredla, Christopher Metzler
+arXiv 2026
+[ Paper (PDF) ] (*Equal contribution, co-second authors.)
+
 Masked Visual Actions for Unified World Modeling
 Hadi Alzayer , Wenlong Huang , Haonan Chen , Christopher Luey , Lvmin Zhang , Maneesh Agrawala , Gordon Wetzstein , Li Fei-Fei , Yilun Du , Jiajun Wu , Jia-Bin Huang
 Advances in Neural Information Processing Systems (NeurIPS), 2026
@@ -12,6 +46,16 @@ Advances in Neural Information Processing Systems (NeurIPS), 2026
 [ Project page ]
 [ Code ]
 [ Model ] († Equal advising.)
+
+Guava: Distilling Frontier VLMs into a Compact Agent through a Robotic Manipulation Harness
+Haowen Liu *,
+Xirui Li*, Shaoxiong Yao *,
+Peng Shi,
+Tianyi Zhou, Jia-Bin Huang , Furong Huang , Jiayuan Mao
+arXiv 2026
+[ Paper (PDF) ]
+[ Project page ]
+[ Code ] (*Equal contributions.)
 
 μ₀: A Scalable 3D Interaction-Trace World Model
 Seungjae Lee *, Yoonkyo Jung *, Jusuk Lee , Jonghun Shin , Amir Hossein Shahidzadeh , Yao-Chih Lee , H. Jin Kim , Jia-Bin Huang †, Furong Huang †
