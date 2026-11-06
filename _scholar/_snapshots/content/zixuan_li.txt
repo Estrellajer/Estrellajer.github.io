@@ -1,9 +1,9 @@
 Publications
 Selected and full publications are listed below by year.
 2026
-Event Ontology Expansion via LLM-Based Conceptualization arXiv
-Weicheng Ren, Zixuan Li , Long Bai, Xiaolong Jin, Jiafeng Guo, Xueqi Cheng
-arXiv preprint arXiv:2606.21048 [Paper]
+Schema-Anchored Latent Reasoning for Semantic Parsing-Based Knowledge Base Question Answering arXiv
+Guangze Gao, Zixuan Li , Sikui Zhang, Chunfeng Yuan, Wenjuan Li, Bing Li, Xiaolong Jin, Weiming Hu
+arXiv preprint arXiv:2609.20398 [Paper]
 Code-on-Graph: Iterative Programmatic Reasoning via Large Language Models on Knowledge Graphs arXiv
 Weiwei Ding, Zixuan Li , Long Bai, Zhuo Chen, Kun Su, Fei Wang, Xiaolong Jin, Jin Zhang, Jiafeng Guo, Xueqi Cheng
 arXiv preprint arXiv:2606.03705 [Paper]
@@ -16,6 +16,9 @@ Findings of the Association for Computational Linguistics: ACL 2026 [Paper]
 JudgeAgent: Beyond Static Benchmarks for Knowledge-Driven and Dynamic LLM Evaluation ACL
 Zhichao Shi, Xuhui Jiang, Chengjin Xu, Cangli Yao, Shengjie Ma, Yinghan Shen, Zixuan Li , Jian Guo, Yuanzhuo Wang
 Findings of the Association for Computational Linguistics: ACL 2026 [Paper] [Code]
+Event Ontology Expansion via LLM-Based Conceptualization EMNLP
+Weicheng Ren, Zixuan Li , Long Bai, Xiaolong Jin, Jiafeng Guo, Xueqi Cheng
+The 2026 Conference on Empirical Methods in Natural Language Processing [Paper]
 Incentivizing Agentic Reasoning Capability with Outcome Supervision for Knowledge Base Question Answering WWW
 Zhuo Chen, Fei Wang, Zixuan Li , Zhao Zhang, Weiwei Ding, Chuanguang Yang, Yongjun Xu, Xiaolong Jin, Jiafeng Guo
 Proceedings of the ACM Web Conference 2026 [Paper]
