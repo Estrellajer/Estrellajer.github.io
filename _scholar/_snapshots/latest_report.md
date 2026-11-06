@@ -1,6 +1,6 @@
 # Scholar Monitor Report
 
-**Run:** 2026-11-05 06:16 UTC  |  **Total:** 62  |  Events 2  |  RSS 0  |  CHG 2  |  FIRST 0  |  OK 59  |  ERR 1
+**Run:** 2026-11-06 01:24 UTC  |  **Total:** 62  |  Events 2  |  RSS 0  |  CHG 2  |  FIRST 0  |  OK 59  |  ERR 1
 
 ---
 ## Activity Feed (2)
@@ -11,4 +11,4 @@
 ---
 ## Needs Attention (1)
 
-- [YY Blog](https://yqqy.top/blog.html): `Fetch/extract failed: HTTPSConnectionPool(host='yqqy.top', port=443): Max retries exceeded with url: /blog.html (Caused by ConnectTimeoutError(<HTTPSConnection(host='yqqy.top', port=443) at 0x7f0ac58ceb10>, 'Connection to yqqy.top timed out. (connect timeout=30)'))`
+- [YY Blog](https://yqqy.top/blog.html): `Fetch/extract failed: HTTPSConnectionPool(host='yqqy.top', port=443): Max retries exceeded with url: /blog.html (Caused by ConnectTimeoutError(<HTTPSConnection(host='yqqy.top', port=443) at 0x7fac86224550>, 'Connection to yqqy.top timed out. (connect timeout=30)'))`
