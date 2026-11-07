@@ -123,11 +123,11 @@ Transmission for Noisy Domain Incremental Learning", in Proceedings of the
 Fortieth Annual Conference on Neural Information Processing Systems, Sydney,
 Australia, Dec.6 - Dec.12, 2026
 [ pdf ] IL NL
-( NeurIPS'26 )-Xiaoyu Yi, Zihan Xiong,
+( NeurIPS'26 )-Lynn Yi, Zihan Xiong,
 Junjie Cao, Xiaolong Weng, Yingzhe Ma, Gus Xia, Jinliang Liu, Yuxin Xie, Xianwei
 Zhuang, Yuguo Yin, Qiao Jin, Gongxi Zhu, Jiayu Wang, Junjie Liang, Qin Yue, Ziyu
-Wang, Dading Chong, Meng Cao, Jiahuan Zhou* , and Dongchao Yang*,
-"FlexCover: Flexible Cover Song Generation via Symbolic Lead Sheet Control", in
+Wang, Dading Chong, Meng Cao, Jiahuan Zhou , and Dongchao Yang*,
+"MuLaCover: Flexible Cover Song Generation via Symbolic Tonal Control", in
 Proceedings of the Fortieth Annual Conference on Neural Information Processing
 Systems, Sydney, Australia, Dec.6 - Dec.12, 2026
 [ pdf ] AIGC
@@ -143,14 +143,14 @@ Multi-Granular Geometry-Aware Point Cloud Prompt for 3D Vision Model", in IEEE
 Transactions on Pattern Analysis and Machine Intelligence, 2026
 [ pdf ]
 [ code ] PL
-( ECCV'26 )-Yao Yong, Zhenyu Cui, Lei Chen,
+( ECCV'26 )-Yong Yao, Zhenyu Cui, Lei Chen,
 Jiwen Lu, and Jiahuan Zhou* , "DG-Force: Disentangling and Gathering
 Forensic Cues is Needed for Image Manipulation Localization", in Proceedings of
 the
 European Conference on Computer Vision, Sep.8 – Sep.12, Malmö, Sweden, 2026
 [ pdf ] AIGC
 ( ECCV'26 )-Kunlun Xu, Liangyu Ma,
-Jiangmeng Li, Xin Tong, Xiaode Liu, Yufei Guo, and Jiahuan Zhou* , "SCORE:
+Jiangmeng Li, Xin Tong, Xiaode Liu, Yufei Guo*, and Jiahuan Zhou* , "SCORE:
 SubDistribution-aware Collaborative Knowledge Reinforcing for Cloth-Hybrid
 Lifelong Person Re-Identification", in Proceedings of the
 European Conference on Computer Vision, Sep.8 – Sep.12, Malmö, Sweden, 2026
@@ -170,21 +170,21 @@ Proceedings of the International Conference on Machine Learning, Seoul, South
 Korea, Jul.6 - Jul.11, 2026
 [ pdf ]
 [ code ] [ bib ] V&L IL
-( ICML'26 )-Wenwen Qiang*, Ziyin Gu, Jiahuan Zhou* , Jie Hu, Jingyao Wang, Changwen Zheng, and Hui Xiong, "On
+( ICML'26 )-Wenwen Qiang, Ziyin Gu, Jiahuan Zhou* , Jie Hu, Jingyao Wang*, Changwen Zheng*, and Hui Xiong, "On
 the Plasticity and Stability for Post-Training Large Language Models", in
 Proceedings of the International Conference on Machine Learning, Seoul, South
 Korea, Jul.6 - Jul.11, 2026
 [ pdf ] [ bib ] V&L
-( ICML'26 )-Tao Zhang, Xu Zou*, Qixuan Fan,
-Yiyuan Liang, Yanjie Wang, Song Yan, Tian Tian, Jiahuan Zhou* , Luxin Yan,
-and Sheng Zhong, "Breaking the Synthetic-Real Domain Shortcut for Training-Free
+( ICML'26 )-Tao Zhang, Qixuan Fan,
+Yiyuan Liang, Yanjie Wang, Song Yan, Tian Tian, Jiahuan Zhou , Luxin Yan,
+Sheng Zhong, and Xu Zou, "Breaking the Synthetic-Real Domain Shortcut for Training-Free
 Generative Replay-based Class Incremental Learning", in Proceedings of the
 International Conference on Machine Learning, Seoul, South Korea, Jul.6 -
 Jul.11, 2026
 [ pdf ]
 [ bib ] IL
-( ICML'26 )-Xinyue Zhang, Xu Zou*, Wanjia
-Luo, Yanjie Wang, Jiahuan Zhou* , Sheng Zhong, and Luxin Yan,
+( ICML'26 )-Xinyue Zhang, Xu Zou, Wanjia
+Luo, Yanjie Wang, Jiahuan Zhou , Sheng Zhong, and Luxin Yan,
 "Learnability-Driven Knowledge Assimilation for Class-Incremental Semantic
 Segmentation", in Proceedings of the International Conference on Machine
 Learning, Seoul, South Korea, Jul.6 - Jul.11, 2026
@@ -213,14 +213,14 @@ Recognition, Denver, Colorado, USA, Jun.3 - Jun.7, 2026
 [ pdf ]
 [ bib ] 2D to 3D
 ( CVPR'26 )-Zehua Zang, Xi Wang, Fuchun
-Sun, Xiao Xu, Lixiang Liu, Jiangmeng Li*, and Jiahuan Zhou* , "Test-Time
+Sun, Xiao Xu, Lixiang Liu, Jiahuan Zhou* , and Jiangmeng Li*, "Test-Time
 Perturbation Tuning with Delayed Feedback for Vision-Language-Action Models", in
 Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern
 Recognition, Denver, Colorado, USA, Jun.3 - Jun.7, 2026
 [ pdf ]
 [ code ] [ bib ] V&L OL
 ( CVPR'26 )-Peizheng Guo, Jingyao Wang,
-Wenwen Qiang*, Jiahuan Zhou , Changwen Zheng, and Gang Hua, "COPO:
+Wenwen Qiang*, Jiahuan Zhou , Changwen Zheng*, and Gang Hua, "COPO:
 Causal-Oriented Policy Optimization for Hallucinations of MLLMs", in Proceedings
 of the IEEE/CVF Conference on Computer Vision and Pattern Recognition, Denver,
 Colorado, USA, Jun.3 - Jun.7, 2026
@@ -235,18 +235,18 @@ Apr.23 - Apr.27, 2026
 ( Pattern Recognition'26 )-Yongjian Liao,
 Liqun Chen, Wenjun Chen, Shixiang Huang, Chunxi Li, Jiahuan Zhou , Luxin
 Yan, Sheng Zhong, and Xu Zou, "Supervisory Feedback for High-resolution
-Low-textured Large-scale Multi-view Stereo", in Pattern Recognization, 2026
+Low-textured Large-scale Multi-view Stereo", in Pattern Recognition, 2026
 [ pdf ]
 [ bib ]
 [ DOI:10.1016/j.patcog.2025.112907 ] 2D to 3D
 ( TPAMI'26 )-Zhenyu Cui, Jiahuan
-Zhou , and Yuxin Peng, "Bi-C2R: Bidirectional Continual Compatible
+Zhou , and Yuxin Peng*, "Bi-C2R: Bidirectional Continual Compatible
 Representation for Re-indexing Free Lifelong Person Re-identification", in IEEE
 Transactions on Pattern Analysis and Machine Intelligence, 2026
 [ pdf ] [ code ] [ bib ]
 [ DOI:10.1109/TPAMI.2025.3649078 ] OR IL
 ( AAAI'26 )-Zhenyu Cui, Jiahuan
-Zhou , and Yuxin Peng, "CKDA: Cross-modality Knowledge Disentanglement
+Zhou , and Yuxin Peng*, "CKDA: Cross-modality Knowledge Disentanglement
 and Alignment for Visible-Infrared Lifelong Person Re-identification", in
 Proceedings of the 40th Annual AAAI Conference on Artificial Intelligence,
 Singapore, Jan.20 - Jan.27, 2026
@@ -254,7 +254,7 @@ Singapore, Jan.20 - Jan.27, 2026
 [ code ] [ doi ] [ bib ]
 [ 机器之心报道 ] OR VT
 ( AAAI'26, Oral )-Fei Song, Yi Li, Rui
-Wang, Jiahuan Zhou , Changwen Zheng, and Jiangmeng Li, "Doubly Debiased
+Wang, Jiahuan Zhou , Changwen Zheng, and Jiangmeng Li*, "Doubly Debiased
 Test-Time Prompt Tuning for Vision-Language Models", in Proceedings of the 40th
 Annual AAAI Conference on Artificial Intelligence, Singapore, Jan.20 - Jan.27,
 2026
@@ -716,11 +716,11 @@ Transmission for Noisy Domain Incremental Learning", in Proceedings of the
 Fortieth Annual Conference on Neural Information Processing Systems, Sydney,
 Australia, Dec.6 - Dec.12, 2026
 [ pdf ] IL NL
-( NeurIPS'26 )-Xiaoyu Yi, Zihan Xiong,
+( NeurIPS'26 )-Lynn Yi, Zihan Xiong,
 Junjie Cao, Xiaolong Weng, Yingzhe Ma, Gus Xia, Jinliang Liu, Yuxin Xie, Xianwei
 Zhuang, Yuguo Yin, Qiao Jin, Gongxi Zhu, Jiayu Wang, Junjie Liang, Qin Yue, Ziyu
-Wang, Dading Chong, Meng Cao, Jiahuan Zhou* , and Dongchao Yang*,
-"FlexCover: Flexible Cover Song Generation via Symbolic Lead Sheet Control", in
+Wang, Dading Chong, Meng Cao, Jiahuan Zhou , and Dongchao Yang*,
+"MuLaCover: Flexible Cover Song Generation via Symbolic Tonal Control", in
 Proceedings of the Fortieth Annual Conference on Neural Information Processing
 Systems, Sydney, Australia, Dec.6 - Dec.12, 2026
 [ pdf ] AIGC
@@ -736,14 +736,14 @@ Multi-Granular Geometry-Aware Point Cloud Prompt for 3D Vision Model", in IEEE
 Transactions on Pattern Analysis and Machine Intelligence, 2026
 [ pdf ]
 [ code ] PL
-( ECCV'26 )-Yao Yong, Zhenyu Cui, Lei Chen,
+( ECCV'26 )-Yong Yao, Zhenyu Cui, Lei Chen,
 Jiwen Lu, and Jiahuan Zhou* , "DG-Force: Disentangling and Gathering
 Forensic Cues is Needed for Image Manipulation Localization", in Proceedings of
 the
 European Conference on Computer Vision, Sep.8 – Sep.12, Malmö, Sweden, 2026
 [ pdf ] AIGC
 ( ECCV'26 )-Kunlun Xu, Liangyu Ma,
-Jiangmeng Li, Xin Tong, Xiaode Liu, Yufei Guo, and Jiahuan Zhou* , "SCORE:
+Jiangmeng Li, Xin Tong, Xiaode Liu, Yufei Guo*, and Jiahuan Zhou* , "SCORE:
 SubDistribution-aware Collaborative Knowledge Reinforcing for Cloth-Hybrid
 Lifelong Person Re-Identification", in Proceedings of the
 European Conference on Computer Vision, Sep.8 – Sep.12, Malmö, Sweden, 2026
@@ -763,21 +763,21 @@ Proceedings of the International Conference on Machine Learning, Seoul, South
 Korea, Jul.6 - Jul.11, 2026
 [ pdf ]
 [ code ] [ bib ] V&L IL
-( ICML'26 )-Wenwen Qiang*, Ziyin Gu, Jiahuan Zhou* , Jie Hu, Jingyao Wang, Changwen Zheng, and Hui Xiong, "On
+( ICML'26 )-Wenwen Qiang, Ziyin Gu, Jiahuan Zhou* , Jie Hu, Jingyao Wang*, Changwen Zheng*, and Hui Xiong, "On
 the Plasticity and Stability for Post-Training Large Language Models", in
 Proceedings of the International Conference on Machine Learning, Seoul, South
 Korea, Jul.6 - Jul.11, 2026
 [ pdf ] [ bib ] V&L
-( ICML'26 )-Tao Zhang, Xu Zou*, Qixuan Fan,
-Yiyuan Liang, Yanjie Wang, Song Yan, Tian Tian, Jiahuan Zhou* , Luxin Yan,
-and Sheng Zhong, "Breaking the Synthetic-Real Domain Shortcut for Training-Free
+( ICML'26 )-Tao Zhang, Qixuan Fan,
+Yiyuan Liang, Yanjie Wang, Song Yan, Tian Tian, Jiahuan Zhou , Luxin Yan,
+Sheng Zhong, and Xu Zou, "Breaking the Synthetic-Real Domain Shortcut for Training-Free
 Generative Replay-based Class Incremental Learning", in Proceedings of the
 International Conference on Machine Learning, Seoul, South Korea, Jul.6 -
 Jul.11, 2026
 [ pdf ]
 [ bib ] IL
-( ICML'26 )-Xinyue Zhang, Xu Zou*, Wanjia
-Luo, Yanjie Wang, Jiahuan Zhou* , Sheng Zhong, and Luxin Yan,
+( ICML'26 )-Xinyue Zhang, Xu Zou, Wanjia
+Luo, Yanjie Wang, Jiahuan Zhou , Sheng Zhong, and Luxin Yan,
 "Learnability-Driven Knowledge Assimilation for Class-Incremental Semantic
 Segmentation", in Proceedings of the International Conference on Machine
 Learning, Seoul, South Korea, Jul.6 - Jul.11, 2026
@@ -806,14 +806,14 @@ Recognition, Denver, Colorado, USA, Jun.3 - Jun.7, 2026
 [ pdf ]
 [ bib ] 2D to 3D
 ( CVPR'26 )-Zehua Zang, Xi Wang, Fuchun
-Sun, Xiao Xu, Lixiang Liu, Jiangmeng Li*, and Jiahuan Zhou* , "Test-Time
+Sun, Xiao Xu, Lixiang Liu, Jiahuan Zhou* , and Jiangmeng Li*, "Test-Time
 Perturbation Tuning with Delayed Feedback for Vision-Language-Action Models", in
 Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern
 Recognition, Denver, Colorado, USA, Jun.3 - Jun.7, 2026
 [ pdf ]
 [ code ] [ bib ] V&L OL
 ( CVPR'26 )-Peizheng Guo, Jingyao Wang,
-Wenwen Qiang*, Jiahuan Zhou , Changwen Zheng, and Gang Hua, "COPO:
+Wenwen Qiang*, Jiahuan Zhou , Changwen Zheng*, and Gang Hua, "COPO:
 Causal-Oriented Policy Optimization for Hallucinations of MLLMs", in Proceedings
 of the IEEE/CVF Conference on Computer Vision and Pattern Recognition, Denver,
 Colorado, USA, Jun.3 - Jun.7, 2026
@@ -828,18 +828,18 @@ Apr.23 - Apr.27, 2026
 ( Pattern Recognition'26 )-Yongjian Liao,
 Liqun Chen, Wenjun Chen, Shixiang Huang, Chunxi Li, Jiahuan Zhou , Luxin
 Yan, Sheng Zhong, and Xu Zou, "Supervisory Feedback for High-resolution
-Low-textured Large-scale Multi-view Stereo", in Pattern Recognization, 2026
+Low-textured Large-scale Multi-view Stereo", in Pattern Recognition, 2026
 [ pdf ]
 [ bib ]
 [ DOI:10.1016/j.patcog.2025.112907 ] 2D to 3D
 ( TPAMI'26 )-Zhenyu Cui, Jiahuan
-Zhou , and Yuxin Peng, "Bi-C2R: Bidirectional Continual Compatible
+Zhou , and Yuxin Peng*, "Bi-C2R: Bidirectional Continual Compatible
 Representation for Re-indexing Free Lifelong Person Re-identification", in IEEE
 Transactions on Pattern Analysis and Machine Intelligence, 2026
 [ pdf ] [ code ] [ bib ]
 [ DOI:10.1109/TPAMI.2025.3649078 ] OR IL
 ( AAAI'26 )-Zhenyu Cui, Jiahuan
-Zhou , and Yuxin Peng, "CKDA: Cross-modality Knowledge Disentanglement
+Zhou , and Yuxin Peng*, "CKDA: Cross-modality Knowledge Disentanglement
 and Alignment for Visible-Infrared Lifelong Person Re-identification", in
 Proceedings of the 40th Annual AAAI Conference on Artificial Intelligence,
 Singapore, Jan.20 - Jan.27, 2026
@@ -847,7 +847,7 @@ Singapore, Jan.20 - Jan.27, 2026
 [ code ] [ doi ] [ bib ]
 [ 机器之心报道 ] OR VT
 ( AAAI'26, Oral )-Fei Song, Yi Li, Rui
-Wang, Jiahuan Zhou , Changwen Zheng, and Jiangmeng Li, "Doubly Debiased
+Wang, Jiahuan Zhou , Changwen Zheng, and Jiangmeng Li*, "Doubly Debiased
 Test-Time Prompt Tuning for Vision-Language Models", in Proceedings of the 40th
 Annual AAAI Conference on Artificial Intelligence, Singapore, Jan.20 - Jan.27,
 2026
