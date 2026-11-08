@@ -1,3 +1,9 @@
+Unlocking the Potential of Contrastive Regularization for Diffusion Transformer Training
+Y Tan, B Zhu, S Chen, Y Lin, Y Zhou, C Chen, X Zhu, T Chen, Y Hao, ...
+arXiv preprint arXiv:2611.02921, 2026 2026
+RouteREPA: Routed Representation Alignment for Just Image Transformers
+Y Tan, B Zhu, S Chen, C Chen, X Zhu, Y Zhou, Z Tan, T Chen, H Zhang
+arXiv preprint arXiv:2611.02941, 2026 2026
 RASteer: Retain-Aware Activation Steering for Concept Erasure in Diffusion Models
 Y Wu, H Lu, Y Wu, J Luo, X Zhu*, Y Liu
 arXiv preprint arXiv:2610.01969, 2026 2026
@@ -52,9 +58,3 @@ AAAI 2026, 2025 2025
 Dynamic Multimodal Prototype Learning in Vision-Language Models
 X Zhu, S Wang, B Zhu, M Li, Y Li, J Fang, Z Wang, D Wang, H Zhang
 ICCV 2025, 2025 2025
-Accelerating Diffusion Transformer via Error-Optimized Cache
-J Qiu, S Wang, J Lu, L Liu, H Jiang, X Zhu, Y Hao
-ACM MM 2025, 2025 2025
-Enhancing Zero-Shot Vision Models by Label-Free Prompt Distribution Learning and Bias Correcting
-X Zhu, B Zhu, Y Tan, S Wang, Y Hao, H Zhang
-NeurIPS 2024 (Spotlight), 2024 2024
