@@ -1,3 +1,9 @@
+基模 后训练总结
+
+Off-Policy 问题
+
+verl fully async 源代码
+
 Meta 系列
 
 Mistral 系列
@@ -363,6 +369,20 @@ Spark-SQL的简略笔记
 Spark键值对RDD的常用API
 
 Spark基础RDD的常用API
+
+8
+11月
+基模 后训练总结
+
+5
+11月
+Off-Policy 问题
+# TIS # token_is # off-policy # 训推不一致 # Routing Replay # R2 # R3
+
+30
+10月
+verl fully async 源代码
+# verl # async
 
 23
 9月
@@ -844,7 +864,7 @@ Transformer细节
 27
 6月
 语言模型定义及信息理论
-# 自回归语言模型 # 扩散语言模型 # 温度参数 # 极大似然估计 # 信息量 # 熵 # 交叉熵 # 困惑度 # N-Gram # 神经语言模型 # 分词算法 # 词向量 # word2vec # BPE # 方差 # 协方差 # 相关系数
+# 自回归语言模型 # 扩散语言模型 # 温度参数 # 极大似然估计 # 信息量 # 熵 # 交叉熵 # KL散度 # 支撑集 # 困惑度 # N-Gram # 神经语言模型 # 分词算法 # 词向量 # word2vec # BPE # 方差 # 协方差 # 相关系数
 
 25
 6月
