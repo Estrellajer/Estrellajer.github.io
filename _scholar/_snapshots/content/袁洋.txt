@@ -1,3 +1,6 @@
+TCSExam: Evaluating Frontier LLMs on the Full Range of TCS Research
+Y Luo, Z Liu, Y Yuan, Z Yang, ACC Yao
+arXiv preprint arXiv:2611.07962, 2026 2026
 Algebraic World Model: From Exploration to Proofs
 G Pan, Q Tan, Y Yuan, ACC Yao
 arXiv preprint arXiv:2610.40503, 2026 2026
@@ -55,6 +58,3 @@ Advances in Neural Information Processing Systems 36, 25627-25661, 2023 2023
 Towards data-algorithm dependent generalization: a case study on overparameterized linear regression
 J Xu, J Teng, Y Yuan, A Yao
 Advances in Neural Information Processing Systems 36, 79698-79733, 2023 2023
-Meta prompting for ai systems
-Y Zhang, Y Yuan, ACC Yao
-arXiv preprint arXiv:2311.11482, 2023 2023
