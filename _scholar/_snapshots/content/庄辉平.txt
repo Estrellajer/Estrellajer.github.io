@@ -1,3 +1,8 @@
+HyperSkill: Multi-Modal Skill Learning on the Unit Hypersphere
+Erdemt Bao, Jun Chen, Weijun Qin, Shaopeng Li, Ming Li, Mengchen Zhao, Ziqian Zeng, Cen Chen, Huiping Zhuang
+NeurIPS 2026
+News
+
 Beyond Codebook Uniformity: Triplet-Level Metrics and Triplet-Driven Semantic IDs for Generative Retrieval
 Xiang Tan, Dongliang Liao, Junwu Du, Haijun Wu, Run He, Shuquan Man, Ziqian Zeng, Huiping Zhuang
 EMNLP 2026 Main Conference
