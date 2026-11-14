@@ -1,5 +1,7 @@
 Connectionism
 Shared science from the team
+End‑to‑End 4‑Bit Training
+Jack Cook in collaboration with others at Thinking Machines
 A Safe Path to Open Weights
 Thinking Machines
 The Future Worth Building Is Human
