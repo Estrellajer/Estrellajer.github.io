@@ -154,6 +154,7 @@ def normalize_date(d_str: str, ts: float = 0.0) -> tuple[str, float]:
     return d_str[:10], ts
 
 RSSHUB_BASE = (os.environ.get("RSSHUB_BASE") or "https://rsshub.app").rstrip("/")
+OPENALEX_API_KEY = os.environ.get("OPENALEX_API_KEY", "")
 SERPAPI_KEY = os.environ.get("SERPAPI_KEY", "")
 
 REQUEST_HEADERS = {
@@ -922,9 +923,130 @@ def _sort_publications_by_year_desc(pubs: list) -> list:
     return sorted(pubs, key=_extract_yr, reverse=True)
 
 
+def _normalize_openalex_work(work: dict) -> dict:
+    authorships = work.get("authorships") or []
+    authors = ", ".join(
+        ((a.get("author") or {}).get("display_name") or "")
+        for a in authorships[:6]
+        if (a.get("author") or {}).get("display_name")
+    )
+    pub_date = str(work.get("publication_date") or "")
+    year = str(work.get("publication_year") or (pub_date[:4] if len(pub_date) >= 4 else ""))
+    primary_loc = work.get("primary_location") or {}
+    source = primary_loc.get("source") or {}
+    venue = source.get("display_name") or ""
+    if not venue and work.get("type") == "preprint":
+        venue = "Preprint"
+    link = (
+        primary_loc.get("landing_page_url")
+        or (work.get("open_access") or {}).get("oa_url")
+        or work.get("doi")
+        or work.get("id")
+        or ""
+    )
+    return {
+        "title": (work.get("title") or "").strip(),
+        "authors": authors,
+        "publication": venue,
+        "year": year,
+        "pub_date": pub_date,
+        "link": link,
+    }
+
+
+def _fetch_openalex_publications(scholar: dict) -> list[dict]:
+    ids = scholar.get("openalex_ids") or []
+    if not ids:
+        return []
+    params = {
+        "filter": f"author.id:{'|'.join(ids)}",
+        "sort": "publication_date:desc",
+        "per-page": 25,
+    }
+    if OPENALEX_API_KEY:
+        params["api_key"] = OPENALEX_API_KEY
+    resp = SESSION.get("https://api.openalex.org/works", params=params, timeout=30)
+    resp.raise_for_status()
+    works = resp.json().get("results", [])
+
+    allowed_fields = {f.lower() for f in (scholar.get("openalex_fields") or [])}
+    articles = []
+    for w in works:
+        if allowed_fields:
+            field_name = (((w.get("primary_topic") or {}).get("field") or {}).get("display_name") or "").lower()
+            topic_fields = {
+                ((t.get("field") or {}).get("display_name") or "").lower()
+                for t in (w.get("topics") or [])[:3]
+            }
+            if field_name not in allowed_fields and not (topic_fields & allowed_fields):
+                continue
+        norm = _normalize_openalex_work(w)
+        if norm["title"]:
+            articles.append(norm)
+    return _sort_publications_by_year_desc(articles)
+
+
+def _apply_publications_result(scholar: dict, articles: list[dict], url: str, result: dict) -> dict:
+    content = _publications_to_text(articles)
+    blocked = _looks_blocked(content, url)
+    if blocked:
+        result["type"] = "error"
+        result["error"] = blocked
+        return result
+    result["preview"] = [a.get("title", "") for a in articles[:3] if a.get("title")]
+    result["latest_entries"] = [
+        {
+            "title": _format_publication_event(a),
+            "link": a.get("link") or url,
+            "published": a.get("pub_date") or str(a.get("year") or "2026"),
+            "timestamp": _extract_timestamp_from_text(
+                f"{a.get('pub_date', '')} {a.get('publication', '')} {a.get('year', '')}"
+            ),
+        }
+        for a in articles[:10]
+    ]
+    prev = load_snapshot(scholar["name"])
+    if prev is None:
+        save_snapshot(scholar["name"], content)
+        result["type"] = "first_check"
+        return result
+    prev_titles = {
+        _publication_title_key(p["title"])
+        for p in _parse_publications_snapshot(prev)
+    }
+    new_articles = [
+        a for a in articles
+        if _publication_title_key(a.get("title", "")) not in prev_titles
+    ]
+    prev_norm = _normalize_for_diff(prev)
+    content_norm = _normalize_for_diff(content)
+    if not new_articles and prev_norm == content_norm:
+        result["type"] = "unchanged"
+        return result
+    save_snapshot(scholar["name"], content)
+    if new_articles:
+        result["type"] = "changed"
+        result["new_publications"] = new_articles
+    else:
+        result["type"] = "unchanged"
+    return result
+
+
 def check_google_scholar(scholar: dict, since: datetime | None) -> dict:
     result = _scholar_base_result(scholar)
     url = scholar["url"]
+
+    # 1. OpenAlex primary (free, no 250/month cap)
+    if scholar.get("openalex_ids"):
+        try:
+            articles = _fetch_openalex_publications(scholar)
+            if articles:
+                return _apply_publications_result(scholar, articles, url, result)
+            log("      ↳ OpenAlex returned no matching works, falling back to SerpApi")
+        except Exception as e:
+            log(f"      ↳ OpenAlex failed, falling back to SerpApi: {e}")
+
+    # 2. SerpApi fallback
     author_id = _google_scholar_author_id(url)
     if not author_id:
         result["type"] = "error"
@@ -952,47 +1074,7 @@ def check_google_scholar(scholar: dict, since: datetime | None) -> dict:
                 result["type"] = "error"
                 result["error"] = "SerpApi returned no articles"
                 return result
-            content = _publications_to_text(articles)
-            blocked = _looks_blocked(content, url)
-            if blocked:
-                result["type"] = "error"
-                result["error"] = blocked
-                return result
-            result["preview"] = [a.get("title", "") for a in articles[:3] if a.get("title")]
-            result["latest_entries"] = [
-                {
-                    "title": _format_publication_event(a),
-                    "link": a.get("link") or url,
-                    "published": str(a.get("year") or "2026"),
-                    "timestamp": _extract_timestamp_from_text(f"{a.get('publication', '')} {a.get('year', '')}"),
-                }
-                for a in articles[:10]
-            ]
-            prev = load_snapshot(scholar["name"])
-            if prev is None:
-                save_snapshot(scholar["name"], content)
-                result["type"] = "first_check"
-                return result
-            prev_titles = {
-                _publication_title_key(p["title"])
-                for p in _parse_publications_snapshot(prev)
-            }
-            new_articles = [
-                a for a in articles
-                if _publication_title_key(a.get("title", "")) not in prev_titles
-            ]
-            prev_norm = _normalize_for_diff(prev)
-            content_norm = _normalize_for_diff(content)
-            if not new_articles and prev_norm == content_norm:
-                result["type"] = "unchanged"
-                return result
-            save_snapshot(scholar["name"], content)
-            if new_articles:
-                result["type"] = "changed"
-                result["new_publications"] = new_articles
-            else:
-                result["type"] = "unchanged"
-            return result
+            return _apply_publications_result(scholar, articles, url, result)
         except Exception as e:
             log(f"      ↳ SerpApi failed, falling back to snapshot / direct fetch: {e}")
 
@@ -3134,10 +3216,11 @@ def main():
             pass
 
     log(f"Scholar Monitor - {len(scholars)} scholars to check")
+    log(f"OpenAlex: primary for configured authors (api_key={'set' if OPENALEX_API_KEY else 'free pool'})")
     if SERPAPI_KEY:
-        log("SerpApi: configured")
+        log("SerpApi: configured (fallback)")
     else:
-        log("SerpApi: not configured (Google Scholar will use direct fetch)")
+        log("SerpApi: not configured")
     if since:
         log(f"Last check: {since}")
     else:

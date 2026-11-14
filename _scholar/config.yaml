@@ -887,6 +887,8 @@ scholars:
   - Continual Learning
   affiliation: ANU / CSIRO
   watch: publications
+  openalex_ids:
+  - A5101324723
 - name: 杨永进
   url: https://yangyongjin.github.io/
   category: HomePage
@@ -934,6 +936,8 @@ scholars:
   - Continual Learning
   affiliation: 港中文
   watch: publications
+  openalex_ids:
+  - A5100386948
 - name: 孙海龙
   url: https://sun-hailong.github.io/
   category: HomePage
@@ -1264,6 +1268,8 @@ scholars:
   - VLM
   affiliation: NUS
   watch: publications
+  openalex_ids:
+  - A5160543830
 - name: 张天远
   url: https://scholar.google.com/citations?hl=en&user=uJocZjkAAAAJ&view_op=list_works&sortby=pubdate
   category: HomePage
@@ -1288,6 +1294,10 @@ scholars:
   - 3DV
   affiliation: MIT
   watch: publications
+  openalex_ids:
+  - A5100769910
+  openalex_fields:
+  - Computer Science
 - name: 董功
   url: https://donggong1.github.io/index.html
   category: HomePage
@@ -1335,6 +1345,9 @@ scholars:
   - Category Theory
   affiliation: 清华大学
   watch: publications
+  openalex_ids:
+  - A5161051161
+  - A5145783676
 - name: 周旭辉 (Xuhui Zhou)
   url: https://xuhuiz.com/publications
   category: HomePage
@@ -1512,4 +1525,3 @@ scholars:
   - NLP
   affiliation: HKUST
   watch: publications
-

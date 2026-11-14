@@ -58,6 +58,7 @@ jobs:
       - name: Monitor scholars
         working-directory: _scholar
         env:
+          OPENALEX_API_KEY: ${{ secrets.OPENALEX_API_KEY }}
           SERPAPI_KEY: ${{ secrets.SERPAPI_KEY }}
           RSSHUB_BASE: ${{ vars.RSSHUB_BASE }}
         run: python scripts/monitor.py
