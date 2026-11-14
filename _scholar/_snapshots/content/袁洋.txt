@@ -1,60 +1,6 @@
 TCSExam: Evaluating Frontier LLMs on the Full Range of TCS Research
-Y Luo, Z Liu, Y Yuan, Z Yang, ACC Yao
-arXiv preprint arXiv:2611.07962, 2026 2026
-Algebraic World Model: From Exploration to Proofs
-G Pan, Q Tan, Y Yuan, ACC Yao
-arXiv preprint arXiv:2610.40503, 2026 2026
-Calculus of intelligence: A topos-monadic framework for agentic workflows
-Y Yuan, ACC Yao
-iFuture, 2026 2026
-Tensor product attention is all you need
-Y Zhang, Y Liu, H Yuan, Z Qin, Y Yuan, Q Gu, A Yao
-Advances in Neural Information Processing Systems 38, 112206-112251, 2026 2026
-Group representational position encoding
-Y Zhang, Z Chen, Y Liu, Q Zhen, R Hughes, K Xu, Y Yuan, Q Gu, A Yao
-International Conference on Learning Representations 2026, 56496-56519, 2026 2026
-On the design of kl-regularized policy gradient algorithms for llm reasoning
-Y Zhang, Y Liu, R Hughes, Y Yuan, Q Gu, A Yao
-International Conference on Learning Representations 2026, 88357-88395, 2026 2026
-Probing the Lack of Stable Internal Beliefs in LLMs
-Y Luo, K Xu, Y Lu, Y Yuan, ACC Yao
-arXiv preprint arXiv:2603.25187, 2026 2026
-Monadic Context Engineering
-Y Zhang, Y Yuan, M Wang, ACC Yao
-arXiv preprint arXiv:2512.22431, 2025 2025
-AutoMathText-V2: A 2.46 Trillion Token AI-Curated STEM Pretraining Dataset
-C Li, Y Zhang, Y Lu, AC Yao
-2025
-Clarifying before reasoning: A coq prover with structural context
-Y Lu, H Yang, X Wang, G Zhang, B Li, C Fu, C Li, Y Yuan, ACC Yao
-arXiv preprint arXiv:2507.02541, 2025 2025
-Autonomous data selection with zero-shot generative classifiers for mathematical texts
-Y Zhang, Y Luo, Y Yuan, AC Yao
-Findings of the Association for Computational Linguistics: ACL 2025, 4168-4189, 2025 2025
-Hierarchical Attention Generates Better Proofs
-J Chen, C Li, Y Yuan, AC Yao
-Proceedings of the 63rd Annual Meeting of the Association for Computational …, 2025 2025
-Existing llms are not self-consistent for simple tasks
-Z Lin, J Tao, Y Yuan, ACC Yao
-arXiv preprint arXiv:2506.18781, 2025 2025
-Towards Automated Formal Verification of Backend Systems with LLMs
-K Xu, Y Luo, Y Yuan, ACC Yao
-arXiv preprint arXiv:2506.10998, 2025 2025
-On the diagram of thought
-Y Zhang, Y Yuan, ACC Yao
-arXiv preprint arXiv:2409.10038, 2024 2024
-Contrastive learning is spectral clustering on similarity graph
-Z Tan, Y Zhang, J Yang, Y Yuan
-International Conference on Learning Representations 2024, 19019-19035, 2024 2024
-CatCode: A Comprehensive Evaluation Framework for LLMs On the Mixture of Code and Text
-Z Lin, Y Yao, Y Yuan
-arXiv preprint arXiv:2403.01784, 2024 2024
-Autonomous data selection with language models for mathematical texts
-Y Zhang, Y Luo, Y Yuan, AC Yao
-ICLR 2024 Workshop on Navigating and Addressing Data Problems for Foundation …, 2024 2024
-Trade-off between efficiency and consistency for removal-based explanations
-Y Zhang, H He, Z Tan, Y Yuan
-Advances in Neural Information Processing Systems 36, 25627-25661, 2023 2023
-Towards data-algorithm dependent generalization: a case study on overparameterized linear regression
-J Xu, J Teng, Y Yuan, A Yao
-Advances in Neural Information Processing Systems 36, 79698-79733, 2023 2023
+Yifan Luo, Zhengying Liu, Yang Yuan, Zhilin Yang, Andrew Chi-Chih Yao
+arXiv (Cornell University) 2026
+Tensor Product Attention Is All You Need
+Yifan Zhang, Yifeng Liu, Huizhuo Yuan, Zhen Qin, Yang Yuan, Quanquan Gu
+neural information processing systems 2025

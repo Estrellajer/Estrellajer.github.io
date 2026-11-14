@@ -1,60 +1,75 @@
 Federated Domain Generalization for Time-Series Classification via Dynamics-to-Domain Generation
-H Shi, J Zhang, X Tang, Y Zhang, H Zhu, Y Dong, L Cui, H Yu
-Proceedings of the 32nd ACM SIGKDD Conference on Knowledge Discovery and …, 2026 2026
-LC-ERD: Mining latent logic for self-evolving reasoning via consistency-regulated reward decomposition
-Y Chen, J Jiang, D Yu, Z Wu, J Liu, J Han, X Guo, J Qi, Y Li, Y Zhang, ...
-Proceedings of the 32nd ACM SIGKDD Conference on Knowledge Discovery and …, 2026 2026
+Haoran Shi, Junru Zhang, Xiaoli Tang, Yifei Zhang, Hao Zhu, Yabo Dong
+ACM SIGKDD Conference on Knowledge Discovery and Data Mining (KDD) 2026
+LC-ERD: Mining Latent Logic for Self-Evolving Reasoning via Consistency-Regulated Reward Decomposition
+Yanyu Chen, Jiyue Jiang, Dianzhi Yu, Zheng Wu, Jiahong Liu, Jiaming Han
+ACM SIGKDD Conference on Knowledge Discovery and Data Mining (KDD) 2026
 FLASH: Fast Generative Retrieval via Autoregressive Semantic Hashing with Provably Distance Bounds
-Y Zhang, H Zhu, H Shi, Y Chen, X Han, Y Zhang, L Song, W Wang, ...
-Proceedings of the 32nd ACM SIGKDD Conference on Knowledge Discovery and …, 2026 2026
+Yifei Zhang, Hao Zhu, Haoran Shi, Yanyu Chen, Xiaolin Han, Yupei Zhang
+ACM SIGKDD Conference on Knowledge Discovery and Data Mining (KDD) 2026
 When Gradient Boosting Meets Adapter: Exploring Weak Learners for Parameter-Efficient Fine-tuning of LLMs
-Y Zhang, H Zhu, H Shi, J Dong, L Song, X Han, Y Chen, W Wang, H Yu, ...
-Proceedings of the 32nd ACM SIGKDD Conference on Knowledge Discovery and …, 2026 2026
-Geometric Collapse: When Vision Models Fail to Verify Physical Causality
-W Zhang, J Qi, W Jin, Y Zhang, CT Lam, I King
-arXiv preprint arXiv:2607.06871, 2026 2026
-Identifying the Achilles’ Heel: An Iterative Method for Uncovering Factual Errors in Large Language Models
-W Wang, YK Chan, Z Ling, S Juluan, Y Yuan, J Huang, Y Zhang, W Jiao, ...
-Findings of the Association for Computational Linguistics: ACL 2026, 34288-34309, 2026 2026
-Machine unlearning via task simplex arithmetic
-J Dong, H Zhu, Y Zhang, X Qu, YS Ong, P Koniusz
-Advances in Neural Information Processing Systems 38, 166676-166707, 2026 2026
-CrossSpectra: exploiting cross-layer smoothness for parameter-efficient fine-tuning
-Y Zhang, H Zhu, J Dong, H Shi, Z Meng, P Koniusz, H Yu
-Advances in Neural Information Processing Systems 38, 141383-141405, 2026 2026
-Hierarchically Robust Zero-shot Vision-language Models
-J Dong, Y Zhang, H Zhu, YS Ong, P Koniusz
-arXiv preprint arXiv:2604.18867, 2026 2026
-Trace: Trajectory-aware comprehensive evaluation for deep research agents
-Y Chen, J Jiang, J Liu, Y Zhang, X Guo, I King
-Proceedings of the ACM Web Conference 2026, 2524-2534, 2026 2026
-Recent advances of multimodal continual learning: A comprehensive survey
-D Yu, X Zhang, Y Chen, A Liu, Y Zhang, PS Yu, I King
-IEEE Transactions on Neural Networks and Learning Systems, 2026 2026
-Exploiting Low-Dimensional Manifold of Features for Few-Shot Whole Slide Image Classification
-C Xiong, Z Guo, Z Xu, Y Zhang, RK Tong, SY Yeo, H Chen, JJY Sung, ...
-The Fourteenth International Conference on Learning Representations, 2026 2026
+Yifei Zhang, Hao Zhu, Haoran Shi, Junhao Dong, Lingyun Song, Xiaolin Han
+ACM SIGKDD Conference on Knowledge Discovery and Data Mining (KDD) 2026
+Recent Advances of Multimodal Continual Learning: A Comprehensive Survey
+Dianzhi Yu, Xinni Zhang, Yankai Chen, Aiwei Liu, Yifei Zhang, Philip S. Yu
+IEEE Transactions on Neural Networks and Learning Systems 2026
 ConSurv: Multimodal Continual Learning for Survival Analysis
-D Yu, C Xiong, Y Chen, W Cui, X Zhang, Y Zhang, H Chen, JJY Sung, ...
-The 40th Annual AAAI Conference on Artificial Intelligence (AAAI'26), 2025 2025
-Embracing Trustworthy Brain-Agent Collaboration as Paradigm Extension for Intelligent Assistive Technologies
-Y Chen, X Zhang, Y Zhang, Y Li, HP Zou, C Miao, W Zhang, X Liu, PS Yu
-Neural Information Processing Systems (NeurIPS'25), 2025 2025
-Robustifying zero-shot vision language models by subspaces alignment
-J Dong, P Koniusz, L Feng, Y Zhang, H Zhu, W Liu, X Qu, YS Ong
-2025 IEEE/CVF International Conference on Computer Vision (ICCV), 21037-21047, 2025 2025
-Soft Separation and Distillation: Toward Global Uniformity in Federated Unsupervised Learning
-HC Fang, HT Lin, I King, Y Zhang
-2025 IEEE/CVF International Conference on Computer Vision (ICCV), 2971-2980, 2025 2025
+Dianzhi Yu, Conghao Xiong, Yankai Chen, Wenqian Cui, Xinni Zhang, Yifei Zhang
+Proceedings of the AAAI Conference on Artificial Intelligence 2026
+Teaching Effectiveness and Student Experience in University Interactive Learning Platforms Based on Mobile Technology
+Yifei Zhang
+International Journal of Interactive Mobile Technologies (iJIM) 2025
+Dispersive Meta-lens Thermometry for High-temperature Measurements
+Yulun He, Mu Ku Chen, Mingrui Huang, Yifei Zhang, Xiaoyuan Liu, Zhendong Luo
+Nature Communications 2025
+Scaling Intelligence Through Model Merging: A Comprehensive Survey
+Zijing Wang, Yongkang Liu, Yingfeng Luo, Ming Wang, Zhen Song, Feng Shi
+Preprint 2025
 Track and Tweak: Monitoring and Improving Group Fairness for Temporal Graph Neural Networks in Real Time
-Z Song, M Li, Y Zhang, I King, JM Hernández-Lobato
-Proceedings of the 31st ACM SIGKDD Conference on Knowledge Discovery and …, 2025 2025
-pfedmxf: Personalized federated class-incremental learning with mixture of frequency aggregation
-Y Zhang, H Zhu, AZ Tan, D Yu, L Huang, H Yu
-2025 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR …, 2025 2025
-Bilora: Almost-orthogonal parameter spaces for continual learning
-H Zhu, Y Zhang, J Dong, P Koniusz
-2025 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR …, 2025 2025
-Ntpp: Generative speech language modeling for dual-channel spoken dialogue via next-token-pair prediction
-Q Wang, Z Meng, W Cui, Y Zhang, P Wu, B Wu, I King, L Chen, P Zhao
-arXiv preprint arXiv:2506.00975, 2025 2025
+Zixing Song, Muzhi Li, Yifei Zhang, Irwin King, José Miguel Hernández-Lobato
+ACM SIGKDD Conference on Knowledge Discovery and Data Mining (KDD) 2025
+High-precision three-dimensional imaging based on binocular meta-lens and optical clue fusion
+Yuzhou Song, Yifei Zhang, Xiaoyuan Liu, Takuo Tanaka, Mu Ku Chen, Zihan Geng
+npj Nanophotonics 2025
+BiLoRA: Almost-orthogonal Parameter Spaces for Continual Learning
+Hao Zhu, Yifei Zhang, Junhao Dong, Piotr Koniusz
+IEEE Computer Society Conference on Computer Vision and Pattern Recognition/Proceedings - IEEE Computer Society Conference on Computer Vision and Pattern Recognition/Proceedings 2025
+pFedMxF: Personalized Federated Class-incremental Learning with Mixture of Frequency Aggregation
+Yifei Zhang, Hao Zhu, Alysa Ziying Tan, Dianzhi Yu, Longtao Huang, Han Yu
+IEEE Computer Society Conference on Computer Vision and Pattern Recognition/Proceedings - IEEE Computer Society Conference on Computer Vision and Pattern Recognition/Proceedings 2025
+Towards Non-Euclidean Foundation Models: Advancing AI Beyond Euclidean Frameworks
+Menglin Yang, Yifei Zhang, Jialin Chen, Melanie Weber, Rex Ying
+International World Wide Web Conference (WWW) 2025
+CSPO: Cross-Market Synergistic Stock Price Movement Forecasting with Pseudo-volatility Optimization
+Sida Lin, Yankai Chen, Yiyan Qi, Chenhao Ma, Bokai Cao, Yifei Zhang
+International World Wide Web Conference (WWW) 2025
+Understanding and Mitigating Hyperbolic Dimensional Collapse in Graph Contrastive Learning
+Yifei Zhang, Hao Zhu, Menglin Yang, Jiahong Liu, Rex Ying, Irwin King
+ACM SIGKDD Conference on Knowledge Discovery and Data Mining (KDD) 2025
+Towards effective privacy preservation in federated learning with automatic gradient clipping and gradient transformation perturbation
+Chuanyin Wang, Yifei Zhang, Neng Gao
+The Computer Journal 2025
+FedHLT: Efficient Federated Low-Rank Adaption with Hierarchical Language Tree for Multilingual Modeling
+Zhihan Guo, Yifei Zhang, Zhuo Zhang, Zenglin Xu, Irwin King
+Lecture notes in computer science 2025
+AnnaAgent: Dynamic Evolution Agent System with Multi-Session Memory for Realistic Seeker Simulation
+Ming Wang, Peidong Wang, Lin Wu, Xiaocui Yang, Daling Wang, Feng Shi
+Findings of the Association for Computational Linguistics: ACL (Findings of ACL) 2025
+Low-Rank Adaptation for Foundation Models: A Comprehensive Review
+Menglin Yang, Jialin Chen, Tao, Jinkai, Yifei Zhang, Jiahong Liu, Jiasheng Zhang
+arXiv (Cornell University) 2024
+On the role of network structure in learning to coordinate with bounded rationality
+Yifei Zhang, Marcos M. Vasconcelos
+IEEE Conference on Decision and Control (CDC) 2024
+TOOL-ED: Enhancing Empathetic Response Generation with the Tool Calling Capability of LLM
+Huiying Cao, Yiqun Zhang, Shi Feng, Xiaocui Yang, Daling Wang, Yifei Zhang
+arXiv (Cornell University) 2024
+Less is More: Extreme Gradient Boost Rank-1 Adaption for Efficient Finetuning of LLMs
+Yifei Zhang, Zhu, Hao, Aiwei Liu, Yu, Han, Piotr Koniusz, Irwin King
+arXiv (Cornell University) 2024
+ChatZero: Zero-Shot Cross-Lingual Dialogue Generation via Pseudo-Target Language
+Yongkang Liu, Feng Shi, Daling Wang, Yifei Zhang, Hinrich Schütze
+Frontiers in artificial intelligence and applications 2024
+Can Watermarked LLMs be Identified by Users via Crafted Prompts?
+Aiwei Liu, Guan, Sheng, Liu, Yiming, Leyi Pan, Yifei Zhang, Fang, Liancheng
+arXiv (Cornell University) 2024
