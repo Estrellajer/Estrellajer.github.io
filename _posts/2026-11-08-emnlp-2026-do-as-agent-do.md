@@ -7,6 +7,32 @@ tags: emnlp travel reflection
 categories: Life
 ---
 
+<style>
+  .feishu-grid {
+    display: flex;
+    gap: 0.75rem;
+    margin: 1rem 0;
+    align-items: flex-start;
+  }
+  .feishu-grid-col {
+    min-width: 0;
+  }
+  .feishu-grid-col figure {
+    margin: 0;
+  }
+  .feishu-grid-col picture,
+  .feishu-grid-col img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  @media (max-width: 576px) {
+    .feishu-grid {
+      flex-direction: column;
+    }
+  }
+</style>
+
 ## 前言
 
 本来想着这篇内容能更新得快一点，但事实证明，远离各种事情一周之后，回来迎面而来的就是干不完的活。还是不得不在周末抽空写一下，要不然拖到后面记忆慢慢褪色，很多当时鲜活的感受也会变得陌生，难以回忆。以前的我总觉得鲜活的记忆永远不会褪色，但时间长了其实都会被冲刷掉，所以现在习惯性地穿插记录——当然，也可能确实不算年轻了，正在向着“中登”迈进。
@@ -31,28 +57,28 @@ categories: Life
 
 落地后和在小红书上找的搭子琛博汇合，一起沿着 Creek 逛了博物馆和网红街区。博物馆非常有设计感，里面很多互动装置在国内没见过，挺新奇的。虽然外观看着并不宏伟，但内里别有洞天，让人感觉这个国家并不是纯粹的暴发户，至少博物馆修得很用心。街区里非常多本地人会说中文，一路冲你喊“朋友”、“帅哥”，应该都是为了招揽游客。不知道是不是去的时间不凑巧，街上感觉没什么人。那个号称“最美星巴克”的地方傍晚看着也很一般，随便拍张照就走了。
 
-<div class="row mt-3">
-  <div class="col-sm mt-3 mt-md-0">
+<div class="feishu-grid">
+  <div class="feishu-grid-col" style="flex: 0.389227 1 0%;">
     {% include figure.liquid url="https://picoflmq.oss-cn-beijing.aliyuncs.com/typora/emnlp2026/TAb4bivN6o31raxMGJncgtvjnOd.jpg" class="img-fluid rounded z-depth-1" zoomable=true caption="Creek" %}
   </div>
-  <div class="col-sm mt-3 mt-md-0">
+  <div class="feishu-grid-col" style="flex: 0.389227 1 0%;">
     {% include figure.liquid url="https://picoflmq.oss-cn-beijing.aliyuncs.com/typora/emnlp2026/IWyGbUt0coFXX8xSVZacMy3vnim.jpg" class="img-fluid rounded z-depth-1" zoomable=true caption="博物馆的一间房" %}
   </div>
-  <div class="col-sm mt-3 mt-md-0">
+  <div class="feishu-grid-col" style="flex: 0.221547 1 0%;">
     {% include figure.liquid url="https://picoflmq.oss-cn-beijing.aliyuncs.com/typora/emnlp2026/I4RpbF8q6oqUT1xlkYscnA5pn1B.jpg" class="img-fluid rounded z-depth-1" zoomable=true caption="街区" %}
   </div>
 </div>
 
 晚上坐地铁去 Dubai Mall。迪拜的地铁覆盖面还挺广的，但从地铁站通往商场的室内廊桥长到夸张，走了半天才真正进到商场里。商场里有一家规模极其庞大的书店，国内商场虽然也会给书店补贴租金，但通常见不到这么讲排场、这么豪奢的书店。晚饭去吃了成龙也去吃过的牛尾饭，消费算比较高的，服务员甚至会用中文问你“辣不辣”，最后还是给了 10% 的小费。
 
-<div class="row mt-3">
-  <div class="col-sm mt-3 mt-md-0">
+<div class="feishu-grid">
+  <div class="feishu-grid-col" style="flex: 0.265710 1 0%;">
     {% include figure.liquid url="https://picoflmq.oss-cn-beijing.aliyuncs.com/typora/emnlp2026/I00vbxW8bocLguxnCF5c29lVnmf.jpg" class="img-fluid rounded z-depth-1" zoomable=true caption="牛尾饭，味道中规中矩的好吃" %}
   </div>
-  <div class="col-sm mt-3 mt-md-0">
+  <div class="feishu-grid-col" style="flex: 0.265710 1 0%;">
     {% include figure.liquid url="https://picoflmq.oss-cn-beijing.aliyuncs.com/typora/emnlp2026/NQDMbujwzooXr3xxl2pc1rCsnJp.jpg" class="img-fluid rounded z-depth-1" zoomable=true caption="哈利法塔" %}
   </div>
-  <div class="col-sm mt-3 mt-md-0">
+  <div class="feishu-grid-col" style="flex: 0.468580 1 0%;">
     {% include figure.liquid url="https://picoflmq.oss-cn-beijing.aliyuncs.com/typora/emnlp2026/GBhXbK5phoLlajxCCcNcch2ennb.jpg" class="img-fluid rounded z-depth-1" zoomable=true caption="迪拜Mall外景" %}
   </div>
 </div>
@@ -67,11 +93,11 @@ categories: Life
 
 走出机场的第一感受就是整体旧旧的。秋风瑟瑟，呼啸而过的车辆加上满地落叶，空气清冷甚至有点肃杀，特别像深秋的北京郊区。先去会场注册、领完物资，转了一圈就到晚饭时间了。琛博拉我进了一个十几人的纯网友参会小群，大家决定晚上一起打车去找地方吃饭，顺便沿着多瑙河 City Walk。在 Taste Asian 附近兜兜转转发现稍微网红一点的店都在大排长队，最后挑了一家评分很高但没那么网红的本地餐厅。店里有吹拉弹唱的驻场，菜量巨大，我们四个人根本吃不完，人均折合人民币不到 200 块，就当地物价来说绝对算物美价廉了。
 
-<div class="row mt-3">
-  <div class="col-sm mt-3 mt-md-0">
+<div class="feishu-grid">
+  <div class="feishu-grid-col" style="flex: 0.500000 1 0%;">
     {% include figure.liquid url="https://picoflmq.oss-cn-beijing.aliyuncs.com/typora/emnlp2026/GF2lbyBMCo4iJRxeEA9cY6MWnbe.jpg" class="img-fluid rounded z-depth-1" zoomable=true caption="驻场乐队" %}
   </div>
-  <div class="col-sm mt-3 mt-md-0">
+  <div class="feishu-grid-col" style="flex: 0.500000 1 0%;">
     {% include figure.liquid url="https://picoflmq.oss-cn-beijing.aliyuncs.com/typora/emnlp2026/QUQybzB85oFPGTxZc1acd4u6nZm.jpg" class="img-fluid rounded z-depth-1" zoomable=true caption="图片看着小，但是分量其实很大" %}
   </div>
 </div>
@@ -82,22 +108,22 @@ categories: Life
 
 晚点在会场门口碰到一个华人面孔的小哥，看样子也是来开会的，我本来想上去加个微信交流一下，聊起来才发现是台湾人。聊了些个人经历后让我颇为意外：原来在台湾，哪怕背景很不错的人，找的工作也很难做到真正的 Work-Life Balance，基本只有进外企才行；表面上年假挺多，实际上领导根本不批，当地劳动法在这方面居然也形同虚设。看来整个东亚或多或少都有一样的病灶，大家终究没法像匈牙利 local 一样活得那么松弛。这让我想到来的时候在飞机上看“街头小霸王”（高知版讲师）的最新视频。易大师活得是真的自洽，虽然看着疯疯癫癫，但至少我挺羡慕那种状态的——有自己坚持的东西，并且发自内心地相信自己最牛逼。
 
-<div class="row mt-3">
-  <div class="col-sm mt-3 mt-md-0">
+<div class="feishu-grid">
+  <div class="feishu-grid-col" style="flex: 0.500000 1 0%;">
     {% include figure.liquid url="https://picoflmq.oss-cn-beijing.aliyuncs.com/typora/emnlp2026/I6lIbwX34odKIqxp0gVcv9vgnch.jpg" class="img-fluid rounded z-depth-1" zoomable=true caption="多瑙河" %}
   </div>
-  <div class="col-sm mt-3 mt-md-0">
+  <div class="feishu-grid-col" style="flex: 0.500000 1 0%;">
     {% include figure.liquid url="https://picoflmq.oss-cn-beijing.aliyuncs.com/typora/emnlp2026/PvO1bvEc3ooHNRxfTRlcntZ7n8d.jpg" class="img-fluid rounded z-depth-1" zoomable=true caption="布达与佩斯" %}
   </div>
 </div>
 
 晚上顺着链子桥去拍照，方向还走反了。天上飘着小雨，河畔随处可见打卡的游客，甚至真有人带着香槟去拍。路过长椅时，看到有当地人就那么淋着雨、戴着耳机坐在上面安安静静地听歌。这种松弛感是国内那种刻意装出来的“假松弛”比不了的，因为他们是真的不 care 很多东西。白天会场里大家还在热火朝天地聊 RL、聊 Self-evolving、聊 RSI，但走出会场，这里的人根本不关心这些，他们可能只关心今天晚饭吃什么好。这种反差让人觉得挺割裂的。到了十点多，看天色太晚不太方便，就回青旅睡了。
 
-<div class="row mt-3">
-  <div class="col-sm mt-3 mt-md-0">
+<div class="feishu-grid">
+  <div class="feishu-grid-col" style="flex: 0.500000 1 0%;">
     {% include figure.liquid url="https://picoflmq.oss-cn-beijing.aliyuncs.com/typora/emnlp2026/YQpcbDRL2oxXaKxGfA9c1Qvunfb.jpg" class="img-fluid rounded z-depth-1" zoomable=true caption="夜景" %}
   </div>
-  <div class="col-sm mt-3 mt-md-0">
+  <div class="feishu-grid-col" style="flex: 0.500000 1 0%;">
     {% include figure.liquid url="https://picoflmq.oss-cn-beijing.aliyuncs.com/typora/emnlp2026/A4r9btUPtokcpIxgT54cFzknnPh.jpg" class="img-fluid rounded z-depth-1" zoomable=true caption="这就是大概为什么叫“链桥”？" %}
   </div>
 </div>
@@ -106,14 +132,14 @@ categories: Life
 
 早上出门发现住处附近有个小超市，顺便解决了早餐并囤了瓶大水。店里没有任何英文标识，全靠盲猜，连结账也是全自助的。好在旁边有位热心的 local 小姐姐帮忙，不仅教我怎么结账，还帮我避雷了气泡水（把气泡水和普通矿泉水混着放的设计实在太反人类了）。
 
-<div class="row mt-3">
-  <div class="col-sm mt-3 mt-md-0">
+<div class="feishu-grid">
+  <div class="feishu-grid-col" style="flex: 0.333333 1 0%;">
     {% include figure.liquid url="https://picoflmq.oss-cn-beijing.aliyuncs.com/typora/emnlp2026/BLXkb361YoFkDyxihePcUua3nDc.jpg" class="img-fluid rounded z-depth-1" zoomable=true caption="挂壁早餐" %}
   </div>
-  <div class="col-sm mt-3 mt-md-0">
+  <div class="feishu-grid-col" style="flex: 0.333333 1 0%;">
     {% include figure.liquid url="https://picoflmq.oss-cn-beijing.aliyuncs.com/typora/emnlp2026/LyYab7SYfoclNnxwistcL8zVnJc.jpg" class="img-fluid rounded z-depth-1" zoomable=true caption="茶歇，拉完了" %}
   </div>
-  <div class="col-sm mt-3 mt-md-0">
+  <div class="feishu-grid-col" style="flex: 0.333333 1 0%;">
     {% include figure.liquid url="https://picoflmq.oss-cn-beijing.aliyuncs.com/typora/emnlp2026/DCK2biauHolja9xS5mwcMjvCnse.jpg" class="img-fluid rounded z-depth-1" zoomable=true caption="晚宴，一般般" %}
   </div>
 </div>
@@ -130,8 +156,8 @@ categories: Life
 
 正焦虑着，在会场又收到了导师催命一样的消息，让我抓紧处理手头另一篇论文的 Rebuttal。目前在投的两篇里，有一篇转投的分数还行，希望能顺利苟中；另一篇自己觉得做得还不错的工作反而拿了负分，只能认栽继续转投了。不过现在对这些也看淡了，多中一篇对我来说也没什么实质性的加成，毕竟都是之前攒下的垃圾 Topic。
 
-<div class="row mt-3">
-  <div class="col-sm mt-3 mt-md-0">
+<div class="feishu-grid">
+  <div class="feishu-grid-col" style="flex: 1 1 0%;">
     {% include figure.liquid url="https://picoflmq.oss-cn-beijing.aliyuncs.com/typora/emnlp2026/Dp0IbqQrLoJuVoxt9vTcv5aenxh.jpg" class="img-fluid rounded z-depth-1" zoomable=true caption="蹦迪环节，视频不太好传，但是现场气氛非常热烈" %}
   </div>
 </div>
@@ -140,39 +166,39 @@ categories: Life
 
 早上起来实在懒得去会场，干脆自己出去逛景点。
 
-<div class="row mt-3">
-  <div class="col-sm mt-3 mt-md-0">
+<div class="feishu-grid">
+  <div class="feishu-grid-col" style="flex: 0.187452 1 0%;">
     {% include figure.liquid url="https://picoflmq.oss-cn-beijing.aliyuncs.com/typora/emnlp2026/GviSbKzXVodpNMxqfAocGfdbnlh.jpg" class="img-fluid rounded z-depth-1" zoomable=true %}
   </div>
-  <div class="col-sm mt-3 mt-md-0">
+  <div class="feishu-grid-col" style="flex: 0.187452 1 0%;">
     {% include figure.liquid url="https://picoflmq.oss-cn-beijing.aliyuncs.com/typora/emnlp2026/MmxVb4EIko0yRCxLrMRciAL7nfd.jpg" class="img-fluid rounded z-depth-1" zoomable=true %}
   </div>
-  <div class="col-sm mt-3 mt-md-0">
+  <div class="feishu-grid-col" style="flex: 0.187452 1 0%;">
     {% include figure.liquid url="https://picoflmq.oss-cn-beijing.aliyuncs.com/typora/emnlp2026/DGQtbzLwHoA4rrxXxM6cbprRnug.jpg" class="img-fluid rounded z-depth-1" zoomable=true %}
   </div>
-  <div class="col-sm mt-3 mt-md-0">
+  <div class="feishu-grid-col" style="flex: 0.437645 1 0%;">
     {% include figure.liquid url="https://picoflmq.oss-cn-beijing.aliyuncs.com/typora/emnlp2026/YHrebSbn9oGSCnx58JQcCVFInug.jpg" class="img-fluid rounded z-depth-1" zoomable=true %}
   </div>
 </div>
 
 第一站去了渔人堡。早上去不收门票，建筑本身看着也就那样，没什么特别惊艳的；唯一的优点是占了个高点，往下俯瞰整个布达佩斯，因为城市里没有什么高大现代建筑遮挡，视野极其通透，确实有一览无余的辽阔感。顺着旁边的马加什教堂一路走到布达城堡，城堡本身也只是提供了一个高点，而且里面到处都在围起来修缮，搞得人心烦，看着乏善可陈。下山后顺便去了趟号称“世界最美麦当劳”的店，结果里面并没有卖传说中的鹅肝汉堡。
 
-<div class="row mt-3">
-  <div class="col-sm mt-3 mt-md-0">
+<div class="feishu-grid">
+  <div class="feishu-grid-col" style="flex: 0.500000 1 0%;">
     {% include figure.liquid url="https://picoflmq.oss-cn-beijing.aliyuncs.com/typora/emnlp2026/SWV4b3CcVoEMSTx9mK1cByeKnHf.jpg" class="img-fluid rounded z-depth-1" zoomable=true %}
   </div>
-  <div class="col-sm mt-3 mt-md-0">
+  <div class="feishu-grid-col" style="flex: 0.500000 1 0%;">
     {% include figure.liquid url="https://picoflmq.oss-cn-beijing.aliyuncs.com/typora/emnlp2026/PEXmbIonzoS4UGxGf2QcoXbAnDR.jpg" class="img-fluid rounded z-depth-1" zoomable=true %}
   </div>
 </div>
 
 中午为了吃顿心心念念的鹅肝，特意避开游客区，找了一家放眼望去全是本地人、大家都在叽里咕噜说匈牙利语的餐厅。本来想点招牌的鹅肝套餐，结果卖光了，服务员小哥就给我推荐了一道拿鹅肝当配菜的主菜。怎么说呢，作为一个平时很能吃牛胸口油的北方人，这顿正宗鹅肝还是把我腻得够呛，实在是太厚重了，感觉大部分国人应该都消受不起。
 
-<div class="row mt-3">
-  <div class="col-sm mt-3 mt-md-0">
+<div class="feishu-grid">
+  <div class="feishu-grid-col" style="flex: 0.500000 1 0%;">
     {% include figure.liquid url="https://picoflmq.oss-cn-beijing.aliyuncs.com/typora/emnlp2026/FbpCbsqIlocHkqx30xdcSZiCnth.jpg" class="img-fluid rounded z-depth-1" zoomable=true caption="似乎是专业模特在拍摄商业广告" %}
   </div>
-  <div class="col-sm mt-3 mt-md-0">
+  <div class="feishu-grid-col" style="flex: 0.500000 1 0%;">
     {% include figure.liquid url="https://picoflmq.oss-cn-beijing.aliyuncs.com/typora/emnlp2026/Algxb66R3oDSXbxnqUBcT1Bdnhd.jpg" class="img-fluid rounded z-depth-1" zoomable=true caption="看着牛肉实则是鸭肉，谁能找到鹅肝🤭" %}
   </div>
 </div>
@@ -181,31 +207,31 @@ categories: Life
 
 傍晚想去自由桥（绿桥）打卡，紧赶慢赶去麦当劳买了个米其林联名的特制汉堡（折合人民币花了一百块，味道却非常一般）。结果五点半跑到桥上坐下时，天已经彻底黑透了，根本没有所谓的蓝调时刻。更要命的是天上飘着小雨，冷冽的河风呼呼地刮，坐在铁桥架子上冻得人实在遭不住，纯属失策。
 
-<div class="row mt-3">
-  <div class="col-sm mt-3 mt-md-0">
+<div class="feishu-grid">
+  <div class="feishu-grid-col" style="flex: 0.361366 1 0%;">
     {% include figure.liquid url="https://picoflmq.oss-cn-beijing.aliyuncs.com/typora/emnlp2026/XkZtbygCYosmVzxjmE2c06MsnZf.jpg" class="img-fluid rounded z-depth-1" zoomable=true caption="修缮中" %}
   </div>
-  <div class="col-sm mt-3 mt-md-0">
+  <div class="feishu-grid-col" style="flex: 0.638634 1 0%;">
     {% include figure.liquid url="https://picoflmq.oss-cn-beijing.aliyuncs.com/typora/emnlp2026/Ry6nb85ZboYTP2xkvoPcVYbznzg.jpg" class="img-fluid rounded z-depth-1" zoomable=true caption="“偏我来时不逢春”" %}
   </div>
 </div>
 
-<div class="row mt-3">
-  <div class="col-sm mt-3 mt-md-0">
+<div class="feishu-grid">
+  <div class="feishu-grid-col" style="flex: 0.389411 1 0%;">
     {% include figure.liquid url="https://picoflmq.oss-cn-beijing.aliyuncs.com/typora/emnlp2026/CQUbbsTDNo14sgxw0rgczVk4nVc.jpg" class="img-fluid rounded z-depth-1" zoomable=true %}
   </div>
-  <div class="col-sm mt-3 mt-md-0">
+  <div class="feishu-grid-col" style="flex: 0.389411 1 0%;">
     {% include figure.liquid url="https://picoflmq.oss-cn-beijing.aliyuncs.com/typora/emnlp2026/EYrXbK8rHomVLExDEpLciMkDnLf.jpg" class="img-fluid rounded z-depth-1" zoomable=true %}
   </div>
-  <div class="col-sm mt-3 mt-md-0">
+  <div class="feishu-grid-col" style="flex: 0.221178 1 0%;">
     {% include figure.liquid url="https://picoflmq.oss-cn-beijing.aliyuncs.com/typora/emnlp2026/W1z6b3XKaoQY0Xx84CqcSNZinqS.jpg" class="img-fluid rounded z-depth-1" zoomable=true %}
   </div>
 </div>
 
 再晚一点去多瑙河岸边随便买了张船票坐游船。船舱里放眼望去基本都是来参会的中国人。网上那些短视频里在国会大厦前举着香槟碰杯看着极其 chill，但现实是十月底的布达佩斯气温跟北京深秋有一拼，加上河风，虽然我自认比较耐冻，但在甲板上待一会儿还是冻得半死。
 
-<div class="row mt-3">
-  <div class="col-sm mt-3 mt-md-0">
+<div class="feishu-grid">
+  <div class="feishu-grid-col" style="flex: 1 1 0%;">
     {% include figure.liquid url="https://picoflmq.oss-cn-beijing.aliyuncs.com/typora/emnlp2026/KHb6bOtwDowCl6xLqykcFfyyncd.jpg" class="img-fluid rounded z-depth-1" zoomable=true %}
   </div>
 </div>
@@ -220,28 +246,28 @@ categories: Life
 
 早起天特别蓝，多瑙河上还有大爷在划船。趁着盖勒特山重新开放，爬上山顶站到了雕像脚下，把前几天晚上只能远远仰望的视角给兑现了。下山去圣伊什特万圣殿转了转，又去中央市场吃了特产的花瓣冰淇淋。
 
-<div class="row mt-3">
-  <div class="col-sm mt-3 mt-md-0">
+<div class="feishu-grid">
+  <div class="feishu-grid-col" style="flex: 0.333333 1 0%;">
     {% include figure.liquid url="https://picoflmq.oss-cn-beijing.aliyuncs.com/typora/emnlp2026/MbknbTgNVoNX95xEW3lcJ9fPnff.jpg" class="img-fluid rounded z-depth-1" zoomable=true caption="大水！" %}
   </div>
-  <div class="col-sm mt-3 mt-md-0">
+  <div class="feishu-grid-col" style="flex: 0.333333 1 0%;">
     {% include figure.liquid url="https://picoflmq.oss-cn-beijing.aliyuncs.com/typora/emnlp2026/DpDDbmiVpoH6cYxiAUzcaMwdnaf.jpg" class="img-fluid rounded z-depth-1" zoomable=true caption="梦回天津" %}
   </div>
-  <div class="col-sm mt-3 mt-md-0">
+  <div class="feishu-grid-col" style="flex: 0.333333 1 0%;">
     {% include figure.liquid url="https://picoflmq.oss-cn-beijing.aliyuncs.com/typora/emnlp2026/YeCZbcNEroAxdlxihKucv5mfnrf.jpg" class="img-fluid rounded z-depth-1" zoomable=true caption="到达布达佩斯最高点" %}
   </div>
 </div>
 
 在候车和逛街的时候突然反应过来一个统计学真相：前两天我总觉得布达佩斯满大街都是长相出众的俊男靓女，今天走远了才发现并不是人人都长那样——单纯是因为我住的地方旁边刚好有两所大学，属于典型的样本偏差。
 
-<div class="row mt-3">
-  <div class="col-sm mt-3 mt-md-0">
+<div class="feishu-grid">
+  <div class="feishu-grid-col" style="flex: 0.333333 1 0%;">
     {% include figure.liquid url="https://picoflmq.oss-cn-beijing.aliyuncs.com/typora/emnlp2026/I4MIbweXSokoLLx4G01cI7FlnMh.jpg" class="img-fluid rounded z-depth-1" zoomable=true %}
   </div>
-  <div class="col-sm mt-3 mt-md-0">
+  <div class="feishu-grid-col" style="flex: 0.333333 1 0%;">
     {% include figure.liquid url="https://picoflmq.oss-cn-beijing.aliyuncs.com/typora/emnlp2026/HIKhbWargox5zBxUxoycHimAnEb.jpg" class="img-fluid rounded z-depth-1" zoomable=true %}
   </div>
-  <div class="col-sm mt-3 mt-md-0">
+  <div class="feishu-grid-col" style="flex: 0.333333 1 0%;">
     {% include figure.liquid url="https://picoflmq.oss-cn-beijing.aliyuncs.com/typora/emnlp2026/HZq9bW1pvoGz8JxfUSsc0lJ0nMh.jpg" class="img-fluid rounded z-depth-1" zoomable=true %}
   </div>
 </div>
@@ -250,11 +276,11 @@ categories: Life
 
 车票我最开始是在 Klook 上看的，后来发现微信小程序买更便宜（官方 App 用 Apple Pay 死活付不过去）。上车发现都是指定席位，列车员走过去看座位上有人，甚至都不会核验你的证件和车票。我那个包厢里除了我之外就只有一对外国情侣，不得不说外国人真是随时随地都能旁若无人地亲起来。另外，这趟车被人戏称为“喂猪专列”确实没叫错，餐车上的食物非常便宜，味道居然也还过得去。
 
-<div class="row mt-3">
-  <div class="col-sm mt-3 mt-md-0">
+<div class="feishu-grid">
+  <div class="feishu-grid-col" style="flex: 0.500000 1 0%;">
     {% include figure.liquid url="https://picoflmq.oss-cn-beijing.aliyuncs.com/typora/emnlp2026/NElIb65WiohraTxWWZbcAV3hnlg.jpg" class="img-fluid rounded z-depth-1" zoomable=true caption="味道一般" %}
   </div>
-  <div class="col-sm mt-3 mt-md-0">
+  <div class="feishu-grid-col" style="flex: 0.500000 1 0%;">
     {% include figure.liquid url="https://picoflmq.oss-cn-beijing.aliyuncs.com/typora/emnlp2026/TX7AbmchDoH8XXxXOxGcjyXHn2f.jpg" class="img-fluid rounded z-depth-1" zoomable=true caption="只要1.3欧，太便宜了，甚至还有0.5的芝士蛋糕" %}
   </div>
 </div>
@@ -267,71 +293,71 @@ categories: Life
 
 白天顺着小红书上的经典 City Walk 路线在老城区暴走。维也纳确实配得上“艺术之都”的名号，满街的石头建筑很高大，设计感拉满（有一说一，这种高大的石头建筑在视觉冲击力上确实比木质建筑看着更高级，可能还是高大的建筑带给人的压迫感）。中午随便进了家麦当劳解决，这边的麦当劳出餐快得离谱，我点的套餐居然 1 分钟就做好了，端盘子的服务员是印度老哥，看来无论从哪个指标看，奥地利确实都比匈牙利发达得多。
 
-<div class="row mt-3">
-  <div class="col-sm mt-3 mt-md-0">
+<div class="feishu-grid">
+  <div class="feishu-grid-col" style="flex: 0.468580 1 0%;">
     {% include figure.liquid url="https://picoflmq.oss-cn-beijing.aliyuncs.com/typora/emnlp2026/QBt1bFpOro9GrPxoifgcZJYanre.jpg" class="img-fluid rounded z-depth-1" zoomable=true %}
   </div>
-  <div class="col-sm mt-3 mt-md-0">
+  <div class="feishu-grid-col" style="flex: 0.265710 1 0%;">
     {% include figure.liquid url="https://picoflmq.oss-cn-beijing.aliyuncs.com/typora/emnlp2026/AJ1kbDkhdoIjDFxgZh8cRtmUn3d.jpg" class="img-fluid rounded z-depth-1" zoomable=true %}
   </div>
-  <div class="col-sm mt-3 mt-md-0">
+  <div class="feishu-grid-col" style="flex: 0.265710 1 0%;">
     {% include figure.liquid url="https://picoflmq.oss-cn-beijing.aliyuncs.com/typora/emnlp2026/Hu0ZbjQD8ohnWRxyXzKc3E4Nngc.jpg" class="img-fluid rounded z-depth-1" zoomable=true %}
   </div>
 </div>
 
 顺路去吃了茜茜公主经常吃的皇帝煎饼，打卡了奥地利国家图书馆、霍夫堡，接着扎进了艺术史博物馆。博物馆的馆藏丰富得惊人，而且很多展品离人的物理距离非常近（馆里居然还能看到木乃伊）。逛了整整三个小时，非常值回票价。
 
-<div class="row mt-3">
-  <div class="col-sm mt-3 mt-md-0">
+<div class="feishu-grid">
+  <div class="feishu-grid-col" style="flex: 0.160697 1 0%;">
     {% include figure.liquid url="https://picoflmq.oss-cn-beijing.aliyuncs.com/typora/emnlp2026/VEmPb8621owoRgx93BqcC1t5n3d.jpg" class="img-fluid rounded z-depth-1" zoomable=true %}
   </div>
-  <div class="col-sm mt-3 mt-md-0">
+  <div class="feishu-grid-col" style="flex: 0.279768 1 0%;">
     {% include figure.liquid url="https://picoflmq.oss-cn-beijing.aliyuncs.com/typora/emnlp2026/ORP5bToN6onuOIx7DIwcRBxBnWc.jpg" class="img-fluid rounded z-depth-1" zoomable=true %}
   </div>
-  <div class="col-sm mt-3 mt-md-0">
+  <div class="feishu-grid-col" style="flex: 0.279768 1 0%;">
     {% include figure.liquid url="https://picoflmq.oss-cn-beijing.aliyuncs.com/typora/emnlp2026/YMSibxEmjojFyzxxmzjczQJBnBf.jpg" class="img-fluid rounded z-depth-1" zoomable=true %}
   </div>
-  <div class="col-sm mt-3 mt-md-0">
+  <div class="feishu-grid-col" style="flex: 0.279768 1 0%;">
     {% include figure.liquid url="https://picoflmq.oss-cn-beijing.aliyuncs.com/typora/emnlp2026/M4ZhbHQQwoO8VwxPp47cQXTlnof.jpg" class="img-fluid rounded z-depth-1" zoomable=true %}
   </div>
 </div>
 
-<div class="row mt-3">
-  <div class="col-sm mt-3 mt-md-0">
+<div class="feishu-grid">
+  <div class="feishu-grid-col" style="flex: 0.280103 1 0%;">
     {% include figure.liquid url="https://picoflmq.oss-cn-beijing.aliyuncs.com/typora/emnlp2026/SJB6bFt1Jo1MwTxjGi0cvkIMnwf.jpg" class="img-fluid rounded z-depth-1" zoomable=true %}
   </div>
-  <div class="col-sm mt-3 mt-md-0">
+  <div class="feishu-grid-col" style="flex: 0.280103 1 0%;">
     {% include figure.liquid url="https://picoflmq.oss-cn-beijing.aliyuncs.com/typora/emnlp2026/QXAtb0xHFoU7EcxuA4ec4s4onHb.jpg" class="img-fluid rounded z-depth-1" zoomable=true %}
   </div>
-  <div class="col-sm mt-3 mt-md-0">
+  <div class="feishu-grid-col" style="flex: 0.280103 1 0%;">
     {% include figure.liquid url="https://picoflmq.oss-cn-beijing.aliyuncs.com/typora/emnlp2026/QOMIblfq0oF6UPxtdszcwT45nxd.jpg" class="img-fluid rounded z-depth-1" zoomable=true %}
   </div>
-  <div class="col-sm mt-3 mt-md-0">
+  <div class="feishu-grid-col" style="flex: 0.159692 1 0%;">
     {% include figure.liquid url="https://picoflmq.oss-cn-beijing.aliyuncs.com/typora/emnlp2026/SGQAbgusCoda6Ax2e3Mcss13nug.jpg" class="img-fluid rounded z-depth-1" zoomable=true %}
   </div>
 </div>
 
 晚上去了一家小红书推荐的餐厅，墙上密密麻麻摆满了世界各地的啤酒瓶，放大看还有中国的啤酒。我平时基本滴酒不沾，但本着“来都来了”的心态，还是点了一杯尝尝。吃完饭走到卡尔教堂发现已经关门了，因为这片建筑都是连着的，就顺着街区一路 Walk through 到了奥地利国会大厦。
 
-<div class="row mt-3">
-  <div class="col-sm mt-3 mt-md-0">
+<div class="feishu-grid">
+  <div class="feishu-grid-col" style="flex: 0.265710 1 0%;">
     {% include figure.liquid url="https://picoflmq.oss-cn-beijing.aliyuncs.com/typora/emnlp2026/SLDnb0G53oPjLExSMxScDYY0ntE.jpg" class="img-fluid rounded z-depth-1" zoomable=true %}
   </div>
-  <div class="col-sm mt-3 mt-md-0">
+  <div class="feishu-grid-col" style="flex: 0.468580 1 0%;">
     {% include figure.liquid url="https://picoflmq.oss-cn-beijing.aliyuncs.com/typora/emnlp2026/RFgzbt18yoLiiCxh1Wmc7iNDnQe.jpg" class="img-fluid rounded z-depth-1" zoomable=true %}
   </div>
-  <div class="col-sm mt-3 mt-md-0">
+  <div class="feishu-grid-col" style="flex: 0.265710 1 0%;">
     {% include figure.liquid url="https://picoflmq.oss-cn-beijing.aliyuncs.com/typora/emnlp2026/NELWbSFCZoaDlhx8x0vcV5Tsnqc.jpg" class="img-fluid rounded z-depth-1" zoomable=true %}
   </div>
 </div>
 
 国会大厦绝对是来奥地利必看的景点，比许多景点的开放程度高太多了。里面的讲解员全都是政府议会办公室的工作人员，那口英文是我这趟欧洲之行（甚至算上高中去英国那次）听过最标准、最舒服的英文。哪怕我长期不处在英语环境里、听说能力大幅退化，也能完全跟上她的节奏，听她娓娓道来整座建筑背后奥地利民主法治的演变。印象最深的是会议室里有一幅画，站在不同角度看会呈现出完全不同的颜色，用来时刻提醒议员们要“换位思考”。
 
-<div class="row mt-3">
-  <div class="col-sm mt-3 mt-md-0">
+<div class="feishu-grid">
+  <div class="feishu-grid-col" style="flex: 0.570732 1 0%;">
     {% include figure.liquid url="https://picoflmq.oss-cn-beijing.aliyuncs.com/typora/emnlp2026/UcdSbTQ59oNeeoxKP3mcbHCknlg.jpg" class="img-fluid rounded z-depth-1" zoomable=true %}
   </div>
-  <div class="col-sm mt-3 mt-md-0">
+  <div class="feishu-grid-col" style="flex: 0.429268 1 0%;">
     {% include figure.liquid url="https://picoflmq.oss-cn-beijing.aliyuncs.com/typora/emnlp2026/WiLRbEGh1oEDVaxs9mbcF2agnyf.jpg" class="img-fluid rounded z-depth-1" zoomable=true %}
   </div>
 </div>
@@ -348,25 +374,25 @@ categories: Life
 
 今天主要去美泉宫和美景宫。看酒店前台摆上了装饰，才反应过来万圣节快到了。
 
-<div class="row mt-3">
-  <div class="col-sm mt-3 mt-md-0">
+<div class="feishu-grid">
+  <div class="feishu-grid-col" style="flex: 0.500000 1 0%;">
     {% include figure.liquid url="https://picoflmq.oss-cn-beijing.aliyuncs.com/typora/emnlp2026/RpQ9bsJMkoCwHYxrTl2cjMU7nGe.jpg" class="img-fluid rounded z-depth-1" zoomable=true %}
   </div>
-  <div class="col-sm mt-3 mt-md-0">
+  <div class="feishu-grid-col" style="flex: 0.500000 1 0%;">
     {% include figure.liquid url="https://picoflmq.oss-cn-beijing.aliyuncs.com/typora/emnlp2026/UzEtbj5RJog1ToxrGXyc4Bq3n8c.jpg" class="img-fluid rounded z-depth-1" zoomable=true %}
   </div>
 </div>
 
 说实话，美泉宫这个行宫建筑本身看着挺一般的，甚至感觉还不如布达佩斯的霍夫堡有气势，但它的花园修剪得极其整齐。这跟北京秋天的公园很不一样：北京的秋景总还带着点夏天争奇斗艳的劲儿，红叶、黄叶和坚挺的绿树混在一起，很有层次；而美泉宫的树颜色非常统一，就是给你一种确定性的、明明确确的“秋”的感觉。顺着花园一路爬到山顶的凯旋门，在上面喝了杯咖啡，俯瞰维也纳。因为维也纳整体建筑比布达佩斯高，所以并没有“一览众山小”的震撼，但吹吹风还算惬意。
 
-<div class="row mt-3">
-  <div class="col-sm mt-3 mt-md-0">
+<div class="feishu-grid">
+  <div class="feishu-grid-col" style="flex: 0.265710 1 0%;">
     {% include figure.liquid url="https://picoflmq.oss-cn-beijing.aliyuncs.com/typora/emnlp2026/QyMsbOfeQoJnlHxwzs7cRkNRnDr.jpg" class="img-fluid rounded z-depth-1" zoomable=true %}
   </div>
-  <div class="col-sm mt-3 mt-md-0">
+  <div class="feishu-grid-col" style="flex: 0.468580 1 0%;">
     {% include figure.liquid url="https://picoflmq.oss-cn-beijing.aliyuncs.com/typora/emnlp2026/GbyhbDDtnovWxKxbnUVcKSTAneb.jpg" class="img-fluid rounded z-depth-1" zoomable=true %}
   </div>
-  <div class="col-sm mt-3 mt-md-0">
+  <div class="feishu-grid-col" style="flex: 0.265710 1 0%;">
     {% include figure.liquid url="https://picoflmq.oss-cn-beijing.aliyuncs.com/typora/emnlp2026/JzwQbUkccozTsGxRBlcc0dYanfd.jpg" class="img-fluid rounded z-depth-1" zoomable=true %}
   </div>
 </div>
@@ -375,14 +401,14 @@ categories: Life
 
 从美景宫出来看时间还早，跑去邮局想买点纪念邮票。结果邮局大叔一脸遗憾地跟我说，我想买的施华洛世奇联名款，昨天刚被一帮上海来的游客给包圆买光了。不过大叔人很好，极力给我推荐了 Albertina 新出的联名邮票——上面印的是丢勒的名画《野兔》。因为这幅画本身材质太脆弱，现在已经不再公开展出了，能买张邮票留作纪念也挺好。大叔还千叮咛万嘱咐，劝我明天一定得去一趟阿尔贝蒂娜博物馆。
 
-<div class="row mt-3">
-  <div class="col-sm mt-3 mt-md-0">
+<div class="feishu-grid">
+  <div class="feishu-grid-col" style="flex: 0.376532 1 0%;">
     {% include figure.liquid url="https://picoflmq.oss-cn-beijing.aliyuncs.com/typora/emnlp2026/IlvdbfWBWoHHQixVukrc9ndln9d.jpg" class="img-fluid rounded z-depth-1" zoomable=true %}
   </div>
-  <div class="col-sm mt-3 mt-md-0">
+  <div class="feishu-grid-col" style="flex: 0.376532 1 0%;">
     {% include figure.liquid url="https://picoflmq.oss-cn-beijing.aliyuncs.com/typora/emnlp2026/HieIbrYB7oqRzNxy8kUccGRInhg.jpg" class="img-fluid rounded z-depth-1" zoomable=true %}
   </div>
-  <div class="col-sm mt-3 mt-md-0">
+  <div class="feishu-grid-col" style="flex: 0.246937 1 0%;">
     {% include figure.liquid url="https://picoflmq.oss-cn-beijing.aliyuncs.com/typora/emnlp2026/PCV8bBUw1oIPyvxYxXbcphwonFf.png" class="img-fluid rounded z-depth-1" zoomable=true %}
   </div>
 </div>
@@ -399,17 +425,17 @@ categories: Life
 
 市场里确实摆着很多杂七杂八、稀奇古怪的老物件，但客观来说要价实在离谱，随便一个做工粗糙的工艺品就敢开口要三四十欧，比在景点纪念品商店买还黑。我在第一家摊位试着对半砍价，没想到摊主一口就答应了，害我当时心里直犯嘀咕，怀疑自己是不是砍一半也当了冤大头。结果后面逛了一圈发现，别人家的东西是真的贵且根本不讲价。我后来又偷偷绕回第一家观察了一下，发现那个卖给我东西的大叔估计有五六十岁了，这么冷的天，身上穿的棉袄都破洞漏出棉花了。大清早的，他大概也是想赶紧做成第一单开个张吧，这么一想，也算是日行一善了。
 
-<div class="row mt-3">
-  <div class="col-sm mt-3 mt-md-0">
+<div class="feishu-grid">
+  <div class="feishu-grid-col" style="flex: 0.218789 1 0%;">
     {% include figure.liquid url="https://picoflmq.oss-cn-beijing.aliyuncs.com/typora/emnlp2026/Yfelbwjl3o3L6qxZCZncejL6n7d.png" class="img-fluid rounded z-depth-1" zoomable=true %}
   </div>
-  <div class="col-sm mt-3 mt-md-0">
+  <div class="feishu-grid-col" style="flex: 0.226822 1 0%;">
     {% include figure.liquid url="https://picoflmq.oss-cn-beijing.aliyuncs.com/typora/emnlp2026/D7b6bLxhzoYziExuPX8cuDPmnrb.png" class="img-fluid rounded z-depth-1" zoomable=true %}
   </div>
-  <div class="col-sm mt-3 mt-md-0">
+  <div class="feishu-grid-col" style="flex: 0.417167 1 0%;">
     {% include figure.liquid url="https://picoflmq.oss-cn-beijing.aliyuncs.com/typora/emnlp2026/I3ljbBaGgoL4iwxpKNccZIVqnfd.png" class="img-fluid rounded z-depth-1" zoomable=true %}
   </div>
-  <div class="col-sm mt-3 mt-md-0">
+  <div class="feishu-grid-col" style="flex: 0.137222 1 0%;">
     {% include figure.liquid url="https://picoflmq.oss-cn-beijing.aliyuncs.com/typora/emnlp2026/XSMMbGBCyo2Ubtx7KxScUn6KnXg.png" class="img-fluid rounded z-depth-1" zoomable=true %}
   </div>
 </div>
@@ -420,17 +446,17 @@ categories: Life
 
 进到阿尔贝蒂娜博物馆，很难得地没看到什么中国游客，估计确实不算国内的热门网红打卡地。虽然前一天在艺术史博物馆看画已经看得有些审美疲劳，但不得不承认，这里展出的大师名作，单纯从欣赏美的角度来看依然让人惊艳。之前听人开玩笑说，做科研的人应该从大师名画里学习怎么给论文画图配色——真希望有朝一日 AI Agent 能自己学会这项技能，毕竟我已经很久没有亲自动手画过图了。
 
-<div class="row mt-3">
-  <div class="col-sm mt-3 mt-md-0">
+<div class="feishu-grid">
+  <div class="feishu-grid-col" style="flex: 0.216454 1 0%;">
     {% include figure.liquid url="https://picoflmq.oss-cn-beijing.aliyuncs.com/typora/emnlp2026/LBbGbE89VofOPHxnk73cdriLnUd.png" class="img-fluid rounded z-depth-1" zoomable=true %}
   </div>
-  <div class="col-sm mt-3 mt-md-0">
+  <div class="feishu-grid-col" style="flex: 0.299123 1 0%;">
     {% include figure.liquid url="https://picoflmq.oss-cn-beijing.aliyuncs.com/typora/emnlp2026/DXkJbIN2loeATQxyX0FcFGTVnRb.png" class="img-fluid rounded z-depth-1" zoomable=true %}
   </div>
-  <div class="col-sm mt-3 mt-md-0">
+  <div class="feishu-grid-col" style="flex: 0.217776 1 0%;">
     {% include figure.liquid url="https://picoflmq.oss-cn-beijing.aliyuncs.com/typora/emnlp2026/TOTvbiUsLoEepAxUnoQcfyj0nAg.png" class="img-fluid rounded z-depth-1" zoomable=true %}
   </div>
-  <div class="col-sm mt-3 mt-md-0">
+  <div class="feishu-grid-col" style="flex: 0.266647 1 0%;">
     {% include figure.liquid url="https://picoflmq.oss-cn-beijing.aliyuncs.com/typora/emnlp2026/Hc2cbQn9hocrLmx760ccRiCtnmH.png" class="img-fluid rounded z-depth-1" zoomable=true %}
   </div>
 </div>
