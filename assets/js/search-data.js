@@ -30,7 +30,18 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/projects/";
           },
-        },{id: "post-halftime-is-over",
+        },{id: "post-emnlp-2026-do-as-agent-do",
+        
+          title: "EMNLP 2026: Do as Agent Do",
+        
+        description: "记 EMNLP 2026 布达佩斯参会与迪拜、维也纳一周之行：在陌生的风景与交流中获得新的 Context，重新感受“钉子”的痛感，起身行动。",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/emnlp-2026-do-as-agent-do/";
+          
+        },
+      },{id: "post-halftime-is-over",
         
           title: "Halftime Is Over",
         
