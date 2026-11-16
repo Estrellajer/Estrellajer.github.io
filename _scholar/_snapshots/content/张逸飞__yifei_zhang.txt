@@ -46,12 +46,12 @@ International World Wide Web Conference (WWW) 2025
 Understanding and Mitigating Hyperbolic Dimensional Collapse in Graph Contrastive Learning
 Yifei Zhang, Hao Zhu, Menglin Yang, Jiahong Liu, Rex Ying, Irwin King
 ACM SIGKDD Conference on Knowledge Discovery and Data Mining (KDD) 2025
-Towards effective privacy preservation in federated learning with automatic gradient clipping and gradient transformation perturbation
-Chuanyin Wang, Yifei Zhang, Neng Gao
-The Computer Journal 2025
 FedHLT: Efficient Federated Low-Rank Adaption with Hierarchical Language Tree for Multilingual Modeling
 Zhihan Guo, Yifei Zhang, Zhuo Zhang, Zenglin Xu, Irwin King
 Lecture notes in computer science 2025
+Towards effective privacy preservation in federated learning with automatic gradient clipping and gradient transformation perturbation
+Chuanyin Wang, Yifei Zhang, Neng Gao
+The Computer Journal 2025
 AnnaAgent: Dynamic Evolution Agent System with Multi-Session Memory for Realistic Seeker Simulation
 Ming Wang, Peidong Wang, Lin Wu, Xiaocui Yang, Daling Wang, Feng Shi
 Findings of the Association for Computational Linguistics: ACL (Findings of ACL) 2025
