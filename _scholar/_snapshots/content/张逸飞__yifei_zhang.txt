@@ -53,7 +53,7 @@ Towards effective privacy preservation in federated learning with automatic grad
 Chuanyin Wang, Yifei Zhang, Neng Gao
 The Computer Journal 2025
 AnnaAgent: Dynamic Evolution Agent System with Multi-Session Memory for Realistic Seeker Simulation
-Ming Wang, Peidong Wang, Lin Wu, Xiaocui Yang, Daling Wang, Feng Shi
+Ming Wang, Peidong Wang, Lin Wu, Xiaocui Yang, Daling Wang, Shi Feng
 Findings of the Association for Computational Linguistics: ACL (Findings of ACL) 2025
 Low-Rank Adaptation for Foundation Models: A Comprehensive Review
 Menglin Yang, Jialin Chen, Tao, Jinkai, Yifei Zhang, Jiahong Liu, Jiasheng Zhang
