@@ -4,6 +4,8 @@
 
 title: Maoqi Liu (刘茂琦) # used in <title> / og:title
 brand: Carpediem # text shown as the navbar brand
+variant: d # design variant (a: swiss, b: classic academic, c: sidebar, d: editorial)
+variant_preview: true # temporary: ?v= switcher while choosing a design
 first_name: Maoqi
 middle_name:
 last_name: Liu

@@ -1,0 +1,192 @@
+/*******************************************************************************
+ * Long-form reading (blog posts). Shared by every design variant.
+ *
+ * - Measure: ~44rem column ≈ 40 CJK characters / 75 Latin characters per line
+ *   (CJK long-form reads best at 35–45 characters).
+ * - 17px body, 1.85 line height for mixed CJK/Latin, full-strength text color.
+ * - Headings separated by space rather than full-width rules.
+ * - CJK/Latin auto-spacing and leading-punctuation trimming where supported.
+ * Rules are scoped under `html` to beat the inline <style> in post.liquid.
+ ******************************************************************************/
+
+$reading-measure: 44rem;
+
+html {
+  .reading-shell {
+    grid-template-columns: 13.5rem minmax(0, $reading-measure);
+    justify-content: center;
+    gap: 4.5rem;
+    max-width: none;
+  }
+
+  .reading-shell--single {
+    grid-template-columns: minmax(0, $reading-measure);
+  }
+
+  .reading-main {
+    max-width: $reading-measure;
+  }
+
+  .reading-hero {
+    margin-bottom: 2.6rem;
+  }
+
+  .reading-title {
+    font-size: clamp(2rem, 3.6vw, 2.75rem);
+    line-height: 1.18;
+  }
+
+  .reading-meta {
+    font-size: 0.82rem;
+    color: var(--hl-text-soft);
+  }
+
+  .reading-chip {
+    min-height: 1.75rem;
+    padding: 0 0.6rem;
+    border-radius: 0.3rem;
+    background: transparent;
+    color: var(--hl-text-soft);
+    font-size: 0.76rem;
+
+    &:hover {
+      color: var(--hl-accent);
+      border-color: var(--hl-accent-border);
+    }
+  }
+
+  .reading-sidebar-inner {
+    padding-right: 1rem;
+    border-right: 0;
+  }
+
+  .reading-toc a {
+    color: var(--hl-text-soft);
+  }
+
+  .reading-article,
+  .reading-article #markdown-content {
+    color: var(--hl-text-primary);
+    font-size: 1.0625rem;
+    line-height: 1.85;
+    overflow-wrap: break-word;
+    text-autospace: normal;
+    text-spacing-trim: trim-start;
+  }
+
+  .reading-article #markdown-content > p,
+  .reading-article #markdown-content > ul,
+  .reading-article #markdown-content > ol {
+    margin-top: 0;
+    margin-bottom: 1.15em;
+  }
+
+  .reading-article #markdown-content > blockquote,
+  .reading-article #markdown-content > pre,
+  .reading-article #markdown-content > figure,
+  .reading-article #markdown-content > table,
+  .reading-article #markdown-content > .table-responsive {
+    margin-top: 1.6em;
+    margin-bottom: 1.6em;
+  }
+
+  .reading-article li {
+    margin-bottom: 0.35em;
+  }
+
+  .reading-article li > ul,
+  .reading-article li > ol {
+    margin-top: 0.35em;
+  }
+
+  .reading-article [data-reading-level="1"] {
+    margin-top: 2.6em;
+    margin-bottom: 0.75em;
+    padding: 0;
+    border-bottom: 0;
+    font-size: 1.6rem;
+    font-weight: 650;
+    line-height: 1.3;
+    letter-spacing: -0.01em;
+  }
+
+  .reading-article [data-reading-level="2"] {
+    margin-top: 2.1em;
+    margin-bottom: 0.6em;
+    font-size: 1.25rem;
+    font-weight: 650;
+  }
+
+  .reading-article [data-reading-level="3"] {
+    margin-top: 1.8em;
+    margin-bottom: 0.5em;
+    font-size: 1.08rem;
+    font-weight: 650;
+  }
+
+  .reading-article [data-reading-level="4"] {
+    font-size: 1rem;
+  }
+
+  .reading-article #markdown-content a:not(.btn) {
+    color: var(--hl-text-primary);
+    text-decoration: underline;
+    text-decoration-color: var(--hl-accent-border);
+    text-decoration-thickness: 1.5px;
+    text-underline-offset: 0.2em;
+
+    &:hover {
+      color: var(--hl-accent);
+      text-decoration-color: var(--hl-accent);
+    }
+  }
+
+  .reading-article blockquote {
+    padding: 0.1rem 0 0.1rem 1.1rem;
+    border-left: 3px solid var(--hl-border);
+    border-radius: 0;
+    background: transparent;
+    color: var(--hl-text-muted);
+  }
+
+  .reading-article img {
+    display: block;
+    margin: 1.8rem auto;
+    border-radius: 0.375rem;
+  }
+
+  .reading-article figcaption {
+    font-style: normal;
+    color: var(--hl-text-soft);
+  }
+
+  .reading-article hr {
+    margin: 2.6em auto;
+    width: 30%;
+    border: 0;
+    border-top: 1px solid var(--hl-border);
+  }
+
+  .reading-article table {
+    font-size: 0.92rem;
+  }
+
+  @media (max-width: 960px) {
+    .reading-shell {
+      grid-template-columns: minmax(0, 1fr);
+      gap: 0;
+    }
+  }
+
+  @media (max-width: 640px) {
+    .reading-article,
+    .reading-article #markdown-content {
+      font-size: 1.03rem;
+      line-height: 1.8;
+    }
+
+    .reading-article [data-reading-level="1"] {
+      font-size: 1.4rem;
+    }
+  }
+}

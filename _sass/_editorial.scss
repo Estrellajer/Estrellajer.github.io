@@ -11,6 +11,7 @@ html {
   body {
     background: var(--hl-bg);
     color: var(--hl-text-primary);
+    font-weight: 400; // MDB sets 300, which renders CJK text thin and grey
     font-feature-settings: "kern", "liga", "calt";
     text-rendering: optimizeLegibility;
   }
@@ -28,7 +29,7 @@ html {
   .reading-title,
   .post-title,
   .sr-title {
-    font-family: var(--hl-font-serif) !important;
+    font-family: var(--hl-font-display) !important;
     font-weight: 500 !important;
     letter-spacing: -0.02em !important;
     font-variation-settings: "opsz" 72;
@@ -51,7 +52,7 @@ html {
   .reading-article {
     h2,
     h3 {
-      font-family: var(--hl-font-serif);
+      font-family: var(--hl-font-display);
       font-weight: 600;
       letter-spacing: -0.01em;
     }
@@ -69,7 +70,7 @@ html {
     }
 
     .brand-text {
-      font-family: var(--hl-font-serif);
+      font-family: var(--hl-font-display);
       font-size: 1.28rem;
       font-style: italic;
       font-weight: 500;
@@ -189,7 +190,7 @@ html {
     }
 
     .title {
-      font-family: var(--hl-font-serif);
+      font-family: var(--hl-font-display);
       font-size: 1.32rem;
       font-weight: 500;
       line-height: 1.3;
@@ -208,7 +209,7 @@ html {
     }
 
     .periodical {
-      font-family: var(--hl-font-serif);
+      font-family: var(--hl-font-display);
       font-size: 1rem;
     }
 
@@ -275,7 +276,7 @@ html {
     }
 
     .blog-item-title {
-      font-family: var(--hl-font-serif);
+      font-family: var(--hl-font-display);
       font-size: 1.45rem;
       font-weight: 500;
       letter-spacing: -0.01em;
@@ -405,7 +406,7 @@ html {
   align-items: baseline;
   gap: 0.2em 0.45em;
   margin: 0 0 2rem;
-  font-family: var(--hl-font-serif);
+  font-family: var(--hl-font-display);
   font-size: clamp(3.2rem, 7.2vw, 6rem);
   font-weight: 400;
   line-height: 0.95;
@@ -501,7 +502,7 @@ html {
 
 .ed-quote {
   color: var(--hl-text-muted);
-  font-family: var(--hl-font-serif);
+  font-family: var(--hl-font-display);
   font-size: 1.02rem;
   font-style: italic;
   line-height: 1.4;
@@ -534,7 +535,7 @@ html {
 
   h2 {
     margin: 0.35rem 0 0.7rem;
-    font-family: var(--hl-font-serif);
+    font-family: var(--hl-font-display);
     font-size: 1.55rem;
     font-weight: 500;
     line-height: 1.15;

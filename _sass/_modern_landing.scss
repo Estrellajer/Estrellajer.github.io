@@ -27,6 +27,7 @@ html {
 :root {
   --hl-font-sans: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei UI", "Microsoft YaHei", "Source Han Sans SC", "Noto Sans SC", sans-serif;
   --hl-font-serif: "Newsreader", "Noto Serif SC", "Source Han Serif SC", "Songti SC", "Charter", "Georgia", serif;
+  --hl-font-display: var(--hl-font-serif);
   --hl-font-mono: "JetBrains Mono", "Fira Code", ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
 
   --hl-bg: #f6f4ef;
