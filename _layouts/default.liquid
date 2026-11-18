@@ -1,26 +1,7 @@
 <!doctype html>
-<html lang="{{ site.lang }}" class="v-{{ site.variant | default: 'd' }}">
+<html lang="{{ site.lang }}" class="v-c">
   <!-- Head -->
   <head>
-    {% if site.variant_preview %}
-      <script>
-        // Design preview: ?v=a|b|c|d switches the variant for this tab.
-        (function () {
-          var all = ["v-a", "v-b", "v-c", "v-d"];
-          var q = new URLSearchParams(location.search).get("v");
-          try {
-            if (q) sessionStorage.setItem("v", q);
-            q = q || sessionStorage.getItem("v");
-          } catch (e) {}
-          var i = "abcd".indexOf(q);
-          if (q && i >= 0) {
-            var el = document.documentElement;
-            all.forEach(function (c) { el.classList.remove(c); });
-            el.classList.add(all[i]);
-          }
-        })();
-      </script>
-    {% endif %}
     {% if page.redirect %}
       {% if page.redirect == true %}
         {% assign redirect = site.baseurl | append: '/' %}
@@ -71,10 +52,5 @@
 
     <!-- JavaScripts -->
     {% include scripts.liquid %}
-    {% if site.variant_preview %}
-      <nav class="variant-switch" aria-label="Design variants">
-        <a href="?v=a">A</a><a href="?v=b">B</a><a href="?v=c">C</a><a href="?v=d">D</a>
-      </nav>
-    {% endif %}
   </body>
 </html>

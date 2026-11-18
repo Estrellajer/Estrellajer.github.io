@@ -85,8 +85,6 @@
   <!-- Schema.org -->
   {% comment %} Social links generator for "sameAs schema" {% endcomment %}
   {% assign sameaslinks = '' | split: ',' %}
-  {% assign openreview_link = 'https://openreview.net/profile?id=%7EMaoqi_Liu2' %}
-  {% assign sameaslinks = sameaslinks | push: openreview_link %}
   {% for social in site.data.socials %}
     {% case social[0] %}
       {% when 'acm_id' %}
@@ -244,7 +242,7 @@
         "url": "{{ site.url }}{{ site.baseurl }}/",
         "image": "{{ site.og_image | prepend: site.baseurl | prepend: site.url }}",
         "description": {{ site.description | strip | jsonify }},
-        "jobTitle": "Graduate Student & Research Intern",
+        "jobTitle": "Graduate Student & Intern",
         "worksFor": {
           "@type": "Organization",
           "name": "ByteDance Data"

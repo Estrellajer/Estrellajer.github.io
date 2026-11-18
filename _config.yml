@@ -4,15 +4,13 @@
 
 title: Maoqi Liu (刘茂琦) # used in <title> / og:title
 brand: Carpediem # text shown as the navbar brand
-variant: d # design variant (a: swiss, b: classic academic, c: sidebar, d: editorial)
-variant_preview: true # temporary: ?v= switcher while choosing a design
 first_name: Maoqi
 middle_name:
 last_name: Liu
 email: liumaoqi@bupt.edu.cn
 cv_download_path: /assets/pdf/Maoqi_Liu_Resume.pdf
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
-  The academic profile of Maoqi Liu (刘茂琦), Graduate Student at BUPT and Research Intern at ByteDance Data focusing on Post-Training and Continual Learning.
+  The academic profile of Maoqi Liu (刘茂琦), Graduate Student at BUPT and Intern at ByteDance Data focusing on Post-Training and Continual Learning.
 footer_text: >
   Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
   Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
@@ -415,7 +413,7 @@ third_party_libraries:
     version: "5.5.0"
   google_fonts:
     url:
-      fonts: "https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Newsreader:ital,opsz,wght@0,6..72,300..700;1,6..72,300..700&family=Noto+Sans+SC:wght@400;500;700&family=Noto+Serif+SC:wght@500;700&display=swap"
+      fonts: "https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Noto+Sans+SC:wght@400;500;700&display=swap"
   highlightjs:
     integrity:
       css:

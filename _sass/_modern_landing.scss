@@ -27,7 +27,7 @@ html {
 :root {
   --hl-font-sans: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei UI", "Microsoft YaHei", "Source Han Sans SC", "Noto Sans SC", sans-serif;
   --hl-font-serif: "Newsreader", "Noto Serif SC", "Source Han Serif SC", "Songti SC", "Charter", "Georgia", serif;
-  --hl-font-display: var(--hl-font-serif);
+  --hl-font-display: var(--hl-font-sans);
   --hl-font-mono: "JetBrains Mono", "Fira Code", ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
 
   --hl-bg: #f6f4ef;
@@ -1917,23 +1917,4 @@ html[data-theme="dark"] .code-display-wrapper {
       max-width: none;
     }
   }
-}
-
-/* ──────────────────────────────────────────────────────────────────────────
-   OpenReview monogram (academicons has no OpenReview glyph)
-   ────────────────────────────────────────────────────────────────────────── */
-.or-mark {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  min-width: 1.15em;
-  height: 1.15em;
-  padding: 0 0.18em;
-  border: 1.5px solid currentColor;
-  border-radius: 0.28em;
-  font-family: var(--hl-font-sans, inherit);
-  font-size: 0.68em;
-  font-weight: 750;
-  letter-spacing: -0.02em;
-  line-height: 1;
 }

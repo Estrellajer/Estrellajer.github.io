@@ -1,0 +1,372 @@
+/*******************************************************************************
+ * Site design: sticky profile sidebar + content column, cool grey with teal.
+ * Layered on top of _editorial.scss; everything is scoped under html.v-c
+ * (set in default.liquid) so it wins over the editorial base rules.
+ ******************************************************************************/
+
+
+$sans-display: "Inter", system-ui, -apple-system, "PingFang SC", "Hiragino Sans GB", "Noto Sans SC", sans-serif;
+
+@mixin palette(
+  $bg, $surface, $surface-hover, $surface-alt,
+  $text, $muted, $soft, $border,
+  $accent, $accent-hover, $accent-rgb,
+  $code-bg, $code-header, $code-border
+) {
+  --hl-bg: #{$bg};
+  --global-bg-color: #{$bg};
+  --hl-surface: #{$surface};
+  --hl-surface-hover: #{$surface-hover};
+  --hl-surface-alt: #{$surface-alt};
+  --hl-text-primary: #{$text};
+  --hl-text-muted: #{$muted};
+  --hl-text-soft: #{$soft};
+  --hl-border: #{$border};
+  --hl-border-hover: rgba(#{$accent-rgb}, 0.4);
+  --hl-accent: #{$accent};
+  --hl-accent-hover: #{$accent-hover};
+  --hl-accent-subtle: rgba(#{$accent-rgb}, 0.08);
+  --hl-accent-border: rgba(#{$accent-rgb}, 0.28);
+  --global-theme-color: #{$accent};
+  --global-hover-color: #{$accent-hover};
+  --hl-tag-paper-bg: rgba(#{$accent-rgb}, 0.08);
+  --hl-tag-paper-text: #{$accent};
+  --hl-tag-paper-border: rgba(#{$accent-rgb}, 0.26);
+  --hl-quote-border: #{$border};
+  --hl-code-bg: #{$code-bg};
+  --hl-code-header-bg: #{$code-header};
+  --hl-code-border: #{$code-border};
+  --hl-inline-code-bg: #{$surface-alt};
+  --hl-inline-code-border: #{$border};
+  --hl-font-display: #{$sans-display};
+  --hl-display-weight: 700;
+}
+
+html.v-c {
+  @include palette(#f7f8f8, #ffffff, #eff2f2, #f1f3f3, #15191b, #3e4649, #6b7477, #e1e5e6, #0f766e, #0b5c56, "15, 118, 110", #f1f3f3, #e6eaea, #d9dfe0);
+  &[data-theme="dark"] {
+    @include palette(#0f1213, #161a1c, #1d2224, #14181a, #e8ecec, #c2caca, #889294, #262c2e, #2dd4bf, #5eead4, "45, 212, 191", #161a1c, #1f2527, #2c3335);
+  }
+}
+
+/* Sans display */
+html.v-c {
+  .navbar.navbar-light .brand-text {
+    font-family: $sans-display;
+    font-size: 1.08rem;
+    font-style: normal;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+  }
+
+  .publications-title,
+  .projects-title,
+  .blog-title,
+  h1.news-title,
+  .content-page-title,
+  .reading-title,
+  .post-title,
+  .sr-title {
+    font-weight: 700 !important;
+    letter-spacing: -0.02em !important;
+  }
+
+  /* One heading scale for every top-level page */
+  .publications-title,
+  .projects-title,
+  .blog-title,
+  h1.news-title,
+  .content-page-title,
+  .sr-title {
+    font-size: clamp(2rem, 3.4vw, 2.6rem) !important;
+    line-height: 1.15 !important;
+  }
+
+  .reading-title {
+    font-size: clamp(1.85rem, 3vw, 2.35rem);
+    letter-spacing: -0.01em !important;
+  }
+
+  /* Publications page: same cards as the homepage, year as a left-aligned label */
+  .publications-landing h2.bibliography {
+    margin: 2.4rem 0 0.9rem;
+    padding: 0;
+    border: 0;
+    color: var(--hl-text-soft);
+    font-family: var(--hl-font-mono);
+    font-size: 0.85rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-align: left;
+  }
+
+  .publications-landing ol.bibliography li {
+    padding: 1.3rem;
+    margin-bottom: 0.9rem;
+    border: 1px solid var(--hl-border);
+    border-radius: 0.75rem;
+    background: var(--hl-surface);
+  }
+
+  .home-publications .publications .row,
+  .publications-landing .publications .row {
+    grid-template-columns: 12rem minmax(0, 1fr);
+    gap: 1.5rem;
+  }
+
+  .home-publications .publications .row > *,
+  .publications-landing .publications .row > * {
+    max-width: none;
+  }
+
+  .ed-quote,
+  .home-publications .periodical,
+  .publications-landing .periodical {
+    font-family: var(--hl-font-sans);
+  }
+
+  .home-publications .title,
+  .publications-landing .title,
+  .blog-landing .blog-item-title,
+  .ed-label h2 {
+    font-weight: 650;
+    letter-spacing: -0.015em;
+  }
+}
+
+/* ── C · Sidebar ───────────────────────────────────────────────────────── */
+html.v-c {
+  .ed-home {
+    display: grid;
+    grid-template-columns: 17rem minmax(0, 1fr);
+    gap: 0 4rem;
+    align-items: start;
+
+    > * {
+      grid-column: 2;
+    }
+  }
+
+  .vc-side {
+    display: block;
+    grid-column: 1;
+    grid-row: 1 / span 20;
+    position: sticky;
+    top: 5.5rem;
+  }
+
+  .vc-side-inner {
+    padding: 1.6rem;
+    border: 1px solid var(--hl-border);
+    border-radius: 0.9rem;
+    background: var(--hl-surface);
+  }
+
+  .vc-avatar {
+    display: block;
+    width: 100%;
+    aspect-ratio: 4 / 5;
+    margin-bottom: 1.1rem;
+    border-radius: 0.5rem;
+    object-fit: cover;
+    object-position: 24% 35%;
+  }
+
+  .vc-name {
+    font-size: 1.55rem;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    line-height: 1.2;
+  }
+
+  .vc-name-zh {
+    color: var(--hl-text-soft);
+    font-size: 0.95rem;
+    letter-spacing: 0.1em;
+  }
+
+  .vc-role {
+    margin: 0.8rem 0 0;
+    color: var(--hl-text-muted);
+    font-size: 0.9rem;
+    line-height: 1.55;
+  }
+
+  .vc-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.35rem;
+    margin: 1rem 0 0;
+    padding: 0;
+    list-style: none;
+
+    li {
+      padding: 0.15rem 0.55rem;
+      border-radius: 999px;
+      background: var(--hl-accent-subtle);
+      color: var(--hl-accent);
+      font-size: 0.78rem;
+      font-weight: 600;
+    }
+  }
+
+  .vc-links {
+    display: grid;
+    gap: 0.5rem;
+    margin: 1.2rem 0 0;
+    padding: 1.1rem 0 0;
+    border-top: 1px solid var(--hl-border);
+    list-style: none;
+
+    a {
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+      color: var(--hl-text-muted);
+      font-size: 0.86rem;
+      overflow-wrap: anywhere;
+
+      &:hover {
+        color: var(--hl-accent);
+      }
+
+      i {
+        width: 1rem;
+        color: var(--hl-text-soft);
+        text-align: center;
+      }
+    }
+  }
+
+  .ed-hero {
+    display: block;
+    padding: 0 0 1.5rem;
+    border-bottom: 0;
+  }
+
+  .ed-kicker,
+  .ed-name,
+  .ed-links,
+  .ed-portrait {
+    display: none;
+  }
+
+  .ed-bio {
+    max-width: none;
+    color: var(--hl-text-primary);
+    font-size: 1.06rem;
+
+    &::before {
+      content: "About";
+      display: block;
+      margin-bottom: 0.8rem;
+      font-size: 1.3rem;
+      font-weight: 700;
+      letter-spacing: -0.015em;
+    }
+
+    a {
+      text-decoration-color: var(--hl-accent);
+    }
+  }
+
+  .ed-section {
+    grid-template-columns: 1fr;
+    gap: 0.9rem;
+    padding: 1.8rem 0;
+    border-bottom: 0;
+    border-top: 1px solid var(--hl-border);
+  }
+
+  .ed-label {
+    position: static;
+    display: flex;
+    align-items: baseline;
+    gap: 0.6rem;
+
+    h2 {
+      margin: 0;
+      font-size: 1.3rem;
+    }
+  }
+
+  .ed-num {
+    display: none;
+  }
+
+  .ed-more {
+    margin-left: auto;
+  }
+
+  .ed-row {
+    border-bottom: 0;
+    padding: 0.45rem 0;
+  }
+
+  .home-publications ol.bibliography li {
+    padding: 1.3rem;
+    margin-bottom: 0.9rem;
+    border: 1px solid var(--hl-border);
+    border-radius: 0.75rem;
+    background: var(--hl-surface);
+  }
+
+  .home-publications .title,
+  .publications-landing .title {
+    font-size: 1.08rem;
+  }
+}
+
+
+/* ── Responsive ────────────────────────────────────────────────────────── */
+@media (max-width: 991.98px) {
+  html.v-c {
+    .ed-home {
+      display: block;
+    }
+
+    .vc-side {
+      position: static;
+      margin-bottom: 2rem;
+    }
+
+    .vc-side-inner {
+      display: grid;
+      grid-template-columns: 6rem minmax(0, 1fr);
+      column-gap: 1.2rem;
+      padding: 1.2rem;
+    }
+
+    .vc-avatar {
+      grid-row: span 3;
+      width: 6rem;
+      margin: 0;
+    }
+
+    .vc-tags,
+    .vc-links {
+      grid-column: 1 / -1;
+    }
+
+    .vc-links {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+}
+
+@media (max-width: 640px) {
+  html.v-c .home-publications ol.bibliography li,
+  html.v-c .publications-landing ol.bibliography li {
+    padding: 1rem;
+  }
+
+  html.v-c .vc-links {
+    grid-template-columns: 1fr;
+  }
+
+  html.v-c .home-publications .publications .row,
+  html.v-c .publications-landing .publications .row {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+}

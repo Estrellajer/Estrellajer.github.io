@@ -11,7 +11,7 @@ nav_order: 2
     <div class="publications-eyebrow">Publications</div>
     <h1 class="publications-title">Selected papers and ongoing work.</h1>
     <div class="publications-subtitle">
-      A focused list of recent work, with previews, venue labels, and direct links to preprints or code when available.
+      Papers and preprints, newest first, with links to arXiv and code.
     </div>
     <div class="publications-search">
       {% include bib_search.liquid %}

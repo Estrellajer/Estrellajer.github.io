@@ -4,14 +4,13 @@ layout: default
 {% assign name_en = page.hero_name | split: '「' | first | strip %}
 {% assign name_zh = page.hero_name | split: '「' | last | remove: '」' | strip %}
 <div class="ed-home">
-  {% if site.variant == 'c' or site.variant_preview %}
     {% assign side_img = page.profile.image | prepend: 'assets/img/' %}
     <aside class="vc-side">
       <div class="vc-side-inner">
         <img class="vc-avatar" src="{{ side_img | relative_url | bust_file_cache }}" alt="{{ name_en }}">
         <div class="vc-name">{{ name_en }}</div>
         <div class="vc-name-zh" lang="zh-CN">{{ name_zh }}</div>
-        <p class="vc-role">{{ page.hero_subtitle }}</p>
+        <p class="vc-role">{{ page.hero_subtitle | split: ' · ' | join: '<br>' }}</p>
         {% if page.research_areas %}
           <ul class="vc-tags">
             {% for area in page.research_areas %}<li>{{ area }}</li>{% endfor %}
@@ -20,14 +19,12 @@ layout: default
         <ul class="vc-links">
           <li><a href="mailto:{{ site.email }}"><i class="fa-regular fa-envelope"></i>{{ site.email }}</a></li>
           <li><a href="https://github.com/Estrellajer" target="_blank" rel="external nofollow noopener"><i class="fa-brands fa-github"></i>GitHub</a></li>
-          <li><a href="https://openreview.net/profile?id=%7EMaoqi_Liu2" target="_blank" rel="external nofollow noopener"><span class="or-mark" aria-hidden="true">OR</span>OpenReview</a></li>
           {% if site.cv_download_path %}
             <li><a href="{{ site.cv_download_path | relative_url }}" download><i class="fa-regular fa-file-lines"></i>CV (PDF)</a></li>
           {% endif %}
         </ul>
       </div>
     </aside>
-  {% endif %}
 
   <section class="ed-hero">
     <div class="ed-hero-text">
@@ -45,7 +42,6 @@ layout: default
 
       <nav class="ed-links" aria-label="Profiles">
         <a href="https://github.com/Estrellajer" target="_blank" rel="external nofollow noopener">GitHub<span aria-hidden="true">↗</span></a>
-        <a href="https://openreview.net/profile?id=%7EMaoqi_Liu2" target="_blank" rel="external nofollow noopener">OpenReview<span aria-hidden="true">↗</span></a>
         <a href="mailto:{{ site.email }}">Email<span aria-hidden="true">↗</span></a>
         {% if site.cv_download_path %}
           <a href="{{ site.cv_download_path | relative_url }}" download>CV<span aria-hidden="true">↓</span></a>
@@ -138,3 +134,9 @@ layout: default
     {% endif %}
   {% endfor %}
 </div>
+<script>
+  document.querySelectorAll(".days-since").forEach((el) => {
+    const days = Math.floor((Date.now() - Date.parse(el.dataset.since)) / 864e5);
+    el.textContent = days.toLocaleString("en-US");
+  });
+</script>

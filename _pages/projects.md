@@ -12,7 +12,7 @@ description: A small selection of research systems and side projects.
     <div class="projects-eyebrow">Projects</div>
     <h1 class="projects-title">Research systems and focused side work.</h1>
     <div class="projects-subtitle">
-      A small set of representative projects, shown with the same quieter visual language as the homepage and publications.
+      Tools I built for my own research, and the systems behind my papers.
     </div>
   </section>
 
