@@ -19,6 +19,9 @@ International Conference on Learning Representations (ICLR) 2026 2026
 Revealing the Numeracy Gap: An Empirical Investigation of Text Embedding Models
 Ningyuan Deng, Hanyu Duan, Yixuan Tang, Yi Yang
 European Chapter of the Association for Computational Linguistics (EACL) 2026 Findings 2026
+PersonaFuse: A Situation-Aware Post-Training Framework for Adaptive LLM Behavior in Enterprise Tasks
+Yixuan Tang, Yi Yang, Ahmed Abbasi
+Management Science 2026
 Learning from Earnings Calls: Graph-Based Conversational Modeling for Financial Prediction
 Yi Yang, Yixuan Tang, Yangyang Fan, Kunpeng Zhang
 Information Systems Research 2026
