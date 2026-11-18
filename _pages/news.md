@@ -55,7 +55,7 @@ permalink: /news/
     box-shadow: 0 3px 8px rgba(15, 23, 42, 0.06);
   }
 
-  .news-title {
+  h1.news-title {
     margin: 0;
     font-size: clamp(2.4rem, 4.5vw, 3.6rem);
     line-height: 1.05;
