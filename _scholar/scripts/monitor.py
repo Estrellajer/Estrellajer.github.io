@@ -2622,10 +2622,13 @@ def _first_seen_to_timestamp(first_seen: str) -> float:
 def backfill_missing_recent_events(merged: list, results: list, days: int = 30) -> list:
     """Ensure every scholar has their latest activity (up to 10 entries) from results/feeds."""
     scholar_item_counts = {}
+    known_texts = set()
     for ev in merged:
         s_name = ev.get("scholar")
         count = 1 + len(ev.get("sub_items", []))
         scholar_item_counts[s_name] = scholar_item_counts.get(s_name, 0) + count
+        for it in [ev] + ev.get("sub_items", []):
+            known_texts.add((s_name, (it.get("text") or "").strip()))
 
     backfill = []
     for r in results:
@@ -2647,6 +2650,9 @@ def backfill_missing_recent_events(merged: list, results: list, days: int = 30) 
             if not e_year and ts > 0:
                 e_year = datetime.fromtimestamp(ts, tz=timezone.utc).year
             if e_year and e_year < 2025:
+                continue
+            # Already in history: re-adding it would replace the stored event (and its sub_items).
+            if (name, e.get("title", "").strip()) in known_texts:
                 continue
             cands_to_add.append(e)
 
@@ -2872,9 +2878,12 @@ def _atom_feed(items: list, updated: datetime) -> str:
 def write_site_data(scholars: list, events: list) -> None:
     now = datetime.now(timezone.utc)
     items = build_feed_items(events)
-    latest = {}
+    latest, latest_end = {}, {}
     for it in items:
         latest[it["scholar"]] = max(latest.get(it["scholar"], 0), it["ts"])
+        # Dormancy is judged against the end of a coarse (month/year) period, not its first day.
+        end = _period_bounds(it["date"], it["precision"])[1] if it["precision"] in ("month", "year") else it["ts"]
+        latest_end[it["scholar"]] = max(latest_end.get(it["scholar"], 0), end)
     dormant_cutoff = (now - timedelta(days=DORMANT_DAYS)).timestamp()
     directory = []
     for s in scholars:
@@ -2885,7 +2894,7 @@ def write_site_data(scholars: list, events: list) -> None:
             "affiliation": _norm_str(s.get("affiliation")),
             "areas": s.get("research_areas") or [],
             "last": last,
-            "dormant": last < dormant_cutoff,
+            "dormant": latest_end.get(s["name"], 0) < dormant_cutoff,
         })
     payload = {"generated_at": now.isoformat(timespec="seconds"), "scholars": directory, "items": items}
     FEED_JSON_PATH.write_text(json.dumps(payload, ensure_ascii=False, separators=(",", ":")), encoding="utf-8")

@@ -170,28 +170,6 @@ def extract_scholar_entries(html: str, scholar: dict) -> list:
         if entries:
             return entries[:10]
 
-    # 6. 冯钰捷 (Yujie Feng) - Selected publications
-    if "冯钰捷" in name or "woodscene" in base_url:
-        for h in soup.find_all(["h1", "h2", "h3"]):
-            if "publication" in h.get_text().lower():
-                curr = h.find_next_sibling()
-                while curr and curr.name not in ["h1", "h2", "h3"]:
-                    if curr.name in ["ol", "ul"]:
-                        for li in curr.find_all("li"):
-                            txt = clean_text(li.get_text())
-                            m = re.match(r'^([^.\[]+(?:\.[^.\[]+)?)\.?\s*\[(.*?)\]', txt)
-                            if m:
-                                t = m.group(1).strip()
-                                m_v = re.search(r'\b(ACL|ICLR|EMNLP|COLM|AAAI|CVPR|arXiv)\s+\d{4}\b', txt)
-                                v = m_v.group(0) if m_v else ""
-                                full = f"{t} · {v}" if v else t
-                                a = li.find("a", href=True)
-                                lk = urljoin(base_url, a["href"]) if a else base_url
-                                entries.append({"title": full, "link": lk, "published": "2026-04", "timestamp": 1774972800.0})
-                    curr = curr.find_next_sibling()
-        if entries:
-            return entries[:10]
-
     # 7. 黄家斌 (Jia-Bin Huang) - Jon Barron table format with <b>
     if "黄家斌" in name or "jbhuang" in base_url:
         for tr in soup.find_all("tr"):

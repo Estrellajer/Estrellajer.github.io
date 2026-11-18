@@ -128,13 +128,12 @@ scholars:
   affiliation: 独立研究
   watch: blog
 - name: 胡君耀
-  url: https://junyaohu.github.io/
+  url: https://junyaohu.github.io/classic
   category: HomePage
   site_type: github_pages
   selectors:
-  - '#selected-publications ~ div.paper-item'
-  - '#selected-publications + ul li'
-  - .home-news__item
+  - '#news .home-news__item'
+  - '#publications .paper-card'
   remove_selectors:
   - script
   - style
@@ -403,9 +402,9 @@ scholars:
   affiliation: Moonshot AI
   watch: blog
 - name: Jyo Pari
-  url: https://jyopari.github.io/
+  url: https://scholar.google.com/citations?hl=en&user=WyIW46YAAAAJ&view_op=list_works&sortby=pubdate
   category: HomePage
-  site_type: github_pages
+  site_type: google_scholar
   selectors:
   - nav.links a
   remove_selectors:
@@ -421,6 +420,8 @@ scholars:
   - Optimization
   affiliation: MIT
   watch: publications
+  openalex_ids:
+  - A5058187411
 - name: Lilian Weng (Lil'Log)
   url: https://lilianweng.github.io/
   rss_url: https://lilianweng.github.io/index.xml
@@ -989,13 +990,14 @@ scholars:
   affiliation: 香港大学
   watch: general
 - name: 沈立
-  url: https://sites.google.com/site/mathshenli/home
+  url: https://scholar.google.com/citations?hl=en&user=yVhgENIAAAAJ&view_op=list_works&sortby=pubdate
   category: HomePage
-  site_type: google_sites
+  site_type: google_scholar
   selectors:
-  - .tyJCtd > div
-  - '#h\.p_pPXVOGEegmuh + div'
-  - .tyJCtd
+  - '#gsc_a_b'
+  - '#gsc_art'
+  - '#gsc_prf'
+  - table
   remove_selectors:
   - script
   - style
@@ -1010,7 +1012,7 @@ scholars:
   research_areas:
   - Model Merging
   affiliation: 中山大学
-  watch: general
+  watch: publications
 - name: 杨恩能
   url: https://ennengyang.github.io/
   category: HomePage
@@ -1294,10 +1296,6 @@ scholars:
   - 3DV
   affiliation: MIT
   watch: publications
-  openalex_ids:
-  - A5100769910
-  openalex_fields:
-  - Computer Science
 - name: 董功
   url: https://donggong1.github.io/index.html
   category: HomePage
@@ -1373,29 +1371,17 @@ scholars:
   affiliation: CMU
   watch: publications
 - name: Chongjie Si
-  url: https://chongjiesi.site/full-publications/
+  url: https://scholar.google.com/citations?hl=en&user=wXc2EtsAAAAJ&view_op=list_works&sortby=pubdate
   category: HomePage
-  site_type: personal_website
-  selectors:
-  - .publication-card
-  - article
-  - .pub-item
-  - .news-item
-  remove_selectors:
-  - script
-  - style
-  - nav
-  - footer
-  - header
-  - aside
-  - .sidebar
-  - .comments
+  site_type: google_scholar
   labels:
   - homepage
   research_areas:
   - Optimization
   affiliation: 上海交通大学
-  watch: general
+  watch: publications
+  openalex_ids:
+  - A5100493819
 - name: 傅宇千
   url: https://fyqqyf.github.io/
   category: HomePage
