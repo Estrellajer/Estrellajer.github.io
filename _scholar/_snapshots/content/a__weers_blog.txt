@@ -1,2 +1,0 @@
-Denser rewards, nearly free: contrastive potential shaping
-Add contrastive prefix-level credit assignment to outcome-based RL

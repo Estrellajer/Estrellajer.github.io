@@ -3,8 +3,8 @@
     <div class="container">
       <div class="navbar-brand-group mr-3">
         <a class="navbar-brand title font-weight-lighter" href="{{ site.baseurl }}/">
-          {% if site.title %}
-            <span class="font-weight-bold">{{- site.title -}}</span>
+          {% if site.brand %}
+            <span class="font-weight-bold">{{- site.brand -}}</span>
           {% else %}
             {% if site.first_name %}
               <span class="font-weight-bold">{{- site.first_name -}}</span>
@@ -39,7 +39,7 @@
             aria-label="OpenReview"
             title="OpenReview"
           >
-            <i class="ai ai-open-access"></i>
+            <span class="or-mark" aria-hidden="true">OR</span>
           </a>
         </div>
       </div>

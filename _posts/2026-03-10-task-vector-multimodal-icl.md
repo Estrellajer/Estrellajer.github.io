@@ -5,6 +5,7 @@ date: 2026-03-10 12:00:00
 description: 顺着技术演进路线，从 task vector 一路走到 activation steering，看我们离理想的上下文学习还有多远。
 tags: task-vector activation-steering icl in-context-learning
 categories: Research
+math: true
 ---
 
 > In-Context Learning（ICL）是大模型最像「现场学习」的能力——给几个例子，它就能做新任务，无需改参数。但它不稳定、不可控，还会被示例的顺序和数量左右。这条线的一系列工作，试图把 ICL 背后那股「隐形的力」显式提取出来，变成一个可以插拔、可以调控的向量。本文顺着这条线，从 task vector 一路走到 activation steering，看我们离「理想的 ICL」还有多远。

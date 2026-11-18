@@ -1,15 +1,20 @@
 name: Daily Scholar Monitor
 
+# Code lives on main; all state (snapshots, history, feed.json/feed.xml, the
+# ops report) lives on the `data` branch, which /scholar/ reads at runtime.
+# Nothing is committed to main, so runs don't trigger a Pages rebuild.
+
 on:
   schedule:
     - cron: "0 21 * * *" # 北京时间早上 5:00
-    - cron: "0 0 * * *"  # 北京时间早上 8:00
+    - cron: "0 0 * * *" # 北京时间早上 8:00
   workflow_dispatch:
   push:
     branches:
       - main
     paths:
       - "_scholar/config.yaml"
+      - "_scholar/scripts/**"
 
 permissions:
   contents: write
@@ -23,8 +28,14 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 30
     steps:
-      - name: Checkout
+      - name: Checkout code
         uses: actions/checkout@v4
+
+      - name: Checkout data branch
+        uses: actions/checkout@v4
+        with:
+          ref: data
+          path: _scholar/_snapshots
 
       - name: Setup Python
         uses: actions/setup-python@v5
@@ -48,7 +59,6 @@ jobs:
         working-directory: _scholar
         run: |
           if [ -n "${{ secrets.ZHIHU_COOKIES_B64 }}" ]; then
-            mkdir -p _snapshots
             echo "${{ secrets.ZHIHU_COOKIES_B64 }}" | base64 -d > _snapshots/zhihu_cookies.txt
             echo "Zhihu cookies restored"
           else
@@ -63,11 +73,15 @@ jobs:
           RSSHUB_BASE: ${{ vars.RSSHUB_BASE }}
         run: python scripts/monitor.py
 
-      - name: Commit snapshots & report
-        working-directory: _scholar
+      - name: Publish data branch
+        working-directory: _scholar/_snapshots
         run: |
+          rm -f zhihu_cookies.txt
           git config user.name "scholar-monitor[bot]"
           git config user.email "scholar-monitor[bot]@users.noreply.github.com"
-          git add _snapshots/ ../scholar/
-          git diff --cached --quiet || git commit -m "chore: daily scholar monitor update [$(date +'%Y-%m-%d')]"
-          git push
+          git add -A
+          git diff --cached --quiet && exit 0
+          # Keep the data branch a single squashed commit: only the latest state matters.
+          git checkout --orphan snapshot
+          git commit -q -m "data: scholar monitor $(date -u +'%Y-%m-%d %H:%M UTC')"
+          git push --force origin snapshot:data

@@ -1,4 +1,0 @@
-Muse Wonder
-Meta Superintelligence TBD Lab team model release · Oct 12, 2026
-A model family for personal and professional AI agents, with Active Memory and Active Focus.
-Model card

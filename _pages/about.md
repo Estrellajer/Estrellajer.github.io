@@ -29,6 +29,6 @@ announcements:
   limit: 5
 ---
 
-I am a first-year graduate student at the **School of Artificial Intelligence, Beijing University of Posts and Telecommunications**, advised by **[Prof. Fang Quan](https://quanfang.github.io/)** in the **MKC Group**. Currently, I am also a Research Intern at **ByteDance Data**, mentored by **[He Junwei](https://jweihe.github.io/)**.
+I am a graduate student (since 2025) at the **School of Artificial Intelligence, Beijing University of Posts and Telecommunications**, advised by **[Prof. Fang Quan](https://quanfang.github.io/)** in the **MKC Group**. I am also a Research Intern at **ByteDance Data**, mentored by **[He Junwei](https://jweihe.github.io/)**.
 
-My research interests broadly center on **Post-Training** and **Continual Learning**. I am dedicated to exploring alignment algorithms, scalable reinforcement learning, and foundation models that continuously acquire new knowledge and reason robustly.
+My research centers on **Post-Training** and **Continual Learning** of LLMs. Lately I work on two questions: how to keep RL rewards from being gamed, since rubric-based rewards can score higher while answers get worse ([ProRubric](https://arxiv.org/abs/2609.38847)); and how a model can keep learning without forgetting, by consolidating and decoupling knowledge in continual LoRA ([CoDe-LoRA](https://arxiv.org/abs/2610.08312), EMNLP 2026).

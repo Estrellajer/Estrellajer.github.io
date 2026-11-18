@@ -24,6 +24,16 @@ python scripts/discover_rss.py
 python scripts/monitor.py
 ```
 
+## 数据流
+
+- 代码在 `main`，状态全部在 `data` 分支（`_snapshots/` 的内容：快照、`events_history.json`、`feed.json`、`feed.xml`、`latest_report.md`）。
+- Actions 把 `data` 分支检出到 `_scholar/_snapshots`，跑完后以单个 squash 提交强推回 `data`，不往 `main` 写任何东西。
+- `/scholar/`（noindex，不进 sitemap）由 `assets/js/scholar.js` 在浏览器里读取
+  `https://raw.githubusercontent.com/Estrellajer/Estrellajer.github.io/data/feed.json`；本地调试可加 `?data=<url>` 指向别的 JSON。
+- Atom 订阅：`https://raw.githubusercontent.com/Estrellajer/Estrellajer.github.io/data/feed.xml`。
+- 抓取失败等运维信息只出现在 Actions 的 job summary / warning 注解和 `data` 分支的 `latest_report.md`，页面上不展示。
+- 本地重新生成数据（不联网）：先 `git worktree add _snapshots data`（在 `_scholar/` 下），再 `python scripts/monitor.py --report-only`。
+
 ## 配置
 
 编辑 `config.yaml`，每个学者可自定义：

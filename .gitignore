@@ -21,3 +21,4 @@ __pycache__/
 *.pyc
 .venv/
 _scholar/.venv/
+_scholar/_snapshots/

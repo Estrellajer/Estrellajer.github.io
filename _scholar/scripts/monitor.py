@@ -65,10 +65,10 @@ RSS_SUPPLEMENTAL_PATH = SNAPSHOT_DIR / "rss_supplemental.yaml"
 REPORT_PATH = SNAPSHOT_DIR / "latest_report.md"
 LAST_CHECKED_PATH = SNAPSHOT_DIR / "last_checked.txt"
 EVENTS_HISTORY_PATH = SNAPSHOT_DIR / "events_history.json"
-HTML_PATH = BASE_DIR.parent / "scholar" / "index.html"
+FEED_JSON_PATH = SNAPSHOT_DIR / "feed.json"
+FEED_XML_PATH = SNAPSHOT_DIR / "feed.xml"
 
 EVENTS_HISTORY_LIMIT = 200
-EVENTS_DISPLAY_LIMIT = 150
 
 MONTH_MAP = {
     "jan": 1, "january": 1, "feb": 2, "february": 2, "mar": 3, "march": 3,
@@ -2610,21 +2610,6 @@ def merge_events_history(history: list, new_events: list) -> list:
     return merged
 
 
-def build_last_update_map(events: list) -> dict:
-    """Map scholar name -> timestamp of most recent detected update (first_seen)."""
-    last = {}
-    for ev in events:
-        name = ev.get("scholar", "")
-        if not name:
-            continue
-        ts = _first_seen_to_timestamp(ev.get("first_seen", ""))
-        if ts <= 0:
-            ts = ev.get("timestamp") or 0
-        if ts >= last.get(name, 0):
-            last[name] = ts
-    return last
-
-
 def _first_seen_to_timestamp(first_seen: str) -> float:
     if not first_seen:
         return 0.0
@@ -2708,13 +2693,24 @@ def backfill_missing_recent_events(merged: list, results: list, days: int = 30) 
     return merge_events_history(merged, backfill)
 
 
-def _format_update_date(ts: float) -> str:
-    if not ts or ts <= 0:
-        return "—"
-    try:
-        return datetime.fromtimestamp(ts, tz=timezone.utc).strftime("%Y-%m-%d")
-    except (OSError, ValueError):
-        return "—"
+# ── Ops report (Actions only, never shown on the site) ─────────────────────
+def _classify_error(msg: str) -> str:
+    ml = msg.lower()
+    if "captcha" in ml or "人机" in msg or "bot block" in ml:
+        return "Bot blocked — use SerpApi or retry later"
+    if "zhihu" in ml and ("auth" in ml or "cookie" in ml):
+        return "Zhihu auth — refresh ZHIHU_COOKIES_B64"
+    if "403" in msg:
+        return "403 — cookie expired or blocked"
+    if "404" in msg or "dead url" in ml or "not found" in ml:
+        return "Dead URL — update config.yaml"
+    if "ssl" in ml or "certificate" in ml:
+        return "SSL error — transient"
+    if "eof" in ml or "timeout" in ml or "connection" in ml:
+        return "Network error — transient"
+    if "no content" in ml or "extract" in ml:
+        return "Extraction failed — check selectors"
+    return "Other — check URL and config"
 
 
 def generate_report(results: list, total: int, events: list):
@@ -2723,426 +2719,178 @@ def generate_report(results: list, total: int, events: list):
     first = [r for r in results if r["type"] == "first_check"]
     unchanged = [r for r in results if r["type"] in ("unchanged", "rss_no_change")]
     errors = [r for r in results if r["type"] == "error"]
-    now = datetime.now().strftime("%Y-%m-%d %H:%M UTC")
+    now = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
     lines = [
         "# Scholar Monitor Report", "",
         f"**Run:** {now}  |  **Total:** {total}  |  "
         f"Events {len(events)}  |  RSS {len(rss_new)}  |  CHG {len(updated)}  |  "
         f"FIRST {len(first)}  |  OK {len(unchanged)}  |  ERR {len(errors)}", "",
     ]
-    if events:
-        lines += ["---", f"## Activity Feed ({len(events)})", ""]
-        for ev in events[:40]:
-            aff = f" [{ev['affiliation']}]" if ev.get("affiliation") else ""
-            lines.append(f"- **{ev['scholar']}**{aff}: {ev['text'][:120]}")
+    if errors:
+        lines += ["## Needs attention", "", "| Scholar | Diagnosis | Error |", "|---|---|---|"]
+        for r in errors:
+            err = (r.get("error") or "").replace("|", "\\|")[:160]
+            lines.append(f"| [{r['name']}]({r['url']}) | {_classify_error(err)} | `{err}` |")
+            print(f"::warning title=Scholar fetch failed::{r['name']}: {_classify_error(err)}", flush=True)
         lines.append("")
-    if errors:
-        lines += ["---", f"## Needs Attention ({len(errors)})", ""]
-        for r in errors:
-            lines.append(f"- [{r['name']}]({r['url']}): `{r['error']}`")
+    if events:
+        lines += [f"## New this run ({len(events)})", ""]
+        for ev in events[:40]:
+            lines.append(f"- **{ev['scholar']}**: {ev['text'][:120]}")
+        lines.append("")
+    report = "\n".join(lines)
     REPORT_PATH.parent.mkdir(parents=True, exist_ok=True)
-    REPORT_PATH.write_text("\n".join(lines), encoding="utf-8")
-    return "\n".join(lines)
+    REPORT_PATH.write_text(report, encoding="utf-8")
+    summary = os.environ.get("GITHUB_STEP_SUMMARY")
+    if summary:
+        with open(summary, "a", encoding="utf-8") as fh:
+            fh.write(report + "\n")
+    return report
 
 
-def _esc(text: str) -> str:
-    return (str(text).replace("&", "&amp;").replace("<", "&lt;")
-            .replace(">", "&gt;").replace('"', "&quot;"))
+# ── Site data: flat timeline JSON + Atom feed ──────────────────────────────
+DORMANT_DAYS = 180
+FEED_ITEMS_LIMIT = 600
+ATOM_ITEMS_LIMIT = 100
+
+_LOW_SIGNAL_RE = re.compile(
+    r"\bin collaboration with\b|\bendowed\b|\b(associate|assistant|full)?\s*professor\b|^classic homepage$",
+    re.I,
+)
 
 
-def _diff_to_html(diff_text: str) -> str:
-    hl = []
-    for line in (diff_text or "").split("\n"):
-        if line.startswith("+") and not line.startswith("+++"):
-            hl.append(f'<span class="da2">{_esc(line)}</span>')
-        elif line.startswith("-") and not line.startswith("---"):
-            hl.append(f'<span class="dd2">{_esc(line)}</span>')
-        elif line.startswith("@@"):
-            hl.append(f'<span class="dh">{_esc(line)}</span>')
-        else:
-            hl.append(f'<span>{_esc(line)}</span>')
-    return "\n".join(hl)
-
-
-def _classify_error(msg: str) -> tuple:
-    ml = msg.lower()
-    if "captcha" in ml or "人机" in msg or "bot block" in ml:
-        return "Bot Blocked", "high", "🛡", "Use SerpApi or retry later"
-    if "zhihu" in ml and ("auth" in ml or "cookie" in ml):
-        return "Zhihu Auth", "high", "🔑", "Refresh ZHIHU_COOKIES_B64 secret"
-    if "403" in msg:
-        return "Access Denied", "high", "✕", "Cookie expired or blocked"
-    if "404" in msg or "dead url" in ml or "not found" in ml:
-        return "Dead URL", "high", "404", "Update URL in config.yaml"
-    if "ssl" in ml or "certificate" in ml:
-        return "SSL Error", "medium", "SSL", "Cert issue - retry next run"
-    if "eof" in ml or "timeout" in ml or "connection" in ml:
-        return "Network Error", "medium", "NET", "Transient - retry next run"
-    if "no content" in ml or "extract" in ml:
-        return "Extraction Failed", "low", "!", "Check CSS selectors"
-    return "Other", "low", "?", "Check URL and config"
-
-
-def _watch_icon(w: str) -> str:
-    return {"blog": "📝", "news": "📢", "publications": "🎓", "general": "🌐"}.get(w, "🌐")
-
-
-def _kind_label(kind: str) -> str:
-    return {"paper": "论文", "post": "博客", "news": "动态", "update": "更新"}.get(kind, "更新")
-
-
-def _format_event_date(ts: float, date_str: str) -> str:
-    res, _ = normalize_date(date_str, ts)
-    return res
-
-
-def _timeline_bucket(ts: float) -> str:
-    now = datetime.now(timezone.utc)
-    week_ago = (now - timedelta(days=7)).timestamp()
-    month_ago = (now - timedelta(days=30)).timestamp()
-    if ts >= week_ago:
-        return "week"
-    if ts >= month_ago:
+def _date_precision(date_str: str) -> str:
+    if re.fullmatch(r"\d{4}-\d{2}-\d{2}", date_str or ""):
+        return "day"
+    if re.fullmatch(r"\d{4}-\d{2}", date_str or ""):
         return "month"
-    return "earlier"
+    if re.fullmatch(r"\d{4}", date_str or ""):
+        return "year"
+    return "unknown"
 
 
-def _scholar_status_summary(r: dict) -> str:
-    t = r.get("type", "")
-    if t == "rss":
-        n = len(r.get("entries", []))
-        return f"{n} new item(s)"
-    if t == "changed":
-        adds = _extract_new_additions(r.get("diff", ""), r.get("name", ""))
-        txt = adds[0][:80] if adds else "Content changed"
-        return re.sub(r'<[^>]+>', '', txt)
-    if t == "error":
-        return re.sub(r'<[^>]+>', '', (r.get("error") or "Error")[:60])
-    if t == "first_check":
-        return "Baseline snapshot taken"
-    preview = r.get("preview") or []
-    if preview:
-        return re.sub(r'<[^>]+>', '', preview[0][:80])
-    latest = r.get("latest_entries") or []
-    if latest:
-        return re.sub(r'<[^>]+>', '', latest[0].get("title", "")[:80])
-    return "No recent activity"
+_NAV_LABELS = {
+    "about", "about me", "home", "homepage", "publications", "selected publications", "news",
+    "blog", "posts", "cv", "contact", "projects", "research", "talks", "teaching",
+}
 
 
-def generate_html_report(
-    results: list,
-    total: int,
-    new_events: list,
-    display_events: list,
-    last_update_map: dict,
-):
-    errors = [r for r in results if r["type"] == "error"]
-    ok_count = sum(1 for r in results if r["type"] in ("unchanged", "rss_no_change", "first_check"))
-    new_count = len(new_events)
-    now = datetime.now().strftime("%Y-%m-%d %H:%M UTC")
+def _is_low_signal(text: str, kind: str, scholar: str) -> bool:
+    """Drop page-diff artefacts (nav labels, bylines, bio lines, bare names) that are not events."""
+    t = text.strip()
+    if re.sub(r"[^\w ]+", "", t).strip().lower() in _NAV_LABELS:
+        return True
+    if kind != "update":
+        return False
+    if _LOW_SIGNAL_RE.search(t):
+        return True
+    words = t.split()
+    # Two or three capitalised words without digits is almost always a name or a nav label.
+    if len(words) <= 3 and not re.search(r"\d", t) and all(w[:1].isupper() for w in words):
+        return True
+    name_tokens = {w.lower() for w in re.findall(r"[A-Za-z]+", scholar)}
+    if name_tokens and {w.lower() for w in re.findall(r"[A-Za-z]+", t)} <= name_tokens:
+        return True
+    return False
 
-    all_affiliations = sorted({r.get("affiliation", "") for r in results if r.get("affiliation")})
-    all_areas = sorted({a for r in results for a in r.get("research_areas", []) if a})
 
-    warn_class = "sm-stat-warn" if errors else "sm-stat-muted"
-    stats_html = f"""<div class="sm-stats">
-      <span class="sm-stat sm-stat-new">动态 {new_count}</span>
-      <span class="sm-stat {warn_class}">需关注 {len(errors)}</span>
-      <span class="sm-stat">学者 {total}</span>
-      <span class="sm-stat sm-stat-muted">正常 {ok_count}</span>
-    </div>"""
+def _period_bounds(date_str: str, precision: str) -> tuple[float, float]:
+    y = int(date_str[:4])
+    if precision == "year":
+        return datetime(y, 1, 1, tzinfo=timezone.utc).timestamp(), datetime(y + 1, 1, 1, tzinfo=timezone.utc).timestamp()
+    m = int(date_str[5:7])
+    start = datetime(y, m, 1, tzinfo=timezone.utc)
+    end = datetime(y + (m == 12), m % 12 + 1, 1, tzinfo=timezone.utc)
+    return start.timestamp(), end.timestamp()
 
-    # Filter bar
-    filter_html = '<div class="sm-filters" id="filterBar">'
-    filter_html += '<input type="search" id="searchInput" placeholder="搜索学者、单位、动态内容…" class="sm-search" oninput="applyFilters()">'
-    filter_html += '<div class="sm-filter-row">'
-    filter_html += '<span class="sm-filter-label">类型</span>'
-    for k, lb in [("paper", "论文"), ("post", "博客"), ("news", "动态"), ("update", "更新")]:
-        filter_html += f'<label class="sm-chip"><input type="checkbox" class="fl-kind" value="{k}" checked onchange="applyFilters()">{lb}</label>'
-    filter_html += '</div>'
-    if all_areas:
-        filter_html += (
-            '<details class="sm-filter-more">'
-            '<summary class="sm-filter-summary"><span>研究方向</span>'
-            '<span class="sm-filter-actions">'
-            '<button type="button" class="sm-btn-link" onclick="toggleAllFilters(\'fl-area\', true); event.stopPropagation();">全选</button> / '
-            '<button type="button" class="sm-btn-link" onclick="toggleAllFilters(\'fl-area\', false); event.stopPropagation();">清空</button>'
-            '</span></summary><div class="sm-filter-row">'
-        )
-        for area in all_areas:
-            filter_html += (
-                f'<label class="sm-chip"><input type="checkbox" class="fl-area" '
-                f'value="{_esc(area.lower())}" checked onchange="applyFilters()">{_esc(area)}</label>'
-            )
-        filter_html += '</div></details>'
-    if all_affiliations:
-        filter_html += (
-            '<details class="sm-filter-more">'
-            '<summary class="sm-filter-summary"><span>单位</span>'
-            '<span class="sm-filter-actions">'
-            '<button type="button" class="sm-btn-link" onclick="toggleAllFilters(\'fl-aff\', true); event.stopPropagation();">全选</button> / '
-            '<button type="button" class="sm-btn-link" onclick="toggleAllFilters(\'fl-aff\', false); event.stopPropagation();">清空</button>'
-            '</span></summary><div class="sm-filter-row">'
-        )
-        for aff in all_affiliations:
-            filter_html += (
-                f'<label class="sm-chip"><input type="checkbox" class="fl-aff" '
-                f'value="{_esc(aff.lower())}" checked onchange="applyFilters()">{_esc(aff)}</label>'
-            )
-        filter_html += '</div></details>'
-    filter_html += '<div class="sm-filter-count">显示 <span id="visibleCount">0</span> / <span id="totalCount">0</span> 条</div>'
-    filter_html += '</div>'
 
-    # Timeline
-    buckets = {"week": [], "month": [], "earlier": []}
-    bucket_labels = {"week": "🔥 本周动态", "month": "⚡️ 本月动态", "earlier": "📜 更早历史动态"}
-    for ev in display_events:
-        buckets[_timeline_bucket(ev["timestamp"])].append(ev)
-
-    week_count = len(buckets["week"])
-    month_count = len(buckets["month"])
-    earlier_count = len(buckets["earlier"])
-    recent_count = week_count + month_count
-    total_count = len(display_events)
-
-    scope_tabs_html = (
-        '<div class="sm-scope-tabs" id="scopeTabs">'
-        f'<button type="button" class="sm-scope-btn active" data-scope="recent" onclick="setScope(\'recent\')">⚡️ 近期精选 <span class="sm-scope-count">{recent_count}</span></button>'
-        f'<button type="button" class="sm-scope-btn" data-scope="week" onclick="setScope(\'week\')">🔥 本周动态 <span class="sm-scope-count">{week_count}</span></button>'
-        f'<button type="button" class="sm-scope-btn" data-scope="month" onclick="setScope(\'month\')">📅 本月动态 <span class="sm-scope-count">{month_count}</span></button>'
-        f'<button type="button" class="sm-scope-btn" data-scope="all" onclick="setScope(\'all\')">📜 全部动态 <span class="sm-scope-count">{total_count}</span></button>'
-        '</div>'
-    )
-
-    timeline_html = (
-        '<section class="sm-timeline" id="timelineSection">'
-        '<div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:1rem; margin-bottom:1.5rem;">'
-        '<div style="display:flex; align-items:center; gap:0.85rem; flex-wrap:wrap;">'
-        '<h2 class="sm-section-title" style="margin:0;">最近在做什么</h2>'
-        '<div class="sm-drawer-toggles">'
-        '<button type="button" class="sm-btn-drawer" onclick="toggleAllSubDrawers(true)">展开全部成果 ▾</button>'
-        '<button type="button" class="sm-btn-drawer" onclick="toggleAllSubDrawers(false)">收起全部成果 ▴</button>'
-        '</div>'
-        '</div>'
-        f'{scope_tabs_html}'
-        '</div>'
-    )
-    if not display_events:
-        timeline_html += (
-            '<div class="sm-empty"><div class="sm-empty-title">暂无动态记录</div>'
-            '<div class="sm-empty-sub">尚未检测到任何论文、博客或主页更新。</div></div>'
-        )
-    else:
-        for key in ("week", "month", "earlier"):
-            group = buckets[key]
-            if not group:
+def build_feed_items(events: list) -> list:
+    """Flatten aggregated per-scholar events into one deduplicated timeline."""
+    items, seen = [], set()
+    for ev in events:
+        first_seen_ts = _first_seen_to_timestamp(ev.get("first_seen", ""))
+        rows = [(ev, True)] + [(sub, False) for sub in ev.get("sub_items", [])]
+        for it, is_parent in rows:
+            text = (it.get("text") or "").strip()
+            kind = it.get("kind") or ev.get("kind") or "update"
+            if not text or _is_low_signal(text, kind, ev["scholar"]):
                 continue
-            if key == "earlier":
-                timeline_html += f'<details class="sm-tl-group sm-tl-group-earlier" data-bucket="{key}">'
-                timeline_html += f'<summary class="sm-tl-heading sm-tl-earlier-summary"><span>📜 更早历史动态 (点击展开剩余 {len(group)} 条)</span> <span class="sm-tl-count">{len(group)}</span></summary>'
-            else:
-                timeline_html += f'<div class="sm-tl-group" data-bucket="{key}">'
-                timeline_html += f'<h3 class="sm-tl-heading">{bucket_labels[key]} <span class="sm-tl-count">{len(group)}</span></h3>'
-            timeline_html += '<div class="sm-tl-list">'
-            for ev in group:
-                areas = ",".join(ev.get("areas", []))
-                aff = _norm_str(ev.get("affiliation"))
-                date_disp = _format_event_date(ev["timestamp"], ev.get("date_str", ""))
-                diff_block = ""
-                if ev.get("diff"):
-                    diff_block = (
-                        f'<details class="sm-tl-diff"><summary>查看原始 diff</summary>'
-                        f'<div class="sm-diff">{_diff_to_html(ev["diff"])}</div></details>'
-                    )
-                sub_html = ""
-                if ev.get("sub_items"):
-                    headline_base = _extract_base_title(ev.get("text", ""))
-                    seen_sub_bases = {headline_base}
-                    subs = []
-                    from difflib import SequenceMatcher
-                    for s in ev["sub_items"]:
-                        stext = s.get("text", "")
-                        sbase = _extract_base_title(stext)
-                        if not sbase or len(sbase) < 4:
-                            continue
-                        if sbase in seen_sub_bases or headline_base in sbase or (len(sbase) > 8 and sbase in headline_base):
-                            continue
-                        is_dupe = False
-                        for prev_b in seen_sub_bases:
-                            if SequenceMatcher(None, prev_b, sbase).ratio() > 0.72:
-                                is_dupe = True
-                                break
-                        if is_dupe:
-                            continue
-                        seen_sub_bases.add(sbase)
-                        subs.append(s)
+            key = (ev["scholar"], re.sub(r"[\W_]+", "", text.lower())[:80])
+            if key in seen:
+                continue
+            seen.add(key)
+            date_str, ts = normalize_date(it.get("date_str") or it.get("date") or "", it.get("timestamp") or 0.0)
+            precision = _date_precision(date_str)
+            sort_ts = ts
+            # Coarse dates (month/year) sort by when we first saw them, if that falls inside the period.
+            if precision in ("month", "year") and is_parent and first_seen_ts:
+                lo, hi = _period_bounds(date_str, precision)
+                if lo <= first_seen_ts < hi:
+                    sort_ts = first_seen_ts
+            items.append({
+                "scholar": ev["scholar"],
+                "kind": kind,
+                "title": text,
+                "link": it.get("link") or ev.get("link") or ev.get("scholar_url", ""),
+                "date": date_str,
+                "precision": precision,
+                "ts": round(sort_ts or 0.0),
+            })
+    items.sort(key=lambda x: x["ts"], reverse=True)
+    return items[:FEED_ITEMS_LIMIT]
 
-                    if subs:
-                        sub_items_li = ""
-                        main_kind = ev.get("kind", "update")
-                        for s in subs:
-                            stext = _esc(s.get("text", ""))
-                            slink = s.get("link")
-                            skind = s.get("kind", main_kind)
-                            sdate = s.get("date") or s.get("date_str") or s.get("published") or ""
-                            sdate_disp = ""
-                            if sdate:
-                                sdate_disp, _ = normalize_date(sdate, s.get("timestamp") or 0.0)
-                            date_badge = f'<time class="sm-sub-date">{_esc(sdate_disp)}</time>' if sdate_disp else '<time class="sm-sub-date sm-sub-date-empty">—</time>'
 
-                            # Only show badge if the sub-item type differs from the card's main type
-                            if skind != main_kind:
-                                skind_badge = f'<span class="sm-kind sm-kind-{_esc(skind)} sm-sub-kind">{_kind_label(skind)}</span>'
-                            else:
-                                skind_badge = ''
-
-                            if slink and slink != ev.get("scholar_url"):
-                                link_html = f'<a href="{_esc(slink)}" target="_blank" class="sm-sub-link">{stext} <span class="sm-link-icon">↗</span></a>'
-                            elif slink or ev.get("scholar_url"):
-                                target_link = slink or ev.get("scholar_url")
-                                link_html = f'<a href="{_esc(target_link)}" target="_blank" class="sm-sub-link sm-sub-link-site">{stext} <span class="sm-link-badge">主页 ↗</span></a>'
-                            else:
-                                link_html = f'<span class="sm-sub-text">{stext}</span>'
-
-                            sub_items_li += (
-                                f'<li class="sm-tl-subpaper-item">'
-                                f'{date_badge}{skind_badge}'
-                                f'<div class="sm-sub-title-wrap">{link_html}</div>'
-                                f'</li>'
-                            )
-
-                        sub_kinds = [s.get("kind", main_kind) for s in subs]
-                        counts = Counter([main_kind] + sub_kinds)
-                        dominant_kind = counts.most_common(1)[0][0]
-                        if dominant_kind == "paper":
-                            summary_label = "近期发表成果 / 论文"
-                        elif dominant_kind == "post":
-                            summary_label = "近期技术博文"
-                        elif dominant_kind == "news":
-                            summary_label = "更多近期动态"
-                        else:
-                            summary_label = "更多更新记录"
-
-                        sub_html = (
-                            f'<details class="sm-tl-subpapers">'
-                            f'<summary class="sm-tl-subpapers-summary">'
-                            f'<span class="sm-sub-summary-title">'
-                            f'<span class="sm-sub-chevron">▸</span> '
-                            f'<span class="sm-sub-label-closed">{summary_label}</span>'
-                            f'<span class="sm-sub-label-open">收起成果列表</span>'
-                            f'</span>'
-                            f'<span class="sm-sub-count-badge">{len(subs)} 项</span>'
-                            f'</summary>'
-                            f'<div class="sm-tl-subpapers-body">'
-                            f'<ul class="sm-tl-subpapers-list">{sub_items_li}</ul>'
-                            f'</div>'
-                            f'</details>'
-                        )
-                search_text = ev.get("text", "")
-                if ev.get("sub_items"):
-                    search_text += " " + " ".join(s.get("text", "") for s in ev["sub_items"])
-                timeline_html += (
-                    f'<article class="sm-tl-item" data-filterable '
-                    f'data-bucket="{key}" '
-                    f'data-name="{_esc(ev["scholar"].lower())}" '
-                    f'data-affiliation="{_esc(aff.lower())}" '
-                    f'data-areas="{_esc(areas.lower())}" '
-                    f'data-kind="{_esc(ev.get("kind", "update"))}" '
-                    f'data-text="{_esc(search_text.lower())}">'
-                    f'<div class="sm-tl-meta">'
-                    f'<span class="sm-kind sm-kind-{_esc(ev.get("kind", "update"))}">{_kind_label(ev.get("kind", "update"))}</span>'
-                    f'<a href="{_esc(ev["scholar_url"])}" target="_blank" class="sm-tl-scholar">{_esc(ev["scholar"])}</a>'
-                )
-                if aff:
-                    timeline_html += f'<span class="sm-tag sm-tag-aff">{_esc(aff)}</span>'
-                for a in ev.get("areas", [])[:2]:
-                    timeline_html += f'<span class="sm-tag sm-tag-area">{_esc(a)}</span>'
-                if date_disp:
-                    timeline_html += f'<time class="sm-tl-date">{_esc(date_disp)}</time>'
-                timeline_html += '</div>'
-                link = ev.get("link") or ev.get("scholar_url")
-                if link and link != ev.get("scholar_url"):
-                    timeline_html += f'<a href="{_esc(link)}" target="_blank" class="sm-tl-text">{_esc(ev["text"])} <span class="sm-link-icon">↗</span></a>'
-                elif link:
-                    timeline_html += f'<a href="{_esc(link)}" target="_blank" class="sm-tl-text sm-tl-text-site">{_esc(ev["text"])} <span class="sm-link-badge">个人主页 ↗</span></a>'
-                else:
-                    timeline_html += f'<p class="sm-tl-text">{_esc(ev["text"])}</p>'
-                timeline_html += sub_html + diff_block + '</article>'
-            timeline_html += '</div>'
-            if key == "earlier":
-                timeline_html += '</details>'
-            else:
-                timeline_html += '</div>'
-    timeline_html += '</section>'
-
-    # Attention section
-    attention_html = ""
-    if errors:
-        attention_html = (
-            f'<details class="sm-panel sm-panel-warn" id="attentionSection">'
-            f'<summary class="sm-panel-title">需关注 ({len(errors)})</summary><ul class="sm-attn-list">'
+def _atom_feed(items: list, updated: datetime) -> str:
+    from xml.sax.saxutils import escape, quoteattr
+    kind_zh = {"paper": "论文", "post": "博客", "news": "动态", "update": "主页"}
+    entries = []
+    for it in items[:ATOM_ITEMS_LIMIT]:
+        ts = datetime.fromtimestamp(it["ts"] or updated.timestamp(), tz=timezone.utc).isoformat()
+        uid = "tag:estrellajer.github.io,2026:scholar/" + re.sub(r"[^\w]+", "-", f"{it['scholar']}-{it['title']}")[:180]
+        entries.append(
+            "  <entry>\n"
+            f"    <title>{escape(it['scholar'])} · {escape(it['title'])}</title>\n"
+            f"    <link href={quoteattr(it['link'])}/>\n"
+            f"    <id>{escape(uid)}</id>\n"
+            f"    <updated>{ts}</updated>\n"
+            f"    <category term=\"{kind_zh.get(it['kind'], '主页')}\"/>\n"
+            f"    <author><name>{escape(it['scholar'])}</name></author>\n"
+            "  </entry>"
         )
-        for r in errors:
-            em = r.get("error", "")
-            _, _, icon, suggestion = _classify_error(em)
-            aff = _norm_str(r.get("affiliation"))
-            attention_html += (
-                f'<li class="sm-attn-item" data-filterable data-name="{_esc(r["name"].lower())}" '
-                f'data-affiliation="{_esc(aff.lower())}" '
-                f'data-areas="{_esc(",".join(r.get("research_areas", [])).lower())}" '
-                f'data-kind="update" data-text="{_esc(em.lower())}">'
-                f'<span class="sm-attn-icon">{icon}</span>'
-                f'<a href="{_esc(r["url"])}" target="_blank" class="sm-attn-name">{_esc(r["name"])}</a>'
-                f'<code class="sm-attn-err">{_esc(em[:140])}</code>'
-                f'<span class="sm-attn-hint">{_esc(suggestion)}</span></li>'
-            )
-        attention_html += '</ul></details>'
-
-    # Directory
-    dir_rows = []
-    for r in sorted(results, key=lambda x: x["name"].lower()):
-        status = _scholar_status_summary(r)
-        st = r.get("type", "")
-        st_label = {"rss": "NEW", "changed": "CHG", "error": "ERR",
-                    "first_check": "INIT", "unchanged": "OK", "rss_no_change": "OK"}.get(st, st)
-        areas = ",".join(r.get("research_areas") or [])
-        aff = _norm_str(r.get("affiliation"))
-        update_disp = _format_update_date(last_update_map.get(r["name"], 0))
-        dir_rows.append(
-            f'<tr class="sm-dir-row" data-filterable '
-            f'data-name="{_esc(r["name"].lower())}" '
-            f'data-affiliation="{_esc(aff.lower())}" '
-            f'data-areas="{_esc(areas.lower())}" '
-            f'data-kind="update" data-text="{_esc(status.lower())}">'
-            f'<td><a href="{_esc(r["url"])}" target="_blank">{_esc(r["name"])}</a></td>'
-            f'<td>{_esc(aff or "—")}</td>'
-            f'<td>{_esc(areas.replace(",", ", ") or "—")}</td>'
-            f'<td class="sm-dir-status sm-st-{st}">{st_label}</td>'
-            f'<td class="sm-dir-updated">{_esc(update_disp)}</td>'
-            f'<td class="sm-dir-latest">{_esc(status)}</td></tr>'
-        )
-
-    directory_html = (
-        '<details class="sm-panel" id="directorySection">'
-        '<summary class="sm-panel-title">全部学者目录</summary>'
-        '<div class="sm-dir-wrap"><table class="sm-dir-table">'
-        '<thead><tr><th>学者</th><th>单位</th><th>方向</th><th>状态</th>'
-        '<th>更新时间</th><th>最近动态</th></tr></thead>'
-        f'<tbody>{"".join(dir_rows)}</tbody></table></div></details>'
+    return (
+        '<?xml version="1.0" encoding="utf-8"?>\n'
+        '<feed xmlns="http://www.w3.org/2005/Atom">\n'
+        "  <title>学者动态</title>\n"
+        "  <id>tag:estrellajer.github.io,2026:scholar</id>\n"
+        '  <link href="https://estrellajer.github.io/scholar/"/>\n'
+        f"  <updated>{updated.isoformat()}</updated>\n"
+        + "\n".join(entries)
+        + "\n</feed>\n"
     )
 
-    body = "\n".join([filter_html, timeline_html, attention_html, directory_html])
 
-    template_path = Path(__file__).parent / "_report_template.html"
-    if not template_path.exists():
-        log("Error: HTML template not found!")
-        return
-    template = template_path.read_text(encoding="utf-8")
-    html = (template.replace("{now}", now).replace("{total}", str(total))
-            .replace("{stats_html}", stats_html).replace("{body}", body))
-    HTML_PATH.parent.mkdir(parents=True, exist_ok=True)
-    HTML_PATH.write_text(html, encoding="utf-8")
-    log(f"HTML report saved to: {HTML_PATH}")
+def write_site_data(scholars: list, events: list) -> None:
+    now = datetime.now(timezone.utc)
+    items = build_feed_items(events)
+    latest = {}
+    for it in items:
+        latest[it["scholar"]] = max(latest.get(it["scholar"], 0), it["ts"])
+    dormant_cutoff = (now - timedelta(days=DORMANT_DAYS)).timestamp()
+    directory = []
+    for s in scholars:
+        last = latest.get(s["name"], 0)
+        directory.append({
+            "name": s["name"],
+            "url": s.get("url", ""),
+            "affiliation": _norm_str(s.get("affiliation")),
+            "areas": s.get("research_areas") or [],
+            "last": last,
+            "dormant": last < dormant_cutoff,
+        })
+    payload = {"generated_at": now.isoformat(timespec="seconds"), "scholars": directory, "items": items}
+    FEED_JSON_PATH.write_text(json.dumps(payload, ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
+    FEED_XML_PATH.write_text(_atom_feed(items, now), encoding="utf-8")
+    log(f"Site data: {len(items)} items, {sum(d['dormant'] for d in directory)} dormant scholars -> {FEED_JSON_PATH.name}, {FEED_XML_PATH.name}")
 
 
 def prune_snapshots(scholars, force=False):
@@ -3170,7 +2918,7 @@ def main():
     parser.add_argument("--force", action="store_true",
                         help="With --prune-snapshots, actually delete the files.")
     parser.add_argument("--report-only", action="store_true",
-                        help="Regenerate events_history and HTML report without making external network calls.")
+                        help="Regenerate events_history and site data (feed.json/feed.xml) without network calls.")
     args = parser.parse_args()
 
     config = load_yaml(BASE_DIR / "config.yaml")
@@ -3184,23 +2932,10 @@ def main():
         return
 
     if args.report_only:
-        log("Report-only mode: generating HTML from snapshots and history...")
+        log("Report-only mode: regenerating site data from history...")
         events = load_events_history()
         save_events_history(events)
-        scholar_event_map = {ev.get("scholar"): ev for ev in events if ev.get("scholar")}
-        results = []
-        for s in scholars:
-            base_r = _scholar_base_result(s)
-            base_r["type"] = "unchanged"
-            ev = scholar_event_map.get(s["name"])
-            if ev:
-                base_r["preview"] = [ev.get("text", "")]
-            results.append(base_r)
-        last_update_map = build_last_update_map(events)
-        display_events = events[:EVENTS_DISPLAY_LIMIT]
-        generate_html_report(
-            results, len(scholars), [], display_events, last_update_map
-        )
+        write_site_data(scholars, events)
         log("Report generated successfully.")
         return
 
@@ -3247,15 +2982,10 @@ def main():
     merged_events = merge_events_history(history, new_events)
     merged_events = backfill_missing_recent_events(merged_events, results)
     save_events_history(merged_events)
-    last_update_map = build_last_update_map(merged_events)
-    display_events = merged_events[:EVENTS_DISPLAY_LIMIT]
-    log(f"Events: {len(new_events)} new this run, {len(merged_events)} in history, "
-        f"showing {len(display_events)} on timeline")
+    log(f"Events: {len(new_events)} new this run, {len(merged_events)} in history")
 
     report = generate_report(results, len(scholars), new_events)
-    generate_html_report(
-        results, len(scholars), new_events, display_events, last_update_map,
-    )
+    write_site_data(scholars, merged_events)
 
     total = len(scholars)
     errors = sum(1 for r in results if r["type"] == "error")

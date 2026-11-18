@@ -5,6 +5,7 @@ date: 2026-09-30 12:00:00
 description: 当 AI Advisor 介入科研闭环：探索模型自主迭代与专家反馈的真实边界。
 tags: auto-research agent llm post-training
 categories: Research
+math: true
 ---
 
 在处理完各种事项后终于有机会把之前的文章收尾，[上篇](https://bytetech.info/articles/7661853812323254326)参见

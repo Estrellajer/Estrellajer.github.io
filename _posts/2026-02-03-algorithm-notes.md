@@ -5,6 +5,7 @@ date: 2026-02-03 11:30:00
 description: Notes on LLM algorithms
 tags: llm
 categories: Learning
+math: true
 ---
 
 ## Attention

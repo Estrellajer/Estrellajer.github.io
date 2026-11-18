@@ -5,6 +5,7 @@ date: 2026-08-30 12:00:00
 description: 七篇 Post-Training 论文串读：在 Outcome Reward 与 Full Reference 之间，如何用特权信息与动态量规打破困境。
 tags: post-training distillation rlvr rubrics
 categories: Research
+math: true
 ---
 
 Post-Training 长期存在一个 Trade-off：
