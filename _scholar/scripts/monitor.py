@@ -65,6 +65,8 @@ RSS_SUPPLEMENTAL_PATH = SNAPSHOT_DIR / "rss_supplemental.yaml"
 REPORT_PATH = SNAPSHOT_DIR / "latest_report.md"
 LAST_CHECKED_PATH = SNAPSHOT_DIR / "last_checked.txt"
 EVENTS_HISTORY_PATH = SNAPSHOT_DIR / "events_history.json"
+SERPAPI_STATE_PATH = SNAPSHOT_DIR / "serpapi_state.json"  # name -> last successful fetch (ISO)
+SERPAPI_MIN_DAYS = 7  # publication lists change slowly; keeps the monthly SerpApi quota alive
 FEED_JSON_PATH = SNAPSHOT_DIR / "feed.json"
 FEED_XML_PATH = SNAPSHOT_DIR / "feed.xml"
 
@@ -1032,6 +1034,28 @@ def _apply_publications_result(scholar: dict, articles: list[dict], url: str, re
     return result
 
 
+def _fetch_scholar_page_publications(url: str) -> list[dict]:
+    """Parse a Google Scholar profile page (sorted by pubdate) into publication dicts."""
+    soup = BeautifulSoup(fetch(url).text, "html.parser")
+    articles = []
+    for row in soup.select("tr.gsc_a_tr"):
+        title = row.select_one("a.gsc_a_at")
+        if not title:
+            continue
+        gray = row.select("div.gs_gray")
+        year = row.select_one(".gsc_a_y span")
+        venue = gray[1].get_text(" ", strip=True) if len(gray) > 1 else ""
+        articles.append({
+            "title": title.get_text(" ", strip=True),
+            "authors": gray[0].get_text(" ", strip=True) if gray else "",
+            "publication": re.sub(r",?\s*\d{4}$", "", venue),
+            "year": year.get_text(strip=True) if year else "",
+            "pub_date": "",
+            "link": urljoin("https://scholar.google.com", title.get("href", "")),
+        })
+    return _sort_publications_by_year_desc(articles)
+
+
 def check_google_scholar(scholar: dict, since: datetime | None) -> dict:
     result = _scholar_base_result(scholar)
     url = scholar["url"]
@@ -1053,7 +1077,13 @@ def check_google_scholar(scholar: dict, since: datetime | None) -> dict:
         result["error"] = "Cannot parse Google Scholar author ID from URL"
         return result
 
-    if SERPAPI_KEY:
+    serpapi_state = json.loads(SERPAPI_STATE_PATH.read_text()) if SERPAPI_STATE_PATH.exists() else {}
+    last_fetch = serpapi_state.get(scholar["name"])
+    serpapi_due = not last_fetch or load_snapshot(scholar["name"]) is None or (
+        datetime.now(timezone.utc) - datetime.fromisoformat(last_fetch) >= timedelta(days=SERPAPI_MIN_DAYS)
+    )
+
+    if SERPAPI_KEY and serpapi_due:
         try:
             resp = SESSION.get(
                 "https://serpapi.com/search",
@@ -1074,11 +1104,21 @@ def check_google_scholar(scholar: dict, since: datetime | None) -> dict:
                 result["type"] = "error"
                 result["error"] = "SerpApi returned no articles"
                 return result
+            serpapi_state[scholar["name"]] = datetime.now(timezone.utc).isoformat()
+            SERPAPI_STATE_PATH.write_text(json.dumps(serpapi_state, ensure_ascii=False, indent=1))
             return _apply_publications_result(scholar, articles, url, result)
         except Exception as e:
             log(f"      ↳ SerpApi failed, falling back to snapshot / direct fetch: {e}")
 
-    # Snapshot fallback if SerpApi is unavailable or blocked
+    # The Scholar page itself, parsed row by row (works when Google doesn't serve a captcha)
+    try:
+        articles = _fetch_scholar_page_publications(url)
+        if articles:
+            return _apply_publications_result(scholar, articles, url, result)
+    except requests.RequestException as e:
+        log(f"      ↳ Scholar page fetch failed: {e}")
+
+    # Snapshot fallback if SerpApi and the page are unavailable or blocked
     prev = load_snapshot(scholar["name"])
     if prev:
         pubs = _parse_publications_snapshot(prev)
@@ -1097,8 +1137,9 @@ def check_google_scholar(scholar: dict, since: datetime | None) -> dict:
             result["type"] = "unchanged"
             return result
 
-    # Direct fetch fallback
-    return _content_diff_check(scholar, since, result)
+    result["type"] = "error"
+    result["error"] = "Google Scholar unavailable (SerpApi failed/throttled, page blocked, no snapshot)"
+    return result
 
 
 def check_zifeng_wang(scholar: dict, since: datetime | None) -> dict:
