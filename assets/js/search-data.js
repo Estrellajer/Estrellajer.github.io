@@ -214,7 +214,7 @@ ninja.data = [{
         section: "Posts",
         handler: () => {
           
-            window.location.href = "/blog/2024/formatting-and-links/";
+            window.location.href = "/blog/2024/bupt-ai-junior-spring-guide/";
           
         },
       },{id: "news-awarded-funding-from-the-quot-qiyan-quot-program",
@@ -223,10 +223,10 @@ ninja.data = [{
           section: "News",handler: () => {
               window.location.href = "/news/20240905/";
             },},{id: "news-one-paper-accepted-by-aaai-2026",
-          title: 'One paper accepted by AAAI 2026! 🎉🎉🎉',
+          title: 'One paper accepted by AAAI 2026! 🎉',
           description: "",
           section: "News",},{id: "news-one-paper-accepted-by-advanced-engineering-informatics",
-          title: 'One paper accepted by Advanced Engineering Informatics! 🎉🎉🎉',
+          title: 'One paper accepted by Advanced Engineering Informatics! 🎉',
           description: "",
           section: "News",},{id: "news-started-internship-at-bytedance-data",
           title: 'Started internship at ByteDance Data',
@@ -234,7 +234,7 @@ ninja.data = [{
           section: "News",handler: () => {
               window.location.href = "/news/20260610/";
             },},{id: "news-one-paper-accepted-by-emnlp-2026-check-out-the-preprint-on-arxiv-and-code-on-github",
-          title: 'One paper accepted by EMNLP 2026! 🎉🎉🎉 Check out the preprint on arXiv...',
+          title: 'One paper accepted by EMNLP 2026! 🎉 Check out the preprint on arXiv...',
           description: "",
           section: "News",},{id: "news-new-preprint-prorubric-is-now-on-arxiv-with-code-on-github",
           title: 'New preprint ProRubric is now on arXiv, with code on GitHub! 🚀',
