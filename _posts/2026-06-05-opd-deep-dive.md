@@ -7,7 +7,6 @@ tags: on-policy-distillation llm post-training distillation rl sft rlvr kd
 categories: Research
 ---
 
-# OPD 如何重构后训练的不可能三角
 
 ## 准确、稠密、易得的学习信号从哪里来
 

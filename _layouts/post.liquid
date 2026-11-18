@@ -968,42 +968,36 @@ layout: default
 
     <div class="reading-main">
       <header class="reading-hero">
-        <div class="reading-eyebrow">{% if url_beginning == '/blog/' %}Blog Post{% else %}Article{% endif %}</div>
+        <nav class="reading-crumbs" aria-label="Breadcrumb">
+          {% if url_beginning == '/blog/' %}
+            <a href="{{ '/blog/' | relative_url }}">Blog</a>
+            {% for category in page.categories limit: 1 %}
+              <span aria-hidden="true">/</span>
+              <a href="{{ category | slugify | prepend: '/blog/category/' | relative_url }}">{{ category }}</a>
+            {% endfor %}
+          {% else %}
+            <span>Article</span>
+          {% endif %}
+        </nav>
         <h1 class="reading-title">{{ page.title }}</h1>
         <div class="reading-meta">
-          <span><i class="fa-regular fa-calendar-days" style="margin-right: 0.35rem;"></i>{{ page.date | date: '%B %d, %Y' }}</span>
-          <span><i class="fa-regular fa-clock" style="margin-right: 0.35rem;"></i>{{ read_time }} min read</span>
-          {% if page.author %}<span><i class="fa-regular fa-user" style="margin-right: 0.35rem;"></i>{{ page.author }}</span>{% endif %}
-          {% if page.last_updated %}<span>Updated {{ page.last_updated | date: '%B %d, %Y' }}</span>{% endif %}
+          <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: '%b %-d, %Y' }}</time>
+          <span>{{ read_time }} min read</span>
+          {% if page.author %}<span>{{ page.author }}</span>{% endif %}
+          {% if page.last_updated %}<span>Updated {{ page.last_updated | date: '%b %-d, %Y' }}</span>{% endif %}
           {% if page.meta %}<span>{{ page.meta }}</span>{% endif %}
         </div>
-        <div class="reading-taxonomy">
-          {% if url_beginning == '/blog/' %}
-            <a class="reading-chip" href="{{ year | prepend: '/blog/' | relative_url }}">
-              <i class="fa-regular fa-calendar" style="margin-right: 0.35rem; font-size: 0.76rem;"></i>{{ year }}
-            </a>
-          {% else %}
-            <span class="reading-chip"><i class="fa-regular fa-calendar" style="margin-right: 0.35rem; font-size: 0.76rem;"></i>{{ year }}</span>
-          {% endif %}
-          {% for category in page.categories %}
-            {% if url_beginning == '/blog/' %}
-              <a class="reading-chip" href="{{ category | slugify | prepend: '/blog/category/' | relative_url }}">
-                <i class="fa-regular fa-folder" style="margin-right: 0.35rem; font-size: 0.76rem;"></i>{{ category }}
-              </a>
-            {% else %}
-              <span class="reading-chip"><i class="fa-regular fa-folder" style="margin-right: 0.35rem; font-size: 0.76rem;"></i>{{ category }}</span>
-            {% endif %}
-          {% endfor %}
-          {% for tag in page.tags %}
-            {% if url_beginning == '/blog/' %}
-              <a class="reading-chip" href="{{ tag | slugify | prepend: '/blog/tag/' | relative_url }}">
-                <span style="margin-right: 0.15rem; font-weight: 700; color: var(--reading-accent);">#</span>{{ tag }}
-              </a>
-            {% else %}
-              <span class="reading-chip"><span style="margin-right: 0.15rem; font-weight: 700; color: var(--reading-accent);">#</span>{{ tag }}</span>
-            {% endif %}
-          {% endfor %}
-        </div>
+        {% if page.tags.size > 0 %}
+          <div class="reading-taxonomy">
+            {% for tag in page.tags %}
+              {% if url_beginning == '/blog/' %}
+                <a class="reading-tag" href="{{ tag | slugify | prepend: '/blog/tag/' | relative_url }}">#{{ tag }}</a>
+              {% else %}
+                <span class="reading-tag">#{{ tag }}</span>
+              {% endif %}
+            {% endfor %}
+          </div>
+        {% endif %}
       </header>
 
       {% if has_outline %}
@@ -1320,5 +1314,20 @@ layout: default
     document.addEventListener('scroll', setActiveHeading, { passive: true });
     window.addEventListener('resize', setActiveHeading);
     {% endif %}
+  });
+</script>
+
+<script>
+  // Heading permalinks (added after the outline is built so TOC labels stay clean).
+  document.addEventListener('DOMContentLoaded', function () {
+    document.querySelectorAll('.reading-article [data-reading-level]').forEach(function (heading) {
+      if (!heading.id) return;
+      const link = document.createElement('a');
+      link.className = 'reading-anchor';
+      link.href = '#' + heading.id;
+      link.setAttribute('aria-label', 'Link to this section');
+      link.textContent = '#';
+      heading.appendChild(link);
+    });
   });
 </script>

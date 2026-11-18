@@ -23,44 +23,30 @@ layout: default
             <li><a href="{{ site.cv_download_path | relative_url }}" download><i class="fa-regular fa-file-lines"></i>CV (PDF)</a></li>
           {% endif %}
         </ul>
+        {% if page.quote %}
+          <figure class="vc-quote">
+            {% if page.quote.zh %}<p class="vc-quote-zh" lang="zh-CN">{{ page.quote.zh }}</p>{% endif %}
+            <blockquote>“{{ page.quote.text }}”</blockquote>
+            <figcaption>— {{ page.quote.author }}</figcaption>
+          </figure>
+        {% endif %}
+        {% if site.visitor_map %}
+          <section class="vc-visitors" aria-label="Visitor map">
+            <div class="vc-visitors-label">Visitors around the world</div>
+            <div class="vc-visitors-map">
+              <script id="_wauvm">var _wau = _wau || []; _wau.push(["map", "{{ site.visitor_map }}", "vm", "220", "110", "cart", "default-blue"]);</script>
+              <script async src="https://waust.at/m.js"></script>
+            </div>
+            <a class="vc-visitors-link" href="https://whos.amung.us/stats/{{ site.visitor_map }}/" target="_blank" rel="external nofollow noopener">Visitor stats ↗</a>
+          </section>
+        {% endif %}
       </div>
     </aside>
 
   <section class="ed-hero">
-    <div class="ed-hero-text">
-      <p class="ed-kicker">{{ page.hero_subtitle }}</p>
-      <h1 class="ed-name">
-        <span class="ed-name-en">{{ name_en }}</span>
-        {% if page.hero_name contains '「' %}
-          <span class="ed-name-zh" lang="zh-CN">{{ name_zh }}</span>
-        {% endif %}
-      </h1>
-
-      <div class="ed-bio">
-        {{ content }}
-      </div>
-
-      <nav class="ed-links" aria-label="Profiles">
-        <a href="https://github.com/Estrellajer" target="_blank" rel="external nofollow noopener">GitHub<span aria-hidden="true">↗</span></a>
-        <a href="mailto:{{ site.email }}">Email<span aria-hidden="true">↗</span></a>
-        {% if site.cv_download_path %}
-          <a href="{{ site.cv_download_path | relative_url }}" download>CV<span aria-hidden="true">↓</span></a>
-        {% endif %}
-      </nav>
+    <div class="ed-bio">
+      {{ content }}
     </div>
-
-    {% if page.profile and page.profile.image %}
-      {% assign profile_image_path = page.profile.image | prepend: 'assets/img/' %}
-      <figure class="ed-portrait">
-        <img src="{{ profile_image_path | relative_url | bust_file_cache }}" alt="{{ name_en }}">
-        <figcaption>
-          {% if page.photo_quote %}<span class="ed-quote">{{ page.photo_quote }}</span>{% endif %}
-          {% if page.research_areas %}
-            <span class="ed-focus">{{ page.research_areas | join: ' / ' }}</span>
-          {% endif %}
-        </figcaption>
-      </figure>
-    {% endif %}
   </section>
 
   {% assign sec = 0 %}
@@ -139,4 +125,17 @@ layout: default
     const days = Math.floor((Date.now() - Date.parse(el.dataset.since)) / 864e5);
     el.textContent = days.toLocaleString("en-US");
   });
+</script>
+<script>
+  // Keep the sticky profile card fully reachable when it is taller than the viewport:
+  // it sticks by its bottom edge instead of its top.
+  (() => {
+    const side = document.querySelector(".vc-side");
+    const place = () => {
+      side.style.top = Math.min(88, window.innerHeight - side.offsetHeight - 16) + "px";
+    };
+    place();
+    window.addEventListener("resize", place);
+    window.addEventListener("load", place);
+  })();
 </script>

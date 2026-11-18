@@ -4,6 +4,7 @@
 
 title: Maoqi Liu (刘茂琦) # used in <title> / og:title
 brand: Carpediem # text shown as the navbar brand
+visitor_map: estrellajergio # whos.amung.us map widget key on the homepage sidebar; remove to disable
 first_name: Maoqi
 middle_name:
 last_name: Liu

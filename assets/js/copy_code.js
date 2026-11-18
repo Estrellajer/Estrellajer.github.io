@@ -35,18 +35,12 @@ function initCodeCopyBlocks() {
 
       // Create window chrome header
       var header = document.createElement("div");
-      header.className = "code-header";
-
-      // Mac terminal dots
-      var dots = document.createElement("div");
-      dots.className = "code-dots";
-      dots.innerHTML = '<span class="code-dot dot-red"></span><span class="code-dot dot-yellow"></span><span class="code-dot dot-green"></span>';
-      header.appendChild(dots);
+      header.className = lang ? "code-header" : "code-header code-header--bare";
 
       // Language label
       var langBadge = document.createElement("span");
       langBadge.className = "code-lang-badge";
-      langBadge.innerText = lang ? lang.toUpperCase() : "CODE";
+      langBadge.innerText = lang || "";
       header.appendChild(langBadge);
 
       // Copy button

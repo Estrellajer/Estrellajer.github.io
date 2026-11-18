@@ -238,17 +238,107 @@ html.v-c {
     }
   }
 
+  .vc-quote {
+    margin: 1.2rem 0 0;
+    padding: 1.1rem 0 0;
+    border-top: 1px solid var(--hl-border);
+
+    .vc-quote-zh {
+      margin: 0 0 0.5rem;
+      color: var(--hl-text-primary);
+      font-size: 0.95rem;
+      font-weight: 600;
+      letter-spacing: 0.04em;
+    }
+
+    blockquote {
+      margin: 0;
+      padding: 0;
+      border: 0;
+      color: var(--hl-text-muted);
+      font-size: 0.84rem;
+      font-style: italic;
+      line-height: 1.55;
+    }
+
+    figcaption {
+      margin-top: 0.35rem;
+      color: var(--hl-text-soft);
+      font-size: 0.78rem;
+    }
+  }
+
+  .vc-visitors {
+    margin: 1.2rem 0 0;
+    padding: 1.1rem 0 0;
+    border-top: 1px solid var(--hl-border);
+  }
+
+  .vc-visitors-label {
+    margin-bottom: 0.6rem;
+    color: var(--hl-text-soft);
+    font-size: 0.78rem;
+  }
+
+  .vc-visitors-map {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 2 / 1;
+    overflow: hidden;
+    border: 1px solid var(--hl-border);
+    border-radius: 0.4rem;
+    background: var(--hl-surface-alt);
+
+    /* whos.amung.us renders <span><img map><span data-balloon>…</span></span> */
+    > span {
+      position: absolute !important;
+      inset: 0;
+      width: 100% !important;
+      height: 100% !important;
+      max-width: 100%;
+      margin: 0 !important;
+    }
+
+    > span > img {
+      width: 100%;
+      height: 100%;
+      object-fit: fill;
+      filter: grayscale(1) contrast(0.9);
+      opacity: 0.45;
+    }
+
+    > span > span[data-balloon] {
+      width: 5px !important;
+      height: 5px !important;
+      border-radius: 50%;
+      background: var(--hl-accent);
+      box-shadow: 0 0 0 1.5px var(--hl-surface);
+    }
+
+    > span > span[data-balloon] > img {
+      display: none !important;
+    }
+  }
+
+  .vc-quote blockquote {
+    background: transparent;
+  }
+
+  .vc-visitors-link {
+    display: inline-block;
+    margin-top: 0.5rem;
+    color: var(--hl-text-soft);
+    font-size: 0.78rem;
+
+    &:hover {
+      color: var(--hl-accent);
+    }
+  }
+
   .ed-hero {
     display: block;
     padding: 0 0 1.5rem;
     border-bottom: 0;
-  }
-
-  .ed-kicker,
-  .ed-name,
-  .ed-links,
-  .ed-portrait {
-    display: none;
   }
 
   .ed-bio {

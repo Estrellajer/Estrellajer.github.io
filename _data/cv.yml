@@ -67,11 +67,6 @@
         - First Author, Accepted by Advanced Engineering Informatics (ADVEI 2025, SCI Q1, CCF-B)
         - "Authors: Maoqi Liu, Quan Fang, Yang Yang, et al."
         - "Overview: Advances NOTAM analysis from surface extraction to domain semantic parsing. Constructs a benchmark of 12,347 expert-annotated NOTAMs across 194 FIRs using a multi-agent debate framework (F1 92% vs 57% baseline)."
-    - title: "R²A²-MoE: Ridge Regression-based Analytic Adaptation with Mixture of Experts for Continual Learning with Vision-Language Models"
-      year: 2025
-      description:
-        - First Author, Accepted by PRCV 2025 (Oral)
-        - "Overview: Proposes Ridge Regression-based Analytic Adaptation with Mixture of Experts for VLMs, mitigating dual forgetting through closed-form expert optimization."
 
 - title: Projects
   type: time_table
