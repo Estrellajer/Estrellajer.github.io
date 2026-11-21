@@ -1,0 +1,36 @@
+Selected Publications
+Post Training / Agentic Self-improvement
+From RLVR to RLSVR: Task Transformation Induces Self-Verifiable Rewards for Open-Ended LLM Self-Improvement
+Qinsi Wang , Jing Shi, Huazheng Wang, Kun Wan, Yiran Wu, Bo Liu, Qingyun Wu, Hai Helen Li, Yiran Chen, Handong Zhao, Wentian Zhao
+PDF Code Cite
+COLM 2026
+Vision-Zero: Scalable VLM Self-Improvement via Strategic Gamified Self-Play
+Qinsi Wang , Bo Liu, Tianyi Zhou, Jing Shi, Yueqian Lin, Yiran Chen, Hai Helen Li, Kun Wan, Wentian Zhao
+PDF Code Cite
+ICLR 2026
+Angles Don't Lie: Unlocking Training-Efficient RL Through the Model's Own Signals
+Qinsi Wang , Jinghan Ke, Hancheng Ye, Yueqian Lin, Yuzhe Fu, Jianyi Zhang, Kurt Keutzer, Chenfeng Xu, Yiran Chen
+PDF Code Cite
+NeurIPS 2025 Spotlight
+Multimodal Reasoning
+InteractiveWorld: A Verifiable Human-Centric Environment for Building Better Interactive MLLM Assistants
+Qinsi Wang , Wei Wen, Chong Zhou, Saksham Suri, Zechun Liu, Lemeng Wu, Hai Helen Li, Yiran Chen, Raghuraman Krishnamoorthi, Qi Qian
+PDF Page Code
+arXiv 2026
+CoreMatching: A Co-adaptive Sparse Inference Framework with Token and Neuron Pruning for Comprehensive Acceleration of Vision-Language Models
+Qinsi Wang , Hancheng Ye, Ming-Yu Chung, Yudong Liu, Yueqian Lin, Martin Kuo, Mingyuan Ma, Jianyi Zhang, Yiran Chen
+PDF Code Cite
+ICML 2025
+Efficiency LLM/VLMs
+Dobi-SVD: Differentiable SVD for LLM Compression and Some New Perspectives
+Qinsi Wang* , Jinghan Ke*, Masayoshi Tomizuka, Yiran Chen, Kurt Keutzer, Chenfeng Xu
+PDF Page Code
+ICLR 2025
+CoreInfer: Accelerating Large Language Model Inference with Semantics-Inspired Adaptive Sparse Activation
+Qinsi Wang , Saeed Vahidian, Hancheng Ye, Jianyang Gu, Jianyi Zhang, Yiran Chen
+PDF Demo Code
+ICML 2026
+MathNAS: If Blocks Have a Role in Mathematical Architecture Design
+Qinsi Wang* , Jinghan Ke*, Zhi Liang, Sihai Zhang
+PDF Poster Code
+NeurIPS 2023

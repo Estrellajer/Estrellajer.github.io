@@ -1,0 +1,69 @@
+2026.04 : 🎉 One paper has been accepted to ACL 2026!
+
+2026.01 : 🎉 Two papers have been accepted to ICLR 2026!
+
+2025.08 : 🎉 Two papers have been accepted to EMNLP 2025!
+
+2025.07 : 🎉 One paper has been accepted to COLM 2025!
+
+2025.05 : 🎉 Two papers have been accepted to ACL 2025!
+
+2024.12 : 🎉 One paper has been accepted to AAAI 2025!
+
+2024.09 : 🎉 One paper has been accepted to EMNLP 2024!
+
+2024.08 : 🥳 One paper about continual learning is online!
+
+2024.05 : 🎉 Two papers have been accepted to ACL 2024 (1 Main + 1 Findings)!
+
+2024.02 : 🎉 One paper has been accepted to COLING 2024!
+
+2023.10 : 🎉 One paper has been accepted by EMNLP 2023!
+
+TaSL: Task Skill Localization and Consolidation for Language Model Continual Learning.
+Yujie Feng , Xu Chu, Yongxin Xu, Zexin Lu, Bo LIU, Philip S. Yu, Xiao-Ming Wu.
+[ arXiv ] (Extension of the ACL 2024 paper)
+
+FOREVER: Forgetting Curve-Inspired Memory Replay for Language Model Continual Learning. [ PDF ] [ Code ]
+Yujie Feng , Hao Wang, Jian Li, Xu Chu, Zhaolu Kang, Yiran Liu, Yasha Wang, Philip S. Yu, Xiao-Ming Wu.
+The 64th Annual Meeting of the Association for Computational Linguistics ( ACL 2026 ).
+
+Micro-Macro Retrieval: Reducing Long-Form Hallucination in Large Language Models. [ PDF ] [ Code ]
+Yujie Feng , Jian Li, Zhihan Zhou, Pengfei Xu, Yujia Zhang, Xiaoyu Li, Xiaohui Zhou, Alan Zhao, Xi Chen, Xiao-Ming Wu.
+The Fourteenth International Conference on Learning Representations ( ICLR 2026 ).
+
+AIMMerging: Leveraging Training Trajectories for Adaptive Iterative Model Merging in Language Model Continual Learning. [ PDF ] [ Code ]
+Yujie Feng , Jian Li, Xiaoyu Dong, Pengfei Xu, Xiaohui Zhou, Yujia Zhang, Zexin Lu, Yasha Wang, Alan Zhao, Xu Chu, Xiao-Ming Wu.
+Conference on Empirical Methods in Natural Language Processing ( EMNLP 2025 ).
+
+GeoEdit: Geometric Knowledge Editing for Large Language Models. [ PDF ] [ Code ]
+Yujie Feng , Liming Zhan, Zexin Lu, Yongxin Xu, Xu Chu, Yasha Wang, Jiannong Cao, Philip S. Yu, Xiao-Ming Wu.
+Conference on Empirical Methods in Natural Language Processing ( EMNLP 2025 ).
+
+Recurrent Knowledge Identification and Fusion for Language Model Continual Learning. [ PDF ] [ Code ]
+Yujie Feng , Xujia Wang, Zexin Lu, Shenghong Fu, Guangyuan Shi, Yongxin Xu, Yasha Wang, Philip S. Yu, Xu Chu, Xiao-Ming Wu.
+The 63nd Annual Meeting of the Association for Computational Linguistics ( ACL 2025 ).
+
+TaSL: Continual Dialog State Tracking via Task Skill Localization and Consolidation. [ PDF ] [ Code ]
+Yujie Feng , Xu Chu, Yongxin Xu, Guangyuan SHI, Bo LIU, Xiao-Ming Wu.
+The 62nd Annual Meeting of the Association for Computational Linguistics ( ACL 2024 ).
+
+Towards LLM-driven Dialogue State Tracking. [ PDF ] [ Code ]
+Yujie Feng , Zexin Lu, Bo Liu, Liming Zhan, Xiao-Ming Wu.
+Conference on Empirical Methods in Natural Language Processing ( EMNLP 2023 ).
+
+Completing missing prevalence rates for multiple chronic diseases by jointly leveraging both intra-and inter-disease population health data correlations. [ PDF ] [ Code ]
+Yujie Feng , Jiangtao Wang, Yasha Wang, Sumi Helal.
+Proceedings of the Web Conference 2021 ( WWW 2021 ).
+
+2026.04 : 🎉 One paper has been accepted to ACL 2026!
+2026.01 : 🎉 Two papers have been accepted to ICLR 2026!
+2025.08 : 🎉 Two papers have been accepted to EMNLP 2025!
+2025.07 : 🎉 One paper has been accepted to COLM 2025!
+2025.05 : 🎉 Two papers have been accepted to ACL 2025!
+2024.12 : 🎉 One paper has been accepted to AAAI 2025!
+2024.09 : 🎉 One paper has been accepted to EMNLP 2024!
+2024.08 : 🥳 One paper about continual learning is online!
+2024.05 : 🎉 Two papers have been accepted to ACL 2024 (1 Main + 1 Findings)!
+2024.02 : 🎉 One paper has been accepted to COLING 2024!
+2023.10 : 🎉 One paper has been accepted by EMNLP 2023!

@@ -1,0 +1,15 @@
+HiCache: A Plug-in Scaled-Hermite Upgrade for Taylor-Style Cache-then-Forecast Diffusion Acceleration
+Liang Feng* , et al. (Co-first Author · 1st author)
+Accepted (Poster) at ICLR 2026 .
+
+Forecast then Calibrate: Feature Caching as ODE for Efficient Diffusion Transformers
+Co-first Author · 2nd author
+Accepted (Poster) at AAAI 2026 .
+
+Publications
+HiCache: A Plug-in Scaled-Hermite Upgrade for Taylor-Style Cache-then-Forecast Diffusion Acceleration
+Liang Feng* , et al. (Co-first Author · 1st author)
+Accepted (Poster) at ICLR 2026 .
+Forecast then Calibrate: Feature Caching as ODE for Efficient Diffusion Transformers
+Co-first Author · 2nd author
+Accepted (Poster) at AAAI 2026 .

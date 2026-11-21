@@ -1,0 +1,33 @@
+Dynamic Compression in Recurrent Networks
+Jyothish Pari, Ryan Boldi, Pulkit Agrawal
+arXiv (Cornell University) 2026
+General Intelligence Requires Reward-based Pretraining
+Seungwook Han, Jyothish Pari, Samuel Joseph Gershman, Pulkit Agrawal
+arXiv (Cornell University) 2025
+Self-Adapting Language Models
+Adam Zweiger, Jyothish Pari, Han Guo, Yoon Kim, Pulkit Agrawal
+neural information processing systems 2025
+Efficient Diffusion Transformer Policies with Mixture of Expert Denoisers for Multitask Learning
+Moritz Reuss, Jyothish Pari, Pulkit Agrawal, Rudolf Lioutikov
+International Conference on Learning Representations 2024
+Collective Model Intelligence Requires Compatible Specialization
+Jyothish Pari, Samy Jelassi, Pulkit Agrawal
+arXiv (Cornell University) 2024
+Few-Shot Task Learning through Inverse Generative Modeling
+Aviv Netanyahu, Yilun Du, Antonia Bronars, Jyothish Pari, Joshua B. Tenenbaum, Tianmin Shu
+neural information processing systems 2024
+Teach a Robot to FISH: Versatile Imitation from One Minute of Demonstrations
+Siddhant Haldar, Jyothish Pari, Anant Rai, Lerrel Pinto
+Robotics: Science and Systems 2023
+Train Offline, Test Online: A Real Robot Learning Benchmark
+Gaoyue Zhou, Victoria Dean, Mohan Kumar Srirama, Aravind Rajeswaran, Jyothish Pari, Kyle Hatch
+Proceedings - IEEE International Conference on Robotics and Automation/Proceedings 2023
+Playful Interactions for Representation Learning
+Sarah Young, Jyothish Pari, Pieter Abbeel, Lerrel Pinto
+IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS) 2022
+The Surprising Effectiveness of Representation Learning for Visual Imitation
+Jyothish Pari, Nur Muhammad Mahi Shafiullah, Sridhar Pandian Arunachalam, Lerrel Pinto
+Robotics: Science and Systems 2022
+ADVANCES ON PARALLEL COMPUTING IN STRUCTURAL TOPOLOGY OPTIMIZATION
+Jyothish Pari, F. Navarrina, Manuel Casteleiro, Campus de Elvi
+2008

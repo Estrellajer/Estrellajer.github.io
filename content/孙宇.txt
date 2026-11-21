@@ -1,0 +1,19 @@
+For a complete list of papers, please see my Google Scholar .
+
+End-to-End Test-Time Training for Long Context
+Arnuv Tandon*, Karan Dalal*, Xinhao Li*, Daniel Koceja*, Marcel Rød*, Sam Buchanan, Xiaolong Wang, Jure Leskovec, Sanmi Koyejo, Tatsunori Hashimoto, Carlos Guestrin, Jed McCaleb, Yejin Choi, Yu Sun* (*: core contributors)
+[ paper ]
+[ code ]
+
+Learning to Discover at Test Time
+Mert Yuksekgonul*, Daniel Koceja*, Xinhao Li*, Federico Bianchi*, Jed McCaleb, Xiaolong Wang, Jan Kautz, Yejin Choi, James Zou†, Carlos Guestrin†, Yu Sun* (*: core contributors)
+ICML 2026
+[ paper ]
+[ code ]
+
+Test-Time Training with Self-Supervision for Generalization under Distribution Shifts
+Yu Sun, Xiaolong Wang, Zhuang Liu, John Miller, Alexei A. Efros, Moritz Hardt
+ICML 2020
+[ paper ]
+[ website ]
+[ talk ]

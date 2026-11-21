@@ -1,0 +1,3 @@
+LLM Neuroanatomy III: Why RYS Works — The Language-Agnostic Middle
+Probing a 27B model shows its middle layers organise by meaning, not by language or format — weak evidence against the strong Sapir-Whorf hypothesis, and the reason RYS works.
+LLMs, Research

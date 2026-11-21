@@ -1,0 +1,6 @@
+RouteREPA: Routed Representation Alignment for Just Image Transformers
+Yi Tan, Beier Zhu, Sirui Chen, Cheng Chen, Xingyu Zhu, Yuan Zhou
+arXiv (Cornell University) 2026
+Unlocking the Potential of Contrastive Regularization for Diffusion Transformer Training
+Yi Tan, Beier Zhu, Sirui Chen, 林允哲, Yuan Zhou, Cheng Chen
+arXiv (Cornell University) 2026

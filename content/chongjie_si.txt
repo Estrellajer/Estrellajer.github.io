@@ -1,0 +1,21 @@
+PGSB: Pretrained-Guided Shared Basis for LoRA Model Merging
+Muqing Liu, Chongjie Si, Zhuoya Liu, Yuheng Jia
+arXiv (Cornell University) 2026
+FlexLoRA: Entropy-Guided Flexible Low-Rank Adaptation
+Muqing Liu, Chongjie Si, Yuheng Jia
+International Conference on Learning Representations 2026
+Task-Specific Directions: Definition, Exploration, and Utilization in Parameter Efficient Fine-Tuning
+Chongjie Si, Z. Shi, Shifan Zhang, Xiaokang Yang, Hanspeter Pfister, Wang Shen
+IEEE Transactions on Pattern Analysis and Machine Intelligence 2026
+DualEdit: Dual Editing for Knowledge Updating in Vision-Language Models
+Zhiyi Shi, Binjie Wang, Chongjie Si, Yichen Wu, Junsik Kim, Hanspeter Pfister
+arXiv (Cornell University) 2025
+Weight Spectra Induced Efficient Model Adaptation
+Chongjie Si, Yang, Xuankun, Mu-Qing Liu, Yadao Wang, Xiaokang Yang, Wenbo Su
+arXiv (Cornell University) 2025
+MAP: Revisiting Weight Decomposition for Low-Rank Adaptation
+Chongjie Si, Shi, Zhiyi, Yadao Wang, Xiaokang Yang, Susanto Rahardja, Shen, Wei
+arXiv (Cornell University) 2025
+See Further for Parameter Efficient Fine-tuning by Standing on the Shoulders of Decomposition
+Chongjie Si, Xiaokang Yang, Wei Shen
+arXiv (Cornell University) 2024

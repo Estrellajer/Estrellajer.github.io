@@ -1,0 +1,60 @@
+Pull-in Aggregation Protocol: A Receiver-Oriented Decentralized Federated Learning Paradigm
+F Shi, JK Zeng, S Tang, W Lin, Q Huang, L Shen
+IEEE Transactions on Mobile Computing, 2026 2026
+SurgeryV2: Bridging the Gap Between Model Merging and Multi-Task Learning with Deep Representation Surgery
+E Yang, L Shen, Z Wang, G Guo, X Wang, X Cao, J Zhang, D Tao
+International Journal of Computer Vision, 2026 2026
+Structural Dual Adaptation for Safe Reinforcement Learning
+R Yu, Z Song, Z Deng, Q Zhang, L Shen, J Zhang
+arXiv preprint arXiv:2611.00636, 2026 2026
+Fine-Grained Analysis of Catastrophic Forgetting in Continual Learning via Algorithmic Stability
+G Zheng, Y Sun, P Wang, E Yang, J Lyu, X Cao, D Tao, L Shen
+arXiv preprint arXiv:2610.31551, 2026 2026
+Formalizing Forgetting: Theory of Forgetting for Online Continual Learning
+R Cao, Y Cheng, L Shen
+arXiv preprint arXiv:2610.14787, 2026 2026
+RoMod: Temporal Routing Modulation via Mixture-of-Experts for Video Anomaly Detection
+C Huang, P Wei, B Wang, C Liu, W Wang, L Shen, W Ren, X Cao
+arXiv preprint arXiv:2610.05131, 2026 2026
+Pareto-Improving Adversarial Attacks with Primal-Dual Regularization
+Y Dai, L Zhang, W Tao, L Shen, J Huang, Q Tao
+arXiv preprint arXiv:2610.04652, 2026 2026
+G-Merging: Merging Models within O(1) Memory Cost via Gossip Approach
+Z Wang, L Shen, A Tang, X Chen, S Liu, L Yin, X Cao
+IEEE Transactions on Parallel and Distributed Systems, 2026 2026
+MAPLE: Masked Adapter Prototype Learning for OOD generalization
+A Kappiyath, A Chaudhuri, J Li, AK JAISWAL, X Wang, L Shen, S Kundu, ...
+The 2026 Conference on Empirical Methods in Natural Language Processing (Main), 2026 2026
+Pharmacist: Safety Alignment Data Curation for Large Language Models against Harmful Fine-tuning
+G Liu, Q Mu, T Huang, X Wang, L Shen, W Lin, Z Li
+IEEE Transactions on Information Forensics & Security, 2026 2026
+Alignment-Guided Flow Transformer for Efficient Vision-Language-Action Policy Learning
+S Hu, P Wang, Q Zhou, G Zheng, Y Huang, L Shen, Y Zhang, D Tao
+arXiv preprint arXiv:2609.34467, 2026 2026
+Hub-Spectral Activation of Latent Multimodal Knowledge
+Y Guo, H Chen, L Xu, X Liu, C Shi, C Xiao, D Zhang, F Shen, L Shen, ...
+arXiv preprint arXiv:2609.17094, 2026 2026
+World Models for Embodied Intelligence: From Plausible to Controllable to Actionable
+N Yao, H Wang, C Cheng, Z Chen, W Li, J Lyu, L Shen, P Zhao, Z Lu, ...
+arXiv preprint arXiv:2609.16697, 2026 2026
+Adaptive Cross-View EEG Fusion of External Scalp and Internal Neural Representations for Affective Brain-Computer Interfaces
+T Wang, P Wang, S Liu, X Wang, L Shen, S Liu, D Ming
+Information Fusion, 104754, 2026 2026
+Evidence-guided Learning against Noisy and Sparse Labels on Graphs
+S Yi, W Zhang, Z Mao, Y Zhou, Z Qiao, L Shen, D Tao, J Lv, W Ju
+Artificial Intelligence, 104608, 2026 2026
+Efficient Communication With Skill Neurons in Decentralized Multi-Agent Reinforcement Learning
+J Lan, L Shen, R Liu, Q Zhang, S Zhang, L Liu, H Pan, D Tao
+IEEE Transactions on Pattern Analysis and Machine Intelligence, 2026 2026
+Improving zero-shot translation with the navigation ability-enhanced language tags
+C Zan, L Ding, L Shen, Y Lei, Y Zhan, W Liu
+Engineering Applications of Artificial Intelligence 179, 115149, 2026 2026
+Q-learning Penalized Transformer for Safe Offline Reinforcement Learning
+S Hu, P Wang, J Hu, Q Zhou, A Hu, L Shen, Y Zhang, D Tao
+arXiv preprint arXiv:2609.34426, 2026 2026
+TeZO: Empowering the Low-Rankness on the Temporal Dimension in the Zeroth-Order Optimization for Fine-tuning LLMs
+Y Sun, T Huang, L Ding, L Shen, D Tao
+IEEE Transactions on Pattern Analysis and Machine Intelligence, 2026 2026
+Noise-Induced Cross-modal Information Interaction and Dual-Prompt Learning for Medical Image Segmentation
+C Huang, P Chen, J Wen, W Wang, L Shen, W Ren, X Cao, C Liu
+IEEE Transactions on Image Processing, 2026 2026
