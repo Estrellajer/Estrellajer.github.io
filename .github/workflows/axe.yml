@@ -29,7 +29,7 @@ jobs:
       - name: Setup Ruby
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: "3.2.2"
+          ruby-version: "3.3"
           bundler-cache: true
       - name: Update _config.yml ⚙️
         run: |
@@ -37,7 +37,7 @@ jobs:
       - name: Install and Build 🔧
         run: |
           sudo apt-get update && sudo apt-get install -y imagemagick
-          pip3 install --upgrade jupyter
+          pip3 install --upgrade jupyter --break-system-packages || true
           export JEKYLL_ENV=production
           bundle exec jekyll build
       - name: Purge unused CSS 🧹
