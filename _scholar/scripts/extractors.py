@@ -34,7 +34,24 @@ def extract_scholar_entries(html: str, scholar: dict) -> list:
                     link = urljoin(base_url, href)
                     break
             full_title = f"{title} · {venue}" if venue else title
-            entries.append({"title": full_title, "link": link, "published": "2026", "timestamp": 1774972800.0})
+            pub_date, ts = "", 0.0
+            m_ar = re.search(r'arxiv\.org/(?:abs|pdf)/(\d{2})(0[1-9]|1[0-2])\.', link)
+            m_yr = re.search(r'\b(20[0-2]\d)\b', venue)
+            if m_yr:
+                yr = int(m_yr.group(1))
+                conf_months = {'aaai': 2, 'iclr': 5, 'cvpr': 6, 'icml': 7, 'acl': 8, 'eccv': 9, 'ijcv': 9, 'neurips': 9, 'iccv': 10, 'colm': 10, 'emnlp': 11}
+                m_num = next((m for c, m in conf_months.items() if c in venue.lower()), None)
+                if m_num:
+                    pub_date = f"{yr:04d}-{m_num:02d}"
+                    ts = datetime(yr, m_num, 1, tzinfo=timezone.utc).timestamp()
+                else:
+                    pub_date = f"{yr:04d}"
+                    ts = datetime(yr, 1, 1, tzinfo=timezone.utc).timestamp()
+            elif m_ar:
+                y, m = 2000 + int(m_ar.group(1)), int(m_ar.group(2))
+                pub_date = f"{y:04d}-{m:02d}"
+                ts = datetime(y, m, 1, tzinfo=timezone.utc).timestamp()
+            entries.append({"title": full_title, "link": link, "published": pub_date, "timestamp": ts})
         if entries:
             return entries[:10]
 
@@ -430,18 +447,20 @@ def extract_scholar_entries(html: str, scholar: dict) -> list:
                         venue = f"{m_v.group(1)} {m_v.group(2)}" if m_v else venue_raw
                     full_title = f"{title} · {venue}" if venue else title
                     link = p.get("url") or base_url
-                    year = str(p.get("year") or "2026")
+                    year = str(p.get("year") or "")
                     m_ar = re.search(r'arxiv\.org/(?:abs|pdf)/(\d{2})(\d{2})\.', link)
                     if m_ar:
                         pub_date = f"20{m_ar.group(1)}-{m_ar.group(2)}"
                         dt = datetime(int("20" + m_ar.group(1)), int(m_ar.group(2)), 1, tzinfo=timezone.utc)
                         ts = dt.timestamp()
-                    else:
+                    elif year:
                         pub_date = year
                         try:
                             ts = datetime(int(year), 1, 1, tzinfo=timezone.utc).timestamp()
                         except Exception:
-                            ts = 1767225600.0
+                            ts = 0.0
+                    else:
+                        pub_date, ts = "", 0.0
                     entries.append({"title": full_title, "link": link, "published": pub_date, "timestamp": ts})
         except Exception:
             pass

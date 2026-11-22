@@ -594,7 +594,7 @@ def extract_content(html: str, selectors: list = None, remove_selectors: list = 
                     'title': p.get('title', ''),
                     'authors': ", ".join(p.get('authors', [])) if isinstance(p.get('authors'), list) else p.get('authors', ''),
                     'publication': p.get('venue', ''),
-                    'year': str(p.get('year', '2026')),
+                    'year': str(p.get('year') or ''),
                     'link': p.get('url', '')
                 })
             return _publications_to_text(p_list)
@@ -996,17 +996,19 @@ def _apply_publications_result(scholar: dict, articles: list[dict], url: str, re
         result["error"] = blocked
         return result
     result["preview"] = [a.get("title", "") for a in articles[:3] if a.get("title")]
-    result["latest_entries"] = [
-        {
+    result["latest_entries"] = []
+    for a in articles[:10]:
+        lk = a.get("link") or url
+        ts, ds = _extract_timestamp_and_date(
+            f"{a.get('pub_date', '')} {a.get('publication', '')} {a.get('year', '')}",
+            lk,
+        )
+        result["latest_entries"].append({
             "title": _format_publication_event(a),
-            "link": a.get("link") or url,
-            "published": a.get("pub_date") or str(a.get("year") or "2026"),
-            "timestamp": _extract_timestamp_from_text(
-                f"{a.get('pub_date', '')} {a.get('publication', '')} {a.get('year', '')}"
-            ),
-        }
-        for a in articles[:10]
-    ]
+            "link": lk,
+            "published": ds or a.get("pub_date") or str(a.get("year") or ""),
+            "timestamp": ts,
+        })
     prev = load_snapshot(scholar["name"])
     if prev is None:
         save_snapshot(scholar["name"], content)
@@ -1125,15 +1127,16 @@ def check_google_scholar(scholar: dict, since: datetime | None) -> dict:
         pubs = _sort_publications_by_year_desc(pubs)
         if pubs:
             result["preview"] = [p.get("title", "") for p in pubs[:3] if p.get("title")]
-            result["latest_entries"] = [
-                {
+            result["latest_entries"] = []
+            for p in pubs[:10]:
+                lk = p.get("link") or url
+                ts, ds = _extract_timestamp_and_date(f"{p.get('publication', '')} {p.get('year', '')}", lk)
+                result["latest_entries"].append({
                     "title": _format_publication_event(p),
-                    "link": p.get("link") or url,
-                    "published": str(p.get("year") or "2026"),
-                    "timestamp": _extract_timestamp_from_text(f"{p.get('publication', '')} {p.get('year', '')}"),
-                }
-                for p in pubs[:10]
-            ]
+                    "link": lk,
+                    "published": ds or str(p.get("year") or ""),
+                    "timestamp": ts,
+                })
             result["type"] = "unchanged"
             return result
 
@@ -1190,15 +1193,16 @@ def check_zifeng_wang(scholar: dict, since: datetime | None) -> dict:
 
     content = _publications_to_text(pubs)
     result["preview"] = [p.get("title", "") for p in pubs[:3] if p.get("title")]
-    result["latest_entries"] = [
-        {
+    result["latest_entries"] = []
+    for p in pubs[:10]:
+        lk = p.get("link") or url
+        ts, ds = _extract_timestamp_and_date(f"{p.get('publication', '')} {p.get('year', '')}", lk)
+        result["latest_entries"].append({
             "title": _format_publication_event(p),
-            "link": p.get("link") or url,
-            "published": str(p.get("year") or "2026"),
-            "timestamp": _extract_timestamp_from_text(f"{p.get('publication', '')} {p.get('year', '')}"),
-        }
-        for p in pubs[:10]
-    ]
+            "link": lk,
+            "published": ds or str(p.get("year") or ""),
+            "timestamp": ts,
+        })
 
     if prev is None:
         save_snapshot(scholar["name"], content)
@@ -1247,7 +1251,7 @@ def check_yixuan_tang(scholar: dict, since: datetime | None) -> dict:
         title = _clean_paper_entry(p.get("title", ""))
         authors = ", ".join(p.get("authors", [])) if isinstance(p.get("authors"), list) else p.get("authors", "")
         venue_raw = p.get("venue", "")
-        year = str(p.get("year", "2026"))
+        year = str(p.get("year") or "")
         link = p.get("url") or base_url
         if title:
             pubs.append({
@@ -1290,18 +1294,12 @@ def check_yixuan_tang(scholar: dict, since: datetime | None) -> dict:
             v_short = f"{m_v.group(1)} {m_v.group(2)}" if m_v else v_raw
         full_title = f"{t} · {v_short}" if v_short else t
         lk = p.get("link") or base_url
-        yr = str(p.get("year") or "2026")
-        m_ar = re.search(r'arxiv\.org/(?:abs|pdf)/(\d{2})(\d{2})\.', lk)
-        if m_ar:
-            pub_date = f"20{m_ar.group(1)}-{m_ar.group(2)}"
-            ts = datetime(int("20" + m_ar.group(1)), int(m_ar.group(2)), 1, tzinfo=timezone.utc).timestamp()
-        else:
-            pub_date = yr
-            ts = datetime(int(yr), 1, 1, tzinfo=timezone.utc).timestamp()
+        yr = str(p.get("year") or "")
+        ts, pub_date = _extract_timestamp_and_date(f"{v_raw} {yr}", lk)
         entries.append({
             "title": full_title,
             "link": lk,
-            "published": pub_date,
+            "published": pub_date or yr,
             "timestamp": ts,
         })
     result["latest_entries"] = entries
@@ -1350,8 +1348,8 @@ def extract_entries_from_html(html: str, scholar: dict) -> list:
                 title = _clean_paper_entry(t_el.get_text(strip=True))
                 link = urljoin(base_url, l_el["href"]) if l_el else base_url
                 d = time_el.get_text(strip=True) if time_el else ""
-                ts, ds = _extract_timestamp_and_date(d)
-                entries.append({"title": title, "link": link, "published": ds or d or "2026", "timestamp": ts or 0.0})
+                ts, ds = _extract_timestamp_and_date(d, link)
+                entries.append({"title": title, "link": link, "published": ds or d or "", "timestamp": ts or 0.0})
         return entries[:10]
 
     # 2. DaNing Blog
@@ -1360,7 +1358,9 @@ def extract_entries_from_html(html: str, scholar: dict) -> list:
             t = a.get_text(strip=True)
             if t and t != "阅读更多" and len(t) > 3:
                 link = urljoin(base_url, a["href"])
-                entries.append({"title": _clean_paper_entry(t), "link": link, "published": "2026", "timestamp": datetime(2026, 1, 1, tzinfo=timezone.utc).timestamp()})
+                parent_txt = a.parent.get_text(" ", strip=True)[:300] if a.parent else ""
+                ts, ds = _extract_timestamp_and_date(parent_txt, link)
+                entries.append({"title": _clean_paper_entry(t), "link": link, "published": ds, "timestamp": ts})
         return entries[:10]
 
     # 3. A. Weers Blog
@@ -1373,8 +1373,8 @@ def extract_entries_from_html(html: str, scholar: dict) -> list:
                 title = _clean_paper_entry(t_el.get_text(strip=True))
                 link = urljoin(base_url, l_el["href"]) if l_el else base_url
                 d = meta_el.get_text(strip=True) if meta_el else ""
-                ts, ds = _extract_timestamp_and_date(d)
-                entries.append({"title": title, "link": link, "published": ds or "2026", "timestamp": ts})
+                ts, ds = _extract_timestamp_and_date(d, link)
+                entries.append({"title": title, "link": link, "published": ds, "timestamp": ts})
         return entries[:10]
 
     # 4. plmblog
@@ -1384,7 +1384,10 @@ def extract_entries_from_html(html: str, scholar: dict) -> list:
             if t_el:
                 title = _clean_paper_entry(t_el.get_text(strip=True))
                 link = urljoin(base_url, t_el.get("href", ""))
-                entries.append({"title": title, "link": link, "published": "2026", "timestamp": datetime(2026, 1, 1, tzinfo=timezone.utc).timestamp()})
+                meta_el = card.select_one("time, .post-date, .date, .post-meta")
+                meta_txt = meta_el.get_text(" ", strip=True) if meta_el else card.get_text(" ", strip=True)[:300]
+                ts, ds = _extract_timestamp_and_date(meta_txt, link)
+                entries.append({"title": title, "link": link, "published": ds, "timestamp": ts})
         return entries[:10]
 
     # Generic selectors fallback with urljoin
@@ -1401,8 +1404,11 @@ def extract_entries_from_html(html: str, scholar: dict) -> list:
             a_el = el.find("a", href=True) if el.name != "a" else el
             if a_el and a_el.get("href"):
                 best_link = urljoin(base_url, a_el["href"])
-            ts, ds = _extract_timestamp_and_date(txt)
-            entries.append({"title": clean_t, "link": best_link, "published": ds or "2026", "timestamp": ts or 0.0})
+            ts, ds = _extract_timestamp_and_date(txt, best_link)
+            if not ds and el.parent and el.parent.name not in ("body", "html", "[document]"):
+                parent_txt = el.parent.get_text(" ", strip=True)[:500]
+                ts, ds = _extract_timestamp_and_date(parent_txt, best_link)
+            entries.append({"title": clean_t, "link": best_link, "published": ds, "timestamp": ts})
             if len(entries) >= 10:
                 break
         if entries:
@@ -2082,13 +2088,13 @@ def _extract_new_additions(diff_text: str, scholar_name: str = "") -> list:
     return filtered
 
 
-def _extract_timestamp_and_date(text: str) -> tuple:
-    text = re.sub(r'202\s*([4567])', r'202\1', text or '')
+def _extract_timestamp_and_date(text: str, link: str = "") -> tuple:
+    text = re.sub(r'202\s*([0-9])', r'202\1', text or '')
     now_dt = datetime.now(timezone.utc)
     max_valid_ts = (now_dt + timedelta(days=1)).timestamp()
 
     # 1. YYYY-MM-DD, YYYY.MM.DD, YYYY/MM/DD
-    match = re.search(r'\b(202\d)[-\./](\d{1,2})[-\./](\d{1,2})\b', text)
+    match = re.search(r'\b(20[0-2]\d)[-\./](\d{1,2})[-\./](\d{1,2})\b', text)
     if match:
         try:
             y, m, d = int(match.group(1)), int(match.group(2)), int(match.group(3))
@@ -2099,7 +2105,7 @@ def _extract_timestamp_and_date(text: str) -> tuple:
             pass
 
     # 2. Chinese date format: YYYY年MM月(DD日)?
-    match_zh = re.search(r'\b(202\d)年(\d{1,2})月(?:(\d{1,2})日)?', text)
+    match_zh = re.search(r'\b(20[0-2]\d)年(\d{1,2})月(?:(\d{1,2})日)?', text)
     if match_zh:
         try:
             y, m = int(match_zh.group(1)), int(match_zh.group(2))
@@ -2112,7 +2118,7 @@ def _extract_timestamp_and_date(text: str) -> tuple:
             pass
 
     # 3. YYYY-MM, YYYY.MM, [YYYY-MM], [YYYY.MM]
-    match_month = re.search(r'(?:\[|\(|\b)(202\d)[-\./](\d{1,2})(?:\]|\)|\b)', text)
+    match_month = re.search(r'(?:\[|\(|\b)(20[0-2]\d)[-\./](\d{1,2})(?:\]|\)|\b)', text)
     if match_month:
         try:
             y, m = int(match_month.group(1)), int(match_month.group(2))
@@ -2131,7 +2137,7 @@ def _extract_timestamp_and_date(text: str) -> tuple:
             pass
 
     # 4. MM.YYYY e.g. "09.2026, Five papers"
-    match_my = re.search(r'\b(\d{1,2})[-\./](202\d)\b', text)
+    match_my = re.search(r'\b(\d{1,2})[-\./](20[0-2]\d)\b', text)
     if match_my:
         try:
             m, y = int(match_my.group(1)), int(match_my.group(2))
@@ -2160,7 +2166,7 @@ def _extract_timestamp_and_date(text: str) -> tuple:
     }
     month_pattern = r'(?:jan(?:uary)?|feb(?:ruary)?|mar(?:ch)?|apr(?:il)?|may|jun(?:e)?|jul(?:y)?|aug(?:ust)?|sep(?:t(?:ember)?)?|oct(?:ober)?|nov(?:ember)?|dec(?:ember)?)'
 
-    match_a = re.search(rf'\b({month_pattern})\.?\s+(?:(\d{{1,2}})(?:st|nd|rd|th)?,?\s+)?\b(202\d)\b', text, re.IGNORECASE)
+    match_a = re.search(rf'\b({month_pattern})\.?\s+(?:(\d{{1,2}})(?:st|nd|rd|th)?,?\s+)?\b(20[0-2]\d)\b', text, re.IGNORECASE)
     if match_a:
         m_name = match_a.group(1).lower().rstrip(".")
         m_num = month_map.get(m_name)
@@ -2175,7 +2181,7 @@ def _extract_timestamp_and_date(text: str) -> tuple:
             except ValueError:
                 pass
 
-    match_b = re.search(rf'\b(\d{{1,2}})(?:st|nd|rd|th)?\s+(?:of\s+)?({month_pattern})\.?,?\s+\b(202\d)\b', text, re.IGNORECASE)
+    match_b = re.search(rf'\b(\d{{1,2}})(?:st|nd|rd|th)?\s+(?:of\s+)?({month_pattern})\.?,?\s+\b(20[0-2]\d)\b', text, re.IGNORECASE)
     if match_b:
         m_name = match_b.group(2).lower().rstrip(".")
         m_num = month_map.get(m_name)
@@ -2189,7 +2195,7 @@ def _extract_timestamp_and_date(text: str) -> tuple:
             except ValueError:
                 pass
 
-    match_c = re.search(rf'\b(202\d)\s+({month_pattern})\b', text, re.IGNORECASE)
+    match_c = re.search(rf'\b(20[0-2]\d)\s+({month_pattern})\b', text, re.IGNORECASE)
     if match_c:
         m_name = match_c.group(2).lower()
         m_num = month_map.get(m_name)
@@ -2202,35 +2208,64 @@ def _extract_timestamp_and_date(text: str) -> tuple:
             except ValueError:
                 pass
 
-    # 6. Conference venue with year (e.g. ICML 2026, NeurIPS 2026, ICLR 2026)
+    # 6. Conference venue with year (e.g. ICML 2026, NeurIPS 2026, CVPR'23)
     conf_months = {
         'aaai': ('02', 2),
+        'eacl': ('03', 3),
         'iclr': ('05', 5),
+        'www': ('05', 5),
+        'icde': ('05', 5),
         'cvpr': ('06', 6),
+        'naacl': ('06', 6),
         'icml': ('07', 7),
+        'sigir': ('07', 7),
+        'tkde': ('07', 7),
         'acl': ('08', 8),
+        'ijcai': ('08', 8),
+        'kdd': ('08', 8),
         'eccv': ('09', 9),
         'ijcv': ('09', 9),
+        'neurips': ('09', 9),
+        'iccv': ('10', 10),
         'acm mm': ('10', 10),
         'colm': ('10', 10),
         'emnlp': ('11', 11),
-        'neurips': ('09', 9),
-        'tkde': ('07', 7),
     }
     lower_text = text.lower()
-    m_conf_yr = re.search(r'\b(202[4567])\b', text)
-    if m_conf_yr:
+    m_conf_yr = re.search(r'\b(20[0-2]\d)\b', text)
+    if not m_conf_yr:
+        m_short_conf = re.search(r"(?:cvpr|iclr|icml|neurips|eccv|iccv|acl|emnlp|aaai|colm|ijcai)\s*['’]\s*(\d{2})\b", lower_text)
+        if m_short_conf:
+            yr = 2000 + int(m_short_conf.group(1))
+        else:
+            yr = None
+    else:
         yr = int(m_conf_yr.group(1))
+
+    if yr is not None:
         for conf, (m_str, m_num) in conf_months.items():
-            if conf in lower_text:
+            if re.search(rf'\b{re.escape(conf)}\b', lower_text):
                 dt = datetime(yr, m_num, 1, tzinfo=timezone.utc)
                 if dt.timestamp() <= max_valid_ts:
                     return dt.timestamp(), f"{yr:04d}-{m_str}"
-        dt = datetime(yr, 6, 1, tzinfo=timezone.utc)
+
+    # 7. arXiv ID in link or text (e.g. arxiv.org/abs/2610.14558 -> 2026-10)
+    for src in (link or "", text):
+        m_ar = re.search(r'(?:arxiv\.org/(?:abs|pdf)/|arXiv\s*:?\s*)(\d{2})(0[1-9]|1[0-2])\.\d{4,5}', src, re.IGNORECASE)
+        if m_ar:
+            y = 2000 + int(m_ar.group(1))
+            m = int(m_ar.group(2))
+            dt = datetime(y, m, 1, tzinfo=timezone.utc)
+            if dt.timestamp() <= max_valid_ts:
+                return dt.timestamp(), f"{y:04d}-{m:02d}"
+
+    # 8. Bare year fallback (without inventing a month/day or returning now_dt)
+    if yr is not None:
+        dt = datetime(yr, 1, 1, tzinfo=timezone.utc)
         if dt.timestamp() <= max_valid_ts:
             return dt.timestamp(), f"{yr:04d}"
 
-    return now_dt.timestamp(), ""
+    return 0.0, ""
 
 
 def _extract_timestamp_from_text(text: str) -> float:
@@ -2462,13 +2497,16 @@ def build_events(results: list) -> list:
         if r.get("new_publications"):
             for pub in r["new_publications"]:
                 year = pub.get("year") or ""
+                venue = pub.get("publication") or ""
+                lk = pub.get("link") or r["url"]
                 text = _format_publication_event(pub)
+                ts, ds = _extract_timestamp_and_date(f"{venue} {year}", lk)
                 _add_event(
                     r,
                     text,
-                    pub.get("link") or r["url"],
-                    str(year) if year else "",
-                    _year_to_timestamp(year),
+                    lk,
+                    ds or (str(year) if year else ""),
+                    ts or _year_to_timestamp(year),
                     kind="paper",
                 )
             continue
@@ -2528,6 +2566,18 @@ def _strip_event_for_history(ev: dict) -> dict:
     return res
 
 
+def _sanitize_event_date(text: str, link: str, date_str: str, ts: float, result_type: str = "") -> tuple[str, float]:
+    """Re-derive date from text/link when stored date is missing or bare-year (fixes old '2026' defaults)."""
+    d = (date_str or "").strip()
+    if not d or re.fullmatch(r"\d{4}", d):
+        ts_new, ds_new = _extract_timestamp_and_date(text, link)
+        if ds_new:
+            return ds_new, ts_new
+        if d == "2026" and result_type != "changed":
+            return "", 0.0
+    return d, ts
+
+
 def load_events_history() -> list:
     if not EVENTS_HISTORY_PATH.exists():
         return []
@@ -2559,15 +2609,24 @@ def load_events_history() -> list:
             ev["scholar_url"] = cfg_entry.get("url", ev.get("scholar_url", ""))
             ev["watch"] = cfg_entry.get("watch", ev.get("watch", "general"))
 
-            # Filter out stale events prior to 2025
+            # Re-sanitize bare-year/missing dates before filtering stale <2025 events
+            ev_ds, ev_ts = _sanitize_event_date(
+                t, ev.get("link", ""), ev.get("date_str", ""), ev.get("timestamp") or 0.0, ev.get("result_type", "")
+            )
+            ev["date_str"] = ev_ds
+            ev["timestamp"] = ev_ts
+
+            # Filter out stale events prior to 2025 (or undated non-changed entries)
             d_str = ev.get("date_str", "")
-            m_yr = re.search(r'\b(202\d)\b', d_str)
+            m_yr = re.search(r'\b(20[0-2]\d)\b', d_str)
             ev_yr = int(m_yr.group(1)) if m_yr else None
             if not ev_yr:
                 ts_cand = ev.get("timestamp") or 0.0
                 if ts_cand > 0:
                     ev_yr = datetime.fromtimestamp(ts_cand, tz=timezone.utc).year
             if ev_yr and ev_yr < 2025:
+                continue
+            if not ev_yr and ev.get("result_type", "") != "changed":
                 continue
 
             t_clean = _clean_paper_entry(_clean_html(t))
@@ -2587,7 +2646,20 @@ def load_events_history() -> list:
                         continue
                     if _is_tag_or_noise_line(sub_clean, s) or _is_author_list_line(sub_clean) or _is_status_or_venue_line(sub_clean) or _is_bio_or_profile_line(sub_clean):
                         continue
+                    sub_ds, sub_ts = _sanitize_event_date(
+                        sub_clean, sub.get("link", ""), sub.get("date", ""), sub.get("timestamp") or 0.0, ev.get("result_type", "")
+                    )
+                    m_sub_yr = re.search(r'\b(20[0-2]\d)\b', sub_ds)
+                    sub_yr = int(m_sub_yr.group(1)) if m_sub_yr else (
+                        datetime.fromtimestamp(sub_ts, tz=timezone.utc).year if sub_ts > 0 else None
+                    )
+                    if sub_yr and sub_yr < 2025:
+                        continue
+                    if not sub_yr and ev.get("result_type", "") != "changed":
+                        continue
                     sub["text"] = sub_clean
+                    sub["date"] = sub_ds
+                    sub["timestamp"] = sub_ts
                     cleaned_subs.append(sub)
                 ev["sub_items"] = cleaned_subs
 
@@ -2686,11 +2758,11 @@ def backfill_missing_recent_events(merged: list, results: list, days: int = 30) 
         for e in candidates:
             ts = e.get("timestamp") or 0
             d_str = e.get("published", "") or ""
-            m_y = re.search(r"\b(202\d)\b", d_str)
+            m_y = re.search(r"\b(20[0-2]\d)\b", d_str)
             e_year = int(m_y.group(1)) if m_y else None
             if not e_year and ts > 0:
                 e_year = datetime.fromtimestamp(ts, tz=timezone.utc).year
-            if e_year and e_year < 2025:
+            if not e_year or e_year < 2025:
                 continue
             # Already in history: re-adding it would replace the stored event (and its sub_items).
             if (name, e.get("title", "").strip()) in known_texts:
@@ -2868,9 +2940,13 @@ def build_feed_items(events: list) -> list:
             seen.add(key)
             date_str, ts = normalize_date(it.get("date_str") or it.get("date") or "", it.get("timestamp") or 0.0)
             precision = _date_precision(date_str)
+            if precision == "unknown" or not ts:
+                continue
             sort_ts = ts
-            # Coarse dates (month/year) sort by when we first saw them, if that falls inside the period.
-            if precision in ("month", "year") and is_parent and first_seen_ts:
+            if precision == "year":
+                # Year-only items sort at the start of their year (in their own year group), never above dated month/day items.
+                sort_ts = datetime(int(date_str), 1, 1, tzinfo=timezone.utc).timestamp()
+            elif precision == "month" and is_parent and first_seen_ts:
                 lo, hi = _period_bounds(date_str, precision)
                 if lo <= first_seen_ts < hi:
                     sort_ts = first_seen_ts

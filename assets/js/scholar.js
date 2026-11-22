@@ -26,8 +26,10 @@
     return it.date || "—";
   }
 
-  function monthKey(ts) {
-    const d = new Date(ts * 1000);
+  function groupKey(it) {
+    if (it.precision === "year") return `${it.date}年（仅年份）`;
+    if (it.precision === "unknown" || !it.ts) return "时间未知";
+    const d = new Date(it.ts * 1000);
     return `${d.getUTCFullYear()}年${d.getUTCMonth() + 1}月`;
   }
 
@@ -56,7 +58,7 @@
 
     const groups = [];
     for (const it of visible) {
-      const key = monthKey(it.ts);
+      const key = groupKey(it);
       if (!groups.length || groups[groups.length - 1].key !== key) groups.push({ key, rows: [] });
       groups[groups.length - 1].rows.push(it);
     }
