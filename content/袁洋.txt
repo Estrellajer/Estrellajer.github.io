@@ -1,0 +1,6 @@
+TCSExam: Evaluating Frontier LLMs on the Full Range of TCS Research
+Yifan Luo, Zhengying Liu, Yang Yuan, Zhilin Yang, Andrew Chi-Chih Yao
+arXiv 2026
+Tensor Product Attention Is All You Need
+Yifan Zhang, Yifeng Liu, Huizhuo Yuan, Zhen Qin, Yang Yuan, Quanquan Gu
+neural information processing systems 2025

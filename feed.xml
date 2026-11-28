@@ -1,0 +1,807 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>学者动态</title>
+  <id>tag:estrellajer.github.io,2026:scholar</id>
+  <link href="https://estrellajer.github.io/scholar/"/>
+  <updated>2026-11-28T07:37:11.195909+00:00</updated>
+  <entry>
+    <title>苏剑林 - 科学空间 · Bytepiece 0.8.0：更高效的Unigram Tokenizer</title>
+    <link href="https://kexue.fm/archives/12024"/>
+    <id>tag:estrellajer.github.io,2026:scholar/苏剑林-科学空间-Bytepiece-0-8-0-更高效的Unigram-Tokenizer</id>
+    <updated>2026-11-28T00:00:00+00:00</updated>
+    <category term="博客"/>
+    <author><name>苏剑林 - 科学空间</name></author>
+  </entry>
+  <entry>
+    <title>Yixuan Tang · Designing Financial Text Embeddings · Information Systems Research</title>
+    <link href="https://yixuantt.github.io/"/>
+    <id>tag:estrellajer.github.io,2026:scholar/Yixuan-Tang-Designing-Financial-Text-Embeddings-Information-Systems-Research</id>
+    <updated>2026-11-26T00:00:00+00:00</updated>
+    <category term="论文"/>
+    <author><name>Yixuan Tang</name></author>
+  </entry>
+  <entry>
+    <title>Yixuan Tang · Dual AI Strategy and Firm Performance: New Insights by Inferring Firm AI Strategies from a Large Language Model Approach · Production and Operations Management</title>
+    <link href="https://yixuantt.github.io/"/>
+    <id>tag:estrellajer.github.io,2026:scholar/Yixuan-Tang-Dual-AI-Strategy-and-Firm-Performance-New-Insights-by-Inferring-Firm-AI-Strategies-from-a-Large-Language-Model-Approach-Production-and-Operations-Management</id>
+    <updated>2026-11-26T00:00:00+00:00</updated>
+    <category term="论文"/>
+    <author><name>Yixuan Tang</name></author>
+  </entry>
+  <entry>
+    <title>Yixuan Tang · FinVision: Multimodal AI for Visualizing Financial Narratives · Information Systems Research</title>
+    <link href="https://yixuantt.github.io/"/>
+    <id>tag:estrellajer.github.io,2026:scholar/Yixuan-Tang-FinVision-Multimodal-AI-for-Visualizing-Financial-Narratives-Information-Systems-Research</id>
+    <updated>2026-11-26T00:00:00+00:00</updated>
+    <category term="论文"/>
+    <author><name>Yixuan Tang</name></author>
+  </entry>
+  <entry>
+    <title>孙海龙 · We open-source Ling-3.2-air , a native multimodal model with 124B total / 5.5B active parameters and improved coding, agentic workflows, and visual reasoning. My work on multimodal coding helped lift its Vision2Web score to 80.73 , up from 57.69 for Ling-3.0-flash-VL. Release blog</title>
+    <link href="https://huggingface.co/inclusionAI/Ling-3.2-air"/>
+    <id>tag:estrellajer.github.io,2026:scholar/孙海龙-We-open-source-Ling-3-2-air-a-native-multimodal-model-with-124B-total-5-5B-active-parameters-and-improved-coding-agentic-workflows-and-visual-reasoning-My-work-on-multimodal-co</id>
+    <updated>2026-11-24T00:00:00+00:00</updated>
+    <category term="博客"/>
+    <author><name>孙海龙</name></author>
+  </entry>
+  <entry>
+    <title>苏剑林 - 科学空间 · Muon背后的优化理论：1. 全量、随机与动量</title>
+    <link href="https://kexue.fm/archives/12014"/>
+    <id>tag:estrellajer.github.io,2026:scholar/苏剑林-科学空间-Muon背后的优化理论-1-全量-随机与动量</id>
+    <updated>2026-11-23T00:00:00+00:00</updated>
+    <category term="博客"/>
+    <author><name>苏剑林 - 科学空间</name></author>
+  </entry>
+  <entry>
+    <title>David Noel Ng · Compressing Wikipedia with XOR, Popcount and SDOT</title>
+    <link href="https://dnhkng.github.io/posts/isa-net-compression/"/>
+    <id>tag:estrellajer.github.io,2026:scholar/David-Noel-Ng-Compressing-Wikipedia-with-XOR-Popcount-and-SDOT</id>
+    <updated>2026-11-22T00:00:00+00:00</updated>
+    <category term="博客"/>
+    <author><name>David Noel Ng</name></author>
+  </entry>
+  <entry>
+    <title>mengrennwpu · Kynvio: 新一代办公助手 - mengrennwpu</title>
+    <link href="https://www.cnblogs.com/mengrennwpu/p/23728038"/>
+    <id>tag:estrellajer.github.io,2026:scholar/mengrennwpu-Kynvio-新一代办公助手-mengrennwpu</id>
+    <updated>2026-11-20T00:00:00+00:00</updated>
+    <category term="博客"/>
+    <author><name>mengrennwpu</name></author>
+  </entry>
+  <entry>
+    <title>周大蔚 · EMNLP CRAM: Centroid-Routing and Adaptive MoE for Multimodal Continual Instruction Tuning Jun-Tao Tang, Zhen-Hao Xie, Yu-Cheng Shi, Da-Wei Zhou EMNLP. EMNLP 2026[ Media ]</title>
+    <link href="https://arxiv.org/abs/2606.02502"/>
+    <id>tag:estrellajer.github.io,2026:scholar/周大蔚-EMNLP-CRAM-Centroid-Routing-and-Adaptive-MoE-for-Multimodal-Continual-Instruction-Tuning-Jun-Tao-Tang-Zhen-Hao-Xie-Yu-Cheng-Shi-Da-Wei-Zhou-EMNLP-EMNLP-2026-Media-</id>
+    <updated>2026-11-19T00:00:00+00:00</updated>
+    <category term="论文"/>
+    <author><name>周大蔚</name></author>
+  </entry>
+  <entry>
+    <title>吴太强 · EMNLP 2026, Main Conference[ Blog ]</title>
+    <link href="https://arxiv.org/pdf/2602.20945"/>
+    <id>tag:estrellajer.github.io,2026:scholar/吴太强-EMNLP-2026-Main-Conference-Blog-</id>
+    <updated>2026-11-18T00:00:00+00:00</updated>
+    <category term="博客"/>
+    <author><name>吴太强</name></author>
+  </entry>
+  <entry>
+    <title>沈立 · MAPLE: Masked Adapter Prototype Learning for OOD generalization · The 2026 EMNLP (Main)</title>
+    <link href="https://scholar.google.com/citations?hl=en&amp;user=yVhgENIAAAAJ&amp;view_op=list_works&amp;sortby=pubdate"/>
+    <id>tag:estrellajer.github.io,2026:scholar/沈立-MAPLE-Masked-Adapter-Prototype-Learning-for-OOD-generalization-The-2026-EMNLP-Main-</id>
+    <updated>2026-11-18T00:00:00+00:00</updated>
+    <category term="论文"/>
+    <author><name>沈立</name></author>
+  </entry>
+  <entry>
+    <title>庄辉平 · Beyond Codebook Uniformity: Triplet-Level Metrics and Triplet-Driven Semantic IDs for Generative Retrieval · EMNLP 2026 Main Conference</title>
+    <link href="https://zhuanghp.github.io/2026-08-22-emnlp-main-paper/"/>
+    <id>tag:estrellajer.github.io,2026:scholar/庄辉平-Beyond-Codebook-Uniformity-Triplet-Level-Metrics-and-Triplet-Driven-Semantic-IDs-for-Generative-Retrieval-EMNLP-2026-Main-Conference</id>
+    <updated>2026-11-18T00:00:00+00:00</updated>
+    <category term="论文"/>
+    <author><name>庄辉平</name></author>
+  </entry>
+  <entry>
+    <title>苏剑林 - 科学空间 · 最佳学习率调度的变分估计</title>
+    <link href="https://kexue.fm/archives/12010"/>
+    <id>tag:estrellajer.github.io,2026:scholar/苏剑林-科学空间-最佳学习率调度的变分估计</id>
+    <updated>2026-11-17T00:00:00+00:00</updated>
+    <category term="博客"/>
+    <author><name>苏剑林 - 科学空间</name></author>
+  </entry>
+  <entry>
+    <title>杨恩能 · One paper on model merging has been accepted by IJCV 2026</title>
+    <link href="https://ennengyang.github.io/"/>
+    <id>tag:estrellajer.github.io,2026:scholar/杨恩能-One-paper-on-model-merging-has-been-accepted-by-IJCV-2026</id>
+    <updated>2026-11-14T00:00:00+00:00</updated>
+    <category term="动态"/>
+    <author><name>杨恩能</name></author>
+  </entry>
+  <entry>
+    <title>Nathan Lambert · Open-source AI without Jensen</title>
+    <link href="https://www.interconnects.ai/p/open-source-ai-without-jensen"/>
+    <id>tag:estrellajer.github.io,2026:scholar/Nathan-Lambert-Open-source-AI-without-Jensen</id>
+    <updated>2026-11-14T00:00:00+00:00</updated>
+    <category term="博客"/>
+    <author><name>Nathan Lambert</name></author>
+  </entry>
+  <entry>
+    <title>Thinking Machines Lab · End‑to‑End 4‑Bit Training</title>
+    <link href="https://thinkingmachines.ai/blog/"/>
+    <id>tag:estrellajer.github.io,2026:scholar/Thinking-Machines-Lab-End-to-End-4-Bit-Training</id>
+    <updated>2026-11-14T00:00:00+00:00</updated>
+    <category term="主页"/>
+    <author><name>Thinking Machines Lab</name></author>
+  </entry>
+  <entry>
+    <title>苏剑林 - 科学空间 · 让炼丹更科学一些（十一）：无调度学习率新思路</title>
+    <link href="https://kexue.fm/archives/12003"/>
+    <id>tag:estrellajer.github.io,2026:scholar/苏剑林-科学空间-让炼丹更科学一些-十一-无调度学习率新思路</id>
+    <updated>2026-11-09T00:00:00+00:00</updated>
+    <category term="博客"/>
+    <author><name>苏剑林 - 科学空间</name></author>
+  </entry>
+  <entry>
+    <title>袁洋 · TCSExam: Evaluating Frontier LLMs on the Full Range of TCS Research · arXiv, 2026</title>
+    <link href="https://arxiv.org/abs/2611.07962"/>
+    <id>tag:estrellajer.github.io,2026:scholar/袁洋-TCSExam-Evaluating-Frontier-LLMs-on-the-Full-Range-of-TCS-Research-arXiv-2026</id>
+    <updated>2026-11-05T00:00:00+00:00</updated>
+    <category term="论文"/>
+    <author><name>袁洋</name></author>
+  </entry>
+  <entry>
+    <title>Nathan Lambert · How big is the open model economy today</title>
+    <link href="https://www.interconnects.ai/p/how-well-can-we-measure-open-model"/>
+    <id>tag:estrellajer.github.io,2026:scholar/Nathan-Lambert-How-big-is-the-open-model-economy-today</id>
+    <updated>2026-11-04T00:00:00+00:00</updated>
+    <category term="博客"/>
+    <author><name>Nathan Lambert</name></author>
+  </entry>
+  <entry>
+    <title>苏剑林 - 科学空间 · 平均之路：从Attention到TTT</title>
+    <link href="https://kexue.fm/archives/11993"/>
+    <id>tag:estrellajer.github.io,2026:scholar/苏剑林-科学空间-平均之路-从Attention到TTT</id>
+    <updated>2026-11-01T00:00:00+00:00</updated>
+    <category term="博客"/>
+    <author><name>苏剑林 - 科学空间</name></author>
+  </entry>
+  <entry>
+    <title>孙海龙 · We introduce Ling-3.2-flash , a native multimodal model with 560B total / 25B active parameters . I led its multimodal coding efforts, achieving 85.86 on Vision2Web , surpassing Opus 5 (max) at 80.20 in our release evaluations</title>
+    <link href="https://x.com/AntLingAGI/status/2118428246664761379"/>
+    <id>tag:estrellajer.github.io,2026:scholar/孙海龙-We-introduce-Ling-3-2-flash-a-native-multimodal-model-with-560B-total-25B-active-parameters-I-led-its-multimodal-coding-efforts-achieving-85-86-on-Vision2Web-surpassing-Opus-5-</id>
+    <updated>2026-11-01T00:00:00+00:00</updated>
+    <category term="动态"/>
+    <author><name>孙海龙</name></author>
+  </entry>
+  <entry>
+    <title>Nathan Lambert · Was I wrong about open models &amp; cyber risks</title>
+    <link href="https://www.interconnects.ai/p/was-i-wrong-about-open-models-and"/>
+    <id>tag:estrellajer.github.io,2026:scholar/Nathan-Lambert-Was-I-wrong-about-open-models-cyber-risks</id>
+    <updated>2026-10-30T00:00:00+00:00</updated>
+    <category term="博客"/>
+    <author><name>Nathan Lambert</name></author>
+  </entry>
+  <entry>
+    <title>Chris Olah (colah) · Circuits Updates — October 2026</title>
+    <link href="https://transformer-circuits.pub/2026/october-update/index.html"/>
+    <id>tag:estrellajer.github.io,2026:scholar/Chris-Olah-colah-Circuits-Updates-October-2026</id>
+    <updated>2026-10-29T00:00:00+00:00</updated>
+    <category term="博客"/>
+    <author><name>Chris Olah (colah)</name></author>
+  </entry>
+  <entry>
+    <title>Nathan Lambert · Artificial Analysis v5 and the benchmarker's dilemma</title>
+    <link href="https://www.interconnects.ai/p/artificial-analysis-v5-and-the-benchmarkers"/>
+    <id>tag:estrellajer.github.io,2026:scholar/Nathan-Lambert-Artificial-Analysis-v5-and-the-benchmarker-s-dilemma</id>
+    <updated>2026-10-28T00:00:00+00:00</updated>
+    <category term="博客"/>
+    <author><name>Nathan Lambert</name></author>
+  </entry>
+  <entry>
+    <title>苏剑林 - 科学空间 · 从参数对称性到有效学习率</title>
+    <link href="https://kexue.fm/archives/11985"/>
+    <id>tag:estrellajer.github.io,2026:scholar/苏剑林-科学空间-从参数对称性到有效学习率</id>
+    <updated>2026-10-27T00:00:00+00:00</updated>
+    <category term="博客"/>
+    <author><name>苏剑林 - 科学空间</name></author>
+  </entry>
+  <entry>
+    <title>Nathan Lambert · Podcast: Kimi K3.1 Pro, the new cyber reality, and Muse musings</title>
+    <link href="https://www.interconnects.ai/p/podcast-kimi-k31-pro-the-new-cyber"/>
+    <id>tag:estrellajer.github.io,2026:scholar/Nathan-Lambert-Podcast-Kimi-K3-1-Pro-the-new-cyber-reality-and-Muse-musings</id>
+    <updated>2026-10-25T00:00:00+00:00</updated>
+    <category term="博客"/>
+    <author><name>Nathan Lambert</name></author>
+  </entry>
+  <entry>
+    <title>Nathan Lambert · Latest open artifacts (#25): DeepSeek V4.1 Flash 1017, American-made models, and new regulatory controls in the US &amp; China</title>
+    <link href="https://www.interconnects.ai/p/latest-open-artifacts-25-deepseek"/>
+    <id>tag:estrellajer.github.io,2026:scholar/Nathan-Lambert-Latest-open-artifacts-25-DeepSeek-V4-1-Flash-1017-American-made-models-and-new-regulatory-controls-in-the-US-China</id>
+    <updated>2026-10-20T00:00:00+00:00</updated>
+    <category term="博客"/>
+    <author><name>Nathan Lambert</name></author>
+  </entry>
+  <entry>
+    <title>Chengsong Huang · ProgramGym: Scaling Training Environments for Long-Horizon Program Reproduction Agents · arXiv 2610.13395</title>
+    <link href="https://arxiv.org/abs/2610.13395"/>
+    <id>tag:estrellajer.github.io,2026:scholar/Chengsong-Huang-ProgramGym-Scaling-Training-Environments-for-Long-Horizon-Program-Reproduction-Agents-arXiv-2610-13395</id>
+    <updated>2026-10-20T00:00:00+00:00</updated>
+    <category term="论文"/>
+    <author><name>Chengsong Huang</name></author>
+  </entry>
+  <entry>
+    <title>苏剑林 - 科学空间 · 连续化 Softmax Attention</title>
+    <link href="https://kexue.fm/archives/11980"/>
+    <id>tag:estrellajer.github.io,2026:scholar/苏剑林-科学空间-连续化-Softmax-Attention</id>
+    <updated>2026-10-19T00:00:00+00:00</updated>
+    <category term="博客"/>
+    <author><name>苏剑林 - 科学空间</name></author>
+  </entry>
+  <entry>
+    <title>Nathan Lambert · Meta shakes up the frontiers, open and closed</title>
+    <link href="https://www.interconnects.ai/p/meta-shakes-up-the-frontiers-open"/>
+    <id>tag:estrellajer.github.io,2026:scholar/Nathan-Lambert-Meta-shakes-up-the-frontiers-open-and-closed</id>
+    <updated>2026-10-17T00:00:00+00:00</updated>
+    <category term="博客"/>
+    <author><name>Nathan Lambert</name></author>
+  </entry>
+  <entry>
+    <title>苏剑林 - 科学空间 · 慢即是快：2. Adam的尽头还是Muon？</title>
+    <link href="https://kexue.fm/archives/11964"/>
+    <id>tag:estrellajer.github.io,2026:scholar/苏剑林-科学空间-慢即是快-2-Adam的尽头还是Muon-</id>
+    <updated>2026-10-15T00:00:00+00:00</updated>
+    <category term="博客"/>
+    <author><name>苏剑林 - 科学空间</name></author>
+  </entry>
+  <entry>
+    <title>周旭辉 (Xuhui Zhou) · Meta Superintelligence TBD Lab team model release ·</title>
+    <link href="https://xuhuiz.com/publications"/>
+    <id>tag:estrellajer.github.io,2026:scholar/周旭辉-Xuhui-Zhou-Meta-Superintelligence-TBD-Lab-team-model-release-</id>
+    <updated>2026-10-12T00:00:00+00:00</updated>
+    <category term="论文"/>
+    <author><name>周旭辉 (Xuhui Zhou)</name></author>
+  </entry>
+  <entry>
+    <title>Chongjie Si · PGSB: Pretrained-Guided Shared Basis for LoRA Model Merging · arXiv, 2026</title>
+    <link href="https://arxiv.org/abs/2610.14558"/>
+    <id>tag:estrellajer.github.io,2026:scholar/Chongjie-Si-PGSB-Pretrained-Guided-Shared-Basis-for-LoRA-Model-Merging-arXiv-2026</id>
+    <updated>2026-10-10T00:00:00+00:00</updated>
+    <category term="论文"/>
+    <author><name>Chongjie Si</name></author>
+  </entry>
+  <entry>
+    <title>苏俊杰 (Junjie Su) · 奇异值分解</title>
+    <link href="https://momoyeyu.github.io/posts/math-svd/"/>
+    <id>tag:estrellajer.github.io,2026:scholar/苏俊杰-Junjie-Su-奇异值分解</id>
+    <updated>2026-10-10T00:00:00+00:00</updated>
+    <category term="博客"/>
+    <author><name>苏俊杰 (Junjie Su)</name></author>
+  </entry>
+  <entry>
+    <title>苏剑林 - 科学空间 · 如何让GDN2更稳定一些？</title>
+    <link href="https://kexue.fm/archives/11945"/>
+    <id>tag:estrellajer.github.io,2026:scholar/苏剑林-科学空间-如何让GDN2更稳定一些-</id>
+    <updated>2026-10-09T00:00:00+00:00</updated>
+    <category term="博客"/>
+    <author><name>苏剑林 - 科学空间</name></author>
+  </entry>
+  <entry>
+    <title>Nathan Lambert · I expect rapid progress but not towards general superintelligence</title>
+    <link href="https://www.interconnects.ai/p/i-expect-rapid-progress-but-not-towards"/>
+    <id>tag:estrellajer.github.io,2026:scholar/Nathan-Lambert-I-expect-rapid-progress-but-not-towards-general-superintelligence</id>
+    <updated>2026-10-09T00:00:00+00:00</updated>
+    <category term="博客"/>
+    <author><name>Nathan Lambert</name></author>
+  </entry>
+  <entry>
+    <title>苏俊杰 (Junjie Su) · 矩阵分析基础</title>
+    <link href="https://momoyeyu.github.io/posts/math-matrix-analysis/"/>
+    <id>tag:estrellajer.github.io,2026:scholar/苏俊杰-Junjie-Su-矩阵分析基础</id>
+    <updated>2026-10-09T00:00:00+00:00</updated>
+    <category term="博客"/>
+    <author><name>苏俊杰 (Junjie Su)</name></author>
+  </entry>
+  <entry>
+    <title>苏俊杰 (Junjie Su) · 矩阵降维</title>
+    <link href="https://momoyeyu.github.io/posts/math-dimensionality-reduction/"/>
+    <id>tag:estrellajer.github.io,2026:scholar/苏俊杰-Junjie-Su-矩阵降维</id>
+    <updated>2026-10-08T00:00:00+00:00</updated>
+    <category term="博客"/>
+    <author><name>苏俊杰 (Junjie Su)</name></author>
+  </entry>
+  <entry>
+    <title>柠檬CC · 大语言模型研究18——线性回归视角看强化学习策略梯度</title>
+    <link href="https://limoncc.com/post/ef608130a2545b76/"/>
+    <id>tag:estrellajer.github.io,2026:scholar/柠檬CC-大语言模型研究18-线性回归视角看强化学习策略梯度</id>
+    <updated>2026-10-08T00:00:00+00:00</updated>
+    <category term="博客"/>
+    <author><name>柠檬CC</name></author>
+  </entry>
+  <entry>
+    <title>苏俊杰 (Junjie Su) · 位置编码技术的演进</title>
+    <link href="https://momoyeyu.github.io/posts/llm-position-encoding/"/>
+    <id>tag:estrellajer.github.io,2026:scholar/苏俊杰-Junjie-Su-位置编码技术的演进</id>
+    <updated>2026-10-07T00:00:00+00:00</updated>
+    <category term="博客"/>
+    <author><name>苏俊杰 (Junjie Su)</name></author>
+  </entry>
+  <entry>
+    <title>Nathan Lambert · The Cyber Risk Discourse is Broken</title>
+    <link href="https://www.interconnects.ai/p/the-cyber-risk-discourse-is-broken"/>
+    <id>tag:estrellajer.github.io,2026:scholar/Nathan-Lambert-The-Cyber-Risk-Discourse-is-Broken</id>
+    <updated>2026-10-06T00:00:00+00:00</updated>
+    <category term="博客"/>
+    <author><name>Nathan Lambert</name></author>
+  </entry>
+  <entry>
+    <title>王立远 · Continual Action Quality Assessment via Adaptive Manifold-Aligned Graph Regularization · IEEE TPAMI 2026</title>
+    <link href="https://arxiv.org/abs/2510.06842"/>
+    <id>tag:estrellajer.github.io,2026:scholar/王立远-Continual-Action-Quality-Assessment-via-Adaptive-Manifold-Aligned-Graph-Regularization-IEEE-TPAMI-2026</id>
+    <updated>2026-10-06T00:00:00+00:00</updated>
+    <category term="论文"/>
+    <author><name>王立远</name></author>
+  </entry>
+  <entry>
+    <title>王子峰 · Budget-Aware Tool-Use Enables Effective Agent Scaling · COLM, 2026</title>
+    <link href="https://arxiv.org/abs/2511.17006"/>
+    <id>tag:estrellajer.github.io,2026:scholar/王子峰-Budget-Aware-Tool-Use-Enables-Effective-Agent-Scaling-COLM-2026</id>
+    <updated>2026-10-06T00:00:00+00:00</updated>
+    <category term="论文"/>
+    <author><name>王子峰</name></author>
+  </entry>
+  <entry>
+    <title>苏俊杰 (Junjie Su) · 国产算力</title>
+    <link href="https://momoyeyu.github.io/posts/ai-infra-domestic-gpu/"/>
+    <id>tag:estrellajer.github.io,2026:scholar/苏俊杰-Junjie-Su-国产算力</id>
+    <updated>2026-10-04T00:00:00+00:00</updated>
+    <category term="博客"/>
+    <author><name>苏俊杰 (Junjie Su)</name></author>
+  </entry>
+  <entry>
+    <title>傅宇千 · Playing to the Grader: Early Stopping and Low-Quality Delivery in Frontier Coding Agents</title>
+    <link href="https://yuqianfu.notion.site/playing-to-the-grader"/>
+    <id>tag:estrellajer.github.io,2026:scholar/傅宇千-Playing-to-the-Grader-Early-Stopping-and-Low-Quality-Delivery-in-Frontier-Coding-Agents</id>
+    <updated>2026-10-04T00:00:00+00:00</updated>
+    <category term="博客"/>
+    <author><name>傅宇千</name></author>
+  </entry>
+  <entry>
+    <title>傅宇千 · Revisiting On-Policy Distillation: Three Typical Failure Modes and Repair Paths</title>
+    <link href="https://yuqianfu.notion.site/revisiting-opd"/>
+    <id>tag:estrellajer.github.io,2026:scholar/傅宇千-Revisiting-On-Policy-Distillation-Three-Typical-Failure-Modes-and-Repair-Paths</id>
+    <updated>2026-10-04T00:00:00+00:00</updated>
+    <category term="博客"/>
+    <author><name>傅宇千</name></author>
+  </entry>
+  <entry>
+    <title>傅宇千 · How Anthropic/OpenAI Monitor Advanced Agent Behavior</title>
+    <link href="https://yuqianfu.notion.site/how-anthropic-and-openai-monitor-frontier-agent"/>
+    <id>tag:estrellajer.github.io,2026:scholar/傅宇千-How-Anthropic-OpenAI-Monitor-Advanced-Agent-Behavior</id>
+    <updated>2026-10-04T00:00:00+00:00</updated>
+    <category term="博客"/>
+    <author><name>傅宇千</name></author>
+  </entry>
+  <entry>
+    <title>苏剑林 - 科学空间 · 通过微扰分析求解等式约束优化问题</title>
+    <link href="https://kexue.fm/archives/11928"/>
+    <id>tag:estrellajer.github.io,2026:scholar/苏剑林-科学空间-通过微扰分析求解等式约束优化问题</id>
+    <updated>2026-10-03T00:00:00+00:00</updated>
+    <category term="博客"/>
+    <author><name>苏剑林 - 科学空间</name></author>
+  </entry>
+  <entry>
+    <title>苏俊杰 (Junjie Su) · GPU 选型</title>
+    <link href="https://momoyeyu.github.io/posts/ai-infra-gpu-selection/"/>
+    <id>tag:estrellajer.github.io,2026:scholar/苏俊杰-Junjie-Su-GPU-选型</id>
+    <updated>2026-10-03T00:00:00+00:00</updated>
+    <category term="博客"/>
+    <author><name>苏俊杰 (Junjie Su)</name></author>
+  </entry>
+  <entry>
+    <title>苏俊杰 (Junjie Su) · GPU 性能评估</title>
+    <link href="https://momoyeyu.github.io/posts/ai-infra-gpu-metrics/"/>
+    <id>tag:estrellajer.github.io,2026:scholar/苏俊杰-Junjie-Su-GPU-性能评估</id>
+    <updated>2026-10-02T00:00:00+00:00</updated>
+    <category term="博客"/>
+    <author><name>苏俊杰 (Junjie Su)</name></author>
+  </entry>
+  <entry>
+    <title>孙海龙 · We introduce Ling-3.1-flash-1019 , scoring 44 on the Artificial Analysis Intelligence Index, up from 41 and on par with Kimi-K3 . We also open-source Ling-3.0-flash-Sante for healthcare</title>
+    <link href="https://x.com/AntLingAGI/status/2113226531522891851"/>
+    <id>tag:estrellajer.github.io,2026:scholar/孙海龙-We-introduce-Ling-3-1-flash-1019-scoring-44-on-the-Artificial-Analysis-Intelligence-Index-up-from-41-and-on-par-with-Kimi-K3-We-also-open-source-Ling-3-0-flash-Sante-for-health</id>
+    <updated>2026-10-01T00:00:00+00:00</updated>
+    <category term="动态"/>
+    <author><name>孙海龙</name></author>
+  </entry>
+  <entry>
+    <title>孙海龙 · We introduce Ling-3.1-flash , a 560B MoE model with 25B active parameters for coding, reasoning, and agentic tasks, scoring 41 on the Artificial Analysis Intelligence Index</title>
+    <link href="https://huggingface.co/inclusionAI/Ling-3.1-flash"/>
+    <id>tag:estrellajer.github.io,2026:scholar/孙海龙-We-introduce-Ling-3-1-flash-a-560B-MoE-model-with-25B-active-parameters-for-coding-reasoning-and-agentic-tasks-scoring-41-on-the-Artificial-Analysis-Intelligence-Index</id>
+    <updated>2026-10-01T00:00:00+00:00</updated>
+    <category term="动态"/>
+    <author><name>孙海龙</name></author>
+  </entry>
+  <entry>
+    <title>Chengsong Huang · Long-Horizon-Terminal-Bench 2.0: Automating Diverse · arXiv 2610.14146</title>
+    <link href="https://arxiv.org/abs/2610.14146"/>
+    <id>tag:estrellajer.github.io,2026:scholar/Chengsong-Huang-Long-Horizon-Terminal-Bench-2-0-Automating-Diverse-arXiv-2610-14146</id>
+    <updated>2026-10-01T00:00:00+00:00</updated>
+    <category term="论文"/>
+    <author><name>Chengsong Huang</name></author>
+  </entry>
+  <entry>
+    <title>Chengsong Huang · Questioning the Questions: Sustaining Self-Evolution in Reasoning Models · arXiv 2610.04299</title>
+    <link href="https://arxiv.org/abs/2610.04299"/>
+    <id>tag:estrellajer.github.io,2026:scholar/Chengsong-Huang-Questioning-the-Questions-Sustaining-Self-Evolution-in-Reasoning-Models-arXiv-2610-04299</id>
+    <updated>2026-10-01T00:00:00+00:00</updated>
+    <category term="论文"/>
+    <author><name>Chengsong Huang</name></author>
+  </entry>
+  <entry>
+    <title>Chengsong Huang · Scaling Trajectories for Complex Tasks through Recursive Self-Rewrite · arXiv 2610.02826</title>
+    <link href="https://arxiv.org/abs/2610.02826"/>
+    <id>tag:estrellajer.github.io,2026:scholar/Chengsong-Huang-Scaling-Trajectories-for-Complex-Tasks-through-Recursive-Self-Rewrite-arXiv-2610-02826</id>
+    <updated>2026-10-01T00:00:00+00:00</updated>
+    <category term="论文"/>
+    <author><name>Chengsong Huang</name></author>
+  </entry>
+  <entry>
+    <title>苏俊杰 (Junjie Su) · NVIDIA GPU 谱系</title>
+    <link href="https://momoyeyu.github.io/posts/ai-infra-gpu-lineup/"/>
+    <id>tag:estrellajer.github.io,2026:scholar/苏俊杰-Junjie-Su-NVIDIA-GPU-谱系</id>
+    <updated>2026-10-01T00:00:00+00:00</updated>
+    <category term="博客"/>
+    <author><name>苏俊杰 (Junjie Su)</name></author>
+  </entry>
+  <entry>
+    <title>王立远 · Beyond Belief Nesting: Rethinking Higher-Order Theory of Mind in Large Language Models · arXiv 2026</title>
+    <link href="https://arxiv.org/pdf/2610.17777"/>
+    <id>tag:estrellajer.github.io,2026:scholar/王立远-Beyond-Belief-Nesting-Rethinking-Higher-Order-Theory-of-Mind-in-Large-Language-Models-arXiv-2026</id>
+    <updated>2026-10-01T00:00:00+00:00</updated>
+    <category term="论文"/>
+    <author><name>王立远</name></author>
+  </entry>
+  <entry>
+    <title>冯钰捷 (Yujie Feng) · One paper has been accepted to IEEE Transactions on Mobile Computing</title>
+    <link href="https://woodscene.github.io/"/>
+    <id>tag:estrellajer.github.io,2026:scholar/冯钰捷-Yujie-Feng-One-paper-has-been-accepted-to-IEEE-Transactions-on-Mobile-Computing</id>
+    <updated>2026-10-01T00:00:00+00:00</updated>
+    <category term="动态"/>
+    <author><name>冯钰捷 (Yujie Feng)</name></author>
+  </entry>
+  <entry>
+    <title>苏俊杰 (Junjie Su) · 一文搞懂归一化技术</title>
+    <link href="https://momoyeyu.github.io/posts/llm-normalization/"/>
+    <id>tag:estrellajer.github.io,2026:scholar/苏俊杰-Junjie-Su-一文搞懂归一化技术</id>
+    <updated>2026-09-27T00:00:00+00:00</updated>
+    <category term="博客"/>
+    <author><name>苏俊杰 (Junjie Su)</name></author>
+  </entry>
+  <entry>
+    <title>柠檬CC · 强化学习讲义2——MiMoV2.6组级智能体评分</title>
+    <link href="https://limoncc.com/post/a2cf7f69fb416ea5/"/>
+    <id>tag:estrellajer.github.io,2026:scholar/柠檬CC-强化学习讲义2-MiMoV2-6组级智能体评分</id>
+    <updated>2026-09-27T00:00:00+00:00</updated>
+    <category term="博客"/>
+    <author><name>柠檬CC</name></author>
+  </entry>
+  <entry>
+    <title>张逸飞 (Yifei Zhang) · Machine unlearning via task simplex arithmetic · NeurIPS 2026</title>
+    <link href="https://scholar.google.com/citations?hl=en&amp;user=DmwXESQAAAAJ&amp;view_op=list_works&amp;sortby=pubdate"/>
+    <id>tag:estrellajer.github.io,2026:scholar/张逸飞-Yifei-Zhang-Machine-unlearning-via-task-simplex-arithmetic-NeurIPS-2026</id>
+    <updated>2026-09-25T00:00:00+00:00</updated>
+    <category term="论文"/>
+    <author><name>张逸飞 (Yifei Zhang)</name></author>
+  </entry>
+  <entry>
+    <title>张逸飞 (Yifei Zhang) · CrossSpectra: exploiting cross-layer smoothness for parameter-efficient fine-tuning · NeurIPS 2026</title>
+    <link href="https://scholar.google.com/citations?hl=en&amp;user=DmwXESQAAAAJ&amp;view_op=list_works&amp;sortby=pubdate"/>
+    <id>tag:estrellajer.github.io,2026:scholar/张逸飞-Yifei-Zhang-CrossSpectra-exploiting-cross-layer-smoothness-for-parameter-efficient-fine-tuning-NeurIPS-2026</id>
+    <updated>2026-09-25T00:00:00+00:00</updated>
+    <category term="论文"/>
+    <author><name>张逸飞 (Yifei Zhang)</name></author>
+  </entry>
+  <entry>
+    <title>周嘉欢 · Mitigate Catastrophic Remembering via Continual Self-Paced Dual-Knowledge Purification for Noisy Lifelong Person Re-Identification · TPAMI 2026</title>
+    <link href="https://zhoujiahuan1991.github.io/student_pages/pubs/xkl/2026%20TPAMI%20Mitigate%20Catastrophic%20Remembering%20via%20Continual%20Self-Paced%20Dual-Knowledge%20Purification%20for%20Noisy%20Lifelong%20Person%20Re-Identification.pdf"/>
+    <id>tag:estrellajer.github.io,2026:scholar/周嘉欢-Mitigate-Catastrophic-Remembering-via-Continual-Self-Paced-Dual-Knowledge-Purification-for-Noisy-Lifelong-Person-Re-Identification-TPAMI-2026</id>
+    <updated>2026-09-25T00:00:00+00:00</updated>
+    <category term="论文"/>
+    <author><name>周嘉欢</name></author>
+  </entry>
+  <entry>
+    <title>周嘉欢 · Hyper-LLaVA: Hyperbolic Uncertainty-aware Modality-Balanced Routing for Multimodal Continual Instruction Tuning · ICML 2026</title>
+    <link href="https://zhoujiahuan1991.github.io/student_pages/pubs/xkl/2026%20ICML%20Hyper-LLaVA%20Hyperbolic%20Uncertainty-aware%20Modality-Balanced%20Routing%20for%20Multimodal%20Continual%20Instruction%20Tuning.pdf"/>
+    <id>tag:estrellajer.github.io,2026:scholar/周嘉欢-Hyper-LLaVA-Hyperbolic-Uncertainty-aware-Modality-Balanced-Routing-for-Multimodal-Continual-Instruction-Tuning-ICML-2026</id>
+    <updated>2026-09-25T00:00:00+00:00</updated>
+    <category term="论文"/>
+    <author><name>周嘉欢</name></author>
+  </entry>
+  <entry>
+    <title>周嘉欢 · 3R-Adapter: Retrieval, Rewiring, and Refinement for Efficient Adaptation of 3D Reconstruction Model · NeurIPS 2026, Spotlight</title>
+    <link href="https://zhoujiahuan1991.github.io/"/>
+    <id>tag:estrellajer.github.io,2026:scholar/周嘉欢-3R-Adapter-Retrieval-Rewiring-and-Refinement-for-Efficient-Adaptation-of-3D-Reconstruction-Model-NeurIPS-2026-Spotlight</id>
+    <updated>2026-09-25T00:00:00+00:00</updated>
+    <category term="论文"/>
+    <author><name>周嘉欢</name></author>
+  </entry>
+  <entry>
+    <title>周嘉欢 · HypMoE-ReID: Hyperspherical Mixture-of-Experts for Large Scale Person Re-Identification · NeurIPS 2026</title>
+    <link href="https://zhoujiahuan1991.github.io/"/>
+    <id>tag:estrellajer.github.io,2026:scholar/周嘉欢-HypMoE-ReID-Hyperspherical-Mixture-of-Experts-for-Large-Scale-Person-Re-Identification-NeurIPS-2026</id>
+    <updated>2026-09-25T00:00:00+00:00</updated>
+    <category term="论文"/>
+    <author><name>周嘉欢</name></author>
+  </entry>
+  <entry>
+    <title>周嘉欢 · Cross-Domain Knowledge Separation and Positive Transmission for Noisy Domain Incremental Learning · NeurIPS 2026</title>
+    <link href="https://zhoujiahuan1991.github.io/"/>
+    <id>tag:estrellajer.github.io,2026:scholar/周嘉欢-Cross-Domain-Knowledge-Separation-and-Positive-Transmission-for-Noisy-Domain-Incremental-Learning-NeurIPS-2026</id>
+    <updated>2026-09-25T00:00:00+00:00</updated>
+    <category term="论文"/>
+    <author><name>周嘉欢</name></author>
+  </entry>
+  <entry>
+    <title>周嘉欢 · MuLaCover: Flexible Cover Song Generation via Symbolic Tonal Control · NeurIPS 2026</title>
+    <link href="https://zhoujiahuan1991.github.io/"/>
+    <id>tag:estrellajer.github.io,2026:scholar/周嘉欢-MuLaCover-Flexible-Cover-Song-Generation-via-Symbolic-Tonal-Control-NeurIPS-2026</id>
+    <updated>2026-09-25T00:00:00+00:00</updated>
+    <category term="论文"/>
+    <author><name>周嘉欢</name></author>
+  </entry>
+  <entry>
+    <title>周嘉欢 · RotVLA: Rotational Latent Action for Vision-Language-Action Model · NeurIPS 2026</title>
+    <link href="https://zhoujiahuan1991.github.io/"/>
+    <id>tag:estrellajer.github.io,2026:scholar/周嘉欢-RotVLA-Rotational-Latent-Action-for-Vision-Language-Action-Model-NeurIPS-2026</id>
+    <updated>2026-09-25T00:00:00+00:00</updated>
+    <category term="论文"/>
+    <author><name>周嘉欢</name></author>
+  </entry>
+  <entry>
+    <title>周嘉欢 · GAPrompt++: Multi-Granular Geometry-Aware Point Cloud Prompt for 3D Vision Model · TPAMI 2026</title>
+    <link href="https://zhoujiahuan1991.github.io/pub/TPAMI2026_GAPromptPlusPlus.pdf"/>
+    <id>tag:estrellajer.github.io,2026:scholar/周嘉欢-GAPrompt-Multi-Granular-Geometry-Aware-Point-Cloud-Prompt-for-3D-Vision-Model-TPAMI-2026</id>
+    <updated>2026-09-25T00:00:00+00:00</updated>
+    <category term="论文"/>
+    <author><name>周嘉欢</name></author>
+  </entry>
+  <entry>
+    <title>周嘉欢 · DG-Force: Disentangling and Gathering Forensic Cues is Needed for Image Manipulation Localization · ECCV 2026</title>
+    <link href="https://zhoujiahuan1991.github.io/"/>
+    <id>tag:estrellajer.github.io,2026:scholar/周嘉欢-DG-Force-Disentangling-and-Gathering-Forensic-Cues-is-Needed-for-Image-Manipulation-Localization-ECCV-2026</id>
+    <updated>2026-09-25T00:00:00+00:00</updated>
+    <category term="论文"/>
+    <author><name>周嘉欢</name></author>
+  </entry>
+  <entry>
+    <title>周嘉欢 · SCORE: SubDistribution-aware Collaborative Knowledge Reinforcing for Cloth-Hybrid Lifelong Person Re-Identification · ECCV 2026</title>
+    <link href="https://zhoujiahuan1991.github.io/"/>
+    <id>tag:estrellajer.github.io,2026:scholar/周嘉欢-SCORE-SubDistribution-aware-Collaborative-Knowledge-Reinforcing-for-Cloth-Hybrid-Lifelong-Person-Re-Identification-ECCV-2026</id>
+    <updated>2026-09-25T00:00:00+00:00</updated>
+    <category term="论文"/>
+    <author><name>周嘉欢</name></author>
+  </entry>
+  <entry>
+    <title>Hao Zhu (朱昊) · CrossSpectra: exploiting cross-layer smoothness for parameter-efficient fine-tuning · NeurIPS 2026</title>
+    <link href="https://scholar.google.com/citations?hl=en&amp;user=cpee-44AAAAJ&amp;view_op=list_works&amp;sortby=pubdate"/>
+    <id>tag:estrellajer.github.io,2026:scholar/Hao-Zhu-朱昊-CrossSpectra-exploiting-cross-layer-smoothness-for-parameter-efficient-fine-tuning-NeurIPS-2026</id>
+    <updated>2026-09-25T00:00:00+00:00</updated>
+    <category term="论文"/>
+    <author><name>Hao Zhu (朱昊)</name></author>
+  </entry>
+  <entry>
+    <title>周大蔚 · Dynamic Cross-Modal Prompt Generation for Multimodal Continual Instruction Tuning · NeurIPS 2026</title>
+    <link href="https://arxiv.org/abs/2605.10765"/>
+    <id>tag:estrellajer.github.io,2026:scholar/周大蔚-Dynamic-Cross-Modal-Prompt-Generation-for-Multimodal-Continual-Instruction-Tuning-NeurIPS-2026</id>
+    <updated>2026-09-24T00:00:00+00:00</updated>
+    <category term="论文"/>
+    <author><name>周大蔚</name></author>
+  </entry>
+  <entry>
+    <title>周大蔚 · Hierarchical Semantic Tree Anchoring for CLIP-Based Class-Incremental Learning · NeurIPS 2026</title>
+    <link href="https://arxiv.org/abs/2511.15633"/>
+    <id>tag:estrellajer.github.io,2026:scholar/周大蔚-Hierarchical-Semantic-Tree-Anchoring-for-CLIP-Based-Class-Incremental-Learning-NeurIPS-2026</id>
+    <updated>2026-09-24T00:00:00+00:00</updated>
+    <category term="论文"/>
+    <author><name>周大蔚</name></author>
+  </entry>
+  <entry>
+    <title>苏俊杰 (Junjie Su) · MoE 技术原理</title>
+    <link href="https://momoyeyu.github.io/posts/llm-moe/"/>
+    <id>tag:estrellajer.github.io,2026:scholar/苏俊杰-Junjie-Su-MoE-技术原理</id>
+    <updated>2026-09-23T00:00:00+00:00</updated>
+    <category term="博客"/>
+    <author><name>苏俊杰 (Junjie Su)</name></author>
+  </entry>
+  <entry>
+    <title>柠檬CC · 强化学习讲义1——RL-for-LLM技术选择决策图Tricks-or-Traps</title>
+    <link href="https://limoncc.com/post/e2dd286f4b3be253/"/>
+    <id>tag:estrellajer.github.io,2026:scholar/柠檬CC-强化学习讲义1-RL-for-LLM技术选择决策图Tricks-or-Traps</id>
+    <updated>2026-09-23T00:00:00+00:00</updated>
+    <category term="博客"/>
+    <author><name>柠檬CC</name></author>
+  </entry>
+  <entry>
+    <title>Nathan Lambert · Debating RSI, the US-China Gap, and Jaggedness with JS Denain of Epoch AI</title>
+    <link href="https://www.interconnects.ai/p/debating-rsi-the-us-china-gap-and"/>
+    <id>tag:estrellajer.github.io,2026:scholar/Nathan-Lambert-Debating-RSI-the-US-China-Gap-and-Jaggedness-with-JS-Denain-of-Epoch-AI</id>
+    <updated>2026-09-22T00:00:00+00:00</updated>
+    <category term="博客"/>
+    <author><name>Nathan Lambert</name></author>
+  </entry>
+  <entry>
+    <title>mengrennwpu · LLM论文研读：Trace as State——把思考过程放到问题之前，真的能让大模型更会推理吗？ - mengrennwpu</title>
+    <link href="https://www.cnblogs.com/mengrennwpu/p/22997077"/>
+    <id>tag:estrellajer.github.io,2026:scholar/mengrennwpu-LLM论文研读-Trace-as-State-把思考过程放到问题之前-真的能让大模型更会推理吗-mengrennwpu</id>
+    <updated>2026-09-16T00:00:00+00:00</updated>
+    <category term="博客"/>
+    <author><name>mengrennwpu</name></author>
+  </entry>
+  <entry>
+    <title>柠檬CC · 大语言模型研究10——RubricRL实践</title>
+    <link href="https://limoncc.com/post/793a20286198dbac/"/>
+    <id>tag:estrellajer.github.io,2026:scholar/柠檬CC-大语言模型研究10-RubricRL实践</id>
+    <updated>2026-09-16T00:00:00+00:00</updated>
+    <category term="博客"/>
+    <author><name>柠檬CC</name></author>
+  </entry>
+  <entry>
+    <title>孙海龙 · Open-sourced Ling-3.0-flash-Fin and FinFIRST for verifiable financial research agents</title>
+    <link href="https://huggingface.co/inclusionAI/Ling-3.0-flash-Fin"/>
+    <id>tag:estrellajer.github.io,2026:scholar/孙海龙-Open-sourced-Ling-3-0-flash-Fin-and-FinFIRST-for-verifiable-financial-research-agents</id>
+    <updated>2026-09-10T00:00:00+00:00</updated>
+    <category term="博客"/>
+    <author><name>孙海龙</name></author>
+  </entry>
+  <entry>
+    <title>David Noel Ng · Teaching an M4 CPU to Tell Stories with XOR, Popcount and SDOT</title>
+    <link href="https://dnhkng.github.io/posts/m4-tinystories/"/>
+    <id>tag:estrellajer.github.io,2026:scholar/David-Noel-Ng-Teaching-an-M4-CPU-to-Tell-Stories-with-XOR-Popcount-and-SDOT</id>
+    <updated>2026-09-10T00:00:00+00:00</updated>
+    <category term="博客"/>
+    <author><name>David Noel Ng</name></author>
+  </entry>
+  <entry>
+    <title>刘子铭 (Ziming Liu) · Six Bets on Auto-Research</title>
+    <link href="https://kindxiaoming.github.io/blog/2026/six-bets-auto-research/"/>
+    <id>tag:estrellajer.github.io,2026:scholar/刘子铭-Ziming-Liu-Six-Bets-on-Auto-Research</id>
+    <updated>2026-09-09T00:00:00+00:00</updated>
+    <category term="博客"/>
+    <author><name>刘子铭 (Ziming Liu)</name></author>
+  </entry>
+  <entry>
+    <title>Yixuan Tang · Crowded in B-Space: Calibrating Shared Directions for LoRA Merging · Conference on Neural Information Processing Systems (NeurIPS)</title>
+    <link href="https://arxiv.org/abs/2604.16826"/>
+    <id>tag:estrellajer.github.io,2026:scholar/Yixuan-Tang-Crowded-in-B-Space-Calibrating-Shared-Directions-for-LoRA-Merging-Conference-on-Neural-Information-Processing-Systems-NeurIPS-</id>
+    <updated>2026-09-01T00:00:00+00:00</updated>
+    <category term="论文"/>
+    <author><name>Yixuan Tang</name></author>
+  </entry>
+  <entry>
+    <title>Yixuan Tang · SR-GRPO: Stable Rank as an Intrinsic Geometric Reward for Large Language Model Alignment · Conference on Neural Information Processing Systems (NeurIPS)</title>
+    <link href="https://arxiv.org/abs/2512.02807"/>
+    <id>tag:estrellajer.github.io,2026:scholar/Yixuan-Tang-SR-GRPO-Stable-Rank-as-an-Intrinsic-Geometric-Reward-for-Large-Language-Model-Alignment-Conference-on-Neural-Information-Processing-Systems-NeurIPS-</id>
+    <updated>2026-09-01T00:00:00+00:00</updated>
+    <category term="论文"/>
+    <author><name>Yixuan Tang</name></author>
+  </entry>
+  <entry>
+    <title>孙海龙 · Our team released Ling-3.0-flash-VL and Ling-3.0-flash-Sante , extending Ling 3.0 to visual agents and healthcare</title>
+    <link href="https://x.com/AntLingAGI/status/2095935971556782372"/>
+    <id>tag:estrellajer.github.io,2026:scholar/孙海龙-Our-team-released-Ling-3-0-flash-VL-and-Ling-3-0-flash-Sante-extending-Ling-3-0-to-visual-agents-and-healthcare</id>
+    <updated>2026-09-01T00:00:00+00:00</updated>
+    <category term="动态"/>
+    <author><name>孙海龙</name></author>
+  </entry>
+  <entry>
+    <title>庄辉平 · X-SGS: Safe and Generalizable Gaussian Splatting with X-dimensional Watermarks · ECCV 2026</title>
+    <link href="https://openreview.net/forum?id=swmf7Wuv3o"/>
+    <id>tag:estrellajer.github.io,2026:scholar/庄辉平-X-SGS-Safe-and-Generalizable-Gaussian-Splatting-with-X-dimensional-Watermarks-ECCV-2026</id>
+    <updated>2026-09-01T00:00:00+00:00</updated>
+    <category term="论文"/>
+    <author><name>庄辉平</name></author>
+  </entry>
+  <entry>
+    <title>庄辉平 · AnaPFL: When Closed-Form Solutions · ECCV 2026</title>
+    <link href="https://openreview.net/forum?id=QINxiI8jrF"/>
+    <id>tag:estrellajer.github.io,2026:scholar/庄辉平-AnaPFL-When-Closed-Form-Solutions-ECCV-2026</id>
+    <updated>2026-09-01T00:00:00+00:00</updated>
+    <category term="论文"/>
+    <author><name>庄辉平</name></author>
+  </entry>
+  <entry>
+    <title>庄辉平 · HyperSkill: Multi-Modal Skill Learning on the Unit Hypersphere · NeurIPS 2026</title>
+    <link href="https://zhuanghp.github.io/2026-09-28-neurips-paper/"/>
+    <id>tag:estrellajer.github.io,2026:scholar/庄辉平-HyperSkill-Multi-Modal-Skill-Learning-on-the-Unit-Hypersphere-NeurIPS-2026</id>
+    <updated>2026-09-01T00:00:00+00:00</updated>
+    <category term="论文"/>
+    <author><name>庄辉平</name></author>
+  </entry>
+  <entry>
+    <title>杨恩能 · Three of our papers have been accepted by NeurIPS 2026</title>
+    <link href="https://ennengyang.github.io/"/>
+    <id>tag:estrellajer.github.io,2026:scholar/杨恩能-Three-of-our-papers-have-been-accepted-by-NeurIPS-2026</id>
+    <updated>2026-09-01T00:00:00+00:00</updated>
+    <category term="动态"/>
+    <author><name>杨恩能</name></author>
+  </entry>
+  <entry>
+    <title>Chengsong Huang · RRSI: Regularized Recursive Self-Improvement of Agent Harnesses · arXiv 2609.24972</title>
+    <link href="https://arxiv.org/abs/2609.24972"/>
+    <id>tag:estrellajer.github.io,2026:scholar/Chengsong-Huang-RRSI-Regularized-Recursive-Self-Improvement-of-Agent-Harnesses-arXiv-2609-24972</id>
+    <updated>2026-09-01T00:00:00+00:00</updated>
+    <category term="论文"/>
+    <author><name>Chengsong Huang</name></author>
+  </entry>
+  <entry>
+    <title>Chengsong Huang · G-Zero: Self-Play for Open-Ended Generation from Zero Data · NeurIPS Spotlight 2026</title>
+    <link href="https://arxiv.org/abs/2605.09959"/>
+    <id>tag:estrellajer.github.io,2026:scholar/Chengsong-Huang-G-Zero-Self-Play-for-Open-Ended-Generation-from-Zero-Data-NeurIPS-Spotlight-2026</id>
+    <updated>2026-09-01T00:00:00+00:00</updated>
+    <category term="论文"/>
+    <author><name>Chengsong Huang</name></author>
+  </entry>
+  <entry>
+    <title>Chengsong Huang · LLMs Improving LLMs: Agentic Discovery for Test-Time Scaling · NeurIPS 2026</title>
+    <link href="https://arxiv.org/abs/2605.08083"/>
+    <id>tag:estrellajer.github.io,2026:scholar/Chengsong-Huang-LLMs-Improving-LLMs-Agentic-Discovery-for-Test-Time-Scaling-NeurIPS-2026</id>
+    <updated>2026-09-01T00:00:00+00:00</updated>
+    <category term="论文"/>
+    <author><name>Chengsong Huang</name></author>
+  </entry>
+  <entry>
+    <title>Chengsong Huang · You Only Need Minimal RLVR Training: Extrapolating LLMs via Rank-1 Trajectories · NeurIPS 2026</title>
+    <link href="https://arxiv.org/abs/2605.21468"/>
+    <id>tag:estrellajer.github.io,2026:scholar/Chengsong-Huang-You-Only-Need-Minimal-RLVR-Training-Extrapolating-LLMs-via-Rank-1-Trajectories-NeurIPS-2026</id>
+    <updated>2026-09-01T00:00:00+00:00</updated>
+    <category term="论文"/>
+    <author><name>Chengsong Huang</name></author>
+  </entry>
+  <entry>
+    <title>Chengsong Huang · TTCS: Test-Time Curriculum Synthesis for Self-Evolving · NeurIPS 2026</title>
+    <link href="https://arxiv.org/abs/2601.22628"/>
+    <id>tag:estrellajer.github.io,2026:scholar/Chengsong-Huang-TTCS-Test-Time-Curriculum-Synthesis-for-Self-Evolving-NeurIPS-2026</id>
+    <updated>2026-09-01T00:00:00+00:00</updated>
+    <category term="论文"/>
+    <author><name>Chengsong Huang</name></author>
+  </entry>
+  <entry>
+    <title>周旭辉 (Xuhui Zhou) · OdysSim: Building Foundation Models for Human Behavior Simulation · NeurIPS 2026</title>
+    <link href="https://xuhuiz.com/publications"/>
+    <id>tag:estrellajer.github.io,2026:scholar/周旭辉-Xuhui-Zhou-OdysSim-Building-Foundation-Models-for-Human-Behavior-Simulation-NeurIPS-2026</id>
+    <updated>2026-09-01T00:00:00+00:00</updated>
+    <category term="论文"/>
+    <author><name>周旭辉 (Xuhui Zhou)</name></author>
+  </entry>
+  <entry>
+    <title>王立远 · SLCA++: Unleash the Power of Sequential Fine-tuning for Continual Learning with Pre-training · IJCV 2026</title>
+    <link href="https://arxiv.org/abs/2408.08295"/>
+    <id>tag:estrellajer.github.io,2026:scholar/王立远-SLCA-Unleash-the-Power-of-Sequential-Fine-tuning-for-Continual-Learning-with-Pre-training-IJCV-2026</id>
+    <updated>2026-09-01T00:00:00+00:00</updated>
+    <category term="论文"/>
+    <author><name>王立远</name></author>
+  </entry>
+  <entry>
+    <title>王立远 · Brain-inspired Hierarchical Modularity for General Continual Learning · arXiv 2026</title>
+    <link href="https://arxiv.org/abs/2609.25146"/>
+    <id>tag:estrellajer.github.io,2026:scholar/王立远-Brain-inspired-Hierarchical-Modularity-for-General-Continual-Learning-arXiv-2026</id>
+    <updated>2026-09-01T00:00:00+00:00</updated>
+    <category term="论文"/>
+    <author><name>王立远</name></author>
+  </entry>
+  <entry>
+    <title>王立远 · ProCA: Progressive Contrastive Alignment for Robust EEG Visual Decoding · arXiv 2026</title>
+    <link href="https://arxiv.org/abs/2609.05094"/>
+    <id>tag:estrellajer.github.io,2026:scholar/王立远-ProCA-Progressive-Contrastive-Alignment-for-Robust-EEG-Visual-Decoding-arXiv-2026</id>
+    <updated>2026-09-01T00:00:00+00:00</updated>
+    <category term="论文"/>
+    <author><name>王立远</name></author>
+  </entry>
+  <entry>
+    <title>王子峰 · RRSI: Regularized Recursive Self-Improvement of Agent Harnesses · arXiv, 2026</title>
+    <link href="https://arxiv.org/abs/2609.24972"/>
+    <id>tag:estrellajer.github.io,2026:scholar/王子峰-RRSI-Regularized-Recursive-Self-Improvement-of-Agent-Harnesses-arXiv-2026</id>
+    <updated>2026-09-01T00:00:00+00:00</updated>
+    <category term="论文"/>
+    <author><name>王子峰</name></author>
+  </entry>
+</feed>
